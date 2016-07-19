@@ -1,0 +1,2451 @@
+items:
+- uid: System.IO.UnmanagedMemoryAccessor
+  commentId: T:System.IO.UnmanagedMemoryAccessor
+  id: UnmanagedMemoryAccessor
+  parent: System.IO
+  children:
+  - System.IO.UnmanagedMemoryAccessor.#ctor
+  - System.IO.UnmanagedMemoryAccessor.#ctor(System.Runtime.InteropServices.SafeBuffer,System.Int64,System.Int64)
+  - System.IO.UnmanagedMemoryAccessor.#ctor(System.Runtime.InteropServices.SafeBuffer,System.Int64,System.Int64,System.IO.FileAccess)
+  - System.IO.UnmanagedMemoryAccessor.CanRead
+  - System.IO.UnmanagedMemoryAccessor.CanWrite
+  - System.IO.UnmanagedMemoryAccessor.Capacity
+  - System.IO.UnmanagedMemoryAccessor.Dispose
+  - System.IO.UnmanagedMemoryAccessor.Dispose(System.Boolean)
+  - System.IO.UnmanagedMemoryAccessor.Initialize(System.Runtime.InteropServices.SafeBuffer,System.Int64,System.Int64,System.IO.FileAccess)
+  - System.IO.UnmanagedMemoryAccessor.IsOpen
+  - System.IO.UnmanagedMemoryAccessor.ReadBoolean(System.Int64)
+  - System.IO.UnmanagedMemoryAccessor.ReadByte(System.Int64)
+  - System.IO.UnmanagedMemoryAccessor.ReadChar(System.Int64)
+  - System.IO.UnmanagedMemoryAccessor.ReadDecimal(System.Int64)
+  - System.IO.UnmanagedMemoryAccessor.ReadDouble(System.Int64)
+  - System.IO.UnmanagedMemoryAccessor.ReadInt16(System.Int64)
+  - System.IO.UnmanagedMemoryAccessor.ReadInt32(System.Int64)
+  - System.IO.UnmanagedMemoryAccessor.ReadInt64(System.Int64)
+  - System.IO.UnmanagedMemoryAccessor.ReadSByte(System.Int64)
+  - System.IO.UnmanagedMemoryAccessor.ReadSingle(System.Int64)
+  - System.IO.UnmanagedMemoryAccessor.ReadUInt16(System.Int64)
+  - System.IO.UnmanagedMemoryAccessor.ReadUInt32(System.Int64)
+  - System.IO.UnmanagedMemoryAccessor.ReadUInt64(System.Int64)
+  - System.IO.UnmanagedMemoryAccessor.Write(System.Int64,System.Boolean)
+  - System.IO.UnmanagedMemoryAccessor.Write(System.Int64,System.Byte)
+  - System.IO.UnmanagedMemoryAccessor.Write(System.Int64,System.Char)
+  - System.IO.UnmanagedMemoryAccessor.Write(System.Int64,System.Decimal)
+  - System.IO.UnmanagedMemoryAccessor.Write(System.Int64,System.Double)
+  - System.IO.UnmanagedMemoryAccessor.Write(System.Int64,System.Int16)
+  - System.IO.UnmanagedMemoryAccessor.Write(System.Int64,System.Int32)
+  - System.IO.UnmanagedMemoryAccessor.Write(System.Int64,System.Int64)
+  - System.IO.UnmanagedMemoryAccessor.Write(System.Int64,System.SByte)
+  - System.IO.UnmanagedMemoryAccessor.Write(System.Int64,System.Single)
+  - System.IO.UnmanagedMemoryAccessor.Write(System.Int64,System.UInt16)
+  - System.IO.UnmanagedMemoryAccessor.Write(System.Int64,System.UInt32)
+  - System.IO.UnmanagedMemoryAccessor.Write(System.Int64,System.UInt64)
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.UnmanagedMemoryAccessor
+  type: Class
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/UnmanagedMemoryAccessor.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: UnmanagedMemoryAccessor
+    path: src/mscorlib/src/System/IO/UnmanagedMemoryAccessor.cs
+    startLine: 28
+  assemblies:
+  - System.IO.UnmanagedMemoryStream
+  namespace: System.IO
+  summary: "\n<p>Provides random access to unmanaged blocks of memory from managed code.</p>\n"
+  syntax:
+    content: 'public class UnmanagedMemoryAccessor : IDisposable'
+    content.vb: >-
+      Public Class UnmanagedMemoryAccessor
+          Implements IDisposable
+  inheritance:
+  - System.Object
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+  nameWithType: UnmanagedMemoryAccessor
+- uid: System.IO.UnmanagedMemoryAccessor.#ctor
+  commentId: M:System.IO.UnmanagedMemoryAccessor.#ctor
+  id: '#ctor'
+  parent: System.IO.UnmanagedMemoryAccessor
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.UnmanagedMemoryAccessor.UnmanagedMemoryAccessor()
+  type: Constructor
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/UnmanagedMemoryAccessor.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: .ctor
+    path: src/mscorlib/src/System/IO/UnmanagedMemoryAccessor.cs
+    startLine: 40
+  assemblies:
+  - System.IO.UnmanagedMemoryStream
+  namespace: System.IO
+  summary: "\n<p>Initializes a new instance of the <xref href=\"System.IO.UnmanagedMemoryAccessor\" data-throw-if-not-resolved=\"false\"></xref> class. </p>\n"
+  syntax:
+    content: protected UnmanagedMemoryAccessor()
+    content.vb: Protected Sub New
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  nameWithType: UnmanagedMemoryAccessor.UnmanagedMemoryAccessor()
+- uid: System.IO.UnmanagedMemoryAccessor.#ctor(System.Runtime.InteropServices.SafeBuffer,System.Int64,System.Int64)
+  commentId: M:System.IO.UnmanagedMemoryAccessor.#ctor(System.Runtime.InteropServices.SafeBuffer,System.Int64,System.Int64)
+  id: '#ctor(System.Runtime.InteropServices.SafeBuffer,System.Int64,System.Int64)'
+  parent: System.IO.UnmanagedMemoryAccessor
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.UnmanagedMemoryAccessor.UnmanagedMemoryAccessor(System.Runtime.InteropServices.SafeBuffer, System.Int64, System.Int64)
+  type: Constructor
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/UnmanagedMemoryAccessor.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: .ctor
+    path: src/mscorlib/src/System/IO/UnmanagedMemoryAccessor.cs
+    startLine: 48
+  assemblies:
+  - System.IO.UnmanagedMemoryStream
+  namespace: System.IO
+  summary: "\n<p>Initializes a new instance of the <xref href=\"System.IO.UnmanagedMemoryAccessor\" data-throw-if-not-resolved=\"false\"></xref> class with a specified buffer, offset, and capacity.</p>\n"
+  syntax:
+    content: >-
+      [SecuritySafeCritical]
+
+      public UnmanagedMemoryAccessor(SafeBuffer buffer, long offset, long capacity)
+    content.vb: >-
+      <SecuritySafeCritical>
+
+      Public Sub New(buffer As SafeBuffer, offset As Long, capacity As Long)
+    parameters:
+    - id: buffer
+      type: System.Runtime.InteropServices.SafeBuffer
+      description: "\n<p>The buffer to contain the accessor.</p>\n"
+    - id: offset
+      type: System.Int64
+      description: "\n<p>The byte at which to start the accessor.</p>\n"
+    - id: capacity
+      type: System.Int64
+      description: "\n<p>The size, in bytes, of memory to allocate.</p>\n"
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>\n<em>offset</em> plus <em>capacity</em> is greater than <em>buffer</em>.</p>\n"
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>buffer</em> is <strong>null</strong>.</p>\n"
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>offset</em> or <em>capacity</em> is less than zero.</p>\n"
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: "\n<p>\n<em>offset</em> plus <em>capacity</em> would wrap around the high end of the address space.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: UnmanagedMemoryAccessor.UnmanagedMemoryAccessor(SafeBuffer, Int64, Int64)
+- uid: System.IO.UnmanagedMemoryAccessor.#ctor(System.Runtime.InteropServices.SafeBuffer,System.Int64,System.Int64,System.IO.FileAccess)
+  commentId: M:System.IO.UnmanagedMemoryAccessor.#ctor(System.Runtime.InteropServices.SafeBuffer,System.Int64,System.Int64,System.IO.FileAccess)
+  id: '#ctor(System.Runtime.InteropServices.SafeBuffer,System.Int64,System.Int64,System.IO.FileAccess)'
+  parent: System.IO.UnmanagedMemoryAccessor
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.UnmanagedMemoryAccessor.UnmanagedMemoryAccessor(System.Runtime.InteropServices.SafeBuffer, System.Int64, System.Int64, System.IO.FileAccess)
+  type: Constructor
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/UnmanagedMemoryAccessor.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: .ctor
+    path: src/mscorlib/src/System/IO/UnmanagedMemoryAccessor.cs
+    startLine: 53
+  assemblies:
+  - System.IO.UnmanagedMemoryStream
+  namespace: System.IO
+  summary: "\n<p>Initializes a new instance of the <xref href=\"System.IO.UnmanagedMemoryAccessor\" data-throw-if-not-resolved=\"false\"></xref> class with a specified buffer, offset, capacity, and access right.</p>\n"
+  syntax:
+    content: >-
+      [SecuritySafeCritical]
+
+      public UnmanagedMemoryAccessor(SafeBuffer buffer, long offset, long capacity, FileAccess access)
+    content.vb: >-
+      <SecuritySafeCritical>
+
+      Public Sub New(buffer As SafeBuffer, offset As Long, capacity As Long, access As FileAccess)
+    parameters:
+    - id: buffer
+      type: System.Runtime.InteropServices.SafeBuffer
+      description: "\n<p>The buffer to contain the accessor.</p>\n"
+    - id: offset
+      type: System.Int64
+      description: "\n<p>The byte at which to start the accessor.</p>\n"
+    - id: capacity
+      type: System.Int64
+      description: "\n<p>The size, in bytes, of memory to allocate.</p>\n"
+    - id: access
+      type: System.IO.FileAccess
+      description: "\n<p>The type of access allowed to the memory. The default is <xref href=\"System.IO.MemoryMappedFiles.MemoryMappedFileAccess.ReadWrite\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>\n<em>offset</em> plus <em>capacity</em> is greater than <em>buffer</em>.</p>\n"
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>buffer</em> is <strong>null</strong>.</p>\n"
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>offset</em> or <em>capacity</em> is less than zero.</p>\n<p>-or-</p>\n<p>\n<em>access</em> is not a valid <xref href=\"System.IO.MemoryMappedFiles.MemoryMappedFileAccess\" data-throw-if-not-resolved=\"false\"></xref> enumeration value.</p>\n"
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: "\n<p>\n<em>offset</em> plus <em>capacity</em> would wrap around the high end of the address space.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: UnmanagedMemoryAccessor.UnmanagedMemoryAccessor(SafeBuffer, Int64, Int64, FileAccess)
+- uid: System.IO.UnmanagedMemoryAccessor.CanRead
+  commentId: P:System.IO.UnmanagedMemoryAccessor.CanRead
+  id: CanRead
+  parent: System.IO.UnmanagedMemoryAccessor
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.UnmanagedMemoryAccessor.CanRead
+  type: Property
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/UnmanagedMemoryAccessor.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: CanRead
+    path: src/mscorlib/src/System/IO/UnmanagedMemoryAccessor.cs
+    startLine: 117
+  assemblies:
+  - System.IO.UnmanagedMemoryStream
+  namespace: System.IO
+  summary: "\n<p>Determines whether the accessor is readable.</p>\n"
+  syntax:
+    content: public bool CanRead { get; }
+    content.vb: Public ReadOnly Property CanRead As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if the accessor is readable; otherwise, <strong>false</strong>. </p>\n"
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  nameWithType: UnmanagedMemoryAccessor.CanRead
+- uid: System.IO.UnmanagedMemoryAccessor.CanWrite
+  commentId: P:System.IO.UnmanagedMemoryAccessor.CanWrite
+  id: CanWrite
+  parent: System.IO.UnmanagedMemoryAccessor
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.UnmanagedMemoryAccessor.CanWrite
+  type: Property
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/UnmanagedMemoryAccessor.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: CanWrite
+    path: src/mscorlib/src/System/IO/UnmanagedMemoryAccessor.cs
+    startLine: 123
+  assemblies:
+  - System.IO.UnmanagedMemoryStream
+  namespace: System.IO
+  summary: "\n<p>Determines whether the accessory is writable.</p>\n"
+  syntax:
+    content: public bool CanWrite { get; }
+    content.vb: Public ReadOnly Property CanWrite As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if the accessor is writable; otherwise, <strong>false</strong>. </p>\n"
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  nameWithType: UnmanagedMemoryAccessor.CanWrite
+- uid: System.IO.UnmanagedMemoryAccessor.Capacity
+  commentId: P:System.IO.UnmanagedMemoryAccessor.Capacity
+  id: Capacity
+  parent: System.IO.UnmanagedMemoryAccessor
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.UnmanagedMemoryAccessor.Capacity
+  type: Property
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/UnmanagedMemoryAccessor.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Capacity
+    path: src/mscorlib/src/System/IO/UnmanagedMemoryAccessor.cs
+    startLine: 111
+  assemblies:
+  - System.IO.UnmanagedMemoryStream
+  namespace: System.IO
+  summary: "\n<p>Gets the capacity of the accessor.</p>\n"
+  syntax:
+    content: public long Capacity { get; }
+    content.vb: Public ReadOnly Property Capacity As Long
+    parameters: []
+    return:
+      type: System.Int64
+      description: "\n<p>The capacity of the accessor.</p>\n"
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  nameWithType: UnmanagedMemoryAccessor.Capacity
+- uid: System.IO.UnmanagedMemoryAccessor.IsOpen
+  commentId: P:System.IO.UnmanagedMemoryAccessor.IsOpen
+  id: IsOpen
+  parent: System.IO.UnmanagedMemoryAccessor
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.UnmanagedMemoryAccessor.IsOpen
+  type: Property
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/UnmanagedMemoryAccessor.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: IsOpen
+    path: src/mscorlib/src/System/IO/UnmanagedMemoryAccessor.cs
+    startLine: 138
+  assemblies:
+  - System.IO.UnmanagedMemoryStream
+  namespace: System.IO
+  summary: "\n<p>Determines whether the accessor is currently open by a process.</p>\n"
+  syntax:
+    content: protected bool IsOpen { get; }
+    content.vb: Protected ReadOnly Property IsOpen As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if the accessor is open; otherwise, <strong>false</strong>. </p>\n"
+  modifiers.csharp:
+  - protected
+  - get
+  modifiers.vb:
+  - Protected
+  - ReadOnly
+  nameWithType: UnmanagedMemoryAccessor.IsOpen
+- uid: System.IO.UnmanagedMemoryAccessor.Dispose
+  commentId: M:System.IO.UnmanagedMemoryAccessor.Dispose
+  id: Dispose
+  parent: System.IO.UnmanagedMemoryAccessor
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.UnmanagedMemoryAccessor.Dispose()
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/UnmanagedMemoryAccessor.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Dispose
+    path: src/mscorlib/src/System/IO/UnmanagedMemoryAccessor.cs
+    startLine: 133
+  assemblies:
+  - System.IO.UnmanagedMemoryStream
+  namespace: System.IO
+  summary: "\n<p>Releases all resources used by the <xref href=\"System.IO.UnmanagedMemoryAccessor\" data-throw-if-not-resolved=\"false\"></xref>. </p>\n"
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose
+  implements:
+  - System.IDisposable.Dispose
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: UnmanagedMemoryAccessor.Dispose()
+- uid: System.IO.UnmanagedMemoryAccessor.Dispose(System.Boolean)
+  commentId: M:System.IO.UnmanagedMemoryAccessor.Dispose(System.Boolean)
+  id: Dispose(System.Boolean)
+  parent: System.IO.UnmanagedMemoryAccessor
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.UnmanagedMemoryAccessor.Dispose(System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/UnmanagedMemoryAccessor.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Dispose
+    path: src/mscorlib/src/System/IO/UnmanagedMemoryAccessor.cs
+    startLine: 129
+  assemblies:
+  - System.IO.UnmanagedMemoryStream
+  namespace: System.IO
+  summary: "\n<p>Releases the unmanaged resources used by the <xref href=\"System.IO.UnmanagedMemoryAccessor\" data-throw-if-not-resolved=\"false\"></xref> and optionally releases the managed resources. </p>\n"
+  syntax:
+    content: protected virtual void Dispose(bool disposing)
+    content.vb: Protected Overridable Sub Dispose(disposing As Boolean)
+    parameters:
+    - id: disposing
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> to release both managed and unmanaged resources; <strong>false</strong> to release only unmanaged resources. </p>\n"
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+  nameWithType: UnmanagedMemoryAccessor.Dispose(Boolean)
+- uid: System.IO.UnmanagedMemoryAccessor.Initialize(System.Runtime.InteropServices.SafeBuffer,System.Int64,System.Int64,System.IO.FileAccess)
+  commentId: M:System.IO.UnmanagedMemoryAccessor.Initialize(System.Runtime.InteropServices.SafeBuffer,System.Int64,System.Int64,System.IO.FileAccess)
+  id: Initialize(System.Runtime.InteropServices.SafeBuffer,System.Int64,System.Int64,System.IO.FileAccess)
+  parent: System.IO.UnmanagedMemoryAccessor
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.UnmanagedMemoryAccessor.Initialize(System.Runtime.InteropServices.SafeBuffer, System.Int64, System.Int64, System.IO.FileAccess)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/UnmanagedMemoryAccessor.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Initialize
+    path: src/mscorlib/src/System/IO/UnmanagedMemoryAccessor.cs
+    startLine: 58
+  assemblies:
+  - System.IO.UnmanagedMemoryStream
+  namespace: System.IO
+  summary: "\n<p>Sets the initial values for the accessor.</p>\n"
+  syntax:
+    content: >-
+      [SecuritySafeCritical]
+
+      [SecurityPermission(SecurityAction.Demand, Flags = SecurityPermissionFlag.UnmanagedCode)]
+
+      protected void Initialize(SafeBuffer buffer, long offset, long capacity, FileAccess access)
+    content.vb: >-
+      <SecuritySafeCritical>
+
+      <SecurityPermission(SecurityAction.Demand, Flags:=SecurityPermissionFlag.UnmanagedCode)>
+
+      Protected Sub Initialize(buffer As SafeBuffer, offset As Long, capacity As Long, access As FileAccess)
+    parameters:
+    - id: buffer
+      type: System.Runtime.InteropServices.SafeBuffer
+      description: "\n<p>The buffer to contain the accessor.</p>\n"
+    - id: offset
+      type: System.Int64
+      description: "\n<p>The byte at which to start the accessor.</p>\n"
+    - id: capacity
+      type: System.Int64
+      description: "\n<p>The size, in bytes, of memory to allocate.</p>\n"
+    - id: access
+      type: System.IO.FileAccess
+      description: "\n<p>The type of access allowed to the memory. The default is <xref href=\"System.IO.MemoryMappedFiles.MemoryMappedFileAccess.ReadWrite\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>\n<em>offset</em> plus <em>capacity</em> is greater than <em>buffer</em>.</p>\n"
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>buffer</em> is <strong>null</strong>.</p>\n"
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>offset</em> or <em>capacity</em> is less than zero.</p>\n<p>-or-</p>\n<p>\n<em>access</em> is not a valid <xref href=\"System.IO.MemoryMappedFiles.MemoryMappedFileAccess\" data-throw-if-not-resolved=\"false\"></xref> enumeration value.</p>\n"
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: "\n<p>\n<em>offset</em> plus <em>capacity</em> would wrap around the high end of the address space.</p>\n"
+  see:
+  - type: System.Security.Permissions.SecurityPermission
+    commentId: T:System.Security.Permissions.SecurityPermission
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  nameWithType: UnmanagedMemoryAccessor.Initialize(SafeBuffer, Int64, Int64, FileAccess)
+- uid: System.IO.UnmanagedMemoryAccessor.ReadBoolean(System.Int64)
+  commentId: M:System.IO.UnmanagedMemoryAccessor.ReadBoolean(System.Int64)
+  id: ReadBoolean(System.Int64)
+  parent: System.IO.UnmanagedMemoryAccessor
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.UnmanagedMemoryAccessor.ReadBoolean(System.Int64)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/UnmanagedMemoryAccessor.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: ReadBoolean
+    path: src/mscorlib/src/System/IO/UnmanagedMemoryAccessor.cs
+    startLine: 142
+  assemblies:
+  - System.IO.UnmanagedMemoryStream
+  namespace: System.IO
+  summary: "\n<p>Reads a Boolean value from the accessor.</p>\n"
+  syntax:
+    content: public bool ReadBoolean(long position)
+    content.vb: Public Function ReadBoolean(position As Long) As Boolean
+    parameters:
+    - id: position
+      type: System.Int64
+      description: "\n<p>The number of bytes into the accessor at which to begin reading. </p>\n"
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> or <strong>false</strong>.</p>\n"
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>There are not enough bytes after <em>position</em> to read a value.</p>\n"
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>position</em> is less than zero or greater than the capacity of the accessor.</p>\n"
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: "\n<p>The accessor does not support reading.</p>\n"
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>The accessor has been disposed.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: UnmanagedMemoryAccessor.ReadBoolean(Int64)
+- uid: System.IO.UnmanagedMemoryAccessor.ReadByte(System.Int64)
+  commentId: M:System.IO.UnmanagedMemoryAccessor.ReadByte(System.Int64)
+  id: ReadByte(System.Int64)
+  parent: System.IO.UnmanagedMemoryAccessor
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.UnmanagedMemoryAccessor.ReadByte(System.Int64)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/UnmanagedMemoryAccessor.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: ReadByte
+    path: src/mscorlib/src/System/IO/UnmanagedMemoryAccessor.cs
+    startLine: 150
+  assemblies:
+  - System.IO.UnmanagedMemoryStream
+  namespace: System.IO
+  summary: "\n<p>Reads a byte value from the accessor.</p>\n"
+  syntax:
+    content: public byte ReadByte(long position)
+    content.vb: Public Function ReadByte(position As Long) As Byte
+    parameters:
+    - id: position
+      type: System.Int64
+      description: "\n<p>The number of bytes into the accessor at which to begin reading.</p>\n"
+    return:
+      type: System.Byte
+      description: "\n<p>The value that was read.</p>\n"
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>There are not enough bytes after <em>position</em> to read a value.</p>\n"
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>position</em> is less than zero or greater than the capacity of the accessor.</p>\n"
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: "\n<p>The accessor does not support reading.</p>\n"
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>The accessor has been disposed.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: UnmanagedMemoryAccessor.ReadByte(Int64)
+- uid: System.IO.UnmanagedMemoryAccessor.ReadChar(System.Int64)
+  commentId: M:System.IO.UnmanagedMemoryAccessor.ReadChar(System.Int64)
+  id: ReadChar(System.Int64)
+  parent: System.IO.UnmanagedMemoryAccessor
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.UnmanagedMemoryAccessor.ReadChar(System.Int64)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/UnmanagedMemoryAccessor.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: ReadChar
+    path: src/mscorlib/src/System/IO/UnmanagedMemoryAccessor.cs
+    startLine: 157
+  assemblies:
+  - System.IO.UnmanagedMemoryStream
+  namespace: System.IO
+  summary: "\n<p>Reads a character from the accessor.</p>\n"
+  syntax:
+    content: >-
+      [SecuritySafeCritical]
+
+      public char ReadChar(long position)
+    content.vb: >-
+      <SecuritySafeCritical>
+
+      Public Function ReadChar(position As Long) As Char
+    parameters:
+    - id: position
+      type: System.Int64
+      description: "\n<p>The number of bytes into the accessor at which to begin reading.</p>\n"
+    return:
+      type: System.Char
+      description: "\n<p>The value that was read.</p>\n"
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>There are not enough bytes after <em>position</em> to read a value.</p>\n"
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>position</em> is less than zero or greater than the capacity of the accessor.</p>\n"
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: "\n<p>The accessor does not support reading.</p>\n"
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>The accessor has been disposed.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: UnmanagedMemoryAccessor.ReadChar(Int64)
+- uid: System.IO.UnmanagedMemoryAccessor.ReadDecimal(System.Int64)
+  commentId: M:System.IO.UnmanagedMemoryAccessor.ReadDecimal(System.Int64)
+  id: ReadDecimal(System.Int64)
+  parent: System.IO.UnmanagedMemoryAccessor
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.UnmanagedMemoryAccessor.ReadDecimal(System.Int64)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/UnmanagedMemoryAccessor.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: ReadDecimal
+    path: src/mscorlib/src/System/IO/UnmanagedMemoryAccessor.cs
+    startLine: 303
+  assemblies:
+  - System.IO.UnmanagedMemoryStream
+  namespace: System.IO
+  summary: "\n<p>Reads a decimal value from the accessor.</p>\n"
+  syntax:
+    content: >-
+      [SecuritySafeCritical]
+
+      public decimal ReadDecimal(long position)
+    content.vb: >-
+      <SecuritySafeCritical>
+
+      Public Function ReadDecimal(position As Long) As Decimal
+    parameters:
+    - id: position
+      type: System.Int64
+      description: "\n<p>The number of bytes into the accessor at which to begin reading.</p>\n"
+    return:
+      type: System.Decimal
+      description: "\n<p>The value that was read.</p>\n"
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>There are not enough bytes after <em>position</em> to read a value.</p>\n<p>-or-</p>\n<p>The decimal to read is invalid.</p>\n"
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>position</em> is less than zero or greater than the capacity of the accessor.</p>\n"
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: "\n<p>The accessor does not support reading.</p>\n"
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>The accessor has been disposed.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: UnmanagedMemoryAccessor.ReadDecimal(Int64)
+- uid: System.IO.UnmanagedMemoryAccessor.ReadDouble(System.Int64)
+  commentId: M:System.IO.UnmanagedMemoryAccessor.ReadDouble(System.Int64)
+  id: ReadDouble(System.Int64)
+  parent: System.IO.UnmanagedMemoryAccessor
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.UnmanagedMemoryAccessor.ReadDouble(System.Int64)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/UnmanagedMemoryAccessor.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: ReadDouble
+    path: src/mscorlib/src/System/IO/UnmanagedMemoryAccessor.cs
+    startLine: 350
+  assemblies:
+  - System.IO.UnmanagedMemoryStream
+  namespace: System.IO
+  summary: "\n<p>Reads a double-precision floating-point value from the accessor.</p>\n"
+  syntax:
+    content: >-
+      [SecuritySafeCritical]
+
+      public double ReadDouble(long position)
+    content.vb: >-
+      <SecuritySafeCritical>
+
+      Public Function ReadDouble(position As Long) As Double
+    parameters:
+    - id: position
+      type: System.Int64
+      description: "\n<p>The number of bytes into the accessor at which to begin reading.</p>\n"
+    return:
+      type: System.Double
+      description: "\n<p>The value that was read.</p>\n"
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>There are not enough bytes after <em>position</em> to read a value.</p>\n"
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>position</em> is less than zero or greater than the capacity of the accessor.</p>\n"
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: "\n<p>The accessor does not support reading.</p>\n"
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>The accessor has been disposed.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: UnmanagedMemoryAccessor.ReadDouble(Int64)
+- uid: System.IO.UnmanagedMemoryAccessor.ReadInt16(System.Int64)
+  commentId: M:System.IO.UnmanagedMemoryAccessor.ReadInt16(System.Int64)
+  id: ReadInt16(System.Int64)
+  parent: System.IO.UnmanagedMemoryAccessor
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.UnmanagedMemoryAccessor.ReadInt16(System.Int64)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/UnmanagedMemoryAccessor.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: ReadInt16
+    path: src/mscorlib/src/System/IO/UnmanagedMemoryAccessor.cs
+    startLine: 194
+  assemblies:
+  - System.IO.UnmanagedMemoryStream
+  namespace: System.IO
+  summary: "\n<p>Reads a 16-bit integer from the accessor.</p>\n"
+  syntax:
+    content: >-
+      [SecuritySafeCritical]
+
+      public short ReadInt16(long position)
+    content.vb: >-
+      <SecuritySafeCritical>
+
+      Public Function ReadInt16(position As Long) As Short
+    parameters:
+    - id: position
+      type: System.Int64
+      description: "\n<p>The number of bytes into the accessor at which to begin reading.</p>\n"
+    return:
+      type: System.Int16
+      description: "\n<p>The value that was read.</p>\n"
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>There are not enough bytes after <em>position</em> to read a value.</p>\n"
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>position</em> is less than zero or greater than the capacity of the accessor.</p>\n"
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: "\n<p>The accessor does not support reading.</p>\n"
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>The accessor has been disposed.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: UnmanagedMemoryAccessor.ReadInt16(Int64)
+- uid: System.IO.UnmanagedMemoryAccessor.ReadInt32(System.Int64)
+  commentId: M:System.IO.UnmanagedMemoryAccessor.ReadInt32(System.Int64)
+  id: ReadInt32(System.Int64)
+  parent: System.IO.UnmanagedMemoryAccessor
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.UnmanagedMemoryAccessor.ReadInt32(System.Int64)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/UnmanagedMemoryAccessor.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: ReadInt32
+    path: src/mscorlib/src/System/IO/UnmanagedMemoryAccessor.cs
+    startLine: 231
+  assemblies:
+  - System.IO.UnmanagedMemoryStream
+  namespace: System.IO
+  summary: "\n<p>Reads a 32-bit integer from the accessor.</p>\n"
+  syntax:
+    content: >-
+      [SecuritySafeCritical]
+
+      public int ReadInt32(long position)
+    content.vb: >-
+      <SecuritySafeCritical>
+
+      Public Function ReadInt32(position As Long) As Integer
+    parameters:
+    - id: position
+      type: System.Int64
+      description: "\n<p>The number of bytes into the accessor at which to begin reading.</p>\n"
+    return:
+      type: System.Int32
+      description: "\n<p>The value that was read.</p>\n"
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>There are not enough bytes after <em>position</em> to read a value.</p>\n"
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>position</em> is less than zero or greater than the capacity of the accessor.</p>\n"
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: "\n<p>The accessor does not support reading.</p>\n"
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>The accessor has been disposed.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: UnmanagedMemoryAccessor.ReadInt32(Int64)
+- uid: System.IO.UnmanagedMemoryAccessor.ReadInt64(System.Int64)
+  commentId: M:System.IO.UnmanagedMemoryAccessor.ReadInt64(System.Int64)
+  id: ReadInt64(System.Int64)
+  parent: System.IO.UnmanagedMemoryAccessor
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.UnmanagedMemoryAccessor.ReadInt64(System.Int64)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/UnmanagedMemoryAccessor.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: ReadInt64
+    path: src/mscorlib/src/System/IO/UnmanagedMemoryAccessor.cs
+    startLine: 266
+  assemblies:
+  - System.IO.UnmanagedMemoryStream
+  namespace: System.IO
+  summary: "\n<p>Reads a 64-bit integer from the accessor.</p>\n"
+  syntax:
+    content: >-
+      [SecuritySafeCritical]
+
+      public long ReadInt64(long position)
+    content.vb: >-
+      <SecuritySafeCritical>
+
+      Public Function ReadInt64(position As Long) As Long
+    parameters:
+    - id: position
+      type: System.Int64
+      description: "\n<p>The number of bytes into the accessor at which to begin reading.</p>\n"
+    return:
+      type: System.Int64
+      description: "\n<p>The value that was read.</p>\n"
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>There are not enough bytes after <em>position</em> to read a value.</p>\n"
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>position</em> is less than zero or greater than the capacity of the accessor.</p>\n"
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: "\n<p>The accessor does not support reading.</p>\n"
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>The accessor has been disposed.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: UnmanagedMemoryAccessor.ReadInt64(Int64)
+- uid: System.IO.UnmanagedMemoryAccessor.ReadSByte(System.Int64)
+  commentId: M:System.IO.UnmanagedMemoryAccessor.ReadSByte(System.Int64)
+  id: ReadSByte(System.Int64)
+  parent: System.IO.UnmanagedMemoryAccessor
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.UnmanagedMemoryAccessor.ReadSByte(System.Int64)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/UnmanagedMemoryAccessor.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: ReadSByte
+    path: src/mscorlib/src/System/IO/UnmanagedMemoryAccessor.cs
+    startLine: 390
+  assemblies:
+  - System.IO.UnmanagedMemoryStream
+  namespace: System.IO
+  summary: "\n<p>Reads an 8-bit signed integer from the accessor.</p>\n"
+  syntax:
+    content: >-
+      [SecuritySafeCritical]
+
+      [CLSCompliant(false)]
+
+      public sbyte ReadSByte(long position)
+    content.vb: >-
+      <SecuritySafeCritical>
+
+      <CLSCompliant(False)>
+
+      Public Function ReadSByte(position As Long) As SByte
+    parameters:
+    - id: position
+      type: System.Int64
+      description: "\n<p>The number of bytes into the accessor at which to begin reading.</p>\n"
+    return:
+      type: System.SByte
+      description: "\n<p>The value that was read.</p>\n"
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>There are not enough bytes after <em>position</em> to read a value.</p>\n"
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>position</em> is less than zero or greater than the capacity of the accessor.</p>\n"
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: "\n<p>The accessor does not support reading.</p>\n"
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>The accessor has been disposed.</p>\n"
+  attributes:
+  - type: System.CLSCompliantAttribute
+    ctor: System.CLSCompliantAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: UnmanagedMemoryAccessor.ReadSByte(Int64)
+- uid: System.IO.UnmanagedMemoryAccessor.ReadSingle(System.Int64)
+  commentId: M:System.IO.UnmanagedMemoryAccessor.ReadSingle(System.Int64)
+  id: ReadSingle(System.Int64)
+  parent: System.IO.UnmanagedMemoryAccessor
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.UnmanagedMemoryAccessor.ReadSingle(System.Int64)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/UnmanagedMemoryAccessor.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: ReadSingle
+    path: src/mscorlib/src/System/IO/UnmanagedMemoryAccessor.cs
+    startLine: 314
+  assemblies:
+  - System.IO.UnmanagedMemoryStream
+  namespace: System.IO
+  summary: "\n<p>Reads a single-precision floating-point value from the accessor.</p>\n"
+  syntax:
+    content: >-
+      [SecuritySafeCritical]
+
+      public float ReadSingle(long position)
+    content.vb: >-
+      <SecuritySafeCritical>
+
+      Public Function ReadSingle(position As Long) As Single
+    parameters:
+    - id: position
+      type: System.Int64
+      description: "\n<p>The number of bytes into the accessor at which to begin reading.</p>\n"
+    return:
+      type: System.Single
+      description: "\n<p>The value that was read.</p>\n"
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>There are not enough bytes after <em>position</em> to read a value.</p>\n"
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>position</em> is less than zero or greater than the capacity of the accessor.</p>\n"
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: "\n<p>The accessor does not support reading.</p>\n"
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>The accessor has been disposed.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: UnmanagedMemoryAccessor.ReadSingle(Int64)
+- uid: System.IO.UnmanagedMemoryAccessor.ReadUInt16(System.Int64)
+  commentId: M:System.IO.UnmanagedMemoryAccessor.ReadUInt16(System.Int64)
+  id: ReadUInt16(System.Int64)
+  parent: System.IO.UnmanagedMemoryAccessor
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.UnmanagedMemoryAccessor.ReadUInt16(System.Int64)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/UnmanagedMemoryAccessor.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: ReadUInt16
+    path: src/mscorlib/src/System/IO/UnmanagedMemoryAccessor.cs
+    startLine: 415
+  assemblies:
+  - System.IO.UnmanagedMemoryStream
+  namespace: System.IO
+  summary: "\n<p>Reads an unsigned 16-bit integer from the accessor.</p>\n"
+  syntax:
+    content: >-
+      [SecuritySafeCritical]
+
+      [CLSCompliant(false)]
+
+      public ushort ReadUInt16(long position)
+    content.vb: >-
+      <SecuritySafeCritical>
+
+      <CLSCompliant(False)>
+
+      Public Function ReadUInt16(position As Long) As UShort
+    parameters:
+    - id: position
+      type: System.Int64
+      description: "\n<p>The number of bytes into the accessor at which to begin reading.</p>\n"
+    return:
+      type: System.UInt16
+      description: "\n<p>The value that was read.</p>\n"
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>There are not enough bytes after <em>position</em> to read a value.</p>\n"
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>position</em> is less than zero or greater than the capacity of the accessor.</p>\n"
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: "\n<p>The accessor does not support reading.</p>\n"
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>The accessor has been disposed.</p>\n"
+  attributes:
+  - type: System.CLSCompliantAttribute
+    ctor: System.CLSCompliantAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: UnmanagedMemoryAccessor.ReadUInt16(Int64)
+- uid: System.IO.UnmanagedMemoryAccessor.ReadUInt32(System.Int64)
+  commentId: M:System.IO.UnmanagedMemoryAccessor.ReadUInt32(System.Int64)
+  id: ReadUInt32(System.Int64)
+  parent: System.IO.UnmanagedMemoryAccessor
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.UnmanagedMemoryAccessor.ReadUInt32(System.Int64)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/UnmanagedMemoryAccessor.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: ReadUInt32
+    path: src/mscorlib/src/System/IO/UnmanagedMemoryAccessor.cs
+    startLine: 452
+  assemblies:
+  - System.IO.UnmanagedMemoryStream
+  namespace: System.IO
+  summary: "\n<p>Reads an unsigned 32-bit integer from the accessor.</p>\n"
+  syntax:
+    content: >-
+      [SecuritySafeCritical]
+
+      [CLSCompliant(false)]
+
+      public uint ReadUInt32(long position)
+    content.vb: >-
+      <SecuritySafeCritical>
+
+      <CLSCompliant(False)>
+
+      Public Function ReadUInt32(position As Long) As UInteger
+    parameters:
+    - id: position
+      type: System.Int64
+      description: "\n<p>The number of bytes into the accessor at which to begin reading.</p>\n"
+    return:
+      type: System.UInt32
+      description: "\n<p>The value that was read.</p>\n"
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>There are not enough bytes after <em>position</em> to read a value.</p>\n"
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>position</em> is less than zero or greater than the capacity of the accessor.</p>\n"
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: "\n<p>The accessor does not support reading.</p>\n"
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>The accessor has been disposed.</p>\n"
+  attributes:
+  - type: System.CLSCompliantAttribute
+    ctor: System.CLSCompliantAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: UnmanagedMemoryAccessor.ReadUInt32(Int64)
+- uid: System.IO.UnmanagedMemoryAccessor.ReadUInt64(System.Int64)
+  commentId: M:System.IO.UnmanagedMemoryAccessor.ReadUInt64(System.Int64)
+  id: ReadUInt64(System.Int64)
+  parent: System.IO.UnmanagedMemoryAccessor
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.UnmanagedMemoryAccessor.ReadUInt64(System.Int64)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/UnmanagedMemoryAccessor.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: ReadUInt64
+    path: src/mscorlib/src/System/IO/UnmanagedMemoryAccessor.cs
+    startLine: 489
+  assemblies:
+  - System.IO.UnmanagedMemoryStream
+  namespace: System.IO
+  summary: "\n<p>Reads an unsigned 64-bit integer from the accessor.</p>\n"
+  syntax:
+    content: >-
+      [SecuritySafeCritical]
+
+      [CLSCompliant(false)]
+
+      public ulong ReadUInt64(long position)
+    content.vb: >-
+      <SecuritySafeCritical>
+
+      <CLSCompliant(False)>
+
+      Public Function ReadUInt64(position As Long) As ULong
+    parameters:
+    - id: position
+      type: System.Int64
+      description: "\n<p>The number of bytes into the accessor at which to begin reading.</p>\n"
+    return:
+      type: System.UInt64
+      description: "\n<p>The value that was read.</p>\n"
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>There are not enough bytes after <em>position</em> to read a value.</p>\n"
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>position</em> is less than zero or greater than the capacity of the accessor.</p>\n"
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: "\n<p>The accessor does not support reading.</p>\n"
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>The accessor has been disposed.</p>\n"
+  attributes:
+  - type: System.CLSCompliantAttribute
+    ctor: System.CLSCompliantAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: UnmanagedMemoryAccessor.ReadUInt64(Int64)
+- uid: System.IO.UnmanagedMemoryAccessor.Write(System.Int64,System.Boolean)
+  commentId: M:System.IO.UnmanagedMemoryAccessor.Write(System.Int64,System.Boolean)
+  id: Write(System.Int64,System.Boolean)
+  parent: System.IO.UnmanagedMemoryAccessor
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.UnmanagedMemoryAccessor.Write(System.Int64, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/UnmanagedMemoryAccessor.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Write
+    path: src/mscorlib/src/System/IO/UnmanagedMemoryAccessor.cs
+    startLine: 634
+  assemblies:
+  - System.IO.UnmanagedMemoryStream
+  namespace: System.IO
+  summary: "\n<p>Writes a Boolean value into the accessor.</p>\n"
+  syntax:
+    content: public void Write(long position, bool value)
+    content.vb: Public Sub Write(position As Long, value As Boolean)
+    parameters:
+    - id: position
+      type: System.Int64
+      description: "\n<p>The number of bytes into the accessor at which to begin writing.</p>\n"
+    - id: value
+      type: System.Boolean
+      description: "\n<p>The value to write.</p>\n"
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>There are not enough bytes after <em>position</em> to write a value.</p>\n"
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>position</em> is less than zero or greater than the capacity of the accessor.</p>\n"
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: "\n<p>The accessor does not support writing.</p>\n"
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>The accessor has been disposed.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: UnmanagedMemoryAccessor.Write(Int64, Boolean)
+- uid: System.IO.UnmanagedMemoryAccessor.Write(System.Int64,System.Byte)
+  commentId: M:System.IO.UnmanagedMemoryAccessor.Write(System.Int64,System.Byte)
+  id: Write(System.Int64,System.Byte)
+  parent: System.IO.UnmanagedMemoryAccessor
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.UnmanagedMemoryAccessor.Write(System.Int64, System.Byte)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/UnmanagedMemoryAccessor.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Write
+    path: src/mscorlib/src/System/IO/UnmanagedMemoryAccessor.cs
+    startLine: 642
+  assemblies:
+  - System.IO.UnmanagedMemoryStream
+  namespace: System.IO
+  summary: "\n<p>Writes a byte value into the accessor.</p>\n"
+  syntax:
+    content: public void Write(long position, byte value)
+    content.vb: Public Sub Write(position As Long, value As Byte)
+    parameters:
+    - id: position
+      type: System.Int64
+      description: "\n<p>The number of bytes into the accessor at which to begin writing.</p>\n"
+    - id: value
+      type: System.Byte
+      description: "\n<p>The value to write.</p>\n"
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>There are not enough bytes after <em>position</em> to write a value.</p>\n"
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>position</em> is less than zero or greater than the capacity of the accessor.</p>\n"
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: "\n<p>The accessor does not support writing.</p>\n"
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>The accessor has been disposed.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: UnmanagedMemoryAccessor.Write(Int64, Byte)
+- uid: System.IO.UnmanagedMemoryAccessor.Write(System.Int64,System.Char)
+  commentId: M:System.IO.UnmanagedMemoryAccessor.Write(System.Int64,System.Char)
+  id: Write(System.Int64,System.Char)
+  parent: System.IO.UnmanagedMemoryAccessor
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.UnmanagedMemoryAccessor.Write(System.Int64, System.Char)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/UnmanagedMemoryAccessor.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Write
+    path: src/mscorlib/src/System/IO/UnmanagedMemoryAccessor.cs
+    startLine: 649
+  assemblies:
+  - System.IO.UnmanagedMemoryStream
+  namespace: System.IO
+  summary: "\n<p>Writes a character into the accessor.</p>\n"
+  syntax:
+    content: >-
+      [SecuritySafeCritical]
+
+      public void Write(long position, char value)
+    content.vb: >-
+      <SecuritySafeCritical>
+
+      Public Sub Write(position As Long, value As Char)
+    parameters:
+    - id: position
+      type: System.Int64
+      description: "\n<p>The number of bytes into the accessor at which to begin writing.</p>\n"
+    - id: value
+      type: System.Char
+      description: "\n<p>The value to write.</p>\n"
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>There are not enough bytes after <em>position</em> to write a value.</p>\n"
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>position</em> is less than zero or greater than the capacity of the accessor.</p>\n"
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: "\n<p>The accessor does not support writing.</p>\n"
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>The accessor has been disposed.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: UnmanagedMemoryAccessor.Write(Int64, Char)
+- uid: System.IO.UnmanagedMemoryAccessor.Write(System.Int64,System.Decimal)
+  commentId: M:System.IO.UnmanagedMemoryAccessor.Write(System.Int64,System.Decimal)
+  id: Write(System.Int64,System.Decimal)
+  parent: System.IO.UnmanagedMemoryAccessor
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.UnmanagedMemoryAccessor.Write(System.Int64, System.Decimal)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/UnmanagedMemoryAccessor.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Write
+    path: src/mscorlib/src/System/IO/UnmanagedMemoryAccessor.cs
+    startLine: 791
+  assemblies:
+  - System.IO.UnmanagedMemoryStream
+  namespace: System.IO
+  summary: "\n<p>Writes a decimal value into the accessor.</p>\n"
+  syntax:
+    content: >-
+      [SecuritySafeCritical]
+
+      public void Write(long position, decimal value)
+    content.vb: >-
+      <SecuritySafeCritical>
+
+      Public Sub Write(position As Long, value As Decimal)
+    parameters:
+    - id: position
+      type: System.Int64
+      description: "\n<p>The number of bytes into the accessor at which to begin writing.</p>\n"
+    - id: value
+      type: System.Decimal
+      description: "\n<p>The value to write.</p>\n"
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>There are not enough bytes after <em>position</em> to write a value.</p>\n<p>-or-</p>\n<p>The decimal is invalid.</p>\n"
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>position</em> is less than zero or greater than the capacity of the accessor.</p>\n"
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: "\n<p>The accessor does not support writing.</p>\n"
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>The accessor has been disposed.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: UnmanagedMemoryAccessor.Write(Int64, Decimal)
+- uid: System.IO.UnmanagedMemoryAccessor.Write(System.Int64,System.Double)
+  commentId: M:System.IO.UnmanagedMemoryAccessor.Write(System.Int64,System.Double)
+  id: Write(System.Int64,System.Double)
+  parent: System.IO.UnmanagedMemoryAccessor
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.UnmanagedMemoryAccessor.Write(System.Int64, System.Double)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/UnmanagedMemoryAccessor.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Write
+    path: src/mscorlib/src/System/IO/UnmanagedMemoryAccessor.cs
+    startLine: 848
+  assemblies:
+  - System.IO.UnmanagedMemoryStream
+  namespace: System.IO
+  summary: "\n<p>Writes a <strong>Double</strong> value into the accessor.</p>\n"
+  syntax:
+    content: >-
+      [SecuritySafeCritical]
+
+      public void Write(long position, double value)
+    content.vb: >-
+      <SecuritySafeCritical>
+
+      Public Sub Write(position As Long, value As Double)
+    parameters:
+    - id: position
+      type: System.Int64
+      description: "\n<p>The number of bytes into the accessor at which to begin writing.</p>\n"
+    - id: value
+      type: System.Double
+      description: "\n<p>The value to write.</p>\n"
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>There are not enough bytes after <em>position</em> to write a value.</p>\n"
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>position</em> is less than zero or greater than the capacity of the accessor.</p>\n"
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: "\n<p>The accessor does not support writing.</p>\n"
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>The accessor has been disposed.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: UnmanagedMemoryAccessor.Write(Int64, Double)
+- uid: System.IO.UnmanagedMemoryAccessor.Write(System.Int64,System.Int16)
+  commentId: M:System.IO.UnmanagedMemoryAccessor.Write(System.Int64,System.Int16)
+  id: Write(System.Int64,System.Int16)
+  parent: System.IO.UnmanagedMemoryAccessor
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.UnmanagedMemoryAccessor.Write(System.Int64, System.Int16)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/UnmanagedMemoryAccessor.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Write
+    path: src/mscorlib/src/System/IO/UnmanagedMemoryAccessor.cs
+    startLine: 684
+  assemblies:
+  - System.IO.UnmanagedMemoryStream
+  namespace: System.IO
+  summary: "\n<p>Writes a 16-bit integer into the accessor.</p>\n"
+  syntax:
+    content: >-
+      [SecuritySafeCritical]
+
+      public void Write(long position, short value)
+    content.vb: >-
+      <SecuritySafeCritical>
+
+      Public Sub Write(position As Long, value As Short)
+    parameters:
+    - id: position
+      type: System.Int64
+      description: "\n<p>The number of bytes into the accessor at which to begin writing.</p>\n"
+    - id: value
+      type: System.Int16
+      description: "\n<p>The value to write.</p>\n"
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>There are not enough bytes after <em>position</em> to write a value.</p>\n"
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>position</em> is less than zero or greater than the capacity of the accessor.</p>\n"
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: "\n<p>The accessor does not support writing.</p>\n"
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>The accessor has been disposed.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: UnmanagedMemoryAccessor.Write(Int64, Int16)
+- uid: System.IO.UnmanagedMemoryAccessor.Write(System.Int64,System.Int32)
+  commentId: M:System.IO.UnmanagedMemoryAccessor.Write(System.Int64,System.Int32)
+  id: Write(System.Int64,System.Int32)
+  parent: System.IO.UnmanagedMemoryAccessor
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.UnmanagedMemoryAccessor.Write(System.Int64, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/UnmanagedMemoryAccessor.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Write
+    path: src/mscorlib/src/System/IO/UnmanagedMemoryAccessor.cs
+    startLine: 718
+  assemblies:
+  - System.IO.UnmanagedMemoryStream
+  namespace: System.IO
+  summary: "\n<p>Writes a 32-bit integer into the accessor.</p>\n"
+  syntax:
+    content: >-
+      [SecuritySafeCritical]
+
+      public void Write(long position, int value)
+    content.vb: >-
+      <SecuritySafeCritical>
+
+      Public Sub Write(position As Long, value As Integer)
+    parameters:
+    - id: position
+      type: System.Int64
+      description: "\n<p>The number of bytes into the accessor at which to begin writing.</p>\n"
+    - id: value
+      type: System.Int32
+      description: "\n<p>The value to write.</p>\n"
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>There are not enough bytes after <em>position</em> to write a value.</p>\n"
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>position</em> is less than zero or greater than the capacity of the accessor.</p>\n"
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: "\n<p>The accessor does not support writing.</p>\n"
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>The accessor has been disposed.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: UnmanagedMemoryAccessor.Write(Int64, Int32)
+- uid: System.IO.UnmanagedMemoryAccessor.Write(System.Int64,System.Int64)
+  commentId: M:System.IO.UnmanagedMemoryAccessor.Write(System.Int64,System.Int64)
+  id: Write(System.Int64,System.Int64)
+  parent: System.IO.UnmanagedMemoryAccessor
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.UnmanagedMemoryAccessor.Write(System.Int64, System.Int64)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/UnmanagedMemoryAccessor.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Write
+    path: src/mscorlib/src/System/IO/UnmanagedMemoryAccessor.cs
+    startLine: 753
+  assemblies:
+  - System.IO.UnmanagedMemoryStream
+  namespace: System.IO
+  summary: "\n<p>Writes a 64-bit integer into the accessor.</p>\n"
+  syntax:
+    content: >-
+      [SecuritySafeCritical]
+
+      public void Write(long position, long value)
+    content.vb: >-
+      <SecuritySafeCritical>
+
+      Public Sub Write(position As Long, value As Long)
+    parameters:
+    - id: position
+      type: System.Int64
+      description: "\n<p>The number of bytes into the accessor at which to begin writing.</p>\n"
+    - id: value
+      type: System.Int64
+      description: "\n<p>The value to write.</p>\n"
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>There are not enough bytes after position to write a value.</p>\n"
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>position</em> is less than zero or greater than the capacity of the accessor.</p>\n"
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: "\n<p>The accessor does not support writing.</p>\n"
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>The accessor has been disposed.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: UnmanagedMemoryAccessor.Write(Int64, Int64)
+- uid: System.IO.UnmanagedMemoryAccessor.Write(System.Int64,System.SByte)
+  commentId: M:System.IO.UnmanagedMemoryAccessor.Write(System.Int64,System.SByte)
+  id: Write(System.Int64,System.SByte)
+  parent: System.IO.UnmanagedMemoryAccessor
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.UnmanagedMemoryAccessor.Write(System.Int64, System.SByte)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/UnmanagedMemoryAccessor.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Write
+    path: src/mscorlib/src/System/IO/UnmanagedMemoryAccessor.cs
+    startLine: 888
+  assemblies:
+  - System.IO.UnmanagedMemoryStream
+  namespace: System.IO
+  summary: "\n<p>Writes an 8-bit integer into the accessor.</p>\n"
+  syntax:
+    content: >-
+      [SecuritySafeCritical]
+
+      [CLSCompliant(false)]
+
+      public void Write(long position, sbyte value)
+    content.vb: >-
+      <SecuritySafeCritical>
+
+      <CLSCompliant(False)>
+
+      Public Sub Write(position As Long, value As SByte)
+    parameters:
+    - id: position
+      type: System.Int64
+      description: "\n<p>The number of bytes into the accessor at which to begin writing.</p>\n"
+    - id: value
+      type: System.SByte
+      description: "\n<p>The value to write.</p>\n"
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>There are not enough bytes after <em>position</em> to write a value.</p>\n"
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>position</em> is less than zero or greater than the capacity of the accessor.</p>\n"
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: "\n<p>The accessor does not support writing.</p>\n"
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>The accessor has been disposed.</p>\n"
+  attributes:
+  - type: System.CLSCompliantAttribute
+    ctor: System.CLSCompliantAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: UnmanagedMemoryAccessor.Write(Int64, SByte)
+- uid: System.IO.UnmanagedMemoryAccessor.Write(System.Int64,System.Single)
+  commentId: M:System.IO.UnmanagedMemoryAccessor.Write(System.Int64,System.Single)
+  id: Write(System.Int64,System.Single)
+  parent: System.IO.UnmanagedMemoryAccessor
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.UnmanagedMemoryAccessor.Write(System.Int64, System.Single)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/UnmanagedMemoryAccessor.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Write
+    path: src/mscorlib/src/System/IO/UnmanagedMemoryAccessor.cs
+    startLine: 812
+  assemblies:
+  - System.IO.UnmanagedMemoryStream
+  namespace: System.IO
+  summary: "\n<p>Writes a <strong>Single</strong> into the accessor.</p>\n"
+  syntax:
+    content: >-
+      [SecuritySafeCritical]
+
+      public void Write(long position, float value)
+    content.vb: >-
+      <SecuritySafeCritical>
+
+      Public Sub Write(position As Long, value As Single)
+    parameters:
+    - id: position
+      type: System.Int64
+      description: "\n<p>The number of bytes into the accessor at which to begin writing.</p>\n"
+    - id: value
+      type: System.Single
+      description: "\n<p>The value to write.</p>\n"
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>There are not enough bytes after <em>position</em> to write a value.</p>\n"
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>position</em> is less than zero or greater than the capacity of the accessor.</p>\n"
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: "\n<p>The accessor does not support writing.</p>\n"
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>The accessor has been disposed.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: UnmanagedMemoryAccessor.Write(Int64, Single)
+- uid: System.IO.UnmanagedMemoryAccessor.Write(System.Int64,System.UInt16)
+  commentId: M:System.IO.UnmanagedMemoryAccessor.Write(System.Int64,System.UInt16)
+  id: Write(System.Int64,System.UInt16)
+  parent: System.IO.UnmanagedMemoryAccessor
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.UnmanagedMemoryAccessor.Write(System.Int64, System.UInt16)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/UnmanagedMemoryAccessor.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Write
+    path: src/mscorlib/src/System/IO/UnmanagedMemoryAccessor.cs
+    startLine: 910
+  assemblies:
+  - System.IO.UnmanagedMemoryStream
+  namespace: System.IO
+  summary: "\n<p>Writes an unsigned 16-bit integer into the accessor.</p>\n"
+  syntax:
+    content: >-
+      [SecuritySafeCritical]
+
+      [CLSCompliant(false)]
+
+      public void Write(long position, ushort value)
+    content.vb: >-
+      <SecuritySafeCritical>
+
+      <CLSCompliant(False)>
+
+      Public Sub Write(position As Long, value As UShort)
+    parameters:
+    - id: position
+      type: System.Int64
+      description: "\n<p>The number of bytes into the accessor at which to begin writing.</p>\n"
+    - id: value
+      type: System.UInt16
+      description: "\n<p>The value to write.</p>\n"
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>There are not enough bytes after <em>position</em> to write a value.</p>\n"
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>position</em> is less than zero or greater than the capacity of the accessor.</p>\n"
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: "\n<p>The accessor does not support writing.</p>\n"
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>The accessor has been disposed.</p>\n"
+  attributes:
+  - type: System.CLSCompliantAttribute
+    ctor: System.CLSCompliantAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: UnmanagedMemoryAccessor.Write(Int64, UInt16)
+- uid: System.IO.UnmanagedMemoryAccessor.Write(System.Int64,System.UInt32)
+  commentId: M:System.IO.UnmanagedMemoryAccessor.Write(System.Int64,System.UInt32)
+  id: Write(System.Int64,System.UInt32)
+  parent: System.IO.UnmanagedMemoryAccessor
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.UnmanagedMemoryAccessor.Write(System.Int64, System.UInt32)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/UnmanagedMemoryAccessor.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Write
+    path: src/mscorlib/src/System/IO/UnmanagedMemoryAccessor.cs
+    startLine: 944
+  assemblies:
+  - System.IO.UnmanagedMemoryStream
+  namespace: System.IO
+  summary: "\n<p>Writes an unsigned 32-bit integer into the accessor.</p>\n"
+  syntax:
+    content: >-
+      [SecuritySafeCritical]
+
+      [CLSCompliant(false)]
+
+      public void Write(long position, uint value)
+    content.vb: >-
+      <SecuritySafeCritical>
+
+      <CLSCompliant(False)>
+
+      Public Sub Write(position As Long, value As UInteger)
+    parameters:
+    - id: position
+      type: System.Int64
+      description: "\n<p>The number of bytes into the accessor at which to begin writing.</p>\n"
+    - id: value
+      type: System.UInt32
+      description: "\n<p>The value to write.</p>\n"
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>There are not enough bytes after <em>position</em> to write a value.</p>\n"
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>position</em> is less than zero or greater than the capacity of the accessor.</p>\n"
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: "\n<p>The accessor does not support writing.</p>\n"
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>The accessor has been disposed.</p>\n"
+  attributes:
+  - type: System.CLSCompliantAttribute
+    ctor: System.CLSCompliantAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: UnmanagedMemoryAccessor.Write(Int64, UInt32)
+- uid: System.IO.UnmanagedMemoryAccessor.Write(System.Int64,System.UInt64)
+  commentId: M:System.IO.UnmanagedMemoryAccessor.Write(System.Int64,System.UInt64)
+  id: Write(System.Int64,System.UInt64)
+  parent: System.IO.UnmanagedMemoryAccessor
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.UnmanagedMemoryAccessor.Write(System.Int64, System.UInt64)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/UnmanagedMemoryAccessor.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Write
+    path: src/mscorlib/src/System/IO/UnmanagedMemoryAccessor.cs
+    startLine: 981
+  assemblies:
+  - System.IO.UnmanagedMemoryStream
+  namespace: System.IO
+  summary: "\n<p>Writes an unsigned 64-bit integer into the accessor.</p>\n"
+  syntax:
+    content: >-
+      [SecuritySafeCritical]
+
+      [CLSCompliant(false)]
+
+      public void Write(long position, ulong value)
+    content.vb: >-
+      <SecuritySafeCritical>
+
+      <CLSCompliant(False)>
+
+      Public Sub Write(position As Long, value As ULong)
+    parameters:
+    - id: position
+      type: System.Int64
+      description: "\n<p>The number of bytes into the accessor at which to begin writing.</p>\n"
+    - id: value
+      type: System.UInt64
+      description: "\n<p>The value to write.</p>\n"
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>There are not enough bytes after <em>position</em> to write a value.</p>\n"
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>position</em> is less than zero or greater than the capacity of the accessor.</p>\n"
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: "\n<p>The accessor does not support writing.</p>\n"
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>The accessor has been disposed.</p>\n"
+  attributes:
+  - type: System.CLSCompliantAttribute
+    ctor: System.CLSCompliantAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: UnmanagedMemoryAccessor.Write(Int64, UInt64)
+references:
+- uid: System.IO
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO
+  nameWithType: System.IO
+  commentId: N:System.IO
+- uid: System.Object
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Object
+  nameWithType: Object
+  commentId: T:System.Object
+- uid: System.IDisposable
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.IDisposable
+  nameWithType: IDisposable
+  commentId: T:System.IDisposable
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.ToString()
+  commentId: M:System.Object.ToString
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.Equals(Object)
+  commentId: M:System.Object.Equals(System.Object)
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.Equals(Object, Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.GetHashCode()
+  commentId: M:System.Object.GetHashCode
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.GetType()
+  commentId: M:System.Object.GetType
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.MemberwiseClone()
+  commentId: M:System.Object.MemberwiseClone
+- uid: System
+  isExternal: false
+  name: "XXX"
+  fullName: System
+  nameWithType: System
+  commentId: N:System
+- uid: System.Runtime.InteropServices.SafeBuffer
+  parent: System.Runtime.InteropServices
+  isExternal: false
+  name: "XXX"
+  fullName: System.Runtime.InteropServices.SafeBuffer
+  nameWithType: SafeBuffer
+  commentId: T:System.Runtime.InteropServices.SafeBuffer
+- uid: System.Int64
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Int64
+  nameWithType: Int64
+  commentId: T:System.Int64
+- uid: System.Runtime.InteropServices
+  isExternal: false
+  name: "XXX"
+  fullName: System.Runtime.InteropServices
+  nameWithType: System.Runtime.InteropServices
+  commentId: N:System.Runtime.InteropServices
+- uid: System.IO.FileAccess
+  parent: System.IO
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.FileAccess
+  nameWithType: FileAccess
+  commentId: T:System.IO.FileAccess
+- uid: System.Boolean
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Boolean
+  nameWithType: Boolean
+  commentId: T:System.Boolean
+- uid: System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: false
+  name: "XXX"
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: "XXX"
+    fullName: System.IDisposable.Dispose
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: "XXX"
+    fullName: System.IDisposable.Dispose
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: IDisposable.Dispose()
+  commentId: M:System.IDisposable.Dispose
+- uid: System.Byte
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Byte
+  nameWithType: Byte
+  commentId: T:System.Byte
+- uid: System.Char
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Char
+  nameWithType: Char
+  commentId: T:System.Char
+- uid: System.Decimal
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Decimal
+  nameWithType: Decimal
+  commentId: T:System.Decimal
+- uid: System.Double
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Double
+  nameWithType: Double
+  commentId: T:System.Double
+- uid: System.Int16
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Int16
+  nameWithType: Int16
+  commentId: T:System.Int16
+- uid: System.Int32
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Int32
+  nameWithType: Int32
+  commentId: T:System.Int32
+- uid: System.SByte
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.SByte
+  nameWithType: SByte
+  commentId: T:System.SByte
+- uid: System.Single
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Single
+  nameWithType: Single
+  commentId: T:System.Single
+- uid: System.UInt16
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.UInt16
+  nameWithType: UInt16
+  commentId: T:System.UInt16
+- uid: System.UInt32
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.UInt32
+  nameWithType: UInt32
+  commentId: T:System.UInt32
+- uid: System.UInt64
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.UInt64
+  nameWithType: UInt64
+  commentId: T:System.UInt64
+- uid: System.ArgumentException
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentException
+  nameWithType: ArgumentException
+  commentId: T:System.ArgumentException
+- uid: System.ArgumentNullException
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentNullException
+  nameWithType: ArgumentNullException
+  commentId: T:System.ArgumentNullException
+- uid: System.ArgumentOutOfRangeException
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentOutOfRangeException
+  nameWithType: ArgumentOutOfRangeException
+  commentId: T:System.ArgumentOutOfRangeException
+- uid: System.InvalidOperationException
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.InvalidOperationException
+  nameWithType: InvalidOperationException
+  commentId: T:System.InvalidOperationException
+- uid: System.NotSupportedException
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.NotSupportedException
+  nameWithType: NotSupportedException
+  commentId: T:System.NotSupportedException
+- uid: System.ObjectDisposedException
+  isExternal: false
+  name: "XXX"
+  fullName: System.ObjectDisposedException
+  nameWithType: ObjectDisposedException
+  commentId: T:System.ObjectDisposedException

@@ -1,0 +1,508 @@
+items:
+- uid: System.ObsoleteAttribute
+  commentId: T:System.ObsoleteAttribute
+  id: ObsoleteAttribute
+  parent: System
+  children:
+  - System.ObsoleteAttribute.#ctor
+  - System.ObsoleteAttribute.#ctor(System.String)
+  - System.ObsoleteAttribute.#ctor(System.String,System.Boolean)
+  - System.ObsoleteAttribute.IsError
+  - System.ObsoleteAttribute.Message
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.ObsoleteAttribute
+  type: Class
+  source:
+    remote:
+      path: src/mscorlib/src/System/ObsoleteAttribute.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: ObsoleteAttribute
+    path: src/mscorlib/src/System/ObsoleteAttribute.cs
+    startLine: 22
+  assemblies:
+  - System.Runtime
+  namespace: System
+  summary: "\n<p>Marks the program elements that are no longer in use. This class cannot be inherited.</p>\n"
+  syntax:
+    content: >-
+      [Serializable]
+
+      [AttributeUsage(AttributeTargets.Class | AttributeTargets.Struct | AttributeTargets.Enum | AttributeTargets.Constructor | AttributeTargets.Method | AttributeTargets.Property | AttributeTargets.Field | AttributeTargets.Event | AttributeTargets.Interface | AttributeTargets.Delegate, Inherited = false)]
+
+      [ComVisible(true)]
+
+      public sealed class ObsoleteAttribute : Attribute, _Attribute
+    content.vb: >-
+      <Serializable>
+
+      <AttributeUsage(AttributeTargets.Class Or AttributeTargets.Struct Or AttributeTargets.Enum Or AttributeTargets.Constructor Or AttributeTargets.Method Or AttributeTargets.Property Or AttributeTargets.Field Or AttributeTargets.Event Or AttributeTargets.Interface Or AttributeTargets.Delegate, Inherited:=False)>
+
+      <ComVisible(True)>
+
+      Public NotInheritable Class ObsoleteAttribute
+          Inherits Attribute
+          Implements _Attribute
+  seealso:
+  - type: System.Attribute
+    commentId: T:System.Attribute
+  inheritance:
+  - System.Object
+  - System.Attribute
+  inheritedMembers:
+  - System.Attribute.Equals(System.Object)
+  - System.Attribute.GetHashCode
+  - System.Object.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  attributes:
+  - type: System.AttributeUsageAttribute
+    ctor: System.AttributeUsageAttribute.#ctor(System.AttributeTargets)
+    arguments:
+    - type: System.AttributeTargets
+      value: 6140
+    namedArguments:
+    - name: "XXX"
+      type: System.Boolean
+      value: false
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+  nameWithType: ObsoleteAttribute
+- uid: System.ObsoleteAttribute.#ctor
+  commentId: M:System.ObsoleteAttribute.#ctor
+  id: '#ctor'
+  parent: System.ObsoleteAttribute
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.ObsoleteAttribute.ObsoleteAttribute()
+  type: Constructor
+  source:
+    remote:
+      path: src/mscorlib/src/System/ObsoleteAttribute.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: .ctor
+    path: src/mscorlib/src/System/ObsoleteAttribute.cs
+    startLine: 32
+  assemblies:
+  - System.Runtime
+  namespace: System
+  summary: "\n<p>Initializes a new instance of the <xref href=\"System.ObsoleteAttribute\" data-throw-if-not-resolved=\"false\"></xref> class with default properties.</p>\n"
+  syntax:
+    content: public ObsoleteAttribute()
+    content.vb: Public Sub New
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: ObsoleteAttribute.ObsoleteAttribute()
+- uid: System.ObsoleteAttribute.#ctor(System.String)
+  commentId: M:System.ObsoleteAttribute.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: System.ObsoleteAttribute
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.ObsoleteAttribute.ObsoleteAttribute(System.String)
+  type: Constructor
+  source:
+    remote:
+      path: src/mscorlib/src/System/ObsoleteAttribute.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: .ctor
+    path: src/mscorlib/src/System/ObsoleteAttribute.cs
+    startLine: 38
+  assemblies:
+  - System.Runtime
+  namespace: System
+  summary: "\n<p>Initializes a new instance of the <xref href=\"System.ObsoleteAttribute\" data-throw-if-not-resolved=\"false\"></xref> class with a specified workaround message.</p>\n"
+  syntax:
+    content: public ObsoleteAttribute(string message)
+    content.vb: Public Sub New(message As String)
+    parameters:
+    - id: message
+      type: System.String
+      description: "\n<p>The text string that describes alternative workarounds. </p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: ObsoleteAttribute.ObsoleteAttribute(String)
+- uid: System.ObsoleteAttribute.#ctor(System.String,System.Boolean)
+  commentId: M:System.ObsoleteAttribute.#ctor(System.String,System.Boolean)
+  id: '#ctor(System.String,System.Boolean)'
+  parent: System.ObsoleteAttribute
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.ObsoleteAttribute.ObsoleteAttribute(System.String, System.Boolean)
+  type: Constructor
+  source:
+    remote:
+      path: src/mscorlib/src/System/ObsoleteAttribute.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: .ctor
+    path: src/mscorlib/src/System/ObsoleteAttribute.cs
+    startLine: 44
+  assemblies:
+  - System.Runtime
+  namespace: System
+  summary: "\n<p>Initializes a new instance of the <xref href=\"System.ObsoleteAttribute\" data-throw-if-not-resolved=\"false\"></xref> class with a workaround message and a Boolean value indicating whether the obsolete element usage is considered an error.</p>\n"
+  syntax:
+    content: public ObsoleteAttribute(string message, bool error)
+    content.vb: Public Sub New(message As String, error As Boolean)
+    parameters:
+    - id: message
+      type: System.String
+      description: "\n<p>The text string that describes alternative workarounds. </p>\n"
+    - id: error
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if the obsolete element usage generates a compiler error; <strong>false</strong> if it generates a compiler warning. </p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: ObsoleteAttribute.ObsoleteAttribute(String, Boolean)
+- uid: System.ObsoleteAttribute.IsError
+  commentId: P:System.ObsoleteAttribute.IsError
+  id: IsError
+  parent: System.ObsoleteAttribute
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.ObsoleteAttribute.IsError
+  type: Property
+  source:
+    remote:
+      path: src/mscorlib/src/System/ObsoleteAttribute.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: IsError
+    path: src/mscorlib/src/System/ObsoleteAttribute.cs
+    startLine: 54
+  assemblies:
+  - System.Runtime
+  namespace: System
+  summary: "\n<p>Gets a Boolean value indicating whether the compiler will treat usage of the obsolete program element as an error.</p>\n"
+  syntax:
+    content: public bool IsError { get; }
+    content.vb: Public ReadOnly Property IsError As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if the obsolete element usage is considered an error; otherwise, <strong>false</strong>. The default is <strong>false</strong>.</p>\n"
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  nameWithType: ObsoleteAttribute.IsError
+- uid: System.ObsoleteAttribute.Message
+  commentId: P:System.ObsoleteAttribute.Message
+  id: Message
+  parent: System.ObsoleteAttribute
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.ObsoleteAttribute.Message
+  type: Property
+  source:
+    remote:
+      path: src/mscorlib/src/System/ObsoleteAttribute.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Message
+    path: src/mscorlib/src/System/ObsoleteAttribute.cs
+    startLine: 50
+  assemblies:
+  - System.Runtime
+  namespace: System
+  summary: "\n<p>Gets the workaround message, including a description of the alternative program elements.</p>\n"
+  syntax:
+    content: public string Message { get; }
+    content.vb: Public ReadOnly Property Message As String
+    parameters: []
+    return:
+      type: System.String
+      description: "\n<p>The workaround text string.</p>\n"
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  nameWithType: ObsoleteAttribute.Message
+references:
+- uid: System
+  isExternal: false
+  name: "XXX"
+  fullName: System
+  nameWithType: System
+  commentId: N:System
+- uid: System.Object
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Object
+  nameWithType: Object
+  commentId: T:System.Object
+- uid: System.Attribute
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Attribute
+  nameWithType: Attribute
+  commentId: T:System.Attribute
+- uid: System.Attribute.Equals(System.Object)
+  parent: System.Attribute
+  isExternal: true
+  name: "XXX"
+  fullName: System.Attribute.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Attribute.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Attribute.Equals
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Attribute.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Attribute.Equals
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Attribute.Equals(Object)
+  commentId: M:System.Attribute.Equals(System.Object)
+- uid: System.Attribute.GetHashCode
+  parent: System.Attribute
+  isExternal: false
+  name: "XXX"
+  fullName: System.Attribute.GetHashCode()
+  spec.csharp:
+  - uid: System.Attribute.GetHashCode
+    name: "XXX"
+    fullName: System.Attribute.GetHashCode
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Attribute.GetHashCode
+    name: "XXX"
+    fullName: System.Attribute.GetHashCode
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Attribute.GetHashCode()
+  commentId: M:System.Attribute.GetHashCode
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.ToString()
+  commentId: M:System.Object.ToString
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.Equals(Object, Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.GetType()
+  commentId: M:System.Object.GetType
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.MemberwiseClone()
+  commentId: M:System.Object.MemberwiseClone
+- uid: System.String
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.String
+  nameWithType: String
+  commentId: T:System.String
+- uid: System.Boolean
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Boolean
+  nameWithType: Boolean
+  commentId: T:System.Boolean

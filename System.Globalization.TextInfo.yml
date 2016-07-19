@@ -1,0 +1,864 @@
+items:
+- uid: System.Globalization.TextInfo
+  commentId: T:System.Globalization.TextInfo
+  id: TextInfo
+  parent: System.Globalization
+  children:
+  - System.Globalization.TextInfo.CultureName
+  - System.Globalization.TextInfo.Equals(System.Object)
+  - System.Globalization.TextInfo.GetHashCode
+  - System.Globalization.TextInfo.IsReadOnly
+  - System.Globalization.TextInfo.IsRightToLeft
+  - System.Globalization.TextInfo.ListSeparator
+  - System.Globalization.TextInfo.ToLower(System.Char)
+  - System.Globalization.TextInfo.ToLower(System.String)
+  - System.Globalization.TextInfo.ToString
+  - System.Globalization.TextInfo.ToUpper(System.Char)
+  - System.Globalization.TextInfo.ToUpper(System.String)
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Globalization.TextInfo
+  type: Class
+  source:
+    remote:
+      path: src/mscorlib/src/System/Globalization/TextInfo.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: TextInfo
+    path: src/mscorlib/src/System/Globalization/TextInfo.cs
+    startLine: 29
+  assemblies:
+  - System.Globalization
+  namespace: System.Globalization
+  summary: "\n<p>Defines text properties and behaviors, such as casing, that are specific to a writing system. </p>\n"
+  syntax:
+    content: >-
+      [Serializable]
+
+      [ComVisible(true)]
+
+      public class TextInfo : ICloneable, IDeserializationCallback
+    content.vb: >-
+      <Serializable>
+
+      <ComVisible(True)>
+
+      Public Class TextInfo
+          Implements ICloneable, IDeserializationCallback
+  seealso:
+  - type: System.Globalization.StringInfo
+    commentId: T:System.Globalization.StringInfo
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+  nameWithType: TextInfo
+- uid: System.Globalization.TextInfo.CultureName
+  commentId: P:System.Globalization.TextInfo.CultureName
+  id: CultureName
+  parent: System.Globalization.TextInfo
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Globalization.TextInfo.CultureName
+  type: Property
+  source:
+    remote:
+      path: src/mscorlib/src/System/Globalization/TextInfo.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: CultureName
+    path: src/mscorlib/src/System/Globalization/TextInfo.cs
+    startLine: 407
+  assemblies:
+  - System.Globalization
+  namespace: System.Globalization
+  summary: "\n<p>Gets the name of the culture associated with the current <xref href=\"System.Globalization.TextInfo\" data-throw-if-not-resolved=\"false\"></xref> object.</p>\n"
+  syntax:
+    content: >-
+      [ComVisible(false)]
+
+      public string CultureName { get; }
+    content.vb: >-
+      <ComVisible(False)>
+
+      Public ReadOnly Property CultureName As String
+    parameters: []
+    return:
+      type: System.String
+      description: "\n<p>The name of a culture. </p>\n"
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  nameWithType: TextInfo.CultureName
+- uid: System.Globalization.TextInfo.IsReadOnly
+  commentId: P:System.Globalization.TextInfo.IsReadOnly
+  id: IsReadOnly
+  parent: System.Globalization.TextInfo
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Globalization.TextInfo.IsReadOnly
+  type: Property
+  source:
+    remote:
+      path: src/mscorlib/src/System/Globalization/TextInfo.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: IsReadOnly
+    path: src/mscorlib/src/System/Globalization/TextInfo.cs
+    startLine: 423
+  assemblies:
+  - System.Globalization
+  namespace: System.Globalization
+  summary: "\n<p>Gets a value indicating whether the current <xref href=\"System.Globalization.TextInfo\" data-throw-if-not-resolved=\"false\"></xref> object is read-only.</p>\n"
+  syntax:
+    content: >-
+      [ComVisible(false)]
+
+      public bool IsReadOnly { get; }
+    content.vb: >-
+      <ComVisible(False)>
+
+      Public ReadOnly Property IsReadOnly As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if the current <xref href=\"System.Globalization.TextInfo\" data-throw-if-not-resolved=\"false\"></xref> object is read-only; otherwise, <strong>false</strong>.</p>\n"
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  nameWithType: TextInfo.IsReadOnly
+- uid: System.Globalization.TextInfo.IsRightToLeft
+  commentId: P:System.Globalization.TextInfo.IsRightToLeft
+  id: IsRightToLeft
+  parent: System.Globalization.TextInfo
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Globalization.TextInfo.IsRightToLeft
+  type: Property
+  source:
+    remote:
+      path: src/mscorlib/src/System/Globalization/TextInfo.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: IsRightToLeft
+    path: src/mscorlib/src/System/Globalization/TextInfo.cs
+    startLine: 887
+  assemblies:
+  - System.Globalization
+  namespace: System.Globalization
+  summary: "\n<p>Gets a value indicating whether the current <xref href=\"System.Globalization.TextInfo\" data-throw-if-not-resolved=\"false\"></xref> object represents a writing system where text flows from right to left.</p>\n"
+  syntax:
+    content: >-
+      [ComVisible(false)]
+
+      public bool IsRightToLeft { get; }
+    content.vb: >-
+      <ComVisible(False)>
+
+      Public ReadOnly Property IsRightToLeft As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if text flows from right to left; otherwise, <strong>false</strong>.</p>\n"
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  nameWithType: TextInfo.IsRightToLeft
+- uid: System.Globalization.TextInfo.ListSeparator
+  commentId: P:System.Globalization.TextInfo.ListSeparator
+  id: ListSeparator
+  parent: System.Globalization.TextInfo
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Globalization.TextInfo.ListSeparator
+  type: Property
+  source:
+    remote:
+      path: src/mscorlib/src/System/Globalization/TextInfo.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: ListSeparator
+    path: src/mscorlib/src/System/Globalization/TextInfo.cs
+    startLine: 489
+  assemblies:
+  - System.Globalization
+  namespace: System.Globalization
+  summary: "\n<p>Gets or sets the string that separates items in a list.</p>\n"
+  syntax:
+    content: >-
+      public virtual string ListSeparator
+
+      {
+          [SecuritySafeCritical]
+          get;
+          [ComVisible(false)]
+          set;
+      }
+    content.vb: Public Overridable Property ListSeparator As String
+    parameters: []
+    return:
+      type: System.String
+      description: "\n<p>The string that separates items in a list.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>The value in a set operation is null.</p>\n"
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: "\n<p>In a set operation, the current <xref href=\"System.Globalization.TextInfo\" data-throw-if-not-resolved=\"false\"></xref> object is read-only.</p>\n"
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+  nameWithType: TextInfo.ListSeparator
+- uid: System.Globalization.TextInfo.Equals(System.Object)
+  commentId: M:System.Globalization.TextInfo.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: System.Globalization.TextInfo
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Globalization.TextInfo.Equals(System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Globalization/TextInfo.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Equals
+    path: src/mscorlib/src/System/Globalization/TextInfo.cs
+    startLine: 618
+  assemblies:
+  - System.Globalization
+  namespace: System.Globalization
+  summary: "\n<p>Determines whether the specified object represents the same writing system as the current <xref href=\"System.Globalization.TextInfo\" data-throw-if-not-resolved=\"false\"></xref> object.</p>\n"
+  syntax:
+    content: public override bool Equals(object obj)
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+    parameters:
+    - id: obj
+      type: System.Object
+      description: "\n<p>The object to compare with the current <xref href=\"System.Globalization.TextInfo\" data-throw-if-not-resolved=\"false\"></xref>. </p>\n"
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if <em>obj</em> represents the same writing system as the current <xref href=\"System.Globalization.TextInfo\" data-throw-if-not-resolved=\"false\"></xref>; otherwise, <strong>false</strong>.</p>\n"
+  overridden: System.Object.Equals(System.Object)
+  seealso:
+  - type: System.Object.Equals(System.Object)
+    commentId: M:System.Object.Equals(System.Object)
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  nameWithType: TextInfo.Equals(Object)
+- uid: System.Globalization.TextInfo.GetHashCode
+  commentId: M:System.Globalization.TextInfo.GetHashCode
+  id: GetHashCode
+  parent: System.Globalization.TextInfo
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Globalization.TextInfo.GetHashCode()
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Globalization/TextInfo.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: GetHashCode
+    path: src/mscorlib/src/System/Globalization/TextInfo.cs
+    startLine: 642
+  assemblies:
+  - System.Globalization
+  namespace: System.Globalization
+  summary: "\n<p>Serves as a hash function for the current <xref href=\"System.Globalization.TextInfo\" data-throw-if-not-resolved=\"false\"></xref>, suitable for hashing algorithms and data structures, such as a hash table.</p>\n"
+  syntax:
+    content: public override int GetHashCode()
+    content.vb: Public Overrides Function GetHashCode As Integer
+    return:
+      type: System.Int32
+      description: "\n<p>A hash code for the current <xref href=\"System.Globalization.TextInfo\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  overridden: System.Object.GetHashCode
+  seealso:
+  - type: System.Object.GetHashCode
+    commentId: M:System.Object.GetHashCode
+  - type: System.Collections.Hashtable
+    commentId: T:System.Collections.Hashtable
+  - type: System.Globalization.TextInfo.Equals(System.Object)
+    commentId: M:System.Globalization.TextInfo.Equals(System.Object)
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  nameWithType: TextInfo.GetHashCode()
+- uid: System.Globalization.TextInfo.ToLower(System.Char)
+  commentId: M:System.Globalization.TextInfo.ToLower(System.Char)
+  id: ToLower(System.Char)
+  parent: System.Globalization.TextInfo
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Globalization.TextInfo.ToLower(System.Char)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Globalization/TextInfo.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: ToLower
+    path: src/mscorlib/src/System/Globalization/TextInfo.cs
+    startLine: 522
+  assemblies:
+  - System.Globalization
+  namespace: System.Globalization
+  summary: "\n<p>Converts the specified character to lowercase.</p>\n"
+  syntax:
+    content: >-
+      [SecuritySafeCritical]
+
+      public virtual char ToLower(char c)
+    content.vb: >-
+      <SecuritySafeCritical>
+
+      Public Overridable Function ToLower(c As Char) As Char
+    parameters:
+    - id: c
+      type: System.Char
+      description: "\n<p>The character to convert to lowercase. </p>\n"
+    return:
+      type: System.Char
+      description: "\n<p>The specified character converted to lowercase.</p>\n"
+  seealso:
+  - type: System.Globalization.TextInfo.ToUpper(System.Char)
+    commentId: M:System.Globalization.TextInfo.ToUpper(System.Char)
+  - type: System.Globalization.TextInfo.ToTitleCase(System.String)
+    commentId: M:System.Globalization.TextInfo.ToTitleCase(System.String)
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  nameWithType: TextInfo.ToLower(Char)
+- uid: System.Globalization.TextInfo.ToLower(System.String)
+  commentId: M:System.Globalization.TextInfo.ToLower(System.String)
+  id: ToLower(System.String)
+  parent: System.Globalization.TextInfo
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Globalization.TextInfo.ToLower(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Globalization/TextInfo.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: ToLower
+    path: src/mscorlib/src/System/Globalization/TextInfo.cs
+    startLine: 532
+  assemblies:
+  - System.Globalization
+  namespace: System.Globalization
+  summary: "\n<p>Converts the specified string to lowercase.</p>\n"
+  syntax:
+    content: >-
+      [SecuritySafeCritical]
+
+      public virtual string ToLower(string str)
+    content.vb: >-
+      <SecuritySafeCritical>
+
+      Public Overridable Function ToLower(str As String) As String
+    parameters:
+    - id: str
+      type: System.String
+      description: "\n<p>The string to convert to lowercase. </p>\n"
+    return:
+      type: System.String
+      description: "\n<p>The specified string converted to lowercase.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>str</em> is null. </p>\n"
+  seealso:
+  - type: System.Globalization.TextInfo.ToUpper(System.Char)
+    commentId: M:System.Globalization.TextInfo.ToUpper(System.Char)
+  - type: System.Globalization.TextInfo.ToTitleCase(System.String)
+    commentId: M:System.Globalization.TextInfo.ToTitleCase(System.String)
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  nameWithType: TextInfo.ToLower(String)
+- uid: System.Globalization.TextInfo.ToString
+  commentId: M:System.Globalization.TextInfo.ToString
+  id: ToString
+  parent: System.Globalization.TextInfo
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Globalization.TextInfo.ToString()
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Globalization/TextInfo.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: ToString
+    path: src/mscorlib/src/System/Globalization/TextInfo.cs
+    startLine: 658
+  assemblies:
+  - System.Globalization
+  namespace: System.Globalization
+  summary: "\n<p>Returns a string that represents the current <xref href=\"System.Globalization.TextInfo\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  syntax:
+    content: public override string ToString()
+    content.vb: Public Overrides Function ToString As String
+    return:
+      type: System.String
+      description: "\n<p>A string that represents the current <xref href=\"System.Globalization.TextInfo\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  overridden: System.Object.ToString
+  seealso:
+  - type: System.Object.ToString
+    commentId: M:System.Object.ToString
+  - type: System.String
+    commentId: T:System.String
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  nameWithType: TextInfo.ToString()
+- uid: System.Globalization.TextInfo.ToUpper(System.Char)
+  commentId: M:System.Globalization.TextInfo.ToUpper(System.Char)
+  id: ToUpper(System.Char)
+  parent: System.Globalization.TextInfo
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Globalization.TextInfo.ToUpper(System.Char)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Globalization/TextInfo.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: ToUpper
+    path: src/mscorlib/src/System/Globalization/TextInfo.cs
+    startLine: 560
+  assemblies:
+  - System.Globalization
+  namespace: System.Globalization
+  summary: "\n<p>Converts the specified character to uppercase.</p>\n"
+  syntax:
+    content: >-
+      [SecuritySafeCritical]
+
+      public virtual char ToUpper(char c)
+    content.vb: >-
+      <SecuritySafeCritical>
+
+      Public Overridable Function ToUpper(c As Char) As Char
+    parameters:
+    - id: c
+      type: System.Char
+      description: "\n<p>The character to convert to uppercase. </p>\n"
+    return:
+      type: System.Char
+      description: "\n<p>The specified character converted to uppercase.</p>\n"
+  seealso:
+  - type: System.Globalization.TextInfo.ToLower(System.Char)
+    commentId: M:System.Globalization.TextInfo.ToLower(System.Char)
+  - type: System.Globalization.TextInfo.ToTitleCase(System.String)
+    commentId: M:System.Globalization.TextInfo.ToTitleCase(System.String)
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  nameWithType: TextInfo.ToUpper(Char)
+- uid: System.Globalization.TextInfo.ToUpper(System.String)
+  commentId: M:System.Globalization.TextInfo.ToUpper(System.String)
+  id: ToUpper(System.String)
+  parent: System.Globalization.TextInfo
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Globalization.TextInfo.ToUpper(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Globalization/TextInfo.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: ToUpper
+    path: src/mscorlib/src/System/Globalization/TextInfo.cs
+    startLine: 571
+  assemblies:
+  - System.Globalization
+  namespace: System.Globalization
+  summary: "\n<p>Converts the specified string to uppercase.</p>\n"
+  syntax:
+    content: >-
+      [SecuritySafeCritical]
+
+      public virtual string ToUpper(string str)
+    content.vb: >-
+      <SecuritySafeCritical>
+
+      Public Overridable Function ToUpper(str As String) As String
+    parameters:
+    - id: str
+      type: System.String
+      description: "\n<p>The string to convert to uppercase. </p>\n"
+    return:
+      type: System.String
+      description: "\n<p>The specified string converted to uppercase.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>str</em> is null. </p>\n"
+  seealso:
+  - type: System.Globalization.TextInfo.ToLower(System.Char)
+    commentId: M:System.Globalization.TextInfo.ToLower(System.Char)
+  - type: System.Globalization.TextInfo.ToTitleCase(System.String)
+    commentId: M:System.Globalization.TextInfo.ToTitleCase(System.String)
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  nameWithType: TextInfo.ToUpper(String)
+references:
+- uid: System.Globalization
+  isExternal: false
+  name: "XXX"
+  fullName: System.Globalization
+  nameWithType: System.Globalization
+  commentId: N:System.Globalization
+- uid: System.Object
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Object
+  nameWithType: Object
+  commentId: T:System.Object
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.Equals(Object, Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.GetType()
+  commentId: M:System.Object.GetType
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.MemberwiseClone()
+  commentId: M:System.Object.MemberwiseClone
+- uid: System
+  isExternal: false
+  name: "XXX"
+  fullName: System
+  nameWithType: System
+  commentId: N:System
+- uid: System.String
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.String
+  nameWithType: String
+  commentId: T:System.String
+- uid: System.Boolean
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Boolean
+  nameWithType: Boolean
+  commentId: T:System.Boolean
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.Equals(Object)
+  commentId: M:System.Object.Equals(System.Object)
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.GetHashCode()
+  commentId: M:System.Object.GetHashCode
+- uid: System.Int32
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Int32
+  nameWithType: Int32
+  commentId: T:System.Int32
+- uid: System.Char
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Char
+  nameWithType: Char
+  commentId: T:System.Char
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.ToString()
+  commentId: M:System.Object.ToString
+- uid: System.ArgumentNullException
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentNullException
+  nameWithType: ArgumentNullException
+  commentId: T:System.ArgumentNullException
+- uid: System.InvalidOperationException
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.InvalidOperationException
+  nameWithType: InvalidOperationException
+  commentId: T:System.InvalidOperationException

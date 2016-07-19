@@ -1,0 +1,449 @@
+items:
+- uid: System.Diagnostics.Debugger
+  commentId: T:System.Diagnostics.Debugger
+  id: Debugger
+  parent: System.Diagnostics
+  children:
+  - System.Diagnostics.Debugger.Break
+  - System.Diagnostics.Debugger.IsAttached
+  - System.Diagnostics.Debugger.Launch
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Diagnostics.Debugger
+  type: Class
+  source:
+    remote:
+      path: src/mscorlib/src/System/Diagnostics/Debugger.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Debugger
+    path: src/mscorlib/src/System/Diagnostics/Debugger.cs
+    startLine: 19
+  assemblies:
+  - System.Diagnostics.Debug
+  namespace: System.Diagnostics
+  summary: "\n<p>Enables communication with a debugger. This class cannot be inherited.</p>\n"
+  syntax:
+    content: >-
+      [ComVisible(true)]
+
+      public sealed class Debugger
+    content.vb: >-
+      <ComVisible(True)>
+
+      Public NotInheritable Class Debugger
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+  nameWithType: Debugger
+- uid: System.Diagnostics.Debugger.IsAttached
+  commentId: P:System.Diagnostics.Debugger.IsAttached
+  id: IsAttached
+  parent: System.Diagnostics.Debugger
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Diagnostics.Debugger.IsAttached
+  type: Property
+  source:
+    path: System.Private.CoreLib
+    isExternal: true
+  assemblies:
+  - System.Diagnostics.Debug
+  namespace: System.Diagnostics
+  summary: "\n<p>Gets a value that indicates whether a debugger is attached to the process.</p>\n"
+  syntax:
+    content: >-
+      public static bool IsAttached
+
+      {
+          [SecuritySafeCritical]
+          [MethodImpl(MethodImplOptions.InternalCall)]
+          get;
+      }
+    content.vb: Public Shared ReadOnly Property IsAttached As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if a debugger is attached; otherwise, <strong>false</strong>.</p>\n"
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+  nameWithType: Debugger.IsAttached
+- uid: System.Diagnostics.Debugger.Break
+  commentId: M:System.Diagnostics.Debugger.Break
+  id: Break
+  parent: System.Diagnostics.Debugger
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Diagnostics.Debugger.Break()
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Diagnostics/Debugger.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Break
+    path: src/mscorlib/src/System/Diagnostics/Debugger.cs
+    startLine: 34
+  assemblies:
+  - System.Diagnostics.Debug
+  namespace: System.Diagnostics
+  summary: "\n<p>Signals a breakpoint to an attached debugger.</p>\n"
+  syntax:
+    content: >-
+      [SecuritySafeCritical]
+
+      public static void Break()
+    content.vb: >-
+      <SecuritySafeCritical>
+
+      Public Shared Sub Break
+  exceptions:
+  - type: System.Security.SecurityException
+    commentId: T:System.Security.SecurityException
+    description: "\n<p>The <xref href=\"System.Security.Permissions.UIPermission\" data-throw-if-not-resolved=\"false\"></xref> is not set to break into the debugger. </p>\n"
+  see:
+  - type: System.Security.Permissions.UIPermission
+    commentId: T:System.Security.Permissions.UIPermission
+  - type: System.Security.Permissions.SecurityPermission
+    commentId: T:System.Security.Permissions.SecurityPermission
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  nameWithType: Debugger.Break()
+- uid: System.Diagnostics.Debugger.Launch
+  commentId: M:System.Diagnostics.Debugger.Launch
+  id: Launch
+  parent: System.Diagnostics.Debugger
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Diagnostics.Debugger.Launch()
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Diagnostics/Debugger.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Launch
+    path: src/mscorlib/src/System/Diagnostics/Debugger.cs
+    startLine: 84
+  assemblies:
+  - System.Diagnostics.Debug
+  namespace: System.Diagnostics
+  summary: "\n<p>Launches and attaches a debugger to the process.</p>\n"
+  syntax:
+    content: >-
+      [SecuritySafeCritical]
+
+      public static bool Launch()
+    content.vb: >-
+      <SecuritySafeCritical>
+
+      Public Shared Function Launch As Boolean
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if the startup is successful or if the debugger is already attached; otherwise, <strong>false</strong>.</p>\n"
+  exceptions:
+  - type: System.Security.SecurityException
+    commentId: T:System.Security.SecurityException
+    description: "\n<p>The <xref href=\"System.Security.Permissions.UIPermission\" data-throw-if-not-resolved=\"false\"></xref> is not set to start the debugger. </p>\n"
+  seealso:
+  - type: System.Security.Permissions.UIPermission
+    commentId: T:System.Security.Permissions.UIPermission
+  see:
+  - type: System.Security.Permissions.UIPermission
+    commentId: T:System.Security.Permissions.UIPermission
+  - type: System.Security.Permissions.SecurityPermission
+    commentId: T:System.Security.Permissions.SecurityPermission
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  nameWithType: Debugger.Launch()
+references:
+- uid: System.Diagnostics
+  isExternal: false
+  name: "XXX"
+  fullName: System.Diagnostics
+  nameWithType: System.Diagnostics
+  commentId: N:System.Diagnostics
+- uid: System.Object
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Object
+  nameWithType: Object
+  commentId: T:System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.ToString()
+  commentId: M:System.Object.ToString
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.Equals(Object)
+  commentId: M:System.Object.Equals(System.Object)
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.Equals(Object, Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.GetHashCode()
+  commentId: M:System.Object.GetHashCode
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.GetType()
+  commentId: M:System.Object.GetType
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.MemberwiseClone()
+  commentId: M:System.Object.MemberwiseClone
+- uid: System
+  isExternal: false
+  name: "XXX"
+  fullName: System
+  nameWithType: System
+  commentId: N:System
+- uid: System.Boolean
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Boolean
+  nameWithType: Boolean
+  commentId: T:System.Boolean
+- uid: System.Security.SecurityException
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.SecurityException
+  nameWithType: SecurityException
+  commentId: T:System.Security.SecurityException

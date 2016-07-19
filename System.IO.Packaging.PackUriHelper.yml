@@ -1,0 +1,770 @@
+items:
+- uid: System.IO.Packaging.PackUriHelper
+  commentId: T:System.IO.Packaging.PackUriHelper
+  id: PackUriHelper
+  parent: System.IO.Packaging
+  children:
+  - System.IO.Packaging.PackUriHelper.ComparePartUri(System.Uri,System.Uri)
+  - System.IO.Packaging.PackUriHelper.CreatePartUri(System.Uri)
+  - System.IO.Packaging.PackUriHelper.GetNormalizedPartUri(System.Uri)
+  - System.IO.Packaging.PackUriHelper.GetRelationshipPartUri(System.Uri)
+  - System.IO.Packaging.PackUriHelper.GetRelativeUri(System.Uri,System.Uri)
+  - System.IO.Packaging.PackUriHelper.GetSourcePartUriFromRelationshipPartUri(System.Uri)
+  - System.IO.Packaging.PackUriHelper.IsRelationshipPartUri(System.Uri)
+  - System.IO.Packaging.PackUriHelper.ResolvePartUri(System.Uri,System.Uri)
+  - System.IO.Packaging.PackUriHelper.UriSchemePack
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.Packaging.PackUriHelper
+  type: Class
+  source:
+    remote:
+      path: src/System.IO.Packaging/ref/System.IO.Packaging.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: PackUriHelper
+    path: src/System.IO.Packaging/ref/System.IO.Packaging.cs
+    startLine: 152
+  assemblies:
+  - System.IO.Packaging
+  namespace: System.IO.Packaging
+  summary: "\n<p>Provides utility methods to compose and parse pack URI objects.</p>\n"
+  syntax:
+    content: public class PackUriHelper
+    content.vb: Public Class PackUriHelper
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+  nameWithType: PackUriHelper
+- uid: System.IO.Packaging.PackUriHelper.UriSchemePack
+  commentId: F:System.IO.Packaging.PackUriHelper.UriSchemePack
+  id: UriSchemePack
+  parent: System.IO.Packaging.PackUriHelper
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.Packaging.PackUriHelper.UriSchemePack
+  type: Field
+  source:
+    remote:
+      path: src/System.IO.Packaging/ref/System.IO.Packaging.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: UriSchemePack
+    path: src/System.IO.Packaging/ref/System.IO.Packaging.cs
+    startLine: 154
+  assemblies:
+  - System.IO.Packaging
+  namespace: System.IO.Packaging
+  summary: "\n<p>Defines the pack URI scheme name \"pack\".</p>\n"
+  syntax:
+    content: public static readonly string UriSchemePack
+    content.vb: Public Shared ReadOnly UriSchemePack As String
+    return:
+      type: System.String
+      description: "\n<p>The pack URI scheme name string \"pack\".</p>\n"
+  modifiers.csharp:
+  - public
+  - static
+  - readonly
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+  nameWithType: PackUriHelper.UriSchemePack
+- uid: System.IO.Packaging.PackUriHelper.ComparePartUri(System.Uri,System.Uri)
+  commentId: M:System.IO.Packaging.PackUriHelper.ComparePartUri(System.Uri,System.Uri)
+  id: ComparePartUri(System.Uri,System.Uri)
+  parent: System.IO.Packaging.PackUriHelper
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.Packaging.PackUriHelper.ComparePartUri(System.Uri, System.Uri)
+  type: Method
+  source:
+    remote:
+      path: src/System.IO.Packaging/ref/System.IO.Packaging.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: ComparePartUri
+    path: src/System.IO.Packaging/ref/System.IO.Packaging.cs
+    startLine: 155
+  assemblies:
+  - System.IO.Packaging
+  namespace: System.IO.Packaging
+  summary: "\n<p>Returns a value that indicates whether two package part URIs are equivalent.</p>\n"
+  syntax:
+    content: public static int ComparePartUri(Uri firstPartUri, Uri secondPartUri)
+    content.vb: Public Shared Function ComparePartUri(firstPartUri As Uri, secondPartUri As Uri) As Integer
+    parameters:
+    - id: firstPartUri
+      type: System.Uri
+      description: "\n<p>The URI of the first <xref href=\"System.IO.Packaging.PackagePart\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    - id: secondPartUri
+      type: System.Uri
+      description: "\n<p>The URI of the second <xref href=\"System.IO.Packaging.PackagePart\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    return:
+      type: System.Int32
+      description: "\n<p>A value that indicates the relationship between <em>firstPartUri</em> and <em>secondPartUri</em>.</p>\n<p>Value</p>\n<p>Meaning</p>\n<table><tbody><tr><td>\n<p>Less than 0</p>\n</td><td>\n<p>\n<em>firstPartUri</em> is less than <em>secondPartUri</em>.</p>\n</td></tr><tr><td>\n<p>0</p>\n</td><td>\n<p>\n<em>firstPartUri</em> is equivalent to <em>secondPartUri</em>.</p>\n</td></tr><tr><td>\n<p>Greater than 0</p>\n</td><td>\n<p>\n<em>firstPartUri</em> is greater than <em>secondPartUri</em>.</p>\n</td></tr></tbody></table>\n<p></p>\n"
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>\n<em>firstPartUri</em> or <em>secondPartUri</em> is not a valid part URI syntax.</p>\n"
+  seealso:
+  - type: System.IO.Packaging.PackUriHelper.ComparePackUri(System.Uri,System.Uri)
+    commentId: M:System.IO.Packaging.PackUriHelper.ComparePackUri(System.Uri,System.Uri)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  nameWithType: PackUriHelper.ComparePartUri(Uri, Uri)
+- uid: System.IO.Packaging.PackUriHelper.CreatePartUri(System.Uri)
+  commentId: M:System.IO.Packaging.PackUriHelper.CreatePartUri(System.Uri)
+  id: CreatePartUri(System.Uri)
+  parent: System.IO.Packaging.PackUriHelper
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.Packaging.PackUriHelper.CreatePartUri(System.Uri)
+  type: Method
+  source:
+    remote:
+      path: src/System.IO.Packaging/ref/System.IO.Packaging.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: CreatePartUri
+    path: src/System.IO.Packaging/ref/System.IO.Packaging.cs
+    startLine: 156
+  assemblies:
+  - System.IO.Packaging
+  namespace: System.IO.Packaging
+  summary: "\n<p>Creates a formatted <xref href=\"System.IO.Packaging.PackagePart\" data-throw-if-not-resolved=\"false\"></xref> URI. </p>\n"
+  syntax:
+    content: public static Uri CreatePartUri(Uri partUri)
+    content.vb: Public Shared Function CreatePartUri(partUri As Uri) As Uri
+    parameters:
+    - id: partUri
+      type: System.Uri
+      description: "\n<p>The URI of the <xref href=\"System.IO.Packaging.PackagePart\" data-throw-if-not-resolved=\"false\"></xref> within the package.</p>\n"
+    return:
+      type: System.Uri
+      description: "\n<p>A formatted <xref href=\"System.IO.Packaging.PackagePart\" data-throw-if-not-resolved=\"false\"></xref> URI.</p>\n"
+  seealso:
+  - type: System.IO.Packaging.PackUriHelper.GetPartUri(System.Uri)
+    commentId: M:System.IO.Packaging.PackUriHelper.GetPartUri(System.Uri)
+  - type: System.IO.Packaging.PackUriHelper.ResolvePartUri(System.Uri,System.Uri)
+    commentId: M:System.IO.Packaging.PackUriHelper.ResolvePartUri(System.Uri,System.Uri)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  nameWithType: PackUriHelper.CreatePartUri(Uri)
+- uid: System.IO.Packaging.PackUriHelper.GetNormalizedPartUri(System.Uri)
+  commentId: M:System.IO.Packaging.PackUriHelper.GetNormalizedPartUri(System.Uri)
+  id: GetNormalizedPartUri(System.Uri)
+  parent: System.IO.Packaging.PackUriHelper
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.Packaging.PackUriHelper.GetNormalizedPartUri(System.Uri)
+  type: Method
+  source:
+    remote:
+      path: src/System.IO.Packaging/ref/System.IO.Packaging.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: GetNormalizedPartUri
+    path: src/System.IO.Packaging/ref/System.IO.Packaging.cs
+    startLine: 157
+  assemblies:
+  - System.IO.Packaging
+  namespace: System.IO.Packaging
+  summary: "\n<p>Returns the normalized form of a specified <xref href=\"System.IO.Packaging.PackagePart\" data-throw-if-not-resolved=\"false\"></xref> URI. </p>\n"
+  syntax:
+    content: public static Uri GetNormalizedPartUri(Uri partUri)
+    content.vb: Public Shared Function GetNormalizedPartUri(partUri As Uri) As Uri
+    parameters:
+    - id: partUri
+      type: System.Uri
+      description: "\n<p>The <xref href=\"System.IO.Packaging.PackagePart\" data-throw-if-not-resolved=\"false\"></xref> URI to normalize.</p>\n"
+    return:
+      type: System.Uri
+      description: "\n<p>The normalized form of the given <em>partUri</em>.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>partUri</em> is <strong>null</strong>.</p>\n"
+  seealso:
+  - type: System.String.Normalize
+    commentId: M:System.String.Normalize
+  - type: System.Text.NormalizationForm
+    commentId: T:System.Text.NormalizationForm
+  - type: System.IO.Packaging.PackUriHelper.ComparePartUri(System.Uri,System.Uri)
+    commentId: M:System.IO.Packaging.PackUriHelper.ComparePartUri(System.Uri,System.Uri)
+  - type: System.IO.Packaging.PackUriHelper.GetPartUri(System.Uri)
+    commentId: M:System.IO.Packaging.PackUriHelper.GetPartUri(System.Uri)
+  - type: System.IO.Packaging.PackUriHelper.GetPackageUri(System.Uri)
+    commentId: M:System.IO.Packaging.PackUriHelper.GetPackageUri(System.Uri)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  nameWithType: PackUriHelper.GetNormalizedPartUri(Uri)
+- uid: System.IO.Packaging.PackUriHelper.GetRelationshipPartUri(System.Uri)
+  commentId: M:System.IO.Packaging.PackUriHelper.GetRelationshipPartUri(System.Uri)
+  id: GetRelationshipPartUri(System.Uri)
+  parent: System.IO.Packaging.PackUriHelper
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.Packaging.PackUriHelper.GetRelationshipPartUri(System.Uri)
+  type: Method
+  source:
+    remote:
+      path: src/System.IO.Packaging/ref/System.IO.Packaging.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: GetRelationshipPartUri
+    path: src/System.IO.Packaging/ref/System.IO.Packaging.cs
+    startLine: 158
+  assemblies:
+  - System.IO.Packaging
+  namespace: System.IO.Packaging
+  summary: "\n<p>Returns the URI of the relationship part associated with a specified <xref href=\"System.IO.Packaging.PackagePart\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  syntax:
+    content: public static Uri GetRelationshipPartUri(Uri partUri)
+    content.vb: Public Shared Function GetRelationshipPartUri(partUri As Uri) As Uri
+    parameters:
+    - id: partUri
+      type: System.Uri
+      description: "\n<p>The <xref href=\"System.IO.Packaging.PackagePart.Uri\" data-throw-if-not-resolved=\"false\"></xref> of the <xref href=\"System.IO.Packaging.PackagePart\" data-throw-if-not-resolved=\"false\"></xref> to return the URI for the associated <xref href=\"System.IO.Packaging.PackageRelationship\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    return:
+      type: System.Uri
+      description: "\n<p>The URI of the <xref href=\"System.IO.Packaging.PackageRelationship\" data-throw-if-not-resolved=\"false\"></xref> part associated with the <xref href=\"System.IO.Packaging.PackagePart\" data-throw-if-not-resolved=\"false\"></xref> identified by <em>partUri</em>.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>partUri</em> is <strong>null</strong>.</p>\n"
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>\n<em>partUri</em> syntax is not valid for a package part URI.</p>\n<p>-or-</p>\n<p>\n<em>partUri</em> is an absolute URI.</p>\n<p>-or-</p>\n<p>\n<em>partUri</em> references a relationship part.</p>\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  nameWithType: PackUriHelper.GetRelationshipPartUri(Uri)
+- uid: System.IO.Packaging.PackUriHelper.GetRelativeUri(System.Uri,System.Uri)
+  commentId: M:System.IO.Packaging.PackUriHelper.GetRelativeUri(System.Uri,System.Uri)
+  id: GetRelativeUri(System.Uri,System.Uri)
+  parent: System.IO.Packaging.PackUriHelper
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.Packaging.PackUriHelper.GetRelativeUri(System.Uri, System.Uri)
+  type: Method
+  source:
+    remote:
+      path: src/System.IO.Packaging/ref/System.IO.Packaging.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: GetRelativeUri
+    path: src/System.IO.Packaging/ref/System.IO.Packaging.cs
+    startLine: 159
+  assemblies:
+  - System.IO.Packaging
+  namespace: System.IO.Packaging
+  summary: "\n<p>Returns the relative URI between two specified <xref href=\"System.IO.Packaging.PackagePart\" data-throw-if-not-resolved=\"false\"></xref> URIs.</p>\n"
+  syntax:
+    content: public static Uri GetRelativeUri(Uri sourcePartUri, Uri targetPartUri)
+    content.vb: Public Shared Function GetRelativeUri(sourcePartUri As Uri, targetPartUri As Uri) As Uri
+    parameters:
+    - id: sourcePartUri
+      type: System.Uri
+      description: "\n<p>The URI of the source part.</p>\n"
+    - id: targetPartUri
+      type: System.Uri
+      description: "\n<p>The URI of the target part.</p>\n"
+    return:
+      type: System.Uri
+      description: "\n<p>The relative URI from <em>sourcePartUri</em> to <em>targetPartUri</em>.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>sourcePartUri</em> or <em>targetPartUri</em> is <strong>null</strong>.</p>\n"
+  seealso:
+  - type: System.IO.Packaging.PackUriHelper.ResolvePartUri(System.Uri,System.Uri)
+    commentId: M:System.IO.Packaging.PackUriHelper.ResolvePartUri(System.Uri,System.Uri)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  nameWithType: PackUriHelper.GetRelativeUri(Uri, Uri)
+- uid: System.IO.Packaging.PackUriHelper.GetSourcePartUriFromRelationshipPartUri(System.Uri)
+  commentId: M:System.IO.Packaging.PackUriHelper.GetSourcePartUriFromRelationshipPartUri(System.Uri)
+  id: GetSourcePartUriFromRelationshipPartUri(System.Uri)
+  parent: System.IO.Packaging.PackUriHelper
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.Packaging.PackUriHelper.GetSourcePartUriFromRelationshipPartUri(System.Uri)
+  type: Method
+  source:
+    remote:
+      path: src/System.IO.Packaging/ref/System.IO.Packaging.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: GetSourcePartUriFromRelationshipPartUri
+    path: src/System.IO.Packaging/ref/System.IO.Packaging.cs
+    startLine: 160
+  assemblies:
+  - System.IO.Packaging
+  namespace: System.IO.Packaging
+  summary: "\n<p>Returns the <xref href=\"System.IO.Packaging.PackageRelationship.SourceUri\" data-throw-if-not-resolved=\"false\"></xref> from the <xref href=\"System.IO.Packaging.PackageRelationship\" data-throw-if-not-resolved=\"false\"></xref> with a specified URI.</p>\n"
+  syntax:
+    content: public static Uri GetSourcePartUriFromRelationshipPartUri(Uri relationshipPartUri)
+    content.vb: Public Shared Function GetSourcePartUriFromRelationshipPartUri(relationshipPartUri As Uri) As Uri
+    parameters:
+    - id: relationshipPartUri
+      type: System.Uri
+      description: "\n<p>The URI of the relationship part to return the <xref href=\"System.IO.Packaging.PackageRelationship.SourceUri\" data-throw-if-not-resolved=\"false\"></xref> from.</p>\n"
+    return:
+      type: System.Uri
+      description: "\n<p>The <xref href=\"System.IO.Packaging.PackageRelationship.SourceUri\" data-throw-if-not-resolved=\"false\"></xref> of the <xref href=\"System.IO.Packaging.PackagePart\" data-throw-if-not-resolved=\"false\"></xref> from the relationship with the specified <em>relationshipPartUri</em>.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>relationshipPartUri</em> is <strong>null</strong>.</p>\n"
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>\n<em>relationshipPartUri</em> is an absolute URI.</p>\n<p>-or-</p>\n<p>\n<em>relationshipPartUri</em> syntax is not valid for a <xref href=\"System.IO.Packaging.PackagePart\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n<p>-or-</p>\n<p>\n<em>relationshipPartUri</em> does not reference a relationship part.</p>\n<p>-or-</p>\n<p>The <xref href=\"System.IO.Packaging.PackageRelationship.SourceUri\" data-throw-if-not-resolved=\"false\"></xref> of the relationship part references another relationship part (not valid, see Remarks).</p>\n"
+  seealso:
+  - type: System.IO.Packaging.PackUriHelper.GetRelationshipPartUri(System.Uri)
+    commentId: M:System.IO.Packaging.PackUriHelper.GetRelationshipPartUri(System.Uri)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  nameWithType: PackUriHelper.GetSourcePartUriFromRelationshipPartUri(Uri)
+- uid: System.IO.Packaging.PackUriHelper.IsRelationshipPartUri(System.Uri)
+  commentId: M:System.IO.Packaging.PackUriHelper.IsRelationshipPartUri(System.Uri)
+  id: IsRelationshipPartUri(System.Uri)
+  parent: System.IO.Packaging.PackUriHelper
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.Packaging.PackUriHelper.IsRelationshipPartUri(System.Uri)
+  type: Method
+  source:
+    remote:
+      path: src/System.IO.Packaging/ref/System.IO.Packaging.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: IsRelationshipPartUri
+    path: src/System.IO.Packaging/ref/System.IO.Packaging.cs
+    startLine: 161
+  assemblies:
+  - System.IO.Packaging
+  namespace: System.IO.Packaging
+  summary: "\n<p>Returns a value that indicates whether a specified URI is the URI of a <xref href=\"System.IO.Packaging.PackageRelationship\" data-throw-if-not-resolved=\"false\"></xref> part.</p>\n"
+  syntax:
+    content: public static bool IsRelationshipPartUri(Uri partUri)
+    content.vb: Public Shared Function IsRelationshipPartUri(partUri As Uri) As Boolean
+    parameters:
+    - id: partUri
+      type: System.Uri
+      description: "\n<p>The URI to check for a <xref href=\"System.IO.Packaging.PackageRelationship\" data-throw-if-not-resolved=\"false\"></xref> part.</p>\n"
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if <em>partUri</em> identifies a <xref href=\"System.IO.Packaging.PackageRelationship\" data-throw-if-not-resolved=\"false\"></xref> part; otherwise, <strong>false</strong>.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>partUri</em> is <strong>null</strong>.</p>\n"
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>\n<em>partUri</em> is an absolute URI.</p>\n<p>-or-</p>\n<p>\n<em>partUri</em> is an invalid <xref href=\"System.IO.Packaging.PackagePart\" data-throw-if-not-resolved=\"false\"></xref> syntax.</p>\n"
+  seealso:
+  - type: System.IO.Packaging.PackUriHelper.GetPartUri(System.Uri)
+    commentId: M:System.IO.Packaging.PackUriHelper.GetPartUri(System.Uri)
+  - type: System.IO.Packaging.PackUriHelper.GetRelativeUri(System.Uri,System.Uri)
+    commentId: M:System.IO.Packaging.PackUriHelper.GetRelativeUri(System.Uri,System.Uri)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  nameWithType: PackUriHelper.IsRelationshipPartUri(Uri)
+- uid: System.IO.Packaging.PackUriHelper.ResolvePartUri(System.Uri,System.Uri)
+  commentId: M:System.IO.Packaging.PackUriHelper.ResolvePartUri(System.Uri,System.Uri)
+  id: ResolvePartUri(System.Uri,System.Uri)
+  parent: System.IO.Packaging.PackUriHelper
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.Packaging.PackUriHelper.ResolvePartUri(System.Uri, System.Uri)
+  type: Method
+  source:
+    remote:
+      path: src/System.IO.Packaging/ref/System.IO.Packaging.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: ResolvePartUri
+    path: src/System.IO.Packaging/ref/System.IO.Packaging.cs
+    startLine: 162
+  assemblies:
+  - System.IO.Packaging
+  namespace: System.IO.Packaging
+  summary: "\n<p>Returns a part URI given a source part URI and a URI with a relative path to a target part.</p>\n"
+  syntax:
+    content: public static Uri ResolvePartUri(Uri sourcePartUri, Uri targetUri)
+    content.vb: Public Shared Function ResolvePartUri(sourcePartUri As Uri, targetUri As Uri) As Uri
+    parameters:
+    - id: sourcePartUri
+      type: System.Uri
+      description: "\n<p>The URI of the source part, or \"/\" to designate the <xref href=\"System.IO.Packaging.Package\" data-throw-if-not-resolved=\"false\"></xref> root.</p>\n"
+    - id: targetUri
+      type: System.Uri
+      description: "\n<p>The relative URI to the target part.</p>\n"
+    return:
+      type: System.Uri
+      description: "\n<p>The URI of the target part resolved between the specified <em>SourcePartUri</em> and the <em>targetUri</em> parameters.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>sourcePartUri</em> or <em>targetUri</em> is <strong>null</strong>.</p>\n"
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>\n<em>sourcePartUri</em> is not a valid part URI.</p>\n<p>-or-</p>\n<p>\n<em>targetUri</em> is not a valid relative URI.</p>\n"
+  seealso:
+  - type: System.IO.Packaging.PackUriHelper.GetPartUri(System.Uri)
+    commentId: M:System.IO.Packaging.PackUriHelper.GetPartUri(System.Uri)
+  - type: System.IO.Packaging.PackUriHelper.GetRelativeUri(System.Uri,System.Uri)
+    commentId: M:System.IO.Packaging.PackUriHelper.GetRelativeUri(System.Uri,System.Uri)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  nameWithType: PackUriHelper.ResolvePartUri(Uri, Uri)
+references:
+- uid: System.IO.Packaging
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.Packaging
+  commentId: N:System.IO.Packaging
+  nameWithType: System.IO.Packaging
+- uid: System.Object
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Object
+  commentId: T:System.Object
+  nameWithType: Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.ToString
+  nameWithType: Object.ToString()
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.Equals(System.Object)
+  nameWithType: Object.Equals(Object)
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  nameWithType: Object.Equals(Object, Object)
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.GetHashCode
+  nameWithType: Object.GetHashCode()
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.GetType
+  nameWithType: Object.GetType()
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.MemberwiseClone
+  nameWithType: Object.MemberwiseClone()
+- uid: System
+  isExternal: false
+  name: "XXX"
+  fullName: System
+  commentId: N:System
+  nameWithType: System
+- uid: System.String
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.String
+  commentId: T:System.String
+  nameWithType: String
+- uid: System.Uri
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Uri
+  commentId: T:System.Uri
+  nameWithType: Uri
+- uid: System.Int32
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Int32
+  commentId: T:System.Int32
+  nameWithType: Int32
+- uid: System.Boolean
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Boolean
+  commentId: T:System.Boolean
+  nameWithType: Boolean
+- uid: System.ArgumentException
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentException
+  nameWithType: ArgumentException
+  commentId: T:System.ArgumentException
+- uid: System.ArgumentNullException
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentNullException
+  nameWithType: ArgumentNullException
+  commentId: T:System.ArgumentNullException

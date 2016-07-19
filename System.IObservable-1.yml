@@ -1,0 +1,156 @@
+items:
+- uid: System.IObservable`1
+  commentId: T:System.IObservable`1
+  id: IObservable`1
+  parent: System
+  children:
+  - System.IObservable`1.Subscribe(System.IObserver{`0})
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IObservable<T>
+  type: Interface
+  source:
+    remote:
+      path: src/mscorlib/src/System/IObservable.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: IObservable
+    path: src/mscorlib/src/System/IObservable.cs
+    startLine: 18
+  assemblies:
+  - System.Runtime
+  namespace: System
+  summary: "\n<p>Defines a provider for push-based notification.</p>\n"
+  syntax:
+    content: public interface IObservable<out T>
+    content.vb: Public Interface IObservable(Of Out T)
+    typeParameters:
+    - id: T
+      description: "\n<p>The object that provides notification information.</p>\n"
+  seealso:
+  - type: System.IObserver`1
+    commentId: T:System.IObserver`1
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+  fullName.vb: System.IObservable(Of T)
+  name.vb: IObservable(Of T)
+  nameWithType: IObservable<T>
+  nameWithType.vb: IObservable(Of T)
+- uid: System.IObservable`1.Subscribe(System.IObserver{`0})
+  commentId: M:System.IObservable`1.Subscribe(System.IObserver{`0})
+  id: Subscribe(System.IObserver{`0})
+  parent: System.IObservable`1
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IObservable<T>.Subscribe(System.IObserver<T>)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/IObservable.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Subscribe
+    path: src/mscorlib/src/System/IObservable.cs
+    startLine: 20
+  assemblies:
+  - System.Runtime
+  namespace: System
+  summary: "\n<p>Notifies the provider that an observer is to receive notifications.</p>\n"
+  syntax:
+    content: IDisposable Subscribe(IObserver<T> observer)
+    content.vb: Function Subscribe(observer As IObserver(Of T)) As IDisposable
+    parameters:
+    - id: observer
+      type: System.IObserver{{T}}
+      description: "\n<p>The object that is to receive notifications.</p>\n"
+    return:
+      type: System.IDisposable
+      description: "\n<p>A reference to an interface that allows observers to stop receiving notifications before the provider has finished sending them.</p>\n"
+  seealso:
+  - type: System.IObserver`1
+    commentId: T:System.IObserver`1
+  fullName.vb: System.IObservable(Of T).Subscribe(System.IObserver(Of T))
+  name.vb: Subscribe(IObserver(Of T))
+  nameWithType: IObservable<T>.Subscribe(IObserver<T>)
+  nameWithType.vb: IObservable(Of T).Subscribe(IObserver(Of T))
+references:
+- uid: System
+  isExternal: false
+  name: "XXX"
+  fullName: System
+  nameWithType: System
+  commentId: N:System
+- uid: System.IObserver{{T}}
+  parent: System
+  definition: System.IObserver`1
+  name: "XXX"
+  fullName: System.IObserver<T>
+  fullname.vb: System.IObserver(Of T)
+  name.vb: IObserver(Of T)
+  spec.csharp:
+  - uid: System.IObserver`1
+    name: "XXX"
+    fullName: System.IObserver
+  - name: "<"
+    fullName: <
+  - name: "XXX"
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.IObserver`1
+    name: "XXX"
+    fullName: System.IObserver
+  - name: 'XXX '
+    fullName: '(Of '
+  - name: "XXX"
+    fullName: T
+  - name: "XXX"
+    fullName: )
+  nameWithType: IObserver<T>
+  nameWithType.vb: IObserver(Of T)
+  commentId: T:System.IObserver{`0}
+- uid: System.IDisposable
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.IDisposable
+  nameWithType: IDisposable
+  commentId: T:System.IDisposable
+- uid: System.IObserver`1
+  isExternal: false
+  name: "XXX"
+  fullName: System.IObserver<T>
+  fullname.vb: System.IObserver(Of T)
+  name.vb: IObserver(Of T)
+  spec.csharp:
+  - uid: System.IObserver`1
+    name: "XXX"
+    fullName: System.IObserver
+  - name: "<"
+    fullName: <
+  - name: "XXX"
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.IObserver`1
+    name: "XXX"
+    fullName: System.IObserver
+  - name: 'XXX '
+    fullName: '(Of '
+  - name: "XXX"
+    fullName: T
+  - name: "XXX"
+    fullName: )
+  nameWithType: IObserver<T>
+  nameWithType.vb: IObserver(Of T)
+  commentId: T:System.IObserver`1

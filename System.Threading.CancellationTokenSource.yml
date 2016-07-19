@@ -1,0 +1,937 @@
+items:
+- uid: System.Threading.CancellationTokenSource
+  commentId: T:System.Threading.CancellationTokenSource
+  id: CancellationTokenSource
+  parent: System.Threading
+  children:
+  - System.Threading.CancellationTokenSource.#ctor
+  - System.Threading.CancellationTokenSource.#ctor(System.Int32)
+  - System.Threading.CancellationTokenSource.#ctor(System.TimeSpan)
+  - System.Threading.CancellationTokenSource.Cancel
+  - System.Threading.CancellationTokenSource.Cancel(System.Boolean)
+  - System.Threading.CancellationTokenSource.CancelAfter(System.Int32)
+  - System.Threading.CancellationTokenSource.CancelAfter(System.TimeSpan)
+  - System.Threading.CancellationTokenSource.CreateLinkedTokenSource(System.Threading.CancellationToken,System.Threading.CancellationToken)
+  - System.Threading.CancellationTokenSource.CreateLinkedTokenSource(System.Threading.CancellationToken[])
+  - System.Threading.CancellationTokenSource.Dispose
+  - System.Threading.CancellationTokenSource.Dispose(System.Boolean)
+  - System.Threading.CancellationTokenSource.IsCancellationRequested
+  - System.Threading.CancellationTokenSource.Token
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.CancellationTokenSource
+  type: Class
+  source:
+    remote:
+      path: src/mscorlib/src/System/Threading/CancellationTokenSource.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: CancellationTokenSource
+    path: src/mscorlib/src/System/Threading/CancellationTokenSource.cs
+    startLine: 36
+  assemblies:
+  - System.Threading.Tasks
+  namespace: System.Threading
+  summary: "\n<p>Signals to a <xref href=\"System.Threading.CancellationToken\" data-throw-if-not-resolved=\"false\"></xref> that it should be canceled.</p>\n"
+  syntax:
+    content: >-
+      [ComVisible(false)]
+
+      [HostProtection(Synchronization = true, ExternalThreading = true)]
+
+      public class CancellationTokenSource : IDisposable
+    content.vb: >-
+      <ComVisible(False)>
+
+      <HostProtection(Synchronization:=True, ExternalThreading:=True)>
+
+      Public Class CancellationTokenSource
+          Implements IDisposable
+  inheritance:
+  - System.Object
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+  nameWithType: CancellationTokenSource
+- uid: System.Threading.CancellationTokenSource.#ctor
+  commentId: M:System.Threading.CancellationTokenSource.#ctor
+  id: '#ctor'
+  parent: System.Threading.CancellationTokenSource
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.CancellationTokenSource.CancellationTokenSource()
+  type: Constructor
+  source:
+    remote:
+      path: src/mscorlib/src/System/Threading/CancellationTokenSource.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: .ctor
+    path: src/mscorlib/src/System/Threading/CancellationTokenSource.cs
+    startLine: 240
+  assemblies:
+  - System.Threading.Tasks
+  namespace: System.Threading
+  summary: "\n<p>Initializes a new instance of the <xref href=\"System.Threading.CancellationTokenSource\" data-throw-if-not-resolved=\"false\"></xref> class.</p>\n"
+  syntax:
+    content: public CancellationTokenSource()
+    content.vb: Public Sub New
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: CancellationTokenSource.CancellationTokenSource()
+- uid: System.Threading.CancellationTokenSource.#ctor(System.Int32)
+  commentId: M:System.Threading.CancellationTokenSource.#ctor(System.Int32)
+  id: '#ctor(System.Int32)'
+  parent: System.Threading.CancellationTokenSource
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.CancellationTokenSource.CancellationTokenSource(System.Int32)
+  type: Constructor
+  source:
+    remote:
+      path: src/mscorlib/src/System/Threading/CancellationTokenSource.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: .ctor
+    path: src/mscorlib/src/System/Threading/CancellationTokenSource.cs
+    startLine: 302
+  assemblies:
+  - System.Threading.Tasks
+  namespace: System.Threading
+  summary: "\n<p>Initializes a new instance of the <xref href=\"System.Threading.CancellationTokenSource\" data-throw-if-not-resolved=\"false\"></xref> class that will be canceled after the specified delay in milliseconds.</p>\n"
+  syntax:
+    content: public CancellationTokenSource(int millisecondsDelay)
+    content.vb: Public Sub New(millisecondsDelay As Integer)
+    parameters:
+    - id: millisecondsDelay
+      type: System.Int32
+      description: "\n<p>The time interval in milliseconds to wait before canceling this <xref href=\"System.Threading.CancellationTokenSource\" data-throw-if-not-resolved=\"false\"></xref>. </p>\n"
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>millisecondsDelay</em> is less than -1. </p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: CancellationTokenSource.CancellationTokenSource(Int32)
+- uid: System.Threading.CancellationTokenSource.#ctor(System.TimeSpan)
+  commentId: M:System.Threading.CancellationTokenSource.#ctor(System.TimeSpan)
+  id: '#ctor(System.TimeSpan)'
+  parent: System.Threading.CancellationTokenSource
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.CancellationTokenSource.CancellationTokenSource(System.TimeSpan)
+  type: Constructor
+  source:
+    remote:
+      path: src/mscorlib/src/System/Threading/CancellationTokenSource.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: .ctor
+    path: src/mscorlib/src/System/Threading/CancellationTokenSource.cs
+    startLine: 272
+  assemblies:
+  - System.Threading.Tasks
+  namespace: System.Threading
+  summary: "\n<p>Initializes a new instance of the <xref href=\"System.Threading.CancellationTokenSource\" data-throw-if-not-resolved=\"false\"></xref> class that will be canceled after the specified time span.</p>\n"
+  syntax:
+    content: public CancellationTokenSource(TimeSpan delay)
+    content.vb: Public Sub New(delay As TimeSpan)
+    parameters:
+    - id: delay
+      type: System.TimeSpan
+      description: "\n<p>The time interval to wait before canceling this <xref href=\"System.Threading.CancellationTokenSource\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>delay</em>\n<strong>.</strong>\n<xref href=\"System.TimeSpan.TotalMilliseconds\" data-throw-if-not-resolved=\"false\"></xref> is less than -1 or greater than <xref href=\"System.Int32.MaxValue\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: CancellationTokenSource.CancellationTokenSource(TimeSpan)
+- uid: System.Threading.CancellationTokenSource.IsCancellationRequested
+  commentId: P:System.Threading.CancellationTokenSource.IsCancellationRequested
+  id: IsCancellationRequested
+  parent: System.Threading.CancellationTokenSource
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.CancellationTokenSource.IsCancellationRequested
+  type: Property
+  source:
+    remote:
+      path: src/mscorlib/src/System/Threading/CancellationTokenSource.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: IsCancellationRequested
+    path: src/mscorlib/src/System/Threading/CancellationTokenSource.cs
+    startLine: 102
+  assemblies:
+  - System.Threading.Tasks
+  namespace: System.Threading
+  summary: "\n<p>Gets whether cancellation has been requested for this <xref href=\"System.Threading.CancellationTokenSource\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  syntax:
+    content: public bool IsCancellationRequested { get; }
+    content.vb: Public ReadOnly Property IsCancellationRequested As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if cancellation has been requested for this <xref href=\"System.Threading.CancellationTokenSource\" data-throw-if-not-resolved=\"false\"></xref>; otherwise, <strong>false</strong>.</p>\n"
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  nameWithType: CancellationTokenSource.IsCancellationRequested
+- uid: System.Threading.CancellationTokenSource.Token
+  commentId: P:System.Threading.CancellationTokenSource.Token
+  id: Token
+  parent: System.Threading.CancellationTokenSource
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.CancellationTokenSource.Token
+  type: Property
+  source:
+    remote:
+      path: src/mscorlib/src/System/Threading/CancellationTokenSource.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Token
+    path: src/mscorlib/src/System/Threading/CancellationTokenSource.cs
+    startLine: 140
+  assemblies:
+  - System.Threading.Tasks
+  namespace: System.Threading
+  summary: "\n<p>Gets the <xref href=\"System.Threading.CancellationToken\" data-throw-if-not-resolved=\"false\"></xref> associated with this <xref href=\"System.Threading.CancellationTokenSource\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  syntax:
+    content: public CancellationToken Token { get; }
+    content.vb: Public ReadOnly Property Token As CancellationToken
+    parameters: []
+    return:
+      type: System.Threading.CancellationToken
+      description: "\n<p>The <xref href=\"System.Threading.CancellationToken\" data-throw-if-not-resolved=\"false\"></xref> associated with this <xref href=\"System.Threading.CancellationTokenSource\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  exceptions:
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>The token source has been disposed.</p>\n"
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  nameWithType: CancellationTokenSource.Token
+- uid: System.Threading.CancellationTokenSource.Cancel
+  commentId: M:System.Threading.CancellationTokenSource.Cancel
+  id: Cancel
+  parent: System.Threading.CancellationTokenSource
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.CancellationTokenSource.Cancel()
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Threading/CancellationTokenSource.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Cancel
+    path: src/mscorlib/src/System/Threading/CancellationTokenSource.cs
+    startLine: 346
+  assemblies:
+  - System.Threading.Tasks
+  namespace: System.Threading
+  summary: "\n<p>Communicates a request for cancellation.</p>\n"
+  syntax:
+    content: public void Cancel()
+    content.vb: Public Sub Cancel
+  exceptions:
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>This <xref href=\"System.Threading.CancellationTokenSource\" data-throw-if-not-resolved=\"false\"></xref> has been disposed.</p>\n"
+  - type: System.AggregateException
+    commentId: T:System.AggregateException
+    description: "\n<p>An aggregate exception containing all the exceptions thrown by the registered callbacks on the associated <xref href=\"System.Threading.CancellationToken\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: CancellationTokenSource.Cancel()
+- uid: System.Threading.CancellationTokenSource.Cancel(System.Boolean)
+  commentId: M:System.Threading.CancellationTokenSource.Cancel(System.Boolean)
+  id: Cancel(System.Boolean)
+  parent: System.Threading.CancellationTokenSource
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.CancellationTokenSource.Cancel(System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Threading/CancellationTokenSource.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Cancel
+    path: src/mscorlib/src/System/Threading/CancellationTokenSource.cs
+    startLine: 380
+  assemblies:
+  - System.Threading.Tasks
+  namespace: System.Threading
+  summary: "\n<p>Communicates a request for cancellation, and specifies whether remaining callbacks and cancelable operations should be processed.</p>\n"
+  syntax:
+    content: public void Cancel(bool throwOnFirstException)
+    content.vb: Public Sub Cancel(throwOnFirstException As Boolean)
+    parameters:
+    - id: throwOnFirstException
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if exceptions should immediately propagate; otherwise, <strong>false</strong>.</p>\n"
+  exceptions:
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>This <xref href=\"System.Threading.CancellationTokenSource\" data-throw-if-not-resolved=\"false\"></xref> has been disposed.</p>\n"
+  - type: System.AggregateException
+    commentId: T:System.AggregateException
+    description: "\n<p>An aggregate exception containing all the exceptions thrown by the registered callbacks on the associated <xref href=\"System.Threading.CancellationToken\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: CancellationTokenSource.Cancel(Boolean)
+- uid: System.Threading.CancellationTokenSource.CancelAfter(System.Int32)
+  commentId: M:System.Threading.CancellationTokenSource.CancelAfter(System.Int32)
+  id: CancelAfter(System.Int32)
+  parent: System.Threading.CancellationTokenSource
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.CancellationTokenSource.CancelAfter(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Threading/CancellationTokenSource.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: CancelAfter
+    path: src/mscorlib/src/System/Threading/CancellationTokenSource.cs
+    startLine: 446
+  assemblies:
+  - System.Threading.Tasks
+  namespace: System.Threading
+  summary: "\n<p>Schedules a cancel operation on this <xref href=\"System.Threading.CancellationTokenSource\" data-throw-if-not-resolved=\"false\"></xref> after the specified number of milliseconds.</p>\n"
+  syntax:
+    content: public void CancelAfter(int millisecondsDelay)
+    content.vb: Public Sub CancelAfter(millisecondsDelay As Integer)
+    parameters:
+    - id: millisecondsDelay
+      type: System.Int32
+      description: "\n<p>The time span to wait before canceling this <xref href=\"System.Threading.CancellationTokenSource\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  exceptions:
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>The exception thrown when this <xref href=\"System.Threading.CancellationTokenSource\" data-throw-if-not-resolved=\"false\"></xref> has been disposed.</p>\n"
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>The exception thrown when <em>millisecondsDelay</em> is less than -1.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: CancellationTokenSource.CancelAfter(Int32)
+- uid: System.Threading.CancellationTokenSource.CancelAfter(System.TimeSpan)
+  commentId: M:System.Threading.CancellationTokenSource.CancelAfter(System.TimeSpan)
+  id: CancelAfter(System.TimeSpan)
+  parent: System.Threading.CancellationTokenSource
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.CancellationTokenSource.CancelAfter(System.TimeSpan)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Threading/CancellationTokenSource.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: CancelAfter
+    path: src/mscorlib/src/System/Threading/CancellationTokenSource.cs
+    startLine: 411
+  assemblies:
+  - System.Threading.Tasks
+  namespace: System.Threading
+  summary: "\n<p>Schedules a cancel operation on this <xref href=\"System.Threading.CancellationTokenSource\" data-throw-if-not-resolved=\"false\"></xref> after the specified time span.</p>\n"
+  syntax:
+    content: public void CancelAfter(TimeSpan delay)
+    content.vb: Public Sub CancelAfter(delay As TimeSpan)
+    parameters:
+    - id: delay
+      type: System.TimeSpan
+      description: "\n<p>The time span to wait before canceling this <xref href=\"System.Threading.CancellationTokenSource\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  exceptions:
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>The exception thrown when this <xref href=\"System.Threading.CancellationTokenSource\" data-throw-if-not-resolved=\"false\"></xref> has been disposed.</p>\n"
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>The exception that is thrown when <em>delay</em> is less than -1 or greater than Int32.MaxValue.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: CancellationTokenSource.CancelAfter(TimeSpan)
+- uid: System.Threading.CancellationTokenSource.CreateLinkedTokenSource(System.Threading.CancellationToken,System.Threading.CancellationToken)
+  commentId: M:System.Threading.CancellationTokenSource.CreateLinkedTokenSource(System.Threading.CancellationToken,System.Threading.CancellationToken)
+  id: CreateLinkedTokenSource(System.Threading.CancellationToken,System.Threading.CancellationToken)
+  parent: System.Threading.CancellationTokenSource
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.CancellationTokenSource.CreateLinkedTokenSource(System.Threading.CancellationToken, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Threading/CancellationTokenSource.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: CreateLinkedTokenSource
+    path: src/mscorlib/src/System/Threading/CancellationTokenSource.cs
+    startLine: 866
+  assemblies:
+  - System.Threading.Tasks
+  namespace: System.Threading
+  summary: "\n<p>Creates a <xref href=\"System.Threading.CancellationTokenSource\" data-throw-if-not-resolved=\"false\"></xref> that will be in the canceled state when any of the source tokens are in the canceled state.</p>\n"
+  syntax:
+    content: public static CancellationTokenSource CreateLinkedTokenSource(CancellationToken token1, CancellationToken token2)
+    content.vb: Public Shared Function CreateLinkedTokenSource(token1 As CancellationToken, token2 As CancellationToken) As CancellationTokenSource
+    parameters:
+    - id: token1
+      type: System.Threading.CancellationToken
+      description: "\n<p>The first cancellation token to observe.</p>\n"
+    - id: token2
+      type: System.Threading.CancellationToken
+      description: "\n<p>The second cancellation token to observe.</p>\n"
+    return:
+      type: System.Threading.CancellationTokenSource
+      description: "\n<p>A <xref href=\"System.Threading.CancellationTokenSource\" data-throw-if-not-resolved=\"false\"></xref> that is linked to the source tokens.</p>\n"
+  exceptions:
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>A <xref href=\"System.Threading.CancellationTokenSource\" data-throw-if-not-resolved=\"false\"></xref> associated with one of the source tokens has been disposed.</p>\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  nameWithType: CancellationTokenSource.CreateLinkedTokenSource(CancellationToken, CancellationToken)
+- uid: System.Threading.CancellationTokenSource.CreateLinkedTokenSource(System.Threading.CancellationToken[])
+  commentId: M:System.Threading.CancellationTokenSource.CreateLinkedTokenSource(System.Threading.CancellationToken[])
+  id: CreateLinkedTokenSource(System.Threading.CancellationToken[])
+  parent: System.Threading.CancellationTokenSource
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.CancellationTokenSource.CreateLinkedTokenSource(System.Threading.CancellationToken[])
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Threading/CancellationTokenSource.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: CreateLinkedTokenSource
+    path: src/mscorlib/src/System/Threading/CancellationTokenSource.cs
+    startLine: 881
+  assemblies:
+  - System.Threading.Tasks
+  namespace: System.Threading
+  summary: "\n<p>Creates a <xref href=\"System.Threading.CancellationTokenSource\" data-throw-if-not-resolved=\"false\"></xref> that will be in the canceled state when any of the source tokens in the specified array are in the canceled state.</p>\n"
+  syntax:
+    content: public static CancellationTokenSource CreateLinkedTokenSource(params CancellationToken[] tokens)
+    content.vb: Public Shared Function CreateLinkedTokenSource(ParamArray tokens As CancellationToken()) As CancellationTokenSource
+    parameters:
+    - id: tokens
+      type: System.Threading.CancellationToken[]
+      description: "\n<p>An array that contains the cancellation token instances to observe.</p>\n"
+    return:
+      type: System.Threading.CancellationTokenSource
+      description: "\n<p>A <xref href=\"System.Threading.CancellationTokenSource\" data-throw-if-not-resolved=\"false\"></xref> that is linked to the source tokens.</p>\n"
+  exceptions:
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>A <xref href=\"System.Threading.CancellationTokenSource\" data-throw-if-not-resolved=\"false\"></xref> associated with one of the source tokens has been disposed.</p>\n"
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>tokens</em> is <strong>null</strong>.</p>\n"
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>\n<em>tokens</em> is empty.</p>\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: System.Threading.CancellationTokenSource.CreateLinkedTokenSource(System.Threading.CancellationToken())
+  name.vb: CreateLinkedTokenSource(CancellationToken())
+  nameWithType: CancellationTokenSource.CreateLinkedTokenSource(CancellationToken[])
+  nameWithType.vb: CancellationTokenSource.CreateLinkedTokenSource(CancellationToken())
+- uid: System.Threading.CancellationTokenSource.Dispose
+  commentId: M:System.Threading.CancellationTokenSource.Dispose
+  id: Dispose
+  parent: System.Threading.CancellationTokenSource
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.CancellationTokenSource.Dispose()
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Threading/CancellationTokenSource.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Dispose
+    path: src/mscorlib/src/System/Threading/CancellationTokenSource.cs
+    startLine: 528
+  assemblies:
+  - System.Threading.Tasks
+  namespace: System.Threading
+  summary: "\n<p>Releases all resources used by the current instance of the <xref href=\"System.Threading.CancellationTokenSource\" data-throw-if-not-resolved=\"false\"></xref> class.</p>\n"
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose
+  implements:
+  - System.IDisposable.Dispose
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: CancellationTokenSource.Dispose()
+- uid: System.Threading.CancellationTokenSource.Dispose(System.Boolean)
+  commentId: M:System.Threading.CancellationTokenSource.Dispose(System.Boolean)
+  id: Dispose(System.Boolean)
+  parent: System.Threading.CancellationTokenSource
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.CancellationTokenSource.Dispose(System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Threading/CancellationTokenSource.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Dispose
+    path: src/mscorlib/src/System/Threading/CancellationTokenSource.cs
+    startLine: 538
+  assemblies:
+  - System.Threading.Tasks
+  namespace: System.Threading
+  summary: "\n<p>Releases the unmanaged resources used by the <xref href=\"System.Threading.CancellationTokenSource\" data-throw-if-not-resolved=\"false\"></xref> class and optionally releases the managed resources.</p>\n"
+  syntax:
+    content: protected virtual void Dispose(bool disposing)
+    content.vb: Protected Overridable Sub Dispose(disposing As Boolean)
+    parameters:
+    - id: disposing
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> to release both managed and unmanaged resources; <strong>false</strong> to release only unmanaged resources.</p>\n"
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+  nameWithType: CancellationTokenSource.Dispose(Boolean)
+references:
+- uid: System.Threading
+  isExternal: false
+  name: "XXX"
+  fullName: System.Threading
+  nameWithType: System.Threading
+  commentId: N:System.Threading
+- uid: System.Object
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Object
+  nameWithType: Object
+  commentId: T:System.Object
+- uid: System.IDisposable
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.IDisposable
+  nameWithType: IDisposable
+  commentId: T:System.IDisposable
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.ToString()
+  commentId: M:System.Object.ToString
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.Equals(Object)
+  commentId: M:System.Object.Equals(System.Object)
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.Equals(Object, Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.GetHashCode()
+  commentId: M:System.Object.GetHashCode
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.GetType()
+  commentId: M:System.Object.GetType
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.MemberwiseClone()
+  commentId: M:System.Object.MemberwiseClone
+- uid: System
+  isExternal: false
+  name: "XXX"
+  fullName: System
+  nameWithType: System
+  commentId: N:System
+- uid: System.Int32
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Int32
+  nameWithType: Int32
+  commentId: T:System.Int32
+- uid: System.TimeSpan
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.TimeSpan
+  nameWithType: TimeSpan
+  commentId: T:System.TimeSpan
+- uid: System.Boolean
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Boolean
+  nameWithType: Boolean
+  commentId: T:System.Boolean
+- uid: System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: false
+  name: "XXX"
+  fullName: System.Threading.CancellationToken
+  nameWithType: CancellationToken
+  commentId: T:System.Threading.CancellationToken
+- uid: System.Threading.CancellationTokenSource
+  parent: System.Threading
+  isExternal: false
+  name: "XXX"
+  fullName: System.Threading.CancellationTokenSource
+  nameWithType: CancellationTokenSource
+  commentId: T:System.Threading.CancellationTokenSource
+- uid: System.Threading.CancellationToken[]
+  name: "XXX"
+  fullName: System.Threading.CancellationToken[]
+  fullname.vb: System.Threading.CancellationToken()
+  name.vb: CancellationToken()
+  spec.csharp:
+  - uid: System.Threading.CancellationToken
+    name: "XXX"
+    fullName: System.Threading.CancellationToken
+  - name: 'XXX'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Threading.CancellationToken
+    name: "XXX"
+    fullName: System.Threading.CancellationToken
+  - name: "XXX"
+    fullName: ()
+  nameWithType: CancellationToken[]
+  nameWithType.vb: CancellationToken()
+- uid: System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: false
+  name: "XXX"
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: "XXX"
+    fullName: System.IDisposable.Dispose
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: "XXX"
+    fullName: System.IDisposable.Dispose
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: IDisposable.Dispose()
+  commentId: M:System.IDisposable.Dispose
+- uid: System.ArgumentOutOfRangeException
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentOutOfRangeException
+  nameWithType: ArgumentOutOfRangeException
+  commentId: T:System.ArgumentOutOfRangeException
+- uid: System.ObjectDisposedException
+  isExternal: false
+  name: "XXX"
+  fullName: System.ObjectDisposedException
+  nameWithType: ObjectDisposedException
+  commentId: T:System.ObjectDisposedException
+- uid: System.AggregateException
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.AggregateException
+  nameWithType: AggregateException
+  commentId: T:System.AggregateException
+- uid: System.ArgumentNullException
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentNullException
+  nameWithType: ArgumentNullException
+  commentId: T:System.ArgumentNullException
+- uid: System.ArgumentException
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentException
+  nameWithType: ArgumentException
+  commentId: T:System.ArgumentException

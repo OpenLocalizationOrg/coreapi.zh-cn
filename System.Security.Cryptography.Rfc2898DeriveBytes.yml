@@ -1,0 +1,925 @@
+items:
+- uid: System.Security.Cryptography.Rfc2898DeriveBytes
+  commentId: T:System.Security.Cryptography.Rfc2898DeriveBytes
+  id: Rfc2898DeriveBytes
+  parent: System.Security.Cryptography
+  children:
+  - System.Security.Cryptography.Rfc2898DeriveBytes.#ctor(System.Byte[],System.Byte[],System.Int32)
+  - System.Security.Cryptography.Rfc2898DeriveBytes.#ctor(System.String,System.Byte[])
+  - System.Security.Cryptography.Rfc2898DeriveBytes.#ctor(System.String,System.Byte[],System.Int32)
+  - System.Security.Cryptography.Rfc2898DeriveBytes.#ctor(System.String,System.Int32)
+  - System.Security.Cryptography.Rfc2898DeriveBytes.#ctor(System.String,System.Int32,System.Int32)
+  - System.Security.Cryptography.Rfc2898DeriveBytes.Dispose(System.Boolean)
+  - System.Security.Cryptography.Rfc2898DeriveBytes.GetBytes(System.Int32)
+  - System.Security.Cryptography.Rfc2898DeriveBytes.IterationCount
+  - System.Security.Cryptography.Rfc2898DeriveBytes.Reset
+  - System.Security.Cryptography.Rfc2898DeriveBytes.Salt
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.Cryptography.Rfc2898DeriveBytes
+  type: Class
+  source:
+    remote:
+      path: src/System.Security.Cryptography.Algorithms/ref/System.Security.Cryptography.Algorithms.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Rfc2898DeriveBytes
+    path: src/System.Security.Cryptography.Algorithms/ref/System.Security.Cryptography.Algorithms.cs
+    startLine: 191
+  assemblies:
+  - System.Security.Cryptography.Algorithms
+  namespace: System.Security.Cryptography
+  summary: "\n<p>Implements password-based key derivation functionality, PBKDF2, by using a pseudo-random number generator based on <xref href=\"System.Security.Cryptography.HMACSHA1\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  syntax:
+    content: 'public class Rfc2898DeriveBytes : DeriveBytes, IDisposable'
+    content.vb: >-
+      Public Class Rfc2898DeriveBytes
+          Inherits DeriveBytes
+          Implements IDisposable
+  inheritance:
+  - System.Object
+  - System.Security.Cryptography.DeriveBytes
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - System.Security.Cryptography.DeriveBytes.Dispose
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+  nameWithType: Rfc2898DeriveBytes
+- uid: System.Security.Cryptography.Rfc2898DeriveBytes.#ctor(System.Byte[],System.Byte[],System.Int32)
+  commentId: M:System.Security.Cryptography.Rfc2898DeriveBytes.#ctor(System.Byte[],System.Byte[],System.Int32)
+  id: '#ctor(System.Byte[],System.Byte[],System.Int32)'
+  parent: System.Security.Cryptography.Rfc2898DeriveBytes
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.Cryptography.Rfc2898DeriveBytes.Rfc2898DeriveBytes(System.Byte[], System.Byte[], System.Int32)
+  type: Constructor
+  source:
+    remote:
+      path: src/System.Security.Cryptography.Algorithms/ref/System.Security.Cryptography.Algorithms.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: .ctor
+    path: src/System.Security.Cryptography.Algorithms/ref/System.Security.Cryptography.Algorithms.cs
+    startLine: 193
+  assemblies:
+  - System.Security.Cryptography.Algorithms
+  namespace: System.Security.Cryptography
+  summary: "\n<p>Initializes a new instance of the <xref href=\"System.Security.Cryptography.Rfc2898DeriveBytes\" data-throw-if-not-resolved=\"false\"></xref> class using a password, a salt, and number of iterations to derive the key.</p>\n"
+  syntax:
+    content: public Rfc2898DeriveBytes(byte[] password, byte[] salt, int iterations)
+    content.vb: Public Sub New(password As Byte(), salt As Byte(), iterations As Integer)
+    parameters:
+    - id: password
+      type: System.Byte[]
+      description: "\n<p>The password used to derive the key. </p>\n"
+    - id: salt
+      type: System.Byte[]
+      description: "\n<p>The key salt used to derive the key.</p>\n"
+    - id: iterations
+      type: System.Int32
+      description: "\n<p>The number of iterations for the operation. </p>\n"
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>The specified salt size is smaller than 8 bytes or the iteration count is less than 1. </p>\n"
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>The password or salt is <strong>null</strong>. </p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: System.Security.Cryptography.Rfc2898DeriveBytes.Rfc2898DeriveBytes(System.Byte(), System.Byte(), System.Int32)
+  name.vb: Rfc2898DeriveBytes(Byte(), Byte(), Int32)
+  nameWithType: Rfc2898DeriveBytes.Rfc2898DeriveBytes(Byte[], Byte[], Int32)
+  nameWithType.vb: Rfc2898DeriveBytes.Rfc2898DeriveBytes(Byte(), Byte(), Int32)
+- uid: System.Security.Cryptography.Rfc2898DeriveBytes.#ctor(System.String,System.Byte[])
+  commentId: M:System.Security.Cryptography.Rfc2898DeriveBytes.#ctor(System.String,System.Byte[])
+  id: '#ctor(System.String,System.Byte[])'
+  parent: System.Security.Cryptography.Rfc2898DeriveBytes
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.Cryptography.Rfc2898DeriveBytes.Rfc2898DeriveBytes(System.String, System.Byte[])
+  type: Constructor
+  source:
+    remote:
+      path: src/System.Security.Cryptography.Algorithms/ref/System.Security.Cryptography.Algorithms.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: .ctor
+    path: src/System.Security.Cryptography.Algorithms/ref/System.Security.Cryptography.Algorithms.cs
+    startLine: 194
+  assemblies:
+  - System.Security.Cryptography.Algorithms
+  namespace: System.Security.Cryptography
+  summary: "\n<p>Initializes a new instance of the <xref href=\"System.Security.Cryptography.Rfc2898DeriveBytes\" data-throw-if-not-resolved=\"false\"></xref> class using a password and salt to derive the key.</p>\n"
+  syntax:
+    content: public Rfc2898DeriveBytes(string password, byte[] salt)
+    content.vb: Public Sub New(password As String, salt As Byte())
+    parameters:
+    - id: password
+      type: System.String
+      description: "\n<p>The password used to derive the key. </p>\n"
+    - id: salt
+      type: System.Byte[]
+      description: "\n<p>The key salt used to derive the key. </p>\n"
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>The specified salt size is smaller than 8 bytes or the iteration count is less than 1. </p>\n"
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>The password or salt is <strong>null</strong>. </p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: System.Security.Cryptography.Rfc2898DeriveBytes.Rfc2898DeriveBytes(System.String, System.Byte())
+  name.vb: Rfc2898DeriveBytes(String, Byte())
+  nameWithType: Rfc2898DeriveBytes.Rfc2898DeriveBytes(String, Byte[])
+  nameWithType.vb: Rfc2898DeriveBytes.Rfc2898DeriveBytes(String, Byte())
+- uid: System.Security.Cryptography.Rfc2898DeriveBytes.#ctor(System.String,System.Byte[],System.Int32)
+  commentId: M:System.Security.Cryptography.Rfc2898DeriveBytes.#ctor(System.String,System.Byte[],System.Int32)
+  id: '#ctor(System.String,System.Byte[],System.Int32)'
+  parent: System.Security.Cryptography.Rfc2898DeriveBytes
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.Cryptography.Rfc2898DeriveBytes.Rfc2898DeriveBytes(System.String, System.Byte[], System.Int32)
+  type: Constructor
+  source:
+    remote:
+      path: src/System.Security.Cryptography.Algorithms/ref/System.Security.Cryptography.Algorithms.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: .ctor
+    path: src/System.Security.Cryptography.Algorithms/ref/System.Security.Cryptography.Algorithms.cs
+    startLine: 195
+  assemblies:
+  - System.Security.Cryptography.Algorithms
+  namespace: System.Security.Cryptography
+  summary: "\n<p>Initializes a new instance of the <xref href=\"System.Security.Cryptography.Rfc2898DeriveBytes\" data-throw-if-not-resolved=\"false\"></xref> class using a password, a salt, and number of iterations to derive the key.</p>\n"
+  syntax:
+    content: public Rfc2898DeriveBytes(string password, byte[] salt, int iterations)
+    content.vb: Public Sub New(password As String, salt As Byte(), iterations As Integer)
+    parameters:
+    - id: password
+      type: System.String
+      description: "\n<p>The password used to derive the key. </p>\n"
+    - id: salt
+      type: System.Byte[]
+      description: "\n<p>The key salt used to derive the key. </p>\n"
+    - id: iterations
+      type: System.Int32
+      description: "\n<p>The number of iterations for the operation. </p>\n"
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>The specified salt size is smaller than 8 bytes or the iteration count is less than 1. </p>\n"
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>The password or salt is <strong>null</strong>. </p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: System.Security.Cryptography.Rfc2898DeriveBytes.Rfc2898DeriveBytes(System.String, System.Byte(), System.Int32)
+  name.vb: Rfc2898DeriveBytes(String, Byte(), Int32)
+  nameWithType: Rfc2898DeriveBytes.Rfc2898DeriveBytes(String, Byte[], Int32)
+  nameWithType.vb: Rfc2898DeriveBytes.Rfc2898DeriveBytes(String, Byte(), Int32)
+- uid: System.Security.Cryptography.Rfc2898DeriveBytes.#ctor(System.String,System.Int32)
+  commentId: M:System.Security.Cryptography.Rfc2898DeriveBytes.#ctor(System.String,System.Int32)
+  id: '#ctor(System.String,System.Int32)'
+  parent: System.Security.Cryptography.Rfc2898DeriveBytes
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.Cryptography.Rfc2898DeriveBytes.Rfc2898DeriveBytes(System.String, System.Int32)
+  type: Constructor
+  source:
+    remote:
+      path: src/System.Security.Cryptography.Algorithms/ref/System.Security.Cryptography.Algorithms.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: .ctor
+    path: src/System.Security.Cryptography.Algorithms/ref/System.Security.Cryptography.Algorithms.cs
+    startLine: 196
+  assemblies:
+  - System.Security.Cryptography.Algorithms
+  namespace: System.Security.Cryptography
+  summary: "\n<p>Initializes a new instance of the <xref href=\"System.Security.Cryptography.Rfc2898DeriveBytes\" data-throw-if-not-resolved=\"false\"></xref> class using the password and salt size to derive the key.</p>\n"
+  syntax:
+    content: public Rfc2898DeriveBytes(string password, int saltSize)
+    content.vb: Public Sub New(password As String, saltSize As Integer)
+    parameters:
+    - id: password
+      type: System.String
+      description: "\n<p>The password used to derive the key. </p>\n"
+    - id: saltSize
+      type: System.Int32
+      description: "\n<p>The size of the random salt that you want the class to generate. </p>\n"
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>The specified salt size is smaller than 8 bytes. </p>\n"
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>The password or salt is <strong>null</strong>. </p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: Rfc2898DeriveBytes.Rfc2898DeriveBytes(String, Int32)
+- uid: System.Security.Cryptography.Rfc2898DeriveBytes.#ctor(System.String,System.Int32,System.Int32)
+  commentId: M:System.Security.Cryptography.Rfc2898DeriveBytes.#ctor(System.String,System.Int32,System.Int32)
+  id: '#ctor(System.String,System.Int32,System.Int32)'
+  parent: System.Security.Cryptography.Rfc2898DeriveBytes
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.Cryptography.Rfc2898DeriveBytes.Rfc2898DeriveBytes(System.String, System.Int32, System.Int32)
+  type: Constructor
+  source:
+    remote:
+      path: src/System.Security.Cryptography.Algorithms/ref/System.Security.Cryptography.Algorithms.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: .ctor
+    path: src/System.Security.Cryptography.Algorithms/ref/System.Security.Cryptography.Algorithms.cs
+    startLine: 197
+  assemblies:
+  - System.Security.Cryptography.Algorithms
+  namespace: System.Security.Cryptography
+  summary: "\n<p>Initializes a new instance of the <xref href=\"System.Security.Cryptography.Rfc2898DeriveBytes\" data-throw-if-not-resolved=\"false\"></xref> class using a password, a salt size, and number of iterations to derive the key.</p>\n"
+  syntax:
+    content: public Rfc2898DeriveBytes(string password, int saltSize, int iterations)
+    content.vb: Public Sub New(password As String, saltSize As Integer, iterations As Integer)
+    parameters:
+    - id: password
+      type: System.String
+      description: "\n<p>The password used to derive the key. </p>\n"
+    - id: saltSize
+      type: System.Int32
+      description: "\n<p>The size of the random salt that you want the class to generate. </p>\n"
+    - id: iterations
+      type: System.Int32
+      description: "\n<p>The number of iterations for the operation. </p>\n"
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>The specified salt size is smaller than 8 bytes or the iteration count is less than 1. </p>\n"
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>The password or salt is <strong>null</strong>. </p>\n"
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>iterations </em>is out of range. This parameter requires a non-negative number.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: Rfc2898DeriveBytes.Rfc2898DeriveBytes(String, Int32, Int32)
+- uid: System.Security.Cryptography.Rfc2898DeriveBytes.IterationCount
+  commentId: P:System.Security.Cryptography.Rfc2898DeriveBytes.IterationCount
+  id: IterationCount
+  parent: System.Security.Cryptography.Rfc2898DeriveBytes
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.Cryptography.Rfc2898DeriveBytes.IterationCount
+  type: Property
+  source:
+    remote:
+      path: src/System.Security.Cryptography.Algorithms/ref/System.Security.Cryptography.Algorithms.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: IterationCount
+    path: src/System.Security.Cryptography.Algorithms/ref/System.Security.Cryptography.Algorithms.cs
+    startLine: 198
+  assemblies:
+  - System.Security.Cryptography.Algorithms
+  namespace: System.Security.Cryptography
+  summary: "\n<p>Gets or sets the number of iterations for the operation.</p>\n"
+  syntax:
+    content: public int IterationCount { get; set; }
+    content.vb: Public Property IterationCount As Integer
+    parameters: []
+    return:
+      type: System.Int32
+      description: "\n<p>The number of iterations for the operation.</p>\n"
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>The number of iterations is less than 1. </p>\n"
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  nameWithType: Rfc2898DeriveBytes.IterationCount
+- uid: System.Security.Cryptography.Rfc2898DeriveBytes.Salt
+  commentId: P:System.Security.Cryptography.Rfc2898DeriveBytes.Salt
+  id: Salt
+  parent: System.Security.Cryptography.Rfc2898DeriveBytes
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.Cryptography.Rfc2898DeriveBytes.Salt
+  type: Property
+  source:
+    remote:
+      path: src/System.Security.Cryptography.Algorithms/ref/System.Security.Cryptography.Algorithms.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Salt
+    path: src/System.Security.Cryptography.Algorithms/ref/System.Security.Cryptography.Algorithms.cs
+    startLine: 199
+  assemblies:
+  - System.Security.Cryptography.Algorithms
+  namespace: System.Security.Cryptography
+  summary: "\n<p>Gets or sets the key salt value for the operation.</p>\n"
+  syntax:
+    content: public byte[] Salt { get; set; }
+    content.vb: Public Property Salt As Byte()
+    parameters: []
+    return:
+      type: System.Byte[]
+      description: "\n<p>The key salt value for the operation.</p>\n"
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>The specified salt size is smaller than 8 bytes. </p>\n"
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>The salt is <strong>null</strong>. </p>\n"
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  nameWithType: Rfc2898DeriveBytes.Salt
+- uid: System.Security.Cryptography.Rfc2898DeriveBytes.Dispose(System.Boolean)
+  commentId: M:System.Security.Cryptography.Rfc2898DeriveBytes.Dispose(System.Boolean)
+  id: Dispose(System.Boolean)
+  parent: System.Security.Cryptography.Rfc2898DeriveBytes
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.Cryptography.Rfc2898DeriveBytes.Dispose(System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/System.Security.Cryptography.Algorithms/ref/System.Security.Cryptography.Algorithms.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Dispose
+    path: src/System.Security.Cryptography.Algorithms/ref/System.Security.Cryptography.Algorithms.cs
+    startLine: 200
+  assemblies:
+  - System.Security.Cryptography.Algorithms
+  namespace: System.Security.Cryptography
+  summary: "\n<p>Releases the unmanaged resources used by the <xref href=\"System.Security.Cryptography.Rfc2898DeriveBytes\" data-throw-if-not-resolved=\"false\"></xref> class and optionally releases the managed resources.</p>\n"
+  syntax:
+    content: protected override void Dispose(bool disposing)
+    content.vb: Protected Overrides Sub Dispose(disposing As Boolean)
+    parameters:
+    - id: disposing
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> to release both managed and unmanaged resources; <strong>false</strong> to release only unmanaged resources. </p>\n"
+  overridden: System.Security.Cryptography.DeriveBytes.Dispose(System.Boolean)
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+  nameWithType: Rfc2898DeriveBytes.Dispose(Boolean)
+- uid: System.Security.Cryptography.Rfc2898DeriveBytes.GetBytes(System.Int32)
+  commentId: M:System.Security.Cryptography.Rfc2898DeriveBytes.GetBytes(System.Int32)
+  id: GetBytes(System.Int32)
+  parent: System.Security.Cryptography.Rfc2898DeriveBytes
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.Cryptography.Rfc2898DeriveBytes.GetBytes(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/System.Security.Cryptography.Algorithms/ref/System.Security.Cryptography.Algorithms.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: GetBytes
+    path: src/System.Security.Cryptography.Algorithms/ref/System.Security.Cryptography.Algorithms.cs
+    startLine: 201
+  assemblies:
+  - System.Security.Cryptography.Algorithms
+  namespace: System.Security.Cryptography
+  summary: "\n<p>Returns the pseudo-random key for this object.</p>\n"
+  syntax:
+    content: public override byte[] GetBytes(int cb)
+    content.vb: Public Overrides Function GetBytes(cb As Integer) As Byte()
+    parameters:
+    - id: cb
+      type: System.Int32
+      description: "\n<p>The number of pseudo-random key bytes to generate. </p>\n"
+    return:
+      type: System.Byte[]
+      description: "\n<p>A byte array filled with pseudo-random key bytes.</p>\n"
+  overridden: System.Security.Cryptography.DeriveBytes.GetBytes(System.Int32)
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>cb </em>is out of range. This parameter requires a non-negative number.</p>\n"
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  nameWithType: Rfc2898DeriveBytes.GetBytes(Int32)
+- uid: System.Security.Cryptography.Rfc2898DeriveBytes.Reset
+  commentId: M:System.Security.Cryptography.Rfc2898DeriveBytes.Reset
+  id: Reset
+  parent: System.Security.Cryptography.Rfc2898DeriveBytes
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.Cryptography.Rfc2898DeriveBytes.Reset()
+  type: Method
+  source:
+    remote:
+      path: src/System.Security.Cryptography.Algorithms/ref/System.Security.Cryptography.Algorithms.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Reset
+    path: src/System.Security.Cryptography.Algorithms/ref/System.Security.Cryptography.Algorithms.cs
+    startLine: 202
+  assemblies:
+  - System.Security.Cryptography.Algorithms
+  namespace: System.Security.Cryptography
+  summary: "\n<p>Resets the state of the operation.</p>\n"
+  syntax:
+    content: public override void Reset()
+    content.vb: Public Overrides Sub Reset
+  overridden: System.Security.Cryptography.DeriveBytes.Reset
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  nameWithType: Rfc2898DeriveBytes.Reset()
+references:
+- uid: System.Security.Cryptography
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.Cryptography
+  commentId: N:System.Security.Cryptography
+  nameWithType: System.Security.Cryptography
+- uid: System.Object
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Object
+  commentId: T:System.Object
+  nameWithType: Object
+- uid: System.Security.Cryptography.DeriveBytes
+  parent: System.Security.Cryptography
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.Cryptography.DeriveBytes
+  commentId: T:System.Security.Cryptography.DeriveBytes
+  nameWithType: DeriveBytes
+- uid: System.IDisposable
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.IDisposable
+  commentId: T:System.IDisposable
+  nameWithType: IDisposable
+- uid: System.Security.Cryptography.DeriveBytes.Dispose
+  parent: System.Security.Cryptography.DeriveBytes
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.Cryptography.DeriveBytes.Dispose()
+  spec.csharp:
+  - uid: System.Security.Cryptography.DeriveBytes.Dispose
+    name: "XXX"
+    fullName: System.Security.Cryptography.DeriveBytes.Dispose
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Security.Cryptography.DeriveBytes.Dispose
+    name: "XXX"
+    fullName: System.Security.Cryptography.DeriveBytes.Dispose
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Security.Cryptography.DeriveBytes.Dispose
+  nameWithType: DeriveBytes.Dispose()
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.ToString
+  nameWithType: Object.ToString()
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.Equals(System.Object)
+  nameWithType: Object.Equals(Object)
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  nameWithType: Object.Equals(Object, Object)
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.GetHashCode
+  nameWithType: Object.GetHashCode()
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.GetType
+  nameWithType: Object.GetType()
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.MemberwiseClone
+  nameWithType: Object.MemberwiseClone()
+- uid: System
+  isExternal: false
+  name: "XXX"
+  fullName: System
+  commentId: N:System
+  nameWithType: System
+- uid: System.Byte[]
+  name: "XXX"
+  fullName: System.Byte[]
+  fullname.vb: System.Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: "XXX"
+    fullName: System.Byte
+    isExternal: true
+  - name: 'XXX'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: "XXX"
+    fullName: System.Byte
+    isExternal: true
+  - name: "XXX"
+    fullName: ()
+  nameWithType: Byte[]
+  nameWithType.vb: Byte()
+- uid: System.Int32
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Int32
+  commentId: T:System.Int32
+  nameWithType: Int32
+- uid: System.String
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.String
+  commentId: T:System.String
+  nameWithType: String
+- uid: System.Security.Cryptography.DeriveBytes.Dispose(System.Boolean)
+  parent: System.Security.Cryptography.DeriveBytes
+  isExternal: true
+  name: "XXX"
+  fullName: System.Security.Cryptography.DeriveBytes.Dispose(System.Boolean)
+  spec.csharp:
+  - uid: System.Security.Cryptography.DeriveBytes.Dispose(System.Boolean)
+    name: "XXX"
+    fullName: System.Security.Cryptography.DeriveBytes.Dispose
+  - name: "XXX"
+    fullName: (
+  - uid: System.Boolean
+    name: "XXX"
+    fullName: System.Boolean
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Security.Cryptography.DeriveBytes.Dispose(System.Boolean)
+    name: "XXX"
+    fullName: System.Security.Cryptography.DeriveBytes.Dispose
+  - name: "XXX"
+    fullName: (
+  - uid: System.Boolean
+    name: "XXX"
+    fullName: System.Boolean
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Security.Cryptography.DeriveBytes.Dispose(System.Boolean)
+  nameWithType: DeriveBytes.Dispose(Boolean)
+- uid: System.Boolean
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Boolean
+  commentId: T:System.Boolean
+  nameWithType: Boolean
+- uid: System.Security.Cryptography.DeriveBytes.GetBytes(System.Int32)
+  parent: System.Security.Cryptography.DeriveBytes
+  isExternal: true
+  name: "XXX"
+  fullName: System.Security.Cryptography.DeriveBytes.GetBytes(System.Int32)
+  spec.csharp:
+  - uid: System.Security.Cryptography.DeriveBytes.GetBytes(System.Int32)
+    name: "XXX"
+    fullName: System.Security.Cryptography.DeriveBytes.GetBytes
+  - name: "XXX"
+    fullName: (
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Security.Cryptography.DeriveBytes.GetBytes(System.Int32)
+    name: "XXX"
+    fullName: System.Security.Cryptography.DeriveBytes.GetBytes
+  - name: "XXX"
+    fullName: (
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Security.Cryptography.DeriveBytes.GetBytes(System.Int32)
+  nameWithType: DeriveBytes.GetBytes(Int32)
+- uid: System.Security.Cryptography.DeriveBytes.Reset
+  parent: System.Security.Cryptography.DeriveBytes
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.Cryptography.DeriveBytes.Reset()
+  spec.csharp:
+  - uid: System.Security.Cryptography.DeriveBytes.Reset
+    name: "XXX"
+    fullName: System.Security.Cryptography.DeriveBytes.Reset
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Security.Cryptography.DeriveBytes.Reset
+    name: "XXX"
+    fullName: System.Security.Cryptography.DeriveBytes.Reset
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Security.Cryptography.DeriveBytes.Reset
+  nameWithType: DeriveBytes.Reset()
+- uid: System.ArgumentException
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentException
+  nameWithType: ArgumentException
+  commentId: T:System.ArgumentException
+- uid: System.ArgumentNullException
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentNullException
+  nameWithType: ArgumentNullException
+  commentId: T:System.ArgumentNullException
+- uid: System.ArgumentOutOfRangeException
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentOutOfRangeException
+  nameWithType: ArgumentOutOfRangeException
+  commentId: T:System.ArgumentOutOfRangeException

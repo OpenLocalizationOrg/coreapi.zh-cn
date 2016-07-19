@@ -1,0 +1,696 @@
+items:
+- uid: System.Net.Http.DelegatingHandler
+  commentId: T:System.Net.Http.DelegatingHandler
+  id: DelegatingHandler
+  parent: System.Net.Http
+  children:
+  - System.Net.Http.DelegatingHandler.#ctor
+  - System.Net.Http.DelegatingHandler.#ctor(System.Net.Http.HttpMessageHandler)
+  - System.Net.Http.DelegatingHandler.Dispose(System.Boolean)
+  - System.Net.Http.DelegatingHandler.InnerHandler
+  - System.Net.Http.DelegatingHandler.SendAsync(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Net.Http.DelegatingHandler
+  type: Class
+  source:
+    remote:
+      path: src/System.Net.Http/ref/System.Net.Http.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: DelegatingHandler
+    path: src/System.Net.Http/ref/System.Net.Http.cs
+    startLine: 23
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http
+  summary: "\n<p>A type for HTTP handlers that delegate the processing of HTTP response messages to another handler, called the inner handler.</p>\n"
+  syntax:
+    content: 'public abstract class DelegatingHandler : HttpMessageHandler, IDisposable'
+    content.vb: >-
+      Public MustInherit Class DelegatingHandler
+          Inherits HttpMessageHandler
+          Implements IDisposable
+  inheritance:
+  - System.Object
+  - System.Net.Http.HttpMessageHandler
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - System.Net.Http.HttpMessageHandler.Dispose
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+  nameWithType: DelegatingHandler
+- uid: System.Net.Http.DelegatingHandler.#ctor
+  commentId: M:System.Net.Http.DelegatingHandler.#ctor
+  id: '#ctor'
+  parent: System.Net.Http.DelegatingHandler
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Net.Http.DelegatingHandler.DelegatingHandler()
+  type: Constructor
+  source:
+    remote:
+      path: src/System.Net.Http/ref/System.Net.Http.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: .ctor
+    path: src/System.Net.Http/ref/System.Net.Http.cs
+    startLine: 25
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http
+  summary: "\n<p>Creates a new instance of the <xref href=\"System.Net.Http.DelegatingHandler\" data-throw-if-not-resolved=\"false\"></xref> class.</p>\n"
+  syntax:
+    content: protected DelegatingHandler()
+    content.vb: Protected Sub New
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  nameWithType: DelegatingHandler.DelegatingHandler()
+- uid: System.Net.Http.DelegatingHandler.#ctor(System.Net.Http.HttpMessageHandler)
+  commentId: M:System.Net.Http.DelegatingHandler.#ctor(System.Net.Http.HttpMessageHandler)
+  id: '#ctor(System.Net.Http.HttpMessageHandler)'
+  parent: System.Net.Http.DelegatingHandler
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Net.Http.DelegatingHandler.DelegatingHandler(System.Net.Http.HttpMessageHandler)
+  type: Constructor
+  source:
+    remote:
+      path: src/System.Net.Http/ref/System.Net.Http.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: .ctor
+    path: src/System.Net.Http/ref/System.Net.Http.cs
+    startLine: 26
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http
+  summary: "\n<p>Creates a new instance of the <xref href=\"System.Net.Http.DelegatingHandler\" data-throw-if-not-resolved=\"false\"></xref> class with a specific inner handler.</p>\n"
+  syntax:
+    content: protected DelegatingHandler(HttpMessageHandler innerHandler)
+    content.vb: Protected Sub New(innerHandler As HttpMessageHandler)
+    parameters:
+    - id: innerHandler
+      type: System.Net.Http.HttpMessageHandler
+      description: "\n<p>The inner handler which is responsible for processing the HTTP response messages.</p>\n"
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  nameWithType: DelegatingHandler.DelegatingHandler(HttpMessageHandler)
+- uid: System.Net.Http.DelegatingHandler.InnerHandler
+  commentId: P:System.Net.Http.DelegatingHandler.InnerHandler
+  id: InnerHandler
+  parent: System.Net.Http.DelegatingHandler
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Net.Http.DelegatingHandler.InnerHandler
+  type: Property
+  source:
+    remote:
+      path: src/System.Net.Http/ref/System.Net.Http.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: InnerHandler
+    path: src/System.Net.Http/ref/System.Net.Http.cs
+    startLine: 27
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http
+  summary: "\n<p>Gets or sets the inner handler which processes the HTTP response messages.</p>\n"
+  syntax:
+    content: public HttpMessageHandler InnerHandler { get; set; }
+    content.vb: Public Property InnerHandler As HttpMessageHandler
+    parameters: []
+    return:
+      type: System.Net.Http.HttpMessageHandler
+      description: "\n<p>Returns <xref href=\"System.Net.Http.HttpMessageHandler\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n<p>The inner handler for HTTP response messages.</p>\n"
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  nameWithType: DelegatingHandler.InnerHandler
+- uid: System.Net.Http.DelegatingHandler.Dispose(System.Boolean)
+  commentId: M:System.Net.Http.DelegatingHandler.Dispose(System.Boolean)
+  id: Dispose(System.Boolean)
+  parent: System.Net.Http.DelegatingHandler
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Net.Http.DelegatingHandler.Dispose(System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/System.Net.Http/ref/System.Net.Http.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Dispose
+    path: src/System.Net.Http/ref/System.Net.Http.cs
+    startLine: 28
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http
+  summary: "\n<p>Releases the unmanaged resources used by the <xref href=\"System.Net.Http.DelegatingHandler\" data-throw-if-not-resolved=\"false\"></xref>, and optionally disposes of the managed resources.</p>\n"
+  syntax:
+    content: protected override void Dispose(bool disposing)
+    content.vb: Protected Overrides Sub Dispose(disposing As Boolean)
+    parameters:
+    - id: disposing
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> to release both managed and unmanaged resources; <strong>false</strong> to releases only unmanaged resources. </p>\n"
+  overridden: System.Net.Http.HttpMessageHandler.Dispose(System.Boolean)
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+  nameWithType: DelegatingHandler.Dispose(Boolean)
+- uid: System.Net.Http.DelegatingHandler.SendAsync(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)
+  commentId: M:System.Net.Http.DelegatingHandler.SendAsync(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)
+  id: SendAsync(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)
+  parent: System.Net.Http.DelegatingHandler
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Net.Http.DelegatingHandler.SendAsync(System.Net.Http.HttpRequestMessage, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/System.Net.Http/ref/System.Net.Http.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: SendAsync
+    path: src/System.Net.Http/ref/System.Net.Http.cs
+    startLine: 29
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http
+  summary: "\n<p>Sends an HTTP request to the inner handler to send to the server as an asynchronous operation.</p>\n"
+  syntax:
+    content: protected override Task<HttpResponseMessage> SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+    content.vb: Protected Overrides Function SendAsync(request As HttpRequestMessage, cancellationToken As CancellationToken) As Task(Of HttpResponseMessage)
+    parameters:
+    - id: request
+      type: System.Net.Http.HttpRequestMessage
+      description: "\n<p>The HTTP request message to send to the server.</p>\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\n<p>A cancellation token to cancel operation.</p>\n"
+    return:
+      type: System.Threading.Tasks.Task{System.Net.Http.HttpResponseMessage}
+      description: "\n<p>Returns <xref href=\"System.Threading.Tasks.Task`1\" data-throw-if-not-resolved=\"false\"></xref>. </p>\n<p>The task object representing the asynchronous operation.</p>\n"
+  overridden: System.Net.Http.HttpMessageHandler.SendAsync(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>The <em>request</em> was <strong>null</strong>.</p>\n"
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+  nameWithType: DelegatingHandler.SendAsync(HttpRequestMessage, CancellationToken)
+references:
+- uid: System.Net.Http
+  isExternal: false
+  name: "XXX"
+  fullName: System.Net.Http
+  commentId: N:System.Net.Http
+  nameWithType: System.Net.Http
+- uid: System.Object
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Object
+  commentId: T:System.Object
+  nameWithType: Object
+- uid: System.Net.Http.HttpMessageHandler
+  parent: System.Net.Http
+  isExternal: false
+  name: "XXX"
+  fullName: System.Net.Http.HttpMessageHandler
+  commentId: T:System.Net.Http.HttpMessageHandler
+  nameWithType: HttpMessageHandler
+- uid: System.IDisposable
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.IDisposable
+  commentId: T:System.IDisposable
+  nameWithType: IDisposable
+- uid: System.Net.Http.HttpMessageHandler.Dispose
+  parent: System.Net.Http.HttpMessageHandler
+  isExternal: false
+  name: "XXX"
+  fullName: System.Net.Http.HttpMessageHandler.Dispose()
+  spec.csharp:
+  - uid: System.Net.Http.HttpMessageHandler.Dispose
+    name: "XXX"
+    fullName: System.Net.Http.HttpMessageHandler.Dispose
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Net.Http.HttpMessageHandler.Dispose
+    name: "XXX"
+    fullName: System.Net.Http.HttpMessageHandler.Dispose
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Net.Http.HttpMessageHandler.Dispose
+  nameWithType: HttpMessageHandler.Dispose()
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.ToString
+  nameWithType: Object.ToString()
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.Equals(System.Object)
+  nameWithType: Object.Equals(Object)
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  nameWithType: Object.Equals(Object, Object)
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.GetHashCode
+  nameWithType: Object.GetHashCode()
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.GetType
+  nameWithType: Object.GetType()
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.MemberwiseClone
+  nameWithType: Object.MemberwiseClone()
+- uid: System
+  isExternal: false
+  name: "XXX"
+  fullName: System
+  commentId: N:System
+  nameWithType: System
+- uid: System.Net.Http.HttpMessageHandler.Dispose(System.Boolean)
+  parent: System.Net.Http.HttpMessageHandler
+  isExternal: true
+  name: "XXX"
+  fullName: System.Net.Http.HttpMessageHandler.Dispose(System.Boolean)
+  spec.csharp:
+  - uid: System.Net.Http.HttpMessageHandler.Dispose(System.Boolean)
+    name: "XXX"
+    fullName: System.Net.Http.HttpMessageHandler.Dispose
+  - name: "XXX"
+    fullName: (
+  - uid: System.Boolean
+    name: "XXX"
+    fullName: System.Boolean
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Net.Http.HttpMessageHandler.Dispose(System.Boolean)
+    name: "XXX"
+    fullName: System.Net.Http.HttpMessageHandler.Dispose
+  - name: "XXX"
+    fullName: (
+  - uid: System.Boolean
+    name: "XXX"
+    fullName: System.Boolean
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Net.Http.HttpMessageHandler.Dispose(System.Boolean)
+  nameWithType: HttpMessageHandler.Dispose(Boolean)
+- uid: System.Boolean
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Boolean
+  commentId: T:System.Boolean
+  nameWithType: Boolean
+- uid: System.Net.Http.HttpMessageHandler.SendAsync(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)
+  parent: System.Net.Http.HttpMessageHandler
+  isExternal: true
+  name: "XXX"
+  fullName: System.Net.Http.HttpMessageHandler.SendAsync(System.Net.Http.HttpRequestMessage, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: System.Net.Http.HttpMessageHandler.SendAsync(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)
+    name: "XXX"
+    fullName: System.Net.Http.HttpMessageHandler.SendAsync
+  - name: "XXX"
+    fullName: (
+  - uid: System.Net.Http.HttpRequestMessage
+    name: "XXX"
+    fullName: System.Net.Http.HttpRequestMessage
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: "XXX"
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Net.Http.HttpMessageHandler.SendAsync(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)
+    name: "XXX"
+    fullName: System.Net.Http.HttpMessageHandler.SendAsync
+  - name: "XXX"
+    fullName: (
+  - uid: System.Net.Http.HttpRequestMessage
+    name: "XXX"
+    fullName: System.Net.Http.HttpRequestMessage
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: "XXX"
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Net.Http.HttpMessageHandler.SendAsync(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)
+  nameWithType: HttpMessageHandler.SendAsync(HttpRequestMessage, CancellationToken)
+- uid: System.Net.Http.HttpRequestMessage
+  parent: System.Net.Http
+  isExternal: false
+  name: "XXX"
+  fullName: System.Net.Http.HttpRequestMessage
+  commentId: T:System.Net.Http.HttpRequestMessage
+  nameWithType: HttpRequestMessage
+- uid: System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: false
+  name: "XXX"
+  fullName: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  nameWithType: CancellationToken
+- uid: System.Threading.Tasks.Task{System.Net.Http.HttpResponseMessage}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: "XXX"
+  fullName: System.Threading.Tasks.Task<System.Net.Http.HttpResponseMessage>
+  fullname.vb: System.Threading.Tasks.Task(Of System.Net.Http.HttpResponseMessage)
+  name.vb: Task(Of HttpResponseMessage)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: "XXX"
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: "<"
+    fullName: <
+  - uid: System.Net.Http.HttpResponseMessage
+    name: "XXX"
+    fullName: System.Net.Http.HttpResponseMessage
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: "XXX"
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: 'XXX '
+    fullName: '(Of '
+  - uid: System.Net.Http.HttpResponseMessage
+    name: "XXX"
+    fullName: System.Net.Http.HttpResponseMessage
+  - name: "XXX"
+    fullName: )
+  commentId: T:System.Threading.Tasks.Task{System.Net.Http.HttpResponseMessage}
+  nameWithType: Task<HttpResponseMessage>
+  nameWithType.vb: Task(Of HttpResponseMessage)
+- uid: System.Threading
+  isExternal: false
+  name: "XXX"
+  fullName: System.Threading
+  commentId: N:System.Threading
+  nameWithType: System.Threading
+- uid: System.Threading.Tasks.Task`1
+  isExternal: false
+  name: "XXX"
+  fullName: System.Threading.Tasks.Task<TResult>
+  fullname.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: "XXX"
+    fullName: System.Threading.Tasks.Task
+  - name: "<"
+    fullName: <
+  - name: "XXX"
+    fullName: TResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: "XXX"
+    fullName: System.Threading.Tasks.Task
+  - name: 'XXX '
+    fullName: '(Of '
+  - name: "XXX"
+    fullName: TResult
+  - name: "XXX"
+    fullName: )
+  commentId: T:System.Threading.Tasks.Task`1
+  nameWithType: Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+- uid: System.Threading.Tasks
+  isExternal: false
+  name: "XXX"
+  fullName: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+- uid: System.ArgumentNullException
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentNullException
+  nameWithType: ArgumentNullException
+  commentId: T:System.ArgumentNullException

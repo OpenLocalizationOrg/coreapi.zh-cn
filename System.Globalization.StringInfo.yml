@@ -1,0 +1,856 @@
+items:
+- uid: System.Globalization.StringInfo
+  commentId: T:System.Globalization.StringInfo
+  id: StringInfo
+  parent: System.Globalization
+  children:
+  - System.Globalization.StringInfo.#ctor
+  - System.Globalization.StringInfo.#ctor(System.String)
+  - System.Globalization.StringInfo.Equals(System.Object)
+  - System.Globalization.StringInfo.GetHashCode
+  - System.Globalization.StringInfo.GetNextTextElement(System.String)
+  - System.Globalization.StringInfo.GetNextTextElement(System.String,System.Int32)
+  - System.Globalization.StringInfo.GetTextElementEnumerator(System.String)
+  - System.Globalization.StringInfo.GetTextElementEnumerator(System.String,System.Int32)
+  - System.Globalization.StringInfo.LengthInTextElements
+  - System.Globalization.StringInfo.ParseCombiningCharacters(System.String)
+  - System.Globalization.StringInfo.String
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Globalization.StringInfo
+  type: Class
+  source:
+    remote:
+      path: src/mscorlib/src/System/Globalization/StringInfo.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: StringInfo
+    path: src/mscorlib/src/System/Globalization/StringInfo.cs
+    startLine: 22
+  assemblies:
+  - System.Globalization
+  namespace: System.Globalization
+  summary: "\n<p>Provides functionality to split a string into text elements and to iterate through those text elements.</p>\n"
+  syntax:
+    content: >-
+      [Serializable]
+
+      [ComVisible(true)]
+
+      public class StringInfo
+    content.vb: >-
+      <Serializable>
+
+      <ComVisible(True)>
+
+      Public Class StringInfo
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+  nameWithType: StringInfo
+- uid: System.Globalization.StringInfo.#ctor
+  commentId: M:System.Globalization.StringInfo.#ctor
+  id: '#ctor'
+  parent: System.Globalization.StringInfo
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Globalization.StringInfo.StringInfo()
+  type: Constructor
+  source:
+    remote:
+      path: src/mscorlib/src/System/Globalization/StringInfo.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: .ctor
+    path: src/mscorlib/src/System/Globalization/StringInfo.cs
+    startLine: 35
+  assemblies:
+  - System.Globalization
+  namespace: System.Globalization
+  summary: "\n<p>Initializes a new instance of the <xref href=\"System.Globalization.StringInfo\" data-throw-if-not-resolved=\"false\"></xref> class. </p>\n"
+  syntax:
+    content: public StringInfo()
+    content.vb: Public Sub New
+  seealso:
+  - type: System.String.Empty
+    commentId: F:System.String.Empty
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: StringInfo.StringInfo()
+- uid: System.Globalization.StringInfo.#ctor(System.String)
+  commentId: M:System.Globalization.StringInfo.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: System.Globalization.StringInfo
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Globalization.StringInfo.StringInfo(System.String)
+  type: Constructor
+  source:
+    remote:
+      path: src/mscorlib/src/System/Globalization/StringInfo.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: .ctor
+    path: src/mscorlib/src/System/Globalization/StringInfo.cs
+    startLine: 38
+  assemblies:
+  - System.Globalization
+  namespace: System.Globalization
+  summary: "\n<p>Initializes a new instance of the <xref href=\"System.Globalization.StringInfo\" data-throw-if-not-resolved=\"false\"></xref> class to a specified string.</p>\n"
+  syntax:
+    content: public StringInfo(string value)
+    content.vb: Public Sub New(value As String)
+    parameters:
+    - id: value
+      type: System.String
+      description: "\n<p>A string to initialize this <xref href=\"System.Globalization.StringInfo\" data-throw-if-not-resolved=\"false\"></xref> object.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>value</em> is <strong>null</strong>.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: StringInfo.StringInfo(String)
+- uid: System.Globalization.StringInfo.LengthInTextElements
+  commentId: P:System.Globalization.StringInfo.LengthInTextElements
+  id: LengthInTextElements
+  parent: System.Globalization.StringInfo
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Globalization.StringInfo.LengthInTextElements
+  type: Property
+  source:
+    remote:
+      path: src/mscorlib/src/System/Globalization/StringInfo.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: LengthInTextElements
+    path: src/mscorlib/src/System/Globalization/StringInfo.cs
+    startLine: 105
+  assemblies:
+  - System.Globalization
+  namespace: System.Globalization
+  summary: "\n<p>Gets the number of text elements in the current <xref href=\"System.Globalization.StringInfo\" data-throw-if-not-resolved=\"false\"></xref> object.</p>\n"
+  syntax:
+    content: public int LengthInTextElements { get; }
+    content.vb: Public ReadOnly Property LengthInTextElements As Integer
+    parameters: []
+    return:
+      type: System.Int32
+      description: "\n<p>The number of base characters, surrogate pairs, and combining character sequences in this <xref href=\"System.Globalization.StringInfo\" data-throw-if-not-resolved=\"false\"></xref> object.</p>\n"
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  nameWithType: StringInfo.LengthInTextElements
+- uid: System.Globalization.StringInfo.String
+  commentId: P:System.Globalization.StringInfo.String
+  id: String
+  parent: System.Globalization.StringInfo
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Globalization.StringInfo.String
+  type: Property
+  source:
+    remote:
+      path: src/mscorlib/src/System/Globalization/StringInfo.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: String
+    path: src/mscorlib/src/System/Globalization/StringInfo.cs
+    startLine: 89
+  assemblies:
+  - System.Globalization
+  namespace: System.Globalization
+  summary: "\n<p>Gets or sets the value of the current <xref href=\"System.Globalization.StringInfo\" data-throw-if-not-resolved=\"false\"></xref> object.</p>\n"
+  syntax:
+    content: public string String { get; set; }
+    content.vb: Public Property String As String
+    parameters: []
+    return:
+      type: System.String
+      description: "\n<p>The string that is the value of the current <xref href=\"System.Globalization.StringInfo\" data-throw-if-not-resolved=\"false\"></xref> object.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>The value in a set operation is <strong>null</strong>.</p>\n"
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  nameWithType: StringInfo.String
+- uid: System.Globalization.StringInfo.Equals(System.Object)
+  commentId: M:System.Globalization.StringInfo.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: System.Globalization.StringInfo
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Globalization.StringInfo.Equals(System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Globalization/StringInfo.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Equals
+    path: src/mscorlib/src/System/Globalization/StringInfo.cs
+    startLine: 59
+  assemblies:
+  - System.Globalization
+  namespace: System.Globalization
+  summary: "\n<p>Indicates whether the current <xref href=\"System.Globalization.StringInfo\" data-throw-if-not-resolved=\"false\"></xref> object is equal to a specified object.</p>\n"
+  syntax:
+    content: >-
+      [ComVisible(false)]
+
+      public override bool Equals(object value)
+    content.vb: >-
+      <ComVisible(False)>
+
+      Public Overrides Function Equals(value As Object) As Boolean
+    parameters:
+    - id: value
+      type: System.Object
+      description: "\n<p>An object.</p>\n"
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if the <em>value</em> parameter is a <xref href=\"System.Globalization.StringInfo\" data-throw-if-not-resolved=\"false\"></xref> object and its <xref href=\"System.Globalization.StringInfo.String\" data-throw-if-not-resolved=\"false\"></xref> property equals the <xref href=\"System.Globalization.StringInfo.String\" data-throw-if-not-resolved=\"false\"></xref> property of this <xref href=\"System.Globalization.StringInfo\" data-throw-if-not-resolved=\"false\"></xref> object; otherwise, <strong>false</strong>.</p>\n"
+  overridden: System.Object.Equals(System.Object)
+  seealso:
+  - type: System.String.Equals(System.Object)
+    commentId: M:System.String.Equals(System.Object)
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  nameWithType: StringInfo.Equals(Object)
+- uid: System.Globalization.StringInfo.GetHashCode
+  commentId: M:System.Globalization.StringInfo.GetHashCode
+  id: GetHashCode
+  parent: System.Globalization.StringInfo
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Globalization.StringInfo.GetHashCode()
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Globalization/StringInfo.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: GetHashCode
+    path: src/mscorlib/src/System/Globalization/StringInfo.cs
+    startLine: 70
+  assemblies:
+  - System.Globalization
+  namespace: System.Globalization
+  summary: "\n<p>Calculates a hash code for the value of the current <xref href=\"System.Globalization.StringInfo\" data-throw-if-not-resolved=\"false\"></xref> object.</p>\n"
+  syntax:
+    content: >-
+      [ComVisible(false)]
+
+      public override int GetHashCode()
+    content.vb: >-
+      <ComVisible(False)>
+
+      Public Overrides Function GetHashCode As Integer
+    return:
+      type: System.Int32
+      description: "\n<p>A 32-bit signed integer hash code based on the string value of this <xref href=\"System.Globalization.StringInfo\" data-throw-if-not-resolved=\"false\"></xref> object.</p>\n"
+  overridden: System.Object.GetHashCode
+  seealso:
+  - type: System.String.GetHashCode
+    commentId: M:System.String.GetHashCode
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  nameWithType: StringInfo.GetHashCode()
+- uid: System.Globalization.StringInfo.GetNextTextElement(System.String)
+  commentId: M:System.Globalization.StringInfo.GetNextTextElement(System.String)
+  id: GetNextTextElement(System.String)
+  parent: System.Globalization.StringInfo
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Globalization.StringInfo.GetNextTextElement(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Globalization/StringInfo.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: GetNextTextElement
+    path: src/mscorlib/src/System/Globalization/StringInfo.cs
+    startLine: 169
+  assemblies:
+  - System.Globalization
+  namespace: System.Globalization
+  summary: "\n<p>Gets the first text element in a specified string.</p>\n"
+  syntax:
+    content: public static string GetNextTextElement(string str)
+    content.vb: Public Shared Function GetNextTextElement(str As String) As String
+    parameters:
+    - id: str
+      type: System.String
+      description: "\n<p>The string from which to get the text element. </p>\n"
+    return:
+      type: System.String
+      description: "\n<p>A string containing the first text element in the specified string.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>str</em> is <strong>null</strong>. </p>\n"
+  seealso:
+  - type: System.Globalization.StringInfo.GetTextElementEnumerator(System.String)
+    commentId: M:System.Globalization.StringInfo.GetTextElementEnumerator(System.String)
+  - type: System.Globalization.StringInfo.ParseCombiningCharacters(System.String)
+    commentId: M:System.Globalization.StringInfo.ParseCombiningCharacters(System.String)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  nameWithType: StringInfo.GetNextTextElement(String)
+- uid: System.Globalization.StringInfo.GetNextTextElement(System.String,System.Int32)
+  commentId: M:System.Globalization.StringInfo.GetNextTextElement(System.String,System.Int32)
+  id: GetNextTextElement(System.String,System.Int32)
+  parent: System.Globalization.StringInfo
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Globalization.StringInfo.GetNextTextElement(System.String, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Globalization/StringInfo.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: GetNextTextElement
+    path: src/mscorlib/src/System/Globalization/StringInfo.cs
+    startLine: 266
+  assemblies:
+  - System.Globalization
+  namespace: System.Globalization
+  summary: "\n<p>Gets the text element at the specified index of the specified string.</p>\n"
+  syntax:
+    content: public static string GetNextTextElement(string str, int index)
+    content.vb: Public Shared Function GetNextTextElement(str As String, index As Integer) As String
+    parameters:
+    - id: str
+      type: System.String
+      description: "\n<p>The string from which to get the text element. </p>\n"
+    - id: index
+      type: System.Int32
+      description: "\n<p>The zero-based index at which the text element starts. </p>\n"
+    return:
+      type: System.String
+      description: "\n<p>A string containing the text element at the specified index of the specified string.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>str</em> is <strong>null</strong>. </p>\n"
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>index</em> is outside the range of valid indexes for <em>str</em>. </p>\n"
+  seealso:
+  - type: System.Globalization.StringInfo.GetTextElementEnumerator(System.String)
+    commentId: M:System.Globalization.StringInfo.GetTextElementEnumerator(System.String)
+  - type: System.Globalization.StringInfo.ParseCombiningCharacters(System.String)
+    commentId: M:System.Globalization.StringInfo.ParseCombiningCharacters(System.String)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  nameWithType: StringInfo.GetNextTextElement(String, Int32)
+- uid: System.Globalization.StringInfo.GetTextElementEnumerator(System.String)
+  commentId: M:System.Globalization.StringInfo.GetTextElementEnumerator(System.String)
+  id: GetTextElementEnumerator(System.String)
+  parent: System.Globalization.StringInfo
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Globalization.StringInfo.GetTextElementEnumerator(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Globalization/StringInfo.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: GetTextElementEnumerator
+    path: src/mscorlib/src/System/Globalization/StringInfo.cs
+    startLine: 288
+  assemblies:
+  - System.Globalization
+  namespace: System.Globalization
+  summary: "\n<p>Returns an enumerator that iterates through the text elements of the entire string.</p>\n"
+  syntax:
+    content: public static TextElementEnumerator GetTextElementEnumerator(string str)
+    content.vb: Public Shared Function GetTextElementEnumerator(str As String) As TextElementEnumerator
+    parameters:
+    - id: str
+      type: System.String
+      description: "\n<p>The string to iterate through. </p>\n"
+    return:
+      type: System.Globalization.TextElementEnumerator
+      description: "\n<p>A <xref href=\"System.Globalization.TextElementEnumerator\" data-throw-if-not-resolved=\"false\"></xref> for the entire string.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>str</em> is <strong>null</strong>. </p>\n"
+  seealso:
+  - type: System.Globalization.TextElementEnumerator
+    commentId: T:System.Globalization.TextElementEnumerator
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  nameWithType: StringInfo.GetTextElementEnumerator(String)
+- uid: System.Globalization.StringInfo.GetTextElementEnumerator(System.String,System.Int32)
+  commentId: M:System.Globalization.StringInfo.GetTextElementEnumerator(System.String,System.Int32)
+  id: GetTextElementEnumerator(System.String,System.Int32)
+  parent: System.Globalization.StringInfo
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Globalization.StringInfo.GetTextElementEnumerator(System.String, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Globalization/StringInfo.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: GetTextElementEnumerator
+    path: src/mscorlib/src/System/Globalization/StringInfo.cs
+    startLine: 293
+  assemblies:
+  - System.Globalization
+  namespace: System.Globalization
+  summary: "\n<p>Returns an enumerator that iterates through the text elements of the string, starting at the specified index.</p>\n"
+  syntax:
+    content: public static TextElementEnumerator GetTextElementEnumerator(string str, int index)
+    content.vb: Public Shared Function GetTextElementEnumerator(str As String, index As Integer) As TextElementEnumerator
+    parameters:
+    - id: str
+      type: System.String
+      description: "\n<p>The string to iterate through. </p>\n"
+    - id: index
+      type: System.Int32
+      description: "\n<p>The zero-based index at which to start iterating. </p>\n"
+    return:
+      type: System.Globalization.TextElementEnumerator
+      description: "\n<p>A <xref href=\"System.Globalization.TextElementEnumerator\" data-throw-if-not-resolved=\"false\"></xref> for the string starting at <em>index</em>.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>str</em> is <strong>null</strong>. </p>\n"
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>index</em> is outside the range of valid indexes for <em>str</em>. </p>\n"
+  seealso:
+  - type: System.Globalization.TextElementEnumerator
+    commentId: T:System.Globalization.TextElementEnumerator
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  nameWithType: StringInfo.GetTextElementEnumerator(String, Int32)
+- uid: System.Globalization.StringInfo.ParseCombiningCharacters(System.String)
+  commentId: M:System.Globalization.StringInfo.ParseCombiningCharacters(System.String)
+  id: ParseCombiningCharacters(System.String)
+  parent: System.Globalization.StringInfo
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Globalization.StringInfo.ParseCombiningCharacters(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Globalization/StringInfo.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: ParseCombiningCharacters
+    path: src/mscorlib/src/System/Globalization/StringInfo.cs
+    startLine: 325
+  assemblies:
+  - System.Globalization
+  namespace: System.Globalization
+  summary: "\n<p>Returns the indexes of each base character, high surrogate, or control character within the specified string.</p>\n"
+  syntax:
+    content: public static int[] ParseCombiningCharacters(string str)
+    content.vb: Public Shared Function ParseCombiningCharacters(str As String) As Integer()
+    parameters:
+    - id: str
+      type: System.String
+      description: "\n<p>The string to search. </p>\n"
+    return:
+      type: System.Int32[]
+      description: "\n<p>An array of integers that contains the zero-based indexes of each base character, high surrogate, or control character within the specified string.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>str</em> is <strong>null</strong>. </p>\n"
+  seealso:
+  - type: System.Globalization.StringInfo.SubstringByTextElements
+    commentId: Overload:System.Globalization.StringInfo.SubstringByTextElements
+  - type: System.Globalization.StringInfo.LengthInTextElements
+    commentId: P:System.Globalization.StringInfo.LengthInTextElements
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  nameWithType: StringInfo.ParseCombiningCharacters(String)
+references:
+- uid: System.Globalization
+  isExternal: false
+  name: "XXX"
+  fullName: System.Globalization
+  nameWithType: System.Globalization
+  commentId: N:System.Globalization
+- uid: System.Object
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Object
+  nameWithType: Object
+  commentId: T:System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.ToString()
+  commentId: M:System.Object.ToString
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.Equals(Object, Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.GetType()
+  commentId: M:System.Object.GetType
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.MemberwiseClone()
+  commentId: M:System.Object.MemberwiseClone
+- uid: System
+  isExternal: false
+  name: "XXX"
+  fullName: System
+  nameWithType: System
+  commentId: N:System
+- uid: System.String
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.String
+  nameWithType: String
+  commentId: T:System.String
+- uid: System.Int32
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Int32
+  nameWithType: Int32
+  commentId: T:System.Int32
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.Equals(Object)
+  commentId: M:System.Object.Equals(System.Object)
+- uid: System.Boolean
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Boolean
+  nameWithType: Boolean
+  commentId: T:System.Boolean
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.GetHashCode()
+  commentId: M:System.Object.GetHashCode
+- uid: System.Globalization.TextElementEnumerator
+  parent: System.Globalization
+  isExternal: false
+  name: "XXX"
+  fullName: System.Globalization.TextElementEnumerator
+  nameWithType: TextElementEnumerator
+  commentId: T:System.Globalization.TextElementEnumerator
+- uid: System.Int32[]
+  name: "XXX"
+  fullName: System.Int32[]
+  fullname.vb: System.Int32()
+  name.vb: Int32()
+  spec.csharp:
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: 'XXX'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: "XXX"
+    fullName: ()
+  nameWithType: Int32[]
+  nameWithType.vb: Int32()
+- uid: System.ArgumentNullException
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentNullException
+  nameWithType: ArgumentNullException
+  commentId: T:System.ArgumentNullException
+- uid: System.ArgumentOutOfRangeException
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentOutOfRangeException
+  nameWithType: ArgumentOutOfRangeException
+  commentId: T:System.ArgumentOutOfRangeException

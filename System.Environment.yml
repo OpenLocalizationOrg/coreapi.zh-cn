@@ -1,0 +1,1144 @@
+items:
+- uid: System.Environment
+  commentId: T:System.Environment
+  id: Environment
+  parent: System
+  children:
+  - System.Environment.CurrentManagedThreadId
+  - System.Environment.Exit(System.Int32)
+  - System.Environment.ExpandEnvironmentVariables(System.String)
+  - System.Environment.FailFast(System.String)
+  - System.Environment.FailFast(System.String,System.Exception)
+  - System.Environment.GetCommandLineArgs
+  - System.Environment.GetEnvironmentVariable(System.String)
+  - System.Environment.GetEnvironmentVariables
+  - System.Environment.HasShutdownStarted
+  - System.Environment.MachineName
+  - System.Environment.NewLine
+  - System.Environment.ProcessorCount
+  - System.Environment.SetEnvironmentVariable(System.String,System.String)
+  - System.Environment.StackTrace
+  - System.Environment.TickCount
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Environment
+  type: Class
+  source:
+    remote:
+      path: src/mscorlib/src/System/Environment.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Environment
+    path: src/mscorlib/src/System/Environment.cs
+    startLine: 42
+  assemblies:
+  - System.Runtime.Extensions
+  namespace: System
+  summary: "\n<p>Provides information about, and means to manipulate, the current environment and platform. This class cannot be inherited.</p>\n"
+  syntax:
+    content: >-
+      [ComVisible(true)]
+
+      public class Environment
+    content.vb: >-
+      <ComVisible(True)>
+
+      Public Class Environment
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+  nameWithType: Environment
+- uid: System.Environment.CurrentManagedThreadId
+  commentId: P:System.Environment.CurrentManagedThreadId
+  id: CurrentManagedThreadId
+  parent: System.Environment
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Environment.CurrentManagedThreadId
+  type: Property
+  source:
+    remote:
+      path: src/mscorlib/src/System/Environment.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: CurrentManagedThreadId
+    path: src/mscorlib/src/System/Environment.cs
+    startLine: 1757
+  assemblies:
+  - System.Runtime.Extensions
+  namespace: System
+  summary: "\n<p>Gets a unique identifier for the current managed thread.</p>\n"
+  syntax:
+    content: >-
+      public static int CurrentManagedThreadId
+
+      {
+          [ReliabilityContract(Consistency.WillNotCorruptState, Cer.Success)]
+          get;
+      }
+    content.vb: Public Shared ReadOnly Property CurrentManagedThreadId As Integer
+    parameters: []
+    return:
+      type: System.Int32
+      description: "\n<p>An integer that represents a unique identifier for this managed thread.</p>\n"
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+  nameWithType: Environment.CurrentManagedThreadId
+- uid: System.Environment.HasShutdownStarted
+  commentId: P:System.Environment.HasShutdownStarted
+  id: HasShutdownStarted
+  parent: System.Environment
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Environment.HasShutdownStarted
+  type: Property
+  source:
+    path: System.Private.CoreLib
+    isExternal: true
+  assemblies:
+  - System.Runtime.Extensions
+  namespace: System
+  summary: "\n<p>Gets a value that indicates whether the current application domain is being unloaded or the common language runtime (CLR) is shutting down. </p>\n"
+  syntax:
+    content: >-
+      public static bool HasShutdownStarted
+
+      {
+          [SecuritySafeCritical]
+          [MethodImpl(MethodImplOptions.InternalCall)]
+          get;
+      }
+    content.vb: Public Shared ReadOnly Property HasShutdownStarted As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if the current application domain is being unloaded or the CLR is shutting down; otherwise, <strong>false.</strong></p>\n"
+  seealso:
+  - type: System.AppDomain.IsFinalizingForUnload
+    commentId: M:System.AppDomain.IsFinalizingForUnload
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+  nameWithType: Environment.HasShutdownStarted
+- uid: System.Environment.MachineName
+  commentId: P:System.Environment.MachineName
+  id: MachineName
+  parent: System.Environment
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Environment.MachineName
+  type: Property
+  source:
+    remote:
+      path: src/mscorlib/src/System/Environment.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: MachineName
+    path: src/mscorlib/src/System/Environment.cs
+    startLine: 520
+  assemblies:
+  - System.Runtime.Extensions
+  namespace: System
+  summary: "\n<p>Gets the NetBIOS name of this local computer.</p>\n"
+  syntax:
+    content: >-
+      public static string MachineName
+
+      {
+          [SecuritySafeCritical]
+          get;
+      }
+    content.vb: Public Shared ReadOnly Property MachineName As String
+    parameters: []
+    return:
+      type: System.String
+      description: "\n<p>A string containing the name of this computer.</p>\n"
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: "\n<p>The name of this computer cannot be obtained.</p>\n"
+  see:
+  - type: System.Security.Permissions.EnvironmentPermission
+    commentId: T:System.Security.Permissions.EnvironmentPermission
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+  nameWithType: Environment.MachineName
+- uid: System.Environment.NewLine
+  commentId: P:System.Environment.NewLine
+  id: NewLine
+  parent: System.Environment
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Environment.NewLine
+  type: Property
+  source:
+    remote:
+      path: src/mscorlib/src/System/Environment.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: NewLine
+    path: src/mscorlib/src/System/Environment.cs
+    startLine: 1063
+  assemblies:
+  - System.Runtime.Extensions
+  namespace: System
+  summary: "\n<p>Gets the newline string defined for this environment.</p>\n"
+  syntax:
+    content: public static string NewLine { get; }
+    content.vb: Public Shared ReadOnly Property NewLine As String
+    parameters: []
+    return:
+      type: System.String
+      description: "\n<p>A string containing \"\\r\\n\" for non-Unix platforms, or a string containing \"\\n\" for Unix platforms.</p>\n"
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+  nameWithType: Environment.NewLine
+- uid: System.Environment.ProcessorCount
+  commentId: P:System.Environment.ProcessorCount
+  id: ProcessorCount
+  parent: System.Environment
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Environment.ProcessorCount
+  type: Property
+  source:
+    remote:
+      path: src/mscorlib/src/System/Environment.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: ProcessorCount
+    path: src/mscorlib/src/System/Environment.cs
+    startLine: 549
+  assemblies:
+  - System.Runtime.Extensions
+  namespace: System
+  summary: "\n<p>Gets the number of processors on the current machine.</p>\n"
+  syntax:
+    content: >-
+      public static int ProcessorCount
+
+      {
+          [SecuritySafeCritical]
+          get;
+      }
+    content.vb: Public Shared ReadOnly Property ProcessorCount As Integer
+    parameters: []
+    return:
+      type: System.Int32
+      description: "\n<p>The 32-bit signed integer that specifies the number of processors on the current machine. There is no default. If the current machine contains multiple processor groups, this property returns the number of logical processors that are available for use by the common language runtime (CLR).</p>\n"
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+  nameWithType: Environment.ProcessorCount
+- uid: System.Environment.StackTrace
+  commentId: P:System.Environment.StackTrace
+  id: StackTrace
+  parent: System.Environment
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Environment.StackTrace
+  type: Property
+  source:
+    remote:
+      path: src/mscorlib/src/System/Environment.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: StackTrace
+    path: src/mscorlib/src/System/Environment.cs
+    startLine: 1223
+  assemblies:
+  - System.Runtime.Extensions
+  namespace: System
+  summary: "\n<p>Gets current stack trace information.</p>\n"
+  syntax:
+    content: >-
+      public static string StackTrace
+
+      {
+          [SecuritySafeCritical]
+          get;
+      }
+    content.vb: Public Shared ReadOnly Property StackTrace As String
+    parameters: []
+    return:
+      type: System.String
+      description: "\n<p>A string containing stack trace information. This value can be <xref href=\"System.String.Empty\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  see:
+  - type: System.Security.Permissions.EnvironmentPermission
+    commentId: T:System.Security.Permissions.EnvironmentPermission
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+  nameWithType: Environment.StackTrace
+- uid: System.Environment.TickCount
+  commentId: P:System.Environment.TickCount
+  id: TickCount
+  parent: System.Environment
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Environment.TickCount
+  type: Property
+  source:
+    path: System.Private.CoreLib
+    isExternal: true
+  assemblies:
+  - System.Runtime.Extensions
+  namespace: System
+  summary: "\n<p>Gets the number of milliseconds elapsed since the system started.</p>\n"
+  syntax:
+    content: >-
+      public static int TickCount
+
+      {
+          [SecuritySafeCritical]
+          [MethodImpl(MethodImplOptions.InternalCall)]
+          get;
+      }
+    content.vb: Public Shared ReadOnly Property TickCount As Integer
+    parameters: []
+    return:
+      type: System.Int32
+      description: "\n<p>A 32-bit signed integer containing the amount of time in milliseconds that has passed since the last time the computer was started. </p>\n"
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+  nameWithType: Environment.TickCount
+- uid: System.Environment.ExpandEnvironmentVariables(System.String)
+  commentId: M:System.Environment.ExpandEnvironmentVariables(System.String)
+  id: ExpandEnvironmentVariables(System.String)
+  parent: System.Environment
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Environment.ExpandEnvironmentVariables(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Environment.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: ExpandEnvironmentVariables
+    path: src/mscorlib/src/System/Environment.cs
+    startLine: 401
+  assemblies:
+  - System.Runtime.Extensions
+  namespace: System
+  summary: "\n<p>Replaces the name of each environment variable embedded in the specified string with the string equivalent of the value of the variable, then returns the resulting string.</p>\n"
+  syntax:
+    content: >-
+      [SecuritySafeCritical]
+
+      public static string ExpandEnvironmentVariables(string name)
+    content.vb: >-
+      <SecuritySafeCritical>
+
+      Public Shared Function ExpandEnvironmentVariables(name As String) As String
+    parameters:
+    - id: name
+      type: System.String
+      description: "\n<p>A string containing the names of zero or more environment variables. Each environment variable is quoted with the percent sign character (%).</p>\n"
+    return:
+      type: System.String
+      description: "\n<p>A string with each environment variable replaced by its value.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>name</em> is <strong>null</strong>.</p>\n"
+  see:
+  - type: System.Security.Permissions.EnvironmentPermission
+    commentId: T:System.Security.Permissions.EnvironmentPermission
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  nameWithType: Environment.ExpandEnvironmentVariables(String)
+- uid: System.Environment.Exit(System.Int32)
+  commentId: M:System.Environment.Exit(System.Int32)
+  id: Exit(System.Int32)
+  parent: System.Environment
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Environment.Exit(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Environment.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Exit
+    path: src/mscorlib/src/System/Environment.cs
+    startLine: 261
+  assemblies:
+  - System.Runtime.Extensions
+  namespace: System
+  summary: "\n<p>Terminates this process and returns an exit code to the operating system.</p>\n"
+  syntax:
+    content: >-
+      [SecuritySafeCritical]
+
+      [SecurityPermission(SecurityAction.Demand, Flags = SecurityPermissionFlag.UnmanagedCode)]
+
+      public static void Exit(int exitCode)
+    content.vb: >-
+      <SecuritySafeCritical>
+
+      <SecurityPermission(SecurityAction.Demand, Flags:=SecurityPermissionFlag.UnmanagedCode)>
+
+      Public Shared Sub Exit(exitCode As Integer)
+    parameters:
+    - id: exitCode
+      type: System.Int32
+      description: "\n<p>The exit code to return to the operating system. Use 0 (zero) to indicate that the process completed successfully.</p>\n"
+  exceptions:
+  - type: System.Security.SecurityException
+    commentId: T:System.Security.SecurityException
+    description: "\n<p>The caller does not have sufficient security permission to perform this function. </p>\n"
+  see:
+  - type: System.Security.Permissions.SecurityPermission
+    commentId: T:System.Security.Permissions.SecurityPermission
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  nameWithType: Environment.Exit(Int32)
+- uid: System.Environment.FailFast(System.String)
+  commentId: M:System.Environment.FailFast(System.String)
+  id: FailFast(System.String)
+  parent: System.Environment
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Environment.FailFast(System.String)
+  type: Method
+  source:
+    path: System.Private.CoreLib
+    isExternal: true
+  assemblies:
+  - System.Runtime.Extensions
+  namespace: System
+  summary: "\n<p>Immediately terminates a process after writing a message to the Windows Application event log, and then includes the message in error reporting to Microsoft.</p>\n"
+  syntax:
+    content: >-
+      [SecurityCritical]
+
+      [MethodImpl(MethodImplOptions.InternalCall)]
+
+      public static void FailFast(string message)
+    content.vb: >-
+      <SecurityCritical>
+
+      <MethodImpl(MethodImplOptions.InternalCall)>
+
+      Public Shared Sub FailFast(message As String)
+    parameters:
+    - id: message
+      type: System.String
+      description: "\n<p>A message that explains why the process was terminated, or <strong>null</strong> if no explanation is provided.</p>\n"
+  see:
+  - type: System.Security.SecurityCriticalAttribute
+    commentId: T:System.Security.SecurityCriticalAttribute
+  attributes:
+  - type: System.Security.SecurityCriticalAttribute
+    ctor: System.Security.SecurityCriticalAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  nameWithType: Environment.FailFast(String)
+- uid: System.Environment.FailFast(System.String,System.Exception)
+  commentId: M:System.Environment.FailFast(System.String,System.Exception)
+  id: FailFast(System.String,System.Exception)
+  parent: System.Environment
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Environment.FailFast(System.String, System.Exception)
+  type: Method
+  source:
+    path: System.Private.CoreLib
+    isExternal: true
+  assemblies:
+  - System.Runtime.Extensions
+  namespace: System
+  summary: "\n<p>Immediately terminates a process after writing a message to the Windows Application event log, and then includes the message and exception information in error reporting to Microsoft.</p>\n"
+  syntax:
+    content: >-
+      [SecurityCritical]
+
+      [MethodImpl(MethodImplOptions.InternalCall)]
+
+      public static void FailFast(string message, Exception exception)
+    content.vb: >-
+      <SecurityCritical>
+
+      <MethodImpl(MethodImplOptions.InternalCall)>
+
+      Public Shared Sub FailFast(message As String, exception As Exception)
+    parameters:
+    - id: message
+      type: System.String
+      description: "\n<p>A message that explains why the process was terminated, or <strong>null</strong> if no explanation is provided.</p>\n"
+    - id: exception
+      type: System.Exception
+      description: "\n<p>An exception that represents the error that caused the termination. This is typically the exception in a <strong>catch</strong> block.</p>\n"
+  see:
+  - type: System.Security.SecurityCriticalAttribute
+    commentId: T:System.Security.SecurityCriticalAttribute
+  attributes:
+  - type: System.Security.SecurityCriticalAttribute
+    ctor: System.Security.SecurityCriticalAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  nameWithType: Environment.FailFast(String, Exception)
+- uid: System.Environment.GetEnvironmentVariable(System.String)
+  commentId: M:System.Environment.GetEnvironmentVariable(System.String)
+  id: GetEnvironmentVariable(System.String)
+  parent: System.Environment
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Environment.GetEnvironmentVariable(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Environment.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: GetEnvironmentVariable
+    path: src/mscorlib/src/System/Environment.cs
+    startLine: 625
+  assemblies:
+  - System.Runtime.Extensions
+  namespace: System
+  summary: "\n<p>Retrieves the value of an environment variable from the current process. </p>\n"
+  syntax:
+    content: >-
+      [SecuritySafeCritical]
+
+      public static string GetEnvironmentVariable(string variable)
+    content.vb: >-
+      <SecuritySafeCritical>
+
+      Public Shared Function GetEnvironmentVariable(variable As String) As String
+    parameters:
+    - id: variable
+      type: System.String
+      description: "\n<p>The name of the environment variable.</p>\n"
+    return:
+      type: System.String
+      description: "\n<p>The value of the environment variable specified by <em>variable</em>, or <strong>null</strong> if the environment variable is not found.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>variable</em> is <strong>null</strong>.</p>\n"
+  - type: System.Security.SecurityException
+    commentId: T:System.Security.SecurityException
+    description: "\n<p>The caller does not have the required permission to perform this operation. </p>\n"
+  seealso:
+  - type: System.Environment.GetEnvironmentVariables
+    commentId: M:System.Environment.GetEnvironmentVariables
+  - type: System.Environment.SetEnvironmentVariable(System.String,System.String)
+    commentId: M:System.Environment.SetEnvironmentVariable(System.String,System.String)
+  - type: System.EnvironmentVariableTarget
+    commentId: T:System.EnvironmentVariableTarget
+  see:
+  - type: System.Security.Permissions.EnvironmentPermission
+    commentId: T:System.Security.Permissions.EnvironmentPermission
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  nameWithType: Environment.GetEnvironmentVariable(String)
+- uid: System.Environment.GetEnvironmentVariables
+  commentId: M:System.Environment.GetEnvironmentVariables
+  id: GetEnvironmentVariables
+  parent: System.Environment
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Environment.GetEnvironmentVariables()
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Environment.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: GetEnvironmentVariables
+    path: src/mscorlib/src/System/Environment.cs
+    startLine: 761
+  assemblies:
+  - System.Runtime.Extensions
+  namespace: System
+  summary: "\n<p>Retrieves all environment variable names and their values from the current process.</p>\n"
+  syntax:
+    content: >-
+      [SecuritySafeCritical]
+
+      public static IDictionary GetEnvironmentVariables()
+    content.vb: >-
+      <SecuritySafeCritical>
+
+      Public Shared Function GetEnvironmentVariables As IDictionary
+    return:
+      type: System.Collections.IDictionary
+      description: "\n<p>A dictionary that contains all environment variable names and their values; otherwise, an empty dictionary if no environment variables are found.</p>\n"
+  exceptions:
+  - type: System.Security.SecurityException
+    commentId: T:System.Security.SecurityException
+    description: "\n<p>The caller does not have the required permission to perform this operation.</p>\n"
+  - type: System.OutOfMemoryException
+    commentId: T:System.OutOfMemoryException
+    description: "\n<p>The buffer is out of memory.</p>\n"
+  seealso:
+  - type: System.Environment.GetEnvironmentVariable(System.String)
+    commentId: M:System.Environment.GetEnvironmentVariable(System.String)
+  see:
+  - type: System.Security.Permissions.EnvironmentPermission
+    commentId: T:System.Security.Permissions.EnvironmentPermission
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  nameWithType: Environment.GetEnvironmentVariables()
+- uid: System.Environment.SetEnvironmentVariable(System.String,System.String)
+  commentId: M:System.Environment.SetEnvironmentVariable(System.String,System.String)
+  id: SetEnvironmentVariable(System.String,System.String)
+  parent: System.Environment
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Environment.SetEnvironmentVariable(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Environment.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: SetEnvironmentVariable
+    path: src/mscorlib/src/System/Environment.cs
+    startLine: 890
+  assemblies:
+  - System.Runtime.Extensions
+  namespace: System
+  summary: "\n<p>Creates, modifies, or deletes an environment variable stored in the current process.</p>\n"
+  syntax:
+    content: >-
+      [SecuritySafeCritical]
+
+      public static void SetEnvironmentVariable(string variable, string value)
+    content.vb: >-
+      <SecuritySafeCritical>
+
+      Public Shared Sub SetEnvironmentVariable(variable As String, value As String)
+    parameters:
+    - id: variable
+      type: System.String
+      description: "\n<p>The name of an environment variable.</p>\n"
+    - id: value
+      type: System.String
+      description: "\n<p>A value to assign to <em>variable</em>.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>variable</em> is <strong>null</strong>.</p>\n"
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>\n<em>variable</em> contains a zero-length string, an initial hexadecimal zero character (0x00), or an equal sign (\"=\"). </p>\n<p>-or-</p>\n<p>The length of <em>variable</em> or <em>value</em> is greater than or equal to 32,767 characters.</p>\n<p>-or-</p>\n<p>An error occurred during the execution of this operation.</p>\n"
+  - type: System.Security.SecurityException
+    commentId: T:System.Security.SecurityException
+    description: "\n<p>The caller does not have the required permission to perform this operation.</p>\n"
+  seealso:
+  - type: System.Environment.GetEnvironmentVariable(System.String)
+    commentId: M:System.Environment.GetEnvironmentVariable(System.String)
+  - type: System.Environment.GetEnvironmentVariables
+    commentId: M:System.Environment.GetEnvironmentVariables
+  see:
+  - type: System.Security.Permissions.EnvironmentPermission
+    commentId: T:System.Security.Permissions.EnvironmentPermission
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  nameWithType: Environment.SetEnvironmentVariable(String, String)
+- uid: System.Environment.GetCommandLineArgs
+  commentId: M:System.Environment.GetCommandLineArgs
+  id: GetCommandLineArgs
+  parent: System.Environment
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Environment.GetCommandLineArgs()
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Environment.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: GetCommandLineArgs
+    path: src/mscorlib/src/System/Environment.cs
+    startLine: 573
+  assemblies:
+  - System.Runtime.Extensions
+  namespace: System
+  summary: "\n<p>Returns a string array containing the command-line arguments for the current process.</p>\n"
+  syntax:
+    content: >-
+      [SecuritySafeCritical]
+
+      public static string[] GetCommandLineArgs()
+    content.vb: >-
+      <SecuritySafeCritical>
+
+      Public Shared Function GetCommandLineArgs As String()
+    return:
+      type: System.String[]
+      description: "\n<p>An array of string where each element contains a command-line argument. The first element is the executable file name, and the following zero or more elements contain the remaining command-line arguments.</p>\n"
+  exceptions:
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: "\n<p>The system does not support command-line arguments.</p>\n"
+  seealso:
+  - type: System.Environment.CommandLine
+    commentId: P:System.Environment.CommandLine
+  see:
+  - type: System.Security.Permissions.EnvironmentPermission
+    commentId: T:System.Security.Permissions.EnvironmentPermission
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  nameWithType: Environment.GetCommandLineArgs()
+references:
+- uid: System
+  isExternal: false
+  name: "XXX"
+  fullName: System
+  nameWithType: System
+  commentId: N:System
+- uid: System.Object
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Object
+  nameWithType: Object
+  commentId: T:System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.ToString()
+  commentId: M:System.Object.ToString
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.Equals(Object)
+  commentId: M:System.Object.Equals(System.Object)
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.Equals(Object, Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.GetHashCode()
+  commentId: M:System.Object.GetHashCode
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.GetType()
+  commentId: M:System.Object.GetType
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.MemberwiseClone()
+  commentId: M:System.Object.MemberwiseClone
+- uid: System.Int32
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Int32
+  nameWithType: Int32
+  commentId: T:System.Int32
+- uid: System.Boolean
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Boolean
+  nameWithType: Boolean
+  commentId: T:System.Boolean
+- uid: System.String
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.String
+  nameWithType: String
+  commentId: T:System.String
+- uid: System.Exception
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Exception
+  nameWithType: Exception
+  commentId: T:System.Exception
+- uid: System.Collections.IDictionary
+  parent: System.Collections
+  isExternal: false
+  name: "XXX"
+  fullName: System.Collections.IDictionary
+  nameWithType: IDictionary
+  commentId: T:System.Collections.IDictionary
+- uid: System.Collections
+  isExternal: false
+  name: "XXX"
+  fullName: System.Collections
+  nameWithType: System.Collections
+  commentId: N:System.Collections
+- uid: System.String[]
+  name: "XXX"
+  fullName: System.String[]
+  fullname.vb: System.String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: "XXX"
+    fullName: System.String
+    isExternal: true
+  - name: 'XXX'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.String
+    name: "XXX"
+    fullName: System.String
+    isExternal: true
+  - name: "XXX"
+    fullName: ()
+  nameWithType: String[]
+  nameWithType.vb: String()
+- uid: System.InvalidOperationException
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.InvalidOperationException
+  nameWithType: InvalidOperationException
+  commentId: T:System.InvalidOperationException
+- uid: System.ArgumentNullException
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentNullException
+  nameWithType: ArgumentNullException
+  commentId: T:System.ArgumentNullException
+- uid: System.Security.SecurityException
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.SecurityException
+  nameWithType: SecurityException
+  commentId: T:System.Security.SecurityException
+- uid: System.OutOfMemoryException
+  isExternal: false
+  name: "XXX"
+  fullName: System.OutOfMemoryException
+  nameWithType: OutOfMemoryException
+  commentId: T:System.OutOfMemoryException
+- uid: System.ArgumentException
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentException
+  nameWithType: ArgumentException
+  commentId: T:System.ArgumentException
+- uid: System.NotSupportedException
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.NotSupportedException
+  nameWithType: NotSupportedException
+  commentId: T:System.NotSupportedException

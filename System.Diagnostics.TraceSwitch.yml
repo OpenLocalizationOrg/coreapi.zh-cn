@@ -1,0 +1,828 @@
+items:
+- uid: System.Diagnostics.TraceSwitch
+  commentId: T:System.Diagnostics.TraceSwitch
+  id: TraceSwitch
+  parent: System.Diagnostics
+  children:
+  - System.Diagnostics.TraceSwitch.#ctor(System.String,System.String)
+  - System.Diagnostics.TraceSwitch.#ctor(System.String,System.String,System.String)
+  - System.Diagnostics.TraceSwitch.Level
+  - System.Diagnostics.TraceSwitch.OnSwitchSettingChanged
+  - System.Diagnostics.TraceSwitch.OnValueChanged
+  - System.Diagnostics.TraceSwitch.TraceError
+  - System.Diagnostics.TraceSwitch.TraceInfo
+  - System.Diagnostics.TraceSwitch.TraceVerbose
+  - System.Diagnostics.TraceSwitch.TraceWarning
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Diagnostics.TraceSwitch
+  type: Class
+  source:
+    remote:
+      path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/TraceSwitch.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: TraceSwitch
+    path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/TraceSwitch.cs
+    startLine: 12
+  assemblies:
+  - System.Diagnostics.TraceSource
+  namespace: System.Diagnostics
+  summary: "\n<p>Provides a multilevel switch to control tracing and debug output without recompiling your code.</p>\n"
+  syntax:
+    content: 'public class TraceSwitch : Switch'
+    content.vb: >-
+      Public Class TraceSwitch
+          Inherits Switch
+  seealso:
+  - type: System.Diagnostics.Switch
+    commentId: T:System.Diagnostics.Switch
+  - type: System.Diagnostics.BooleanSwitch
+    commentId: T:System.Diagnostics.BooleanSwitch
+  - type: System.Diagnostics.TraceLevel
+    commentId: T:System.Diagnostics.TraceLevel
+  - type: System.Diagnostics.Debug
+    commentId: T:System.Diagnostics.Debug
+  - type: System.Diagnostics.Trace
+    commentId: T:System.Diagnostics.Trace
+  inheritance:
+  - System.Object
+  - System.Diagnostics.Switch
+  inheritedMembers:
+  - System.Diagnostics.Switch.Description
+  - System.Diagnostics.Switch.DisplayName
+  - System.Diagnostics.Switch.SwitchSetting
+  - System.Diagnostics.Switch.Value
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+  nameWithType: TraceSwitch
+- uid: System.Diagnostics.TraceSwitch.#ctor(System.String,System.String)
+  commentId: M:System.Diagnostics.TraceSwitch.#ctor(System.String,System.String)
+  id: '#ctor(System.String,System.String)'
+  parent: System.Diagnostics.TraceSwitch
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Diagnostics.TraceSwitch.TraceSwitch(System.String, System.String)
+  type: Constructor
+  source:
+    remote:
+      path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/TraceSwitch.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: .ctor
+    path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/TraceSwitch.cs
+    startLine: 17
+  assemblies:
+  - System.Diagnostics.TraceSource
+  namespace: System.Diagnostics
+  summary: "\n<p>Initializes a new instance of the <xref href=\"System.Diagnostics.TraceSwitch\" data-throw-if-not-resolved=\"false\"></xref> class, using the specified display name and description.</p>\n"
+  syntax:
+    content: public TraceSwitch(string displayName, string description)
+    content.vb: Public Sub New(displayName As String, description As String)
+    parameters:
+    - id: displayName
+      type: System.String
+      description: "\n<p>The name to display on a user interface. </p>\n"
+    - id: description
+      type: System.String
+      description: "\n<p>The description of the switch. </p>\n"
+  seealso:
+  - type: System.Diagnostics.TraceSwitch
+    commentId: T:System.Diagnostics.TraceSwitch
+  - type: System.Diagnostics.TraceLevel
+    commentId: T:System.Diagnostics.TraceLevel
+  - type: System.Diagnostics.Switch
+    commentId: T:System.Diagnostics.Switch
+  - type: System.Diagnostics.Debug
+    commentId: T:System.Diagnostics.Debug
+  - type: System.Diagnostics.Trace
+    commentId: T:System.Diagnostics.Trace
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: TraceSwitch.TraceSwitch(String, String)
+- uid: System.Diagnostics.TraceSwitch.#ctor(System.String,System.String,System.String)
+  commentId: M:System.Diagnostics.TraceSwitch.#ctor(System.String,System.String,System.String)
+  id: '#ctor(System.String,System.String,System.String)'
+  parent: System.Diagnostics.TraceSwitch
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Diagnostics.TraceSwitch.TraceSwitch(System.String, System.String, System.String)
+  type: Constructor
+  source:
+    remote:
+      path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/TraceSwitch.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: .ctor
+    path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/TraceSwitch.cs
+    startLine: 22
+  assemblies:
+  - System.Diagnostics.TraceSource
+  namespace: System.Diagnostics
+  summary: "\n<p>Initializes a new instance of the <xref href=\"System.Diagnostics.TraceSwitch\" data-throw-if-not-resolved=\"false\"></xref> class, using the specified display name, description, and default value for the switch. </p>\n"
+  syntax:
+    content: public TraceSwitch(string displayName, string description, string defaultSwitchValue)
+    content.vb: Public Sub New(displayName As String, description As String, defaultSwitchValue As String)
+    parameters:
+    - id: displayName
+      type: System.String
+      description: "\n<p>The name to display on a user interface. </p>\n"
+    - id: description
+      type: System.String
+      description: "\n<p>The description of the switch. </p>\n"
+    - id: defaultSwitchValue
+      type: System.String
+      description: "\n<p>The default value of the switch.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: TraceSwitch.TraceSwitch(String, String, String)
+- uid: System.Diagnostics.TraceSwitch.Level
+  commentId: P:System.Diagnostics.TraceSwitch.Level
+  id: Level
+  parent: System.Diagnostics.TraceSwitch
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Diagnostics.TraceSwitch.Level
+  type: Property
+  source:
+    remote:
+      path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/TraceSwitch.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Level
+    path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/TraceSwitch.cs
+    startLine: 30
+  assemblies:
+  - System.Diagnostics.TraceSource
+  namespace: System.Diagnostics
+  summary: "\n<p>Gets or sets the trace level that determines the messages the switch allows.</p>\n"
+  syntax:
+    content: public TraceLevel Level { get; set; }
+    content.vb: Public Property Level As TraceLevel
+    parameters: []
+    return:
+      type: System.Diagnostics.TraceLevel
+      description: "\n<p>One of the <xref href=\"System.Diagnostics.TraceLevel\" data-throw-if-not-resolved=\"false\"></xref> values that that specifies the level of messages that are allowed by the switch.</p>\n"
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>\n<xref href=\"System.Diagnostics.TraceSwitch.Level\" data-throw-if-not-resolved=\"false\"></xref> is set to a value that is not one of the <xref href=\"System.Diagnostics.TraceLevel\" data-throw-if-not-resolved=\"false\"></xref> values. </p>\n"
+  seealso:
+  - type: System.Diagnostics.TraceSwitch
+    commentId: T:System.Diagnostics.TraceSwitch
+  - type: System.Diagnostics.TraceLevel
+    commentId: T:System.Diagnostics.TraceLevel
+  - type: System.Diagnostics.Switch
+    commentId: T:System.Diagnostics.Switch
+  - type: System.Diagnostics.Debug
+    commentId: T:System.Diagnostics.Debug
+  - type: System.Diagnostics.Trace
+    commentId: T:System.Diagnostics.Trace
+  see:
+  - type: System.Security.Permissions.SecurityPermission
+    commentId: T:System.Security.Permissions.SecurityPermission
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  nameWithType: TraceSwitch.Level
+- uid: System.Diagnostics.TraceSwitch.TraceError
+  commentId: P:System.Diagnostics.TraceSwitch.TraceError
+  id: TraceError
+  parent: System.Diagnostics.TraceSwitch
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Diagnostics.TraceSwitch.TraceError
+  type: Property
+  source:
+    remote:
+      path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/TraceSwitch.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: TraceError
+    path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/TraceSwitch.cs
+    startLine: 51
+  assemblies:
+  - System.Diagnostics.TraceSource
+  namespace: System.Diagnostics
+  summary: "\n<p>Gets a value indicating whether the switch allows error-handling messages.</p>\n"
+  syntax:
+    content: public bool TraceError { get; }
+    content.vb: Public ReadOnly Property TraceError As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if the <xref href=\"System.Diagnostics.TraceSwitch.Level\" data-throw-if-not-resolved=\"false\"></xref> property is set to <xref href=\"System.Diagnostics.TraceLevel.Error\" data-throw-if-not-resolved=\"false\"></xref>, <xref href=\"System.Diagnostics.TraceLevel.Warning\" data-throw-if-not-resolved=\"false\"></xref>, <xref href=\"System.Diagnostics.TraceLevel.Info\" data-throw-if-not-resolved=\"false\"></xref>, or <xref href=\"System.Diagnostics.TraceLevel.Verbose\" data-throw-if-not-resolved=\"false\"></xref>; otherwise, <strong>false</strong>.</p>\n"
+  seealso:
+  - type: System.Diagnostics.TraceSwitch
+    commentId: T:System.Diagnostics.TraceSwitch
+  - type: System.Diagnostics.Switch
+    commentId: T:System.Diagnostics.Switch
+  - type: System.Diagnostics.TraceLevel
+    commentId: T:System.Diagnostics.TraceLevel
+  - type: System.Diagnostics.Debug
+    commentId: T:System.Diagnostics.Debug
+  - type: System.Diagnostics.Trace
+    commentId: T:System.Diagnostics.Trace
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  nameWithType: TraceSwitch.TraceError
+- uid: System.Diagnostics.TraceSwitch.TraceInfo
+  commentId: P:System.Diagnostics.TraceSwitch.TraceInfo
+  id: TraceInfo
+  parent: System.Diagnostics.TraceSwitch
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Diagnostics.TraceSwitch.TraceInfo
+  type: Property
+  source:
+    remote:
+      path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/TraceSwitch.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: TraceInfo
+    path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/TraceSwitch.cs
+    startLine: 77
+  assemblies:
+  - System.Diagnostics.TraceSource
+  namespace: System.Diagnostics
+  summary: "\n<p>Gets a value indicating whether the switch allows informational messages.</p>\n"
+  syntax:
+    content: public bool TraceInfo { get; }
+    content.vb: Public ReadOnly Property TraceInfo As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if the <xref href=\"System.Diagnostics.TraceSwitch.Level\" data-throw-if-not-resolved=\"false\"></xref> property is set to <xref href=\"System.Diagnostics.TraceLevel.Info\" data-throw-if-not-resolved=\"false\"></xref> or <xref href=\"System.Diagnostics.TraceLevel.Verbose\" data-throw-if-not-resolved=\"false\"></xref>; otherwise, <strong>false</strong>.  </p>\n"
+  seealso:
+  - type: System.Diagnostics.TraceSwitch
+    commentId: T:System.Diagnostics.TraceSwitch
+  - type: System.Diagnostics.Switch
+    commentId: T:System.Diagnostics.Switch
+  - type: System.Diagnostics.TraceLevel
+    commentId: T:System.Diagnostics.TraceLevel
+  - type: System.Diagnostics.Debug
+    commentId: T:System.Diagnostics.Debug
+  - type: System.Diagnostics.Trace
+    commentId: T:System.Diagnostics.Trace
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  nameWithType: TraceSwitch.TraceInfo
+- uid: System.Diagnostics.TraceSwitch.TraceVerbose
+  commentId: P:System.Diagnostics.TraceSwitch.TraceVerbose
+  id: TraceVerbose
+  parent: System.Diagnostics.TraceSwitch
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Diagnostics.TraceSwitch.TraceVerbose
+  type: Property
+  source:
+    remote:
+      path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/TraceSwitch.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: TraceVerbose
+    path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/TraceSwitch.cs
+    startLine: 90
+  assemblies:
+  - System.Diagnostics.TraceSource
+  namespace: System.Diagnostics
+  summary: "\n<p>Gets a value indicating whether the switch allows all messages.</p>\n"
+  syntax:
+    content: public bool TraceVerbose { get; }
+    content.vb: Public ReadOnly Property TraceVerbose As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if the <xref href=\"System.Diagnostics.TraceSwitch.Level\" data-throw-if-not-resolved=\"false\"></xref> property is set to <xref href=\"System.Diagnostics.TraceLevel.Verbose\" data-throw-if-not-resolved=\"false\"></xref>; otherwise, <strong>false</strong>.</p>\n"
+  seealso:
+  - type: System.Diagnostics.TraceSwitch
+    commentId: T:System.Diagnostics.TraceSwitch
+  - type: System.Diagnostics.Switch
+    commentId: T:System.Diagnostics.Switch
+  - type: System.Diagnostics.TraceLevel
+    commentId: T:System.Diagnostics.TraceLevel
+  - type: System.Diagnostics.Debug
+    commentId: T:System.Diagnostics.Debug
+  - type: System.Diagnostics.Trace
+    commentId: T:System.Diagnostics.Trace
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  nameWithType: TraceSwitch.TraceVerbose
+- uid: System.Diagnostics.TraceSwitch.TraceWarning
+  commentId: P:System.Diagnostics.TraceSwitch.TraceWarning
+  id: TraceWarning
+  parent: System.Diagnostics.TraceSwitch
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Diagnostics.TraceSwitch.TraceWarning
+  type: Property
+  source:
+    remote:
+      path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/TraceSwitch.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: TraceWarning
+    path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/TraceSwitch.cs
+    startLine: 64
+  assemblies:
+  - System.Diagnostics.TraceSource
+  namespace: System.Diagnostics
+  summary: "\n<p>Gets a value indicating whether the switch allows warning messages.</p>\n"
+  syntax:
+    content: public bool TraceWarning { get; }
+    content.vb: Public ReadOnly Property TraceWarning As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if the <xref href=\"System.Diagnostics.TraceSwitch.Level\" data-throw-if-not-resolved=\"false\"></xref> property is set to <xref href=\"System.Diagnostics.TraceLevel.Warning\" data-throw-if-not-resolved=\"false\"></xref>, <xref href=\"System.Diagnostics.TraceLevel.Info\" data-throw-if-not-resolved=\"false\"></xref>, or <xref href=\"System.Diagnostics.TraceLevel.Verbose\" data-throw-if-not-resolved=\"false\"></xref>; otherwise, <strong>false</strong>.</p>\n"
+  seealso:
+  - type: System.Diagnostics.TraceSwitch
+    commentId: T:System.Diagnostics.TraceSwitch
+  - type: System.Diagnostics.Switch
+    commentId: T:System.Diagnostics.Switch
+  - type: System.Diagnostics.TraceLevel
+    commentId: T:System.Diagnostics.TraceLevel
+  - type: System.Diagnostics.Debug
+    commentId: T:System.Diagnostics.Debug
+  - type: System.Diagnostics.Trace
+    commentId: T:System.Diagnostics.Trace
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  nameWithType: TraceSwitch.TraceWarning
+- uid: System.Diagnostics.TraceSwitch.OnSwitchSettingChanged
+  commentId: M:System.Diagnostics.TraceSwitch.OnSwitchSettingChanged
+  id: OnSwitchSettingChanged
+  parent: System.Diagnostics.TraceSwitch
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Diagnostics.TraceSwitch.OnSwitchSettingChanged()
+  type: Method
+  source:
+    remote:
+      path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/TraceSwitch.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: OnSwitchSettingChanged
+    path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/TraceSwitch.cs
+    startLine: 103
+  assemblies:
+  - System.Diagnostics.TraceSource
+  namespace: System.Diagnostics
+  summary: "\n<p>Updates and corrects the level for this switch.</p>\n"
+  syntax:
+    content: protected override void OnSwitchSettingChanged()
+    content.vb: Protected Overrides Sub OnSwitchSettingChanged
+  overridden: System.Diagnostics.Switch.OnSwitchSettingChanged
+  seealso:
+  - type: System.Diagnostics.TraceSwitch
+    commentId: T:System.Diagnostics.TraceSwitch
+  - type: System.Diagnostics.Switch
+    commentId: T:System.Diagnostics.Switch
+  - type: System.Diagnostics.Debug
+    commentId: T:System.Diagnostics.Debug
+  - type: System.Diagnostics.Trace
+    commentId: T:System.Diagnostics.Trace
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+  nameWithType: TraceSwitch.OnSwitchSettingChanged()
+- uid: System.Diagnostics.TraceSwitch.OnValueChanged
+  commentId: M:System.Diagnostics.TraceSwitch.OnValueChanged
+  id: OnValueChanged
+  parent: System.Diagnostics.TraceSwitch
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Diagnostics.TraceSwitch.OnValueChanged()
+  type: Method
+  source:
+    remote:
+      path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/TraceSwitch.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: OnValueChanged
+    path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/TraceSwitch.cs
+    startLine: 118
+  assemblies:
+  - System.Diagnostics.TraceSource
+  namespace: System.Diagnostics
+  summary: "\n<p>Sets the <xref href=\"System.Diagnostics.Switch.SwitchSetting\" data-throw-if-not-resolved=\"false\"></xref> property to the integer equivalent of the <xref href=\"System.Diagnostics.Switch.Value\" data-throw-if-not-resolved=\"false\"></xref> property.</p>\n"
+  syntax:
+    content: protected override void OnValueChanged()
+    content.vb: Protected Overrides Sub OnValueChanged
+  overridden: System.Diagnostics.Switch.OnValueChanged
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+  nameWithType: TraceSwitch.OnValueChanged()
+references:
+- uid: System.Diagnostics
+  isExternal: false
+  name: "XXX"
+  fullName: System.Diagnostics
+  nameWithType: System.Diagnostics
+  commentId: N:System.Diagnostics
+- uid: System.Object
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Object
+  nameWithType: Object
+  commentId: T:System.Object
+- uid: System.Diagnostics.Switch
+  parent: System.Diagnostics
+  isExternal: false
+  name: "XXX"
+  fullName: System.Diagnostics.Switch
+  nameWithType: Switch
+  commentId: T:System.Diagnostics.Switch
+- uid: System.Diagnostics.Switch.Description
+  parent: System.Diagnostics.Switch
+  isExternal: false
+  name: "XXX"
+  fullName: System.Diagnostics.Switch.Description
+  nameWithType: Switch.Description
+  commentId: P:System.Diagnostics.Switch.Description
+- uid: System.Diagnostics.Switch.DisplayName
+  parent: System.Diagnostics.Switch
+  isExternal: false
+  name: "XXX"
+  fullName: System.Diagnostics.Switch.DisplayName
+  nameWithType: Switch.DisplayName
+  commentId: P:System.Diagnostics.Switch.DisplayName
+- uid: System.Diagnostics.Switch.SwitchSetting
+  parent: System.Diagnostics.Switch
+  isExternal: false
+  name: "XXX"
+  fullName: System.Diagnostics.Switch.SwitchSetting
+  nameWithType: Switch.SwitchSetting
+  commentId: P:System.Diagnostics.Switch.SwitchSetting
+- uid: System.Diagnostics.Switch.Value
+  parent: System.Diagnostics.Switch
+  isExternal: false
+  name: "XXX"
+  fullName: System.Diagnostics.Switch.Value
+  nameWithType: Switch.Value
+  commentId: P:System.Diagnostics.Switch.Value
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.ToString()
+  commentId: M:System.Object.ToString
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.Equals(Object)
+  commentId: M:System.Object.Equals(System.Object)
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.Equals(Object, Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.GetHashCode()
+  commentId: M:System.Object.GetHashCode
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.GetType()
+  commentId: M:System.Object.GetType
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.MemberwiseClone()
+  commentId: M:System.Object.MemberwiseClone
+- uid: System
+  isExternal: false
+  name: "XXX"
+  fullName: System
+  nameWithType: System
+  commentId: N:System
+- uid: System.String
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.String
+  nameWithType: String
+  commentId: T:System.String
+- uid: System.Diagnostics.TraceLevel
+  parent: System.Diagnostics
+  isExternal: false
+  name: "XXX"
+  fullName: System.Diagnostics.TraceLevel
+  nameWithType: TraceLevel
+  commentId: T:System.Diagnostics.TraceLevel
+- uid: System.Boolean
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Boolean
+  nameWithType: Boolean
+  commentId: T:System.Boolean
+- uid: System.Diagnostics.Switch.OnSwitchSettingChanged
+  parent: System.Diagnostics.Switch
+  isExternal: false
+  name: "XXX"
+  fullName: System.Diagnostics.Switch.OnSwitchSettingChanged()
+  spec.csharp:
+  - uid: System.Diagnostics.Switch.OnSwitchSettingChanged
+    name: "XXX"
+    fullName: System.Diagnostics.Switch.OnSwitchSettingChanged
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Diagnostics.Switch.OnSwitchSettingChanged
+    name: "XXX"
+    fullName: System.Diagnostics.Switch.OnSwitchSettingChanged
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Switch.OnSwitchSettingChanged()
+  commentId: M:System.Diagnostics.Switch.OnSwitchSettingChanged
+- uid: System.Diagnostics.Switch.OnValueChanged
+  parent: System.Diagnostics.Switch
+  isExternal: false
+  name: "XXX"
+  fullName: System.Diagnostics.Switch.OnValueChanged()
+  spec.csharp:
+  - uid: System.Diagnostics.Switch.OnValueChanged
+    name: "XXX"
+    fullName: System.Diagnostics.Switch.OnValueChanged
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Diagnostics.Switch.OnValueChanged
+    name: "XXX"
+    fullName: System.Diagnostics.Switch.OnValueChanged
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Switch.OnValueChanged()
+  commentId: M:System.Diagnostics.Switch.OnValueChanged
+- uid: System.ArgumentException
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentException
+  nameWithType: ArgumentException
+  commentId: T:System.ArgumentException

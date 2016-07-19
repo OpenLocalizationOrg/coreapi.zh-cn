@@ -1,0 +1,254 @@
+items:
+- uid: System.Xml.IXmlNamespaceResolver
+  commentId: T:System.Xml.IXmlNamespaceResolver
+  id: IXmlNamespaceResolver
+  parent: System.Xml
+  children:
+  - System.Xml.IXmlNamespaceResolver.GetNamespacesInScope(System.Xml.XmlNamespaceScope)
+  - System.Xml.IXmlNamespaceResolver.LookupNamespace(System.String)
+  - System.Xml.IXmlNamespaceResolver.LookupPrefix(System.String)
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Xml.IXmlNamespaceResolver
+  type: Interface
+  source:
+    remote:
+      path: src/System.Xml.ReaderWriter/ref/System.Xml.ReaderWriter.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: IXmlNamespaceResolver
+    path: src/System.Xml.ReaderWriter/ref/System.Xml.ReaderWriter.cs
+    startLine: 27
+  assemblies:
+  - System.Xml.ReaderWriter
+  namespace: System.Xml
+  summary: "\n<p>Provides read-only access to a set of prefix and namespace mappings.</p>\n"
+  syntax:
+    content: public interface IXmlNamespaceResolver
+    content.vb: Public Interface IXmlNamespaceResolver
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+  nameWithType: IXmlNamespaceResolver
+- uid: System.Xml.IXmlNamespaceResolver.GetNamespacesInScope(System.Xml.XmlNamespaceScope)
+  commentId: M:System.Xml.IXmlNamespaceResolver.GetNamespacesInScope(System.Xml.XmlNamespaceScope)
+  id: GetNamespacesInScope(System.Xml.XmlNamespaceScope)
+  parent: System.Xml.IXmlNamespaceResolver
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Xml.IXmlNamespaceResolver.GetNamespacesInScope(System.Xml.XmlNamespaceScope)
+  type: Method
+  source:
+    remote:
+      path: src/System.Xml.ReaderWriter/ref/System.Xml.ReaderWriter.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: GetNamespacesInScope
+    path: src/System.Xml.ReaderWriter/ref/System.Xml.ReaderWriter.cs
+    startLine: 29
+  assemblies:
+  - System.Xml.ReaderWriter
+  namespace: System.Xml
+  summary: "\n<p>Gets a collection of defined prefix-namespace mappings that are currently in scope.</p>\n"
+  syntax:
+    content: IDictionary<string, string> GetNamespacesInScope(XmlNamespaceScope scope)
+    content.vb: Function GetNamespacesInScope(scope As XmlNamespaceScope) As IDictionary(Of String, String)
+    parameters:
+    - id: scope
+      type: System.Xml.XmlNamespaceScope
+      description: "\n<p>An <xref href=\"System.Xml.XmlNamespaceScope\" data-throw-if-not-resolved=\"false\"></xref> value that specifies the type of namespace nodes to return.</p>\n"
+    return:
+      type: System.Collections.Generic.IDictionary{System.String,System.String}
+      description: "\n<p>An <xref href=\"System.Collections.IDictionary\" data-throw-if-not-resolved=\"false\"></xref> that contains the current in-scope namespaces.</p>\n"
+  nameWithType: IXmlNamespaceResolver.GetNamespacesInScope(XmlNamespaceScope)
+- uid: System.Xml.IXmlNamespaceResolver.LookupNamespace(System.String)
+  commentId: M:System.Xml.IXmlNamespaceResolver.LookupNamespace(System.String)
+  id: LookupNamespace(System.String)
+  parent: System.Xml.IXmlNamespaceResolver
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Xml.IXmlNamespaceResolver.LookupNamespace(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/System.Xml.ReaderWriter/ref/System.Xml.ReaderWriter.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: LookupNamespace
+    path: src/System.Xml.ReaderWriter/ref/System.Xml.ReaderWriter.cs
+    startLine: 30
+  assemblies:
+  - System.Xml.ReaderWriter
+  namespace: System.Xml
+  summary: "\n<p>Gets the namespace URI mapped to the specified prefix.</p>\n"
+  syntax:
+    content: string LookupNamespace(string prefix)
+    content.vb: Function LookupNamespace(prefix As String) As String
+    parameters:
+    - id: prefix
+      type: System.String
+      description: "\n<p>The prefix whose namespace URI you wish to find.</p>\n"
+    return:
+      type: System.String
+      description: "\n<p>The namespace URI that is mapped to the prefix; <strong>null</strong> if the prefix is not mapped to a namespace URI.</p>\n"
+  nameWithType: IXmlNamespaceResolver.LookupNamespace(String)
+- uid: System.Xml.IXmlNamespaceResolver.LookupPrefix(System.String)
+  commentId: M:System.Xml.IXmlNamespaceResolver.LookupPrefix(System.String)
+  id: LookupPrefix(System.String)
+  parent: System.Xml.IXmlNamespaceResolver
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Xml.IXmlNamespaceResolver.LookupPrefix(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/System.Xml.ReaderWriter/ref/System.Xml.ReaderWriter.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: LookupPrefix
+    path: src/System.Xml.ReaderWriter/ref/System.Xml.ReaderWriter.cs
+    startLine: 31
+  assemblies:
+  - System.Xml.ReaderWriter
+  namespace: System.Xml
+  summary: "\n<p>Gets the prefix that is mapped to the specified namespace URI.</p>\n"
+  syntax:
+    content: string LookupPrefix(string namespaceName)
+    content.vb: Function LookupPrefix(namespaceName As String) As String
+    parameters:
+    - id: namespaceName
+      type: System.String
+      description: "\n<p>The namespace URI whose prefix you wish to find.</p>\n"
+    return:
+      type: System.String
+      description: "\n<p>The prefix that is mapped to the namespace URI; <strong>null</strong> if the namespace URI is not mapped to a prefix.</p>\n"
+  nameWithType: IXmlNamespaceResolver.LookupPrefix(String)
+references:
+- uid: System.Xml
+  isExternal: false
+  name: "XXX"
+  fullName: System.Xml
+  commentId: N:System.Xml
+  nameWithType: System.Xml
+- uid: System.Xml.XmlNamespaceScope
+  parent: System.Xml
+  isExternal: false
+  name: "XXX"
+  fullName: System.Xml.XmlNamespaceScope
+  commentId: T:System.Xml.XmlNamespaceScope
+  nameWithType: XmlNamespaceScope
+- uid: System.Collections.Generic.IDictionary{System.String,System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IDictionary`2
+  name: "XXX"
+  fullName: System.Collections.Generic.IDictionary<System.String, System.String>
+  fullname.vb: System.Collections.Generic.IDictionary(Of System.String, System.String)
+  name.vb: IDictionary(Of String, String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: "XXX"
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: "<"
+    fullName: <
+  - uid: System.String
+    name: "XXX"
+    fullName: System.String
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.String
+    name: "XXX"
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: "XXX"
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: 'XXX '
+    fullName: '(Of '
+  - uid: System.String
+    name: "XXX"
+    fullName: System.String
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.String
+    name: "XXX"
+    fullName: System.String
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: T:System.Collections.Generic.IDictionary{System.String,System.String}
+  nameWithType: IDictionary<String, String>
+  nameWithType.vb: IDictionary(Of String, String)
+- uid: System.Collections.Generic.IDictionary`2
+  isExternal: false
+  name: "XXX"
+  fullName: System.Collections.Generic.IDictionary<TKey, TValue>
+  fullname.vb: System.Collections.Generic.IDictionary(Of TKey, TValue)
+  name.vb: IDictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: "XXX"
+    fullName: System.Collections.Generic.IDictionary
+  - name: "<"
+    fullName: <
+  - name: "XXX"
+    fullName: TKey
+  - name: 'XXX '
+    fullName: ', '
+  - name: "XXX"
+    fullName: TValue
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: "XXX"
+    fullName: System.Collections.Generic.IDictionary
+  - name: 'XXX '
+    fullName: '(Of '
+  - name: "XXX"
+    fullName: TKey
+  - name: 'XXX '
+    fullName: ', '
+  - name: "XXX"
+    fullName: TValue
+  - name: "XXX"
+    fullName: )
+  commentId: T:System.Collections.Generic.IDictionary`2
+  nameWithType: IDictionary<TKey, TValue>
+  nameWithType.vb: IDictionary(Of TKey, TValue)
+- uid: System.Collections.Generic
+  isExternal: false
+  name: "XXX"
+  fullName: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  nameWithType: System.Collections.Generic
+- uid: System.String
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.String
+  commentId: T:System.String
+  nameWithType: String
+- uid: System
+  isExternal: false
+  name: "XXX"
+  fullName: System
+  commentId: N:System
+  nameWithType: System

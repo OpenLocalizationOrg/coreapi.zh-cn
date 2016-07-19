@@ -1,0 +1,1270 @@
+items:
+- uid: System.Net.Cookie
+  commentId: T:System.Net.Cookie
+  id: Cookie
+  parent: System.Net
+  children:
+  - System.Net.Cookie.#ctor
+  - System.Net.Cookie.#ctor(System.String,System.String)
+  - System.Net.Cookie.#ctor(System.String,System.String,System.String)
+  - System.Net.Cookie.#ctor(System.String,System.String,System.String,System.String)
+  - System.Net.Cookie.Comment
+  - System.Net.Cookie.CommentUri
+  - System.Net.Cookie.Discard
+  - System.Net.Cookie.Domain
+  - System.Net.Cookie.Equals(System.Object)
+  - System.Net.Cookie.Expired
+  - System.Net.Cookie.Expires
+  - System.Net.Cookie.GetHashCode
+  - System.Net.Cookie.HttpOnly
+  - System.Net.Cookie.Name
+  - System.Net.Cookie.Path
+  - System.Net.Cookie.Port
+  - System.Net.Cookie.Secure
+  - System.Net.Cookie.TimeStamp
+  - System.Net.Cookie.ToString
+  - System.Net.Cookie.Value
+  - System.Net.Cookie.Version
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Net.Cookie
+  type: Class
+  source:
+    remote:
+      path: src/System.Net.Primitives/ref/System.Net.Primitives.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Cookie
+    path: src/System.Net.Primitives/ref/System.Net.Primitives.cs
+    startLine: 21
+  assemblies:
+  - System.Net.Primitives
+  namespace: System.Net
+  summary: "\n<p>Provides a set of properties and methods that are used to manage cookies. This class cannot be inherited.</p>\n"
+  syntax:
+    content: public sealed class Cookie
+    content.vb: Public NotInheritable Class Cookie
+  seealso:
+  - type: System.Net.CookieCollection
+    commentId: T:System.Net.CookieCollection
+  - type: System.Net.CookieContainer
+    commentId: T:System.Net.CookieContainer
+  - type: System.Net.CookieException
+    commentId: T:System.Net.CookieException
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+  nameWithType: Cookie
+- uid: System.Net.Cookie.#ctor
+  commentId: M:System.Net.Cookie.#ctor
+  id: '#ctor'
+  parent: System.Net.Cookie
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Net.Cookie.Cookie()
+  type: Constructor
+  source:
+    remote:
+      path: src/System.Net.Primitives/ref/System.Net.Primitives.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: .ctor
+    path: src/System.Net.Primitives/ref/System.Net.Primitives.cs
+    startLine: 23
+  assemblies:
+  - System.Net.Primitives
+  namespace: System.Net
+  summary: "\n<p>Initializes a new instance of the <xref href=\"System.Net.Cookie\" data-throw-if-not-resolved=\"false\"></xref> class.</p>\n"
+  syntax:
+    content: public Cookie()
+    content.vb: Public Sub New
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: Cookie.Cookie()
+- uid: System.Net.Cookie.#ctor(System.String,System.String)
+  commentId: M:System.Net.Cookie.#ctor(System.String,System.String)
+  id: '#ctor(System.String,System.String)'
+  parent: System.Net.Cookie
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Net.Cookie.Cookie(System.String, System.String)
+  type: Constructor
+  source:
+    remote:
+      path: src/System.Net.Primitives/ref/System.Net.Primitives.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: .ctor
+    path: src/System.Net.Primitives/ref/System.Net.Primitives.cs
+    startLine: 24
+  assemblies:
+  - System.Net.Primitives
+  namespace: System.Net
+  summary: "\n<p>Initializes a new instance of the <xref href=\"System.Net.Cookie\" data-throw-if-not-resolved=\"false\"></xref> class with a specified <xref href=\"System.Net.Cookie.Name\" data-throw-if-not-resolved=\"false\"></xref> and <xref href=\"System.Net.Cookie.Value\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  syntax:
+    content: public Cookie(string name, string value)
+    content.vb: Public Sub New(name As String, value As String)
+    parameters:
+    - id: name
+      type: System.String
+      description: "\n<p>The name of a <xref href=\"System.Net.Cookie\" data-throw-if-not-resolved=\"false\"></xref>. The following characters must not be used inside <em>name</em>: equal sign, semicolon, comma, newline (\\n), return (\\r), tab (\\t), and space character. The dollar sign character (\"$\") cannot be the first character. </p>\n"
+    - id: value
+      type: System.String
+      description: "\n<p>The value of a <xref href=\"System.Net.Cookie\" data-throw-if-not-resolved=\"false\"></xref>. The following characters must not be used inside <em>value</em>: semicolon, comma. </p>\n"
+  exceptions:
+  - type: System.Net.CookieException
+    commentId: T:System.Net.CookieException
+    description: "\n<p>The <em>name</em> parameter is <strong>null</strong>. </p>\n<p>-or- </p>\n<p>The <em>name</em> parameter is of zero length. </p>\n<p>-or- </p>\n<p>The <em>name</em> parameter contains an invalid character.</p>\n<p>-or- </p>\n<p>The <em>value</em> parameter is <strong>null</strong> .</p>\n<p>-or - </p>\n<p>The <em>value</em> parameter contains a string not enclosed in quotes that contains an invalid character. </p>\n"
+  seealso:
+  - type: System.Net.CookieCollection
+    commentId: T:System.Net.CookieCollection
+  - type: System.Net.CookieContainer
+    commentId: T:System.Net.CookieContainer
+  - type: System.Net.CookieException
+    commentId: T:System.Net.CookieException
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: Cookie.Cookie(String, String)
+- uid: System.Net.Cookie.#ctor(System.String,System.String,System.String)
+  commentId: M:System.Net.Cookie.#ctor(System.String,System.String,System.String)
+  id: '#ctor(System.String,System.String,System.String)'
+  parent: System.Net.Cookie
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Net.Cookie.Cookie(System.String, System.String, System.String)
+  type: Constructor
+  source:
+    remote:
+      path: src/System.Net.Primitives/ref/System.Net.Primitives.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: .ctor
+    path: src/System.Net.Primitives/ref/System.Net.Primitives.cs
+    startLine: 25
+  assemblies:
+  - System.Net.Primitives
+  namespace: System.Net
+  summary: "\n<p>Initializes a new instance of the <xref href=\"System.Net.Cookie\" data-throw-if-not-resolved=\"false\"></xref> class with a specified <xref href=\"System.Net.Cookie.Name\" data-throw-if-not-resolved=\"false\"></xref>, <xref href=\"System.Net.Cookie.Value\" data-throw-if-not-resolved=\"false\"></xref>, and <xref href=\"System.Net.Cookie.Path\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  syntax:
+    content: public Cookie(string name, string value, string path)
+    content.vb: Public Sub New(name As String, value As String, path As String)
+    parameters:
+    - id: name
+      type: System.String
+      description: "\n<p>The name of a <xref href=\"System.Net.Cookie\" data-throw-if-not-resolved=\"false\"></xref>. The following characters must not be used inside <em>name</em>: equal sign, semicolon, comma, newline (\\n), return (\\r), tab (\\t), and space character. The dollar sign character (\"$\") cannot be the first character. </p>\n"
+    - id: value
+      type: System.String
+      description: "\n<p>The value of a <xref href=\"System.Net.Cookie\" data-throw-if-not-resolved=\"false\"></xref>. The following characters must not be used inside <em>value</em>: semicolon, comma. </p>\n"
+    - id: path
+      type: System.String
+      description: "\n<p>The subset of URIs on the origin server to which this <xref href=\"System.Net.Cookie\" data-throw-if-not-resolved=\"false\"></xref> applies. The default value is \"/\". </p>\n"
+  exceptions:
+  - type: System.Net.CookieException
+    commentId: T:System.Net.CookieException
+    description: "\n<p>The <em>name</em> parameter is <strong>null</strong>. </p>\n<p>-or- </p>\n<p>The <em>name</em> parameter is of zero length. </p>\n<p>-or- </p>\n<p>The <em>name</em> parameter contains an invalid character.</p>\n<p>-or- </p>\n<p>The <em>value</em> parameter is <strong>null</strong> .</p>\n<p>-or - </p>\n<p>The <em>value</em> parameter contains a string not enclosed in quotes that contains an invalid character.</p>\n"
+  seealso:
+  - type: System.Net.CookieCollection
+    commentId: T:System.Net.CookieCollection
+  - type: System.Net.CookieContainer
+    commentId: T:System.Net.CookieContainer
+  - type: System.Net.CookieException
+    commentId: T:System.Net.CookieException
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: Cookie.Cookie(String, String, String)
+- uid: System.Net.Cookie.#ctor(System.String,System.String,System.String,System.String)
+  commentId: M:System.Net.Cookie.#ctor(System.String,System.String,System.String,System.String)
+  id: '#ctor(System.String,System.String,System.String,System.String)'
+  parent: System.Net.Cookie
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Net.Cookie.Cookie(System.String, System.String, System.String, System.String)
+  type: Constructor
+  source:
+    remote:
+      path: src/System.Net.Primitives/ref/System.Net.Primitives.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: .ctor
+    path: src/System.Net.Primitives/ref/System.Net.Primitives.cs
+    startLine: 26
+  assemblies:
+  - System.Net.Primitives
+  namespace: System.Net
+  summary: "\n<p>Initializes a new instance of the <xref href=\"System.Net.Cookie\" data-throw-if-not-resolved=\"false\"></xref> class with a specified <xref href=\"System.Net.Cookie.Name\" data-throw-if-not-resolved=\"false\"></xref>, <xref href=\"System.Net.Cookie.Value\" data-throw-if-not-resolved=\"false\"></xref>, <xref href=\"System.Net.Cookie.Path\" data-throw-if-not-resolved=\"false\"></xref>, and <xref href=\"System.Net.Cookie.Domain\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  syntax:
+    content: public Cookie(string name, string value, string path, string domain)
+    content.vb: Public Sub New(name As String, value As String, path As String, domain As String)
+    parameters:
+    - id: name
+      type: System.String
+      description: "\n<p>The name of a <xref href=\"System.Net.Cookie\" data-throw-if-not-resolved=\"false\"></xref>. The following characters must not be used inside <em>name</em>: equal sign, semicolon, comma, newline (\\n), return (\\r), tab (\\t), and space character. The dollar sign character (\"$\") cannot be the first character. </p>\n"
+    - id: value
+      type: System.String
+      description: "\n<p>The value of a <xref href=\"System.Net.Cookie\" data-throw-if-not-resolved=\"false\"></xref> object. The following characters must not be used inside <em>value</em>: semicolon, comma. </p>\n"
+    - id: path
+      type: System.String
+      description: "\n<p>The subset of URIs on the origin server to which this <xref href=\"System.Net.Cookie\" data-throw-if-not-resolved=\"false\"></xref> applies. The default value is \"/\". </p>\n"
+    - id: domain
+      type: System.String
+      description: "\n<p>The optional internet domain for which this <xref href=\"System.Net.Cookie\" data-throw-if-not-resolved=\"false\"></xref> is valid. The default value is the host this <xref href=\"System.Net.Cookie\" data-throw-if-not-resolved=\"false\"></xref> has been received from. </p>\n"
+  exceptions:
+  - type: System.Net.CookieException
+    commentId: T:System.Net.CookieException
+    description: "\n<p>The <em>name</em> parameter is <strong>null</strong>. </p>\n<p>-or- </p>\n<p>The <em>name</em> parameter is of zero length. </p>\n<p>-or- </p>\n<p>The <em>name</em> parameter contains an invalid character.</p>\n<p>-or- </p>\n<p>The <em>value</em> parameter is <strong>null</strong> .</p>\n<p>-or - </p>\n<p>The <em>value</em> parameter contains a string not enclosed in quotes that contains an invalid character.</p>\n"
+  seealso:
+  - type: System.Net.CookieCollection
+    commentId: T:System.Net.CookieCollection
+  - type: System.Net.CookieContainer
+    commentId: T:System.Net.CookieContainer
+  - type: System.Net.CookieException
+    commentId: T:System.Net.CookieException
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: Cookie.Cookie(String, String, String, String)
+- uid: System.Net.Cookie.Comment
+  commentId: P:System.Net.Cookie.Comment
+  id: Comment
+  parent: System.Net.Cookie
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Net.Cookie.Comment
+  type: Property
+  source:
+    remote:
+      path: src/System.Net.Primitives/ref/System.Net.Primitives.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Comment
+    path: src/System.Net.Primitives/ref/System.Net.Primitives.cs
+    startLine: 27
+  assemblies:
+  - System.Net.Primitives
+  namespace: System.Net
+  summary: "\n<p>Gets or sets a comment that the server can add to a <xref href=\"System.Net.Cookie\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  syntax:
+    content: public string Comment { get; set; }
+    content.vb: Public Property Comment As String
+    parameters: []
+    return:
+      type: System.String
+      description: "\n<p>An optional comment to document intended usage for this <xref href=\"System.Net.Cookie\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  seealso:
+  - type: System.Net.CookieCollection
+    commentId: T:System.Net.CookieCollection
+  - type: System.Net.CookieContainer
+    commentId: T:System.Net.CookieContainer
+  - type: System.Net.CookieException
+    commentId: T:System.Net.CookieException
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  nameWithType: Cookie.Comment
+- uid: System.Net.Cookie.CommentUri
+  commentId: P:System.Net.Cookie.CommentUri
+  id: CommentUri
+  parent: System.Net.Cookie
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Net.Cookie.CommentUri
+  type: Property
+  source:
+    remote:
+      path: src/System.Net.Primitives/ref/System.Net.Primitives.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: CommentUri
+    path: src/System.Net.Primitives/ref/System.Net.Primitives.cs
+    startLine: 28
+  assemblies:
+  - System.Net.Primitives
+  namespace: System.Net
+  summary: "\n<p>Gets or sets a URI comment that the server can provide with a <xref href=\"System.Net.Cookie\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  syntax:
+    content: public Uri CommentUri { get; set; }
+    content.vb: Public Property CommentUri As Uri
+    parameters: []
+    return:
+      type: System.Uri
+      description: "\n<p>An optional comment that represents the intended usage of the URI reference for this <xref href=\"System.Net.Cookie\" data-throw-if-not-resolved=\"false\"></xref>. The value must conform to URI format.</p>\n"
+  seealso:
+  - type: System.Net.CookieCollection
+    commentId: T:System.Net.CookieCollection
+  - type: System.Net.CookieContainer
+    commentId: T:System.Net.CookieContainer
+  - type: System.Net.CookieException
+    commentId: T:System.Net.CookieException
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  nameWithType: Cookie.CommentUri
+- uid: System.Net.Cookie.Discard
+  commentId: P:System.Net.Cookie.Discard
+  id: Discard
+  parent: System.Net.Cookie
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Net.Cookie.Discard
+  type: Property
+  source:
+    remote:
+      path: src/System.Net.Primitives/ref/System.Net.Primitives.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Discard
+    path: src/System.Net.Primitives/ref/System.Net.Primitives.cs
+    startLine: 29
+  assemblies:
+  - System.Net.Primitives
+  namespace: System.Net
+  summary: "\n<p>Gets or sets the discard flag set by the server.</p>\n"
+  syntax:
+    content: public bool Discard { get; set; }
+    content.vb: Public Property Discard As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if the client is to discard the <xref href=\"System.Net.Cookie\" data-throw-if-not-resolved=\"false\"></xref> at the end of the current session; otherwise, <strong>false</strong>. The default is <strong>false</strong>.</p>\n"
+  seealso:
+  - type: System.Net.CookieCollection
+    commentId: T:System.Net.CookieCollection
+  - type: System.Net.CookieContainer
+    commentId: T:System.Net.CookieContainer
+  - type: System.Net.CookieException
+    commentId: T:System.Net.CookieException
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  nameWithType: Cookie.Discard
+- uid: System.Net.Cookie.Domain
+  commentId: P:System.Net.Cookie.Domain
+  id: Domain
+  parent: System.Net.Cookie
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Net.Cookie.Domain
+  type: Property
+  source:
+    remote:
+      path: src/System.Net.Primitives/ref/System.Net.Primitives.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Domain
+    path: src/System.Net.Primitives/ref/System.Net.Primitives.cs
+    startLine: 30
+  assemblies:
+  - System.Net.Primitives
+  namespace: System.Net
+  summary: "\n<p>Gets or sets the URI for which the <xref href=\"System.Net.Cookie\" data-throw-if-not-resolved=\"false\"></xref> is valid.</p>\n"
+  syntax:
+    content: public string Domain { get; set; }
+    content.vb: Public Property Domain As String
+    parameters: []
+    return:
+      type: System.String
+      description: "\n<p>The URI for which the <xref href=\"System.Net.Cookie\" data-throw-if-not-resolved=\"false\"></xref> is valid.</p>\n"
+  seealso:
+  - type: System.Net.CookieCollection
+    commentId: T:System.Net.CookieCollection
+  - type: System.Net.CookieContainer
+    commentId: T:System.Net.CookieContainer
+  - type: System.Net.CookieException
+    commentId: T:System.Net.CookieException
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  nameWithType: Cookie.Domain
+- uid: System.Net.Cookie.Expired
+  commentId: P:System.Net.Cookie.Expired
+  id: Expired
+  parent: System.Net.Cookie
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Net.Cookie.Expired
+  type: Property
+  source:
+    remote:
+      path: src/System.Net.Primitives/ref/System.Net.Primitives.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Expired
+    path: src/System.Net.Primitives/ref/System.Net.Primitives.cs
+    startLine: 31
+  assemblies:
+  - System.Net.Primitives
+  namespace: System.Net
+  summary: "\n<p>Gets or sets the current state of the <xref href=\"System.Net.Cookie\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  syntax:
+    content: public bool Expired { get; set; }
+    content.vb: Public Property Expired As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if the <xref href=\"System.Net.Cookie\" data-throw-if-not-resolved=\"false\"></xref> has expired; otherwise, <strong>false</strong>. The default is <strong>false</strong>.</p>\n"
+  seealso:
+  - type: System.Net.CookieCollection
+    commentId: T:System.Net.CookieCollection
+  - type: System.Net.CookieContainer
+    commentId: T:System.Net.CookieContainer
+  - type: System.Net.CookieException
+    commentId: T:System.Net.CookieException
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  nameWithType: Cookie.Expired
+- uid: System.Net.Cookie.Expires
+  commentId: P:System.Net.Cookie.Expires
+  id: Expires
+  parent: System.Net.Cookie
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Net.Cookie.Expires
+  type: Property
+  source:
+    remote:
+      path: src/System.Net.Primitives/ref/System.Net.Primitives.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Expires
+    path: src/System.Net.Primitives/ref/System.Net.Primitives.cs
+    startLine: 32
+  assemblies:
+  - System.Net.Primitives
+  namespace: System.Net
+  summary: "\n<p>Gets or sets the expiration date and time for the <xref href=\"System.Net.Cookie\" data-throw-if-not-resolved=\"false\"></xref> as a <xref href=\"System.DateTime\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  syntax:
+    content: public DateTime Expires { get; set; }
+    content.vb: Public Property Expires As Date
+    parameters: []
+    return:
+      type: System.DateTime
+      description: "\n<p>The expiration date and time for the <xref href=\"System.Net.Cookie\" data-throw-if-not-resolved=\"false\"></xref> as a <xref href=\"System.DateTime\" data-throw-if-not-resolved=\"false\"></xref> instance.</p>\n"
+  seealso:
+  - type: System.Net.CookieCollection
+    commentId: T:System.Net.CookieCollection
+  - type: System.Net.CookieContainer
+    commentId: T:System.Net.CookieContainer
+  - type: System.Net.CookieException
+    commentId: T:System.Net.CookieException
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  nameWithType: Cookie.Expires
+- uid: System.Net.Cookie.HttpOnly
+  commentId: P:System.Net.Cookie.HttpOnly
+  id: HttpOnly
+  parent: System.Net.Cookie
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Net.Cookie.HttpOnly
+  type: Property
+  source:
+    remote:
+      path: src/System.Net.Primitives/ref/System.Net.Primitives.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: HttpOnly
+    path: src/System.Net.Primitives/ref/System.Net.Primitives.cs
+    startLine: 33
+  assemblies:
+  - System.Net.Primitives
+  namespace: System.Net
+  summary: "\n<p>Determines whether a page script or other active content can access this cookie.</p>\n"
+  syntax:
+    content: public bool HttpOnly { get; set; }
+    content.vb: Public Property HttpOnly As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: "\n<p>Boolean value that determines whether a page script or other active content can access this cookie.</p>\n"
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  nameWithType: Cookie.HttpOnly
+- uid: System.Net.Cookie.Name
+  commentId: P:System.Net.Cookie.Name
+  id: Name
+  parent: System.Net.Cookie
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Net.Cookie.Name
+  type: Property
+  source:
+    remote:
+      path: src/System.Net.Primitives/ref/System.Net.Primitives.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Name
+    path: src/System.Net.Primitives/ref/System.Net.Primitives.cs
+    startLine: 34
+  assemblies:
+  - System.Net.Primitives
+  namespace: System.Net
+  summary: "\n<p>Gets or sets the name for the <xref href=\"System.Net.Cookie\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  syntax:
+    content: public string Name { get; set; }
+    content.vb: Public Property Name As String
+    parameters: []
+    return:
+      type: System.String
+      description: "\n<p>The name for the <xref href=\"System.Net.Cookie\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  exceptions:
+  - type: System.Net.CookieException
+    commentId: T:System.Net.CookieException
+    description: "\n<p>The value specified for a set operation is <strong>null</strong> or the empty string</p>\n<p>- or -</p>\n<p>The value specified for a set operation contained an illegal character. The following characters must not be used inside the <xref href=\"System.Net.Cookie.Name\" data-throw-if-not-resolved=\"false\"></xref> property: equal sign, semicolon, comma, newline (\\n), return (\\r), tab (\\t), and space character. The dollar sign character (\"$\") cannot be the first character.</p>\n"
+  seealso:
+  - type: System.Net.CookieCollection
+    commentId: T:System.Net.CookieCollection
+  - type: System.Net.CookieContainer
+    commentId: T:System.Net.CookieContainer
+  - type: System.Net.CookieException
+    commentId: T:System.Net.CookieException
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  nameWithType: Cookie.Name
+- uid: System.Net.Cookie.Path
+  commentId: P:System.Net.Cookie.Path
+  id: Path
+  parent: System.Net.Cookie
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Net.Cookie.Path
+  type: Property
+  source:
+    remote:
+      path: src/System.Net.Primitives/ref/System.Net.Primitives.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Path
+    path: src/System.Net.Primitives/ref/System.Net.Primitives.cs
+    startLine: 35
+  assemblies:
+  - System.Net.Primitives
+  namespace: System.Net
+  summary: "\n<p>Gets or sets the URIs to which the <xref href=\"System.Net.Cookie\" data-throw-if-not-resolved=\"false\"></xref> applies.</p>\n"
+  syntax:
+    content: public string Path { get; set; }
+    content.vb: Public Property Path As String
+    parameters: []
+    return:
+      type: System.String
+      description: "\n<p>The URIs to which the <xref href=\"System.Net.Cookie\" data-throw-if-not-resolved=\"false\"></xref> applies.</p>\n"
+  seealso:
+  - type: System.Net.CookieCollection
+    commentId: T:System.Net.CookieCollection
+  - type: System.Net.CookieContainer
+    commentId: T:System.Net.CookieContainer
+  - type: System.Net.CookieException
+    commentId: T:System.Net.CookieException
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  nameWithType: Cookie.Path
+- uid: System.Net.Cookie.Port
+  commentId: P:System.Net.Cookie.Port
+  id: Port
+  parent: System.Net.Cookie
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Net.Cookie.Port
+  type: Property
+  source:
+    remote:
+      path: src/System.Net.Primitives/ref/System.Net.Primitives.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Port
+    path: src/System.Net.Primitives/ref/System.Net.Primitives.cs
+    startLine: 36
+  assemblies:
+  - System.Net.Primitives
+  namespace: System.Net
+  summary: "\n<p>Gets or sets a list of TCP ports that the <xref href=\"System.Net.Cookie\" data-throw-if-not-resolved=\"false\"></xref> applies to.</p>\n"
+  syntax:
+    content: public string Port { get; set; }
+    content.vb: Public Property Port As String
+    parameters: []
+    return:
+      type: System.String
+      description: "\n<p>The list of TCP ports that the <xref href=\"System.Net.Cookie\" data-throw-if-not-resolved=\"false\"></xref> applies to.</p>\n"
+  exceptions:
+  - type: System.Net.CookieException
+    commentId: T:System.Net.CookieException
+    description: "\n<p>The value specified for a set operation could not be parsed or is not enclosed in double quotes. </p>\n"
+  seealso:
+  - type: System.Net.CookieCollection
+    commentId: T:System.Net.CookieCollection
+  - type: System.Net.CookieContainer
+    commentId: T:System.Net.CookieContainer
+  - type: System.Net.CookieException
+    commentId: T:System.Net.CookieException
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  nameWithType: Cookie.Port
+- uid: System.Net.Cookie.Secure
+  commentId: P:System.Net.Cookie.Secure
+  id: Secure
+  parent: System.Net.Cookie
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Net.Cookie.Secure
+  type: Property
+  source:
+    remote:
+      path: src/System.Net.Primitives/ref/System.Net.Primitives.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Secure
+    path: src/System.Net.Primitives/ref/System.Net.Primitives.cs
+    startLine: 37
+  assemblies:
+  - System.Net.Primitives
+  namespace: System.Net
+  summary: "\n<p>Gets or sets the security level of a <xref href=\"System.Net.Cookie\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  syntax:
+    content: public bool Secure { get; set; }
+    content.vb: Public Property Secure As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if the client is only to return the cookie in subsequent requests if those requests use Secure Hypertext Transfer Protocol (HTTPS); otherwise, <strong>false</strong>. The default is <strong>false</strong>.</p>\n"
+  seealso:
+  - type: System.Net.CookieCollection
+    commentId: T:System.Net.CookieCollection
+  - type: System.Net.CookieContainer
+    commentId: T:System.Net.CookieContainer
+  - type: System.Net.CookieException
+    commentId: T:System.Net.CookieException
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  nameWithType: Cookie.Secure
+- uid: System.Net.Cookie.TimeStamp
+  commentId: P:System.Net.Cookie.TimeStamp
+  id: TimeStamp
+  parent: System.Net.Cookie
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Net.Cookie.TimeStamp
+  type: Property
+  source:
+    remote:
+      path: src/System.Net.Primitives/ref/System.Net.Primitives.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: TimeStamp
+    path: src/System.Net.Primitives/ref/System.Net.Primitives.cs
+    startLine: 38
+  assemblies:
+  - System.Net.Primitives
+  namespace: System.Net
+  summary: "\n<p>Gets the time when the cookie was issued as a <xref href=\"System.DateTime\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  syntax:
+    content: public DateTime TimeStamp { get; }
+    content.vb: Public ReadOnly Property TimeStamp As Date
+    parameters: []
+    return:
+      type: System.DateTime
+      description: "\n<p>The time when the cookie was issued as a <xref href=\"System.DateTime\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  seealso:
+  - type: System.Net.CookieCollection
+    commentId: T:System.Net.CookieCollection
+  - type: System.Net.CookieContainer
+    commentId: T:System.Net.CookieContainer
+  - type: System.Net.CookieException
+    commentId: T:System.Net.CookieException
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  nameWithType: Cookie.TimeStamp
+- uid: System.Net.Cookie.Value
+  commentId: P:System.Net.Cookie.Value
+  id: Value
+  parent: System.Net.Cookie
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Net.Cookie.Value
+  type: Property
+  source:
+    remote:
+      path: src/System.Net.Primitives/ref/System.Net.Primitives.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Value
+    path: src/System.Net.Primitives/ref/System.Net.Primitives.cs
+    startLine: 39
+  assemblies:
+  - System.Net.Primitives
+  namespace: System.Net
+  summary: "\n<p>Gets or sets the <xref href=\"System.Net.Cookie.Value\" data-throw-if-not-resolved=\"false\"></xref> for the <xref href=\"System.Net.Cookie\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  syntax:
+    content: public string Value { get; set; }
+    content.vb: Public Property Value As String
+    parameters: []
+    return:
+      type: System.String
+      description: "\n<p>The <xref href=\"System.Net.Cookie.Value\" data-throw-if-not-resolved=\"false\"></xref> for the <xref href=\"System.Net.Cookie\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  seealso:
+  - type: System.Net.CookieCollection
+    commentId: T:System.Net.CookieCollection
+  - type: System.Net.CookieContainer
+    commentId: T:System.Net.CookieContainer
+  - type: System.Net.CookieException
+    commentId: T:System.Net.CookieException
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  nameWithType: Cookie.Value
+- uid: System.Net.Cookie.Version
+  commentId: P:System.Net.Cookie.Version
+  id: Version
+  parent: System.Net.Cookie
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Net.Cookie.Version
+  type: Property
+  source:
+    remote:
+      path: src/System.Net.Primitives/ref/System.Net.Primitives.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Version
+    path: src/System.Net.Primitives/ref/System.Net.Primitives.cs
+    startLine: 40
+  assemblies:
+  - System.Net.Primitives
+  namespace: System.Net
+  summary: "\n<p>Gets or sets the version of HTTP state maintenance to which the cookie conforms.</p>\n"
+  syntax:
+    content: public int Version { get; set; }
+    content.vb: Public Property Version As Integer
+    parameters: []
+    return:
+      type: System.Int32
+      description: "\n<p>The version of HTTP state maintenance to which the cookie conforms.</p>\n"
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>The value specified for a version is not allowed. </p>\n"
+  seealso:
+  - type: System.Net.CookieCollection
+    commentId: T:System.Net.CookieCollection
+  - type: System.Net.CookieContainer
+    commentId: T:System.Net.CookieContainer
+  - type: System.Net.CookieException
+    commentId: T:System.Net.CookieException
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  nameWithType: Cookie.Version
+- uid: System.Net.Cookie.Equals(System.Object)
+  commentId: M:System.Net.Cookie.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: System.Net.Cookie
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Net.Cookie.Equals(System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/System.Net.Primitives/ref/System.Net.Primitives.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Equals
+    path: src/System.Net.Primitives/ref/System.Net.Primitives.cs
+    startLine: 41
+  assemblies:
+  - System.Net.Primitives
+  namespace: System.Net
+  summary: "\n<p>Overrides the <xref href=\"System.Object.Equals(System.Object)\" data-throw-if-not-resolved=\"false\"></xref> method.</p>\n"
+  syntax:
+    content: public override bool Equals(object comparand)
+    content.vb: Public Overrides Function Equals(comparand As Object) As Boolean
+    parameters:
+    - id: comparand
+      type: System.Object
+      description: "\n<p>A reference to a <xref href=\"System.Net.Cookie\" data-throw-if-not-resolved=\"false\"></xref>. </p>\n"
+    return:
+      type: System.Boolean
+      description: "\n<p>Returns <strong>true</strong> if the <xref href=\"System.Net.Cookie\" data-throw-if-not-resolved=\"false\"></xref> is equal to <em>comparand</em>. Two <xref href=\"System.Net.Cookie\" data-throw-if-not-resolved=\"false\"></xref> instances are equal if their <xref href=\"System.Net.Cookie.Name\" data-throw-if-not-resolved=\"false\"></xref>, <xref href=\"System.Net.Cookie.Value\" data-throw-if-not-resolved=\"false\"></xref>, <xref href=\"System.Net.Cookie.Path\" data-throw-if-not-resolved=\"false\"></xref>, <xref href=\"System.Net.Cookie.Domain\" data-throw-if-not-resolved=\"false\"></xref>, and <xref href=\"System.Net.Cookie.Version\" data-throw-if-not-resolved=\"false\"></xref> properties are equal. <xref href=\"System.Net.Cookie.Name\" data-throw-if-not-resolved=\"false\"></xref> and <xref href=\"System.Net.Cookie.Domain\" data-throw-if-not-resolved=\"false\"></xref> string comparisons are case-insensitive.</p>\n"
+  overridden: System.Object.Equals(System.Object)
+  seealso:
+  - type: System.Net.CookieCollection
+    commentId: T:System.Net.CookieCollection
+  - type: System.Net.CookieContainer
+    commentId: T:System.Net.CookieContainer
+  - type: System.Net.CookieException
+    commentId: T:System.Net.CookieException
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  nameWithType: Cookie.Equals(Object)
+- uid: System.Net.Cookie.GetHashCode
+  commentId: M:System.Net.Cookie.GetHashCode
+  id: GetHashCode
+  parent: System.Net.Cookie
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Net.Cookie.GetHashCode()
+  type: Method
+  source:
+    remote:
+      path: src/System.Net.Primitives/ref/System.Net.Primitives.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: GetHashCode
+    path: src/System.Net.Primitives/ref/System.Net.Primitives.cs
+    startLine: 42
+  assemblies:
+  - System.Net.Primitives
+  namespace: System.Net
+  summary: "\n<p>Overrides the <xref href=\"System.Object.GetHashCode\" data-throw-if-not-resolved=\"false\"></xref> method.</p>\n"
+  syntax:
+    content: public override int GetHashCode()
+    content.vb: Public Overrides Function GetHashCode As Integer
+    return:
+      type: System.Int32
+      description: "\n<p>The 32-bit signed integer hash code for this instance.</p>\n"
+  overridden: System.Object.GetHashCode
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  nameWithType: Cookie.GetHashCode()
+- uid: System.Net.Cookie.ToString
+  commentId: M:System.Net.Cookie.ToString
+  id: ToString
+  parent: System.Net.Cookie
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Net.Cookie.ToString()
+  type: Method
+  source:
+    remote:
+      path: src/System.Net.Primitives/ref/System.Net.Primitives.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: ToString
+    path: src/System.Net.Primitives/ref/System.Net.Primitives.cs
+    startLine: 43
+  assemblies:
+  - System.Net.Primitives
+  namespace: System.Net
+  summary: "\n<p>Overrides the <xref href=\"System.Object.ToString\" data-throw-if-not-resolved=\"false\"></xref> method.</p>\n"
+  syntax:
+    content: public override string ToString()
+    content.vb: Public Overrides Function ToString As String
+    return:
+      type: System.String
+      description: "\n<p>Returns a string representation of this <xref href=\"System.Net.Cookie\" data-throw-if-not-resolved=\"false\"></xref> object that is suitable for including in a HTTP Cookie: request header.</p>\n"
+  overridden: System.Object.ToString
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  nameWithType: Cookie.ToString()
+references:
+- uid: System.Net
+  isExternal: false
+  name: "XXX"
+  fullName: System.Net
+  commentId: N:System.Net
+  nameWithType: System.Net
+- uid: System.Object
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Object
+  commentId: T:System.Object
+  nameWithType: Object
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  nameWithType: Object.Equals(Object, Object)
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.GetType
+  nameWithType: Object.GetType()
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.MemberwiseClone
+  nameWithType: Object.MemberwiseClone()
+- uid: System
+  isExternal: false
+  name: "XXX"
+  fullName: System
+  commentId: N:System
+  nameWithType: System
+- uid: System.String
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.String
+  commentId: T:System.String
+  nameWithType: String
+- uid: System.Uri
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Uri
+  commentId: T:System.Uri
+  nameWithType: Uri
+- uid: System.Boolean
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Boolean
+  commentId: T:System.Boolean
+  nameWithType: Boolean
+- uid: System.DateTime
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.DateTime
+  commentId: T:System.DateTime
+  nameWithType: DateTime
+- uid: System.Int32
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Int32
+  commentId: T:System.Int32
+  nameWithType: Int32
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.Equals(System.Object)
+  nameWithType: Object.Equals(Object)
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.GetHashCode
+  nameWithType: Object.GetHashCode()
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.ToString
+  nameWithType: Object.ToString()
+- uid: System.Net.CookieException
+  isExternal: false
+  name: "XXX"
+  fullName: System.Net.CookieException
+  commentId: T:System.Net.CookieException
+  nameWithType: CookieException
+- uid: System.ArgumentOutOfRangeException
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentOutOfRangeException
+  nameWithType: ArgumentOutOfRangeException
+  commentId: T:System.ArgumentOutOfRangeException

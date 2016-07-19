@@ -1,0 +1,1972 @@
+items:
+- uid: System.Security.Cryptography.CngKey
+  commentId: T:System.Security.Cryptography.CngKey
+  id: CngKey
+  parent: System.Security.Cryptography
+  children:
+  - System.Security.Cryptography.CngKey.Algorithm
+  - System.Security.Cryptography.CngKey.AlgorithmGroup
+  - System.Security.Cryptography.CngKey.Create(System.Security.Cryptography.CngAlgorithm)
+  - System.Security.Cryptography.CngKey.Create(System.Security.Cryptography.CngAlgorithm,System.String)
+  - System.Security.Cryptography.CngKey.Create(System.Security.Cryptography.CngAlgorithm,System.String,System.Security.Cryptography.CngKeyCreationParameters)
+  - System.Security.Cryptography.CngKey.Delete
+  - System.Security.Cryptography.CngKey.Dispose
+  - System.Security.Cryptography.CngKey.Exists(System.String)
+  - System.Security.Cryptography.CngKey.Exists(System.String,System.Security.Cryptography.CngProvider)
+  - System.Security.Cryptography.CngKey.Exists(System.String,System.Security.Cryptography.CngProvider,System.Security.Cryptography.CngKeyOpenOptions)
+  - System.Security.Cryptography.CngKey.Export(System.Security.Cryptography.CngKeyBlobFormat)
+  - System.Security.Cryptography.CngKey.ExportPolicy
+  - System.Security.Cryptography.CngKey.GetProperty(System.String,System.Security.Cryptography.CngPropertyOptions)
+  - System.Security.Cryptography.CngKey.Handle
+  - System.Security.Cryptography.CngKey.HasProperty(System.String,System.Security.Cryptography.CngPropertyOptions)
+  - System.Security.Cryptography.CngKey.Import(System.Byte[],System.Security.Cryptography.CngKeyBlobFormat)
+  - System.Security.Cryptography.CngKey.Import(System.Byte[],System.Security.Cryptography.CngKeyBlobFormat,System.Security.Cryptography.CngProvider)
+  - System.Security.Cryptography.CngKey.IsEphemeral
+  - System.Security.Cryptography.CngKey.IsMachineKey
+  - System.Security.Cryptography.CngKey.KeyName
+  - System.Security.Cryptography.CngKey.KeySize
+  - System.Security.Cryptography.CngKey.KeyUsage
+  - System.Security.Cryptography.CngKey.Open(Microsoft.Win32.SafeHandles.SafeNCryptKeyHandle,System.Security.Cryptography.CngKeyHandleOpenOptions)
+  - System.Security.Cryptography.CngKey.Open(System.String)
+  - System.Security.Cryptography.CngKey.Open(System.String,System.Security.Cryptography.CngProvider)
+  - System.Security.Cryptography.CngKey.Open(System.String,System.Security.Cryptography.CngProvider,System.Security.Cryptography.CngKeyOpenOptions)
+  - System.Security.Cryptography.CngKey.ParentWindowHandle
+  - System.Security.Cryptography.CngKey.Provider
+  - System.Security.Cryptography.CngKey.ProviderHandle
+  - System.Security.Cryptography.CngKey.SetProperty(System.Security.Cryptography.CngProperty)
+  - System.Security.Cryptography.CngKey.UIPolicy
+  - System.Security.Cryptography.CngKey.UniqueName
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.Cryptography.CngKey
+  type: Class
+  source:
+    remote:
+      path: src/System.Security.Cryptography.Cng/ref/System.Security.Cryptography.Cng.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: CngKey
+    path: src/System.Security.Cryptography.Cng/ref/System.Security.Cryptography.Cng.cs
+    startLine: 101
+  assemblies:
+  - System.Security.Cryptography.Cng
+  namespace: System.Security.Cryptography
+  summary: "\n<p>Defines the core functionality for keys that are used with Cryptography Next Generation (CNG) objects.</p>\n"
+  syntax:
+    content: 'public sealed class CngKey : IDisposable'
+    content.vb: >-
+      Public NotInheritable Class CngKey
+          Implements IDisposable
+  inheritance:
+  - System.Object
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+  nameWithType: CngKey
+- uid: System.Security.Cryptography.CngKey.Algorithm
+  commentId: P:System.Security.Cryptography.CngKey.Algorithm
+  id: Algorithm
+  parent: System.Security.Cryptography.CngKey
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.Cryptography.CngKey.Algorithm
+  type: Property
+  source:
+    remote:
+      path: src/System.Security.Cryptography.Cng/ref/System.Security.Cryptography.Cng.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Algorithm
+    path: src/System.Security.Cryptography.Cng/ref/System.Security.Cryptography.Cng.cs
+    startLine: 104
+  assemblies:
+  - System.Security.Cryptography.Cng
+  namespace: System.Security.Cryptography
+  summary: "\n<p>Gets the algorithm that is used by the key.</p>\n"
+  syntax:
+    content: public CngAlgorithm Algorithm { get; }
+    content.vb: Public ReadOnly Property Algorithm As CngAlgorithm
+    parameters: []
+    return:
+      type: System.Security.Cryptography.CngAlgorithm
+      description: "\n<p>An object that specifies the name of an encryption algorithm.</p>\n"
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  nameWithType: CngKey.Algorithm
+- uid: System.Security.Cryptography.CngKey.AlgorithmGroup
+  commentId: P:System.Security.Cryptography.CngKey.AlgorithmGroup
+  id: AlgorithmGroup
+  parent: System.Security.Cryptography.CngKey
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.Cryptography.CngKey.AlgorithmGroup
+  type: Property
+  source:
+    remote:
+      path: src/System.Security.Cryptography.Cng/ref/System.Security.Cryptography.Cng.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: AlgorithmGroup
+    path: src/System.Security.Cryptography.Cng/ref/System.Security.Cryptography.Cng.cs
+    startLine: 105
+  assemblies:
+  - System.Security.Cryptography.Cng
+  namespace: System.Security.Cryptography
+  summary: "\n<p>Gets the algorithm group that is used by the key.</p>\n"
+  syntax:
+    content: public CngAlgorithmGroup AlgorithmGroup { get; }
+    content.vb: Public ReadOnly Property AlgorithmGroup As CngAlgorithmGroup
+    parameters: []
+    return:
+      type: System.Security.Cryptography.CngAlgorithmGroup
+      description: "\n<p>An object that specifies the name of an encryption algorithm group.</p>\n"
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  nameWithType: CngKey.AlgorithmGroup
+- uid: System.Security.Cryptography.CngKey.ExportPolicy
+  commentId: P:System.Security.Cryptography.CngKey.ExportPolicy
+  id: ExportPolicy
+  parent: System.Security.Cryptography.CngKey
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.Cryptography.CngKey.ExportPolicy
+  type: Property
+  source:
+    remote:
+      path: src/System.Security.Cryptography.Cng/ref/System.Security.Cryptography.Cng.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: ExportPolicy
+    path: src/System.Security.Cryptography.Cng/ref/System.Security.Cryptography.Cng.cs
+    startLine: 106
+  assemblies:
+  - System.Security.Cryptography.Cng
+  namespace: System.Security.Cryptography
+  summary: "\n<p>Gets the export policy that is used by the key.</p>\n"
+  syntax:
+    content: public CngExportPolicies ExportPolicy { get; }
+    content.vb: Public ReadOnly Property ExportPolicy As CngExportPolicies
+    parameters: []
+    return:
+      type: System.Security.Cryptography.CngExportPolicies
+      description: "\n<p>An object that specifies the export policy for the key.</p>\n"
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  nameWithType: CngKey.ExportPolicy
+- uid: System.Security.Cryptography.CngKey.Handle
+  commentId: P:System.Security.Cryptography.CngKey.Handle
+  id: Handle
+  parent: System.Security.Cryptography.CngKey
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.Cryptography.CngKey.Handle
+  type: Property
+  source:
+    remote:
+      path: src/System.Security.Cryptography.Cng/ref/System.Security.Cryptography.Cng.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Handle
+    path: src/System.Security.Cryptography.Cng/ref/System.Security.Cryptography.Cng.cs
+    startLine: 107
+  assemblies:
+  - System.Security.Cryptography.Cng
+  namespace: System.Security.Cryptography
+  summary: "\n<p>Gets a safe handle that represents a native key (NCRYPT_KEY_HANDLE). </p>\n"
+  syntax:
+    content: public SafeNCryptKeyHandle Handle { get; }
+    content.vb: Public ReadOnly Property Handle As SafeNCryptKeyHandle
+    parameters: []
+    return:
+      type: Microsoft.Win32.SafeHandles.SafeNCryptKeyHandle
+      description: "\n<p>A safe handle that represents the key.</p>\n"
+  see:
+  - type: System.Security.Permissions.SecurityPermission
+    commentId: T:System.Security.Permissions.SecurityPermission
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  nameWithType: CngKey.Handle
+- uid: System.Security.Cryptography.CngKey.IsEphemeral
+  commentId: P:System.Security.Cryptography.CngKey.IsEphemeral
+  id: IsEphemeral
+  parent: System.Security.Cryptography.CngKey
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.Cryptography.CngKey.IsEphemeral
+  type: Property
+  source:
+    remote:
+      path: src/System.Security.Cryptography.Cng/ref/System.Security.Cryptography.Cng.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: IsEphemeral
+    path: src/System.Security.Cryptography.Cng/ref/System.Security.Cryptography.Cng.cs
+    startLine: 108
+  assemblies:
+  - System.Security.Cryptography.Cng
+  namespace: System.Security.Cryptography
+  summary: "\n<p>Gets the persistence state of the key.</p>\n"
+  syntax:
+    content: public bool IsEphemeral { get; }
+    content.vb: Public ReadOnly Property IsEphemeral As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if the key is ephemeral; otherwise, <strong>false</strong>. </p>\n"
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  nameWithType: CngKey.IsEphemeral
+- uid: System.Security.Cryptography.CngKey.IsMachineKey
+  commentId: P:System.Security.Cryptography.CngKey.IsMachineKey
+  id: IsMachineKey
+  parent: System.Security.Cryptography.CngKey
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.Cryptography.CngKey.IsMachineKey
+  type: Property
+  source:
+    remote:
+      path: src/System.Security.Cryptography.Cng/ref/System.Security.Cryptography.Cng.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: IsMachineKey
+    path: src/System.Security.Cryptography.Cng/ref/System.Security.Cryptography.Cng.cs
+    startLine: 109
+  assemblies:
+  - System.Security.Cryptography.Cng
+  namespace: System.Security.Cryptography
+  summary: "\n<p>Gets the scope (machine or user) of the key.</p>\n"
+  syntax:
+    content: public bool IsMachineKey { get; }
+    content.vb: Public ReadOnly Property IsMachineKey As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if the key is available on a machine-wide basis; <strong>false</strong> if the key is only for the current user.</p>\n"
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  nameWithType: CngKey.IsMachineKey
+- uid: System.Security.Cryptography.CngKey.KeyName
+  commentId: P:System.Security.Cryptography.CngKey.KeyName
+  id: KeyName
+  parent: System.Security.Cryptography.CngKey
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.Cryptography.CngKey.KeyName
+  type: Property
+  source:
+    remote:
+      path: src/System.Security.Cryptography.Cng/ref/System.Security.Cryptography.Cng.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: KeyName
+    path: src/System.Security.Cryptography.Cng/ref/System.Security.Cryptography.Cng.cs
+    startLine: 110
+  assemblies:
+  - System.Security.Cryptography.Cng
+  namespace: System.Security.Cryptography
+  summary: "\n<p>Gets the name of the key.</p>\n"
+  syntax:
+    content: public string KeyName { get; }
+    content.vb: Public ReadOnly Property KeyName As String
+    parameters: []
+    return:
+      type: System.String
+      description: "\n<p>The name of the key. If the key is ephemeral, the value is <strong>null</strong>.</p>\n"
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  nameWithType: CngKey.KeyName
+- uid: System.Security.Cryptography.CngKey.KeySize
+  commentId: P:System.Security.Cryptography.CngKey.KeySize
+  id: KeySize
+  parent: System.Security.Cryptography.CngKey
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.Cryptography.CngKey.KeySize
+  type: Property
+  source:
+    remote:
+      path: src/System.Security.Cryptography.Cng/ref/System.Security.Cryptography.Cng.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: KeySize
+    path: src/System.Security.Cryptography.Cng/ref/System.Security.Cryptography.Cng.cs
+    startLine: 111
+  assemblies:
+  - System.Security.Cryptography.Cng
+  namespace: System.Security.Cryptography
+  summary: "\n<p>Gets the key size in bits.</p>\n"
+  syntax:
+    content: public int KeySize { get; }
+    content.vb: Public ReadOnly Property KeySize As Integer
+    parameters: []
+    return:
+      type: System.Int32
+      description: "\n<p>The key size in bits.</p>\n"
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  nameWithType: CngKey.KeySize
+- uid: System.Security.Cryptography.CngKey.KeyUsage
+  commentId: P:System.Security.Cryptography.CngKey.KeyUsage
+  id: KeyUsage
+  parent: System.Security.Cryptography.CngKey
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.Cryptography.CngKey.KeyUsage
+  type: Property
+  source:
+    remote:
+      path: src/System.Security.Cryptography.Cng/ref/System.Security.Cryptography.Cng.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: KeyUsage
+    path: src/System.Security.Cryptography.Cng/ref/System.Security.Cryptography.Cng.cs
+    startLine: 112
+  assemblies:
+  - System.Security.Cryptography.Cng
+  namespace: System.Security.Cryptography
+  summary: "\n<p>Gets the cryptographic operations specified by the key.</p>\n"
+  syntax:
+    content: public CngKeyUsages KeyUsage { get; }
+    content.vb: Public ReadOnly Property KeyUsage As CngKeyUsages
+    parameters: []
+    return:
+      type: System.Security.Cryptography.CngKeyUsages
+      description: "\n<p>A bitwise combination of the enumeration values that specify the usages allowed for the key.</p>\n"
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  nameWithType: CngKey.KeyUsage
+- uid: System.Security.Cryptography.CngKey.ParentWindowHandle
+  commentId: P:System.Security.Cryptography.CngKey.ParentWindowHandle
+  id: ParentWindowHandle
+  parent: System.Security.Cryptography.CngKey
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.Cryptography.CngKey.ParentWindowHandle
+  type: Property
+  source:
+    remote:
+      path: src/System.Security.Cryptography.Cng/ref/System.Security.Cryptography.Cng.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: ParentWindowHandle
+    path: src/System.Security.Cryptography.Cng/ref/System.Security.Cryptography.Cng.cs
+    startLine: 113
+  assemblies:
+  - System.Security.Cryptography.Cng
+  namespace: System.Security.Cryptography
+  summary: "\n<p>Gets or sets the window handle (HWND) that should be used for user interface (UI) prompts caused by accessing the key.</p>\n"
+  syntax:
+    content: public IntPtr ParentWindowHandle { get; set; }
+    content.vb: Public Property ParentWindowHandle As IntPtr
+    parameters: []
+    return:
+      type: System.IntPtr
+      description: "\n<p>The parent window handle for the key.</p>\n"
+  see:
+  - type: System.Security.Permissions.SecurityPermission
+    commentId: T:System.Security.Permissions.SecurityPermission
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  nameWithType: CngKey.ParentWindowHandle
+- uid: System.Security.Cryptography.CngKey.Provider
+  commentId: P:System.Security.Cryptography.CngKey.Provider
+  id: Provider
+  parent: System.Security.Cryptography.CngKey
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.Cryptography.CngKey.Provider
+  type: Property
+  source:
+    remote:
+      path: src/System.Security.Cryptography.Cng/ref/System.Security.Cryptography.Cng.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Provider
+    path: src/System.Security.Cryptography.Cng/ref/System.Security.Cryptography.Cng.cs
+    startLine: 114
+  assemblies:
+  - System.Security.Cryptography.Cng
+  namespace: System.Security.Cryptography
+  summary: "\n<p>Gets the key storage provider (KSP) that manages the key.</p>\n"
+  syntax:
+    content: public CngProvider Provider { get; }
+    content.vb: Public ReadOnly Property Provider As CngProvider
+    parameters: []
+    return:
+      type: System.Security.Cryptography.CngProvider
+      description: "\n<p>The KSP that manages the key.</p>\n"
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  nameWithType: CngKey.Provider
+- uid: System.Security.Cryptography.CngKey.ProviderHandle
+  commentId: P:System.Security.Cryptography.CngKey.ProviderHandle
+  id: ProviderHandle
+  parent: System.Security.Cryptography.CngKey
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.Cryptography.CngKey.ProviderHandle
+  type: Property
+  source:
+    remote:
+      path: src/System.Security.Cryptography.Cng/ref/System.Security.Cryptography.Cng.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: ProviderHandle
+    path: src/System.Security.Cryptography.Cng/ref/System.Security.Cryptography.Cng.cs
+    startLine: 115
+  assemblies:
+  - System.Security.Cryptography.Cng
+  namespace: System.Security.Cryptography
+  summary: "\n<p>Gets a native handle (an NCRYPT_PROV_HANDLE) to the key storage provider (KSP).</p>\n"
+  syntax:
+    content: public SafeNCryptProviderHandle ProviderHandle { get; }
+    content.vb: Public ReadOnly Property ProviderHandle As SafeNCryptProviderHandle
+    parameters: []
+    return:
+      type: Microsoft.Win32.SafeHandles.SafeNCryptProviderHandle
+      description: "\n<p>A handle to the KSP.</p>\n"
+  see:
+  - type: System.Security.Permissions.SecurityPermission
+    commentId: T:System.Security.Permissions.SecurityPermission
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  nameWithType: CngKey.ProviderHandle
+- uid: System.Security.Cryptography.CngKey.UIPolicy
+  commentId: P:System.Security.Cryptography.CngKey.UIPolicy
+  id: UIPolicy
+  parent: System.Security.Cryptography.CngKey
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.Cryptography.CngKey.UIPolicy
+  type: Property
+  source:
+    remote:
+      path: src/System.Security.Cryptography.Cng/ref/System.Security.Cryptography.Cng.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: UIPolicy
+    path: src/System.Security.Cryptography.Cng/ref/System.Security.Cryptography.Cng.cs
+    startLine: 116
+  assemblies:
+  - System.Security.Cryptography.Cng
+  namespace: System.Security.Cryptography
+  summary: "\n<p>Gets parameters that control the user interface (UI) for accessing the key.  </p>\n"
+  syntax:
+    content: public CngUIPolicy UIPolicy { get; }
+    content.vb: Public ReadOnly Property UIPolicy As CngUIPolicy
+    parameters: []
+    return:
+      type: System.Security.Cryptography.CngUIPolicy
+      description: "\n<p>An object that contains configuration parameters for displaying the UI.</p>\n"
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  nameWithType: CngKey.UIPolicy
+- uid: System.Security.Cryptography.CngKey.UniqueName
+  commentId: P:System.Security.Cryptography.CngKey.UniqueName
+  id: UniqueName
+  parent: System.Security.Cryptography.CngKey
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.Cryptography.CngKey.UniqueName
+  type: Property
+  source:
+    remote:
+      path: src/System.Security.Cryptography.Cng/ref/System.Security.Cryptography.Cng.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: UniqueName
+    path: src/System.Security.Cryptography.Cng/ref/System.Security.Cryptography.Cng.cs
+    startLine: 117
+  assemblies:
+  - System.Security.Cryptography.Cng
+  namespace: System.Security.Cryptography
+  summary: "\n<p>Gets the unique name for the key.</p>\n"
+  syntax:
+    content: public string UniqueName { get; }
+    content.vb: Public ReadOnly Property UniqueName As String
+    parameters: []
+    return:
+      type: System.String
+      description: "\n<p>An alternate name for the key. If the key is ephemeral, the value is <strong>null</strong>.</p>\n"
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  nameWithType: CngKey.UniqueName
+- uid: System.Security.Cryptography.CngKey.Create(System.Security.Cryptography.CngAlgorithm)
+  commentId: M:System.Security.Cryptography.CngKey.Create(System.Security.Cryptography.CngAlgorithm)
+  id: Create(System.Security.Cryptography.CngAlgorithm)
+  parent: System.Security.Cryptography.CngKey
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.Cryptography.CngKey.Create(System.Security.Cryptography.CngAlgorithm)
+  type: Method
+  source:
+    remote:
+      path: src/System.Security.Cryptography.Cng/ref/System.Security.Cryptography.Cng.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Create
+    path: src/System.Security.Cryptography.Cng/ref/System.Security.Cryptography.Cng.cs
+    startLine: 118
+  assemblies:
+  - System.Security.Cryptography.Cng
+  namespace: System.Security.Cryptography
+  summary: "\n<p>Creates a <xref href=\"System.Security.Cryptography.CngKey\" data-throw-if-not-resolved=\"false\"></xref> object that can be used with the specified algorithm.</p>\n"
+  syntax:
+    content: public static CngKey Create(CngAlgorithm algorithm)
+    content.vb: Public Shared Function Create(algorithm As CngAlgorithm) As CngKey
+    parameters:
+    - id: algorithm
+      type: System.Security.Cryptography.CngAlgorithm
+      description: "\n<p>The algorithm that the key will be used with.</p>\n"
+    return:
+      type: System.Security.Cryptography.CngKey
+      description: "\n<p>An ephemeral key.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>algorithm</em> is <strong>null</strong>.</p>\n"
+  - type: System.PlatformNotSupportedException
+    commentId: T:System.PlatformNotSupportedException
+    description: "\n<p>Cryptography Next Generation (CNG) is not supported on this system.</p>\n"
+  - type: System.Security.Cryptography.CryptographicException
+    commentId: T:System.Security.Cryptography.CryptographicException
+    description: "\n<p>All other errors.</p>\n"
+  see:
+  - type: System.Security.Permissions.KeyContainerPermissionAccessEntryCollection
+    commentId: T:System.Security.Permissions.KeyContainerPermissionAccessEntryCollection
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  nameWithType: CngKey.Create(CngAlgorithm)
+- uid: System.Security.Cryptography.CngKey.Create(System.Security.Cryptography.CngAlgorithm,System.String)
+  commentId: M:System.Security.Cryptography.CngKey.Create(System.Security.Cryptography.CngAlgorithm,System.String)
+  id: Create(System.Security.Cryptography.CngAlgorithm,System.String)
+  parent: System.Security.Cryptography.CngKey
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.Cryptography.CngKey.Create(System.Security.Cryptography.CngAlgorithm, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/System.Security.Cryptography.Cng/ref/System.Security.Cryptography.Cng.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Create
+    path: src/System.Security.Cryptography.Cng/ref/System.Security.Cryptography.Cng.cs
+    startLine: 119
+  assemblies:
+  - System.Security.Cryptography.Cng
+  namespace: System.Security.Cryptography
+  summary: "\n<p>Creates a named <xref href=\"System.Security.Cryptography.CngKey\" data-throw-if-not-resolved=\"false\"></xref> object that provides the specified algorithm.</p>\n"
+  syntax:
+    content: public static CngKey Create(CngAlgorithm algorithm, string keyName)
+    content.vb: Public Shared Function Create(algorithm As CngAlgorithm, keyName As String) As CngKey
+    parameters:
+    - id: algorithm
+      type: System.Security.Cryptography.CngAlgorithm
+      description: "\n<p>The algorithm that the key will be used with.</p>\n"
+    - id: keyName
+      type: System.String
+      description: "\n<p>The key name. If a name is not provided, the key will not be persisted.</p>\n"
+    return:
+      type: System.Security.Cryptography.CngKey
+      description: "\n<p>A persisted or ephemeral key that provides the specified algorithm.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>algorithm</em> is <strong>null</strong>.</p>\n"
+  - type: System.PlatformNotSupportedException
+    commentId: T:System.PlatformNotSupportedException
+    description: "\n<p>Cryptography Next Generation (CNG) is not supported on this system.</p>\n"
+  - type: System.Security.Cryptography.CryptographicException
+    commentId: T:System.Security.Cryptography.CryptographicException
+    description: "\n<p>All other errors.</p>\n"
+  see:
+  - type: System.Security.Permissions.KeyContainerPermissionAccessEntryCollection
+    commentId: T:System.Security.Permissions.KeyContainerPermissionAccessEntryCollection
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  nameWithType: CngKey.Create(CngAlgorithm, String)
+- uid: System.Security.Cryptography.CngKey.Create(System.Security.Cryptography.CngAlgorithm,System.String,System.Security.Cryptography.CngKeyCreationParameters)
+  commentId: M:System.Security.Cryptography.CngKey.Create(System.Security.Cryptography.CngAlgorithm,System.String,System.Security.Cryptography.CngKeyCreationParameters)
+  id: Create(System.Security.Cryptography.CngAlgorithm,System.String,System.Security.Cryptography.CngKeyCreationParameters)
+  parent: System.Security.Cryptography.CngKey
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.Cryptography.CngKey.Create(System.Security.Cryptography.CngAlgorithm, System.String, System.Security.Cryptography.CngKeyCreationParameters)
+  type: Method
+  source:
+    remote:
+      path: src/System.Security.Cryptography.Cng/ref/System.Security.Cryptography.Cng.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Create
+    path: src/System.Security.Cryptography.Cng/ref/System.Security.Cryptography.Cng.cs
+    startLine: 120
+  assemblies:
+  - System.Security.Cryptography.Cng
+  namespace: System.Security.Cryptography
+  summary: "\n<p>Creates a named <xref href=\"System.Security.Cryptography.CngKey\" data-throw-if-not-resolved=\"false\"></xref> object that provides the specified algorithm, using the supplied key creation parameters.</p>\n"
+  syntax:
+    content: public static CngKey Create(CngAlgorithm algorithm, string keyName, CngKeyCreationParameters creationParameters)
+    content.vb: Public Shared Function Create(algorithm As CngAlgorithm, keyName As String, creationParameters As CngKeyCreationParameters) As CngKey
+    parameters:
+    - id: algorithm
+      type: System.Security.Cryptography.CngAlgorithm
+      description: "\n<p>The algorithm that the key will be used with.</p>\n"
+    - id: keyName
+      type: System.String
+      description: "\n<p>The key name. If a name is not provided, the key will not be persisted.</p>\n"
+    - id: creationParameters
+      type: System.Security.Cryptography.CngKeyCreationParameters
+      description: "\n<p>An object that specifies advanced parameters for the method, including the <xref href=\"System.Security.Cryptography.CngProvider\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    return:
+      type: System.Security.Cryptography.CngKey
+      description: "\n<p>A persisted or ephemeral key that provides the specified algorithm.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>algorithm</em> is <strong>null</strong>.</p>\n"
+  - type: System.PlatformNotSupportedException
+    commentId: T:System.PlatformNotSupportedException
+    description: "\n<p>Cryptography Next Generation (CNG) is not supported on this system.</p>\n"
+  - type: System.Security.Cryptography.CryptographicException
+    commentId: T:System.Security.Cryptography.CryptographicException
+    description: "\n<p>All other errors.</p>\n"
+  see:
+  - type: System.Security.Permissions.KeyContainerPermissionAccessEntryCollection
+    commentId: T:System.Security.Permissions.KeyContainerPermissionAccessEntryCollection
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  nameWithType: CngKey.Create(CngAlgorithm, String, CngKeyCreationParameters)
+- uid: System.Security.Cryptography.CngKey.Delete
+  commentId: M:System.Security.Cryptography.CngKey.Delete
+  id: Delete
+  parent: System.Security.Cryptography.CngKey
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.Cryptography.CngKey.Delete()
+  type: Method
+  source:
+    remote:
+      path: src/System.Security.Cryptography.Cng/ref/System.Security.Cryptography.Cng.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Delete
+    path: src/System.Security.Cryptography.Cng/ref/System.Security.Cryptography.Cng.cs
+    startLine: 121
+  assemblies:
+  - System.Security.Cryptography.Cng
+  namespace: System.Security.Cryptography
+  summary: "\n<p>Removes the key that is associated with the object.</p>\n"
+  syntax:
+    content: public void Delete()
+    content.vb: Public Sub Delete
+  exceptions:
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>An attempt was made to access a deleted key.</p>\n"
+  - type: System.Security.Cryptography.CryptographicException
+    commentId: T:System.Security.Cryptography.CryptographicException
+    description: "\n<p>All other errors.</p>\n"
+  see:
+  - type: System.Security.Permissions.KeyContainerPermission
+    commentId: T:System.Security.Permissions.KeyContainerPermission
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: CngKey.Delete()
+- uid: System.Security.Cryptography.CngKey.Dispose
+  commentId: M:System.Security.Cryptography.CngKey.Dispose
+  id: Dispose
+  parent: System.Security.Cryptography.CngKey
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.Cryptography.CngKey.Dispose()
+  type: Method
+  source:
+    remote:
+      path: src/System.Security.Cryptography.Cng/ref/System.Security.Cryptography.Cng.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Dispose
+    path: src/System.Security.Cryptography.Cng/ref/System.Security.Cryptography.Cng.cs
+    startLine: 122
+  assemblies:
+  - System.Security.Cryptography.Cng
+  namespace: System.Security.Cryptography
+  summary: "\n<p>Releases all resources used by the current instance of the <xref href=\"System.Security.Cryptography.CngKey\" data-throw-if-not-resolved=\"false\"></xref> class.</p>\n"
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose
+  implements:
+  - System.IDisposable.Dispose
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: CngKey.Dispose()
+- uid: System.Security.Cryptography.CngKey.Exists(System.String)
+  commentId: M:System.Security.Cryptography.CngKey.Exists(System.String)
+  id: Exists(System.String)
+  parent: System.Security.Cryptography.CngKey
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.Cryptography.CngKey.Exists(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/System.Security.Cryptography.Cng/ref/System.Security.Cryptography.Cng.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Exists
+    path: src/System.Security.Cryptography.Cng/ref/System.Security.Cryptography.Cng.cs
+    startLine: 123
+  assemblies:
+  - System.Security.Cryptography.Cng
+  namespace: System.Security.Cryptography
+  summary: "\n<p>Checks to see whether a named key exists in the default key storage provider (KSP).</p>\n"
+  syntax:
+    content: public static bool Exists(string keyName)
+    content.vb: Public Shared Function Exists(keyName As String) As Boolean
+    parameters:
+    - id: keyName
+      type: System.String
+      description: "\n<p>The key name.</p>\n"
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if the named key exists in the default KSP; otherwise, <strong>false</strong>.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>keyName</em> is <strong>null</strong>.</p>\n"
+  - type: System.PlatformNotSupportedException
+    commentId: T:System.PlatformNotSupportedException
+    description: "\n<p>Cryptography Next Generation (CNG) is not supported on this system.</p>\n"
+  - type: System.Security.Cryptography.CryptographicException
+    commentId: T:System.Security.Cryptography.CryptographicException
+    description: "\n<p>All other errors.</p>\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  nameWithType: CngKey.Exists(String)
+- uid: System.Security.Cryptography.CngKey.Exists(System.String,System.Security.Cryptography.CngProvider)
+  commentId: M:System.Security.Cryptography.CngKey.Exists(System.String,System.Security.Cryptography.CngProvider)
+  id: Exists(System.String,System.Security.Cryptography.CngProvider)
+  parent: System.Security.Cryptography.CngKey
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.Cryptography.CngKey.Exists(System.String, System.Security.Cryptography.CngProvider)
+  type: Method
+  source:
+    remote:
+      path: src/System.Security.Cryptography.Cng/ref/System.Security.Cryptography.Cng.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Exists
+    path: src/System.Security.Cryptography.Cng/ref/System.Security.Cryptography.Cng.cs
+    startLine: 124
+  assemblies:
+  - System.Security.Cryptography.Cng
+  namespace: System.Security.Cryptography
+  summary: "\n<p>Checks to see whether a named key exists in the specified key storage provider (KSP).</p>\n"
+  syntax:
+    content: public static bool Exists(string keyName, CngProvider provider)
+    content.vb: Public Shared Function Exists(keyName As String, provider As CngProvider) As Boolean
+    parameters:
+    - id: keyName
+      type: System.String
+      description: "\n<p>The key name.</p>\n"
+    - id: provider
+      type: System.Security.Cryptography.CngProvider
+      description: "\n<p>The KSP to check for the key.</p>\n"
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if the named key exists in the specified provider; otherwise, <strong>false</strong>.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>keyName</em> or <em>provider</em> is <strong>null</strong>.</p>\n"
+  - type: System.PlatformNotSupportedException
+    commentId: T:System.PlatformNotSupportedException
+    description: "\n<p>Cryptography Next Generation (CNG) is not supported on this system.</p>\n"
+  - type: System.Security.Cryptography.CryptographicException
+    commentId: T:System.Security.Cryptography.CryptographicException
+    description: "\n<p>All other errors.</p>\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  nameWithType: CngKey.Exists(String, CngProvider)
+- uid: System.Security.Cryptography.CngKey.Exists(System.String,System.Security.Cryptography.CngProvider,System.Security.Cryptography.CngKeyOpenOptions)
+  commentId: M:System.Security.Cryptography.CngKey.Exists(System.String,System.Security.Cryptography.CngProvider,System.Security.Cryptography.CngKeyOpenOptions)
+  id: Exists(System.String,System.Security.Cryptography.CngProvider,System.Security.Cryptography.CngKeyOpenOptions)
+  parent: System.Security.Cryptography.CngKey
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.Cryptography.CngKey.Exists(System.String, System.Security.Cryptography.CngProvider, System.Security.Cryptography.CngKeyOpenOptions)
+  type: Method
+  source:
+    remote:
+      path: src/System.Security.Cryptography.Cng/ref/System.Security.Cryptography.Cng.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Exists
+    path: src/System.Security.Cryptography.Cng/ref/System.Security.Cryptography.Cng.cs
+    startLine: 125
+  assemblies:
+  - System.Security.Cryptography.Cng
+  namespace: System.Security.Cryptography
+  summary: "\n<p>Checks to see whether a named key exists in the specified key storage provider (KSP), according to the specified options.</p>\n"
+  syntax:
+    content: public static bool Exists(string keyName, CngProvider provider, CngKeyOpenOptions options)
+    content.vb: Public Shared Function Exists(keyName As String, provider As CngProvider, options As CngKeyOpenOptions) As Boolean
+    parameters:
+    - id: keyName
+      type: System.String
+      description: "\n<p>The key name.</p>\n"
+    - id: provider
+      type: System.Security.Cryptography.CngProvider
+      description: "\n<p>The KSP to search for the key.</p>\n"
+    - id: options
+      type: System.Security.Cryptography.CngKeyOpenOptions
+      description: "\n<p>A bitwise combination of the enumeration values that specify options for opening a key.</p>\n"
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if the named key exists in the specified provider; otherwise, <strong>false</strong>.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>keyName</em> or <em>provider</em> is <strong>null</strong>.</p>\n"
+  - type: System.PlatformNotSupportedException
+    commentId: T:System.PlatformNotSupportedException
+    description: "\n<p>Cryptography Next Generation (CNG) is not supported on this system.</p>\n"
+  - type: System.Security.Cryptography.CryptographicException
+    commentId: T:System.Security.Cryptography.CryptographicException
+    description: "\n<p>All other errors.</p>\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  nameWithType: CngKey.Exists(String, CngProvider, CngKeyOpenOptions)
+- uid: System.Security.Cryptography.CngKey.Export(System.Security.Cryptography.CngKeyBlobFormat)
+  commentId: M:System.Security.Cryptography.CngKey.Export(System.Security.Cryptography.CngKeyBlobFormat)
+  id: Export(System.Security.Cryptography.CngKeyBlobFormat)
+  parent: System.Security.Cryptography.CngKey
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.Cryptography.CngKey.Export(System.Security.Cryptography.CngKeyBlobFormat)
+  type: Method
+  source:
+    remote:
+      path: src/System.Security.Cryptography.Cng/ref/System.Security.Cryptography.Cng.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Export
+    path: src/System.Security.Cryptography.Cng/ref/System.Security.Cryptography.Cng.cs
+    startLine: 126
+  assemblies:
+  - System.Security.Cryptography.Cng
+  namespace: System.Security.Cryptography
+  summary: "\n<p>Exports the key material into a BLOB, in the specified format.</p>\n"
+  syntax:
+    content: public byte[] Export(CngKeyBlobFormat format)
+    content.vb: Public Function Export(format As CngKeyBlobFormat) As Byte()
+    parameters:
+    - id: format
+      type: System.Security.Cryptography.CngKeyBlobFormat
+      description: "\n<p>An object that specifies the format of the key BLOB.</p>\n"
+    return:
+      type: System.Byte[]
+      description: "\n<p>A BLOB that contains the key material in the specified format.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>format</em> is <strong>null</strong>.</p>\n"
+  - type: System.Security.Cryptography.CryptographicException
+    commentId: T:System.Security.Cryptography.CryptographicException
+    description: "\n<p>All other errors. Typically, the <xref href=\"System.Security.Cryptography.CngKey.ExportPolicy\" data-throw-if-not-resolved=\"false\"></xref> does not allow the key to be exported. </p>\n"
+  see:
+  - type: System.Security.Permissions.KeyContainerPermission
+    commentId: T:System.Security.Permissions.KeyContainerPermission
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: CngKey.Export(CngKeyBlobFormat)
+- uid: System.Security.Cryptography.CngKey.GetProperty(System.String,System.Security.Cryptography.CngPropertyOptions)
+  commentId: M:System.Security.Cryptography.CngKey.GetProperty(System.String,System.Security.Cryptography.CngPropertyOptions)
+  id: GetProperty(System.String,System.Security.Cryptography.CngPropertyOptions)
+  parent: System.Security.Cryptography.CngKey
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.Cryptography.CngKey.GetProperty(System.String, System.Security.Cryptography.CngPropertyOptions)
+  type: Method
+  source:
+    remote:
+      path: src/System.Security.Cryptography.Cng/ref/System.Security.Cryptography.Cng.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: GetProperty
+    path: src/System.Security.Cryptography.Cng/ref/System.Security.Cryptography.Cng.cs
+    startLine: 127
+  assemblies:
+  - System.Security.Cryptography.Cng
+  namespace: System.Security.Cryptography
+  summary: "\n<p>Gets a property, given a name and a set of property options.</p>\n"
+  syntax:
+    content: public CngProperty GetProperty(string name, CngPropertyOptions options)
+    content.vb: Public Function GetProperty(name As String, options As CngPropertyOptions) As CngProperty
+    parameters:
+    - id: name
+      type: System.String
+      description: "\n<p>The name of the desired property.</p>\n"
+    - id: options
+      type: System.Security.Cryptography.CngPropertyOptions
+      description: "\n<p>A bitwise combination of the enumeration values that specify options for the named property.</p>\n"
+    return:
+      type: System.Security.Cryptography.CngProperty
+      description: "\n<p>An object that contains the raw value of the specified property.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>name</em> is <strong>null</strong>.</p>\n"
+  - type: System.Security.Cryptography.CryptographicException
+    commentId: T:System.Security.Cryptography.CryptographicException
+    description: "\n<p>All other errors.</p>\n"
+  see:
+  - type: System.Security.Permissions.SecurityPermission
+    commentId: T:System.Security.Permissions.SecurityPermission
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: CngKey.GetProperty(String, CngPropertyOptions)
+- uid: System.Security.Cryptography.CngKey.HasProperty(System.String,System.Security.Cryptography.CngPropertyOptions)
+  commentId: M:System.Security.Cryptography.CngKey.HasProperty(System.String,System.Security.Cryptography.CngPropertyOptions)
+  id: HasProperty(System.String,System.Security.Cryptography.CngPropertyOptions)
+  parent: System.Security.Cryptography.CngKey
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.Cryptography.CngKey.HasProperty(System.String, System.Security.Cryptography.CngPropertyOptions)
+  type: Method
+  source:
+    remote:
+      path: src/System.Security.Cryptography.Cng/ref/System.Security.Cryptography.Cng.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: HasProperty
+    path: src/System.Security.Cryptography.Cng/ref/System.Security.Cryptography.Cng.cs
+    startLine: 128
+  assemblies:
+  - System.Security.Cryptography.Cng
+  namespace: System.Security.Cryptography
+  summary: "\n<p>Checks to see whether the specified property exists on the key.</p>\n"
+  syntax:
+    content: public bool HasProperty(string name, CngPropertyOptions options)
+    content.vb: Public Function HasProperty(name As String, options As CngPropertyOptions) As Boolean
+    parameters:
+    - id: name
+      type: System.String
+      description: "\n<p>The property name to check.</p>\n"
+    - id: options
+      type: System.Security.Cryptography.CngPropertyOptions
+      description: "\n<p>A bitwise combination of the enumeration values that specify options for the named property.</p>\n"
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if the specified property is found; otherwise, <strong>false</strong>.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>name</em> is <strong>null</strong>.</p>\n"
+  see:
+  - type: System.Security.Permissions.SecurityPermission
+    commentId: T:System.Security.Permissions.SecurityPermission
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: CngKey.HasProperty(String, CngPropertyOptions)
+- uid: System.Security.Cryptography.CngKey.Import(System.Byte[],System.Security.Cryptography.CngKeyBlobFormat)
+  commentId: M:System.Security.Cryptography.CngKey.Import(System.Byte[],System.Security.Cryptography.CngKeyBlobFormat)
+  id: Import(System.Byte[],System.Security.Cryptography.CngKeyBlobFormat)
+  parent: System.Security.Cryptography.CngKey
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.Cryptography.CngKey.Import(System.Byte[], System.Security.Cryptography.CngKeyBlobFormat)
+  type: Method
+  source:
+    remote:
+      path: src/System.Security.Cryptography.Cng/ref/System.Security.Cryptography.Cng.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Import
+    path: src/System.Security.Cryptography.Cng/ref/System.Security.Cryptography.Cng.cs
+    startLine: 129
+  assemblies:
+  - System.Security.Cryptography.Cng
+  namespace: System.Security.Cryptography
+  summary: "\n<p>Creates a new key by importing the specified key material into the default key storage provider (KSP) and using the specified format.</p>\n"
+  syntax:
+    content: public static CngKey Import(byte[] keyBlob, CngKeyBlobFormat format)
+    content.vb: Public Shared Function Import(keyBlob As Byte(), format As CngKeyBlobFormat) As CngKey
+    parameters:
+    - id: keyBlob
+      type: System.Byte[]
+      description: "\n<p>An array that contains the key information.</p>\n"
+    - id: format
+      type: System.Security.Cryptography.CngKeyBlobFormat
+      description: "\n<p>An object that specifies the format of the <em>keyBlob</em> array.</p>\n"
+    return:
+      type: System.Security.Cryptography.CngKey
+      description: "\n<p>A new key.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>keyBlob</em> or <em>format</em> is <strong>null</strong>.</p>\n"
+  - type: System.PlatformNotSupportedException
+    commentId: T:System.PlatformNotSupportedException
+    description: "\n<p>Cryptography Next Generation (CNG) is not supported on this system.</p>\n"
+  - type: System.Security.Cryptography.CryptographicException
+    commentId: T:System.Security.Cryptography.CryptographicException
+    description: "\n<p>All other errors.</p>\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: System.Security.Cryptography.CngKey.Import(System.Byte(), System.Security.Cryptography.CngKeyBlobFormat)
+  name.vb: Import(Byte(), CngKeyBlobFormat)
+  nameWithType: CngKey.Import(Byte[], CngKeyBlobFormat)
+  nameWithType.vb: CngKey.Import(Byte(), CngKeyBlobFormat)
+- uid: System.Security.Cryptography.CngKey.Import(System.Byte[],System.Security.Cryptography.CngKeyBlobFormat,System.Security.Cryptography.CngProvider)
+  commentId: M:System.Security.Cryptography.CngKey.Import(System.Byte[],System.Security.Cryptography.CngKeyBlobFormat,System.Security.Cryptography.CngProvider)
+  id: Import(System.Byte[],System.Security.Cryptography.CngKeyBlobFormat,System.Security.Cryptography.CngProvider)
+  parent: System.Security.Cryptography.CngKey
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.Cryptography.CngKey.Import(System.Byte[], System.Security.Cryptography.CngKeyBlobFormat, System.Security.Cryptography.CngProvider)
+  type: Method
+  source:
+    remote:
+      path: src/System.Security.Cryptography.Cng/ref/System.Security.Cryptography.Cng.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Import
+    path: src/System.Security.Cryptography.Cng/ref/System.Security.Cryptography.Cng.cs
+    startLine: 130
+  assemblies:
+  - System.Security.Cryptography.Cng
+  namespace: System.Security.Cryptography
+  summary: "\n<p>Creates a new key by importing the specified key material into the specified key storage provider (KSP), using the specified format.</p>\n"
+  syntax:
+    content: public static CngKey Import(byte[] keyBlob, CngKeyBlobFormat format, CngProvider provider)
+    content.vb: Public Shared Function Import(keyBlob As Byte(), format As CngKeyBlobFormat, provider As CngProvider) As CngKey
+    parameters:
+    - id: keyBlob
+      type: System.Byte[]
+      description: "\n<p>An array that contains the key information.</p>\n"
+    - id: format
+      type: System.Security.Cryptography.CngKeyBlobFormat
+      description: "\n<p>An object that specifies the format of the <em>keyBlob</em> array.</p>\n"
+    - id: provider
+      type: System.Security.Cryptography.CngProvider
+      description: "\n<p>The KSP.</p>\n"
+    return:
+      type: System.Security.Cryptography.CngKey
+      description: "\n<p>A new key.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>keyBlob</em>, <em>format</em>, or <em>provider</em> is <strong>null</strong>.</p>\n"
+  - type: System.PlatformNotSupportedException
+    commentId: T:System.PlatformNotSupportedException
+    description: "\n<p>Cryptography Next Generation (CNG) is not supported on this system.</p>\n"
+  - type: System.Security.Cryptography.CryptographicException
+    commentId: T:System.Security.Cryptography.CryptographicException
+    description: "\n<p>All other errors.</p>\n"
+  see:
+  - type: System.Security.Permissions.KeyContainerPermission
+    commentId: T:System.Security.Permissions.KeyContainerPermission
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: System.Security.Cryptography.CngKey.Import(System.Byte(), System.Security.Cryptography.CngKeyBlobFormat, System.Security.Cryptography.CngProvider)
+  name.vb: Import(Byte(), CngKeyBlobFormat, CngProvider)
+  nameWithType: CngKey.Import(Byte[], CngKeyBlobFormat, CngProvider)
+  nameWithType.vb: CngKey.Import(Byte(), CngKeyBlobFormat, CngProvider)
+- uid: System.Security.Cryptography.CngKey.Open(Microsoft.Win32.SafeHandles.SafeNCryptKeyHandle,System.Security.Cryptography.CngKeyHandleOpenOptions)
+  commentId: M:System.Security.Cryptography.CngKey.Open(Microsoft.Win32.SafeHandles.SafeNCryptKeyHandle,System.Security.Cryptography.CngKeyHandleOpenOptions)
+  id: Open(Microsoft.Win32.SafeHandles.SafeNCryptKeyHandle,System.Security.Cryptography.CngKeyHandleOpenOptions)
+  parent: System.Security.Cryptography.CngKey
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.Cryptography.CngKey.Open(Microsoft.Win32.SafeHandles.SafeNCryptKeyHandle, System.Security.Cryptography.CngKeyHandleOpenOptions)
+  type: Method
+  source:
+    remote:
+      path: src/System.Security.Cryptography.Cng/ref/System.Security.Cryptography.Cng.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Open
+    path: src/System.Security.Cryptography.Cng/ref/System.Security.Cryptography.Cng.cs
+    startLine: 131
+  assemblies:
+  - System.Security.Cryptography.Cng
+  namespace: System.Security.Cryptography
+  summary: "\n<p>Creates an instance of an <xref href=\"System.Security.Cryptography.CngKey\" data-throw-if-not-resolved=\"false\"></xref> object by using a handle to an existing key.</p>\n"
+  syntax:
+    content: public static CngKey Open(SafeNCryptKeyHandle keyHandle, CngKeyHandleOpenOptions keyHandleOpenOptions)
+    content.vb: Public Shared Function Open(keyHandle As SafeNCryptKeyHandle, keyHandleOpenOptions As CngKeyHandleOpenOptions) As CngKey
+    parameters:
+    - id: keyHandle
+      type: Microsoft.Win32.SafeHandles.SafeNCryptKeyHandle
+      description: "\n<p>A handle to an existing key.</p>\n"
+    - id: keyHandleOpenOptions
+      type: System.Security.Cryptography.CngKeyHandleOpenOptions
+      description: "\n<p>One of the enumeration values that indicates whether <em>keyHandle</em> represents an ephemeral key or a named key.</p>\n"
+    return:
+      type: System.Security.Cryptography.CngKey
+      description: "\n<p>An existing key.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>keyHandle</em> is <strong>null</strong>.</p>\n"
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>\n<em>keyHandle</em> is invalid or malformed, or it is already closed. This exception is also thrown if the key is an ephemeral key that is created by the common language runtime (CLR), but the <xref href=\"System.Security.Cryptography.CngKeyHandleOpenOptions.EphemeralKey\" data-throw-if-not-resolved=\"false\"></xref> value is not specified.</p>\n"
+  - type: System.PlatformNotSupportedException
+    commentId: T:System.PlatformNotSupportedException
+    description: "\n<p>Cryptography Next Generation (CNG) is not supported on this system.</p>\n"
+  - type: System.Security.Cryptography.CryptographicException
+    commentId: T:System.Security.Cryptography.CryptographicException
+    description: "\n<p>All other errors.</p>\n"
+  see:
+  - type: System.Security.Permissions.SecurityPermission
+    commentId: T:System.Security.Permissions.SecurityPermission
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  nameWithType: CngKey.Open(SafeNCryptKeyHandle, CngKeyHandleOpenOptions)
+- uid: System.Security.Cryptography.CngKey.Open(System.String)
+  commentId: M:System.Security.Cryptography.CngKey.Open(System.String)
+  id: Open(System.String)
+  parent: System.Security.Cryptography.CngKey
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.Cryptography.CngKey.Open(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/System.Security.Cryptography.Cng/ref/System.Security.Cryptography.Cng.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Open
+    path: src/System.Security.Cryptography.Cng/ref/System.Security.Cryptography.Cng.cs
+    startLine: 132
+  assemblies:
+  - System.Security.Cryptography.Cng
+  namespace: System.Security.Cryptography
+  summary: "\n<p>Creates an instance of an <xref href=\"System.Security.Cryptography.CngKey\" data-throw-if-not-resolved=\"false\"></xref> object that represents an existing named key.</p>\n"
+  syntax:
+    content: public static CngKey Open(string keyName)
+    content.vb: Public Shared Function Open(keyName As String) As CngKey
+    parameters:
+    - id: keyName
+      type: System.String
+      description: "\n<p>The name of the key.</p>\n"
+    return:
+      type: System.Security.Cryptography.CngKey
+      description: "\n<p>An existing key.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>keyName</em> is <strong>null</strong>.</p>\n"
+  - type: System.PlatformNotSupportedException
+    commentId: T:System.PlatformNotSupportedException
+    description: "\n<p>Cryptography Next Generation (CNG) is not supported on this system.</p>\n"
+  - type: System.Security.Cryptography.CryptographicException
+    commentId: T:System.Security.Cryptography.CryptographicException
+    description: "\n<p>All other errors.</p>\n"
+  see:
+  - type: System.Security.Permissions.KeyContainerPermissionAccessEntryCollection
+    commentId: T:System.Security.Permissions.KeyContainerPermissionAccessEntryCollection
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  nameWithType: CngKey.Open(String)
+- uid: System.Security.Cryptography.CngKey.Open(System.String,System.Security.Cryptography.CngProvider)
+  commentId: M:System.Security.Cryptography.CngKey.Open(System.String,System.Security.Cryptography.CngProvider)
+  id: Open(System.String,System.Security.Cryptography.CngProvider)
+  parent: System.Security.Cryptography.CngKey
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.Cryptography.CngKey.Open(System.String, System.Security.Cryptography.CngProvider)
+  type: Method
+  source:
+    remote:
+      path: src/System.Security.Cryptography.Cng/ref/System.Security.Cryptography.Cng.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Open
+    path: src/System.Security.Cryptography.Cng/ref/System.Security.Cryptography.Cng.cs
+    startLine: 133
+  assemblies:
+  - System.Security.Cryptography.Cng
+  namespace: System.Security.Cryptography
+  summary: "\n<p>Creates an instance of an <xref href=\"System.Security.Cryptography.CngKey\" data-throw-if-not-resolved=\"false\"></xref> object that represents an existing named key, using the specified key storage provider (KSP).</p>\n"
+  syntax:
+    content: public static CngKey Open(string keyName, CngProvider provider)
+    content.vb: Public Shared Function Open(keyName As String, provider As CngProvider) As CngKey
+    parameters:
+    - id: keyName
+      type: System.String
+      description: "\n<p>The name of the key.</p>\n"
+    - id: provider
+      type: System.Security.Cryptography.CngProvider
+      description: "\n<p>The KSP that contains the key.</p>\n"
+    return:
+      type: System.Security.Cryptography.CngKey
+      description: "\n<p>An existing key.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>keyName</em> or <em>provider</em> is <strong>null</strong>.</p>\n"
+  - type: System.PlatformNotSupportedException
+    commentId: T:System.PlatformNotSupportedException
+    description: "\n<p>Cryptography Next Generation (CNG) is not supported on this system.</p>\n"
+  - type: System.Security.Cryptography.CryptographicException
+    commentId: T:System.Security.Cryptography.CryptographicException
+    description: "\n<p>All other errors.</p>\n"
+  see:
+  - type: System.Security.Permissions.KeyContainerPermissionAccessEntryCollection
+    commentId: T:System.Security.Permissions.KeyContainerPermissionAccessEntryCollection
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  nameWithType: CngKey.Open(String, CngProvider)
+- uid: System.Security.Cryptography.CngKey.Open(System.String,System.Security.Cryptography.CngProvider,System.Security.Cryptography.CngKeyOpenOptions)
+  commentId: M:System.Security.Cryptography.CngKey.Open(System.String,System.Security.Cryptography.CngProvider,System.Security.Cryptography.CngKeyOpenOptions)
+  id: Open(System.String,System.Security.Cryptography.CngProvider,System.Security.Cryptography.CngKeyOpenOptions)
+  parent: System.Security.Cryptography.CngKey
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.Cryptography.CngKey.Open(System.String, System.Security.Cryptography.CngProvider, System.Security.Cryptography.CngKeyOpenOptions)
+  type: Method
+  source:
+    remote:
+      path: src/System.Security.Cryptography.Cng/ref/System.Security.Cryptography.Cng.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Open
+    path: src/System.Security.Cryptography.Cng/ref/System.Security.Cryptography.Cng.cs
+    startLine: 134
+  assemblies:
+  - System.Security.Cryptography.Cng
+  namespace: System.Security.Cryptography
+  summary: "\n<p>Creates an instance of an <xref href=\"System.Security.Cryptography.CngKey\" data-throw-if-not-resolved=\"false\"></xref> object that represents an existing named key, using the specified key storage provider (KSP) and key open options.</p>\n"
+  syntax:
+    content: public static CngKey Open(string keyName, CngProvider provider, CngKeyOpenOptions openOptions)
+    content.vb: Public Shared Function Open(keyName As String, provider As CngProvider, openOptions As CngKeyOpenOptions) As CngKey
+    parameters:
+    - id: keyName
+      type: System.String
+      description: "\n<p>The name of the key.</p>\n"
+    - id: provider
+      type: System.Security.Cryptography.CngProvider
+      description: "\n<p>The KSP that contains the key.</p>\n"
+    - id: openOptions
+      type: System.Security.Cryptography.CngKeyOpenOptions
+      description: "\n<p>A bitwise combination of the enumeration values that specify options for opening the key, such as where the key is opened from (machine or user storage) and whether to suppress UI prompting.</p>\n"
+    return:
+      type: System.Security.Cryptography.CngKey
+      description: "\n<p>An existing key.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>keyName</em> or <em>provider</em> is <strong>null</strong>.</p>\n"
+  - type: System.PlatformNotSupportedException
+    commentId: T:System.PlatformNotSupportedException
+    description: "\n<p>Cryptography Next Generation (CNG) is not supported on this system.</p>\n"
+  - type: System.Security.Cryptography.CryptographicException
+    commentId: T:System.Security.Cryptography.CryptographicException
+    description: "\n<p>All other errors.</p>\n"
+  see:
+  - type: System.Security.Permissions.KeyContainerPermissionAccessEntryCollection
+    commentId: T:System.Security.Permissions.KeyContainerPermissionAccessEntryCollection
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  nameWithType: CngKey.Open(String, CngProvider, CngKeyOpenOptions)
+- uid: System.Security.Cryptography.CngKey.SetProperty(System.Security.Cryptography.CngProperty)
+  commentId: M:System.Security.Cryptography.CngKey.SetProperty(System.Security.Cryptography.CngProperty)
+  id: SetProperty(System.Security.Cryptography.CngProperty)
+  parent: System.Security.Cryptography.CngKey
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.Cryptography.CngKey.SetProperty(System.Security.Cryptography.CngProperty)
+  type: Method
+  source:
+    remote:
+      path: src/System.Security.Cryptography.Cng/ref/System.Security.Cryptography.Cng.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: SetProperty
+    path: src/System.Security.Cryptography.Cng/ref/System.Security.Cryptography.Cng.cs
+    startLine: 135
+  assemblies:
+  - System.Security.Cryptography.Cng
+  namespace: System.Security.Cryptography
+  summary: "\n<p>Sets a named property on the key.</p>\n"
+  syntax:
+    content: public void SetProperty(CngProperty property)
+    content.vb: Public Sub SetProperty(property As CngProperty)
+    parameters:
+    - id: property
+      type: System.Security.Cryptography.CngProperty
+      description: "\n<p>The key property to set.</p>\n"
+  see:
+  - type: System.Security.Permissions.SecurityPermission
+    commentId: T:System.Security.Permissions.SecurityPermission
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: CngKey.SetProperty(CngProperty)
+references:
+- uid: System.Security.Cryptography
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.Cryptography
+  commentId: N:System.Security.Cryptography
+  nameWithType: System.Security.Cryptography
+- uid: System.Object
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Object
+  commentId: T:System.Object
+  nameWithType: Object
+- uid: System.IDisposable
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.IDisposable
+  commentId: T:System.IDisposable
+  nameWithType: IDisposable
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.ToString
+  nameWithType: Object.ToString()
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.Equals(System.Object)
+  nameWithType: Object.Equals(Object)
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  nameWithType: Object.Equals(Object, Object)
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.GetHashCode
+  nameWithType: Object.GetHashCode()
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.GetType
+  nameWithType: Object.GetType()
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.MemberwiseClone
+  nameWithType: Object.MemberwiseClone()
+- uid: System
+  isExternal: false
+  name: "XXX"
+  fullName: System
+  commentId: N:System
+  nameWithType: System
+- uid: System.Security.Cryptography.CngAlgorithm
+  parent: System.Security.Cryptography
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.Cryptography.CngAlgorithm
+  commentId: T:System.Security.Cryptography.CngAlgorithm
+  nameWithType: CngAlgorithm
+- uid: System.Security.Cryptography.CngAlgorithmGroup
+  parent: System.Security.Cryptography
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.Cryptography.CngAlgorithmGroup
+  commentId: T:System.Security.Cryptography.CngAlgorithmGroup
+  nameWithType: CngAlgorithmGroup
+- uid: System.Security.Cryptography.CngExportPolicies
+  parent: System.Security.Cryptography
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.Cryptography.CngExportPolicies
+  commentId: T:System.Security.Cryptography.CngExportPolicies
+  nameWithType: CngExportPolicies
+- uid: Microsoft.Win32.SafeHandles.SafeNCryptKeyHandle
+  parent: Microsoft.Win32.SafeHandles
+  isExternal: false
+  name: "XXX"
+  fullName: Microsoft.Win32.SafeHandles.SafeNCryptKeyHandle
+  commentId: T:Microsoft.Win32.SafeHandles.SafeNCryptKeyHandle
+  nameWithType: SafeNCryptKeyHandle
+- uid: Microsoft.Win32.SafeHandles
+  isExternal: false
+  name: "XXX"
+  fullName: Microsoft.Win32.SafeHandles
+  commentId: N:Microsoft.Win32.SafeHandles
+  nameWithType: Microsoft.Win32.SafeHandles
+- uid: System.Boolean
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Boolean
+  commentId: T:System.Boolean
+  nameWithType: Boolean
+- uid: System.String
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.String
+  commentId: T:System.String
+  nameWithType: String
+- uid: System.Int32
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Int32
+  commentId: T:System.Int32
+  nameWithType: Int32
+- uid: System.Security.Cryptography.CngKeyUsages
+  parent: System.Security.Cryptography
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.Cryptography.CngKeyUsages
+  commentId: T:System.Security.Cryptography.CngKeyUsages
+  nameWithType: CngKeyUsages
+- uid: System.IntPtr
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.IntPtr
+  commentId: T:System.IntPtr
+  nameWithType: IntPtr
+- uid: System.Security.Cryptography.CngProvider
+  parent: System.Security.Cryptography
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.Cryptography.CngProvider
+  commentId: T:System.Security.Cryptography.CngProvider
+  nameWithType: CngProvider
+- uid: Microsoft.Win32.SafeHandles.SafeNCryptProviderHandle
+  parent: Microsoft.Win32.SafeHandles
+  isExternal: false
+  name: "XXX"
+  fullName: Microsoft.Win32.SafeHandles.SafeNCryptProviderHandle
+  commentId: T:Microsoft.Win32.SafeHandles.SafeNCryptProviderHandle
+  nameWithType: SafeNCryptProviderHandle
+- uid: System.Security.Cryptography.CngUIPolicy
+  parent: System.Security.Cryptography
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.Cryptography.CngUIPolicy
+  commentId: T:System.Security.Cryptography.CngUIPolicy
+  nameWithType: CngUIPolicy
+- uid: System.Security.Cryptography.CngKey
+  parent: System.Security.Cryptography
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.Cryptography.CngKey
+  commentId: T:System.Security.Cryptography.CngKey
+  nameWithType: CngKey
+- uid: System.Security.Cryptography.CngKeyCreationParameters
+  parent: System.Security.Cryptography
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.Cryptography.CngKeyCreationParameters
+  commentId: T:System.Security.Cryptography.CngKeyCreationParameters
+  nameWithType: CngKeyCreationParameters
+- uid: System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: false
+  name: "XXX"
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: "XXX"
+    fullName: System.IDisposable.Dispose
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: "XXX"
+    fullName: System.IDisposable.Dispose
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.IDisposable.Dispose
+  nameWithType: IDisposable.Dispose()
+- uid: System.Security.Cryptography.CngKeyOpenOptions
+  parent: System.Security.Cryptography
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.Cryptography.CngKeyOpenOptions
+  commentId: T:System.Security.Cryptography.CngKeyOpenOptions
+  nameWithType: CngKeyOpenOptions
+- uid: System.Security.Cryptography.CngKeyBlobFormat
+  parent: System.Security.Cryptography
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.Cryptography.CngKeyBlobFormat
+  commentId: T:System.Security.Cryptography.CngKeyBlobFormat
+  nameWithType: CngKeyBlobFormat
+- uid: System.Byte[]
+  name: "XXX"
+  fullName: System.Byte[]
+  fullname.vb: System.Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: "XXX"
+    fullName: System.Byte
+    isExternal: true
+  - name: 'XXX'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: "XXX"
+    fullName: System.Byte
+    isExternal: true
+  - name: "XXX"
+    fullName: ()
+  nameWithType: Byte[]
+  nameWithType.vb: Byte()
+- uid: System.Security.Cryptography.CngPropertyOptions
+  parent: System.Security.Cryptography
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.Cryptography.CngPropertyOptions
+  commentId: T:System.Security.Cryptography.CngPropertyOptions
+  nameWithType: CngPropertyOptions
+- uid: System.Security.Cryptography.CngProperty
+  parent: System.Security.Cryptography
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.Cryptography.CngProperty
+  commentId: T:System.Security.Cryptography.CngProperty
+  nameWithType: CngProperty
+- uid: System.Security.Cryptography.CngKeyHandleOpenOptions
+  parent: System.Security.Cryptography
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.Cryptography.CngKeyHandleOpenOptions
+  commentId: T:System.Security.Cryptography.CngKeyHandleOpenOptions
+  nameWithType: CngKeyHandleOpenOptions
+- uid: System.ArgumentNullException
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentNullException
+  nameWithType: ArgumentNullException
+  commentId: T:System.ArgumentNullException
+- uid: System.PlatformNotSupportedException
+  isExternal: false
+  name: "XXX"
+  fullName: System.PlatformNotSupportedException
+  nameWithType: PlatformNotSupportedException
+  commentId: T:System.PlatformNotSupportedException
+- uid: System.Security.Cryptography.CryptographicException
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.Cryptography.CryptographicException
+  commentId: T:System.Security.Cryptography.CryptographicException
+  nameWithType: CryptographicException
+- uid: System.ObjectDisposedException
+  isExternal: false
+  name: "XXX"
+  fullName: System.ObjectDisposedException
+  nameWithType: ObjectDisposedException
+  commentId: T:System.ObjectDisposedException
+- uid: System.ArgumentException
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentException
+  nameWithType: ArgumentException
+  commentId: T:System.ArgumentException

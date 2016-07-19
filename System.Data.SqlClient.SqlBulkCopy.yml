@@ -1,0 +1,1002 @@
+items:
+- uid: System.Data.SqlClient.SqlBulkCopy
+  commentId: T:System.Data.SqlClient.SqlBulkCopy
+  id: SqlBulkCopy
+  parent: System.Data.SqlClient
+  children:
+  - System.Data.SqlClient.SqlBulkCopy.#ctor(System.Data.SqlClient.SqlConnection)
+  - System.Data.SqlClient.SqlBulkCopy.#ctor(System.Data.SqlClient.SqlConnection,System.Data.SqlClient.SqlBulkCopyOptions,System.Data.SqlClient.SqlTransaction)
+  - System.Data.SqlClient.SqlBulkCopy.#ctor(System.String)
+  - System.Data.SqlClient.SqlBulkCopy.#ctor(System.String,System.Data.SqlClient.SqlBulkCopyOptions)
+  - System.Data.SqlClient.SqlBulkCopy.BatchSize
+  - System.Data.SqlClient.SqlBulkCopy.BulkCopyTimeout
+  - System.Data.SqlClient.SqlBulkCopy.Close
+  - System.Data.SqlClient.SqlBulkCopy.ColumnMappings
+  - System.Data.SqlClient.SqlBulkCopy.DestinationTableName
+  - System.Data.SqlClient.SqlBulkCopy.EnableStreaming
+  - System.Data.SqlClient.SqlBulkCopy.NotifyAfter
+  - System.Data.SqlClient.SqlBulkCopy.SqlRowsCopied
+  - System.Data.SqlClient.SqlBulkCopy.System#IDisposable#Dispose
+  - System.Data.SqlClient.SqlBulkCopy.WriteToServer(System.Data.Common.DbDataReader)
+  - System.Data.SqlClient.SqlBulkCopy.WriteToServerAsync(System.Data.Common.DbDataReader)
+  - System.Data.SqlClient.SqlBulkCopy.WriteToServerAsync(System.Data.Common.DbDataReader,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Data.SqlClient.SqlBulkCopy
+  type: Class
+  source:
+    remote:
+      path: src/System.Data.SqlClient/src/System/Data/SqlClient/SqlBulkCopy.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: SqlBulkCopy
+    path: src/System.Data.SqlClient/src/System/Data/SqlClient/SqlBulkCopy.cs
+    startLine: 135
+  assemblies:
+  - System.Data.SqlClient
+  namespace: System.Data.SqlClient
+  summary: "\n<p>Lets you efficiently bulk load a SQL Server table with data from another source.</p>\n"
+  syntax:
+    content: 'public sealed class SqlBulkCopy : IDisposable'
+    content.vb: >-
+      Public NotInheritable Class SqlBulkCopy
+          Implements IDisposable
+  inheritance:
+  - System.Object
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+  nameWithType: SqlBulkCopy
+- uid: System.Data.SqlClient.SqlBulkCopy.#ctor(System.Data.SqlClient.SqlConnection)
+  commentId: M:System.Data.SqlClient.SqlBulkCopy.#ctor(System.Data.SqlClient.SqlConnection)
+  id: '#ctor(System.Data.SqlClient.SqlConnection)'
+  parent: System.Data.SqlClient.SqlBulkCopy
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Data.SqlClient.SqlBulkCopy.SqlBulkCopy(System.Data.SqlClient.SqlConnection)
+  type: Constructor
+  source:
+    remote:
+      path: src/System.Data.SqlClient/src/System/Data/SqlClient/SqlBulkCopy.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: .ctor
+    path: src/System.Data.SqlClient/src/System/Data/SqlClient/SqlBulkCopy.cs
+    startLine: 232
+  assemblies:
+  - System.Data.SqlClient
+  namespace: System.Data.SqlClient
+  summary: "\n<p>Initializes a new instance of the <xref href=\"System.Data.SqlClient.SqlBulkCopy\" data-throw-if-not-resolved=\"false\"></xref> class using the specified open instance of <xref href=\"System.Data.SqlClient.SqlConnection\" data-throw-if-not-resolved=\"false\"></xref>. </p>\n"
+  syntax:
+    content: public SqlBulkCopy(SqlConnection connection)
+    content.vb: Public Sub New(connection As SqlConnection)
+    parameters:
+    - id: connection
+      type: System.Data.SqlClient.SqlConnection
+      description: "\n<p>The already open <xref href=\"System.Data.SqlClient.SqlConnection\" data-throw-if-not-resolved=\"false\"></xref> instance that will be used to perform the bulk copy operation. If your connection string does not use <strong>Integrated Security = true</strong>, you can use <xref href=\"System.Data.SqlClient.SqlCredential\" data-throw-if-not-resolved=\"false\"></xref> to pass the user ID and password more securely than by specifying the user ID and password as text in the connection string.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: SqlBulkCopy.SqlBulkCopy(SqlConnection)
+- uid: System.Data.SqlClient.SqlBulkCopy.#ctor(System.Data.SqlClient.SqlConnection,System.Data.SqlClient.SqlBulkCopyOptions,System.Data.SqlClient.SqlTransaction)
+  commentId: M:System.Data.SqlClient.SqlBulkCopy.#ctor(System.Data.SqlClient.SqlConnection,System.Data.SqlClient.SqlBulkCopyOptions,System.Data.SqlClient.SqlTransaction)
+  id: '#ctor(System.Data.SqlClient.SqlConnection,System.Data.SqlClient.SqlBulkCopyOptions,System.Data.SqlClient.SqlTransaction)'
+  parent: System.Data.SqlClient.SqlBulkCopy
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Data.SqlClient.SqlBulkCopy.SqlBulkCopy(System.Data.SqlClient.SqlConnection, System.Data.SqlClient.SqlBulkCopyOptions, System.Data.SqlClient.SqlTransaction)
+  type: Constructor
+  source:
+    remote:
+      path: src/System.Data.SqlClient/src/System/Data/SqlClient/SqlBulkCopy.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: .ctor
+    path: src/System.Data.SqlClient/src/System/Data/SqlClient/SqlBulkCopy.cs
+    startLine: 242
+  assemblies:
+  - System.Data.SqlClient
+  namespace: System.Data.SqlClient
+  summary: "\n<p>Initializes a new instance of the <xref href=\"System.Data.SqlClient.SqlBulkCopy\" data-throw-if-not-resolved=\"false\"></xref> class using the supplied existing open instance of <xref href=\"System.Data.SqlClient.SqlConnection\" data-throw-if-not-resolved=\"false\"></xref>. The <xref href=\"System.Data.SqlClient.SqlBulkCopy\" data-throw-if-not-resolved=\"false\"></xref> instance behaves according to options supplied in the <em>copyOptions</em> parameter. If a non-null <xref href=\"System.Data.SqlClient.SqlTransaction\" data-throw-if-not-resolved=\"false\"></xref> is supplied, the copy operations will be performed within that transaction.</p>\n"
+  syntax:
+    content: public SqlBulkCopy(SqlConnection connection, SqlBulkCopyOptions copyOptions, SqlTransaction externalTransaction)
+    content.vb: Public Sub New(connection As SqlConnection, copyOptions As SqlBulkCopyOptions, externalTransaction As SqlTransaction)
+    parameters:
+    - id: connection
+      type: System.Data.SqlClient.SqlConnection
+      description: "\n<p>The already open <xref href=\"System.Data.SqlClient.SqlConnection\" data-throw-if-not-resolved=\"false\"></xref> instance that will be used to perform the bulk copy. If your connection string does not use <strong>Integrated Security = true</strong>, you can use <xref href=\"System.Data.SqlClient.SqlCredential\" data-throw-if-not-resolved=\"false\"></xref> to pass the user ID and password more securely than by specifying the user ID and password as text in the connection string.</p>\n"
+    - id: copyOptions
+      type: System.Data.SqlClient.SqlBulkCopyOptions
+      description: "\n<p>A combination of values from the <xref href=\"System.Data.SqlClient.SqlBulkCopyOptions\" data-throw-if-not-resolved=\"false\"></xref>  enumeration that determines which data source rows are copied to the destination table.</p>\n"
+    - id: externalTransaction
+      type: System.Data.SqlClient.SqlTransaction
+      description: "\n<p>An existing <xref href=\"System.Data.SqlClient.SqlTransaction\" data-throw-if-not-resolved=\"false\"></xref> instance under which the bulk copy will occur.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: SqlBulkCopy.SqlBulkCopy(SqlConnection, SqlBulkCopyOptions, SqlTransaction)
+- uid: System.Data.SqlClient.SqlBulkCopy.#ctor(System.String)
+  commentId: M:System.Data.SqlClient.SqlBulkCopy.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: System.Data.SqlClient.SqlBulkCopy
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Data.SqlClient.SqlBulkCopy.SqlBulkCopy(System.String)
+  type: Constructor
+  source:
+    remote:
+      path: src/System.Data.SqlClient/src/System/Data/SqlClient/SqlBulkCopy.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: .ctor
+    path: src/System.Data.SqlClient/src/System/Data/SqlClient/SqlBulkCopy.cs
+    startLine: 257
+  assemblies:
+  - System.Data.SqlClient
+  namespace: System.Data.SqlClient
+  summary: "\n<p>Initializes and opens a new instance of <xref href=\"System.Data.SqlClient.SqlConnection\" data-throw-if-not-resolved=\"false\"></xref> based on the supplied <em>connectionString</em>. The constructor uses the <xref href=\"System.Data.SqlClient.SqlConnection\" data-throw-if-not-resolved=\"false\"></xref> to initialize a new instance of the <xref href=\"System.Data.SqlClient.SqlBulkCopy\" data-throw-if-not-resolved=\"false\"></xref> class.</p>\n"
+  syntax:
+    content: public SqlBulkCopy(string connectionString)
+    content.vb: Public Sub New(connectionString As String)
+    parameters:
+    - id: connectionString
+      type: System.String
+      description: "\n<p>The string defining the connection that will be opened for use by the <xref href=\"System.Data.SqlClient.SqlBulkCopy\" data-throw-if-not-resolved=\"false\"></xref> instance. If your connection string does not use <strong>Integrated Security = true</strong>, you can use <xref href=\"System.Data.SqlClient.SqlBulkCopy.#ctor(System.Data.SqlClient.SqlConnection)\" data-throw-if-not-resolved=\"false\"></xref> or <xref href=\"System.Data.SqlClient.SqlBulkCopy.#ctor(System.Data.SqlClient.SqlConnection,System.Data.SqlClient.SqlBulkCopyOptions,System.Data.SqlClient.SqlTransaction)\" data-throw-if-not-resolved=\"false\"></xref> and <xref href=\"System.Data.SqlClient.SqlCredential\" data-throw-if-not-resolved=\"false\"></xref> to pass the user ID and password more securely than by specifying the user ID and password as text in the connection string.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: SqlBulkCopy.SqlBulkCopy(String)
+- uid: System.Data.SqlClient.SqlBulkCopy.#ctor(System.String,System.Data.SqlClient.SqlBulkCopyOptions)
+  commentId: M:System.Data.SqlClient.SqlBulkCopy.#ctor(System.String,System.Data.SqlClient.SqlBulkCopyOptions)
+  id: '#ctor(System.String,System.Data.SqlClient.SqlBulkCopyOptions)'
+  parent: System.Data.SqlClient.SqlBulkCopy
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Data.SqlClient.SqlBulkCopy.SqlBulkCopy(System.String, System.Data.SqlClient.SqlBulkCopyOptions)
+  type: Constructor
+  source:
+    remote:
+      path: src/System.Data.SqlClient/src/System/Data/SqlClient/SqlBulkCopy.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: .ctor
+    path: src/System.Data.SqlClient/src/System/Data/SqlClient/SqlBulkCopy.cs
+    startLine: 268
+  assemblies:
+  - System.Data.SqlClient
+  namespace: System.Data.SqlClient
+  summary: "\n<p>Initializes and opens a new instance of <xref href=\"System.Data.SqlClient.SqlConnection\" data-throw-if-not-resolved=\"false\"></xref> based on the supplied <em>connectionString</em>. The constructor uses that <xref href=\"System.Data.SqlClient.SqlConnection\" data-throw-if-not-resolved=\"false\"></xref> to initialize a new instance of the <xref href=\"System.Data.SqlClient.SqlBulkCopy\" data-throw-if-not-resolved=\"false\"></xref> class. The <xref href=\"System.Data.SqlClient.SqlConnection\" data-throw-if-not-resolved=\"false\"></xref> instance behaves according to options supplied in the <em>copyOptions</em> parameter.</p>\n"
+  syntax:
+    content: public SqlBulkCopy(string connectionString, SqlBulkCopyOptions copyOptions)
+    content.vb: Public Sub New(connectionString As String, copyOptions As SqlBulkCopyOptions)
+    parameters:
+    - id: connectionString
+      type: System.String
+      description: "\n<p>The string defining the connection that will be opened for use by the <xref href=\"System.Data.SqlClient.SqlBulkCopy\" data-throw-if-not-resolved=\"false\"></xref> instance. If your connection string does not use <strong>Integrated Security = true</strong>, you can use <xref href=\"System.Data.SqlClient.SqlBulkCopy.#ctor(System.Data.SqlClient.SqlConnection)\" data-throw-if-not-resolved=\"false\"></xref> or <xref href=\"System.Data.SqlClient.SqlBulkCopy.#ctor(System.Data.SqlClient.SqlConnection,System.Data.SqlClient.SqlBulkCopyOptions,System.Data.SqlClient.SqlTransaction)\" data-throw-if-not-resolved=\"false\"></xref> and <xref href=\"System.Data.SqlClient.SqlCredential\" data-throw-if-not-resolved=\"false\"></xref> to pass the user ID and password more securely than by specifying the user ID and password as text in the connection string.</p>\n"
+    - id: copyOptions
+      type: System.Data.SqlClient.SqlBulkCopyOptions
+      description: "\n<p>A combination of values from the <xref href=\"System.Data.SqlClient.SqlBulkCopyOptions\" data-throw-if-not-resolved=\"false\"></xref>  enumeration that determines which data source rows are copied to the destination table.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: SqlBulkCopy.SqlBulkCopy(String, SqlBulkCopyOptions)
+- uid: System.Data.SqlClient.SqlBulkCopy.BatchSize
+  commentId: P:System.Data.SqlClient.SqlBulkCopy.BatchSize
+  id: BatchSize
+  parent: System.Data.SqlClient.SqlBulkCopy
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Data.SqlClient.SqlBulkCopy.BatchSize
+  type: Property
+  source:
+    remote:
+      path: src/System.Data.SqlClient/src/System/Data/SqlClient/SqlBulkCopy.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: BatchSize
+    path: src/System.Data.SqlClient/src/System/Data/SqlClient/SqlBulkCopy.cs
+    startLine: 274
+  assemblies:
+  - System.Data.SqlClient
+  namespace: System.Data.SqlClient
+  summary: "\n<p>Number of rows in each batch. At the end of each batch, the rows in the batch are sent to the server.</p>\n"
+  syntax:
+    content: public int BatchSize { get; set; }
+    content.vb: Public Property BatchSize As Integer
+    parameters: []
+    return:
+      type: System.Int32
+      description: "\n<p>The integer value of the <xref href=\"System.Data.SqlClient.SqlBulkCopy.BatchSize\" data-throw-if-not-resolved=\"false\"></xref> property, or zero if no value has been set.</p>\n"
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  nameWithType: SqlBulkCopy.BatchSize
+- uid: System.Data.SqlClient.SqlBulkCopy.BulkCopyTimeout
+  commentId: P:System.Data.SqlClient.SqlBulkCopy.BulkCopyTimeout
+  id: BulkCopyTimeout
+  parent: System.Data.SqlClient.SqlBulkCopy
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Data.SqlClient.SqlBulkCopy.BulkCopyTimeout
+  type: Property
+  source:
+    remote:
+      path: src/System.Data.SqlClient/src/System/Data/SqlClient/SqlBulkCopy.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: BulkCopyTimeout
+    path: src/System.Data.SqlClient/src/System/Data/SqlClient/SqlBulkCopy.cs
+    startLine: 293
+  assemblies:
+  - System.Data.SqlClient
+  namespace: System.Data.SqlClient
+  summary: "\n<p>Number of seconds for the operation to complete before it times out.</p>\n"
+  syntax:
+    content: public int BulkCopyTimeout { get; set; }
+    content.vb: Public Property BulkCopyTimeout As Integer
+    parameters: []
+    return:
+      type: System.Int32
+      description: "\n<p>The integer value of the <xref href=\"System.Data.SqlClient.SqlBulkCopy.BulkCopyTimeout\" data-throw-if-not-resolved=\"false\"></xref> property. The default is 30 seconds. A value of 0 indicates no limit; the bulk copy will wait indefinitely.</p>\n"
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  nameWithType: SqlBulkCopy.BulkCopyTimeout
+- uid: System.Data.SqlClient.SqlBulkCopy.ColumnMappings
+  commentId: P:System.Data.SqlClient.SqlBulkCopy.ColumnMappings
+  id: ColumnMappings
+  parent: System.Data.SqlClient.SqlBulkCopy
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Data.SqlClient.SqlBulkCopy.ColumnMappings
+  type: Property
+  source:
+    remote:
+      path: src/System.Data.SqlClient/src/System/Data/SqlClient/SqlBulkCopy.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: ColumnMappings
+    path: src/System.Data.SqlClient/src/System/Data/SqlClient/SqlBulkCopy.cs
+    startLine: 321
+  assemblies:
+  - System.Data.SqlClient
+  namespace: System.Data.SqlClient
+  summary: "\n<p>Returns a collection of <xref href=\"System.Data.SqlClient.SqlBulkCopyColumnMapping\" data-throw-if-not-resolved=\"false\"></xref> items. Column mappings define the relationships between columns in the data source and columns in the destination.</p>\n"
+  syntax:
+    content: public SqlBulkCopyColumnMappingCollection ColumnMappings { get; }
+    content.vb: Public ReadOnly Property ColumnMappings As SqlBulkCopyColumnMappingCollection
+    parameters: []
+    return:
+      type: System.Data.SqlClient.SqlBulkCopyColumnMappingCollection
+      description: "\n<p>A collection of column mappings. By default, it is an empty collection.</p>\n"
+  seealso:
+  - type: System.Data.SqlClient.SqlBulkCopyColumnMapping
+    commentId: T:System.Data.SqlClient.SqlBulkCopyColumnMapping
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  nameWithType: SqlBulkCopy.ColumnMappings
+- uid: System.Data.SqlClient.SqlBulkCopy.DestinationTableName
+  commentId: P:System.Data.SqlClient.SqlBulkCopy.DestinationTableName
+  id: DestinationTableName
+  parent: System.Data.SqlClient.SqlBulkCopy
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Data.SqlClient.SqlBulkCopy.DestinationTableName
+  type: Property
+  source:
+    remote:
+      path: src/System.Data.SqlClient/src/System/Data/SqlClient/SqlBulkCopy.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: DestinationTableName
+    path: src/System.Data.SqlClient/src/System/Data/SqlClient/SqlBulkCopy.cs
+    startLine: 329
+  assemblies:
+  - System.Data.SqlClient
+  namespace: System.Data.SqlClient
+  summary: "\n<p>Name of the destination table on the server. </p>\n"
+  syntax:
+    content: public string DestinationTableName { get; set; }
+    content.vb: Public Property DestinationTableName As String
+    parameters: []
+    return:
+      type: System.String
+      description: "\n<p>The string value of the <xref href=\"System.Data.SqlClient.SqlBulkCopy.DestinationTableName\" data-throw-if-not-resolved=\"false\"></xref> property, or null if none as been supplied.</p>\n"
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  nameWithType: SqlBulkCopy.DestinationTableName
+- uid: System.Data.SqlClient.SqlBulkCopy.EnableStreaming
+  commentId: P:System.Data.SqlClient.SqlBulkCopy.EnableStreaming
+  id: EnableStreaming
+  parent: System.Data.SqlClient.SqlBulkCopy
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Data.SqlClient.SqlBulkCopy.EnableStreaming
+  type: Property
+  source:
+    remote:
+      path: src/System.Data.SqlClient/src/System/Data/SqlClient/SqlBulkCopy.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: EnableStreaming
+    path: src/System.Data.SqlClient/src/System/Data/SqlClient/SqlBulkCopy.cs
+    startLine: 309
+  assemblies:
+  - System.Data.SqlClient
+  namespace: System.Data.SqlClient
+  summary: "\n<p>Enables or disables a <xref href=\"System.Data.SqlClient.SqlBulkCopy\" data-throw-if-not-resolved=\"false\"></xref> object to stream data from an <xref href=\"System.Data.IDataReader\" data-throw-if-not-resolved=\"false\"></xref> object</p>\n"
+  syntax:
+    content: public bool EnableStreaming { get; set; }
+    content.vb: Public Property EnableStreaming As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if a <xref href=\"System.Data.SqlClient.SqlBulkCopy\" data-throw-if-not-resolved=\"false\"></xref> object can stream data from an <xref href=\"System.Data.IDataReader\" data-throw-if-not-resolved=\"false\"></xref> object; otherwise, false. The default is <strong>false</strong>.</p>\n"
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  nameWithType: SqlBulkCopy.EnableStreaming
+- uid: System.Data.SqlClient.SqlBulkCopy.NotifyAfter
+  commentId: P:System.Data.SqlClient.SqlBulkCopy.NotifyAfter
+  id: NotifyAfter
+  parent: System.Data.SqlClient.SqlBulkCopy
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Data.SqlClient.SqlBulkCopy.NotifyAfter
+  type: Property
+  source:
+    remote:
+      path: src/System.Data.SqlClient/src/System/Data/SqlClient/SqlBulkCopy.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: NotifyAfter
+    path: src/System.Data.SqlClient/src/System/Data/SqlClient/SqlBulkCopy.cs
+    startLine: 349
+  assemblies:
+  - System.Data.SqlClient
+  namespace: System.Data.SqlClient
+  summary: "\n<p>Defines the number of rows to be processed before generating a notification event.</p>\n"
+  syntax:
+    content: public int NotifyAfter { get; set; }
+    content.vb: Public Property NotifyAfter As Integer
+    parameters: []
+    return:
+      type: System.Int32
+      description: "\n<p>The integer value of the <xref href=\"System.Data.SqlClient.SqlBulkCopy.NotifyAfter\" data-throw-if-not-resolved=\"false\"></xref> property, or zero if the property has not been set.</p>\n"
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  nameWithType: SqlBulkCopy.NotifyAfter
+- uid: System.Data.SqlClient.SqlBulkCopy.SqlRowsCopied
+  commentId: E:System.Data.SqlClient.SqlBulkCopy.SqlRowsCopied
+  id: SqlRowsCopied
+  parent: System.Data.SqlClient.SqlBulkCopy
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Data.SqlClient.SqlBulkCopy.SqlRowsCopied
+  type: Event
+  source:
+    remote:
+      path: src/System.Data.SqlClient/src/System/Data/SqlClient/SqlBulkCopy.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: SqlRowsCopied
+    path: src/System.Data.SqlClient/src/System/Data/SqlClient/SqlBulkCopy.cs
+    startLine: 369
+  assemblies:
+  - System.Data.SqlClient
+  namespace: System.Data.SqlClient
+  summary: "\n<p>Occurs every time that the number of rows specified by the <xref href=\"System.Data.SqlClient.SqlBulkCopy.NotifyAfter\" data-throw-if-not-resolved=\"false\"></xref> property have been processed.</p>\n"
+  syntax:
+    content: public event SqlRowsCopiedEventHandler SqlRowsCopied
+    content.vb: Public Event SqlRowsCopied As SqlRowsCopiedEventHandler
+    return:
+      type: System.Data.SqlClient.SqlRowsCopiedEventHandler
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: SqlBulkCopy.SqlRowsCopied
+- uid: System.Data.SqlClient.SqlBulkCopy.Close
+  commentId: M:System.Data.SqlClient.SqlBulkCopy.Close
+  id: Close
+  parent: System.Data.SqlClient.SqlBulkCopy
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Data.SqlClient.SqlBulkCopy.Close()
+  type: Method
+  source:
+    remote:
+      path: src/System.Data.SqlClient/src/System/Data/SqlClient/SqlBulkCopy.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Close
+    path: src/System.Data.SqlClient/src/System/Data/SqlClient/SqlBulkCopy.cs
+    startLine: 779
+  assemblies:
+  - System.Data.SqlClient
+  namespace: System.Data.SqlClient
+  summary: "\n<p>Closes the <xref href=\"System.Data.SqlClient.SqlBulkCopy\" data-throw-if-not-resolved=\"false\"></xref> instance.</p>\n"
+  syntax:
+    content: public void Close()
+    content.vb: Public Sub Close
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: SqlBulkCopy.Close()
+- uid: System.Data.SqlClient.SqlBulkCopy.System#IDisposable#Dispose
+  commentId: M:System.Data.SqlClient.SqlBulkCopy.System#IDisposable#Dispose
+  id: System#IDisposable#Dispose
+  isEii: true
+  parent: System.Data.SqlClient.SqlBulkCopy
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Data.SqlClient.SqlBulkCopy.System.IDisposable.Dispose()
+  type: Method
+  source:
+    remote:
+      path: src/System.Data.SqlClient/src/System/Data/SqlClient/SqlBulkCopy.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: System.IDisposable.Dispose
+    path: src/System.Data.SqlClient/src/System/Data/SqlClient/SqlBulkCopy.cs
+    startLine: 399
+  assemblies:
+  - System.Data.SqlClient
+  namespace: System.Data.SqlClient
+  summary: "\n<p>Releases all resources used by the current instance of the <xref href=\"System.Data.SqlClient.SqlBulkCopy\" data-throw-if-not-resolved=\"false\"></xref> class.</p>\n"
+  syntax:
+    content: void IDisposable.Dispose()
+    content.vb: Sub System.IDisposable.Dispose Implements IDisposable.Dispose
+  implements:
+  - System.IDisposable.Dispose
+  name.vb: System.IDisposable.Dispose()
+  nameWithType: SqlBulkCopy.IDisposable.Dispose()
+  nameWithType.vb: SqlBulkCopy.System.IDisposable.Dispose()
+- uid: System.Data.SqlClient.SqlBulkCopy.WriteToServer(System.Data.Common.DbDataReader)
+  commentId: M:System.Data.SqlClient.SqlBulkCopy.WriteToServer(System.Data.Common.DbDataReader)
+  id: WriteToServer(System.Data.Common.DbDataReader)
+  parent: System.Data.SqlClient.SqlBulkCopy
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Data.SqlClient.SqlBulkCopy.WriteToServer(System.Data.Common.DbDataReader)
+  type: Method
+  source:
+    remote:
+      path: src/System.Data.SqlClient/ref/System.Data.SqlClient.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: WriteToServer
+    path: src/System.Data.SqlClient/ref/System.Data.SqlClient.cs
+    startLine: 233
+  assemblies:
+  - System.Data.SqlClient
+  namespace: System.Data.SqlClient
+  summary: "\n<p>Copies all rows from the supplied <xref href=\"System.Data.Common.DbDataReader\" data-throw-if-not-resolved=\"false\"></xref> array to a destination table specified by the <xref href=\"System.Data.SqlClient.SqlBulkCopy.DestinationTableName\" data-throw-if-not-resolved=\"false\"></xref> property of the <xref href=\"System.Data.SqlClient.SqlBulkCopy\" data-throw-if-not-resolved=\"false\"></xref> object.</p>\n"
+  syntax:
+    content: public void WriteToServer(Common.DbDataReader reader)
+    content.vb: Public Sub WriteToServer(reader As Common.DbDataReader)
+    parameters:
+    - id: reader
+      type: System.Data.Common.DbDataReader
+      description: "\n<p>A <xref href=\"System.Data.Common.DbDataReader\" data-throw-if-not-resolved=\"false\"></xref> whose rows will be copied to the destination table.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: SqlBulkCopy.WriteToServer(Common.DbDataReader)
+- uid: System.Data.SqlClient.SqlBulkCopy.WriteToServerAsync(System.Data.Common.DbDataReader)
+  commentId: M:System.Data.SqlClient.SqlBulkCopy.WriteToServerAsync(System.Data.Common.DbDataReader)
+  id: WriteToServerAsync(System.Data.Common.DbDataReader)
+  parent: System.Data.SqlClient.SqlBulkCopy
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Data.SqlClient.SqlBulkCopy.WriteToServerAsync(System.Data.Common.DbDataReader)
+  type: Method
+  source:
+    remote:
+      path: src/System.Data.SqlClient/ref/System.Data.SqlClient.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: WriteToServerAsync
+    path: src/System.Data.SqlClient/ref/System.Data.SqlClient.cs
+    startLine: 234
+  assemblies:
+  - System.Data.SqlClient
+  namespace: System.Data.SqlClient
+  summary: "\n<p>The asynchronous version of <xref href=\"System.Data.SqlClient.SqlBulkCopy.WriteToServer(System.Data.Common.DbDataReader)\" data-throw-if-not-resolved=\"false\"></xref>, which copies all rows from the supplied <xref href=\"System.Data.Common.DbDataReader\" data-throw-if-not-resolved=\"false\"></xref> array to a destination table specified by the <xref href=\"System.Data.SqlClient.SqlBulkCopy.DestinationTableName\" data-throw-if-not-resolved=\"false\"></xref> property of the <xref href=\"System.Data.SqlClient.SqlBulkCopy\" data-throw-if-not-resolved=\"false\"></xref> object.</p>\n"
+  syntax:
+    content: public Task WriteToServerAsync(Common.DbDataReader reader)
+    content.vb: Public Function WriteToServerAsync(reader As Common.DbDataReader) As Task
+    parameters:
+    - id: reader
+      type: System.Data.Common.DbDataReader
+      description: "\n<p>A <xref href=\"System.Data.Common.DbDataReader\" data-throw-if-not-resolved=\"false\"></xref> whose rows will be copied to the destination table.</p>\n"
+    return:
+      type: System.Threading.Tasks.Task
+      description: "\n<p>A task representing the asynchronous operation.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: SqlBulkCopy.WriteToServerAsync(Common.DbDataReader)
+- uid: System.Data.SqlClient.SqlBulkCopy.WriteToServerAsync(System.Data.Common.DbDataReader,System.Threading.CancellationToken)
+  commentId: M:System.Data.SqlClient.SqlBulkCopy.WriteToServerAsync(System.Data.Common.DbDataReader,System.Threading.CancellationToken)
+  id: WriteToServerAsync(System.Data.Common.DbDataReader,System.Threading.CancellationToken)
+  parent: System.Data.SqlClient.SqlBulkCopy
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Data.SqlClient.SqlBulkCopy.WriteToServerAsync(System.Data.Common.DbDataReader, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/System.Data.SqlClient/ref/System.Data.SqlClient.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: WriteToServerAsync
+    path: src/System.Data.SqlClient/ref/System.Data.SqlClient.cs
+    startLine: 235
+  assemblies:
+  - System.Data.SqlClient
+  namespace: System.Data.SqlClient
+  summary: "\n<p>The asynchronous version of <xref href=\"System.Data.SqlClient.SqlBulkCopy.WriteToServer(System.Data.Common.DbDataReader)\" data-throw-if-not-resolved=\"false\"></xref>, which copies all rows from the supplied <xref href=\"System.Data.Common.DbDataReader\" data-throw-if-not-resolved=\"false\"></xref> array to a destination table specified by the <xref href=\"System.Data.SqlClient.SqlBulkCopy.DestinationTableName\" data-throw-if-not-resolved=\"false\"></xref> property of the <xref href=\"System.Data.SqlClient.SqlBulkCopy\" data-throw-if-not-resolved=\"false\"></xref> object.</p>\n"
+  syntax:
+    content: public Task WriteToServerAsync(Common.DbDataReader reader, CancellationToken cancellationToken)
+    content.vb: Public Function WriteToServerAsync(reader As Common.DbDataReader, cancellationToken As CancellationToken) As Task
+    parameters:
+    - id: reader
+      type: System.Data.Common.DbDataReader
+      description: "\n<p>A <xref href=\"System.Data.Common.DbDataReader\" data-throw-if-not-resolved=\"false\"></xref> whose rows will be copied to the destination table.</p>\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\n<p>The cancellation instruction. A <xref href=\"System.Threading.CancellationToken.None\" data-throw-if-not-resolved=\"false\"></xref> value in this parameter makes this method equivalent to <xref href=\"System.Data.SqlClient.SqlBulkCopy.WriteToServerAsync(System.Data.Common.DbDataReader)\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    return:
+      type: System.Threading.Tasks.Task
+      description: "\n<p>Returns <xref href=\"System.Threading.Tasks.Task\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: SqlBulkCopy.WriteToServerAsync(Common.DbDataReader, CancellationToken)
+references:
+- uid: System.Data.SqlClient
+  isExternal: false
+  name: "XXX"
+  fullName: System.Data.SqlClient
+  nameWithType: System.Data.SqlClient
+  commentId: N:System.Data.SqlClient
+- uid: System.Object
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Object
+  nameWithType: Object
+  commentId: T:System.Object
+- uid: System.IDisposable
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.IDisposable
+  nameWithType: IDisposable
+  commentId: T:System.IDisposable
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.ToString()
+  commentId: M:System.Object.ToString
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.Equals(Object)
+  commentId: M:System.Object.Equals(System.Object)
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.Equals(Object, Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.GetHashCode()
+  commentId: M:System.Object.GetHashCode
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.GetType()
+  commentId: M:System.Object.GetType
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.MemberwiseClone()
+  commentId: M:System.Object.MemberwiseClone
+- uid: System
+  isExternal: false
+  name: "XXX"
+  fullName: System
+  nameWithType: System
+  commentId: N:System
+- uid: System.Data.SqlClient.SqlConnection
+  parent: System.Data.SqlClient
+  isExternal: false
+  name: "XXX"
+  fullName: System.Data.SqlClient.SqlConnection
+  nameWithType: SqlConnection
+  commentId: T:System.Data.SqlClient.SqlConnection
+- uid: System.Data.SqlClient.SqlBulkCopyOptions
+  parent: System.Data.SqlClient
+  isExternal: false
+  name: "XXX"
+  fullName: System.Data.SqlClient.SqlBulkCopyOptions
+  nameWithType: SqlBulkCopyOptions
+  commentId: T:System.Data.SqlClient.SqlBulkCopyOptions
+- uid: System.Data.SqlClient.SqlTransaction
+  parent: System.Data.SqlClient
+  isExternal: false
+  name: "XXX"
+  fullName: System.Data.SqlClient.SqlTransaction
+  nameWithType: SqlTransaction
+  commentId: T:System.Data.SqlClient.SqlTransaction
+- uid: System.String
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.String
+  nameWithType: String
+  commentId: T:System.String
+- uid: System.Int32
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Int32
+  nameWithType: Int32
+  commentId: T:System.Int32
+- uid: System.Data.SqlClient.SqlBulkCopyColumnMappingCollection
+  parent: System.Data.SqlClient
+  isExternal: false
+  name: "XXX"
+  fullName: System.Data.SqlClient.SqlBulkCopyColumnMappingCollection
+  nameWithType: SqlBulkCopyColumnMappingCollection
+  commentId: T:System.Data.SqlClient.SqlBulkCopyColumnMappingCollection
+- uid: System.Boolean
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Boolean
+  nameWithType: Boolean
+  commentId: T:System.Boolean
+- uid: System.Data.SqlClient.SqlRowsCopiedEventHandler
+  parent: System.Data.SqlClient
+  isExternal: false
+  name: "XXX"
+  fullName: System.Data.SqlClient.SqlRowsCopiedEventHandler
+  nameWithType: SqlRowsCopiedEventHandler
+  commentId: T:System.Data.SqlClient.SqlRowsCopiedEventHandler
+- uid: System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: false
+  name: "XXX"
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: "XXX"
+    fullName: System.IDisposable.Dispose
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: "XXX"
+    fullName: System.IDisposable.Dispose
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: IDisposable.Dispose()
+  commentId: M:System.IDisposable.Dispose
+- uid: System.Data.Common.DbDataReader
+  parent: System.Data.Common
+  isExternal: false
+  name: "XXX"
+  fullName: System.Data.Common.DbDataReader
+  nameWithType: DbDataReader
+  commentId: T:System.Data.Common.DbDataReader
+- uid: System.Data.Common
+  isExternal: false
+  name: "XXX"
+  fullName: System.Data.Common
+  nameWithType: System.Data.Common
+  commentId: N:System.Data.Common
+- uid: System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: false
+  name: "XXX"
+  fullName: System.Threading.Tasks.Task
+  nameWithType: Task
+  commentId: T:System.Threading.Tasks.Task
+- uid: System.Threading.Tasks
+  isExternal: false
+  name: "XXX"
+  fullName: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+- uid: System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: false
+  name: "XXX"
+  fullName: System.Threading.CancellationToken
+  nameWithType: CancellationToken
+  commentId: T:System.Threading.CancellationToken
+- uid: System.Threading
+  isExternal: false
+  name: "XXX"
+  fullName: System.Threading
+  nameWithType: System.Threading
+  commentId: N:System.Threading

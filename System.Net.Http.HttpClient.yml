@@ -1,0 +1,2500 @@
+items:
+- uid: System.Net.Http.HttpClient
+  commentId: T:System.Net.Http.HttpClient
+  id: HttpClient
+  parent: System.Net.Http
+  children:
+  - System.Net.Http.HttpClient.#ctor
+  - System.Net.Http.HttpClient.#ctor(System.Net.Http.HttpMessageHandler)
+  - System.Net.Http.HttpClient.#ctor(System.Net.Http.HttpMessageHandler,System.Boolean)
+  - System.Net.Http.HttpClient.BaseAddress
+  - System.Net.Http.HttpClient.CancelPendingRequests
+  - System.Net.Http.HttpClient.DefaultRequestHeaders
+  - System.Net.Http.HttpClient.DeleteAsync(System.String)
+  - System.Net.Http.HttpClient.DeleteAsync(System.String,System.Threading.CancellationToken)
+  - System.Net.Http.HttpClient.DeleteAsync(System.Uri)
+  - System.Net.Http.HttpClient.DeleteAsync(System.Uri,System.Threading.CancellationToken)
+  - System.Net.Http.HttpClient.Dispose(System.Boolean)
+  - System.Net.Http.HttpClient.GetAsync(System.String)
+  - System.Net.Http.HttpClient.GetAsync(System.String,System.Net.Http.HttpCompletionOption)
+  - System.Net.Http.HttpClient.GetAsync(System.String,System.Net.Http.HttpCompletionOption,System.Threading.CancellationToken)
+  - System.Net.Http.HttpClient.GetAsync(System.String,System.Threading.CancellationToken)
+  - System.Net.Http.HttpClient.GetAsync(System.Uri)
+  - System.Net.Http.HttpClient.GetAsync(System.Uri,System.Net.Http.HttpCompletionOption)
+  - System.Net.Http.HttpClient.GetAsync(System.Uri,System.Net.Http.HttpCompletionOption,System.Threading.CancellationToken)
+  - System.Net.Http.HttpClient.GetAsync(System.Uri,System.Threading.CancellationToken)
+  - System.Net.Http.HttpClient.GetByteArrayAsync(System.String)
+  - System.Net.Http.HttpClient.GetByteArrayAsync(System.Uri)
+  - System.Net.Http.HttpClient.GetStreamAsync(System.String)
+  - System.Net.Http.HttpClient.GetStreamAsync(System.Uri)
+  - System.Net.Http.HttpClient.GetStringAsync(System.String)
+  - System.Net.Http.HttpClient.GetStringAsync(System.Uri)
+  - System.Net.Http.HttpClient.MaxResponseContentBufferSize
+  - System.Net.Http.HttpClient.PostAsync(System.String,System.Net.Http.HttpContent)
+  - System.Net.Http.HttpClient.PostAsync(System.String,System.Net.Http.HttpContent,System.Threading.CancellationToken)
+  - System.Net.Http.HttpClient.PostAsync(System.Uri,System.Net.Http.HttpContent)
+  - System.Net.Http.HttpClient.PostAsync(System.Uri,System.Net.Http.HttpContent,System.Threading.CancellationToken)
+  - System.Net.Http.HttpClient.PutAsync(System.String,System.Net.Http.HttpContent)
+  - System.Net.Http.HttpClient.PutAsync(System.String,System.Net.Http.HttpContent,System.Threading.CancellationToken)
+  - System.Net.Http.HttpClient.PutAsync(System.Uri,System.Net.Http.HttpContent)
+  - System.Net.Http.HttpClient.PutAsync(System.Uri,System.Net.Http.HttpContent,System.Threading.CancellationToken)
+  - System.Net.Http.HttpClient.SendAsync(System.Net.Http.HttpRequestMessage)
+  - System.Net.Http.HttpClient.SendAsync(System.Net.Http.HttpRequestMessage,System.Net.Http.HttpCompletionOption)
+  - System.Net.Http.HttpClient.SendAsync(System.Net.Http.HttpRequestMessage,System.Net.Http.HttpCompletionOption,System.Threading.CancellationToken)
+  - System.Net.Http.HttpClient.SendAsync(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)
+  - System.Net.Http.HttpClient.Timeout
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Net.Http.HttpClient
+  type: Class
+  source:
+    remote:
+      path: src/System.Net.Http/ref/System.Net.Http.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: HttpClient
+    path: src/System.Net.Http/ref/System.Net.Http.cs
+    startLine: 35
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http
+  summary: "\n<p>Provides a base class for sending HTTP requests and receiving HTTP responses from a resource identified by a URI. </p>\n"
+  syntax:
+    content: 'public class HttpClient : HttpMessageInvoker, IDisposable'
+    content.vb: >-
+      Public Class HttpClient
+          Inherits HttpMessageInvoker
+          Implements IDisposable
+  inheritance:
+  - System.Object
+  - System.Net.Http.HttpMessageInvoker
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - System.Net.Http.HttpMessageInvoker.Dispose
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+  nameWithType: HttpClient
+- uid: System.Net.Http.HttpClient.#ctor
+  commentId: M:System.Net.Http.HttpClient.#ctor
+  id: '#ctor'
+  parent: System.Net.Http.HttpClient
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Net.Http.HttpClient.HttpClient()
+  type: Constructor
+  source:
+    remote:
+      path: src/System.Net.Http/ref/System.Net.Http.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: .ctor
+    path: src/System.Net.Http/ref/System.Net.Http.cs
+    startLine: 37
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http
+  summary: "\n<p>Initializes a new instance of the <xref href=\"System.Net.Http.HttpClient\" data-throw-if-not-resolved=\"false\"></xref> class.</p>\n"
+  syntax:
+    content: public HttpClient()
+    content.vb: Public Sub New
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: HttpClient.HttpClient()
+- uid: System.Net.Http.HttpClient.#ctor(System.Net.Http.HttpMessageHandler)
+  commentId: M:System.Net.Http.HttpClient.#ctor(System.Net.Http.HttpMessageHandler)
+  id: '#ctor(System.Net.Http.HttpMessageHandler)'
+  parent: System.Net.Http.HttpClient
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Net.Http.HttpClient.HttpClient(System.Net.Http.HttpMessageHandler)
+  type: Constructor
+  source:
+    remote:
+      path: src/System.Net.Http/ref/System.Net.Http.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: .ctor
+    path: src/System.Net.Http/ref/System.Net.Http.cs
+    startLine: 38
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http
+  summary: "\n<p>Initializes a new instance of the <xref href=\"System.Net.Http.HttpClient\" data-throw-if-not-resolved=\"false\"></xref> class with a specific handler.</p>\n"
+  syntax:
+    content: public HttpClient(HttpMessageHandler handler)
+    content.vb: Public Sub New(handler As HttpMessageHandler)
+    parameters:
+    - id: handler
+      type: System.Net.Http.HttpMessageHandler
+      description: "\n<p>The HTTP handler stack to use for sending requests. </p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: HttpClient.HttpClient(HttpMessageHandler)
+- uid: System.Net.Http.HttpClient.#ctor(System.Net.Http.HttpMessageHandler,System.Boolean)
+  commentId: M:System.Net.Http.HttpClient.#ctor(System.Net.Http.HttpMessageHandler,System.Boolean)
+  id: '#ctor(System.Net.Http.HttpMessageHandler,System.Boolean)'
+  parent: System.Net.Http.HttpClient
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Net.Http.HttpClient.HttpClient(System.Net.Http.HttpMessageHandler, System.Boolean)
+  type: Constructor
+  source:
+    remote:
+      path: src/System.Net.Http/ref/System.Net.Http.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: .ctor
+    path: src/System.Net.Http/ref/System.Net.Http.cs
+    startLine: 39
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http
+  summary: "\n<p>Initializes a new instance of the <xref href=\"System.Net.Http.HttpClient\" data-throw-if-not-resolved=\"false\"></xref> class with a specific handler.</p>\n"
+  syntax:
+    content: public HttpClient(HttpMessageHandler handler, bool disposeHandler)
+    content.vb: Public Sub New(handler As HttpMessageHandler, disposeHandler As Boolean)
+    parameters:
+    - id: handler
+      type: System.Net.Http.HttpMessageHandler
+      description: "\n<p>The <xref href=\"System.Net.Http.HttpMessageHandler\" data-throw-if-not-resolved=\"false\"></xref> responsible for processing the HTTP response messages.</p>\n"
+    - id: disposeHandler
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if the inner handler should be disposed of by Dispose(),<strong>false</strong> if you intend to reuse the inner handler.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: HttpClient.HttpClient(HttpMessageHandler, Boolean)
+- uid: System.Net.Http.HttpClient.BaseAddress
+  commentId: P:System.Net.Http.HttpClient.BaseAddress
+  id: BaseAddress
+  parent: System.Net.Http.HttpClient
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Net.Http.HttpClient.BaseAddress
+  type: Property
+  source:
+    remote:
+      path: src/System.Net.Http/ref/System.Net.Http.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: BaseAddress
+    path: src/System.Net.Http/ref/System.Net.Http.cs
+    startLine: 40
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http
+  summary: "\n<p>Gets or sets the base address of Uniform Resource Identifier (URI) of the Internet resource used when sending requests.</p>\n"
+  syntax:
+    content: public Uri BaseAddress { get; set; }
+    content.vb: Public Property BaseAddress As Uri
+    parameters: []
+    return:
+      type: System.Uri
+      description: "\n<p>Returns <xref href=\"System.Uri\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n<p>The base address of Uniform Resource Identifier (URI) of the Internet resource used when sending requests.</p>\n"
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  nameWithType: HttpClient.BaseAddress
+- uid: System.Net.Http.HttpClient.DefaultRequestHeaders
+  commentId: P:System.Net.Http.HttpClient.DefaultRequestHeaders
+  id: DefaultRequestHeaders
+  parent: System.Net.Http.HttpClient
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Net.Http.HttpClient.DefaultRequestHeaders
+  type: Property
+  source:
+    remote:
+      path: src/System.Net.Http/ref/System.Net.Http.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: DefaultRequestHeaders
+    path: src/System.Net.Http/ref/System.Net.Http.cs
+    startLine: 41
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http
+  summary: "\n<p>Gets the headers which should be sent with each request.</p>\n"
+  syntax:
+    content: public HttpRequestHeaders DefaultRequestHeaders { get; }
+    content.vb: Public ReadOnly Property DefaultRequestHeaders As HttpRequestHeaders
+    parameters: []
+    return:
+      type: System.Net.Http.Headers.HttpRequestHeaders
+      description: "\n<p>Returns <xref href=\"System.Net.Http.Headers.HttpRequestHeaders\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n<p>The headers which should be sent with each request.</p>\n"
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  nameWithType: HttpClient.DefaultRequestHeaders
+- uid: System.Net.Http.HttpClient.MaxResponseContentBufferSize
+  commentId: P:System.Net.Http.HttpClient.MaxResponseContentBufferSize
+  id: MaxResponseContentBufferSize
+  parent: System.Net.Http.HttpClient
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Net.Http.HttpClient.MaxResponseContentBufferSize
+  type: Property
+  source:
+    remote:
+      path: src/System.Net.Http/ref/System.Net.Http.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: MaxResponseContentBufferSize
+    path: src/System.Net.Http/ref/System.Net.Http.cs
+    startLine: 42
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http
+  summary: "\n<p>Gets or sets the maximum number of bytes to buffer when reading the response content.</p>\n"
+  syntax:
+    content: public long MaxResponseContentBufferSize { get; set; }
+    content.vb: Public Property MaxResponseContentBufferSize As Long
+    parameters: []
+    return:
+      type: System.Int64
+      description: "\n<p>Returns <xref href=\"System.Int32\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n<p>The maximum number of bytes to buffer when reading the response content. The default value for this property is 2 gigabytes.</p>\n"
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>The size specified is less than or equal to zero.</p>\n"
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: "\n<p>An operation has already been started on the current instance. </p>\n"
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>The current instance has been disposed. </p>\n"
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  nameWithType: HttpClient.MaxResponseContentBufferSize
+- uid: System.Net.Http.HttpClient.Timeout
+  commentId: P:System.Net.Http.HttpClient.Timeout
+  id: Timeout
+  parent: System.Net.Http.HttpClient
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Net.Http.HttpClient.Timeout
+  type: Property
+  source:
+    remote:
+      path: src/System.Net.Http/ref/System.Net.Http.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Timeout
+    path: src/System.Net.Http/ref/System.Net.Http.cs
+    startLine: 43
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http
+  summary: "\n<p>Gets or sets the timespan to wait before the request times out.</p>\n"
+  syntax:
+    content: public TimeSpan Timeout { get; set; }
+    content.vb: Public Property Timeout As TimeSpan
+    parameters: []
+    return:
+      type: System.TimeSpan
+      description: "\n<p>Returns <xref href=\"System.TimeSpan\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n<p>The timespan to wait before the request times out.</p>\n"
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>The timeout specified is less than or equal to zero and is not <xref href=\"System.Threading.Timeout.InfiniteTimeSpan\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: "\n<p>An operation has already been started on the current instance. </p>\n"
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>The current instance has been disposed.</p>\n"
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  nameWithType: HttpClient.Timeout
+- uid: System.Net.Http.HttpClient.CancelPendingRequests
+  commentId: M:System.Net.Http.HttpClient.CancelPendingRequests
+  id: CancelPendingRequests
+  parent: System.Net.Http.HttpClient
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Net.Http.HttpClient.CancelPendingRequests()
+  type: Method
+  source:
+    remote:
+      path: src/System.Net.Http/ref/System.Net.Http.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: CancelPendingRequests
+    path: src/System.Net.Http/ref/System.Net.Http.cs
+    startLine: 44
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http
+  summary: "\n<p>Cancel all pending requests on this instance.</p>\n"
+  syntax:
+    content: public void CancelPendingRequests()
+    content.vb: Public Sub CancelPendingRequests
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: HttpClient.CancelPendingRequests()
+- uid: System.Net.Http.HttpClient.DeleteAsync(System.String)
+  commentId: M:System.Net.Http.HttpClient.DeleteAsync(System.String)
+  id: DeleteAsync(System.String)
+  parent: System.Net.Http.HttpClient
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Net.Http.HttpClient.DeleteAsync(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/System.Net.Http/ref/System.Net.Http.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: DeleteAsync
+    path: src/System.Net.Http/ref/System.Net.Http.cs
+    startLine: 45
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http
+  summary: "\n<p>Send a DELETE request to the specified Uri as an asynchronous operation.</p>\n"
+  syntax:
+    content: public Task<HttpResponseMessage> DeleteAsync(string requestUri)
+    content.vb: Public Function DeleteAsync(requestUri As String) As Task(Of HttpResponseMessage)
+    parameters:
+    - id: requestUri
+      type: System.String
+      description: "\n<p>The Uri the request is sent to.</p>\n"
+    return:
+      type: System.Threading.Tasks.Task{System.Net.Http.HttpResponseMessage}
+      description: "\n<p>Returns <xref href=\"System.Threading.Tasks.Task`1\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n<p>The task object representing the asynchronous operation.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>The <em>requestUri</em> was <strong>null</strong>.</p>\n"
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: "\n<p>The request message was already sent by the <xref href=\"System.Net.Http.HttpClient\" data-throw-if-not-resolved=\"false\"></xref> instance.</p>\n"
+  - type: System.Net.Http.HttpRequestException
+    commentId: T:System.Net.Http.HttpRequestException
+    description: "\n<p>The request failed due to an underlying issue such as network connectivity, DNS failure, server certificate validation or timeout.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: HttpClient.DeleteAsync(String)
+- uid: System.Net.Http.HttpClient.DeleteAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:System.Net.Http.HttpClient.DeleteAsync(System.String,System.Threading.CancellationToken)
+  id: DeleteAsync(System.String,System.Threading.CancellationToken)
+  parent: System.Net.Http.HttpClient
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Net.Http.HttpClient.DeleteAsync(System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/System.Net.Http/ref/System.Net.Http.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: DeleteAsync
+    path: src/System.Net.Http/ref/System.Net.Http.cs
+    startLine: 46
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http
+  summary: "\n<p>Send a DELETE request to the specified Uri with a cancellation token as an asynchronous operation.</p>\n"
+  syntax:
+    content: public Task<HttpResponseMessage> DeleteAsync(string requestUri, CancellationToken cancellationToken)
+    content.vb: Public Function DeleteAsync(requestUri As String, cancellationToken As CancellationToken) As Task(Of HttpResponseMessage)
+    parameters:
+    - id: requestUri
+      type: System.String
+      description: "\n<p>The Uri the request is sent to.</p>\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\n<p>A cancellation token that can be used by other objects or threads to receive notice of cancellation.</p>\n"
+    return:
+      type: System.Threading.Tasks.Task{System.Net.Http.HttpResponseMessage}
+      description: "\n<p>Returns <xref href=\"System.Threading.Tasks.Task`1\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n<p>The task object representing the asynchronous operation.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>The <em>requestUri</em> was <strong>null</strong>.</p>\n"
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: "\n<p>The request message was already sent by the <xref href=\"System.Net.Http.HttpClient\" data-throw-if-not-resolved=\"false\"></xref> instance.</p>\n"
+  - type: System.Net.Http.HttpRequestException
+    commentId: T:System.Net.Http.HttpRequestException
+    description: "\n<p>The request failed due to an underlying issue such as network connectivity, DNS failure, server certificate validation or timeout.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: HttpClient.DeleteAsync(String, CancellationToken)
+- uid: System.Net.Http.HttpClient.DeleteAsync(System.Uri)
+  commentId: M:System.Net.Http.HttpClient.DeleteAsync(System.Uri)
+  id: DeleteAsync(System.Uri)
+  parent: System.Net.Http.HttpClient
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Net.Http.HttpClient.DeleteAsync(System.Uri)
+  type: Method
+  source:
+    remote:
+      path: src/System.Net.Http/ref/System.Net.Http.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: DeleteAsync
+    path: src/System.Net.Http/ref/System.Net.Http.cs
+    startLine: 47
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http
+  summary: "\n<p>Send a DELETE request to the specified Uri as an asynchronous operation.</p>\n"
+  syntax:
+    content: public Task<HttpResponseMessage> DeleteAsync(Uri requestUri)
+    content.vb: Public Function DeleteAsync(requestUri As Uri) As Task(Of HttpResponseMessage)
+    parameters:
+    - id: requestUri
+      type: System.Uri
+      description: "\n<p>The Uri the request is sent to.</p>\n"
+    return:
+      type: System.Threading.Tasks.Task{System.Net.Http.HttpResponseMessage}
+      description: "\n<p>Returns <xref href=\"System.Threading.Tasks.Task`1\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n<p>The task object representing the asynchronous operation.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>The <em>requestUri</em> was <strong>null</strong>.</p>\n"
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: "\n<p>The request message was already sent by the <xref href=\"System.Net.Http.HttpClient\" data-throw-if-not-resolved=\"false\"></xref> instance.</p>\n"
+  - type: System.Net.Http.HttpRequestException
+    commentId: T:System.Net.Http.HttpRequestException
+    description: "\n<p>The request failed due to an underlying issue such as network connectivity, DNS failure, server certificate validation or timeout.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: HttpClient.DeleteAsync(Uri)
+- uid: System.Net.Http.HttpClient.DeleteAsync(System.Uri,System.Threading.CancellationToken)
+  commentId: M:System.Net.Http.HttpClient.DeleteAsync(System.Uri,System.Threading.CancellationToken)
+  id: DeleteAsync(System.Uri,System.Threading.CancellationToken)
+  parent: System.Net.Http.HttpClient
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Net.Http.HttpClient.DeleteAsync(System.Uri, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/System.Net.Http/ref/System.Net.Http.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: DeleteAsync
+    path: src/System.Net.Http/ref/System.Net.Http.cs
+    startLine: 48
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http
+  summary: "\n<p>Send a DELETE request to the specified Uri with a cancellation token as an asynchronous operation.</p>\n"
+  syntax:
+    content: public Task<HttpResponseMessage> DeleteAsync(Uri requestUri, CancellationToken cancellationToken)
+    content.vb: Public Function DeleteAsync(requestUri As Uri, cancellationToken As CancellationToken) As Task(Of HttpResponseMessage)
+    parameters:
+    - id: requestUri
+      type: System.Uri
+      description: "\n<p>The Uri the request is sent to.</p>\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\n<p>A cancellation token that can be used by other objects or threads to receive notice of cancellation.</p>\n"
+    return:
+      type: System.Threading.Tasks.Task{System.Net.Http.HttpResponseMessage}
+      description: "\n<p>Returns <xref href=\"System.Threading.Tasks.Task`1\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n<p>The task object representing the asynchronous operation.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>The <em>requestUri</em> was <strong>null</strong>.</p>\n"
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: "\n<p>The request message was already sent by the <xref href=\"System.Net.Http.HttpClient\" data-throw-if-not-resolved=\"false\"></xref> instance.</p>\n"
+  - type: System.Net.Http.HttpRequestException
+    commentId: T:System.Net.Http.HttpRequestException
+    description: "\n<p>The request failed due to an underlying issue such as network connectivity, DNS failure, server certificate validation or timeout.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: HttpClient.DeleteAsync(Uri, CancellationToken)
+- uid: System.Net.Http.HttpClient.Dispose(System.Boolean)
+  commentId: M:System.Net.Http.HttpClient.Dispose(System.Boolean)
+  id: Dispose(System.Boolean)
+  parent: System.Net.Http.HttpClient
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Net.Http.HttpClient.Dispose(System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/System.Net.Http/ref/System.Net.Http.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Dispose
+    path: src/System.Net.Http/ref/System.Net.Http.cs
+    startLine: 49
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http
+  summary: "\n<p>Releases the unmanaged resources used by the <xref href=\"System.Net.Http.HttpClient\" data-throw-if-not-resolved=\"false\"></xref> and optionally disposes of the managed resources.</p>\n"
+  syntax:
+    content: protected override void Dispose(bool disposing)
+    content.vb: Protected Overrides Sub Dispose(disposing As Boolean)
+    parameters:
+    - id: disposing
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> to release both managed and unmanaged resources; <strong>false</strong> to releases only unmanaged resources.</p>\n"
+  overridden: System.Net.Http.HttpMessageInvoker.Dispose(System.Boolean)
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+  nameWithType: HttpClient.Dispose(Boolean)
+- uid: System.Net.Http.HttpClient.GetAsync(System.String)
+  commentId: M:System.Net.Http.HttpClient.GetAsync(System.String)
+  id: GetAsync(System.String)
+  parent: System.Net.Http.HttpClient
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Net.Http.HttpClient.GetAsync(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/System.Net.Http/ref/System.Net.Http.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: GetAsync
+    path: src/System.Net.Http/ref/System.Net.Http.cs
+    startLine: 50
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http
+  summary: "\n<p>Send a GET request to the specified Uri as an asynchronous operation.</p>\n"
+  syntax:
+    content: public Task<HttpResponseMessage> GetAsync(string requestUri)
+    content.vb: Public Function GetAsync(requestUri As String) As Task(Of HttpResponseMessage)
+    parameters:
+    - id: requestUri
+      type: System.String
+      description: "\n<p>The Uri the request is sent to.</p>\n"
+    return:
+      type: System.Threading.Tasks.Task{System.Net.Http.HttpResponseMessage}
+      description: "\n<p>Returns <xref href=\"System.Threading.Tasks.Task`1\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n<p>The task object representing the asynchronous operation.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>The <em>requestUri</em> was <strong>null</strong>.</p>\n"
+  - type: System.Net.Http.HttpRequestException
+    commentId: T:System.Net.Http.HttpRequestException
+    description: "\n<p>The request failed due to an underlying issue such as network connectivity, DNS failure, server certificate validation or timeout.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: HttpClient.GetAsync(String)
+- uid: System.Net.Http.HttpClient.GetAsync(System.String,System.Net.Http.HttpCompletionOption)
+  commentId: M:System.Net.Http.HttpClient.GetAsync(System.String,System.Net.Http.HttpCompletionOption)
+  id: GetAsync(System.String,System.Net.Http.HttpCompletionOption)
+  parent: System.Net.Http.HttpClient
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Net.Http.HttpClient.GetAsync(System.String, System.Net.Http.HttpCompletionOption)
+  type: Method
+  source:
+    remote:
+      path: src/System.Net.Http/ref/System.Net.Http.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: GetAsync
+    path: src/System.Net.Http/ref/System.Net.Http.cs
+    startLine: 51
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http
+  summary: "\n<p>Send a GET request to the specified Uri with an HTTP completion option as an asynchronous operation.</p>\n"
+  syntax:
+    content: public Task<HttpResponseMessage> GetAsync(string requestUri, HttpCompletionOption completionOption)
+    content.vb: Public Function GetAsync(requestUri As String, completionOption As HttpCompletionOption) As Task(Of HttpResponseMessage)
+    parameters:
+    - id: requestUri
+      type: System.String
+      description: "\n<p>The Uri the request is sent to.</p>\n"
+    - id: completionOption
+      type: System.Net.Http.HttpCompletionOption
+      description: "\n<p>An HTTP completion option value that indicates when the operation should be considered completed.</p>\n"
+    return:
+      type: System.Threading.Tasks.Task{System.Net.Http.HttpResponseMessage}
+      description: "\n<p>Returns <xref href=\"System.Threading.Tasks.Task`1\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>The <em>requestUri</em> was <strong>null</strong>.</p>\n"
+  - type: System.Net.Http.HttpRequestException
+    commentId: T:System.Net.Http.HttpRequestException
+    description: "\n<p>The request failed due to an underlying issue such as network connectivity, DNS failure, server certificate validation or timeout.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: HttpClient.GetAsync(String, HttpCompletionOption)
+- uid: System.Net.Http.HttpClient.GetAsync(System.String,System.Net.Http.HttpCompletionOption,System.Threading.CancellationToken)
+  commentId: M:System.Net.Http.HttpClient.GetAsync(System.String,System.Net.Http.HttpCompletionOption,System.Threading.CancellationToken)
+  id: GetAsync(System.String,System.Net.Http.HttpCompletionOption,System.Threading.CancellationToken)
+  parent: System.Net.Http.HttpClient
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Net.Http.HttpClient.GetAsync(System.String, System.Net.Http.HttpCompletionOption, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/System.Net.Http/ref/System.Net.Http.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: GetAsync
+    path: src/System.Net.Http/ref/System.Net.Http.cs
+    startLine: 52
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http
+  summary: "\n<p>Send a GET request to the specified Uri with an HTTP completion option and a cancellation token as an asynchronous operation.</p>\n"
+  syntax:
+    content: public Task<HttpResponseMessage> GetAsync(string requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+    content.vb: Public Function GetAsync(requestUri As String, completionOption As HttpCompletionOption, cancellationToken As CancellationToken) As Task(Of HttpResponseMessage)
+    parameters:
+    - id: requestUri
+      type: System.String
+      description: "\n<p>The Uri the request is sent to.</p>\n"
+    - id: completionOption
+      type: System.Net.Http.HttpCompletionOption
+      description: "\n<p>An HTTP  completion option value that indicates when the operation should be considered completed.</p>\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\n<p>A cancellation token that can be used by other objects or threads to receive notice of cancellation.</p>\n"
+    return:
+      type: System.Threading.Tasks.Task{System.Net.Http.HttpResponseMessage}
+      description: "\n<p>Returns <xref href=\"System.Threading.Tasks.Task`1\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>The <em>requestUri</em> was <strong>null</strong>.</p>\n"
+  - type: System.Net.Http.HttpRequestException
+    commentId: T:System.Net.Http.HttpRequestException
+    description: "\n<p>The request failed due to an underlying issue such as network connectivity, DNS failure, server certificate validation or timeout.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: HttpClient.GetAsync(String, HttpCompletionOption, CancellationToken)
+- uid: System.Net.Http.HttpClient.GetAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:System.Net.Http.HttpClient.GetAsync(System.String,System.Threading.CancellationToken)
+  id: GetAsync(System.String,System.Threading.CancellationToken)
+  parent: System.Net.Http.HttpClient
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Net.Http.HttpClient.GetAsync(System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/System.Net.Http/ref/System.Net.Http.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: GetAsync
+    path: src/System.Net.Http/ref/System.Net.Http.cs
+    startLine: 53
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http
+  summary: "\n<p>Send a GET request to the specified Uri with a cancellation token as an asynchronous operation.</p>\n"
+  syntax:
+    content: public Task<HttpResponseMessage> GetAsync(string requestUri, CancellationToken cancellationToken)
+    content.vb: Public Function GetAsync(requestUri As String, cancellationToken As CancellationToken) As Task(Of HttpResponseMessage)
+    parameters:
+    - id: requestUri
+      type: System.String
+      description: "\n<p>The Uri the request is sent to.</p>\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\n<p>A cancellation token that can be used by other objects or threads to receive notice of cancellation.</p>\n"
+    return:
+      type: System.Threading.Tasks.Task{System.Net.Http.HttpResponseMessage}
+      description: "\n<p>Returns <xref href=\"System.Threading.Tasks.Task`1\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>The <em>requestUri</em> was <strong>null</strong>.</p>\n"
+  - type: System.Net.Http.HttpRequestException
+    commentId: T:System.Net.Http.HttpRequestException
+    description: "\n<p>The request failed due to an underlying issue such as network connectivity, DNS failure, server certificate validation or timeout.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: HttpClient.GetAsync(String, CancellationToken)
+- uid: System.Net.Http.HttpClient.GetAsync(System.Uri)
+  commentId: M:System.Net.Http.HttpClient.GetAsync(System.Uri)
+  id: GetAsync(System.Uri)
+  parent: System.Net.Http.HttpClient
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Net.Http.HttpClient.GetAsync(System.Uri)
+  type: Method
+  source:
+    remote:
+      path: src/System.Net.Http/ref/System.Net.Http.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: GetAsync
+    path: src/System.Net.Http/ref/System.Net.Http.cs
+    startLine: 54
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http
+  summary: "\n<p>Send a GET request to the specified Uri as an asynchronous operation.</p>\n"
+  syntax:
+    content: public Task<HttpResponseMessage> GetAsync(Uri requestUri)
+    content.vb: Public Function GetAsync(requestUri As Uri) As Task(Of HttpResponseMessage)
+    parameters:
+    - id: requestUri
+      type: System.Uri
+      description: "\n<p>The Uri the request is sent to.</p>\n"
+    return:
+      type: System.Threading.Tasks.Task{System.Net.Http.HttpResponseMessage}
+      description: "\n<p>Returns <xref href=\"System.Threading.Tasks.Task`1\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n<p>The task object representing the asynchronous operation.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>The <em>requestUri</em> was <strong>null</strong>.</p>\n"
+  - type: System.Net.Http.HttpRequestException
+    commentId: T:System.Net.Http.HttpRequestException
+    description: "\n<p>The request failed due to an underlying issue such as network connectivity, DNS failure, server certificate validation or timeout.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: HttpClient.GetAsync(Uri)
+- uid: System.Net.Http.HttpClient.GetAsync(System.Uri,System.Net.Http.HttpCompletionOption)
+  commentId: M:System.Net.Http.HttpClient.GetAsync(System.Uri,System.Net.Http.HttpCompletionOption)
+  id: GetAsync(System.Uri,System.Net.Http.HttpCompletionOption)
+  parent: System.Net.Http.HttpClient
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Net.Http.HttpClient.GetAsync(System.Uri, System.Net.Http.HttpCompletionOption)
+  type: Method
+  source:
+    remote:
+      path: src/System.Net.Http/ref/System.Net.Http.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: GetAsync
+    path: src/System.Net.Http/ref/System.Net.Http.cs
+    startLine: 55
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http
+  summary: "\n<p>Send a GET request to the specified Uri with an HTTP completion option as an asynchronous operation.</p>\n"
+  syntax:
+    content: public Task<HttpResponseMessage> GetAsync(Uri requestUri, HttpCompletionOption completionOption)
+    content.vb: Public Function GetAsync(requestUri As Uri, completionOption As HttpCompletionOption) As Task(Of HttpResponseMessage)
+    parameters:
+    - id: requestUri
+      type: System.Uri
+      description: "\n<p>The Uri the request is sent to.</p>\n"
+    - id: completionOption
+      type: System.Net.Http.HttpCompletionOption
+      description: "\n<p>An HTTP  completion option value that indicates when the operation should be considered completed.</p>\n"
+    return:
+      type: System.Threading.Tasks.Task{System.Net.Http.HttpResponseMessage}
+      description: "\n<p>Returns <xref href=\"System.Threading.Tasks.Task`1\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n<p>The task object representing the asynchronous operation.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>The <em>requestUri</em> was <strong>null</strong>.</p>\n"
+  - type: System.Net.Http.HttpRequestException
+    commentId: T:System.Net.Http.HttpRequestException
+    description: "\n<p>The request failed due to an underlying issue such as network connectivity, DNS failure, server certificate validation or timeout.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: HttpClient.GetAsync(Uri, HttpCompletionOption)
+- uid: System.Net.Http.HttpClient.GetAsync(System.Uri,System.Net.Http.HttpCompletionOption,System.Threading.CancellationToken)
+  commentId: M:System.Net.Http.HttpClient.GetAsync(System.Uri,System.Net.Http.HttpCompletionOption,System.Threading.CancellationToken)
+  id: GetAsync(System.Uri,System.Net.Http.HttpCompletionOption,System.Threading.CancellationToken)
+  parent: System.Net.Http.HttpClient
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Net.Http.HttpClient.GetAsync(System.Uri, System.Net.Http.HttpCompletionOption, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/System.Net.Http/ref/System.Net.Http.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: GetAsync
+    path: src/System.Net.Http/ref/System.Net.Http.cs
+    startLine: 56
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http
+  summary: "\n<p>Send a GET request to the specified Uri with an HTTP completion option and a cancellation token as an asynchronous operation.</p>\n"
+  syntax:
+    content: public Task<HttpResponseMessage> GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+    content.vb: Public Function GetAsync(requestUri As Uri, completionOption As HttpCompletionOption, cancellationToken As CancellationToken) As Task(Of HttpResponseMessage)
+    parameters:
+    - id: requestUri
+      type: System.Uri
+      description: "\n<p>The Uri the request is sent to.</p>\n"
+    - id: completionOption
+      type: System.Net.Http.HttpCompletionOption
+      description: "\n<p>An HTTP  completion option value that indicates when the operation should be considered completed.</p>\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\n<p>A cancellation token that can be used by other objects or threads to receive notice of cancellation.</p>\n"
+    return:
+      type: System.Threading.Tasks.Task{System.Net.Http.HttpResponseMessage}
+      description: "\n<p>Returns <xref href=\"System.Threading.Tasks.Task`1\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n<p>The task object representing the asynchronous operation.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>The <em>requestUri</em> was <strong>null</strong>.</p>\n"
+  - type: System.Net.Http.HttpRequestException
+    commentId: T:System.Net.Http.HttpRequestException
+    description: "\n<p>The request failed due to an underlying issue such as network connectivity, DNS failure, server certificate validation or timeout.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: HttpClient.GetAsync(Uri, HttpCompletionOption, CancellationToken)
+- uid: System.Net.Http.HttpClient.GetAsync(System.Uri,System.Threading.CancellationToken)
+  commentId: M:System.Net.Http.HttpClient.GetAsync(System.Uri,System.Threading.CancellationToken)
+  id: GetAsync(System.Uri,System.Threading.CancellationToken)
+  parent: System.Net.Http.HttpClient
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Net.Http.HttpClient.GetAsync(System.Uri, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/System.Net.Http/ref/System.Net.Http.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: GetAsync
+    path: src/System.Net.Http/ref/System.Net.Http.cs
+    startLine: 57
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http
+  summary: "\n<p>Send a GET request to the specified Uri with a cancellation token as an asynchronous operation.</p>\n"
+  syntax:
+    content: public Task<HttpResponseMessage> GetAsync(Uri requestUri, CancellationToken cancellationToken)
+    content.vb: Public Function GetAsync(requestUri As Uri, cancellationToken As CancellationToken) As Task(Of HttpResponseMessage)
+    parameters:
+    - id: requestUri
+      type: System.Uri
+      description: "\n<p>The Uri the request is sent to.</p>\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\n<p>A cancellation token that can be used by other objects or threads to receive notice of cancellation.</p>\n"
+    return:
+      type: System.Threading.Tasks.Task{System.Net.Http.HttpResponseMessage}
+      description: "\n<p>Returns <xref href=\"System.Threading.Tasks.Task`1\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n<p>The task object representing the asynchronous operation.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>The <em>requestUri</em> was <strong>null</strong>.</p>\n"
+  - type: System.Net.Http.HttpRequestException
+    commentId: T:System.Net.Http.HttpRequestException
+    description: "\n<p>The request failed due to an underlying issue such as network connectivity, DNS failure, server certificate validation or timeout.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: HttpClient.GetAsync(Uri, CancellationToken)
+- uid: System.Net.Http.HttpClient.GetByteArrayAsync(System.String)
+  commentId: M:System.Net.Http.HttpClient.GetByteArrayAsync(System.String)
+  id: GetByteArrayAsync(System.String)
+  parent: System.Net.Http.HttpClient
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Net.Http.HttpClient.GetByteArrayAsync(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/System.Net.Http/ref/System.Net.Http.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: GetByteArrayAsync
+    path: src/System.Net.Http/ref/System.Net.Http.cs
+    startLine: 58
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http
+  summary: "\n<p>Send a GET request to the specified Uri and return the response body as a byte array in an asynchronous operation.</p>\n"
+  syntax:
+    content: public Task<byte[]> GetByteArrayAsync(string requestUri)
+    content.vb: Public Function GetByteArrayAsync(requestUri As String) As Task(Of Byte())
+    parameters:
+    - id: requestUri
+      type: System.String
+      description: "\n<p>The Uri the request is sent to.</p>\n"
+    return:
+      type: System.Threading.Tasks.Task{System.Byte[]}
+      description: "\n<p>Returns <xref href=\"System.Threading.Tasks.Task`1\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n<p>The task object representing the asynchronous operation.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>The <em>requestUri</em> was <strong>null</strong>.</p>\n"
+  - type: System.Net.Http.HttpRequestException
+    commentId: T:System.Net.Http.HttpRequestException
+    description: "\n<p>The request failed due to an underlying issue such as network connectivity, DNS failure, server certificate validation or timeout.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: HttpClient.GetByteArrayAsync(String)
+- uid: System.Net.Http.HttpClient.GetByteArrayAsync(System.Uri)
+  commentId: M:System.Net.Http.HttpClient.GetByteArrayAsync(System.Uri)
+  id: GetByteArrayAsync(System.Uri)
+  parent: System.Net.Http.HttpClient
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Net.Http.HttpClient.GetByteArrayAsync(System.Uri)
+  type: Method
+  source:
+    remote:
+      path: src/System.Net.Http/ref/System.Net.Http.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: GetByteArrayAsync
+    path: src/System.Net.Http/ref/System.Net.Http.cs
+    startLine: 59
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http
+  summary: "\n<p>Send a GET request to the specified Uri and return the response body as a byte array in an asynchronous operation.</p>\n"
+  syntax:
+    content: public Task<byte[]> GetByteArrayAsync(Uri requestUri)
+    content.vb: Public Function GetByteArrayAsync(requestUri As Uri) As Task(Of Byte())
+    parameters:
+    - id: requestUri
+      type: System.Uri
+      description: "\n<p>The Uri the request is sent to.</p>\n"
+    return:
+      type: System.Threading.Tasks.Task{System.Byte[]}
+      description: "\n<p>Returns <xref href=\"System.Threading.Tasks.Task`1\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n<p>The task object representing the asynchronous operation.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>The <em>requestUri</em> was <strong>null</strong>.</p>\n"
+  - type: System.Net.Http.HttpRequestException
+    commentId: T:System.Net.Http.HttpRequestException
+    description: "\n<p>The request failed due to an underlying issue such as network connectivity, DNS failure, server certificate validation or timeout.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: HttpClient.GetByteArrayAsync(Uri)
+- uid: System.Net.Http.HttpClient.GetStreamAsync(System.String)
+  commentId: M:System.Net.Http.HttpClient.GetStreamAsync(System.String)
+  id: GetStreamAsync(System.String)
+  parent: System.Net.Http.HttpClient
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Net.Http.HttpClient.GetStreamAsync(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/System.Net.Http/ref/System.Net.Http.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: GetStreamAsync
+    path: src/System.Net.Http/ref/System.Net.Http.cs
+    startLine: 60
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http
+  summary: "\n<p>Send a GET request to the specified Uri and return the response body as a stream in an asynchronous operation.</p>\n"
+  syntax:
+    content: public Task<Stream> GetStreamAsync(string requestUri)
+    content.vb: Public Function GetStreamAsync(requestUri As String) As Task(Of Stream)
+    parameters:
+    - id: requestUri
+      type: System.String
+      description: "\n<p>The Uri the request is sent to.</p>\n"
+    return:
+      type: System.Threading.Tasks.Task{System.IO.Stream}
+      description: "\n<p>Returns <xref href=\"System.Threading.Tasks.Task`1\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n<p>The task object representing the asynchronous operation.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>The <em>requestUri</em> was <strong>null</strong>.</p>\n"
+  - type: System.Net.Http.HttpRequestException
+    commentId: T:System.Net.Http.HttpRequestException
+    description: "\n<p>The request failed due to an underlying issue such as network connectivity, DNS failure, server certificate validation or timeout.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: HttpClient.GetStreamAsync(String)
+- uid: System.Net.Http.HttpClient.GetStreamAsync(System.Uri)
+  commentId: M:System.Net.Http.HttpClient.GetStreamAsync(System.Uri)
+  id: GetStreamAsync(System.Uri)
+  parent: System.Net.Http.HttpClient
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Net.Http.HttpClient.GetStreamAsync(System.Uri)
+  type: Method
+  source:
+    remote:
+      path: src/System.Net.Http/ref/System.Net.Http.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: GetStreamAsync
+    path: src/System.Net.Http/ref/System.Net.Http.cs
+    startLine: 61
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http
+  summary: "\n<p>Send a GET request to the specified Uri and return the response body as a stream in an asynchronous operation.</p>\n"
+  syntax:
+    content: public Task<Stream> GetStreamAsync(Uri requestUri)
+    content.vb: Public Function GetStreamAsync(requestUri As Uri) As Task(Of Stream)
+    parameters:
+    - id: requestUri
+      type: System.Uri
+      description: "\n<p>The Uri the request is sent to.</p>\n"
+    return:
+      type: System.Threading.Tasks.Task{System.IO.Stream}
+      description: "\n<p>Returns <xref href=\"System.Threading.Tasks.Task`1\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n<p>The task object representing the asynchronous operation.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>The <em>requestUri</em> was <strong>null</strong>.</p>\n"
+  - type: System.Net.Http.HttpRequestException
+    commentId: T:System.Net.Http.HttpRequestException
+    description: "\n<p>The request failed due to an underlying issue such as network connectivity, DNS failure, server certificate validation or timeout.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: HttpClient.GetStreamAsync(Uri)
+- uid: System.Net.Http.HttpClient.GetStringAsync(System.String)
+  commentId: M:System.Net.Http.HttpClient.GetStringAsync(System.String)
+  id: GetStringAsync(System.String)
+  parent: System.Net.Http.HttpClient
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Net.Http.HttpClient.GetStringAsync(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/System.Net.Http/ref/System.Net.Http.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: GetStringAsync
+    path: src/System.Net.Http/ref/System.Net.Http.cs
+    startLine: 62
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http
+  summary: "\n<p>Send a GET request to the specified Uri and return the response body as a string in an asynchronous operation.</p>\n"
+  syntax:
+    content: public Task<string> GetStringAsync(string requestUri)
+    content.vb: Public Function GetStringAsync(requestUri As String) As Task(Of String)
+    parameters:
+    - id: requestUri
+      type: System.String
+      description: "\n<p>The Uri the request is sent to.</p>\n"
+    return:
+      type: System.Threading.Tasks.Task{System.String}
+      description: "\n<p>Returns <xref href=\"System.Threading.Tasks.Task`1\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n<p>The task object representing the asynchronous operation.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>The <em>requestUri</em> was <strong>null</strong>.</p>\n"
+  - type: System.Net.Http.HttpRequestException
+    commentId: T:System.Net.Http.HttpRequestException
+    description: "\n<p>The request failed due to an underlying issue such as network connectivity, DNS failure, server certificate validation or timeout.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: HttpClient.GetStringAsync(String)
+- uid: System.Net.Http.HttpClient.GetStringAsync(System.Uri)
+  commentId: M:System.Net.Http.HttpClient.GetStringAsync(System.Uri)
+  id: GetStringAsync(System.Uri)
+  parent: System.Net.Http.HttpClient
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Net.Http.HttpClient.GetStringAsync(System.Uri)
+  type: Method
+  source:
+    remote:
+      path: src/System.Net.Http/ref/System.Net.Http.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: GetStringAsync
+    path: src/System.Net.Http/ref/System.Net.Http.cs
+    startLine: 63
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http
+  summary: "\n<p>Send a GET request to the specified Uri and return the response body as a string in an asynchronous operation.</p>\n"
+  syntax:
+    content: public Task<string> GetStringAsync(Uri requestUri)
+    content.vb: Public Function GetStringAsync(requestUri As Uri) As Task(Of String)
+    parameters:
+    - id: requestUri
+      type: System.Uri
+      description: "\n<p>The Uri the request is sent to.</p>\n"
+    return:
+      type: System.Threading.Tasks.Task{System.String}
+      description: "\n<p>Returns <xref href=\"System.Threading.Tasks.Task`1\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n<p>The task object representing the asynchronous operation.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>The <em>requestUri</em> was <strong>null</strong>.</p>\n"
+  - type: System.Net.Http.HttpRequestException
+    commentId: T:System.Net.Http.HttpRequestException
+    description: "\n<p>The request failed due to an underlying issue such as network connectivity, DNS failure, server certificate validation or timeout.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: HttpClient.GetStringAsync(Uri)
+- uid: System.Net.Http.HttpClient.PostAsync(System.String,System.Net.Http.HttpContent)
+  commentId: M:System.Net.Http.HttpClient.PostAsync(System.String,System.Net.Http.HttpContent)
+  id: PostAsync(System.String,System.Net.Http.HttpContent)
+  parent: System.Net.Http.HttpClient
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Net.Http.HttpClient.PostAsync(System.String, System.Net.Http.HttpContent)
+  type: Method
+  source:
+    remote:
+      path: src/System.Net.Http/ref/System.Net.Http.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: PostAsync
+    path: src/System.Net.Http/ref/System.Net.Http.cs
+    startLine: 64
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http
+  summary: "\n<p>Send a POST request to the specified Uri as an asynchronous operation.</p>\n"
+  syntax:
+    content: public Task<HttpResponseMessage> PostAsync(string requestUri, HttpContent content)
+    content.vb: Public Function PostAsync(requestUri As String, content As HttpContent) As Task(Of HttpResponseMessage)
+    parameters:
+    - id: requestUri
+      type: System.String
+      description: "\n<p>The Uri the request is sent to.</p>\n"
+    - id: content
+      type: System.Net.Http.HttpContent
+      description: "\n<p>The HTTP request content sent to the server.</p>\n"
+    return:
+      type: System.Threading.Tasks.Task{System.Net.Http.HttpResponseMessage}
+      description: "\n<p>Returns <xref href=\"System.Threading.Tasks.Task`1\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n<p>The task object representing the asynchronous operation.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>The <em>requestUri</em> was <strong>null</strong>.</p>\n"
+  - type: System.Net.Http.HttpRequestException
+    commentId: T:System.Net.Http.HttpRequestException
+    description: "\n<p>The request failed due to an underlying issue such as network connectivity, DNS failure, server certificate validation or timeout.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: HttpClient.PostAsync(String, HttpContent)
+- uid: System.Net.Http.HttpClient.PostAsync(System.String,System.Net.Http.HttpContent,System.Threading.CancellationToken)
+  commentId: M:System.Net.Http.HttpClient.PostAsync(System.String,System.Net.Http.HttpContent,System.Threading.CancellationToken)
+  id: PostAsync(System.String,System.Net.Http.HttpContent,System.Threading.CancellationToken)
+  parent: System.Net.Http.HttpClient
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Net.Http.HttpClient.PostAsync(System.String, System.Net.Http.HttpContent, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/System.Net.Http/ref/System.Net.Http.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: PostAsync
+    path: src/System.Net.Http/ref/System.Net.Http.cs
+    startLine: 65
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http
+  summary: "\n<p>Send a POST request with a cancellation token as an asynchronous operation.</p>\n"
+  syntax:
+    content: public Task<HttpResponseMessage> PostAsync(string requestUri, HttpContent content, CancellationToken cancellationToken)
+    content.vb: Public Function PostAsync(requestUri As String, content As HttpContent, cancellationToken As CancellationToken) As Task(Of HttpResponseMessage)
+    parameters:
+    - id: requestUri
+      type: System.String
+      description: "\n<p>The Uri the request is sent to.</p>\n"
+    - id: content
+      type: System.Net.Http.HttpContent
+      description: "\n<p>The HTTP request content sent to the server.</p>\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\n<p>A cancellation token that can be used by other objects or threads to receive notice of cancellation.</p>\n"
+    return:
+      type: System.Threading.Tasks.Task{System.Net.Http.HttpResponseMessage}
+      description: "\n<p>Returns <xref href=\"System.Threading.Tasks.Task`1\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n<p>The task object representing the asynchronous operation.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>The <em>requestUri</em> was <strong>null</strong>.</p>\n"
+  - type: System.Net.Http.HttpRequestException
+    commentId: T:System.Net.Http.HttpRequestException
+    description: "\n<p>The request failed due to an underlying issue such as network connectivity, DNS failure, server certificate validation or timeout.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: HttpClient.PostAsync(String, HttpContent, CancellationToken)
+- uid: System.Net.Http.HttpClient.PostAsync(System.Uri,System.Net.Http.HttpContent)
+  commentId: M:System.Net.Http.HttpClient.PostAsync(System.Uri,System.Net.Http.HttpContent)
+  id: PostAsync(System.Uri,System.Net.Http.HttpContent)
+  parent: System.Net.Http.HttpClient
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Net.Http.HttpClient.PostAsync(System.Uri, System.Net.Http.HttpContent)
+  type: Method
+  source:
+    remote:
+      path: src/System.Net.Http/ref/System.Net.Http.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: PostAsync
+    path: src/System.Net.Http/ref/System.Net.Http.cs
+    startLine: 66
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http
+  summary: "\n<p>Send a POST request to the specified Uri as an asynchronous operation.</p>\n"
+  syntax:
+    content: public Task<HttpResponseMessage> PostAsync(Uri requestUri, HttpContent content)
+    content.vb: Public Function PostAsync(requestUri As Uri, content As HttpContent) As Task(Of HttpResponseMessage)
+    parameters:
+    - id: requestUri
+      type: System.Uri
+      description: "\n<p>The Uri the request is sent to.</p>\n"
+    - id: content
+      type: System.Net.Http.HttpContent
+      description: "\n<p>The HTTP request content sent to the server.</p>\n"
+    return:
+      type: System.Threading.Tasks.Task{System.Net.Http.HttpResponseMessage}
+      description: "\n<p>Returns <xref href=\"System.Threading.Tasks.Task`1\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n<p>The task object representing the asynchronous operation.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>The <em>requestUri</em> was <strong>null</strong>.</p>\n"
+  - type: System.Net.Http.HttpRequestException
+    commentId: T:System.Net.Http.HttpRequestException
+    description: "\n<p>The request failed due to an underlying issue such as network connectivity, DNS failure, server certificate validation or timeout.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: HttpClient.PostAsync(Uri, HttpContent)
+- uid: System.Net.Http.HttpClient.PostAsync(System.Uri,System.Net.Http.HttpContent,System.Threading.CancellationToken)
+  commentId: M:System.Net.Http.HttpClient.PostAsync(System.Uri,System.Net.Http.HttpContent,System.Threading.CancellationToken)
+  id: PostAsync(System.Uri,System.Net.Http.HttpContent,System.Threading.CancellationToken)
+  parent: System.Net.Http.HttpClient
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Net.Http.HttpClient.PostAsync(System.Uri, System.Net.Http.HttpContent, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/System.Net.Http/ref/System.Net.Http.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: PostAsync
+    path: src/System.Net.Http/ref/System.Net.Http.cs
+    startLine: 67
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http
+  summary: "\n<p>Send a POST request with a cancellation token as an asynchronous operation.</p>\n"
+  syntax:
+    content: public Task<HttpResponseMessage> PostAsync(Uri requestUri, HttpContent content, CancellationToken cancellationToken)
+    content.vb: Public Function PostAsync(requestUri As Uri, content As HttpContent, cancellationToken As CancellationToken) As Task(Of HttpResponseMessage)
+    parameters:
+    - id: requestUri
+      type: System.Uri
+      description: "\n<p>The Uri the request is sent to.</p>\n"
+    - id: content
+      type: System.Net.Http.HttpContent
+      description: "\n<p>The HTTP request content sent to the server.</p>\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\n<p>A cancellation token that can be used by other objects or threads to receive notice of cancellation.</p>\n"
+    return:
+      type: System.Threading.Tasks.Task{System.Net.Http.HttpResponseMessage}
+      description: "\n<p>Returns <xref href=\"System.Threading.Tasks.Task`1\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n<p>The task object representing the asynchronous operation.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>The <em>requestUri</em> was <strong>null</strong>.</p>\n"
+  - type: System.Net.Http.HttpRequestException
+    commentId: T:System.Net.Http.HttpRequestException
+    description: "\n<p>The request failed due to an underlying issue such as network connectivity, DNS failure, server certificate validation or timeout.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: HttpClient.PostAsync(Uri, HttpContent, CancellationToken)
+- uid: System.Net.Http.HttpClient.PutAsync(System.String,System.Net.Http.HttpContent)
+  commentId: M:System.Net.Http.HttpClient.PutAsync(System.String,System.Net.Http.HttpContent)
+  id: PutAsync(System.String,System.Net.Http.HttpContent)
+  parent: System.Net.Http.HttpClient
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Net.Http.HttpClient.PutAsync(System.String, System.Net.Http.HttpContent)
+  type: Method
+  source:
+    remote:
+      path: src/System.Net.Http/ref/System.Net.Http.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: PutAsync
+    path: src/System.Net.Http/ref/System.Net.Http.cs
+    startLine: 68
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http
+  summary: "\n<p>Send a PUT request to the specified Uri as an asynchronous operation.</p>\n"
+  syntax:
+    content: public Task<HttpResponseMessage> PutAsync(string requestUri, HttpContent content)
+    content.vb: Public Function PutAsync(requestUri As String, content As HttpContent) As Task(Of HttpResponseMessage)
+    parameters:
+    - id: requestUri
+      type: System.String
+      description: "\n<p>The Uri the request is sent to.</p>\n"
+    - id: content
+      type: System.Net.Http.HttpContent
+      description: "\n<p>The HTTP request content sent to the server.</p>\n"
+    return:
+      type: System.Threading.Tasks.Task{System.Net.Http.HttpResponseMessage}
+      description: "\n<p>Returns <xref href=\"System.Threading.Tasks.Task`1\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n<p>The task object representing the asynchronous operation.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>The <em>requestUri</em> was <strong>null</strong>.</p>\n"
+  - type: System.Net.Http.HttpRequestException
+    commentId: T:System.Net.Http.HttpRequestException
+    description: "\n<p>The request failed due to an underlying issue such as network connectivity, DNS failure, server certificate validation or timeout.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: HttpClient.PutAsync(String, HttpContent)
+- uid: System.Net.Http.HttpClient.PutAsync(System.String,System.Net.Http.HttpContent,System.Threading.CancellationToken)
+  commentId: M:System.Net.Http.HttpClient.PutAsync(System.String,System.Net.Http.HttpContent,System.Threading.CancellationToken)
+  id: PutAsync(System.String,System.Net.Http.HttpContent,System.Threading.CancellationToken)
+  parent: System.Net.Http.HttpClient
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Net.Http.HttpClient.PutAsync(System.String, System.Net.Http.HttpContent, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/System.Net.Http/ref/System.Net.Http.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: PutAsync
+    path: src/System.Net.Http/ref/System.Net.Http.cs
+    startLine: 69
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http
+  summary: "\n<p>Send a PUT request with a cancellation token as an asynchronous operation.</p>\n"
+  syntax:
+    content: public Task<HttpResponseMessage> PutAsync(string requestUri, HttpContent content, CancellationToken cancellationToken)
+    content.vb: Public Function PutAsync(requestUri As String, content As HttpContent, cancellationToken As CancellationToken) As Task(Of HttpResponseMessage)
+    parameters:
+    - id: requestUri
+      type: System.String
+      description: "\n<p>The Uri the request is sent to.</p>\n"
+    - id: content
+      type: System.Net.Http.HttpContent
+      description: "\n<p>The HTTP request content sent to the server.</p>\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\n<p>A cancellation token that can be used by other objects or threads to receive notice of cancellation.</p>\n"
+    return:
+      type: System.Threading.Tasks.Task{System.Net.Http.HttpResponseMessage}
+      description: "\n<p>Returns <xref href=\"System.Threading.Tasks.Task`1\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n<p>The task object representing the asynchronous operation.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>The <em>requestUri</em> was <strong>null</strong>.</p>\n"
+  - type: System.Net.Http.HttpRequestException
+    commentId: T:System.Net.Http.HttpRequestException
+    description: "\n<p>The request failed due to an underlying issue such as network connectivity, DNS failure, server certificate validation or timeout.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: HttpClient.PutAsync(String, HttpContent, CancellationToken)
+- uid: System.Net.Http.HttpClient.PutAsync(System.Uri,System.Net.Http.HttpContent)
+  commentId: M:System.Net.Http.HttpClient.PutAsync(System.Uri,System.Net.Http.HttpContent)
+  id: PutAsync(System.Uri,System.Net.Http.HttpContent)
+  parent: System.Net.Http.HttpClient
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Net.Http.HttpClient.PutAsync(System.Uri, System.Net.Http.HttpContent)
+  type: Method
+  source:
+    remote:
+      path: src/System.Net.Http/ref/System.Net.Http.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: PutAsync
+    path: src/System.Net.Http/ref/System.Net.Http.cs
+    startLine: 70
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http
+  summary: "\n<p>Send a PUT request to the specified Uri as an asynchronous operation.</p>\n"
+  syntax:
+    content: public Task<HttpResponseMessage> PutAsync(Uri requestUri, HttpContent content)
+    content.vb: Public Function PutAsync(requestUri As Uri, content As HttpContent) As Task(Of HttpResponseMessage)
+    parameters:
+    - id: requestUri
+      type: System.Uri
+      description: "\n<p>The Uri the request is sent to.</p>\n"
+    - id: content
+      type: System.Net.Http.HttpContent
+      description: "\n<p>The HTTP request content sent to the server.</p>\n"
+    return:
+      type: System.Threading.Tasks.Task{System.Net.Http.HttpResponseMessage}
+      description: "\n<p>Returns <xref href=\"System.Threading.Tasks.Task`1\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n<p>The task object representing the asynchronous operation.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>The <em>requestUri</em> was <strong>null</strong>.</p>\n"
+  - type: System.Net.Http.HttpRequestException
+    commentId: T:System.Net.Http.HttpRequestException
+    description: "\n<p>The request failed due to an underlying issue such as network connectivity, DNS failure, server certificate validation or timeout.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: HttpClient.PutAsync(Uri, HttpContent)
+- uid: System.Net.Http.HttpClient.PutAsync(System.Uri,System.Net.Http.HttpContent,System.Threading.CancellationToken)
+  commentId: M:System.Net.Http.HttpClient.PutAsync(System.Uri,System.Net.Http.HttpContent,System.Threading.CancellationToken)
+  id: PutAsync(System.Uri,System.Net.Http.HttpContent,System.Threading.CancellationToken)
+  parent: System.Net.Http.HttpClient
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Net.Http.HttpClient.PutAsync(System.Uri, System.Net.Http.HttpContent, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/System.Net.Http/ref/System.Net.Http.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: PutAsync
+    path: src/System.Net.Http/ref/System.Net.Http.cs
+    startLine: 71
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http
+  summary: "\n<p>Send a PUT request with a cancellation token as an asynchronous operation.</p>\n"
+  syntax:
+    content: public Task<HttpResponseMessage> PutAsync(Uri requestUri, HttpContent content, CancellationToken cancellationToken)
+    content.vb: Public Function PutAsync(requestUri As Uri, content As HttpContent, cancellationToken As CancellationToken) As Task(Of HttpResponseMessage)
+    parameters:
+    - id: requestUri
+      type: System.Uri
+      description: "\n<p>The Uri the request is sent to.</p>\n"
+    - id: content
+      type: System.Net.Http.HttpContent
+      description: "\n<p>The HTTP request content sent to the server.</p>\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\n<p>A cancellation token that can be used by other objects or threads to receive notice of cancellation.</p>\n"
+    return:
+      type: System.Threading.Tasks.Task{System.Net.Http.HttpResponseMessage}
+      description: "\n<p>Returns <xref href=\"System.Threading.Tasks.Task`1\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n<p>The task object representing the asynchronous operation.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>The <em>requestUri</em> was <strong>null</strong>.</p>\n"
+  - type: System.Net.Http.HttpRequestException
+    commentId: T:System.Net.Http.HttpRequestException
+    description: "\n<p>The request failed due to an underlying issue such as network connectivity, DNS failure, server certificate validation or timeout.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: HttpClient.PutAsync(Uri, HttpContent, CancellationToken)
+- uid: System.Net.Http.HttpClient.SendAsync(System.Net.Http.HttpRequestMessage)
+  commentId: M:System.Net.Http.HttpClient.SendAsync(System.Net.Http.HttpRequestMessage)
+  id: SendAsync(System.Net.Http.HttpRequestMessage)
+  parent: System.Net.Http.HttpClient
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Net.Http.HttpClient.SendAsync(System.Net.Http.HttpRequestMessage)
+  type: Method
+  source:
+    remote:
+      path: src/System.Net.Http/ref/System.Net.Http.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: SendAsync
+    path: src/System.Net.Http/ref/System.Net.Http.cs
+    startLine: 72
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http
+  summary: "\n<p>Send an HTTP request as an asynchronous operation.</p>\n"
+  syntax:
+    content: public Task<HttpResponseMessage> SendAsync(HttpRequestMessage request)
+    content.vb: Public Function SendAsync(request As HttpRequestMessage) As Task(Of HttpResponseMessage)
+    parameters:
+    - id: request
+      type: System.Net.Http.HttpRequestMessage
+      description: "\n<p>The HTTP request message to send.</p>\n"
+    return:
+      type: System.Threading.Tasks.Task{System.Net.Http.HttpResponseMessage}
+      description: "\n<p>Returns <xref href=\"System.Threading.Tasks.Task`1\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n<p>The task object representing the asynchronous operation.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>The <em>request</em> was <strong>null</strong>.</p>\n"
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: "\n<p>The request message was already sent by the <xref href=\"System.Net.Http.HttpClient\" data-throw-if-not-resolved=\"false\"></xref> instance.</p>\n"
+  - type: System.Net.Http.HttpRequestException
+    commentId: T:System.Net.Http.HttpRequestException
+    description: "\n<p>The request failed due to an underlying issue such as network connectivity, DNS failure, server certificate validation or timeout.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: HttpClient.SendAsync(HttpRequestMessage)
+- uid: System.Net.Http.HttpClient.SendAsync(System.Net.Http.HttpRequestMessage,System.Net.Http.HttpCompletionOption)
+  commentId: M:System.Net.Http.HttpClient.SendAsync(System.Net.Http.HttpRequestMessage,System.Net.Http.HttpCompletionOption)
+  id: SendAsync(System.Net.Http.HttpRequestMessage,System.Net.Http.HttpCompletionOption)
+  parent: System.Net.Http.HttpClient
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Net.Http.HttpClient.SendAsync(System.Net.Http.HttpRequestMessage, System.Net.Http.HttpCompletionOption)
+  type: Method
+  source:
+    remote:
+      path: src/System.Net.Http/ref/System.Net.Http.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: SendAsync
+    path: src/System.Net.Http/ref/System.Net.Http.cs
+    startLine: 73
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http
+  summary: "\n<p>Send an HTTP request as an asynchronous operation. </p>\n"
+  syntax:
+    content: public Task<HttpResponseMessage> SendAsync(HttpRequestMessage request, HttpCompletionOption completionOption)
+    content.vb: Public Function SendAsync(request As HttpRequestMessage, completionOption As HttpCompletionOption) As Task(Of HttpResponseMessage)
+    parameters:
+    - id: request
+      type: System.Net.Http.HttpRequestMessage
+      description: "\n<p>The HTTP request message to send.</p>\n"
+    - id: completionOption
+      type: System.Net.Http.HttpCompletionOption
+      description: "\n<p>When the operation should complete (as soon as a response is available or after reading the whole response content).</p>\n"
+    return:
+      type: System.Threading.Tasks.Task{System.Net.Http.HttpResponseMessage}
+      description: "\n<p>Returns <xref href=\"System.Threading.Tasks.Task`1\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n<p>The task object representing the asynchronous operation.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>The <em>request</em> was <strong>null</strong>.</p>\n"
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: "\n<p>The request message was already sent by the <xref href=\"System.Net.Http.HttpClient\" data-throw-if-not-resolved=\"false\"></xref> instance.</p>\n"
+  - type: System.Net.Http.HttpRequestException
+    commentId: T:System.Net.Http.HttpRequestException
+    description: "\n<p>The request failed due to an underlying issue such as network connectivity, DNS failure, server certificate validation or timeout.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: HttpClient.SendAsync(HttpRequestMessage, HttpCompletionOption)
+- uid: System.Net.Http.HttpClient.SendAsync(System.Net.Http.HttpRequestMessage,System.Net.Http.HttpCompletionOption,System.Threading.CancellationToken)
+  commentId: M:System.Net.Http.HttpClient.SendAsync(System.Net.Http.HttpRequestMessage,System.Net.Http.HttpCompletionOption,System.Threading.CancellationToken)
+  id: SendAsync(System.Net.Http.HttpRequestMessage,System.Net.Http.HttpCompletionOption,System.Threading.CancellationToken)
+  parent: System.Net.Http.HttpClient
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Net.Http.HttpClient.SendAsync(System.Net.Http.HttpRequestMessage, System.Net.Http.HttpCompletionOption, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/System.Net.Http/ref/System.Net.Http.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: SendAsync
+    path: src/System.Net.Http/ref/System.Net.Http.cs
+    startLine: 74
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http
+  summary: "\n<p>Send an HTTP request as an asynchronous operation.</p>\n"
+  syntax:
+    content: public Task<HttpResponseMessage> SendAsync(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+    content.vb: Public Function SendAsync(request As HttpRequestMessage, completionOption As HttpCompletionOption, cancellationToken As CancellationToken) As Task(Of HttpResponseMessage)
+    parameters:
+    - id: request
+      type: System.Net.Http.HttpRequestMessage
+      description: "\n<p>The HTTP request message to send.</p>\n"
+    - id: completionOption
+      type: System.Net.Http.HttpCompletionOption
+      description: "\n<p>When the operation should complete (as soon as a response is available or after reading the whole response content).</p>\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\n<p>The cancellation token to cancel operation.</p>\n"
+    return:
+      type: System.Threading.Tasks.Task{System.Net.Http.HttpResponseMessage}
+      description: "\n<p>Returns <xref href=\"System.Threading.Tasks.Task`1\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n<p>The task object representing the asynchronous operation.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>The <em>request</em> was <strong>null</strong>.</p>\n"
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: "\n<p>The request message was already sent by the <xref href=\"System.Net.Http.HttpClient\" data-throw-if-not-resolved=\"false\"></xref> instance.</p>\n"
+  - type: System.Net.Http.HttpRequestException
+    commentId: T:System.Net.Http.HttpRequestException
+    description: "\n<p>The request failed due to an underlying issue such as network connectivity, DNS failure, server certificate validation or timeout.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: HttpClient.SendAsync(HttpRequestMessage, HttpCompletionOption, CancellationToken)
+- uid: System.Net.Http.HttpClient.SendAsync(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)
+  commentId: M:System.Net.Http.HttpClient.SendAsync(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)
+  id: SendAsync(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)
+  parent: System.Net.Http.HttpClient
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Net.Http.HttpClient.SendAsync(System.Net.Http.HttpRequestMessage, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/System.Net.Http/ref/System.Net.Http.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: SendAsync
+    path: src/System.Net.Http/ref/System.Net.Http.cs
+    startLine: 75
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http
+  summary: "\n<p>Send an HTTP request as an asynchronous operation.</p>\n"
+  syntax:
+    content: public override Task<HttpResponseMessage> SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+    content.vb: Public Overrides Function SendAsync(request As HttpRequestMessage, cancellationToken As CancellationToken) As Task(Of HttpResponseMessage)
+    parameters:
+    - id: request
+      type: System.Net.Http.HttpRequestMessage
+      description: "\n<p>The HTTP request message to send.</p>\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\n<p>The cancellation token to cancel operation.</p>\n"
+    return:
+      type: System.Threading.Tasks.Task{System.Net.Http.HttpResponseMessage}
+      description: "\n<p>Returns <xref href=\"System.Threading.Tasks.Task`1\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n<p>The task object representing the asynchronous operation.</p>\n"
+  overridden: System.Net.Http.HttpMessageInvoker.SendAsync(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>The <em>request</em> was <strong>null</strong>.</p>\n"
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: "\n<p>The request message was already sent by the <xref href=\"System.Net.Http.HttpClient\" data-throw-if-not-resolved=\"false\"></xref> instance.</p>\n"
+  - type: System.Net.Http.HttpRequestException
+    commentId: T:System.Net.Http.HttpRequestException
+    description: "\n<p>The request failed due to an underlying issue such as network connectivity, DNS failure, server certificate validation or timeout.</p>\n"
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  nameWithType: HttpClient.SendAsync(HttpRequestMessage, CancellationToken)
+references:
+- uid: System.Net.Http
+  isExternal: false
+  name: "XXX"
+  fullName: System.Net.Http
+  commentId: N:System.Net.Http
+  nameWithType: System.Net.Http
+- uid: System.Object
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Object
+  commentId: T:System.Object
+  nameWithType: Object
+- uid: System.Net.Http.HttpMessageInvoker
+  parent: System.Net.Http
+  isExternal: false
+  name: "XXX"
+  fullName: System.Net.Http.HttpMessageInvoker
+  commentId: T:System.Net.Http.HttpMessageInvoker
+  nameWithType: HttpMessageInvoker
+- uid: System.IDisposable
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.IDisposable
+  commentId: T:System.IDisposable
+  nameWithType: IDisposable
+- uid: System.Net.Http.HttpMessageInvoker.Dispose
+  parent: System.Net.Http.HttpMessageInvoker
+  isExternal: false
+  name: "XXX"
+  fullName: System.Net.Http.HttpMessageInvoker.Dispose()
+  spec.csharp:
+  - uid: System.Net.Http.HttpMessageInvoker.Dispose
+    name: "XXX"
+    fullName: System.Net.Http.HttpMessageInvoker.Dispose
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Net.Http.HttpMessageInvoker.Dispose
+    name: "XXX"
+    fullName: System.Net.Http.HttpMessageInvoker.Dispose
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Net.Http.HttpMessageInvoker.Dispose
+  nameWithType: HttpMessageInvoker.Dispose()
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.ToString
+  nameWithType: Object.ToString()
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.Equals(System.Object)
+  nameWithType: Object.Equals(Object)
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  nameWithType: Object.Equals(Object, Object)
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.GetHashCode
+  nameWithType: Object.GetHashCode()
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.GetType
+  nameWithType: Object.GetType()
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.MemberwiseClone
+  nameWithType: Object.MemberwiseClone()
+- uid: System
+  isExternal: false
+  name: "XXX"
+  fullName: System
+  commentId: N:System
+  nameWithType: System
+- uid: System.Net.Http.HttpMessageHandler
+  parent: System.Net.Http
+  isExternal: false
+  name: "XXX"
+  fullName: System.Net.Http.HttpMessageHandler
+  commentId: T:System.Net.Http.HttpMessageHandler
+  nameWithType: HttpMessageHandler
+- uid: System.Boolean
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Boolean
+  commentId: T:System.Boolean
+  nameWithType: Boolean
+- uid: System.Uri
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Uri
+  commentId: T:System.Uri
+  nameWithType: Uri
+- uid: System.Net.Http.Headers.HttpRequestHeaders
+  parent: System.Net.Http.Headers
+  isExternal: false
+  name: "XXX"
+  fullName: System.Net.Http.Headers.HttpRequestHeaders
+  commentId: T:System.Net.Http.Headers.HttpRequestHeaders
+  nameWithType: HttpRequestHeaders
+- uid: System.Net.Http.Headers
+  isExternal: false
+  name: "XXX"
+  fullName: System.Net.Http.Headers
+  commentId: N:System.Net.Http.Headers
+  nameWithType: System.Net.Http.Headers
+- uid: System.Int64
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Int64
+  commentId: T:System.Int64
+  nameWithType: Int64
+- uid: System.TimeSpan
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.TimeSpan
+  commentId: T:System.TimeSpan
+  nameWithType: TimeSpan
+- uid: System.String
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.String
+  commentId: T:System.String
+  nameWithType: String
+- uid: System.Threading.Tasks.Task{System.Net.Http.HttpResponseMessage}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: "XXX"
+  fullName: System.Threading.Tasks.Task<System.Net.Http.HttpResponseMessage>
+  fullname.vb: System.Threading.Tasks.Task(Of System.Net.Http.HttpResponseMessage)
+  name.vb: Task(Of HttpResponseMessage)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: "XXX"
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: "<"
+    fullName: <
+  - uid: System.Net.Http.HttpResponseMessage
+    name: "XXX"
+    fullName: System.Net.Http.HttpResponseMessage
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: "XXX"
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: 'XXX '
+    fullName: '(Of '
+  - uid: System.Net.Http.HttpResponseMessage
+    name: "XXX"
+    fullName: System.Net.Http.HttpResponseMessage
+  - name: "XXX"
+    fullName: )
+  commentId: T:System.Threading.Tasks.Task{System.Net.Http.HttpResponseMessage}
+  nameWithType: Task<HttpResponseMessage>
+  nameWithType.vb: Task(Of HttpResponseMessage)
+- uid: System.Threading.Tasks.Task`1
+  isExternal: false
+  name: "XXX"
+  fullName: System.Threading.Tasks.Task<TResult>
+  fullname.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: "XXX"
+    fullName: System.Threading.Tasks.Task
+  - name: "<"
+    fullName: <
+  - name: "XXX"
+    fullName: TResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: "XXX"
+    fullName: System.Threading.Tasks.Task
+  - name: 'XXX '
+    fullName: '(Of '
+  - name: "XXX"
+    fullName: TResult
+  - name: "XXX"
+    fullName: )
+  commentId: T:System.Threading.Tasks.Task`1
+  nameWithType: Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+- uid: System.Threading.Tasks
+  isExternal: false
+  name: "XXX"
+  fullName: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+- uid: System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: false
+  name: "XXX"
+  fullName: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  nameWithType: CancellationToken
+- uid: System.Threading
+  isExternal: false
+  name: "XXX"
+  fullName: System.Threading
+  commentId: N:System.Threading
+  nameWithType: System.Threading
+- uid: System.Net.Http.HttpMessageInvoker.Dispose(System.Boolean)
+  parent: System.Net.Http.HttpMessageInvoker
+  isExternal: true
+  name: "XXX"
+  fullName: System.Net.Http.HttpMessageInvoker.Dispose(System.Boolean)
+  spec.csharp:
+  - uid: System.Net.Http.HttpMessageInvoker.Dispose(System.Boolean)
+    name: "XXX"
+    fullName: System.Net.Http.HttpMessageInvoker.Dispose
+  - name: "XXX"
+    fullName: (
+  - uid: System.Boolean
+    name: "XXX"
+    fullName: System.Boolean
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Net.Http.HttpMessageInvoker.Dispose(System.Boolean)
+    name: "XXX"
+    fullName: System.Net.Http.HttpMessageInvoker.Dispose
+  - name: "XXX"
+    fullName: (
+  - uid: System.Boolean
+    name: "XXX"
+    fullName: System.Boolean
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Net.Http.HttpMessageInvoker.Dispose(System.Boolean)
+  nameWithType: HttpMessageInvoker.Dispose(Boolean)
+- uid: System.Net.Http.HttpCompletionOption
+  parent: System.Net.Http
+  isExternal: false
+  name: "XXX"
+  fullName: System.Net.Http.HttpCompletionOption
+  commentId: T:System.Net.Http.HttpCompletionOption
+  nameWithType: HttpCompletionOption
+- uid: System.Threading.Tasks.Task{System.Byte[]}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: "XXX"
+  fullName: System.Threading.Tasks.Task<System.Byte[]>
+  fullname.vb: System.Threading.Tasks.Task(Of System.Byte())
+  name.vb: Task(Of Byte())
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: "XXX"
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: "<"
+    fullName: <
+  - uid: System.Byte
+    name: "XXX"
+    fullName: System.Byte
+    isExternal: true
+  - name: 'XXX'
+    fullName: '[]'
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: "XXX"
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: 'XXX '
+    fullName: '(Of '
+  - uid: System.Byte
+    name: "XXX"
+    fullName: System.Byte
+    isExternal: true
+  - name: "XXX"
+    fullName: ()
+  - name: "XXX"
+    fullName: )
+  commentId: T:System.Threading.Tasks.Task{System.Byte[]}
+  nameWithType: Task<Byte[]>
+  nameWithType.vb: Task(Of Byte())
+- uid: System.Threading.Tasks.Task{System.IO.Stream}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: "XXX"
+  fullName: System.Threading.Tasks.Task<System.IO.Stream>
+  fullname.vb: System.Threading.Tasks.Task(Of System.IO.Stream)
+  name.vb: Task(Of Stream)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: "XXX"
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: "<"
+    fullName: <
+  - uid: System.IO.Stream
+    name: "XXX"
+    fullName: System.IO.Stream
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: "XXX"
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: 'XXX '
+    fullName: '(Of '
+  - uid: System.IO.Stream
+    name: "XXX"
+    fullName: System.IO.Stream
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: T:System.Threading.Tasks.Task{System.IO.Stream}
+  nameWithType: Task<Stream>
+  nameWithType.vb: Task(Of Stream)
+- uid: System.Threading.Tasks.Task{System.String}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: "XXX"
+  fullName: System.Threading.Tasks.Task<System.String>
+  fullname.vb: System.Threading.Tasks.Task(Of System.String)
+  name.vb: Task(Of String)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: "XXX"
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: "<"
+    fullName: <
+  - uid: System.String
+    name: "XXX"
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: "XXX"
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: 'XXX '
+    fullName: '(Of '
+  - uid: System.String
+    name: "XXX"
+    fullName: System.String
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: T:System.Threading.Tasks.Task{System.String}
+  nameWithType: Task<String>
+  nameWithType.vb: Task(Of String)
+- uid: System.Net.Http.HttpContent
+  parent: System.Net.Http
+  isExternal: false
+  name: "XXX"
+  fullName: System.Net.Http.HttpContent
+  commentId: T:System.Net.Http.HttpContent
+  nameWithType: HttpContent
+- uid: System.Net.Http.HttpRequestMessage
+  parent: System.Net.Http
+  isExternal: false
+  name: "XXX"
+  fullName: System.Net.Http.HttpRequestMessage
+  commentId: T:System.Net.Http.HttpRequestMessage
+  nameWithType: HttpRequestMessage
+- uid: System.Net.Http.HttpMessageInvoker.SendAsync(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)
+  parent: System.Net.Http.HttpMessageInvoker
+  isExternal: true
+  name: "XXX"
+  fullName: System.Net.Http.HttpMessageInvoker.SendAsync(System.Net.Http.HttpRequestMessage, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: System.Net.Http.HttpMessageInvoker.SendAsync(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)
+    name: "XXX"
+    fullName: System.Net.Http.HttpMessageInvoker.SendAsync
+  - name: "XXX"
+    fullName: (
+  - uid: System.Net.Http.HttpRequestMessage
+    name: "XXX"
+    fullName: System.Net.Http.HttpRequestMessage
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: "XXX"
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Net.Http.HttpMessageInvoker.SendAsync(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)
+    name: "XXX"
+    fullName: System.Net.Http.HttpMessageInvoker.SendAsync
+  - name: "XXX"
+    fullName: (
+  - uid: System.Net.Http.HttpRequestMessage
+    name: "XXX"
+    fullName: System.Net.Http.HttpRequestMessage
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: "XXX"
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Net.Http.HttpMessageInvoker.SendAsync(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)
+  nameWithType: HttpMessageInvoker.SendAsync(HttpRequestMessage, CancellationToken)
+- uid: System.ArgumentOutOfRangeException
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentOutOfRangeException
+  nameWithType: ArgumentOutOfRangeException
+  commentId: T:System.ArgumentOutOfRangeException
+- uid: System.InvalidOperationException
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.InvalidOperationException
+  nameWithType: InvalidOperationException
+  commentId: T:System.InvalidOperationException
+- uid: System.ObjectDisposedException
+  isExternal: false
+  name: "XXX"
+  fullName: System.ObjectDisposedException
+  nameWithType: ObjectDisposedException
+  commentId: T:System.ObjectDisposedException
+- uid: System.ArgumentNullException
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentNullException
+  nameWithType: ArgumentNullException
+  commentId: T:System.ArgumentNullException
+- uid: System.Net.Http.HttpRequestException
+  isExternal: false
+  name: "XXX"
+  fullName: System.Net.Http.HttpRequestException
+  commentId: T:System.Net.Http.HttpRequestException
+  nameWithType: HttpRequestException

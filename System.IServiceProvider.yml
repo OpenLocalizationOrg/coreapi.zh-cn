@@ -1,0 +1,92 @@
+items:
+- uid: System.IServiceProvider
+  commentId: T:System.IServiceProvider
+  id: IServiceProvider
+  parent: System
+  children:
+  - System.IServiceProvider.GetService(System.Type)
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IServiceProvider
+  type: Interface
+  source:
+    remote:
+      path: src/mscorlib/src/System/IServiceObjectProvider.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: IServiceProvider
+    path: src/mscorlib/src/System/IServiceObjectProvider.cs
+    startLine: 10
+  assemblies:
+  - System.ComponentModel
+  namespace: System
+  summary: "\n<p>Defines a mechanism for retrieving a service object; that is, an object that provides custom support to other objects.</p>\n"
+  syntax:
+    content: public interface IServiceProvider
+    content.vb: Public Interface IServiceProvider
+  seealso:
+  - type: System.Type
+    commentId: T:System.Type
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+  nameWithType: IServiceProvider
+- uid: System.IServiceProvider.GetService(System.Type)
+  commentId: M:System.IServiceProvider.GetService(System.Type)
+  id: GetService(System.Type)
+  parent: System.IServiceProvider
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IServiceProvider.GetService(System.Type)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/IServiceObjectProvider.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: GetService
+    path: src/mscorlib/src/System/IServiceObjectProvider.cs
+    startLine: 13
+  assemblies:
+  - System.ComponentModel
+  namespace: System
+  summary: "\n<p>Gets the service object of the specified type.</p>\n"
+  syntax:
+    content: object GetService(Type serviceType)
+    content.vb: Function GetService(serviceType As Type) As Object
+    parameters:
+    - id: serviceType
+      type: System.Type
+      description: "\n<p>An object that specifies the type of service object to get. </p>\n"
+    return:
+      type: System.Object
+      description: "\n<p>A service object of type <em>serviceType</em>.</p>\n<p>-or- </p>\n<p>\n<strong>null</strong> if there is no service object of type <em>serviceType</em>.</p>\n"
+  nameWithType: IServiceProvider.GetService(Type)
+references:
+- uid: System
+  isExternal: false
+  name: "XXX"
+  fullName: System
+  nameWithType: System
+  commentId: N:System
+- uid: System.Type
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Type
+  nameWithType: Type
+  commentId: T:System.Type
+- uid: System.Object
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Object
+  nameWithType: Object
+  commentId: T:System.Object

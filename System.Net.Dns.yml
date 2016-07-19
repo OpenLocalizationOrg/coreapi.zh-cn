@@ -1,0 +1,634 @@
+items:
+- uid: System.Net.Dns
+  commentId: T:System.Net.Dns
+  id: Dns
+  parent: System.Net
+  children:
+  - System.Net.Dns.GetHostAddressesAsync(System.String)
+  - System.Net.Dns.GetHostEntryAsync(System.Net.IPAddress)
+  - System.Net.Dns.GetHostEntryAsync(System.String)
+  - System.Net.Dns.GetHostName
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Net.Dns
+  type: Class
+  source:
+    remote:
+      path: src/System.Net.NameResolution/ref/System.Net.NameResolution.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Dns
+    path: src/System.Net.NameResolution/ref/System.Net.NameResolution.cs
+    startLine: 10
+  assemblies:
+  - System.Net.NameResolution
+  namespace: System.Net
+  summary: "\n<p>Provides simple domain name resolution functionality.</p>\n"
+  syntax:
+    content: public class Dns
+    content.vb: Public Class Dns
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+  nameWithType: Dns
+- uid: System.Net.Dns.GetHostAddressesAsync(System.String)
+  commentId: M:System.Net.Dns.GetHostAddressesAsync(System.String)
+  id: GetHostAddressesAsync(System.String)
+  parent: System.Net.Dns
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Net.Dns.GetHostAddressesAsync(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/System.Net.NameResolution/ref/System.Net.NameResolution.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: GetHostAddressesAsync
+    path: src/System.Net.NameResolution/ref/System.Net.NameResolution.cs
+    startLine: 12
+  assemblies:
+  - System.Net.NameResolution
+  namespace: System.Net
+  summary: "\n<p>Returns the Internet Protocol (IP) addresses for the specified host as an asynchronous operation.</p>\n"
+  syntax:
+    content: public static Task<IPAddress[]> GetHostAddressesAsync(string hostNameOrAddress)
+    content.vb: Public Shared Function GetHostAddressesAsync(hostNameOrAddress As String) As Task(Of IPAddress())
+    parameters:
+    - id: hostNameOrAddress
+      type: System.String
+      description: "\n<p>The host name or IP address to resolve.</p>\n"
+    return:
+      type: System.Threading.Tasks.Task{System.Net.IPAddress[]}
+      description: "\n<p>Returns <xref href=\"System.Threading.Tasks.Task`1\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n<p>The task object representing the asynchronous operation. The <xref href=\"System.Threading.Tasks.Task`1.Result\" data-throw-if-not-resolved=\"false\"></xref> property on the task object returns an array of type <xref href=\"System.Net.IPAddress\" data-throw-if-not-resolved=\"false\"></xref> that holds the IP addresses for the host that is specified by the <em>hostNameOrAddress</em> parameter.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>hostNameOrAddress</em> is <strong>null</strong>. </p>\n"
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>The length of <em>hostNameOrAddress</em> is greater than 255 characters. </p>\n"
+  - type: System.Net.Sockets.SocketException
+    commentId: T:System.Net.Sockets.SocketException
+    description: "\n<p>An error is encountered when resolving <em>hostNameOrAddress</em>. </p>\n"
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>\n<em>hostNameOrAddress</em> is an invalid IP address.</p>\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  nameWithType: Dns.GetHostAddressesAsync(String)
+- uid: System.Net.Dns.GetHostEntryAsync(System.Net.IPAddress)
+  commentId: M:System.Net.Dns.GetHostEntryAsync(System.Net.IPAddress)
+  id: GetHostEntryAsync(System.Net.IPAddress)
+  parent: System.Net.Dns
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Net.Dns.GetHostEntryAsync(System.Net.IPAddress)
+  type: Method
+  source:
+    remote:
+      path: src/System.Net.NameResolution/ref/System.Net.NameResolution.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: GetHostEntryAsync
+    path: src/System.Net.NameResolution/ref/System.Net.NameResolution.cs
+    startLine: 13
+  assemblies:
+  - System.Net.NameResolution
+  namespace: System.Net
+  summary: "\n<p>Resolves an IP address to an <xref href=\"System.Net.IPHostEntry\" data-throw-if-not-resolved=\"false\"></xref> instance as an asynchronous operation.</p>\n"
+  syntax:
+    content: public static Task<IPHostEntry> GetHostEntryAsync(IPAddress address)
+    content.vb: Public Shared Function GetHostEntryAsync(address As IPAddress) As Task(Of IPHostEntry)
+    parameters:
+    - id: address
+      type: System.Net.IPAddress
+      description: "\n<p>An IP address.</p>\n"
+    return:
+      type: System.Threading.Tasks.Task{System.Net.IPHostEntry}
+      description: "\n<p>Returns <xref href=\"System.Threading.Tasks.Task`1\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n<p>The task object representing the asynchronous operation. The <xref href=\"System.Threading.Tasks.Task`1.Result\" data-throw-if-not-resolved=\"false\"></xref> property on the task object returns an <xref href=\"System.Net.IPHostEntry\" data-throw-if-not-resolved=\"false\"></xref> instance that contains address information about the host specified in <em>address</em>.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>address</em> is <strong>null</strong>. </p>\n"
+  - type: System.Net.Sockets.SocketException
+    commentId: T:System.Net.Sockets.SocketException
+    description: "\n<p>An error is encountered when resolving <em>address</em>. </p>\n"
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>\n<em>address</em> is an invalid IP address.</p>\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  nameWithType: Dns.GetHostEntryAsync(IPAddress)
+- uid: System.Net.Dns.GetHostEntryAsync(System.String)
+  commentId: M:System.Net.Dns.GetHostEntryAsync(System.String)
+  id: GetHostEntryAsync(System.String)
+  parent: System.Net.Dns
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Net.Dns.GetHostEntryAsync(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/System.Net.NameResolution/ref/System.Net.NameResolution.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: GetHostEntryAsync
+    path: src/System.Net.NameResolution/ref/System.Net.NameResolution.cs
+    startLine: 14
+  assemblies:
+  - System.Net.NameResolution
+  namespace: System.Net
+  summary: "\n<p>Resolves a host name or IP address to an <xref href=\"System.Net.IPHostEntry\" data-throw-if-not-resolved=\"false\"></xref> instance as an asynchronous operation.</p>\n"
+  syntax:
+    content: public static Task<IPHostEntry> GetHostEntryAsync(string hostNameOrAddress)
+    content.vb: Public Shared Function GetHostEntryAsync(hostNameOrAddress As String) As Task(Of IPHostEntry)
+    parameters:
+    - id: hostNameOrAddress
+      type: System.String
+      description: "\n<p>The host name or IP address to resolve.</p>\n"
+    return:
+      type: System.Threading.Tasks.Task{System.Net.IPHostEntry}
+      description: "\n<p>Returns <xref href=\"System.Threading.Tasks.Task`1\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n<p>The task object representing the asynchronous operation. The <xref href=\"System.Threading.Tasks.Task`1.Result\" data-throw-if-not-resolved=\"false\"></xref> property on the task object returns an <xref href=\"System.Net.IPHostEntry\" data-throw-if-not-resolved=\"false\"></xref> instance that contains address information about the host specified in <em>hostNameOrAddress</em>.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>The <em>hostNameOrAddress</em> parameter is <strong>null</strong>. </p>\n"
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>The length of <em>hostNameOrAddress</em> parameter is greater than 255 characters. </p>\n"
+  - type: System.Net.Sockets.SocketException
+    commentId: T:System.Net.Sockets.SocketException
+    description: "\n<p>An error was encountered when resolving the <em>hostNameOrAddress</em> parameter. </p>\n"
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>The <em>hostNameOrAddress</em> parameter is an invalid IP address. </p>\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  nameWithType: Dns.GetHostEntryAsync(String)
+- uid: System.Net.Dns.GetHostName
+  commentId: M:System.Net.Dns.GetHostName
+  id: GetHostName
+  parent: System.Net.Dns
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Net.Dns.GetHostName()
+  type: Method
+  source:
+    remote:
+      path: src/System.Net.NameResolution/ref/System.Net.NameResolution.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: GetHostName
+    path: src/System.Net.NameResolution/ref/System.Net.NameResolution.cs
+    startLine: 15
+  assemblies:
+  - System.Net.NameResolution
+  namespace: System.Net
+  summary: "\n<p>Gets the host name of the local computer.</p>\n"
+  syntax:
+    content: public static string GetHostName()
+    content.vb: Public Shared Function GetHostName As String
+    return:
+      type: System.String
+      description: "\n<p>A string that contains the DNS host name of the local computer.</p>\n"
+  exceptions:
+  - type: System.Net.Sockets.SocketException
+    commentId: T:System.Net.Sockets.SocketException
+    description: "\n<p>An error is encountered when resolving the local host name. </p>\n"
+  see:
+  - type: System.Net.DnsPermission
+    commentId: T:System.Net.DnsPermission
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  nameWithType: Dns.GetHostName()
+references:
+- uid: System.Net
+  isExternal: false
+  name: "XXX"
+  fullName: System.Net
+  commentId: N:System.Net
+  nameWithType: System.Net
+- uid: System.Object
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Object
+  commentId: T:System.Object
+  nameWithType: Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.ToString
+  nameWithType: Object.ToString()
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.Equals(System.Object)
+  nameWithType: Object.Equals(Object)
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  nameWithType: Object.Equals(Object, Object)
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.GetHashCode
+  nameWithType: Object.GetHashCode()
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.GetType
+  nameWithType: Object.GetType()
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.MemberwiseClone
+  nameWithType: Object.MemberwiseClone()
+- uid: System
+  isExternal: false
+  name: "XXX"
+  fullName: System
+  commentId: N:System
+  nameWithType: System
+- uid: System.String
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.String
+  commentId: T:System.String
+  nameWithType: String
+- uid: System.Threading.Tasks.Task{System.Net.IPAddress[]}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: "XXX"
+  fullName: System.Threading.Tasks.Task<System.Net.IPAddress[]>
+  fullname.vb: System.Threading.Tasks.Task(Of System.Net.IPAddress())
+  name.vb: Task(Of IPAddress())
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: "XXX"
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: "<"
+    fullName: <
+  - uid: System.Net.IPAddress
+    name: "XXX"
+    fullName: System.Net.IPAddress
+    isExternal: true
+  - name: 'XXX'
+    fullName: '[]'
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: "XXX"
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: 'XXX '
+    fullName: '(Of '
+  - uid: System.Net.IPAddress
+    name: "XXX"
+    fullName: System.Net.IPAddress
+    isExternal: true
+  - name: "XXX"
+    fullName: ()
+  - name: "XXX"
+    fullName: )
+  commentId: T:System.Threading.Tasks.Task{System.Net.IPAddress[]}
+  nameWithType: Task<IPAddress[]>
+  nameWithType.vb: Task(Of IPAddress())
+- uid: System.Threading.Tasks.Task`1
+  isExternal: false
+  name: "XXX"
+  fullName: System.Threading.Tasks.Task<TResult>
+  fullname.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: "XXX"
+    fullName: System.Threading.Tasks.Task
+  - name: "<"
+    fullName: <
+  - name: "XXX"
+    fullName: TResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: "XXX"
+    fullName: System.Threading.Tasks.Task
+  - name: 'XXX '
+    fullName: '(Of '
+  - name: "XXX"
+    fullName: TResult
+  - name: "XXX"
+    fullName: )
+  commentId: T:System.Threading.Tasks.Task`1
+  nameWithType: Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+- uid: System.Threading.Tasks
+  isExternal: false
+  name: "XXX"
+  fullName: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+- uid: System.Net.IPAddress
+  parent: System.Net
+  isExternal: false
+  name: "XXX"
+  fullName: System.Net.IPAddress
+  commentId: T:System.Net.IPAddress
+  nameWithType: IPAddress
+- uid: System.Threading.Tasks.Task{System.Net.IPHostEntry}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: "XXX"
+  fullName: System.Threading.Tasks.Task<System.Net.IPHostEntry>
+  fullname.vb: System.Threading.Tasks.Task(Of System.Net.IPHostEntry)
+  name.vb: Task(Of IPHostEntry)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: "XXX"
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: "<"
+    fullName: <
+  - uid: System.Net.IPHostEntry
+    name: "XXX"
+    fullName: System.Net.IPHostEntry
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: "XXX"
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: 'XXX '
+    fullName: '(Of '
+  - uid: System.Net.IPHostEntry
+    name: "XXX"
+    fullName: System.Net.IPHostEntry
+  - name: "XXX"
+    fullName: )
+  commentId: T:System.Threading.Tasks.Task{System.Net.IPHostEntry}
+  nameWithType: Task<IPHostEntry>
+  nameWithType.vb: Task(Of IPHostEntry)
+- uid: System.ArgumentNullException
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentNullException
+  nameWithType: ArgumentNullException
+  commentId: T:System.ArgumentNullException
+- uid: System.ArgumentOutOfRangeException
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentOutOfRangeException
+  nameWithType: ArgumentOutOfRangeException
+  commentId: T:System.ArgumentOutOfRangeException
+- uid: System.Net.Sockets.SocketException
+  isExternal: false
+  name: "XXX"
+  fullName: System.Net.Sockets.SocketException
+  commentId: T:System.Net.Sockets.SocketException
+  nameWithType: SocketException
+- uid: System.ArgumentException
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentException
+  nameWithType: ArgumentException
+  commentId: T:System.ArgumentException

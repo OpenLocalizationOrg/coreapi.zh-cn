@@ -1,0 +1,707 @@
+items:
+- uid: System.Activator
+  commentId: T:System.Activator
+  id: Activator
+  parent: System
+  children:
+  - System.Activator.CreateInstance(System.Type)
+  - System.Activator.CreateInstance(System.Type,System.Boolean)
+  - System.Activator.CreateInstance(System.Type,System.Object[])
+  - System.Activator.CreateInstance``1
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Activator
+  type: Class
+  source:
+    remote:
+      path: src/mscorlib/src/System/Activator.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Activator
+    path: src/mscorlib/src/System/Activator.cs
+    startLine: 34
+  assemblies:
+  - System.Runtime
+  namespace: System
+  summary: "\n<p>Contains methods to create types of objects locally or remotely, or obtain references to existing remote objects. This class cannot be inherited. </p>\n"
+  syntax:
+    content: >-
+      [ClassInterface(ClassInterfaceType.None)]
+
+      [ComDefaultInterface(typeof (_Activator))]
+
+      [ComVisible(true)]
+
+      public sealed class Activator : _Activator
+    content.vb: >-
+      <ClassInterface(ClassInterfaceType.None)>
+
+      <ComDefaultInterface(GetType(_Activator))>
+
+      <ComVisible(True)>
+
+      Public NotInheritable Class Activator
+          Implements _Activator
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+  nameWithType: Activator
+- uid: System.Activator.CreateInstance(System.Type)
+  commentId: M:System.Activator.CreateInstance(System.Type)
+  id: CreateInstance(System.Type)
+  parent: System.Activator
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Activator.CreateInstance(System.Type)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Activator.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: CreateInstance
+    path: src/mscorlib/src/System/Activator.cs
+    startLine: 130
+  assemblies:
+  - System.Runtime
+  namespace: System
+  summary: "\n<p>Creates an instance of the specified type using that type's default constructor.</p>\n"
+  syntax:
+    content: public static object CreateInstance(Type type)
+    content.vb: Public Shared Function CreateInstance(type As Type) As Object
+    parameters:
+    - id: type
+      type: System.Type
+      description: "\n<p>The type of object to create. </p>\n"
+    return:
+      type: System.Object
+      description: "\n<p>A reference to the newly created object.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>type</em> is <strong>null</strong>. </p>\n"
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>\n<em>type</em> is not a <strong>RuntimeType</strong>. </p>\n<p>-or-</p>\n<p>\n<em>type</em> is an open generic type (that is, the <xref href=\"System.Type.ContainsGenericParameters\" data-throw-if-not-resolved=\"false\"></xref> property returns <strong>true</strong>).</p>\n"
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: "\n<p>\n<em>type</em> cannot be a <xref href=\"System.Reflection.Emit.TypeBuilder\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n<p>-or- </p>\n<p>Creation of <xref href=\"System.TypedReference\" data-throw-if-not-resolved=\"false\"></xref>, <xref href=\"System.ArgIterator\" data-throw-if-not-resolved=\"false\"></xref>, <xref href=\"System.Void\" data-throw-if-not-resolved=\"false\"></xref>, and <xref href=\"System.RuntimeArgumentHandle\" data-throw-if-not-resolved=\"false\"></xref> types, or arrays of those types, is not supported.</p>\n<p>-or-</p>\n<p>The assembly that contains <em>type</em> is a dynamic assembly that was created with <xref href=\"System.Reflection.Emit.AssemblyBuilderAccess.Save\" data-throw-if-not-resolved=\"false\"></xref>. </p>\n"
+  - type: System.Reflection.TargetInvocationException
+    commentId: T:System.Reflection.TargetInvocationException
+    description: "\n<p>The constructor being called throws an exception. </p>\n"
+  - type: System.MethodAccessException
+    commentId: T:System.MethodAccessException
+    description: "\n<p>In the <see href=\"http://go.microsoft.com/fwlink/?LinkID=247912\">.NET for Windows Store apps</see> or the Portable Class Library, catch the base class exception, <xref href=\"System.MemberAccessException\" data-throw-if-not-resolved=\"false\"></xref>, instead.</p>\n<p>The caller does not have permission to call this constructor. </p>\n"
+  - type: System.MemberAccessException
+    commentId: T:System.MemberAccessException
+    description: "\n<p>Cannot create an instance of an abstract class, or this member was invoked with a late-binding mechanism. </p>\n"
+  - type: System.Runtime.InteropServices.InvalidComObjectException
+    commentId: T:System.Runtime.InteropServices.InvalidComObjectException
+    description: "\n<p>The COM type was not obtained through <xref href=\"System.Type.GetTypeFromProgID\" data-throw-if-not-resolved=\"false\"></xref> or <xref href=\"System.Type.GetTypeFromCLSID\" data-throw-if-not-resolved=\"false\"></xref>. </p>\n"
+  - type: System.MissingMethodException
+    commentId: T:System.MissingMethodException
+    description: "\n<p>In the <see href=\"http://go.microsoft.com/fwlink/?LinkID=247912\">.NET for Windows Store apps</see> or the Portable Class Library, catch the base class exception, <xref href=\"System.MissingMemberException\" data-throw-if-not-resolved=\"false\"></xref>, instead.</p>\n<p>No matching public constructor was found. </p>\n"
+  - type: System.Runtime.InteropServices.COMException
+    commentId: T:System.Runtime.InteropServices.COMException
+    description: "\n<p>\n<em>type</em> is a COM object but the class identifier used to obtain the type is invalid, or the identified class is not registered. </p>\n"
+  - type: System.TypeLoadException
+    commentId: T:System.TypeLoadException
+    description: "\n<p>\n<em>type</em> is not a valid type. </p>\n"
+  see:
+  - type: System.Security.Permissions.SecurityPermission
+    commentId: T:System.Security.Permissions.SecurityPermission
+  - type: System.Security.Permissions.ReflectionPermission
+    commentId: T:System.Security.Permissions.ReflectionPermission
+  - type: System.Security.Permissions.ReflectionPermission
+    commentId: T:System.Security.Permissions.ReflectionPermission
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  nameWithType: Activator.CreateInstance(Type)
+- uid: System.Activator.CreateInstance(System.Type,System.Boolean)
+  commentId: M:System.Activator.CreateInstance(System.Type,System.Boolean)
+  id: CreateInstance(System.Type,System.Boolean)
+  parent: System.Activator
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Activator.CreateInstance(System.Type, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Activator.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: CreateInstance
+    path: src/mscorlib/src/System/Activator.cs
+    startLine: 178
+  assemblies:
+  - System.Runtime
+  namespace: System
+  summary: "\n<p>Creates an instance of the specified type using that type's default constructor.</p>\n"
+  syntax:
+    content: >-
+      [MethodImpl(MethodImplOptions.NoInlining)]
+
+      public static object CreateInstance(Type type, bool nonPublic)
+    content.vb: >-
+      <MethodImpl(MethodImplOptions.NoInlining)>
+
+      Public Shared Function CreateInstance(type As Type, nonPublic As Boolean) As Object
+    parameters:
+    - id: type
+      type: System.Type
+      description: "\n<p>The type of object to create. </p>\n"
+    - id: nonPublic
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if a public or nonpublic default constructor can match; <strong>false</strong> if only a public default constructor can match. </p>\n"
+    return:
+      type: System.Object
+      description: "\n<p>A reference to the newly created object.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>type</em> is <strong>null</strong>. </p>\n"
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>\n<em>type</em> is not a <strong>RuntimeType</strong>. </p>\n<p>-or-</p>\n<p>\n<em>type</em> is an open generic type (that is, the <xref href=\"System.Type.ContainsGenericParameters\" data-throw-if-not-resolved=\"false\"></xref> property returns <strong>true</strong>).</p>\n"
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: "\n<p>\n<em>type</em> cannot be a <xref href=\"System.Reflection.Emit.TypeBuilder\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n<p>-or- </p>\n<p>Creation of <xref href=\"System.TypedReference\" data-throw-if-not-resolved=\"false\"></xref>, <xref href=\"System.ArgIterator\" data-throw-if-not-resolved=\"false\"></xref>, <xref href=\"System.Void\" data-throw-if-not-resolved=\"false\"></xref>, and <xref href=\"System.RuntimeArgumentHandle\" data-throw-if-not-resolved=\"false\"></xref> types, or arrays of those types, is not supported. </p>\n<p>-or-</p>\n<p>The assembly that contains <em>type</em> is a dynamic assembly that was created with <xref href=\"System.Reflection.Emit.AssemblyBuilderAccess.Save\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  - type: System.Reflection.TargetInvocationException
+    commentId: T:System.Reflection.TargetInvocationException
+    description: "\n<p>The constructor being called throws an exception. </p>\n"
+  - type: System.MethodAccessException
+    commentId: T:System.MethodAccessException
+    description: "\n<p>The caller does not have permission to call this constructor. </p>\n"
+  - type: System.MemberAccessException
+    commentId: T:System.MemberAccessException
+    description: "\n<p>Cannot create an instance of an abstract class, or this member was invoked with a late-binding mechanism. </p>\n"
+  - type: System.Runtime.InteropServices.InvalidComObjectException
+    commentId: T:System.Runtime.InteropServices.InvalidComObjectException
+    description: "\n<p>The COM type was not obtained through <xref href=\"System.Type.GetTypeFromProgID\" data-throw-if-not-resolved=\"false\"></xref> or <xref href=\"System.Type.GetTypeFromCLSID\" data-throw-if-not-resolved=\"false\"></xref>. </p>\n"
+  - type: System.MissingMethodException
+    commentId: T:System.MissingMethodException
+    description: "\n<p>No matching public constructor was found. </p>\n"
+  - type: System.Runtime.InteropServices.COMException
+    commentId: T:System.Runtime.InteropServices.COMException
+    description: "\n<p>\n<em>type</em> is a COM object but the class identifier used to obtain the type is invalid, or the identified class is not registered. </p>\n"
+  - type: System.TypeLoadException
+    commentId: T:System.TypeLoadException
+    description: "\n<p>\n<em>type</em> is not a valid type. </p>\n"
+  see:
+  - type: System.Security.Permissions.SecurityPermission
+    commentId: T:System.Security.Permissions.SecurityPermission
+  - type: System.Security.Permissions.ReflectionPermission
+    commentId: T:System.Security.Permissions.ReflectionPermission
+  - type: System.Security.Permissions.ReflectionPermission
+    commentId: T:System.Security.Permissions.ReflectionPermission
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  nameWithType: Activator.CreateInstance(Type, Boolean)
+- uid: System.Activator.CreateInstance(System.Type,System.Object[])
+  commentId: M:System.Activator.CreateInstance(System.Type,System.Object[])
+  id: CreateInstance(System.Type,System.Object[])
+  parent: System.Activator
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Activator.CreateInstance(System.Type, System.Object[])
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Activator.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: CreateInstance
+    path: src/mscorlib/src/System/Activator.cs
+    startLine: 108
+  assemblies:
+  - System.Runtime
+  namespace: System
+  summary: "\n<p>Creates an instance of the specified type using the constructor that best matches the specified parameters.</p>\n"
+  syntax:
+    content: public static object CreateInstance(Type type, params object[] args)
+    content.vb: Public Shared Function CreateInstance(type As Type, ParamArray args As Object()) As Object
+    parameters:
+    - id: type
+      type: System.Type
+      description: "\n<p>The type of object to create. </p>\n"
+    - id: args
+      type: System.Object[]
+      description: "\n<p>An array of arguments that match in number, order, and type the parameters of the constructor to invoke. If <em>args</em> is an empty array or <strong>null</strong>, the constructor that takes no parameters (the default constructor) is invoked. </p>\n"
+    return:
+      type: System.Object
+      description: "\n<p>A reference to the newly created object.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>type</em> is <strong>null</strong>. </p>\n"
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>\n<em>type</em> is not a <strong>RuntimeType</strong>. </p>\n<p>-or-</p>\n<p>\n<em>type</em> is an open generic type (that is, the <xref href=\"System.Type.ContainsGenericParameters\" data-throw-if-not-resolved=\"false\"></xref> property returns <strong>true</strong>).</p>\n"
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: "\n<p>\n<em>type</em> cannot be a <xref href=\"System.Reflection.Emit.TypeBuilder\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n<p>-or- </p>\n<p>Creation of <xref href=\"System.TypedReference\" data-throw-if-not-resolved=\"false\"></xref>, <xref href=\"System.ArgIterator\" data-throw-if-not-resolved=\"false\"></xref>, <xref href=\"System.Void\" data-throw-if-not-resolved=\"false\"></xref>, and <xref href=\"System.RuntimeArgumentHandle\" data-throw-if-not-resolved=\"false\"></xref> types, or arrays of those types, is not supported. </p>\n<p>-or-</p>\n<p>The assembly that contains <em>type</em> is a dynamic assembly that was created with <xref href=\"System.Reflection.Emit.AssemblyBuilderAccess.Save\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n<p>-or-</p>\n<p>The constructor that best matches <em>args</em> has <strong>varargs</strong> arguments. </p>\n"
+  - type: System.Reflection.TargetInvocationException
+    commentId: T:System.Reflection.TargetInvocationException
+    description: "\n<p>The constructor being called throws an exception. </p>\n"
+  - type: System.MethodAccessException
+    commentId: T:System.MethodAccessException
+    description: "\n<p>In the <see href=\"http://go.microsoft.com/fwlink/?LinkID=247912\">.NET for Windows Store apps</see> or the Portable Class Library, catch the base class exception, <xref href=\"System.MemberAccessException\" data-throw-if-not-resolved=\"false\"></xref>, instead.</p>\n<p>The caller does not have permission to call this constructor. </p>\n"
+  - type: System.MemberAccessException
+    commentId: T:System.MemberAccessException
+    description: "\n<p>Cannot create an instance of an abstract class, or this member was invoked with a late-binding mechanism. </p>\n"
+  - type: System.Runtime.InteropServices.InvalidComObjectException
+    commentId: T:System.Runtime.InteropServices.InvalidComObjectException
+    description: "\n<p>The COM type was not obtained through <xref href=\"System.Type.GetTypeFromProgID\" data-throw-if-not-resolved=\"false\"></xref> or <xref href=\"System.Type.GetTypeFromCLSID\" data-throw-if-not-resolved=\"false\"></xref>. </p>\n"
+  - type: System.MissingMethodException
+    commentId: T:System.MissingMethodException
+    description: "\n<p>In the <see href=\"http://go.microsoft.com/fwlink/?LinkID=247912\">.NET for Windows Store apps</see> or the Portable Class Library, catch the base class exception, <xref href=\"System.MissingMemberException\" data-throw-if-not-resolved=\"false\"></xref>, instead.</p>\n<p>No matching public constructor was found. </p>\n"
+  - type: System.Runtime.InteropServices.COMException
+    commentId: T:System.Runtime.InteropServices.COMException
+    description: "\n<p>\n<em>type</em> is a COM object but the class identifier used to obtain the type is invalid, or the identified class is not registered. </p>\n"
+  - type: System.TypeLoadException
+    commentId: T:System.TypeLoadException
+    description: "\n<p>\n<em>type</em> is not a valid type. </p>\n"
+  see:
+  - type: System.Security.Permissions.SecurityPermission
+    commentId: T:System.Security.Permissions.SecurityPermission
+  - type: System.Security.Permissions.ReflectionPermission
+    commentId: T:System.Security.Permissions.ReflectionPermission
+  - type: System.Security.Permissions.ReflectionPermission
+    commentId: T:System.Security.Permissions.ReflectionPermission
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: System.Activator.CreateInstance(System.Type, System.Object())
+  name.vb: CreateInstance(Type, Object())
+  nameWithType: Activator.CreateInstance(Type, Object[])
+  nameWithType.vb: Activator.CreateInstance(Type, Object())
+- uid: System.Activator.CreateInstance``1
+  commentId: M:System.Activator.CreateInstance``1
+  id: CreateInstance``1
+  parent: System.Activator
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Activator.CreateInstance<T>()
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Activator.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: CreateInstance
+    path: src/mscorlib/src/System/Activator.cs
+    startLine: 194
+  assemblies:
+  - System.Runtime
+  namespace: System
+  summary: "\n<p>Creates an instance of the type designated by the specified generic type parameter, using the parameterless constructor.</p>\n"
+  syntax:
+    content: >-
+      [MethodImpl(MethodImplOptions.NoInlining)]
+
+      public static T CreateInstance<T>()
+    content.vb: >-
+      <MethodImpl(MethodImplOptions.NoInlining)>
+
+      Public Shared Function CreateInstance(Of T) As T
+    typeParameters:
+    - id: T
+      description: "\n<p>The type to create.</p>\n"
+    return:
+      type: '{T}'
+      description: "\n<p>A reference to the newly created object.</p>\n"
+  exceptions:
+  - type: System.MissingMethodException
+    commentId: T:System.MissingMethodException
+    description: "\n<p>In the <see href=\"http://go.microsoft.com/fwlink/?LinkID=247912\">.NET for Windows Store apps</see> or the Portable Class Library, catch the base class exception, <xref href=\"System.MissingMemberException\" data-throw-if-not-resolved=\"false\"></xref>, instead.</p>\n<p>The type that is specified for <em>T</em> does not have a parameterless constructor. </p>\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: System.Activator.CreateInstance(Of T)()
+  name.vb: CreateInstance(Of T)()
+  nameWithType: Activator.CreateInstance<T>()
+  nameWithType.vb: Activator.CreateInstance(Of T)()
+references:
+- uid: System
+  isExternal: false
+  name: "XXX"
+  fullName: System
+  nameWithType: System
+  commentId: N:System
+- uid: System.Object
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Object
+  nameWithType: Object
+  commentId: T:System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.ToString()
+  commentId: M:System.Object.ToString
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.Equals(Object)
+  commentId: M:System.Object.Equals(System.Object)
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.Equals(Object, Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.GetHashCode()
+  commentId: M:System.Object.GetHashCode
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.GetType()
+  commentId: M:System.Object.GetType
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.MemberwiseClone()
+  commentId: M:System.Object.MemberwiseClone
+- uid: System.Type
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Type
+  nameWithType: Type
+  commentId: T:System.Type
+- uid: System.Boolean
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Boolean
+  nameWithType: Boolean
+  commentId: T:System.Boolean
+- uid: System.Object[]
+  name: "XXX"
+  fullName: System.Object[]
+  fullname.vb: System.Object()
+  name.vb: Object()
+  spec.csharp:
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: ()
+  nameWithType: Object[]
+  nameWithType.vb: Object()
+- uid: '{T}'
+  definition: T
+  name: "XXX"
+  fullName: T
+  nameWithType: T
+  commentId: '!:T'
+- uid: T
+  isExternal: false
+  name: "XXX"
+  fullName: T
+  nameWithType: T
+- uid: System.ArgumentNullException
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentNullException
+  nameWithType: ArgumentNullException
+  commentId: T:System.ArgumentNullException
+- uid: System.ArgumentException
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentException
+  nameWithType: ArgumentException
+  commentId: T:System.ArgumentException
+- uid: System.NotSupportedException
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.NotSupportedException
+  nameWithType: NotSupportedException
+  commentId: T:System.NotSupportedException
+- uid: System.Reflection.TargetInvocationException
+  isExternal: false
+  name: "XXX"
+  fullName: System.Reflection.TargetInvocationException
+  nameWithType: TargetInvocationException
+  commentId: T:System.Reflection.TargetInvocationException
+- uid: System.MethodAccessException
+  isExternal: false
+  name: "XXX"
+  fullName: System.MethodAccessException
+  nameWithType: MethodAccessException
+  commentId: T:System.MethodAccessException
+- uid: System.MemberAccessException
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.MemberAccessException
+  nameWithType: MemberAccessException
+  commentId: T:System.MemberAccessException
+- uid: System.Runtime.InteropServices.InvalidComObjectException
+  isExternal: false
+  name: "XXX"
+  fullName: System.Runtime.InteropServices.InvalidComObjectException
+  nameWithType: InvalidComObjectException
+  commentId: T:System.Runtime.InteropServices.InvalidComObjectException
+- uid: System.MissingMethodException
+  isExternal: false
+  name: "XXX"
+  fullName: System.MissingMethodException
+  nameWithType: MissingMethodException
+  commentId: T:System.MissingMethodException
+- uid: System.Runtime.InteropServices.COMException
+  isExternal: false
+  name: "XXX"
+  fullName: System.Runtime.InteropServices.COMException
+  nameWithType: COMException
+  commentId: T:System.Runtime.InteropServices.COMException
+- uid: System.TypeLoadException
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.TypeLoadException
+  nameWithType: TypeLoadException
+  commentId: T:System.TypeLoadException

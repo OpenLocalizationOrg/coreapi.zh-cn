@@ -1,0 +1,807 @@
+items:
+- uid: System.Text.Encoder
+  commentId: T:System.Text.Encoder
+  id: Encoder
+  parent: System.Text
+  children:
+  - System.Text.Encoder.#ctor
+  - System.Text.Encoder.Convert(System.Char[],System.Int32,System.Int32,System.Byte[],System.Int32,System.Int32,System.Boolean,System.Int32@,System.Int32@,System.Boolean@)
+  - System.Text.Encoder.Fallback
+  - System.Text.Encoder.FallbackBuffer
+  - System.Text.Encoder.GetByteCount(System.Char[],System.Int32,System.Int32,System.Boolean)
+  - System.Text.Encoder.GetBytes(System.Char[],System.Int32,System.Int32,System.Byte[],System.Int32,System.Boolean)
+  - System.Text.Encoder.Reset
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Text.Encoder
+  type: Class
+  source:
+    remote:
+      path: src/mscorlib/src/System/Text/Encoder.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Encoder
+    path: src/mscorlib/src/System/Text/Encoder.cs
+    startLine: 21
+  assemblies:
+  - System.Text.Encoding
+  namespace: System.Text
+  summary: "\n<p>Converts a set of characters into a sequence of bytes.</p>\n"
+  syntax:
+    content: >-
+      [ComVisible(true)]
+
+      [Serializable]
+
+      public abstract class Encoder
+    content.vb: >-
+      <ComVisible(True)>
+
+      <Serializable>
+
+      Public MustInherit Class Encoder
+  seealso:
+  - type: System.Text.Decoder
+    commentId: T:System.Text.Decoder
+  - type: System.Text.Encoding
+    commentId: T:System.Text.Encoding
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+  nameWithType: Encoder
+- uid: System.Text.Encoder.#ctor
+  commentId: M:System.Text.Encoder.#ctor
+  id: '#ctor'
+  parent: System.Text.Encoder
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Text.Encoder.Encoder()
+  type: Constructor
+  source:
+    remote:
+      path: src/mscorlib/src/System/Text/Encoder.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: .ctor
+    path: src/mscorlib/src/System/Text/Encoder.cs
+    startLine: 35
+  assemblies:
+  - System.Text.Encoding
+  namespace: System.Text
+  summary: "\n<p>Initializes a new instance of the <xref href=\"System.Text.Encoder\" data-throw-if-not-resolved=\"false\"></xref> class.</p>\n"
+  syntax:
+    content: protected Encoder()
+    content.vb: Protected Sub New
+  seealso:
+  - type: System.Text.Encoding
+    commentId: T:System.Text.Encoding
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  nameWithType: Encoder.Encoder()
+- uid: System.Text.Encoder.Fallback
+  commentId: P:System.Text.Encoder.Fallback
+  id: Fallback
+  parent: System.Text.Encoder
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Text.Encoder.Fallback
+  type: Property
+  source:
+    remote:
+      path: src/mscorlib/src/System/Text/Encoder.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Fallback
+    path: src/mscorlib/src/System/Text/Encoder.cs
+    startLine: 40
+  assemblies:
+  - System.Text.Encoding
+  namespace: System.Text
+  summary: "\n<p>Gets or sets a <xref href=\"System.Text.EncoderFallback\" data-throw-if-not-resolved=\"false\"></xref> object for the current <xref href=\"System.Text.Encoder\" data-throw-if-not-resolved=\"false\"></xref> object.</p>\n"
+  syntax:
+    content: >-
+      [ComVisible(false)]
+
+      public EncoderFallback Fallback { get; set; }
+    content.vb: >-
+      <ComVisible(False)>
+
+      Public Property Fallback As EncoderFallback
+    parameters: []
+    return:
+      type: System.Text.EncoderFallback
+      description: "\n<p>A <xref href=\"System.Text.EncoderFallback\" data-throw-if-not-resolved=\"false\"></xref> object.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>The value in a set operation is <strong>null </strong>(<strong>Nothing</strong>).</p>\n"
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>A new value cannot be assigned in a set operation because the current <xref href=\"System.Text.EncoderFallbackBuffer\" data-throw-if-not-resolved=\"false\"></xref> object contains data that has not been encoded yet. </p>\n"
+  - type: System.Text.EncoderFallbackException
+    commentId: T:System.Text.EncoderFallbackException
+    description: "\n<p>A fallback occurred (see Character Encoding in the .NET Framework for fuller explanation)</p>\n<p>-and-</p>\n<p>\n<xref href=\"System.Text.Encoder.Fallback\" data-throw-if-not-resolved=\"false\"></xref> is set to <xref href=\"System.Text.EncoderExceptionFallback\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  seealso:
+  - type: System.Text.EncoderFallback
+    commentId: T:System.Text.EncoderFallback
+  - type: System.Text.Encoder.FallbackBuffer
+    commentId: P:System.Text.Encoder.FallbackBuffer
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  nameWithType: Encoder.Fallback
+- uid: System.Text.Encoder.FallbackBuffer
+  commentId: P:System.Text.Encoder.FallbackBuffer
+  id: FallbackBuffer
+  parent: System.Text.Encoder
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Text.Encoder.FallbackBuffer
+  type: Property
+  source:
+    remote:
+      path: src/mscorlib/src/System/Text/Encoder.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: FallbackBuffer
+    path: src/mscorlib/src/System/Text/Encoder.cs
+    startLine: 66
+  assemblies:
+  - System.Text.Encoding
+  namespace: System.Text
+  summary: "\n<p>Gets the <xref href=\"System.Text.EncoderFallbackBuffer\" data-throw-if-not-resolved=\"false\"></xref> object associated with the current <xref href=\"System.Text.Encoder\" data-throw-if-not-resolved=\"false\"></xref> object.</p>\n"
+  syntax:
+    content: >-
+      [ComVisible(false)]
+
+      public EncoderFallbackBuffer FallbackBuffer { get; }
+    content.vb: >-
+      <ComVisible(False)>
+
+      Public ReadOnly Property FallbackBuffer As EncoderFallbackBuffer
+    parameters: []
+    return:
+      type: System.Text.EncoderFallbackBuffer
+      description: "\n<p>A <xref href=\"System.Text.EncoderFallbackBuffer\" data-throw-if-not-resolved=\"false\"></xref> object.</p>\n"
+  seealso:
+  - type: System.Text.EncoderFallback
+    commentId: T:System.Text.EncoderFallback
+  - type: System.Text.Encoder.Fallback
+    commentId: P:System.Text.Encoder.Fallback
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  nameWithType: Encoder.FallbackBuffer
+- uid: System.Text.Encoder.Convert(System.Char[],System.Int32,System.Int32,System.Byte[],System.Int32,System.Int32,System.Boolean,System.Int32@,System.Int32@,System.Boolean@)
+  commentId: M:System.Text.Encoder.Convert(System.Char[],System.Int32,System.Int32,System.Byte[],System.Int32,System.Int32,System.Boolean,System.Int32@,System.Int32@,System.Boolean@)
+  id: Convert(System.Char[],System.Int32,System.Int32,System.Byte[],System.Int32,System.Int32,System.Boolean,System.Int32@,System.Int32@,System.Boolean@)
+  parent: System.Text.Encoder
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Text.Encoder.Convert(System.Char[], System.Int32, System.Int32, System.Byte[], System.Int32, System.Int32, System.Boolean, out System.Int32, out System.Int32, out System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Text/Encoder.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Convert
+    path: src/mscorlib/src/System/Text/Encoder.cs
+    startLine: 243
+  assemblies:
+  - System.Text.Encoding
+  namespace: System.Text
+  summary: "\n<p>Converts an array of Unicode characters to an encoded byte sequence and stores the result in an array of bytes.</p>\n"
+  syntax:
+    content: >-
+      [ComVisible(false)]
+
+      public virtual void Convert(char[] chars, int charIndex, int charCount, byte[] bytes, int byteIndex, int byteCount, bool flush, out int charsUsed, out int bytesUsed, out bool completed)
+    content.vb: >-
+      <ComVisible(False)>
+
+      Public Overridable Sub Convert(chars As Char(), charIndex As Integer, charCount As Integer, bytes As Byte(), byteIndex As Integer, byteCount As Integer, flush As Boolean, ByRef charsUsed As Integer, ByRef bytesUsed As Integer, ByRef completed As Boolean)
+    parameters:
+    - id: chars
+      type: System.Char[]
+      description: "\n<p>An array of characters to convert.</p>\n"
+    - id: charIndex
+      type: System.Int32
+      description: "\n<p>The first element of <em>chars</em> to convert.</p>\n"
+    - id: charCount
+      type: System.Int32
+      description: "\n<p>The number of elements of <em>chars</em> to convert.</p>\n"
+    - id: bytes
+      type: System.Byte[]
+      description: "\n<p>An array where the converted bytes are stored.</p>\n"
+    - id: byteIndex
+      type: System.Int32
+      description: "\n<p>The first element of <em>bytes</em> in which data is stored.</p>\n"
+    - id: byteCount
+      type: System.Int32
+      description: "\n<p>The maximum number of elements of <em>bytes</em> to use in the conversion.</p>\n"
+    - id: flush
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> to indicate no further data is to be converted; otherwise, <strong>false</strong>.</p>\n"
+    - id: charsUsed
+      type: System.Int32
+      description: "\n<p>When this method returns, contains the number of characters from <em>chars</em> that were used in the conversion. This parameter is passed uninitialized.</p>\n"
+    - id: bytesUsed
+      type: System.Int32
+      description: "\n<p>When this method returns, contains the number of bytes that were produced by the conversion. This parameter is passed uninitialized.</p>\n"
+    - id: completed
+      type: System.Boolean
+      description: "\n<p>When this method returns, contains <strong>true</strong> if all the characters specified by <em>charCount</em> were converted; otherwise, <strong>false</strong>. This parameter is passed uninitialized.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>chars</em> or <em>bytes</em> is <strong>null </strong>(<strong>Nothing</strong>).</p>\n"
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>charIndex</em>, <em>charCount</em>, <em>byteIndex</em>, or <em>byteCount</em> is less than zero.</p>\n<p>-or-</p>\n<p>The length of <em>chars</em> - <em>charIndex</em> is less than <em>charCount</em>.</p>\n<p>-or-</p>\n<p>The length of <em>bytes</em> - <em>byteIndex</em> is less than <em>byteCount</em>.</p>\n"
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>The output buffer is too small to contain any of the converted input. The output buffer should be greater than or equal to the size indicated by the <xref href=\"System.Text.Encoder.GetByteCount(System.Char[],System.Int32,System.Int32,System.Boolean)\" data-throw-if-not-resolved=\"false\"></xref> method.</p>\n"
+  - type: System.Text.EncoderFallbackException
+    commentId: T:System.Text.EncoderFallbackException
+    description: "\n<p>A fallback occurred (see Character Encoding in the .NET Framework for fuller explanation)</p>\n<p>-and-</p>\n<p>\n<xref href=\"System.Text.Encoder.Fallback\" data-throw-if-not-resolved=\"false\"></xref> is set to <xref href=\"System.Text.EncoderExceptionFallback\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  fullName.vb: System.Text.Encoder.Convert(System.Char(), System.Int32, System.Int32, System.Byte(), System.Int32, System.Int32, System.Boolean, ByRef System.Int32, ByRef System.Int32, ByRef System.Boolean)
+  name.vb: Convert(Char(), Int32, Int32, Byte(), Int32, Int32, Boolean, ByRef Int32, ByRef Int32, ByRef Boolean)
+  nameWithType: Encoder.Convert(Char[], Int32, Int32, Byte[], Int32, Int32, Boolean, out Int32, out Int32, out Boolean)
+  nameWithType.vb: Encoder.Convert(Char(), Int32, Int32, Byte(), Int32, Int32, Boolean, ByRef Int32, ByRef Int32, ByRef Boolean)
+- uid: System.Text.Encoder.GetByteCount(System.Char[],System.Int32,System.Int32,System.Boolean)
+  commentId: M:System.Text.Encoder.GetByteCount(System.Char[],System.Int32,System.Int32,System.Boolean)
+  id: GetByteCount(System.Char[],System.Int32,System.Int32,System.Boolean)
+  parent: System.Text.Encoder
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Text.Encoder.GetByteCount(System.Char[], System.Int32, System.Int32, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Text/Encoder.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: GetByteCount
+    path: src/mscorlib/src/System/Text/Encoder.cs
+    startLine: 117
+  assemblies:
+  - System.Text.Encoding
+  namespace: System.Text
+  summary: "\n<p>When overridden in a derived class, calculates the number of bytes produced by encoding a set of characters from the specified character array. A parameter indicates whether to clear the internal state of the encoder after the calculation.</p>\n"
+  syntax:
+    content: public abstract int GetByteCount(char[] chars, int index, int count, bool flush)
+    content.vb: Public MustOverride Function GetByteCount(chars As Char(), index As Integer, count As Integer, flush As Boolean) As Integer
+    parameters:
+    - id: chars
+      type: System.Char[]
+      description: "\n<p>The character array containing the set of characters to encode. </p>\n"
+    - id: index
+      type: System.Int32
+      description: "\n<p>The index of the first character to encode. </p>\n"
+    - id: count
+      type: System.Int32
+      description: "\n<p>The number of characters to encode. </p>\n"
+    - id: flush
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> to simulate clearing the internal state of the encoder after the calculation; otherwise, <strong>false</strong>. </p>\n"
+    return:
+      type: System.Int32
+      description: "\n<p>The number of bytes produced by encoding the specified characters and any characters in the internal buffer.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>chars</em> is <strong>null</strong>. </p>\n"
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>index</em> or <em>count</em> is less than zero.</p>\n<p>-or- </p>\n<p>\n<em>index</em> and <em>count</em> do not denote a valid range in <em>chars</em>. </p>\n"
+  - type: System.Text.EncoderFallbackException
+    commentId: T:System.Text.EncoderFallbackException
+    description: "\n<p>A fallback occurred (see Character Encoding in the .NET Framework for fuller explanation)</p>\n<p>-and-</p>\n<p>\n<xref href=\"System.Text.Encoder.Fallback\" data-throw-if-not-resolved=\"false\"></xref> is set to <xref href=\"System.Text.EncoderExceptionFallback\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  seealso:
+  - type: System.Text.Encoder.GetBytes(System.Char[],System.Int32,System.Int32,System.Byte[],System.Int32,System.Boolean)
+    commentId: M:System.Text.Encoder.GetBytes(System.Char[],System.Int32,System.Int32,System.Byte[],System.Int32,System.Boolean)
+  - type: System.Text.Encoder.Reset
+    commentId: M:System.Text.Encoder.Reset
+  modifiers.csharp:
+  - public
+  - abstract
+  modifiers.vb:
+  - Public
+  - MustOverride
+  fullName.vb: System.Text.Encoder.GetByteCount(System.Char(), System.Int32, System.Int32, System.Boolean)
+  name.vb: GetByteCount(Char(), Int32, Int32, Boolean)
+  nameWithType: Encoder.GetByteCount(Char[], Int32, Int32, Boolean)
+  nameWithType.vb: Encoder.GetByteCount(Char(), Int32, Int32, Boolean)
+- uid: System.Text.Encoder.GetBytes(System.Char[],System.Int32,System.Int32,System.Byte[],System.Int32,System.Boolean)
+  commentId: M:System.Text.Encoder.GetBytes(System.Char[],System.Int32,System.Int32,System.Byte[],System.Int32,System.Boolean)
+  id: GetBytes(System.Char[],System.Int32,System.Int32,System.Byte[],System.Int32,System.Boolean)
+  parent: System.Text.Encoder
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Text.Encoder.GetBytes(System.Char[], System.Int32, System.Int32, System.Byte[], System.Int32, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Text/Encoder.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: GetBytes
+    path: src/mscorlib/src/System/Text/Encoder.cs
+    startLine: 165
+  assemblies:
+  - System.Text.Encoding
+  namespace: System.Text
+  summary: "\n<p>When overridden in a derived class, encodes a set of characters from the specified character array and any characters in the internal buffer into the specified byte array. A parameter indicates whether to clear the internal state of the encoder after the conversion.</p>\n"
+  syntax:
+    content: public abstract int GetBytes(char[] chars, int charIndex, int charCount, byte[] bytes, int byteIndex, bool flush)
+    content.vb: Public MustOverride Function GetBytes(chars As Char(), charIndex As Integer, charCount As Integer, bytes As Byte(), byteIndex As Integer, flush As Boolean) As Integer
+    parameters:
+    - id: chars
+      type: System.Char[]
+      description: "\n<p>The character array containing the set of characters to encode. </p>\n"
+    - id: charIndex
+      type: System.Int32
+      description: "\n<p>The index of the first character to encode. </p>\n"
+    - id: charCount
+      type: System.Int32
+      description: "\n<p>The number of characters to encode. </p>\n"
+    - id: bytes
+      type: System.Byte[]
+      description: "\n<p>The byte array to contain the resulting sequence of bytes. </p>\n"
+    - id: byteIndex
+      type: System.Int32
+      description: "\n<p>The index at which to start writing the resulting sequence of bytes. </p>\n"
+    - id: flush
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> to clear the internal state of the encoder after the conversion; otherwise, <strong>false</strong>. </p>\n"
+    return:
+      type: System.Int32
+      description: "\n<p>The actual number of bytes written into <em>bytes</em>.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>chars</em> is <strong>null </strong>(<strong>Nothing</strong>).</p>\n<p>-or- </p>\n<p>\n<em>bytes</em> is <strong>null </strong>(<strong>Nothing</strong>). </p>\n"
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>charIndex</em> or <em>charCount</em> or <em>byteIndex</em> is less than zero.</p>\n<p>-or- </p>\n<p>\n<em>charIndex</em> and <em>charCount</em> do not denote a valid range in <em>chars</em>.</p>\n<p>-or- </p>\n<p>\n<em>byteIndex</em> is not a valid index in <em>bytes</em>. </p>\n"
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>\n<em>bytes</em> does not have enough capacity from <em>byteIndex</em> to the end of the array to accommodate the resulting bytes. </p>\n"
+  - type: System.Text.EncoderFallbackException
+    commentId: T:System.Text.EncoderFallbackException
+    description: "\n<p>A fallback occurred (see Character Encoding in the .NET Framework for fuller explanation)</p>\n<p>-and-</p>\n<p>\n<xref href=\"System.Text.Encoder.Fallback\" data-throw-if-not-resolved=\"false\"></xref> is set to <xref href=\"System.Text.EncoderExceptionFallback\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  seealso:
+  - type: System.Text.Encoder.GetByteCount(System.Char[],System.Int32,System.Int32,System.Boolean)
+    commentId: M:System.Text.Encoder.GetByteCount(System.Char[],System.Int32,System.Int32,System.Boolean)
+  - type: System.Text.Encoder.Reset
+    commentId: M:System.Text.Encoder.Reset
+  modifiers.csharp:
+  - public
+  - abstract
+  modifiers.vb:
+  - Public
+  - MustOverride
+  fullName.vb: System.Text.Encoder.GetBytes(System.Char(), System.Int32, System.Int32, System.Byte(), System.Int32, System.Boolean)
+  name.vb: GetBytes(Char(), Int32, Int32, Byte(), Int32, Boolean)
+  nameWithType: Encoder.GetBytes(Char[], Int32, Int32, Byte[], Int32, Boolean)
+  nameWithType.vb: Encoder.GetBytes(Char(), Int32, Int32, Byte(), Int32, Boolean)
+- uid: System.Text.Encoder.Reset
+  commentId: M:System.Text.Encoder.Reset
+  id: Reset
+  parent: System.Text.Encoder
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Text.Encoder.Reset()
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Text/Encoder.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Reset
+    path: src/mscorlib/src/System/Text/Encoder.cs
+    startLine: 100
+  assemblies:
+  - System.Text.Encoding
+  namespace: System.Text
+  summary: "\n<p>When overridden in a derived class, sets the encoder back to its initial state.</p>\n"
+  syntax:
+    content: >-
+      [ComVisible(false)]
+
+      public virtual void Reset()
+    content.vb: >-
+      <ComVisible(False)>
+
+      Public Overridable Sub Reset
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  nameWithType: Encoder.Reset()
+references:
+- uid: System.Text
+  isExternal: false
+  name: "XXX"
+  fullName: System.Text
+  nameWithType: System.Text
+  commentId: N:System.Text
+- uid: System.Object
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Object
+  nameWithType: Object
+  commentId: T:System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.ToString()
+  commentId: M:System.Object.ToString
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.Equals(Object)
+  commentId: M:System.Object.Equals(System.Object)
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.Equals(Object, Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.GetHashCode()
+  commentId: M:System.Object.GetHashCode
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.GetType()
+  commentId: M:System.Object.GetType
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.MemberwiseClone()
+  commentId: M:System.Object.MemberwiseClone
+- uid: System
+  isExternal: false
+  name: "XXX"
+  fullName: System
+  nameWithType: System
+  commentId: N:System
+- uid: System.Text.EncoderFallback
+  parent: System.Text
+  isExternal: false
+  name: "XXX"
+  fullName: System.Text.EncoderFallback
+  nameWithType: EncoderFallback
+  commentId: T:System.Text.EncoderFallback
+- uid: System.Text.EncoderFallbackBuffer
+  parent: System.Text
+  isExternal: false
+  name: "XXX"
+  fullName: System.Text.EncoderFallbackBuffer
+  nameWithType: EncoderFallbackBuffer
+  commentId: T:System.Text.EncoderFallbackBuffer
+- uid: System.Char[]
+  name: "XXX"
+  fullName: System.Char[]
+  fullname.vb: System.Char()
+  name.vb: Char()
+  spec.csharp:
+  - uid: System.Char
+    name: "XXX"
+    fullName: System.Char
+    isExternal: true
+  - name: 'XXX'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Char
+    name: "XXX"
+    fullName: System.Char
+    isExternal: true
+  - name: "XXX"
+    fullName: ()
+  nameWithType: Char[]
+  nameWithType.vb: Char()
+- uid: System.Int32
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Int32
+  nameWithType: Int32
+  commentId: T:System.Int32
+- uid: System.Byte[]
+  name: "XXX"
+  fullName: System.Byte[]
+  fullname.vb: System.Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: "XXX"
+    fullName: System.Byte
+    isExternal: true
+  - name: 'XXX'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: "XXX"
+    fullName: System.Byte
+    isExternal: true
+  - name: "XXX"
+    fullName: ()
+  nameWithType: Byte[]
+  nameWithType.vb: Byte()
+- uid: System.Boolean
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Boolean
+  nameWithType: Boolean
+  commentId: T:System.Boolean
+- uid: System.ArgumentNullException
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentNullException
+  nameWithType: ArgumentNullException
+  commentId: T:System.ArgumentNullException
+- uid: System.ArgumentException
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentException
+  nameWithType: ArgumentException
+  commentId: T:System.ArgumentException
+- uid: System.Text.EncoderFallbackException
+  isExternal: false
+  name: "XXX"
+  fullName: System.Text.EncoderFallbackException
+  nameWithType: EncoderFallbackException
+  commentId: T:System.Text.EncoderFallbackException
+- uid: System.ArgumentOutOfRangeException
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentOutOfRangeException
+  nameWithType: ArgumentOutOfRangeException
+  commentId: T:System.ArgumentOutOfRangeException

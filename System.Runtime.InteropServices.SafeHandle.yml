@@ -1,0 +1,979 @@
+items:
+- uid: System.Runtime.InteropServices.SafeHandle
+  commentId: T:System.Runtime.InteropServices.SafeHandle
+  id: SafeHandle
+  parent: System.Runtime.InteropServices
+  children:
+  - System.Runtime.InteropServices.SafeHandle.#ctor(System.IntPtr,System.Boolean)
+  - System.Runtime.InteropServices.SafeHandle.DangerousAddRef(System.Boolean@)
+  - System.Runtime.InteropServices.SafeHandle.DangerousGetHandle
+  - System.Runtime.InteropServices.SafeHandle.DangerousRelease
+  - System.Runtime.InteropServices.SafeHandle.Dispose
+  - System.Runtime.InteropServices.SafeHandle.Dispose(System.Boolean)
+  - System.Runtime.InteropServices.SafeHandle.Finalize
+  - System.Runtime.InteropServices.SafeHandle.handle
+  - System.Runtime.InteropServices.SafeHandle.IsClosed
+  - System.Runtime.InteropServices.SafeHandle.IsInvalid
+  - System.Runtime.InteropServices.SafeHandle.ReleaseHandle
+  - System.Runtime.InteropServices.SafeHandle.SetHandle(System.IntPtr)
+  - System.Runtime.InteropServices.SafeHandle.SetHandleAsInvalid
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Runtime.InteropServices.SafeHandle
+  type: Class
+  source:
+    remote:
+      path: src/mscorlib/src/System/Runtime/InteropServices/SafeHandle.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: SafeHandle
+    path: src/mscorlib/src/System/Runtime/InteropServices/SafeHandle.cs
+    startLine: 136
+  assemblies:
+  - System.Runtime.Handles
+  namespace: System.Runtime.InteropServices
+  summary: "\n<p>Represents a wrapper class for operating system handles. This class must be inherited.</p>\n"
+  syntax:
+    content: >-
+      [SecurityCritical]
+
+      public abstract class SafeHandle : CriticalFinalizerObject, IDisposable
+    content.vb: >-
+      <SecurityCritical>
+
+      Public MustInherit Class SafeHandle
+          Inherits CriticalFinalizerObject
+          Implements IDisposable
+  seealso:
+  - type: Microsoft.Win32.SafeHandles
+    commentId: N:Microsoft.Win32.SafeHandles
+  - type: System.Runtime.InteropServices.CriticalHandle
+    commentId: T:System.Runtime.InteropServices.CriticalHandle
+  - type: System.Runtime.ConstrainedExecution.CriticalFinalizerObject
+    commentId: T:System.Runtime.ConstrainedExecution.CriticalFinalizerObject
+  see:
+  - type: System.Security.Permissions.SecurityAction.InheritanceDemand
+    commentId: F:System.Security.Permissions.SecurityAction.InheritanceDemand
+  - type: System.Security.SecurityCriticalAttribute
+    commentId: T:System.Security.SecurityCriticalAttribute
+  inheritance:
+  - System.Object
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  attributes:
+  - type: System.Security.SecurityCriticalAttribute
+    ctor: System.Security.SecurityCriticalAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+  nameWithType: SafeHandle
+- uid: System.Runtime.InteropServices.SafeHandle.handle
+  commentId: F:System.Runtime.InteropServices.SafeHandle.handle
+  id: handle
+  parent: System.Runtime.InteropServices.SafeHandle
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Runtime.InteropServices.SafeHandle.handle
+  type: Field
+  source:
+    remote:
+      path: src/mscorlib/src/System/Runtime/InteropServices/SafeHandle.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: handle
+    path: src/mscorlib/src/System/Runtime/InteropServices/SafeHandle.cs
+    startLine: 150
+  assemblies:
+  - System.Runtime.Handles
+  namespace: System.Runtime.InteropServices
+  summary: "\n<p>Specifies the handle to be wrapped.</p>\n"
+  syntax:
+    content: protected IntPtr handle
+    content.vb: Protected handle As IntPtr
+    return:
+      type: System.IntPtr
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  nameWithType: SafeHandle.handle
+- uid: System.Runtime.InteropServices.SafeHandle.#ctor(System.IntPtr,System.Boolean)
+  commentId: M:System.Runtime.InteropServices.SafeHandle.#ctor(System.IntPtr,System.Boolean)
+  id: '#ctor(System.IntPtr,System.Boolean)'
+  parent: System.Runtime.InteropServices.SafeHandle
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Runtime.InteropServices.SafeHandle.SafeHandle(System.IntPtr, System.Boolean)
+  type: Constructor
+  source:
+    remote:
+      path: src/mscorlib/src/System/Runtime/InteropServices/SafeHandle.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: .ctor
+    path: src/mscorlib/src/System/Runtime/InteropServices/SafeHandle.cs
+    startLine: 160
+  assemblies:
+  - System.Runtime.Handles
+  namespace: System.Runtime.InteropServices
+  summary: "\n<p>Initializes a new instance of the <xref href=\"System.Runtime.InteropServices.SafeHandle\" data-throw-if-not-resolved=\"false\"></xref> class with the specified invalid handle value.</p>\n"
+  syntax:
+    content: >-
+      [ReliabilityContract(Consistency.WillNotCorruptState, Cer.MayFail)]
+
+      protected SafeHandle(IntPtr invalidHandleValue, bool ownsHandle)
+    content.vb: >-
+      <ReliabilityContract(Consistency.WillNotCorruptState, Cer.MayFail)>
+
+      Protected Sub New(invalidHandleValue As IntPtr, ownsHandle As Boolean)
+    parameters:
+    - id: invalidHandleValue
+      type: System.IntPtr
+      description: "\n<p>The value of an invalid handle (usually 0 or -1).  Your implementation of <xref href=\"System.Runtime.InteropServices.SafeHandle.IsInvalid\" data-throw-if-not-resolved=\"false\"></xref> should return <strong>true</strong> for this value.</p>\n"
+    - id: ownsHandle
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> to reliably let <xref href=\"System.Runtime.InteropServices.SafeHandle\" data-throw-if-not-resolved=\"false\"></xref> release the handle during the finalization phase; otherwise, <strong>false</strong> (not recommended). </p>\n"
+  exceptions:
+  - type: System.TypeLoadException
+    commentId: T:System.TypeLoadException
+    description: "\n<p>The derived class resides in an assembly without unmanaged code access permission. </p>\n"
+  see:
+  - type: System.Security.Permissions.SecurityAction.InheritanceDemand
+    commentId: F:System.Security.Permissions.SecurityAction.InheritanceDemand
+  - type: System.Security.SecurityCriticalAttribute
+    commentId: T:System.Security.SecurityCriticalAttribute
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  nameWithType: SafeHandle.SafeHandle(IntPtr, Boolean)
+- uid: System.Runtime.InteropServices.SafeHandle.IsClosed
+  commentId: P:System.Runtime.InteropServices.SafeHandle.IsClosed
+  id: IsClosed
+  parent: System.Runtime.InteropServices.SafeHandle
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Runtime.InteropServices.SafeHandle.IsClosed
+  type: Property
+  source:
+    remote:
+      path: src/mscorlib/src/System/Runtime/InteropServices/SafeHandle.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: IsClosed
+    path: src/mscorlib/src/System/Runtime/InteropServices/SafeHandle.cs
+    startLine: 228
+  assemblies:
+  - System.Runtime.Handles
+  namespace: System.Runtime.InteropServices
+  summary: "\n<p>Gets a value indicating whether the handle is closed.</p>\n"
+  syntax:
+    content: >-
+      public bool IsClosed
+
+      {
+          [ReliabilityContract(Consistency.WillNotCorruptState, Cer.Success)]
+          get;
+      }
+    content.vb: Public ReadOnly Property IsClosed As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if the handle is closed; otherwise, <strong>false</strong>.</p>\n"
+  see:
+  - type: System.Security.Permissions.SecurityPermission
+    commentId: T:System.Security.Permissions.SecurityPermission
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  nameWithType: SafeHandle.IsClosed
+- uid: System.Runtime.InteropServices.SafeHandle.IsInvalid
+  commentId: P:System.Runtime.InteropServices.SafeHandle.IsInvalid
+  id: IsInvalid
+  parent: System.Runtime.InteropServices.SafeHandle
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Runtime.InteropServices.SafeHandle.IsInvalid
+  type: Property
+  source:
+    remote:
+      path: src/mscorlib/src/System/Runtime/InteropServices/SafeHandle.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: IsInvalid
+    path: src/mscorlib/src/System/Runtime/InteropServices/SafeHandle.cs
+    startLine: 233
+  assemblies:
+  - System.Runtime.Handles
+  namespace: System.Runtime.InteropServices
+  summary: "\n<p>When overridden in a derived class, gets a value indicating whether the handle value is invalid.</p>\n"
+  syntax:
+    content: >-
+      public abstract bool IsInvalid
+
+      {
+          [ReliabilityContract(Consistency.WillNotCorruptState, Cer.Success)]
+          get;
+      }
+    content.vb: Public MustOverride ReadOnly Property IsInvalid As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if the handle value is invalid; otherwise, <strong>false</strong>.</p>\n"
+  see:
+  - type: System.Security.Permissions.SecurityPermission
+    commentId: T:System.Security.Permissions.SecurityPermission
+  modifiers.csharp:
+  - public
+  - abstract
+  - get
+  modifiers.vb:
+  - Public
+  - MustOverride
+  - ReadOnly
+  nameWithType: SafeHandle.IsInvalid
+- uid: System.Runtime.InteropServices.SafeHandle.DangerousAddRef(System.Boolean@)
+  commentId: M:System.Runtime.InteropServices.SafeHandle.DangerousAddRef(System.Boolean@)
+  id: DangerousAddRef(System.Boolean@)
+  parent: System.Runtime.InteropServices.SafeHandle
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Runtime.InteropServices.SafeHandle.DangerousAddRef(ref System.Boolean)
+  type: Method
+  source:
+    path: System.Private.CoreLib
+    isExternal: true
+  assemblies:
+  - System.Runtime.Handles
+  namespace: System.Runtime.InteropServices
+  summary: "\n<p>Manually increments the reference counter on <xref href=\"System.Runtime.InteropServices.SafeHandle\" data-throw-if-not-resolved=\"false\"></xref> instances.</p>\n"
+  syntax:
+    content: >-
+      [SecurityCritical]
+
+      [ReliabilityContract(Consistency.WillNotCorruptState, Cer.MayFail)]
+
+      [MethodImpl(MethodImplOptions.InternalCall)]
+
+      public void DangerousAddRef(ref bool success)
+    content.vb: >-
+      <SecurityCritical>
+
+      <ReliabilityContract(Consistency.WillNotCorruptState, Cer.MayFail)>
+
+      <MethodImpl(MethodImplOptions.InternalCall)>
+
+      Public Sub DangerousAddRef(ByRef success As Boolean)
+    parameters:
+    - id: success
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if the reference counter was successfully incremented; otherwise, <strong>false</strong>.</p>\n"
+  seealso:
+  - type: System.Runtime.InteropServices.SafeHandle.DangerousRelease
+    commentId: M:System.Runtime.InteropServices.SafeHandle.DangerousRelease
+  see:
+  - type: System.Security.Permissions.SecurityPermission
+    commentId: T:System.Security.Permissions.SecurityPermission
+  attributes:
+  - type: System.Security.SecurityCriticalAttribute
+    ctor: System.Security.SecurityCriticalAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: System.Runtime.InteropServices.SafeHandle.DangerousAddRef(ByRef System.Boolean)
+  name.vb: DangerousAddRef(ByRef Boolean)
+  nameWithType: SafeHandle.DangerousAddRef(ref Boolean)
+  nameWithType.vb: SafeHandle.DangerousAddRef(ByRef Boolean)
+- uid: System.Runtime.InteropServices.SafeHandle.DangerousGetHandle
+  commentId: M:System.Runtime.InteropServices.SafeHandle.DangerousGetHandle
+  id: DangerousGetHandle
+  parent: System.Runtime.InteropServices.SafeHandle
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Runtime.InteropServices.SafeHandle.DangerousGetHandle()
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Runtime/InteropServices/SafeHandle.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: DangerousGetHandle
+    path: src/mscorlib/src/System/Runtime/InteropServices/SafeHandle.cs
+    startLine: 222
+  assemblies:
+  - System.Runtime.Handles
+  namespace: System.Runtime.InteropServices
+  summary: "\n<p>Returns the value of the <xref href=\"System.Runtime.InteropServices.SafeHandle.handle\" data-throw-if-not-resolved=\"false\"></xref> field.</p>\n"
+  syntax:
+    content: >-
+      [ReliabilityContract(Consistency.WillNotCorruptState, Cer.Success)]
+
+      public IntPtr DangerousGetHandle()
+    content.vb: >-
+      <ReliabilityContract(Consistency.WillNotCorruptState, Cer.Success)>
+
+      Public Function DangerousGetHandle As IntPtr
+    return:
+      type: System.IntPtr
+      description: "\n<p>An <strong>IntPtr</strong> representing the value of the <xref href=\"System.Runtime.InteropServices.SafeHandle.handle\" data-throw-if-not-resolved=\"false\"></xref> field. If the handle has been marked invalid with <xref href=\"System.Runtime.InteropServices.SafeHandle.SetHandleAsInvalid\" data-throw-if-not-resolved=\"false\"></xref>, this method still returns the original handle value, which can be a stale value.</p>\n"
+  see:
+  - type: System.Security.Permissions.SecurityPermission
+    commentId: T:System.Security.Permissions.SecurityPermission
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: SafeHandle.DangerousGetHandle()
+- uid: System.Runtime.InteropServices.SafeHandle.DangerousRelease
+  commentId: M:System.Runtime.InteropServices.SafeHandle.DangerousRelease
+  id: DangerousRelease
+  parent: System.Runtime.InteropServices.SafeHandle
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Runtime.InteropServices.SafeHandle.DangerousRelease()
+  type: Method
+  source:
+    path: System.Private.CoreLib
+    isExternal: true
+  assemblies:
+  - System.Runtime.Handles
+  namespace: System.Runtime.InteropServices
+  summary: "\n<p>Manually decrements the reference counter on a <xref href=\"System.Runtime.InteropServices.SafeHandle\" data-throw-if-not-resolved=\"false\"></xref> instance.</p>\n"
+  syntax:
+    content: >-
+      [SecurityCritical]
+
+      [ReliabilityContract(Consistency.WillNotCorruptState, Cer.Success)]
+
+      [MethodImpl(MethodImplOptions.InternalCall)]
+
+      public void DangerousRelease()
+    content.vb: >-
+      <SecurityCritical>
+
+      <ReliabilityContract(Consistency.WillNotCorruptState, Cer.Success)>
+
+      <MethodImpl(MethodImplOptions.InternalCall)>
+
+      Public Sub DangerousRelease
+  seealso:
+  - type: System.Runtime.InteropServices.SafeHandle.DangerousAddRef(System.Boolean@)
+    commentId: M:System.Runtime.InteropServices.SafeHandle.DangerousAddRef(System.Boolean@)
+  see:
+  - type: System.Security.Permissions.SecurityPermission
+    commentId: T:System.Security.Permissions.SecurityPermission
+  attributes:
+  - type: System.Security.SecurityCriticalAttribute
+    ctor: System.Security.SecurityCriticalAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: SafeHandle.DangerousRelease()
+- uid: System.Runtime.InteropServices.SafeHandle.Dispose
+  commentId: M:System.Runtime.InteropServices.SafeHandle.Dispose
+  id: Dispose
+  parent: System.Runtime.InteropServices.SafeHandle
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Runtime.InteropServices.SafeHandle.Dispose()
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Runtime/InteropServices/SafeHandle.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Dispose
+    path: src/mscorlib/src/System/Runtime/InteropServices/SafeHandle.cs
+    startLine: 244
+  assemblies:
+  - System.Runtime.Handles
+  namespace: System.Runtime.InteropServices
+  summary: "\n<p>Releases all resources used by the <xref href=\"System.Runtime.InteropServices.SafeHandle\" data-throw-if-not-resolved=\"false\"></xref> class.</p>\n"
+  syntax:
+    content: >-
+      [SecuritySafeCritical]
+
+      [ReliabilityContract(Consistency.WillNotCorruptState, Cer.Success)]
+
+      public void Dispose()
+    content.vb: >-
+      <SecuritySafeCritical>
+
+      <ReliabilityContract(Consistency.WillNotCorruptState, Cer.Success)>
+
+      Public Sub Dispose
+  see:
+  - type: System.Security.Permissions.SecurityPermission
+    commentId: T:System.Security.Permissions.SecurityPermission
+  implements:
+  - System.IDisposable.Dispose
+  attributes:
+  - type: System.Security.SecuritySafeCriticalAttribute
+    ctor: System.Security.SecuritySafeCriticalAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: SafeHandle.Dispose()
+- uid: System.Runtime.InteropServices.SafeHandle.Dispose(System.Boolean)
+  commentId: M:System.Runtime.InteropServices.SafeHandle.Dispose(System.Boolean)
+  id: Dispose(System.Boolean)
+  parent: System.Runtime.InteropServices.SafeHandle
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Runtime.InteropServices.SafeHandle.Dispose(System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Runtime/InteropServices/SafeHandle.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Dispose
+    path: src/mscorlib/src/System/Runtime/InteropServices/SafeHandle.cs
+    startLine: 250
+  assemblies:
+  - System.Runtime.Handles
+  namespace: System.Runtime.InteropServices
+  summary: "\n<p>Releases the unmanaged resources used by the <xref href=\"System.Runtime.InteropServices.SafeHandle\" data-throw-if-not-resolved=\"false\"></xref> class specifying whether to perform a normal dispose operation.</p>\n"
+  syntax:
+    content: >-
+      [SecurityCritical]
+
+      [ReliabilityContract(Consistency.WillNotCorruptState, Cer.Success)]
+
+      protected virtual void Dispose(bool disposing)
+    content.vb: >-
+      <SecurityCritical>
+
+      <ReliabilityContract(Consistency.WillNotCorruptState, Cer.Success)>
+
+      Protected Overridable Sub Dispose(disposing As Boolean)
+    parameters:
+    - id: disposing
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> for a normal dispose operation; <strong>false</strong> to finalize the handle.</p>\n"
+  see:
+  - type: System.Security.Permissions.SecurityPermission
+    commentId: T:System.Security.Permissions.SecurityPermission
+  attributes:
+  - type: System.Security.SecurityCriticalAttribute
+    ctor: System.Security.SecurityCriticalAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+  nameWithType: SafeHandle.Dispose(Boolean)
+- uid: System.Runtime.InteropServices.SafeHandle.ReleaseHandle
+  commentId: M:System.Runtime.InteropServices.SafeHandle.ReleaseHandle
+  id: ReleaseHandle
+  parent: System.Runtime.InteropServices.SafeHandle
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Runtime.InteropServices.SafeHandle.ReleaseHandle()
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Runtime/InteropServices/SafeHandle.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: ReleaseHandle
+    path: src/mscorlib/src/System/Runtime/InteropServices/SafeHandle.cs
+    startLine: 281
+  assemblies:
+  - System.Runtime.Handles
+  namespace: System.Runtime.InteropServices
+  summary: "\n<p>When overridden in a derived class, executes the code required to free the handle.</p>\n"
+  syntax:
+    content: >-
+      [ReliabilityContract(Consistency.WillNotCorruptState, Cer.Success)]
+
+      protected abstract bool ReleaseHandle()
+    content.vb: >-
+      <ReliabilityContract(Consistency.WillNotCorruptState, Cer.Success)>
+
+      Protected MustOverride Function ReleaseHandle As Boolean
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if the handle is released successfully; otherwise, in the event of a catastrophic failure,<strong> false</strong>. In this case, it generates a releaseHandleFailed MDA Managed Debugging Assistant.</p>\n"
+  see:
+  - type: System.Security.Permissions.SecurityPermission
+    commentId: T:System.Security.Permissions.SecurityPermission
+  modifiers.csharp:
+  - protected
+  - abstract
+  modifiers.vb:
+  - Protected
+  - MustOverride
+  nameWithType: SafeHandle.ReleaseHandle()
+- uid: System.Runtime.InteropServices.SafeHandle.SetHandle(System.IntPtr)
+  commentId: M:System.Runtime.InteropServices.SafeHandle.SetHandle(System.IntPtr)
+  id: SetHandle(System.IntPtr)
+  parent: System.Runtime.InteropServices.SafeHandle
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Runtime.InteropServices.SafeHandle.SetHandle(System.IntPtr)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Runtime/InteropServices/SafeHandle.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: SetHandle
+    path: src/mscorlib/src/System/Runtime/InteropServices/SafeHandle.cs
+    startLine: 203
+  assemblies:
+  - System.Runtime.Handles
+  namespace: System.Runtime.InteropServices
+  summary: "\n<p>Sets the handle to the specified pre-existing handle.</p>\n"
+  syntax:
+    content: >-
+      [ReliabilityContract(Consistency.WillNotCorruptState, Cer.Success)]
+
+      protected void SetHandle(IntPtr handle)
+    content.vb: >-
+      <ReliabilityContract(Consistency.WillNotCorruptState, Cer.Success)>
+
+      Protected Sub SetHandle(handle As IntPtr)
+    parameters:
+    - id: handle
+      type: System.IntPtr
+      description: "\n<p>The pre-existing handle to use. </p>\n"
+  see:
+  - type: System.Security.Permissions.SecurityPermission
+    commentId: T:System.Security.Permissions.SecurityPermission
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  nameWithType: SafeHandle.SetHandle(IntPtr)
+- uid: System.Runtime.InteropServices.SafeHandle.SetHandleAsInvalid
+  commentId: M:System.Runtime.InteropServices.SafeHandle.SetHandleAsInvalid
+  id: SetHandleAsInvalid
+  parent: System.Runtime.InteropServices.SafeHandle
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Runtime.InteropServices.SafeHandle.SetHandleAsInvalid()
+  type: Method
+  source:
+    path: System.Private.CoreLib
+    isExternal: true
+  assemblies:
+  - System.Runtime.Handles
+  namespace: System.Runtime.InteropServices
+  summary: "\n<p>Marks a handle as no longer used.</p>\n"
+  syntax:
+    content: >-
+      [SecurityCritical]
+
+      [ReliabilityContract(Consistency.WillNotCorruptState, Cer.Success)]
+
+      [MethodImpl(MethodImplOptions.InternalCall)]
+
+      public void SetHandleAsInvalid()
+    content.vb: >-
+      <SecurityCritical>
+
+      <ReliabilityContract(Consistency.WillNotCorruptState, Cer.Success)>
+
+      <MethodImpl(MethodImplOptions.InternalCall)>
+
+      Public Sub SetHandleAsInvalid
+  see:
+  - type: System.Security.Permissions.SecurityPermission
+    commentId: T:System.Security.Permissions.SecurityPermission
+  attributes:
+  - type: System.Security.SecurityCriticalAttribute
+    ctor: System.Security.SecurityCriticalAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: SafeHandle.SetHandleAsInvalid()
+- uid: System.Runtime.InteropServices.SafeHandle.Finalize
+  commentId: M:System.Runtime.InteropServices.SafeHandle.Finalize
+  id: Finalize
+  parent: System.Runtime.InteropServices.SafeHandle
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Runtime.InteropServices.SafeHandle.Finalize()
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Runtime/InteropServices/SafeHandle.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Finalize
+    path: src/mscorlib/src/System/Runtime/InteropServices/SafeHandle.cs
+    startLine: 193
+  assemblies:
+  - System.Runtime.Handles
+  namespace: System.Runtime.InteropServices
+  summary: "\n<p>Frees all resources associated with the handle.</p>\n"
+  syntax:
+    content: >-
+      [SecuritySafeCritical]
+
+      protected void Finalize()
+    content.vb: >-
+      <SecuritySafeCritical>
+
+      Protected Sub Finalize
+  seealso:
+  - type: System.Runtime.InteropServices.SafeHandle.Dispose
+    commentId: M:System.Runtime.InteropServices.SafeHandle.Dispose
+  see:
+  - type: System.Security.Permissions.SecurityPermission
+    commentId: T:System.Security.Permissions.SecurityPermission
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  nameWithType: SafeHandle.Finalize()
+references:
+- uid: System.Runtime.InteropServices
+  isExternal: false
+  name: "XXX"
+  fullName: System.Runtime.InteropServices
+  nameWithType: System.Runtime.InteropServices
+  commentId: N:System.Runtime.InteropServices
+- uid: System.Object
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Object
+  nameWithType: Object
+  commentId: T:System.Object
+- uid: System.IDisposable
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.IDisposable
+  nameWithType: IDisposable
+  commentId: T:System.IDisposable
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.ToString()
+  commentId: M:System.Object.ToString
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.Equals(Object)
+  commentId: M:System.Object.Equals(System.Object)
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.Equals(Object, Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.GetHashCode()
+  commentId: M:System.Object.GetHashCode
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.GetType()
+  commentId: M:System.Object.GetType
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.MemberwiseClone()
+  commentId: M:System.Object.MemberwiseClone
+- uid: System
+  isExternal: false
+  name: "XXX"
+  fullName: System
+  nameWithType: System
+  commentId: N:System
+- uid: System.IntPtr
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.IntPtr
+  nameWithType: IntPtr
+  commentId: T:System.IntPtr
+- uid: System.Boolean
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Boolean
+  nameWithType: Boolean
+  commentId: T:System.Boolean
+- uid: System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: false
+  name: "XXX"
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: "XXX"
+    fullName: System.IDisposable.Dispose
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: "XXX"
+    fullName: System.IDisposable.Dispose
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: IDisposable.Dispose()
+  commentId: M:System.IDisposable.Dispose
+- uid: System.TypeLoadException
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.TypeLoadException
+  nameWithType: TypeLoadException
+  commentId: T:System.TypeLoadException

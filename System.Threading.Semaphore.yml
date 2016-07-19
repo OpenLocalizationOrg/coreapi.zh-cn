@@ -1,0 +1,2106 @@
+items:
+- uid: System.Threading.Semaphore
+  commentId: T:System.Threading.Semaphore
+  id: Semaphore
+  parent: System.Threading
+  children:
+  - System.Threading.Semaphore.#ctor(System.Int32,System.Int32)
+  - System.Threading.Semaphore.#ctor(System.Int32,System.Int32,System.String)
+  - System.Threading.Semaphore.#ctor(System.Int32,System.Int32,System.String,System.Boolean@)
+  - System.Threading.Semaphore.OpenExisting(System.String)
+  - System.Threading.Semaphore.Release
+  - System.Threading.Semaphore.Release(System.Int32)
+  - System.Threading.Semaphore.TryOpenExisting(System.String,System.Threading.Semaphore@)
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.Semaphore
+  type: Class
+  source:
+    remote:
+      path: src/mscorlib/src/System/Threading/Semaphore.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Semaphore
+    path: src/mscorlib/src/System/Threading/Semaphore.cs
+    startLine: 13
+  assemblies:
+  - System.Threading
+  namespace: System.Threading
+  summary: "\n<p>Limits the number of threads that can access a resource or pool of resources concurrently. </p>\n"
+  syntax:
+    content: 'public sealed class Semaphore : WaitHandle, IDisposable'
+    content.vb: >-
+      Public NotInheritable Class Semaphore
+          Inherits WaitHandle
+          Implements IDisposable
+  inheritance:
+  - System.Object
+  - System.MarshalByRefObject
+  - System.Threading.WaitHandle
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - System.Threading.WaitHandle.WaitTimeout
+  - System.Threading.WaitHandle.InvalidHandle
+  - System.Threading.WaitHandle.WaitOne(System.Int32,System.Boolean)
+  - System.Threading.WaitHandle.WaitOne(System.TimeSpan,System.Boolean)
+  - System.Threading.WaitHandle.WaitOne
+  - System.Threading.WaitHandle.WaitOne(System.Int32)
+  - System.Threading.WaitHandle.WaitOne(System.TimeSpan)
+  - System.Threading.WaitHandle.WaitAll(System.Threading.WaitHandle[],System.Int32,System.Boolean)
+  - System.Threading.WaitHandle.WaitAll(System.Threading.WaitHandle[],System.TimeSpan,System.Boolean)
+  - System.Threading.WaitHandle.WaitAll(System.Threading.WaitHandle[])
+  - System.Threading.WaitHandle.WaitAll(System.Threading.WaitHandle[],System.Int32)
+  - System.Threading.WaitHandle.WaitAll(System.Threading.WaitHandle[],System.TimeSpan)
+  - System.Threading.WaitHandle.WaitAny(System.Threading.WaitHandle[],System.Int32,System.Boolean)
+  - System.Threading.WaitHandle.WaitAny(System.Threading.WaitHandle[],System.TimeSpan,System.Boolean)
+  - System.Threading.WaitHandle.WaitAny(System.Threading.WaitHandle[],System.TimeSpan)
+  - System.Threading.WaitHandle.WaitAny(System.Threading.WaitHandle[])
+  - System.Threading.WaitHandle.WaitAny(System.Threading.WaitHandle[],System.Int32)
+  - System.Threading.WaitHandle.SignalAndWait(System.Threading.WaitHandle,System.Threading.WaitHandle)
+  - System.Threading.WaitHandle.SignalAndWait(System.Threading.WaitHandle,System.Threading.WaitHandle,System.TimeSpan,System.Boolean)
+  - System.Threading.WaitHandle.SignalAndWait(System.Threading.WaitHandle,System.Threading.WaitHandle,System.Int32,System.Boolean)
+  - System.Threading.WaitHandle.Close
+  - System.Threading.WaitHandle.Dispose(System.Boolean)
+  - System.Threading.WaitHandle.Dispose
+  - System.Threading.WaitHandle.Handle
+  - System.Threading.WaitHandle.SafeWaitHandle
+  - System.MarshalByRefObject.MemberwiseClone(System.Boolean)
+  - System.MarshalByRefObject.GetLifetimeService
+  - System.MarshalByRefObject.InitializeLifetimeService
+  - System.MarshalByRefObject.CreateObjRef(System.Type)
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+  nameWithType: Semaphore
+  extensionMethods:
+  - System.Threading.WaitHandle.System.Threading.WaitHandleExtensions.GetSafeWaitHandle
+  - System.Threading.WaitHandle.System.Threading.WaitHandleExtensions.SetSafeWaitHandle(Microsoft.Win32.SafeHandles.SafeWaitHandle)
+- uid: System.Threading.Semaphore.#ctor(System.Int32,System.Int32)
+  commentId: M:System.Threading.Semaphore.#ctor(System.Int32,System.Int32)
+  id: '#ctor(System.Int32,System.Int32)'
+  parent: System.Threading.Semaphore
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.Semaphore.Semaphore(System.Int32, System.Int32)
+  type: Constructor
+  source:
+    remote:
+      path: src/mscorlib/src/System/Threading/Semaphore.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: .ctor
+    path: src/mscorlib/src/System/Threading/Semaphore.cs
+    startLine: 15
+  assemblies:
+  - System.Threading
+  namespace: System.Threading
+  summary: "\n<p>Initializes a new instance of the <xref href=\"System.Threading.Semaphore\" data-throw-if-not-resolved=\"false\"></xref> class, specifying the initial number of entries and the maximum number of concurrent entries. </p>\n"
+  syntax:
+    content: >-
+      [SecuritySafeCritical]
+
+      public Semaphore(int initialCount, int maximumCount)
+    content.vb: >-
+      <SecuritySafeCritical>
+
+      Public Sub New(initialCount As Integer, maximumCount As Integer)
+    parameters:
+    - id: initialCount
+      type: System.Int32
+      description: "\n<p>The initial number of requests for the semaphore that can be granted concurrently. </p>\n"
+    - id: maximumCount
+      type: System.Int32
+      description: "\n<p>The maximum number of requests for the semaphore that can be granted concurrently. </p>\n"
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>\n<em>initialCount</em> is greater than <em>maximumCount</em>.</p>\n"
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>maximumCount</em> is less than 1.</p>\n<p>-or-</p>\n<p>\n<em>initialCount</em> is less than 0.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: Semaphore.Semaphore(Int32, Int32)
+- uid: System.Threading.Semaphore.#ctor(System.Int32,System.Int32,System.String)
+  commentId: M:System.Threading.Semaphore.#ctor(System.Int32,System.Int32,System.String)
+  id: '#ctor(System.Int32,System.Int32,System.String)'
+  parent: System.Threading.Semaphore
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.Semaphore.Semaphore(System.Int32, System.Int32, System.String)
+  type: Constructor
+  source:
+    remote:
+      path: src/mscorlib/src/System/Threading/Semaphore.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: .ctor
+    path: src/mscorlib/src/System/Threading/Semaphore.cs
+    startLine: 18
+  assemblies:
+  - System.Threading
+  namespace: System.Threading
+  summary: "\n<p>Initializes a new instance of the <xref href=\"System.Threading.Semaphore\" data-throw-if-not-resolved=\"false\"></xref> class, specifying the initial number of entries and the maximum number of concurrent entries, and optionally specifying the name of a system semaphore object. </p>\n"
+  syntax:
+    content: >-
+      [SecurityCritical]
+
+      public Semaphore(int initialCount, int maximumCount, string name)
+    content.vb: >-
+      <SecurityCritical>
+
+      Public Sub New(initialCount As Integer, maximumCount As Integer, name As String)
+    parameters:
+    - id: initialCount
+      type: System.Int32
+      description: "\n<p>The initial number of requests for the semaphore that can be granted concurrently. </p>\n"
+    - id: maximumCount
+      type: System.Int32
+      description: "\n<p>The maximum number of requests for the semaphore that can be granted concurrently.</p>\n"
+    - id: name
+      type: System.String
+      description: "\n<p>The name of a named system semaphore object.</p>\n"
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>\n<em>initialCount</em> is greater than <em>maximumCount</em>.</p>\n<p>-or-</p>\n<p>\n<em>name</em> is longer than 260 characters.</p>\n"
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>maximumCount</em> is less than 1.</p>\n<p>-or-</p>\n<p>\n<em>initialCount</em> is less than 0.</p>\n"
+  - type: System.IO.IOException
+    commentId: T:System.IO.IOException
+    description: "\n<p>A Win32 error occurred.</p>\n"
+  - type: System.UnauthorizedAccessException
+    commentId: T:System.UnauthorizedAccessException
+    description: "\n<p>The named semaphore exists and has access control security, and the user does not have <xref href=\"System.Security.AccessControl.SemaphoreRights.FullControl\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  - type: System.Threading.WaitHandleCannotBeOpenedException
+    commentId: T:System.Threading.WaitHandleCannotBeOpenedException
+    description: "\n<p>The named semaphore cannot be created, perhaps because a wait handle of a different type has the same name.</p>\n"
+  see:
+  - type: System.Security.Permissions.SecurityPermission
+    commentId: T:System.Security.Permissions.SecurityPermission
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: Semaphore.Semaphore(Int32, Int32, String)
+- uid: System.Threading.Semaphore.#ctor(System.Int32,System.Int32,System.String,System.Boolean@)
+  commentId: M:System.Threading.Semaphore.#ctor(System.Int32,System.Int32,System.String,System.Boolean@)
+  id: '#ctor(System.Int32,System.Int32,System.String,System.Boolean@)'
+  parent: System.Threading.Semaphore
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.Semaphore.Semaphore(System.Int32, System.Int32, System.String, out System.Boolean)
+  type: Constructor
+  source:
+    remote:
+      path: src/mscorlib/src/System/Threading/Semaphore.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: .ctor
+    path: src/mscorlib/src/System/Threading/Semaphore.cs
+    startLine: 51
+  assemblies:
+  - System.Threading
+  namespace: System.Threading
+  summary: "\n<p>Initializes a new instance of the <xref href=\"System.Threading.Semaphore\" data-throw-if-not-resolved=\"false\"></xref> class, specifying the initial number of entries and the maximum number of concurrent entries, optionally specifying the name of a system semaphore object, and specifying a variable that receives a value indicating whether a new system semaphore was created.</p>\n"
+  syntax:
+    content: >-
+      [SecurityCritical]
+
+      public Semaphore(int initialCount, int maximumCount, string name, out bool createdNew)
+    content.vb: >-
+      <SecurityCritical>
+
+      Public Sub New(initialCount As Integer, maximumCount As Integer, name As String, ByRef createdNew As Boolean)
+    parameters:
+    - id: initialCount
+      type: System.Int32
+      description: "\n<p>The initial number of requests for the semaphore that can be satisfied concurrently. </p>\n"
+    - id: maximumCount
+      type: System.Int32
+      description: "\n<p>The maximum number of requests for the semaphore that can be satisfied concurrently.</p>\n"
+    - id: name
+      type: System.String
+      description: "\n<p>The name of a named system semaphore object.</p>\n"
+    - id: createdNew
+      type: System.Boolean
+      description: "\n<p>When this method returns, contains <strong>true</strong> if a local semaphore was created (that is, if <em>name</em> is <strong>null</strong> or an empty string) or if the specified named system semaphore was created; <strong>false</strong> if the specified named system semaphore already existed. This parameter is passed uninitialized.</p>\n"
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>\n<em>initialCount</em> is greater than <em>maximumCount</em>. </p>\n<p>-or-</p>\n<p>\n<em>name</em> is longer than 260 characters.</p>\n"
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>maximumCount</em> is less than 1.</p>\n<p>-or-</p>\n<p>\n<em>initialCount</em> is less than 0.</p>\n"
+  - type: System.IO.IOException
+    commentId: T:System.IO.IOException
+    description: "\n<p>A Win32 error occurred.</p>\n"
+  - type: System.UnauthorizedAccessException
+    commentId: T:System.UnauthorizedAccessException
+    description: "\n<p>The named semaphore exists and has access control security, and the user does not have <xref href=\"System.Security.AccessControl.SemaphoreRights.FullControl\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  - type: System.Threading.WaitHandleCannotBeOpenedException
+    commentId: T:System.Threading.WaitHandleCannotBeOpenedException
+    description: "\n<p>The named semaphore cannot be created, perhaps because a wait handle of a different type has the same name.</p>\n"
+  see:
+  - type: System.Security.Permissions.SecurityPermission
+    commentId: T:System.Security.Permissions.SecurityPermission
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: System.Threading.Semaphore.Semaphore(System.Int32, System.Int32, System.String, ByRef System.Boolean)
+  name.vb: Semaphore(Int32, Int32, String, ByRef Boolean)
+  nameWithType: Semaphore.Semaphore(Int32, Int32, String, out Boolean)
+  nameWithType.vb: Semaphore.Semaphore(Int32, Int32, String, ByRef Boolean)
+- uid: System.Threading.Semaphore.OpenExisting(System.String)
+  commentId: M:System.Threading.Semaphore.OpenExisting(System.String)
+  id: OpenExisting(System.String)
+  parent: System.Threading.Semaphore
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.Semaphore.OpenExisting(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Threading/Semaphore.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: OpenExisting
+    path: src/mscorlib/src/System/Threading/Semaphore.cs
+    startLine: 109
+  assemblies:
+  - System.Threading
+  namespace: System.Threading
+  summary: "\n<p>Opens the specified named semaphore, if it already exists.</p>\n"
+  syntax:
+    content: >-
+      [SecurityCritical]
+
+      public static Semaphore OpenExisting(string name)
+    content.vb: >-
+      <SecurityCritical>
+
+      Public Shared Function OpenExisting(name As String) As Semaphore
+    parameters:
+    - id: name
+      type: System.String
+      description: "\n<p>The name of the system semaphore to open.</p>\n"
+    return:
+      type: System.Threading.Semaphore
+      description: "\n<p>An object that represents the named system semaphore.</p>\n"
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>\n<em>name</em> is an empty string.</p>\n<p>-or-</p>\n<p>\n<em>name</em> is longer than 260 characters.</p>\n"
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>name</em> is <strong>null</strong>.</p>\n"
+  - type: System.Threading.WaitHandleCannotBeOpenedException
+    commentId: T:System.Threading.WaitHandleCannotBeOpenedException
+    description: "\n<p>The named semaphore does not exist.</p>\n"
+  - type: System.IO.IOException
+    commentId: T:System.IO.IOException
+    description: "\n<p>A Win32 error occurred.</p>\n"
+  - type: System.UnauthorizedAccessException
+    commentId: T:System.UnauthorizedAccessException
+    description: "\n<p>The named semaphore exists, but the user does not have the security access required to use it. </p>\n"
+  see:
+  - type: System.Security.Permissions.SecurityPermission
+    commentId: T:System.Security.Permissions.SecurityPermission
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  nameWithType: Semaphore.OpenExisting(String)
+- uid: System.Threading.Semaphore.Release
+  commentId: M:System.Threading.Semaphore.Release
+  id: Release
+  parent: System.Threading.Semaphore
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.Semaphore.Release()
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Threading/Semaphore.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Release
+    path: src/mscorlib/src/System/Threading/Semaphore.cs
+    startLine: 173
+  assemblies:
+  - System.Threading
+  namespace: System.Threading
+  summary: "\n<p>Exits the semaphore and returns the previous count.</p>\n"
+  syntax:
+    content: public int Release()
+    content.vb: Public Function Release As Integer
+    return:
+      type: System.Int32
+      description: "\n<p>The count on the semaphore before the <xref href=\"System.Threading.Semaphore.Release\" data-throw-if-not-resolved=\"false\"></xref> method was called. </p>\n"
+  exceptions:
+  - type: System.Threading.SemaphoreFullException
+    commentId: T:System.Threading.SemaphoreFullException
+    description: "\n<p>The semaphore count is already at the maximum value.</p>\n"
+  - type: System.IO.IOException
+    commentId: T:System.IO.IOException
+    description: "\n<p>A Win32 error occurred with a named semaphore.</p>\n"
+  - type: System.UnauthorizedAccessException
+    commentId: T:System.UnauthorizedAccessException
+    description: "\n<p>The current semaphore represents a named system semaphore, but the user does not have <xref href=\"System.Security.AccessControl.SemaphoreRights.Modify\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n<p>-or-</p>\n<p>The current semaphore represents a named system semaphore, but it was not opened with <xref href=\"System.Security.AccessControl.SemaphoreRights.Modify\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: Semaphore.Release()
+- uid: System.Threading.Semaphore.Release(System.Int32)
+  commentId: M:System.Threading.Semaphore.Release(System.Int32)
+  id: Release(System.Int32)
+  parent: System.Threading.Semaphore
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.Semaphore.Release(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Threading/Semaphore.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Release
+    path: src/mscorlib/src/System/Threading/Semaphore.cs
+    startLine: 179
+  assemblies:
+  - System.Threading
+  namespace: System.Threading
+  summary: "\n<p>Exits the semaphore a specified number of times and returns the previous count.</p>\n"
+  syntax:
+    content: >-
+      [SecuritySafeCritical]
+
+      public int Release(int releaseCount)
+    content.vb: >-
+      <SecuritySafeCritical>
+
+      Public Function Release(releaseCount As Integer) As Integer
+    parameters:
+    - id: releaseCount
+      type: System.Int32
+      description: "\n<p>The number of times to exit the semaphore.</p>\n"
+    return:
+      type: System.Int32
+      description: "\n<p>The count on the semaphore before the <xref href=\"System.Threading.Semaphore.Release\" data-throw-if-not-resolved=\"false\"></xref> method was called. </p>\n"
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>releaseCount</em> is less than 1.</p>\n"
+  - type: System.Threading.SemaphoreFullException
+    commentId: T:System.Threading.SemaphoreFullException
+    description: "\n<p>The semaphore count is already at the maximum value.</p>\n"
+  - type: System.IO.IOException
+    commentId: T:System.IO.IOException
+    description: "\n<p>A Win32 error occurred with a named semaphore.</p>\n"
+  - type: System.UnauthorizedAccessException
+    commentId: T:System.UnauthorizedAccessException
+    description: "\n<p>The current semaphore represents a named system semaphore, but the user does not have <xref href=\"System.Security.AccessControl.SemaphoreRights.Modify\" data-throw-if-not-resolved=\"false\"></xref> rights.</p>\n<p>-or-</p>\n<p>The current semaphore represents a named system semaphore, but it was not opened with <xref href=\"System.Security.AccessControl.SemaphoreRights.Modify\" data-throw-if-not-resolved=\"false\"></xref> rights.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: Semaphore.Release(Int32)
+- uid: System.Threading.Semaphore.TryOpenExisting(System.String,System.Threading.Semaphore@)
+  commentId: M:System.Threading.Semaphore.TryOpenExisting(System.String,System.Threading.Semaphore@)
+  id: TryOpenExisting(System.String,System.Threading.Semaphore@)
+  parent: System.Threading.Semaphore
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.Semaphore.TryOpenExisting(System.String, out System.Threading.Semaphore)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Threading/Semaphore.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: TryOpenExisting
+    path: src/mscorlib/src/System/Threading/Semaphore.cs
+    startLine: 127
+  assemblies:
+  - System.Threading
+  namespace: System.Threading
+  summary: "\n<p>Opens the specified named semaphore, if it already exists, and returns a value that indicates whether the operation succeeded.</p>\n"
+  syntax:
+    content: >-
+      [SecurityCritical]
+
+      public static bool TryOpenExisting(string name, out Semaphore result)
+    content.vb: >-
+      <SecurityCritical>
+
+      Public Shared Function TryOpenExisting(name As String, ByRef result As Semaphore) As Boolean
+    parameters:
+    - id: name
+      type: System.String
+      description: "\n<p>The name of the system semaphore to open.</p>\n"
+    - id: result
+      type: System.Threading.Semaphore
+      description: "\n<p>When this method returns, contains a <xref href=\"System.Threading.Semaphore\" data-throw-if-not-resolved=\"false\"></xref> object that represents the named semaphore if the call succeeded, or <strong>null</strong> if the call failed. This parameter is treated as uninitialized.</p>\n"
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if the named semaphore was opened successfully; otherwise, <strong>false</strong>.</p>\n"
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>\n<em>name</em> is an empty string.</p>\n<p>-or-</p>\n<p>\n<em>name</em> is longer than 260 characters.</p>\n"
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>name</em> is <strong>null</strong>.</p>\n"
+  - type: System.IO.IOException
+    commentId: T:System.IO.IOException
+    description: "\n<p>A Win32 error occurred.</p>\n"
+  - type: System.UnauthorizedAccessException
+    commentId: T:System.UnauthorizedAccessException
+    description: "\n<p>The named semaphore exists, but the user does not have the security access required to use it. </p>\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: System.Threading.Semaphore.TryOpenExisting(System.String, ByRef System.Threading.Semaphore)
+  name.vb: TryOpenExisting(String, ByRef Semaphore)
+  nameWithType: Semaphore.TryOpenExisting(String, out Semaphore)
+  nameWithType.vb: Semaphore.TryOpenExisting(String, ByRef Semaphore)
+references:
+- uid: System.Threading
+  isExternal: false
+  name: "XXX"
+  fullName: System.Threading
+  nameWithType: System.Threading
+  commentId: N:System.Threading
+- uid: System.Object
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Object
+  nameWithType: Object
+  commentId: T:System.Object
+- uid: System.MarshalByRefObject
+  parent: System
+  isExternal: true
+  name: "XXX"
+  fullName: System.MarshalByRefObject
+  nameWithType: MarshalByRefObject
+  commentId: T:System.MarshalByRefObject
+- uid: System.Threading.WaitHandle
+  parent: System.Threading
+  isExternal: false
+  name: "XXX"
+  fullName: System.Threading.WaitHandle
+  nameWithType: WaitHandle
+  commentId: T:System.Threading.WaitHandle
+- uid: System.IDisposable
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.IDisposable
+  nameWithType: IDisposable
+  commentId: T:System.IDisposable
+- uid: System.Threading.WaitHandle.WaitTimeout
+  parent: System.Threading.WaitHandle
+  isExternal: true
+  name: "XXX"
+  fullName: System.Threading.WaitHandle.WaitTimeout
+  nameWithType: WaitHandle.WaitTimeout
+  commentId: F:System.Threading.WaitHandle.WaitTimeout
+- uid: System.Threading.WaitHandle.InvalidHandle
+  parent: System.Threading.WaitHandle
+  isExternal: true
+  name: "XXX"
+  fullName: System.Threading.WaitHandle.InvalidHandle
+  nameWithType: WaitHandle.InvalidHandle
+  commentId: F:System.Threading.WaitHandle.InvalidHandle
+- uid: System.Threading.WaitHandle.WaitOne(System.Int32,System.Boolean)
+  parent: System.Threading.WaitHandle
+  isExternal: true
+  name: "XXX"
+  fullName: System.Threading.WaitHandle.WaitOne(System.Int32, System.Boolean)
+  spec.csharp:
+  - uid: System.Threading.WaitHandle.WaitOne(System.Int32,System.Boolean)
+    name: "XXX"
+    fullName: System.Threading.WaitHandle.WaitOne
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Boolean
+    name: "XXX"
+    fullName: System.Boolean
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Threading.WaitHandle.WaitOne(System.Int32,System.Boolean)
+    name: "XXX"
+    fullName: System.Threading.WaitHandle.WaitOne
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Boolean
+    name: "XXX"
+    fullName: System.Boolean
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: WaitHandle.WaitOne(Int32, Boolean)
+  commentId: M:System.Threading.WaitHandle.WaitOne(System.Int32,System.Boolean)
+- uid: System.Threading.WaitHandle.WaitOne(System.TimeSpan,System.Boolean)
+  parent: System.Threading.WaitHandle
+  isExternal: true
+  name: "XXX"
+  fullName: System.Threading.WaitHandle.WaitOne(System.TimeSpan, System.Boolean)
+  spec.csharp:
+  - uid: System.Threading.WaitHandle.WaitOne(System.TimeSpan,System.Boolean)
+    name: "XXX"
+    fullName: System.Threading.WaitHandle.WaitOne
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.TimeSpan
+    name: "XXX"
+    fullName: System.TimeSpan
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Boolean
+    name: "XXX"
+    fullName: System.Boolean
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Threading.WaitHandle.WaitOne(System.TimeSpan,System.Boolean)
+    name: "XXX"
+    fullName: System.Threading.WaitHandle.WaitOne
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.TimeSpan
+    name: "XXX"
+    fullName: System.TimeSpan
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Boolean
+    name: "XXX"
+    fullName: System.Boolean
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: WaitHandle.WaitOne(TimeSpan, Boolean)
+  commentId: M:System.Threading.WaitHandle.WaitOne(System.TimeSpan,System.Boolean)
+- uid: System.Threading.WaitHandle.WaitOne
+  parent: System.Threading.WaitHandle
+  isExternal: true
+  name: "XXX"
+  fullName: System.Threading.WaitHandle.WaitOne()
+  spec.csharp:
+  - uid: System.Threading.WaitHandle.WaitOne
+    name: "XXX"
+    fullName: System.Threading.WaitHandle.WaitOne
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Threading.WaitHandle.WaitOne
+    name: "XXX"
+    fullName: System.Threading.WaitHandle.WaitOne
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: WaitHandle.WaitOne()
+  commentId: M:System.Threading.WaitHandle.WaitOne
+- uid: System.Threading.WaitHandle.WaitOne(System.Int32)
+  parent: System.Threading.WaitHandle
+  isExternal: true
+  name: "XXX"
+  fullName: System.Threading.WaitHandle.WaitOne(System.Int32)
+  spec.csharp:
+  - uid: System.Threading.WaitHandle.WaitOne(System.Int32)
+    name: "XXX"
+    fullName: System.Threading.WaitHandle.WaitOne
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Threading.WaitHandle.WaitOne(System.Int32)
+    name: "XXX"
+    fullName: System.Threading.WaitHandle.WaitOne
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: WaitHandle.WaitOne(Int32)
+  commentId: M:System.Threading.WaitHandle.WaitOne(System.Int32)
+- uid: System.Threading.WaitHandle.WaitOne(System.TimeSpan)
+  parent: System.Threading.WaitHandle
+  isExternal: true
+  name: "XXX"
+  fullName: System.Threading.WaitHandle.WaitOne(System.TimeSpan)
+  spec.csharp:
+  - uid: System.Threading.WaitHandle.WaitOne(System.TimeSpan)
+    name: "XXX"
+    fullName: System.Threading.WaitHandle.WaitOne
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.TimeSpan
+    name: "XXX"
+    fullName: System.TimeSpan
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Threading.WaitHandle.WaitOne(System.TimeSpan)
+    name: "XXX"
+    fullName: System.Threading.WaitHandle.WaitOne
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.TimeSpan
+    name: "XXX"
+    fullName: System.TimeSpan
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: WaitHandle.WaitOne(TimeSpan)
+  commentId: M:System.Threading.WaitHandle.WaitOne(System.TimeSpan)
+- uid: System.Threading.WaitHandle.WaitAll(System.Threading.WaitHandle[],System.Int32,System.Boolean)
+  parent: System.Threading.WaitHandle
+  isExternal: true
+  name: "XXX"
+  fullName: System.Threading.WaitHandle.WaitAll(System.Threading.WaitHandle[], System.Int32, System.Boolean)
+  fullname.vb: System.Threading.WaitHandle.WaitAll(System.Threading.WaitHandle(), System.Int32, System.Boolean)
+  name.vb: WaitAll(WaitHandle(), Int32, Boolean)
+  spec.csharp:
+  - uid: System.Threading.WaitHandle.WaitAll(System.Threading.WaitHandle[],System.Int32,System.Boolean)
+    name: "XXX"
+    fullName: System.Threading.WaitHandle.WaitAll
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Threading.WaitHandle
+    name: "XXX"
+    fullName: System.Threading.WaitHandle
+    isExternal: true
+  - name: 'XXX'
+    fullName: '[]'
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Boolean
+    name: "XXX"
+    fullName: System.Boolean
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Threading.WaitHandle.WaitAll(System.Threading.WaitHandle[],System.Int32,System.Boolean)
+    name: "XXX"
+    fullName: System.Threading.WaitHandle.WaitAll
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Threading.WaitHandle
+    name: "XXX"
+    fullName: System.Threading.WaitHandle
+    isExternal: true
+  - name: "XXX"
+    fullName: ()
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Boolean
+    name: "XXX"
+    fullName: System.Boolean
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: WaitHandle.WaitAll(WaitHandle[], Int32, Boolean)
+  nameWithType.vb: WaitHandle.WaitAll(WaitHandle(), Int32, Boolean)
+  commentId: M:System.Threading.WaitHandle.WaitAll(System.Threading.WaitHandle[],System.Int32,System.Boolean)
+- uid: System.Threading.WaitHandle.WaitAll(System.Threading.WaitHandle[],System.TimeSpan,System.Boolean)
+  parent: System.Threading.WaitHandle
+  isExternal: true
+  name: "XXX"
+  fullName: System.Threading.WaitHandle.WaitAll(System.Threading.WaitHandle[], System.TimeSpan, System.Boolean)
+  fullname.vb: System.Threading.WaitHandle.WaitAll(System.Threading.WaitHandle(), System.TimeSpan, System.Boolean)
+  name.vb: WaitAll(WaitHandle(), TimeSpan, Boolean)
+  spec.csharp:
+  - uid: System.Threading.WaitHandle.WaitAll(System.Threading.WaitHandle[],System.TimeSpan,System.Boolean)
+    name: "XXX"
+    fullName: System.Threading.WaitHandle.WaitAll
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Threading.WaitHandle
+    name: "XXX"
+    fullName: System.Threading.WaitHandle
+    isExternal: true
+  - name: 'XXX'
+    fullName: '[]'
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.TimeSpan
+    name: "XXX"
+    fullName: System.TimeSpan
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Boolean
+    name: "XXX"
+    fullName: System.Boolean
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Threading.WaitHandle.WaitAll(System.Threading.WaitHandle[],System.TimeSpan,System.Boolean)
+    name: "XXX"
+    fullName: System.Threading.WaitHandle.WaitAll
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Threading.WaitHandle
+    name: "XXX"
+    fullName: System.Threading.WaitHandle
+    isExternal: true
+  - name: "XXX"
+    fullName: ()
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.TimeSpan
+    name: "XXX"
+    fullName: System.TimeSpan
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Boolean
+    name: "XXX"
+    fullName: System.Boolean
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: WaitHandle.WaitAll(WaitHandle[], TimeSpan, Boolean)
+  nameWithType.vb: WaitHandle.WaitAll(WaitHandle(), TimeSpan, Boolean)
+  commentId: M:System.Threading.WaitHandle.WaitAll(System.Threading.WaitHandle[],System.TimeSpan,System.Boolean)
+- uid: System.Threading.WaitHandle.WaitAll(System.Threading.WaitHandle[])
+  parent: System.Threading.WaitHandle
+  isExternal: true
+  name: "XXX"
+  fullName: System.Threading.WaitHandle.WaitAll(System.Threading.WaitHandle[])
+  fullname.vb: System.Threading.WaitHandle.WaitAll(System.Threading.WaitHandle())
+  name.vb: WaitAll(WaitHandle())
+  spec.csharp:
+  - uid: System.Threading.WaitHandle.WaitAll(System.Threading.WaitHandle[])
+    name: "XXX"
+    fullName: System.Threading.WaitHandle.WaitAll
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Threading.WaitHandle
+    name: "XXX"
+    fullName: System.Threading.WaitHandle
+    isExternal: true
+  - name: 'XXX'
+    fullName: '[]'
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Threading.WaitHandle.WaitAll(System.Threading.WaitHandle[])
+    name: "XXX"
+    fullName: System.Threading.WaitHandle.WaitAll
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Threading.WaitHandle
+    name: "XXX"
+    fullName: System.Threading.WaitHandle
+    isExternal: true
+  - name: "XXX"
+    fullName: ()
+  - name: "XXX"
+    fullName: )
+  nameWithType: WaitHandle.WaitAll(WaitHandle[])
+  nameWithType.vb: WaitHandle.WaitAll(WaitHandle())
+  commentId: M:System.Threading.WaitHandle.WaitAll(System.Threading.WaitHandle[])
+- uid: System.Threading.WaitHandle.WaitAll(System.Threading.WaitHandle[],System.Int32)
+  parent: System.Threading.WaitHandle
+  isExternal: true
+  name: "XXX"
+  fullName: System.Threading.WaitHandle.WaitAll(System.Threading.WaitHandle[], System.Int32)
+  fullname.vb: System.Threading.WaitHandle.WaitAll(System.Threading.WaitHandle(), System.Int32)
+  name.vb: WaitAll(WaitHandle(), Int32)
+  spec.csharp:
+  - uid: System.Threading.WaitHandle.WaitAll(System.Threading.WaitHandle[],System.Int32)
+    name: "XXX"
+    fullName: System.Threading.WaitHandle.WaitAll
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Threading.WaitHandle
+    name: "XXX"
+    fullName: System.Threading.WaitHandle
+    isExternal: true
+  - name: 'XXX'
+    fullName: '[]'
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Threading.WaitHandle.WaitAll(System.Threading.WaitHandle[],System.Int32)
+    name: "XXX"
+    fullName: System.Threading.WaitHandle.WaitAll
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Threading.WaitHandle
+    name: "XXX"
+    fullName: System.Threading.WaitHandle
+    isExternal: true
+  - name: "XXX"
+    fullName: ()
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: WaitHandle.WaitAll(WaitHandle[], Int32)
+  nameWithType.vb: WaitHandle.WaitAll(WaitHandle(), Int32)
+  commentId: M:System.Threading.WaitHandle.WaitAll(System.Threading.WaitHandle[],System.Int32)
+- uid: System.Threading.WaitHandle.WaitAll(System.Threading.WaitHandle[],System.TimeSpan)
+  parent: System.Threading.WaitHandle
+  isExternal: true
+  name: "XXX"
+  fullName: System.Threading.WaitHandle.WaitAll(System.Threading.WaitHandle[], System.TimeSpan)
+  fullname.vb: System.Threading.WaitHandle.WaitAll(System.Threading.WaitHandle(), System.TimeSpan)
+  name.vb: WaitAll(WaitHandle(), TimeSpan)
+  spec.csharp:
+  - uid: System.Threading.WaitHandle.WaitAll(System.Threading.WaitHandle[],System.TimeSpan)
+    name: "XXX"
+    fullName: System.Threading.WaitHandle.WaitAll
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Threading.WaitHandle
+    name: "XXX"
+    fullName: System.Threading.WaitHandle
+    isExternal: true
+  - name: 'XXX'
+    fullName: '[]'
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.TimeSpan
+    name: "XXX"
+    fullName: System.TimeSpan
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Threading.WaitHandle.WaitAll(System.Threading.WaitHandle[],System.TimeSpan)
+    name: "XXX"
+    fullName: System.Threading.WaitHandle.WaitAll
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Threading.WaitHandle
+    name: "XXX"
+    fullName: System.Threading.WaitHandle
+    isExternal: true
+  - name: "XXX"
+    fullName: ()
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.TimeSpan
+    name: "XXX"
+    fullName: System.TimeSpan
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: WaitHandle.WaitAll(WaitHandle[], TimeSpan)
+  nameWithType.vb: WaitHandle.WaitAll(WaitHandle(), TimeSpan)
+  commentId: M:System.Threading.WaitHandle.WaitAll(System.Threading.WaitHandle[],System.TimeSpan)
+- uid: System.Threading.WaitHandle.WaitAny(System.Threading.WaitHandle[],System.Int32,System.Boolean)
+  parent: System.Threading.WaitHandle
+  isExternal: true
+  name: "XXX"
+  fullName: System.Threading.WaitHandle.WaitAny(System.Threading.WaitHandle[], System.Int32, System.Boolean)
+  fullname.vb: System.Threading.WaitHandle.WaitAny(System.Threading.WaitHandle(), System.Int32, System.Boolean)
+  name.vb: WaitAny(WaitHandle(), Int32, Boolean)
+  spec.csharp:
+  - uid: System.Threading.WaitHandle.WaitAny(System.Threading.WaitHandle[],System.Int32,System.Boolean)
+    name: "XXX"
+    fullName: System.Threading.WaitHandle.WaitAny
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Threading.WaitHandle
+    name: "XXX"
+    fullName: System.Threading.WaitHandle
+    isExternal: true
+  - name: 'XXX'
+    fullName: '[]'
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Boolean
+    name: "XXX"
+    fullName: System.Boolean
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Threading.WaitHandle.WaitAny(System.Threading.WaitHandle[],System.Int32,System.Boolean)
+    name: "XXX"
+    fullName: System.Threading.WaitHandle.WaitAny
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Threading.WaitHandle
+    name: "XXX"
+    fullName: System.Threading.WaitHandle
+    isExternal: true
+  - name: "XXX"
+    fullName: ()
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Boolean
+    name: "XXX"
+    fullName: System.Boolean
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: WaitHandle.WaitAny(WaitHandle[], Int32, Boolean)
+  nameWithType.vb: WaitHandle.WaitAny(WaitHandle(), Int32, Boolean)
+  commentId: M:System.Threading.WaitHandle.WaitAny(System.Threading.WaitHandle[],System.Int32,System.Boolean)
+- uid: System.Threading.WaitHandle.WaitAny(System.Threading.WaitHandle[],System.TimeSpan,System.Boolean)
+  parent: System.Threading.WaitHandle
+  isExternal: true
+  name: "XXX"
+  fullName: System.Threading.WaitHandle.WaitAny(System.Threading.WaitHandle[], System.TimeSpan, System.Boolean)
+  fullname.vb: System.Threading.WaitHandle.WaitAny(System.Threading.WaitHandle(), System.TimeSpan, System.Boolean)
+  name.vb: WaitAny(WaitHandle(), TimeSpan, Boolean)
+  spec.csharp:
+  - uid: System.Threading.WaitHandle.WaitAny(System.Threading.WaitHandle[],System.TimeSpan,System.Boolean)
+    name: "XXX"
+    fullName: System.Threading.WaitHandle.WaitAny
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Threading.WaitHandle
+    name: "XXX"
+    fullName: System.Threading.WaitHandle
+    isExternal: true
+  - name: 'XXX'
+    fullName: '[]'
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.TimeSpan
+    name: "XXX"
+    fullName: System.TimeSpan
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Boolean
+    name: "XXX"
+    fullName: System.Boolean
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Threading.WaitHandle.WaitAny(System.Threading.WaitHandle[],System.TimeSpan,System.Boolean)
+    name: "XXX"
+    fullName: System.Threading.WaitHandle.WaitAny
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Threading.WaitHandle
+    name: "XXX"
+    fullName: System.Threading.WaitHandle
+    isExternal: true
+  - name: "XXX"
+    fullName: ()
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.TimeSpan
+    name: "XXX"
+    fullName: System.TimeSpan
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Boolean
+    name: "XXX"
+    fullName: System.Boolean
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: WaitHandle.WaitAny(WaitHandle[], TimeSpan, Boolean)
+  nameWithType.vb: WaitHandle.WaitAny(WaitHandle(), TimeSpan, Boolean)
+  commentId: M:System.Threading.WaitHandle.WaitAny(System.Threading.WaitHandle[],System.TimeSpan,System.Boolean)
+- uid: System.Threading.WaitHandle.WaitAny(System.Threading.WaitHandle[],System.TimeSpan)
+  parent: System.Threading.WaitHandle
+  isExternal: true
+  name: "XXX"
+  fullName: System.Threading.WaitHandle.WaitAny(System.Threading.WaitHandle[], System.TimeSpan)
+  fullname.vb: System.Threading.WaitHandle.WaitAny(System.Threading.WaitHandle(), System.TimeSpan)
+  name.vb: WaitAny(WaitHandle(), TimeSpan)
+  spec.csharp:
+  - uid: System.Threading.WaitHandle.WaitAny(System.Threading.WaitHandle[],System.TimeSpan)
+    name: "XXX"
+    fullName: System.Threading.WaitHandle.WaitAny
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Threading.WaitHandle
+    name: "XXX"
+    fullName: System.Threading.WaitHandle
+    isExternal: true
+  - name: 'XXX'
+    fullName: '[]'
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.TimeSpan
+    name: "XXX"
+    fullName: System.TimeSpan
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Threading.WaitHandle.WaitAny(System.Threading.WaitHandle[],System.TimeSpan)
+    name: "XXX"
+    fullName: System.Threading.WaitHandle.WaitAny
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Threading.WaitHandle
+    name: "XXX"
+    fullName: System.Threading.WaitHandle
+    isExternal: true
+  - name: "XXX"
+    fullName: ()
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.TimeSpan
+    name: "XXX"
+    fullName: System.TimeSpan
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: WaitHandle.WaitAny(WaitHandle[], TimeSpan)
+  nameWithType.vb: WaitHandle.WaitAny(WaitHandle(), TimeSpan)
+  commentId: M:System.Threading.WaitHandle.WaitAny(System.Threading.WaitHandle[],System.TimeSpan)
+- uid: System.Threading.WaitHandle.WaitAny(System.Threading.WaitHandle[])
+  parent: System.Threading.WaitHandle
+  isExternal: true
+  name: "XXX"
+  fullName: System.Threading.WaitHandle.WaitAny(System.Threading.WaitHandle[])
+  fullname.vb: System.Threading.WaitHandle.WaitAny(System.Threading.WaitHandle())
+  name.vb: WaitAny(WaitHandle())
+  spec.csharp:
+  - uid: System.Threading.WaitHandle.WaitAny(System.Threading.WaitHandle[])
+    name: "XXX"
+    fullName: System.Threading.WaitHandle.WaitAny
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Threading.WaitHandle
+    name: "XXX"
+    fullName: System.Threading.WaitHandle
+    isExternal: true
+  - name: 'XXX'
+    fullName: '[]'
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Threading.WaitHandle.WaitAny(System.Threading.WaitHandle[])
+    name: "XXX"
+    fullName: System.Threading.WaitHandle.WaitAny
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Threading.WaitHandle
+    name: "XXX"
+    fullName: System.Threading.WaitHandle
+    isExternal: true
+  - name: "XXX"
+    fullName: ()
+  - name: "XXX"
+    fullName: )
+  nameWithType: WaitHandle.WaitAny(WaitHandle[])
+  nameWithType.vb: WaitHandle.WaitAny(WaitHandle())
+  commentId: M:System.Threading.WaitHandle.WaitAny(System.Threading.WaitHandle[])
+- uid: System.Threading.WaitHandle.WaitAny(System.Threading.WaitHandle[],System.Int32)
+  parent: System.Threading.WaitHandle
+  isExternal: true
+  name: "XXX"
+  fullName: System.Threading.WaitHandle.WaitAny(System.Threading.WaitHandle[], System.Int32)
+  fullname.vb: System.Threading.WaitHandle.WaitAny(System.Threading.WaitHandle(), System.Int32)
+  name.vb: WaitAny(WaitHandle(), Int32)
+  spec.csharp:
+  - uid: System.Threading.WaitHandle.WaitAny(System.Threading.WaitHandle[],System.Int32)
+    name: "XXX"
+    fullName: System.Threading.WaitHandle.WaitAny
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Threading.WaitHandle
+    name: "XXX"
+    fullName: System.Threading.WaitHandle
+    isExternal: true
+  - name: 'XXX'
+    fullName: '[]'
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Threading.WaitHandle.WaitAny(System.Threading.WaitHandle[],System.Int32)
+    name: "XXX"
+    fullName: System.Threading.WaitHandle.WaitAny
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Threading.WaitHandle
+    name: "XXX"
+    fullName: System.Threading.WaitHandle
+    isExternal: true
+  - name: "XXX"
+    fullName: ()
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: WaitHandle.WaitAny(WaitHandle[], Int32)
+  nameWithType.vb: WaitHandle.WaitAny(WaitHandle(), Int32)
+  commentId: M:System.Threading.WaitHandle.WaitAny(System.Threading.WaitHandle[],System.Int32)
+- uid: System.Threading.WaitHandle.SignalAndWait(System.Threading.WaitHandle,System.Threading.WaitHandle)
+  parent: System.Threading.WaitHandle
+  isExternal: true
+  name: "XXX"
+  fullName: System.Threading.WaitHandle.SignalAndWait(System.Threading.WaitHandle, System.Threading.WaitHandle)
+  spec.csharp:
+  - uid: System.Threading.WaitHandle.SignalAndWait(System.Threading.WaitHandle,System.Threading.WaitHandle)
+    name: "XXX"
+    fullName: System.Threading.WaitHandle.SignalAndWait
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Threading.WaitHandle
+    name: "XXX"
+    fullName: System.Threading.WaitHandle
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Threading.WaitHandle
+    name: "XXX"
+    fullName: System.Threading.WaitHandle
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Threading.WaitHandle.SignalAndWait(System.Threading.WaitHandle,System.Threading.WaitHandle)
+    name: "XXX"
+    fullName: System.Threading.WaitHandle.SignalAndWait
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Threading.WaitHandle
+    name: "XXX"
+    fullName: System.Threading.WaitHandle
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Threading.WaitHandle
+    name: "XXX"
+    fullName: System.Threading.WaitHandle
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: WaitHandle.SignalAndWait(WaitHandle, WaitHandle)
+  commentId: M:System.Threading.WaitHandle.SignalAndWait(System.Threading.WaitHandle,System.Threading.WaitHandle)
+- uid: System.Threading.WaitHandle.SignalAndWait(System.Threading.WaitHandle,System.Threading.WaitHandle,System.TimeSpan,System.Boolean)
+  parent: System.Threading.WaitHandle
+  isExternal: true
+  name: "XXX"
+  fullName: System.Threading.WaitHandle.SignalAndWait(System.Threading.WaitHandle, System.Threading.WaitHandle, System.TimeSpan, System.Boolean)
+  spec.csharp:
+  - uid: System.Threading.WaitHandle.SignalAndWait(System.Threading.WaitHandle,System.Threading.WaitHandle,System.TimeSpan,System.Boolean)
+    name: "XXX"
+    fullName: System.Threading.WaitHandle.SignalAndWait
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Threading.WaitHandle
+    name: "XXX"
+    fullName: System.Threading.WaitHandle
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Threading.WaitHandle
+    name: "XXX"
+    fullName: System.Threading.WaitHandle
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.TimeSpan
+    name: "XXX"
+    fullName: System.TimeSpan
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Boolean
+    name: "XXX"
+    fullName: System.Boolean
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Threading.WaitHandle.SignalAndWait(System.Threading.WaitHandle,System.Threading.WaitHandle,System.TimeSpan,System.Boolean)
+    name: "XXX"
+    fullName: System.Threading.WaitHandle.SignalAndWait
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Threading.WaitHandle
+    name: "XXX"
+    fullName: System.Threading.WaitHandle
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Threading.WaitHandle
+    name: "XXX"
+    fullName: System.Threading.WaitHandle
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.TimeSpan
+    name: "XXX"
+    fullName: System.TimeSpan
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Boolean
+    name: "XXX"
+    fullName: System.Boolean
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: WaitHandle.SignalAndWait(WaitHandle, WaitHandle, TimeSpan, Boolean)
+  commentId: M:System.Threading.WaitHandle.SignalAndWait(System.Threading.WaitHandle,System.Threading.WaitHandle,System.TimeSpan,System.Boolean)
+- uid: System.Threading.WaitHandle.SignalAndWait(System.Threading.WaitHandle,System.Threading.WaitHandle,System.Int32,System.Boolean)
+  parent: System.Threading.WaitHandle
+  isExternal: true
+  name: "XXX"
+  fullName: System.Threading.WaitHandle.SignalAndWait(System.Threading.WaitHandle, System.Threading.WaitHandle, System.Int32, System.Boolean)
+  spec.csharp:
+  - uid: System.Threading.WaitHandle.SignalAndWait(System.Threading.WaitHandle,System.Threading.WaitHandle,System.Int32,System.Boolean)
+    name: "XXX"
+    fullName: System.Threading.WaitHandle.SignalAndWait
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Threading.WaitHandle
+    name: "XXX"
+    fullName: System.Threading.WaitHandle
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Threading.WaitHandle
+    name: "XXX"
+    fullName: System.Threading.WaitHandle
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Boolean
+    name: "XXX"
+    fullName: System.Boolean
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Threading.WaitHandle.SignalAndWait(System.Threading.WaitHandle,System.Threading.WaitHandle,System.Int32,System.Boolean)
+    name: "XXX"
+    fullName: System.Threading.WaitHandle.SignalAndWait
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Threading.WaitHandle
+    name: "XXX"
+    fullName: System.Threading.WaitHandle
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Threading.WaitHandle
+    name: "XXX"
+    fullName: System.Threading.WaitHandle
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Boolean
+    name: "XXX"
+    fullName: System.Boolean
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: WaitHandle.SignalAndWait(WaitHandle, WaitHandle, Int32, Boolean)
+  commentId: M:System.Threading.WaitHandle.SignalAndWait(System.Threading.WaitHandle,System.Threading.WaitHandle,System.Int32,System.Boolean)
+- uid: System.Threading.WaitHandle.Close
+  parent: System.Threading.WaitHandle
+  isExternal: true
+  name: "XXX"
+  fullName: System.Threading.WaitHandle.Close()
+  spec.csharp:
+  - uid: System.Threading.WaitHandle.Close
+    name: "XXX"
+    fullName: System.Threading.WaitHandle.Close
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Threading.WaitHandle.Close
+    name: "XXX"
+    fullName: System.Threading.WaitHandle.Close
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: WaitHandle.Close()
+  commentId: M:System.Threading.WaitHandle.Close
+- uid: System.Threading.WaitHandle.Dispose(System.Boolean)
+  parent: System.Threading.WaitHandle
+  isExternal: true
+  name: "XXX"
+  fullName: System.Threading.WaitHandle.Dispose(System.Boolean)
+  spec.csharp:
+  - uid: System.Threading.WaitHandle.Dispose(System.Boolean)
+    name: "XXX"
+    fullName: System.Threading.WaitHandle.Dispose
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Boolean
+    name: "XXX"
+    fullName: System.Boolean
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Threading.WaitHandle.Dispose(System.Boolean)
+    name: "XXX"
+    fullName: System.Threading.WaitHandle.Dispose
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Boolean
+    name: "XXX"
+    fullName: System.Boolean
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: WaitHandle.Dispose(Boolean)
+  commentId: M:System.Threading.WaitHandle.Dispose(System.Boolean)
+- uid: System.Threading.WaitHandle.Dispose
+  parent: System.Threading.WaitHandle
+  isExternal: true
+  name: "XXX"
+  fullName: System.Threading.WaitHandle.Dispose()
+  spec.csharp:
+  - uid: System.Threading.WaitHandle.Dispose
+    name: "XXX"
+    fullName: System.Threading.WaitHandle.Dispose
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Threading.WaitHandle.Dispose
+    name: "XXX"
+    fullName: System.Threading.WaitHandle.Dispose
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: WaitHandle.Dispose()
+  commentId: M:System.Threading.WaitHandle.Dispose
+- uid: System.Threading.WaitHandle.Handle
+  parent: System.Threading.WaitHandle
+  isExternal: true
+  name: "XXX"
+  fullName: System.Threading.WaitHandle.Handle
+  nameWithType: WaitHandle.Handle
+  commentId: P:System.Threading.WaitHandle.Handle
+- uid: System.Threading.WaitHandle.SafeWaitHandle
+  parent: System.Threading.WaitHandle
+  isExternal: true
+  name: "XXX"
+  fullName: System.Threading.WaitHandle.SafeWaitHandle
+  nameWithType: WaitHandle.SafeWaitHandle
+  commentId: P:System.Threading.WaitHandle.SafeWaitHandle
+- uid: System.MarshalByRefObject.MemberwiseClone(System.Boolean)
+  parent: System.MarshalByRefObject
+  isExternal: true
+  name: "XXX"
+  fullName: System.MarshalByRefObject.MemberwiseClone(System.Boolean)
+  spec.csharp:
+  - uid: System.MarshalByRefObject.MemberwiseClone(System.Boolean)
+    name: "XXX"
+    fullName: System.MarshalByRefObject.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Boolean
+    name: "XXX"
+    fullName: System.Boolean
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.MarshalByRefObject.MemberwiseClone(System.Boolean)
+    name: "XXX"
+    fullName: System.MarshalByRefObject.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Boolean
+    name: "XXX"
+    fullName: System.Boolean
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: MarshalByRefObject.MemberwiseClone(Boolean)
+  commentId: M:System.MarshalByRefObject.MemberwiseClone(System.Boolean)
+- uid: System.MarshalByRefObject.GetLifetimeService
+  parent: System.MarshalByRefObject
+  isExternal: true
+  name: "XXX"
+  fullName: System.MarshalByRefObject.GetLifetimeService()
+  spec.csharp:
+  - uid: System.MarshalByRefObject.GetLifetimeService
+    name: "XXX"
+    fullName: System.MarshalByRefObject.GetLifetimeService
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.MarshalByRefObject.GetLifetimeService
+    name: "XXX"
+    fullName: System.MarshalByRefObject.GetLifetimeService
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: MarshalByRefObject.GetLifetimeService()
+  commentId: M:System.MarshalByRefObject.GetLifetimeService
+- uid: System.MarshalByRefObject.InitializeLifetimeService
+  parent: System.MarshalByRefObject
+  isExternal: true
+  name: "XXX"
+  fullName: System.MarshalByRefObject.InitializeLifetimeService()
+  spec.csharp:
+  - uid: System.MarshalByRefObject.InitializeLifetimeService
+    name: "XXX"
+    fullName: System.MarshalByRefObject.InitializeLifetimeService
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.MarshalByRefObject.InitializeLifetimeService
+    name: "XXX"
+    fullName: System.MarshalByRefObject.InitializeLifetimeService
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: MarshalByRefObject.InitializeLifetimeService()
+  commentId: M:System.MarshalByRefObject.InitializeLifetimeService
+- uid: System.MarshalByRefObject.CreateObjRef(System.Type)
+  parent: System.MarshalByRefObject
+  isExternal: true
+  name: "XXX"
+  fullName: System.MarshalByRefObject.CreateObjRef(System.Type)
+  spec.csharp:
+  - uid: System.MarshalByRefObject.CreateObjRef(System.Type)
+    name: "XXX"
+    fullName: System.MarshalByRefObject.CreateObjRef
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Type
+    name: "XXX"
+    fullName: System.Type
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.MarshalByRefObject.CreateObjRef(System.Type)
+    name: "XXX"
+    fullName: System.MarshalByRefObject.CreateObjRef
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Type
+    name: "XXX"
+    fullName: System.Type
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: MarshalByRefObject.CreateObjRef(Type)
+  commentId: M:System.MarshalByRefObject.CreateObjRef(System.Type)
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.ToString()
+  commentId: M:System.Object.ToString
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.Equals(Object)
+  commentId: M:System.Object.Equals(System.Object)
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.Equals(Object, Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.GetHashCode()
+  commentId: M:System.Object.GetHashCode
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.GetType()
+  commentId: M:System.Object.GetType
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.MemberwiseClone()
+  commentId: M:System.Object.MemberwiseClone
+- uid: System.Threading.WaitHandle.System.Threading.WaitHandleExtensions.GetSafeWaitHandle
+  parent: System.Threading.WaitHandleExtensions
+  definition: System.Threading.WaitHandleExtensions.GetSafeWaitHandle(System.Threading.WaitHandle)
+  name: "XXX"
+  fullName: System.Threading.WaitHandleExtensions.GetSafeWaitHandle()
+  spec.csharp:
+  - uid: System.Threading.WaitHandleExtensions.GetSafeWaitHandle
+    name: "XXX"
+    fullName: System.Threading.WaitHandleExtensions.GetSafeWaitHandle
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Threading.WaitHandleExtensions.GetSafeWaitHandle
+    name: "XXX"
+    fullName: System.Threading.WaitHandleExtensions.GetSafeWaitHandle
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: WaitHandleExtensions.GetSafeWaitHandle()
+  commentId: M:System.Threading.WaitHandleExtensions.GetSafeWaitHandle(System.Threading.WaitHandle)
+- uid: System.Threading.WaitHandle.System.Threading.WaitHandleExtensions.SetSafeWaitHandle(Microsoft.Win32.SafeHandles.SafeWaitHandle)
+  parent: System.Threading.WaitHandleExtensions
+  definition: System.Threading.WaitHandleExtensions.SetSafeWaitHandle(System.Threading.WaitHandle,Microsoft.Win32.SafeHandles.SafeWaitHandle)
+  name: "XXX"
+  fullName: System.Threading.WaitHandleExtensions.SetSafeWaitHandle(Microsoft.Win32.SafeHandles.SafeWaitHandle)
+  spec.csharp:
+  - uid: System.Threading.WaitHandleExtensions.SetSafeWaitHandle(Microsoft.Win32.SafeHandles.SafeWaitHandle)
+    name: "XXX"
+    fullName: System.Threading.WaitHandleExtensions.SetSafeWaitHandle
+  - name: "XXX"
+    fullName: (
+  - uid: Microsoft.Win32.SafeHandles.SafeWaitHandle
+    name: "XXX"
+    fullName: Microsoft.Win32.SafeHandles.SafeWaitHandle
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Threading.WaitHandleExtensions.SetSafeWaitHandle(Microsoft.Win32.SafeHandles.SafeWaitHandle)
+    name: "XXX"
+    fullName: System.Threading.WaitHandleExtensions.SetSafeWaitHandle
+  - name: "XXX"
+    fullName: (
+  - uid: Microsoft.Win32.SafeHandles.SafeWaitHandle
+    name: "XXX"
+    fullName: Microsoft.Win32.SafeHandles.SafeWaitHandle
+  - name: "XXX"
+    fullName: )
+  nameWithType: WaitHandleExtensions.SetSafeWaitHandle(SafeWaitHandle)
+  commentId: M:System.Threading.WaitHandleExtensions.SetSafeWaitHandle(System.Threading.WaitHandle,Microsoft.Win32.SafeHandles.SafeWaitHandle)
+- uid: System
+  isExternal: false
+  name: "XXX"
+  fullName: System
+  nameWithType: System
+  commentId: N:System
+- uid: System.Threading.WaitHandleExtensions.GetSafeWaitHandle(System.Threading.WaitHandle)
+  isExternal: true
+  name: "XXX"
+  fullName: System.Threading.WaitHandleExtensions.GetSafeWaitHandle(System.Threading.WaitHandle)
+  spec.csharp:
+  - uid: System.Threading.WaitHandleExtensions.GetSafeWaitHandle(System.Threading.WaitHandle)
+    name: "XXX"
+    fullName: System.Threading.WaitHandleExtensions.GetSafeWaitHandle
+  - name: "XXX"
+    fullName: (
+  - uid: System.Threading.WaitHandle
+    name: "XXX"
+    fullName: System.Threading.WaitHandle
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Threading.WaitHandleExtensions.GetSafeWaitHandle(System.Threading.WaitHandle)
+    name: "XXX"
+    fullName: System.Threading.WaitHandleExtensions.GetSafeWaitHandle
+  - name: "XXX"
+    fullName: (
+  - uid: System.Threading.WaitHandle
+    name: "XXX"
+    fullName: System.Threading.WaitHandle
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: WaitHandleExtensions.GetSafeWaitHandle(WaitHandle)
+  commentId: M:System.Threading.WaitHandleExtensions.GetSafeWaitHandle(System.Threading.WaitHandle)
+- uid: System.Threading.WaitHandleExtensions
+  parent: System.Threading
+  isExternal: false
+  name: "XXX"
+  fullName: System.Threading.WaitHandleExtensions
+  nameWithType: WaitHandleExtensions
+  commentId: T:System.Threading.WaitHandleExtensions
+- uid: System.Threading.WaitHandleExtensions.SetSafeWaitHandle(System.Threading.WaitHandle,Microsoft.Win32.SafeHandles.SafeWaitHandle)
+  isExternal: true
+  name: "XXX"
+  fullName: System.Threading.WaitHandleExtensions.SetSafeWaitHandle(System.Threading.WaitHandle, Microsoft.Win32.SafeHandles.SafeWaitHandle)
+  spec.csharp:
+  - uid: System.Threading.WaitHandleExtensions.SetSafeWaitHandle(System.Threading.WaitHandle,Microsoft.Win32.SafeHandles.SafeWaitHandle)
+    name: "XXX"
+    fullName: System.Threading.WaitHandleExtensions.SetSafeWaitHandle
+  - name: "XXX"
+    fullName: (
+  - uid: System.Threading.WaitHandle
+    name: "XXX"
+    fullName: System.Threading.WaitHandle
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: Microsoft.Win32.SafeHandles.SafeWaitHandle
+    name: "XXX"
+    fullName: Microsoft.Win32.SafeHandles.SafeWaitHandle
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Threading.WaitHandleExtensions.SetSafeWaitHandle(System.Threading.WaitHandle,Microsoft.Win32.SafeHandles.SafeWaitHandle)
+    name: "XXX"
+    fullName: System.Threading.WaitHandleExtensions.SetSafeWaitHandle
+  - name: "XXX"
+    fullName: (
+  - uid: System.Threading.WaitHandle
+    name: "XXX"
+    fullName: System.Threading.WaitHandle
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: Microsoft.Win32.SafeHandles.SafeWaitHandle
+    name: "XXX"
+    fullName: Microsoft.Win32.SafeHandles.SafeWaitHandle
+  - name: "XXX"
+    fullName: )
+  nameWithType: WaitHandleExtensions.SetSafeWaitHandle(WaitHandle, SafeWaitHandle)
+  commentId: M:System.Threading.WaitHandleExtensions.SetSafeWaitHandle(System.Threading.WaitHandle,Microsoft.Win32.SafeHandles.SafeWaitHandle)
+- uid: System.Int32
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Int32
+  nameWithType: Int32
+  commentId: T:System.Int32
+- uid: System.String
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.String
+  nameWithType: String
+  commentId: T:System.String
+- uid: System.Boolean
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Boolean
+  nameWithType: Boolean
+  commentId: T:System.Boolean
+- uid: System.Threading.Semaphore
+  parent: System.Threading
+  isExternal: false
+  name: "XXX"
+  fullName: System.Threading.Semaphore
+  nameWithType: Semaphore
+  commentId: T:System.Threading.Semaphore
+- uid: System.ArgumentException
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentException
+  nameWithType: ArgumentException
+  commentId: T:System.ArgumentException
+- uid: System.ArgumentOutOfRangeException
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentOutOfRangeException
+  nameWithType: ArgumentOutOfRangeException
+  commentId: T:System.ArgumentOutOfRangeException
+- uid: System.IO.IOException
+  parent: System.IO
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.IOException
+  nameWithType: IOException
+  commentId: T:System.IO.IOException
+- uid: System.UnauthorizedAccessException
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.UnauthorizedAccessException
+  nameWithType: UnauthorizedAccessException
+  commentId: T:System.UnauthorizedAccessException
+- uid: System.Threading.WaitHandleCannotBeOpenedException
+  isExternal: false
+  name: "XXX"
+  fullName: System.Threading.WaitHandleCannotBeOpenedException
+  nameWithType: WaitHandleCannotBeOpenedException
+  commentId: T:System.Threading.WaitHandleCannotBeOpenedException
+- uid: System.ArgumentNullException
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentNullException
+  nameWithType: ArgumentNullException
+  commentId: T:System.ArgumentNullException
+- uid: System.Threading.SemaphoreFullException
+  isExternal: false
+  name: "XXX"
+  fullName: System.Threading.SemaphoreFullException
+  nameWithType: SemaphoreFullException
+  commentId: T:System.Threading.SemaphoreFullException

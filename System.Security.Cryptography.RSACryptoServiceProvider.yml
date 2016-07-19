@@ -1,0 +1,3131 @@
+items:
+- uid: System.Security.Cryptography.RSACryptoServiceProvider
+  commentId: T:System.Security.Cryptography.RSACryptoServiceProvider
+  id: RSACryptoServiceProvider
+  parent: System.Security.Cryptography
+  children:
+  - System.Security.Cryptography.RSACryptoServiceProvider.#ctor
+  - System.Security.Cryptography.RSACryptoServiceProvider.#ctor(System.Int32)
+  - System.Security.Cryptography.RSACryptoServiceProvider.#ctor(System.Int32,System.Security.Cryptography.CspParameters)
+  - System.Security.Cryptography.RSACryptoServiceProvider.#ctor(System.Security.Cryptography.CspParameters)
+  - System.Security.Cryptography.RSACryptoServiceProvider.CspKeyContainerInfo
+  - System.Security.Cryptography.RSACryptoServiceProvider.Decrypt(System.Byte[],System.Boolean)
+  - System.Security.Cryptography.RSACryptoServiceProvider.Decrypt(System.Byte[],System.Security.Cryptography.RSAEncryptionPadding)
+  - System.Security.Cryptography.RSACryptoServiceProvider.Dispose(System.Boolean)
+  - System.Security.Cryptography.RSACryptoServiceProvider.Encrypt(System.Byte[],System.Boolean)
+  - System.Security.Cryptography.RSACryptoServiceProvider.Encrypt(System.Byte[],System.Security.Cryptography.RSAEncryptionPadding)
+  - System.Security.Cryptography.RSACryptoServiceProvider.ExportCspBlob(System.Boolean)
+  - System.Security.Cryptography.RSACryptoServiceProvider.ExportParameters(System.Boolean)
+  - System.Security.Cryptography.RSACryptoServiceProvider.HashData(System.Byte[],System.Int32,System.Int32,System.Security.Cryptography.HashAlgorithmName)
+  - System.Security.Cryptography.RSACryptoServiceProvider.HashData(System.IO.Stream,System.Security.Cryptography.HashAlgorithmName)
+  - System.Security.Cryptography.RSACryptoServiceProvider.ImportCspBlob(System.Byte[])
+  - System.Security.Cryptography.RSACryptoServiceProvider.ImportParameters(System.Security.Cryptography.RSAParameters)
+  - System.Security.Cryptography.RSACryptoServiceProvider.KeySize
+  - System.Security.Cryptography.RSACryptoServiceProvider.LegalKeySizes
+  - System.Security.Cryptography.RSACryptoServiceProvider.PersistKeyInCsp
+  - System.Security.Cryptography.RSACryptoServiceProvider.PublicOnly
+  - System.Security.Cryptography.RSACryptoServiceProvider.SignData(System.Byte[],System.Int32,System.Int32,System.Object)
+  - System.Security.Cryptography.RSACryptoServiceProvider.SignData(System.Byte[],System.Object)
+  - System.Security.Cryptography.RSACryptoServiceProvider.SignData(System.IO.Stream,System.Object)
+  - System.Security.Cryptography.RSACryptoServiceProvider.SignHash(System.Byte[],System.Security.Cryptography.HashAlgorithmName,System.Security.Cryptography.RSASignaturePadding)
+  - System.Security.Cryptography.RSACryptoServiceProvider.SignHash(System.Byte[],System.String)
+  - System.Security.Cryptography.RSACryptoServiceProvider.UseMachineKeyStore
+  - System.Security.Cryptography.RSACryptoServiceProvider.VerifyData(System.Byte[],System.Object,System.Byte[])
+  - System.Security.Cryptography.RSACryptoServiceProvider.VerifyHash(System.Byte[],System.Byte[],System.Security.Cryptography.HashAlgorithmName,System.Security.Cryptography.RSASignaturePadding)
+  - System.Security.Cryptography.RSACryptoServiceProvider.VerifyHash(System.Byte[],System.String,System.Byte[])
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.Cryptography.RSACryptoServiceProvider
+  type: Class
+  source:
+    remote:
+      path: src/System.Security.Cryptography.Csp/ref/System.Security.Cryptography.Csp.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: RSACryptoServiceProvider
+    path: src/System.Security.Cryptography.Csp/ref/System.Security.Cryptography.Csp.cs
+    startLine: 63
+  assemblies:
+  - System.Security.Cryptography.Csp
+  namespace: System.Security.Cryptography
+  summary: "\n<p>Performs asymmetric encryption and decryption using the implementation of the <xref href=\"System.Security.Cryptography.RSA\" data-throw-if-not-resolved=\"false\"></xref> algorithm provided by the cryptographic service provider (CSP). This class cannot be inherited.</p>\n"
+  syntax:
+    content: 'public sealed class RSACryptoServiceProvider : RSA, IDisposable, ICspAsymmetricAlgorithm'
+    content.vb: >-
+      Public NotInheritable Class RSACryptoServiceProvider
+          Inherits RSA
+          Implements IDisposable, ICspAsymmetricAlgorithm
+  inheritance:
+  - System.Object
+  - System.Security.Cryptography.AsymmetricAlgorithm
+  - System.Security.Cryptography.RSA
+  implements:
+  - System.IDisposable
+  - System.Security.Cryptography.ICspAsymmetricAlgorithm
+  inheritedMembers:
+  - System.Security.Cryptography.RSA.Create
+  - System.Security.Cryptography.RSA.Create(System.String)
+  - System.Security.Cryptography.RSA.SignData(System.Byte[],System.Security.Cryptography.HashAlgorithmName,System.Security.Cryptography.RSASignaturePadding)
+  - System.Security.Cryptography.RSA.SignData(System.Byte[],System.Int32,System.Int32,System.Security.Cryptography.HashAlgorithmName,System.Security.Cryptography.RSASignaturePadding)
+  - System.Security.Cryptography.RSA.SignData(System.IO.Stream,System.Security.Cryptography.HashAlgorithmName,System.Security.Cryptography.RSASignaturePadding)
+  - System.Security.Cryptography.RSA.VerifyData(System.Byte[],System.Byte[],System.Security.Cryptography.HashAlgorithmName,System.Security.Cryptography.RSASignaturePadding)
+  - System.Security.Cryptography.RSA.VerifyData(System.Byte[],System.Int32,System.Int32,System.Byte[],System.Security.Cryptography.HashAlgorithmName,System.Security.Cryptography.RSASignaturePadding)
+  - System.Security.Cryptography.RSA.VerifyData(System.IO.Stream,System.Byte[],System.Security.Cryptography.HashAlgorithmName,System.Security.Cryptography.RSASignaturePadding)
+  - System.Security.Cryptography.RSA.DecryptValue(System.Byte[])
+  - System.Security.Cryptography.RSA.EncryptValue(System.Byte[])
+  - System.Security.Cryptography.RSA.FromXmlString(System.String)
+  - System.Security.Cryptography.RSA.ToXmlString(System.Boolean)
+  - System.Security.Cryptography.RSA.KeyExchangeAlgorithm
+  - System.Security.Cryptography.RSA.SignatureAlgorithm
+  - System.Security.Cryptography.AsymmetricAlgorithm.KeySizeValue
+  - System.Security.Cryptography.AsymmetricAlgorithm.LegalKeySizesValue
+  - System.Security.Cryptography.AsymmetricAlgorithm.Dispose
+  - System.Security.Cryptography.AsymmetricAlgorithm.Clear
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+  nameWithType: RSACryptoServiceProvider
+- uid: System.Security.Cryptography.RSACryptoServiceProvider.#ctor
+  commentId: M:System.Security.Cryptography.RSACryptoServiceProvider.#ctor
+  id: '#ctor'
+  parent: System.Security.Cryptography.RSACryptoServiceProvider
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.Cryptography.RSACryptoServiceProvider.RSACryptoServiceProvider()
+  type: Constructor
+  source:
+    remote:
+      path: src/System.Security.Cryptography.Csp/ref/System.Security.Cryptography.Csp.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: .ctor
+    path: src/System.Security.Cryptography.Csp/ref/System.Security.Cryptography.Csp.cs
+    startLine: 65
+  assemblies:
+  - System.Security.Cryptography.Csp
+  namespace: System.Security.Cryptography
+  summary: "\n<p>Initializes a new instance of the <xref href=\"System.Security.Cryptography.RSACryptoServiceProvider\" data-throw-if-not-resolved=\"false\"></xref> class using the default key.</p>\n"
+  syntax:
+    content: public RSACryptoServiceProvider()
+    content.vb: Public Sub New
+  exceptions:
+  - type: System.Security.Cryptography.CryptographicException
+    commentId: T:System.Security.Cryptography.CryptographicException
+    description: "\n<p>The cryptographic service provider (CSP) cannot be acquired. </p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: RSACryptoServiceProvider.RSACryptoServiceProvider()
+- uid: System.Security.Cryptography.RSACryptoServiceProvider.#ctor(System.Int32)
+  commentId: M:System.Security.Cryptography.RSACryptoServiceProvider.#ctor(System.Int32)
+  id: '#ctor(System.Int32)'
+  parent: System.Security.Cryptography.RSACryptoServiceProvider
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.Cryptography.RSACryptoServiceProvider.RSACryptoServiceProvider(System.Int32)
+  type: Constructor
+  source:
+    remote:
+      path: src/System.Security.Cryptography.Csp/ref/System.Security.Cryptography.Csp.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: .ctor
+    path: src/System.Security.Cryptography.Csp/ref/System.Security.Cryptography.Csp.cs
+    startLine: 66
+  assemblies:
+  - System.Security.Cryptography.Csp
+  namespace: System.Security.Cryptography
+  summary: "\n<p>Initializes a new instance of the <xref href=\"System.Security.Cryptography.RSACryptoServiceProvider\" data-throw-if-not-resolved=\"false\"></xref> class with the specified key size.</p>\n"
+  syntax:
+    content: public RSACryptoServiceProvider(int dwKeySize)
+    content.vb: Public Sub New(dwKeySize As Integer)
+    parameters:
+    - id: dwKeySize
+      type: System.Int32
+      description: "\n<p>The size of the key to use in bits. </p>\n"
+  exceptions:
+  - type: System.Security.Cryptography.CryptographicException
+    commentId: T:System.Security.Cryptography.CryptographicException
+    description: "\n<p>The cryptographic service provider (CSP) cannot be acquired. </p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: RSACryptoServiceProvider.RSACryptoServiceProvider(Int32)
+- uid: System.Security.Cryptography.RSACryptoServiceProvider.#ctor(System.Int32,System.Security.Cryptography.CspParameters)
+  commentId: M:System.Security.Cryptography.RSACryptoServiceProvider.#ctor(System.Int32,System.Security.Cryptography.CspParameters)
+  id: '#ctor(System.Int32,System.Security.Cryptography.CspParameters)'
+  parent: System.Security.Cryptography.RSACryptoServiceProvider
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.Cryptography.RSACryptoServiceProvider.RSACryptoServiceProvider(System.Int32, System.Security.Cryptography.CspParameters)
+  type: Constructor
+  source:
+    remote:
+      path: src/System.Security.Cryptography.Csp/ref/System.Security.Cryptography.Csp.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: .ctor
+    path: src/System.Security.Cryptography.Csp/ref/System.Security.Cryptography.Csp.cs
+    startLine: 67
+  assemblies:
+  - System.Security.Cryptography.Csp
+  namespace: System.Security.Cryptography
+  summary: "\n<p>Initializes a new instance of the <xref href=\"System.Security.Cryptography.RSACryptoServiceProvider\" data-throw-if-not-resolved=\"false\"></xref> class with the specified key size and parameters.</p>\n"
+  syntax:
+    content: public RSACryptoServiceProvider(int dwKeySize, CspParameters parameters)
+    content.vb: Public Sub New(dwKeySize As Integer, parameters As CspParameters)
+    parameters:
+    - id: dwKeySize
+      type: System.Int32
+      description: "\n<p>The size of the key to use in bits. </p>\n"
+    - id: parameters
+      type: System.Security.Cryptography.CspParameters
+      description: "\n<p>The parameters to be passed to the cryptographic service provider (CSP). </p>\n"
+  exceptions:
+  - type: System.Security.Cryptography.CryptographicException
+    commentId: T:System.Security.Cryptography.CryptographicException
+    description: "\n<p>The CSP cannot be acquired.</p>\n<p>-or- </p>\n<p>The key cannot be created. </p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: RSACryptoServiceProvider.RSACryptoServiceProvider(Int32, CspParameters)
+- uid: System.Security.Cryptography.RSACryptoServiceProvider.#ctor(System.Security.Cryptography.CspParameters)
+  commentId: M:System.Security.Cryptography.RSACryptoServiceProvider.#ctor(System.Security.Cryptography.CspParameters)
+  id: '#ctor(System.Security.Cryptography.CspParameters)'
+  parent: System.Security.Cryptography.RSACryptoServiceProvider
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.Cryptography.RSACryptoServiceProvider.RSACryptoServiceProvider(System.Security.Cryptography.CspParameters)
+  type: Constructor
+  source:
+    remote:
+      path: src/System.Security.Cryptography.Csp/ref/System.Security.Cryptography.Csp.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: .ctor
+    path: src/System.Security.Cryptography.Csp/ref/System.Security.Cryptography.Csp.cs
+    startLine: 68
+  assemblies:
+  - System.Security.Cryptography.Csp
+  namespace: System.Security.Cryptography
+  summary: "\n<p>Initializes a new instance of the <xref href=\"System.Security.Cryptography.RSACryptoServiceProvider\" data-throw-if-not-resolved=\"false\"></xref> class with the specified parameters.</p>\n"
+  syntax:
+    content: public RSACryptoServiceProvider(CspParameters parameters)
+    content.vb: Public Sub New(parameters As CspParameters)
+    parameters:
+    - id: parameters
+      type: System.Security.Cryptography.CspParameters
+      description: "\n<p>The parameters to be passed to the cryptographic service provider (CSP). </p>\n"
+  exceptions:
+  - type: System.Security.Cryptography.CryptographicException
+    commentId: T:System.Security.Cryptography.CryptographicException
+    description: "\n<p>The CSP cannot be acquired. </p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: RSACryptoServiceProvider.RSACryptoServiceProvider(CspParameters)
+- uid: System.Security.Cryptography.RSACryptoServiceProvider.CspKeyContainerInfo
+  commentId: P:System.Security.Cryptography.RSACryptoServiceProvider.CspKeyContainerInfo
+  id: CspKeyContainerInfo
+  parent: System.Security.Cryptography.RSACryptoServiceProvider
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.Cryptography.RSACryptoServiceProvider.CspKeyContainerInfo
+  type: Property
+  source:
+    remote:
+      path: src/System.Security.Cryptography.Csp/ref/System.Security.Cryptography.Csp.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: CspKeyContainerInfo
+    path: src/System.Security.Cryptography.Csp/ref/System.Security.Cryptography.Csp.cs
+    startLine: 69
+  assemblies:
+  - System.Security.Cryptography.Csp
+  namespace: System.Security.Cryptography
+  summary: "\n<p>Gets a <xref href=\"System.Security.Cryptography.CspKeyContainerInfo\" data-throw-if-not-resolved=\"false\"></xref> object that describes additional information about a cryptographic key pair. </p>\n"
+  syntax:
+    content: public CspKeyContainerInfo CspKeyContainerInfo { get; }
+    content.vb: Public ReadOnly Property CspKeyContainerInfo As CspKeyContainerInfo
+    parameters: []
+    return:
+      type: System.Security.Cryptography.CspKeyContainerInfo
+      description: "\n<p>A <xref href=\"System.Security.Cryptography.CspKeyContainerInfo\" data-throw-if-not-resolved=\"false\"></xref> object that describes additional information about a cryptographic key pair.</p>\n"
+  implements:
+  - System.Security.Cryptography.ICspAsymmetricAlgorithm.CspKeyContainerInfo
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  nameWithType: RSACryptoServiceProvider.CspKeyContainerInfo
+- uid: System.Security.Cryptography.RSACryptoServiceProvider.KeySize
+  commentId: P:System.Security.Cryptography.RSACryptoServiceProvider.KeySize
+  id: KeySize
+  parent: System.Security.Cryptography.RSACryptoServiceProvider
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.Cryptography.RSACryptoServiceProvider.KeySize
+  type: Property
+  source:
+    remote:
+      path: src/System.Security.Cryptography.Csp/ref/System.Security.Cryptography.Csp.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: KeySize
+    path: src/System.Security.Cryptography.Csp/ref/System.Security.Cryptography.Csp.cs
+    startLine: 70
+  assemblies:
+  - System.Security.Cryptography.Csp
+  namespace: System.Security.Cryptography
+  summary: "\n<p>Gets the size of the current key.</p>\n"
+  syntax:
+    content: public override int KeySize { get; }
+    content.vb: Public Overrides ReadOnly Property KeySize As Integer
+    parameters: []
+    return:
+      type: System.Int32
+      description: "\n<p>The size of the key in bits.</p>\n"
+  overridden: System.Security.Cryptography.AsymmetricAlgorithm.KeySize
+  modifiers.csharp:
+  - public
+  - override
+  - get
+  modifiers.vb:
+  - Public
+  - Overrides
+  - ReadOnly
+  nameWithType: RSACryptoServiceProvider.KeySize
+- uid: System.Security.Cryptography.RSACryptoServiceProvider.PersistKeyInCsp
+  commentId: P:System.Security.Cryptography.RSACryptoServiceProvider.PersistKeyInCsp
+  id: PersistKeyInCsp
+  parent: System.Security.Cryptography.RSACryptoServiceProvider
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.Cryptography.RSACryptoServiceProvider.PersistKeyInCsp
+  type: Property
+  source:
+    remote:
+      path: src/System.Security.Cryptography.Csp/ref/System.Security.Cryptography.Csp.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: PersistKeyInCsp
+    path: src/System.Security.Cryptography.Csp/ref/System.Security.Cryptography.Csp.cs
+    startLine: 71
+  assemblies:
+  - System.Security.Cryptography.Csp
+  namespace: System.Security.Cryptography
+  summary: "\n<p>Gets or sets a value indicating whether the key should be persisted in the cryptographic service provider (CSP).</p>\n"
+  syntax:
+    content: public bool PersistKeyInCsp { get; set; }
+    content.vb: Public Property PersistKeyInCsp As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if the key should be persisted in the CSP; otherwise, <strong>false</strong>.</p>\n"
+  see:
+  - type: System.Security.Permissions.KeyContainerPermissionAccessEntryCollection
+    commentId: T:System.Security.Permissions.KeyContainerPermissionAccessEntryCollection
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  nameWithType: RSACryptoServiceProvider.PersistKeyInCsp
+- uid: System.Security.Cryptography.RSACryptoServiceProvider.PublicOnly
+  commentId: P:System.Security.Cryptography.RSACryptoServiceProvider.PublicOnly
+  id: PublicOnly
+  parent: System.Security.Cryptography.RSACryptoServiceProvider
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.Cryptography.RSACryptoServiceProvider.PublicOnly
+  type: Property
+  source:
+    remote:
+      path: src/System.Security.Cryptography.Csp/ref/System.Security.Cryptography.Csp.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: PublicOnly
+    path: src/System.Security.Cryptography.Csp/ref/System.Security.Cryptography.Csp.cs
+    startLine: 72
+  assemblies:
+  - System.Security.Cryptography.Csp
+  namespace: System.Security.Cryptography
+  summary: "\n<p>Gets a value that indicates whether the <xref href=\"System.Security.Cryptography.RSACryptoServiceProvider\" data-throw-if-not-resolved=\"false\"></xref> object contains only a public key.</p>\n"
+  syntax:
+    content: public bool PublicOnly { get; }
+    content.vb: Public ReadOnly Property PublicOnly As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if the <xref href=\"System.Security.Cryptography.RSACryptoServiceProvider\" data-throw-if-not-resolved=\"false\"></xref> object contains only a public key; otherwise, <strong>false</strong>.</p>\n"
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  nameWithType: RSACryptoServiceProvider.PublicOnly
+- uid: System.Security.Cryptography.RSACryptoServiceProvider.UseMachineKeyStore
+  commentId: P:System.Security.Cryptography.RSACryptoServiceProvider.UseMachineKeyStore
+  id: UseMachineKeyStore
+  parent: System.Security.Cryptography.RSACryptoServiceProvider
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.Cryptography.RSACryptoServiceProvider.UseMachineKeyStore
+  type: Property
+  source:
+    remote:
+      path: src/System.Security.Cryptography.Csp/ref/System.Security.Cryptography.Csp.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: UseMachineKeyStore
+    path: src/System.Security.Cryptography.Csp/ref/System.Security.Cryptography.Csp.cs
+    startLine: 73
+  assemblies:
+  - System.Security.Cryptography.Csp
+  namespace: System.Security.Cryptography
+  summary: "\n<p>Gets or sets a value indicating whether the key should be persisted in the computer's key store instead of the user profile store.</p>\n"
+  syntax:
+    content: public static bool UseMachineKeyStore { get; set; }
+    content.vb: Public Shared Property UseMachineKeyStore As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if the key should be persisted in the computer key store; otherwise, <strong>false</strong>.</p>\n"
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Shared
+  nameWithType: RSACryptoServiceProvider.UseMachineKeyStore
+- uid: System.Security.Cryptography.RSACryptoServiceProvider.Decrypt(System.Byte[],System.Boolean)
+  commentId: M:System.Security.Cryptography.RSACryptoServiceProvider.Decrypt(System.Byte[],System.Boolean)
+  id: Decrypt(System.Byte[],System.Boolean)
+  parent: System.Security.Cryptography.RSACryptoServiceProvider
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.Cryptography.RSACryptoServiceProvider.Decrypt(System.Byte[], System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/System.Security.Cryptography.Csp/ref/System.Security.Cryptography.Csp.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Decrypt
+    path: src/System.Security.Cryptography.Csp/ref/System.Security.Cryptography.Csp.cs
+    startLine: 74
+  assemblies:
+  - System.Security.Cryptography.Csp
+  namespace: System.Security.Cryptography
+  summary: "\n<p>Decrypts data with the <xref href=\"System.Security.Cryptography.RSA\" data-throw-if-not-resolved=\"false\"></xref> algorithm.</p>\n"
+  syntax:
+    content: public byte[] Decrypt(byte[] rgb, bool fOAEP)
+    content.vb: Public Function Decrypt(rgb As Byte(), fOAEP As Boolean) As Byte()
+    parameters:
+    - id: rgb
+      type: System.Byte[]
+      description: "\n<p>The data to be decrypted. </p>\n"
+    - id: fOAEP
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> to perform direct <xref href=\"System.Security.Cryptography.RSA\" data-throw-if-not-resolved=\"false\"></xref> decryption using OAEP padding (only available on a computer running Microsoft Windows XP or later); otherwise, <strong>false</strong> to use PKCS#1 v1.5 padding. </p>\n"
+    return:
+      type: System.Byte[]
+      description: "\n<p>The decrypted data, which is the original plain text before encryption.</p>\n"
+  exceptions:
+  - type: System.Security.Cryptography.CryptographicException
+    commentId: T:System.Security.Cryptography.CryptographicException
+    description: "\n<p>The cryptographic service provider (CSP) cannot be acquired.</p>\n<p>-or- </p>\n<p>The <em>fOAEP</em> parameter is <strong>true</strong> and the length of the <em>rgb</em> parameter is greater than <xref href=\"System.Security.Cryptography.RSACryptoServiceProvider.KeySize\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n<p>-or- </p>\n<p>The <em>fOAEP</em> parameter is <strong>true</strong> and OAEP is not supported. </p>\n<p>-or- </p>\n<p>The key does not match the encrypted data. However, the exception wording may not be accurate. For example, it may say <code>Not enough storage is available to process this command</code>.</p>\n"
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>rgb </em>is <strong>null</strong>.</p>\n"
+  see:
+  - type: System.Security.Permissions.KeyContainerPermissionAccessEntryCollection
+    commentId: T:System.Security.Permissions.KeyContainerPermissionAccessEntryCollection
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: System.Security.Cryptography.RSACryptoServiceProvider.Decrypt(System.Byte(), System.Boolean)
+  name.vb: Decrypt(Byte(), Boolean)
+  nameWithType: RSACryptoServiceProvider.Decrypt(Byte[], Boolean)
+  nameWithType.vb: RSACryptoServiceProvider.Decrypt(Byte(), Boolean)
+- uid: System.Security.Cryptography.RSACryptoServiceProvider.Decrypt(System.Byte[],System.Security.Cryptography.RSAEncryptionPadding)
+  commentId: M:System.Security.Cryptography.RSACryptoServiceProvider.Decrypt(System.Byte[],System.Security.Cryptography.RSAEncryptionPadding)
+  id: Decrypt(System.Byte[],System.Security.Cryptography.RSAEncryptionPadding)
+  parent: System.Security.Cryptography.RSACryptoServiceProvider
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.Cryptography.RSACryptoServiceProvider.Decrypt(System.Byte[], System.Security.Cryptography.RSAEncryptionPadding)
+  type: Method
+  source:
+    remote:
+      path: src/System.Security.Cryptography.Csp/ref/System.Security.Cryptography.Csp.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Decrypt
+    path: src/System.Security.Cryptography.Csp/ref/System.Security.Cryptography.Csp.cs
+    startLine: 75
+  assemblies:
+  - System.Security.Cryptography.Csp
+  namespace: System.Security.Cryptography
+  summary: "\n<p>Decrypts data that was previously encrypted with the <xref href=\"System.Security.Cryptography.RSA\" data-throw-if-not-resolved=\"false\"></xref> algorithm by using the specified padding. </p>\n"
+  syntax:
+    content: public override byte[] Decrypt(byte[] data, RSAEncryptionPadding padding)
+    content.vb: Public Overrides Function Decrypt(data As Byte(), padding As RSAEncryptionPadding) As Byte()
+    parameters:
+    - id: data
+      type: System.Byte[]
+      description: "\n<p>The data to decrypt. </p>\n"
+    - id: padding
+      type: System.Security.Cryptography.RSAEncryptionPadding
+      description: "\n<p>The padding. </p>\n"
+    return:
+      type: System.Byte[]
+      description: "\n<p>The decrypted data. </p>\n"
+  overridden: System.Security.Cryptography.RSA.Decrypt(System.Byte[],System.Security.Cryptography.RSAEncryptionPadding)
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>data</em> is <strong>null</strong>. </p>\n<p>-or-</p>\n<p>\n<em>padding</em> is <strong>null</strong>. </p>\n"
+  - type: System.Security.Cryptography.CryptographicException
+    commentId: T:System.Security.Cryptography.CryptographicException
+    description: "\n<p>The padding mode is not supported.</p>\n"
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  fullName.vb: System.Security.Cryptography.RSACryptoServiceProvider.Decrypt(System.Byte(), System.Security.Cryptography.RSAEncryptionPadding)
+  name.vb: Decrypt(Byte(), RSAEncryptionPadding)
+  nameWithType: RSACryptoServiceProvider.Decrypt(Byte[], RSAEncryptionPadding)
+  nameWithType.vb: RSACryptoServiceProvider.Decrypt(Byte(), RSAEncryptionPadding)
+- uid: System.Security.Cryptography.RSACryptoServiceProvider.Dispose(System.Boolean)
+  commentId: M:System.Security.Cryptography.RSACryptoServiceProvider.Dispose(System.Boolean)
+  id: Dispose(System.Boolean)
+  parent: System.Security.Cryptography.RSACryptoServiceProvider
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.Cryptography.RSACryptoServiceProvider.Dispose(System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/System.Security.Cryptography.Csp/ref/System.Security.Cryptography.Csp.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Dispose
+    path: src/System.Security.Cryptography.Csp/ref/System.Security.Cryptography.Csp.cs
+    startLine: 76
+  assemblies:
+  - System.Security.Cryptography.Csp
+  namespace: System.Security.Cryptography
+  syntax:
+    content: protected override void Dispose(bool disposing)
+    content.vb: Protected Overrides Sub Dispose(disposing As Boolean)
+    parameters:
+    - id: disposing
+      type: System.Boolean
+  overridden: System.Security.Cryptography.AsymmetricAlgorithm.Dispose(System.Boolean)
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+  nameWithType: RSACryptoServiceProvider.Dispose(Boolean)
+- uid: System.Security.Cryptography.RSACryptoServiceProvider.Encrypt(System.Byte[],System.Boolean)
+  commentId: M:System.Security.Cryptography.RSACryptoServiceProvider.Encrypt(System.Byte[],System.Boolean)
+  id: Encrypt(System.Byte[],System.Boolean)
+  parent: System.Security.Cryptography.RSACryptoServiceProvider
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.Cryptography.RSACryptoServiceProvider.Encrypt(System.Byte[], System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/System.Security.Cryptography.Csp/ref/System.Security.Cryptography.Csp.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Encrypt
+    path: src/System.Security.Cryptography.Csp/ref/System.Security.Cryptography.Csp.cs
+    startLine: 77
+  assemblies:
+  - System.Security.Cryptography.Csp
+  namespace: System.Security.Cryptography
+  summary: "\n<p>Encrypts data with the <xref href=\"System.Security.Cryptography.RSA\" data-throw-if-not-resolved=\"false\"></xref> algorithm.</p>\n"
+  syntax:
+    content: public byte[] Encrypt(byte[] rgb, bool fOAEP)
+    content.vb: Public Function Encrypt(rgb As Byte(), fOAEP As Boolean) As Byte()
+    parameters:
+    - id: rgb
+      type: System.Byte[]
+      description: "\n<p>The data to be encrypted. </p>\n"
+    - id: fOAEP
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> to perform direct <xref href=\"System.Security.Cryptography.RSA\" data-throw-if-not-resolved=\"false\"></xref> encryption using OAEP padding (only available on a computer running Windows XP or later); otherwise, <strong>false</strong> to use PKCS#1 v1.5 padding. </p>\n"
+    return:
+      type: System.Byte[]
+      description: "\n<p>The encrypted data.</p>\n"
+  exceptions:
+  - type: System.Security.Cryptography.CryptographicException
+    commentId: T:System.Security.Cryptography.CryptographicException
+    description: "\n<p>The cryptographic service provider (CSP) cannot be acquired.</p>\n<p>-or- </p>\n<p>The length of the <em>rgb</em> parameter is greater than the maximum allowed length.</p>\n<p>-or- </p>\n<p>The <em>fOAEP</em> parameter is <strong>true</strong> and OAEP padding is not supported. </p>\n"
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>rgb </em>is <strong>null</strong>.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: System.Security.Cryptography.RSACryptoServiceProvider.Encrypt(System.Byte(), System.Boolean)
+  name.vb: Encrypt(Byte(), Boolean)
+  nameWithType: RSACryptoServiceProvider.Encrypt(Byte[], Boolean)
+  nameWithType.vb: RSACryptoServiceProvider.Encrypt(Byte(), Boolean)
+- uid: System.Security.Cryptography.RSACryptoServiceProvider.Encrypt(System.Byte[],System.Security.Cryptography.RSAEncryptionPadding)
+  commentId: M:System.Security.Cryptography.RSACryptoServiceProvider.Encrypt(System.Byte[],System.Security.Cryptography.RSAEncryptionPadding)
+  id: Encrypt(System.Byte[],System.Security.Cryptography.RSAEncryptionPadding)
+  parent: System.Security.Cryptography.RSACryptoServiceProvider
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.Cryptography.RSACryptoServiceProvider.Encrypt(System.Byte[], System.Security.Cryptography.RSAEncryptionPadding)
+  type: Method
+  source:
+    remote:
+      path: src/System.Security.Cryptography.Csp/ref/System.Security.Cryptography.Csp.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Encrypt
+    path: src/System.Security.Cryptography.Csp/ref/System.Security.Cryptography.Csp.cs
+    startLine: 78
+  assemblies:
+  - System.Security.Cryptography.Csp
+  namespace: System.Security.Cryptography
+  summary: "\n<p>Encrypts data with the <xref href=\"System.Security.Cryptography.RSA\" data-throw-if-not-resolved=\"false\"></xref> algorithm using the specified padding. </p>\n"
+  syntax:
+    content: public override byte[] Encrypt(byte[] data, RSAEncryptionPadding padding)
+    content.vb: Public Overrides Function Encrypt(data As Byte(), padding As RSAEncryptionPadding) As Byte()
+    parameters:
+    - id: data
+      type: System.Byte[]
+      description: "\n<p>The data to encrypt. </p>\n"
+    - id: padding
+      type: System.Security.Cryptography.RSAEncryptionPadding
+      description: "\n<p>The padding. </p>\n"
+    return:
+      type: System.Byte[]
+      description: "\n<p>The encrypted data. </p>\n"
+  overridden: System.Security.Cryptography.RSA.Encrypt(System.Byte[],System.Security.Cryptography.RSAEncryptionPadding)
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>data</em> is <strong>null</strong>. </p>\n<p>-or-</p>\n<p>\n<em>padding</em> is <strong>null</strong>. </p>\n"
+  - type: System.Security.Cryptography.CryptographicException
+    commentId: T:System.Security.Cryptography.CryptographicException
+    description: "\n<p>The padding mode is not supported.</p>\n"
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  fullName.vb: System.Security.Cryptography.RSACryptoServiceProvider.Encrypt(System.Byte(), System.Security.Cryptography.RSAEncryptionPadding)
+  name.vb: Encrypt(Byte(), RSAEncryptionPadding)
+  nameWithType: RSACryptoServiceProvider.Encrypt(Byte[], RSAEncryptionPadding)
+  nameWithType.vb: RSACryptoServiceProvider.Encrypt(Byte(), RSAEncryptionPadding)
+- uid: System.Security.Cryptography.RSACryptoServiceProvider.ExportCspBlob(System.Boolean)
+  commentId: M:System.Security.Cryptography.RSACryptoServiceProvider.ExportCspBlob(System.Boolean)
+  id: ExportCspBlob(System.Boolean)
+  parent: System.Security.Cryptography.RSACryptoServiceProvider
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.Cryptography.RSACryptoServiceProvider.ExportCspBlob(System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/System.Security.Cryptography.Csp/ref/System.Security.Cryptography.Csp.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: ExportCspBlob
+    path: src/System.Security.Cryptography.Csp/ref/System.Security.Cryptography.Csp.cs
+    startLine: 79
+  assemblies:
+  - System.Security.Cryptography.Csp
+  namespace: System.Security.Cryptography
+  summary: "\n<p>Exports a blob containing the key information associated with an <xref href=\"System.Security.Cryptography.RSACryptoServiceProvider\" data-throw-if-not-resolved=\"false\"></xref> object.  </p>\n"
+  syntax:
+    content: public byte[] ExportCspBlob(bool includePrivateParameters)
+    content.vb: Public Function ExportCspBlob(includePrivateParameters As Boolean) As Byte()
+    parameters:
+    - id: includePrivateParameters
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> to include the private key; otherwise, <strong>false</strong>.</p>\n"
+    return:
+      type: System.Byte[]
+      description: "\n<p>A byte array containing the key information associated with an <xref href=\"System.Security.Cryptography.RSACryptoServiceProvider\" data-throw-if-not-resolved=\"false\"></xref> object.</p>\n"
+  see:
+  - type: System.Security.Permissions.KeyContainerPermissionAccessEntryCollection
+    commentId: T:System.Security.Permissions.KeyContainerPermissionAccessEntryCollection
+  implements:
+  - System.Security.Cryptography.ICspAsymmetricAlgorithm.ExportCspBlob(System.Boolean)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: RSACryptoServiceProvider.ExportCspBlob(Boolean)
+- uid: System.Security.Cryptography.RSACryptoServiceProvider.ExportParameters(System.Boolean)
+  commentId: M:System.Security.Cryptography.RSACryptoServiceProvider.ExportParameters(System.Boolean)
+  id: ExportParameters(System.Boolean)
+  parent: System.Security.Cryptography.RSACryptoServiceProvider
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.Cryptography.RSACryptoServiceProvider.ExportParameters(System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/System.Security.Cryptography.Csp/ref/System.Security.Cryptography.Csp.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: ExportParameters
+    path: src/System.Security.Cryptography.Csp/ref/System.Security.Cryptography.Csp.cs
+    startLine: 80
+  assemblies:
+  - System.Security.Cryptography.Csp
+  namespace: System.Security.Cryptography
+  summary: "\n<p>Exports the <xref href=\"System.Security.Cryptography.RSAParameters\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  syntax:
+    content: public override RSAParameters ExportParameters(bool includePrivateParameters)
+    content.vb: Public Overrides Function ExportParameters(includePrivateParameters As Boolean) As RSAParameters
+    parameters:
+    - id: includePrivateParameters
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> to include private parameters; otherwise, <strong>false</strong>. </p>\n"
+    return:
+      type: System.Security.Cryptography.RSAParameters
+      description: "\n<p>The parameters for <xref href=\"System.Security.Cryptography.RSA\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  overridden: System.Security.Cryptography.RSA.ExportParameters(System.Boolean)
+  exceptions:
+  - type: System.Security.Cryptography.CryptographicException
+    commentId: T:System.Security.Cryptography.CryptographicException
+    description: "\n<p>The key cannot be exported. </p>\n"
+  see:
+  - type: System.Security.Permissions.KeyContainerPermissionAccessEntryCollection
+    commentId: T:System.Security.Permissions.KeyContainerPermissionAccessEntryCollection
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  nameWithType: RSACryptoServiceProvider.ExportParameters(Boolean)
+- uid: System.Security.Cryptography.RSACryptoServiceProvider.HashData(System.Byte[],System.Int32,System.Int32,System.Security.Cryptography.HashAlgorithmName)
+  commentId: M:System.Security.Cryptography.RSACryptoServiceProvider.HashData(System.Byte[],System.Int32,System.Int32,System.Security.Cryptography.HashAlgorithmName)
+  id: HashData(System.Byte[],System.Int32,System.Int32,System.Security.Cryptography.HashAlgorithmName)
+  parent: System.Security.Cryptography.RSACryptoServiceProvider
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.Cryptography.RSACryptoServiceProvider.HashData(System.Byte[], System.Int32, System.Int32, System.Security.Cryptography.HashAlgorithmName)
+  type: Method
+  source:
+    remote:
+      path: src/System.Security.Cryptography.Csp/ref/System.Security.Cryptography.Csp.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: HashData
+    path: src/System.Security.Cryptography.Csp/ref/System.Security.Cryptography.Csp.cs
+    startLine: 81
+  assemblies:
+  - System.Security.Cryptography.Csp
+  namespace: System.Security.Cryptography
+  syntax:
+    content: protected override byte[] HashData(byte[] data, int offset, int count, HashAlgorithmName hashAlgorithm)
+    content.vb: Protected Overrides Function HashData(data As Byte(), offset As Integer, count As Integer, hashAlgorithm As HashAlgorithmName) As Byte()
+    parameters:
+    - id: data
+      type: System.Byte[]
+    - id: offset
+      type: System.Int32
+    - id: count
+      type: System.Int32
+    - id: hashAlgorithm
+      type: System.Security.Cryptography.HashAlgorithmName
+    return:
+      type: System.Byte[]
+  overridden: System.Security.Cryptography.RSA.HashData(System.Byte[],System.Int32,System.Int32,System.Security.Cryptography.HashAlgorithmName)
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+  fullName.vb: System.Security.Cryptography.RSACryptoServiceProvider.HashData(System.Byte(), System.Int32, System.Int32, System.Security.Cryptography.HashAlgorithmName)
+  name.vb: HashData(Byte(), Int32, Int32, HashAlgorithmName)
+  nameWithType: RSACryptoServiceProvider.HashData(Byte[], Int32, Int32, HashAlgorithmName)
+  nameWithType.vb: RSACryptoServiceProvider.HashData(Byte(), Int32, Int32, HashAlgorithmName)
+- uid: System.Security.Cryptography.RSACryptoServiceProvider.HashData(System.IO.Stream,System.Security.Cryptography.HashAlgorithmName)
+  commentId: M:System.Security.Cryptography.RSACryptoServiceProvider.HashData(System.IO.Stream,System.Security.Cryptography.HashAlgorithmName)
+  id: HashData(System.IO.Stream,System.Security.Cryptography.HashAlgorithmName)
+  parent: System.Security.Cryptography.RSACryptoServiceProvider
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.Cryptography.RSACryptoServiceProvider.HashData(System.IO.Stream, System.Security.Cryptography.HashAlgorithmName)
+  type: Method
+  source:
+    remote:
+      path: src/System.Security.Cryptography.Csp/ref/System.Security.Cryptography.Csp.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: HashData
+    path: src/System.Security.Cryptography.Csp/ref/System.Security.Cryptography.Csp.cs
+    startLine: 82
+  assemblies:
+  - System.Security.Cryptography.Csp
+  namespace: System.Security.Cryptography
+  syntax:
+    content: protected override byte[] HashData(Stream data, HashAlgorithmName hashAlgorithm)
+    content.vb: Protected Overrides Function HashData(data As Stream, hashAlgorithm As HashAlgorithmName) As Byte()
+    parameters:
+    - id: data
+      type: System.IO.Stream
+    - id: hashAlgorithm
+      type: System.Security.Cryptography.HashAlgorithmName
+    return:
+      type: System.Byte[]
+  overridden: System.Security.Cryptography.RSA.HashData(System.IO.Stream,System.Security.Cryptography.HashAlgorithmName)
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+  nameWithType: RSACryptoServiceProvider.HashData(Stream, HashAlgorithmName)
+- uid: System.Security.Cryptography.RSACryptoServiceProvider.ImportCspBlob(System.Byte[])
+  commentId: M:System.Security.Cryptography.RSACryptoServiceProvider.ImportCspBlob(System.Byte[])
+  id: ImportCspBlob(System.Byte[])
+  parent: System.Security.Cryptography.RSACryptoServiceProvider
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.Cryptography.RSACryptoServiceProvider.ImportCspBlob(System.Byte[])
+  type: Method
+  source:
+    remote:
+      path: src/System.Security.Cryptography.Csp/ref/System.Security.Cryptography.Csp.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: ImportCspBlob
+    path: src/System.Security.Cryptography.Csp/ref/System.Security.Cryptography.Csp.cs
+    startLine: 83
+  assemblies:
+  - System.Security.Cryptography.Csp
+  namespace: System.Security.Cryptography
+  summary: "\n<p>Imports a blob that represents RSA key information.  </p>\n"
+  syntax:
+    content: public void ImportCspBlob(byte[] keyBlob)
+    content.vb: Public Sub ImportCspBlob(keyBlob As Byte())
+    parameters:
+    - id: keyBlob
+      type: System.Byte[]
+      description: "\n<p>A byte array that represents an RSA key blob.</p>\n"
+  see:
+  - type: System.Security.Permissions.KeyContainerPermissionAccessEntryCollection
+    commentId: T:System.Security.Permissions.KeyContainerPermissionAccessEntryCollection
+  implements:
+  - System.Security.Cryptography.ICspAsymmetricAlgorithm.ImportCspBlob(System.Byte[])
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: System.Security.Cryptography.RSACryptoServiceProvider.ImportCspBlob(System.Byte())
+  name.vb: ImportCspBlob(Byte())
+  nameWithType: RSACryptoServiceProvider.ImportCspBlob(Byte[])
+  nameWithType.vb: RSACryptoServiceProvider.ImportCspBlob(Byte())
+- uid: System.Security.Cryptography.RSACryptoServiceProvider.ImportParameters(System.Security.Cryptography.RSAParameters)
+  commentId: M:System.Security.Cryptography.RSACryptoServiceProvider.ImportParameters(System.Security.Cryptography.RSAParameters)
+  id: ImportParameters(System.Security.Cryptography.RSAParameters)
+  parent: System.Security.Cryptography.RSACryptoServiceProvider
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.Cryptography.RSACryptoServiceProvider.ImportParameters(System.Security.Cryptography.RSAParameters)
+  type: Method
+  source:
+    remote:
+      path: src/System.Security.Cryptography.Csp/ref/System.Security.Cryptography.Csp.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: ImportParameters
+    path: src/System.Security.Cryptography.Csp/ref/System.Security.Cryptography.Csp.cs
+    startLine: 84
+  assemblies:
+  - System.Security.Cryptography.Csp
+  namespace: System.Security.Cryptography
+  summary: "\n<p>Imports the specified <xref href=\"System.Security.Cryptography.RSAParameters\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  syntax:
+    content: public override void ImportParameters(RSAParameters parameters)
+    content.vb: Public Overrides Sub ImportParameters(parameters As RSAParameters)
+    parameters:
+    - id: parameters
+      type: System.Security.Cryptography.RSAParameters
+      description: "\n<p>The parameters for <xref href=\"System.Security.Cryptography.RSA\" data-throw-if-not-resolved=\"false\"></xref>. </p>\n"
+  overridden: System.Security.Cryptography.RSA.ImportParameters(System.Security.Cryptography.RSAParameters)
+  exceptions:
+  - type: System.Security.Cryptography.CryptographicException
+    commentId: T:System.Security.Cryptography.CryptographicException
+    description: "\n<p>The cryptographic service provider (CSP) cannot be acquired.</p>\n<p>-or- </p>\n<p>The <em>parameters</em> parameter has missing fields. </p>\n"
+  see:
+  - type: System.Security.Permissions.KeyContainerPermissionAccessEntryCollection
+    commentId: T:System.Security.Permissions.KeyContainerPermissionAccessEntryCollection
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  nameWithType: RSACryptoServiceProvider.ImportParameters(RSAParameters)
+- uid: System.Security.Cryptography.RSACryptoServiceProvider.LegalKeySizes
+  commentId: P:System.Security.Cryptography.RSACryptoServiceProvider.LegalKeySizes
+  id: LegalKeySizes
+  parent: System.Security.Cryptography.RSACryptoServiceProvider
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.Cryptography.RSACryptoServiceProvider.LegalKeySizes
+  type: Property
+  source:
+    remote:
+      path: src/System.Security.Cryptography.Csp/ref/System.Security.Cryptography.Csp.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: LegalKeySizes
+    path: src/System.Security.Cryptography.Csp/ref/System.Security.Cryptography.Csp.cs
+    startLine: 85
+  assemblies:
+  - System.Security.Cryptography.Csp
+  namespace: System.Security.Cryptography
+  syntax:
+    content: public override KeySizes[] LegalKeySizes { get; }
+    content.vb: Public Overrides ReadOnly Property LegalKeySizes As KeySizes()
+    parameters: []
+    return:
+      type: System.Security.Cryptography.KeySizes[]
+  overridden: System.Security.Cryptography.AsymmetricAlgorithm.LegalKeySizes
+  modifiers.csharp:
+  - public
+  - override
+  - get
+  modifiers.vb:
+  - Public
+  - Overrides
+  - ReadOnly
+  nameWithType: RSACryptoServiceProvider.LegalKeySizes
+- uid: System.Security.Cryptography.RSACryptoServiceProvider.SignData(System.Byte[],System.Int32,System.Int32,System.Object)
+  commentId: M:System.Security.Cryptography.RSACryptoServiceProvider.SignData(System.Byte[],System.Int32,System.Int32,System.Object)
+  id: SignData(System.Byte[],System.Int32,System.Int32,System.Object)
+  parent: System.Security.Cryptography.RSACryptoServiceProvider
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.Cryptography.RSACryptoServiceProvider.SignData(System.Byte[], System.Int32, System.Int32, System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/System.Security.Cryptography.Csp/ref/System.Security.Cryptography.Csp.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: SignData
+    path: src/System.Security.Cryptography.Csp/ref/System.Security.Cryptography.Csp.cs
+    startLine: 86
+  assemblies:
+  - System.Security.Cryptography.Csp
+  namespace: System.Security.Cryptography
+  summary: "\n<p>Computes the hash value of a subset of the specified byte array using the specified hash algorithm, and signs the resulting hash value.</p>\n"
+  syntax:
+    content: public byte[] SignData(byte[] buffer, int offset, int count, object halg)
+    content.vb: Public Function SignData(buffer As Byte(), offset As Integer, count As Integer, halg As Object) As Byte()
+    parameters:
+    - id: buffer
+      type: System.Byte[]
+      description: "\n<p>The input data for which to compute the hash. </p>\n"
+    - id: offset
+      type: System.Int32
+      description: "\n<p>The offset into the array from which to begin using data. </p>\n"
+    - id: count
+      type: System.Int32
+      description: "\n<p>The number of bytes in the array to use as data. </p>\n"
+    - id: halg
+      type: System.Object
+      description: "\n<p>The hash algorithm to use to create the hash value. </p>\n"
+    return:
+      type: System.Byte[]
+      description: "\n<p>The <xref href=\"System.Security.Cryptography.RSA\" data-throw-if-not-resolved=\"false\"></xref> signature for the specified data.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>The <em>halg</em> parameter is <strong>null</strong>. </p>\n"
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>The <em>halg</em> parameter is not a valid type. </p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: System.Security.Cryptography.RSACryptoServiceProvider.SignData(System.Byte(), System.Int32, System.Int32, System.Object)
+  name.vb: SignData(Byte(), Int32, Int32, Object)
+  nameWithType: RSACryptoServiceProvider.SignData(Byte[], Int32, Int32, Object)
+  nameWithType.vb: RSACryptoServiceProvider.SignData(Byte(), Int32, Int32, Object)
+- uid: System.Security.Cryptography.RSACryptoServiceProvider.SignData(System.Byte[],System.Object)
+  commentId: M:System.Security.Cryptography.RSACryptoServiceProvider.SignData(System.Byte[],System.Object)
+  id: SignData(System.Byte[],System.Object)
+  parent: System.Security.Cryptography.RSACryptoServiceProvider
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.Cryptography.RSACryptoServiceProvider.SignData(System.Byte[], System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/System.Security.Cryptography.Csp/ref/System.Security.Cryptography.Csp.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: SignData
+    path: src/System.Security.Cryptography.Csp/ref/System.Security.Cryptography.Csp.cs
+    startLine: 87
+  assemblies:
+  - System.Security.Cryptography.Csp
+  namespace: System.Security.Cryptography
+  summary: "\n<p>Computes the hash value of the specified byte array using the specified hash algorithm, and signs the resulting hash value.</p>\n"
+  syntax:
+    content: public byte[] SignData(byte[] buffer, object halg)
+    content.vb: Public Function SignData(buffer As Byte(), halg As Object) As Byte()
+    parameters:
+    - id: buffer
+      type: System.Byte[]
+      description: "\n<p>The input data for which to compute the hash. </p>\n"
+    - id: halg
+      type: System.Object
+      description: "\n<p>The hash algorithm to use to create the hash value. </p>\n"
+    return:
+      type: System.Byte[]
+      description: "\n<p>The <xref href=\"System.Security.Cryptography.RSA\" data-throw-if-not-resolved=\"false\"></xref> signature for the specified data.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>The <em>halg</em> parameter is <strong>null</strong>. </p>\n"
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>The <em>halg</em> parameter is not a valid type. </p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: System.Security.Cryptography.RSACryptoServiceProvider.SignData(System.Byte(), System.Object)
+  name.vb: SignData(Byte(), Object)
+  nameWithType: RSACryptoServiceProvider.SignData(Byte[], Object)
+  nameWithType.vb: RSACryptoServiceProvider.SignData(Byte(), Object)
+- uid: System.Security.Cryptography.RSACryptoServiceProvider.SignData(System.IO.Stream,System.Object)
+  commentId: M:System.Security.Cryptography.RSACryptoServiceProvider.SignData(System.IO.Stream,System.Object)
+  id: SignData(System.IO.Stream,System.Object)
+  parent: System.Security.Cryptography.RSACryptoServiceProvider
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.Cryptography.RSACryptoServiceProvider.SignData(System.IO.Stream, System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/System.Security.Cryptography.Csp/ref/System.Security.Cryptography.Csp.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: SignData
+    path: src/System.Security.Cryptography.Csp/ref/System.Security.Cryptography.Csp.cs
+    startLine: 88
+  assemblies:
+  - System.Security.Cryptography.Csp
+  namespace: System.Security.Cryptography
+  summary: "\n<p>Computes the hash value of the specified input stream using the specified hash algorithm, and signs the resulting hash value.</p>\n"
+  syntax:
+    content: public byte[] SignData(Stream inputStream, object halg)
+    content.vb: Public Function SignData(inputStream As Stream, halg As Object) As Byte()
+    parameters:
+    - id: inputStream
+      type: System.IO.Stream
+      description: "\n<p>The input data for which to compute the hash. </p>\n"
+    - id: halg
+      type: System.Object
+      description: "\n<p>The hash algorithm to use to create the hash value. </p>\n"
+    return:
+      type: System.Byte[]
+      description: "\n<p>The <xref href=\"System.Security.Cryptography.RSA\" data-throw-if-not-resolved=\"false\"></xref> signature for the specified data.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>The <em>halg</em> parameter is <strong>null</strong>. </p>\n"
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>The <em>halg</em> parameter is not a valid type. </p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: RSACryptoServiceProvider.SignData(Stream, Object)
+- uid: System.Security.Cryptography.RSACryptoServiceProvider.SignHash(System.Byte[],System.Security.Cryptography.HashAlgorithmName,System.Security.Cryptography.RSASignaturePadding)
+  commentId: M:System.Security.Cryptography.RSACryptoServiceProvider.SignHash(System.Byte[],System.Security.Cryptography.HashAlgorithmName,System.Security.Cryptography.RSASignaturePadding)
+  id: SignHash(System.Byte[],System.Security.Cryptography.HashAlgorithmName,System.Security.Cryptography.RSASignaturePadding)
+  parent: System.Security.Cryptography.RSACryptoServiceProvider
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.Cryptography.RSACryptoServiceProvider.SignHash(System.Byte[], System.Security.Cryptography.HashAlgorithmName, System.Security.Cryptography.RSASignaturePadding)
+  type: Method
+  source:
+    remote:
+      path: src/System.Security.Cryptography.Csp/ref/System.Security.Cryptography.Csp.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: SignHash
+    path: src/System.Security.Cryptography.Csp/ref/System.Security.Cryptography.Csp.cs
+    startLine: 89
+  assemblies:
+  - System.Security.Cryptography.Csp
+  namespace: System.Security.Cryptography
+  summary: "\n<p>Computes the signature for the specified hash value by encrypting it with the private key using the specified padding. </p>\n"
+  syntax:
+    content: public override byte[] SignHash(byte[] hash, HashAlgorithmName hashAlgorithm, RSASignaturePadding padding)
+    content.vb: Public Overrides Function SignHash(hash As Byte(), hashAlgorithm As HashAlgorithmName, padding As RSASignaturePadding) As Byte()
+    parameters:
+    - id: hash
+      type: System.Byte[]
+      description: "\n<p>The hash value of the data to be signed. </p>\n"
+    - id: hashAlgorithm
+      type: System.Security.Cryptography.HashAlgorithmName
+      description: "\n<p>The hash algorithm name used to create the hash value of the data. </p>\n"
+    - id: padding
+      type: System.Security.Cryptography.RSASignaturePadding
+      description: "\n<p>The padding. </p>\n"
+    return:
+      type: System.Byte[]
+      description: "\n<p>The <xref href=\"System.Security.Cryptography.RSA\" data-throw-if-not-resolved=\"false\"></xref> signature for the specified hash value. </p>\n"
+  overridden: System.Security.Cryptography.RSA.SignHash(System.Byte[],System.Security.Cryptography.HashAlgorithmName,System.Security.Cryptography.RSASignaturePadding)
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>\n<em>hashAlgorithm</em> is <strong>null</strong> or <xref href=\"System.String.Empty\" data-throw-if-not-resolved=\"false\"></xref>. </p>\n"
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>hash</em> is <strong>null</strong>. </p>\n<p>-or-</p>\n<p>\n<em>padding</em> is <strong>null</strong>. </p>\n"
+  - type: System.Security.Cryptography.CryptographicException
+    commentId: T:System.Security.Cryptography.CryptographicException
+    description: "\n<p>\n<em>padding</em> does not equal <xref href=\"System.Security.Cryptography.RSASignaturePadding.Pkcs1\" data-throw-if-not-resolved=\"false\"></xref>. </p>\n"
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  fullName.vb: System.Security.Cryptography.RSACryptoServiceProvider.SignHash(System.Byte(), System.Security.Cryptography.HashAlgorithmName, System.Security.Cryptography.RSASignaturePadding)
+  name.vb: SignHash(Byte(), HashAlgorithmName, RSASignaturePadding)
+  nameWithType: RSACryptoServiceProvider.SignHash(Byte[], HashAlgorithmName, RSASignaturePadding)
+  nameWithType.vb: RSACryptoServiceProvider.SignHash(Byte(), HashAlgorithmName, RSASignaturePadding)
+- uid: System.Security.Cryptography.RSACryptoServiceProvider.SignHash(System.Byte[],System.String)
+  commentId: M:System.Security.Cryptography.RSACryptoServiceProvider.SignHash(System.Byte[],System.String)
+  id: SignHash(System.Byte[],System.String)
+  parent: System.Security.Cryptography.RSACryptoServiceProvider
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.Cryptography.RSACryptoServiceProvider.SignHash(System.Byte[], System.String)
+  type: Method
+  source:
+    remote:
+      path: src/System.Security.Cryptography.Csp/ref/System.Security.Cryptography.Csp.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: SignHash
+    path: src/System.Security.Cryptography.Csp/ref/System.Security.Cryptography.Csp.cs
+    startLine: 90
+  assemblies:
+  - System.Security.Cryptography.Csp
+  namespace: System.Security.Cryptography
+  summary: "\n<p>Computes the signature for the specified hash value by encrypting it with the private key.</p>\n"
+  syntax:
+    content: public byte[] SignHash(byte[] rgbHash, string str)
+    content.vb: Public Function SignHash(rgbHash As Byte(), str As String) As Byte()
+    parameters:
+    - id: rgbHash
+      type: System.Byte[]
+      description: "\n<p>The hash value of the data to be signed. </p>\n"
+    - id: str
+      type: System.String
+      description: "\n<p>The hash algorithm identifier (OID) used to create the hash value of the data. </p>\n"
+    return:
+      type: System.Byte[]
+      description: "\n<p>The <xref href=\"System.Security.Cryptography.RSA\" data-throw-if-not-resolved=\"false\"></xref> signature for the specified hash value.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>The <em>rgbHash</em> parameter is <strong>null</strong>. </p>\n"
+  - type: System.Security.Cryptography.CryptographicException
+    commentId: T:System.Security.Cryptography.CryptographicException
+    description: "\n<p>The cryptographic service provider (CSP) cannot be acquired.</p>\n<p>-or- </p>\n<p>There is no private key. </p>\n"
+  see:
+  - type: System.Security.Permissions.KeyContainerPermissionAccessEntryCollection
+    commentId: T:System.Security.Permissions.KeyContainerPermissionAccessEntryCollection
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: System.Security.Cryptography.RSACryptoServiceProvider.SignHash(System.Byte(), System.String)
+  name.vb: SignHash(Byte(), String)
+  nameWithType: RSACryptoServiceProvider.SignHash(Byte[], String)
+  nameWithType.vb: RSACryptoServiceProvider.SignHash(Byte(), String)
+- uid: System.Security.Cryptography.RSACryptoServiceProvider.VerifyData(System.Byte[],System.Object,System.Byte[])
+  commentId: M:System.Security.Cryptography.RSACryptoServiceProvider.VerifyData(System.Byte[],System.Object,System.Byte[])
+  id: VerifyData(System.Byte[],System.Object,System.Byte[])
+  parent: System.Security.Cryptography.RSACryptoServiceProvider
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.Cryptography.RSACryptoServiceProvider.VerifyData(System.Byte[], System.Object, System.Byte[])
+  type: Method
+  source:
+    remote:
+      path: src/System.Security.Cryptography.Csp/ref/System.Security.Cryptography.Csp.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: VerifyData
+    path: src/System.Security.Cryptography.Csp/ref/System.Security.Cryptography.Csp.cs
+    startLine: 91
+  assemblies:
+  - System.Security.Cryptography.Csp
+  namespace: System.Security.Cryptography
+  summary: "\n<p>Verifies that a digital signature is valid by determining the hash value in the signature using the provided public key and comparing it to the hash value of the provided data.</p>\n"
+  syntax:
+    content: public bool VerifyData(byte[] buffer, object halg, byte[] signature)
+    content.vb: Public Function VerifyData(buffer As Byte(), halg As Object, signature As Byte()) As Boolean
+    parameters:
+    - id: buffer
+      type: System.Byte[]
+      description: "\n<p>The data that was signed. </p>\n"
+    - id: halg
+      type: System.Object
+      description: "\n<p>The name of the hash algorithm used to create the hash value of the data. </p>\n"
+    - id: signature
+      type: System.Byte[]
+      description: "\n<p>The signature data to be verified. </p>\n"
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if the signature is valid; otherwise, <strong>false</strong>.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>The <em>halg</em> parameter is <strong>null</strong>. </p>\n"
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>The <em>halg</em> parameter is not a valid type. </p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: System.Security.Cryptography.RSACryptoServiceProvider.VerifyData(System.Byte(), System.Object, System.Byte())
+  name.vb: VerifyData(Byte(), Object, Byte())
+  nameWithType: RSACryptoServiceProvider.VerifyData(Byte[], Object, Byte[])
+  nameWithType.vb: RSACryptoServiceProvider.VerifyData(Byte(), Object, Byte())
+- uid: System.Security.Cryptography.RSACryptoServiceProvider.VerifyHash(System.Byte[],System.Byte[],System.Security.Cryptography.HashAlgorithmName,System.Security.Cryptography.RSASignaturePadding)
+  commentId: M:System.Security.Cryptography.RSACryptoServiceProvider.VerifyHash(System.Byte[],System.Byte[],System.Security.Cryptography.HashAlgorithmName,System.Security.Cryptography.RSASignaturePadding)
+  id: VerifyHash(System.Byte[],System.Byte[],System.Security.Cryptography.HashAlgorithmName,System.Security.Cryptography.RSASignaturePadding)
+  parent: System.Security.Cryptography.RSACryptoServiceProvider
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.Cryptography.RSACryptoServiceProvider.VerifyHash(System.Byte[], System.Byte[], System.Security.Cryptography.HashAlgorithmName, System.Security.Cryptography.RSASignaturePadding)
+  type: Method
+  source:
+    remote:
+      path: src/System.Security.Cryptography.Csp/ref/System.Security.Cryptography.Csp.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: VerifyHash
+    path: src/System.Security.Cryptography.Csp/ref/System.Security.Cryptography.Csp.cs
+    startLine: 92
+  assemblies:
+  - System.Security.Cryptography.Csp
+  namespace: System.Security.Cryptography
+  summary: "\n<p>Verifies that a digital signature is valid by determining the hash value in the signature using the specified hashing algorithm and padding, and comparing it to the provided hash value. </p>\n"
+  syntax:
+    content: public override bool VerifyHash(byte[] hash, byte[] signature, HashAlgorithmName hashAlgorithm, RSASignaturePadding padding)
+    content.vb: Public Overrides Function VerifyHash(hash As Byte(), signature As Byte(), hashAlgorithm As HashAlgorithmName, padding As RSASignaturePadding) As Boolean
+    parameters:
+    - id: hash
+      type: System.Byte[]
+      description: "\n<p>The hash value of the signed data. </p>\n"
+    - id: signature
+      type: System.Byte[]
+      description: "\n<p>The signature data to be verified. </p>\n"
+    - id: hashAlgorithm
+      type: System.Security.Cryptography.HashAlgorithmName
+      description: "\n<p>The hash algorithm name used to create the hash value. </p>\n"
+    - id: padding
+      type: System.Security.Cryptography.RSASignaturePadding
+      description: "\n<p>The padding. </p>\n"
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if the signature is valid; otherwise, <strong>false</strong>. </p>\n"
+  overridden: System.Security.Cryptography.RSA.VerifyHash(System.Byte[],System.Byte[],System.Security.Cryptography.HashAlgorithmName,System.Security.Cryptography.RSASignaturePadding)
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>\n<em>hashAlgorithm</em> is <strong>null</strong> or <xref href=\"System.String.Empty\" data-throw-if-not-resolved=\"false\"></xref>. </p>\n"
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>hash</em> is <strong>null</strong>. </p>\n<p>-or-</p>\n<p>\n<em>padding</em> is <strong>null</strong>. </p>\n"
+  - type: System.Security.Cryptography.CryptographicException
+    commentId: T:System.Security.Cryptography.CryptographicException
+    description: "\n<p>\n<em>padding</em> does not equal <xref href=\"System.Security.Cryptography.RSASignaturePadding.Pkcs1\" data-throw-if-not-resolved=\"false\"></xref>. </p>\n"
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  fullName.vb: System.Security.Cryptography.RSACryptoServiceProvider.VerifyHash(System.Byte(), System.Byte(), System.Security.Cryptography.HashAlgorithmName, System.Security.Cryptography.RSASignaturePadding)
+  name.vb: VerifyHash(Byte(), Byte(), HashAlgorithmName, RSASignaturePadding)
+  nameWithType: RSACryptoServiceProvider.VerifyHash(Byte[], Byte[], HashAlgorithmName, RSASignaturePadding)
+  nameWithType.vb: RSACryptoServiceProvider.VerifyHash(Byte(), Byte(), HashAlgorithmName, RSASignaturePadding)
+- uid: System.Security.Cryptography.RSACryptoServiceProvider.VerifyHash(System.Byte[],System.String,System.Byte[])
+  commentId: M:System.Security.Cryptography.RSACryptoServiceProvider.VerifyHash(System.Byte[],System.String,System.Byte[])
+  id: VerifyHash(System.Byte[],System.String,System.Byte[])
+  parent: System.Security.Cryptography.RSACryptoServiceProvider
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.Cryptography.RSACryptoServiceProvider.VerifyHash(System.Byte[], System.String, System.Byte[])
+  type: Method
+  source:
+    remote:
+      path: src/System.Security.Cryptography.Csp/ref/System.Security.Cryptography.Csp.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: VerifyHash
+    path: src/System.Security.Cryptography.Csp/ref/System.Security.Cryptography.Csp.cs
+    startLine: 93
+  assemblies:
+  - System.Security.Cryptography.Csp
+  namespace: System.Security.Cryptography
+  summary: "\n<p>Verifies that a digital signature is valid by determining the hash value in the signature using the provided public key and comparing it to the provided hash value.</p>\n"
+  syntax:
+    content: public bool VerifyHash(byte[] rgbHash, string str, byte[] rgbSignature)
+    content.vb: Public Function VerifyHash(rgbHash As Byte(), str As String, rgbSignature As Byte()) As Boolean
+    parameters:
+    - id: rgbHash
+      type: System.Byte[]
+      description: "\n<p>The hash value of the signed data. </p>\n"
+    - id: str
+      type: System.String
+      description: "\n<p>The hash algorithm identifier (OID) used to create the hash value of the data. </p>\n"
+    - id: rgbSignature
+      type: System.Byte[]
+      description: "\n<p>The signature data to be verified. </p>\n"
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if the signature is valid; otherwise, <strong>false</strong>.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>The <em>rgbHash</em> parameter is <strong>null</strong>.</p>\n<p>-or- </p>\n<p>The <em>rgbSignature</em> parameter is <strong>null</strong>. </p>\n"
+  - type: System.Security.Cryptography.CryptographicException
+    commentId: T:System.Security.Cryptography.CryptographicException
+    description: "\n<p>The cryptographic service provider (CSP) cannot be acquired.</p>\n<p>-or- </p>\n<p>The signature cannot be verified. </p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: System.Security.Cryptography.RSACryptoServiceProvider.VerifyHash(System.Byte(), System.String, System.Byte())
+  name.vb: VerifyHash(Byte(), String, Byte())
+  nameWithType: RSACryptoServiceProvider.VerifyHash(Byte[], String, Byte[])
+  nameWithType.vb: RSACryptoServiceProvider.VerifyHash(Byte(), String, Byte())
+references:
+- uid: System.Security.Cryptography
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.Cryptography
+  commentId: N:System.Security.Cryptography
+  nameWithType: System.Security.Cryptography
+- uid: System.Object
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Object
+  commentId: T:System.Object
+  nameWithType: Object
+- uid: System.Security.Cryptography.AsymmetricAlgorithm
+  parent: System.Security.Cryptography
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.Cryptography.AsymmetricAlgorithm
+  commentId: T:System.Security.Cryptography.AsymmetricAlgorithm
+  nameWithType: AsymmetricAlgorithm
+- uid: System.Security.Cryptography.RSA
+  parent: System.Security.Cryptography
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.Cryptography.RSA
+  commentId: T:System.Security.Cryptography.RSA
+  nameWithType: RSA
+- uid: System.IDisposable
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.IDisposable
+  commentId: T:System.IDisposable
+  nameWithType: IDisposable
+- uid: System.Security.Cryptography.ICspAsymmetricAlgorithm
+  parent: System.Security.Cryptography
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.Cryptography.ICspAsymmetricAlgorithm
+  commentId: T:System.Security.Cryptography.ICspAsymmetricAlgorithm
+  nameWithType: ICspAsymmetricAlgorithm
+- uid: System.Security.Cryptography.RSA.Create
+  parent: System.Security.Cryptography.RSA
+  isExternal: true
+  name: "XXX"
+  fullName: System.Security.Cryptography.RSA.Create()
+  spec.csharp:
+  - uid: System.Security.Cryptography.RSA.Create
+    name: "XXX"
+    fullName: System.Security.Cryptography.RSA.Create
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Security.Cryptography.RSA.Create
+    name: "XXX"
+    fullName: System.Security.Cryptography.RSA.Create
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Security.Cryptography.RSA.Create
+  nameWithType: RSA.Create()
+- uid: System.Security.Cryptography.RSA.Create(System.String)
+  parent: System.Security.Cryptography.RSA
+  isExternal: true
+  name: "XXX"
+  fullName: System.Security.Cryptography.RSA.Create(System.String)
+  spec.csharp:
+  - uid: System.Security.Cryptography.RSA.Create(System.String)
+    name: "XXX"
+    fullName: System.Security.Cryptography.RSA.Create
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.String
+    name: "XXX"
+    fullName: System.String
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Security.Cryptography.RSA.Create(System.String)
+    name: "XXX"
+    fullName: System.Security.Cryptography.RSA.Create
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.String
+    name: "XXX"
+    fullName: System.String
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Security.Cryptography.RSA.Create(System.String)
+  nameWithType: RSA.Create(String)
+- uid: System.Security.Cryptography.RSA.SignData(System.Byte[],System.Security.Cryptography.HashAlgorithmName,System.Security.Cryptography.RSASignaturePadding)
+  parent: System.Security.Cryptography.RSA
+  isExternal: true
+  name: "XXX"
+  fullName: System.Security.Cryptography.RSA.SignData(System.Byte[], System.Security.Cryptography.HashAlgorithmName, System.Security.Cryptography.RSASignaturePadding)
+  fullname.vb: System.Security.Cryptography.RSA.SignData(System.Byte(), System.Security.Cryptography.HashAlgorithmName, System.Security.Cryptography.RSASignaturePadding)
+  name.vb: SignData(Byte(), HashAlgorithmName, RSASignaturePadding)
+  spec.csharp:
+  - uid: System.Security.Cryptography.RSA.SignData(System.Byte[],System.Security.Cryptography.HashAlgorithmName,System.Security.Cryptography.RSASignaturePadding)
+    name: "XXX"
+    fullName: System.Security.Cryptography.RSA.SignData
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Byte
+    name: "XXX"
+    fullName: System.Byte
+    isExternal: true
+  - name: 'XXX'
+    fullName: '[]'
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Security.Cryptography.HashAlgorithmName
+    name: "XXX"
+    fullName: System.Security.Cryptography.HashAlgorithmName
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Security.Cryptography.RSASignaturePadding
+    name: "XXX"
+    fullName: System.Security.Cryptography.RSASignaturePadding
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Security.Cryptography.RSA.SignData(System.Byte[],System.Security.Cryptography.HashAlgorithmName,System.Security.Cryptography.RSASignaturePadding)
+    name: "XXX"
+    fullName: System.Security.Cryptography.RSA.SignData
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Byte
+    name: "XXX"
+    fullName: System.Byte
+    isExternal: true
+  - name: "XXX"
+    fullName: ()
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Security.Cryptography.HashAlgorithmName
+    name: "XXX"
+    fullName: System.Security.Cryptography.HashAlgorithmName
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Security.Cryptography.RSASignaturePadding
+    name: "XXX"
+    fullName: System.Security.Cryptography.RSASignaturePadding
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Security.Cryptography.RSA.SignData(System.Byte[],System.Security.Cryptography.HashAlgorithmName,System.Security.Cryptography.RSASignaturePadding)
+  nameWithType: RSA.SignData(Byte[], HashAlgorithmName, RSASignaturePadding)
+  nameWithType.vb: RSA.SignData(Byte(), HashAlgorithmName, RSASignaturePadding)
+- uid: System.Security.Cryptography.RSA.SignData(System.Byte[],System.Int32,System.Int32,System.Security.Cryptography.HashAlgorithmName,System.Security.Cryptography.RSASignaturePadding)
+  parent: System.Security.Cryptography.RSA
+  isExternal: true
+  name: "XXX"
+  fullName: System.Security.Cryptography.RSA.SignData(System.Byte[], System.Int32, System.Int32, System.Security.Cryptography.HashAlgorithmName, System.Security.Cryptography.RSASignaturePadding)
+  fullname.vb: System.Security.Cryptography.RSA.SignData(System.Byte(), System.Int32, System.Int32, System.Security.Cryptography.HashAlgorithmName, System.Security.Cryptography.RSASignaturePadding)
+  name.vb: SignData(Byte(), Int32, Int32, HashAlgorithmName, RSASignaturePadding)
+  spec.csharp:
+  - uid: System.Security.Cryptography.RSA.SignData(System.Byte[],System.Int32,System.Int32,System.Security.Cryptography.HashAlgorithmName,System.Security.Cryptography.RSASignaturePadding)
+    name: "XXX"
+    fullName: System.Security.Cryptography.RSA.SignData
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Byte
+    name: "XXX"
+    fullName: System.Byte
+    isExternal: true
+  - name: 'XXX'
+    fullName: '[]'
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Security.Cryptography.HashAlgorithmName
+    name: "XXX"
+    fullName: System.Security.Cryptography.HashAlgorithmName
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Security.Cryptography.RSASignaturePadding
+    name: "XXX"
+    fullName: System.Security.Cryptography.RSASignaturePadding
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Security.Cryptography.RSA.SignData(System.Byte[],System.Int32,System.Int32,System.Security.Cryptography.HashAlgorithmName,System.Security.Cryptography.RSASignaturePadding)
+    name: "XXX"
+    fullName: System.Security.Cryptography.RSA.SignData
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Byte
+    name: "XXX"
+    fullName: System.Byte
+    isExternal: true
+  - name: "XXX"
+    fullName: ()
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Security.Cryptography.HashAlgorithmName
+    name: "XXX"
+    fullName: System.Security.Cryptography.HashAlgorithmName
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Security.Cryptography.RSASignaturePadding
+    name: "XXX"
+    fullName: System.Security.Cryptography.RSASignaturePadding
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Security.Cryptography.RSA.SignData(System.Byte[],System.Int32,System.Int32,System.Security.Cryptography.HashAlgorithmName,System.Security.Cryptography.RSASignaturePadding)
+  nameWithType: RSA.SignData(Byte[], Int32, Int32, HashAlgorithmName, RSASignaturePadding)
+  nameWithType.vb: RSA.SignData(Byte(), Int32, Int32, HashAlgorithmName, RSASignaturePadding)
+- uid: System.Security.Cryptography.RSA.SignData(System.IO.Stream,System.Security.Cryptography.HashAlgorithmName,System.Security.Cryptography.RSASignaturePadding)
+  parent: System.Security.Cryptography.RSA
+  isExternal: true
+  name: "XXX"
+  fullName: System.Security.Cryptography.RSA.SignData(System.IO.Stream, System.Security.Cryptography.HashAlgorithmName, System.Security.Cryptography.RSASignaturePadding)
+  spec.csharp:
+  - uid: System.Security.Cryptography.RSA.SignData(System.IO.Stream,System.Security.Cryptography.HashAlgorithmName,System.Security.Cryptography.RSASignaturePadding)
+    name: "XXX"
+    fullName: System.Security.Cryptography.RSA.SignData
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.IO.Stream
+    name: "XXX"
+    fullName: System.IO.Stream
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Security.Cryptography.HashAlgorithmName
+    name: "XXX"
+    fullName: System.Security.Cryptography.HashAlgorithmName
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Security.Cryptography.RSASignaturePadding
+    name: "XXX"
+    fullName: System.Security.Cryptography.RSASignaturePadding
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Security.Cryptography.RSA.SignData(System.IO.Stream,System.Security.Cryptography.HashAlgorithmName,System.Security.Cryptography.RSASignaturePadding)
+    name: "XXX"
+    fullName: System.Security.Cryptography.RSA.SignData
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.IO.Stream
+    name: "XXX"
+    fullName: System.IO.Stream
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Security.Cryptography.HashAlgorithmName
+    name: "XXX"
+    fullName: System.Security.Cryptography.HashAlgorithmName
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Security.Cryptography.RSASignaturePadding
+    name: "XXX"
+    fullName: System.Security.Cryptography.RSASignaturePadding
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Security.Cryptography.RSA.SignData(System.IO.Stream,System.Security.Cryptography.HashAlgorithmName,System.Security.Cryptography.RSASignaturePadding)
+  nameWithType: RSA.SignData(Stream, HashAlgorithmName, RSASignaturePadding)
+- uid: System.Security.Cryptography.RSA.VerifyData(System.Byte[],System.Byte[],System.Security.Cryptography.HashAlgorithmName,System.Security.Cryptography.RSASignaturePadding)
+  parent: System.Security.Cryptography.RSA
+  isExternal: true
+  name: "XXX"
+  fullName: System.Security.Cryptography.RSA.VerifyData(System.Byte[], System.Byte[], System.Security.Cryptography.HashAlgorithmName, System.Security.Cryptography.RSASignaturePadding)
+  fullname.vb: System.Security.Cryptography.RSA.VerifyData(System.Byte(), System.Byte(), System.Security.Cryptography.HashAlgorithmName, System.Security.Cryptography.RSASignaturePadding)
+  name.vb: VerifyData(Byte(), Byte(), HashAlgorithmName, RSASignaturePadding)
+  spec.csharp:
+  - uid: System.Security.Cryptography.RSA.VerifyData(System.Byte[],System.Byte[],System.Security.Cryptography.HashAlgorithmName,System.Security.Cryptography.RSASignaturePadding)
+    name: "XXX"
+    fullName: System.Security.Cryptography.RSA.VerifyData
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Byte
+    name: "XXX"
+    fullName: System.Byte
+    isExternal: true
+  - name: 'XXX'
+    fullName: '[]'
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Byte
+    name: "XXX"
+    fullName: System.Byte
+    isExternal: true
+  - name: 'XXX'
+    fullName: '[]'
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Security.Cryptography.HashAlgorithmName
+    name: "XXX"
+    fullName: System.Security.Cryptography.HashAlgorithmName
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Security.Cryptography.RSASignaturePadding
+    name: "XXX"
+    fullName: System.Security.Cryptography.RSASignaturePadding
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Security.Cryptography.RSA.VerifyData(System.Byte[],System.Byte[],System.Security.Cryptography.HashAlgorithmName,System.Security.Cryptography.RSASignaturePadding)
+    name: "XXX"
+    fullName: System.Security.Cryptography.RSA.VerifyData
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Byte
+    name: "XXX"
+    fullName: System.Byte
+    isExternal: true
+  - name: "XXX"
+    fullName: ()
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Byte
+    name: "XXX"
+    fullName: System.Byte
+    isExternal: true
+  - name: "XXX"
+    fullName: ()
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Security.Cryptography.HashAlgorithmName
+    name: "XXX"
+    fullName: System.Security.Cryptography.HashAlgorithmName
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Security.Cryptography.RSASignaturePadding
+    name: "XXX"
+    fullName: System.Security.Cryptography.RSASignaturePadding
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Security.Cryptography.RSA.VerifyData(System.Byte[],System.Byte[],System.Security.Cryptography.HashAlgorithmName,System.Security.Cryptography.RSASignaturePadding)
+  nameWithType: RSA.VerifyData(Byte[], Byte[], HashAlgorithmName, RSASignaturePadding)
+  nameWithType.vb: RSA.VerifyData(Byte(), Byte(), HashAlgorithmName, RSASignaturePadding)
+- uid: System.Security.Cryptography.RSA.VerifyData(System.Byte[],System.Int32,System.Int32,System.Byte[],System.Security.Cryptography.HashAlgorithmName,System.Security.Cryptography.RSASignaturePadding)
+  parent: System.Security.Cryptography.RSA
+  isExternal: true
+  name: "XXX"
+  fullName: System.Security.Cryptography.RSA.VerifyData(System.Byte[], System.Int32, System.Int32, System.Byte[], System.Security.Cryptography.HashAlgorithmName, System.Security.Cryptography.RSASignaturePadding)
+  fullname.vb: System.Security.Cryptography.RSA.VerifyData(System.Byte(), System.Int32, System.Int32, System.Byte(), System.Security.Cryptography.HashAlgorithmName, System.Security.Cryptography.RSASignaturePadding)
+  name.vb: VerifyData(Byte(), Int32, Int32, Byte(), HashAlgorithmName, RSASignaturePadding)
+  spec.csharp:
+  - uid: System.Security.Cryptography.RSA.VerifyData(System.Byte[],System.Int32,System.Int32,System.Byte[],System.Security.Cryptography.HashAlgorithmName,System.Security.Cryptography.RSASignaturePadding)
+    name: "XXX"
+    fullName: System.Security.Cryptography.RSA.VerifyData
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Byte
+    name: "XXX"
+    fullName: System.Byte
+    isExternal: true
+  - name: 'XXX'
+    fullName: '[]'
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Byte
+    name: "XXX"
+    fullName: System.Byte
+    isExternal: true
+  - name: 'XXX'
+    fullName: '[]'
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Security.Cryptography.HashAlgorithmName
+    name: "XXX"
+    fullName: System.Security.Cryptography.HashAlgorithmName
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Security.Cryptography.RSASignaturePadding
+    name: "XXX"
+    fullName: System.Security.Cryptography.RSASignaturePadding
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Security.Cryptography.RSA.VerifyData(System.Byte[],System.Int32,System.Int32,System.Byte[],System.Security.Cryptography.HashAlgorithmName,System.Security.Cryptography.RSASignaturePadding)
+    name: "XXX"
+    fullName: System.Security.Cryptography.RSA.VerifyData
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Byte
+    name: "XXX"
+    fullName: System.Byte
+    isExternal: true
+  - name: "XXX"
+    fullName: ()
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Byte
+    name: "XXX"
+    fullName: System.Byte
+    isExternal: true
+  - name: "XXX"
+    fullName: ()
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Security.Cryptography.HashAlgorithmName
+    name: "XXX"
+    fullName: System.Security.Cryptography.HashAlgorithmName
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Security.Cryptography.RSASignaturePadding
+    name: "XXX"
+    fullName: System.Security.Cryptography.RSASignaturePadding
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Security.Cryptography.RSA.VerifyData(System.Byte[],System.Int32,System.Int32,System.Byte[],System.Security.Cryptography.HashAlgorithmName,System.Security.Cryptography.RSASignaturePadding)
+  nameWithType: RSA.VerifyData(Byte[], Int32, Int32, Byte[], HashAlgorithmName, RSASignaturePadding)
+  nameWithType.vb: RSA.VerifyData(Byte(), Int32, Int32, Byte(), HashAlgorithmName, RSASignaturePadding)
+- uid: System.Security.Cryptography.RSA.VerifyData(System.IO.Stream,System.Byte[],System.Security.Cryptography.HashAlgorithmName,System.Security.Cryptography.RSASignaturePadding)
+  parent: System.Security.Cryptography.RSA
+  isExternal: true
+  name: "XXX"
+  fullName: System.Security.Cryptography.RSA.VerifyData(System.IO.Stream, System.Byte[], System.Security.Cryptography.HashAlgorithmName, System.Security.Cryptography.RSASignaturePadding)
+  fullname.vb: System.Security.Cryptography.RSA.VerifyData(System.IO.Stream, System.Byte(), System.Security.Cryptography.HashAlgorithmName, System.Security.Cryptography.RSASignaturePadding)
+  name.vb: VerifyData(Stream, Byte(), HashAlgorithmName, RSASignaturePadding)
+  spec.csharp:
+  - uid: System.Security.Cryptography.RSA.VerifyData(System.IO.Stream,System.Byte[],System.Security.Cryptography.HashAlgorithmName,System.Security.Cryptography.RSASignaturePadding)
+    name: "XXX"
+    fullName: System.Security.Cryptography.RSA.VerifyData
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.IO.Stream
+    name: "XXX"
+    fullName: System.IO.Stream
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Byte
+    name: "XXX"
+    fullName: System.Byte
+    isExternal: true
+  - name: 'XXX'
+    fullName: '[]'
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Security.Cryptography.HashAlgorithmName
+    name: "XXX"
+    fullName: System.Security.Cryptography.HashAlgorithmName
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Security.Cryptography.RSASignaturePadding
+    name: "XXX"
+    fullName: System.Security.Cryptography.RSASignaturePadding
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Security.Cryptography.RSA.VerifyData(System.IO.Stream,System.Byte[],System.Security.Cryptography.HashAlgorithmName,System.Security.Cryptography.RSASignaturePadding)
+    name: "XXX"
+    fullName: System.Security.Cryptography.RSA.VerifyData
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.IO.Stream
+    name: "XXX"
+    fullName: System.IO.Stream
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Byte
+    name: "XXX"
+    fullName: System.Byte
+    isExternal: true
+  - name: "XXX"
+    fullName: ()
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Security.Cryptography.HashAlgorithmName
+    name: "XXX"
+    fullName: System.Security.Cryptography.HashAlgorithmName
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Security.Cryptography.RSASignaturePadding
+    name: "XXX"
+    fullName: System.Security.Cryptography.RSASignaturePadding
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Security.Cryptography.RSA.VerifyData(System.IO.Stream,System.Byte[],System.Security.Cryptography.HashAlgorithmName,System.Security.Cryptography.RSASignaturePadding)
+  nameWithType: RSA.VerifyData(Stream, Byte[], HashAlgorithmName, RSASignaturePadding)
+  nameWithType.vb: RSA.VerifyData(Stream, Byte(), HashAlgorithmName, RSASignaturePadding)
+- uid: System.Security.Cryptography.RSA.DecryptValue(System.Byte[])
+  parent: System.Security.Cryptography.RSA
+  isExternal: true
+  name: "XXX"
+  fullName: System.Security.Cryptography.RSA.DecryptValue(System.Byte[])
+  fullname.vb: System.Security.Cryptography.RSA.DecryptValue(System.Byte())
+  name.vb: DecryptValue(Byte())
+  spec.csharp:
+  - uid: System.Security.Cryptography.RSA.DecryptValue(System.Byte[])
+    name: "XXX"
+    fullName: System.Security.Cryptography.RSA.DecryptValue
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Byte
+    name: "XXX"
+    fullName: System.Byte
+    isExternal: true
+  - name: 'XXX'
+    fullName: '[]'
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Security.Cryptography.RSA.DecryptValue(System.Byte[])
+    name: "XXX"
+    fullName: System.Security.Cryptography.RSA.DecryptValue
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Byte
+    name: "XXX"
+    fullName: System.Byte
+    isExternal: true
+  - name: "XXX"
+    fullName: ()
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Security.Cryptography.RSA.DecryptValue(System.Byte[])
+  nameWithType: RSA.DecryptValue(Byte[])
+  nameWithType.vb: RSA.DecryptValue(Byte())
+- uid: System.Security.Cryptography.RSA.EncryptValue(System.Byte[])
+  parent: System.Security.Cryptography.RSA
+  isExternal: true
+  name: "XXX"
+  fullName: System.Security.Cryptography.RSA.EncryptValue(System.Byte[])
+  fullname.vb: System.Security.Cryptography.RSA.EncryptValue(System.Byte())
+  name.vb: EncryptValue(Byte())
+  spec.csharp:
+  - uid: System.Security.Cryptography.RSA.EncryptValue(System.Byte[])
+    name: "XXX"
+    fullName: System.Security.Cryptography.RSA.EncryptValue
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Byte
+    name: "XXX"
+    fullName: System.Byte
+    isExternal: true
+  - name: 'XXX'
+    fullName: '[]'
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Security.Cryptography.RSA.EncryptValue(System.Byte[])
+    name: "XXX"
+    fullName: System.Security.Cryptography.RSA.EncryptValue
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Byte
+    name: "XXX"
+    fullName: System.Byte
+    isExternal: true
+  - name: "XXX"
+    fullName: ()
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Security.Cryptography.RSA.EncryptValue(System.Byte[])
+  nameWithType: RSA.EncryptValue(Byte[])
+  nameWithType.vb: RSA.EncryptValue(Byte())
+- uid: System.Security.Cryptography.RSA.FromXmlString(System.String)
+  parent: System.Security.Cryptography.RSA
+  isExternal: true
+  name: "XXX"
+  fullName: System.Security.Cryptography.RSA.FromXmlString(System.String)
+  spec.csharp:
+  - uid: System.Security.Cryptography.RSA.FromXmlString(System.String)
+    name: "XXX"
+    fullName: System.Security.Cryptography.RSA.FromXmlString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.String
+    name: "XXX"
+    fullName: System.String
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Security.Cryptography.RSA.FromXmlString(System.String)
+    name: "XXX"
+    fullName: System.Security.Cryptography.RSA.FromXmlString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.String
+    name: "XXX"
+    fullName: System.String
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Security.Cryptography.RSA.FromXmlString(System.String)
+  nameWithType: RSA.FromXmlString(String)
+- uid: System.Security.Cryptography.RSA.ToXmlString(System.Boolean)
+  parent: System.Security.Cryptography.RSA
+  isExternal: true
+  name: "XXX"
+  fullName: System.Security.Cryptography.RSA.ToXmlString(System.Boolean)
+  spec.csharp:
+  - uid: System.Security.Cryptography.RSA.ToXmlString(System.Boolean)
+    name: "XXX"
+    fullName: System.Security.Cryptography.RSA.ToXmlString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Boolean
+    name: "XXX"
+    fullName: System.Boolean
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Security.Cryptography.RSA.ToXmlString(System.Boolean)
+    name: "XXX"
+    fullName: System.Security.Cryptography.RSA.ToXmlString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Boolean
+    name: "XXX"
+    fullName: System.Boolean
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Security.Cryptography.RSA.ToXmlString(System.Boolean)
+  nameWithType: RSA.ToXmlString(Boolean)
+- uid: System.Security.Cryptography.RSA.KeyExchangeAlgorithm
+  parent: System.Security.Cryptography.RSA
+  isExternal: true
+  name: "XXX"
+  fullName: System.Security.Cryptography.RSA.KeyExchangeAlgorithm
+  commentId: P:System.Security.Cryptography.RSA.KeyExchangeAlgorithm
+  nameWithType: RSA.KeyExchangeAlgorithm
+- uid: System.Security.Cryptography.RSA.SignatureAlgorithm
+  parent: System.Security.Cryptography.RSA
+  isExternal: true
+  name: "XXX"
+  fullName: System.Security.Cryptography.RSA.SignatureAlgorithm
+  commentId: P:System.Security.Cryptography.RSA.SignatureAlgorithm
+  nameWithType: RSA.SignatureAlgorithm
+- uid: System.Security.Cryptography.AsymmetricAlgorithm.KeySizeValue
+  parent: System.Security.Cryptography.AsymmetricAlgorithm
+  isExternal: true
+  name: "XXX"
+  fullName: System.Security.Cryptography.AsymmetricAlgorithm.KeySizeValue
+  commentId: F:System.Security.Cryptography.AsymmetricAlgorithm.KeySizeValue
+  nameWithType: AsymmetricAlgorithm.KeySizeValue
+- uid: System.Security.Cryptography.AsymmetricAlgorithm.LegalKeySizesValue
+  parent: System.Security.Cryptography.AsymmetricAlgorithm
+  isExternal: true
+  name: "XXX"
+  fullName: System.Security.Cryptography.AsymmetricAlgorithm.LegalKeySizesValue
+  commentId: F:System.Security.Cryptography.AsymmetricAlgorithm.LegalKeySizesValue
+  nameWithType: AsymmetricAlgorithm.LegalKeySizesValue
+- uid: System.Security.Cryptography.AsymmetricAlgorithm.Dispose
+  parent: System.Security.Cryptography.AsymmetricAlgorithm
+  isExternal: true
+  name: "XXX"
+  fullName: System.Security.Cryptography.AsymmetricAlgorithm.Dispose()
+  spec.csharp:
+  - uid: System.Security.Cryptography.AsymmetricAlgorithm.Dispose
+    name: "XXX"
+    fullName: System.Security.Cryptography.AsymmetricAlgorithm.Dispose
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Security.Cryptography.AsymmetricAlgorithm.Dispose
+    name: "XXX"
+    fullName: System.Security.Cryptography.AsymmetricAlgorithm.Dispose
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Security.Cryptography.AsymmetricAlgorithm.Dispose
+  nameWithType: AsymmetricAlgorithm.Dispose()
+- uid: System.Security.Cryptography.AsymmetricAlgorithm.Clear
+  parent: System.Security.Cryptography.AsymmetricAlgorithm
+  isExternal: true
+  name: "XXX"
+  fullName: System.Security.Cryptography.AsymmetricAlgorithm.Clear()
+  spec.csharp:
+  - uid: System.Security.Cryptography.AsymmetricAlgorithm.Clear
+    name: "XXX"
+    fullName: System.Security.Cryptography.AsymmetricAlgorithm.Clear
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Security.Cryptography.AsymmetricAlgorithm.Clear
+    name: "XXX"
+    fullName: System.Security.Cryptography.AsymmetricAlgorithm.Clear
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Security.Cryptography.AsymmetricAlgorithm.Clear
+  nameWithType: AsymmetricAlgorithm.Clear()
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.ToString
+  nameWithType: Object.ToString()
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.Equals(System.Object)
+  nameWithType: Object.Equals(Object)
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  nameWithType: Object.Equals(Object, Object)
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.GetHashCode
+  nameWithType: Object.GetHashCode()
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.GetType
+  nameWithType: Object.GetType()
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.MemberwiseClone
+  nameWithType: Object.MemberwiseClone()
+- uid: System
+  isExternal: false
+  name: "XXX"
+  fullName: System
+  commentId: N:System
+  nameWithType: System
+- uid: System.Int32
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Int32
+  commentId: T:System.Int32
+  nameWithType: Int32
+- uid: System.Security.Cryptography.CspParameters
+  parent: System.Security.Cryptography
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.Cryptography.CspParameters
+  commentId: T:System.Security.Cryptography.CspParameters
+  nameWithType: CspParameters
+- uid: System.Security.Cryptography.ICspAsymmetricAlgorithm.CspKeyContainerInfo
+  parent: System.Security.Cryptography.ICspAsymmetricAlgorithm
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.Cryptography.ICspAsymmetricAlgorithm.CspKeyContainerInfo
+  commentId: P:System.Security.Cryptography.ICspAsymmetricAlgorithm.CspKeyContainerInfo
+  nameWithType: ICspAsymmetricAlgorithm.CspKeyContainerInfo
+- uid: System.Security.Cryptography.CspKeyContainerInfo
+  parent: System.Security.Cryptography
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.Cryptography.CspKeyContainerInfo
+  commentId: T:System.Security.Cryptography.CspKeyContainerInfo
+  nameWithType: CspKeyContainerInfo
+- uid: System.Security.Cryptography.AsymmetricAlgorithm.KeySize
+  parent: System.Security.Cryptography.AsymmetricAlgorithm
+  isExternal: true
+  name: "XXX"
+  fullName: System.Security.Cryptography.AsymmetricAlgorithm.KeySize
+  commentId: P:System.Security.Cryptography.AsymmetricAlgorithm.KeySize
+  nameWithType: AsymmetricAlgorithm.KeySize
+- uid: System.Boolean
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Boolean
+  commentId: T:System.Boolean
+  nameWithType: Boolean
+- uid: System.Byte[]
+  name: "XXX"
+  fullName: System.Byte[]
+  fullname.vb: System.Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: "XXX"
+    fullName: System.Byte
+    isExternal: true
+  - name: 'XXX'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: "XXX"
+    fullName: System.Byte
+    isExternal: true
+  - name: "XXX"
+    fullName: ()
+  nameWithType: Byte[]
+  nameWithType.vb: Byte()
+- uid: System.Security.Cryptography.RSA.Decrypt(System.Byte[],System.Security.Cryptography.RSAEncryptionPadding)
+  parent: System.Security.Cryptography.RSA
+  isExternal: true
+  name: "XXX"
+  fullName: System.Security.Cryptography.RSA.Decrypt(System.Byte[], System.Security.Cryptography.RSAEncryptionPadding)
+  fullname.vb: System.Security.Cryptography.RSA.Decrypt(System.Byte(), System.Security.Cryptography.RSAEncryptionPadding)
+  name.vb: Decrypt(Byte(), RSAEncryptionPadding)
+  spec.csharp:
+  - uid: System.Security.Cryptography.RSA.Decrypt(System.Byte[],System.Security.Cryptography.RSAEncryptionPadding)
+    name: "XXX"
+    fullName: System.Security.Cryptography.RSA.Decrypt
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Byte
+    name: "XXX"
+    fullName: System.Byte
+    isExternal: true
+  - name: 'XXX'
+    fullName: '[]'
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Security.Cryptography.RSAEncryptionPadding
+    name: "XXX"
+    fullName: System.Security.Cryptography.RSAEncryptionPadding
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Security.Cryptography.RSA.Decrypt(System.Byte[],System.Security.Cryptography.RSAEncryptionPadding)
+    name: "XXX"
+    fullName: System.Security.Cryptography.RSA.Decrypt
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Byte
+    name: "XXX"
+    fullName: System.Byte
+    isExternal: true
+  - name: "XXX"
+    fullName: ()
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Security.Cryptography.RSAEncryptionPadding
+    name: "XXX"
+    fullName: System.Security.Cryptography.RSAEncryptionPadding
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Security.Cryptography.RSA.Decrypt(System.Byte[],System.Security.Cryptography.RSAEncryptionPadding)
+  nameWithType: RSA.Decrypt(Byte[], RSAEncryptionPadding)
+  nameWithType.vb: RSA.Decrypt(Byte(), RSAEncryptionPadding)
+- uid: System.Security.Cryptography.RSAEncryptionPadding
+  parent: System.Security.Cryptography
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.Cryptography.RSAEncryptionPadding
+  commentId: T:System.Security.Cryptography.RSAEncryptionPadding
+  nameWithType: RSAEncryptionPadding
+- uid: System.Security.Cryptography.AsymmetricAlgorithm.Dispose(System.Boolean)
+  parent: System.Security.Cryptography.AsymmetricAlgorithm
+  isExternal: true
+  name: "XXX"
+  fullName: System.Security.Cryptography.AsymmetricAlgorithm.Dispose(System.Boolean)
+  spec.csharp:
+  - uid: System.Security.Cryptography.AsymmetricAlgorithm.Dispose(System.Boolean)
+    name: "XXX"
+    fullName: System.Security.Cryptography.AsymmetricAlgorithm.Dispose
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Boolean
+    name: "XXX"
+    fullName: System.Boolean
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Security.Cryptography.AsymmetricAlgorithm.Dispose(System.Boolean)
+    name: "XXX"
+    fullName: System.Security.Cryptography.AsymmetricAlgorithm.Dispose
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Boolean
+    name: "XXX"
+    fullName: System.Boolean
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Security.Cryptography.AsymmetricAlgorithm.Dispose(System.Boolean)
+  nameWithType: AsymmetricAlgorithm.Dispose(Boolean)
+- uid: System.Security.Cryptography.RSA.Encrypt(System.Byte[],System.Security.Cryptography.RSAEncryptionPadding)
+  parent: System.Security.Cryptography.RSA
+  isExternal: true
+  name: "XXX"
+  fullName: System.Security.Cryptography.RSA.Encrypt(System.Byte[], System.Security.Cryptography.RSAEncryptionPadding)
+  fullname.vb: System.Security.Cryptography.RSA.Encrypt(System.Byte(), System.Security.Cryptography.RSAEncryptionPadding)
+  name.vb: Encrypt(Byte(), RSAEncryptionPadding)
+  spec.csharp:
+  - uid: System.Security.Cryptography.RSA.Encrypt(System.Byte[],System.Security.Cryptography.RSAEncryptionPadding)
+    name: "XXX"
+    fullName: System.Security.Cryptography.RSA.Encrypt
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Byte
+    name: "XXX"
+    fullName: System.Byte
+    isExternal: true
+  - name: 'XXX'
+    fullName: '[]'
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Security.Cryptography.RSAEncryptionPadding
+    name: "XXX"
+    fullName: System.Security.Cryptography.RSAEncryptionPadding
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Security.Cryptography.RSA.Encrypt(System.Byte[],System.Security.Cryptography.RSAEncryptionPadding)
+    name: "XXX"
+    fullName: System.Security.Cryptography.RSA.Encrypt
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Byte
+    name: "XXX"
+    fullName: System.Byte
+    isExternal: true
+  - name: "XXX"
+    fullName: ()
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Security.Cryptography.RSAEncryptionPadding
+    name: "XXX"
+    fullName: System.Security.Cryptography.RSAEncryptionPadding
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Security.Cryptography.RSA.Encrypt(System.Byte[],System.Security.Cryptography.RSAEncryptionPadding)
+  nameWithType: RSA.Encrypt(Byte[], RSAEncryptionPadding)
+  nameWithType.vb: RSA.Encrypt(Byte(), RSAEncryptionPadding)
+- uid: System.Security.Cryptography.ICspAsymmetricAlgorithm.ExportCspBlob(System.Boolean)
+  parent: System.Security.Cryptography.ICspAsymmetricAlgorithm
+  isExternal: true
+  name: "XXX"
+  fullName: System.Security.Cryptography.ICspAsymmetricAlgorithm.ExportCspBlob(System.Boolean)
+  spec.csharp:
+  - uid: System.Security.Cryptography.ICspAsymmetricAlgorithm.ExportCspBlob(System.Boolean)
+    name: "XXX"
+    fullName: System.Security.Cryptography.ICspAsymmetricAlgorithm.ExportCspBlob
+  - name: "XXX"
+    fullName: (
+  - uid: System.Boolean
+    name: "XXX"
+    fullName: System.Boolean
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Security.Cryptography.ICspAsymmetricAlgorithm.ExportCspBlob(System.Boolean)
+    name: "XXX"
+    fullName: System.Security.Cryptography.ICspAsymmetricAlgorithm.ExportCspBlob
+  - name: "XXX"
+    fullName: (
+  - uid: System.Boolean
+    name: "XXX"
+    fullName: System.Boolean
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Security.Cryptography.ICspAsymmetricAlgorithm.ExportCspBlob(System.Boolean)
+  nameWithType: ICspAsymmetricAlgorithm.ExportCspBlob(Boolean)
+- uid: System.Security.Cryptography.RSA.ExportParameters(System.Boolean)
+  parent: System.Security.Cryptography.RSA
+  isExternal: true
+  name: "XXX"
+  fullName: System.Security.Cryptography.RSA.ExportParameters(System.Boolean)
+  spec.csharp:
+  - uid: System.Security.Cryptography.RSA.ExportParameters(System.Boolean)
+    name: "XXX"
+    fullName: System.Security.Cryptography.RSA.ExportParameters
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Boolean
+    name: "XXX"
+    fullName: System.Boolean
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Security.Cryptography.RSA.ExportParameters(System.Boolean)
+    name: "XXX"
+    fullName: System.Security.Cryptography.RSA.ExportParameters
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Boolean
+    name: "XXX"
+    fullName: System.Boolean
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Security.Cryptography.RSA.ExportParameters(System.Boolean)
+  nameWithType: RSA.ExportParameters(Boolean)
+- uid: System.Security.Cryptography.RSAParameters
+  parent: System.Security.Cryptography
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.Cryptography.RSAParameters
+  commentId: T:System.Security.Cryptography.RSAParameters
+  nameWithType: RSAParameters
+- uid: System.Security.Cryptography.RSA.HashData(System.Byte[],System.Int32,System.Int32,System.Security.Cryptography.HashAlgorithmName)
+  parent: System.Security.Cryptography.RSA
+  isExternal: true
+  name: "XXX"
+  fullName: System.Security.Cryptography.RSA.HashData(System.Byte[], System.Int32, System.Int32, System.Security.Cryptography.HashAlgorithmName)
+  fullname.vb: System.Security.Cryptography.RSA.HashData(System.Byte(), System.Int32, System.Int32, System.Security.Cryptography.HashAlgorithmName)
+  name.vb: HashData(Byte(), Int32, Int32, HashAlgorithmName)
+  spec.csharp:
+  - uid: System.Security.Cryptography.RSA.HashData(System.Byte[],System.Int32,System.Int32,System.Security.Cryptography.HashAlgorithmName)
+    name: "XXX"
+    fullName: System.Security.Cryptography.RSA.HashData
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Byte
+    name: "XXX"
+    fullName: System.Byte
+    isExternal: true
+  - name: 'XXX'
+    fullName: '[]'
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Security.Cryptography.HashAlgorithmName
+    name: "XXX"
+    fullName: System.Security.Cryptography.HashAlgorithmName
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Security.Cryptography.RSA.HashData(System.Byte[],System.Int32,System.Int32,System.Security.Cryptography.HashAlgorithmName)
+    name: "XXX"
+    fullName: System.Security.Cryptography.RSA.HashData
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Byte
+    name: "XXX"
+    fullName: System.Byte
+    isExternal: true
+  - name: "XXX"
+    fullName: ()
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Security.Cryptography.HashAlgorithmName
+    name: "XXX"
+    fullName: System.Security.Cryptography.HashAlgorithmName
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Security.Cryptography.RSA.HashData(System.Byte[],System.Int32,System.Int32,System.Security.Cryptography.HashAlgorithmName)
+  nameWithType: RSA.HashData(Byte[], Int32, Int32, HashAlgorithmName)
+  nameWithType.vb: RSA.HashData(Byte(), Int32, Int32, HashAlgorithmName)
+- uid: System.Security.Cryptography.HashAlgorithmName
+  parent: System.Security.Cryptography
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.Cryptography.HashAlgorithmName
+  commentId: T:System.Security.Cryptography.HashAlgorithmName
+  nameWithType: HashAlgorithmName
+- uid: System.Security.Cryptography.RSA.HashData(System.IO.Stream,System.Security.Cryptography.HashAlgorithmName)
+  parent: System.Security.Cryptography.RSA
+  isExternal: true
+  name: "XXX"
+  fullName: System.Security.Cryptography.RSA.HashData(System.IO.Stream, System.Security.Cryptography.HashAlgorithmName)
+  spec.csharp:
+  - uid: System.Security.Cryptography.RSA.HashData(System.IO.Stream,System.Security.Cryptography.HashAlgorithmName)
+    name: "XXX"
+    fullName: System.Security.Cryptography.RSA.HashData
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.IO.Stream
+    name: "XXX"
+    fullName: System.IO.Stream
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Security.Cryptography.HashAlgorithmName
+    name: "XXX"
+    fullName: System.Security.Cryptography.HashAlgorithmName
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Security.Cryptography.RSA.HashData(System.IO.Stream,System.Security.Cryptography.HashAlgorithmName)
+    name: "XXX"
+    fullName: System.Security.Cryptography.RSA.HashData
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.IO.Stream
+    name: "XXX"
+    fullName: System.IO.Stream
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Security.Cryptography.HashAlgorithmName
+    name: "XXX"
+    fullName: System.Security.Cryptography.HashAlgorithmName
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Security.Cryptography.RSA.HashData(System.IO.Stream,System.Security.Cryptography.HashAlgorithmName)
+  nameWithType: RSA.HashData(Stream, HashAlgorithmName)
+- uid: System.IO.Stream
+  parent: System.IO
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.Stream
+  commentId: T:System.IO.Stream
+  nameWithType: Stream
+- uid: System.IO
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO
+  commentId: N:System.IO
+  nameWithType: System.IO
+- uid: System.Security.Cryptography.ICspAsymmetricAlgorithm.ImportCspBlob(System.Byte[])
+  parent: System.Security.Cryptography.ICspAsymmetricAlgorithm
+  isExternal: true
+  name: "XXX"
+  fullName: System.Security.Cryptography.ICspAsymmetricAlgorithm.ImportCspBlob(System.Byte[])
+  fullname.vb: System.Security.Cryptography.ICspAsymmetricAlgorithm.ImportCspBlob(System.Byte())
+  name.vb: ImportCspBlob(Byte())
+  spec.csharp:
+  - uid: System.Security.Cryptography.ICspAsymmetricAlgorithm.ImportCspBlob(System.Byte[])
+    name: "XXX"
+    fullName: System.Security.Cryptography.ICspAsymmetricAlgorithm.ImportCspBlob
+  - name: "XXX"
+    fullName: (
+  - uid: System.Byte
+    name: "XXX"
+    fullName: System.Byte
+    isExternal: true
+  - name: 'XXX'
+    fullName: '[]'
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Security.Cryptography.ICspAsymmetricAlgorithm.ImportCspBlob(System.Byte[])
+    name: "XXX"
+    fullName: System.Security.Cryptography.ICspAsymmetricAlgorithm.ImportCspBlob
+  - name: "XXX"
+    fullName: (
+  - uid: System.Byte
+    name: "XXX"
+    fullName: System.Byte
+    isExternal: true
+  - name: "XXX"
+    fullName: ()
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Security.Cryptography.ICspAsymmetricAlgorithm.ImportCspBlob(System.Byte[])
+  nameWithType: ICspAsymmetricAlgorithm.ImportCspBlob(Byte[])
+  nameWithType.vb: ICspAsymmetricAlgorithm.ImportCspBlob(Byte())
+- uid: System.Security.Cryptography.RSA.ImportParameters(System.Security.Cryptography.RSAParameters)
+  parent: System.Security.Cryptography.RSA
+  isExternal: true
+  name: "XXX"
+  fullName: System.Security.Cryptography.RSA.ImportParameters(System.Security.Cryptography.RSAParameters)
+  spec.csharp:
+  - uid: System.Security.Cryptography.RSA.ImportParameters(System.Security.Cryptography.RSAParameters)
+    name: "XXX"
+    fullName: System.Security.Cryptography.RSA.ImportParameters
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Security.Cryptography.RSAParameters
+    name: "XXX"
+    fullName: System.Security.Cryptography.RSAParameters
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Security.Cryptography.RSA.ImportParameters(System.Security.Cryptography.RSAParameters)
+    name: "XXX"
+    fullName: System.Security.Cryptography.RSA.ImportParameters
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Security.Cryptography.RSAParameters
+    name: "XXX"
+    fullName: System.Security.Cryptography.RSAParameters
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Security.Cryptography.RSA.ImportParameters(System.Security.Cryptography.RSAParameters)
+  nameWithType: RSA.ImportParameters(RSAParameters)
+- uid: System.Security.Cryptography.AsymmetricAlgorithm.LegalKeySizes
+  parent: System.Security.Cryptography.AsymmetricAlgorithm
+  isExternal: true
+  name: "XXX"
+  fullName: System.Security.Cryptography.AsymmetricAlgorithm.LegalKeySizes
+  commentId: P:System.Security.Cryptography.AsymmetricAlgorithm.LegalKeySizes
+  nameWithType: AsymmetricAlgorithm.LegalKeySizes
+- uid: System.Security.Cryptography.KeySizes[]
+  name: "XXX"
+  fullName: System.Security.Cryptography.KeySizes[]
+  fullname.vb: System.Security.Cryptography.KeySizes()
+  name.vb: KeySizes()
+  spec.csharp:
+  - uid: System.Security.Cryptography.KeySizes
+    name: "XXX"
+    fullName: System.Security.Cryptography.KeySizes
+  - name: 'XXX'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Security.Cryptography.KeySizes
+    name: "XXX"
+    fullName: System.Security.Cryptography.KeySizes
+  - name: "XXX"
+    fullName: ()
+  nameWithType: KeySizes[]
+  nameWithType.vb: KeySizes()
+- uid: System.Security.Cryptography.RSA.SignHash(System.Byte[],System.Security.Cryptography.HashAlgorithmName,System.Security.Cryptography.RSASignaturePadding)
+  parent: System.Security.Cryptography.RSA
+  isExternal: true
+  name: "XXX"
+  fullName: System.Security.Cryptography.RSA.SignHash(System.Byte[], System.Security.Cryptography.HashAlgorithmName, System.Security.Cryptography.RSASignaturePadding)
+  fullname.vb: System.Security.Cryptography.RSA.SignHash(System.Byte(), System.Security.Cryptography.HashAlgorithmName, System.Security.Cryptography.RSASignaturePadding)
+  name.vb: SignHash(Byte(), HashAlgorithmName, RSASignaturePadding)
+  spec.csharp:
+  - uid: System.Security.Cryptography.RSA.SignHash(System.Byte[],System.Security.Cryptography.HashAlgorithmName,System.Security.Cryptography.RSASignaturePadding)
+    name: "XXX"
+    fullName: System.Security.Cryptography.RSA.SignHash
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Byte
+    name: "XXX"
+    fullName: System.Byte
+    isExternal: true
+  - name: 'XXX'
+    fullName: '[]'
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Security.Cryptography.HashAlgorithmName
+    name: "XXX"
+    fullName: System.Security.Cryptography.HashAlgorithmName
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Security.Cryptography.RSASignaturePadding
+    name: "XXX"
+    fullName: System.Security.Cryptography.RSASignaturePadding
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Security.Cryptography.RSA.SignHash(System.Byte[],System.Security.Cryptography.HashAlgorithmName,System.Security.Cryptography.RSASignaturePadding)
+    name: "XXX"
+    fullName: System.Security.Cryptography.RSA.SignHash
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Byte
+    name: "XXX"
+    fullName: System.Byte
+    isExternal: true
+  - name: "XXX"
+    fullName: ()
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Security.Cryptography.HashAlgorithmName
+    name: "XXX"
+    fullName: System.Security.Cryptography.HashAlgorithmName
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Security.Cryptography.RSASignaturePadding
+    name: "XXX"
+    fullName: System.Security.Cryptography.RSASignaturePadding
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Security.Cryptography.RSA.SignHash(System.Byte[],System.Security.Cryptography.HashAlgorithmName,System.Security.Cryptography.RSASignaturePadding)
+  nameWithType: RSA.SignHash(Byte[], HashAlgorithmName, RSASignaturePadding)
+  nameWithType.vb: RSA.SignHash(Byte(), HashAlgorithmName, RSASignaturePadding)
+- uid: System.Security.Cryptography.RSASignaturePadding
+  parent: System.Security.Cryptography
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.Cryptography.RSASignaturePadding
+  commentId: T:System.Security.Cryptography.RSASignaturePadding
+  nameWithType: RSASignaturePadding
+- uid: System.String
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.String
+  commentId: T:System.String
+  nameWithType: String
+- uid: System.Security.Cryptography.RSA.VerifyHash(System.Byte[],System.Byte[],System.Security.Cryptography.HashAlgorithmName,System.Security.Cryptography.RSASignaturePadding)
+  parent: System.Security.Cryptography.RSA
+  isExternal: true
+  name: "XXX"
+  fullName: System.Security.Cryptography.RSA.VerifyHash(System.Byte[], System.Byte[], System.Security.Cryptography.HashAlgorithmName, System.Security.Cryptography.RSASignaturePadding)
+  fullname.vb: System.Security.Cryptography.RSA.VerifyHash(System.Byte(), System.Byte(), System.Security.Cryptography.HashAlgorithmName, System.Security.Cryptography.RSASignaturePadding)
+  name.vb: VerifyHash(Byte(), Byte(), HashAlgorithmName, RSASignaturePadding)
+  spec.csharp:
+  - uid: System.Security.Cryptography.RSA.VerifyHash(System.Byte[],System.Byte[],System.Security.Cryptography.HashAlgorithmName,System.Security.Cryptography.RSASignaturePadding)
+    name: "XXX"
+    fullName: System.Security.Cryptography.RSA.VerifyHash
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Byte
+    name: "XXX"
+    fullName: System.Byte
+    isExternal: true
+  - name: 'XXX'
+    fullName: '[]'
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Byte
+    name: "XXX"
+    fullName: System.Byte
+    isExternal: true
+  - name: 'XXX'
+    fullName: '[]'
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Security.Cryptography.HashAlgorithmName
+    name: "XXX"
+    fullName: System.Security.Cryptography.HashAlgorithmName
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Security.Cryptography.RSASignaturePadding
+    name: "XXX"
+    fullName: System.Security.Cryptography.RSASignaturePadding
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Security.Cryptography.RSA.VerifyHash(System.Byte[],System.Byte[],System.Security.Cryptography.HashAlgorithmName,System.Security.Cryptography.RSASignaturePadding)
+    name: "XXX"
+    fullName: System.Security.Cryptography.RSA.VerifyHash
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Byte
+    name: "XXX"
+    fullName: System.Byte
+    isExternal: true
+  - name: "XXX"
+    fullName: ()
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Byte
+    name: "XXX"
+    fullName: System.Byte
+    isExternal: true
+  - name: "XXX"
+    fullName: ()
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Security.Cryptography.HashAlgorithmName
+    name: "XXX"
+    fullName: System.Security.Cryptography.HashAlgorithmName
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Security.Cryptography.RSASignaturePadding
+    name: "XXX"
+    fullName: System.Security.Cryptography.RSASignaturePadding
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Security.Cryptography.RSA.VerifyHash(System.Byte[],System.Byte[],System.Security.Cryptography.HashAlgorithmName,System.Security.Cryptography.RSASignaturePadding)
+  nameWithType: RSA.VerifyHash(Byte[], Byte[], HashAlgorithmName, RSASignaturePadding)
+  nameWithType.vb: RSA.VerifyHash(Byte(), Byte(), HashAlgorithmName, RSASignaturePadding)
+- uid: System.Security.Cryptography.CryptographicException
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.Cryptography.CryptographicException
+  commentId: T:System.Security.Cryptography.CryptographicException
+  nameWithType: CryptographicException
+- uid: System.ArgumentNullException
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentNullException
+  nameWithType: ArgumentNullException
+  commentId: T:System.ArgumentNullException
+- uid: System.ArgumentException
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentException
+  nameWithType: ArgumentException
+  commentId: T:System.ArgumentException

@@ -1,0 +1,1041 @@
+items:
+- uid: System.Net.Http.ByteArrayContent
+  commentId: T:System.Net.Http.ByteArrayContent
+  id: ByteArrayContent
+  parent: System.Net.Http
+  children:
+  - System.Net.Http.ByteArrayContent.#ctor(System.Byte[])
+  - System.Net.Http.ByteArrayContent.#ctor(System.Byte[],System.Int32,System.Int32)
+  - System.Net.Http.ByteArrayContent.CreateContentReadStreamAsync
+  - System.Net.Http.ByteArrayContent.SerializeToStreamAsync(System.IO.Stream,System.Net.TransportContext)
+  - System.Net.Http.ByteArrayContent.TryComputeLength(System.Int64@)
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Net.Http.ByteArrayContent
+  type: Class
+  source:
+    remote:
+      path: src/System.Net.Http/ref/System.Net.Http.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: ByteArrayContent
+    path: src/System.Net.Http/ref/System.Net.Http.cs
+    startLine: 10
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http
+  summary: "\n<p>Provides HTTP content based on a byte array.</p>\n"
+  syntax:
+    content: 'public class ByteArrayContent : HttpContent, IDisposable'
+    content.vb: >-
+      Public Class ByteArrayContent
+          Inherits HttpContent
+          Implements IDisposable
+  inheritance:
+  - System.Object
+  - System.Net.Http.HttpContent
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - System.Net.Http.HttpContent.Headers
+  - System.Net.Http.HttpContent.CopyToAsync(System.IO.Stream)
+  - System.Net.Http.HttpContent.CopyToAsync(System.IO.Stream,System.Net.TransportContext)
+  - System.Net.Http.HttpContent.Dispose
+  - System.Net.Http.HttpContent.Dispose(System.Boolean)
+  - System.Net.Http.HttpContent.LoadIntoBufferAsync
+  - System.Net.Http.HttpContent.LoadIntoBufferAsync(System.Int64)
+  - System.Net.Http.HttpContent.ReadAsByteArrayAsync
+  - System.Net.Http.HttpContent.ReadAsStreamAsync
+  - System.Net.Http.HttpContent.ReadAsStringAsync
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+  nameWithType: ByteArrayContent
+- uid: System.Net.Http.ByteArrayContent.#ctor(System.Byte[])
+  commentId: M:System.Net.Http.ByteArrayContent.#ctor(System.Byte[])
+  id: '#ctor(System.Byte[])'
+  parent: System.Net.Http.ByteArrayContent
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Net.Http.ByteArrayContent.ByteArrayContent(System.Byte[])
+  type: Constructor
+  source:
+    remote:
+      path: src/System.Net.Http/ref/System.Net.Http.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: .ctor
+    path: src/System.Net.Http/ref/System.Net.Http.cs
+    startLine: 12
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http
+  summary: "\n<p>Initializes a new instance of the <xref href=\"System.Net.Http.ByteArrayContent\" data-throw-if-not-resolved=\"false\"></xref> class.</p>\n"
+  syntax:
+    content: public ByteArrayContent(byte[] content)
+    content.vb: Public Sub New(content As Byte())
+    parameters:
+    - id: content
+      type: System.Byte[]
+      description: "\n<p>The content used to initialize the <xref href=\"System.Net.Http.ByteArrayContent\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>The <em>content</em> parameter is <strong>null</strong>. </p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: System.Net.Http.ByteArrayContent.ByteArrayContent(System.Byte())
+  name.vb: ByteArrayContent(Byte())
+  nameWithType: ByteArrayContent.ByteArrayContent(Byte[])
+  nameWithType.vb: ByteArrayContent.ByteArrayContent(Byte())
+- uid: System.Net.Http.ByteArrayContent.#ctor(System.Byte[],System.Int32,System.Int32)
+  commentId: M:System.Net.Http.ByteArrayContent.#ctor(System.Byte[],System.Int32,System.Int32)
+  id: '#ctor(System.Byte[],System.Int32,System.Int32)'
+  parent: System.Net.Http.ByteArrayContent
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Net.Http.ByteArrayContent.ByteArrayContent(System.Byte[], System.Int32, System.Int32)
+  type: Constructor
+  source:
+    remote:
+      path: src/System.Net.Http/ref/System.Net.Http.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: .ctor
+    path: src/System.Net.Http/ref/System.Net.Http.cs
+    startLine: 13
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http
+  summary: "\n<p>Initializes a new instance of the <xref href=\"System.Net.Http.ByteArrayContent\" data-throw-if-not-resolved=\"false\"></xref> class.</p>\n"
+  syntax:
+    content: public ByteArrayContent(byte[] content, int offset, int count)
+    content.vb: Public Sub New(content As Byte(), offset As Integer, count As Integer)
+    parameters:
+    - id: content
+      type: System.Byte[]
+      description: "\n<p>The content used to initialize the <xref href=\"System.Net.Http.ByteArrayContent\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    - id: offset
+      type: System.Int32
+      description: "\n<p>The offset, in bytes, in the <em>content</em>  parameter used to initialize the <xref href=\"System.Net.Http.ByteArrayContent\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    - id: count
+      type: System.Int32
+      description: "\n<p>The number of bytes in the <em>content</em> starting from the <em>offset</em> parameter used to initialize the <xref href=\"System.Net.Http.ByteArrayContent\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>The <em>content</em> parameter is <strong>null</strong>. </p>\n"
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>The <em>offset</em> parameter is less than zero.</p>\n<p>-or-</p>\n<p>The <em>offset</em> parameter is greater than the length of content specified by the <em>content</em> parameter.</p>\n<p>-or-</p>\n<p>The <em>count </em> parameter is less than zero.</p>\n<p>-or-</p>\n<p>The <em>count</em> parameter is greater than the length of content specified by the <em>content</em> parameter - minus the <em>offset</em> parameter.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: System.Net.Http.ByteArrayContent.ByteArrayContent(System.Byte(), System.Int32, System.Int32)
+  name.vb: ByteArrayContent(Byte(), Int32, Int32)
+  nameWithType: ByteArrayContent.ByteArrayContent(Byte[], Int32, Int32)
+  nameWithType.vb: ByteArrayContent.ByteArrayContent(Byte(), Int32, Int32)
+- uid: System.Net.Http.ByteArrayContent.CreateContentReadStreamAsync
+  commentId: M:System.Net.Http.ByteArrayContent.CreateContentReadStreamAsync
+  id: CreateContentReadStreamAsync
+  parent: System.Net.Http.ByteArrayContent
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Net.Http.ByteArrayContent.CreateContentReadStreamAsync()
+  type: Method
+  source:
+    remote:
+      path: src/System.Net.Http/ref/System.Net.Http.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: CreateContentReadStreamAsync
+    path: src/System.Net.Http/ref/System.Net.Http.cs
+    startLine: 14
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http
+  summary: "\n<p>Creates an HTTP content stream as an asynchronous operation for reading whose backing store is memory from the <xref href=\"System.Net.Http.ByteArrayContent\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  syntax:
+    content: protected override Task<Stream> CreateContentReadStreamAsync()
+    content.vb: Protected Overrides Function CreateContentReadStreamAsync As Task(Of Stream)
+    return:
+      type: System.Threading.Tasks.Task{System.IO.Stream}
+      description: "\n<p>Returns <xref href=\"System.Threading.Tasks.Task`1\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n<p>The task object representing the asynchronous operation.</p>\n"
+  overridden: System.Net.Http.HttpContent.CreateContentReadStreamAsync
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+  nameWithType: ByteArrayContent.CreateContentReadStreamAsync()
+- uid: System.Net.Http.ByteArrayContent.SerializeToStreamAsync(System.IO.Stream,System.Net.TransportContext)
+  commentId: M:System.Net.Http.ByteArrayContent.SerializeToStreamAsync(System.IO.Stream,System.Net.TransportContext)
+  id: SerializeToStreamAsync(System.IO.Stream,System.Net.TransportContext)
+  parent: System.Net.Http.ByteArrayContent
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Net.Http.ByteArrayContent.SerializeToStreamAsync(System.IO.Stream, System.Net.TransportContext)
+  type: Method
+  source:
+    remote:
+      path: src/System.Net.Http/ref/System.Net.Http.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: SerializeToStreamAsync
+    path: src/System.Net.Http/ref/System.Net.Http.cs
+    startLine: 15
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http
+  summary: "\n<p>Serialize and write the byte array provided in the constructor to an HTTP content stream as an asynchronous operation.</p>\n"
+  syntax:
+    content: protected override Task SerializeToStreamAsync(Stream stream, TransportContext context)
+    content.vb: Protected Overrides Function SerializeToStreamAsync(stream As Stream, context As TransportContext) As Task
+    parameters:
+    - id: stream
+      type: System.IO.Stream
+      description: "\n<p>The target stream.</p>\n"
+    - id: context
+      type: System.Net.TransportContext
+      description: "\n<p>Information about the transport, like channel binding token. This parameter may be <strong>null</strong>.</p>\n"
+    return:
+      type: System.Threading.Tasks.Task
+      description: "\n<p>Returns <xref href=\"System.Threading.Tasks.Task\" data-throw-if-not-resolved=\"false\"></xref>. </p>\n<p>The task object representing the asynchronous operation.</p>\n"
+  overridden: System.Net.Http.HttpContent.SerializeToStreamAsync(System.IO.Stream,System.Net.TransportContext)
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+  nameWithType: ByteArrayContent.SerializeToStreamAsync(Stream, TransportContext)
+- uid: System.Net.Http.ByteArrayContent.TryComputeLength(System.Int64@)
+  commentId: M:System.Net.Http.ByteArrayContent.TryComputeLength(System.Int64@)
+  id: TryComputeLength(System.Int64@)
+  parent: System.Net.Http.ByteArrayContent
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Net.Http.ByteArrayContent.TryComputeLength(out System.Int64)
+  type: Method
+  source:
+    remote:
+      path: src/System.Net.Http/ref/System.Net.Http.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: TryComputeLength
+    path: src/System.Net.Http/ref/System.Net.Http.cs
+    startLine: 16
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http
+  summary: "\n<p>Determines whether a byte array has a valid length in bytes.</p>\n"
+  syntax:
+    content: protected override bool TryComputeLength(out long length)
+    content.vb: Protected Overrides Function TryComputeLength(ByRef length As Long) As Boolean
+    parameters:
+    - id: length
+      type: System.Int64
+      description: "\n<p>The length in bytes of the byte array.</p>\n"
+    return:
+      type: System.Boolean
+      description: "\n<p>Returns <xref href=\"System.Boolean\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n<p>\n<strong>true</strong> if <em>length</em> is a valid length; otherwise, <strong>false</strong>.</p>\n"
+  overridden: System.Net.Http.HttpContent.TryComputeLength(System.Int64@)
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+  fullName.vb: System.Net.Http.ByteArrayContent.TryComputeLength(ByRef System.Int64)
+  name.vb: TryComputeLength(ByRef Int64)
+  nameWithType: ByteArrayContent.TryComputeLength(out Int64)
+  nameWithType.vb: ByteArrayContent.TryComputeLength(ByRef Int64)
+references:
+- uid: System.Net.Http
+  isExternal: false
+  name: "XXX"
+  fullName: System.Net.Http
+  commentId: N:System.Net.Http
+  nameWithType: System.Net.Http
+- uid: System.Object
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Object
+  commentId: T:System.Object
+  nameWithType: Object
+- uid: System.Net.Http.HttpContent
+  parent: System.Net.Http
+  isExternal: false
+  name: "XXX"
+  fullName: System.Net.Http.HttpContent
+  commentId: T:System.Net.Http.HttpContent
+  nameWithType: HttpContent
+- uid: System.IDisposable
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.IDisposable
+  commentId: T:System.IDisposable
+  nameWithType: IDisposable
+- uid: System.Net.Http.HttpContent.Headers
+  parent: System.Net.Http.HttpContent
+  isExternal: false
+  name: "XXX"
+  fullName: System.Net.Http.HttpContent.Headers
+  commentId: P:System.Net.Http.HttpContent.Headers
+  nameWithType: HttpContent.Headers
+- uid: System.Net.Http.HttpContent.CopyToAsync(System.IO.Stream)
+  parent: System.Net.Http.HttpContent
+  isExternal: true
+  name: "XXX"
+  fullName: System.Net.Http.HttpContent.CopyToAsync(System.IO.Stream)
+  spec.csharp:
+  - uid: System.Net.Http.HttpContent.CopyToAsync(System.IO.Stream)
+    name: "XXX"
+    fullName: System.Net.Http.HttpContent.CopyToAsync
+  - name: "XXX"
+    fullName: (
+  - uid: System.IO.Stream
+    name: "XXX"
+    fullName: System.IO.Stream
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Net.Http.HttpContent.CopyToAsync(System.IO.Stream)
+    name: "XXX"
+    fullName: System.Net.Http.HttpContent.CopyToAsync
+  - name: "XXX"
+    fullName: (
+  - uid: System.IO.Stream
+    name: "XXX"
+    fullName: System.IO.Stream
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Net.Http.HttpContent.CopyToAsync(System.IO.Stream)
+  nameWithType: HttpContent.CopyToAsync(Stream)
+- uid: System.Net.Http.HttpContent.CopyToAsync(System.IO.Stream,System.Net.TransportContext)
+  parent: System.Net.Http.HttpContent
+  isExternal: true
+  name: "XXX"
+  fullName: System.Net.Http.HttpContent.CopyToAsync(System.IO.Stream, System.Net.TransportContext)
+  spec.csharp:
+  - uid: System.Net.Http.HttpContent.CopyToAsync(System.IO.Stream,System.Net.TransportContext)
+    name: "XXX"
+    fullName: System.Net.Http.HttpContent.CopyToAsync
+  - name: "XXX"
+    fullName: (
+  - uid: System.IO.Stream
+    name: "XXX"
+    fullName: System.IO.Stream
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Net.TransportContext
+    name: "XXX"
+    fullName: System.Net.TransportContext
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Net.Http.HttpContent.CopyToAsync(System.IO.Stream,System.Net.TransportContext)
+    name: "XXX"
+    fullName: System.Net.Http.HttpContent.CopyToAsync
+  - name: "XXX"
+    fullName: (
+  - uid: System.IO.Stream
+    name: "XXX"
+    fullName: System.IO.Stream
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Net.TransportContext
+    name: "XXX"
+    fullName: System.Net.TransportContext
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Net.Http.HttpContent.CopyToAsync(System.IO.Stream,System.Net.TransportContext)
+  nameWithType: HttpContent.CopyToAsync(Stream, TransportContext)
+- uid: System.Net.Http.HttpContent.Dispose
+  parent: System.Net.Http.HttpContent
+  isExternal: false
+  name: "XXX"
+  fullName: System.Net.Http.HttpContent.Dispose()
+  spec.csharp:
+  - uid: System.Net.Http.HttpContent.Dispose
+    name: "XXX"
+    fullName: System.Net.Http.HttpContent.Dispose
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Net.Http.HttpContent.Dispose
+    name: "XXX"
+    fullName: System.Net.Http.HttpContent.Dispose
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Net.Http.HttpContent.Dispose
+  nameWithType: HttpContent.Dispose()
+- uid: System.Net.Http.HttpContent.Dispose(System.Boolean)
+  parent: System.Net.Http.HttpContent
+  isExternal: true
+  name: "XXX"
+  fullName: System.Net.Http.HttpContent.Dispose(System.Boolean)
+  spec.csharp:
+  - uid: System.Net.Http.HttpContent.Dispose(System.Boolean)
+    name: "XXX"
+    fullName: System.Net.Http.HttpContent.Dispose
+  - name: "XXX"
+    fullName: (
+  - uid: System.Boolean
+    name: "XXX"
+    fullName: System.Boolean
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Net.Http.HttpContent.Dispose(System.Boolean)
+    name: "XXX"
+    fullName: System.Net.Http.HttpContent.Dispose
+  - name: "XXX"
+    fullName: (
+  - uid: System.Boolean
+    name: "XXX"
+    fullName: System.Boolean
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Net.Http.HttpContent.Dispose(System.Boolean)
+  nameWithType: HttpContent.Dispose(Boolean)
+- uid: System.Net.Http.HttpContent.LoadIntoBufferAsync
+  parent: System.Net.Http.HttpContent
+  isExternal: false
+  name: "XXX"
+  fullName: System.Net.Http.HttpContent.LoadIntoBufferAsync()
+  spec.csharp:
+  - uid: System.Net.Http.HttpContent.LoadIntoBufferAsync
+    name: "XXX"
+    fullName: System.Net.Http.HttpContent.LoadIntoBufferAsync
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Net.Http.HttpContent.LoadIntoBufferAsync
+    name: "XXX"
+    fullName: System.Net.Http.HttpContent.LoadIntoBufferAsync
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Net.Http.HttpContent.LoadIntoBufferAsync
+  nameWithType: HttpContent.LoadIntoBufferAsync()
+- uid: System.Net.Http.HttpContent.LoadIntoBufferAsync(System.Int64)
+  parent: System.Net.Http.HttpContent
+  isExternal: true
+  name: "XXX"
+  fullName: System.Net.Http.HttpContent.LoadIntoBufferAsync(System.Int64)
+  spec.csharp:
+  - uid: System.Net.Http.HttpContent.LoadIntoBufferAsync(System.Int64)
+    name: "XXX"
+    fullName: System.Net.Http.HttpContent.LoadIntoBufferAsync
+  - name: "XXX"
+    fullName: (
+  - uid: System.Int64
+    name: "XXX"
+    fullName: System.Int64
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Net.Http.HttpContent.LoadIntoBufferAsync(System.Int64)
+    name: "XXX"
+    fullName: System.Net.Http.HttpContent.LoadIntoBufferAsync
+  - name: "XXX"
+    fullName: (
+  - uid: System.Int64
+    name: "XXX"
+    fullName: System.Int64
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Net.Http.HttpContent.LoadIntoBufferAsync(System.Int64)
+  nameWithType: HttpContent.LoadIntoBufferAsync(Int64)
+- uid: System.Net.Http.HttpContent.ReadAsByteArrayAsync
+  parent: System.Net.Http.HttpContent
+  isExternal: false
+  name: "XXX"
+  fullName: System.Net.Http.HttpContent.ReadAsByteArrayAsync()
+  spec.csharp:
+  - uid: System.Net.Http.HttpContent.ReadAsByteArrayAsync
+    name: "XXX"
+    fullName: System.Net.Http.HttpContent.ReadAsByteArrayAsync
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Net.Http.HttpContent.ReadAsByteArrayAsync
+    name: "XXX"
+    fullName: System.Net.Http.HttpContent.ReadAsByteArrayAsync
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Net.Http.HttpContent.ReadAsByteArrayAsync
+  nameWithType: HttpContent.ReadAsByteArrayAsync()
+- uid: System.Net.Http.HttpContent.ReadAsStreamAsync
+  parent: System.Net.Http.HttpContent
+  isExternal: false
+  name: "XXX"
+  fullName: System.Net.Http.HttpContent.ReadAsStreamAsync()
+  spec.csharp:
+  - uid: System.Net.Http.HttpContent.ReadAsStreamAsync
+    name: "XXX"
+    fullName: System.Net.Http.HttpContent.ReadAsStreamAsync
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Net.Http.HttpContent.ReadAsStreamAsync
+    name: "XXX"
+    fullName: System.Net.Http.HttpContent.ReadAsStreamAsync
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Net.Http.HttpContent.ReadAsStreamAsync
+  nameWithType: HttpContent.ReadAsStreamAsync()
+- uid: System.Net.Http.HttpContent.ReadAsStringAsync
+  parent: System.Net.Http.HttpContent
+  isExternal: false
+  name: "XXX"
+  fullName: System.Net.Http.HttpContent.ReadAsStringAsync()
+  spec.csharp:
+  - uid: System.Net.Http.HttpContent.ReadAsStringAsync
+    name: "XXX"
+    fullName: System.Net.Http.HttpContent.ReadAsStringAsync
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Net.Http.HttpContent.ReadAsStringAsync
+    name: "XXX"
+    fullName: System.Net.Http.HttpContent.ReadAsStringAsync
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Net.Http.HttpContent.ReadAsStringAsync
+  nameWithType: HttpContent.ReadAsStringAsync()
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.ToString
+  nameWithType: Object.ToString()
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.Equals(System.Object)
+  nameWithType: Object.Equals(Object)
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  nameWithType: Object.Equals(Object, Object)
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.GetHashCode
+  nameWithType: Object.GetHashCode()
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.GetType
+  nameWithType: Object.GetType()
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.MemberwiseClone
+  nameWithType: Object.MemberwiseClone()
+- uid: System
+  isExternal: false
+  name: "XXX"
+  fullName: System
+  commentId: N:System
+  nameWithType: System
+- uid: System.Byte[]
+  name: "XXX"
+  fullName: System.Byte[]
+  fullname.vb: System.Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: "XXX"
+    fullName: System.Byte
+    isExternal: true
+  - name: 'XXX'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: "XXX"
+    fullName: System.Byte
+    isExternal: true
+  - name: "XXX"
+    fullName: ()
+  nameWithType: Byte[]
+  nameWithType.vb: Byte()
+- uid: System.Int32
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Int32
+  commentId: T:System.Int32
+  nameWithType: Int32
+- uid: System.Net.Http.HttpContent.CreateContentReadStreamAsync
+  parent: System.Net.Http.HttpContent
+  isExternal: false
+  name: "XXX"
+  fullName: System.Net.Http.HttpContent.CreateContentReadStreamAsync()
+  spec.csharp:
+  - uid: System.Net.Http.HttpContent.CreateContentReadStreamAsync
+    name: "XXX"
+    fullName: System.Net.Http.HttpContent.CreateContentReadStreamAsync
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Net.Http.HttpContent.CreateContentReadStreamAsync
+    name: "XXX"
+    fullName: System.Net.Http.HttpContent.CreateContentReadStreamAsync
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Net.Http.HttpContent.CreateContentReadStreamAsync
+  nameWithType: HttpContent.CreateContentReadStreamAsync()
+- uid: System.Threading.Tasks.Task{System.IO.Stream}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: "XXX"
+  fullName: System.Threading.Tasks.Task<System.IO.Stream>
+  fullname.vb: System.Threading.Tasks.Task(Of System.IO.Stream)
+  name.vb: Task(Of Stream)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: "XXX"
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: "<"
+    fullName: <
+  - uid: System.IO.Stream
+    name: "XXX"
+    fullName: System.IO.Stream
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: "XXX"
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: 'XXX '
+    fullName: '(Of '
+  - uid: System.IO.Stream
+    name: "XXX"
+    fullName: System.IO.Stream
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: T:System.Threading.Tasks.Task{System.IO.Stream}
+  nameWithType: Task<Stream>
+  nameWithType.vb: Task(Of Stream)
+- uid: System.Threading.Tasks.Task`1
+  isExternal: false
+  name: "XXX"
+  fullName: System.Threading.Tasks.Task<TResult>
+  fullname.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: "XXX"
+    fullName: System.Threading.Tasks.Task
+  - name: "<"
+    fullName: <
+  - name: "XXX"
+    fullName: TResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: "XXX"
+    fullName: System.Threading.Tasks.Task
+  - name: 'XXX '
+    fullName: '(Of '
+  - name: "XXX"
+    fullName: TResult
+  - name: "XXX"
+    fullName: )
+  commentId: T:System.Threading.Tasks.Task`1
+  nameWithType: Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+- uid: System.Threading.Tasks
+  isExternal: false
+  name: "XXX"
+  fullName: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+- uid: System.Net.Http.HttpContent.SerializeToStreamAsync(System.IO.Stream,System.Net.TransportContext)
+  parent: System.Net.Http.HttpContent
+  isExternal: true
+  name: "XXX"
+  fullName: System.Net.Http.HttpContent.SerializeToStreamAsync(System.IO.Stream, System.Net.TransportContext)
+  spec.csharp:
+  - uid: System.Net.Http.HttpContent.SerializeToStreamAsync(System.IO.Stream,System.Net.TransportContext)
+    name: "XXX"
+    fullName: System.Net.Http.HttpContent.SerializeToStreamAsync
+  - name: "XXX"
+    fullName: (
+  - uid: System.IO.Stream
+    name: "XXX"
+    fullName: System.IO.Stream
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Net.TransportContext
+    name: "XXX"
+    fullName: System.Net.TransportContext
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Net.Http.HttpContent.SerializeToStreamAsync(System.IO.Stream,System.Net.TransportContext)
+    name: "XXX"
+    fullName: System.Net.Http.HttpContent.SerializeToStreamAsync
+  - name: "XXX"
+    fullName: (
+  - uid: System.IO.Stream
+    name: "XXX"
+    fullName: System.IO.Stream
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Net.TransportContext
+    name: "XXX"
+    fullName: System.Net.TransportContext
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Net.Http.HttpContent.SerializeToStreamAsync(System.IO.Stream,System.Net.TransportContext)
+  nameWithType: HttpContent.SerializeToStreamAsync(Stream, TransportContext)
+- uid: System.IO.Stream
+  parent: System.IO
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.Stream
+  commentId: T:System.IO.Stream
+  nameWithType: Stream
+- uid: System.Net.TransportContext
+  isExternal: false
+  name: "XXX"
+  fullName: System.Net.TransportContext
+  commentId: T:System.Net.TransportContext
+  nameWithType: TransportContext
+- uid: System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: false
+  name: "XXX"
+  fullName: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  nameWithType: Task
+- uid: System.IO
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO
+  commentId: N:System.IO
+  nameWithType: System.IO
+- uid: System.Net.Http.HttpContent.TryComputeLength(System.Int64@)
+  parent: System.Net.Http.HttpContent
+  isExternal: true
+  name: "XXX"
+  fullName: System.Net.Http.HttpContent.TryComputeLength(System.Int64)
+  spec.csharp:
+  - uid: System.Net.Http.HttpContent.TryComputeLength(System.Int64@)
+    name: "XXX"
+    fullName: System.Net.Http.HttpContent.TryComputeLength
+  - name: "XXX"
+    fullName: (
+  - uid: System.Int64
+    name: "XXX"
+    fullName: System.Int64
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Net.Http.HttpContent.TryComputeLength(System.Int64@)
+    name: "XXX"
+    fullName: System.Net.Http.HttpContent.TryComputeLength
+  - name: "XXX"
+    fullName: (
+  - uid: System.Int64
+    name: "XXX"
+    fullName: System.Int64
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Net.Http.HttpContent.TryComputeLength(System.Int64@)
+  nameWithType: HttpContent.TryComputeLength(Int64)
+- uid: System.Int64
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Int64
+  commentId: T:System.Int64
+  nameWithType: Int64
+- uid: System.Boolean
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Boolean
+  commentId: T:System.Boolean
+  nameWithType: Boolean
+- uid: System.ArgumentNullException
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentNullException
+  nameWithType: ArgumentNullException
+  commentId: T:System.ArgumentNullException
+- uid: System.ArgumentOutOfRangeException
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentOutOfRangeException
+  nameWithType: ArgumentOutOfRangeException
+  commentId: T:System.ArgumentOutOfRangeException

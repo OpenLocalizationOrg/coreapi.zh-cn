@@ -1,0 +1,964 @@
+items:
+- uid: System.Globalization.RegionInfo
+  commentId: T:System.Globalization.RegionInfo
+  id: RegionInfo
+  parent: System.Globalization
+  children:
+  - System.Globalization.RegionInfo.#ctor(System.String)
+  - System.Globalization.RegionInfo.CurrencySymbol
+  - System.Globalization.RegionInfo.CurrentRegion
+  - System.Globalization.RegionInfo.DisplayName
+  - System.Globalization.RegionInfo.EnglishName
+  - System.Globalization.RegionInfo.Equals(System.Object)
+  - System.Globalization.RegionInfo.GetHashCode
+  - System.Globalization.RegionInfo.IsMetric
+  - System.Globalization.RegionInfo.ISOCurrencySymbol
+  - System.Globalization.RegionInfo.Name
+  - System.Globalization.RegionInfo.NativeName
+  - System.Globalization.RegionInfo.ToString
+  - System.Globalization.RegionInfo.TwoLetterISORegionName
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Globalization.RegionInfo
+  type: Class
+  source:
+    remote:
+      path: src/mscorlib/src/System/Globalization/RegionInfo.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: RegionInfo
+    path: src/mscorlib/src/System/Globalization/RegionInfo.cs
+    startLine: 23
+  assemblies:
+  - System.Globalization
+  namespace: System.Globalization
+  summary: "\n<p>Contains information about the country/region.</p>\n"
+  syntax:
+    content: >-
+      [Serializable]
+
+      [ComVisible(true)]
+
+      public class RegionInfo
+    content.vb: >-
+      <Serializable>
+
+      <ComVisible(True)>
+
+      Public Class RegionInfo
+  seealso:
+  - type: System.Globalization.CultureInfo
+    commentId: T:System.Globalization.CultureInfo
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+  nameWithType: RegionInfo
+- uid: System.Globalization.RegionInfo.#ctor(System.String)
+  commentId: M:System.Globalization.RegionInfo.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: System.Globalization.RegionInfo
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Globalization.RegionInfo.RegionInfo(System.String)
+  type: Constructor
+  source:
+    remote:
+      path: src/mscorlib/src/System/Globalization/RegionInfo.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: .ctor
+    path: src/mscorlib/src/System/Globalization/RegionInfo.cs
+    startLine: 61
+  assemblies:
+  - System.Globalization
+  namespace: System.Globalization
+  summary: "\n<p>Initializes a new instance of the <xref href=\"System.Globalization.RegionInfo\" data-throw-if-not-resolved=\"false\"></xref> class based on the country/region or specific culture, specified by name.</p>\n"
+  syntax:
+    content: >-
+      [SecuritySafeCritical]
+
+      public RegionInfo(string name)
+    content.vb: >-
+      <SecuritySafeCritical>
+
+      Public Sub New(name As String)
+    parameters:
+    - id: name
+      type: System.String
+      description: "\n<p>A string that contains a two-letter code defined in ISO 3166 for country/region.</p>\n<p>-or-</p>\n<p>A string that contains the culture name for a specific culture, custom culture, or Windows-only culture. If the culture name is not in RFC 4646 format, your application should specify the entire culture name instead of just the country/region. </p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>name</em> is <strong>null</strong>.</p>\n"
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>\n<em>name</em> is not a valid country/region name or specific culture name.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: RegionInfo.RegionInfo(String)
+- uid: System.Globalization.RegionInfo.CurrencySymbol
+  commentId: P:System.Globalization.RegionInfo.CurrencySymbol
+  id: CurrencySymbol
+  parent: System.Globalization.RegionInfo
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Globalization.RegionInfo.CurrencySymbol
+  type: Property
+  source:
+    remote:
+      path: src/mscorlib/src/System/Globalization/RegionInfo.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: CurrencySymbol
+    path: src/mscorlib/src/System/Globalization/RegionInfo.cs
+    startLine: 560
+  assemblies:
+  - System.Globalization
+  namespace: System.Globalization
+  summary: "\n<p>Gets the currency symbol associated with the country/region.</p>\n"
+  syntax:
+    content: >-
+      public virtual string CurrencySymbol
+
+      {
+          [SecuritySafeCritical]
+          get;
+      }
+    content.vb: Public Overridable ReadOnly Property CurrencySymbol As String
+    parameters: []
+    return:
+      type: System.String
+      description: "\n<p>The currency symbol associated with the country/region.</p>\n"
+  seealso:
+  - type: System.Globalization.RegionInfo.ISOCurrencySymbol
+    commentId: P:System.Globalization.RegionInfo.ISOCurrencySymbol
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+  nameWithType: RegionInfo.CurrencySymbol
+- uid: System.Globalization.RegionInfo.CurrentRegion
+  commentId: P:System.Globalization.RegionInfo.CurrentRegion
+  id: CurrentRegion
+  parent: System.Globalization.RegionInfo
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Globalization.RegionInfo.CurrentRegion
+  type: Property
+  source:
+    remote:
+      path: src/mscorlib/src/System/Globalization/RegionInfo.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: CurrentRegion
+    path: src/mscorlib/src/System/Globalization/RegionInfo.cs
+    startLine: 360
+  assemblies:
+  - System.Globalization
+  namespace: System.Globalization
+  summary: "\n<p>Gets the <xref href=\"System.Globalization.RegionInfo\" data-throw-if-not-resolved=\"false\"></xref> that represents the country/region used by the current thread.</p>\n"
+  syntax:
+    content: >-
+      public static RegionInfo CurrentRegion
+
+      {
+          [SecuritySafeCritical]
+          get;
+      }
+    content.vb: Public Shared ReadOnly Property CurrentRegion As RegionInfo
+    parameters: []
+    return:
+      type: System.Globalization.RegionInfo
+      description: "\n<p>The <xref href=\"System.Globalization.RegionInfo\" data-throw-if-not-resolved=\"false\"></xref> that represents the country/region used by the current thread.</p>\n"
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+  nameWithType: RegionInfo.CurrentRegion
+- uid: System.Globalization.RegionInfo.DisplayName
+  commentId: P:System.Globalization.RegionInfo.DisplayName
+  id: DisplayName
+  parent: System.Globalization.RegionInfo
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Globalization.RegionInfo.DisplayName
+  type: Property
+  source:
+    remote:
+      path: src/mscorlib/src/System/Globalization/RegionInfo.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: DisplayName
+    path: src/mscorlib/src/System/Globalization/RegionInfo.cs
+    startLine: 415
+  assemblies:
+  - System.Globalization
+  namespace: System.Globalization
+  summary: "\n<p>Gets the full name of the country/region in the language of the localized version of .NET Framework.</p>\n"
+  syntax:
+    content: >-
+      public virtual string DisplayName
+
+      {
+          [SecuritySafeCritical]
+          get;
+      }
+    content.vb: Public Overridable ReadOnly Property DisplayName As String
+    parameters: []
+    return:
+      type: System.String
+      description: "\n<p>The full name of the country/region in the language of the localized version of .NET Framework.</p>\n"
+  seealso:
+  - type: System.Globalization.RegionInfo.Name
+    commentId: P:System.Globalization.RegionInfo.Name
+  - type: System.Globalization.RegionInfo.EnglishName
+    commentId: P:System.Globalization.RegionInfo.EnglishName
+  - type: System.Globalization.RegionInfo.TwoLetterISORegionName
+    commentId: P:System.Globalization.RegionInfo.TwoLetterISORegionName
+  - type: System.Globalization.RegionInfo.ThreeLetterISORegionName
+    commentId: P:System.Globalization.RegionInfo.ThreeLetterISORegionName
+  - type: System.Globalization.RegionInfo.ThreeLetterWindowsRegionName
+    commentId: P:System.Globalization.RegionInfo.ThreeLetterWindowsRegionName
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+  nameWithType: RegionInfo.DisplayName
+- uid: System.Globalization.RegionInfo.EnglishName
+  commentId: P:System.Globalization.RegionInfo.EnglishName
+  id: EnglishName
+  parent: System.Globalization.RegionInfo
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Globalization.RegionInfo.EnglishName
+  type: Property
+  source:
+    remote:
+      path: src/mscorlib/src/System/Globalization/RegionInfo.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: EnglishName
+    path: src/mscorlib/src/System/Globalization/RegionInfo.cs
+    startLine: 397
+  assemblies:
+  - System.Globalization
+  namespace: System.Globalization
+  summary: "\n<p>Gets the full name of the country/region in English.</p>\n"
+  syntax:
+    content: >-
+      public virtual string EnglishName
+
+      {
+          [SecuritySafeCritical]
+          get;
+      }
+    content.vb: Public Overridable ReadOnly Property EnglishName As String
+    parameters: []
+    return:
+      type: System.String
+      description: "\n<p>The full name of the country/region in English.</p>\n"
+  seealso:
+  - type: System.Globalization.RegionInfo.Name
+    commentId: P:System.Globalization.RegionInfo.Name
+  - type: System.Globalization.RegionInfo.DisplayName
+    commentId: P:System.Globalization.RegionInfo.DisplayName
+  - type: System.Globalization.RegionInfo.TwoLetterISORegionName
+    commentId: P:System.Globalization.RegionInfo.TwoLetterISORegionName
+  - type: System.Globalization.RegionInfo.ThreeLetterISORegionName
+    commentId: P:System.Globalization.RegionInfo.ThreeLetterISORegionName
+  - type: System.Globalization.RegionInfo.ThreeLetterWindowsRegionName
+    commentId: P:System.Globalization.RegionInfo.ThreeLetterWindowsRegionName
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+  nameWithType: RegionInfo.EnglishName
+- uid: System.Globalization.RegionInfo.IsMetric
+  commentId: P:System.Globalization.RegionInfo.IsMetric
+  id: IsMetric
+  parent: System.Globalization.RegionInfo
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Globalization.RegionInfo.IsMetric
+  type: Property
+  source:
+    remote:
+      path: src/mscorlib/src/System/Globalization/RegionInfo.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: IsMetric
+    path: src/mscorlib/src/System/Globalization/RegionInfo.cs
+    startLine: 501
+  assemblies:
+  - System.Globalization
+  namespace: System.Globalization
+  summary: "\n<p>Gets a value indicating whether the country/region uses the metric system for measurements.</p>\n"
+  syntax:
+    content: public virtual bool IsMetric { get; }
+    content.vb: Public Overridable ReadOnly Property IsMetric As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if the country/region uses the metric system for measurements; otherwise, <strong>false</strong>.</p>\n"
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+  nameWithType: RegionInfo.IsMetric
+- uid: System.Globalization.RegionInfo.ISOCurrencySymbol
+  commentId: P:System.Globalization.RegionInfo.ISOCurrencySymbol
+  id: ISOCurrencySymbol
+  parent: System.Globalization.RegionInfo
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Globalization.RegionInfo.ISOCurrencySymbol
+  type: Property
+  source:
+    remote:
+      path: src/mscorlib/src/System/Globalization/RegionInfo.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: ISOCurrencySymbol
+    path: src/mscorlib/src/System/Globalization/RegionInfo.cs
+    startLine: 574
+  assemblies:
+  - System.Globalization
+  namespace: System.Globalization
+  summary: "\n<p>Gets the three-character ISO 4217 currency symbol associated with the country/region.</p>\n"
+  syntax:
+    content: >-
+      public virtual string ISOCurrencySymbol
+
+      {
+          [SecuritySafeCritical]
+          get;
+      }
+    content.vb: Public Overridable ReadOnly Property ISOCurrencySymbol As String
+    parameters: []
+    return:
+      type: System.String
+      description: "\n<p>The three-character ISO 4217 currency symbol associated with the country/region.</p>\n"
+  seealso:
+  - type: System.Globalization.RegionInfo.CurrencySymbol
+    commentId: P:System.Globalization.RegionInfo.CurrencySymbol
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+  nameWithType: RegionInfo.ISOCurrencySymbol
+- uid: System.Globalization.RegionInfo.Name
+  commentId: P:System.Globalization.RegionInfo.Name
+  id: Name
+  parent: System.Globalization.RegionInfo
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Globalization.RegionInfo.Name
+  type: Property
+  source:
+    remote:
+      path: src/mscorlib/src/System/Globalization/RegionInfo.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Name
+    path: src/mscorlib/src/System/Globalization/RegionInfo.cs
+    startLine: 383
+  assemblies:
+  - System.Globalization
+  namespace: System.Globalization
+  summary: "\n<p>Gets the name or ISO 3166 two-letter country/region code for the current <xref href=\"System.Globalization.RegionInfo\" data-throw-if-not-resolved=\"false\"></xref> object.</p>\n"
+  syntax:
+    content: public virtual string Name { get; }
+    content.vb: Public Overridable ReadOnly Property Name As String
+    parameters: []
+    return:
+      type: System.String
+      description: "\n<p>The value specified by the <em>name</em> parameter of the <xref href=\"System.Globalization.RegionInfo.#ctor(System.String)\" data-throw-if-not-resolved=\"false\"></xref> constructor. The return value is in uppercase.</p>\n<p>-or-</p>\n<p>The two-letter code defined in ISO 3166 for the country/region specified by the <em>culture</em> parameter of the <xref href=\"System.Globalization.RegionInfo.#ctor(System.Int32)\" data-throw-if-not-resolved=\"false\"></xref> constructor. The return value is in uppercase.</p>\n"
+  seealso:
+  - type: System.Globalization.RegionInfo.EnglishName
+    commentId: P:System.Globalization.RegionInfo.EnglishName
+  - type: System.Globalization.RegionInfo.DisplayName
+    commentId: P:System.Globalization.RegionInfo.DisplayName
+  - type: System.Globalization.RegionInfo.TwoLetterISORegionName
+    commentId: P:System.Globalization.RegionInfo.TwoLetterISORegionName
+  - type: System.Globalization.RegionInfo.ThreeLetterISORegionName
+    commentId: P:System.Globalization.RegionInfo.ThreeLetterISORegionName
+  - type: System.Globalization.RegionInfo.ThreeLetterWindowsRegionName
+    commentId: P:System.Globalization.RegionInfo.ThreeLetterWindowsRegionName
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+  nameWithType: RegionInfo.Name
+- uid: System.Globalization.RegionInfo.NativeName
+  commentId: P:System.Globalization.RegionInfo.NativeName
+  id: NativeName
+  parent: System.Globalization.RegionInfo
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Globalization.RegionInfo.NativeName
+  type: Property
+  source:
+    remote:
+      path: src/mscorlib/src/System/Globalization/RegionInfo.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: NativeName
+    path: src/mscorlib/src/System/Globalization/RegionInfo.cs
+    startLine: 433
+  assemblies:
+  - System.Globalization
+  namespace: System.Globalization
+  summary: "\n<p>Gets the name of a country/region formatted in the native language of the country/region.</p>\n"
+  syntax:
+    content: >-
+      [ComVisible(false)]
+
+      public virtual string NativeName
+
+      {
+          [SecuritySafeCritical]
+          get;
+      }
+    content.vb: >-
+      <ComVisible(False)>
+
+      Public Overridable ReadOnly Property NativeName As String
+    parameters: []
+    return:
+      type: System.String
+      description: "\n<p>The native name of the country/region formatted in the language associated with the ISO 3166 country/region code. </p>\n"
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+  nameWithType: RegionInfo.NativeName
+- uid: System.Globalization.RegionInfo.TwoLetterISORegionName
+  commentId: P:System.Globalization.RegionInfo.TwoLetterISORegionName
+  id: TwoLetterISORegionName
+  parent: System.Globalization.RegionInfo
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Globalization.RegionInfo.TwoLetterISORegionName
+  type: Property
+  source:
+    remote:
+      path: src/mscorlib/src/System/Globalization/RegionInfo.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: TwoLetterISORegionName
+    path: src/mscorlib/src/System/Globalization/RegionInfo.cs
+    startLine: 450
+  assemblies:
+  - System.Globalization
+  namespace: System.Globalization
+  summary: "\n<p>Gets the two-letter code defined in ISO 3166 for the country/region.</p>\n"
+  syntax:
+    content: >-
+      public virtual string TwoLetterISORegionName
+
+      {
+          [SecuritySafeCritical]
+          get;
+      }
+    content.vb: Public Overridable ReadOnly Property TwoLetterISORegionName As String
+    parameters: []
+    return:
+      type: System.String
+      description: "\n<p>The two-letter code defined in ISO 3166 for the country/region.</p>\n"
+  seealso:
+  - type: System.Globalization.RegionInfo.Name
+    commentId: P:System.Globalization.RegionInfo.Name
+  - type: System.Globalization.RegionInfo.EnglishName
+    commentId: P:System.Globalization.RegionInfo.EnglishName
+  - type: System.Globalization.RegionInfo.DisplayName
+    commentId: P:System.Globalization.RegionInfo.DisplayName
+  - type: System.Globalization.RegionInfo.ThreeLetterISORegionName
+    commentId: P:System.Globalization.RegionInfo.ThreeLetterISORegionName
+  - type: System.Globalization.RegionInfo.ThreeLetterWindowsRegionName
+    commentId: P:System.Globalization.RegionInfo.ThreeLetterWindowsRegionName
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+  nameWithType: RegionInfo.TwoLetterISORegionName
+- uid: System.Globalization.RegionInfo.Equals(System.Object)
+  commentId: M:System.Globalization.RegionInfo.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: System.Globalization.RegionInfo
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Globalization.RegionInfo.Equals(System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Globalization/RegionInfo.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Equals
+    path: src/mscorlib/src/System/Globalization/RegionInfo.cs
+    startLine: 592
+  assemblies:
+  - System.Globalization
+  namespace: System.Globalization
+  summary: "\n<p>Determines whether the specified object is the same instance as the current <xref href=\"System.Globalization.RegionInfo\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  syntax:
+    content: public override bool Equals(object value)
+    content.vb: Public Overrides Function Equals(value As Object) As Boolean
+    parameters:
+    - id: value
+      type: System.Object
+      description: "\n<p>The object to compare with the current <xref href=\"System.Globalization.RegionInfo\" data-throw-if-not-resolved=\"false\"></xref>. </p>\n"
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if the <em>value</em> parameter is a <xref href=\"System.Globalization.RegionInfo\" data-throw-if-not-resolved=\"false\"></xref> object and its <xref href=\"System.Globalization.RegionInfo.Name\" data-throw-if-not-resolved=\"false\"></xref> property is the same as the <xref href=\"System.Globalization.RegionInfo.Name\" data-throw-if-not-resolved=\"false\"></xref> property of the current <xref href=\"System.Globalization.RegionInfo\" data-throw-if-not-resolved=\"false\"></xref> object; otherwise, <strong>false</strong>.</p>\n"
+  overridden: System.Object.Equals(System.Object)
+  seealso:
+  - type: System.Object.Equals(System.Object)
+    commentId: M:System.Object.Equals(System.Object)
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  nameWithType: RegionInfo.Equals(Object)
+- uid: System.Globalization.RegionInfo.GetHashCode
+  commentId: M:System.Globalization.RegionInfo.GetHashCode
+  id: GetHashCode
+  parent: System.Globalization.RegionInfo
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Globalization.RegionInfo.GetHashCode()
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Globalization/RegionInfo.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: GetHashCode
+    path: src/mscorlib/src/System/Globalization/RegionInfo.cs
+    startLine: 612
+  assemblies:
+  - System.Globalization
+  namespace: System.Globalization
+  summary: "\n<p>Serves as a hash function for the current <xref href=\"System.Globalization.RegionInfo\" data-throw-if-not-resolved=\"false\"></xref>, suitable for hashing algorithms and data structures, such as a hash table.</p>\n"
+  syntax:
+    content: public override int GetHashCode()
+    content.vb: Public Overrides Function GetHashCode As Integer
+    return:
+      type: System.Int32
+      description: "\n<p>A hash code for the current <xref href=\"System.Globalization.RegionInfo\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  overridden: System.Object.GetHashCode
+  seealso:
+  - type: System.Object.GetHashCode
+    commentId: M:System.Object.GetHashCode
+  - type: System.Collections.Hashtable
+    commentId: T:System.Collections.Hashtable
+  - type: System.Globalization.RegionInfo.Equals(System.Object)
+    commentId: M:System.Globalization.RegionInfo.Equals(System.Object)
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  nameWithType: RegionInfo.GetHashCode()
+- uid: System.Globalization.RegionInfo.ToString
+  commentId: M:System.Globalization.RegionInfo.ToString
+  id: ToString
+  parent: System.Globalization.RegionInfo
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Globalization.RegionInfo.ToString()
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Globalization/RegionInfo.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: ToString
+    path: src/mscorlib/src/System/Globalization/RegionInfo.cs
+    startLine: 625
+  assemblies:
+  - System.Globalization
+  namespace: System.Globalization
+  summary: "\n<p>Returns a string containing the culture name or ISO 3166 two-letter country/region codes specified for the current <xref href=\"System.Globalization.RegionInfo\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  syntax:
+    content: public override string ToString()
+    content.vb: Public Overrides Function ToString As String
+    return:
+      type: System.String
+      description: "\n<p>A string containing the culture name or ISO 3166 two-letter country/region codes defined for the current <xref href=\"System.Globalization.RegionInfo\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  overridden: System.Object.ToString
+  seealso:
+  - type: System.Object.ToString
+    commentId: M:System.Object.ToString
+  - type: System.Globalization.RegionInfo.Name
+    commentId: P:System.Globalization.RegionInfo.Name
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  nameWithType: RegionInfo.ToString()
+references:
+- uid: System.Globalization
+  isExternal: false
+  name: "XXX"
+  fullName: System.Globalization
+  nameWithType: System.Globalization
+  commentId: N:System.Globalization
+- uid: System.Object
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Object
+  nameWithType: Object
+  commentId: T:System.Object
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.Equals(Object, Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.GetType()
+  commentId: M:System.Object.GetType
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.MemberwiseClone()
+  commentId: M:System.Object.MemberwiseClone
+- uid: System
+  isExternal: false
+  name: "XXX"
+  fullName: System
+  nameWithType: System
+  commentId: N:System
+- uid: System.String
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.String
+  nameWithType: String
+  commentId: T:System.String
+- uid: System.Globalization.RegionInfo
+  parent: System.Globalization
+  isExternal: false
+  name: "XXX"
+  fullName: System.Globalization.RegionInfo
+  nameWithType: RegionInfo
+  commentId: T:System.Globalization.RegionInfo
+- uid: System.Boolean
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Boolean
+  nameWithType: Boolean
+  commentId: T:System.Boolean
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.Equals(Object)
+  commentId: M:System.Object.Equals(System.Object)
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.GetHashCode()
+  commentId: M:System.Object.GetHashCode
+- uid: System.Int32
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Int32
+  nameWithType: Int32
+  commentId: T:System.Int32
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.ToString()
+  commentId: M:System.Object.ToString
+- uid: System.ArgumentNullException
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentNullException
+  nameWithType: ArgumentNullException
+  commentId: T:System.ArgumentNullException
+- uid: System.ArgumentException
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentException
+  nameWithType: ArgumentException
+  commentId: T:System.ArgumentException

@@ -1,0 +1,159 @@
+items:
+- uid: System.Xml.ConformanceLevel
+  commentId: T:System.Xml.ConformanceLevel
+  id: ConformanceLevel
+  parent: System.Xml
+  children:
+  - System.Xml.ConformanceLevel.Auto
+  - System.Xml.ConformanceLevel.Document
+  - System.Xml.ConformanceLevel.Fragment
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Xml.ConformanceLevel
+  type: Enum
+  source:
+    remote:
+      path: src/System.Xml.ReaderWriter/ref/System.Xml.ReaderWriter.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: ConformanceLevel
+    path: src/System.Xml.ReaderWriter/ref/System.Xml.ReaderWriter.cs
+    startLine: 10
+  assemblies:
+  - System.Xml.ReaderWriter
+  namespace: System.Xml
+  summary: "\n<p>Specifies the amount of input or output checking that <xref href=\"System.Xml.XmlReader\" data-throw-if-not-resolved=\"false\"></xref> and <xref href=\"System.Xml.XmlWriter\" data-throw-if-not-resolved=\"false\"></xref> objects perform.</p>\n"
+  syntax:
+    content: public enum ConformanceLevel
+    content.vb: Public Enum ConformanceLevel
+  seealso:
+  - type: System.Xml.XmlReader.Create(System.IO.Stream)
+    commentId: M:System.Xml.XmlReader.Create(System.IO.Stream)
+  - type: System.Xml.XmlWriter.Create(System.IO.Stream)
+    commentId: M:System.Xml.XmlWriter.Create(System.IO.Stream)
+  - type: System.Xml.XmlReaderSettings
+    commentId: T:System.Xml.XmlReaderSettings
+  - type: System.Xml.XmlWriterSettings
+    commentId: T:System.Xml.XmlWriterSettings
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+  nameWithType: ConformanceLevel
+- uid: System.Xml.ConformanceLevel.Auto
+  commentId: F:System.Xml.ConformanceLevel.Auto
+  id: Auto
+  parent: System.Xml.ConformanceLevel
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Xml.ConformanceLevel.Auto
+  type: Field
+  source:
+    remote:
+      path: src/System.Xml.ReaderWriter/ref/System.Xml.ReaderWriter.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Auto
+    path: src/System.Xml.ReaderWriter/ref/System.Xml.ReaderWriter.cs
+    startLine: 12
+  assemblies:
+  - System.Xml.ReaderWriter
+  namespace: System.Xml
+  summary: "\n<p>The <xref href=\"System.Xml.XmlReader\" data-throw-if-not-resolved=\"false\"></xref> or <xref href=\"System.Xml.XmlWriter\" data-throw-if-not-resolved=\"false\"></xref> object automatically detects whether document-level or fragment-level checking should be performed, and does the appropriate checking. If you're wrapping another <xref href=\"System.Xml.XmlReader\" data-throw-if-not-resolved=\"false\"></xref> or <xref href=\"System.Xml.XmlWriter\" data-throw-if-not-resolved=\"false\"></xref> object, the outer object doesn't do any additional conformance checking. Conformance checking is left up to the underlying object.</p>\n<p>See the <xref href=\"System.Xml.XmlReaderSettings.ConformanceLevel\" data-throw-if-not-resolved=\"false\"></xref> and <xref href=\"System.Xml.XmlWriterSettings.ConformanceLevel\" data-throw-if-not-resolved=\"false\"></xref> properties for details on how the compliance level is determined.</p>\n"
+  syntax:
+    content: Auto = 0
+    return:
+      type: System.Xml.ConformanceLevel
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+  nameWithType: ConformanceLevel.Auto
+- uid: System.Xml.ConformanceLevel.Document
+  commentId: F:System.Xml.ConformanceLevel.Document
+  id: Document
+  parent: System.Xml.ConformanceLevel
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Xml.ConformanceLevel.Document
+  type: Field
+  source:
+    remote:
+      path: src/System.Xml.ReaderWriter/ref/System.Xml.ReaderWriter.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Document
+    path: src/System.Xml.ReaderWriter/ref/System.Xml.ReaderWriter.cs
+    startLine: 13
+  assemblies:
+  - System.Xml.ReaderWriter
+  namespace: System.Xml
+  summary: "\n<p>The XML data complies with the rules for a well-formed <see href=\"http://www.w3.org/TR/2006/REC-xml-20060816/#sec-well-formed\">XML 1.0 document</see>, as defined by the W3C.</p>\n"
+  syntax:
+    content: Document = 2
+    return:
+      type: System.Xml.ConformanceLevel
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+  nameWithType: ConformanceLevel.Document
+- uid: System.Xml.ConformanceLevel.Fragment
+  commentId: F:System.Xml.ConformanceLevel.Fragment
+  id: Fragment
+  parent: System.Xml.ConformanceLevel
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Xml.ConformanceLevel.Fragment
+  type: Field
+  source:
+    remote:
+      path: src/System.Xml.ReaderWriter/ref/System.Xml.ReaderWriter.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Fragment
+    path: src/System.Xml.ReaderWriter/ref/System.Xml.ReaderWriter.cs
+    startLine: 14
+  assemblies:
+  - System.Xml.ReaderWriter
+  namespace: System.Xml
+  summary: "\n<p>The XML data is a <see href=\"http://www.w3.org/TR/2006/REC-xml-20060816/#wf-entities\">well-formed XML fragment</see>, as defined by the W3C.</p>\n"
+  syntax:
+    content: Fragment = 1
+    return:
+      type: System.Xml.ConformanceLevel
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+  nameWithType: ConformanceLevel.Fragment
+references:
+- uid: System.Xml
+  isExternal: false
+  name: "XXX"
+  fullName: System.Xml
+  commentId: N:System.Xml
+  nameWithType: System.Xml
+- uid: System.Xml.ConformanceLevel
+  parent: System.Xml
+  isExternal: false
+  name: "XXX"
+  fullName: System.Xml.ConformanceLevel
+  commentId: T:System.Xml.ConformanceLevel
+  nameWithType: ConformanceLevel

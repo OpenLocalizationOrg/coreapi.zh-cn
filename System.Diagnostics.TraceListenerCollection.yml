@@ -1,0 +1,2287 @@
+items:
+- uid: System.Diagnostics.TraceListenerCollection
+  commentId: T:System.Diagnostics.TraceListenerCollection
+  id: TraceListenerCollection
+  parent: System.Diagnostics
+  children:
+  - System.Diagnostics.TraceListenerCollection.Add(System.Diagnostics.TraceListener)
+  - System.Diagnostics.TraceListenerCollection.AddRange(System.Diagnostics.TraceListener[])
+  - System.Diagnostics.TraceListenerCollection.AddRange(System.Diagnostics.TraceListenerCollection)
+  - System.Diagnostics.TraceListenerCollection.Clear
+  - System.Diagnostics.TraceListenerCollection.Contains(System.Diagnostics.TraceListener)
+  - System.Diagnostics.TraceListenerCollection.CopyTo(System.Diagnostics.TraceListener[],System.Int32)
+  - System.Diagnostics.TraceListenerCollection.Count
+  - System.Diagnostics.TraceListenerCollection.GetEnumerator
+  - System.Diagnostics.TraceListenerCollection.IndexOf(System.Diagnostics.TraceListener)
+  - System.Diagnostics.TraceListenerCollection.Insert(System.Int32,System.Diagnostics.TraceListener)
+  - System.Diagnostics.TraceListenerCollection.Item(System.Int32)
+  - System.Diagnostics.TraceListenerCollection.Item(System.String)
+  - System.Diagnostics.TraceListenerCollection.Remove(System.Diagnostics.TraceListener)
+  - System.Diagnostics.TraceListenerCollection.Remove(System.String)
+  - System.Diagnostics.TraceListenerCollection.RemoveAt(System.Int32)
+  - System.Diagnostics.TraceListenerCollection.System#Collections#ICollection#CopyTo(System.Array,System.Int32)
+  - System.Diagnostics.TraceListenerCollection.System#Collections#ICollection#IsSynchronized
+  - System.Diagnostics.TraceListenerCollection.System#Collections#ICollection#SyncRoot
+  - System.Diagnostics.TraceListenerCollection.System#Collections#IList#Add(System.Object)
+  - System.Diagnostics.TraceListenerCollection.System#Collections#IList#Contains(System.Object)
+  - System.Diagnostics.TraceListenerCollection.System#Collections#IList#IndexOf(System.Object)
+  - System.Diagnostics.TraceListenerCollection.System#Collections#IList#Insert(System.Int32,System.Object)
+  - System.Diagnostics.TraceListenerCollection.System#Collections#IList#IsFixedSize
+  - System.Diagnostics.TraceListenerCollection.System#Collections#IList#IsReadOnly
+  - System.Diagnostics.TraceListenerCollection.System#Collections#IList#Item(System.Int32)
+  - System.Diagnostics.TraceListenerCollection.System#Collections#IList#Remove(System.Object)
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Diagnostics.TraceListenerCollection
+  type: Class
+  source:
+    remote:
+      path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/TraceListeners.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: TraceListenerCollection
+    path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/TraceListeners.cs
+    startLine: 13
+  assemblies:
+  - System.Diagnostics.TraceSource
+  namespace: System.Diagnostics
+  summary: "\n<p>Provides a thread-safe list of <xref href=\"System.Diagnostics.TraceListener\" data-throw-if-not-resolved=\"false\"></xref> objects.</p>\n"
+  syntax:
+    content: 'public class TraceListenerCollection : IList, ICollection, IEnumerable'
+    content.vb: >-
+      Public Class TraceListenerCollection
+          Implements IList, ICollection, IEnumerable
+  seealso:
+  - type: System.Diagnostics.TraceListener
+    commentId: T:System.Diagnostics.TraceListener
+  - type: System.Diagnostics.DefaultTraceListener
+    commentId: T:System.Diagnostics.DefaultTraceListener
+  - type: System.Diagnostics.TextWriterTraceListener
+    commentId: T:System.Diagnostics.TextWriterTraceListener
+  - type: System.Diagnostics.ConsoleTraceListener
+    commentId: T:System.Diagnostics.ConsoleTraceListener
+  - type: System.Diagnostics.Debug
+    commentId: T:System.Diagnostics.Debug
+  - type: System.Diagnostics.Trace
+    commentId: T:System.Diagnostics.Trace
+  inheritance:
+  - System.Object
+  implements:
+  - System.Collections.IList
+  - System.Collections.ICollection
+  - System.Collections.IEnumerable
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+  nameWithType: TraceListenerCollection
+  extensionMethods:
+  - System.Collections.IEnumerable.System.Linq.Queryable.AsQueryable
+  - System.Collections.IEnumerable.System.Linq.ParallelEnumerable.AsParallel
+  - System.Collections.IEnumerable.System.Linq.Enumerable.Cast``1
+  - System.Collections.IEnumerable.System.Linq.Enumerable.OfType``1
+- uid: System.Diagnostics.TraceListenerCollection.Count
+  commentId: P:System.Diagnostics.TraceListenerCollection.Count
+  id: Count
+  parent: System.Diagnostics.TraceListenerCollection
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Diagnostics.TraceListenerCollection.Count
+  type: Property
+  source:
+    remote:
+      path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/TraceListeners.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Count
+    path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/TraceListeners.cs
+    startLine: 61
+  assemblies:
+  - System.Diagnostics.TraceSource
+  namespace: System.Diagnostics
+  summary: "\n<p>Gets the number of listeners in the list.</p>\n"
+  syntax:
+    content: public int Count { get; }
+    content.vb: Public ReadOnly Property Count As Integer
+    parameters: []
+    return:
+      type: System.Int32
+      description: "\n<p>The number of listeners in the list.</p>\n"
+  seealso:
+  - type: System.Diagnostics.TraceListenerCollection
+    commentId: T:System.Diagnostics.TraceListenerCollection
+  - type: System.Diagnostics.TraceListener
+    commentId: T:System.Diagnostics.TraceListener
+  - type: System.Diagnostics.DefaultTraceListener
+    commentId: T:System.Diagnostics.DefaultTraceListener
+  - type: System.Diagnostics.TextWriterTraceListener
+    commentId: T:System.Diagnostics.TextWriterTraceListener
+  - type: System.Diagnostics.ConsoleTraceListener
+    commentId: T:System.Diagnostics.ConsoleTraceListener
+  - type: System.Diagnostics.Debug
+    commentId: T:System.Diagnostics.Debug
+  - type: System.Diagnostics.Trace
+    commentId: T:System.Diagnostics.Trace
+  implements:
+  - System.Collections.ICollection.Count
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  nameWithType: TraceListenerCollection.Count
+- uid: System.Diagnostics.TraceListenerCollection.Item(System.Int32)
+  commentId: P:System.Diagnostics.TraceListenerCollection.Item(System.Int32)
+  id: Item(System.Int32)
+  parent: System.Diagnostics.TraceListenerCollection
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Diagnostics.TraceListenerCollection.Item[System.Int32]
+  type: Property
+  source:
+    remote:
+      path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/TraceListeners.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: this[]
+    path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/TraceListeners.cs
+    startLine: 26
+  assemblies:
+  - System.Diagnostics.TraceSource
+  namespace: System.Diagnostics
+  summary: "\n<p>Gets or sets the <xref href=\"System.Diagnostics.TraceListener\" data-throw-if-not-resolved=\"false\"></xref> at the specified index.</p>\n"
+  syntax:
+    content: public TraceListener this[int i] { get; set; }
+    content.vb: Public Property Item(i As Integer) As TraceListener
+    parameters:
+    - id: i
+      type: System.Int32
+      description: "\n<p>The zero-based index of the <xref href=\"System.Diagnostics.TraceListener\" data-throw-if-not-resolved=\"false\"></xref> to get from the list. </p>\n"
+    return:
+      type: System.Diagnostics.TraceListener
+      description: "\n<p>A <xref href=\"System.Diagnostics.TraceListener\" data-throw-if-not-resolved=\"false\"></xref> with the specified index.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>The value is <strong>null</strong>.</p>\n"
+  seealso:
+  - type: System.Diagnostics.TraceListenerCollection
+    commentId: T:System.Diagnostics.TraceListenerCollection
+  - type: System.Diagnostics.TraceListener
+    commentId: T:System.Diagnostics.TraceListener
+  - type: System.Diagnostics.DefaultTraceListener
+    commentId: T:System.Diagnostics.DefaultTraceListener
+  - type: System.Diagnostics.TextWriterTraceListener
+    commentId: T:System.Diagnostics.TextWriterTraceListener
+  - type: System.Diagnostics.ConsoleTraceListener
+    commentId: T:System.Diagnostics.ConsoleTraceListener
+  - type: System.Diagnostics.Debug
+    commentId: T:System.Diagnostics.Debug
+  - type: System.Diagnostics.Trace
+    commentId: T:System.Diagnostics.Trace
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  fullName.vb: System.Diagnostics.TraceListenerCollection.Item(System.Int32)
+  name.vb: Item(Int32)
+  nameWithType: TraceListenerCollection.Item[Int32]
+  nameWithType.vb: TraceListenerCollection.Item(Int32)
+- uid: System.Diagnostics.TraceListenerCollection.Item(System.String)
+  commentId: P:System.Diagnostics.TraceListenerCollection.Item(System.String)
+  id: Item(System.String)
+  parent: System.Diagnostics.TraceListenerCollection
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Diagnostics.TraceListenerCollection.Item[System.String]
+  type: Property
+  source:
+    remote:
+      path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/TraceListeners.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: this[]
+    path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/TraceListeners.cs
+    startLine: 43
+  assemblies:
+  - System.Diagnostics.TraceSource
+  namespace: System.Diagnostics
+  summary: "\n<p>Gets the first <xref href=\"System.Diagnostics.TraceListener\" data-throw-if-not-resolved=\"false\"></xref> in the list with the specified name.</p>\n"
+  syntax:
+    content: public TraceListener this[string name] { get; }
+    content.vb: Public ReadOnly Property Item(name As String) As TraceListener
+    parameters:
+    - id: name
+      type: System.String
+      description: "\n<p>The name of the <xref href=\"System.Diagnostics.TraceListener\" data-throw-if-not-resolved=\"false\"></xref> to get from the list. </p>\n"
+    return:
+      type: System.Diagnostics.TraceListener
+      description: "\n<p>The first <xref href=\"System.Diagnostics.TraceListener\" data-throw-if-not-resolved=\"false\"></xref> in the list with the given <xref href=\"System.Diagnostics.TraceListener.Name\" data-throw-if-not-resolved=\"false\"></xref>. This item returns <strong>null</strong> if no <xref href=\"System.Diagnostics.TraceListener\" data-throw-if-not-resolved=\"false\"></xref> with the given name can be found.</p>\n"
+  seealso:
+  - type: System.Diagnostics.TraceListenerCollection
+    commentId: T:System.Diagnostics.TraceListenerCollection
+  - type: System.Diagnostics.TraceListener
+    commentId: T:System.Diagnostics.TraceListener
+  - type: System.Diagnostics.DefaultTraceListener
+    commentId: T:System.Diagnostics.DefaultTraceListener
+  - type: System.Diagnostics.TextWriterTraceListener
+    commentId: T:System.Diagnostics.TextWriterTraceListener
+  - type: System.Diagnostics.ConsoleTraceListener
+    commentId: T:System.Diagnostics.ConsoleTraceListener
+  - type: System.Diagnostics.Debug
+    commentId: T:System.Diagnostics.Debug
+  - type: System.Diagnostics.Trace
+    commentId: T:System.Diagnostics.Trace
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  fullName.vb: System.Diagnostics.TraceListenerCollection.Item(System.String)
+  name.vb: Item(String)
+  nameWithType: TraceListenerCollection.Item[String]
+  nameWithType.vb: TraceListenerCollection.Item(String)
+- uid: System.Diagnostics.TraceListenerCollection.System#Collections#ICollection#IsSynchronized
+  commentId: P:System.Diagnostics.TraceListenerCollection.System#Collections#ICollection#IsSynchronized
+  id: System#Collections#ICollection#IsSynchronized
+  isEii: true
+  parent: System.Diagnostics.TraceListenerCollection
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Diagnostics.TraceListenerCollection.System.Collections.ICollection.IsSynchronized
+  type: Property
+  source:
+    remote:
+      path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/TraceListeners.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: System.Collections.ICollection.IsSynchronized
+    path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/TraceListeners.cs
+    startLine: 310
+  assemblies:
+  - System.Diagnostics.TraceSource
+  namespace: System.Diagnostics
+  summary: "\n<p>Gets a value indicating whether access to the <xref href=\"System.Diagnostics.TraceListenerCollection\" data-throw-if-not-resolved=\"false\"></xref> is synchronized (thread safe).</p>\n"
+  syntax:
+    content: bool ICollection.IsSynchronized { get; }
+    content.vb: ReadOnly WriteOnly Property System.Collections.ICollection.IsSynchronized As Boolean Implements ICollection.IsSynchronized
+    parameters: []
+    return:
+      type: System.Boolean
+      description: "\n<p>Always <strong>true</strong>.</p>\n"
+  implements:
+  - System.Collections.ICollection.IsSynchronized
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+  name.vb: System.Collections.ICollection.IsSynchronized
+  nameWithType: TraceListenerCollection.ICollection.IsSynchronized
+  nameWithType.vb: TraceListenerCollection.System.Collections.ICollection.IsSynchronized
+- uid: System.Diagnostics.TraceListenerCollection.System#Collections#ICollection#SyncRoot
+  commentId: P:System.Diagnostics.TraceListenerCollection.System#Collections#ICollection#SyncRoot
+  id: System#Collections#ICollection#SyncRoot
+  isEii: true
+  parent: System.Diagnostics.TraceListenerCollection
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Diagnostics.TraceListenerCollection.System.Collections.ICollection.SyncRoot
+  type: Property
+  source:
+    remote:
+      path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/TraceListeners.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: System.Collections.ICollection.SyncRoot
+    path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/TraceListeners.cs
+    startLine: 301
+  assemblies:
+  - System.Diagnostics.TraceSource
+  namespace: System.Diagnostics
+  summary: "\n<p>Gets an object that can be used to synchronize access to the <xref href=\"System.Diagnostics.TraceListenerCollection\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  syntax:
+    content: object ICollection.SyncRoot { get; }
+    content.vb: ReadOnly WriteOnly Property System.Collections.ICollection.SyncRoot As Object Implements ICollection.SyncRoot
+    parameters: []
+    return:
+      type: System.Object
+      description: "\n<p>The current <xref href=\"System.Diagnostics.TraceListenerCollection\" data-throw-if-not-resolved=\"false\"></xref> object.</p>\n"
+  implements:
+  - System.Collections.ICollection.SyncRoot
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+  name.vb: System.Collections.ICollection.SyncRoot
+  nameWithType: TraceListenerCollection.ICollection.SyncRoot
+  nameWithType.vb: TraceListenerCollection.System.Collections.ICollection.SyncRoot
+- uid: System.Diagnostics.TraceListenerCollection.System#Collections#IList#IsFixedSize
+  commentId: P:System.Diagnostics.TraceListenerCollection.System#Collections#IList#IsFixedSize
+  id: System#Collections#IList#IsFixedSize
+  isEii: true
+  parent: System.Diagnostics.TraceListenerCollection
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Diagnostics.TraceListenerCollection.System.Collections.IList.IsFixedSize
+  type: Property
+  source:
+    remote:
+      path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/TraceListeners.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: System.Collections.IList.IsFixedSize
+    path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/TraceListeners.cs
+    startLine: 241
+  assemblies:
+  - System.Diagnostics.TraceSource
+  namespace: System.Diagnostics
+  summary: "\n<p>Gets a value indicating whether the <xref href=\"System.Diagnostics.TraceListenerCollection\" data-throw-if-not-resolved=\"false\"></xref> has a fixed size.</p>\n"
+  syntax:
+    content: bool IList.IsFixedSize { get; }
+    content.vb: ReadOnly WriteOnly Property System.Collections.IList.IsFixedSize As Boolean Implements IList.IsFixedSize
+    parameters: []
+    return:
+      type: System.Boolean
+      description: "\n<p>Always <strong>false</strong>.</p>\n"
+  implements:
+  - System.Collections.IList.IsFixedSize
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+  name.vb: System.Collections.IList.IsFixedSize
+  nameWithType: TraceListenerCollection.IList.IsFixedSize
+  nameWithType.vb: TraceListenerCollection.System.Collections.IList.IsFixedSize
+- uid: System.Diagnostics.TraceListenerCollection.System#Collections#IList#IsReadOnly
+  commentId: P:System.Diagnostics.TraceListenerCollection.System#Collections#IList#IsReadOnly
+  id: System#Collections#IList#IsReadOnly
+  isEii: true
+  parent: System.Diagnostics.TraceListenerCollection
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Diagnostics.TraceListenerCollection.System.Collections.IList.IsReadOnly
+  type: Property
+  source:
+    remote:
+      path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/TraceListeners.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: System.Collections.IList.IsReadOnly
+    path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/TraceListeners.cs
+    startLine: 232
+  assemblies:
+  - System.Diagnostics.TraceSource
+  namespace: System.Diagnostics
+  summary: "\n<p>Gets a value indicating whether the <xref href=\"System.Diagnostics.TraceListenerCollection\" data-throw-if-not-resolved=\"false\"></xref> is read-only</p>\n"
+  syntax:
+    content: bool IList.IsReadOnly { get; }
+    content.vb: ReadOnly WriteOnly Property System.Collections.IList.IsReadOnly As Boolean Implements IList.IsReadOnly
+    parameters: []
+    return:
+      type: System.Boolean
+      description: "\n<p>Always <strong>false</strong>.</p>\n"
+  implements:
+  - System.Collections.IList.IsReadOnly
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+  name.vb: System.Collections.IList.IsReadOnly
+  nameWithType: TraceListenerCollection.IList.IsReadOnly
+  nameWithType.vb: TraceListenerCollection.System.Collections.IList.IsReadOnly
+- uid: System.Diagnostics.TraceListenerCollection.System#Collections#IList#Item(System.Int32)
+  commentId: P:System.Diagnostics.TraceListenerCollection.System#Collections#IList#Item(System.Int32)
+  id: System#Collections#IList#Item(System.Int32)
+  isEii: true
+  parent: System.Diagnostics.TraceListenerCollection
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Diagnostics.TraceListenerCollection.System.Collections.IList.Item[System.Int32]
+  type: Property
+  source:
+    remote:
+      path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/TraceListeners.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: System.Collections.IList.this[]
+    path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/TraceListeners.cs
+    startLine: 214
+  assemblies:
+  - System.Diagnostics.TraceSource
+  namespace: System.Diagnostics
+  summary: "\n<p>Gets or sets the <xref href=\"System.Diagnostics.TraceListener\" data-throw-if-not-resolved=\"false\"></xref> at the specified index in the <xref href=\"System.Diagnostics.TraceListenerCollection\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  syntax:
+    content: object IList.this[int index] { get; set; }
+    content.vb: ReadOnly WriteOnly Property System.Collections.IList.Item(index As Integer) As Object Implements IList.this
+    parameters:
+    - id: index
+      type: System.Int32
+      description: "\n<p>The zero-based index of the <em>value</em> to get.</p>\n"
+    return:
+      type: System.Object
+      description: "\n<p>The <xref href=\"System.Diagnostics.TraceListener\" data-throw-if-not-resolved=\"false\"></xref> at the specified index.</p>\n"
+  implements:
+  - System.Collections.IList.Item(System.Int32)
+  modifiers.csharp:
+  - get
+  - set
+  fullName.vb: System.Diagnostics.TraceListenerCollection.System.Collections.IList.Item(System.Int32)
+  name.vb: System.Collections.IList.Item(Int32)
+  nameWithType: TraceListenerCollection.IList.Item[Int32]
+  nameWithType.vb: TraceListenerCollection.System.Collections.IList.Item(Int32)
+- uid: System.Diagnostics.TraceListenerCollection.Add(System.Diagnostics.TraceListener)
+  commentId: M:System.Diagnostics.TraceListenerCollection.Add(System.Diagnostics.TraceListener)
+  id: Add(System.Diagnostics.TraceListener)
+  parent: System.Diagnostics.TraceListenerCollection
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Diagnostics.TraceListenerCollection.Add(System.Diagnostics.TraceListener)
+  type: Method
+  source:
+    remote:
+      path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/TraceListeners.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Add
+    path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/TraceListeners.cs
+    startLine: 72
+  assemblies:
+  - System.Diagnostics.TraceSource
+  namespace: System.Diagnostics
+  summary: "\n<p>Adds a <xref href=\"System.Diagnostics.TraceListener\" data-throw-if-not-resolved=\"false\"></xref> to the list.</p>\n"
+  syntax:
+    content: public int Add(TraceListener listener)
+    content.vb: Public Function Add(listener As TraceListener) As Integer
+    parameters:
+    - id: listener
+      type: System.Diagnostics.TraceListener
+      description: "\n<p>A <xref href=\"System.Diagnostics.TraceListener\" data-throw-if-not-resolved=\"false\"></xref> to add to the list. </p>\n"
+    return:
+      type: System.Int32
+      description: "\n<p>The position at which the new listener was inserted.</p>\n"
+  seealso:
+  - type: System.Diagnostics.TraceListenerCollection
+    commentId: T:System.Diagnostics.TraceListenerCollection
+  - type: System.Diagnostics.TraceListener
+    commentId: T:System.Diagnostics.TraceListener
+  - type: System.Diagnostics.DefaultTraceListener
+    commentId: T:System.Diagnostics.DefaultTraceListener
+  - type: System.Diagnostics.TextWriterTraceListener
+    commentId: T:System.Diagnostics.TextWriterTraceListener
+  - type: System.Diagnostics.ConsoleTraceListener
+    commentId: T:System.Diagnostics.ConsoleTraceListener
+  - type: System.Diagnostics.Debug
+    commentId: T:System.Diagnostics.Debug
+  - type: System.Diagnostics.Trace
+    commentId: T:System.Diagnostics.Trace
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: TraceListenerCollection.Add(TraceListener)
+- uid: System.Diagnostics.TraceListenerCollection.AddRange(System.Diagnostics.TraceListener[])
+  commentId: M:System.Diagnostics.TraceListenerCollection.AddRange(System.Diagnostics.TraceListener[])
+  id: AddRange(System.Diagnostics.TraceListener[])
+  parent: System.Diagnostics.TraceListenerCollection
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Diagnostics.TraceListenerCollection.AddRange(System.Diagnostics.TraceListener[])
+  type: Method
+  source:
+    remote:
+      path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/TraceListeners.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: AddRange
+    path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/TraceListeners.cs
+    startLine: 85
+  assemblies:
+  - System.Diagnostics.TraceSource
+  namespace: System.Diagnostics
+  summary: "\n<p>Adds an array of <xref href=\"System.Diagnostics.TraceListener\" data-throw-if-not-resolved=\"false\"></xref> objects to the list.</p>\n"
+  syntax:
+    content: public void AddRange(TraceListener[] value)
+    content.vb: Public Sub AddRange(value As TraceListener())
+    parameters:
+    - id: value
+      type: System.Diagnostics.TraceListener[]
+      description: "\n<p>An array of <xref href=\"System.Diagnostics.TraceListener\" data-throw-if-not-resolved=\"false\"></xref> objects to add to the list. </p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>value</em> is <strong>null</strong>.</p>\n"
+  seealso:
+  - type: System.Diagnostics.TraceListenerCollection
+    commentId: T:System.Diagnostics.TraceListenerCollection
+  - type: System.Diagnostics.TraceListener
+    commentId: T:System.Diagnostics.TraceListener
+  - type: System.Diagnostics.DefaultTraceListener
+    commentId: T:System.Diagnostics.DefaultTraceListener
+  - type: System.Diagnostics.TextWriterTraceListener
+    commentId: T:System.Diagnostics.TextWriterTraceListener
+  - type: System.Diagnostics.ConsoleTraceListener
+    commentId: T:System.Diagnostics.ConsoleTraceListener
+  - type: System.Diagnostics.Debug
+    commentId: T:System.Diagnostics.Debug
+  - type: System.Diagnostics.Trace
+    commentId: T:System.Diagnostics.Trace
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: System.Diagnostics.TraceListenerCollection.AddRange(System.Diagnostics.TraceListener())
+  name.vb: AddRange(TraceListener())
+  nameWithType: TraceListenerCollection.AddRange(TraceListener[])
+  nameWithType.vb: TraceListenerCollection.AddRange(TraceListener())
+- uid: System.Diagnostics.TraceListenerCollection.AddRange(System.Diagnostics.TraceListenerCollection)
+  commentId: M:System.Diagnostics.TraceListenerCollection.AddRange(System.Diagnostics.TraceListenerCollection)
+  id: AddRange(System.Diagnostics.TraceListenerCollection)
+  parent: System.Diagnostics.TraceListenerCollection
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Diagnostics.TraceListenerCollection.AddRange(System.Diagnostics.TraceListenerCollection)
+  type: Method
+  source:
+    remote:
+      path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/TraceListeners.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: AddRange
+    path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/TraceListeners.cs
+    startLine: 100
+  assemblies:
+  - System.Diagnostics.TraceSource
+  namespace: System.Diagnostics
+  summary: "\n<p>Adds the contents of another <xref href=\"System.Diagnostics.TraceListenerCollection\" data-throw-if-not-resolved=\"false\"></xref> to the list.</p>\n"
+  syntax:
+    content: public void AddRange(TraceListenerCollection value)
+    content.vb: Public Sub AddRange(value As TraceListenerCollection)
+    parameters:
+    - id: value
+      type: System.Diagnostics.TraceListenerCollection
+      description: "\n<p>Another <xref href=\"System.Diagnostics.TraceListenerCollection\" data-throw-if-not-resolved=\"false\"></xref> whose contents are added to the list. </p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>value</em> is <strong>null</strong>.</p>\n"
+  seealso:
+  - type: System.Diagnostics.TraceListenerCollection
+    commentId: T:System.Diagnostics.TraceListenerCollection
+  - type: System.Diagnostics.TraceListener
+    commentId: T:System.Diagnostics.TraceListener
+  - type: System.Diagnostics.DefaultTraceListener
+    commentId: T:System.Diagnostics.DefaultTraceListener
+  - type: System.Diagnostics.TextWriterTraceListener
+    commentId: T:System.Diagnostics.TextWriterTraceListener
+  - type: System.Diagnostics.ConsoleTraceListener
+    commentId: T:System.Diagnostics.ConsoleTraceListener
+  - type: System.Diagnostics.Debug
+    commentId: T:System.Diagnostics.Debug
+  - type: System.Diagnostics.Trace
+    commentId: T:System.Diagnostics.Trace
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: TraceListenerCollection.AddRange(TraceListenerCollection)
+- uid: System.Diagnostics.TraceListenerCollection.Clear
+  commentId: M:System.Diagnostics.TraceListenerCollection.Clear
+  id: Clear
+  parent: System.Diagnostics.TraceListenerCollection
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Diagnostics.TraceListenerCollection.Clear()
+  type: Method
+  source:
+    remote:
+      path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/TraceListeners.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Clear
+    path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/TraceListeners.cs
+    startLine: 119
+  assemblies:
+  - System.Diagnostics.TraceSource
+  namespace: System.Diagnostics
+  summary: "\n<p>Clears all the listeners from the list.</p>\n"
+  syntax:
+    content: public void Clear()
+    content.vb: Public Sub Clear
+  seealso:
+  - type: System.Diagnostics.TraceListenerCollection
+    commentId: T:System.Diagnostics.TraceListenerCollection
+  - type: System.Diagnostics.TraceListener
+    commentId: T:System.Diagnostics.TraceListener
+  - type: System.Diagnostics.DefaultTraceListener
+    commentId: T:System.Diagnostics.DefaultTraceListener
+  - type: System.Diagnostics.TextWriterTraceListener
+    commentId: T:System.Diagnostics.TextWriterTraceListener
+  - type: System.Diagnostics.ConsoleTraceListener
+    commentId: T:System.Diagnostics.ConsoleTraceListener
+  - type: System.Diagnostics.Debug
+    commentId: T:System.Diagnostics.Debug
+  - type: System.Diagnostics.Trace
+    commentId: T:System.Diagnostics.Trace
+  implements:
+  - System.Collections.IList.Clear
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: TraceListenerCollection.Clear()
+- uid: System.Diagnostics.TraceListenerCollection.Contains(System.Diagnostics.TraceListener)
+  commentId: M:System.Diagnostics.TraceListenerCollection.Contains(System.Diagnostics.TraceListener)
+  id: Contains(System.Diagnostics.TraceListener)
+  parent: System.Diagnostics.TraceListenerCollection
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Diagnostics.TraceListenerCollection.Contains(System.Diagnostics.TraceListener)
+  type: Method
+  source:
+    remote:
+      path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/TraceListeners.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Contains
+    path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/TraceListeners.cs
+    startLine: 128
+  assemblies:
+  - System.Diagnostics.TraceSource
+  namespace: System.Diagnostics
+  summary: "\n<p>Checks whether the list contains the specified listener.</p>\n"
+  syntax:
+    content: public bool Contains(TraceListener listener)
+    content.vb: Public Function Contains(listener As TraceListener) As Boolean
+    parameters:
+    - id: listener
+      type: System.Diagnostics.TraceListener
+      description: "\n<p>A <xref href=\"System.Diagnostics.TraceListener\" data-throw-if-not-resolved=\"false\"></xref> to find in the list. </p>\n"
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if the listener is in the list; otherwise, <strong>false</strong>.</p>\n"
+  seealso:
+  - type: System.Diagnostics.TraceListenerCollection
+    commentId: T:System.Diagnostics.TraceListenerCollection
+  - type: System.Diagnostics.TraceListener
+    commentId: T:System.Diagnostics.TraceListener
+  - type: System.Diagnostics.DefaultTraceListener
+    commentId: T:System.Diagnostics.DefaultTraceListener
+  - type: System.Diagnostics.TextWriterTraceListener
+    commentId: T:System.Diagnostics.TextWriterTraceListener
+  - type: System.Diagnostics.ConsoleTraceListener
+    commentId: T:System.Diagnostics.ConsoleTraceListener
+  - type: System.Diagnostics.Debug
+    commentId: T:System.Diagnostics.Debug
+  - type: System.Diagnostics.Trace
+    commentId: T:System.Diagnostics.Trace
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: TraceListenerCollection.Contains(TraceListener)
+- uid: System.Diagnostics.TraceListenerCollection.CopyTo(System.Diagnostics.TraceListener[],System.Int32)
+  commentId: M:System.Diagnostics.TraceListenerCollection.CopyTo(System.Diagnostics.TraceListener[],System.Int32)
+  id: CopyTo(System.Diagnostics.TraceListener[],System.Int32)
+  parent: System.Diagnostics.TraceListenerCollection
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Diagnostics.TraceListenerCollection.CopyTo(System.Diagnostics.TraceListener[], System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/TraceListeners.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: CopyTo
+    path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/TraceListeners.cs
+    startLine: 137
+  assemblies:
+  - System.Diagnostics.TraceSource
+  namespace: System.Diagnostics
+  summary: "\n<p>Copies a section of the current <xref href=\"System.Diagnostics.TraceListenerCollection\" data-throw-if-not-resolved=\"false\"></xref> list to the specified array at the specified index.</p>\n"
+  syntax:
+    content: public void CopyTo(TraceListener[] listeners, int index)
+    content.vb: Public Sub CopyTo(listeners As TraceListener(), index As Integer)
+    parameters:
+    - id: listeners
+      type: System.Diagnostics.TraceListener[]
+      description: "\n<p>An array of type <xref href=\"System.Array\" data-throw-if-not-resolved=\"false\"></xref> to copy the elements into. </p>\n"
+    - id: index
+      type: System.Int32
+      description: "\n<p>The starting index number in the current list to copy from. </p>\n"
+  seealso:
+  - type: System.Diagnostics.TraceListenerCollection
+    commentId: T:System.Diagnostics.TraceListenerCollection
+  - type: System.Diagnostics.TraceListener
+    commentId: T:System.Diagnostics.TraceListener
+  - type: System.Diagnostics.DefaultTraceListener
+    commentId: T:System.Diagnostics.DefaultTraceListener
+  - type: System.Diagnostics.TextWriterTraceListener
+    commentId: T:System.Diagnostics.TextWriterTraceListener
+  - type: System.Diagnostics.ConsoleTraceListener
+    commentId: T:System.Diagnostics.ConsoleTraceListener
+  - type: System.Diagnostics.Debug
+    commentId: T:System.Diagnostics.Debug
+  - type: System.Diagnostics.Trace
+    commentId: T:System.Diagnostics.Trace
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: System.Diagnostics.TraceListenerCollection.CopyTo(System.Diagnostics.TraceListener(), System.Int32)
+  name.vb: CopyTo(TraceListener(), Int32)
+  nameWithType: TraceListenerCollection.CopyTo(TraceListener[], Int32)
+  nameWithType.vb: TraceListenerCollection.CopyTo(TraceListener(), Int32)
+- uid: System.Diagnostics.TraceListenerCollection.GetEnumerator
+  commentId: M:System.Diagnostics.TraceListenerCollection.GetEnumerator
+  id: GetEnumerator
+  parent: System.Diagnostics.TraceListenerCollection
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Diagnostics.TraceListenerCollection.GetEnumerator()
+  type: Method
+  source:
+    remote:
+      path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/TraceListeners.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: GetEnumerator
+    path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/TraceListeners.cs
+    startLine: 147
+  assemblies:
+  - System.Diagnostics.TraceSource
+  namespace: System.Diagnostics
+  summary: "\n<p>Gets an enumerator for this list.</p>\n"
+  syntax:
+    content: public IEnumerator GetEnumerator()
+    content.vb: Public Function GetEnumerator As IEnumerator
+    return:
+      type: System.Collections.IEnumerator
+      description: "\n<p>An enumerator of type <xref href=\"System.Collections.IEnumerator\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  seealso:
+  - type: System.Diagnostics.TraceListenerCollection
+    commentId: T:System.Diagnostics.TraceListenerCollection
+  - type: System.Diagnostics.TraceListener
+    commentId: T:System.Diagnostics.TraceListener
+  - type: System.Diagnostics.DefaultTraceListener
+    commentId: T:System.Diagnostics.DefaultTraceListener
+  - type: System.Diagnostics.TextWriterTraceListener
+    commentId: T:System.Diagnostics.TextWriterTraceListener
+  - type: System.Diagnostics.ConsoleTraceListener
+    commentId: T:System.Diagnostics.ConsoleTraceListener
+  - type: System.Diagnostics.Debug
+    commentId: T:System.Diagnostics.Debug
+  - type: System.Diagnostics.Trace
+    commentId: T:System.Diagnostics.Trace
+  implements:
+  - System.Collections.IEnumerable.GetEnumerator
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: TraceListenerCollection.GetEnumerator()
+- uid: System.Diagnostics.TraceListenerCollection.IndexOf(System.Diagnostics.TraceListener)
+  commentId: M:System.Diagnostics.TraceListenerCollection.IndexOf(System.Diagnostics.TraceListener)
+  id: IndexOf(System.Diagnostics.TraceListener)
+  parent: System.Diagnostics.TraceListenerCollection
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Diagnostics.TraceListenerCollection.IndexOf(System.Diagnostics.TraceListener)
+  type: Method
+  source:
+    remote:
+      path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/TraceListeners.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: IndexOf
+    path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/TraceListeners.cs
+    startLine: 164
+  assemblies:
+  - System.Diagnostics.TraceSource
+  namespace: System.Diagnostics
+  summary: "\n<p>Gets the index of the specified listener.</p>\n"
+  syntax:
+    content: public int IndexOf(TraceListener listener)
+    content.vb: Public Function IndexOf(listener As TraceListener) As Integer
+    parameters:
+    - id: listener
+      type: System.Diagnostics.TraceListener
+      description: "\n<p>A <xref href=\"System.Diagnostics.TraceListener\" data-throw-if-not-resolved=\"false\"></xref> to find in the list. </p>\n"
+    return:
+      type: System.Int32
+      description: "\n<p>The index of the listener, if it can be found in the list; otherwise, -1.</p>\n"
+  seealso:
+  - type: System.Diagnostics.TraceListenerCollection
+    commentId: T:System.Diagnostics.TraceListenerCollection
+  - type: System.Diagnostics.TraceListener
+    commentId: T:System.Diagnostics.TraceListener
+  - type: System.Diagnostics.DefaultTraceListener
+    commentId: T:System.Diagnostics.DefaultTraceListener
+  - type: System.Diagnostics.TextWriterTraceListener
+    commentId: T:System.Diagnostics.TextWriterTraceListener
+  - type: System.Diagnostics.ConsoleTraceListener
+    commentId: T:System.Diagnostics.ConsoleTraceListener
+  - type: System.Diagnostics.Debug
+    commentId: T:System.Diagnostics.Debug
+  - type: System.Diagnostics.Trace
+    commentId: T:System.Diagnostics.Trace
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: TraceListenerCollection.IndexOf(TraceListener)
+- uid: System.Diagnostics.TraceListenerCollection.Insert(System.Int32,System.Diagnostics.TraceListener)
+  commentId: M:System.Diagnostics.TraceListenerCollection.Insert(System.Int32,System.Diagnostics.TraceListener)
+  id: Insert(System.Int32,System.Diagnostics.TraceListener)
+  parent: System.Diagnostics.TraceListenerCollection
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Diagnostics.TraceListenerCollection.Insert(System.Int32, System.Diagnostics.TraceListener)
+  type: Method
+  source:
+    remote:
+      path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/TraceListeners.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Insert
+    path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/TraceListeners.cs
+    startLine: 172
+  assemblies:
+  - System.Diagnostics.TraceSource
+  namespace: System.Diagnostics
+  summary: "\n<p>Inserts the listener at the specified index.</p>\n"
+  syntax:
+    content: public void Insert(int index, TraceListener listener)
+    content.vb: Public Sub Insert(index As Integer, listener As TraceListener)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: "\n<p>The position in the list to insert the new <xref href=\"System.Diagnostics.TraceListener\" data-throw-if-not-resolved=\"false\"></xref>. </p>\n"
+    - id: listener
+      type: System.Diagnostics.TraceListener
+      description: "\n<p>A <xref href=\"System.Diagnostics.TraceListener\" data-throw-if-not-resolved=\"false\"></xref> to insert in the list. </p>\n"
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>The <em>index</em> is not a valid index in the list. </p>\n"
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>\n<em>listener</em> is <strong>null</strong>.</p>\n"
+  seealso:
+  - type: System.Diagnostics.TraceListenerCollection
+    commentId: T:System.Diagnostics.TraceListenerCollection
+  - type: System.Diagnostics.TraceListener
+    commentId: T:System.Diagnostics.TraceListener
+  - type: System.Diagnostics.DefaultTraceListener
+    commentId: T:System.Diagnostics.DefaultTraceListener
+  - type: System.Diagnostics.TextWriterTraceListener
+    commentId: T:System.Diagnostics.TextWriterTraceListener
+  - type: System.Diagnostics.ConsoleTraceListener
+    commentId: T:System.Diagnostics.ConsoleTraceListener
+  - type: System.Diagnostics.Debug
+    commentId: T:System.Diagnostics.Debug
+  - type: System.Diagnostics.Trace
+    commentId: T:System.Diagnostics.Trace
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: TraceListenerCollection.Insert(Int32, TraceListener)
+- uid: System.Diagnostics.TraceListenerCollection.Remove(System.Diagnostics.TraceListener)
+  commentId: M:System.Diagnostics.TraceListenerCollection.Remove(System.Diagnostics.TraceListener)
+  id: Remove(System.Diagnostics.TraceListener)
+  parent: System.Diagnostics.TraceListenerCollection
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Diagnostics.TraceListenerCollection.Remove(System.Diagnostics.TraceListener)
+  type: Method
+  source:
+    remote:
+      path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/TraceListeners.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Remove
+    path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/TraceListeners.cs
+    startLine: 186
+  assemblies:
+  - System.Diagnostics.TraceSource
+  namespace: System.Diagnostics
+  summary: "\n<p>Removes from the collection the specified <xref href=\"System.Diagnostics.TraceListener\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  syntax:
+    content: public void Remove(TraceListener listener)
+    content.vb: Public Sub Remove(listener As TraceListener)
+    parameters:
+    - id: listener
+      type: System.Diagnostics.TraceListener
+      description: "\n<p>A <xref href=\"System.Diagnostics.TraceListener\" data-throw-if-not-resolved=\"false\"></xref> to remove from the list. </p>\n"
+  seealso:
+  - type: System.Diagnostics.TraceListenerCollection
+    commentId: T:System.Diagnostics.TraceListenerCollection
+  - type: System.Diagnostics.TraceListener
+    commentId: T:System.Diagnostics.TraceListener
+  - type: System.Diagnostics.DefaultTraceListener
+    commentId: T:System.Diagnostics.DefaultTraceListener
+  - type: System.Diagnostics.TextWriterTraceListener
+    commentId: T:System.Diagnostics.TextWriterTraceListener
+  - type: System.Diagnostics.ConsoleTraceListener
+    commentId: T:System.Diagnostics.ConsoleTraceListener
+  - type: System.Diagnostics.Debug
+    commentId: T:System.Diagnostics.Debug
+  - type: System.Diagnostics.Trace
+    commentId: T:System.Diagnostics.Trace
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: TraceListenerCollection.Remove(TraceListener)
+- uid: System.Diagnostics.TraceListenerCollection.Remove(System.String)
+  commentId: M:System.Diagnostics.TraceListenerCollection.Remove(System.String)
+  id: Remove(System.String)
+  parent: System.Diagnostics.TraceListenerCollection
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Diagnostics.TraceListenerCollection.Remove(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/TraceListeners.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Remove
+    path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/TraceListeners.cs
+    startLine: 195
+  assemblies:
+  - System.Diagnostics.TraceSource
+  namespace: System.Diagnostics
+  summary: "\n<p>Removes from the collection the first <xref href=\"System.Diagnostics.TraceListener\" data-throw-if-not-resolved=\"false\"></xref> with the specified name.</p>\n"
+  syntax:
+    content: public void Remove(string name)
+    content.vb: Public Sub Remove(name As String)
+    parameters:
+    - id: name
+      type: System.String
+      description: "\n<p>The name of the <xref href=\"System.Diagnostics.TraceListener\" data-throw-if-not-resolved=\"false\"></xref> to remove from the list. </p>\n"
+  seealso:
+  - type: System.Diagnostics.TraceListenerCollection
+    commentId: T:System.Diagnostics.TraceListenerCollection
+  - type: System.Diagnostics.TraceListener
+    commentId: T:System.Diagnostics.TraceListener
+  - type: System.Diagnostics.DefaultTraceListener
+    commentId: T:System.Diagnostics.DefaultTraceListener
+  - type: System.Diagnostics.TextWriterTraceListener
+    commentId: T:System.Diagnostics.TextWriterTraceListener
+  - type: System.Diagnostics.ConsoleTraceListener
+    commentId: T:System.Diagnostics.ConsoleTraceListener
+  - type: System.Diagnostics.Debug
+    commentId: T:System.Diagnostics.Debug
+  - type: System.Diagnostics.Trace
+    commentId: T:System.Diagnostics.Trace
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: TraceListenerCollection.Remove(String)
+- uid: System.Diagnostics.TraceListenerCollection.RemoveAt(System.Int32)
+  commentId: M:System.Diagnostics.TraceListenerCollection.RemoveAt(System.Int32)
+  id: RemoveAt(System.Int32)
+  parent: System.Diagnostics.TraceListenerCollection
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Diagnostics.TraceListenerCollection.RemoveAt(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/TraceListeners.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: RemoveAt
+    path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/TraceListeners.cs
+    startLine: 205
+  assemblies:
+  - System.Diagnostics.TraceSource
+  namespace: System.Diagnostics
+  summary: "\n<p>Removes from the collection the <xref href=\"System.Diagnostics.TraceListener\" data-throw-if-not-resolved=\"false\"></xref> at the specified index.</p>\n"
+  syntax:
+    content: public void RemoveAt(int index)
+    content.vb: Public Sub RemoveAt(index As Integer)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: "\n<p>The zero-based index of the <xref href=\"System.Diagnostics.TraceListener\" data-throw-if-not-resolved=\"false\"></xref> to remove from the list. </p>\n"
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>The <em>index</em> is not a valid index in the list. </p>\n"
+  seealso:
+  - type: System.Diagnostics.TraceListenerCollection
+    commentId: T:System.Diagnostics.TraceListenerCollection
+  - type: System.Diagnostics.TraceListener
+    commentId: T:System.Diagnostics.TraceListener
+  - type: System.Diagnostics.DefaultTraceListener
+    commentId: T:System.Diagnostics.DefaultTraceListener
+  - type: System.Diagnostics.TextWriterTraceListener
+    commentId: T:System.Diagnostics.TextWriterTraceListener
+  - type: System.Diagnostics.ConsoleTraceListener
+    commentId: T:System.Diagnostics.ConsoleTraceListener
+  - type: System.Diagnostics.Debug
+    commentId: T:System.Diagnostics.Debug
+  - type: System.Diagnostics.Trace
+    commentId: T:System.Diagnostics.Trace
+  implements:
+  - System.Collections.IList.RemoveAt(System.Int32)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: TraceListenerCollection.RemoveAt(Int32)
+- uid: System.Diagnostics.TraceListenerCollection.System#Collections#ICollection#CopyTo(System.Array,System.Int32)
+  commentId: M:System.Diagnostics.TraceListenerCollection.System#Collections#ICollection#CopyTo(System.Array,System.Int32)
+  id: System#Collections#ICollection#CopyTo(System.Array,System.Int32)
+  isEii: true
+  parent: System.Diagnostics.TraceListenerCollection
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Diagnostics.TraceListenerCollection.System.Collections.ICollection.CopyTo(System.Array, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/TraceListeners.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: System.Collections.ICollection.CopyTo
+    path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/TraceListeners.cs
+    startLine: 319
+  assemblies:
+  - System.Diagnostics.TraceSource
+  namespace: System.Diagnostics
+  summary: "\n<p>Copies a section of the current <xref href=\"System.Diagnostics.TraceListenerCollection\" data-throw-if-not-resolved=\"false\"></xref> to the specified array of <xref href=\"System.Diagnostics.TraceListener\" data-throw-if-not-resolved=\"false\"></xref> objects. </p>\n"
+  syntax:
+    content: void ICollection.CopyTo(Array array, int index)
+    content.vb: Sub System.Collections.ICollection.CopyTo(array As Array, index As Integer) Implements ICollection.CopyTo
+    parameters:
+    - id: array
+      type: System.Array
+      description: "\n<p>The one-dimensional array of <xref href=\"System.Diagnostics.TraceListener\" data-throw-if-not-resolved=\"false\"></xref> objects that is the destination of the elements copied from the <xref href=\"System.Diagnostics.TraceListenerCollection\" data-throw-if-not-resolved=\"false\"></xref>. The array must have zero-based indexing.</p>\n"
+    - id: index
+      type: System.Int32
+      description: "\n<p>The zero-based index in <em>array</em> at which copying begins.</p>\n"
+  implements:
+  - System.Collections.ICollection.CopyTo(System.Array,System.Int32)
+  name.vb: System.Collections.ICollection.CopyTo(Array, Int32)
+  nameWithType: TraceListenerCollection.ICollection.CopyTo(Array, Int32)
+  nameWithType.vb: TraceListenerCollection.System.Collections.ICollection.CopyTo(Array, Int32)
+- uid: System.Diagnostics.TraceListenerCollection.System#Collections#IList#Add(System.Object)
+  commentId: M:System.Diagnostics.TraceListenerCollection.System#Collections#IList#Add(System.Object)
+  id: System#Collections#IList#Add(System.Object)
+  isEii: true
+  parent: System.Diagnostics.TraceListenerCollection
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Diagnostics.TraceListenerCollection.System.Collections.IList.Add(System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/TraceListeners.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: System.Collections.IList.Add
+    path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/TraceListeners.cs
+    startLine: 250
+  assemblies:
+  - System.Diagnostics.TraceSource
+  namespace: System.Diagnostics
+  summary: "\n<p>Adds a trace listener to the <xref href=\"System.Diagnostics.TraceListenerCollection\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  syntax:
+    content: int IList.Add(object value)
+    content.vb: Function System.Collections.IList.Add(value As Object) As Integer Implements IList.Add
+    parameters:
+    - id: value
+      type: System.Object
+      description: "\n<p>The object to add to the <xref href=\"System.Diagnostics.TraceListenerCollection\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    return:
+      type: System.Int32
+      description: "\n<p>The position into which the new trace listener was inserted.</p>\n"
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>\n<em>value</em> is <strong>null</strong>. </p>\n<p>-or-</p>\n<p>\n<em>value</em> is not a <xref href=\"System.Diagnostics.TraceListener\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  implements:
+  - System.Collections.IList.Add(System.Object)
+  name.vb: System.Collections.IList.Add(Object)
+  nameWithType: TraceListenerCollection.IList.Add(Object)
+  nameWithType.vb: TraceListenerCollection.System.Collections.IList.Add(Object)
+- uid: System.Diagnostics.TraceListenerCollection.System#Collections#IList#Contains(System.Object)
+  commentId: M:System.Diagnostics.TraceListenerCollection.System#Collections#IList#Contains(System.Object)
+  id: System#Collections#IList#Contains(System.Object)
+  isEii: true
+  parent: System.Diagnostics.TraceListenerCollection
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Diagnostics.TraceListenerCollection.System.Collections.IList.Contains(System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/TraceListeners.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: System.Collections.IList.Contains
+    path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/TraceListeners.cs
+    startLine: 265
+  assemblies:
+  - System.Diagnostics.TraceSource
+  namespace: System.Diagnostics
+  summary: "\n<p>Determines whether the <xref href=\"System.Diagnostics.TraceListenerCollection\" data-throw-if-not-resolved=\"false\"></xref> contains a specific object.</p>\n"
+  syntax:
+    content: bool IList.Contains(object value)
+    content.vb: Function System.Collections.IList.Contains(value As Object) As Boolean Implements IList.Contains
+    parameters:
+    - id: value
+      type: System.Object
+      description: "\n<p>The object to locate in the <xref href=\"System.Diagnostics.TraceListenerCollection\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if the <xref href=\"System.Object\" data-throw-if-not-resolved=\"false\"></xref> is found in the <xref href=\"System.Diagnostics.TraceListenerCollection\" data-throw-if-not-resolved=\"false\"></xref>; otherwise, <strong>false</strong>.</p>\n"
+  implements:
+  - System.Collections.IList.Contains(System.Object)
+  name.vb: System.Collections.IList.Contains(Object)
+  nameWithType: TraceListenerCollection.IList.Contains(Object)
+  nameWithType.vb: TraceListenerCollection.System.Collections.IList.Contains(Object)
+- uid: System.Diagnostics.TraceListenerCollection.System#Collections#IList#IndexOf(System.Object)
+  commentId: M:System.Diagnostics.TraceListenerCollection.System#Collections#IList#IndexOf(System.Object)
+  id: System#Collections#IList#IndexOf(System.Object)
+  isEii: true
+  parent: System.Diagnostics.TraceListenerCollection
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Diagnostics.TraceListenerCollection.System.Collections.IList.IndexOf(System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/TraceListeners.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: System.Collections.IList.IndexOf
+    path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/TraceListeners.cs
+    startLine: 271
+  assemblies:
+  - System.Diagnostics.TraceSource
+  namespace: System.Diagnostics
+  summary: "\n<p>Determines the index of a specific object in the <xref href=\"System.Diagnostics.TraceListenerCollection\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  syntax:
+    content: int IList.IndexOf(object value)
+    content.vb: Function System.Collections.IList.IndexOf(value As Object) As Integer Implements IList.IndexOf
+    parameters:
+    - id: value
+      type: System.Object
+      description: "\n<p>The object to locate in the <xref href=\"System.Diagnostics.TraceListenerCollection\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    return:
+      type: System.Int32
+      description: "\n<p>The index of <em>value</em> if found in the <xref href=\"System.Diagnostics.TraceListenerCollection\" data-throw-if-not-resolved=\"false\"></xref>; otherwise, -1.</p>\n"
+  implements:
+  - System.Collections.IList.IndexOf(System.Object)
+  name.vb: System.Collections.IList.IndexOf(Object)
+  nameWithType: TraceListenerCollection.IList.IndexOf(Object)
+  nameWithType.vb: TraceListenerCollection.System.Collections.IList.IndexOf(Object)
+- uid: System.Diagnostics.TraceListenerCollection.System#Collections#IList#Insert(System.Int32,System.Object)
+  commentId: M:System.Diagnostics.TraceListenerCollection.System#Collections#IList#Insert(System.Int32,System.Object)
+  id: System#Collections#IList#Insert(System.Int32,System.Object)
+  isEii: true
+  parent: System.Diagnostics.TraceListenerCollection
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Diagnostics.TraceListenerCollection.System.Collections.IList.Insert(System.Int32, System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/TraceListeners.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: System.Collections.IList.Insert
+    path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/TraceListeners.cs
+    startLine: 277
+  assemblies:
+  - System.Diagnostics.TraceSource
+  namespace: System.Diagnostics
+  summary: "\n<p>Inserts a <xref href=\"System.Diagnostics.TraceListener\" data-throw-if-not-resolved=\"false\"></xref> object at the specified position in the <xref href=\"System.Diagnostics.TraceListenerCollection\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  syntax:
+    content: void IList.Insert(int index, object value)
+    content.vb: Sub System.Collections.IList.Insert(index As Integer, value As Object) Implements IList.Insert
+    parameters:
+    - id: index
+      type: System.Int32
+      description: "\n<p>The zero-based index at which <em>value</em> should be inserted.</p>\n"
+    - id: value
+      type: System.Object
+      description: "\n<p>The <xref href=\"System.Diagnostics.TraceListener\" data-throw-if-not-resolved=\"false\"></xref> object to insert into the <xref href=\"System.Diagnostics.TraceListenerCollection\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>\n<em>value</em> is not a <xref href=\"System.Diagnostics.TraceListener\" data-throw-if-not-resolved=\"false\"></xref> object.</p>\n"
+  implements:
+  - System.Collections.IList.Insert(System.Int32,System.Object)
+  name.vb: System.Collections.IList.Insert(Int32, Object)
+  nameWithType: TraceListenerCollection.IList.Insert(Int32, Object)
+  nameWithType.vb: TraceListenerCollection.System.Collections.IList.Insert(Int32, Object)
+- uid: System.Diagnostics.TraceListenerCollection.System#Collections#IList#Remove(System.Object)
+  commentId: M:System.Diagnostics.TraceListenerCollection.System#Collections#IList#Remove(System.Object)
+  id: System#Collections#IList#Remove(System.Object)
+  isEii: true
+  parent: System.Diagnostics.TraceListenerCollection
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Diagnostics.TraceListenerCollection.System.Collections.IList.Remove(System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/TraceListeners.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: System.Collections.IList.Remove
+    path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/TraceListeners.cs
+    startLine: 292
+  assemblies:
+  - System.Diagnostics.TraceSource
+  namespace: System.Diagnostics
+  summary: "\n<p>Removes an object from the <xref href=\"System.Diagnostics.TraceListenerCollection\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  syntax:
+    content: void IList.Remove(object value)
+    content.vb: Sub System.Collections.IList.Remove(value As Object) Implements IList.Remove
+    parameters:
+    - id: value
+      type: System.Object
+      description: "\n<p>The object to remove from the <xref href=\"System.Diagnostics.TraceListenerCollection\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  implements:
+  - System.Collections.IList.Remove(System.Object)
+  name.vb: System.Collections.IList.Remove(Object)
+  nameWithType: TraceListenerCollection.IList.Remove(Object)
+  nameWithType.vb: TraceListenerCollection.System.Collections.IList.Remove(Object)
+references:
+- uid: System.Diagnostics
+  isExternal: false
+  name: "XXX"
+  fullName: System.Diagnostics
+  nameWithType: System.Diagnostics
+  commentId: N:System.Diagnostics
+- uid: System.Object
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Object
+  nameWithType: Object
+  commentId: T:System.Object
+- uid: System.Collections.IList
+  parent: System.Collections
+  isExternal: false
+  name: "XXX"
+  fullName: System.Collections.IList
+  nameWithType: IList
+  commentId: T:System.Collections.IList
+- uid: System.Collections.ICollection
+  parent: System.Collections
+  isExternal: false
+  name: "XXX"
+  fullName: System.Collections.ICollection
+  nameWithType: ICollection
+  commentId: T:System.Collections.ICollection
+- uid: System.Collections.IEnumerable
+  parent: System.Collections
+  isExternal: false
+  name: "XXX"
+  fullName: System.Collections.IEnumerable
+  nameWithType: IEnumerable
+  commentId: T:System.Collections.IEnumerable
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.ToString()
+  commentId: M:System.Object.ToString
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.Equals(Object)
+  commentId: M:System.Object.Equals(System.Object)
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.Equals(Object, Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.GetHashCode()
+  commentId: M:System.Object.GetHashCode
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.GetType()
+  commentId: M:System.Object.GetType
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.MemberwiseClone()
+  commentId: M:System.Object.MemberwiseClone
+- uid: System.Collections.IEnumerable.System.Linq.Queryable.AsQueryable
+  parent: System.Linq.Queryable
+  definition: System.Linq.Queryable.AsQueryable(System.Collections.IEnumerable)
+  name: "XXX"
+  fullName: System.Linq.Queryable.AsQueryable()
+  spec.csharp:
+  - uid: System.Linq.Queryable.AsQueryable
+    name: "XXX"
+    fullName: System.Linq.Queryable.AsQueryable
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Linq.Queryable.AsQueryable
+    name: "XXX"
+    fullName: System.Linq.Queryable.AsQueryable
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Queryable.AsQueryable()
+  commentId: M:System.Linq.Queryable.AsQueryable(System.Collections.IEnumerable)
+- uid: System.Collections.IEnumerable.System.Linq.ParallelEnumerable.AsParallel
+  parent: System.Linq.ParallelEnumerable
+  definition: System.Linq.ParallelEnumerable.AsParallel(System.Collections.IEnumerable)
+  name: "XXX"
+  fullName: System.Linq.ParallelEnumerable.AsParallel()
+  spec.csharp:
+  - uid: System.Linq.ParallelEnumerable.AsParallel
+    name: "XXX"
+    fullName: System.Linq.ParallelEnumerable.AsParallel
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Linq.ParallelEnumerable.AsParallel
+    name: "XXX"
+    fullName: System.Linq.ParallelEnumerable.AsParallel
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: ParallelEnumerable.AsParallel()
+  commentId: M:System.Linq.ParallelEnumerable.AsParallel(System.Collections.IEnumerable)
+- uid: System.Collections.IEnumerable.System.Linq.Enumerable.Cast``1
+  parent: System.Linq.Enumerable
+  definition: System.Linq.Enumerable.Cast``1(System.Collections.IEnumerable)
+  name: "XXX"
+  fullName: System.Linq.Enumerable.Cast<TResult>()
+  fullname.vb: System.Linq.Enumerable.Cast(Of TResult)()
+  name.vb: Cast(Of TResult)()
+  spec.csharp:
+  - uid: System.Linq.Enumerable.Cast``1
+    name: "XXX"
+    fullName: System.Linq.Enumerable.Cast<TResult>
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Linq.Enumerable.Cast``1
+    name: "XXX"
+    fullName: System.Linq.Enumerable.Cast(Of TResult)
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Enumerable.Cast<TResult>()
+  nameWithType.vb: Enumerable.Cast(Of TResult)()
+  commentId: M:System.Linq.Enumerable.Cast``1(System.Collections.IEnumerable)
+- uid: System.Collections.IEnumerable.System.Linq.Enumerable.OfType``1
+  parent: System.Linq.Enumerable
+  definition: System.Linq.Enumerable.OfType``1(System.Collections.IEnumerable)
+  name: "XXX"
+  fullName: System.Linq.Enumerable.OfType<TResult>()
+  fullname.vb: System.Linq.Enumerable.OfType(Of TResult)()
+  name.vb: OfType(Of TResult)()
+  spec.csharp:
+  - uid: System.Linq.Enumerable.OfType``1
+    name: "XXX"
+    fullName: System.Linq.Enumerable.OfType<TResult>
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Linq.Enumerable.OfType``1
+    name: "XXX"
+    fullName: System.Linq.Enumerable.OfType(Of TResult)
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Enumerable.OfType<TResult>()
+  nameWithType.vb: Enumerable.OfType(Of TResult)()
+  commentId: M:System.Linq.Enumerable.OfType``1(System.Collections.IEnumerable)
+- uid: System
+  isExternal: false
+  name: "XXX"
+  fullName: System
+  nameWithType: System
+  commentId: N:System
+- uid: System.Collections
+  isExternal: false
+  name: "XXX"
+  fullName: System.Collections
+  nameWithType: System.Collections
+  commentId: N:System.Collections
+- uid: System.Linq.Queryable.AsQueryable(System.Collections.IEnumerable)
+  isExternal: true
+  name: "XXX"
+  fullName: System.Linq.Queryable.AsQueryable(System.Collections.IEnumerable)
+  spec.csharp:
+  - uid: System.Linq.Queryable.AsQueryable(System.Collections.IEnumerable)
+    name: "XXX"
+    fullName: System.Linq.Queryable.AsQueryable
+  - name: "XXX"
+    fullName: (
+  - uid: System.Collections.IEnumerable
+    name: "XXX"
+    fullName: System.Collections.IEnumerable
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Linq.Queryable.AsQueryable(System.Collections.IEnumerable)
+    name: "XXX"
+    fullName: System.Linq.Queryable.AsQueryable
+  - name: "XXX"
+    fullName: (
+  - uid: System.Collections.IEnumerable
+    name: "XXX"
+    fullName: System.Collections.IEnumerable
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Queryable.AsQueryable(IEnumerable)
+  commentId: M:System.Linq.Queryable.AsQueryable(System.Collections.IEnumerable)
+- uid: System.Linq.Queryable
+  parent: System.Linq
+  isExternal: false
+  name: "XXX"
+  fullName: System.Linq.Queryable
+  nameWithType: Queryable
+  commentId: T:System.Linq.Queryable
+- uid: System.Linq.ParallelEnumerable.AsParallel(System.Collections.IEnumerable)
+  isExternal: true
+  name: "XXX"
+  fullName: System.Linq.ParallelEnumerable.AsParallel(System.Collections.IEnumerable)
+  spec.csharp:
+  - uid: System.Linq.ParallelEnumerable.AsParallel(System.Collections.IEnumerable)
+    name: "XXX"
+    fullName: System.Linq.ParallelEnumerable.AsParallel
+  - name: "XXX"
+    fullName: (
+  - uid: System.Collections.IEnumerable
+    name: "XXX"
+    fullName: System.Collections.IEnumerable
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Linq.ParallelEnumerable.AsParallel(System.Collections.IEnumerable)
+    name: "XXX"
+    fullName: System.Linq.ParallelEnumerable.AsParallel
+  - name: "XXX"
+    fullName: (
+  - uid: System.Collections.IEnumerable
+    name: "XXX"
+    fullName: System.Collections.IEnumerable
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: ParallelEnumerable.AsParallel(IEnumerable)
+  commentId: M:System.Linq.ParallelEnumerable.AsParallel(System.Collections.IEnumerable)
+- uid: System.Linq.ParallelEnumerable
+  parent: System.Linq
+  isExternal: false
+  name: "XXX"
+  fullName: System.Linq.ParallelEnumerable
+  nameWithType: ParallelEnumerable
+  commentId: T:System.Linq.ParallelEnumerable
+- uid: System.Linq.Enumerable.Cast``1(System.Collections.IEnumerable)
+  isExternal: true
+  name: "XXX"
+  fullName: System.Linq.Enumerable.Cast<TResult>(System.Collections.IEnumerable)
+  fullname.vb: System.Linq.Enumerable.Cast(Of TResult)(System.Collections.IEnumerable)
+  name.vb: Cast(Of TResult)(IEnumerable)
+  spec.csharp:
+  - uid: System.Linq.Enumerable.Cast``1(System.Collections.IEnumerable)
+    name: "XXX"
+    fullName: System.Linq.Enumerable.Cast<TResult>
+  - name: "XXX"
+    fullName: (
+  - uid: System.Collections.IEnumerable
+    name: "XXX"
+    fullName: System.Collections.IEnumerable
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Linq.Enumerable.Cast``1(System.Collections.IEnumerable)
+    name: "XXX"
+    fullName: System.Linq.Enumerable.Cast(Of TResult)
+  - name: "XXX"
+    fullName: (
+  - uid: System.Collections.IEnumerable
+    name: "XXX"
+    fullName: System.Collections.IEnumerable
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Enumerable.Cast<TResult>(IEnumerable)
+  nameWithType.vb: Enumerable.Cast(Of TResult)(IEnumerable)
+  commentId: M:System.Linq.Enumerable.Cast``1(System.Collections.IEnumerable)
+- uid: System.Linq.Enumerable
+  parent: System.Linq
+  isExternal: false
+  name: "XXX"
+  fullName: System.Linq.Enumerable
+  nameWithType: Enumerable
+  commentId: T:System.Linq.Enumerable
+- uid: System.Linq.Enumerable.OfType``1(System.Collections.IEnumerable)
+  isExternal: true
+  name: "XXX"
+  fullName: System.Linq.Enumerable.OfType<TResult>(System.Collections.IEnumerable)
+  fullname.vb: System.Linq.Enumerable.OfType(Of TResult)(System.Collections.IEnumerable)
+  name.vb: OfType(Of TResult)(IEnumerable)
+  spec.csharp:
+  - uid: System.Linq.Enumerable.OfType``1(System.Collections.IEnumerable)
+    name: "XXX"
+    fullName: System.Linq.Enumerable.OfType<TResult>
+  - name: "XXX"
+    fullName: (
+  - uid: System.Collections.IEnumerable
+    name: "XXX"
+    fullName: System.Collections.IEnumerable
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Linq.Enumerable.OfType``1(System.Collections.IEnumerable)
+    name: "XXX"
+    fullName: System.Linq.Enumerable.OfType(Of TResult)
+  - name: "XXX"
+    fullName: (
+  - uid: System.Collections.IEnumerable
+    name: "XXX"
+    fullName: System.Collections.IEnumerable
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Enumerable.OfType<TResult>(IEnumerable)
+  nameWithType.vb: Enumerable.OfType(Of TResult)(IEnumerable)
+  commentId: M:System.Linq.Enumerable.OfType``1(System.Collections.IEnumerable)
+- uid: System.Linq
+  isExternal: false
+  name: "XXX"
+  fullName: System.Linq
+  nameWithType: System.Linq
+  commentId: N:System.Linq
+- uid: System.Collections.ICollection.Count
+  parent: System.Collections.ICollection
+  isExternal: false
+  name: "XXX"
+  fullName: System.Collections.ICollection.Count
+  nameWithType: ICollection.Count
+  commentId: P:System.Collections.ICollection.Count
+- uid: System.Int32
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Int32
+  nameWithType: Int32
+  commentId: T:System.Int32
+- uid: System.Diagnostics.TraceListener
+  parent: System.Diagnostics
+  isExternal: false
+  name: "XXX"
+  fullName: System.Diagnostics.TraceListener
+  nameWithType: TraceListener
+  commentId: T:System.Diagnostics.TraceListener
+- uid: System.String
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.String
+  nameWithType: String
+  commentId: T:System.String
+- uid: System.Collections.ICollection.IsSynchronized
+  parent: System.Collections.ICollection
+  isExternal: false
+  name: "XXX"
+  fullName: System.Collections.ICollection.IsSynchronized
+  nameWithType: ICollection.IsSynchronized
+  commentId: P:System.Collections.ICollection.IsSynchronized
+- uid: System.Boolean
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Boolean
+  nameWithType: Boolean
+  commentId: T:System.Boolean
+- uid: System.Collections.ICollection.SyncRoot
+  parent: System.Collections.ICollection
+  isExternal: false
+  name: "XXX"
+  fullName: System.Collections.ICollection.SyncRoot
+  nameWithType: ICollection.SyncRoot
+  commentId: P:System.Collections.ICollection.SyncRoot
+- uid: System.Collections.IList.IsFixedSize
+  parent: System.Collections.IList
+  isExternal: false
+  name: "XXX"
+  fullName: System.Collections.IList.IsFixedSize
+  nameWithType: IList.IsFixedSize
+  commentId: P:System.Collections.IList.IsFixedSize
+- uid: System.Collections.IList.IsReadOnly
+  parent: System.Collections.IList
+  isExternal: false
+  name: "XXX"
+  fullName: System.Collections.IList.IsReadOnly
+  nameWithType: IList.IsReadOnly
+  commentId: P:System.Collections.IList.IsReadOnly
+- uid: System.Collections.IList.Item(System.Int32)
+  parent: System.Collections.IList
+  isExternal: true
+  name: "XXX"
+  fullName: System.Collections.IList.Item[System.Int32]
+  fullname.vb: System.Collections.IList.Item(System.Int32)
+  name.vb: Item(Int32)
+  spec.csharp:
+  - uid: System.Collections.IList.Item(System.Int32)
+    name: "XXX"
+    fullName: System.Collections.IList.Item
+  - name: 'XXX'
+    fullName: '['
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: 'XXX'
+    fullName: ']'
+  spec.vb:
+  - uid: System.Collections.IList.Item(System.Int32)
+    name: "XXX"
+    fullName: System.Collections.IList.Item
+  - name: "XXX"
+    fullName: (
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: IList.Item[Int32]
+  nameWithType.vb: IList.Item(Int32)
+  commentId: P:System.Collections.IList.Item(System.Int32)
+- uid: System.Diagnostics.TraceListener[]
+  name: "XXX"
+  fullName: System.Diagnostics.TraceListener[]
+  fullname.vb: System.Diagnostics.TraceListener()
+  name.vb: TraceListener()
+  spec.csharp:
+  - uid: System.Diagnostics.TraceListener
+    name: "XXX"
+    fullName: System.Diagnostics.TraceListener
+  - name: 'XXX'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Diagnostics.TraceListener
+    name: "XXX"
+    fullName: System.Diagnostics.TraceListener
+  - name: "XXX"
+    fullName: ()
+  nameWithType: TraceListener[]
+  nameWithType.vb: TraceListener()
+- uid: System.Diagnostics.TraceListenerCollection
+  parent: System.Diagnostics
+  isExternal: false
+  name: "XXX"
+  fullName: System.Diagnostics.TraceListenerCollection
+  nameWithType: TraceListenerCollection
+  commentId: T:System.Diagnostics.TraceListenerCollection
+- uid: System.Collections.IList.Clear
+  parent: System.Collections.IList
+  isExternal: false
+  name: "XXX"
+  fullName: System.Collections.IList.Clear()
+  spec.csharp:
+  - uid: System.Collections.IList.Clear
+    name: "XXX"
+    fullName: System.Collections.IList.Clear
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.IList.Clear
+    name: "XXX"
+    fullName: System.Collections.IList.Clear
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: IList.Clear()
+  commentId: M:System.Collections.IList.Clear
+- uid: System.Collections.IEnumerable.GetEnumerator
+  parent: System.Collections.IEnumerable
+  isExternal: false
+  name: "XXX"
+  fullName: System.Collections.IEnumerable.GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.IEnumerable.GetEnumerator
+    name: "XXX"
+    fullName: System.Collections.IEnumerable.GetEnumerator
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.IEnumerable.GetEnumerator
+    name: "XXX"
+    fullName: System.Collections.IEnumerable.GetEnumerator
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: IEnumerable.GetEnumerator()
+  commentId: M:System.Collections.IEnumerable.GetEnumerator
+- uid: System.Collections.IEnumerator
+  parent: System.Collections
+  isExternal: false
+  name: "XXX"
+  fullName: System.Collections.IEnumerator
+  nameWithType: IEnumerator
+  commentId: T:System.Collections.IEnumerator
+- uid: System.Collections.IList.RemoveAt(System.Int32)
+  parent: System.Collections.IList
+  isExternal: true
+  name: "XXX"
+  fullName: System.Collections.IList.RemoveAt(System.Int32)
+  spec.csharp:
+  - uid: System.Collections.IList.RemoveAt(System.Int32)
+    name: "XXX"
+    fullName: System.Collections.IList.RemoveAt
+  - name: "XXX"
+    fullName: (
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.IList.RemoveAt(System.Int32)
+    name: "XXX"
+    fullName: System.Collections.IList.RemoveAt
+  - name: "XXX"
+    fullName: (
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: IList.RemoveAt(Int32)
+  commentId: M:System.Collections.IList.RemoveAt(System.Int32)
+- uid: System.Collections.ICollection.CopyTo(System.Array,System.Int32)
+  parent: System.Collections.ICollection
+  isExternal: true
+  name: "XXX"
+  fullName: System.Collections.ICollection.CopyTo(System.Array, System.Int32)
+  spec.csharp:
+  - uid: System.Collections.ICollection.CopyTo(System.Array,System.Int32)
+    name: "XXX"
+    fullName: System.Collections.ICollection.CopyTo
+  - name: "XXX"
+    fullName: (
+  - uid: System.Array
+    name: "XXX"
+    fullName: System.Array
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ICollection.CopyTo(System.Array,System.Int32)
+    name: "XXX"
+    fullName: System.Collections.ICollection.CopyTo
+  - name: "XXX"
+    fullName: (
+  - uid: System.Array
+    name: "XXX"
+    fullName: System.Array
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: ICollection.CopyTo(Array, Int32)
+  commentId: M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)
+- uid: System.Array
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Array
+  nameWithType: Array
+  commentId: T:System.Array
+- uid: System.Collections.IList.Add(System.Object)
+  parent: System.Collections.IList
+  isExternal: true
+  name: "XXX"
+  fullName: System.Collections.IList.Add(System.Object)
+  spec.csharp:
+  - uid: System.Collections.IList.Add(System.Object)
+    name: "XXX"
+    fullName: System.Collections.IList.Add
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.IList.Add(System.Object)
+    name: "XXX"
+    fullName: System.Collections.IList.Add
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: IList.Add(Object)
+  commentId: M:System.Collections.IList.Add(System.Object)
+- uid: System.Collections.IList.Contains(System.Object)
+  parent: System.Collections.IList
+  isExternal: true
+  name: "XXX"
+  fullName: System.Collections.IList.Contains(System.Object)
+  spec.csharp:
+  - uid: System.Collections.IList.Contains(System.Object)
+    name: "XXX"
+    fullName: System.Collections.IList.Contains
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.IList.Contains(System.Object)
+    name: "XXX"
+    fullName: System.Collections.IList.Contains
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: IList.Contains(Object)
+  commentId: M:System.Collections.IList.Contains(System.Object)
+- uid: System.Collections.IList.IndexOf(System.Object)
+  parent: System.Collections.IList
+  isExternal: true
+  name: "XXX"
+  fullName: System.Collections.IList.IndexOf(System.Object)
+  spec.csharp:
+  - uid: System.Collections.IList.IndexOf(System.Object)
+    name: "XXX"
+    fullName: System.Collections.IList.IndexOf
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.IList.IndexOf(System.Object)
+    name: "XXX"
+    fullName: System.Collections.IList.IndexOf
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: IList.IndexOf(Object)
+  commentId: M:System.Collections.IList.IndexOf(System.Object)
+- uid: System.Collections.IList.Insert(System.Int32,System.Object)
+  parent: System.Collections.IList
+  isExternal: true
+  name: "XXX"
+  fullName: System.Collections.IList.Insert(System.Int32, System.Object)
+  spec.csharp:
+  - uid: System.Collections.IList.Insert(System.Int32,System.Object)
+    name: "XXX"
+    fullName: System.Collections.IList.Insert
+  - name: "XXX"
+    fullName: (
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.IList.Insert(System.Int32,System.Object)
+    name: "XXX"
+    fullName: System.Collections.IList.Insert
+  - name: "XXX"
+    fullName: (
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: IList.Insert(Int32, Object)
+  commentId: M:System.Collections.IList.Insert(System.Int32,System.Object)
+- uid: System.Collections.IList.Remove(System.Object)
+  parent: System.Collections.IList
+  isExternal: true
+  name: "XXX"
+  fullName: System.Collections.IList.Remove(System.Object)
+  spec.csharp:
+  - uid: System.Collections.IList.Remove(System.Object)
+    name: "XXX"
+    fullName: System.Collections.IList.Remove
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.IList.Remove(System.Object)
+    name: "XXX"
+    fullName: System.Collections.IList.Remove
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: IList.Remove(Object)
+  commentId: M:System.Collections.IList.Remove(System.Object)
+- uid: System.ArgumentNullException
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentNullException
+  nameWithType: ArgumentNullException
+  commentId: T:System.ArgumentNullException
+- uid: System.ArgumentOutOfRangeException
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentOutOfRangeException
+  nameWithType: ArgumentOutOfRangeException
+  commentId: T:System.ArgumentOutOfRangeException
+- uid: System.ArgumentException
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentException
+  nameWithType: ArgumentException
+  commentId: T:System.ArgumentException

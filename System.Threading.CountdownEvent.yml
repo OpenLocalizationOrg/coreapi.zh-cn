@@ -1,0 +1,1263 @@
+items:
+- uid: System.Threading.CountdownEvent
+  commentId: T:System.Threading.CountdownEvent
+  id: CountdownEvent
+  parent: System.Threading
+  children:
+  - System.Threading.CountdownEvent.#ctor(System.Int32)
+  - System.Threading.CountdownEvent.AddCount
+  - System.Threading.CountdownEvent.AddCount(System.Int32)
+  - System.Threading.CountdownEvent.CurrentCount
+  - System.Threading.CountdownEvent.Dispose
+  - System.Threading.CountdownEvent.Dispose(System.Boolean)
+  - System.Threading.CountdownEvent.InitialCount
+  - System.Threading.CountdownEvent.IsSet
+  - System.Threading.CountdownEvent.Reset
+  - System.Threading.CountdownEvent.Reset(System.Int32)
+  - System.Threading.CountdownEvent.Signal
+  - System.Threading.CountdownEvent.Signal(System.Int32)
+  - System.Threading.CountdownEvent.TryAddCount
+  - System.Threading.CountdownEvent.TryAddCount(System.Int32)
+  - System.Threading.CountdownEvent.Wait
+  - System.Threading.CountdownEvent.Wait(System.Int32)
+  - System.Threading.CountdownEvent.Wait(System.Int32,System.Threading.CancellationToken)
+  - System.Threading.CountdownEvent.Wait(System.Threading.CancellationToken)
+  - System.Threading.CountdownEvent.Wait(System.TimeSpan)
+  - System.Threading.CountdownEvent.Wait(System.TimeSpan,System.Threading.CancellationToken)
+  - System.Threading.CountdownEvent.WaitHandle
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.CountdownEvent
+  type: Class
+  source:
+    remote:
+      path: src/mscorlib/src/System/Threading/CountdownEvent.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: CountdownEvent
+    path: src/mscorlib/src/System/Threading/CountdownEvent.cs
+    startLine: 32
+  assemblies:
+  - System.Threading
+  namespace: System.Threading
+  summary: "\n<p>Represents a synchronization primitive that is signaled when its count reaches zero.</p>\n"
+  syntax:
+    content: >-
+      [ComVisible(false)]
+
+      [DebuggerDisplay("Initial Count={InitialCount}, Current Count={CurrentCount}")]
+
+      [HostProtection(Synchronization = true, ExternalThreading = true)]
+
+      public class CountdownEvent : IDisposable
+    content.vb: >-
+      <ComVisible(False)>
+
+      <DebuggerDisplay("Initial Count={InitialCount}, Current Count={CurrentCount}")>
+
+      <HostProtection(Synchronization:=True, ExternalThreading:=True)>
+
+      Public Class CountdownEvent
+          Implements IDisposable
+  inheritance:
+  - System.Object
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+  nameWithType: CountdownEvent
+- uid: System.Threading.CountdownEvent.#ctor(System.Int32)
+  commentId: M:System.Threading.CountdownEvent.#ctor(System.Int32)
+  id: '#ctor(System.Int32)'
+  parent: System.Threading.CountdownEvent
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.CountdownEvent.CountdownEvent(System.Int32)
+  type: Constructor
+  source:
+    remote:
+      path: src/mscorlib/src/System/Threading/CountdownEvent.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: .ctor
+    path: src/mscorlib/src/System/Threading/CountdownEvent.cs
+    startLine: 57
+  assemblies:
+  - System.Threading
+  namespace: System.Threading
+  summary: "\n<p>Initializes a new instance of <xref href=\"System.Threading.CountdownEvent\" data-throw-if-not-resolved=\"false\"></xref> class with the specified count.</p>\n"
+  syntax:
+    content: public CountdownEvent(int initialCount)
+    content.vb: Public Sub New(initialCount As Integer)
+    parameters:
+    - id: initialCount
+      type: System.Int32
+      description: "\n<p>The number of signals initially required to set the <xref href=\"System.Threading.CountdownEvent\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>initialCount</em> is less than 0.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: CountdownEvent.CountdownEvent(Int32)
+- uid: System.Threading.CountdownEvent.CurrentCount
+  commentId: P:System.Threading.CountdownEvent.CurrentCount
+  id: CurrentCount
+  parent: System.Threading.CountdownEvent
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.CountdownEvent.CurrentCount
+  type: Property
+  source:
+    remote:
+      path: src/mscorlib/src/System/Threading/CountdownEvent.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: CurrentCount
+    path: src/mscorlib/src/System/Threading/CountdownEvent.cs
+    startLine: 83
+  assemblies:
+  - System.Threading
+  namespace: System.Threading
+  summary: "\n<p>Gets the number of remaining signals required to set the event.</p>\n"
+  syntax:
+    content: public int CurrentCount { get; }
+    content.vb: Public ReadOnly Property CurrentCount As Integer
+    parameters: []
+    return:
+      type: System.Int32
+      description: "\n<p> The number of remaining signals required to set the event.</p>\n<p></p>\n"
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  nameWithType: CountdownEvent.CurrentCount
+- uid: System.Threading.CountdownEvent.InitialCount
+  commentId: P:System.Threading.CountdownEvent.InitialCount
+  id: InitialCount
+  parent: System.Threading.CountdownEvent
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.CountdownEvent.InitialCount
+  type: Property
+  source:
+    remote:
+      path: src/mscorlib/src/System/Threading/CountdownEvent.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: InitialCount
+    path: src/mscorlib/src/System/Threading/CountdownEvent.cs
+    startLine: 98
+  assemblies:
+  - System.Threading
+  namespace: System.Threading
+  summary: "\n<p>Gets the numbers of signals initially required to set the event.</p>\n"
+  syntax:
+    content: public int InitialCount { get; }
+    content.vb: Public ReadOnly Property InitialCount As Integer
+    parameters: []
+    return:
+      type: System.Int32
+      description: "\n<p> The number of signals initially required to set the event.</p>\n<p></p>\n"
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  nameWithType: CountdownEvent.InitialCount
+- uid: System.Threading.CountdownEvent.IsSet
+  commentId: P:System.Threading.CountdownEvent.IsSet
+  id: IsSet
+  parent: System.Threading.CountdownEvent
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.CountdownEvent.IsSet
+  type: Property
+  source:
+    remote:
+      path: src/mscorlib/src/System/Threading/CountdownEvent.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: IsSet
+    path: src/mscorlib/src/System/Threading/CountdownEvent.cs
+    startLine: 107
+  assemblies:
+  - System.Threading
+  namespace: System.Threading
+  summary: "\n<p>Indicates whether the <xref href=\"System.Threading.CountdownEvent\" data-throw-if-not-resolved=\"false\"></xref> object's current count has reached zero..</p>\n"
+  syntax:
+    content: public bool IsSet { get; }
+    content.vb: Public ReadOnly Property IsSet As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if the current count is zero; otherwise, <strong>false</strong>.</p>\n"
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  nameWithType: CountdownEvent.IsSet
+- uid: System.Threading.CountdownEvent.WaitHandle
+  commentId: P:System.Threading.CountdownEvent.WaitHandle
+  id: WaitHandle
+  parent: System.Threading.CountdownEvent
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.CountdownEvent.WaitHandle
+  type: Property
+  source:
+    remote:
+      path: src/mscorlib/src/System/Threading/CountdownEvent.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: WaitHandle
+    path: src/mscorlib/src/System/Threading/CountdownEvent.cs
+    startLine: 129
+  assemblies:
+  - System.Threading
+  namespace: System.Threading
+  summary: "\n<p>Gets a <xref href=\"System.Threading.WaitHandle\" data-throw-if-not-resolved=\"false\"></xref> that is used to wait for the event to be set.</p>\n"
+  syntax:
+    content: public WaitHandle WaitHandle { get; }
+    content.vb: Public ReadOnly Property WaitHandle As WaitHandle
+    parameters: []
+    return:
+      type: System.Threading.WaitHandle
+      description: "\n<p>A <xref href=\"System.Threading.WaitHandle\" data-throw-if-not-resolved=\"false\"></xref> that is used to wait for the event to be set.</p>\n"
+  exceptions:
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>The current instance has already been disposed.</p>\n"
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  nameWithType: CountdownEvent.WaitHandle
+- uid: System.Threading.CountdownEvent.AddCount
+  commentId: M:System.Threading.CountdownEvent.AddCount
+  id: AddCount
+  parent: System.Threading.CountdownEvent
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.CountdownEvent.AddCount()
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Threading/CountdownEvent.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: AddCount
+    path: src/mscorlib/src/System/Threading/CountdownEvent.cs
+    startLine: 283
+  assemblies:
+  - System.Threading
+  namespace: System.Threading
+  summary: "\n<p>Increments the <xref href=\"System.Threading.CountdownEvent\" data-throw-if-not-resolved=\"false\"></xref>'s current count by one.</p>\n"
+  syntax:
+    content: public void AddCount()
+    content.vb: Public Sub AddCount
+  exceptions:
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>The current instance has already been disposed.</p>\n<p></p>\n"
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: "\n<p>The current instance is already set.</p>\n<p>-or-</p>\n<p>\n<xref href=\"System.Threading.CountdownEvent.CurrentCount\" data-throw-if-not-resolved=\"false\"></xref> is equal to or greater than <xref href=\"System.Int32.MaxValue\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: CountdownEvent.AddCount()
+- uid: System.Threading.CountdownEvent.AddCount(System.Int32)
+  commentId: M:System.Threading.CountdownEvent.AddCount(System.Int32)
+  id: AddCount(System.Int32)
+  parent: System.Threading.CountdownEvent
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.CountdownEvent.AddCount(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Threading/CountdownEvent.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: AddCount
+    path: src/mscorlib/src/System/Threading/CountdownEvent.cs
+    startLine: 315
+  assemblies:
+  - System.Threading
+  namespace: System.Threading
+  summary: "\n<p>Increments the <xref href=\"System.Threading.CountdownEvent\" data-throw-if-not-resolved=\"false\"></xref>'s current count by a specified value.</p>\n"
+  syntax:
+    content: public void AddCount(int signalCount)
+    content.vb: Public Sub AddCount(signalCount As Integer)
+    parameters:
+    - id: signalCount
+      type: System.Int32
+      description: "\n<p>The value by which to increase <xref href=\"System.Threading.CountdownEvent.CurrentCount\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  exceptions:
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>The current instance has already been disposed.</p>\n"
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>signalCount</em> is less than or equal to 0.</p>\n"
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: "\n<p>The current instance is already set.</p>\n<p>-or-</p>\n<p>\n<xref href=\"System.Threading.CountdownEvent.CurrentCount\" data-throw-if-not-resolved=\"false\"></xref> is equal to or greater than <xref href=\"System.Int32.MaxValue\" data-throw-if-not-resolved=\"false\"></xref> after count is incremented by <em>signalCount.</em></p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: CountdownEvent.AddCount(Int32)
+- uid: System.Threading.CountdownEvent.Dispose
+  commentId: M:System.Threading.CountdownEvent.Dispose
+  id: Dispose
+  parent: System.Threading.CountdownEvent
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.CountdownEvent.Dispose()
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Threading/CountdownEvent.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Dispose
+    path: src/mscorlib/src/System/Threading/CountdownEvent.cs
+    startLine: 145
+  assemblies:
+  - System.Threading
+  namespace: System.Threading
+  summary: "\n<p>Releases all resources used by the current instance of the <xref href=\"System.Threading.CountdownEvent\" data-throw-if-not-resolved=\"false\"></xref> class.</p>\n"
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose
+  implements:
+  - System.IDisposable.Dispose
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: CountdownEvent.Dispose()
+- uid: System.Threading.CountdownEvent.Dispose(System.Boolean)
+  commentId: M:System.Threading.CountdownEvent.Dispose(System.Boolean)
+  id: Dispose(System.Boolean)
+  parent: System.Threading.CountdownEvent
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.CountdownEvent.Dispose(System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Threading/CountdownEvent.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Dispose
+    path: src/mscorlib/src/System/Threading/CountdownEvent.cs
+    startLine: 166
+  assemblies:
+  - System.Threading
+  namespace: System.Threading
+  summary: "\n<p>Releases the unmanaged resources used by the <xref href=\"System.Threading.CountdownEvent\" data-throw-if-not-resolved=\"false\"></xref>, and optionally releases the managed resources.</p>\n"
+  syntax:
+    content: protected virtual void Dispose(bool disposing)
+    content.vb: Protected Overridable Sub Dispose(disposing As Boolean)
+    parameters:
+    - id: disposing
+      type: System.Boolean
+      description: "\n<p>true to release both managed and unmanaged resources; false to release only unmanaged resources.</p>\n"
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+  nameWithType: CountdownEvent.Dispose(Boolean)
+- uid: System.Threading.CountdownEvent.Reset
+  commentId: M:System.Threading.CountdownEvent.Reset
+  id: Reset
+  parent: System.Threading.CountdownEvent
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.CountdownEvent.Reset()
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Threading/CountdownEvent.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Reset
+    path: src/mscorlib/src/System/Threading/CountdownEvent.cs
+    startLine: 388
+  assemblies:
+  - System.Threading
+  namespace: System.Threading
+  summary: "\n<p>Resets the <xref href=\"System.Threading.CountdownEvent.CurrentCount\" data-throw-if-not-resolved=\"false\"></xref> to the value of <xref href=\"System.Threading.CountdownEvent.InitialCount\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  syntax:
+    content: public void Reset()
+    content.vb: Public Sub Reset
+  exceptions:
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>The current instance has already been disposed..</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: CountdownEvent.Reset()
+- uid: System.Threading.CountdownEvent.Reset(System.Int32)
+  commentId: M:System.Threading.CountdownEvent.Reset(System.Int32)
+  id: Reset(System.Int32)
+  parent: System.Threading.CountdownEvent
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.CountdownEvent.Reset(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Threading/CountdownEvent.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Reset
+    path: src/mscorlib/src/System/Threading/CountdownEvent.cs
+    startLine: 405
+  assemblies:
+  - System.Threading
+  namespace: System.Threading
+  summary: "\n<p>Resets the <xref href=\"System.Threading.CountdownEvent.InitialCount\" data-throw-if-not-resolved=\"false\"></xref> property to a specified value.</p>\n"
+  syntax:
+    content: public void Reset(int count)
+    content.vb: Public Sub Reset(count As Integer)
+    parameters:
+    - id: count
+      type: System.Int32
+      description: "\n<p>The number of signals required to set the <xref href=\"System.Threading.CountdownEvent\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  exceptions:
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>The current instance has alread been disposed.</p>\n"
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>count</em> is less than 0.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: CountdownEvent.Reset(Int32)
+- uid: System.Threading.CountdownEvent.Signal
+  commentId: M:System.Threading.CountdownEvent.Signal
+  id: Signal
+  parent: System.Threading.CountdownEvent
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.CountdownEvent.Signal()
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Threading/CountdownEvent.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Signal
+    path: src/mscorlib/src/System/Threading/CountdownEvent.cs
+    startLine: 185
+  assemblies:
+  - System.Threading
+  namespace: System.Threading
+  summary: "\n<p>Registers a signal with the <xref href=\"System.Threading.CountdownEvent\" data-throw-if-not-resolved=\"false\"></xref>, decrementing the value of <xref href=\"System.Threading.CountdownEvent.CurrentCount\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  syntax:
+    content: public bool Signal()
+    content.vb: Public Function Signal As Boolean
+    return:
+      type: System.Boolean
+      description: "\n<p>true if the signal caused the count to reach zero and the event was set; otherwise, false.</p>\n"
+  exceptions:
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>The current instance has already been disposed.</p>\n"
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: "\n<p>The current instance is already set.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: CountdownEvent.Signal()
+- uid: System.Threading.CountdownEvent.Signal(System.Int32)
+  commentId: M:System.Threading.CountdownEvent.Signal(System.Int32)
+  id: Signal(System.Int32)
+  parent: System.Threading.CountdownEvent
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.CountdownEvent.Signal(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Threading/CountdownEvent.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Signal
+    path: src/mscorlib/src/System/Threading/CountdownEvent.cs
+    startLine: 227
+  assemblies:
+  - System.Threading
+  namespace: System.Threading
+  summary: "\n<p>Registers multiple signals with the <xref href=\"System.Threading.CountdownEvent\" data-throw-if-not-resolved=\"false\"></xref>, decrementing the value of <xref href=\"System.Threading.CountdownEvent.CurrentCount\" data-throw-if-not-resolved=\"false\"></xref> by the specified amount.</p>\n"
+  syntax:
+    content: public bool Signal(int signalCount)
+    content.vb: Public Function Signal(signalCount As Integer) As Boolean
+    parameters:
+    - id: signalCount
+      type: System.Int32
+      description: "\n<p>The number of signals to register.</p>\n"
+    return:
+      type: System.Boolean
+      description: "\n<p>true if the signals caused the count to reach zero and the event was set; otherwise, false.</p>\n"
+  exceptions:
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>The current instance has already been disposed.</p>\n"
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>signalCount</em> is less than 1.</p>\n"
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: "\n<p>The current instance is already set. -or- Or <em>signalCount</em> is greater than <xref href=\"System.Threading.CountdownEvent.CurrentCount\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: CountdownEvent.Signal(Int32)
+- uid: System.Threading.CountdownEvent.TryAddCount
+  commentId: M:System.Threading.CountdownEvent.TryAddCount
+  id: TryAddCount
+  parent: System.Threading.CountdownEvent
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.CountdownEvent.TryAddCount()
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Threading/CountdownEvent.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: TryAddCount
+    path: src/mscorlib/src/System/Threading/CountdownEvent.cs
+    startLine: 297
+  assemblies:
+  - System.Threading
+  namespace: System.Threading
+  summary: "\n<p>Attempts to increment <xref href=\"System.Threading.CountdownEvent.CurrentCount\" data-throw-if-not-resolved=\"false\"></xref> by one.</p>\n"
+  syntax:
+    content: public bool TryAddCount()
+    content.vb: Public Function TryAddCount As Boolean
+    return:
+      type: System.Boolean
+      description: "\n<p>true if the increment succeeded; otherwise, false. If <xref href=\"System.Threading.CountdownEvent.CurrentCount\" data-throw-if-not-resolved=\"false\"></xref> is already at zero, this method will return false.</p>\n"
+  exceptions:
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>The current instance has already been disposed.</p>\n"
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: "\n<p>\n<xref href=\"System.Threading.CountdownEvent.CurrentCount\" data-throw-if-not-resolved=\"false\"></xref> is equal to <xref href=\"System.Int32.MaxValue\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: CountdownEvent.TryAddCount()
+- uid: System.Threading.CountdownEvent.TryAddCount(System.Int32)
+  commentId: M:System.Threading.CountdownEvent.TryAddCount(System.Int32)
+  id: TryAddCount(System.Int32)
+  parent: System.Threading.CountdownEvent
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.CountdownEvent.TryAddCount(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Threading/CountdownEvent.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: TryAddCount
+    path: src/mscorlib/src/System/Threading/CountdownEvent.cs
+    startLine: 338
+  assemblies:
+  - System.Threading
+  namespace: System.Threading
+  summary: "\n<p>Attempts to increment <xref href=\"System.Threading.CountdownEvent.CurrentCount\" data-throw-if-not-resolved=\"false\"></xref> by a specified value.</p>\n"
+  syntax:
+    content: public bool TryAddCount(int signalCount)
+    content.vb: Public Function TryAddCount(signalCount As Integer) As Boolean
+    parameters:
+    - id: signalCount
+      type: System.Int32
+      description: "\n<p>The value by which to increase <xref href=\"System.Threading.CountdownEvent.CurrentCount\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    return:
+      type: System.Boolean
+      description: "\n<p>true if the increment succeeded; otherwise, false. If <xref href=\"System.Threading.CountdownEvent.CurrentCount\" data-throw-if-not-resolved=\"false\"></xref> is already at zero this will return false.</p>\n"
+  exceptions:
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>The current instance has already been disposed.</p>\n"
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>signalCount</em> is less than or equal to 0.</p>\n"
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: "\n<p>The current instance is already set.</p>\n<p>-or-</p>\n<p>\n<xref href=\"System.Threading.CountdownEvent.CurrentCount\" data-throw-if-not-resolved=\"false\"></xref> + <em>signalCount</em> is equal to or greater than <xref href=\"System.Int32.MaxValue\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: CountdownEvent.TryAddCount(Int32)
+- uid: System.Threading.CountdownEvent.Wait
+  commentId: M:System.Threading.CountdownEvent.Wait
+  id: Wait
+  parent: System.Threading.CountdownEvent
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.CountdownEvent.Wait()
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Threading/CountdownEvent.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Wait
+    path: src/mscorlib/src/System/Threading/CountdownEvent.cs
+    startLine: 436
+  assemblies:
+  - System.Threading
+  namespace: System.Threading
+  summary: "\n<p>Blocks the current thread until the <xref href=\"System.Threading.CountdownEvent\" data-throw-if-not-resolved=\"false\"></xref> is set.</p>\n"
+  syntax:
+    content: public void Wait()
+    content.vb: Public Sub Wait
+  exceptions:
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>The current instance has already been disposed.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: CountdownEvent.Wait()
+- uid: System.Threading.CountdownEvent.Wait(System.Int32)
+  commentId: M:System.Threading.CountdownEvent.Wait(System.Int32)
+  id: Wait(System.Int32)
+  parent: System.Threading.CountdownEvent
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.CountdownEvent.Wait(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Threading/CountdownEvent.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Wait
+    path: src/mscorlib/src/System/Threading/CountdownEvent.cs
+    startLine: 531
+  assemblies:
+  - System.Threading
+  namespace: System.Threading
+  summary: "\n<p>Blocks the current thread until the <xref href=\"System.Threading.CountdownEvent\" data-throw-if-not-resolved=\"false\"></xref> is set, using a 32-bit signed integer to measure the timeout.</p>\n"
+  syntax:
+    content: public bool Wait(int millisecondsTimeout)
+    content.vb: Public Function Wait(millisecondsTimeout As Integer) As Boolean
+    parameters:
+    - id: millisecondsTimeout
+      type: System.Int32
+      description: "\n<p>The number of milliseconds to wait, or <xref href=\"System.Threading.Timeout.Infinite\" data-throw-if-not-resolved=\"false\"></xref>(-1) to wait indefinitely.</p>\n"
+    return:
+      type: System.Boolean
+      description: "\n<p>true if the <xref href=\"System.Threading.CountdownEvent\" data-throw-if-not-resolved=\"false\"></xref> was set; otherwise, false.</p>\n"
+  exceptions:
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>The current instance has already been disposed.</p>\n"
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>millisecondsTimeout</em> is a negative number other than -1, which represents an infinite time-out.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: CountdownEvent.Wait(Int32)
+- uid: System.Threading.CountdownEvent.Wait(System.Int32,System.Threading.CancellationToken)
+  commentId: M:System.Threading.CountdownEvent.Wait(System.Int32,System.Threading.CancellationToken)
+  id: Wait(System.Int32,System.Threading.CancellationToken)
+  parent: System.Threading.CountdownEvent
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.CountdownEvent.Wait(System.Int32, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Threading/CountdownEvent.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Wait
+    path: src/mscorlib/src/System/Threading/CountdownEvent.cs
+    startLine: 553
+  assemblies:
+  - System.Threading
+  namespace: System.Threading
+  summary: "\n<p>Blocks the current thread until the <xref href=\"System.Threading.CountdownEvent\" data-throw-if-not-resolved=\"false\"></xref> is set, using a 32-bit signed integer to measure the timeout, while observing a <xref href=\"System.Threading.CancellationToken\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  syntax:
+    content: public bool Wait(int millisecondsTimeout, CancellationToken cancellationToken)
+    content.vb: Public Function Wait(millisecondsTimeout As Integer, cancellationToken As CancellationToken) As Boolean
+    parameters:
+    - id: millisecondsTimeout
+      type: System.Int32
+      description: "\n<p>The number of milliseconds to wait, or <xref href=\"System.Threading.Timeout.Infinite\" data-throw-if-not-resolved=\"false\"></xref>(-1) to wait indefinitely.</p>\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\n<p>The <xref href=\"System.Threading.CancellationToken\" data-throw-if-not-resolved=\"false\"></xref> to observe.</p>\n"
+    return:
+      type: System.Boolean
+      description: "\n<p>true if the <xref href=\"System.Threading.CountdownEvent\" data-throw-if-not-resolved=\"false\"></xref> was set; otherwise, false.</p>\n"
+  exceptions:
+  - type: System.OperationCanceledException
+    commentId: T:System.OperationCanceledException
+    description: "\n<p>\n<em>cancellationToken</em> has been canceled.</p>\n"
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>The current instance has already been disposed. -or- The <xref href=\"System.Threading.CancellationTokenSource\" data-throw-if-not-resolved=\"false\"></xref> that created <em>cancellationToken</em> has already been disposed.</p>\n"
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>millisecondsTimeout</em> is a negative number other than -1, which represents an infinite time-out.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: CountdownEvent.Wait(Int32, CancellationToken)
+- uid: System.Threading.CountdownEvent.Wait(System.Threading.CancellationToken)
+  commentId: M:System.Threading.CountdownEvent.Wait(System.Threading.CancellationToken)
+  id: Wait(System.Threading.CancellationToken)
+  parent: System.Threading.CountdownEvent
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.CountdownEvent.Wait(System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Threading/CountdownEvent.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Wait
+    path: src/mscorlib/src/System/Threading/CountdownEvent.cs
+    startLine: 459
+  assemblies:
+  - System.Threading
+  namespace: System.Threading
+  summary: "\n<p>Blocks the current thread until the <xref href=\"System.Threading.CountdownEvent\" data-throw-if-not-resolved=\"false\"></xref> is set, while observing a <xref href=\"System.Threading.CancellationToken\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  syntax:
+    content: public void Wait(CancellationToken cancellationToken)
+    content.vb: Public Sub Wait(cancellationToken As CancellationToken)
+    parameters:
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\n<p>The <xref href=\"System.Threading.CancellationToken\" data-throw-if-not-resolved=\"false\"></xref> to observe.</p>\n"
+  exceptions:
+  - type: System.OperationCanceledException
+    commentId: T:System.OperationCanceledException
+    description: "\n<p>\n<em>cancellationToken</em> has been canceled.</p>\n"
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>The current instance has already been disposed. -or- The <xref href=\"System.Threading.CancellationTokenSource\" data-throw-if-not-resolved=\"false\"></xref> that created <em>cancellationToken</em> has already been disposed.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: CountdownEvent.Wait(CancellationToken)
+- uid: System.Threading.CountdownEvent.Wait(System.TimeSpan)
+  commentId: M:System.Threading.CountdownEvent.Wait(System.TimeSpan)
+  id: Wait(System.TimeSpan)
+  parent: System.Threading.CountdownEvent
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.CountdownEvent.Wait(System.TimeSpan)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Threading/CountdownEvent.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Wait
+    path: src/mscorlib/src/System/Threading/CountdownEvent.cs
+    startLine: 478
+  assemblies:
+  - System.Threading
+  namespace: System.Threading
+  summary: "\n<p>Blocks the current thread until the <xref href=\"System.Threading.CountdownEvent\" data-throw-if-not-resolved=\"false\"></xref> is set, using a <xref href=\"System.TimeSpan\" data-throw-if-not-resolved=\"false\"></xref> to measure the timeout.</p>\n"
+  syntax:
+    content: public bool Wait(TimeSpan timeout)
+    content.vb: Public Function Wait(timeout As TimeSpan) As Boolean
+    parameters:
+    - id: timeout
+      type: System.TimeSpan
+      description: "\n<p>A <xref href=\"System.TimeSpan\" data-throw-if-not-resolved=\"false\"></xref> that represents the number of milliseconds to wait, or a <xref href=\"System.TimeSpan\" data-throw-if-not-resolved=\"false\"></xref> that represents -1 milliseconds to wait indefinitely.</p>\n"
+    return:
+      type: System.Boolean
+      description: "\n<p>true if the <xref href=\"System.Threading.CountdownEvent\" data-throw-if-not-resolved=\"false\"></xref> was set; otherwise, false.</p>\n"
+  exceptions:
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>The current instance has already been disposed.</p>\n"
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>timeout</em> is a negative number other than -1 milliseconds, which represents an infinite time-out -or- timeout is greater than <xref href=\"System.Int32.MaxValue\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: CountdownEvent.Wait(TimeSpan)
+- uid: System.Threading.CountdownEvent.Wait(System.TimeSpan,System.Threading.CancellationToken)
+  commentId: M:System.Threading.CountdownEvent.Wait(System.TimeSpan,System.Threading.CancellationToken)
+  id: Wait(System.TimeSpan,System.Threading.CancellationToken)
+  parent: System.Threading.CountdownEvent
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.CountdownEvent.Wait(System.TimeSpan, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Threading/CountdownEvent.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Wait
+    path: src/mscorlib/src/System/Threading/CountdownEvent.cs
+    startLine: 508
+  assemblies:
+  - System.Threading
+  namespace: System.Threading
+  summary: "\n<p>Blocks the current thread until the <xref href=\"System.Threading.CountdownEvent\" data-throw-if-not-resolved=\"false\"></xref> is set, using a <xref href=\"System.TimeSpan\" data-throw-if-not-resolved=\"false\"></xref> to measure the timeout, while observing a <xref href=\"System.Threading.CancellationToken\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  syntax:
+    content: public bool Wait(TimeSpan timeout, CancellationToken cancellationToken)
+    content.vb: Public Function Wait(timeout As TimeSpan, cancellationToken As CancellationToken) As Boolean
+    parameters:
+    - id: timeout
+      type: System.TimeSpan
+      description: "\n<p>A <xref href=\"System.TimeSpan\" data-throw-if-not-resolved=\"false\"></xref> that represents the number of milliseconds to wait, or a <xref href=\"System.TimeSpan\" data-throw-if-not-resolved=\"false\"></xref> that represents -1 milliseconds to wait indefinitely.</p>\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\n<p>The <xref href=\"System.Threading.CancellationToken\" data-throw-if-not-resolved=\"false\"></xref> to observe.</p>\n"
+    return:
+      type: System.Boolean
+      description: "\n<p>true if the <xref href=\"System.Threading.CountdownEvent\" data-throw-if-not-resolved=\"false\"></xref> was set; otherwise, false.</p>\n"
+  exceptions:
+  - type: System.OperationCanceledException
+    commentId: T:System.OperationCanceledException
+    description: "\n<p>\n<em>cancellationToken</em> has been canceled.</p>\n"
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>The current instance has already been disposed. -or- The <xref href=\"System.Threading.CancellationTokenSource\" data-throw-if-not-resolved=\"false\"></xref> that created <em>cancellationToken</em> has already been disposed.</p>\n"
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>timeout</em> is a negative number other than -1 milliseconds, which represents an infinite time-out -or- timeout is greater than <xref href=\"System.Int32.MaxValue\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: CountdownEvent.Wait(TimeSpan, CancellationToken)
+references:
+- uid: System.Threading
+  isExternal: false
+  name: "XXX"
+  fullName: System.Threading
+  nameWithType: System.Threading
+  commentId: N:System.Threading
+- uid: System.Object
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Object
+  nameWithType: Object
+  commentId: T:System.Object
+- uid: System.IDisposable
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.IDisposable
+  nameWithType: IDisposable
+  commentId: T:System.IDisposable
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.ToString()
+  commentId: M:System.Object.ToString
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.Equals(Object)
+  commentId: M:System.Object.Equals(System.Object)
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.Equals(Object, Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.GetHashCode()
+  commentId: M:System.Object.GetHashCode
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.GetType()
+  commentId: M:System.Object.GetType
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.MemberwiseClone()
+  commentId: M:System.Object.MemberwiseClone
+- uid: System
+  isExternal: false
+  name: "XXX"
+  fullName: System
+  nameWithType: System
+  commentId: N:System
+- uid: System.Int32
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Int32
+  nameWithType: Int32
+  commentId: T:System.Int32
+- uid: System.Boolean
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Boolean
+  nameWithType: Boolean
+  commentId: T:System.Boolean
+- uid: System.Threading.WaitHandle
+  parent: System.Threading
+  isExternal: false
+  name: "XXX"
+  fullName: System.Threading.WaitHandle
+  nameWithType: WaitHandle
+  commentId: T:System.Threading.WaitHandle
+- uid: System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: false
+  name: "XXX"
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: "XXX"
+    fullName: System.IDisposable.Dispose
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: "XXX"
+    fullName: System.IDisposable.Dispose
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: IDisposable.Dispose()
+  commentId: M:System.IDisposable.Dispose
+- uid: System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: false
+  name: "XXX"
+  fullName: System.Threading.CancellationToken
+  nameWithType: CancellationToken
+  commentId: T:System.Threading.CancellationToken
+- uid: System.TimeSpan
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.TimeSpan
+  nameWithType: TimeSpan
+  commentId: T:System.TimeSpan
+- uid: System.ArgumentOutOfRangeException
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentOutOfRangeException
+  nameWithType: ArgumentOutOfRangeException
+  commentId: T:System.ArgumentOutOfRangeException
+- uid: System.ObjectDisposedException
+  isExternal: false
+  name: "XXX"
+  fullName: System.ObjectDisposedException
+  nameWithType: ObjectDisposedException
+  commentId: T:System.ObjectDisposedException
+- uid: System.InvalidOperationException
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.InvalidOperationException
+  nameWithType: InvalidOperationException
+  commentId: T:System.InvalidOperationException
+- uid: System.OperationCanceledException
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.OperationCanceledException
+  nameWithType: OperationCanceledException
+  commentId: T:System.OperationCanceledException

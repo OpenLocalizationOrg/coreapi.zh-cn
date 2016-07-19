@@ -1,0 +1,1272 @@
+items:
+- uid: System.Reflection.ParameterInfo
+  commentId: T:System.Reflection.ParameterInfo
+  id: ParameterInfo
+  parent: System.Reflection
+  children:
+  - System.Reflection.ParameterInfo.Attributes
+  - System.Reflection.ParameterInfo.CustomAttributes
+  - System.Reflection.ParameterInfo.DefaultValue
+  - System.Reflection.ParameterInfo.GetOptionalCustomModifiers
+  - System.Reflection.ParameterInfo.GetRequiredCustomModifiers
+  - System.Reflection.ParameterInfo.HasDefaultValue
+  - System.Reflection.ParameterInfo.IsIn
+  - System.Reflection.ParameterInfo.IsOptional
+  - System.Reflection.ParameterInfo.IsOut
+  - System.Reflection.ParameterInfo.IsRetval
+  - System.Reflection.ParameterInfo.Member
+  - System.Reflection.ParameterInfo.Name
+  - System.Reflection.ParameterInfo.ParameterType
+  - System.Reflection.ParameterInfo.Position
+  - System.Reflection.ParameterInfo.RawDefaultValue
+  - System.Reflection.ParameterInfo.System#Reflection#ICustomAttributeProvider#GetCustomAttributes(System.Boolean)
+  - System.Reflection.ParameterInfo.System#Reflection#ICustomAttributeProvider#GetCustomAttributes(System.Type,System.Boolean)
+  - System.Reflection.ParameterInfo.System#Reflection#ICustomAttributeProvider#IsDefined(System.Type,System.Boolean)
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Reflection.ParameterInfo
+  type: Class
+  source:
+    remote:
+      path: src/mscorlib/src/System/Reflection/ParameterInfo.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: ParameterInfo
+    path: src/mscorlib/src/System/Reflection/ParameterInfo.cs
+    startLine: 21
+  assemblies:
+  - System.Reflection
+  namespace: System.Reflection
+  summary: "\n<p>Discovers the attributes of a parameter and provides access to parameter metadata.</p>\n"
+  syntax:
+    content: >-
+      [Serializable]
+
+      [ClassInterface(ClassInterfaceType.None)]
+
+      [ComDefaultInterface(typeof (_ParameterInfo))]
+
+      [ComVisible(true)]
+
+      public class ParameterInfo : _ParameterInfo, ICustomAttributeProvider, IObjectReference
+    content.vb: >-
+      <Serializable>
+
+      <ClassInterface(ClassInterfaceType.None)>
+
+      <ComDefaultInterface(GetType(_ParameterInfo))>
+
+      <ComVisible(True)>
+
+      Public Class ParameterInfo
+          Implements _ParameterInfo, ICustomAttributeProvider, IObjectReference
+  inheritance:
+  - System.Object
+  implements:
+  - System.Reflection.ICustomAttributeProvider
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+  nameWithType: ParameterInfo
+- uid: System.Reflection.ParameterInfo.Attributes
+  commentId: P:System.Reflection.ParameterInfo.Attributes
+  id: Attributes
+  parent: System.Reflection.ParameterInfo
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Reflection.ParameterInfo.Attributes
+  type: Property
+  source:
+    remote:
+      path: src/mscorlib/src/System/Reflection/ParameterInfo.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Attributes
+    path: src/mscorlib/src/System/Reflection/ParameterInfo.cs
+    startLine: 94
+  assemblies:
+  - System.Reflection
+  namespace: System.Reflection
+  summary: "\n<p>Gets the attributes for this parameter.</p>\n"
+  syntax:
+    content: public virtual ParameterAttributes Attributes { get; }
+    content.vb: Public Overridable ReadOnly Property Attributes As ParameterAttributes
+    parameters: []
+    return:
+      type: System.Reflection.ParameterAttributes
+      description: "\n<p>A <strong>ParameterAttributes</strong> object representing the attributes for this parameter.</p>\n"
+  seealso:
+  - type: System.Reflection.ParameterAttributes
+    commentId: T:System.Reflection.ParameterAttributes
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+  nameWithType: ParameterInfo.Attributes
+- uid: System.Reflection.ParameterInfo.CustomAttributes
+  commentId: P:System.Reflection.ParameterInfo.CustomAttributes
+  id: CustomAttributes
+  parent: System.Reflection.ParameterInfo
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Reflection.ParameterInfo.CustomAttributes
+  type: Property
+  source:
+    remote:
+      path: src/mscorlib/src/System/Reflection/ParameterInfo.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: CustomAttributes
+    path: src/mscorlib/src/System/Reflection/ParameterInfo.cs
+    startLine: 145
+  assemblies:
+  - System.Reflection
+  namespace: System.Reflection
+  summary: "\n<p>Gets a collection that contains this parameter's custom attributes.</p>\n"
+  syntax:
+    content: public virtual IEnumerable<CustomAttributeData> CustomAttributes { get; }
+    content.vb: Public Overridable ReadOnly Property CustomAttributes As IEnumerable(Of CustomAttributeData)
+    parameters: []
+    return:
+      type: System.Collections.Generic.IEnumerable{System.Reflection.CustomAttributeData}
+      description: "\n<p>A collection that contains this parameter's custom attributes.</p>\n"
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+  nameWithType: ParameterInfo.CustomAttributes
+- uid: System.Reflection.ParameterInfo.DefaultValue
+  commentId: P:System.Reflection.ParameterInfo.DefaultValue
+  id: DefaultValue
+  parent: System.Reflection.ParameterInfo
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Reflection.ParameterInfo.DefaultValue
+  type: Property
+  source:
+    remote:
+      path: src/mscorlib/src/System/Reflection/ParameterInfo.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: DefaultValue
+    path: src/mscorlib/src/System/Reflection/ParameterInfo.cs
+    startLine: 90
+  assemblies:
+  - System.Reflection
+  namespace: System.Reflection
+  summary: "\n<p>Gets a value indicating the default value if the parameter has a default value.</p>\n"
+  syntax:
+    content: public virtual object DefaultValue { get; }
+    content.vb: Public Overridable ReadOnly Property DefaultValue As Object
+    parameters: []
+    return:
+      type: System.Object
+      description: "\n<p>The default value of the parameter, or <xref href=\"System.DBNull.Value\" data-throw-if-not-resolved=\"false\"></xref> if the parameter has no default value.</p>\n"
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+  nameWithType: ParameterInfo.DefaultValue
+- uid: System.Reflection.ParameterInfo.HasDefaultValue
+  commentId: P:System.Reflection.ParameterInfo.HasDefaultValue
+  id: HasDefaultValue
+  parent: System.Reflection.ParameterInfo
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Reflection.ParameterInfo.HasDefaultValue
+  type: Property
+  source:
+    remote:
+      path: src/mscorlib/src/System/Reflection/ParameterInfo.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: HasDefaultValue
+    path: src/mscorlib/src/System/Reflection/ParameterInfo.cs
+    startLine: 88
+  assemblies:
+  - System.Reflection
+  namespace: System.Reflection
+  summary: "\n<p>Gets a value that indicates whether this parameter has a default value.</p>\n"
+  syntax:
+    content: public virtual bool HasDefaultValue { get; }
+    content.vb: Public Overridable ReadOnly Property HasDefaultValue As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if this parameter has a default value; otherwise, <strong>false</strong>.</p>\n"
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+  nameWithType: ParameterInfo.HasDefaultValue
+- uid: System.Reflection.ParameterInfo.IsIn
+  commentId: P:System.Reflection.ParameterInfo.IsIn
+  id: IsIn
+  parent: System.Reflection.ParameterInfo
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Reflection.ParameterInfo.IsIn
+  type: Property
+  source:
+    remote:
+      path: src/mscorlib/src/System/Reflection/ParameterInfo.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: IsIn
+    path: src/mscorlib/src/System/Reflection/ParameterInfo.cs
+    startLine: 103
+  assemblies:
+  - System.Reflection
+  namespace: System.Reflection
+  summary: "\n<p>Gets a value indicating whether this is an input parameter.</p>\n"
+  syntax:
+    content: public bool IsIn { get; }
+    content.vb: Public ReadOnly Property IsIn As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if the parameter is an input parameter; otherwise, <strong>false</strong>.</p>\n"
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  nameWithType: ParameterInfo.IsIn
+- uid: System.Reflection.ParameterInfo.IsOptional
+  commentId: P:System.Reflection.ParameterInfo.IsOptional
+  id: IsOptional
+  parent: System.Reflection.ParameterInfo
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Reflection.ParameterInfo.IsOptional
+  type: Property
+  source:
+    remote:
+      path: src/mscorlib/src/System/Reflection/ParameterInfo.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: IsOptional
+    path: src/mscorlib/src/System/Reflection/ParameterInfo.cs
+    startLine: 109
+  assemblies:
+  - System.Reflection
+  namespace: System.Reflection
+  summary: "\n<p>Gets a value indicating whether this parameter is optional.</p>\n"
+  syntax:
+    content: public bool IsOptional { get; }
+    content.vb: Public ReadOnly Property IsOptional As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if the parameter is optional; otherwise, <strong>false</strong>.</p>\n"
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  nameWithType: ParameterInfo.IsOptional
+- uid: System.Reflection.ParameterInfo.IsOut
+  commentId: P:System.Reflection.ParameterInfo.IsOut
+  id: IsOut
+  parent: System.Reflection.ParameterInfo
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Reflection.ParameterInfo.IsOut
+  type: Property
+  source:
+    remote:
+      path: src/mscorlib/src/System/Reflection/ParameterInfo.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: IsOut
+    path: src/mscorlib/src/System/Reflection/ParameterInfo.cs
+    startLine: 104
+  assemblies:
+  - System.Reflection
+  namespace: System.Reflection
+  summary: "\n<p>Gets a value indicating whether this is an output parameter.</p>\n"
+  syntax:
+    content: public bool IsOut { get; }
+    content.vb: Public ReadOnly Property IsOut As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if the parameter is an output parameter; otherwise, <strong>false</strong>.</p>\n"
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  nameWithType: ParameterInfo.IsOut
+- uid: System.Reflection.ParameterInfo.IsRetval
+  commentId: P:System.Reflection.ParameterInfo.IsRetval
+  id: IsRetval
+  parent: System.Reflection.ParameterInfo
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Reflection.ParameterInfo.IsRetval
+  type: Property
+  source:
+    remote:
+      path: src/mscorlib/src/System/Reflection/ParameterInfo.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: IsRetval
+    path: src/mscorlib/src/System/Reflection/ParameterInfo.cs
+    startLine: 108
+  assemblies:
+  - System.Reflection
+  namespace: System.Reflection
+  summary: "\n<p>Gets a value indicating whether this is a <strong>Retval</strong> parameter.</p>\n"
+  syntax:
+    content: public bool IsRetval { get; }
+    content.vb: Public ReadOnly Property IsRetval As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if the parameter is a <strong>Retval</strong>; otherwise, <strong>false</strong>.</p>\n"
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  nameWithType: ParameterInfo.IsRetval
+- uid: System.Reflection.ParameterInfo.Member
+  commentId: P:System.Reflection.ParameterInfo.Member
+  id: Member
+  parent: System.Reflection.ParameterInfo
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Reflection.ParameterInfo.Member
+  type: Property
+  source:
+    remote:
+      path: src/mscorlib/src/System/Reflection/ParameterInfo.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Member
+    path: src/mscorlib/src/System/Reflection/ParameterInfo.cs
+    startLine: 96
+  assemblies:
+  - System.Reflection
+  namespace: System.Reflection
+  summary: "\n<p>Gets a value indicating the member in which the parameter is implemented.</p>\n"
+  syntax:
+    content: public virtual MemberInfo Member { get; }
+    content.vb: Public Overridable ReadOnly Property Member As MemberInfo
+    parameters: []
+    return:
+      type: System.Reflection.MemberInfo
+      description: "\n<p>The member which implanted the parameter represented by this <xref href=\"System.Reflection.ParameterInfo\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+  nameWithType: ParameterInfo.Member
+- uid: System.Reflection.ParameterInfo.Name
+  commentId: P:System.Reflection.ParameterInfo.Name
+  id: Name
+  parent: System.Reflection.ParameterInfo
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Reflection.ParameterInfo.Name
+  type: Property
+  source:
+    remote:
+      path: src/mscorlib/src/System/Reflection/ParameterInfo.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Name
+    path: src/mscorlib/src/System/Reflection/ParameterInfo.cs
+    startLine: 80
+  assemblies:
+  - System.Reflection
+  namespace: System.Reflection
+  summary: "\n<p>Gets the name of the parameter.</p>\n"
+  syntax:
+    content: public virtual string Name { get; }
+    content.vb: Public Overridable ReadOnly Property Name As String
+    parameters: []
+    return:
+      type: System.String
+      description: "\n<p>The simple name of this parameter.</p>\n"
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+  nameWithType: ParameterInfo.Name
+- uid: System.Reflection.ParameterInfo.ParameterType
+  commentId: P:System.Reflection.ParameterInfo.ParameterType
+  id: ParameterType
+  parent: System.Reflection.ParameterInfo
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Reflection.ParameterInfo.ParameterType
+  type: Property
+  source:
+    remote:
+      path: src/mscorlib/src/System/Reflection/ParameterInfo.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: ParameterType
+    path: src/mscorlib/src/System/Reflection/ParameterInfo.cs
+    startLine: 72
+  assemblies:
+  - System.Reflection
+  namespace: System.Reflection
+  summary: "\n<p>Gets the <strong>Type</strong> of this parameter.</p>\n"
+  syntax:
+    content: public virtual Type ParameterType { get; }
+    content.vb: Public Overridable ReadOnly Property ParameterType As Type
+    parameters: []
+    return:
+      type: System.Type
+      description: "\n<p>The <strong>Type</strong> object that represents the <strong>Type</strong> of this parameter.</p>\n"
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+  nameWithType: ParameterInfo.ParameterType
+- uid: System.Reflection.ParameterInfo.Position
+  commentId: P:System.Reflection.ParameterInfo.Position
+  id: Position
+  parent: System.Reflection.ParameterInfo
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Reflection.ParameterInfo.Position
+  type: Property
+  source:
+    remote:
+      path: src/mscorlib/src/System/Reflection/ParameterInfo.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Position
+    path: src/mscorlib/src/System/Reflection/ParameterInfo.cs
+    startLine: 93
+  assemblies:
+  - System.Reflection
+  namespace: System.Reflection
+  summary: "\n<p>Gets the zero-based position of the parameter in the formal parameter list.</p>\n"
+  syntax:
+    content: public virtual int Position { get; }
+    content.vb: Public Overridable ReadOnly Property Position As Integer
+    parameters: []
+    return:
+      type: System.Int32
+      description: "\n<p>An integer representing the position this parameter occupies in the parameter list.</p>\n"
+  seealso:
+  - type: System.Reflection.ParameterInfo.Name
+    commentId: P:System.Reflection.ParameterInfo.Name
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+  nameWithType: ParameterInfo.Position
+- uid: System.Reflection.ParameterInfo.GetOptionalCustomModifiers
+  commentId: M:System.Reflection.ParameterInfo.GetOptionalCustomModifiers
+  id: GetOptionalCustomModifiers
+  parent: System.Reflection.ParameterInfo
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Reflection.ParameterInfo.GetOptionalCustomModifiers()
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Reflection/ParameterInfo.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: GetOptionalCustomModifiers
+    path: src/mscorlib/src/System/Reflection/ParameterInfo.cs
+    startLine: 132
+  assemblies:
+  - System.Reflection
+  namespace: System.Reflection
+  summary: "\n<p>Gets the optional custom modifiers of the parameter.</p>\n"
+  syntax:
+    content: public virtual Type[] GetOptionalCustomModifiers()
+    content.vb: Public Overridable Function GetOptionalCustomModifiers As Type()
+    return:
+      type: System.Type[]
+      description: "\n<p>An array of <xref href=\"System.Type\" data-throw-if-not-resolved=\"false\"></xref> objects that identify the optional custom modifiers of the current parameter, such as <xref href=\"System.Runtime.CompilerServices.IsConst\" data-throw-if-not-resolved=\"false\"></xref> or <xref href=\"System.Runtime.CompilerServices.IsImplicitlyDereferenced\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  nameWithType: ParameterInfo.GetOptionalCustomModifiers()
+- uid: System.Reflection.ParameterInfo.GetRequiredCustomModifiers
+  commentId: M:System.Reflection.ParameterInfo.GetRequiredCustomModifiers
+  id: GetRequiredCustomModifiers
+  parent: System.Reflection.ParameterInfo
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Reflection.ParameterInfo.GetRequiredCustomModifiers()
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Reflection/ParameterInfo.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: GetRequiredCustomModifiers
+    path: src/mscorlib/src/System/Reflection/ParameterInfo.cs
+    startLine: 127
+  assemblies:
+  - System.Reflection
+  namespace: System.Reflection
+  summary: "\n<p>Gets the required custom modifiers of the parameter.</p>\n"
+  syntax:
+    content: public virtual Type[] GetRequiredCustomModifiers()
+    content.vb: Public Overridable Function GetRequiredCustomModifiers As Type()
+    return:
+      type: System.Type[]
+      description: "\n<p>An array of <xref href=\"System.Type\" data-throw-if-not-resolved=\"false\"></xref> objects that identify the required custom modifiers of the current parameter, such as <xref href=\"System.Runtime.CompilerServices.IsConst\" data-throw-if-not-resolved=\"false\"></xref> or <xref href=\"System.Runtime.CompilerServices.IsImplicitlyDereferenced\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  nameWithType: ParameterInfo.GetRequiredCustomModifiers()
+- uid: System.Reflection.ParameterInfo.RawDefaultValue
+  commentId: P:System.Reflection.ParameterInfo.RawDefaultValue
+  id: RawDefaultValue
+  parent: System.Reflection.ParameterInfo
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Reflection.ParameterInfo.RawDefaultValue
+  type: Property
+  source:
+    remote:
+      path: src/mscorlib/src/System/Reflection/ParameterInfo.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: RawDefaultValue
+    path: src/mscorlib/src/System/Reflection/ParameterInfo.cs
+    startLine: 91
+  assemblies:
+  - System.Reflection
+  namespace: System.Reflection
+  summary: "\n<p>Gets a value indicating the default value if the parameter has a default value.</p>\n"
+  syntax:
+    content: public virtual object RawDefaultValue { get; }
+    content.vb: Public Overridable ReadOnly Property RawDefaultValue As Object
+    parameters: []
+    return:
+      type: System.Object
+      description: "\n<p>The default value of the parameter, or <xref href=\"System.DBNull.Value\" data-throw-if-not-resolved=\"false\"></xref> if the parameter has no default value.</p>\n"
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+  nameWithType: ParameterInfo.RawDefaultValue
+- uid: System.Reflection.ParameterInfo.System#Reflection#ICustomAttributeProvider#GetCustomAttributes(System.Boolean)
+  commentId: M:System.Reflection.ParameterInfo.System#Reflection#ICustomAttributeProvider#GetCustomAttributes(System.Boolean)
+  id: System#Reflection#ICustomAttributeProvider#GetCustomAttributes(System.Boolean)
+  isEii: true
+  parent: System.Reflection.ParameterInfo
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Reflection.ParameterInfo.System.Reflection.ICustomAttributeProvider.GetCustomAttributes(System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/System.Reflection/ref/System.Reflection.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: System.Reflection.ICustomAttributeProvider.GetCustomAttributes
+    path: src/System.Reflection/ref/System.Reflection.cs
+    startLine: 348
+  assemblies:
+  - System.Reflection
+  namespace: System.Reflection
+  syntax:
+    content: object[] ICustomAttributeProvider.GetCustomAttributes(bool inherit)
+    content.vb: Function System.Reflection.ICustomAttributeProvider.GetCustomAttributes(inherit As Boolean) As Object() Implements ICustomAttributeProvider.GetCustomAttributes
+    parameters:
+    - id: inherit
+      type: System.Boolean
+    return:
+      type: System.Object[]
+  implements:
+  - System.Reflection.ICustomAttributeProvider.GetCustomAttributes(System.Boolean)
+  name.vb: System.Reflection.ICustomAttributeProvider.GetCustomAttributes(Boolean)
+  nameWithType: ParameterInfo.ICustomAttributeProvider.GetCustomAttributes(Boolean)
+  nameWithType.vb: ParameterInfo.System.Reflection.ICustomAttributeProvider.GetCustomAttributes(Boolean)
+- uid: System.Reflection.ParameterInfo.System#Reflection#ICustomAttributeProvider#GetCustomAttributes(System.Type,System.Boolean)
+  commentId: M:System.Reflection.ParameterInfo.System#Reflection#ICustomAttributeProvider#GetCustomAttributes(System.Type,System.Boolean)
+  id: System#Reflection#ICustomAttributeProvider#GetCustomAttributes(System.Type,System.Boolean)
+  isEii: true
+  parent: System.Reflection.ParameterInfo
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Reflection.ParameterInfo.System.Reflection.ICustomAttributeProvider.GetCustomAttributes(System.Type, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/System.Reflection/ref/System.Reflection.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: System.Reflection.ICustomAttributeProvider.GetCustomAttributes
+    path: src/System.Reflection/ref/System.Reflection.cs
+    startLine: 349
+  assemblies:
+  - System.Reflection
+  namespace: System.Reflection
+  syntax:
+    content: object[] ICustomAttributeProvider.GetCustomAttributes(Type attributeType, bool inherit)
+    content.vb: Function System.Reflection.ICustomAttributeProvider.GetCustomAttributes(attributeType As Type, inherit As Boolean) As Object() Implements ICustomAttributeProvider.GetCustomAttributes
+    parameters:
+    - id: attributeType
+      type: System.Type
+    - id: inherit
+      type: System.Boolean
+    return:
+      type: System.Object[]
+  implements:
+  - System.Reflection.ICustomAttributeProvider.GetCustomAttributes(System.Type,System.Boolean)
+  name.vb: System.Reflection.ICustomAttributeProvider.GetCustomAttributes(Type, Boolean)
+  nameWithType: ParameterInfo.ICustomAttributeProvider.GetCustomAttributes(Type, Boolean)
+  nameWithType.vb: ParameterInfo.System.Reflection.ICustomAttributeProvider.GetCustomAttributes(Type, Boolean)
+- uid: System.Reflection.ParameterInfo.System#Reflection#ICustomAttributeProvider#IsDefined(System.Type,System.Boolean)
+  commentId: M:System.Reflection.ParameterInfo.System#Reflection#ICustomAttributeProvider#IsDefined(System.Type,System.Boolean)
+  id: System#Reflection#ICustomAttributeProvider#IsDefined(System.Type,System.Boolean)
+  isEii: true
+  parent: System.Reflection.ParameterInfo
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Reflection.ParameterInfo.System.Reflection.ICustomAttributeProvider.IsDefined(System.Type, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/System.Reflection/ref/System.Reflection.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: System.Reflection.ICustomAttributeProvider.IsDefined
+    path: src/System.Reflection/ref/System.Reflection.cs
+    startLine: 350
+  assemblies:
+  - System.Reflection
+  namespace: System.Reflection
+  syntax:
+    content: bool ICustomAttributeProvider.IsDefined(Type attributeType, bool inherit)
+    content.vb: Function System.Reflection.ICustomAttributeProvider.IsDefined(attributeType As Type, inherit As Boolean) As Boolean Implements ICustomAttributeProvider.IsDefined
+    parameters:
+    - id: attributeType
+      type: System.Type
+    - id: inherit
+      type: System.Boolean
+    return:
+      type: System.Boolean
+  implements:
+  - System.Reflection.ICustomAttributeProvider.IsDefined(System.Type,System.Boolean)
+  name.vb: System.Reflection.ICustomAttributeProvider.IsDefined(Type, Boolean)
+  nameWithType: ParameterInfo.ICustomAttributeProvider.IsDefined(Type, Boolean)
+  nameWithType.vb: ParameterInfo.System.Reflection.ICustomAttributeProvider.IsDefined(Type, Boolean)
+references:
+- uid: System.Reflection
+  isExternal: false
+  name: "XXX"
+  fullName: System.Reflection
+  nameWithType: System.Reflection
+  commentId: N:System.Reflection
+- uid: System.Object
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Object
+  nameWithType: Object
+  commentId: T:System.Object
+- uid: System.Reflection.ICustomAttributeProvider
+  parent: System.Reflection
+  isExternal: false
+  name: "XXX"
+  fullName: System.Reflection.ICustomAttributeProvider
+  nameWithType: ICustomAttributeProvider
+  commentId: T:System.Reflection.ICustomAttributeProvider
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.ToString()
+  commentId: M:System.Object.ToString
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.Equals(Object)
+  commentId: M:System.Object.Equals(System.Object)
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.Equals(Object, Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.GetHashCode()
+  commentId: M:System.Object.GetHashCode
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.GetType()
+  commentId: M:System.Object.GetType
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.MemberwiseClone()
+  commentId: M:System.Object.MemberwiseClone
+- uid: System
+  isExternal: false
+  name: "XXX"
+  fullName: System
+  nameWithType: System
+  commentId: N:System
+- uid: System.Reflection.ParameterAttributes
+  parent: System.Reflection
+  isExternal: false
+  name: "XXX"
+  fullName: System.Reflection.ParameterAttributes
+  nameWithType: ParameterAttributes
+  commentId: T:System.Reflection.ParameterAttributes
+- uid: System.Collections.Generic.IEnumerable{System.Reflection.CustomAttributeData}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: "XXX"
+  fullName: System.Collections.Generic.IEnumerable<System.Reflection.CustomAttributeData>
+  fullname.vb: System.Collections.Generic.IEnumerable(Of System.Reflection.CustomAttributeData)
+  name.vb: IEnumerable(Of CustomAttributeData)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: "XXX"
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: "<"
+    fullName: <
+  - uid: System.Reflection.CustomAttributeData
+    name: "XXX"
+    fullName: System.Reflection.CustomAttributeData
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: "XXX"
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: 'XXX '
+    fullName: '(Of '
+  - uid: System.Reflection.CustomAttributeData
+    name: "XXX"
+    fullName: System.Reflection.CustomAttributeData
+  - name: "XXX"
+    fullName: )
+  nameWithType: IEnumerable<CustomAttributeData>
+  nameWithType.vb: IEnumerable(Of CustomAttributeData)
+  commentId: T:System.Collections.Generic.IEnumerable{System.Reflection.CustomAttributeData}
+- uid: System.Collections.Generic.IEnumerable`1
+  isExternal: false
+  name: "XXX"
+  fullName: System.Collections.Generic.IEnumerable<T>
+  fullname.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: "XXX"
+    fullName: System.Collections.Generic.IEnumerable
+  - name: "<"
+    fullName: <
+  - name: "XXX"
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: "XXX"
+    fullName: System.Collections.Generic.IEnumerable
+  - name: 'XXX '
+    fullName: '(Of '
+  - name: "XXX"
+    fullName: T
+  - name: "XXX"
+    fullName: )
+  nameWithType: IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  commentId: T:System.Collections.Generic.IEnumerable`1
+- uid: System.Collections.Generic
+  isExternal: false
+  name: "XXX"
+  fullName: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+- uid: System.Boolean
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Boolean
+  nameWithType: Boolean
+  commentId: T:System.Boolean
+- uid: System.Reflection.MemberInfo
+  parent: System.Reflection
+  isExternal: false
+  name: "XXX"
+  fullName: System.Reflection.MemberInfo
+  nameWithType: MemberInfo
+  commentId: T:System.Reflection.MemberInfo
+- uid: System.String
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.String
+  nameWithType: String
+  commentId: T:System.String
+- uid: System.Type
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Type
+  nameWithType: Type
+  commentId: T:System.Type
+- uid: System.Int32
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Int32
+  nameWithType: Int32
+  commentId: T:System.Int32
+- uid: System.Type[]
+  name: "XXX"
+  fullName: System.Type[]
+  fullname.vb: System.Type()
+  name.vb: Type()
+  spec.csharp:
+  - uid: System.Type
+    name: "XXX"
+    fullName: System.Type
+  - name: 'XXX'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Type
+    name: "XXX"
+    fullName: System.Type
+  - name: "XXX"
+    fullName: ()
+  nameWithType: Type[]
+  nameWithType.vb: Type()
+- uid: System.Reflection.ICustomAttributeProvider.GetCustomAttributes(System.Boolean)
+  parent: System.Reflection.ICustomAttributeProvider
+  isExternal: true
+  name: "XXX"
+  fullName: System.Reflection.ICustomAttributeProvider.GetCustomAttributes(System.Boolean)
+  spec.csharp:
+  - uid: System.Reflection.ICustomAttributeProvider.GetCustomAttributes(System.Boolean)
+    name: "XXX"
+    fullName: System.Reflection.ICustomAttributeProvider.GetCustomAttributes
+  - name: "XXX"
+    fullName: (
+  - uid: System.Boolean
+    name: "XXX"
+    fullName: System.Boolean
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Reflection.ICustomAttributeProvider.GetCustomAttributes(System.Boolean)
+    name: "XXX"
+    fullName: System.Reflection.ICustomAttributeProvider.GetCustomAttributes
+  - name: "XXX"
+    fullName: (
+  - uid: System.Boolean
+    name: "XXX"
+    fullName: System.Boolean
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: ICustomAttributeProvider.GetCustomAttributes(Boolean)
+  commentId: M:System.Reflection.ICustomAttributeProvider.GetCustomAttributes(System.Boolean)
+- uid: System.Object[]
+  name: "XXX"
+  fullName: System.Object[]
+  fullname.vb: System.Object()
+  name.vb: Object()
+  spec.csharp:
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: ()
+  nameWithType: Object[]
+  nameWithType.vb: Object()
+- uid: System.Reflection.ICustomAttributeProvider.GetCustomAttributes(System.Type,System.Boolean)
+  parent: System.Reflection.ICustomAttributeProvider
+  isExternal: true
+  name: "XXX"
+  fullName: System.Reflection.ICustomAttributeProvider.GetCustomAttributes(System.Type, System.Boolean)
+  spec.csharp:
+  - uid: System.Reflection.ICustomAttributeProvider.GetCustomAttributes(System.Type,System.Boolean)
+    name: "XXX"
+    fullName: System.Reflection.ICustomAttributeProvider.GetCustomAttributes
+  - name: "XXX"
+    fullName: (
+  - uid: System.Type
+    name: "XXX"
+    fullName: System.Type
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Boolean
+    name: "XXX"
+    fullName: System.Boolean
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Reflection.ICustomAttributeProvider.GetCustomAttributes(System.Type,System.Boolean)
+    name: "XXX"
+    fullName: System.Reflection.ICustomAttributeProvider.GetCustomAttributes
+  - name: "XXX"
+    fullName: (
+  - uid: System.Type
+    name: "XXX"
+    fullName: System.Type
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Boolean
+    name: "XXX"
+    fullName: System.Boolean
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: ICustomAttributeProvider.GetCustomAttributes(Type, Boolean)
+  commentId: M:System.Reflection.ICustomAttributeProvider.GetCustomAttributes(System.Type,System.Boolean)
+- uid: System.Reflection.ICustomAttributeProvider.IsDefined(System.Type,System.Boolean)
+  parent: System.Reflection.ICustomAttributeProvider
+  isExternal: true
+  name: "XXX"
+  fullName: System.Reflection.ICustomAttributeProvider.IsDefined(System.Type, System.Boolean)
+  spec.csharp:
+  - uid: System.Reflection.ICustomAttributeProvider.IsDefined(System.Type,System.Boolean)
+    name: "XXX"
+    fullName: System.Reflection.ICustomAttributeProvider.IsDefined
+  - name: "XXX"
+    fullName: (
+  - uid: System.Type
+    name: "XXX"
+    fullName: System.Type
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Boolean
+    name: "XXX"
+    fullName: System.Boolean
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Reflection.ICustomAttributeProvider.IsDefined(System.Type,System.Boolean)
+    name: "XXX"
+    fullName: System.Reflection.ICustomAttributeProvider.IsDefined
+  - name: "XXX"
+    fullName: (
+  - uid: System.Type
+    name: "XXX"
+    fullName: System.Type
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Boolean
+    name: "XXX"
+    fullName: System.Boolean
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: ICustomAttributeProvider.IsDefined(Type, Boolean)
+  commentId: M:System.Reflection.ICustomAttributeProvider.IsDefined(System.Type,System.Boolean)

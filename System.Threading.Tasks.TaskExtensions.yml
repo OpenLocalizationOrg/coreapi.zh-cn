@@ -1,0 +1,540 @@
+items:
+- uid: System.Threading.Tasks.TaskExtensions
+  commentId: T:System.Threading.Tasks.TaskExtensions
+  id: TaskExtensions
+  parent: System.Threading.Tasks
+  children:
+  - System.Threading.Tasks.TaskExtensions.Unwrap(System.Threading.Tasks.Task{System.Threading.Tasks.Task})
+  - System.Threading.Tasks.TaskExtensions.Unwrap``1(System.Threading.Tasks.Task{System.Threading.Tasks.Task{``0}})
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.Tasks.TaskExtensions
+  type: Class
+  source:
+    remote:
+      path: src/System.Threading.Tasks/ref/System.Threading.Tasks.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: TaskExtensions
+    path: src/System.Threading.Tasks/ref/System.Threading.Tasks.cs
+    startLine: 390
+  assemblies:
+  - System.Threading.Tasks
+  namespace: System.Threading.Tasks
+  summary: "\n<p>Provides a set of static (Shared in Visual Basic) methods for working with specific kinds of <xref href=\"System.Threading.Tasks.Task\" data-throw-if-not-resolved=\"false\"></xref> instances.</p>\n"
+  syntax:
+    content: public class TaskExtensions
+    content.vb: Public Class TaskExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+  nameWithType: TaskExtensions
+- uid: System.Threading.Tasks.TaskExtensions.Unwrap(System.Threading.Tasks.Task{System.Threading.Tasks.Task})
+  commentId: M:System.Threading.Tasks.TaskExtensions.Unwrap(System.Threading.Tasks.Task{System.Threading.Tasks.Task})
+  id: Unwrap(System.Threading.Tasks.Task{System.Threading.Tasks.Task})
+  isExtensionMethod: true
+  parent: System.Threading.Tasks.TaskExtensions
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.Tasks.TaskExtensions.Unwrap(System.Threading.Tasks.Task<System.Threading.Tasks.Task>)
+  type: Method
+  source:
+    remote:
+      path: src/System.Threading.Tasks/ref/System.Threading.Tasks.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Unwrap
+    path: src/System.Threading.Tasks/ref/System.Threading.Tasks.cs
+    startLine: 392
+  assemblies:
+  - System.Threading.Tasks
+  namespace: System.Threading.Tasks
+  summary: "\n<p>Creates a proxy <xref href=\"System.Threading.Tasks.Task\" data-throw-if-not-resolved=\"false\"></xref> that represents the asynchronous operation of a <xref href=\"System.Threading.Tasks.TaskScheduler.TryExecuteTaskInline(System.Threading.Tasks.Task,System.Boolean)\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  syntax:
+    content: public static Task Unwrap(this Task<Task> task)
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function Unwrap(task As Task(Of Task)) As Task
+    parameters:
+    - id: task
+      type: System.Threading.Tasks.Task{System.Threading.Tasks.Task}
+      description: "\n<p>The <strong>Task<Task></strong> (C#) or <strong>Task (Of Task)</strong> (Visual Basic) to unwrap.</p>\n"
+    return:
+      type: System.Threading.Tasks.Task
+      description: "\n<p>A Task that represents the asynchronous operation of the provided <strong>System.Threading.Tasks.Task(Of Task)</strong>.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>The exception that is thrown if the <em>task</em> argument is null.</p>\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: System.Threading.Tasks.TaskExtensions.Unwrap(System.Threading.Tasks.Task(Of System.Threading.Tasks.Task))
+  name.vb: Unwrap(Task(Of Task))
+  nameWithType: TaskExtensions.Unwrap(Task<Task>)
+  nameWithType.vb: TaskExtensions.Unwrap(Task(Of Task))
+- uid: System.Threading.Tasks.TaskExtensions.Unwrap``1(System.Threading.Tasks.Task{System.Threading.Tasks.Task{``0}})
+  commentId: M:System.Threading.Tasks.TaskExtensions.Unwrap``1(System.Threading.Tasks.Task{System.Threading.Tasks.Task{``0}})
+  id: Unwrap``1(System.Threading.Tasks.Task{System.Threading.Tasks.Task{``0}})
+  isExtensionMethod: true
+  parent: System.Threading.Tasks.TaskExtensions
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.Tasks.TaskExtensions.Unwrap<TResult>(System.Threading.Tasks.Task<System.Threading.Tasks.Task<TResult>>)
+  type: Method
+  source:
+    remote:
+      path: src/System.Threading.Tasks/ref/System.Threading.Tasks.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Unwrap
+    path: src/System.Threading.Tasks/ref/System.Threading.Tasks.cs
+    startLine: 393
+  assemblies:
+  - System.Threading.Tasks
+  namespace: System.Threading.Tasks
+  summary: "\n<p>Creates a proxy <xref href=\"System.Threading.Tasks.Task\" data-throw-if-not-resolved=\"false\"></xref> that represents the asynchronous operation of a <strong>Task<Task<T>></strong> (C#) or <strong>Task (Of Task(Of T))</strong> (Visual Basic).</p>\n"
+  syntax:
+    content: public static Task<TResult> Unwrap<TResult>(this Task<Task<TResult>> task)
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function Unwrap(Of TResult)(task As Task(Of Task(Of TResult))) As Task(Of TResult)
+    parameters:
+    - id: task
+      type: System.Threading.Tasks.Task{System.Threading.Tasks.Task{{TResult}}}
+      description: "\n<p>The <strong>Task<Task<T>></strong> (C#) or <strong>Task (Of Task(Of T))</strong> (Visual Basic) to unwrap.</p>\n"
+    typeParameters:
+    - id: TResult
+      description: "\n<p>The type of the task's result.</p>\n"
+    return:
+      type: System.Threading.Tasks.Task{{TResult}}
+      description: "\n<p>A <xref href=\"System.Threading.Tasks.Task\" data-throw-if-not-resolved=\"false\"></xref> that represents the asynchronous operation of the provided <strong>Task<Task<T>></strong> (C#) or <strong>Task (Of Task(Of T))</strong> (Visual Basic).</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>The exception that is thrown if the <em>task</em> argument is null.</p>\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: System.Threading.Tasks.TaskExtensions.Unwrap(Of TResult)(System.Threading.Tasks.Task(Of System.Threading.Tasks.Task(Of TResult)))
+  name.vb: Unwrap(Of TResult)(Task(Of Task(Of TResult)))
+  nameWithType: TaskExtensions.Unwrap<TResult>(Task<Task<TResult>>)
+  nameWithType.vb: TaskExtensions.Unwrap(Of TResult)(Task(Of Task(Of TResult)))
+references:
+- uid: System.Threading.Tasks
+  isExternal: false
+  name: "XXX"
+  fullName: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+- uid: System.Object
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Object
+  commentId: T:System.Object
+  nameWithType: Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.ToString
+  nameWithType: Object.ToString()
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.Equals(System.Object)
+  nameWithType: Object.Equals(Object)
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  nameWithType: Object.Equals(Object, Object)
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.GetHashCode
+  nameWithType: Object.GetHashCode()
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.GetType
+  nameWithType: Object.GetType()
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.MemberwiseClone
+  nameWithType: Object.MemberwiseClone()
+- uid: System
+  isExternal: false
+  name: "XXX"
+  fullName: System
+  commentId: N:System
+  nameWithType: System
+- uid: System.Threading.Tasks.Task{System.Threading.Tasks.Task}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: "XXX"
+  fullName: System.Threading.Tasks.Task<System.Threading.Tasks.Task>
+  fullname.vb: System.Threading.Tasks.Task(Of System.Threading.Tasks.Task)
+  name.vb: Task(Of Task)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: "XXX"
+    fullName: System.Threading.Tasks.Task
+  - name: "<"
+    fullName: <
+  - uid: System.Threading.Tasks.Task
+    name: "XXX"
+    fullName: System.Threading.Tasks.Task
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: "XXX"
+    fullName: System.Threading.Tasks.Task
+  - name: 'XXX '
+    fullName: '(Of '
+  - uid: System.Threading.Tasks.Task
+    name: "XXX"
+    fullName: System.Threading.Tasks.Task
+  - name: "XXX"
+    fullName: )
+  commentId: T:System.Threading.Tasks.Task{System.Threading.Tasks.Task}
+  nameWithType: Task<Task>
+  nameWithType.vb: Task(Of Task)
+- uid: System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: false
+  name: "XXX"
+  fullName: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  nameWithType: Task
+- uid: System.Threading.Tasks.Task`1
+  isExternal: false
+  name: "XXX"
+  fullName: System.Threading.Tasks.Task<TResult>
+  fullname.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: "XXX"
+    fullName: System.Threading.Tasks.Task
+  - name: "<"
+    fullName: <
+  - name: "XXX"
+    fullName: TResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: "XXX"
+    fullName: System.Threading.Tasks.Task
+  - name: 'XXX '
+    fullName: '(Of '
+  - name: "XXX"
+    fullName: TResult
+  - name: "XXX"
+    fullName: )
+  commentId: T:System.Threading.Tasks.Task`1
+  nameWithType: Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+- uid: System.Threading.Tasks.Task{System.Threading.Tasks.Task{{TResult}}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: "XXX"
+  fullName: System.Threading.Tasks.Task<System.Threading.Tasks.Task<TResult>>
+  fullname.vb: System.Threading.Tasks.Task(Of System.Threading.Tasks.Task(Of TResult))
+  name.vb: Task(Of Task(Of TResult))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: "XXX"
+    fullName: System.Threading.Tasks.Task
+  - name: "<"
+    fullName: <
+  - uid: System.Threading.Tasks.Task`1
+    name: "XXX"
+    fullName: System.Threading.Tasks.Task
+  - name: "<"
+    fullName: <
+  - name: "XXX"
+    fullName: TResult
+  - name: '>'
+    fullName: '>'
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: "XXX"
+    fullName: System.Threading.Tasks.Task
+  - name: 'XXX '
+    fullName: '(Of '
+  - uid: System.Threading.Tasks.Task`1
+    name: "XXX"
+    fullName: System.Threading.Tasks.Task
+  - name: 'XXX '
+    fullName: '(Of '
+  - name: "XXX"
+    fullName: TResult
+  - name: "XXX"
+    fullName: )
+  - name: "XXX"
+    fullName: )
+  commentId: T:System.Threading.Tasks.Task{System.Threading.Tasks.Task{``0}}
+  nameWithType: Task<Task<TResult>>
+  nameWithType.vb: Task(Of Task(Of TResult))
+- uid: System.Threading.Tasks.Task{{TResult}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: "XXX"
+  fullName: System.Threading.Tasks.Task<TResult>
+  fullname.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: "XXX"
+    fullName: System.Threading.Tasks.Task
+  - name: "<"
+    fullName: <
+  - name: "XXX"
+    fullName: TResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: "XXX"
+    fullName: System.Threading.Tasks.Task
+  - name: 'XXX '
+    fullName: '(Of '
+  - name: "XXX"
+    fullName: TResult
+  - name: "XXX"
+    fullName: )
+  commentId: T:System.Threading.Tasks.Task{`0}
+  nameWithType: Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+- uid: System.ArgumentNullException
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentNullException
+  nameWithType: ArgumentNullException
+  commentId: T:System.ArgumentNullException

@@ -1,0 +1,597 @@
+items:
+- uid: System.Runtime.CompilerServices.RuntimeHelpers
+  commentId: T:System.Runtime.CompilerServices.RuntimeHelpers
+  id: RuntimeHelpers
+  parent: System.Runtime.CompilerServices
+  children:
+  - System.Runtime.CompilerServices.RuntimeHelpers.EnsureSufficientExecutionStack
+  - System.Runtime.CompilerServices.RuntimeHelpers.GetHashCode(System.Object)
+  - System.Runtime.CompilerServices.RuntimeHelpers.GetObjectValue(System.Object)
+  - System.Runtime.CompilerServices.RuntimeHelpers.InitializeArray(System.Array,System.RuntimeFieldHandle)
+  - System.Runtime.CompilerServices.RuntimeHelpers.OffsetToStringData
+  - System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(System.RuntimeTypeHandle)
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Runtime.CompilerServices.RuntimeHelpers
+  type: Class
+  source:
+    remote:
+      path: src/mscorlib/src/System/Runtime/CompilerServices/RuntimeHelpers.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: RuntimeHelpers
+    path: src/mscorlib/src/System/Runtime/CompilerServices/RuntimeHelpers.cs
+    startLine: 25
+  assemblies:
+  - System.Runtime
+  namespace: System.Runtime.CompilerServices
+  summary: "\n<p>Provides a set of static methods and properties that provide support for compilers. This class cannot be inherited.</p>\n"
+  syntax:
+    content: public class RuntimeHelpers
+    content.vb: Public Class RuntimeHelpers
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+  nameWithType: RuntimeHelpers
+- uid: System.Runtime.CompilerServices.RuntimeHelpers.OffsetToStringData
+  commentId: P:System.Runtime.CompilerServices.RuntimeHelpers.OffsetToStringData
+  id: OffsetToStringData
+  parent: System.Runtime.CompilerServices.RuntimeHelpers
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Runtime.CompilerServices.RuntimeHelpers.OffsetToStringData
+  type: Property
+  source:
+    remote:
+      path: src/mscorlib/src/System/Runtime/CompilerServices/RuntimeHelpers.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: OffsetToStringData
+    path: src/mscorlib/src/System/Runtime/CompilerServices/RuntimeHelpers.cs
+    startLine: 160
+  assemblies:
+  - System.Runtime
+  namespace: System.Runtime.CompilerServices
+  summary: "\n<p>Gets the offset, in bytes, to the data in the given string.</p>\n"
+  syntax:
+    content: >-
+      public static int OffsetToStringData
+
+      {
+          [NonVersionable]
+          get;
+      }
+    content.vb: Public Shared ReadOnly Property OffsetToStringData As Integer
+    parameters: []
+    return:
+      type: System.Int32
+      description: "\n<p>The byte offset, from the start of the <xref href=\"System.String\" data-throw-if-not-resolved=\"false\"></xref> object to the first character in the string.</p>\n"
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+  nameWithType: RuntimeHelpers.OffsetToStringData
+- uid: System.Runtime.CompilerServices.RuntimeHelpers.EnsureSufficientExecutionStack
+  commentId: M:System.Runtime.CompilerServices.RuntimeHelpers.EnsureSufficientExecutionStack
+  id: EnsureSufficientExecutionStack
+  parent: System.Runtime.CompilerServices.RuntimeHelpers
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Runtime.CompilerServices.RuntimeHelpers.EnsureSufficientExecutionStack()
+  type: Method
+  source:
+    path: System.Private.CoreLib
+    isExternal: true
+  assemblies:
+  - System.Runtime
+  namespace: System.Runtime.CompilerServices
+  summary: "\n<p>Ensures that the remaining stack space is large enough to execute the average .NET Framework function.</p>\n"
+  syntax:
+    content: >-
+      [SecuritySafeCritical]
+
+      [MethodImpl(MethodImplOptions.InternalCall)]
+
+      [ReliabilityContract(Consistency.WillNotCorruptState, Cer.Success)]
+
+      public static void EnsureSufficientExecutionStack()
+    content.vb: >-
+      <SecuritySafeCritical>
+
+      <MethodImpl(MethodImplOptions.InternalCall)>
+
+      <ReliabilityContract(Consistency.WillNotCorruptState, Cer.Success)>
+
+      Public Shared Sub EnsureSufficientExecutionStack
+  exceptions:
+  - type: System.InsufficientExecutionStackException
+    commentId: T:System.InsufficientExecutionStackException
+    description: "\n<p>The available stack space is insufficient to execute the average .NET Framework function.</p>\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  nameWithType: RuntimeHelpers.EnsureSufficientExecutionStack()
+- uid: System.Runtime.CompilerServices.RuntimeHelpers.GetHashCode(System.Object)
+  commentId: M:System.Runtime.CompilerServices.RuntimeHelpers.GetHashCode(System.Object)
+  id: GetHashCode(System.Object)
+  parent: System.Runtime.CompilerServices.RuntimeHelpers
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Runtime.CompilerServices.RuntimeHelpers.GetHashCode(System.Object)
+  type: Method
+  source:
+    path: System.Private.CoreLib
+    isExternal: true
+  assemblies:
+  - System.Runtime
+  namespace: System.Runtime.CompilerServices
+  summary: "\n<p>Serves as a hash function for a particular object, and is suitable for use in algorithms and data structures that use hash codes, such as a hash table.</p>\n"
+  syntax:
+    content: >-
+      [SecuritySafeCritical]
+
+      [MethodImpl(MethodImplOptions.InternalCall)]
+
+      public static int GetHashCode(object o)
+    content.vb: >-
+      <SecuritySafeCritical>
+
+      <MethodImpl(MethodImplOptions.InternalCall)>
+
+      Public Shared Function GetHashCode(o As Object) As Integer
+    parameters:
+    - id: o
+      type: System.Object
+      description: "\n<p>An object to retrieve the hash code for. </p>\n"
+    return:
+      type: System.Int32
+      description: "\n<p>A hash code for the object identified by the <em>o</em> parameter.</p>\n"
+  seealso:
+  - type: System.Object.GetHashCode
+    commentId: M:System.Object.GetHashCode
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  nameWithType: RuntimeHelpers.GetHashCode(Object)
+- uid: System.Runtime.CompilerServices.RuntimeHelpers.GetObjectValue(System.Object)
+  commentId: M:System.Runtime.CompilerServices.RuntimeHelpers.GetObjectValue(System.Object)
+  id: GetObjectValue(System.Object)
+  parent: System.Runtime.CompilerServices.RuntimeHelpers
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Runtime.CompilerServices.RuntimeHelpers.GetObjectValue(System.Object)
+  type: Method
+  source:
+    path: System.Private.CoreLib
+    isExternal: true
+  assemblies:
+  - System.Runtime
+  namespace: System.Runtime.CompilerServices
+  summary: "\n<p>Boxes a value type.</p>\n"
+  syntax:
+    content: >-
+      [SecuritySafeCritical]
+
+      [MethodImpl(MethodImplOptions.InternalCall)]
+
+      public static object GetObjectValue(object obj)
+    content.vb: >-
+      <SecuritySafeCritical>
+
+      <MethodImpl(MethodImplOptions.InternalCall)>
+
+      Public Shared Function GetObjectValue(obj As Object) As Object
+    parameters:
+    - id: obj
+      type: System.Object
+      description: "\n<p>The value type to be boxed. </p>\n"
+    return:
+      type: System.Object
+      description: "\n<p>A boxed copy of <em>obj</em> if it is a value class; otherwise, <em>obj</em> itself.</p>\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  nameWithType: RuntimeHelpers.GetObjectValue(Object)
+- uid: System.Runtime.CompilerServices.RuntimeHelpers.InitializeArray(System.Array,System.RuntimeFieldHandle)
+  commentId: M:System.Runtime.CompilerServices.RuntimeHelpers.InitializeArray(System.Array,System.RuntimeFieldHandle)
+  id: InitializeArray(System.Array,System.RuntimeFieldHandle)
+  parent: System.Runtime.CompilerServices.RuntimeHelpers
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Runtime.CompilerServices.RuntimeHelpers.InitializeArray(System.Array, System.RuntimeFieldHandle)
+  type: Method
+  source:
+    path: System.Private.CoreLib
+    isExternal: true
+  assemblies:
+  - System.Runtime
+  namespace: System.Runtime.CompilerServices
+  summary: "\n<p>Provides a fast way to initialize an array from data that is stored in a module.</p>\n"
+  syntax:
+    content: >-
+      [SecuritySafeCritical]
+
+      [MethodImpl(MethodImplOptions.InternalCall)]
+
+      public static void InitializeArray(Array array, RuntimeFieldHandle fldHandle)
+    content.vb: >-
+      <SecuritySafeCritical>
+
+      <MethodImpl(MethodImplOptions.InternalCall)>
+
+      Public Shared Sub InitializeArray(array As Array, fldHandle As RuntimeFieldHandle)
+    parameters:
+    - id: array
+      type: System.Array
+      description: "\n<p>The array to be initialized. </p>\n"
+    - id: fldHandle
+      type: System.RuntimeFieldHandle
+      description: "\n<p>A field handle that specifies the location of the data used to initialize the array. </p>\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  nameWithType: RuntimeHelpers.InitializeArray(Array, RuntimeFieldHandle)
+- uid: System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(System.RuntimeTypeHandle)
+  commentId: M:System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(System.RuntimeTypeHandle)
+  id: RunClassConstructor(System.RuntimeTypeHandle)
+  parent: System.Runtime.CompilerServices.RuntimeHelpers
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(System.RuntimeTypeHandle)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Runtime/CompilerServices/RuntimeHelpers.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: RunClassConstructor
+    path: src/mscorlib/src/System/Runtime/CompilerServices/RuntimeHelpers.cs
+    startLine: 69
+  assemblies:
+  - System.Runtime
+  namespace: System.Runtime.CompilerServices
+  summary: "\n<p>Runs a specified class constructor method.</p>\n"
+  syntax:
+    content: public static void RunClassConstructor(RuntimeTypeHandle type)
+    content.vb: Public Shared Sub RunClassConstructor(type As RuntimeTypeHandle)
+    parameters:
+    - id: type
+      type: System.RuntimeTypeHandle
+      description: "\n<p>A type handle that specifies the class constructor method to run. </p>\n"
+  exceptions:
+  - type: System.TypeInitializationException
+    commentId: T:System.TypeInitializationException
+    description: "\n<p>The class initializer throws an exception. </p>\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  nameWithType: RuntimeHelpers.RunClassConstructor(RuntimeTypeHandle)
+references:
+- uid: System.Runtime.CompilerServices
+  isExternal: false
+  name: "XXX"
+  fullName: System.Runtime.CompilerServices
+  nameWithType: System.Runtime.CompilerServices
+  commentId: N:System.Runtime.CompilerServices
+- uid: System.Object
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Object
+  nameWithType: Object
+  commentId: T:System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.ToString()
+  commentId: M:System.Object.ToString
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.Equals(Object)
+  commentId: M:System.Object.Equals(System.Object)
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.Equals(Object, Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.GetHashCode()
+  commentId: M:System.Object.GetHashCode
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.GetType()
+  commentId: M:System.Object.GetType
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.MemberwiseClone()
+  commentId: M:System.Object.MemberwiseClone
+- uid: System
+  isExternal: false
+  name: "XXX"
+  fullName: System
+  nameWithType: System
+  commentId: N:System
+- uid: System.Int32
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Int32
+  nameWithType: Int32
+  commentId: T:System.Int32
+- uid: System.Array
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Array
+  nameWithType: Array
+  commentId: T:System.Array
+- uid: System.RuntimeFieldHandle
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.RuntimeFieldHandle
+  nameWithType: RuntimeFieldHandle
+  commentId: T:System.RuntimeFieldHandle
+- uid: System.RuntimeTypeHandle
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.RuntimeTypeHandle
+  nameWithType: RuntimeTypeHandle
+  commentId: T:System.RuntimeTypeHandle
+- uid: System.InsufficientExecutionStackException
+  isExternal: false
+  name: "XXX"
+  fullName: System.InsufficientExecutionStackException
+  nameWithType: InsufficientExecutionStackException
+  commentId: T:System.InsufficientExecutionStackException
+- uid: System.TypeInitializationException
+  isExternal: false
+  name: "XXX"
+  fullName: System.TypeInitializationException
+  nameWithType: TypeInitializationException
+  commentId: T:System.TypeInitializationException

@@ -1,0 +1,2524 @@
+items:
+- uid: System.Collections.Hashtable
+  commentId: T:System.Collections.Hashtable
+  id: Hashtable
+  parent: System.Collections
+  children:
+  - System.Collections.Hashtable.#ctor
+  - System.Collections.Hashtable.#ctor(System.Collections.IDictionary)
+  - System.Collections.Hashtable.#ctor(System.Collections.IDictionary,System.Collections.IEqualityComparer)
+  - System.Collections.Hashtable.#ctor(System.Collections.IDictionary,System.Single)
+  - System.Collections.Hashtable.#ctor(System.Collections.IDictionary,System.Single,System.Collections.IEqualityComparer)
+  - System.Collections.Hashtable.#ctor(System.Collections.IEqualityComparer)
+  - System.Collections.Hashtable.#ctor(System.Int32)
+  - System.Collections.Hashtable.#ctor(System.Int32,System.Collections.IEqualityComparer)
+  - System.Collections.Hashtable.#ctor(System.Int32,System.Single)
+  - System.Collections.Hashtable.#ctor(System.Int32,System.Single,System.Collections.IEqualityComparer)
+  - System.Collections.Hashtable.Add(System.Object,System.Object)
+  - System.Collections.Hashtable.Clear
+  - System.Collections.Hashtable.Clone
+  - System.Collections.Hashtable.Contains(System.Object)
+  - System.Collections.Hashtable.ContainsKey(System.Object)
+  - System.Collections.Hashtable.ContainsValue(System.Object)
+  - System.Collections.Hashtable.CopyTo(System.Array,System.Int32)
+  - System.Collections.Hashtable.Count
+  - System.Collections.Hashtable.EqualityComparer
+  - System.Collections.Hashtable.GetEnumerator
+  - System.Collections.Hashtable.GetHash(System.Object)
+  - System.Collections.Hashtable.IsFixedSize
+  - System.Collections.Hashtable.IsReadOnly
+  - System.Collections.Hashtable.IsSynchronized
+  - System.Collections.Hashtable.Item(System.Object)
+  - System.Collections.Hashtable.KeyEquals(System.Object,System.Object)
+  - System.Collections.Hashtable.Keys
+  - System.Collections.Hashtable.Remove(System.Object)
+  - System.Collections.Hashtable.Synchronized(System.Collections.Hashtable)
+  - System.Collections.Hashtable.SyncRoot
+  - System.Collections.Hashtable.System#Collections#IEnumerable#GetEnumerator
+  - System.Collections.Hashtable.Values
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Collections.Hashtable
+  type: Class
+  source:
+    remote:
+      path: src/mscorlib/src/System/Collections/Hashtable.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Hashtable
+    path: src/mscorlib/src/System/Collections/Hashtable.cs
+    startLine: 69
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: "\n<p>Represents a collection of key/value pairs that are organized based on the hash code of the key.</p>\n"
+  syntax:
+    content: >-
+      [DebuggerTypeProxy(typeof (Hashtable.HashtableDebugView))]
+
+      [DebuggerDisplay("Count = {Count}")]
+
+      [ComVisible(true)]
+
+      [Serializable]
+
+      public class Hashtable : IDictionary, ICollection, IEnumerable, ISerializable, IDeserializationCallback, ICloneable
+    content.vb: >-
+      <DebuggerTypeProxy(GetType(Hashtable.HashtableDebugView))>
+
+      <DebuggerDisplay("Count = {Count}")>
+
+      <ComVisible(True)>
+
+      <Serializable>
+
+      Public Class Hashtable
+          Implements IDictionary, ICollection, IEnumerable, ISerializable, IDeserializationCallback, ICloneable
+  seealso:
+  - type: System.Collections.IDictionary
+    commentId: T:System.Collections.IDictionary
+  - type: System.Collections.IHashCodeProvider
+    commentId: T:System.Collections.IHashCodeProvider
+  - type: System.Object.GetHashCode
+    commentId: M:System.Object.GetHashCode
+  - type: System.Object.Equals(System.Object)
+    commentId: M:System.Object.Equals(System.Object)
+  - type: System.Collections.DictionaryEntry
+    commentId: T:System.Collections.DictionaryEntry
+  - type: System.Collections.Generic.Dictionary`2
+    commentId: T:System.Collections.Generic.Dictionary`2
+  - type: System.Collections.IEqualityComparer
+    commentId: T:System.Collections.IEqualityComparer
+  inheritance:
+  - System.Object
+  implements:
+  - System.Collections.IDictionary
+  - System.Collections.ICollection
+  - System.Collections.IEnumerable
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+  nameWithType: Hashtable
+  extensionMethods:
+  - System.Collections.IEnumerable.System.Linq.Queryable.AsQueryable
+  - System.Collections.IEnumerable.System.Linq.ParallelEnumerable.AsParallel
+  - System.Collections.IEnumerable.System.Linq.Enumerable.Cast``1
+  - System.Collections.IEnumerable.System.Linq.Enumerable.OfType``1
+- uid: System.Collections.Hashtable.#ctor
+  commentId: M:System.Collections.Hashtable.#ctor
+  id: '#ctor'
+  parent: System.Collections.Hashtable
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Collections.Hashtable.Hashtable()
+  type: Constructor
+  source:
+    remote:
+      path: src/mscorlib/src/System/Collections/Hashtable.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: .ctor
+    path: src/mscorlib/src/System/Collections/Hashtable.cs
+    startLine: 247
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: "\n<p>Initializes a new, empty instance of the <xref href=\"System.Collections.Hashtable\" data-throw-if-not-resolved=\"false\"></xref> class using the default initial capacity, load factor, hash code provider, and comparer.</p>\n"
+  syntax:
+    content: public Hashtable()
+    content.vb: Public Sub New
+  seealso:
+  - type: System.Object.GetHashCode
+    commentId: M:System.Object.GetHashCode
+  - type: System.Object.Equals(System.Object)
+    commentId: M:System.Object.Equals(System.Object)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: Hashtable.Hashtable()
+- uid: System.Collections.Hashtable.#ctor(System.Collections.IDictionary)
+  commentId: M:System.Collections.Hashtable.#ctor(System.Collections.IDictionary)
+  id: '#ctor(System.Collections.IDictionary)'
+  parent: System.Collections.Hashtable
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Collections.Hashtable.Hashtable(System.Collections.IDictionary)
+  type: Constructor
+  source:
+    remote:
+      path: src/mscorlib/src/System/Collections/Hashtable.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: .ctor
+    path: src/mscorlib/src/System/Collections/Hashtable.cs
+    startLine: 354
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: "\n<p>Initializes a new instance of the <xref href=\"System.Collections.Hashtable\" data-throw-if-not-resolved=\"false\"></xref> class by copying the elements from the specified dictionary to the new <xref href=\"System.Collections.Hashtable\" data-throw-if-not-resolved=\"false\"></xref> object. The new <xref href=\"System.Collections.Hashtable\" data-throw-if-not-resolved=\"false\"></xref> object has an initial capacity equal to the number of elements copied, and uses the default load factor, hash code provider, and comparer.</p>\n"
+  syntax:
+    content: public Hashtable(IDictionary d)
+    content.vb: Public Sub New(d As IDictionary)
+    parameters:
+    - id: d
+      type: System.Collections.IDictionary
+      description: "\n<p>The <xref href=\"System.Collections.IDictionary\" data-throw-if-not-resolved=\"false\"></xref> object to copy to a new <xref href=\"System.Collections.Hashtable\" data-throw-if-not-resolved=\"false\"></xref> object. </p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>d</em> is <strong>null</strong>. </p>\n"
+  seealso:
+  - type: System.Collections.IDictionary
+    commentId: T:System.Collections.IDictionary
+  - type: System.Object.GetHashCode
+    commentId: M:System.Object.GetHashCode
+  - type: System.Object.Equals(System.Object)
+    commentId: M:System.Object.Equals(System.Object)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: Hashtable.Hashtable(IDictionary)
+- uid: System.Collections.Hashtable.#ctor(System.Collections.IDictionary,System.Collections.IEqualityComparer)
+  commentId: M:System.Collections.Hashtable.#ctor(System.Collections.IDictionary,System.Collections.IEqualityComparer)
+  id: '#ctor(System.Collections.IDictionary,System.Collections.IEqualityComparer)'
+  parent: System.Collections.Hashtable
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Collections.Hashtable.Hashtable(System.Collections.IDictionary, System.Collections.IEqualityComparer)
+  type: Constructor
+  source:
+    remote:
+      path: src/mscorlib/src/System/Collections/Hashtable.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: .ctor
+    path: src/mscorlib/src/System/Collections/Hashtable.cs
+    startLine: 369
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: "\n<p>Initializes a new instance of the <xref href=\"System.Collections.Hashtable\" data-throw-if-not-resolved=\"false\"></xref> class by copying the elements from the specified dictionary to a new <xref href=\"System.Collections.Hashtable\" data-throw-if-not-resolved=\"false\"></xref> object. The new <xref href=\"System.Collections.Hashtable\" data-throw-if-not-resolved=\"false\"></xref> object has an initial capacity equal to the number of elements copied, and uses the default load factor and the specified <xref href=\"System.Collections.IEqualityComparer\" data-throw-if-not-resolved=\"false\"></xref> object.</p>\n"
+  syntax:
+    content: public Hashtable(IDictionary d, IEqualityComparer equalityComparer)
+    content.vb: Public Sub New(d As IDictionary, equalityComparer As IEqualityComparer)
+    parameters:
+    - id: d
+      type: System.Collections.IDictionary
+      description: "\n<p>The <xref href=\"System.Collections.IDictionary\" data-throw-if-not-resolved=\"false\"></xref> object to copy to a new <xref href=\"System.Collections.Hashtable\" data-throw-if-not-resolved=\"false\"></xref> object.</p>\n"
+    - id: equalityComparer
+      type: System.Collections.IEqualityComparer
+      description: "\n<p>The <xref href=\"System.Collections.IEqualityComparer\" data-throw-if-not-resolved=\"false\"></xref> object that defines the hash code provider and the comparer to use with the <xref href=\"System.Collections.Hashtable\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n<p>-or- </p>\n<p>\n<strong>null</strong> to use the default hash code provider and the default comparer. The default hash code provider is each key's implementation of <xref href=\"System.Object.GetHashCode\" data-throw-if-not-resolved=\"false\"></xref> and the default comparer is each key's implementation of <xref href=\"System.Object.Equals(System.Object)\" data-throw-if-not-resolved=\"false\"></xref>. </p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>d</em> is <strong>null</strong>. </p>\n"
+  seealso:
+  - type: System.Collections.IDictionary
+    commentId: T:System.Collections.IDictionary
+  - type: System.Collections.IEqualityComparer
+    commentId: T:System.Collections.IEqualityComparer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: Hashtable.Hashtable(IDictionary, IEqualityComparer)
+- uid: System.Collections.Hashtable.#ctor(System.Collections.IDictionary,System.Single)
+  commentId: M:System.Collections.Hashtable.#ctor(System.Collections.IDictionary,System.Single)
+  id: '#ctor(System.Collections.IDictionary,System.Single)'
+  parent: System.Collections.Hashtable
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Collections.Hashtable.Hashtable(System.Collections.IDictionary, System.Single)
+  type: Constructor
+  source:
+    remote:
+      path: src/mscorlib/src/System/Collections/Hashtable.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: .ctor
+    path: src/mscorlib/src/System/Collections/Hashtable.cs
+    startLine: 360
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: "\n<p>Initializes a new instance of the <xref href=\"System.Collections.Hashtable\" data-throw-if-not-resolved=\"false\"></xref> class by copying the elements from the specified dictionary to the new <xref href=\"System.Collections.Hashtable\" data-throw-if-not-resolved=\"false\"></xref> object. The new <xref href=\"System.Collections.Hashtable\" data-throw-if-not-resolved=\"false\"></xref> object has an initial capacity equal to the number of elements copied, and uses the specified load factor, and the default hash code provider and comparer.</p>\n"
+  syntax:
+    content: public Hashtable(IDictionary d, float loadFactor)
+    content.vb: Public Sub New(d As IDictionary, loadFactor As Single)
+    parameters:
+    - id: d
+      type: System.Collections.IDictionary
+      description: "\n<p>The <xref href=\"System.Collections.IDictionary\" data-throw-if-not-resolved=\"false\"></xref> object to copy to a new <xref href=\"System.Collections.Hashtable\" data-throw-if-not-resolved=\"false\"></xref> object.</p>\n"
+    - id: loadFactor
+      type: System.Single
+      description: "\n<p>A number in the range from 0.1 through 1.0 that is multiplied by the default value which provides the best performance. The result is the maximum ratio of elements to buckets.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>d</em> is <strong>null</strong>. </p>\n"
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>loadFactor</em> is less than 0.1.</p>\n<p>-or- </p>\n<p>\n<em>loadFactor</em> is greater than 1.0. </p>\n"
+  seealso:
+  - type: System.Collections.IDictionary
+    commentId: T:System.Collections.IDictionary
+  - type: System.Object.GetHashCode
+    commentId: M:System.Object.GetHashCode
+  - type: System.Object.Equals(System.Object)
+    commentId: M:System.Object.Equals(System.Object)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: Hashtable.Hashtable(IDictionary, Single)
+- uid: System.Collections.Hashtable.#ctor(System.Collections.IDictionary,System.Single,System.Collections.IEqualityComparer)
+  commentId: M:System.Collections.Hashtable.#ctor(System.Collections.IDictionary,System.Single,System.Collections.IEqualityComparer)
+  id: '#ctor(System.Collections.IDictionary,System.Single,System.Collections.IEqualityComparer)'
+  parent: System.Collections.Hashtable
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Collections.Hashtable.Hashtable(System.Collections.IDictionary, System.Single, System.Collections.IEqualityComparer)
+  type: Constructor
+  source:
+    remote:
+      path: src/mscorlib/src/System/Collections/Hashtable.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: .ctor
+    path: src/mscorlib/src/System/Collections/Hashtable.cs
+    startLine: 384
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: "\n<p>Initializes a new instance of the <xref href=\"System.Collections.Hashtable\" data-throw-if-not-resolved=\"false\"></xref> class by copying the elements from the specified dictionary to the new <xref href=\"System.Collections.Hashtable\" data-throw-if-not-resolved=\"false\"></xref> object. The new <xref href=\"System.Collections.Hashtable\" data-throw-if-not-resolved=\"false\"></xref> object has an initial capacity equal to the number of elements copied, and uses the specified load factor and <xref href=\"System.Collections.IEqualityComparer\" data-throw-if-not-resolved=\"false\"></xref> object.</p>\n"
+  syntax:
+    content: public Hashtable(IDictionary d, float loadFactor, IEqualityComparer equalityComparer)
+    content.vb: Public Sub New(d As IDictionary, loadFactor As Single, equalityComparer As IEqualityComparer)
+    parameters:
+    - id: d
+      type: System.Collections.IDictionary
+      description: "\n<p>The <xref href=\"System.Collections.IDictionary\" data-throw-if-not-resolved=\"false\"></xref> object to copy to a new <xref href=\"System.Collections.Hashtable\" data-throw-if-not-resolved=\"false\"></xref> object.</p>\n"
+    - id: loadFactor
+      type: System.Single
+      description: "\n<p>A number in the range from 0.1 through 1.0 that is multiplied by the default value which provides the best performance. The result is the maximum ratio of elements to buckets.</p>\n"
+    - id: equalityComparer
+      type: System.Collections.IEqualityComparer
+      description: "\n<p>The <xref href=\"System.Collections.IEqualityComparer\" data-throw-if-not-resolved=\"false\"></xref> object that defines the hash code provider and the comparer to use with the <xref href=\"System.Collections.Hashtable\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n<p>-or- </p>\n<p>\n<strong>null</strong> to use the default hash code provider and the default comparer. The default hash code provider is each key's implementation of <xref href=\"System.Object.GetHashCode\" data-throw-if-not-resolved=\"false\"></xref> and the default comparer is each key's implementation of <xref href=\"System.Object.Equals(System.Object)\" data-throw-if-not-resolved=\"false\"></xref>. </p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>d</em> is <strong>null</strong>. </p>\n"
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>loadFactor</em> is less than 0.1.</p>\n<p>-or- </p>\n<p>\n<em>loadFactor</em> is greater than 1.0. </p>\n"
+  seealso:
+  - type: System.Collections.IEqualityComparer
+    commentId: T:System.Collections.IEqualityComparer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: Hashtable.Hashtable(IDictionary, Single, IEqualityComparer)
+- uid: System.Collections.Hashtable.#ctor(System.Collections.IEqualityComparer)
+  commentId: M:System.Collections.Hashtable.#ctor(System.Collections.IEqualityComparer)
+  id: '#ctor(System.Collections.IEqualityComparer)'
+  parent: System.Collections.Hashtable
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Collections.Hashtable.Hashtable(System.Collections.IEqualityComparer)
+  type: Constructor
+  source:
+    remote:
+      path: src/mscorlib/src/System/Collections/Hashtable.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: .ctor
+    path: src/mscorlib/src/System/Collections/Hashtable.cs
+    startLine: 335
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: "\n<p>Initializes a new, empty instance of the <xref href=\"System.Collections.Hashtable\" data-throw-if-not-resolved=\"false\"></xref> class using the default initial capacity and load factor, and the specified <xref href=\"System.Collections.IEqualityComparer\" data-throw-if-not-resolved=\"false\"></xref> object.</p>\n"
+  syntax:
+    content: public Hashtable(IEqualityComparer equalityComparer)
+    content.vb: Public Sub New(equalityComparer As IEqualityComparer)
+    parameters:
+    - id: equalityComparer
+      type: System.Collections.IEqualityComparer
+      description: "\n<p>The <xref href=\"System.Collections.IEqualityComparer\" data-throw-if-not-resolved=\"false\"></xref> object that defines the hash code provider and the comparer to use with the <xref href=\"System.Collections.Hashtable\" data-throw-if-not-resolved=\"false\"></xref> object.</p>\n<p>-or- </p>\n<p>\n<strong>null</strong> to use the default hash code provider and the default comparer. The default hash code provider is each key's implementation of <xref href=\"System.Object.GetHashCode\" data-throw-if-not-resolved=\"false\"></xref> and the default comparer is each key's implementation of <xref href=\"System.Object.Equals(System.Object)\" data-throw-if-not-resolved=\"false\"></xref>. </p>\n"
+  seealso:
+  - type: System.Collections.IEqualityComparer
+    commentId: T:System.Collections.IEqualityComparer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: Hashtable.Hashtable(IEqualityComparer)
+- uid: System.Collections.Hashtable.#ctor(System.Int32)
+  commentId: M:System.Collections.Hashtable.#ctor(System.Int32)
+  id: '#ctor(System.Int32)'
+  parent: System.Collections.Hashtable
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Collections.Hashtable.Hashtable(System.Int32)
+  type: Constructor
+  source:
+    remote:
+      path: src/mscorlib/src/System/Collections/Hashtable.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: .ctor
+    path: src/mscorlib/src/System/Collections/Hashtable.cs
+    startLine: 257
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: "\n<p>Initializes a new, empty instance of the <xref href=\"System.Collections.Hashtable\" data-throw-if-not-resolved=\"false\"></xref> class using the specified initial capacity, and the default load factor, hash code provider, and comparer.</p>\n"
+  syntax:
+    content: public Hashtable(int capacity)
+    content.vb: Public Sub New(capacity As Integer)
+    parameters:
+    - id: capacity
+      type: System.Int32
+      description: "\n<p>The approximate number of elements that the <xref href=\"System.Collections.Hashtable\" data-throw-if-not-resolved=\"false\"></xref> object can initially contain. </p>\n"
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>capacity</em> is less than zero. </p>\n"
+  seealso:
+  - type: System.Object.GetHashCode
+    commentId: M:System.Object.GetHashCode
+  - type: System.Object.Equals(System.Object)
+    commentId: M:System.Object.Equals(System.Object)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: Hashtable.Hashtable(Int32)
+- uid: System.Collections.Hashtable.#ctor(System.Int32,System.Collections.IEqualityComparer)
+  commentId: M:System.Collections.Hashtable.#ctor(System.Int32,System.Collections.IEqualityComparer)
+  id: '#ctor(System.Int32,System.Collections.IEqualityComparer)'
+  parent: System.Collections.Hashtable
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Collections.Hashtable.Hashtable(System.Int32, System.Collections.IEqualityComparer)
+  type: Constructor
+  source:
+    remote:
+      path: src/mscorlib/src/System/Collections/Hashtable.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: .ctor
+    path: src/mscorlib/src/System/Collections/Hashtable.cs
+    startLine: 347
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: "\n<p>Initializes a new, empty instance of the <xref href=\"System.Collections.Hashtable\" data-throw-if-not-resolved=\"false\"></xref> class using the specified initial capacity and <xref href=\"System.Collections.IEqualityComparer\" data-throw-if-not-resolved=\"false\"></xref>, and the default load factor.</p>\n"
+  syntax:
+    content: public Hashtable(int capacity, IEqualityComparer equalityComparer)
+    content.vb: Public Sub New(capacity As Integer, equalityComparer As IEqualityComparer)
+    parameters:
+    - id: capacity
+      type: System.Int32
+      description: "\n<p>The approximate number of elements that the <xref href=\"System.Collections.Hashtable\" data-throw-if-not-resolved=\"false\"></xref> object can initially contain. </p>\n"
+    - id: equalityComparer
+      type: System.Collections.IEqualityComparer
+      description: "\n<p>The <xref href=\"System.Collections.IEqualityComparer\" data-throw-if-not-resolved=\"false\"></xref> object that defines the hash code provider and the comparer to use with the <xref href=\"System.Collections.Hashtable\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n<p>-or- </p>\n<p>\n<strong>null</strong> to use the default hash code provider and the default comparer. The default hash code provider is each key's implementation of <xref href=\"System.Object.GetHashCode\" data-throw-if-not-resolved=\"false\"></xref> and the default comparer is each key's implementation of <xref href=\"System.Object.Equals(System.Object)\" data-throw-if-not-resolved=\"false\"></xref>. </p>\n"
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>capacity</em> is less than zero. </p>\n"
+  seealso:
+  - type: System.Collections.IEqualityComparer
+    commentId: T:System.Collections.IEqualityComparer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: Hashtable.Hashtable(Int32, IEqualityComparer)
+- uid: System.Collections.Hashtable.#ctor(System.Int32,System.Single)
+  commentId: M:System.Collections.Hashtable.#ctor(System.Int32,System.Single)
+  id: '#ctor(System.Int32,System.Single)'
+  parent: System.Collections.Hashtable
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Collections.Hashtable.Hashtable(System.Int32, System.Single)
+  type: Constructor
+  source:
+    remote:
+      path: src/mscorlib/src/System/Collections/Hashtable.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: .ctor
+    path: src/mscorlib/src/System/Collections/Hashtable.cs
+    startLine: 271
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: "\n<p>Initializes a new, empty instance of the <xref href=\"System.Collections.Hashtable\" data-throw-if-not-resolved=\"false\"></xref> class using the specified initial capacity and load factor, and the default hash code provider and comparer.</p>\n"
+  syntax:
+    content: public Hashtable(int capacity, float loadFactor)
+    content.vb: Public Sub New(capacity As Integer, loadFactor As Single)
+    parameters:
+    - id: capacity
+      type: System.Int32
+      description: "\n<p>The approximate number of elements that the <xref href=\"System.Collections.Hashtable\" data-throw-if-not-resolved=\"false\"></xref> object can initially contain. </p>\n"
+    - id: loadFactor
+      type: System.Single
+      description: "\n<p>A number in the range from 0.1 through 1.0 that is multiplied by the default value which provides the best performance. The result is the maximum ratio of elements to buckets. </p>\n"
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>capacity</em> is less than zero.</p>\n<p>-or- </p>\n<p>\n<em>loadFactor</em> is less than 0.1.</p>\n<p>-or- </p>\n<p>\n<em>loadFactor</em> is greater than 1.0. </p>\n"
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>\n<em>capacity</em> is causing an overflow.</p>\n"
+  seealso:
+  - type: System.Object.GetHashCode
+    commentId: M:System.Object.GetHashCode
+  - type: System.Object.Equals(System.Object)
+    commentId: M:System.Object.Equals(System.Object)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: Hashtable.Hashtable(Int32, Single)
+- uid: System.Collections.Hashtable.#ctor(System.Int32,System.Single,System.Collections.IEqualityComparer)
+  commentId: M:System.Collections.Hashtable.#ctor(System.Int32,System.Single,System.Collections.IEqualityComparer)
+  id: '#ctor(System.Int32,System.Single,System.Collections.IEqualityComparer)'
+  parent: System.Collections.Hashtable
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Collections.Hashtable.Hashtable(System.Int32, System.Single, System.Collections.IEqualityComparer)
+  type: Constructor
+  source:
+    remote:
+      path: src/mscorlib/src/System/Collections/Hashtable.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: .ctor
+    path: src/mscorlib/src/System/Collections/Hashtable.cs
+    startLine: 323
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: "\n<p>Initializes a new, empty instance of the <xref href=\"System.Collections.Hashtable\" data-throw-if-not-resolved=\"false\"></xref> class using the specified initial capacity, load factor, and <xref href=\"System.Collections.IEqualityComparer\" data-throw-if-not-resolved=\"false\"></xref> object.</p>\n"
+  syntax:
+    content: public Hashtable(int capacity, float loadFactor, IEqualityComparer equalityComparer)
+    content.vb: Public Sub New(capacity As Integer, loadFactor As Single, equalityComparer As IEqualityComparer)
+    parameters:
+    - id: capacity
+      type: System.Int32
+      description: "\n<p>The approximate number of elements that the <xref href=\"System.Collections.Hashtable\" data-throw-if-not-resolved=\"false\"></xref> object can initially contain. </p>\n"
+    - id: loadFactor
+      type: System.Single
+      description: "\n<p>A number in the range from 0.1 through 1.0 that is multiplied by the default value which provides the best performance. The result is the maximum ratio of elements to buckets.</p>\n"
+    - id: equalityComparer
+      type: System.Collections.IEqualityComparer
+      description: "\n<p>The <xref href=\"System.Collections.IEqualityComparer\" data-throw-if-not-resolved=\"false\"></xref> object that defines the hash code provider and the comparer to use with the <xref href=\"System.Collections.Hashtable\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n<p>-or- </p>\n<p>\n<strong>null</strong> to use the default hash code provider and the default comparer. The default hash code provider is each key's implementation of <xref href=\"System.Object.GetHashCode\" data-throw-if-not-resolved=\"false\"></xref> and the default comparer is each key's implementation of <xref href=\"System.Object.Equals(System.Object)\" data-throw-if-not-resolved=\"false\"></xref>. </p>\n"
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>capacity</em> is less than zero.</p>\n<p>-or- </p>\n<p>\n<em>loadFactor</em> is less than 0.1.</p>\n<p>-or- </p>\n<p>\n<em>loadFactor</em> is greater than 1.0. </p>\n"
+  seealso:
+  - type: System.Collections.IEqualityComparer
+    commentId: T:System.Collections.IEqualityComparer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: Hashtable.Hashtable(Int32, Single, IEqualityComparer)
+- uid: System.Collections.Hashtable.Count
+  commentId: P:System.Collections.Hashtable.Count
+  id: Count
+  parent: System.Collections.Hashtable
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Collections.Hashtable.Count
+  type: Property
+  source:
+    remote:
+      path: src/mscorlib/src/System/Collections/Hashtable.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Count
+    path: src/mscorlib/src/System/Collections/Hashtable.cs
+    startLine: 1127
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: "\n<p>Gets the number of key/value pairs contained in the <xref href=\"System.Collections.Hashtable\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  syntax:
+    content: public virtual int Count { get; }
+    content.vb: Public Overridable ReadOnly Property Count As Integer
+    parameters: []
+    return:
+      type: System.Int32
+      description: "\n<p>The number of key/value pairs contained in the <xref href=\"System.Collections.Hashtable\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  implements:
+  - System.Collections.ICollection.Count
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+  nameWithType: Hashtable.Count
+- uid: System.Collections.Hashtable.EqualityComparer
+  commentId: P:System.Collections.Hashtable.EqualityComparer
+  id: EqualityComparer
+  parent: System.Collections.Hashtable
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Collections.Hashtable.EqualityComparer
+  type: Property
+  source:
+    remote:
+      path: src/mscorlib/src/System/Collections/Hashtable.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: EqualityComparer
+    path: src/mscorlib/src/System/Collections/Hashtable.cs
+    startLine: 231
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: "\n<p>Gets the <xref href=\"System.Collections.IEqualityComparer\" data-throw-if-not-resolved=\"false\"></xref> to use for the <xref href=\"System.Collections.Hashtable\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  syntax:
+    content: protected IEqualityComparer EqualityComparer { get; }
+    content.vb: Protected ReadOnly Property EqualityComparer As IEqualityComparer
+    parameters: []
+    return:
+      type: System.Collections.IEqualityComparer
+      description: "\n<p>The <xref href=\"System.Collections.IEqualityComparer\" data-throw-if-not-resolved=\"false\"></xref> to use for the <xref href=\"System.Collections.Hashtable\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>The property is set to a value, but the hash table was created using an <xref href=\"System.Collections.IHashCodeProvider\" data-throw-if-not-resolved=\"false\"></xref> and an <xref href=\"System.Collections.IComparer\" data-throw-if-not-resolved=\"false\"></xref>. </p>\n"
+  seealso:
+  - type: System.Collections.Comparer
+    commentId: T:System.Collections.Comparer
+  - type: System.Collections.IEqualityComparer
+    commentId: T:System.Collections.IEqualityComparer
+  modifiers.csharp:
+  - protected
+  - get
+  modifiers.vb:
+  - Protected
+  - ReadOnly
+  nameWithType: Hashtable.EqualityComparer
+- uid: System.Collections.Hashtable.IsFixedSize
+  commentId: P:System.Collections.Hashtable.IsFixedSize
+  id: IsFixedSize
+  parent: System.Collections.Hashtable
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Collections.Hashtable.IsFixedSize
+  type: Property
+  source:
+    remote:
+      path: src/mscorlib/src/System/Collections/Hashtable.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: IsFixedSize
+    path: src/mscorlib/src/System/Collections/Hashtable.cs
+    startLine: 807
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: "\n<p>Gets a value indicating whether the <xref href=\"System.Collections.Hashtable\" data-throw-if-not-resolved=\"false\"></xref> has a fixed size.</p>\n"
+  syntax:
+    content: public virtual bool IsFixedSize { get; }
+    content.vb: Public Overridable ReadOnly Property IsFixedSize As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if the <xref href=\"System.Collections.Hashtable\" data-throw-if-not-resolved=\"false\"></xref> has a fixed size; otherwise, <strong>false</strong>. The default is <strong>false</strong>.</p>\n"
+  implements:
+  - System.Collections.IDictionary.IsFixedSize
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+  nameWithType: Hashtable.IsFixedSize
+- uid: System.Collections.Hashtable.IsReadOnly
+  commentId: P:System.Collections.Hashtable.IsReadOnly
+  id: IsReadOnly
+  parent: System.Collections.Hashtable
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Collections.Hashtable.IsReadOnly
+  type: Property
+  source:
+    remote:
+      path: src/mscorlib/src/System/Collections/Hashtable.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: IsReadOnly
+    path: src/mscorlib/src/System/Collections/Hashtable.cs
+    startLine: 803
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: "\n<p>Gets a value indicating whether the <xref href=\"System.Collections.Hashtable\" data-throw-if-not-resolved=\"false\"></xref> is read-only.</p>\n"
+  syntax:
+    content: public virtual bool IsReadOnly { get; }
+    content.vb: Public Overridable ReadOnly Property IsReadOnly As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if the <xref href=\"System.Collections.Hashtable\" data-throw-if-not-resolved=\"false\"></xref> is read-only; otherwise, <strong>false</strong>. The default is <strong>false</strong>.</p>\n"
+  implements:
+  - System.Collections.IDictionary.IsReadOnly
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+  nameWithType: Hashtable.IsReadOnly
+- uid: System.Collections.Hashtable.IsSynchronized
+  commentId: P:System.Collections.Hashtable.IsSynchronized
+  id: IsSynchronized
+  parent: System.Collections.Hashtable
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Collections.Hashtable.IsSynchronized
+  type: Property
+  source:
+    remote:
+      path: src/mscorlib/src/System/Collections/Hashtable.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: IsSynchronized
+    path: src/mscorlib/src/System/Collections/Hashtable.cs
+    startLine: 812
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: "\n<p>Gets a value indicating whether access to the <xref href=\"System.Collections.Hashtable\" data-throw-if-not-resolved=\"false\"></xref> is synchronized (thread safe).</p>\n"
+  syntax:
+    content: public virtual bool IsSynchronized { get; }
+    content.vb: Public Overridable ReadOnly Property IsSynchronized As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if access to the <xref href=\"System.Collections.Hashtable\" data-throw-if-not-resolved=\"false\"></xref> is synchronized (thread safe); otherwise, <strong>false</strong>. The default is <strong>false</strong>.</p>\n"
+  seealso:
+  - type: System.Collections.Hashtable.Synchronized(System.Collections.Hashtable)
+    commentId: M:System.Collections.Hashtable.Synchronized(System.Collections.Hashtable)
+  - type: System.Collections.Hashtable.SyncRoot
+    commentId: P:System.Collections.Hashtable.SyncRoot
+  implements:
+  - System.Collections.ICollection.IsSynchronized
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+  nameWithType: Hashtable.IsSynchronized
+- uid: System.Collections.Hashtable.Item(System.Object)
+  commentId: P:System.Collections.Hashtable.Item(System.Object)
+  id: Item(System.Object)
+  parent: System.Collections.Hashtable
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Collections.Hashtable.Item[System.Object]
+  type: Property
+  source:
+    remote:
+      path: src/mscorlib/src/System/Collections/Hashtable.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: this[]
+    path: src/mscorlib/src/System/Collections/Hashtable.cs
+    startLine: 642
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: "\n<p>Gets or sets the value associated with the specified key.</p>\n"
+  syntax:
+    content: public virtual object this[object key] { get; set; }
+    content.vb: Public Overridable Property Item(key As Object) As Object
+    parameters:
+    - id: key
+      type: System.Object
+      description: "\n<p>The key whose value to get or set. </p>\n"
+    return:
+      type: System.Object
+      description: "\n<p>The value associated with the specified key. If the specified key is not found, attempting to get it returns <strong>null</strong>, and attempting to set it creates a new element using the specified key.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>key</em> is <strong>null</strong>. </p>\n"
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: "\n<p>The property is set and the <xref href=\"System.Collections.Hashtable\" data-throw-if-not-resolved=\"false\"></xref> is read-only.</p>\n<p>-or- </p>\n<p>The property is set, <em>key</em> does not exist in the collection, and the <xref href=\"System.Collections.Hashtable\" data-throw-if-not-resolved=\"false\"></xref> has a fixed size. </p>\n"
+  seealso:
+  - type: System.Collections.Hashtable.Add(System.Object,System.Object)
+    commentId: M:System.Collections.Hashtable.Add(System.Object,System.Object)
+  implements:
+  - System.Collections.IDictionary.Item(System.Object)
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+  fullName.vb: System.Collections.Hashtable.Item(System.Object)
+  name.vb: Item(Object)
+  nameWithType: Hashtable.Item[Object]
+  nameWithType.vb: Hashtable.Item(Object)
+- uid: System.Collections.Hashtable.Keys
+  commentId: P:System.Collections.Hashtable.Keys
+  id: Keys
+  parent: System.Collections.Hashtable
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Collections.Hashtable.Keys
+  type: Property
+  source:
+    remote:
+      path: src/mscorlib/src/System/Collections/Hashtable.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Keys
+    path: src/mscorlib/src/System/Collections/Hashtable.cs
+    startLine: 844
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: "\n<p>Gets an <xref href=\"System.Collections.ICollection\" data-throw-if-not-resolved=\"false\"></xref> containing the keys in the <xref href=\"System.Collections.Hashtable\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  syntax:
+    content: public virtual ICollection Keys { get; }
+    content.vb: Public Overridable ReadOnly Property Keys As ICollection
+    parameters: []
+    return:
+      type: System.Collections.ICollection
+      description: "\n<p>An <xref href=\"System.Collections.ICollection\" data-throw-if-not-resolved=\"false\"></xref> containing the keys in the <xref href=\"System.Collections.Hashtable\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  seealso:
+  - type: System.Collections.ICollection
+    commentId: T:System.Collections.ICollection
+  - type: System.Collections.Hashtable.Values
+    commentId: P:System.Collections.Hashtable.Values
+  implements:
+  - System.Collections.IDictionary.Keys
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+  nameWithType: Hashtable.Keys
+- uid: System.Collections.Hashtable.SyncRoot
+  commentId: P:System.Collections.Hashtable.SyncRoot
+  id: SyncRoot
+  parent: System.Collections.Hashtable
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Collections.Hashtable.SyncRoot
+  type: Property
+  source:
+    remote:
+      path: src/mscorlib/src/System/Collections/Hashtable.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: SyncRoot
+    path: src/mscorlib/src/System/Collections/Hashtable.cs
+    startLine: 1116
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: "\n<p>Gets an object that can be used to synchronize access to the <xref href=\"System.Collections.Hashtable\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  syntax:
+    content: public virtual object SyncRoot { get; }
+    content.vb: Public Overridable ReadOnly Property SyncRoot As Object
+    parameters: []
+    return:
+      type: System.Object
+      description: "\n<p>An object that can be used to synchronize access to the <xref href=\"System.Collections.Hashtable\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  seealso:
+  - type: System.Collections.Hashtable.IsSynchronized
+    commentId: P:System.Collections.Hashtable.IsSynchronized
+  - type: System.Collections.Hashtable.Synchronized(System.Collections.Hashtable)
+    commentId: M:System.Collections.Hashtable.Synchronized(System.Collections.Hashtable)
+  implements:
+  - System.Collections.ICollection.SyncRoot
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+  nameWithType: Hashtable.SyncRoot
+- uid: System.Collections.Hashtable.Values
+  commentId: P:System.Collections.Hashtable.Values
+  id: Values
+  parent: System.Collections.Hashtable
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Collections.Hashtable.Values
+  type: Property
+  source:
+    remote:
+      path: src/mscorlib/src/System/Collections/Hashtable.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Values
+    path: src/mscorlib/src/System/Collections/Hashtable.cs
+    startLine: 861
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: "\n<p>Gets an <xref href=\"System.Collections.ICollection\" data-throw-if-not-resolved=\"false\"></xref> containing the values in the <xref href=\"System.Collections.Hashtable\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  syntax:
+    content: public virtual ICollection Values { get; }
+    content.vb: Public Overridable ReadOnly Property Values As ICollection
+    parameters: []
+    return:
+      type: System.Collections.ICollection
+      description: "\n<p>An <xref href=\"System.Collections.ICollection\" data-throw-if-not-resolved=\"false\"></xref> containing the values in the <xref href=\"System.Collections.Hashtable\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  seealso:
+  - type: System.Collections.ICollection
+    commentId: T:System.Collections.ICollection
+  - type: System.Collections.Hashtable.Keys
+    commentId: P:System.Collections.Hashtable.Keys
+  implements:
+  - System.Collections.IDictionary.Values
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+  nameWithType: Hashtable.Values
+- uid: System.Collections.Hashtable.Add(System.Object,System.Object)
+  commentId: M:System.Collections.Hashtable.Add(System.Object,System.Object)
+  id: Add(System.Object,System.Object)
+  parent: System.Collections.Hashtable
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Collections.Hashtable.Add(System.Object, System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Collections/Hashtable.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Add
+    path: src/mscorlib/src/System/Collections/Hashtable.cs
+    startLine: 439
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: "\n<p>Adds an element with the specified key and value into the <xref href=\"System.Collections.Hashtable\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  syntax:
+    content: public virtual void Add(object key, object value)
+    content.vb: Public Overridable Sub Add(key As Object, value As Object)
+    parameters:
+    - id: key
+      type: System.Object
+      description: "\n<p>The key of the element to add. </p>\n"
+    - id: value
+      type: System.Object
+      description: "\n<p>The value of the element to add. The value can be <strong>null</strong>. </p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>key</em> is <strong>null</strong>. </p>\n"
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>An element with the same key already exists in the <xref href=\"System.Collections.Hashtable\" data-throw-if-not-resolved=\"false\"></xref>. </p>\n"
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: "\n<p>The <xref href=\"System.Collections.Hashtable\" data-throw-if-not-resolved=\"false\"></xref> is read-only.</p>\n<p>-or- </p>\n<p>The <xref href=\"System.Collections.Hashtable\" data-throw-if-not-resolved=\"false\"></xref> has a fixed size. </p>\n"
+  seealso:
+  - type: System.Collections.Hashtable.Remove(System.Object)
+    commentId: M:System.Collections.Hashtable.Remove(System.Object)
+  - type: System.Collections.Hashtable.Item(System.Object)
+    commentId: P:System.Collections.Hashtable.Item(System.Object)
+  - type: System.Collections.IDictionary.Add(System.Object,System.Object)
+    commentId: M:System.Collections.IDictionary.Add(System.Object,System.Object)
+  implements:
+  - System.Collections.IDictionary.Add(System.Object,System.Object)
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  nameWithType: Hashtable.Add(Object, Object)
+- uid: System.Collections.Hashtable.Clear
+  commentId: M:System.Collections.Hashtable.Clear
+  id: Clear
+  parent: System.Collections.Hashtable
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Collections.Hashtable.Clear()
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Collections/Hashtable.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Clear
+    path: src/mscorlib/src/System/Collections/Hashtable.cs
+    startLine: 444
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: "\n<p>Removes all elements from the <xref href=\"System.Collections.Hashtable\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  syntax:
+    content: >-
+      [ReliabilityContract(Consistency.WillNotCorruptState, Cer.Success)]
+
+      public virtual void Clear()
+    content.vb: >-
+      <ReliabilityContract(Consistency.WillNotCorruptState, Cer.Success)>
+
+      Public Overridable Sub Clear
+  exceptions:
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: "\n<p>The <xref href=\"System.Collections.Hashtable\" data-throw-if-not-resolved=\"false\"></xref> is read-only. </p>\n"
+  seealso:
+  - type: System.Collections.IDictionary.Clear
+    commentId: M:System.Collections.IDictionary.Clear
+  implements:
+  - System.Collections.IDictionary.Clear
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  nameWithType: Hashtable.Clear()
+- uid: System.Collections.Hashtable.Clone
+  commentId: M:System.Collections.Hashtable.Clone
+  id: Clone
+  parent: System.Collections.Hashtable
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Collections.Hashtable.Clone()
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Collections/Hashtable.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Clone
+    path: src/mscorlib/src/System/Collections/Hashtable.cs
+    startLine: 473
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: "\n<p>Creates a shallow copy of the <xref href=\"System.Collections.Hashtable\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  syntax:
+    content: public virtual object Clone()
+    content.vb: Public Overridable Function Clone As Object
+    return:
+      type: System.Object
+      description: "\n<p>A shallow copy of the <xref href=\"System.Collections.Hashtable\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  seealso:
+  - type: System.Collections.Hashtable.CopyTo(System.Array,System.Int32)
+    commentId: M:System.Collections.Hashtable.CopyTo(System.Array,System.Int32)
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  nameWithType: Hashtable.Clone()
+- uid: System.Collections.Hashtable.Contains(System.Object)
+  commentId: M:System.Collections.Hashtable.Contains(System.Object)
+  id: Contains(System.Object)
+  parent: System.Collections.Hashtable
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Collections.Hashtable.Contains(System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Collections/Hashtable.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Contains
+    path: src/mscorlib/src/System/Collections/Hashtable.cs
+    startLine: 494
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: "\n<p>Determines whether the <xref href=\"System.Collections.Hashtable\" data-throw-if-not-resolved=\"false\"></xref> contains a specific key.</p>\n"
+  syntax:
+    content: public virtual bool Contains(object key)
+    content.vb: Public Overridable Function Contains(key As Object) As Boolean
+    parameters:
+    - id: key
+      type: System.Object
+      description: "\n<p>The key to locate in the <xref href=\"System.Collections.Hashtable\" data-throw-if-not-resolved=\"false\"></xref>. </p>\n"
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if the <xref href=\"System.Collections.Hashtable\" data-throw-if-not-resolved=\"false\"></xref> contains an element with the specified key; otherwise, <strong>false</strong>.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>key</em> is <strong>null</strong>. </p>\n"
+  seealso:
+  - type: System.Collections.Hashtable.ContainsKey(System.Object)
+    commentId: M:System.Collections.Hashtable.ContainsKey(System.Object)
+  - type: System.Collections.IDictionary
+    commentId: T:System.Collections.IDictionary
+  implements:
+  - System.Collections.IDictionary.Contains(System.Object)
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  nameWithType: Hashtable.Contains(Object)
+- uid: System.Collections.Hashtable.ContainsKey(System.Object)
+  commentId: M:System.Collections.Hashtable.ContainsKey(System.Object)
+  id: ContainsKey(System.Object)
+  parent: System.Collections.Hashtable
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Collections.Hashtable.ContainsKey(System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Collections/Hashtable.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: ContainsKey
+    path: src/mscorlib/src/System/Collections/Hashtable.cs
+    startLine: 501
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: "\n<p>Determines whether the <xref href=\"System.Collections.Hashtable\" data-throw-if-not-resolved=\"false\"></xref> contains a specific key.</p>\n"
+  syntax:
+    content: public virtual bool ContainsKey(object key)
+    content.vb: Public Overridable Function ContainsKey(key As Object) As Boolean
+    parameters:
+    - id: key
+      type: System.Object
+      description: "\n<p>The key to locate in the <xref href=\"System.Collections.Hashtable\" data-throw-if-not-resolved=\"false\"></xref>. </p>\n"
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if the <xref href=\"System.Collections.Hashtable\" data-throw-if-not-resolved=\"false\"></xref> contains an element with the specified key; otherwise, <strong>false</strong>.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>key</em> is <strong>null</strong>. </p>\n"
+  seealso:
+  - type: System.Collections.Hashtable.Contains(System.Object)
+    commentId: M:System.Collections.Hashtable.Contains(System.Object)
+  - type: System.Collections.Hashtable.ContainsValue(System.Object)
+    commentId: M:System.Collections.Hashtable.ContainsValue(System.Object)
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  nameWithType: Hashtable.ContainsKey(Object)
+- uid: System.Collections.Hashtable.ContainsValue(System.Object)
+  commentId: M:System.Collections.Hashtable.ContainsValue(System.Object)
+  id: ContainsValue(System.Object)
+  parent: System.Collections.Hashtable
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Collections.Hashtable.ContainsValue(System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Collections/Hashtable.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: ContainsValue
+    path: src/mscorlib/src/System/Collections/Hashtable.cs
+    startLine: 537
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: "\n<p>Determines whether the <xref href=\"System.Collections.Hashtable\" data-throw-if-not-resolved=\"false\"></xref> contains a specific value.</p>\n"
+  syntax:
+    content: public virtual bool ContainsValue(object value)
+    content.vb: Public Overridable Function ContainsValue(value As Object) As Boolean
+    parameters:
+    - id: value
+      type: System.Object
+      description: "\n<p>The value to locate in the <xref href=\"System.Collections.Hashtable\" data-throw-if-not-resolved=\"false\"></xref>. The value can be <strong>null</strong>. </p>\n"
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if the <xref href=\"System.Collections.Hashtable\" data-throw-if-not-resolved=\"false\"></xref> contains an element with the specified <em>value</em>; otherwise, <strong>false</strong>.</p>\n"
+  seealso:
+  - type: System.Collections.Hashtable.ContainsKey(System.Object)
+    commentId: M:System.Collections.Hashtable.ContainsKey(System.Object)
+  - type: System.Object.Equals(System.Object)
+    commentId: M:System.Object.Equals(System.Object)
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  nameWithType: Hashtable.ContainsValue(Object)
+- uid: System.Collections.Hashtable.CopyTo(System.Array,System.Int32)
+  commentId: M:System.Collections.Hashtable.CopyTo(System.Array,System.Int32)
+  id: CopyTo(System.Array,System.Int32)
+  parent: System.Collections.Hashtable
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Collections.Hashtable.CopyTo(System.Array, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Collections/Hashtable.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: CopyTo
+    path: src/mscorlib/src/System/Collections/Hashtable.cs
+    startLine: 589
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: "\n<p>Copies the <xref href=\"System.Collections.Hashtable\" data-throw-if-not-resolved=\"false\"></xref> elements to a one-dimensional <xref href=\"System.Array\" data-throw-if-not-resolved=\"false\"></xref> instance at the specified index.</p>\n"
+  syntax:
+    content: public virtual void CopyTo(Array array, int arrayIndex)
+    content.vb: Public Overridable Sub CopyTo(array As Array, arrayIndex As Integer)
+    parameters:
+    - id: array
+      type: System.Array
+      description: "\n<p>The one-dimensional <xref href=\"System.Array\" data-throw-if-not-resolved=\"false\"></xref> that is the destination of the <xref href=\"System.Collections.DictionaryEntry\" data-throw-if-not-resolved=\"false\"></xref> objects copied from <xref href=\"System.Collections.Hashtable\" data-throw-if-not-resolved=\"false\"></xref>. The <xref href=\"System.Array\" data-throw-if-not-resolved=\"false\"></xref> must have zero-based indexing. </p>\n"
+    - id: arrayIndex
+      type: System.Int32
+      description: "\n<p>The zero-based index in <em>array</em> at which copying begins. </p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>array</em> is <strong>null</strong>. </p>\n"
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>arrayIndex</em> is less than zero. </p>\n"
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>\n<em>array</em> is multidimensional.</p>\n<p>-or- </p>\n<p>The number of elements in the source <xref href=\"System.Collections.Hashtable\" data-throw-if-not-resolved=\"false\"></xref> is greater than the available space from <em>arrayIndex</em> to the end of the destination <em>array</em>. </p>\n"
+  - type: System.InvalidCastException
+    commentId: T:System.InvalidCastException
+    description: "\n<p>The type of the source <xref href=\"System.Collections.Hashtable\" data-throw-if-not-resolved=\"false\"></xref> cannot be cast automatically to the type of the destination <em>array</em>. </p>\n"
+  seealso:
+  - type: System.Array
+    commentId: T:System.Array
+  - type: System.Collections.DictionaryEntry
+    commentId: T:System.Collections.DictionaryEntry
+  - type: System.Collections.Hashtable.GetEnumerator
+    commentId: M:System.Collections.Hashtable.GetEnumerator
+  implements:
+  - System.Collections.ICollection.CopyTo(System.Array,System.Int32)
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  nameWithType: Hashtable.CopyTo(Array, Int32)
+- uid: System.Collections.Hashtable.GetEnumerator
+  commentId: M:System.Collections.Hashtable.GetEnumerator
+  id: GetEnumerator
+  parent: System.Collections.Hashtable
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Collections.Hashtable.GetEnumerator()
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Collections/Hashtable.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: GetEnumerator
+    path: src/mscorlib/src/System/Collections/Hashtable.cs
+    startLine: 788
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: "\n<p>Returns an <xref href=\"System.Collections.IDictionaryEnumerator\" data-throw-if-not-resolved=\"false\"></xref> that iterates through the <xref href=\"System.Collections.Hashtable\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  syntax:
+    content: public virtual IDictionaryEnumerator GetEnumerator()
+    content.vb: Public Overridable Function GetEnumerator As IDictionaryEnumerator
+    return:
+      type: System.Collections.IDictionaryEnumerator
+      description: "\n<p>An <xref href=\"System.Collections.IDictionaryEnumerator\" data-throw-if-not-resolved=\"false\"></xref> for the <xref href=\"System.Collections.Hashtable\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  seealso:
+  - type: System.Collections.IDictionaryEnumerator
+    commentId: T:System.Collections.IDictionaryEnumerator
+  - type: System.Collections.IEnumerator
+    commentId: T:System.Collections.IEnumerator
+  implements:
+  - System.Collections.IDictionary.GetEnumerator
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  nameWithType: Hashtable.GetEnumerator()
+- uid: System.Collections.Hashtable.GetHash(System.Object)
+  commentId: M:System.Collections.Hashtable.GetHash(System.Object)
+  id: GetHash(System.Object)
+  parent: System.Collections.Hashtable
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Collections.Hashtable.GetHash(System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Collections/Hashtable.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: GetHash
+    path: src/mscorlib/src/System/Collections/Hashtable.cs
+    startLine: 795
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: "\n<p>Returns the hash code for the specified key.</p>\n"
+  syntax:
+    content: protected virtual int GetHash(object key)
+    content.vb: Protected Overridable Function GetHash(key As Object) As Integer
+    parameters:
+    - id: key
+      type: System.Object
+      description: "\n<p>The <xref href=\"System.Object\" data-throw-if-not-resolved=\"false\"></xref> for which a hash code is to be returned. </p>\n"
+    return:
+      type: System.Int32
+      description: "\n<p>The hash code for <em>key</em>.</p>\n"
+  exceptions:
+  - type: System.NullReferenceException
+    commentId: T:System.NullReferenceException
+    description: "\n<p>\n<em>key</em> is <strong>null</strong>. </p>\n"
+  seealso:
+  - type: System.Object.GetHashCode
+    commentId: M:System.Object.GetHashCode
+  - type: System.Object
+    commentId: T:System.Object
+  - type: System.Collections.IHashCodeProvider
+    commentId: T:System.Collections.IHashCodeProvider
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+  nameWithType: Hashtable.GetHash(Object)
+- uid: System.Collections.Hashtable.KeyEquals(System.Object,System.Object)
+  commentId: M:System.Collections.Hashtable.KeyEquals(System.Object,System.Object)
+  id: KeyEquals(System.Object,System.Object)
+  parent: System.Collections.Hashtable
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Collections.Hashtable.KeyEquals(System.Object, System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Collections/Hashtable.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: KeyEquals
+    path: src/mscorlib/src/System/Collections/Hashtable.cs
+    startLine: 820
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: "\n<p>Compares a specific <xref href=\"System.Object\" data-throw-if-not-resolved=\"false\"></xref> with a specific key in the <xref href=\"System.Collections.Hashtable\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  syntax:
+    content: protected virtual bool KeyEquals(object item, object key)
+    content.vb: Protected Overridable Function KeyEquals(item As Object, key As Object) As Boolean
+    parameters:
+    - id: item
+      type: System.Object
+      description: "\n<p>The <xref href=\"System.Object\" data-throw-if-not-resolved=\"false\"></xref> to compare with <em>key</em>. </p>\n"
+    - id: key
+      type: System.Object
+      description: "\n<p>The key in the <xref href=\"System.Collections.Hashtable\" data-throw-if-not-resolved=\"false\"></xref> to compare with <em>item</em>. </p>\n"
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if <em>item</em> and <em>key</em> are equal; otherwise, <strong>false</strong>.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>item</em> is <strong>null</strong>.</p>\n<p>-or- </p>\n<p>\n<em>key</em> is <strong>null</strong>. </p>\n"
+  seealso:
+  - type: System.Object
+    commentId: T:System.Object
+  - type: System.Collections.IComparer.Compare(System.Object,System.Object)
+    commentId: M:System.Collections.IComparer.Compare(System.Object,System.Object)
+  - type: System.Object.Equals(System.Object)
+    commentId: M:System.Object.Equals(System.Object)
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+  nameWithType: Hashtable.KeyEquals(Object, Object)
+- uid: System.Collections.Hashtable.Remove(System.Object)
+  commentId: M:System.Collections.Hashtable.Remove(System.Object)
+  id: Remove(System.Object)
+  parent: System.Collections.Hashtable
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Collections.Hashtable.Remove(System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Collections/Hashtable.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Remove
+    path: src/mscorlib/src/System/Collections/Hashtable.cs
+    startLine: 1068
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: "\n<p>Removes the element with the specified key from the <xref href=\"System.Collections.Hashtable\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  syntax:
+    content: >-
+      [ReliabilityContract(Consistency.WillNotCorruptState, Cer.MayFail)]
+
+      public virtual void Remove(object key)
+    content.vb: >-
+      <ReliabilityContract(Consistency.WillNotCorruptState, Cer.MayFail)>
+
+      Public Overridable Sub Remove(key As Object)
+    parameters:
+    - id: key
+      type: System.Object
+      description: "\n<p>The key of the element to remove. </p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>key</em> is <strong>null</strong>. </p>\n"
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: "\n<p>The <xref href=\"System.Collections.Hashtable\" data-throw-if-not-resolved=\"false\"></xref> is read-only.</p>\n<p>-or- </p>\n<p>The <xref href=\"System.Collections.Hashtable\" data-throw-if-not-resolved=\"false\"></xref> has a fixed size. </p>\n"
+  seealso:
+  - type: System.Collections.Hashtable.Add(System.Object,System.Object)
+    commentId: M:System.Collections.Hashtable.Add(System.Object,System.Object)
+  - type: System.Collections.IDictionary.Remove(System.Object)
+    commentId: M:System.Collections.IDictionary.Remove(System.Object)
+  implements:
+  - System.Collections.IDictionary.Remove(System.Object)
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  nameWithType: Hashtable.Remove(Object)
+- uid: System.Collections.Hashtable.Synchronized(System.Collections.Hashtable)
+  commentId: M:System.Collections.Hashtable.Synchronized(System.Collections.Hashtable)
+  id: Synchronized(System.Collections.Hashtable)
+  parent: System.Collections.Hashtable
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Collections.Hashtable.Synchronized(System.Collections.Hashtable)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Collections/Hashtable.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Synchronized
+    path: src/mscorlib/src/System/Collections/Hashtable.cs
+    startLine: 1133
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: "\n<p>Returns a synchronized (thread-safe) wrapper for the <xref href=\"System.Collections.Hashtable\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  syntax:
+    content: >-
+      [HostProtection(Synchronization = true)]
+
+      public static Hashtable Synchronized(Hashtable table)
+    content.vb: >-
+      <HostProtection(Synchronization:=True)>
+
+      Public Shared Function Synchronized(table As Hashtable) As Hashtable
+    parameters:
+    - id: table
+      type: System.Collections.Hashtable
+      description: "\n<p>The <xref href=\"System.Collections.Hashtable\" data-throw-if-not-resolved=\"false\"></xref> to synchronize. </p>\n"
+    return:
+      type: System.Collections.Hashtable
+      description: "\n<p>A synchronized (thread-safe) wrapper for the <xref href=\"System.Collections.Hashtable\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>table</em> is <strong>null</strong>. </p>\n"
+  seealso:
+  - type: System.Collections.Hashtable.IsSynchronized
+    commentId: P:System.Collections.Hashtable.IsSynchronized
+  - type: System.Collections.Hashtable.SyncRoot
+    commentId: P:System.Collections.Hashtable.SyncRoot
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  nameWithType: Hashtable.Synchronized(Hashtable)
+- uid: System.Collections.Hashtable.System#Collections#IEnumerable#GetEnumerator
+  commentId: M:System.Collections.Hashtable.System#Collections#IEnumerable#GetEnumerator
+  id: System#Collections#IEnumerable#GetEnumerator
+  isEii: true
+  parent: System.Collections.Hashtable
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Collections.Hashtable.System.Collections.IEnumerable.GetEnumerator()
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Collections/Hashtable.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: System.Collections.IEnumerable.GetEnumerator
+    path: src/mscorlib/src/System/Collections/Hashtable.cs
+    startLine: 779
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: "\n<p>Returns an enumerator that iterates through a collection.</p>\n"
+  syntax:
+    content: IEnumerator IEnumerable.GetEnumerator()
+    content.vb: Function System.Collections.IEnumerable.GetEnumerator As IEnumerator Implements IEnumerable.GetEnumerator
+    return:
+      type: System.Collections.IEnumerator
+      description: "\n<p>An <xref href=\"System.Collections.IEnumerator\" data-throw-if-not-resolved=\"false\"></xref> that can be used to iterate through the collection.</p>\n"
+  seealso:
+  - type: System.Collections.IEnumerator
+    commentId: T:System.Collections.IEnumerator
+  implements:
+  - System.Collections.IEnumerable.GetEnumerator
+  name.vb: System.Collections.IEnumerable.GetEnumerator()
+  nameWithType: Hashtable.IEnumerable.GetEnumerator()
+  nameWithType.vb: Hashtable.System.Collections.IEnumerable.GetEnumerator()
+references:
+- uid: System.Collections
+  isExternal: false
+  name: "XXX"
+  fullName: System.Collections
+  nameWithType: System.Collections
+  commentId: N:System.Collections
+- uid: System.Object
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Object
+  nameWithType: Object
+  commentId: T:System.Object
+- uid: System.Collections.IDictionary
+  parent: System.Collections
+  isExternal: false
+  name: "XXX"
+  fullName: System.Collections.IDictionary
+  nameWithType: IDictionary
+  commentId: T:System.Collections.IDictionary
+- uid: System.Collections.ICollection
+  parent: System.Collections
+  isExternal: false
+  name: "XXX"
+  fullName: System.Collections.ICollection
+  nameWithType: ICollection
+  commentId: T:System.Collections.ICollection
+- uid: System.Collections.IEnumerable
+  parent: System.Collections
+  isExternal: false
+  name: "XXX"
+  fullName: System.Collections.IEnumerable
+  nameWithType: IEnumerable
+  commentId: T:System.Collections.IEnumerable
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.ToString()
+  commentId: M:System.Object.ToString
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.Equals(Object)
+  commentId: M:System.Object.Equals(System.Object)
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.Equals(Object, Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.GetHashCode()
+  commentId: M:System.Object.GetHashCode
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.GetType()
+  commentId: M:System.Object.GetType
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.MemberwiseClone()
+  commentId: M:System.Object.MemberwiseClone
+- uid: System.Collections.IEnumerable.System.Linq.Queryable.AsQueryable
+  parent: System.Linq.Queryable
+  definition: System.Linq.Queryable.AsQueryable(System.Collections.IEnumerable)
+  name: "XXX"
+  fullName: System.Linq.Queryable.AsQueryable()
+  spec.csharp:
+  - uid: System.Linq.Queryable.AsQueryable
+    name: "XXX"
+    fullName: System.Linq.Queryable.AsQueryable
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Linq.Queryable.AsQueryable
+    name: "XXX"
+    fullName: System.Linq.Queryable.AsQueryable
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Queryable.AsQueryable()
+  commentId: M:System.Linq.Queryable.AsQueryable(System.Collections.IEnumerable)
+- uid: System.Collections.IEnumerable.System.Linq.ParallelEnumerable.AsParallel
+  parent: System.Linq.ParallelEnumerable
+  definition: System.Linq.ParallelEnumerable.AsParallel(System.Collections.IEnumerable)
+  name: "XXX"
+  fullName: System.Linq.ParallelEnumerable.AsParallel()
+  spec.csharp:
+  - uid: System.Linq.ParallelEnumerable.AsParallel
+    name: "XXX"
+    fullName: System.Linq.ParallelEnumerable.AsParallel
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Linq.ParallelEnumerable.AsParallel
+    name: "XXX"
+    fullName: System.Linq.ParallelEnumerable.AsParallel
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: ParallelEnumerable.AsParallel()
+  commentId: M:System.Linq.ParallelEnumerable.AsParallel(System.Collections.IEnumerable)
+- uid: System.Collections.IEnumerable.System.Linq.Enumerable.Cast``1
+  parent: System.Linq.Enumerable
+  definition: System.Linq.Enumerable.Cast``1(System.Collections.IEnumerable)
+  name: "XXX"
+  fullName: System.Linq.Enumerable.Cast<TResult>()
+  fullname.vb: System.Linq.Enumerable.Cast(Of TResult)()
+  name.vb: Cast(Of TResult)()
+  spec.csharp:
+  - uid: System.Linq.Enumerable.Cast``1
+    name: "XXX"
+    fullName: System.Linq.Enumerable.Cast<TResult>
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Linq.Enumerable.Cast``1
+    name: "XXX"
+    fullName: System.Linq.Enumerable.Cast(Of TResult)
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Enumerable.Cast<TResult>()
+  nameWithType.vb: Enumerable.Cast(Of TResult)()
+  commentId: M:System.Linq.Enumerable.Cast``1(System.Collections.IEnumerable)
+- uid: System.Collections.IEnumerable.System.Linq.Enumerable.OfType``1
+  parent: System.Linq.Enumerable
+  definition: System.Linq.Enumerable.OfType``1(System.Collections.IEnumerable)
+  name: "XXX"
+  fullName: System.Linq.Enumerable.OfType<TResult>()
+  fullname.vb: System.Linq.Enumerable.OfType(Of TResult)()
+  name.vb: OfType(Of TResult)()
+  spec.csharp:
+  - uid: System.Linq.Enumerable.OfType``1
+    name: "XXX"
+    fullName: System.Linq.Enumerable.OfType<TResult>
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Linq.Enumerable.OfType``1
+    name: "XXX"
+    fullName: System.Linq.Enumerable.OfType(Of TResult)
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Enumerable.OfType<TResult>()
+  nameWithType.vb: Enumerable.OfType(Of TResult)()
+  commentId: M:System.Linq.Enumerable.OfType``1(System.Collections.IEnumerable)
+- uid: System
+  isExternal: false
+  name: "XXX"
+  fullName: System
+  nameWithType: System
+  commentId: N:System
+- uid: System.Linq.Queryable.AsQueryable(System.Collections.IEnumerable)
+  isExternal: true
+  name: "XXX"
+  fullName: System.Linq.Queryable.AsQueryable(System.Collections.IEnumerable)
+  spec.csharp:
+  - uid: System.Linq.Queryable.AsQueryable(System.Collections.IEnumerable)
+    name: "XXX"
+    fullName: System.Linq.Queryable.AsQueryable
+  - name: "XXX"
+    fullName: (
+  - uid: System.Collections.IEnumerable
+    name: "XXX"
+    fullName: System.Collections.IEnumerable
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Linq.Queryable.AsQueryable(System.Collections.IEnumerable)
+    name: "XXX"
+    fullName: System.Linq.Queryable.AsQueryable
+  - name: "XXX"
+    fullName: (
+  - uid: System.Collections.IEnumerable
+    name: "XXX"
+    fullName: System.Collections.IEnumerable
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Queryable.AsQueryable(IEnumerable)
+  commentId: M:System.Linq.Queryable.AsQueryable(System.Collections.IEnumerable)
+- uid: System.Linq.Queryable
+  parent: System.Linq
+  isExternal: false
+  name: "XXX"
+  fullName: System.Linq.Queryable
+  nameWithType: Queryable
+  commentId: T:System.Linq.Queryable
+- uid: System.Linq.ParallelEnumerable.AsParallel(System.Collections.IEnumerable)
+  isExternal: true
+  name: "XXX"
+  fullName: System.Linq.ParallelEnumerable.AsParallel(System.Collections.IEnumerable)
+  spec.csharp:
+  - uid: System.Linq.ParallelEnumerable.AsParallel(System.Collections.IEnumerable)
+    name: "XXX"
+    fullName: System.Linq.ParallelEnumerable.AsParallel
+  - name: "XXX"
+    fullName: (
+  - uid: System.Collections.IEnumerable
+    name: "XXX"
+    fullName: System.Collections.IEnumerable
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Linq.ParallelEnumerable.AsParallel(System.Collections.IEnumerable)
+    name: "XXX"
+    fullName: System.Linq.ParallelEnumerable.AsParallel
+  - name: "XXX"
+    fullName: (
+  - uid: System.Collections.IEnumerable
+    name: "XXX"
+    fullName: System.Collections.IEnumerable
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: ParallelEnumerable.AsParallel(IEnumerable)
+  commentId: M:System.Linq.ParallelEnumerable.AsParallel(System.Collections.IEnumerable)
+- uid: System.Linq.ParallelEnumerable
+  parent: System.Linq
+  isExternal: false
+  name: "XXX"
+  fullName: System.Linq.ParallelEnumerable
+  nameWithType: ParallelEnumerable
+  commentId: T:System.Linq.ParallelEnumerable
+- uid: System.Linq.Enumerable.Cast``1(System.Collections.IEnumerable)
+  isExternal: true
+  name: "XXX"
+  fullName: System.Linq.Enumerable.Cast<TResult>(System.Collections.IEnumerable)
+  fullname.vb: System.Linq.Enumerable.Cast(Of TResult)(System.Collections.IEnumerable)
+  name.vb: Cast(Of TResult)(IEnumerable)
+  spec.csharp:
+  - uid: System.Linq.Enumerable.Cast``1(System.Collections.IEnumerable)
+    name: "XXX"
+    fullName: System.Linq.Enumerable.Cast<TResult>
+  - name: "XXX"
+    fullName: (
+  - uid: System.Collections.IEnumerable
+    name: "XXX"
+    fullName: System.Collections.IEnumerable
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Linq.Enumerable.Cast``1(System.Collections.IEnumerable)
+    name: "XXX"
+    fullName: System.Linq.Enumerable.Cast(Of TResult)
+  - name: "XXX"
+    fullName: (
+  - uid: System.Collections.IEnumerable
+    name: "XXX"
+    fullName: System.Collections.IEnumerable
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Enumerable.Cast<TResult>(IEnumerable)
+  nameWithType.vb: Enumerable.Cast(Of TResult)(IEnumerable)
+  commentId: M:System.Linq.Enumerable.Cast``1(System.Collections.IEnumerable)
+- uid: System.Linq.Enumerable
+  parent: System.Linq
+  isExternal: false
+  name: "XXX"
+  fullName: System.Linq.Enumerable
+  nameWithType: Enumerable
+  commentId: T:System.Linq.Enumerable
+- uid: System.Linq.Enumerable.OfType``1(System.Collections.IEnumerable)
+  isExternal: true
+  name: "XXX"
+  fullName: System.Linq.Enumerable.OfType<TResult>(System.Collections.IEnumerable)
+  fullname.vb: System.Linq.Enumerable.OfType(Of TResult)(System.Collections.IEnumerable)
+  name.vb: OfType(Of TResult)(IEnumerable)
+  spec.csharp:
+  - uid: System.Linq.Enumerable.OfType``1(System.Collections.IEnumerable)
+    name: "XXX"
+    fullName: System.Linq.Enumerable.OfType<TResult>
+  - name: "XXX"
+    fullName: (
+  - uid: System.Collections.IEnumerable
+    name: "XXX"
+    fullName: System.Collections.IEnumerable
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Linq.Enumerable.OfType``1(System.Collections.IEnumerable)
+    name: "XXX"
+    fullName: System.Linq.Enumerable.OfType(Of TResult)
+  - name: "XXX"
+    fullName: (
+  - uid: System.Collections.IEnumerable
+    name: "XXX"
+    fullName: System.Collections.IEnumerable
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Enumerable.OfType<TResult>(IEnumerable)
+  nameWithType.vb: Enumerable.OfType(Of TResult)(IEnumerable)
+  commentId: M:System.Linq.Enumerable.OfType``1(System.Collections.IEnumerable)
+- uid: System.Linq
+  isExternal: false
+  name: "XXX"
+  fullName: System.Linq
+  nameWithType: System.Linq
+  commentId: N:System.Linq
+- uid: System.Collections.IEqualityComparer
+  parent: System.Collections
+  isExternal: false
+  name: "XXX"
+  fullName: System.Collections.IEqualityComparer
+  nameWithType: IEqualityComparer
+  commentId: T:System.Collections.IEqualityComparer
+- uid: System.Single
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Single
+  nameWithType: Single
+  commentId: T:System.Single
+- uid: System.Int32
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Int32
+  nameWithType: Int32
+  commentId: T:System.Int32
+- uid: System.Collections.ICollection.Count
+  parent: System.Collections.ICollection
+  isExternal: false
+  name: "XXX"
+  fullName: System.Collections.ICollection.Count
+  nameWithType: ICollection.Count
+  commentId: P:System.Collections.ICollection.Count
+- uid: System.Collections.IDictionary.IsFixedSize
+  parent: System.Collections.IDictionary
+  isExternal: true
+  name: "XXX"
+  fullName: System.Collections.IDictionary.IsFixedSize
+  nameWithType: IDictionary.IsFixedSize
+  commentId: P:System.Collections.IDictionary.IsFixedSize
+- uid: System.Boolean
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Boolean
+  nameWithType: Boolean
+  commentId: T:System.Boolean
+- uid: System.Collections.IDictionary.IsReadOnly
+  parent: System.Collections.IDictionary
+  isExternal: true
+  name: "XXX"
+  fullName: System.Collections.IDictionary.IsReadOnly
+  nameWithType: IDictionary.IsReadOnly
+  commentId: P:System.Collections.IDictionary.IsReadOnly
+- uid: System.Collections.ICollection.IsSynchronized
+  parent: System.Collections.ICollection
+  isExternal: false
+  name: "XXX"
+  fullName: System.Collections.ICollection.IsSynchronized
+  nameWithType: ICollection.IsSynchronized
+  commentId: P:System.Collections.ICollection.IsSynchronized
+- uid: System.Collections.IDictionary.Item(System.Object)
+  parent: System.Collections.IDictionary
+  isExternal: true
+  name: "XXX"
+  fullName: System.Collections.IDictionary.Item[System.Object]
+  fullname.vb: System.Collections.IDictionary.Item(System.Object)
+  name.vb: Item(Object)
+  spec.csharp:
+  - uid: System.Collections.IDictionary.Item(System.Object)
+    name: "XXX"
+    fullName: System.Collections.IDictionary.Item
+    isExternal: true
+  - name: 'XXX'
+    fullName: '['
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX'
+    fullName: ']'
+  spec.vb:
+  - uid: System.Collections.IDictionary.Item(System.Object)
+    name: "XXX"
+    fullName: System.Collections.IDictionary.Item
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: IDictionary.Item[Object]
+  nameWithType.vb: IDictionary.Item(Object)
+  commentId: P:System.Collections.IDictionary.Item(System.Object)
+- uid: System.Collections.IDictionary.Keys
+  parent: System.Collections.IDictionary
+  isExternal: true
+  name: "XXX"
+  fullName: System.Collections.IDictionary.Keys
+  nameWithType: IDictionary.Keys
+  commentId: P:System.Collections.IDictionary.Keys
+- uid: System.Collections.ICollection.SyncRoot
+  parent: System.Collections.ICollection
+  isExternal: false
+  name: "XXX"
+  fullName: System.Collections.ICollection.SyncRoot
+  nameWithType: ICollection.SyncRoot
+  commentId: P:System.Collections.ICollection.SyncRoot
+- uid: System.Collections.IDictionary.Values
+  parent: System.Collections.IDictionary
+  isExternal: true
+  name: "XXX"
+  fullName: System.Collections.IDictionary.Values
+  nameWithType: IDictionary.Values
+  commentId: P:System.Collections.IDictionary.Values
+- uid: System.Collections.IDictionary.Add(System.Object,System.Object)
+  parent: System.Collections.IDictionary
+  isExternal: true
+  name: "XXX"
+  fullName: System.Collections.IDictionary.Add(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Collections.IDictionary.Add(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Collections.IDictionary.Add
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.IDictionary.Add(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Collections.IDictionary.Add
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: IDictionary.Add(Object, Object)
+  commentId: M:System.Collections.IDictionary.Add(System.Object,System.Object)
+- uid: System.Collections.IDictionary.Clear
+  parent: System.Collections.IDictionary
+  isExternal: true
+  name: "XXX"
+  fullName: System.Collections.IDictionary.Clear()
+  spec.csharp:
+  - uid: System.Collections.IDictionary.Clear
+    name: "XXX"
+    fullName: System.Collections.IDictionary.Clear
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.IDictionary.Clear
+    name: "XXX"
+    fullName: System.Collections.IDictionary.Clear
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: IDictionary.Clear()
+  commentId: M:System.Collections.IDictionary.Clear
+- uid: System.Collections.IDictionary.Contains(System.Object)
+  parent: System.Collections.IDictionary
+  isExternal: true
+  name: "XXX"
+  fullName: System.Collections.IDictionary.Contains(System.Object)
+  spec.csharp:
+  - uid: System.Collections.IDictionary.Contains(System.Object)
+    name: "XXX"
+    fullName: System.Collections.IDictionary.Contains
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.IDictionary.Contains(System.Object)
+    name: "XXX"
+    fullName: System.Collections.IDictionary.Contains
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: IDictionary.Contains(Object)
+  commentId: M:System.Collections.IDictionary.Contains(System.Object)
+- uid: System.Collections.ICollection.CopyTo(System.Array,System.Int32)
+  parent: System.Collections.ICollection
+  isExternal: true
+  name: "XXX"
+  fullName: System.Collections.ICollection.CopyTo(System.Array, System.Int32)
+  spec.csharp:
+  - uid: System.Collections.ICollection.CopyTo(System.Array,System.Int32)
+    name: "XXX"
+    fullName: System.Collections.ICollection.CopyTo
+  - name: "XXX"
+    fullName: (
+  - uid: System.Array
+    name: "XXX"
+    fullName: System.Array
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ICollection.CopyTo(System.Array,System.Int32)
+    name: "XXX"
+    fullName: System.Collections.ICollection.CopyTo
+  - name: "XXX"
+    fullName: (
+  - uid: System.Array
+    name: "XXX"
+    fullName: System.Array
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: ICollection.CopyTo(Array, Int32)
+  commentId: M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)
+- uid: System.Array
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Array
+  nameWithType: Array
+  commentId: T:System.Array
+- uid: System.Collections.IDictionary.GetEnumerator
+  parent: System.Collections.IDictionary
+  isExternal: true
+  name: "XXX"
+  fullName: System.Collections.IDictionary.GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.IDictionary.GetEnumerator
+    name: "XXX"
+    fullName: System.Collections.IDictionary.GetEnumerator
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.IDictionary.GetEnumerator
+    name: "XXX"
+    fullName: System.Collections.IDictionary.GetEnumerator
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: IDictionary.GetEnumerator()
+  commentId: M:System.Collections.IDictionary.GetEnumerator
+- uid: System.Collections.IDictionaryEnumerator
+  parent: System.Collections
+  isExternal: false
+  name: "XXX"
+  fullName: System.Collections.IDictionaryEnumerator
+  nameWithType: IDictionaryEnumerator
+  commentId: T:System.Collections.IDictionaryEnumerator
+- uid: System.Collections.IDictionary.Remove(System.Object)
+  parent: System.Collections.IDictionary
+  isExternal: true
+  name: "XXX"
+  fullName: System.Collections.IDictionary.Remove(System.Object)
+  spec.csharp:
+  - uid: System.Collections.IDictionary.Remove(System.Object)
+    name: "XXX"
+    fullName: System.Collections.IDictionary.Remove
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.IDictionary.Remove(System.Object)
+    name: "XXX"
+    fullName: System.Collections.IDictionary.Remove
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: IDictionary.Remove(Object)
+  commentId: M:System.Collections.IDictionary.Remove(System.Object)
+- uid: System.Collections.Hashtable
+  parent: System.Collections
+  isExternal: false
+  name: "XXX"
+  fullName: System.Collections.Hashtable
+  nameWithType: Hashtable
+  commentId: T:System.Collections.Hashtable
+- uid: System.Collections.IEnumerable.GetEnumerator
+  parent: System.Collections.IEnumerable
+  isExternal: false
+  name: "XXX"
+  fullName: System.Collections.IEnumerable.GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.IEnumerable.GetEnumerator
+    name: "XXX"
+    fullName: System.Collections.IEnumerable.GetEnumerator
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.IEnumerable.GetEnumerator
+    name: "XXX"
+    fullName: System.Collections.IEnumerable.GetEnumerator
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: IEnumerable.GetEnumerator()
+  commentId: M:System.Collections.IEnumerable.GetEnumerator
+- uid: System.Collections.IEnumerator
+  parent: System.Collections
+  isExternal: false
+  name: "XXX"
+  fullName: System.Collections.IEnumerator
+  nameWithType: IEnumerator
+  commentId: T:System.Collections.IEnumerator
+- uid: System.ArgumentNullException
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentNullException
+  nameWithType: ArgumentNullException
+  commentId: T:System.ArgumentNullException
+- uid: System.ArgumentOutOfRangeException
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentOutOfRangeException
+  nameWithType: ArgumentOutOfRangeException
+  commentId: T:System.ArgumentOutOfRangeException
+- uid: System.ArgumentException
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentException
+  nameWithType: ArgumentException
+  commentId: T:System.ArgumentException
+- uid: System.NotSupportedException
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.NotSupportedException
+  nameWithType: NotSupportedException
+  commentId: T:System.NotSupportedException
+- uid: System.InvalidCastException
+  isExternal: false
+  name: "XXX"
+  fullName: System.InvalidCastException
+  nameWithType: InvalidCastException
+  commentId: T:System.InvalidCastException
+- uid: System.NullReferenceException
+  isExternal: false
+  name: "XXX"
+  fullName: System.NullReferenceException
+  nameWithType: NullReferenceException
+  commentId: T:System.NullReferenceException

@@ -1,0 +1,1036 @@
+items:
+- uid: System.Net.Http.HttpContent
+  commentId: T:System.Net.Http.HttpContent
+  id: HttpContent
+  parent: System.Net.Http
+  children:
+  - System.Net.Http.HttpContent.#ctor
+  - System.Net.Http.HttpContent.CopyToAsync(System.IO.Stream)
+  - System.Net.Http.HttpContent.CopyToAsync(System.IO.Stream,System.Net.TransportContext)
+  - System.Net.Http.HttpContent.CreateContentReadStreamAsync
+  - System.Net.Http.HttpContent.Dispose
+  - System.Net.Http.HttpContent.Dispose(System.Boolean)
+  - System.Net.Http.HttpContent.Headers
+  - System.Net.Http.HttpContent.LoadIntoBufferAsync
+  - System.Net.Http.HttpContent.LoadIntoBufferAsync(System.Int64)
+  - System.Net.Http.HttpContent.ReadAsByteArrayAsync
+  - System.Net.Http.HttpContent.ReadAsStreamAsync
+  - System.Net.Http.HttpContent.ReadAsStringAsync
+  - System.Net.Http.HttpContent.SerializeToStreamAsync(System.IO.Stream,System.Net.TransportContext)
+  - System.Net.Http.HttpContent.TryComputeLength(System.Int64@)
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Net.Http.HttpContent
+  type: Class
+  source:
+    remote:
+      path: src/System.Net.Http/ref/System.Net.Http.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: HttpContent
+    path: src/System.Net.Http/ref/System.Net.Http.cs
+    startLine: 111
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http
+  summary: "\n<p>A base class representing an HTTP entity body and content headers.</p>\n"
+  syntax:
+    content: 'public abstract class HttpContent : IDisposable'
+    content.vb: >-
+      Public MustInherit Class HttpContent
+          Implements IDisposable
+  inheritance:
+  - System.Object
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+  nameWithType: HttpContent
+- uid: System.Net.Http.HttpContent.#ctor
+  commentId: M:System.Net.Http.HttpContent.#ctor
+  id: '#ctor'
+  parent: System.Net.Http.HttpContent
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Net.Http.HttpContent.HttpContent()
+  type: Constructor
+  source:
+    remote:
+      path: src/System.Net.Http/ref/System.Net.Http.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: .ctor
+    path: src/System.Net.Http/ref/System.Net.Http.cs
+    startLine: 113
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http
+  summary: "\n<p>Initializes a new instance of the <xref href=\"System.Net.Http.HttpContent\" data-throw-if-not-resolved=\"false\"></xref> class.</p>\n"
+  syntax:
+    content: protected HttpContent()
+    content.vb: Protected Sub New
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  nameWithType: HttpContent.HttpContent()
+- uid: System.Net.Http.HttpContent.Headers
+  commentId: P:System.Net.Http.HttpContent.Headers
+  id: Headers
+  parent: System.Net.Http.HttpContent
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Net.Http.HttpContent.Headers
+  type: Property
+  source:
+    remote:
+      path: src/System.Net.Http/ref/System.Net.Http.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Headers
+    path: src/System.Net.Http/ref/System.Net.Http.cs
+    startLine: 114
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http
+  summary: "\n<p>Gets the HTTP content headers as defined in RFC 2616.</p>\n"
+  syntax:
+    content: public HttpContentHeaders Headers { get; }
+    content.vb: Public ReadOnly Property Headers As HttpContentHeaders
+    parameters: []
+    return:
+      type: System.Net.Http.Headers.HttpContentHeaders
+      description: "\n<p>Returns <xref href=\"System.Net.Http.Headers.HttpContentHeaders\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n<p>The content headers as defined in RFC 2616.</p>\n"
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  nameWithType: HttpContent.Headers
+- uid: System.Net.Http.HttpContent.CopyToAsync(System.IO.Stream)
+  commentId: M:System.Net.Http.HttpContent.CopyToAsync(System.IO.Stream)
+  id: CopyToAsync(System.IO.Stream)
+  parent: System.Net.Http.HttpContent
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Net.Http.HttpContent.CopyToAsync(System.IO.Stream)
+  type: Method
+  source:
+    remote:
+      path: src/System.Net.Http/ref/System.Net.Http.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: CopyToAsync
+    path: src/System.Net.Http/ref/System.Net.Http.cs
+    startLine: 115
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http
+  summary: "\n<p>Serialize the HTTP content into a stream of bytes and copies it to the stream object provided as the <em>stream</em> parameter.</p>\n"
+  syntax:
+    content: public Task CopyToAsync(Stream stream)
+    content.vb: Public Function CopyToAsync(stream As Stream) As Task
+    parameters:
+    - id: stream
+      type: System.IO.Stream
+      description: "\n<p>The target stream.</p>\n"
+    return:
+      type: System.Threading.Tasks.Task
+      description: "\n<p>Returns <xref href=\"System.Threading.Tasks.Task\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n<p>The task object representing the asynchronous operation.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: HttpContent.CopyToAsync(Stream)
+- uid: System.Net.Http.HttpContent.CopyToAsync(System.IO.Stream,System.Net.TransportContext)
+  commentId: M:System.Net.Http.HttpContent.CopyToAsync(System.IO.Stream,System.Net.TransportContext)
+  id: CopyToAsync(System.IO.Stream,System.Net.TransportContext)
+  parent: System.Net.Http.HttpContent
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Net.Http.HttpContent.CopyToAsync(System.IO.Stream, System.Net.TransportContext)
+  type: Method
+  source:
+    remote:
+      path: src/System.Net.Http/ref/System.Net.Http.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: CopyToAsync
+    path: src/System.Net.Http/ref/System.Net.Http.cs
+    startLine: 116
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http
+  summary: "\n<p>Serialize the HTTP content into a stream of bytes and copies it to the stream object provided as the <em>stream</em> parameter.</p>\n"
+  syntax:
+    content: public Task CopyToAsync(Stream stream, TransportContext context)
+    content.vb: Public Function CopyToAsync(stream As Stream, context As TransportContext) As Task
+    parameters:
+    - id: stream
+      type: System.IO.Stream
+      description: "\n<p>The target stream.</p>\n"
+    - id: context
+      type: System.Net.TransportContext
+      description: "\n<p>Information about the transport (channel binding token, for example). This parameter may be <strong>null</strong>.</p>\n"
+    return:
+      type: System.Threading.Tasks.Task
+      description: "\n<p>Returns <xref href=\"System.Threading.Tasks.Task\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n<p>The task object representing the asynchronous operation.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: HttpContent.CopyToAsync(Stream, TransportContext)
+- uid: System.Net.Http.HttpContent.CreateContentReadStreamAsync
+  commentId: M:System.Net.Http.HttpContent.CreateContentReadStreamAsync
+  id: CreateContentReadStreamAsync
+  parent: System.Net.Http.HttpContent
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Net.Http.HttpContent.CreateContentReadStreamAsync()
+  type: Method
+  source:
+    remote:
+      path: src/System.Net.Http/ref/System.Net.Http.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: CreateContentReadStreamAsync
+    path: src/System.Net.Http/ref/System.Net.Http.cs
+    startLine: 117
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http
+  summary: "\n<p>Serialize the HTTP content to a memory stream as an asynchronous operation.</p>\n"
+  syntax:
+    content: protected virtual Task<Stream> CreateContentReadStreamAsync()
+    content.vb: Protected Overridable Function CreateContentReadStreamAsync As Task(Of Stream)
+    return:
+      type: System.Threading.Tasks.Task{System.IO.Stream}
+      description: "\n<p>Returns <xref href=\"System.Threading.Tasks.Task`1\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n<p>The task object representing the asynchronous operation.</p>\n"
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+  nameWithType: HttpContent.CreateContentReadStreamAsync()
+- uid: System.Net.Http.HttpContent.Dispose
+  commentId: M:System.Net.Http.HttpContent.Dispose
+  id: Dispose
+  parent: System.Net.Http.HttpContent
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Net.Http.HttpContent.Dispose()
+  type: Method
+  source:
+    remote:
+      path: src/System.Net.Http/ref/System.Net.Http.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Dispose
+    path: src/System.Net.Http/ref/System.Net.Http.cs
+    startLine: 118
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http
+  summary: "\n<p>Releases the unmanaged resources and disposes of the managed resources used by the <xref href=\"System.Net.Http.HttpContent\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose
+  implements:
+  - System.IDisposable.Dispose
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: HttpContent.Dispose()
+- uid: System.Net.Http.HttpContent.Dispose(System.Boolean)
+  commentId: M:System.Net.Http.HttpContent.Dispose(System.Boolean)
+  id: Dispose(System.Boolean)
+  parent: System.Net.Http.HttpContent
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Net.Http.HttpContent.Dispose(System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/System.Net.Http/ref/System.Net.Http.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Dispose
+    path: src/System.Net.Http/ref/System.Net.Http.cs
+    startLine: 119
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http
+  summary: "\n<p>Releases the unmanaged resources used by the <xref href=\"System.Net.Http.HttpContent\" data-throw-if-not-resolved=\"false\"></xref> and optionally disposes of the managed resources.</p>\n"
+  syntax:
+    content: protected virtual void Dispose(bool disposing)
+    content.vb: Protected Overridable Sub Dispose(disposing As Boolean)
+    parameters:
+    - id: disposing
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> to release both managed and unmanaged resources; <strong>false</strong> to releases only unmanaged resources.</p>\n"
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+  nameWithType: HttpContent.Dispose(Boolean)
+- uid: System.Net.Http.HttpContent.LoadIntoBufferAsync
+  commentId: M:System.Net.Http.HttpContent.LoadIntoBufferAsync
+  id: LoadIntoBufferAsync
+  parent: System.Net.Http.HttpContent
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Net.Http.HttpContent.LoadIntoBufferAsync()
+  type: Method
+  source:
+    remote:
+      path: src/System.Net.Http/ref/System.Net.Http.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: LoadIntoBufferAsync
+    path: src/System.Net.Http/ref/System.Net.Http.cs
+    startLine: 120
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http
+  summary: "\n<p>Serialize the HTTP content to a memory buffer as an asynchronous operation.</p>\n"
+  syntax:
+    content: public Task LoadIntoBufferAsync()
+    content.vb: Public Function LoadIntoBufferAsync As Task
+    return:
+      type: System.Threading.Tasks.Task
+      description: "\n<p>Returns <xref href=\"System.Threading.Tasks.Task\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n<p>The task object representing the asynchronous operation.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: HttpContent.LoadIntoBufferAsync()
+- uid: System.Net.Http.HttpContent.LoadIntoBufferAsync(System.Int64)
+  commentId: M:System.Net.Http.HttpContent.LoadIntoBufferAsync(System.Int64)
+  id: LoadIntoBufferAsync(System.Int64)
+  parent: System.Net.Http.HttpContent
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Net.Http.HttpContent.LoadIntoBufferAsync(System.Int64)
+  type: Method
+  source:
+    remote:
+      path: src/System.Net.Http/ref/System.Net.Http.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: LoadIntoBufferAsync
+    path: src/System.Net.Http/ref/System.Net.Http.cs
+    startLine: 121
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http
+  summary: "\n<p>Serialize the HTTP content to a memory buffer as an asynchronous operation.</p>\n"
+  syntax:
+    content: public Task LoadIntoBufferAsync(long maxBufferSize)
+    content.vb: Public Function LoadIntoBufferAsync(maxBufferSize As Long) As Task
+    parameters:
+    - id: maxBufferSize
+      type: System.Int64
+      description: "\n<p>The maximum size, in bytes, of the buffer to use.</p>\n"
+    return:
+      type: System.Threading.Tasks.Task
+      description: "\n<p>Returns <xref href=\"System.Threading.Tasks.Task\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n<p>The task object representing the asynchronous operation.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: HttpContent.LoadIntoBufferAsync(Int64)
+- uid: System.Net.Http.HttpContent.ReadAsByteArrayAsync
+  commentId: M:System.Net.Http.HttpContent.ReadAsByteArrayAsync
+  id: ReadAsByteArrayAsync
+  parent: System.Net.Http.HttpContent
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Net.Http.HttpContent.ReadAsByteArrayAsync()
+  type: Method
+  source:
+    remote:
+      path: src/System.Net.Http/ref/System.Net.Http.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: ReadAsByteArrayAsync
+    path: src/System.Net.Http/ref/System.Net.Http.cs
+    startLine: 122
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http
+  summary: "\n<p>Serialize the HTTP content to a byte array as an asynchronous operation.</p>\n"
+  syntax:
+    content: public Task<byte[]> ReadAsByteArrayAsync()
+    content.vb: Public Function ReadAsByteArrayAsync As Task(Of Byte())
+    return:
+      type: System.Threading.Tasks.Task{System.Byte[]}
+      description: "\n<p>Returns <xref href=\"System.Threading.Tasks.Task`1\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n<p>The task object representing the asynchronous operation.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: HttpContent.ReadAsByteArrayAsync()
+- uid: System.Net.Http.HttpContent.ReadAsStreamAsync
+  commentId: M:System.Net.Http.HttpContent.ReadAsStreamAsync
+  id: ReadAsStreamAsync
+  parent: System.Net.Http.HttpContent
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Net.Http.HttpContent.ReadAsStreamAsync()
+  type: Method
+  source:
+    remote:
+      path: src/System.Net.Http/ref/System.Net.Http.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: ReadAsStreamAsync
+    path: src/System.Net.Http/ref/System.Net.Http.cs
+    startLine: 123
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http
+  summary: "\n<p>Serialize the HTTP content and return a stream that represents the content as an asynchronous operation. </p>\n"
+  syntax:
+    content: public Task<Stream> ReadAsStreamAsync()
+    content.vb: Public Function ReadAsStreamAsync As Task(Of Stream)
+    return:
+      type: System.Threading.Tasks.Task{System.IO.Stream}
+      description: "\n<p>Returns <xref href=\"System.Threading.Tasks.Task`1\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n<p>The task object representing the asynchronous operation.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: HttpContent.ReadAsStreamAsync()
+- uid: System.Net.Http.HttpContent.ReadAsStringAsync
+  commentId: M:System.Net.Http.HttpContent.ReadAsStringAsync
+  id: ReadAsStringAsync
+  parent: System.Net.Http.HttpContent
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Net.Http.HttpContent.ReadAsStringAsync()
+  type: Method
+  source:
+    remote:
+      path: src/System.Net.Http/ref/System.Net.Http.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: ReadAsStringAsync
+    path: src/System.Net.Http/ref/System.Net.Http.cs
+    startLine: 124
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http
+  summary: "\n<p>Serialize the HTTP content to a string as an asynchronous operation.</p>\n"
+  syntax:
+    content: public Task<string> ReadAsStringAsync()
+    content.vb: Public Function ReadAsStringAsync As Task(Of String)
+    return:
+      type: System.Threading.Tasks.Task{System.String}
+      description: "\n<p>Returns <xref href=\"System.Threading.Tasks.Task`1\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n<p>The task object representing the asynchronous operation.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: HttpContent.ReadAsStringAsync()
+- uid: System.Net.Http.HttpContent.SerializeToStreamAsync(System.IO.Stream,System.Net.TransportContext)
+  commentId: M:System.Net.Http.HttpContent.SerializeToStreamAsync(System.IO.Stream,System.Net.TransportContext)
+  id: SerializeToStreamAsync(System.IO.Stream,System.Net.TransportContext)
+  parent: System.Net.Http.HttpContent
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Net.Http.HttpContent.SerializeToStreamAsync(System.IO.Stream, System.Net.TransportContext)
+  type: Method
+  source:
+    remote:
+      path: src/System.Net.Http/ref/System.Net.Http.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: SerializeToStreamAsync
+    path: src/System.Net.Http/ref/System.Net.Http.cs
+    startLine: 125
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http
+  summary: "\n<p>Serialize the HTTP content to a stream as an asynchronous operation.</p>\n"
+  syntax:
+    content: protected abstract Task SerializeToStreamAsync(Stream stream, TransportContext context)
+    content.vb: Protected MustOverride Function SerializeToStreamAsync(stream As Stream, context As TransportContext) As Task
+    parameters:
+    - id: stream
+      type: System.IO.Stream
+      description: "\n<p>The target stream.</p>\n"
+    - id: context
+      type: System.Net.TransportContext
+      description: "\n<p>Information about the transport (channel binding token, for example). This parameter may be <strong>null</strong>.</p>\n"
+    return:
+      type: System.Threading.Tasks.Task
+      description: "\n<p>Returns <xref href=\"System.Threading.Tasks.Task\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n<p>The task object representing the asynchronous operation.</p>\n"
+  modifiers.csharp:
+  - protected
+  - abstract
+  modifiers.vb:
+  - Protected
+  - MustOverride
+  nameWithType: HttpContent.SerializeToStreamAsync(Stream, TransportContext)
+- uid: System.Net.Http.HttpContent.TryComputeLength(System.Int64@)
+  commentId: M:System.Net.Http.HttpContent.TryComputeLength(System.Int64@)
+  id: TryComputeLength(System.Int64@)
+  parent: System.Net.Http.HttpContent
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Net.Http.HttpContent.TryComputeLength(out System.Int64)
+  type: Method
+  source:
+    remote:
+      path: src/System.Net.Http/ref/System.Net.Http.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: TryComputeLength
+    path: src/System.Net.Http/ref/System.Net.Http.cs
+    startLine: 126
+  assemblies:
+  - System.Net.Http
+  namespace: System.Net.Http
+  summary: "\n<p>Determines whether the HTTP content has a valid length in bytes.</p>\n"
+  syntax:
+    content: protected abstract bool TryComputeLength(out long length)
+    content.vb: Protected MustOverride Function TryComputeLength(ByRef length As Long) As Boolean
+    parameters:
+    - id: length
+      type: System.Int64
+      description: "\n<p>The length in bytes of the HTTP content.</p>\n"
+    return:
+      type: System.Boolean
+      description: "\n<p>Returns <xref href=\"System.Boolean\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n<p>\n<strong>true</strong> if <em>length</em> is a valid length; otherwise, <strong>false</strong>.</p>\n"
+  modifiers.csharp:
+  - protected
+  - abstract
+  modifiers.vb:
+  - Protected
+  - MustOverride
+  fullName.vb: System.Net.Http.HttpContent.TryComputeLength(ByRef System.Int64)
+  name.vb: TryComputeLength(ByRef Int64)
+  nameWithType: HttpContent.TryComputeLength(out Int64)
+  nameWithType.vb: HttpContent.TryComputeLength(ByRef Int64)
+references:
+- uid: System.Net.Http
+  isExternal: false
+  name: "XXX"
+  fullName: System.Net.Http
+  commentId: N:System.Net.Http
+  nameWithType: System.Net.Http
+- uid: System.Object
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Object
+  commentId: T:System.Object
+  nameWithType: Object
+- uid: System.IDisposable
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.IDisposable
+  commentId: T:System.IDisposable
+  nameWithType: IDisposable
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.ToString
+  nameWithType: Object.ToString()
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.Equals(System.Object)
+  nameWithType: Object.Equals(Object)
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  nameWithType: Object.Equals(Object, Object)
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.GetHashCode
+  nameWithType: Object.GetHashCode()
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.GetType
+  nameWithType: Object.GetType()
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.MemberwiseClone
+  nameWithType: Object.MemberwiseClone()
+- uid: System
+  isExternal: false
+  name: "XXX"
+  fullName: System
+  commentId: N:System
+  nameWithType: System
+- uid: System.Net.Http.Headers.HttpContentHeaders
+  parent: System.Net.Http.Headers
+  isExternal: false
+  name: "XXX"
+  fullName: System.Net.Http.Headers.HttpContentHeaders
+  commentId: T:System.Net.Http.Headers.HttpContentHeaders
+  nameWithType: HttpContentHeaders
+- uid: System.Net.Http.Headers
+  isExternal: false
+  name: "XXX"
+  fullName: System.Net.Http.Headers
+  commentId: N:System.Net.Http.Headers
+  nameWithType: System.Net.Http.Headers
+- uid: System.IO.Stream
+  parent: System.IO
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.Stream
+  commentId: T:System.IO.Stream
+  nameWithType: Stream
+- uid: System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: false
+  name: "XXX"
+  fullName: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  nameWithType: Task
+- uid: System.IO
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO
+  commentId: N:System.IO
+  nameWithType: System.IO
+- uid: System.Threading.Tasks
+  isExternal: false
+  name: "XXX"
+  fullName: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+- uid: System.Net.TransportContext
+  isExternal: false
+  name: "XXX"
+  fullName: System.Net.TransportContext
+  commentId: T:System.Net.TransportContext
+  nameWithType: TransportContext
+- uid: System.Threading.Tasks.Task{System.IO.Stream}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: "XXX"
+  fullName: System.Threading.Tasks.Task<System.IO.Stream>
+  fullname.vb: System.Threading.Tasks.Task(Of System.IO.Stream)
+  name.vb: Task(Of Stream)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: "XXX"
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: "<"
+    fullName: <
+  - uid: System.IO.Stream
+    name: "XXX"
+    fullName: System.IO.Stream
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: "XXX"
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: 'XXX '
+    fullName: '(Of '
+  - uid: System.IO.Stream
+    name: "XXX"
+    fullName: System.IO.Stream
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: T:System.Threading.Tasks.Task{System.IO.Stream}
+  nameWithType: Task<Stream>
+  nameWithType.vb: Task(Of Stream)
+- uid: System.Threading.Tasks.Task`1
+  isExternal: false
+  name: "XXX"
+  fullName: System.Threading.Tasks.Task<TResult>
+  fullname.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: "XXX"
+    fullName: System.Threading.Tasks.Task
+  - name: "<"
+    fullName: <
+  - name: "XXX"
+    fullName: TResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: "XXX"
+    fullName: System.Threading.Tasks.Task
+  - name: 'XXX '
+    fullName: '(Of '
+  - name: "XXX"
+    fullName: TResult
+  - name: "XXX"
+    fullName: )
+  commentId: T:System.Threading.Tasks.Task`1
+  nameWithType: Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+- uid: System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: false
+  name: "XXX"
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: "XXX"
+    fullName: System.IDisposable.Dispose
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: "XXX"
+    fullName: System.IDisposable.Dispose
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.IDisposable.Dispose
+  nameWithType: IDisposable.Dispose()
+- uid: System.Boolean
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Boolean
+  commentId: T:System.Boolean
+  nameWithType: Boolean
+- uid: System.Int64
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Int64
+  commentId: T:System.Int64
+  nameWithType: Int64
+- uid: System.Threading.Tasks.Task{System.Byte[]}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: "XXX"
+  fullName: System.Threading.Tasks.Task<System.Byte[]>
+  fullname.vb: System.Threading.Tasks.Task(Of System.Byte())
+  name.vb: Task(Of Byte())
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: "XXX"
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: "<"
+    fullName: <
+  - uid: System.Byte
+    name: "XXX"
+    fullName: System.Byte
+    isExternal: true
+  - name: 'XXX'
+    fullName: '[]'
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: "XXX"
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: 'XXX '
+    fullName: '(Of '
+  - uid: System.Byte
+    name: "XXX"
+    fullName: System.Byte
+    isExternal: true
+  - name: "XXX"
+    fullName: ()
+  - name: "XXX"
+    fullName: )
+  commentId: T:System.Threading.Tasks.Task{System.Byte[]}
+  nameWithType: Task<Byte[]>
+  nameWithType.vb: Task(Of Byte())
+- uid: System.Threading.Tasks.Task{System.String}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: "XXX"
+  fullName: System.Threading.Tasks.Task<System.String>
+  fullname.vb: System.Threading.Tasks.Task(Of System.String)
+  name.vb: Task(Of String)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: "XXX"
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: "<"
+    fullName: <
+  - uid: System.String
+    name: "XXX"
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: "XXX"
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: 'XXX '
+    fullName: '(Of '
+  - uid: System.String
+    name: "XXX"
+    fullName: System.String
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: T:System.Threading.Tasks.Task{System.String}
+  nameWithType: Task<String>
+  nameWithType.vb: Task(Of String)

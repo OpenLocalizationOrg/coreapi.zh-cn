@@ -1,0 +1,559 @@
+items:
+- uid: System.Security.AccessControl.EventWaitHandleAccessRule
+  commentId: T:System.Security.AccessControl.EventWaitHandleAccessRule
+  id: EventWaitHandleAccessRule
+  parent: System.Security.AccessControl
+  children:
+  - System.Security.AccessControl.EventWaitHandleAccessRule.#ctor(System.Security.Principal.IdentityReference,System.Security.AccessControl.EventWaitHandleRights,System.Security.AccessControl.AccessControlType)
+  - System.Security.AccessControl.EventWaitHandleAccessRule.#ctor(System.String,System.Security.AccessControl.EventWaitHandleRights,System.Security.AccessControl.AccessControlType)
+  - System.Security.AccessControl.EventWaitHandleAccessRule.EventWaitHandleRights
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.AccessControl.EventWaitHandleAccessRule
+  type: Class
+  source:
+    remote:
+      path: src/System.Threading.AccessControl/ref/System.Threading.AccessControl.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: EventWaitHandleAccessRule
+    path: src/System.Threading.AccessControl/ref/System.Threading.AccessControl.cs
+    startLine: 10
+  assemblies:
+  - System.Threading.AccessControl
+  namespace: System.Security.AccessControl
+  summary: "\n<p>Represents a set of access rights allowed or denied for a user or group. This class cannot be inherited. </p>\n"
+  syntax:
+    content: >-
+      [SecurityCritical]
+
+      public sealed class EventWaitHandleAccessRule : AccessRule
+    content.vb: >-
+      <SecurityCritical>
+
+      Public NotInheritable Class EventWaitHandleAccessRule
+          Inherits AccessRule
+  seealso:
+  - type: System.Security.AccessControl.EventWaitHandleSecurity
+    commentId: T:System.Security.AccessControl.EventWaitHandleSecurity
+  inheritance:
+  - System.Object
+  - System.Security.AccessControl.AuthorizationRule
+  - System.Security.AccessControl.AccessRule
+  inheritedMembers:
+  - System.Security.AccessControl.AccessRule.AccessControlType
+  - System.Security.AccessControl.AuthorizationRule.IdentityReference
+  - System.Security.AccessControl.AuthorizationRule.AccessMask
+  - System.Security.AccessControl.AuthorizationRule.IsInherited
+  - System.Security.AccessControl.AuthorizationRule.InheritanceFlags
+  - System.Security.AccessControl.AuthorizationRule.PropagationFlags
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  attributes:
+  - type: System.Security.SecurityCriticalAttribute
+    ctor: System.Security.SecurityCriticalAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+  nameWithType: EventWaitHandleAccessRule
+- uid: System.Security.AccessControl.EventWaitHandleAccessRule.#ctor(System.Security.Principal.IdentityReference,System.Security.AccessControl.EventWaitHandleRights,System.Security.AccessControl.AccessControlType)
+  commentId: M:System.Security.AccessControl.EventWaitHandleAccessRule.#ctor(System.Security.Principal.IdentityReference,System.Security.AccessControl.EventWaitHandleRights,System.Security.AccessControl.AccessControlType)
+  id: '#ctor(System.Security.Principal.IdentityReference,System.Security.AccessControl.EventWaitHandleRights,System.Security.AccessControl.AccessControlType)'
+  parent: System.Security.AccessControl.EventWaitHandleAccessRule
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.AccessControl.EventWaitHandleAccessRule.EventWaitHandleAccessRule(System.Security.Principal.IdentityReference, System.Security.AccessControl.EventWaitHandleRights, System.Security.AccessControl.AccessControlType)
+  type: Constructor
+  source:
+    remote:
+      path: src/System.Threading.AccessControl/ref/System.Threading.AccessControl.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: .ctor
+    path: src/System.Threading.AccessControl/ref/System.Threading.AccessControl.cs
+    startLine: 13
+  assemblies:
+  - System.Threading.AccessControl
+  namespace: System.Security.AccessControl
+  summary: "\n<p>Initializes a new instance of the <xref href=\"System.Security.AccessControl.EventWaitHandleAccessRule\" data-throw-if-not-resolved=\"false\"></xref> class, specifying the user or group the rule applies to, the access rights, and whether the specified access rights are allowed or denied.</p>\n"
+  syntax:
+    content: public EventWaitHandleAccessRule(IdentityReference identity, EventWaitHandleRights eventRights, AccessControlType type)
+    content.vb: Public Sub New(identity As IdentityReference, eventRights As EventWaitHandleRights, type As AccessControlType)
+    parameters:
+    - id: identity
+      type: System.Security.Principal.IdentityReference
+      description: "\n<p>The user or group the rule applies to. Must be of type <xref href=\"System.Security.Principal.SecurityIdentifier\" data-throw-if-not-resolved=\"false\"></xref> or a type such as <xref href=\"System.Security.Principal.NTAccount\" data-throw-if-not-resolved=\"false\"></xref> that can be converted to type <xref href=\"System.Security.Principal.SecurityIdentifier\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    - id: eventRights
+      type: System.Security.AccessControl.EventWaitHandleRights
+      description: "\n<p>A bitwise combination of <xref href=\"System.Security.AccessControl.EventWaitHandleRights\" data-throw-if-not-resolved=\"false\"></xref> values specifying the rights allowed or denied.</p>\n"
+    - id: type
+      type: System.Security.AccessControl.AccessControlType
+      description: "\n<p>One of the <xref href=\"System.Security.AccessControl.AccessControlType\" data-throw-if-not-resolved=\"false\"></xref> values specifying whether the rights are allowed or denied.</p>\n"
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>eventRights</em> specifies an invalid value.</p>\n<p>-or-</p>\n<p>\n<em>type</em> specifies an invalid value.</p>\n"
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>identity</em> is <strong>null</strong>.</p>\n<p>-or-</p>\n<p>\n<em>eventRights</em> is zero.</p>\n"
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>\n<em>identity</em> is neither of type <xref href=\"System.Security.Principal.SecurityIdentifier\" data-throw-if-not-resolved=\"false\"></xref> nor of a type such as <xref href=\"System.Security.Principal.NTAccount\" data-throw-if-not-resolved=\"false\"></xref> that can be converted to type <xref href=\"System.Security.Principal.SecurityIdentifier\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: EventWaitHandleAccessRule.EventWaitHandleAccessRule(IdentityReference, EventWaitHandleRights, AccessControlType)
+- uid: System.Security.AccessControl.EventWaitHandleAccessRule.#ctor(System.String,System.Security.AccessControl.EventWaitHandleRights,System.Security.AccessControl.AccessControlType)
+  commentId: M:System.Security.AccessControl.EventWaitHandleAccessRule.#ctor(System.String,System.Security.AccessControl.EventWaitHandleRights,System.Security.AccessControl.AccessControlType)
+  id: '#ctor(System.String,System.Security.AccessControl.EventWaitHandleRights,System.Security.AccessControl.AccessControlType)'
+  parent: System.Security.AccessControl.EventWaitHandleAccessRule
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.AccessControl.EventWaitHandleAccessRule.EventWaitHandleAccessRule(System.String, System.Security.AccessControl.EventWaitHandleRights, System.Security.AccessControl.AccessControlType)
+  type: Constructor
+  source:
+    remote:
+      path: src/System.Threading.AccessControl/ref/System.Threading.AccessControl.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: .ctor
+    path: src/System.Threading.AccessControl/ref/System.Threading.AccessControl.cs
+    startLine: 14
+  assemblies:
+  - System.Threading.AccessControl
+  namespace: System.Security.AccessControl
+  summary: "\n<p>Initializes a new instance of the <xref href=\"System.Security.AccessControl.EventWaitHandleAccessRule\" data-throw-if-not-resolved=\"false\"></xref> class, specifying the name of the user or group the rule applies to, the access rights, and whether the specified access rights are allowed or denied.</p>\n"
+  syntax:
+    content: public EventWaitHandleAccessRule(string identity, EventWaitHandleRights eventRights, AccessControlType type)
+    content.vb: Public Sub New(identity As String, eventRights As EventWaitHandleRights, type As AccessControlType)
+    parameters:
+    - id: identity
+      type: System.String
+      description: "\n<p>The name of the user or group the rule applies to.</p>\n"
+    - id: eventRights
+      type: System.Security.AccessControl.EventWaitHandleRights
+      description: "\n<p>A bitwise combination of <xref href=\"System.Security.AccessControl.EventWaitHandleRights\" data-throw-if-not-resolved=\"false\"></xref> values specifying the rights allowed or denied.</p>\n"
+    - id: type
+      type: System.Security.AccessControl.AccessControlType
+      description: "\n<p>One of the <xref href=\"System.Security.AccessControl.AccessControlType\" data-throw-if-not-resolved=\"false\"></xref> values specifying whether the rights are allowed or denied.</p>\n"
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>eventRights</em> specifies an invalid value.</p>\n<p>-or-</p>\n<p>\n<em>type</em> specifies an invalid value.</p>\n"
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>eventRights</em> is zero.</p>\n"
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>\n<em>identity</em> is <strong>null</strong>.</p>\n<p>-or-</p>\n<p>\n<em>identity</em> is a zero-length string.</p>\n<p>-or-</p>\n<p>\n<em>identity</em> is longer than 512 characters.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: EventWaitHandleAccessRule.EventWaitHandleAccessRule(String, EventWaitHandleRights, AccessControlType)
+- uid: System.Security.AccessControl.EventWaitHandleAccessRule.EventWaitHandleRights
+  commentId: P:System.Security.AccessControl.EventWaitHandleAccessRule.EventWaitHandleRights
+  id: EventWaitHandleRights
+  parent: System.Security.AccessControl.EventWaitHandleAccessRule
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.AccessControl.EventWaitHandleAccessRule.EventWaitHandleRights
+  type: Property
+  source:
+    remote:
+      path: src/System.Threading.AccessControl/ref/System.Threading.AccessControl.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: EventWaitHandleRights
+    path: src/System.Threading.AccessControl/ref/System.Threading.AccessControl.cs
+    startLine: 15
+  assemblies:
+  - System.Threading.AccessControl
+  namespace: System.Security.AccessControl
+  summary: "\n<p>Gets the rights allowed or denied by the access rule.</p>\n"
+  syntax:
+    content: public EventWaitHandleRights EventWaitHandleRights { get; }
+    content.vb: Public ReadOnly Property EventWaitHandleRights As EventWaitHandleRights
+    parameters: []
+    return:
+      type: System.Security.AccessControl.EventWaitHandleRights
+      description: "\n<p>A bitwise combination of <xref href=\"System.Security.AccessControl.EventWaitHandleRights\" data-throw-if-not-resolved=\"false\"></xref> values indicating the rights allowed or denied by the access rule.</p>\n"
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  nameWithType: EventWaitHandleAccessRule.EventWaitHandleRights
+references:
+- uid: System.Security.AccessControl
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.AccessControl
+  commentId: N:System.Security.AccessControl
+  nameWithType: System.Security.AccessControl
+- uid: System.Object
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Object
+  commentId: T:System.Object
+  nameWithType: Object
+- uid: System.Security.AccessControl.AuthorizationRule
+  parent: System.Security.AccessControl
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.AccessControl.AuthorizationRule
+  commentId: T:System.Security.AccessControl.AuthorizationRule
+  nameWithType: AuthorizationRule
+- uid: System.Security.AccessControl.AccessRule
+  parent: System.Security.AccessControl
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.AccessControl.AccessRule
+  commentId: T:System.Security.AccessControl.AccessRule
+  nameWithType: AccessRule
+- uid: System.Security.AccessControl.AccessRule.AccessControlType
+  parent: System.Security.AccessControl.AccessRule
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.AccessControl.AccessRule.AccessControlType
+  commentId: P:System.Security.AccessControl.AccessRule.AccessControlType
+  nameWithType: AccessRule.AccessControlType
+- uid: System.Security.AccessControl.AuthorizationRule.IdentityReference
+  parent: System.Security.AccessControl.AuthorizationRule
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.AccessControl.AuthorizationRule.IdentityReference
+  commentId: P:System.Security.AccessControl.AuthorizationRule.IdentityReference
+  nameWithType: AuthorizationRule.IdentityReference
+- uid: System.Security.AccessControl.AuthorizationRule.AccessMask
+  parent: System.Security.AccessControl.AuthorizationRule
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.AccessControl.AuthorizationRule.AccessMask
+  commentId: P:System.Security.AccessControl.AuthorizationRule.AccessMask
+  nameWithType: AuthorizationRule.AccessMask
+- uid: System.Security.AccessControl.AuthorizationRule.IsInherited
+  parent: System.Security.AccessControl.AuthorizationRule
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.AccessControl.AuthorizationRule.IsInherited
+  commentId: P:System.Security.AccessControl.AuthorizationRule.IsInherited
+  nameWithType: AuthorizationRule.IsInherited
+- uid: System.Security.AccessControl.AuthorizationRule.InheritanceFlags
+  parent: System.Security.AccessControl.AuthorizationRule
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.AccessControl.AuthorizationRule.InheritanceFlags
+  commentId: P:System.Security.AccessControl.AuthorizationRule.InheritanceFlags
+  nameWithType: AuthorizationRule.InheritanceFlags
+- uid: System.Security.AccessControl.AuthorizationRule.PropagationFlags
+  parent: System.Security.AccessControl.AuthorizationRule
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.AccessControl.AuthorizationRule.PropagationFlags
+  commentId: P:System.Security.AccessControl.AuthorizationRule.PropagationFlags
+  nameWithType: AuthorizationRule.PropagationFlags
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.ToString
+  nameWithType: Object.ToString()
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.Equals(System.Object)
+  nameWithType: Object.Equals(Object)
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  nameWithType: Object.Equals(Object, Object)
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.GetHashCode
+  nameWithType: Object.GetHashCode()
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.GetType
+  nameWithType: Object.GetType()
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.MemberwiseClone
+  nameWithType: Object.MemberwiseClone()
+- uid: System
+  isExternal: false
+  name: "XXX"
+  fullName: System
+  commentId: N:System
+  nameWithType: System
+- uid: System.Security.Principal.IdentityReference
+  parent: System.Security.Principal
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.Principal.IdentityReference
+  commentId: T:System.Security.Principal.IdentityReference
+  nameWithType: IdentityReference
+- uid: System.Security.AccessControl.EventWaitHandleRights
+  parent: System.Security.AccessControl
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.AccessControl.EventWaitHandleRights
+  commentId: T:System.Security.AccessControl.EventWaitHandleRights
+  nameWithType: EventWaitHandleRights
+- uid: System.Security.AccessControl.AccessControlType
+  parent: System.Security.AccessControl
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.AccessControl.AccessControlType
+  commentId: T:System.Security.AccessControl.AccessControlType
+  nameWithType: AccessControlType
+- uid: System.Security.Principal
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.Principal
+  commentId: N:System.Security.Principal
+  nameWithType: System.Security.Principal
+- uid: System.String
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.String
+  commentId: T:System.String
+  nameWithType: String
+- uid: System.ArgumentOutOfRangeException
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentOutOfRangeException
+  nameWithType: ArgumentOutOfRangeException
+  commentId: T:System.ArgumentOutOfRangeException
+- uid: System.ArgumentNullException
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentNullException
+  nameWithType: ArgumentNullException
+  commentId: T:System.ArgumentNullException
+- uid: System.ArgumentException
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentException
+  nameWithType: ArgumentException
+  commentId: T:System.ArgumentException

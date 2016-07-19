@@ -1,0 +1,537 @@
+items:
+- uid: System.Runtime.InteropServices.ComTypes.IStream
+  commentId: T:System.Runtime.InteropServices.ComTypes.IStream
+  id: IStream
+  parent: System.Runtime.InteropServices.ComTypes
+  children:
+  - System.Runtime.InteropServices.ComTypes.IStream.Clone(System.Runtime.InteropServices.ComTypes.IStream@)
+  - System.Runtime.InteropServices.ComTypes.IStream.Commit(System.Int32)
+  - System.Runtime.InteropServices.ComTypes.IStream.CopyTo(System.Runtime.InteropServices.ComTypes.IStream,System.Int64,System.IntPtr,System.IntPtr)
+  - System.Runtime.InteropServices.ComTypes.IStream.LockRegion(System.Int64,System.Int64,System.Int32)
+  - System.Runtime.InteropServices.ComTypes.IStream.Read(System.Byte[],System.Int32,System.IntPtr)
+  - System.Runtime.InteropServices.ComTypes.IStream.Revert
+  - System.Runtime.InteropServices.ComTypes.IStream.Seek(System.Int64,System.Int32,System.IntPtr)
+  - System.Runtime.InteropServices.ComTypes.IStream.SetSize(System.Int64)
+  - System.Runtime.InteropServices.ComTypes.IStream.Stat(System.Runtime.InteropServices.ComTypes.STATSTG@,System.Int32)
+  - System.Runtime.InteropServices.ComTypes.IStream.UnlockRegion(System.Int64,System.Int64,System.Int32)
+  - System.Runtime.InteropServices.ComTypes.IStream.Write(System.Byte[],System.Int32,System.IntPtr)
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Runtime.InteropServices.ComTypes.IStream
+  type: Interface
+  source:
+    remote:
+      path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/IStream.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: IStream
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/IStream.cs
+    startLine: 34
+  assemblies:
+  - System.Runtime.InteropServices
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: "\n<p>Provides the managed definition of the <strong>IStream</strong> interface, with <strong>ISequentialStream</strong> functionality.</p>\n"
+  syntax:
+    content: >-
+      [Guid("0000000c-0000-0000-C000-000000000046")]
+
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [ComImport]
+
+      public interface IStream
+    content.vb: >-
+      <Guid("0000000c-0000-0000-C000-000000000046")>
+
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <ComImport>
+
+      Public Interface IStream
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+  nameWithType: IStream
+- uid: System.Runtime.InteropServices.ComTypes.IStream.Clone(System.Runtime.InteropServices.ComTypes.IStream@)
+  commentId: M:System.Runtime.InteropServices.ComTypes.IStream.Clone(System.Runtime.InteropServices.ComTypes.IStream@)
+  id: Clone(System.Runtime.InteropServices.ComTypes.IStream@)
+  parent: System.Runtime.InteropServices.ComTypes.IStream
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Runtime.InteropServices.ComTypes.IStream.Clone(out System.Runtime.InteropServices.ComTypes.IStream)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/IStream.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Clone
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/IStream.cs
+    startLine: 52
+  assemblies:
+  - System.Runtime.InteropServices
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: "\n<p>Creates a new stream object with its own seek pointer that references the same bytes as the original stream.</p>\n"
+  syntax:
+    content: void Clone(out IStream ppstm)
+    content.vb: Sub Clone(ByRef ppstm As IStream)
+    parameters:
+    - id: ppstm
+      type: System.Runtime.InteropServices.ComTypes.IStream
+      description: "\n<p>When this method returns, contains the new stream object. This parameter is passed uninitialized.</p>\n"
+  fullName.vb: System.Runtime.InteropServices.ComTypes.IStream.Clone(ByRef System.Runtime.InteropServices.ComTypes.IStream)
+  name.vb: Clone(ByRef IStream)
+  nameWithType: IStream.Clone(out IStream)
+  nameWithType.vb: IStream.Clone(ByRef IStream)
+- uid: System.Runtime.InteropServices.ComTypes.IStream.Commit(System.Int32)
+  commentId: M:System.Runtime.InteropServices.ComTypes.IStream.Commit(System.Int32)
+  id: Commit(System.Int32)
+  parent: System.Runtime.InteropServices.ComTypes.IStream
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Runtime.InteropServices.ComTypes.IStream.Commit(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/IStream.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Commit
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/IStream.cs
+    startLine: 47
+  assemblies:
+  - System.Runtime.InteropServices
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: "\n<p>Ensures that any changes made to a stream object that is open in transacted mode are reflected in the parent storage.</p>\n"
+  syntax:
+    content: void Commit(int grfCommitFlags)
+    content.vb: Sub Commit(grfCommitFlags As Integer)
+    parameters:
+    - id: grfCommitFlags
+      type: System.Int32
+      description: "\n<p>A value that controls how the changes for the stream object are committed. </p>\n"
+  nameWithType: IStream.Commit(Int32)
+- uid: System.Runtime.InteropServices.ComTypes.IStream.CopyTo(System.Runtime.InteropServices.ComTypes.IStream,System.Int64,System.IntPtr,System.IntPtr)
+  commentId: M:System.Runtime.InteropServices.ComTypes.IStream.CopyTo(System.Runtime.InteropServices.ComTypes.IStream,System.Int64,System.IntPtr,System.IntPtr)
+  id: CopyTo(System.Runtime.InteropServices.ComTypes.IStream,System.Int64,System.IntPtr,System.IntPtr)
+  parent: System.Runtime.InteropServices.ComTypes.IStream
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Runtime.InteropServices.ComTypes.IStream.CopyTo(System.Runtime.InteropServices.ComTypes.IStream, System.Int64, System.IntPtr, System.IntPtr)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/IStream.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: CopyTo
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/IStream.cs
+    startLine: 46
+  assemblies:
+  - System.Runtime.InteropServices
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: "\n<p>Copies a specified number of bytes from the current seek pointer in the stream to the current seek pointer in another stream.</p>\n"
+  syntax:
+    content: void CopyTo(IStream pstm, long cb, IntPtr pcbRead, IntPtr pcbWritten)
+    content.vb: Sub CopyTo(pstm As IStream, cb As Long, pcbRead As IntPtr, pcbWritten As IntPtr)
+    parameters:
+    - id: pstm
+      type: System.Runtime.InteropServices.ComTypes.IStream
+      description: "\n<p>A reference to the destination stream. </p>\n"
+    - id: cb
+      type: System.Int64
+      description: "\n<p>The number of bytes to copy from the source stream. </p>\n"
+    - id: pcbRead
+      type: System.IntPtr
+      description: "\n<p>On successful return, contains the actual number of bytes read from the source. </p>\n"
+    - id: pcbWritten
+      type: System.IntPtr
+      description: "\n<p>On successful return, contains the actual number of bytes written to the destination. </p>\n"
+  nameWithType: IStream.CopyTo(IStream, Int64, IntPtr, IntPtr)
+- uid: System.Runtime.InteropServices.ComTypes.IStream.LockRegion(System.Int64,System.Int64,System.Int32)
+  commentId: M:System.Runtime.InteropServices.ComTypes.IStream.LockRegion(System.Int64,System.Int64,System.Int32)
+  id: LockRegion(System.Int64,System.Int64,System.Int32)
+  parent: System.Runtime.InteropServices.ComTypes.IStream
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Runtime.InteropServices.ComTypes.IStream.LockRegion(System.Int64, System.Int64, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/IStream.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: LockRegion
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/IStream.cs
+    startLine: 49
+  assemblies:
+  - System.Runtime.InteropServices
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: "\n<p>Restricts access to a specified range of bytes in the stream.</p>\n"
+  syntax:
+    content: void LockRegion(long libOffset, long cb, int dwLockType)
+    content.vb: Sub LockRegion(libOffset As Long, cb As Long, dwLockType As Integer)
+    parameters:
+    - id: libOffset
+      type: System.Int64
+      description: "\n<p>The byte offset for the beginning of the range. </p>\n"
+    - id: cb
+      type: System.Int64
+      description: "\n<p>The length of the range, in bytes, to restrict. </p>\n"
+    - id: dwLockType
+      type: System.Int32
+      description: "\n<p>The requested restrictions on accessing the range. </p>\n"
+  nameWithType: IStream.LockRegion(Int64, Int64, Int32)
+- uid: System.Runtime.InteropServices.ComTypes.IStream.Read(System.Byte[],System.Int32,System.IntPtr)
+  commentId: M:System.Runtime.InteropServices.ComTypes.IStream.Read(System.Byte[],System.Int32,System.IntPtr)
+  id: Read(System.Byte[],System.Int32,System.IntPtr)
+  parent: System.Runtime.InteropServices.ComTypes.IStream
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Runtime.InteropServices.ComTypes.IStream.Read(System.Byte[], System.Int32, System.IntPtr)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/IStream.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Read
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/IStream.cs
+    startLine: 40
+  assemblies:
+  - System.Runtime.InteropServices
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: "\n<p>Reads a specified number of bytes from the stream object into memory starting at the current seek pointer.</p>\n"
+  syntax:
+    content: void Read([MarshalAs(UnmanagedType.LPArray, SizeParamIndex = (short)1), Out] byte[] pv, int cb, IntPtr pcbRead)
+    content.vb: Sub Read(pv As Byte(), cb As Integer, pcbRead As IntPtr)
+    parameters:
+    - id: pv
+      type: System.Byte[]
+      description: "\n<p>When this method returns, contains the data read from the stream. This parameter is passed uninitialized.</p>\n"
+      attributes:
+      - type: System.Runtime.InteropServices.MarshalAsAttribute
+        ctor: System.Runtime.InteropServices.MarshalAsAttribute.#ctor(System.Runtime.InteropServices.UnmanagedType)
+        arguments:
+        - type: System.Runtime.InteropServices.UnmanagedType
+          value: 42
+        namedArguments:
+        - name: "XXX"
+          type: System.Int16
+          value: 1
+      - type: System.Runtime.InteropServices.OutAttribute
+        ctor: System.Runtime.InteropServices.OutAttribute.#ctor
+        arguments: []
+    - id: cb
+      type: System.Int32
+      description: "\n<p>The number of bytes to read from the stream object. </p>\n"
+    - id: pcbRead
+      type: System.IntPtr
+      description: "\n<p>A pointer to a <strong>ULONG</strong> variable that receives the actual number of bytes read from the stream object. </p>\n"
+  fullName.vb: System.Runtime.InteropServices.ComTypes.IStream.Read(System.Byte(), System.Int32, System.IntPtr)
+  name.vb: Read(Byte(), Int32, IntPtr)
+  nameWithType: IStream.Read(Byte[], Int32, IntPtr)
+  nameWithType.vb: IStream.Read(Byte(), Int32, IntPtr)
+- uid: System.Runtime.InteropServices.ComTypes.IStream.Revert
+  commentId: M:System.Runtime.InteropServices.ComTypes.IStream.Revert
+  id: Revert
+  parent: System.Runtime.InteropServices.ComTypes.IStream
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Runtime.InteropServices.ComTypes.IStream.Revert()
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/IStream.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Revert
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/IStream.cs
+    startLine: 48
+  assemblies:
+  - System.Runtime.InteropServices
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: "\n<p>Discards all changes that have been made to a transacted stream since the last <xref href=\"System.Runtime.InteropServices.ComTypes.IStream.Commit(System.Int32)\" data-throw-if-not-resolved=\"false\"></xref> call.</p>\n"
+  syntax:
+    content: void Revert()
+    content.vb: Sub Revert
+  nameWithType: IStream.Revert()
+- uid: System.Runtime.InteropServices.ComTypes.IStream.Seek(System.Int64,System.Int32,System.IntPtr)
+  commentId: M:System.Runtime.InteropServices.ComTypes.IStream.Seek(System.Int64,System.Int32,System.IntPtr)
+  id: Seek(System.Int64,System.Int32,System.IntPtr)
+  parent: System.Runtime.InteropServices.ComTypes.IStream
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Runtime.InteropServices.ComTypes.IStream.Seek(System.Int64, System.Int32, System.IntPtr)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/IStream.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Seek
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/IStream.cs
+    startLine: 44
+  assemblies:
+  - System.Runtime.InteropServices
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: "\n<p>Changes the seek pointer to a new location relative to the beginning of the stream, to the end of the stream, or to the current seek pointer.</p>\n"
+  syntax:
+    content: void Seek(long dlibMove, int dwOrigin, IntPtr plibNewPosition)
+    content.vb: Sub Seek(dlibMove As Long, dwOrigin As Integer, plibNewPosition As IntPtr)
+    parameters:
+    - id: dlibMove
+      type: System.Int64
+      description: "\n<p>The displacement to add to <em>dwOrigin</em>. </p>\n"
+    - id: dwOrigin
+      type: System.Int32
+      description: "\n<p>The origin of the seek. The origin can be the beginning of the file, the current seek pointer, or the end of the file. </p>\n"
+    - id: plibNewPosition
+      type: System.IntPtr
+      description: "\n<p>On successful return, contains the offset of the seek pointer from the beginning of the stream. </p>\n"
+  nameWithType: IStream.Seek(Int64, Int32, IntPtr)
+- uid: System.Runtime.InteropServices.ComTypes.IStream.SetSize(System.Int64)
+  commentId: M:System.Runtime.InteropServices.ComTypes.IStream.SetSize(System.Int64)
+  id: SetSize(System.Int64)
+  parent: System.Runtime.InteropServices.ComTypes.IStream
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Runtime.InteropServices.ComTypes.IStream.SetSize(System.Int64)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/IStream.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: SetSize
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/IStream.cs
+    startLine: 45
+  assemblies:
+  - System.Runtime.InteropServices
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: "\n<p>Changes the size of the stream object.</p>\n"
+  syntax:
+    content: void SetSize(long libNewSize)
+    content.vb: Sub SetSize(libNewSize As Long)
+    parameters:
+    - id: libNewSize
+      type: System.Int64
+      description: "\n<p>The new size of the stream as a number of bytes. </p>\n"
+  nameWithType: IStream.SetSize(Int64)
+- uid: System.Runtime.InteropServices.ComTypes.IStream.Stat(System.Runtime.InteropServices.ComTypes.STATSTG@,System.Int32)
+  commentId: M:System.Runtime.InteropServices.ComTypes.IStream.Stat(System.Runtime.InteropServices.ComTypes.STATSTG@,System.Int32)
+  id: Stat(System.Runtime.InteropServices.ComTypes.STATSTG@,System.Int32)
+  parent: System.Runtime.InteropServices.ComTypes.IStream
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Runtime.InteropServices.ComTypes.IStream.Stat(out System.Runtime.InteropServices.ComTypes.STATSTG, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/IStream.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Stat
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/IStream.cs
+    startLine: 51
+  assemblies:
+  - System.Runtime.InteropServices
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: "\n<p>Retrieves the <xref href=\"System.Runtime.InteropServices.STATSTG\" data-throw-if-not-resolved=\"false\"></xref> structure for this stream.</p>\n"
+  syntax:
+    content: void Stat(out STATSTG pstatstg, int grfStatFlag)
+    content.vb: Sub Stat(ByRef pstatstg As STATSTG, grfStatFlag As Integer)
+    parameters:
+    - id: pstatstg
+      type: System.Runtime.InteropServices.ComTypes.STATSTG
+      description: "\n<p>When this method returns, contains a <strong>STATSTG</strong> structure that describes this stream object. This parameter is passed uninitialized.</p>\n"
+    - id: grfStatFlag
+      type: System.Int32
+      description: "\n<p>Members in the <strong>STATSTG</strong> structure that this method does not return, thus saving some memory allocation operations. </p>\n"
+  fullName.vb: System.Runtime.InteropServices.ComTypes.IStream.Stat(ByRef System.Runtime.InteropServices.ComTypes.STATSTG, System.Int32)
+  name.vb: Stat(ByRef STATSTG, Int32)
+  nameWithType: IStream.Stat(out STATSTG, Int32)
+  nameWithType.vb: IStream.Stat(ByRef STATSTG, Int32)
+- uid: System.Runtime.InteropServices.ComTypes.IStream.UnlockRegion(System.Int64,System.Int64,System.Int32)
+  commentId: M:System.Runtime.InteropServices.ComTypes.IStream.UnlockRegion(System.Int64,System.Int64,System.Int32)
+  id: UnlockRegion(System.Int64,System.Int64,System.Int32)
+  parent: System.Runtime.InteropServices.ComTypes.IStream
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Runtime.InteropServices.ComTypes.IStream.UnlockRegion(System.Int64, System.Int64, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/IStream.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: UnlockRegion
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/IStream.cs
+    startLine: 50
+  assemblies:
+  - System.Runtime.InteropServices
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: "\n<p>Removes the access restriction on a range of bytes previously restricted with the <xref href=\"System.Runtime.InteropServices.ComTypes.IStream.LockRegion(System.Int64,System.Int64,System.Int32)\" data-throw-if-not-resolved=\"false\"></xref> method.</p>\n"
+  syntax:
+    content: void UnlockRegion(long libOffset, long cb, int dwLockType)
+    content.vb: Sub UnlockRegion(libOffset As Long, cb As Long, dwLockType As Integer)
+    parameters:
+    - id: libOffset
+      type: System.Int64
+      description: "\n<p>The byte offset for the beginning of the range. </p>\n"
+    - id: cb
+      type: System.Int64
+      description: "\n<p>The length, in bytes, of the range to restrict. </p>\n"
+    - id: dwLockType
+      type: System.Int32
+      description: "\n<p>The access restrictions previously placed on the range. </p>\n"
+  nameWithType: IStream.UnlockRegion(Int64, Int64, Int32)
+- uid: System.Runtime.InteropServices.ComTypes.IStream.Write(System.Byte[],System.Int32,System.IntPtr)
+  commentId: M:System.Runtime.InteropServices.ComTypes.IStream.Write(System.Byte[],System.Int32,System.IntPtr)
+  id: Write(System.Byte[],System.Int32,System.IntPtr)
+  parent: System.Runtime.InteropServices.ComTypes.IStream
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Runtime.InteropServices.ComTypes.IStream.Write(System.Byte[], System.Int32, System.IntPtr)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/IStream.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Write
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/IStream.cs
+    startLine: 41
+  assemblies:
+  - System.Runtime.InteropServices
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: "\n<p>Writes a specified number of bytes into the stream object starting at the current seek pointer.</p>\n"
+  syntax:
+    content: void Write([MarshalAs(UnmanagedType.LPArray, SizeParamIndex = (short)1)] byte[] pv, int cb, IntPtr pcbWritten)
+    content.vb: Sub Write(pv As Byte(), cb As Integer, pcbWritten As IntPtr)
+    parameters:
+    - id: pv
+      type: System.Byte[]
+      description: "\n<p>The buffer to write this stream to. </p>\n"
+      attributes:
+      - type: System.Runtime.InteropServices.MarshalAsAttribute
+        ctor: System.Runtime.InteropServices.MarshalAsAttribute.#ctor(System.Runtime.InteropServices.UnmanagedType)
+        arguments:
+        - type: System.Runtime.InteropServices.UnmanagedType
+          value: 42
+        namedArguments:
+        - name: "XXX"
+          type: System.Int16
+          value: 1
+    - id: cb
+      type: System.Int32
+      description: "\n<p>The number of bytes to write to the stream. </p>\n"
+    - id: pcbWritten
+      type: System.IntPtr
+      description: "\n<p>On successful return, contains the actual number of bytes written to the stream object. If the caller sets this pointer to <xref href=\"System.IntPtr.Zero\" data-throw-if-not-resolved=\"false\"></xref>, this method does not provide the actual number of bytes written. </p>\n"
+  fullName.vb: System.Runtime.InteropServices.ComTypes.IStream.Write(System.Byte(), System.Int32, System.IntPtr)
+  name.vb: Write(Byte(), Int32, IntPtr)
+  nameWithType: IStream.Write(Byte[], Int32, IntPtr)
+  nameWithType.vb: IStream.Write(Byte(), Int32, IntPtr)
+references:
+- uid: System.Runtime.InteropServices.ComTypes
+  isExternal: false
+  name: "XXX"
+  fullName: System.Runtime.InteropServices.ComTypes
+  nameWithType: System.Runtime.InteropServices.ComTypes
+  commentId: N:System.Runtime.InteropServices.ComTypes
+- uid: System.Runtime.InteropServices.ComTypes.IStream
+  parent: System.Runtime.InteropServices.ComTypes
+  isExternal: false
+  name: "XXX"
+  fullName: System.Runtime.InteropServices.ComTypes.IStream
+  nameWithType: IStream
+  commentId: T:System.Runtime.InteropServices.ComTypes.IStream
+- uid: System.Int32
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Int32
+  nameWithType: Int32
+  commentId: T:System.Int32
+- uid: System
+  isExternal: false
+  name: "XXX"
+  fullName: System
+  nameWithType: System
+  commentId: N:System
+- uid: System.Int64
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Int64
+  nameWithType: Int64
+  commentId: T:System.Int64
+- uid: System.IntPtr
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.IntPtr
+  nameWithType: IntPtr
+  commentId: T:System.IntPtr
+- uid: System.Byte[]
+  name: "XXX"
+  fullName: System.Byte[]
+  fullname.vb: System.Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: "XXX"
+    fullName: System.Byte
+    isExternal: true
+  - name: 'XXX'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: "XXX"
+    fullName: System.Byte
+    isExternal: true
+  - name: "XXX"
+    fullName: ()
+  nameWithType: Byte[]
+  nameWithType.vb: Byte()
+- uid: System.Runtime.InteropServices.ComTypes.STATSTG
+  parent: System.Runtime.InteropServices.ComTypes
+  isExternal: false
+  name: "XXX"
+  fullName: System.Runtime.InteropServices.ComTypes.STATSTG
+  nameWithType: STATSTG
+  commentId: T:System.Runtime.InteropServices.ComTypes.STATSTG

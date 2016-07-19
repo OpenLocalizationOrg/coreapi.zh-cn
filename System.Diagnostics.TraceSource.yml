@@ -1,0 +1,1064 @@
+items:
+- uid: System.Diagnostics.TraceSource
+  commentId: T:System.Diagnostics.TraceSource
+  id: TraceSource
+  parent: System.Diagnostics
+  children:
+  - System.Diagnostics.TraceSource.#ctor(System.String)
+  - System.Diagnostics.TraceSource.#ctor(System.String,System.Diagnostics.SourceLevels)
+  - System.Diagnostics.TraceSource.Close
+  - System.Diagnostics.TraceSource.Flush
+  - System.Diagnostics.TraceSource.Listeners
+  - System.Diagnostics.TraceSource.Name
+  - System.Diagnostics.TraceSource.Switch
+  - System.Diagnostics.TraceSource.TraceData(System.Diagnostics.TraceEventType,System.Int32,System.Object)
+  - System.Diagnostics.TraceSource.TraceData(System.Diagnostics.TraceEventType,System.Int32,System.Object[])
+  - System.Diagnostics.TraceSource.TraceEvent(System.Diagnostics.TraceEventType,System.Int32)
+  - System.Diagnostics.TraceSource.TraceEvent(System.Diagnostics.TraceEventType,System.Int32,System.String)
+  - System.Diagnostics.TraceSource.TraceEvent(System.Diagnostics.TraceEventType,System.Int32,System.String,System.Object[])
+  - System.Diagnostics.TraceSource.TraceInformation(System.String)
+  - System.Diagnostics.TraceSource.TraceInformation(System.String,System.Object[])
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Diagnostics.TraceSource
+  type: Class
+  source:
+    remote:
+      path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/TraceSource.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: TraceSource
+    path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/TraceSource.cs
+    startLine: 11
+  assemblies:
+  - System.Diagnostics.TraceSource
+  namespace: System.Diagnostics
+  summary: "\n<p>Provides a set of methods and properties that enable applications to trace the execution of code and associate trace messages with their source. </p>\n"
+  syntax:
+    content: public class TraceSource
+    content.vb: Public Class TraceSource
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+  nameWithType: TraceSource
+- uid: System.Diagnostics.TraceSource.#ctor(System.String)
+  commentId: M:System.Diagnostics.TraceSource.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: System.Diagnostics.TraceSource
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Diagnostics.TraceSource.TraceSource(System.String)
+  type: Constructor
+  source:
+    remote:
+      path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/TraceSource.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: .ctor
+    path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/TraceSource.cs
+    startLine: 22
+  assemblies:
+  - System.Diagnostics.TraceSource
+  namespace: System.Diagnostics
+  summary: "\n<p>Initializes a new instance of the <xref href=\"System.Diagnostics.TraceSource\" data-throw-if-not-resolved=\"false\"></xref> class, using the specified name for the source. </p>\n"
+  syntax:
+    content: public TraceSource(string name)
+    content.vb: Public Sub New(name As String)
+    parameters:
+    - id: name
+      type: System.String
+      description: "\n<p>The name of the source (typically, the name of the application).</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>name</em> is <strong>null</strong>.</p>\n"
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>\n<em>name</em> is an empty string (\"\").</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: TraceSource.TraceSource(String)
+- uid: System.Diagnostics.TraceSource.#ctor(System.String,System.Diagnostics.SourceLevels)
+  commentId: M:System.Diagnostics.TraceSource.#ctor(System.String,System.Diagnostics.SourceLevels)
+  id: '#ctor(System.String,System.Diagnostics.SourceLevels)'
+  parent: System.Diagnostics.TraceSource
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Diagnostics.TraceSource.TraceSource(System.String, System.Diagnostics.SourceLevels)
+  type: Constructor
+  source:
+    remote:
+      path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/TraceSource.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: .ctor
+    path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/TraceSource.cs
+    startLine: 27
+  assemblies:
+  - System.Diagnostics.TraceSource
+  namespace: System.Diagnostics
+  summary: "\n<p>Initializes a new instance of the <xref href=\"System.Diagnostics.TraceSource\" data-throw-if-not-resolved=\"false\"></xref> class, using the specified name for the source and the default source level at which tracing is to occur.  </p>\n"
+  syntax:
+    content: public TraceSource(string name, SourceLevels defaultLevel)
+    content.vb: Public Sub New(name As String, defaultLevel As SourceLevels)
+    parameters:
+    - id: name
+      type: System.String
+      description: "\n<p>The name of the source, typically the name of the application.</p>\n"
+    - id: defaultLevel
+      type: System.Diagnostics.SourceLevels
+      description: "\n<p>A bitwise combination of the enumeration values that specifies the default source level at which to trace.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>name</em> is <strong>null</strong>.</p>\n"
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>\n<em>name</em> is an empty string (\"\").</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: TraceSource.TraceSource(String, SourceLevels)
+- uid: System.Diagnostics.TraceSource.Listeners
+  commentId: P:System.Diagnostics.TraceSource.Listeners
+  id: Listeners
+  parent: System.Diagnostics.TraceSource
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Diagnostics.TraceSource.Listeners
+  type: Property
+  source:
+    remote:
+      path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/TraceSource.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Listeners
+    path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/TraceSource.cs
+    startLine: 417
+  assemblies:
+  - System.Diagnostics.TraceSource
+  namespace: System.Diagnostics
+  summary: "\n<p>Gets the collection of trace listeners for the trace source.</p>\n"
+  syntax:
+    content: public TraceListenerCollection Listeners { get; }
+    content.vb: Public ReadOnly Property Listeners As TraceListenerCollection
+    parameters: []
+    return:
+      type: System.Diagnostics.TraceListenerCollection
+      description: "\n<p>A <xref href=\"System.Diagnostics.TraceListenerCollection\" data-throw-if-not-resolved=\"false\"></xref> that contains the active trace listeners associated with the source. </p>\n"
+  see:
+  - type: System.Security.Permissions.SecurityPermission
+    commentId: T:System.Security.Permissions.SecurityPermission
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  nameWithType: TraceSource.Listeners
+- uid: System.Diagnostics.TraceSource.Name
+  commentId: P:System.Diagnostics.TraceSource.Name
+  id: Name
+  parent: System.Diagnostics.TraceSource
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Diagnostics.TraceSource.Name
+  type: Property
+  source:
+    remote:
+      path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/TraceSource.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Name
+    path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/TraceSource.cs
+    startLine: 409
+  assemblies:
+  - System.Diagnostics.TraceSource
+  namespace: System.Diagnostics
+  summary: "\n<p>Gets the name of the trace source.</p>\n"
+  syntax:
+    content: public string Name { get; }
+    content.vb: Public ReadOnly Property Name As String
+    parameters: []
+    return:
+      type: System.String
+      description: "\n<p>The name of the trace source.</p>\n"
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  nameWithType: TraceSource.Name
+- uid: System.Diagnostics.TraceSource.Switch
+  commentId: P:System.Diagnostics.TraceSource.Switch
+  id: Switch
+  parent: System.Diagnostics.TraceSource
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Diagnostics.TraceSource.Switch
+  type: Property
+  source:
+    remote:
+      path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/TraceSource.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Switch
+    path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/TraceSource.cs
+    startLine: 427
+  assemblies:
+  - System.Diagnostics.TraceSource
+  namespace: System.Diagnostics
+  summary: "\n<p>Gets or sets the source switch value.</p>\n"
+  syntax:
+    content: public SourceSwitch Switch { get; set; }
+    content.vb: Public Property Switch As SourceSwitch
+    parameters: []
+    return:
+      type: System.Diagnostics.SourceSwitch
+      description: "\n<p>A <xref href=\"System.Diagnostics.SourceSwitch\" data-throw-if-not-resolved=\"false\"></xref> object representing the source switch value.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<xref href=\"System.Diagnostics.TraceSource.Switch\" data-throw-if-not-resolved=\"false\"></xref> is set to <strong>null</strong>.</p>\n"
+  see:
+  - type: System.Security.Permissions.SecurityPermission
+    commentId: T:System.Security.Permissions.SecurityPermission
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  nameWithType: TraceSource.Switch
+- uid: System.Diagnostics.TraceSource.Close
+  commentId: M:System.Diagnostics.TraceSource.Close
+  id: Close
+  parent: System.Diagnostics.TraceSource
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Diagnostics.TraceSource.Close()
+  type: Method
+  source:
+    remote:
+      path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/TraceSource.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Close
+    path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/TraceSource.cs
+    startLine: 94
+  assemblies:
+  - System.Diagnostics.TraceSource
+  namespace: System.Diagnostics
+  summary: "\n<p>Closes all the trace listeners in the trace listener collection.</p>\n"
+  syntax:
+    content: public void Close()
+    content.vb: Public Sub Close
+  see:
+  - type: System.Security.Permissions.SecurityPermission
+    commentId: T:System.Security.Permissions.SecurityPermission
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: TraceSource.Close()
+- uid: System.Diagnostics.TraceSource.Flush
+  commentId: M:System.Diagnostics.TraceSource.Flush
+  id: Flush
+  parent: System.Diagnostics.TraceSource
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Diagnostics.TraceSource.Flush()
+  type: Method
+  source:
+    remote:
+      path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/TraceSource.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Flush
+    path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/TraceSource.cs
+    startLine: 110
+  assemblies:
+  - System.Diagnostics.TraceSource
+  namespace: System.Diagnostics
+  summary: "\n<p>Flushes all the trace listeners in the trace listener collection.</p>\n"
+  syntax:
+    content: public void Flush()
+    content.vb: Public Sub Flush
+  exceptions:
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>An attempt was made to trace an event during finalization.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: TraceSource.Flush()
+- uid: System.Diagnostics.TraceSource.TraceData(System.Diagnostics.TraceEventType,System.Int32,System.Object)
+  commentId: M:System.Diagnostics.TraceSource.TraceData(System.Diagnostics.TraceEventType,System.Int32,System.Object)
+  id: TraceData(System.Diagnostics.TraceEventType,System.Int32,System.Object)
+  parent: System.Diagnostics.TraceSource
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Diagnostics.TraceSource.TraceData(System.Diagnostics.TraceEventType, System.Int32, System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/TraceSource.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: TraceData
+    path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/TraceSource.cs
+    startLine: 305
+  assemblies:
+  - System.Diagnostics.TraceSource
+  namespace: System.Diagnostics
+  summary: "\n<p>Writes trace data to the trace listeners in the <xref href=\"System.Diagnostics.TraceSource.Listeners\" data-throw-if-not-resolved=\"false\"></xref> collection using the specified event type, event identifier, and trace data.</p>\n"
+  syntax:
+    content: >-
+      [Conditional("TRACE")]
+
+      public void TraceData(TraceEventType eventType, int id, object data)
+    content.vb: >-
+      <Conditional("TRACE")>
+
+      Public Sub TraceData(eventType As TraceEventType, id As Integer, data As Object)
+    parameters:
+    - id: eventType
+      type: System.Diagnostics.TraceEventType
+      description: "\n<p>One of the enumeration values that specifies the event type of the trace data.</p>\n"
+    - id: id
+      type: System.Int32
+      description: "\n<p>A numeric identifier for the event.</p>\n"
+    - id: data
+      type: System.Object
+      description: "\n<p>The trace data.</p>\n"
+  exceptions:
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>An attempt was made to trace an event during finalization.</p>\n"
+  attributes:
+  - type: System.Diagnostics.ConditionalAttribute
+    ctor: System.Diagnostics.ConditionalAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: TRACE
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: TraceSource.TraceData(TraceEventType, Int32, Object)
+- uid: System.Diagnostics.TraceSource.TraceData(System.Diagnostics.TraceEventType,System.Int32,System.Object[])
+  commentId: M:System.Diagnostics.TraceSource.TraceData(System.Diagnostics.TraceEventType,System.Int32,System.Object[])
+  id: TraceData(System.Diagnostics.TraceEventType,System.Int32,System.Object[])
+  parent: System.Diagnostics.TraceSource
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Diagnostics.TraceSource.TraceData(System.Diagnostics.TraceEventType, System.Int32, System.Object[])
+  type: Method
+  source:
+    remote:
+      path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/TraceSource.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: TraceData
+    path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/TraceSource.cs
+    startLine: 350
+  assemblies:
+  - System.Diagnostics.TraceSource
+  namespace: System.Diagnostics
+  summary: "\n<p>Writes trace data to the trace listeners in the <xref href=\"System.Diagnostics.TraceSource.Listeners\" data-throw-if-not-resolved=\"false\"></xref> collection using the specified event type, event identifier, and trace data array.</p>\n"
+  syntax:
+    content: >-
+      [Conditional("TRACE")]
+
+      public void TraceData(TraceEventType eventType, int id, params object[] data)
+    content.vb: >-
+      <Conditional("TRACE")>
+
+      Public Sub TraceData(eventType As TraceEventType, id As Integer, ParamArray data As Object())
+    parameters:
+    - id: eventType
+      type: System.Diagnostics.TraceEventType
+      description: "\n<p>One of the enumeration values that specifies the event type of the trace data.</p>\n"
+    - id: id
+      type: System.Int32
+      description: "\n<p>A numeric identifier for the event.</p>\n"
+    - id: data
+      type: System.Object[]
+      description: "\n<p>An object array containing the trace data.</p>\n"
+  exceptions:
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>An attempt was made to trace an event during finalization.</p>\n"
+  attributes:
+  - type: System.Diagnostics.ConditionalAttribute
+    ctor: System.Diagnostics.ConditionalAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: TRACE
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: System.Diagnostics.TraceSource.TraceData(System.Diagnostics.TraceEventType, System.Int32, System.Object())
+  name.vb: TraceData(TraceEventType, Int32, Object())
+  nameWithType: TraceSource.TraceData(TraceEventType, Int32, Object[])
+  nameWithType.vb: TraceSource.TraceData(TraceEventType, Int32, Object())
+- uid: System.Diagnostics.TraceSource.TraceEvent(System.Diagnostics.TraceEventType,System.Int32)
+  commentId: M:System.Diagnostics.TraceSource.TraceEvent(System.Diagnostics.TraceEventType,System.Int32)
+  id: TraceEvent(System.Diagnostics.TraceEventType,System.Int32)
+  parent: System.Diagnostics.TraceSource
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Diagnostics.TraceSource.TraceEvent(System.Diagnostics.TraceEventType, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/TraceSource.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: TraceEvent
+    path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/TraceSource.cs
+    startLine: 170
+  assemblies:
+  - System.Diagnostics.TraceSource
+  namespace: System.Diagnostics
+  summary: "\n<p>Writes a trace event message to the trace listeners in the <xref href=\"System.Diagnostics.TraceSource.Listeners\" data-throw-if-not-resolved=\"false\"></xref> collection using the specified event type and event identifier.</p>\n"
+  syntax:
+    content: >-
+      [Conditional("TRACE")]
+
+      public void TraceEvent(TraceEventType eventType, int id)
+    content.vb: >-
+      <Conditional("TRACE")>
+
+      Public Sub TraceEvent(eventType As TraceEventType, id As Integer)
+    parameters:
+    - id: eventType
+      type: System.Diagnostics.TraceEventType
+      description: "\n<p>One of the enumeration values that specifies the event type of the trace data.</p>\n"
+    - id: id
+      type: System.Int32
+      description: "\n<p>A numeric identifier for the event.</p>\n"
+  exceptions:
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>An attempt was made to trace an event during finalization.</p>\n"
+  attributes:
+  - type: System.Diagnostics.ConditionalAttribute
+    ctor: System.Diagnostics.ConditionalAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: TRACE
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: TraceSource.TraceEvent(TraceEventType, Int32)
+- uid: System.Diagnostics.TraceSource.TraceEvent(System.Diagnostics.TraceEventType,System.Int32,System.String)
+  commentId: M:System.Diagnostics.TraceSource.TraceEvent(System.Diagnostics.TraceEventType,System.Int32,System.String)
+  id: TraceEvent(System.Diagnostics.TraceEventType,System.Int32,System.String)
+  parent: System.Diagnostics.TraceSource
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Diagnostics.TraceSource.TraceEvent(System.Diagnostics.TraceEventType, System.Int32, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/TraceSource.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: TraceEvent
+    path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/TraceSource.cs
+    startLine: 215
+  assemblies:
+  - System.Diagnostics.TraceSource
+  namespace: System.Diagnostics
+  summary: "\n<p>Writes a trace event message to the trace listeners in the <xref href=\"System.Diagnostics.TraceSource.Listeners\" data-throw-if-not-resolved=\"false\"></xref> collection using the specified event type, event identifier, and message.</p>\n"
+  syntax:
+    content: >-
+      [Conditional("TRACE")]
+
+      public void TraceEvent(TraceEventType eventType, int id, string message)
+    content.vb: >-
+      <Conditional("TRACE")>
+
+      Public Sub TraceEvent(eventType As TraceEventType, id As Integer, message As String)
+    parameters:
+    - id: eventType
+      type: System.Diagnostics.TraceEventType
+      description: "\n<p>One of the enumeration values that specifies the event type of the trace data.</p>\n"
+    - id: id
+      type: System.Int32
+      description: "\n<p>A numeric identifier for the event.</p>\n"
+    - id: message
+      type: System.String
+      description: "\n<p>The trace message to write.</p>\n"
+  exceptions:
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>An attempt was made to trace an event during finalization.</p>\n"
+  attributes:
+  - type: System.Diagnostics.ConditionalAttribute
+    ctor: System.Diagnostics.ConditionalAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: TRACE
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: TraceSource.TraceEvent(TraceEventType, Int32, String)
+- uid: System.Diagnostics.TraceSource.TraceEvent(System.Diagnostics.TraceEventType,System.Int32,System.String,System.Object[])
+  commentId: M:System.Diagnostics.TraceSource.TraceEvent(System.Diagnostics.TraceEventType,System.Int32,System.String,System.Object[])
+  id: TraceEvent(System.Diagnostics.TraceEventType,System.Int32,System.String,System.Object[])
+  parent: System.Diagnostics.TraceSource
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Diagnostics.TraceSource.TraceEvent(System.Diagnostics.TraceEventType, System.Int32, System.String, System.Object[])
+  type: Method
+  source:
+    remote:
+      path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/TraceSource.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: TraceEvent
+    path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/TraceSource.cs
+    startLine: 260
+  assemblies:
+  - System.Diagnostics.TraceSource
+  namespace: System.Diagnostics
+  summary: "\n<p>Writes a trace event to the trace listeners in the <xref href=\"System.Diagnostics.TraceSource.Listeners\" data-throw-if-not-resolved=\"false\"></xref> collection using the specified event type, event identifier, and argument array and format.</p>\n"
+  syntax:
+    content: >-
+      [Conditional("TRACE")]
+
+      public void TraceEvent(TraceEventType eventType, int id, string format, params object[] args)
+    content.vb: >-
+      <Conditional("TRACE")>
+
+      Public Sub TraceEvent(eventType As TraceEventType, id As Integer, format As String, ParamArray args As Object())
+    parameters:
+    - id: eventType
+      type: System.Diagnostics.TraceEventType
+      description: "\n<p>One of the enumeration values that specifies the event type of the trace data.</p>\n"
+    - id: id
+      type: System.Int32
+      description: "\n<p>A numeric identifier for the event.</p>\n"
+    - id: format
+      type: System.String
+      description: "\n<p>A composite format string (see Remarks) that contains text intermixed with zero or more format items, which correspond to objects in the <em>args</em> array.</p>\n"
+    - id: args
+      type: System.Object[]
+      description: "\n<p>An <strong>object</strong> array containing zero or more objects to format.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>format</em> is <strong>null</strong>. </p>\n"
+  - type: System.FormatException
+    commentId: T:System.FormatException
+    description: "\n<p>\n<em>format</em> is invalid.</p>\n<p>-or- </p>\n<p>The number that indicates an argument to format is less than zero, or greater than or equal to the number of specified objects to format. </p>\n"
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>An attempt was made to trace an event during finalization.</p>\n"
+  attributes:
+  - type: System.Diagnostics.ConditionalAttribute
+    ctor: System.Diagnostics.ConditionalAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: TRACE
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: System.Diagnostics.TraceSource.TraceEvent(System.Diagnostics.TraceEventType, System.Int32, System.String, System.Object())
+  name.vb: TraceEvent(TraceEventType, Int32, String, Object())
+  nameWithType: TraceSource.TraceEvent(TraceEventType, Int32, String, Object[])
+  nameWithType.vb: TraceSource.TraceEvent(TraceEventType, Int32, String, Object())
+- uid: System.Diagnostics.TraceSource.TraceInformation(System.String)
+  commentId: M:System.Diagnostics.TraceSource.TraceInformation(System.String)
+  id: TraceInformation(System.String)
+  parent: System.Diagnostics.TraceSource
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Diagnostics.TraceSource.TraceInformation(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/TraceSource.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: TraceInformation
+    path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/TraceSource.cs
+    startLine: 395
+  assemblies:
+  - System.Diagnostics.TraceSource
+  namespace: System.Diagnostics
+  summary: "\n<p>Writes an informational message to the trace listeners in the <xref href=\"System.Diagnostics.TraceSource.Listeners\" data-throw-if-not-resolved=\"false\"></xref> collection using the specified message.</p>\n"
+  syntax:
+    content: >-
+      [Conditional("TRACE")]
+
+      public void TraceInformation(string message)
+    content.vb: >-
+      <Conditional("TRACE")>
+
+      Public Sub TraceInformation(message As String)
+    parameters:
+    - id: message
+      type: System.String
+      description: "\n<p>The informative message to write.</p>\n"
+  exceptions:
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>An attempt was made to trace an event during finalization.</p>\n"
+  attributes:
+  - type: System.Diagnostics.ConditionalAttribute
+    ctor: System.Diagnostics.ConditionalAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: TRACE
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: TraceSource.TraceInformation(String)
+- uid: System.Diagnostics.TraceSource.TraceInformation(System.String,System.Object[])
+  commentId: M:System.Diagnostics.TraceSource.TraceInformation(System.String,System.Object[])
+  id: TraceInformation(System.String,System.Object[])
+  parent: System.Diagnostics.TraceSource
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Diagnostics.TraceSource.TraceInformation(System.String, System.Object[])
+  type: Method
+  source:
+    remote:
+      path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/TraceSource.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: TraceInformation
+    path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/TraceSource.cs
+    startLine: 402
+  assemblies:
+  - System.Diagnostics.TraceSource
+  namespace: System.Diagnostics
+  summary: "\n<p>Writes an informational message to the trace listeners in the <xref href=\"System.Diagnostics.TraceSource.Listeners\" data-throw-if-not-resolved=\"false\"></xref> collection using the specified object array and formatting information.</p>\n"
+  syntax:
+    content: >-
+      [Conditional("TRACE")]
+
+      public void TraceInformation(string format, params object[] args)
+    content.vb: >-
+      <Conditional("TRACE")>
+
+      Public Sub TraceInformation(format As String, ParamArray args As Object())
+    parameters:
+    - id: format
+      type: System.String
+      description: "\n<p>A composite format string (see Remarks) that contains text intermixed with zero or more format items, which correspond to objects in the <em>args</em> array.</p>\n"
+    - id: args
+      type: System.Object[]
+      description: "\n<p>An array containing zero or more objects to format.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>format</em> is <strong>null</strong>. </p>\n"
+  - type: System.FormatException
+    commentId: T:System.FormatException
+    description: "\n<p>\n<em>format</em> is invalid.</p>\n<p>-or- </p>\n<p>The number that indicates an argument to format is less than zero, or greater than or equal to the number of specified objects to format. </p>\n"
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>An attempt was made to trace an event during finalization.</p>\n"
+  attributes:
+  - type: System.Diagnostics.ConditionalAttribute
+    ctor: System.Diagnostics.ConditionalAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: TRACE
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: System.Diagnostics.TraceSource.TraceInformation(System.String, System.Object())
+  name.vb: TraceInformation(String, Object())
+  nameWithType: TraceSource.TraceInformation(String, Object[])
+  nameWithType.vb: TraceSource.TraceInformation(String, Object())
+references:
+- uid: System.Diagnostics
+  isExternal: false
+  name: "XXX"
+  fullName: System.Diagnostics
+  nameWithType: System.Diagnostics
+  commentId: N:System.Diagnostics
+- uid: System.Object
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Object
+  nameWithType: Object
+  commentId: T:System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.ToString()
+  commentId: M:System.Object.ToString
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.Equals(Object)
+  commentId: M:System.Object.Equals(System.Object)
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.Equals(Object, Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.GetHashCode()
+  commentId: M:System.Object.GetHashCode
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.GetType()
+  commentId: M:System.Object.GetType
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.MemberwiseClone()
+  commentId: M:System.Object.MemberwiseClone
+- uid: System
+  isExternal: false
+  name: "XXX"
+  fullName: System
+  nameWithType: System
+  commentId: N:System
+- uid: System.String
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.String
+  nameWithType: String
+  commentId: T:System.String
+- uid: System.Diagnostics.SourceLevels
+  parent: System.Diagnostics
+  isExternal: false
+  name: "XXX"
+  fullName: System.Diagnostics.SourceLevels
+  nameWithType: SourceLevels
+  commentId: T:System.Diagnostics.SourceLevels
+- uid: System.Diagnostics.TraceListenerCollection
+  parent: System.Diagnostics
+  isExternal: false
+  name: "XXX"
+  fullName: System.Diagnostics.TraceListenerCollection
+  nameWithType: TraceListenerCollection
+  commentId: T:System.Diagnostics.TraceListenerCollection
+- uid: System.Diagnostics.SourceSwitch
+  parent: System.Diagnostics
+  isExternal: false
+  name: "XXX"
+  fullName: System.Diagnostics.SourceSwitch
+  nameWithType: SourceSwitch
+  commentId: T:System.Diagnostics.SourceSwitch
+- uid: System.Diagnostics.TraceEventType
+  parent: System.Diagnostics
+  isExternal: false
+  name: "XXX"
+  fullName: System.Diagnostics.TraceEventType
+  nameWithType: TraceEventType
+  commentId: T:System.Diagnostics.TraceEventType
+- uid: System.Int32
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Int32
+  nameWithType: Int32
+  commentId: T:System.Int32
+- uid: System.Object[]
+  name: "XXX"
+  fullName: System.Object[]
+  fullname.vb: System.Object()
+  name.vb: Object()
+  spec.csharp:
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: ()
+  nameWithType: Object[]
+  nameWithType.vb: Object()
+- uid: System.ArgumentNullException
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentNullException
+  nameWithType: ArgumentNullException
+  commentId: T:System.ArgumentNullException
+- uid: System.ArgumentException
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentException
+  nameWithType: ArgumentException
+  commentId: T:System.ArgumentException
+- uid: System.ObjectDisposedException
+  isExternal: false
+  name: "XXX"
+  fullName: System.ObjectDisposedException
+  nameWithType: ObjectDisposedException
+  commentId: T:System.ObjectDisposedException
+- uid: System.FormatException
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.FormatException
+  nameWithType: FormatException
+  commentId: T:System.FormatException

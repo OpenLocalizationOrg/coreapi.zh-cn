@@ -1,0 +1,2348 @@
+items:
+- uid: System.IO.Pipes.AnonymousPipeClientStream
+  commentId: T:System.IO.Pipes.AnonymousPipeClientStream
+  id: AnonymousPipeClientStream
+  parent: System.IO.Pipes
+  children:
+  - System.IO.Pipes.AnonymousPipeClientStream.#ctor(System.IO.Pipes.PipeDirection,Microsoft.Win32.SafeHandles.SafePipeHandle)
+  - System.IO.Pipes.AnonymousPipeClientStream.#ctor(System.IO.Pipes.PipeDirection,System.String)
+  - System.IO.Pipes.AnonymousPipeClientStream.#ctor(System.String)
+  - System.IO.Pipes.AnonymousPipeClientStream.Finalize
+  - System.IO.Pipes.AnonymousPipeClientStream.ReadMode
+  - System.IO.Pipes.AnonymousPipeClientStream.TransmissionMode
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.Pipes.AnonymousPipeClientStream
+  type: Class
+  source:
+    remote:
+      path: src/System.IO.Pipes/ref/System.IO.Pipes.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: AnonymousPipeClientStream
+    path: src/System.IO.Pipes/ref/System.IO.Pipes.cs
+    startLine: 18
+  assemblies:
+  - System.IO.Pipes
+  namespace: System.IO.Pipes
+  summary: "\n<p>Exposes the client side of an anonymous pipe stream, which supports both synchronous and asynchronous read and write operations.</p>\n"
+  syntax:
+    content: 'public sealed class AnonymousPipeClientStream : PipeStream, IDisposable'
+    content.vb: >-
+      Public NotInheritable Class AnonymousPipeClientStream
+          Inherits PipeStream
+          Implements IDisposable
+  inheritance:
+  - System.Object
+  - System.MarshalByRefObject
+  - System.IO.Stream
+  - System.IO.Pipes.PipeStream
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - System.IO.Pipes.PipeStream.CanRead
+  - System.IO.Pipes.PipeStream.CanSeek
+  - System.IO.Pipes.PipeStream.CanWrite
+  - System.IO.Pipes.PipeStream.InBufferSize
+  - System.IO.Pipes.PipeStream.IsAsync
+  - System.IO.Pipes.PipeStream.IsConnected
+  - System.IO.Pipes.PipeStream.IsMessageComplete
+  - System.IO.Pipes.PipeStream.Length
+  - System.IO.Pipes.PipeStream.OutBufferSize
+  - System.IO.Pipes.PipeStream.Position
+  - System.IO.Pipes.PipeStream.SafePipeHandle
+  - System.IO.Pipes.PipeStream.Dispose(System.Boolean)
+  - System.IO.Pipes.PipeStream.Flush
+  - System.IO.Pipes.PipeStream.Read(System.Byte[],System.Int32,System.Int32)
+  - System.IO.Pipes.PipeStream.ReadByte
+  - System.IO.Pipes.PipeStream.Seek(System.Int64,System.IO.SeekOrigin)
+  - System.IO.Pipes.PipeStream.SetLength(System.Int64)
+  - System.IO.Pipes.PipeStream.WaitForPipeDrain
+  - System.IO.Pipes.PipeStream.Write(System.Byte[],System.Int32,System.Int32)
+  - System.IO.Pipes.PipeStream.WriteByte(System.Byte)
+  - System.IO.Pipes.PipeStream.ReadAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)
+  - System.IO.Pipes.PipeStream.WriteAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)
+  - System.IO.Stream.Null
+  - System.IO.Stream.CopyToAsync(System.IO.Stream)
+  - System.IO.Stream.CopyToAsync(System.IO.Stream,System.Int32)
+  - System.IO.Stream.CopyToAsync(System.IO.Stream,System.Int32,System.Threading.CancellationToken)
+  - System.IO.Stream.CopyTo(System.IO.Stream)
+  - System.IO.Stream.CopyTo(System.IO.Stream,System.Int32)
+  - System.IO.Stream.Close
+  - System.IO.Stream.Dispose
+  - System.IO.Stream.FlushAsync
+  - System.IO.Stream.FlushAsync(System.Threading.CancellationToken)
+  - System.IO.Stream.CreateWaitHandle
+  - System.IO.Stream.BeginRead(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)
+  - System.IO.Stream.EndRead(System.IAsyncResult)
+  - System.IO.Stream.ReadAsync(System.Byte[],System.Int32,System.Int32)
+  - System.IO.Stream.BeginWrite(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)
+  - System.IO.Stream.EndWrite(System.IAsyncResult)
+  - System.IO.Stream.WriteAsync(System.Byte[],System.Int32,System.Int32)
+  - System.IO.Stream.Synchronized(System.IO.Stream)
+  - System.IO.Stream.ObjectInvariant
+  - System.IO.Stream.CanTimeout
+  - System.IO.Stream.ReadTimeout
+  - System.IO.Stream.WriteTimeout
+  - System.MarshalByRefObject.MemberwiseClone(System.Boolean)
+  - System.MarshalByRefObject.GetLifetimeService
+  - System.MarshalByRefObject.InitializeLifetimeService
+  - System.MarshalByRefObject.CreateObjRef(System.Type)
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+  nameWithType: AnonymousPipeClientStream
+  extensionMethods:
+  - System.IO.Stream.System.IO.WindowsRuntimeStreamExtensions.AsInputStream
+  - System.IO.Stream.System.IO.WindowsRuntimeStreamExtensions.AsOutputStream
+  - System.IO.Stream.System.IO.WindowsRuntimeStreamExtensions.AsRandomAccessStream
+- uid: System.IO.Pipes.AnonymousPipeClientStream.#ctor(System.IO.Pipes.PipeDirection,Microsoft.Win32.SafeHandles.SafePipeHandle)
+  commentId: M:System.IO.Pipes.AnonymousPipeClientStream.#ctor(System.IO.Pipes.PipeDirection,Microsoft.Win32.SafeHandles.SafePipeHandle)
+  id: '#ctor(System.IO.Pipes.PipeDirection,Microsoft.Win32.SafeHandles.SafePipeHandle)'
+  parent: System.IO.Pipes.AnonymousPipeClientStream
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.Pipes.AnonymousPipeClientStream.AnonymousPipeClientStream(System.IO.Pipes.PipeDirection, Microsoft.Win32.SafeHandles.SafePipeHandle)
+  type: Constructor
+  source:
+    remote:
+      path: src/System.IO.Pipes/ref/System.IO.Pipes.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: .ctor
+    path: src/System.IO.Pipes/ref/System.IO.Pipes.cs
+    startLine: 20
+  assemblies:
+  - System.IO.Pipes
+  namespace: System.IO.Pipes
+  summary: "\n<p>Initializes a new instance of the <xref href=\"System.IO.Pipes.AnonymousPipeClientStream\" data-throw-if-not-resolved=\"false\"></xref> class from the specified handle.</p>\n"
+  syntax:
+    content: public AnonymousPipeClientStream(PipeDirection direction, SafePipeHandle safePipeHandle)
+    content.vb: Public Sub New(direction As PipeDirection, safePipeHandle As SafePipeHandle)
+    parameters:
+    - id: direction
+      type: System.IO.Pipes.PipeDirection
+      description: "\n<p>One of the enumeration values that determines the direction of the pipe.</p>\n<p>Anonymous pipes can only be in one direction, so <em>direction</em> cannot be set to <xref href=\"System.IO.Pipes.PipeDirection.InOut\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    - id: safePipeHandle
+      type: Microsoft.Win32.SafeHandles.SafePipeHandle
+      description: "\n<p>A safe handle for the pipe that this <xref href=\"System.IO.Pipes.AnonymousPipeClientStream\" data-throw-if-not-resolved=\"false\"></xref> object will encapsulate.</p>\n"
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>\n<em>safePipeHandle </em>is not a valid handle.</p>\n"
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>safePipeHandle</em> is <strong>null</strong>.</p>\n"
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: "\n<p>\n<em>direction</em> is set to <xref href=\"System.IO.Pipes.PipeDirection.InOut\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  - type: System.IO.IOException
+    commentId: T:System.IO.IOException
+    description: "\n<p>An I/O error, such as a disk error, has occurred.</p>\n<p>-or-</p>\n<p>The stream has been closed.</p>\n"
+  see:
+  - type: System.Security.Permissions.SecurityAction.Demand
+    commentId: F:System.Security.Permissions.SecurityAction.Demand
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: AnonymousPipeClientStream.AnonymousPipeClientStream(PipeDirection, SafePipeHandle)
+- uid: System.IO.Pipes.AnonymousPipeClientStream.#ctor(System.IO.Pipes.PipeDirection,System.String)
+  commentId: M:System.IO.Pipes.AnonymousPipeClientStream.#ctor(System.IO.Pipes.PipeDirection,System.String)
+  id: '#ctor(System.IO.Pipes.PipeDirection,System.String)'
+  parent: System.IO.Pipes.AnonymousPipeClientStream
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.Pipes.AnonymousPipeClientStream.AnonymousPipeClientStream(System.IO.Pipes.PipeDirection, System.String)
+  type: Constructor
+  source:
+    remote:
+      path: src/System.IO.Pipes/ref/System.IO.Pipes.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: .ctor
+    path: src/System.IO.Pipes/ref/System.IO.Pipes.cs
+    startLine: 21
+  assemblies:
+  - System.IO.Pipes
+  namespace: System.IO.Pipes
+  summary: "\n<p>Initializes a new instance of the <xref href=\"System.IO.Pipes.AnonymousPipeClientStream\" data-throw-if-not-resolved=\"false\"></xref> class with the specified pipe direction and a string representation of the pipe handle.</p>\n"
+  syntax:
+    content: public AnonymousPipeClientStream(PipeDirection direction, string pipeHandleAsString)
+    content.vb: Public Sub New(direction As PipeDirection, pipeHandleAsString As String)
+    parameters:
+    - id: direction
+      type: System.IO.Pipes.PipeDirection
+      description: "\n<p>One of the enumeration values that determines the direction of the pipe.</p>\n<p>Anonymous pipes can only be in one direction, so <em>direction</em> cannot be set to <xref href=\"System.IO.Pipes.PipeDirection.InOut\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    - id: pipeHandleAsString
+      type: System.String
+      description: "\n<p>A string that represents the pipe handle.</p>\n"
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>\n<em>pipeHandleAsString</em> is an invalid handle.</p>\n"
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>pipeHandleAsString</em> is <strong>null</strong>.</p>\n"
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: "\n<p>\n<em>direction</em> is set to <xref href=\"System.IO.Pipes.PipeDirection.InOut\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  see:
+  - type: System.Security.Permissions.SecurityAction.Demand
+    commentId: F:System.Security.Permissions.SecurityAction.Demand
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: AnonymousPipeClientStream.AnonymousPipeClientStream(PipeDirection, String)
+- uid: System.IO.Pipes.AnonymousPipeClientStream.#ctor(System.String)
+  commentId: M:System.IO.Pipes.AnonymousPipeClientStream.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: System.IO.Pipes.AnonymousPipeClientStream
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.Pipes.AnonymousPipeClientStream.AnonymousPipeClientStream(System.String)
+  type: Constructor
+  source:
+    remote:
+      path: src/System.IO.Pipes/ref/System.IO.Pipes.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: .ctor
+    path: src/System.IO.Pipes/ref/System.IO.Pipes.cs
+    startLine: 22
+  assemblies:
+  - System.IO.Pipes
+  namespace: System.IO.Pipes
+  summary: "\n<p>Initializes a new instance of the <xref href=\"System.IO.Pipes.AnonymousPipeClientStream\" data-throw-if-not-resolved=\"false\"></xref> class with the specified string representation of the pipe handle.</p>\n"
+  syntax:
+    content: public AnonymousPipeClientStream(string pipeHandleAsString)
+    content.vb: Public Sub New(pipeHandleAsString As String)
+    parameters:
+    - id: pipeHandleAsString
+      type: System.String
+      description: "\n<p>A string that represents the pipe handle.</p>\n"
+  exceptions:
+  - type: System.IO.IOException
+    commentId: T:System.IO.IOException
+    description: "\n<p>\n<em>pipeHandleAsString</em> is not a valid pipe handle.</p>\n"
+  see:
+  - type: System.Security.Permissions.SecurityAction.Demand
+    commentId: F:System.Security.Permissions.SecurityAction.Demand
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: AnonymousPipeClientStream.AnonymousPipeClientStream(String)
+- uid: System.IO.Pipes.AnonymousPipeClientStream.ReadMode
+  commentId: P:System.IO.Pipes.AnonymousPipeClientStream.ReadMode
+  id: ReadMode
+  parent: System.IO.Pipes.AnonymousPipeClientStream
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.Pipes.AnonymousPipeClientStream.ReadMode
+  type: Property
+  source:
+    remote:
+      path: src/System.IO.Pipes/ref/System.IO.Pipes.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: ReadMode
+    path: src/System.IO.Pipes/ref/System.IO.Pipes.cs
+    startLine: 23
+  assemblies:
+  - System.IO.Pipes
+  namespace: System.IO.Pipes
+  summary: "\n<p>Sets the reading mode for the <xref href=\"System.IO.Pipes.AnonymousPipeClientStream\" data-throw-if-not-resolved=\"false\"></xref> object.</p>\n"
+  syntax:
+    content: public override PipeTransmissionMode ReadMode { set; }
+    content.vb: Public Overrides WriteOnly Property ReadMode As PipeTransmissionMode
+    parameters: []
+    return:
+      type: System.IO.Pipes.PipeTransmissionMode
+      description: "\n<p>The <xref href=\"System.IO.Pipes.PipeTransmissionMode\" data-throw-if-not-resolved=\"false\"></xref> for the <xref href=\"System.IO.Pipes.AnonymousPipeClientStream\" data-throw-if-not-resolved=\"false\"></xref> object.</p>\n"
+  overridden: System.IO.Pipes.PipeStream.ReadMode
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>The transmission mode is not valid. For anonymous pipes, only <xref href=\"System.IO.Pipes.PipeTransmissionMode.Byte\" data-throw-if-not-resolved=\"false\"></xref> is supported.</p>\n"
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: "\n<p>The transmission mode is <xref href=\"System.IO.Pipes.PipeTransmissionMode.Message\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  - type: System.IO.IOException
+    commentId: T:System.IO.IOException
+    description: "\n<p>The connection is broken or another I/O error occurs.</p>\n"
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>The pipe is closed.</p>\n"
+  modifiers.csharp:
+  - public
+  - override
+  - set
+  modifiers.vb:
+  - Public
+  - Overrides
+  - WriteOnly
+  nameWithType: AnonymousPipeClientStream.ReadMode
+- uid: System.IO.Pipes.AnonymousPipeClientStream.TransmissionMode
+  commentId: P:System.IO.Pipes.AnonymousPipeClientStream.TransmissionMode
+  id: TransmissionMode
+  parent: System.IO.Pipes.AnonymousPipeClientStream
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.Pipes.AnonymousPipeClientStream.TransmissionMode
+  type: Property
+  source:
+    remote:
+      path: src/System.IO.Pipes/ref/System.IO.Pipes.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: TransmissionMode
+    path: src/System.IO.Pipes/ref/System.IO.Pipes.cs
+    startLine: 24
+  assemblies:
+  - System.IO.Pipes
+  namespace: System.IO.Pipes
+  summary: "\n<p>Gets the pipe transmission mode supported by the current pipe.</p>\n"
+  syntax:
+    content: public override PipeTransmissionMode TransmissionMode { get; }
+    content.vb: Public Overrides ReadOnly Property TransmissionMode As PipeTransmissionMode
+    parameters: []
+    return:
+      type: System.IO.Pipes.PipeTransmissionMode
+      description: "\n<p>The <xref href=\"System.IO.Pipes.PipeTransmissionMode\" data-throw-if-not-resolved=\"false\"></xref> supported by the current pipe.</p>\n"
+  overridden: System.IO.Pipes.PipeStream.TransmissionMode
+  modifiers.csharp:
+  - public
+  - override
+  - get
+  modifiers.vb:
+  - Public
+  - Overrides
+  - ReadOnly
+  nameWithType: AnonymousPipeClientStream.TransmissionMode
+- uid: System.IO.Pipes.AnonymousPipeClientStream.Finalize
+  commentId: M:System.IO.Pipes.AnonymousPipeClientStream.Finalize
+  id: Finalize
+  parent: System.IO.Pipes.AnonymousPipeClientStream
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.Pipes.AnonymousPipeClientStream.Finalize()
+  type: Method
+  source:
+    remote:
+      path: src/System.IO.Pipes/ref/System.IO.Pipes.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Finalize
+    path: src/System.IO.Pipes/ref/System.IO.Pipes.cs
+    startLine: 25
+  assemblies:
+  - System.IO.Pipes
+  namespace: System.IO.Pipes
+  summary: "\n<p>Releases unmanaged resources and performs other cleanup operations before the <xref href=\"System.IO.Pipes.AnonymousPipeClientStream\" data-throw-if-not-resolved=\"false\"></xref> instance is reclaimed by garbage collection.</p>\n"
+  syntax:
+    content: protected void Finalize()
+    content.vb: Protected Sub Finalize
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  nameWithType: AnonymousPipeClientStream.Finalize()
+references:
+- uid: System.IO.Pipes
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.Pipes
+  commentId: N:System.IO.Pipes
+  nameWithType: System.IO.Pipes
+- uid: System.Object
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Object
+  commentId: T:System.Object
+  nameWithType: Object
+- uid: System.MarshalByRefObject
+  parent: System
+  isExternal: true
+  name: "XXX"
+  fullName: System.MarshalByRefObject
+  commentId: T:System.MarshalByRefObject
+  nameWithType: MarshalByRefObject
+- uid: System.IO.Stream
+  parent: System.IO
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.Stream
+  commentId: T:System.IO.Stream
+  nameWithType: Stream
+- uid: System.IO.Pipes.PipeStream
+  parent: System.IO.Pipes
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.Pipes.PipeStream
+  commentId: T:System.IO.Pipes.PipeStream
+  nameWithType: PipeStream
+- uid: System.IDisposable
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.IDisposable
+  commentId: T:System.IDisposable
+  nameWithType: IDisposable
+- uid: System.IO.Pipes.PipeStream.CanRead
+  parent: System.IO.Pipes.PipeStream
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.Pipes.PipeStream.CanRead
+  commentId: P:System.IO.Pipes.PipeStream.CanRead
+  nameWithType: PipeStream.CanRead
+- uid: System.IO.Pipes.PipeStream.CanSeek
+  parent: System.IO.Pipes.PipeStream
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.Pipes.PipeStream.CanSeek
+  commentId: P:System.IO.Pipes.PipeStream.CanSeek
+  nameWithType: PipeStream.CanSeek
+- uid: System.IO.Pipes.PipeStream.CanWrite
+  parent: System.IO.Pipes.PipeStream
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.Pipes.PipeStream.CanWrite
+  commentId: P:System.IO.Pipes.PipeStream.CanWrite
+  nameWithType: PipeStream.CanWrite
+- uid: System.IO.Pipes.PipeStream.InBufferSize
+  parent: System.IO.Pipes.PipeStream
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.Pipes.PipeStream.InBufferSize
+  commentId: P:System.IO.Pipes.PipeStream.InBufferSize
+  nameWithType: PipeStream.InBufferSize
+- uid: System.IO.Pipes.PipeStream.IsAsync
+  parent: System.IO.Pipes.PipeStream
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.Pipes.PipeStream.IsAsync
+  commentId: P:System.IO.Pipes.PipeStream.IsAsync
+  nameWithType: PipeStream.IsAsync
+- uid: System.IO.Pipes.PipeStream.IsConnected
+  parent: System.IO.Pipes.PipeStream
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.Pipes.PipeStream.IsConnected
+  commentId: P:System.IO.Pipes.PipeStream.IsConnected
+  nameWithType: PipeStream.IsConnected
+- uid: System.IO.Pipes.PipeStream.IsMessageComplete
+  parent: System.IO.Pipes.PipeStream
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.Pipes.PipeStream.IsMessageComplete
+  commentId: P:System.IO.Pipes.PipeStream.IsMessageComplete
+  nameWithType: PipeStream.IsMessageComplete
+- uid: System.IO.Pipes.PipeStream.Length
+  parent: System.IO.Pipes.PipeStream
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.Pipes.PipeStream.Length
+  commentId: P:System.IO.Pipes.PipeStream.Length
+  nameWithType: PipeStream.Length
+- uid: System.IO.Pipes.PipeStream.OutBufferSize
+  parent: System.IO.Pipes.PipeStream
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.Pipes.PipeStream.OutBufferSize
+  commentId: P:System.IO.Pipes.PipeStream.OutBufferSize
+  nameWithType: PipeStream.OutBufferSize
+- uid: System.IO.Pipes.PipeStream.Position
+  parent: System.IO.Pipes.PipeStream
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.Pipes.PipeStream.Position
+  commentId: P:System.IO.Pipes.PipeStream.Position
+  nameWithType: PipeStream.Position
+- uid: System.IO.Pipes.PipeStream.SafePipeHandle
+  parent: System.IO.Pipes.PipeStream
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.Pipes.PipeStream.SafePipeHandle
+  commentId: P:System.IO.Pipes.PipeStream.SafePipeHandle
+  nameWithType: PipeStream.SafePipeHandle
+- uid: System.IO.Pipes.PipeStream.Dispose(System.Boolean)
+  parent: System.IO.Pipes.PipeStream
+  isExternal: true
+  name: "XXX"
+  fullName: System.IO.Pipes.PipeStream.Dispose(System.Boolean)
+  spec.csharp:
+  - uid: System.IO.Pipes.PipeStream.Dispose(System.Boolean)
+    name: "XXX"
+    fullName: System.IO.Pipes.PipeStream.Dispose
+  - name: "XXX"
+    fullName: (
+  - uid: System.Boolean
+    name: "XXX"
+    fullName: System.Boolean
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.IO.Pipes.PipeStream.Dispose(System.Boolean)
+    name: "XXX"
+    fullName: System.IO.Pipes.PipeStream.Dispose
+  - name: "XXX"
+    fullName: (
+  - uid: System.Boolean
+    name: "XXX"
+    fullName: System.Boolean
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.IO.Pipes.PipeStream.Dispose(System.Boolean)
+  nameWithType: PipeStream.Dispose(Boolean)
+- uid: System.IO.Pipes.PipeStream.Flush
+  parent: System.IO.Pipes.PipeStream
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.Pipes.PipeStream.Flush()
+  spec.csharp:
+  - uid: System.IO.Pipes.PipeStream.Flush
+    name: "XXX"
+    fullName: System.IO.Pipes.PipeStream.Flush
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.IO.Pipes.PipeStream.Flush
+    name: "XXX"
+    fullName: System.IO.Pipes.PipeStream.Flush
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.IO.Pipes.PipeStream.Flush
+  nameWithType: PipeStream.Flush()
+- uid: System.IO.Pipes.PipeStream.Read(System.Byte[],System.Int32,System.Int32)
+  parent: System.IO.Pipes.PipeStream
+  isExternal: true
+  name: "XXX"
+  fullName: System.IO.Pipes.PipeStream.Read(System.Byte[], System.Int32, System.Int32)
+  fullname.vb: System.IO.Pipes.PipeStream.Read(System.Byte(), System.Int32, System.Int32)
+  name.vb: Read(Byte(), Int32, Int32)
+  spec.csharp:
+  - uid: System.IO.Pipes.PipeStream.Read(System.Byte[],System.Int32,System.Int32)
+    name: "XXX"
+    fullName: System.IO.Pipes.PipeStream.Read
+  - name: "XXX"
+    fullName: (
+  - uid: System.Byte
+    name: "XXX"
+    fullName: System.Byte
+    isExternal: true
+  - name: 'XXX'
+    fullName: '[]'
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.IO.Pipes.PipeStream.Read(System.Byte[],System.Int32,System.Int32)
+    name: "XXX"
+    fullName: System.IO.Pipes.PipeStream.Read
+  - name: "XXX"
+    fullName: (
+  - uid: System.Byte
+    name: "XXX"
+    fullName: System.Byte
+    isExternal: true
+  - name: "XXX"
+    fullName: ()
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.IO.Pipes.PipeStream.Read(System.Byte[],System.Int32,System.Int32)
+  nameWithType: PipeStream.Read(Byte[], Int32, Int32)
+  nameWithType.vb: PipeStream.Read(Byte(), Int32, Int32)
+- uid: System.IO.Pipes.PipeStream.ReadByte
+  parent: System.IO.Pipes.PipeStream
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.Pipes.PipeStream.ReadByte()
+  spec.csharp:
+  - uid: System.IO.Pipes.PipeStream.ReadByte
+    name: "XXX"
+    fullName: System.IO.Pipes.PipeStream.ReadByte
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.IO.Pipes.PipeStream.ReadByte
+    name: "XXX"
+    fullName: System.IO.Pipes.PipeStream.ReadByte
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.IO.Pipes.PipeStream.ReadByte
+  nameWithType: PipeStream.ReadByte()
+- uid: System.IO.Pipes.PipeStream.Seek(System.Int64,System.IO.SeekOrigin)
+  parent: System.IO.Pipes.PipeStream
+  isExternal: true
+  name: "XXX"
+  fullName: System.IO.Pipes.PipeStream.Seek(System.Int64, System.IO.SeekOrigin)
+  spec.csharp:
+  - uid: System.IO.Pipes.PipeStream.Seek(System.Int64,System.IO.SeekOrigin)
+    name: "XXX"
+    fullName: System.IO.Pipes.PipeStream.Seek
+  - name: "XXX"
+    fullName: (
+  - uid: System.Int64
+    name: "XXX"
+    fullName: System.Int64
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.IO.SeekOrigin
+    name: "XXX"
+    fullName: System.IO.SeekOrigin
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.IO.Pipes.PipeStream.Seek(System.Int64,System.IO.SeekOrigin)
+    name: "XXX"
+    fullName: System.IO.Pipes.PipeStream.Seek
+  - name: "XXX"
+    fullName: (
+  - uid: System.Int64
+    name: "XXX"
+    fullName: System.Int64
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.IO.SeekOrigin
+    name: "XXX"
+    fullName: System.IO.SeekOrigin
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.IO.Pipes.PipeStream.Seek(System.Int64,System.IO.SeekOrigin)
+  nameWithType: PipeStream.Seek(Int64, SeekOrigin)
+- uid: System.IO.Pipes.PipeStream.SetLength(System.Int64)
+  parent: System.IO.Pipes.PipeStream
+  isExternal: true
+  name: "XXX"
+  fullName: System.IO.Pipes.PipeStream.SetLength(System.Int64)
+  spec.csharp:
+  - uid: System.IO.Pipes.PipeStream.SetLength(System.Int64)
+    name: "XXX"
+    fullName: System.IO.Pipes.PipeStream.SetLength
+  - name: "XXX"
+    fullName: (
+  - uid: System.Int64
+    name: "XXX"
+    fullName: System.Int64
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.IO.Pipes.PipeStream.SetLength(System.Int64)
+    name: "XXX"
+    fullName: System.IO.Pipes.PipeStream.SetLength
+  - name: "XXX"
+    fullName: (
+  - uid: System.Int64
+    name: "XXX"
+    fullName: System.Int64
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.IO.Pipes.PipeStream.SetLength(System.Int64)
+  nameWithType: PipeStream.SetLength(Int64)
+- uid: System.IO.Pipes.PipeStream.WaitForPipeDrain
+  parent: System.IO.Pipes.PipeStream
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.Pipes.PipeStream.WaitForPipeDrain()
+  spec.csharp:
+  - uid: System.IO.Pipes.PipeStream.WaitForPipeDrain
+    name: "XXX"
+    fullName: System.IO.Pipes.PipeStream.WaitForPipeDrain
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.IO.Pipes.PipeStream.WaitForPipeDrain
+    name: "XXX"
+    fullName: System.IO.Pipes.PipeStream.WaitForPipeDrain
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.IO.Pipes.PipeStream.WaitForPipeDrain
+  nameWithType: PipeStream.WaitForPipeDrain()
+- uid: System.IO.Pipes.PipeStream.Write(System.Byte[],System.Int32,System.Int32)
+  parent: System.IO.Pipes.PipeStream
+  isExternal: true
+  name: "XXX"
+  fullName: System.IO.Pipes.PipeStream.Write(System.Byte[], System.Int32, System.Int32)
+  fullname.vb: System.IO.Pipes.PipeStream.Write(System.Byte(), System.Int32, System.Int32)
+  name.vb: Write(Byte(), Int32, Int32)
+  spec.csharp:
+  - uid: System.IO.Pipes.PipeStream.Write(System.Byte[],System.Int32,System.Int32)
+    name: "XXX"
+    fullName: System.IO.Pipes.PipeStream.Write
+  - name: "XXX"
+    fullName: (
+  - uid: System.Byte
+    name: "XXX"
+    fullName: System.Byte
+    isExternal: true
+  - name: 'XXX'
+    fullName: '[]'
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.IO.Pipes.PipeStream.Write(System.Byte[],System.Int32,System.Int32)
+    name: "XXX"
+    fullName: System.IO.Pipes.PipeStream.Write
+  - name: "XXX"
+    fullName: (
+  - uid: System.Byte
+    name: "XXX"
+    fullName: System.Byte
+    isExternal: true
+  - name: "XXX"
+    fullName: ()
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.IO.Pipes.PipeStream.Write(System.Byte[],System.Int32,System.Int32)
+  nameWithType: PipeStream.Write(Byte[], Int32, Int32)
+  nameWithType.vb: PipeStream.Write(Byte(), Int32, Int32)
+- uid: System.IO.Pipes.PipeStream.WriteByte(System.Byte)
+  parent: System.IO.Pipes.PipeStream
+  isExternal: true
+  name: "XXX"
+  fullName: System.IO.Pipes.PipeStream.WriteByte(System.Byte)
+  spec.csharp:
+  - uid: System.IO.Pipes.PipeStream.WriteByte(System.Byte)
+    name: "XXX"
+    fullName: System.IO.Pipes.PipeStream.WriteByte
+  - name: "XXX"
+    fullName: (
+  - uid: System.Byte
+    name: "XXX"
+    fullName: System.Byte
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.IO.Pipes.PipeStream.WriteByte(System.Byte)
+    name: "XXX"
+    fullName: System.IO.Pipes.PipeStream.WriteByte
+  - name: "XXX"
+    fullName: (
+  - uid: System.Byte
+    name: "XXX"
+    fullName: System.Byte
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.IO.Pipes.PipeStream.WriteByte(System.Byte)
+  nameWithType: PipeStream.WriteByte(Byte)
+- uid: System.IO.Pipes.PipeStream.ReadAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)
+  parent: System.IO.Pipes.PipeStream
+  isExternal: true
+  name: "XXX"
+  fullName: System.IO.Pipes.PipeStream.ReadAsync(System.Byte[], System.Int32, System.Int32, System.Threading.CancellationToken)
+  fullname.vb: System.IO.Pipes.PipeStream.ReadAsync(System.Byte(), System.Int32, System.Int32, System.Threading.CancellationToken)
+  name.vb: ReadAsync(Byte(), Int32, Int32, CancellationToken)
+  spec.csharp:
+  - uid: System.IO.Pipes.PipeStream.ReadAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)
+    name: "XXX"
+    fullName: System.IO.Pipes.PipeStream.ReadAsync
+  - name: "XXX"
+    fullName: (
+  - uid: System.Byte
+    name: "XXX"
+    fullName: System.Byte
+    isExternal: true
+  - name: 'XXX'
+    fullName: '[]'
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: "XXX"
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.IO.Pipes.PipeStream.ReadAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)
+    name: "XXX"
+    fullName: System.IO.Pipes.PipeStream.ReadAsync
+  - name: "XXX"
+    fullName: (
+  - uid: System.Byte
+    name: "XXX"
+    fullName: System.Byte
+    isExternal: true
+  - name: "XXX"
+    fullName: ()
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: "XXX"
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.IO.Pipes.PipeStream.ReadAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)
+  nameWithType: PipeStream.ReadAsync(Byte[], Int32, Int32, CancellationToken)
+  nameWithType.vb: PipeStream.ReadAsync(Byte(), Int32, Int32, CancellationToken)
+- uid: System.IO.Pipes.PipeStream.WriteAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)
+  parent: System.IO.Pipes.PipeStream
+  isExternal: true
+  name: "XXX"
+  fullName: System.IO.Pipes.PipeStream.WriteAsync(System.Byte[], System.Int32, System.Int32, System.Threading.CancellationToken)
+  fullname.vb: System.IO.Pipes.PipeStream.WriteAsync(System.Byte(), System.Int32, System.Int32, System.Threading.CancellationToken)
+  name.vb: WriteAsync(Byte(), Int32, Int32, CancellationToken)
+  spec.csharp:
+  - uid: System.IO.Pipes.PipeStream.WriteAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)
+    name: "XXX"
+    fullName: System.IO.Pipes.PipeStream.WriteAsync
+  - name: "XXX"
+    fullName: (
+  - uid: System.Byte
+    name: "XXX"
+    fullName: System.Byte
+    isExternal: true
+  - name: 'XXX'
+    fullName: '[]'
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: "XXX"
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.IO.Pipes.PipeStream.WriteAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)
+    name: "XXX"
+    fullName: System.IO.Pipes.PipeStream.WriteAsync
+  - name: "XXX"
+    fullName: (
+  - uid: System.Byte
+    name: "XXX"
+    fullName: System.Byte
+    isExternal: true
+  - name: "XXX"
+    fullName: ()
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: "XXX"
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.IO.Pipes.PipeStream.WriteAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)
+  nameWithType: PipeStream.WriteAsync(Byte[], Int32, Int32, CancellationToken)
+  nameWithType.vb: PipeStream.WriteAsync(Byte(), Int32, Int32, CancellationToken)
+- uid: System.IO.Stream.Null
+  parent: System.IO.Stream
+  isExternal: false
+  fullName: System.IO.Stream.Null
+  commentId: F:System.IO.Stream.Null
+  nameWithType: Stream.Null
+- uid: System.IO.Stream.CopyToAsync(System.IO.Stream)
+  parent: System.IO.Stream
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.Stream.CopyToAsync(System.IO.Stream)
+  spec.csharp:
+  - uid: System.IO.Stream.CopyToAsync(System.IO.Stream)
+    name: "XXX"
+    fullName: System.IO.Stream.CopyToAsync
+  - name: "XXX"
+    fullName: (
+  - uid: System.IO.Stream
+    name: "XXX"
+    fullName: System.IO.Stream
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.IO.Stream.CopyToAsync(System.IO.Stream)
+    name: "XXX"
+    fullName: System.IO.Stream.CopyToAsync
+  - name: "XXX"
+    fullName: (
+  - uid: System.IO.Stream
+    name: "XXX"
+    fullName: System.IO.Stream
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.IO.Stream.CopyToAsync(System.IO.Stream)
+  nameWithType: Stream.CopyToAsync(Stream)
+- uid: System.IO.Stream.CopyToAsync(System.IO.Stream,System.Int32)
+  parent: System.IO.Stream
+  isExternal: true
+  name: "XXX"
+  fullName: System.IO.Stream.CopyToAsync(System.IO.Stream, System.Int32)
+  spec.csharp:
+  - uid: System.IO.Stream.CopyToAsync(System.IO.Stream,System.Int32)
+    name: "XXX"
+    fullName: System.IO.Stream.CopyToAsync
+  - name: "XXX"
+    fullName: (
+  - uid: System.IO.Stream
+    name: "XXX"
+    fullName: System.IO.Stream
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.IO.Stream.CopyToAsync(System.IO.Stream,System.Int32)
+    name: "XXX"
+    fullName: System.IO.Stream.CopyToAsync
+  - name: "XXX"
+    fullName: (
+  - uid: System.IO.Stream
+    name: "XXX"
+    fullName: System.IO.Stream
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.IO.Stream.CopyToAsync(System.IO.Stream,System.Int32)
+  nameWithType: Stream.CopyToAsync(Stream, Int32)
+- uid: System.IO.Stream.CopyToAsync(System.IO.Stream,System.Int32,System.Threading.CancellationToken)
+  parent: System.IO.Stream
+  isExternal: true
+  name: "XXX"
+  fullName: System.IO.Stream.CopyToAsync(System.IO.Stream, System.Int32, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: System.IO.Stream.CopyToAsync(System.IO.Stream,System.Int32,System.Threading.CancellationToken)
+    name: "XXX"
+    fullName: System.IO.Stream.CopyToAsync
+  - name: "XXX"
+    fullName: (
+  - uid: System.IO.Stream
+    name: "XXX"
+    fullName: System.IO.Stream
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: "XXX"
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.IO.Stream.CopyToAsync(System.IO.Stream,System.Int32,System.Threading.CancellationToken)
+    name: "XXX"
+    fullName: System.IO.Stream.CopyToAsync
+  - name: "XXX"
+    fullName: (
+  - uid: System.IO.Stream
+    name: "XXX"
+    fullName: System.IO.Stream
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: "XXX"
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.IO.Stream.CopyToAsync(System.IO.Stream,System.Int32,System.Threading.CancellationToken)
+  nameWithType: Stream.CopyToAsync(Stream, Int32, CancellationToken)
+- uid: System.IO.Stream.CopyTo(System.IO.Stream)
+  parent: System.IO.Stream
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.Stream.CopyTo(System.IO.Stream)
+  spec.csharp:
+  - uid: System.IO.Stream.CopyTo(System.IO.Stream)
+    name: "XXX"
+    fullName: System.IO.Stream.CopyTo
+  - name: "XXX"
+    fullName: (
+  - uid: System.IO.Stream
+    name: "XXX"
+    fullName: System.IO.Stream
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.IO.Stream.CopyTo(System.IO.Stream)
+    name: "XXX"
+    fullName: System.IO.Stream.CopyTo
+  - name: "XXX"
+    fullName: (
+  - uid: System.IO.Stream
+    name: "XXX"
+    fullName: System.IO.Stream
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.IO.Stream.CopyTo(System.IO.Stream)
+  nameWithType: Stream.CopyTo(Stream)
+- uid: System.IO.Stream.CopyTo(System.IO.Stream,System.Int32)
+  parent: System.IO.Stream
+  isExternal: true
+  name: "XXX"
+  fullName: System.IO.Stream.CopyTo(System.IO.Stream, System.Int32)
+  spec.csharp:
+  - uid: System.IO.Stream.CopyTo(System.IO.Stream,System.Int32)
+    name: "XXX"
+    fullName: System.IO.Stream.CopyTo
+  - name: "XXX"
+    fullName: (
+  - uid: System.IO.Stream
+    name: "XXX"
+    fullName: System.IO.Stream
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.IO.Stream.CopyTo(System.IO.Stream,System.Int32)
+    name: "XXX"
+    fullName: System.IO.Stream.CopyTo
+  - name: "XXX"
+    fullName: (
+  - uid: System.IO.Stream
+    name: "XXX"
+    fullName: System.IO.Stream
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.IO.Stream.CopyTo(System.IO.Stream,System.Int32)
+  nameWithType: Stream.CopyTo(Stream, Int32)
+- uid: System.IO.Stream.Close
+  parent: System.IO.Stream
+  isExternal: true
+  name: "XXX"
+  fullName: System.IO.Stream.Close()
+  spec.csharp:
+  - uid: System.IO.Stream.Close
+    name: "XXX"
+    fullName: System.IO.Stream.Close
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.IO.Stream.Close
+    name: "XXX"
+    fullName: System.IO.Stream.Close
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.IO.Stream.Close
+  nameWithType: Stream.Close()
+- uid: System.IO.Stream.Dispose
+  parent: System.IO.Stream
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.Stream.Dispose()
+  spec.csharp:
+  - uid: System.IO.Stream.Dispose
+    name: "XXX"
+    fullName: System.IO.Stream.Dispose
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.IO.Stream.Dispose
+    name: "XXX"
+    fullName: System.IO.Stream.Dispose
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.IO.Stream.Dispose
+  nameWithType: Stream.Dispose()
+- uid: System.IO.Stream.FlushAsync
+  parent: System.IO.Stream
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.Stream.FlushAsync()
+  spec.csharp:
+  - uid: System.IO.Stream.FlushAsync
+    name: "XXX"
+    fullName: System.IO.Stream.FlushAsync
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.IO.Stream.FlushAsync
+    name: "XXX"
+    fullName: System.IO.Stream.FlushAsync
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.IO.Stream.FlushAsync
+  nameWithType: Stream.FlushAsync()
+- uid: System.IO.Stream.FlushAsync(System.Threading.CancellationToken)
+  parent: System.IO.Stream
+  isExternal: true
+  name: "XXX"
+  fullName: System.IO.Stream.FlushAsync(System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: System.IO.Stream.FlushAsync(System.Threading.CancellationToken)
+    name: "XXX"
+    fullName: System.IO.Stream.FlushAsync
+  - name: "XXX"
+    fullName: (
+  - uid: System.Threading.CancellationToken
+    name: "XXX"
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.IO.Stream.FlushAsync(System.Threading.CancellationToken)
+    name: "XXX"
+    fullName: System.IO.Stream.FlushAsync
+  - name: "XXX"
+    fullName: (
+  - uid: System.Threading.CancellationToken
+    name: "XXX"
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.IO.Stream.FlushAsync(System.Threading.CancellationToken)
+  nameWithType: Stream.FlushAsync(CancellationToken)
+- uid: System.IO.Stream.CreateWaitHandle
+  parent: System.IO.Stream
+  isExternal: true
+  name: "XXX"
+  fullName: System.IO.Stream.CreateWaitHandle()
+  spec.csharp:
+  - uid: System.IO.Stream.CreateWaitHandle
+    name: "XXX"
+    fullName: System.IO.Stream.CreateWaitHandle
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.IO.Stream.CreateWaitHandle
+    name: "XXX"
+    fullName: System.IO.Stream.CreateWaitHandle
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.IO.Stream.CreateWaitHandle
+  nameWithType: Stream.CreateWaitHandle()
+- uid: System.IO.Stream.BeginRead(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)
+  parent: System.IO.Stream
+  isExternal: true
+  name: "XXX"
+  fullName: System.IO.Stream.BeginRead(System.Byte[], System.Int32, System.Int32, System.AsyncCallback, System.Object)
+  fullname.vb: System.IO.Stream.BeginRead(System.Byte(), System.Int32, System.Int32, System.AsyncCallback, System.Object)
+  name.vb: BeginRead(Byte(), Int32, Int32, AsyncCallback, Object)
+  spec.csharp:
+  - uid: System.IO.Stream.BeginRead(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)
+    name: "XXX"
+    fullName: System.IO.Stream.BeginRead
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Byte
+    name: "XXX"
+    fullName: System.Byte
+    isExternal: true
+  - name: 'XXX'
+    fullName: '[]'
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.AsyncCallback
+    name: "XXX"
+    fullName: System.AsyncCallback
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.IO.Stream.BeginRead(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)
+    name: "XXX"
+    fullName: System.IO.Stream.BeginRead
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Byte
+    name: "XXX"
+    fullName: System.Byte
+    isExternal: true
+  - name: "XXX"
+    fullName: ()
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.AsyncCallback
+    name: "XXX"
+    fullName: System.AsyncCallback
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.IO.Stream.BeginRead(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)
+  nameWithType: Stream.BeginRead(Byte[], Int32, Int32, AsyncCallback, Object)
+  nameWithType.vb: Stream.BeginRead(Byte(), Int32, Int32, AsyncCallback, Object)
+- uid: System.IO.Stream.EndRead(System.IAsyncResult)
+  parent: System.IO.Stream
+  isExternal: true
+  name: "XXX"
+  fullName: System.IO.Stream.EndRead(System.IAsyncResult)
+  spec.csharp:
+  - uid: System.IO.Stream.EndRead(System.IAsyncResult)
+    name: "XXX"
+    fullName: System.IO.Stream.EndRead
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.IAsyncResult
+    name: "XXX"
+    fullName: System.IAsyncResult
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.IO.Stream.EndRead(System.IAsyncResult)
+    name: "XXX"
+    fullName: System.IO.Stream.EndRead
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.IAsyncResult
+    name: "XXX"
+    fullName: System.IAsyncResult
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.IO.Stream.EndRead(System.IAsyncResult)
+  nameWithType: Stream.EndRead(IAsyncResult)
+- uid: System.IO.Stream.ReadAsync(System.Byte[],System.Int32,System.Int32)
+  parent: System.IO.Stream
+  isExternal: true
+  name: "XXX"
+  fullName: System.IO.Stream.ReadAsync(System.Byte[], System.Int32, System.Int32)
+  fullname.vb: System.IO.Stream.ReadAsync(System.Byte(), System.Int32, System.Int32)
+  name.vb: ReadAsync(Byte(), Int32, Int32)
+  spec.csharp:
+  - uid: System.IO.Stream.ReadAsync(System.Byte[],System.Int32,System.Int32)
+    name: "XXX"
+    fullName: System.IO.Stream.ReadAsync
+  - name: "XXX"
+    fullName: (
+  - uid: System.Byte
+    name: "XXX"
+    fullName: System.Byte
+    isExternal: true
+  - name: 'XXX'
+    fullName: '[]'
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.IO.Stream.ReadAsync(System.Byte[],System.Int32,System.Int32)
+    name: "XXX"
+    fullName: System.IO.Stream.ReadAsync
+  - name: "XXX"
+    fullName: (
+  - uid: System.Byte
+    name: "XXX"
+    fullName: System.Byte
+    isExternal: true
+  - name: "XXX"
+    fullName: ()
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.IO.Stream.ReadAsync(System.Byte[],System.Int32,System.Int32)
+  nameWithType: Stream.ReadAsync(Byte[], Int32, Int32)
+  nameWithType.vb: Stream.ReadAsync(Byte(), Int32, Int32)
+- uid: System.IO.Stream.BeginWrite(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)
+  parent: System.IO.Stream
+  isExternal: true
+  name: "XXX"
+  fullName: System.IO.Stream.BeginWrite(System.Byte[], System.Int32, System.Int32, System.AsyncCallback, System.Object)
+  fullname.vb: System.IO.Stream.BeginWrite(System.Byte(), System.Int32, System.Int32, System.AsyncCallback, System.Object)
+  name.vb: BeginWrite(Byte(), Int32, Int32, AsyncCallback, Object)
+  spec.csharp:
+  - uid: System.IO.Stream.BeginWrite(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)
+    name: "XXX"
+    fullName: System.IO.Stream.BeginWrite
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Byte
+    name: "XXX"
+    fullName: System.Byte
+    isExternal: true
+  - name: 'XXX'
+    fullName: '[]'
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.AsyncCallback
+    name: "XXX"
+    fullName: System.AsyncCallback
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.IO.Stream.BeginWrite(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)
+    name: "XXX"
+    fullName: System.IO.Stream.BeginWrite
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Byte
+    name: "XXX"
+    fullName: System.Byte
+    isExternal: true
+  - name: "XXX"
+    fullName: ()
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.AsyncCallback
+    name: "XXX"
+    fullName: System.AsyncCallback
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.IO.Stream.BeginWrite(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)
+  nameWithType: Stream.BeginWrite(Byte[], Int32, Int32, AsyncCallback, Object)
+  nameWithType.vb: Stream.BeginWrite(Byte(), Int32, Int32, AsyncCallback, Object)
+- uid: System.IO.Stream.EndWrite(System.IAsyncResult)
+  parent: System.IO.Stream
+  isExternal: true
+  name: "XXX"
+  fullName: System.IO.Stream.EndWrite(System.IAsyncResult)
+  spec.csharp:
+  - uid: System.IO.Stream.EndWrite(System.IAsyncResult)
+    name: "XXX"
+    fullName: System.IO.Stream.EndWrite
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.IAsyncResult
+    name: "XXX"
+    fullName: System.IAsyncResult
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.IO.Stream.EndWrite(System.IAsyncResult)
+    name: "XXX"
+    fullName: System.IO.Stream.EndWrite
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.IAsyncResult
+    name: "XXX"
+    fullName: System.IAsyncResult
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.IO.Stream.EndWrite(System.IAsyncResult)
+  nameWithType: Stream.EndWrite(IAsyncResult)
+- uid: System.IO.Stream.WriteAsync(System.Byte[],System.Int32,System.Int32)
+  parent: System.IO.Stream
+  isExternal: true
+  name: "XXX"
+  fullName: System.IO.Stream.WriteAsync(System.Byte[], System.Int32, System.Int32)
+  fullname.vb: System.IO.Stream.WriteAsync(System.Byte(), System.Int32, System.Int32)
+  name.vb: WriteAsync(Byte(), Int32, Int32)
+  spec.csharp:
+  - uid: System.IO.Stream.WriteAsync(System.Byte[],System.Int32,System.Int32)
+    name: "XXX"
+    fullName: System.IO.Stream.WriteAsync
+  - name: "XXX"
+    fullName: (
+  - uid: System.Byte
+    name: "XXX"
+    fullName: System.Byte
+    isExternal: true
+  - name: 'XXX'
+    fullName: '[]'
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.IO.Stream.WriteAsync(System.Byte[],System.Int32,System.Int32)
+    name: "XXX"
+    fullName: System.IO.Stream.WriteAsync
+  - name: "XXX"
+    fullName: (
+  - uid: System.Byte
+    name: "XXX"
+    fullName: System.Byte
+    isExternal: true
+  - name: "XXX"
+    fullName: ()
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.IO.Stream.WriteAsync(System.Byte[],System.Int32,System.Int32)
+  nameWithType: Stream.WriteAsync(Byte[], Int32, Int32)
+  nameWithType.vb: Stream.WriteAsync(Byte(), Int32, Int32)
+- uid: System.IO.Stream.Synchronized(System.IO.Stream)
+  parent: System.IO.Stream
+  isExternal: true
+  name: "XXX"
+  fullName: System.IO.Stream.Synchronized(System.IO.Stream)
+  spec.csharp:
+  - uid: System.IO.Stream.Synchronized(System.IO.Stream)
+    name: "XXX"
+    fullName: System.IO.Stream.Synchronized
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.IO.Stream
+    name: "XXX"
+    fullName: System.IO.Stream
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.IO.Stream.Synchronized(System.IO.Stream)
+    name: "XXX"
+    fullName: System.IO.Stream.Synchronized
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.IO.Stream
+    name: "XXX"
+    fullName: System.IO.Stream
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.IO.Stream.Synchronized(System.IO.Stream)
+  nameWithType: Stream.Synchronized(Stream)
+- uid: System.IO.Stream.ObjectInvariant
+  parent: System.IO.Stream
+  isExternal: true
+  name: "XXX"
+  fullName: System.IO.Stream.ObjectInvariant()
+  spec.csharp:
+  - uid: System.IO.Stream.ObjectInvariant
+    name: "XXX"
+    fullName: System.IO.Stream.ObjectInvariant
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.IO.Stream.ObjectInvariant
+    name: "XXX"
+    fullName: System.IO.Stream.ObjectInvariant
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.IO.Stream.ObjectInvariant
+  nameWithType: Stream.ObjectInvariant()
+- uid: System.IO.Stream.CanTimeout
+  parent: System.IO.Stream
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.Stream.CanTimeout
+  commentId: P:System.IO.Stream.CanTimeout
+  nameWithType: Stream.CanTimeout
+- uid: System.IO.Stream.ReadTimeout
+  parent: System.IO.Stream
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.Stream.ReadTimeout
+  commentId: P:System.IO.Stream.ReadTimeout
+  nameWithType: Stream.ReadTimeout
+- uid: System.IO.Stream.WriteTimeout
+  parent: System.IO.Stream
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.Stream.WriteTimeout
+  commentId: P:System.IO.Stream.WriteTimeout
+  nameWithType: Stream.WriteTimeout
+- uid: System.MarshalByRefObject.MemberwiseClone(System.Boolean)
+  parent: System.MarshalByRefObject
+  isExternal: true
+  name: "XXX"
+  fullName: System.MarshalByRefObject.MemberwiseClone(System.Boolean)
+  spec.csharp:
+  - uid: System.MarshalByRefObject.MemberwiseClone(System.Boolean)
+    name: "XXX"
+    fullName: System.MarshalByRefObject.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Boolean
+    name: "XXX"
+    fullName: System.Boolean
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.MarshalByRefObject.MemberwiseClone(System.Boolean)
+    name: "XXX"
+    fullName: System.MarshalByRefObject.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Boolean
+    name: "XXX"
+    fullName: System.Boolean
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.MarshalByRefObject.MemberwiseClone(System.Boolean)
+  nameWithType: MarshalByRefObject.MemberwiseClone(Boolean)
+- uid: System.MarshalByRefObject.GetLifetimeService
+  parent: System.MarshalByRefObject
+  isExternal: true
+  name: "XXX"
+  fullName: System.MarshalByRefObject.GetLifetimeService()
+  spec.csharp:
+  - uid: System.MarshalByRefObject.GetLifetimeService
+    name: "XXX"
+    fullName: System.MarshalByRefObject.GetLifetimeService
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.MarshalByRefObject.GetLifetimeService
+    name: "XXX"
+    fullName: System.MarshalByRefObject.GetLifetimeService
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.MarshalByRefObject.GetLifetimeService
+  nameWithType: MarshalByRefObject.GetLifetimeService()
+- uid: System.MarshalByRefObject.InitializeLifetimeService
+  parent: System.MarshalByRefObject
+  isExternal: true
+  name: "XXX"
+  fullName: System.MarshalByRefObject.InitializeLifetimeService()
+  spec.csharp:
+  - uid: System.MarshalByRefObject.InitializeLifetimeService
+    name: "XXX"
+    fullName: System.MarshalByRefObject.InitializeLifetimeService
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.MarshalByRefObject.InitializeLifetimeService
+    name: "XXX"
+    fullName: System.MarshalByRefObject.InitializeLifetimeService
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.MarshalByRefObject.InitializeLifetimeService
+  nameWithType: MarshalByRefObject.InitializeLifetimeService()
+- uid: System.MarshalByRefObject.CreateObjRef(System.Type)
+  parent: System.MarshalByRefObject
+  isExternal: true
+  name: "XXX"
+  fullName: System.MarshalByRefObject.CreateObjRef(System.Type)
+  spec.csharp:
+  - uid: System.MarshalByRefObject.CreateObjRef(System.Type)
+    name: "XXX"
+    fullName: System.MarshalByRefObject.CreateObjRef
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Type
+    name: "XXX"
+    fullName: System.Type
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.MarshalByRefObject.CreateObjRef(System.Type)
+    name: "XXX"
+    fullName: System.MarshalByRefObject.CreateObjRef
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Type
+    name: "XXX"
+    fullName: System.Type
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.MarshalByRefObject.CreateObjRef(System.Type)
+  nameWithType: MarshalByRefObject.CreateObjRef(Type)
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.ToString
+  nameWithType: Object.ToString()
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.Equals(System.Object)
+  nameWithType: Object.Equals(Object)
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  nameWithType: Object.Equals(Object, Object)
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.GetHashCode
+  nameWithType: Object.GetHashCode()
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.GetType
+  nameWithType: Object.GetType()
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.MemberwiseClone
+  nameWithType: Object.MemberwiseClone()
+- uid: System.IO.Stream.System.IO.WindowsRuntimeStreamExtensions.AsInputStream
+  parent: System.IO.WindowsRuntimeStreamExtensions
+  definition: System.IO.WindowsRuntimeStreamExtensions.AsInputStream(System.IO.Stream)
+  name: "XXX"
+  fullName: System.IO.WindowsRuntimeStreamExtensions.AsInputStream()
+  spec.csharp:
+  - uid: System.IO.WindowsRuntimeStreamExtensions.AsInputStream
+    name: "XXX"
+    fullName: System.IO.WindowsRuntimeStreamExtensions.AsInputStream
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.IO.WindowsRuntimeStreamExtensions.AsInputStream
+    name: "XXX"
+    fullName: System.IO.WindowsRuntimeStreamExtensions.AsInputStream
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.IO.WindowsRuntimeStreamExtensions.AsInputStream(System.IO.Stream)
+  nameWithType: WindowsRuntimeStreamExtensions.AsInputStream()
+- uid: System.IO.Stream.System.IO.WindowsRuntimeStreamExtensions.AsOutputStream
+  parent: System.IO.WindowsRuntimeStreamExtensions
+  definition: System.IO.WindowsRuntimeStreamExtensions.AsOutputStream(System.IO.Stream)
+  name: "XXX"
+  fullName: System.IO.WindowsRuntimeStreamExtensions.AsOutputStream()
+  spec.csharp:
+  - uid: System.IO.WindowsRuntimeStreamExtensions.AsOutputStream
+    name: "XXX"
+    fullName: System.IO.WindowsRuntimeStreamExtensions.AsOutputStream
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.IO.WindowsRuntimeStreamExtensions.AsOutputStream
+    name: "XXX"
+    fullName: System.IO.WindowsRuntimeStreamExtensions.AsOutputStream
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.IO.WindowsRuntimeStreamExtensions.AsOutputStream(System.IO.Stream)
+  nameWithType: WindowsRuntimeStreamExtensions.AsOutputStream()
+- uid: System.IO.Stream.System.IO.WindowsRuntimeStreamExtensions.AsRandomAccessStream
+  parent: System.IO.WindowsRuntimeStreamExtensions
+  definition: System.IO.WindowsRuntimeStreamExtensions.AsRandomAccessStream(System.IO.Stream)
+  name: "XXX"
+  fullName: System.IO.WindowsRuntimeStreamExtensions.AsRandomAccessStream()
+  spec.csharp:
+  - uid: System.IO.WindowsRuntimeStreamExtensions.AsRandomAccessStream
+    name: "XXX"
+    fullName: System.IO.WindowsRuntimeStreamExtensions.AsRandomAccessStream
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.IO.WindowsRuntimeStreamExtensions.AsRandomAccessStream
+    name: "XXX"
+    fullName: System.IO.WindowsRuntimeStreamExtensions.AsRandomAccessStream
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.IO.WindowsRuntimeStreamExtensions.AsRandomAccessStream(System.IO.Stream)
+  nameWithType: WindowsRuntimeStreamExtensions.AsRandomAccessStream()
+- uid: System
+  isExternal: false
+  name: "XXX"
+  fullName: System
+  commentId: N:System
+  nameWithType: System
+- uid: System.IO
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO
+  commentId: N:System.IO
+  nameWithType: System.IO
+- uid: System.IO.WindowsRuntimeStreamExtensions.AsInputStream(System.IO.Stream)
+  isExternal: true
+  name: "XXX"
+  fullName: System.IO.WindowsRuntimeStreamExtensions.AsInputStream(System.IO.Stream)
+  spec.csharp:
+  - uid: System.IO.WindowsRuntimeStreamExtensions.AsInputStream(System.IO.Stream)
+    name: "XXX"
+    fullName: System.IO.WindowsRuntimeStreamExtensions.AsInputStream
+  - name: "XXX"
+    fullName: (
+  - uid: System.IO.Stream
+    name: "XXX"
+    fullName: System.IO.Stream
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.IO.WindowsRuntimeStreamExtensions.AsInputStream(System.IO.Stream)
+    name: "XXX"
+    fullName: System.IO.WindowsRuntimeStreamExtensions.AsInputStream
+  - name: "XXX"
+    fullName: (
+  - uid: System.IO.Stream
+    name: "XXX"
+    fullName: System.IO.Stream
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.IO.WindowsRuntimeStreamExtensions.AsInputStream(System.IO.Stream)
+  nameWithType: WindowsRuntimeStreamExtensions.AsInputStream(Stream)
+- uid: System.IO.WindowsRuntimeStreamExtensions
+  parent: System.IO
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.WindowsRuntimeStreamExtensions
+  commentId: T:System.IO.WindowsRuntimeStreamExtensions
+  nameWithType: WindowsRuntimeStreamExtensions
+- uid: System.IO.WindowsRuntimeStreamExtensions.AsOutputStream(System.IO.Stream)
+  isExternal: true
+  name: "XXX"
+  fullName: System.IO.WindowsRuntimeStreamExtensions.AsOutputStream(System.IO.Stream)
+  spec.csharp:
+  - uid: System.IO.WindowsRuntimeStreamExtensions.AsOutputStream(System.IO.Stream)
+    name: "XXX"
+    fullName: System.IO.WindowsRuntimeStreamExtensions.AsOutputStream
+  - name: "XXX"
+    fullName: (
+  - uid: System.IO.Stream
+    name: "XXX"
+    fullName: System.IO.Stream
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.IO.WindowsRuntimeStreamExtensions.AsOutputStream(System.IO.Stream)
+    name: "XXX"
+    fullName: System.IO.WindowsRuntimeStreamExtensions.AsOutputStream
+  - name: "XXX"
+    fullName: (
+  - uid: System.IO.Stream
+    name: "XXX"
+    fullName: System.IO.Stream
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.IO.WindowsRuntimeStreamExtensions.AsOutputStream(System.IO.Stream)
+  nameWithType: WindowsRuntimeStreamExtensions.AsOutputStream(Stream)
+- uid: System.IO.WindowsRuntimeStreamExtensions.AsRandomAccessStream(System.IO.Stream)
+  isExternal: true
+  name: "XXX"
+  fullName: System.IO.WindowsRuntimeStreamExtensions.AsRandomAccessStream(System.IO.Stream)
+  spec.csharp:
+  - uid: System.IO.WindowsRuntimeStreamExtensions.AsRandomAccessStream(System.IO.Stream)
+    name: "XXX"
+    fullName: System.IO.WindowsRuntimeStreamExtensions.AsRandomAccessStream
+  - name: "XXX"
+    fullName: (
+  - uid: System.IO.Stream
+    name: "XXX"
+    fullName: System.IO.Stream
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.IO.WindowsRuntimeStreamExtensions.AsRandomAccessStream(System.IO.Stream)
+    name: "XXX"
+    fullName: System.IO.WindowsRuntimeStreamExtensions.AsRandomAccessStream
+  - name: "XXX"
+    fullName: (
+  - uid: System.IO.Stream
+    name: "XXX"
+    fullName: System.IO.Stream
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.IO.WindowsRuntimeStreamExtensions.AsRandomAccessStream(System.IO.Stream)
+  nameWithType: WindowsRuntimeStreamExtensions.AsRandomAccessStream(Stream)
+- uid: System.IO.Pipes.PipeDirection
+  parent: System.IO.Pipes
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.Pipes.PipeDirection
+  commentId: T:System.IO.Pipes.PipeDirection
+  nameWithType: PipeDirection
+- uid: Microsoft.Win32.SafeHandles.SafePipeHandle
+  parent: Microsoft.Win32.SafeHandles
+  isExternal: false
+  name: "XXX"
+  fullName: Microsoft.Win32.SafeHandles.SafePipeHandle
+  commentId: T:Microsoft.Win32.SafeHandles.SafePipeHandle
+  nameWithType: SafePipeHandle
+- uid: Microsoft.Win32.SafeHandles
+  isExternal: false
+  name: "XXX"
+  fullName: Microsoft.Win32.SafeHandles
+  commentId: N:Microsoft.Win32.SafeHandles
+  nameWithType: Microsoft.Win32.SafeHandles
+- uid: System.String
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.String
+  commentId: T:System.String
+  nameWithType: String
+- uid: System.IO.Pipes.PipeStream.ReadMode
+  parent: System.IO.Pipes.PipeStream
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.Pipes.PipeStream.ReadMode
+  commentId: P:System.IO.Pipes.PipeStream.ReadMode
+  nameWithType: PipeStream.ReadMode
+- uid: System.IO.Pipes.PipeTransmissionMode
+  parent: System.IO.Pipes
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.Pipes.PipeTransmissionMode
+  commentId: T:System.IO.Pipes.PipeTransmissionMode
+  nameWithType: PipeTransmissionMode
+- uid: System.IO.Pipes.PipeStream.TransmissionMode
+  parent: System.IO.Pipes.PipeStream
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.Pipes.PipeStream.TransmissionMode
+  commentId: P:System.IO.Pipes.PipeStream.TransmissionMode
+  nameWithType: PipeStream.TransmissionMode
+- uid: System.ArgumentException
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentException
+  nameWithType: ArgumentException
+  commentId: T:System.ArgumentException
+- uid: System.ArgumentNullException
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentNullException
+  nameWithType: ArgumentNullException
+  commentId: T:System.ArgumentNullException
+- uid: System.NotSupportedException
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.NotSupportedException
+  nameWithType: NotSupportedException
+  commentId: T:System.NotSupportedException
+- uid: System.IO.IOException
+  parent: System.IO
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.IOException
+  nameWithType: IOException
+  commentId: T:System.IO.IOException
+- uid: System.ArgumentOutOfRangeException
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentOutOfRangeException
+  nameWithType: ArgumentOutOfRangeException
+  commentId: T:System.ArgumentOutOfRangeException
+- uid: System.ObjectDisposedException
+  isExternal: false
+  name: "XXX"
+  fullName: System.ObjectDisposedException
+  nameWithType: ObjectDisposedException
+  commentId: T:System.ObjectDisposedException

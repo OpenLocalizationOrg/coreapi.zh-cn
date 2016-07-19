@@ -1,0 +1,684 @@
+items:
+- uid: System.Reflection.ReflectionTypeLoadException
+  commentId: T:System.Reflection.ReflectionTypeLoadException
+  id: ReflectionTypeLoadException
+  parent: System.Reflection
+  children:
+  - System.Reflection.ReflectionTypeLoadException.#ctor(System.Type[],System.Exception[])
+  - System.Reflection.ReflectionTypeLoadException.#ctor(System.Type[],System.Exception[],System.String)
+  - System.Reflection.ReflectionTypeLoadException.LoaderExceptions
+  - System.Reflection.ReflectionTypeLoadException.Types
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Reflection.ReflectionTypeLoadException
+  type: Class
+  source:
+    remote:
+      path: src/mscorlib/src/System/Reflection/ReflectionTypeLoadException.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: ReflectionTypeLoadException
+    path: src/mscorlib/src/System/Reflection/ReflectionTypeLoadException.cs
+    startLine: 23
+  assemblies:
+  - System.Reflection
+  namespace: System.Reflection
+  summary: "\n<p>The exception that is thrown by the <xref href=\"System.Reflection.Module.GetTypes\" data-throw-if-not-resolved=\"false\"></xref> method if any of the classes in a module cannot be loaded. This class cannot be inherited.</p>\n"
+  syntax:
+    content: >-
+      [Serializable]
+
+      [ComVisible(true)]
+
+      public sealed class ReflectionTypeLoadException : SystemException, _Exception, ISerializable
+    content.vb: >-
+      <Serializable>
+
+      <ComVisible(True)>
+
+      Public NotInheritable Class ReflectionTypeLoadException
+          Inherits SystemException
+          Implements _Exception, ISerializable
+  inheritance:
+  - System.Object
+  - System.Exception
+  implements:
+  - System.Runtime.Serialization.ISerializable
+  - System.Runtime.InteropServices._Exception
+  inheritedMembers:
+  - System.Exception.GetBaseException
+  - System.Exception.ToString
+  - System.Exception.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  - System.Exception.GetType
+  - System.Exception.Message
+  - System.Exception.Data
+  - System.Exception.InnerException
+  - System.Exception.TargetSite
+  - System.Exception.StackTrace
+  - System.Exception.HelpLink
+  - System.Exception.Source
+  - System.Exception.HResult
+  - System.Exception.SerializeObjectState
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+  nameWithType: ReflectionTypeLoadException
+- uid: System.Reflection.ReflectionTypeLoadException.#ctor(System.Type[],System.Exception[])
+  commentId: M:System.Reflection.ReflectionTypeLoadException.#ctor(System.Type[],System.Exception[])
+  id: '#ctor(System.Type[],System.Exception[])'
+  parent: System.Reflection.ReflectionTypeLoadException
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Reflection.ReflectionTypeLoadException.ReflectionTypeLoadException(System.Type[], System.Exception[])
+  type: Constructor
+  source:
+    remote:
+      path: src/mscorlib/src/System/Reflection/ReflectionTypeLoadException.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: .ctor
+    path: src/mscorlib/src/System/Reflection/ReflectionTypeLoadException.cs
+    startLine: 40
+  assemblies:
+  - System.Reflection
+  namespace: System.Reflection
+  summary: "\n<p>Initializes a new instance of the <xref href=\"System.Reflection.ReflectionTypeLoadException\" data-throw-if-not-resolved=\"false\"></xref> class with the given classes and their associated exceptions.</p>\n"
+  syntax:
+    content: public ReflectionTypeLoadException(Type[] classes, Exception[] exceptions)
+    content.vb: Public Sub New(classes As Type(), exceptions As Exception())
+    parameters:
+    - id: classes
+      type: System.Type[]
+      description: "\n<p>An array of type <strong>Type</strong> containing the classes that were defined in the module and loaded. This array can contain null reference (<strong>Nothing</strong> in Visual Basic) values. </p>\n"
+    - id: exceptions
+      type: System.Exception[]
+      description: "\n<p>An array of type <strong>Exception</strong> containing the exceptions that were thrown by the class loader. The null reference (<strong>Nothing</strong> in Visual Basic) values in the <em>classes</em> array line up with the exceptions in this <em>exceptions</em> array. </p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: System.Reflection.ReflectionTypeLoadException.ReflectionTypeLoadException(System.Type(), System.Exception())
+  name.vb: ReflectionTypeLoadException(Type(), Exception())
+  nameWithType: ReflectionTypeLoadException.ReflectionTypeLoadException(Type[], Exception[])
+  nameWithType.vb: ReflectionTypeLoadException.ReflectionTypeLoadException(Type(), Exception())
+- uid: System.Reflection.ReflectionTypeLoadException.#ctor(System.Type[],System.Exception[],System.String)
+  commentId: M:System.Reflection.ReflectionTypeLoadException.#ctor(System.Type[],System.Exception[],System.String)
+  id: '#ctor(System.Type[],System.Exception[],System.String)'
+  parent: System.Reflection.ReflectionTypeLoadException
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Reflection.ReflectionTypeLoadException.ReflectionTypeLoadException(System.Type[], System.Exception[], System.String)
+  type: Constructor
+  source:
+    remote:
+      path: src/mscorlib/src/System/Reflection/ReflectionTypeLoadException.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: .ctor
+    path: src/mscorlib/src/System/Reflection/ReflectionTypeLoadException.cs
+    startLine: 47
+  assemblies:
+  - System.Reflection
+  namespace: System.Reflection
+  summary: "\n<p>Initializes a new instance of the <xref href=\"System.Reflection.ReflectionTypeLoadException\" data-throw-if-not-resolved=\"false\"></xref> class with the given classes, their associated exceptions, and exception descriptions.</p>\n"
+  syntax:
+    content: public ReflectionTypeLoadException(Type[] classes, Exception[] exceptions, string message)
+    content.vb: Public Sub New(classes As Type(), exceptions As Exception(), message As String)
+    parameters:
+    - id: classes
+      type: System.Type[]
+      description: "\n<p>An array of type <strong>Type</strong> containing the classes that were defined in the module and loaded. This array can contain null reference (<strong>Nothing</strong> in Visual Basic) values. </p>\n"
+    - id: exceptions
+      type: System.Exception[]
+      description: "\n<p>An array of type <strong>Exception</strong> containing the exceptions that were thrown by the class loader. The null reference (<strong>Nothing</strong> in Visual Basic) values in the <em>classes</em> array line up with the exceptions in this <em>exceptions</em> array. </p>\n"
+    - id: message
+      type: System.String
+      description: "\n<p>A <strong>String</strong> describing the reason the exception was thrown. </p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: System.Reflection.ReflectionTypeLoadException.ReflectionTypeLoadException(System.Type(), System.Exception(), System.String)
+  name.vb: ReflectionTypeLoadException(Type(), Exception(), String)
+  nameWithType: ReflectionTypeLoadException.ReflectionTypeLoadException(Type[], Exception[], String)
+  nameWithType.vb: ReflectionTypeLoadException.ReflectionTypeLoadException(Type(), Exception(), String)
+- uid: System.Reflection.ReflectionTypeLoadException.LoaderExceptions
+  commentId: P:System.Reflection.ReflectionTypeLoadException.LoaderExceptions
+  id: LoaderExceptions
+  parent: System.Reflection.ReflectionTypeLoadException
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Reflection.ReflectionTypeLoadException.LoaderExceptions
+  type: Property
+  source:
+    remote:
+      path: src/mscorlib/src/System/Reflection/ReflectionTypeLoadException.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: LoaderExceptions
+    path: src/mscorlib/src/System/Reflection/ReflectionTypeLoadException.cs
+    startLine: 63
+  assemblies:
+  - System.Reflection
+  namespace: System.Reflection
+  summary: "\n<p>Gets the array of exceptions thrown by the class loader.</p>\n"
+  syntax:
+    content: public Exception[] LoaderExceptions { get; }
+    content.vb: Public ReadOnly Property LoaderExceptions As Exception()
+    parameters: []
+    return:
+      type: System.Exception[]
+      description: "\n<p>An array of type <strong>Exception</strong> containing the exceptions thrown by the class loader. The null values in the <xref href=\"System.Reflection.ReflectionTypeLoadException.Types\" data-throw-if-not-resolved=\"false\"></xref> array of this instance line up with the exceptions in this array.</p>\n"
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  nameWithType: ReflectionTypeLoadException.LoaderExceptions
+- uid: System.Reflection.ReflectionTypeLoadException.Types
+  commentId: P:System.Reflection.ReflectionTypeLoadException.Types
+  id: Types
+  parent: System.Reflection.ReflectionTypeLoadException
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Reflection.ReflectionTypeLoadException.Types
+  type: Property
+  source:
+    remote:
+      path: src/mscorlib/src/System/Reflection/ReflectionTypeLoadException.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Types
+    path: src/mscorlib/src/System/Reflection/ReflectionTypeLoadException.cs
+    startLine: 59
+  assemblies:
+  - System.Reflection
+  namespace: System.Reflection
+  summary: "\n<p>Gets the array of classes that were defined in the module and loaded.</p>\n"
+  syntax:
+    content: public Type[] Types { get; }
+    content.vb: Public ReadOnly Property Types As Type()
+    parameters: []
+    return:
+      type: System.Type[]
+      description: "\n<p>An array of type <strong>Type</strong> containing the classes that were defined in the module and loaded. This array can contain some <strong>null</strong> values.</p>\n"
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  nameWithType: ReflectionTypeLoadException.Types
+references:
+- uid: System.Reflection
+  isExternal: false
+  name: "XXX"
+  fullName: System.Reflection
+  nameWithType: System.Reflection
+  commentId: N:System.Reflection
+- uid: System.Object
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Object
+  nameWithType: Object
+  commentId: T:System.Object
+- uid: System.Exception
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Exception
+  nameWithType: Exception
+  commentId: T:System.Exception
+- uid: System.Runtime.Serialization.ISerializable
+  parent: System.Runtime.Serialization
+  isExternal: false
+  name: "XXX"
+  fullName: System.Runtime.Serialization.ISerializable
+  nameWithType: ISerializable
+  commentId: T:System.Runtime.Serialization.ISerializable
+- uid: System.Runtime.InteropServices._Exception
+  parent: System.Runtime.InteropServices
+  isExternal: true
+  name: "XXX"
+  fullName: System.Runtime.InteropServices._Exception
+  nameWithType: _Exception
+  commentId: T:System.Runtime.InteropServices._Exception
+- uid: System.Exception.GetBaseException
+  parent: System.Exception
+  isExternal: false
+  name: "XXX"
+  fullName: System.Exception.GetBaseException()
+  spec.csharp:
+  - uid: System.Exception.GetBaseException
+    name: "XXX"
+    fullName: System.Exception.GetBaseException
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Exception.GetBaseException
+    name: "XXX"
+    fullName: System.Exception.GetBaseException
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Exception.GetBaseException()
+  commentId: M:System.Exception.GetBaseException
+- uid: System.Exception.ToString
+  parent: System.Exception
+  isExternal: false
+  name: "XXX"
+  fullName: System.Exception.ToString()
+  spec.csharp:
+  - uid: System.Exception.ToString
+    name: "XXX"
+    fullName: System.Exception.ToString
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Exception.ToString
+    name: "XXX"
+    fullName: System.Exception.ToString
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Exception.ToString()
+  commentId: M:System.Exception.ToString
+- uid: System.Exception.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  parent: System.Exception
+  isExternal: true
+  name: "XXX"
+  fullName: System.Exception.GetObjectData(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  spec.csharp:
+  - uid: System.Exception.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+    name: "XXX"
+    fullName: System.Exception.GetObjectData
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Runtime.Serialization.SerializationInfo
+    name: "XXX"
+    fullName: System.Runtime.Serialization.SerializationInfo
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Runtime.Serialization.StreamingContext
+    name: "XXX"
+    fullName: System.Runtime.Serialization.StreamingContext
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Exception.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+    name: "XXX"
+    fullName: System.Exception.GetObjectData
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Runtime.Serialization.SerializationInfo
+    name: "XXX"
+    fullName: System.Runtime.Serialization.SerializationInfo
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Runtime.Serialization.StreamingContext
+    name: "XXX"
+    fullName: System.Runtime.Serialization.StreamingContext
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Exception.GetObjectData(SerializationInfo, StreamingContext)
+  commentId: M:System.Exception.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+- uid: System.Exception.GetType
+  parent: System.Exception
+  isExternal: true
+  name: "XXX"
+  fullName: System.Exception.GetType()
+  spec.csharp:
+  - uid: System.Exception.GetType
+    name: "XXX"
+    fullName: System.Exception.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Exception.GetType
+    name: "XXX"
+    fullName: System.Exception.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Exception.GetType()
+  commentId: M:System.Exception.GetType
+- uid: System.Exception.Message
+  parent: System.Exception
+  isExternal: false
+  name: "XXX"
+  fullName: System.Exception.Message
+  nameWithType: Exception.Message
+  commentId: P:System.Exception.Message
+- uid: System.Exception.Data
+  parent: System.Exception
+  isExternal: false
+  name: "XXX"
+  fullName: System.Exception.Data
+  nameWithType: Exception.Data
+  commentId: P:System.Exception.Data
+- uid: System.Exception.InnerException
+  parent: System.Exception
+  isExternal: false
+  name: "XXX"
+  fullName: System.Exception.InnerException
+  nameWithType: Exception.InnerException
+  commentId: P:System.Exception.InnerException
+- uid: System.Exception.TargetSite
+  parent: System.Exception
+  isExternal: true
+  name: "XXX"
+  fullName: System.Exception.TargetSite
+  nameWithType: Exception.TargetSite
+  commentId: P:System.Exception.TargetSite
+- uid: System.Exception.StackTrace
+  parent: System.Exception
+  isExternal: false
+  name: "XXX"
+  fullName: System.Exception.StackTrace
+  nameWithType: Exception.StackTrace
+  commentId: P:System.Exception.StackTrace
+- uid: System.Exception.HelpLink
+  parent: System.Exception
+  isExternal: false
+  name: "XXX"
+  fullName: System.Exception.HelpLink
+  nameWithType: Exception.HelpLink
+  commentId: P:System.Exception.HelpLink
+- uid: System.Exception.Source
+  parent: System.Exception
+  isExternal: false
+  name: "XXX"
+  fullName: System.Exception.Source
+  nameWithType: Exception.Source
+  commentId: P:System.Exception.Source
+- uid: System.Exception.HResult
+  parent: System.Exception
+  isExternal: false
+  name: "XXX"
+  fullName: System.Exception.HResult
+  nameWithType: Exception.HResult
+  commentId: P:System.Exception.HResult
+- uid: System.Exception.SerializeObjectState
+  parent: System.Exception
+  isExternal: true
+  name: "XXX"
+  fullName: System.Exception.SerializeObjectState
+  nameWithType: Exception.SerializeObjectState
+  commentId: E:System.Exception.SerializeObjectState
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.Equals(Object)
+  commentId: M:System.Object.Equals(System.Object)
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.Equals(Object, Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.GetHashCode()
+  commentId: M:System.Object.GetHashCode
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.MemberwiseClone()
+  commentId: M:System.Object.MemberwiseClone
+- uid: System
+  isExternal: false
+  name: "XXX"
+  fullName: System
+  nameWithType: System
+  commentId: N:System
+- uid: System.Runtime.Serialization
+  isExternal: false
+  name: "XXX"
+  fullName: System.Runtime.Serialization
+  nameWithType: System.Runtime.Serialization
+  commentId: N:System.Runtime.Serialization
+- uid: System.Runtime.InteropServices
+  isExternal: false
+  name: "XXX"
+  fullName: System.Runtime.InteropServices
+  nameWithType: System.Runtime.InteropServices
+  commentId: N:System.Runtime.InteropServices
+- uid: System.Type[]
+  name: "XXX"
+  fullName: System.Type[]
+  fullname.vb: System.Type()
+  name.vb: Type()
+  spec.csharp:
+  - uid: System.Type
+    name: "XXX"
+    fullName: System.Type
+  - name: 'XXX'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Type
+    name: "XXX"
+    fullName: System.Type
+  - name: "XXX"
+    fullName: ()
+  nameWithType: Type[]
+  nameWithType.vb: Type()
+- uid: System.Exception[]
+  name: "XXX"
+  fullName: System.Exception[]
+  fullname.vb: System.Exception()
+  name.vb: Exception()
+  spec.csharp:
+  - uid: System.Exception
+    name: "XXX"
+    fullName: System.Exception
+    isExternal: true
+  - name: 'XXX'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Exception
+    name: "XXX"
+    fullName: System.Exception
+    isExternal: true
+  - name: "XXX"
+    fullName: ()
+  nameWithType: Exception[]
+  nameWithType.vb: Exception()
+- uid: System.String
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.String
+  nameWithType: String
+  commentId: T:System.String

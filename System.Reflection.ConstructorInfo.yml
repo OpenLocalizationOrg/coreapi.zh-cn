@@ -1,0 +1,1248 @@
+items:
+- uid: System.Reflection.ConstructorInfo
+  commentId: T:System.Reflection.ConstructorInfo
+  id: ConstructorInfo
+  parent: System.Reflection
+  children:
+  - System.Reflection.ConstructorInfo.ConstructorName
+  - System.Reflection.ConstructorInfo.Equals(System.Object)
+  - System.Reflection.ConstructorInfo.GetHashCode
+  - System.Reflection.ConstructorInfo.Invoke(System.Object[])
+  - System.Reflection.ConstructorInfo.MemberType
+  - System.Reflection.ConstructorInfo.TypeConstructorName
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Reflection.ConstructorInfo
+  type: Class
+  source:
+    remote:
+      path: src/mscorlib/src/System/Reflection/ConstructorInfo.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: ConstructorInfo
+    path: src/mscorlib/src/System/Reflection/ConstructorInfo.cs
+    startLine: 27
+  assemblies:
+  - System.Reflection
+  namespace: System.Reflection
+  summary: "\n<p>Discovers the attributes of a class constructor and provides access to constructor metadata. </p>\n"
+  syntax:
+    content: >-
+      [Serializable]
+
+      [ClassInterface(ClassInterfaceType.None)]
+
+      [ComDefaultInterface(typeof (_ConstructorInfo))]
+
+      [PermissionSet(SecurityAction.InheritanceDemand, Name = "FullTrust")]
+
+      [ComVisible(true)]
+
+      public abstract class ConstructorInfo : MethodBase, ICustomAttributeProvider, _MemberInfo, _MethodBase, _ConstructorInfo
+    content.vb: >-
+      <Serializable>
+
+      <ClassInterface(ClassInterfaceType.None)>
+
+      <ComDefaultInterface(GetType(_ConstructorInfo))>
+
+      <PermissionSet(SecurityAction.InheritanceDemand, Name:="FullTrust")>
+
+      <ComVisible(True)>
+
+      Public MustInherit Class ConstructorInfo
+          Inherits MethodBase
+          Implements ICustomAttributeProvider, _MemberInfo, _MethodBase, _ConstructorInfo
+  see:
+  - type: System.Security.Permissions.SecurityAction.InheritanceDemand
+    commentId: F:System.Security.Permissions.SecurityAction.InheritanceDemand
+  inheritance:
+  - System.Object
+  - System.Reflection.MemberInfo
+  - System.Reflection.MethodBase
+  implements:
+  - System.Reflection.ICustomAttributeProvider
+  inheritedMembers:
+  - System.Reflection.MethodBase.Attributes
+  - System.Reflection.MethodBase.CallingConvention
+  - System.Reflection.MethodBase.ContainsGenericParameters
+  - System.Reflection.MethodBase.IsAbstract
+  - System.Reflection.MethodBase.IsAssembly
+  - System.Reflection.MethodBase.IsConstructor
+  - System.Reflection.MethodBase.IsFamily
+  - System.Reflection.MethodBase.IsFamilyAndAssembly
+  - System.Reflection.MethodBase.IsFamilyOrAssembly
+  - System.Reflection.MethodBase.IsFinal
+  - System.Reflection.MethodBase.IsGenericMethod
+  - System.Reflection.MethodBase.IsGenericMethodDefinition
+  - System.Reflection.MethodBase.IsHideBySig
+  - System.Reflection.MethodBase.IsPrivate
+  - System.Reflection.MethodBase.IsPublic
+  - System.Reflection.MethodBase.IsSpecialName
+  - System.Reflection.MethodBase.IsStatic
+  - System.Reflection.MethodBase.IsVirtual
+  - System.Reflection.MethodBase.MethodImplementationFlags
+  - System.Reflection.MethodBase.GetGenericArguments
+  - System.Reflection.MethodBase.GetMethodFromHandle(System.RuntimeMethodHandle)
+  - System.Reflection.MethodBase.GetMethodFromHandle(System.RuntimeMethodHandle,System.RuntimeTypeHandle)
+  - System.Reflection.MethodBase.GetParameters
+  - System.Reflection.MethodBase.Invoke(System.Object,System.Object[])
+  - System.Reflection.MethodBase.GetMethodImplementationFlags
+  - System.Reflection.MemberInfo.CustomAttributes
+  - System.Reflection.MemberInfo.DeclaringType
+  - System.Reflection.MemberInfo.MetadataToken
+  - System.Reflection.MemberInfo.Module
+  - System.Reflection.MemberInfo.Name
+  - System.Reflection.MemberInfo.System#Reflection#ICustomAttributeProvider#GetCustomAttributes(System.Boolean)
+  - System.Reflection.MemberInfo.System#Reflection#ICustomAttributeProvider#GetCustomAttributes(System.Type,System.Boolean)
+  - System.Reflection.MemberInfo.System#Reflection#ICustomAttributeProvider#IsDefined(System.Type,System.Boolean)
+  - System.Object.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+  nameWithType: ConstructorInfo
+- uid: System.Reflection.ConstructorInfo.ConstructorName
+  commentId: F:System.Reflection.ConstructorInfo.ConstructorName
+  id: ConstructorName
+  parent: System.Reflection.ConstructorInfo
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Reflection.ConstructorInfo.ConstructorName
+  type: Field
+  source:
+    remote:
+      path: src/mscorlib/src/System/Reflection/ConstructorInfo.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: ConstructorName
+    path: src/mscorlib/src/System/Reflection/ConstructorInfo.cs
+    startLine: 38
+  assemblies:
+  - System.Reflection
+  namespace: System.Reflection
+  summary: "\n<p>Represents the name of the class constructor method as it is stored in metadata. This name is always \".ctor\". This field is read-only.</p>\n"
+  syntax:
+    content: >-
+      [ComVisible(true)]
+
+      public static readonly string ConstructorName
+    content.vb: >-
+      <ComVisible(True)>
+
+      Public Shared ReadOnly ConstructorName As String
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - static
+  - readonly
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+  nameWithType: ConstructorInfo.ConstructorName
+- uid: System.Reflection.ConstructorInfo.TypeConstructorName
+  commentId: F:System.Reflection.ConstructorInfo.TypeConstructorName
+  id: TypeConstructorName
+  parent: System.Reflection.ConstructorInfo
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Reflection.ConstructorInfo.TypeConstructorName
+  type: Field
+  source:
+    remote:
+      path: src/mscorlib/src/System/Reflection/ConstructorInfo.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: TypeConstructorName
+    path: src/mscorlib/src/System/Reflection/ConstructorInfo.cs
+    startLine: 41
+  assemblies:
+  - System.Reflection
+  namespace: System.Reflection
+  summary: "\n<p>Represents the name of the type constructor method as it is stored in metadata. This name is always \".cctor\". This property is read-only.</p>\n"
+  syntax:
+    content: >-
+      [ComVisible(true)]
+
+      public static readonly string TypeConstructorName
+    content.vb: >-
+      <ComVisible(True)>
+
+      Public Shared ReadOnly TypeConstructorName As String
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - static
+  - readonly
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+  nameWithType: ConstructorInfo.TypeConstructorName
+- uid: System.Reflection.ConstructorInfo.Equals(System.Object)
+  commentId: M:System.Reflection.ConstructorInfo.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: System.Reflection.ConstructorInfo
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Reflection.ConstructorInfo.Equals(System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Reflection/ConstructorInfo.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Equals
+    path: src/mscorlib/src/System/Reflection/ConstructorInfo.cs
+    startLine: 68
+  assemblies:
+  - System.Reflection
+  namespace: System.Reflection
+  summary: "\n<p>Returns a value that indicates whether this instance is equal to a specified object.</p>\n"
+  syntax:
+    content: public override bool Equals(object obj)
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+    parameters:
+    - id: obj
+      type: System.Object
+      description: "\n<p>An object to compare with this instance, or <strong>null</strong>.</p>\n"
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if <em>obj</em> equals the type and value of this instance; otherwise, <strong>false</strong>.</p>\n"
+  overridden: System.Reflection.MethodBase.Equals(System.Object)
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  nameWithType: ConstructorInfo.Equals(Object)
+- uid: System.Reflection.ConstructorInfo.GetHashCode
+  commentId: M:System.Reflection.ConstructorInfo.GetHashCode
+  id: GetHashCode
+  parent: System.Reflection.ConstructorInfo
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Reflection.ConstructorInfo.GetHashCode()
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Reflection/ConstructorInfo.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: GetHashCode
+    path: src/mscorlib/src/System/Reflection/ConstructorInfo.cs
+    startLine: 73
+  assemblies:
+  - System.Reflection
+  namespace: System.Reflection
+  summary: "\n<p>Returns the hash code for this instance.</p>\n"
+  syntax:
+    content: public override int GetHashCode()
+    content.vb: Public Overrides Function GetHashCode As Integer
+    return:
+      type: System.Int32
+      description: "\n<p>A 32-bit signed integer hash code.</p>\n"
+  overridden: System.Reflection.MethodBase.GetHashCode
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  nameWithType: ConstructorInfo.GetHashCode()
+- uid: System.Reflection.ConstructorInfo.Invoke(System.Object[])
+  commentId: M:System.Reflection.ConstructorInfo.Invoke(System.Object[])
+  id: Invoke(System.Object[])
+  parent: System.Reflection.ConstructorInfo
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Reflection.ConstructorInfo.Invoke(System.Object[])
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Reflection/ConstructorInfo.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Invoke
+    path: src/mscorlib/src/System/Reflection/ConstructorInfo.cs
+    startLine: 92
+  assemblies:
+  - System.Reflection
+  namespace: System.Reflection
+  summary: "\n<p>Invokes the constructor reflected by the instance that has the specified parameters, providing default values for the parameters not commonly used.</p>\n"
+  syntax:
+    content: >-
+      [DebuggerStepThrough]
+
+      [DebuggerHidden]
+
+      public object Invoke(object[] parameters)
+    content.vb: >-
+      <DebuggerStepThrough>
+
+      <DebuggerHidden>
+
+      Public Function Invoke(parameters As Object()) As Object
+    parameters:
+    - id: parameters
+      type: System.Object[]
+      description: "\n<p>An array of values that matches the number, order and type (under the constraints of the default binder) of the parameters for this constructor. If this constructor takes no parameters, then use either an array with zero elements or <strong>null</strong>, as in Object[] parameters = new Object[0]. Any object in this array that is not explicitly initialized with a value will contain the default value for that object type. For reference-type elements, this value is <strong>null</strong>. For value-type elements, this value is 0, 0.0, or <strong>false</strong>, depending on the specific element type. </p>\n"
+    return:
+      type: System.Object
+      description: "\n<p>An instance of the class associated with the constructor.</p>\n"
+  exceptions:
+  - type: System.MemberAccessException
+    commentId: T:System.MemberAccessException
+    description: "\n<p>The class is abstract.</p>\n<p>-or- </p>\n<p>The constructor is a class initializer. </p>\n"
+  - type: System.MethodAccessException
+    commentId: T:System.MethodAccessException
+    description: "\n<p>In the <see href=\"http://go.microsoft.com/fwlink/?LinkID=247912\">.NET for Windows Store apps</see> or the Portable Class Library, catch the base class exception, <xref href=\"System.MemberAccessException\" data-throw-if-not-resolved=\"false\"></xref>, instead.</p>\n<p>The constructor is private or protected, and the caller lacks <xref href=\"System.Security.Permissions.ReflectionPermissionFlag.MemberAccess\" data-throw-if-not-resolved=\"false\"></xref>. </p>\n"
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>The <em>parameters</em> array does not contain values that match the types accepted by this constructor. </p>\n"
+  - type: System.Reflection.TargetInvocationException
+    commentId: T:System.Reflection.TargetInvocationException
+    description: "\n<p>The invoked constructor throws an exception. </p>\n"
+  - type: System.Reflection.TargetParameterCountException
+    commentId: T:System.Reflection.TargetParameterCountException
+    description: "\n<p>An incorrect number of parameters was passed. </p>\n"
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: "\n<p>Creation of <xref href=\"System.TypedReference\" data-throw-if-not-resolved=\"false\"></xref>, <xref href=\"System.ArgIterator\" data-throw-if-not-resolved=\"false\"></xref>, and <xref href=\"System.RuntimeArgumentHandle\" data-throw-if-not-resolved=\"false\"></xref> types is not supported.</p>\n"
+  - type: System.Security.SecurityException
+    commentId: T:System.Security.SecurityException
+    description: "\n<p>The caller does not have the necessary code access permission.</p>\n"
+  see:
+  - type: System.Security.Permissions.ReflectionPermission
+    commentId: T:System.Security.Permissions.ReflectionPermission
+  - type: System.Security.Permissions.ReflectionPermission
+    commentId: T:System.Security.Permissions.ReflectionPermission
+  - type: System.Security.Permissions.ReflectionPermission
+    commentId: T:System.Security.Permissions.ReflectionPermission
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  fullName.vb: System.Reflection.ConstructorInfo.Invoke(System.Object())
+  name.vb: Invoke(Object())
+  nameWithType: ConstructorInfo.Invoke(Object[])
+  nameWithType.vb: ConstructorInfo.Invoke(Object())
+- uid: System.Reflection.ConstructorInfo.MemberType
+  commentId: P:System.Reflection.ConstructorInfo.MemberType
+  id: MemberType
+  parent: System.Reflection.ConstructorInfo
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Reflection.ConstructorInfo.MemberType
+  type: Property
+  source:
+    remote:
+      path: src/mscorlib/src/System/Reflection/ConstructorInfo.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: MemberType
+    path: src/mscorlib/src/System/Reflection/ConstructorInfo.cs
+    startLine: 83
+  assemblies:
+  - System.Reflection
+  namespace: System.Reflection
+  summary: "\n<p>Gets a <xref href=\"System.Reflection.MemberTypes\" data-throw-if-not-resolved=\"false\"></xref> value indicating that this member is a constructor.</p>\n"
+  syntax:
+    content: >-
+      [ComVisible(true)]
+
+      public override MemberTypes MemberType { get; }
+    content.vb: >-
+      <ComVisible(True)>
+
+      Public Overrides ReadOnly Property MemberType As MemberTypes
+    parameters: []
+    return:
+      type: System.Reflection.MemberTypes
+      description: "\n<p>A <xref href=\"System.Reflection.MemberTypes\" data-throw-if-not-resolved=\"false\"></xref> value indicating that this member is a constructor.</p>\n"
+  overridden: System.Reflection.MemberInfo.MemberType
+  seealso:
+  - type: System.Reflection.MemberTypes
+    commentId: T:System.Reflection.MemberTypes
+  modifiers.csharp:
+  - public
+  - override
+  - get
+  modifiers.vb:
+  - Public
+  - Overrides
+  - ReadOnly
+  nameWithType: ConstructorInfo.MemberType
+references:
+- uid: System.Reflection
+  isExternal: false
+  name: "XXX"
+  fullName: System.Reflection
+  nameWithType: System.Reflection
+  commentId: N:System.Reflection
+- uid: System.Object
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Object
+  nameWithType: Object
+  commentId: T:System.Object
+- uid: System.Reflection.MemberInfo
+  parent: System.Reflection
+  isExternal: false
+  name: "XXX"
+  fullName: System.Reflection.MemberInfo
+  nameWithType: MemberInfo
+  commentId: T:System.Reflection.MemberInfo
+- uid: System.Reflection.MethodBase
+  parent: System.Reflection
+  isExternal: false
+  name: "XXX"
+  fullName: System.Reflection.MethodBase
+  nameWithType: MethodBase
+  commentId: T:System.Reflection.MethodBase
+- uid: System.Reflection.ICustomAttributeProvider
+  parent: System.Reflection
+  isExternal: false
+  name: "XXX"
+  fullName: System.Reflection.ICustomAttributeProvider
+  nameWithType: ICustomAttributeProvider
+  commentId: T:System.Reflection.ICustomAttributeProvider
+- uid: System.Reflection.MethodBase.Attributes
+  parent: System.Reflection.MethodBase
+  isExternal: false
+  name: "XXX"
+  fullName: System.Reflection.MethodBase.Attributes
+  nameWithType: MethodBase.Attributes
+  commentId: P:System.Reflection.MethodBase.Attributes
+- uid: System.Reflection.MethodBase.CallingConvention
+  parent: System.Reflection.MethodBase
+  isExternal: false
+  name: "XXX"
+  fullName: System.Reflection.MethodBase.CallingConvention
+  nameWithType: MethodBase.CallingConvention
+  commentId: P:System.Reflection.MethodBase.CallingConvention
+- uid: System.Reflection.MethodBase.ContainsGenericParameters
+  parent: System.Reflection.MethodBase
+  isExternal: false
+  name: "XXX"
+  fullName: System.Reflection.MethodBase.ContainsGenericParameters
+  nameWithType: MethodBase.ContainsGenericParameters
+  commentId: P:System.Reflection.MethodBase.ContainsGenericParameters
+- uid: System.Reflection.MethodBase.IsAbstract
+  parent: System.Reflection.MethodBase
+  isExternal: false
+  name: "XXX"
+  fullName: System.Reflection.MethodBase.IsAbstract
+  nameWithType: MethodBase.IsAbstract
+  commentId: P:System.Reflection.MethodBase.IsAbstract
+- uid: System.Reflection.MethodBase.IsAssembly
+  parent: System.Reflection.MethodBase
+  isExternal: false
+  name: "XXX"
+  fullName: System.Reflection.MethodBase.IsAssembly
+  nameWithType: MethodBase.IsAssembly
+  commentId: P:System.Reflection.MethodBase.IsAssembly
+- uid: System.Reflection.MethodBase.IsConstructor
+  parent: System.Reflection.MethodBase
+  isExternal: false
+  name: "XXX"
+  fullName: System.Reflection.MethodBase.IsConstructor
+  nameWithType: MethodBase.IsConstructor
+  commentId: P:System.Reflection.MethodBase.IsConstructor
+- uid: System.Reflection.MethodBase.IsFamily
+  parent: System.Reflection.MethodBase
+  isExternal: false
+  name: "XXX"
+  fullName: System.Reflection.MethodBase.IsFamily
+  nameWithType: MethodBase.IsFamily
+  commentId: P:System.Reflection.MethodBase.IsFamily
+- uid: System.Reflection.MethodBase.IsFamilyAndAssembly
+  parent: System.Reflection.MethodBase
+  isExternal: false
+  name: "XXX"
+  fullName: System.Reflection.MethodBase.IsFamilyAndAssembly
+  nameWithType: MethodBase.IsFamilyAndAssembly
+  commentId: P:System.Reflection.MethodBase.IsFamilyAndAssembly
+- uid: System.Reflection.MethodBase.IsFamilyOrAssembly
+  parent: System.Reflection.MethodBase
+  isExternal: false
+  name: "XXX"
+  fullName: System.Reflection.MethodBase.IsFamilyOrAssembly
+  nameWithType: MethodBase.IsFamilyOrAssembly
+  commentId: P:System.Reflection.MethodBase.IsFamilyOrAssembly
+- uid: System.Reflection.MethodBase.IsFinal
+  parent: System.Reflection.MethodBase
+  isExternal: false
+  name: "XXX"
+  fullName: System.Reflection.MethodBase.IsFinal
+  nameWithType: MethodBase.IsFinal
+  commentId: P:System.Reflection.MethodBase.IsFinal
+- uid: System.Reflection.MethodBase.IsGenericMethod
+  parent: System.Reflection.MethodBase
+  isExternal: false
+  name: "XXX"
+  fullName: System.Reflection.MethodBase.IsGenericMethod
+  nameWithType: MethodBase.IsGenericMethod
+  commentId: P:System.Reflection.MethodBase.IsGenericMethod
+- uid: System.Reflection.MethodBase.IsGenericMethodDefinition
+  parent: System.Reflection.MethodBase
+  isExternal: false
+  name: "XXX"
+  fullName: System.Reflection.MethodBase.IsGenericMethodDefinition
+  nameWithType: MethodBase.IsGenericMethodDefinition
+  commentId: P:System.Reflection.MethodBase.IsGenericMethodDefinition
+- uid: System.Reflection.MethodBase.IsHideBySig
+  parent: System.Reflection.MethodBase
+  isExternal: false
+  name: "XXX"
+  fullName: System.Reflection.MethodBase.IsHideBySig
+  nameWithType: MethodBase.IsHideBySig
+  commentId: P:System.Reflection.MethodBase.IsHideBySig
+- uid: System.Reflection.MethodBase.IsPrivate
+  parent: System.Reflection.MethodBase
+  isExternal: false
+  name: "XXX"
+  fullName: System.Reflection.MethodBase.IsPrivate
+  nameWithType: MethodBase.IsPrivate
+  commentId: P:System.Reflection.MethodBase.IsPrivate
+- uid: System.Reflection.MethodBase.IsPublic
+  parent: System.Reflection.MethodBase
+  isExternal: false
+  name: "XXX"
+  fullName: System.Reflection.MethodBase.IsPublic
+  nameWithType: MethodBase.IsPublic
+  commentId: P:System.Reflection.MethodBase.IsPublic
+- uid: System.Reflection.MethodBase.IsSpecialName
+  parent: System.Reflection.MethodBase
+  isExternal: false
+  name: "XXX"
+  fullName: System.Reflection.MethodBase.IsSpecialName
+  nameWithType: MethodBase.IsSpecialName
+  commentId: P:System.Reflection.MethodBase.IsSpecialName
+- uid: System.Reflection.MethodBase.IsStatic
+  parent: System.Reflection.MethodBase
+  isExternal: false
+  name: "XXX"
+  fullName: System.Reflection.MethodBase.IsStatic
+  nameWithType: MethodBase.IsStatic
+  commentId: P:System.Reflection.MethodBase.IsStatic
+- uid: System.Reflection.MethodBase.IsVirtual
+  parent: System.Reflection.MethodBase
+  isExternal: false
+  name: "XXX"
+  fullName: System.Reflection.MethodBase.IsVirtual
+  nameWithType: MethodBase.IsVirtual
+  commentId: P:System.Reflection.MethodBase.IsVirtual
+- uid: System.Reflection.MethodBase.MethodImplementationFlags
+  parent: System.Reflection.MethodBase
+  isExternal: false
+  name: "XXX"
+  fullName: System.Reflection.MethodBase.MethodImplementationFlags
+  nameWithType: MethodBase.MethodImplementationFlags
+  commentId: P:System.Reflection.MethodBase.MethodImplementationFlags
+- uid: System.Reflection.MethodBase.GetGenericArguments
+  parent: System.Reflection.MethodBase
+  isExternal: false
+  name: "XXX"
+  fullName: System.Reflection.MethodBase.GetGenericArguments()
+  spec.csharp:
+  - uid: System.Reflection.MethodBase.GetGenericArguments
+    name: "XXX"
+    fullName: System.Reflection.MethodBase.GetGenericArguments
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Reflection.MethodBase.GetGenericArguments
+    name: "XXX"
+    fullName: System.Reflection.MethodBase.GetGenericArguments
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: MethodBase.GetGenericArguments()
+  commentId: M:System.Reflection.MethodBase.GetGenericArguments
+- uid: System.Reflection.MethodBase.GetMethodFromHandle(System.RuntimeMethodHandle)
+  parent: System.Reflection.MethodBase
+  isExternal: true
+  name: "XXX"
+  fullName: System.Reflection.MethodBase.GetMethodFromHandle(System.RuntimeMethodHandle)
+  spec.csharp:
+  - uid: System.Reflection.MethodBase.GetMethodFromHandle(System.RuntimeMethodHandle)
+    name: "XXX"
+    fullName: System.Reflection.MethodBase.GetMethodFromHandle
+  - name: "XXX"
+    fullName: (
+  - uid: System.RuntimeMethodHandle
+    name: "XXX"
+    fullName: System.RuntimeMethodHandle
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Reflection.MethodBase.GetMethodFromHandle(System.RuntimeMethodHandle)
+    name: "XXX"
+    fullName: System.Reflection.MethodBase.GetMethodFromHandle
+  - name: "XXX"
+    fullName: (
+  - uid: System.RuntimeMethodHandle
+    name: "XXX"
+    fullName: System.RuntimeMethodHandle
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: MethodBase.GetMethodFromHandle(RuntimeMethodHandle)
+  commentId: M:System.Reflection.MethodBase.GetMethodFromHandle(System.RuntimeMethodHandle)
+- uid: System.Reflection.MethodBase.GetMethodFromHandle(System.RuntimeMethodHandle,System.RuntimeTypeHandle)
+  parent: System.Reflection.MethodBase
+  isExternal: true
+  name: "XXX"
+  fullName: System.Reflection.MethodBase.GetMethodFromHandle(System.RuntimeMethodHandle, System.RuntimeTypeHandle)
+  spec.csharp:
+  - uid: System.Reflection.MethodBase.GetMethodFromHandle(System.RuntimeMethodHandle,System.RuntimeTypeHandle)
+    name: "XXX"
+    fullName: System.Reflection.MethodBase.GetMethodFromHandle
+  - name: "XXX"
+    fullName: (
+  - uid: System.RuntimeMethodHandle
+    name: "XXX"
+    fullName: System.RuntimeMethodHandle
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.RuntimeTypeHandle
+    name: "XXX"
+    fullName: System.RuntimeTypeHandle
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Reflection.MethodBase.GetMethodFromHandle(System.RuntimeMethodHandle,System.RuntimeTypeHandle)
+    name: "XXX"
+    fullName: System.Reflection.MethodBase.GetMethodFromHandle
+  - name: "XXX"
+    fullName: (
+  - uid: System.RuntimeMethodHandle
+    name: "XXX"
+    fullName: System.RuntimeMethodHandle
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.RuntimeTypeHandle
+    name: "XXX"
+    fullName: System.RuntimeTypeHandle
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: MethodBase.GetMethodFromHandle(RuntimeMethodHandle, RuntimeTypeHandle)
+  commentId: M:System.Reflection.MethodBase.GetMethodFromHandle(System.RuntimeMethodHandle,System.RuntimeTypeHandle)
+- uid: System.Reflection.MethodBase.GetParameters
+  parent: System.Reflection.MethodBase
+  isExternal: false
+  name: "XXX"
+  fullName: System.Reflection.MethodBase.GetParameters()
+  spec.csharp:
+  - uid: System.Reflection.MethodBase.GetParameters
+    name: "XXX"
+    fullName: System.Reflection.MethodBase.GetParameters
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Reflection.MethodBase.GetParameters
+    name: "XXX"
+    fullName: System.Reflection.MethodBase.GetParameters
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: MethodBase.GetParameters()
+  commentId: M:System.Reflection.MethodBase.GetParameters
+- uid: System.Reflection.MethodBase.Invoke(System.Object,System.Object[])
+  parent: System.Reflection.MethodBase
+  isExternal: true
+  name: "XXX"
+  fullName: System.Reflection.MethodBase.Invoke(System.Object, System.Object[])
+  fullname.vb: System.Reflection.MethodBase.Invoke(System.Object, System.Object())
+  name.vb: Invoke(Object, Object())
+  spec.csharp:
+  - uid: System.Reflection.MethodBase.Invoke(System.Object,System.Object[])
+    name: "XXX"
+    fullName: System.Reflection.MethodBase.Invoke
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX'
+    fullName: '[]'
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Reflection.MethodBase.Invoke(System.Object,System.Object[])
+    name: "XXX"
+    fullName: System.Reflection.MethodBase.Invoke
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: ()
+  - name: "XXX"
+    fullName: )
+  nameWithType: MethodBase.Invoke(Object, Object[])
+  nameWithType.vb: MethodBase.Invoke(Object, Object())
+  commentId: M:System.Reflection.MethodBase.Invoke(System.Object,System.Object[])
+- uid: System.Reflection.MethodBase.GetMethodImplementationFlags
+  parent: System.Reflection.MethodBase
+  isExternal: false
+  name: "XXX"
+  fullName: System.Reflection.MethodBase.GetMethodImplementationFlags()
+  spec.csharp:
+  - uid: System.Reflection.MethodBase.GetMethodImplementationFlags
+    name: "XXX"
+    fullName: System.Reflection.MethodBase.GetMethodImplementationFlags
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Reflection.MethodBase.GetMethodImplementationFlags
+    name: "XXX"
+    fullName: System.Reflection.MethodBase.GetMethodImplementationFlags
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: MethodBase.GetMethodImplementationFlags()
+  commentId: M:System.Reflection.MethodBase.GetMethodImplementationFlags
+- uid: System.Reflection.MemberInfo.CustomAttributes
+  parent: System.Reflection.MemberInfo
+  isExternal: false
+  name: "XXX"
+  fullName: System.Reflection.MemberInfo.CustomAttributes
+  nameWithType: MemberInfo.CustomAttributes
+  commentId: P:System.Reflection.MemberInfo.CustomAttributes
+- uid: System.Reflection.MemberInfo.DeclaringType
+  parent: System.Reflection.MemberInfo
+  isExternal: false
+  name: "XXX"
+  fullName: System.Reflection.MemberInfo.DeclaringType
+  nameWithType: MemberInfo.DeclaringType
+  commentId: P:System.Reflection.MemberInfo.DeclaringType
+- uid: System.Reflection.MemberInfo.MetadataToken
+  parent: System.Reflection.MemberInfo
+  isExternal: false
+  name: "XXX"
+  fullName: System.Reflection.MemberInfo.MetadataToken
+  nameWithType: MemberInfo.MetadataToken
+  commentId: P:System.Reflection.MemberInfo.MetadataToken
+- uid: System.Reflection.MemberInfo.Module
+  parent: System.Reflection.MemberInfo
+  isExternal: false
+  name: "XXX"
+  fullName: System.Reflection.MemberInfo.Module
+  nameWithType: MemberInfo.Module
+  commentId: P:System.Reflection.MemberInfo.Module
+- uid: System.Reflection.MemberInfo.Name
+  parent: System.Reflection.MemberInfo
+  isExternal: false
+  name: "XXX"
+  fullName: System.Reflection.MemberInfo.Name
+  nameWithType: MemberInfo.Name
+  commentId: P:System.Reflection.MemberInfo.Name
+- uid: System.Reflection.MemberInfo.System#Reflection#ICustomAttributeProvider#GetCustomAttributes(System.Boolean)
+  parent: System.Reflection.MemberInfo
+  isExternal: true
+  name: "XXX"
+  fullName: System.Reflection.MemberInfo.System.Reflection.ICustomAttributeProvider.GetCustomAttributes(System.Boolean)
+  name.vb: System.Reflection.ICustomAttributeProvider.GetCustomAttributes(Boolean)
+  spec.csharp:
+  - uid: System.Reflection.MemberInfo.System#Reflection#ICustomAttributeProvider#GetCustomAttributes(System.Boolean)
+    name: "XXX"
+    fullName: System.Reflection.MemberInfo.System.Reflection.ICustomAttributeProvider.GetCustomAttributes
+  - name: "XXX"
+    fullName: (
+  - uid: System.Boolean
+    name: "XXX"
+    fullName: System.Boolean
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Reflection.MemberInfo.System#Reflection#ICustomAttributeProvider#GetCustomAttributes(System.Boolean)
+    name: "XXX"
+    fullName: System.Reflection.MemberInfo.System.Reflection.ICustomAttributeProvider.GetCustomAttributes
+  - name: "XXX"
+    fullName: (
+  - uid: System.Boolean
+    name: "XXX"
+    fullName: System.Boolean
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: MemberInfo.ICustomAttributeProvider.GetCustomAttributes(Boolean)
+  nameWithType.vb: MemberInfo.System.Reflection.ICustomAttributeProvider.GetCustomAttributes(Boolean)
+  commentId: M:System.Reflection.MemberInfo.System#Reflection#ICustomAttributeProvider#GetCustomAttributes(System.Boolean)
+- uid: System.Reflection.MemberInfo.System#Reflection#ICustomAttributeProvider#GetCustomAttributes(System.Type,System.Boolean)
+  parent: System.Reflection.MemberInfo
+  isExternal: true
+  name: "XXX"
+  fullName: System.Reflection.MemberInfo.System.Reflection.ICustomAttributeProvider.GetCustomAttributes(System.Type, System.Boolean)
+  name.vb: System.Reflection.ICustomAttributeProvider.GetCustomAttributes(Type, Boolean)
+  spec.csharp:
+  - uid: System.Reflection.MemberInfo.System#Reflection#ICustomAttributeProvider#GetCustomAttributes(System.Type,System.Boolean)
+    name: "XXX"
+    fullName: System.Reflection.MemberInfo.System.Reflection.ICustomAttributeProvider.GetCustomAttributes
+  - name: "XXX"
+    fullName: (
+  - uid: System.Type
+    name: "XXX"
+    fullName: System.Type
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Boolean
+    name: "XXX"
+    fullName: System.Boolean
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Reflection.MemberInfo.System#Reflection#ICustomAttributeProvider#GetCustomAttributes(System.Type,System.Boolean)
+    name: "XXX"
+    fullName: System.Reflection.MemberInfo.System.Reflection.ICustomAttributeProvider.GetCustomAttributes
+  - name: "XXX"
+    fullName: (
+  - uid: System.Type
+    name: "XXX"
+    fullName: System.Type
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Boolean
+    name: "XXX"
+    fullName: System.Boolean
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: MemberInfo.ICustomAttributeProvider.GetCustomAttributes(Type, Boolean)
+  nameWithType.vb: MemberInfo.System.Reflection.ICustomAttributeProvider.GetCustomAttributes(Type, Boolean)
+  commentId: M:System.Reflection.MemberInfo.System#Reflection#ICustomAttributeProvider#GetCustomAttributes(System.Type,System.Boolean)
+- uid: System.Reflection.MemberInfo.System#Reflection#ICustomAttributeProvider#IsDefined(System.Type,System.Boolean)
+  parent: System.Reflection.MemberInfo
+  isExternal: true
+  name: "XXX"
+  fullName: System.Reflection.MemberInfo.System.Reflection.ICustomAttributeProvider.IsDefined(System.Type, System.Boolean)
+  name.vb: System.Reflection.ICustomAttributeProvider.IsDefined(Type, Boolean)
+  spec.csharp:
+  - uid: System.Reflection.MemberInfo.System#Reflection#ICustomAttributeProvider#IsDefined(System.Type,System.Boolean)
+    name: "XXX"
+    fullName: System.Reflection.MemberInfo.System.Reflection.ICustomAttributeProvider.IsDefined
+  - name: "XXX"
+    fullName: (
+  - uid: System.Type
+    name: "XXX"
+    fullName: System.Type
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Boolean
+    name: "XXX"
+    fullName: System.Boolean
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Reflection.MemberInfo.System#Reflection#ICustomAttributeProvider#IsDefined(System.Type,System.Boolean)
+    name: "XXX"
+    fullName: System.Reflection.MemberInfo.System.Reflection.ICustomAttributeProvider.IsDefined
+  - name: "XXX"
+    fullName: (
+  - uid: System.Type
+    name: "XXX"
+    fullName: System.Type
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Boolean
+    name: "XXX"
+    fullName: System.Boolean
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: MemberInfo.ICustomAttributeProvider.IsDefined(Type, Boolean)
+  nameWithType.vb: MemberInfo.System.Reflection.ICustomAttributeProvider.IsDefined(Type, Boolean)
+  commentId: M:System.Reflection.MemberInfo.System#Reflection#ICustomAttributeProvider#IsDefined(System.Type,System.Boolean)
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.ToString()
+  commentId: M:System.Object.ToString
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.Equals(Object, Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.GetType()
+  commentId: M:System.Object.GetType
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.MemberwiseClone()
+  commentId: M:System.Object.MemberwiseClone
+- uid: System
+  isExternal: false
+  name: "XXX"
+  fullName: System
+  nameWithType: System
+  commentId: N:System
+- uid: System.String
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.String
+  nameWithType: String
+  commentId: T:System.String
+- uid: System.Reflection.MethodBase.Equals(System.Object)
+  parent: System.Reflection.MethodBase
+  isExternal: true
+  name: "XXX"
+  fullName: System.Reflection.MethodBase.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Reflection.MethodBase.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Reflection.MethodBase.Equals
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Reflection.MethodBase.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Reflection.MethodBase.Equals
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: MethodBase.Equals(Object)
+  commentId: M:System.Reflection.MethodBase.Equals(System.Object)
+- uid: System.Boolean
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Boolean
+  nameWithType: Boolean
+  commentId: T:System.Boolean
+- uid: System.Reflection.MethodBase.GetHashCode
+  parent: System.Reflection.MethodBase
+  isExternal: false
+  name: "XXX"
+  fullName: System.Reflection.MethodBase.GetHashCode()
+  spec.csharp:
+  - uid: System.Reflection.MethodBase.GetHashCode
+    name: "XXX"
+    fullName: System.Reflection.MethodBase.GetHashCode
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Reflection.MethodBase.GetHashCode
+    name: "XXX"
+    fullName: System.Reflection.MethodBase.GetHashCode
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: MethodBase.GetHashCode()
+  commentId: M:System.Reflection.MethodBase.GetHashCode
+- uid: System.Int32
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Int32
+  nameWithType: Int32
+  commentId: T:System.Int32
+- uid: System.Object[]
+  name: "XXX"
+  fullName: System.Object[]
+  fullname.vb: System.Object()
+  name.vb: Object()
+  spec.csharp:
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: ()
+  nameWithType: Object[]
+  nameWithType.vb: Object()
+- uid: System.Reflection.MemberInfo.MemberType
+  parent: System.Reflection.MemberInfo
+  isExternal: false
+  name: "XXX"
+  fullName: System.Reflection.MemberInfo.MemberType
+  nameWithType: MemberInfo.MemberType
+  commentId: P:System.Reflection.MemberInfo.MemberType
+- uid: System.Reflection.MemberTypes
+  parent: System.Reflection
+  isExternal: false
+  name: "XXX"
+  fullName: System.Reflection.MemberTypes
+  nameWithType: MemberTypes
+  commentId: T:System.Reflection.MemberTypes
+- uid: System.MemberAccessException
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.MemberAccessException
+  nameWithType: MemberAccessException
+  commentId: T:System.MemberAccessException
+- uid: System.MethodAccessException
+  isExternal: false
+  name: "XXX"
+  fullName: System.MethodAccessException
+  nameWithType: MethodAccessException
+  commentId: T:System.MethodAccessException
+- uid: System.ArgumentException
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentException
+  nameWithType: ArgumentException
+  commentId: T:System.ArgumentException
+- uid: System.Reflection.TargetInvocationException
+  isExternal: false
+  name: "XXX"
+  fullName: System.Reflection.TargetInvocationException
+  nameWithType: TargetInvocationException
+  commentId: T:System.Reflection.TargetInvocationException
+- uid: System.Reflection.TargetParameterCountException
+  isExternal: false
+  name: "XXX"
+  fullName: System.Reflection.TargetParameterCountException
+  nameWithType: TargetParameterCountException
+  commentId: T:System.Reflection.TargetParameterCountException
+- uid: System.NotSupportedException
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.NotSupportedException
+  nameWithType: NotSupportedException
+  commentId: T:System.NotSupportedException
+- uid: System.Security.SecurityException
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.SecurityException
+  nameWithType: SecurityException
+  commentId: T:System.Security.SecurityException

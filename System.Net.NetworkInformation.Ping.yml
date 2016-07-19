@@ -1,0 +1,1008 @@
+items:
+- uid: System.Net.NetworkInformation.Ping
+  commentId: T:System.Net.NetworkInformation.Ping
+  id: Ping
+  parent: System.Net.NetworkInformation
+  children:
+  - System.Net.NetworkInformation.Ping.#ctor
+  - System.Net.NetworkInformation.Ping.Dispose
+  - System.Net.NetworkInformation.Ping.Dispose(System.Boolean)
+  - System.Net.NetworkInformation.Ping.SendPingAsync(System.Net.IPAddress)
+  - System.Net.NetworkInformation.Ping.SendPingAsync(System.Net.IPAddress,System.Int32)
+  - System.Net.NetworkInformation.Ping.SendPingAsync(System.Net.IPAddress,System.Int32,System.Byte[])
+  - System.Net.NetworkInformation.Ping.SendPingAsync(System.Net.IPAddress,System.Int32,System.Byte[],System.Net.NetworkInformation.PingOptions)
+  - System.Net.NetworkInformation.Ping.SendPingAsync(System.String)
+  - System.Net.NetworkInformation.Ping.SendPingAsync(System.String,System.Int32)
+  - System.Net.NetworkInformation.Ping.SendPingAsync(System.String,System.Int32,System.Byte[])
+  - System.Net.NetworkInformation.Ping.SendPingAsync(System.String,System.Int32,System.Byte[],System.Net.NetworkInformation.PingOptions)
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Net.NetworkInformation.Ping
+  type: Class
+  source:
+    remote:
+      path: src/System.Net.Ping/ref/System.Net.Ping.Manual.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Ping
+    path: src/System.Net.Ping/ref/System.Net.Ping.Manual.cs
+    startLine: 9
+  assemblies:
+  - System.Net.Ping
+  namespace: System.Net.NetworkInformation
+  summary: "\n<p>Allows an application to determine whether a remote computer is accessible over the network.</p>\n"
+  syntax:
+    content: 'public class Ping : IDisposable'
+    content.vb: >-
+      Public Class Ping
+          Implements IDisposable
+  inheritance:
+  - System.Object
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+  nameWithType: Ping
+- uid: System.Net.NetworkInformation.Ping.#ctor
+  commentId: M:System.Net.NetworkInformation.Ping.#ctor
+  id: '#ctor'
+  parent: System.Net.NetworkInformation.Ping
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Net.NetworkInformation.Ping.Ping()
+  type: Constructor
+  source:
+    remote:
+      path: src/System.Net.Ping/ref/System.Net.Ping.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: .ctor
+    path: src/System.Net.Ping/ref/System.Net.Ping.cs
+    startLine: 39
+  assemblies:
+  - System.Net.Ping
+  namespace: System.Net.NetworkInformation
+  summary: "\n<p>Initializes a new instance of the <xref href=\"System.Net.NetworkInformation.Ping\" data-throw-if-not-resolved=\"false\"></xref> class.</p>\n"
+  syntax:
+    content: public Ping()
+    content.vb: Public Sub New
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: Ping.Ping()
+- uid: System.Net.NetworkInformation.Ping.SendPingAsync(System.Net.IPAddress)
+  commentId: M:System.Net.NetworkInformation.Ping.SendPingAsync(System.Net.IPAddress)
+  id: SendPingAsync(System.Net.IPAddress)
+  parent: System.Net.NetworkInformation.Ping
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Net.NetworkInformation.Ping.SendPingAsync(System.Net.IPAddress)
+  type: Method
+  source:
+    remote:
+      path: src/System.Net.Ping/ref/System.Net.Ping.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: SendPingAsync
+    path: src/System.Net.Ping/ref/System.Net.Ping.cs
+    startLine: 40
+  assemblies:
+  - System.Net.Ping
+  namespace: System.Net.NetworkInformation
+  summary: "\n<p>Send an Internet Control Message Protocol (ICMP) echo message with the specified data buffer to the computer that has the specified <xref href=\"System.Net.IPAddress\" data-throw-if-not-resolved=\"false\"></xref>, and receives a corresponding ICMP echo reply message from that computer as an asynchronous operation. </p>\n"
+  syntax:
+    content: public Task<PingReply> SendPingAsync(IPAddress address)
+    content.vb: Public Function SendPingAsync(address As IPAddress) As Task(Of PingReply)
+    parameters:
+    - id: address
+      type: System.Net.IPAddress
+      description: "\n<p>An IP address that identifies the computer that is the destination for the ICMP echo message.</p>\n"
+    return:
+      type: System.Threading.Tasks.Task{System.Net.NetworkInformation.PingReply}
+      description: "\n<p>Returns <xref href=\"System.Threading.Tasks.Task`1\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n<p>The task object representing the asynchronous operation.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>address</em> is <strong>null</strong>.</p>\n"
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: "\n<p>A call to <xref href=\"System.Net.NetworkInformation.Ping.SendPingAsync(System.Net.IPAddress)\" data-throw-if-not-resolved=\"false\"></xref>  is in progress.</p>\n"
+  - type: System.Net.NetworkInformation.PingException
+    commentId: T:System.Net.NetworkInformation.PingException
+    description: "\n<p>An exception was thrown while sending or receiving the ICMP messages. See the inner exception for the exact exception that was thrown.</p>\n"
+  - type: System.Net.Sockets.SocketException
+    commentId: T:System.Net.Sockets.SocketException
+    description: "\n<p>\n<em>address</em> is not a valid IP address.</p>\n"
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>This object has been disposed.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: Ping.SendPingAsync(IPAddress)
+- uid: System.Net.NetworkInformation.Ping.SendPingAsync(System.Net.IPAddress,System.Int32)
+  commentId: M:System.Net.NetworkInformation.Ping.SendPingAsync(System.Net.IPAddress,System.Int32)
+  id: SendPingAsync(System.Net.IPAddress,System.Int32)
+  parent: System.Net.NetworkInformation.Ping
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Net.NetworkInformation.Ping.SendPingAsync(System.Net.IPAddress, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/System.Net.Ping/ref/System.Net.Ping.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: SendPingAsync
+    path: src/System.Net.Ping/ref/System.Net.Ping.cs
+    startLine: 41
+  assemblies:
+  - System.Net.Ping
+  namespace: System.Net.NetworkInformation
+  summary: "\n<p>Send an Internet Control Message Protocol (ICMP) echo message with the specified data buffer to the computer that has the specified <xref href=\"System.Net.IPAddress\" data-throw-if-not-resolved=\"false\"></xref>, and receives a corresponding ICMP echo reply message from that computer as an asynchronous operation. This overload allows you to specify a time-out value for the operation.</p>\n"
+  syntax:
+    content: public Task<PingReply> SendPingAsync(IPAddress address, int timeout)
+    content.vb: Public Function SendPingAsync(address As IPAddress, timeout As Integer) As Task(Of PingReply)
+    parameters:
+    - id: address
+      type: System.Net.IPAddress
+      description: "\n<p>An IP address that identifies the computer that is the destination for the ICMP echo message.</p>\n"
+    - id: timeout
+      type: System.Int32
+      description: "\n<p>The maximum number of milliseconds (after sending the echo message) to wait for the ICMP echo reply message.</p>\n"
+    return:
+      type: System.Threading.Tasks.Task{System.Net.NetworkInformation.PingReply}
+      description: "\n<p>Returns <xref href=\"System.Threading.Tasks.Task`1\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n<p>The task object representing the asynchronous operation.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: Ping.SendPingAsync(IPAddress, Int32)
+- uid: System.Net.NetworkInformation.Ping.SendPingAsync(System.Net.IPAddress,System.Int32,System.Byte[])
+  commentId: M:System.Net.NetworkInformation.Ping.SendPingAsync(System.Net.IPAddress,System.Int32,System.Byte[])
+  id: SendPingAsync(System.Net.IPAddress,System.Int32,System.Byte[])
+  parent: System.Net.NetworkInformation.Ping
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Net.NetworkInformation.Ping.SendPingAsync(System.Net.IPAddress, System.Int32, System.Byte[])
+  type: Method
+  source:
+    remote:
+      path: src/System.Net.Ping/ref/System.Net.Ping.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: SendPingAsync
+    path: src/System.Net.Ping/ref/System.Net.Ping.cs
+    startLine: 42
+  assemblies:
+  - System.Net.Ping
+  namespace: System.Net.NetworkInformation
+  summary: "\n<p>Send an Internet Control Message Protocol (ICMP) echo message with the specified data buffer to the computer that has the specified <xref href=\"System.Net.IPAddress\" data-throw-if-not-resolved=\"false\"></xref>, and receives a corresponding ICMP echo reply message from that computer as an asynchronous operation. This overload allows you to specify a time-out value for the operation and a buffer to use for send and receive.</p>\n"
+  syntax:
+    content: public Task<PingReply> SendPingAsync(IPAddress address, int timeout, byte[] buffer)
+    content.vb: Public Function SendPingAsync(address As IPAddress, timeout As Integer, buffer As Byte()) As Task(Of PingReply)
+    parameters:
+    - id: address
+      type: System.Net.IPAddress
+      description: "\n<p>An IP address that identifies the computer that is the destination for the ICMP echo message.</p>\n"
+    - id: timeout
+      type: System.Int32
+      description: "\n<p>The maximum number of milliseconds (after sending the echo message) to wait for the ICMP echo reply message.</p>\n"
+    - id: buffer
+      type: System.Byte[]
+      description: "\n<p>A <xref href=\"System.Byte\" data-throw-if-not-resolved=\"false\"></xref> array that contains data to be sent with the ICMP echo message and returned in the ICMP echo reply message. The array cannot contain more than 65,500 bytes.</p>\n"
+    return:
+      type: System.Threading.Tasks.Task{System.Net.NetworkInformation.PingReply}
+      description: "\n<p>Returns <xref href=\"System.Threading.Tasks.Task`1\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n<p>The task object representing the asynchronous operation.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>address</em> is <strong>null</strong>.</p>\n<p>-or-</p>\n<p>\n<em>buffer</em> is <strong>null</strong>.</p>\n"
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>timeout</em> is less than zero.</p>\n"
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: "\n<p>A call to <xref href=\"System.Net.NetworkInformation.Ping.SendPingAsync(System.Net.IPAddress)\" data-throw-if-not-resolved=\"false\"></xref>  is in progress.</p>\n"
+  - type: System.Net.NetworkInformation.PingException
+    commentId: T:System.Net.NetworkInformation.PingException
+    description: "\n<p>An exception was thrown while sending or receiving the ICMP messages. See the inner exception for the exact exception that was thrown.</p>\n"
+  - type: System.Net.Sockets.SocketException
+    commentId: T:System.Net.Sockets.SocketException
+    description: "\n<p>\n<em>address</em> is not a valid IP address.</p>\n"
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>This object has been disposed.</p>\n"
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>The size of <em>buffer</em> exceeds 65,500 bytes.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: System.Net.NetworkInformation.Ping.SendPingAsync(System.Net.IPAddress, System.Int32, System.Byte())
+  name.vb: SendPingAsync(IPAddress, Int32, Byte())
+  nameWithType: Ping.SendPingAsync(IPAddress, Int32, Byte[])
+  nameWithType.vb: Ping.SendPingAsync(IPAddress, Int32, Byte())
+- uid: System.Net.NetworkInformation.Ping.SendPingAsync(System.Net.IPAddress,System.Int32,System.Byte[],System.Net.NetworkInformation.PingOptions)
+  commentId: M:System.Net.NetworkInformation.Ping.SendPingAsync(System.Net.IPAddress,System.Int32,System.Byte[],System.Net.NetworkInformation.PingOptions)
+  id: SendPingAsync(System.Net.IPAddress,System.Int32,System.Byte[],System.Net.NetworkInformation.PingOptions)
+  parent: System.Net.NetworkInformation.Ping
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Net.NetworkInformation.Ping.SendPingAsync(System.Net.IPAddress, System.Int32, System.Byte[], System.Net.NetworkInformation.PingOptions)
+  type: Method
+  source:
+    remote:
+      path: src/System.Net.Ping/ref/System.Net.Ping.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: SendPingAsync
+    path: src/System.Net.Ping/ref/System.Net.Ping.cs
+    startLine: 43
+  assemblies:
+  - System.Net.Ping
+  namespace: System.Net.NetworkInformation
+  summary: "\n<p>Send an Internet Control Message Protocol (ICMP) echo message with the specified data buffer to the computer that has the specified <xref href=\"System.Net.IPAddress\" data-throw-if-not-resolved=\"false\"></xref>, and receives a corresponding ICMP echo reply message from that computer as an asynchronous operation. This overload allows you to specify a time-out value for the operation, a buffer to use for send and receive, and control fragmentation and Time-to-Live values for the ICMP echo message packet.</p>\n"
+  syntax:
+    content: public Task<PingReply> SendPingAsync(IPAddress address, int timeout, byte[] buffer, PingOptions options)
+    content.vb: Public Function SendPingAsync(address As IPAddress, timeout As Integer, buffer As Byte(), options As PingOptions) As Task(Of PingReply)
+    parameters:
+    - id: address
+      type: System.Net.IPAddress
+      description: "\n<p>An IP address that identifies the computer that is the destination for the ICMP echo message.</p>\n"
+    - id: timeout
+      type: System.Int32
+      description: "\n<p>The maximum number of milliseconds (after sending the echo message) to wait for the ICMP echo reply message.</p>\n"
+    - id: buffer
+      type: System.Byte[]
+      description: "\n<p>A <xref href=\"System.Byte\" data-throw-if-not-resolved=\"false\"></xref> array that contains data to be sent with the ICMP echo message and returned in the ICMP echo reply message. The array cannot contain more than 65,500 bytes.</p>\n"
+    - id: options
+      type: System.Net.NetworkInformation.PingOptions
+      description: "\n<p>A <xref href=\"System.Net.NetworkInformation.PingOptions\" data-throw-if-not-resolved=\"false\"></xref>  object used to control fragmentation and Time-to-Live values for the ICMP echo message packet.</p>\n"
+    return:
+      type: System.Threading.Tasks.Task{System.Net.NetworkInformation.PingReply}
+      description: "\n<p>Returns <xref href=\"System.Threading.Tasks.Task`1\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n<p>The task object representing the asynchronous operation.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>address</em> is <strong>null</strong>.</p>\n<p>-or-</p>\n<p>\n<em>buffer</em> is <strong>null</strong>.</p>\n"
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>timeout</em> is less than zero.</p>\n"
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: "\n<p>A call to <xref href=\"System.Net.NetworkInformation.Ping.SendPingAsync(System.Net.IPAddress)\" data-throw-if-not-resolved=\"false\"></xref>  is in progress.</p>\n"
+  - type: System.Net.NetworkInformation.PingException
+    commentId: T:System.Net.NetworkInformation.PingException
+    description: "\n<p>An exception was thrown while sending or receiving the ICMP messages. See the inner exception for the exact exception that was thrown.</p>\n"
+  - type: System.Net.Sockets.SocketException
+    commentId: T:System.Net.Sockets.SocketException
+    description: "\n<p>\n<em>address</em> is not a valid IP address.</p>\n"
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>This object has been disposed.</p>\n"
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>The size of <em>buffer</em> exceeds 65,500 bytes.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: System.Net.NetworkInformation.Ping.SendPingAsync(System.Net.IPAddress, System.Int32, System.Byte(), System.Net.NetworkInformation.PingOptions)
+  name.vb: SendPingAsync(IPAddress, Int32, Byte(), PingOptions)
+  nameWithType: Ping.SendPingAsync(IPAddress, Int32, Byte[], PingOptions)
+  nameWithType.vb: Ping.SendPingAsync(IPAddress, Int32, Byte(), PingOptions)
+- uid: System.Net.NetworkInformation.Ping.SendPingAsync(System.String)
+  commentId: M:System.Net.NetworkInformation.Ping.SendPingAsync(System.String)
+  id: SendPingAsync(System.String)
+  parent: System.Net.NetworkInformation.Ping
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Net.NetworkInformation.Ping.SendPingAsync(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/System.Net.Ping/ref/System.Net.Ping.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: SendPingAsync
+    path: src/System.Net.Ping/ref/System.Net.Ping.cs
+    startLine: 44
+  assemblies:
+  - System.Net.Ping
+  namespace: System.Net.NetworkInformation
+  summary: "\n<p>Sends an Internet Control Message Protocol (ICMP) echo message with the specified data buffer to the specified computer, and receive a corresponding ICMP echo reply message from that computer as an asynchronous operation.</p>\n"
+  syntax:
+    content: public Task<PingReply> SendPingAsync(string hostNameOrAddress)
+    content.vb: Public Function SendPingAsync(hostNameOrAddress As String) As Task(Of PingReply)
+    parameters:
+    - id: hostNameOrAddress
+      type: System.String
+      description: "\n<p>The computer that is the destination for the ICMP echo message. The value specified for this parameter can be a host name or a string representation of an IP address.</p>\n"
+    return:
+      type: System.Threading.Tasks.Task{System.Net.NetworkInformation.PingReply}
+      description: "\n<p>Returns <xref href=\"System.Threading.Tasks.Task`1\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n<p>The task object representing the asynchronous operation.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: Ping.SendPingAsync(String)
+- uid: System.Net.NetworkInformation.Ping.SendPingAsync(System.String,System.Int32)
+  commentId: M:System.Net.NetworkInformation.Ping.SendPingAsync(System.String,System.Int32)
+  id: SendPingAsync(System.String,System.Int32)
+  parent: System.Net.NetworkInformation.Ping
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Net.NetworkInformation.Ping.SendPingAsync(System.String, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/System.Net.Ping/ref/System.Net.Ping.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: SendPingAsync
+    path: src/System.Net.Ping/ref/System.Net.Ping.cs
+    startLine: 45
+  assemblies:
+  - System.Net.Ping
+  namespace: System.Net.NetworkInformation
+  summary: "\n<p>Sends an Internet Control Message Protocol (ICMP) echo message with the specified data buffer to the specified computer, and receive a corresponding ICMP echo reply message from that computer as an asynchronous operation. This overload allows you to specify a time-out value for the operation.</p>\n"
+  syntax:
+    content: public Task<PingReply> SendPingAsync(string hostNameOrAddress, int timeout)
+    content.vb: Public Function SendPingAsync(hostNameOrAddress As String, timeout As Integer) As Task(Of PingReply)
+    parameters:
+    - id: hostNameOrAddress
+      type: System.String
+      description: "\n<p>The computer that is the destination for the ICMP echo message. The value specified for this parameter can be a host name or a string representation of an IP address.</p>\n"
+    - id: timeout
+      type: System.Int32
+      description: "\n<p>The maximum number of milliseconds (after sending the echo message) to wait for the ICMP echo reply message.</p>\n"
+    return:
+      type: System.Threading.Tasks.Task{System.Net.NetworkInformation.PingReply}
+      description: "\n<p>Returns <xref href=\"System.Threading.Tasks.Task`1\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n<p>The task object representing the asynchronous operation.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: Ping.SendPingAsync(String, Int32)
+- uid: System.Net.NetworkInformation.Ping.SendPingAsync(System.String,System.Int32,System.Byte[])
+  commentId: M:System.Net.NetworkInformation.Ping.SendPingAsync(System.String,System.Int32,System.Byte[])
+  id: SendPingAsync(System.String,System.Int32,System.Byte[])
+  parent: System.Net.NetworkInformation.Ping
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Net.NetworkInformation.Ping.SendPingAsync(System.String, System.Int32, System.Byte[])
+  type: Method
+  source:
+    remote:
+      path: src/System.Net.Ping/ref/System.Net.Ping.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: SendPingAsync
+    path: src/System.Net.Ping/ref/System.Net.Ping.cs
+    startLine: 46
+  assemblies:
+  - System.Net.Ping
+  namespace: System.Net.NetworkInformation
+  summary: "\n<p>Sends an Internet Control Message Protocol (ICMP) echo message with the specified data buffer to the specified computer, and receive a corresponding ICMP echo reply message from that computer as an asynchronous operation. This overload allows you to specify a time-out value for the operation and a buffer to use for send and receive.</p>\n"
+  syntax:
+    content: public Task<PingReply> SendPingAsync(string hostNameOrAddress, int timeout, byte[] buffer)
+    content.vb: Public Function SendPingAsync(hostNameOrAddress As String, timeout As Integer, buffer As Byte()) As Task(Of PingReply)
+    parameters:
+    - id: hostNameOrAddress
+      type: System.String
+      description: "\n<p>The computer that is the destination for the ICMP echo message. The value specified for this parameter can be a host name or a string representation of an IP address.</p>\n"
+    - id: timeout
+      type: System.Int32
+      description: "\n<p>The maximum number of milliseconds (after sending the echo message) to wait for the ICMP echo reply message.</p>\n"
+    - id: buffer
+      type: System.Byte[]
+      description: "\n<p>A <xref href=\"System.Byte\" data-throw-if-not-resolved=\"false\"></xref> array that contains data to be sent with the ICMP echo message and returned in the ICMP echo reply message. The array cannot contain more than 65,500 bytes.</p>\n"
+    return:
+      type: System.Threading.Tasks.Task{System.Net.NetworkInformation.PingReply}
+      description: "\n<p>Returns <xref href=\"System.Threading.Tasks.Task`1\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n<p>The task object representing the asynchronous operation.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: System.Net.NetworkInformation.Ping.SendPingAsync(System.String, System.Int32, System.Byte())
+  name.vb: SendPingAsync(String, Int32, Byte())
+  nameWithType: Ping.SendPingAsync(String, Int32, Byte[])
+  nameWithType.vb: Ping.SendPingAsync(String, Int32, Byte())
+- uid: System.Net.NetworkInformation.Ping.SendPingAsync(System.String,System.Int32,System.Byte[],System.Net.NetworkInformation.PingOptions)
+  commentId: M:System.Net.NetworkInformation.Ping.SendPingAsync(System.String,System.Int32,System.Byte[],System.Net.NetworkInformation.PingOptions)
+  id: SendPingAsync(System.String,System.Int32,System.Byte[],System.Net.NetworkInformation.PingOptions)
+  parent: System.Net.NetworkInformation.Ping
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Net.NetworkInformation.Ping.SendPingAsync(System.String, System.Int32, System.Byte[], System.Net.NetworkInformation.PingOptions)
+  type: Method
+  source:
+    remote:
+      path: src/System.Net.Ping/ref/System.Net.Ping.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: SendPingAsync
+    path: src/System.Net.Ping/ref/System.Net.Ping.cs
+    startLine: 47
+  assemblies:
+  - System.Net.Ping
+  namespace: System.Net.NetworkInformation
+  summary: "\n<p>Sends an Internet Control Message Protocol (ICMP) echo message with the specified data buffer to the specified computer, and receive a corresponding ICMP echo reply message from that computer as an asynchronous operation. This overload allows you to specify a time-out value for the operation, a buffer to use for send and receive, and control fragmentation and Time-to-Live values for the ICMP echo message packet.</p>\n"
+  syntax:
+    content: public Task<PingReply> SendPingAsync(string hostNameOrAddress, int timeout, byte[] buffer, PingOptions options)
+    content.vb: Public Function SendPingAsync(hostNameOrAddress As String, timeout As Integer, buffer As Byte(), options As PingOptions) As Task(Of PingReply)
+    parameters:
+    - id: hostNameOrAddress
+      type: System.String
+      description: "\n<p>The computer that is the destination for the ICMP echo message. The value specified for this parameter can be a host name or a string representation of an IP address.</p>\n"
+    - id: timeout
+      type: System.Int32
+      description: "\n<p>The maximum number of milliseconds (after sending the echo message) to wait for the ICMP echo reply message.</p>\n"
+    - id: buffer
+      type: System.Byte[]
+      description: "\n<p>A <xref href=\"System.Byte\" data-throw-if-not-resolved=\"false\"></xref> array that contains data to be sent with the ICMP echo message and returned in the ICMP echo reply message. The array cannot contain more than 65,500 bytes.</p>\n"
+    - id: options
+      type: System.Net.NetworkInformation.PingOptions
+      description: "\n<p>A <xref href=\"System.Net.NetworkInformation.PingOptions\" data-throw-if-not-resolved=\"false\"></xref>  object used to control fragmentation and Time-to-Live values for the ICMP echo message packet.</p>\n"
+    return:
+      type: System.Threading.Tasks.Task{System.Net.NetworkInformation.PingReply}
+      description: "\n<p>Returns <xref href=\"System.Threading.Tasks.Task`1\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n<p>The task object representing the asynchronous operation.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: System.Net.NetworkInformation.Ping.SendPingAsync(System.String, System.Int32, System.Byte(), System.Net.NetworkInformation.PingOptions)
+  name.vb: SendPingAsync(String, Int32, Byte(), PingOptions)
+  nameWithType: Ping.SendPingAsync(String, Int32, Byte[], PingOptions)
+  nameWithType.vb: Ping.SendPingAsync(String, Int32, Byte(), PingOptions)
+- uid: System.Net.NetworkInformation.Ping.Dispose
+  commentId: M:System.Net.NetworkInformation.Ping.Dispose
+  id: Dispose
+  parent: System.Net.NetworkInformation.Ping
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Net.NetworkInformation.Ping.Dispose()
+  type: Method
+  source:
+    remote:
+      path: src/System.Net.Ping/ref/System.Net.Ping.Manual.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Dispose
+    path: src/System.Net.Ping/ref/System.Net.Ping.Manual.cs
+    startLine: 11
+  assemblies:
+  - System.Net.Ping
+  namespace: System.Net.NetworkInformation
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose
+  implements:
+  - System.IDisposable.Dispose
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: Ping.Dispose()
+- uid: System.Net.NetworkInformation.Ping.Dispose(System.Boolean)
+  commentId: M:System.Net.NetworkInformation.Ping.Dispose(System.Boolean)
+  id: Dispose(System.Boolean)
+  parent: System.Net.NetworkInformation.Ping
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Net.NetworkInformation.Ping.Dispose(System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/System.Net.Ping/ref/System.Net.Ping.Manual.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Dispose
+    path: src/System.Net.Ping/ref/System.Net.Ping.Manual.cs
+    startLine: 12
+  assemblies:
+  - System.Net.Ping
+  namespace: System.Net.NetworkInformation
+  summary: "\n<p>Releases the unmanaged resources used by the <xref href=\"System.Net.NetworkInformation.Ping\" data-throw-if-not-resolved=\"false\"></xref> object, and optionally disposes of the managed resources.</p>\n"
+  syntax:
+    content: protected virtual void Dispose(bool disposing)
+    content.vb: Protected Overridable Sub Dispose(disposing As Boolean)
+    parameters:
+    - id: disposing
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> to release both managed and unmanaged resources; <strong>false</strong> to releases only unmanaged resources.</p>\n"
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+  nameWithType: Ping.Dispose(Boolean)
+references:
+- uid: System.Net.NetworkInformation
+  isExternal: false
+  name: "XXX"
+  fullName: System.Net.NetworkInformation
+  commentId: N:System.Net.NetworkInformation
+  nameWithType: System.Net.NetworkInformation
+- uid: System.Object
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Object
+  commentId: T:System.Object
+  nameWithType: Object
+- uid: System.IDisposable
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.IDisposable
+  commentId: T:System.IDisposable
+  nameWithType: IDisposable
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.ToString
+  nameWithType: Object.ToString()
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.Equals(System.Object)
+  nameWithType: Object.Equals(Object)
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  nameWithType: Object.Equals(Object, Object)
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.GetHashCode
+  nameWithType: Object.GetHashCode()
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.GetType
+  nameWithType: Object.GetType()
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.MemberwiseClone
+  nameWithType: Object.MemberwiseClone()
+- uid: System
+  isExternal: false
+  name: "XXX"
+  fullName: System
+  commentId: N:System
+  nameWithType: System
+- uid: System.Net.IPAddress
+  parent: System.Net
+  isExternal: false
+  name: "XXX"
+  fullName: System.Net.IPAddress
+  commentId: T:System.Net.IPAddress
+  nameWithType: IPAddress
+- uid: System.Threading.Tasks.Task{System.Net.NetworkInformation.PingReply}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: "XXX"
+  fullName: System.Threading.Tasks.Task<System.Net.NetworkInformation.PingReply>
+  fullname.vb: System.Threading.Tasks.Task(Of System.Net.NetworkInformation.PingReply)
+  name.vb: Task(Of PingReply)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: "XXX"
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: "<"
+    fullName: <
+  - uid: System.Net.NetworkInformation.PingReply
+    name: "XXX"
+    fullName: System.Net.NetworkInformation.PingReply
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: "XXX"
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: 'XXX '
+    fullName: '(Of '
+  - uid: System.Net.NetworkInformation.PingReply
+    name: "XXX"
+    fullName: System.Net.NetworkInformation.PingReply
+  - name: "XXX"
+    fullName: )
+  commentId: T:System.Threading.Tasks.Task{System.Net.NetworkInformation.PingReply}
+  nameWithType: Task<PingReply>
+  nameWithType.vb: Task(Of PingReply)
+- uid: System.Net
+  isExternal: false
+  name: "XXX"
+  fullName: System.Net
+  commentId: N:System.Net
+  nameWithType: System.Net
+- uid: System.Threading.Tasks.Task`1
+  isExternal: false
+  name: "XXX"
+  fullName: System.Threading.Tasks.Task<TResult>
+  fullname.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: "XXX"
+    fullName: System.Threading.Tasks.Task
+  - name: "<"
+    fullName: <
+  - name: "XXX"
+    fullName: TResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: "XXX"
+    fullName: System.Threading.Tasks.Task
+  - name: 'XXX '
+    fullName: '(Of '
+  - name: "XXX"
+    fullName: TResult
+  - name: "XXX"
+    fullName: )
+  commentId: T:System.Threading.Tasks.Task`1
+  nameWithType: Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+- uid: System.Threading.Tasks
+  isExternal: false
+  name: "XXX"
+  fullName: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+- uid: System.Int32
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Int32
+  commentId: T:System.Int32
+  nameWithType: Int32
+- uid: System.Byte[]
+  name: "XXX"
+  fullName: System.Byte[]
+  fullname.vb: System.Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: "XXX"
+    fullName: System.Byte
+    isExternal: true
+  - name: 'XXX'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: "XXX"
+    fullName: System.Byte
+    isExternal: true
+  - name: "XXX"
+    fullName: ()
+  nameWithType: Byte[]
+  nameWithType.vb: Byte()
+- uid: System.Net.NetworkInformation.PingOptions
+  parent: System.Net.NetworkInformation
+  isExternal: false
+  name: "XXX"
+  fullName: System.Net.NetworkInformation.PingOptions
+  commentId: T:System.Net.NetworkInformation.PingOptions
+  nameWithType: PingOptions
+- uid: System.String
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.String
+  commentId: T:System.String
+  nameWithType: String
+- uid: System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: false
+  name: "XXX"
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: "XXX"
+    fullName: System.IDisposable.Dispose
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: "XXX"
+    fullName: System.IDisposable.Dispose
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.IDisposable.Dispose
+  nameWithType: IDisposable.Dispose()
+- uid: System.Boolean
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Boolean
+  commentId: T:System.Boolean
+  nameWithType: Boolean
+- uid: System.ArgumentNullException
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentNullException
+  nameWithType: ArgumentNullException
+  commentId: T:System.ArgumentNullException
+- uid: System.InvalidOperationException
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.InvalidOperationException
+  nameWithType: InvalidOperationException
+  commentId: T:System.InvalidOperationException
+- uid: System.Net.NetworkInformation.PingException
+  isExternal: false
+  name: "XXX"
+  fullName: System.Net.NetworkInformation.PingException
+  commentId: T:System.Net.NetworkInformation.PingException
+  nameWithType: PingException
+- uid: System.Net.Sockets.SocketException
+  isExternal: false
+  name: "XXX"
+  fullName: System.Net.Sockets.SocketException
+  commentId: T:System.Net.Sockets.SocketException
+  nameWithType: SocketException
+- uid: System.ObjectDisposedException
+  isExternal: false
+  name: "XXX"
+  fullName: System.ObjectDisposedException
+  nameWithType: ObjectDisposedException
+  commentId: T:System.ObjectDisposedException
+- uid: System.ArgumentOutOfRangeException
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentOutOfRangeException
+  nameWithType: ArgumentOutOfRangeException
+  commentId: T:System.ArgumentOutOfRangeException
+- uid: System.ArgumentException
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentException
+  nameWithType: ArgumentException
+  commentId: T:System.ArgumentException

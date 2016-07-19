@@ -1,0 +1,971 @@
+items:
+- uid: System.Security.SecureString
+  commentId: T:System.Security.SecureString
+  id: SecureString
+  parent: System.Security
+  children:
+  - System.Security.SecureString.#ctor
+  - System.Security.SecureString.#ctor(System.Char*,System.Int32)
+  - System.Security.SecureString.AppendChar(System.Char)
+  - System.Security.SecureString.Clear
+  - System.Security.SecureString.Copy
+  - System.Security.SecureString.Dispose
+  - System.Security.SecureString.InsertAt(System.Int32,System.Char)
+  - System.Security.SecureString.IsReadOnly
+  - System.Security.SecureString.Length
+  - System.Security.SecureString.MakeReadOnly
+  - System.Security.SecureString.RemoveAt(System.Int32)
+  - System.Security.SecureString.SetAt(System.Int32,System.Char)
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.SecureString
+  type: Class
+  source:
+    remote:
+      path: src/System.Security.SecureString/ref/System.Security.SecureString.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: SecureString
+    path: src/System.Security.SecureString/ref/System.Security.SecureString.cs
+    startLine: 9
+  assemblies:
+  - System.Security.SecureString
+  namespace: System.Security
+  summary: "\n<p>Represents text that should be kept confidential, such as by deleting it from computer memory when no longer needed. This class cannot be inherited.</p>\n"
+  syntax:
+    content: 'public sealed class SecureString : IDisposable'
+    content.vb: >-
+      Public NotInheritable Class SecureString
+          Implements IDisposable
+  seealso:
+  - type: System.Runtime.InteropServices.ComVisibleAttribute
+    commentId: T:System.Runtime.InteropServices.ComVisibleAttribute
+  - type: System.Runtime.InteropServices.Marshal
+    commentId: T:System.Runtime.InteropServices.Marshal
+  - type: System.Runtime.ConstrainedExecution.CriticalFinalizerObject
+    commentId: T:System.Runtime.ConstrainedExecution.CriticalFinalizerObject
+  - type: System.IDisposable
+    commentId: T:System.IDisposable
+  see:
+  - type: System.Security.SecureString
+    commentId: T:System.Security.SecureString
+  - type: System.Security.SecureString
+    commentId: T:System.Security.SecureString
+  - type: System.Security.SecureString
+    commentId: T:System.Security.SecureString
+  - type: System.Security.SecureString
+    commentId: T:System.Security.SecureString
+  - type: System.Security.SecureString
+    commentId: T:System.Security.SecureString
+  - type: System.Security.SecureString
+    commentId: T:System.Security.SecureString
+  inheritance:
+  - System.Object
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+  nameWithType: SecureString
+- uid: System.Security.SecureString.#ctor
+  commentId: M:System.Security.SecureString.#ctor
+  id: '#ctor'
+  parent: System.Security.SecureString
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.SecureString.SecureString()
+  type: Constructor
+  source:
+    remote:
+      path: src/System.Security.SecureString/ref/System.Security.SecureString.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: .ctor
+    path: src/System.Security.SecureString/ref/System.Security.SecureString.cs
+    startLine: 11
+  assemblies:
+  - System.Security.SecureString
+  namespace: System.Security
+  summary: "\n<p>Initializes a new instance of the <xref href=\"System.Security.SecureString\" data-throw-if-not-resolved=\"false\"></xref> class.</p>\n"
+  syntax:
+    content: public SecureString()
+    content.vb: Public Sub New
+  exceptions:
+  - type: System.Security.Cryptography.CryptographicException
+    commentId: T:System.Security.Cryptography.CryptographicException
+    description: "\n<p>An error occurred while protecting or unprotecting the value of this instance.</p>\n"
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: "\n<p>This operation is not supported on this platform.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: SecureString.SecureString()
+- uid: System.Security.SecureString.#ctor(System.Char*,System.Int32)
+  commentId: M:System.Security.SecureString.#ctor(System.Char*,System.Int32)
+  id: '#ctor(System.Char*,System.Int32)'
+  parent: System.Security.SecureString
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.SecureString.SecureString(System.Char*, System.Int32)
+  type: Constructor
+  source:
+    remote:
+      path: src/System.Security.SecureString/ref/System.Security.SecureString.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: .ctor
+    path: src/System.Security.SecureString/ref/System.Security.SecureString.cs
+    startLine: 12
+  assemblies:
+  - System.Security.SecureString
+  namespace: System.Security
+  summary: "\n<p>Initializes a new instance of the <xref href=\"System.Security.SecureString\" data-throw-if-not-resolved=\"false\"></xref> class from a subarray of <xref href=\"System.Char\" data-throw-if-not-resolved=\"false\"></xref> objects. </p>\n<p>This constructor is not CLS-compliant. The CLS-compliant alternative is <xref href=\"System.Security.SecureString.#ctor\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  syntax:
+    content: >-
+      [CLSCompliant(false)]
+
+      public SecureString(char *value, int length)
+    content.vb: >-
+      <CLSCompliant(False)>
+
+      Public Sub New(value As Char *, length As Integer)
+    parameters:
+    - id: value
+      type: System.Char*
+      description: "\n<p>A pointer to an array of <xref href=\"System.Char\" data-throw-if-not-resolved=\"false\"></xref> objects.</p>\n"
+    - id: length
+      type: System.Int32
+      description: "\n<p>The number of elements of <em>value</em> to include in the new instance.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>value</em> is <strong>null</strong>.</p>\n"
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>length</em> is less than zero or greater than 65,536.</p>\n"
+  - type: System.Security.Cryptography.CryptographicException
+    commentId: T:System.Security.Cryptography.CryptographicException
+    description: "\n<p>An error occurred while protecting or unprotecting the value of this secure string. </p>\n"
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: "\n<p>This operation is not supported on this platform.</p>\n"
+  see:
+  - type: System.Security.SecurityCriticalAttribute
+    commentId: T:System.Security.SecurityCriticalAttribute
+  attributes:
+  - type: System.CLSCompliantAttribute
+    ctor: System.CLSCompliantAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: SecureString.SecureString(Char*, Int32)
+- uid: System.Security.SecureString.Length
+  commentId: P:System.Security.SecureString.Length
+  id: Length
+  parent: System.Security.SecureString
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.SecureString.Length
+  type: Property
+  source:
+    remote:
+      path: src/System.Security.SecureString/ref/System.Security.SecureString.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Length
+    path: src/System.Security.SecureString/ref/System.Security.SecureString.cs
+    startLine: 14
+  assemblies:
+  - System.Security.SecureString
+  namespace: System.Security
+  summary: "\n<p>Gets the number of characters in the current secure string.</p>\n"
+  syntax:
+    content: public int Length { get; }
+    content.vb: Public ReadOnly Property Length As Integer
+    parameters: []
+    return:
+      type: System.Int32
+      description: "\n<p>The number of <xref href=\"System.Char\" data-throw-if-not-resolved=\"false\"></xref> objects in this secure string.</p>\n"
+  exceptions:
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>This secure string has already been disposed.</p>\n"
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  nameWithType: SecureString.Length
+- uid: System.Security.SecureString.AppendChar(System.Char)
+  commentId: M:System.Security.SecureString.AppendChar(System.Char)
+  id: AppendChar(System.Char)
+  parent: System.Security.SecureString
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.SecureString.AppendChar(System.Char)
+  type: Method
+  source:
+    remote:
+      path: src/System.Security.SecureString/ref/System.Security.SecureString.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: AppendChar
+    path: src/System.Security.SecureString/ref/System.Security.SecureString.cs
+    startLine: 15
+  assemblies:
+  - System.Security.SecureString
+  namespace: System.Security
+  summary: "\n<p>Appends a character to the end of the current secure string.</p>\n"
+  syntax:
+    content: public void AppendChar(char c)
+    content.vb: Public Sub AppendChar(c As Char)
+    parameters:
+    - id: c
+      type: System.Char
+      description: "\n<p>A character to append to this secure string.</p>\n"
+  exceptions:
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>This secure string has already been disposed.</p>\n"
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: "\n<p>This secure string is read-only.</p>\n"
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>Performing this operation would make the length of this secure string greater than 65,536 characters.</p>\n"
+  - type: System.Security.Cryptography.CryptographicException
+    commentId: T:System.Security.Cryptography.CryptographicException
+    description: "\n<p>An error occurred while protecting or unprotecting the value of this secure string.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: SecureString.AppendChar(Char)
+- uid: System.Security.SecureString.Clear
+  commentId: M:System.Security.SecureString.Clear
+  id: Clear
+  parent: System.Security.SecureString
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.SecureString.Clear()
+  type: Method
+  source:
+    remote:
+      path: src/System.Security.SecureString/ref/System.Security.SecureString.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Clear
+    path: src/System.Security.SecureString/ref/System.Security.SecureString.cs
+    startLine: 16
+  assemblies:
+  - System.Security.SecureString
+  namespace: System.Security
+  summary: "\n<p>Deletes the value of the current secure string.</p>\n"
+  syntax:
+    content: public void Clear()
+    content.vb: Public Sub Clear
+  exceptions:
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>This secure string has already been disposed.</p>\n"
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: "\n<p>This secure string is read-only.</p>\n"
+  seealso:
+  - type: System.Security.SecureString.Length
+    commentId: P:System.Security.SecureString.Length
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: SecureString.Clear()
+- uid: System.Security.SecureString.Copy
+  commentId: M:System.Security.SecureString.Copy
+  id: Copy
+  parent: System.Security.SecureString
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.SecureString.Copy()
+  type: Method
+  source:
+    remote:
+      path: src/System.Security.SecureString/ref/System.Security.SecureString.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Copy
+    path: src/System.Security.SecureString/ref/System.Security.SecureString.cs
+    startLine: 17
+  assemblies:
+  - System.Security.SecureString
+  namespace: System.Security
+  summary: "\n<p>Creates a copy of the current secure string.</p>\n"
+  syntax:
+    content: public SecureString Copy()
+    content.vb: Public Function Copy As SecureString
+    return:
+      type: System.Security.SecureString
+      description: "\n<p>A duplicate of this secure string.</p>\n"
+  exceptions:
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>This secure string has already been disposed.</p>\n"
+  - type: System.Security.Cryptography.CryptographicException
+    commentId: T:System.Security.Cryptography.CryptographicException
+    description: "\n<p>An error occurred while protecting or unprotecting the value of this secure string.</p>\n"
+  seealso:
+  - type: System.Security.SecureString.MakeReadOnly
+    commentId: M:System.Security.SecureString.MakeReadOnly
+  - type: System.Security.SecureString.IsReadOnly
+    commentId: M:System.Security.SecureString.IsReadOnly
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: SecureString.Copy()
+- uid: System.Security.SecureString.Dispose
+  commentId: M:System.Security.SecureString.Dispose
+  id: Dispose
+  parent: System.Security.SecureString
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.SecureString.Dispose()
+  type: Method
+  source:
+    remote:
+      path: src/System.Security.SecureString/ref/System.Security.SecureString.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Dispose
+    path: src/System.Security.SecureString/ref/System.Security.SecureString.cs
+    startLine: 18
+  assemblies:
+  - System.Security.SecureString
+  namespace: System.Security
+  summary: "\n<p>Releases all resources used by the current <xref href=\"System.Security.SecureString\" data-throw-if-not-resolved=\"false\"></xref> object.</p>\n"
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose
+  implements:
+  - System.IDisposable.Dispose
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: SecureString.Dispose()
+- uid: System.Security.SecureString.InsertAt(System.Int32,System.Char)
+  commentId: M:System.Security.SecureString.InsertAt(System.Int32,System.Char)
+  id: InsertAt(System.Int32,System.Char)
+  parent: System.Security.SecureString
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.SecureString.InsertAt(System.Int32, System.Char)
+  type: Method
+  source:
+    remote:
+      path: src/System.Security.SecureString/ref/System.Security.SecureString.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: InsertAt
+    path: src/System.Security.SecureString/ref/System.Security.SecureString.cs
+    startLine: 19
+  assemblies:
+  - System.Security.SecureString
+  namespace: System.Security
+  summary: "\n<p>Inserts a character in this secure string at the specified index position. </p>\n"
+  syntax:
+    content: public void InsertAt(int index, char c)
+    content.vb: Public Sub InsertAt(index As Integer, c As Char)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: "\n<p>The index position where parameter <em>c</em> is inserted.</p>\n"
+    - id: c
+      type: System.Char
+      description: "\n<p>The character to insert.</p>\n"
+  exceptions:
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>This secure string has already been disposed.</p>\n"
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: "\n<p>This secure string is read-only.</p>\n"
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>index</em> is less than zero, or greater than the length of this secure string.</p>\n<p>-or-</p>\n<p>Performing this operation would make the length of this secure string greater than 65,536 characters.</p>\n"
+  - type: System.Security.Cryptography.CryptographicException
+    commentId: T:System.Security.Cryptography.CryptographicException
+    description: "\n<p>An error occurred while protecting or unprotecting the value of this secure string.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: SecureString.InsertAt(Int32, Char)
+- uid: System.Security.SecureString.IsReadOnly
+  commentId: M:System.Security.SecureString.IsReadOnly
+  id: IsReadOnly
+  parent: System.Security.SecureString
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.SecureString.IsReadOnly()
+  type: Method
+  source:
+    remote:
+      path: src/System.Security.SecureString/ref/System.Security.SecureString.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: IsReadOnly
+    path: src/System.Security.SecureString/ref/System.Security.SecureString.cs
+    startLine: 20
+  assemblies:
+  - System.Security.SecureString
+  namespace: System.Security
+  summary: "\n<p>Indicates whether this secure string is marked read-only.</p>\n"
+  syntax:
+    content: public bool IsReadOnly()
+    content.vb: Public Function IsReadOnly As Boolean
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if this secure string is marked read-only; otherwise, <strong>false</strong>.</p>\n"
+  exceptions:
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>This secure string has already been disposed.</p>\n"
+  seealso:
+  - type: System.Security.SecureString.MakeReadOnly
+    commentId: M:System.Security.SecureString.MakeReadOnly
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: SecureString.IsReadOnly()
+- uid: System.Security.SecureString.MakeReadOnly
+  commentId: M:System.Security.SecureString.MakeReadOnly
+  id: MakeReadOnly
+  parent: System.Security.SecureString
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.SecureString.MakeReadOnly()
+  type: Method
+  source:
+    remote:
+      path: src/System.Security.SecureString/ref/System.Security.SecureString.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: MakeReadOnly
+    path: src/System.Security.SecureString/ref/System.Security.SecureString.cs
+    startLine: 21
+  assemblies:
+  - System.Security.SecureString
+  namespace: System.Security
+  summary: "\n<p>Makes the text value of this secure string read-only.   </p>\n"
+  syntax:
+    content: public void MakeReadOnly()
+    content.vb: Public Sub MakeReadOnly
+  exceptions:
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>This secure string has already been disposed.</p>\n"
+  seealso:
+  - type: System.Security.SecureString.IsReadOnly
+    commentId: M:System.Security.SecureString.IsReadOnly
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: SecureString.MakeReadOnly()
+- uid: System.Security.SecureString.RemoveAt(System.Int32)
+  commentId: M:System.Security.SecureString.RemoveAt(System.Int32)
+  id: RemoveAt(System.Int32)
+  parent: System.Security.SecureString
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.SecureString.RemoveAt(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/System.Security.SecureString/ref/System.Security.SecureString.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: RemoveAt
+    path: src/System.Security.SecureString/ref/System.Security.SecureString.cs
+    startLine: 22
+  assemblies:
+  - System.Security.SecureString
+  namespace: System.Security
+  summary: "\n<p>Removes the character at the specified index position from this secure string.</p>\n"
+  syntax:
+    content: public void RemoveAt(int index)
+    content.vb: Public Sub RemoveAt(index As Integer)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: "\n<p>The index position of a character in this secure string.</p>\n"
+  exceptions:
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>This secure string has already been disposed.</p>\n"
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: "\n<p>This secure string is read-only.</p>\n"
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>index</em> is less than zero, or greater than or equal to the length of this secure string.</p>\n"
+  - type: System.Security.Cryptography.CryptographicException
+    commentId: T:System.Security.Cryptography.CryptographicException
+    description: "\n<p>An error occurred while protecting or unprotecting the value of this secure string.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: SecureString.RemoveAt(Int32)
+- uid: System.Security.SecureString.SetAt(System.Int32,System.Char)
+  commentId: M:System.Security.SecureString.SetAt(System.Int32,System.Char)
+  id: SetAt(System.Int32,System.Char)
+  parent: System.Security.SecureString
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.SecureString.SetAt(System.Int32, System.Char)
+  type: Method
+  source:
+    remote:
+      path: src/System.Security.SecureString/ref/System.Security.SecureString.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: SetAt
+    path: src/System.Security.SecureString/ref/System.Security.SecureString.cs
+    startLine: 23
+  assemblies:
+  - System.Security.SecureString
+  namespace: System.Security
+  summary: "\n<p>Replaces the existing character at the specified index position with another character.</p>\n"
+  syntax:
+    content: public void SetAt(int index, char c)
+    content.vb: Public Sub SetAt(index As Integer, c As Char)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: "\n<p>The index position of an existing character in this secure string</p>\n"
+    - id: c
+      type: System.Char
+      description: "\n<p>A character that replaces the existing character.</p>\n"
+  exceptions:
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>This secure string has already been disposed.</p>\n"
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: "\n<p>This secure string is read-only.</p>\n"
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>index</em> is less than zero, or greater than or equal to the length of this secure string.</p>\n"
+  - type: System.Security.Cryptography.CryptographicException
+    commentId: T:System.Security.Cryptography.CryptographicException
+    description: "\n<p>An error occurred while protecting or unprotecting the value of this secure string.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: SecureString.SetAt(Int32, Char)
+references:
+- uid: System.Security
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security
+  commentId: N:System.Security
+  nameWithType: System.Security
+- uid: System.Object
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Object
+  commentId: T:System.Object
+  nameWithType: Object
+- uid: System.IDisposable
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.IDisposable
+  commentId: T:System.IDisposable
+  nameWithType: IDisposable
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.ToString
+  nameWithType: Object.ToString()
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.Equals(System.Object)
+  nameWithType: Object.Equals(Object)
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  nameWithType: Object.Equals(Object, Object)
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.GetHashCode
+  nameWithType: Object.GetHashCode()
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.GetType
+  nameWithType: Object.GetType()
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.MemberwiseClone
+  nameWithType: Object.MemberwiseClone()
+- uid: System
+  isExternal: false
+  name: "XXX"
+  fullName: System
+  commentId: N:System
+  nameWithType: System
+- uid: System.Char*
+  name: "XXX"
+  fullName: System.Char*
+  spec.csharp:
+  - uid: System.Char
+    name: "XXX"
+    fullName: System.Char
+    isExternal: true
+  - name: '*'
+    fullName: '*'
+  spec.vb:
+  - uid: System.Char
+    name: "XXX"
+    fullName: System.Char
+    isExternal: true
+  - name: '*'
+    fullName: '*'
+  nameWithType: Char*
+- uid: System.Int32
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Int32
+  commentId: T:System.Int32
+  nameWithType: Int32
+- uid: System.Char
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Char
+  commentId: T:System.Char
+  nameWithType: Char
+- uid: System.Security.SecureString
+  parent: System.Security
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.SecureString
+  commentId: T:System.Security.SecureString
+  nameWithType: SecureString
+- uid: System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: false
+  name: "XXX"
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: "XXX"
+    fullName: System.IDisposable.Dispose
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: "XXX"
+    fullName: System.IDisposable.Dispose
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.IDisposable.Dispose
+  nameWithType: IDisposable.Dispose()
+- uid: System.Boolean
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Boolean
+  commentId: T:System.Boolean
+  nameWithType: Boolean
+- uid: System.Security.Cryptography.CryptographicException
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.Cryptography.CryptographicException
+  commentId: T:System.Security.Cryptography.CryptographicException
+  nameWithType: CryptographicException
+- uid: System.NotSupportedException
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.NotSupportedException
+  nameWithType: NotSupportedException
+  commentId: T:System.NotSupportedException
+- uid: System.ArgumentNullException
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentNullException
+  nameWithType: ArgumentNullException
+  commentId: T:System.ArgumentNullException
+- uid: System.ArgumentOutOfRangeException
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentOutOfRangeException
+  nameWithType: ArgumentOutOfRangeException
+  commentId: T:System.ArgumentOutOfRangeException
+- uid: System.ObjectDisposedException
+  isExternal: false
+  name: "XXX"
+  fullName: System.ObjectDisposedException
+  nameWithType: ObjectDisposedException
+  commentId: T:System.ObjectDisposedException
+- uid: System.InvalidOperationException
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.InvalidOperationException
+  nameWithType: InvalidOperationException
+  commentId: T:System.InvalidOperationException

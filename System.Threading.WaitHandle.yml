@@ -1,0 +1,1155 @@
+items:
+- uid: System.Threading.WaitHandle
+  commentId: T:System.Threading.WaitHandle
+  id: WaitHandle
+  parent: System.Threading
+  children:
+  - System.Threading.WaitHandle.#ctor
+  - System.Threading.WaitHandle.Dispose
+  - System.Threading.WaitHandle.Dispose(System.Boolean)
+  - System.Threading.WaitHandle.InvalidHandle
+  - System.Threading.WaitHandle.WaitAll(System.Threading.WaitHandle[])
+  - System.Threading.WaitHandle.WaitAll(System.Threading.WaitHandle[],System.Int32)
+  - System.Threading.WaitHandle.WaitAll(System.Threading.WaitHandle[],System.TimeSpan)
+  - System.Threading.WaitHandle.WaitAny(System.Threading.WaitHandle[])
+  - System.Threading.WaitHandle.WaitAny(System.Threading.WaitHandle[],System.Int32)
+  - System.Threading.WaitHandle.WaitAny(System.Threading.WaitHandle[],System.TimeSpan)
+  - System.Threading.WaitHandle.WaitOne
+  - System.Threading.WaitHandle.WaitOne(System.Int32)
+  - System.Threading.WaitHandle.WaitOne(System.TimeSpan)
+  - System.Threading.WaitHandle.WaitTimeout
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.WaitHandle
+  type: Class
+  source:
+    remote:
+      path: src/mscorlib/src/System/Threading/WaitHandle.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: WaitHandle
+    path: src/mscorlib/src/System/Threading/WaitHandle.cs
+    startLine: 29
+  assemblies:
+  - System.Runtime
+  namespace: System.Threading
+  summary: "\n<p>Encapsulates operating system–specific objects that wait for exclusive access to shared resources.</p>\n"
+  syntax:
+    content: >-
+      [ComVisible(true)]
+
+      public abstract class WaitHandle : IDisposable
+    content.vb: >-
+      <ComVisible(True)>
+
+      Public MustInherit Class WaitHandle
+          Implements IDisposable
+  inheritance:
+  - System.Object
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+  nameWithType: WaitHandle
+- uid: System.Threading.WaitHandle.InvalidHandle
+  commentId: F:System.Threading.WaitHandle.InvalidHandle
+  id: InvalidHandle
+  parent: System.Threading.WaitHandle
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.WaitHandle.InvalidHandle
+  type: Field
+  source:
+    remote:
+      path: src/mscorlib/src/System/Threading/WaitHandle.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: InvalidHandle
+    path: src/mscorlib/src/System/Threading/WaitHandle.cs
+    startLine: 53
+  assemblies:
+  - System.Runtime
+  namespace: System.Threading
+  summary: "\n<p>Represents an invalid native operating system handle. This field is read-only.</p>\n"
+  syntax:
+    content: protected static readonly IntPtr InvalidHandle
+    content.vb: Protected Shared ReadOnly InvalidHandle As IntPtr
+    return:
+      type: System.IntPtr
+  modifiers.csharp:
+  - protected
+  - static
+  - readonly
+  modifiers.vb:
+  - Protected
+  - Shared
+  - ReadOnly
+  nameWithType: WaitHandle.InvalidHandle
+- uid: System.Threading.WaitHandle.WaitTimeout
+  commentId: F:System.Threading.WaitHandle.WaitTimeout
+  id: WaitTimeout
+  parent: System.Threading.WaitHandle
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.WaitHandle.WaitTimeout
+  type: Field
+  source:
+    remote:
+      path: src/mscorlib/src/System/Threading/WaitHandle.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: WaitTimeout
+    path: src/mscorlib/src/System/Threading/WaitHandle.cs
+    startLine: 35
+  assemblies:
+  - System.Runtime
+  namespace: System.Threading
+  summary: "\n<p>Indicates that a <xref href=\"System.Threading.WaitHandle.WaitAny(System.Threading.WaitHandle[],System.Int32,System.Boolean)\" data-throw-if-not-resolved=\"false\"></xref> operation timed out before any of the wait handles were signaled. This field is constant.</p>\n"
+  syntax:
+    content: public const int WaitTimeout = 258
+    content.vb: Public Const WaitTimeout As Integer = 258
+    return:
+      type: System.Int32
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+  nameWithType: WaitHandle.WaitTimeout
+- uid: System.Threading.WaitHandle.#ctor
+  commentId: M:System.Threading.WaitHandle.#ctor
+  id: '#ctor'
+  parent: System.Threading.WaitHandle
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.WaitHandle.WaitHandle()
+  type: Constructor
+  source:
+    remote:
+      path: src/mscorlib/src/System/Threading/WaitHandle.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: .ctor
+    path: src/mscorlib/src/System/Threading/WaitHandle.cs
+    startLine: 67
+  assemblies:
+  - System.Runtime
+  namespace: System.Threading
+  summary: "\n<p>Initializes a new instance of the <xref href=\"System.Threading.WaitHandle\" data-throw-if-not-resolved=\"false\"></xref> class.</p>\n"
+  syntax:
+    content: protected WaitHandle()
+    content.vb: Protected Sub New
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  nameWithType: WaitHandle.WaitHandle()
+- uid: System.Threading.WaitHandle.Dispose
+  commentId: M:System.Threading.WaitHandle.Dispose
+  id: Dispose
+  parent: System.Threading.WaitHandle
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.WaitHandle.Dispose()
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Threading/WaitHandle.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Dispose
+    path: src/mscorlib/src/System/Threading/WaitHandle.cs
+    startLine: 598
+  assemblies:
+  - System.Runtime
+  namespace: System.Threading
+  summary: "\n<p>Releases all resources used by the current instance of the <xref href=\"System.Threading.WaitHandle\" data-throw-if-not-resolved=\"false\"></xref> class.</p>\n"
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose
+  implements:
+  - System.IDisposable.Dispose
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: WaitHandle.Dispose()
+- uid: System.Threading.WaitHandle.Dispose(System.Boolean)
+  commentId: M:System.Threading.WaitHandle.Dispose(System.Boolean)
+  id: Dispose(System.Boolean)
+  parent: System.Threading.WaitHandle
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.WaitHandle.Dispose(System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Threading/WaitHandle.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Dispose
+    path: src/mscorlib/src/System/Threading/WaitHandle.cs
+    startLine: 589
+  assemblies:
+  - System.Runtime
+  namespace: System.Threading
+  summary: "\n<p>When overridden in a derived class, releases the unmanaged resources used by the <xref href=\"System.Threading.WaitHandle\" data-throw-if-not-resolved=\"false\"></xref>, and optionally releases the managed resources.</p>\n"
+  syntax:
+    content: >-
+      [SecuritySafeCritical]
+
+      protected virtual void Dispose(bool explicitDisposing)
+    content.vb: >-
+      <SecuritySafeCritical>
+
+      Protected Overridable Sub Dispose(explicitDisposing As Boolean)
+    parameters:
+    - id: explicitDisposing
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> to release both managed and unmanaged resources; <strong>false</strong> to release only unmanaged resources. </p>\n"
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+  nameWithType: WaitHandle.Dispose(Boolean)
+- uid: System.Threading.WaitHandle.WaitAll(System.Threading.WaitHandle[])
+  commentId: M:System.Threading.WaitHandle.WaitAll(System.Threading.WaitHandle[])
+  id: WaitAll(System.Threading.WaitHandle[])
+  parent: System.Threading.WaitHandle
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.WaitHandle.WaitAll(System.Threading.WaitHandle[])
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Threading/WaitHandle.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: WaitAll
+    path: src/mscorlib/src/System/Threading/WaitHandle.cs
+    startLine: 365
+  assemblies:
+  - System.Runtime
+  namespace: System.Threading
+  summary: "\n<p>Waits for all the elements in the specified array to receive a signal.</p>\n"
+  syntax:
+    content: public static bool WaitAll(WaitHandle[] waitHandles)
+    content.vb: Public Shared Function WaitAll(waitHandles As WaitHandle()) As Boolean
+    parameters:
+    - id: waitHandles
+      type: System.Threading.WaitHandle[]
+      description: "\n<p>A <strong>WaitHandle</strong> array containing the objects for which the current instance will wait. This array cannot contain multiple references to the same object. </p>\n"
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> when every element in <em>waitHandles</em> has received a signal; otherwise the method never returns.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>The <em>waitHandles</em> parameter is <strong>null</strong>. -or- </p>\n<p>One or more of the objects in the <em>waitHandles</em> array are <strong>null</strong>. </p>\n<p>-or-</p>\n<p>\n<em>waitHandles</em> is an array with no elements and the .NET Framework version is 2.0 or later.</p>\n"
+  - type: System.DuplicateWaitObjectException
+    commentId: T:System.DuplicateWaitObjectException
+    description: "\n<p>In the <see href=\"http://go.microsoft.com/fwlink/?LinkID=247912\">.NET for Windows Store apps</see> or the Portable Class Library, catch the base class exception, <xref href=\"System.ArgumentException\" data-throw-if-not-resolved=\"false\"></xref>, instead.</p>\n<p>The <em>waitHandles</em> array contains elements that are duplicates. </p>\n"
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: "\n<p>The number of objects in <em>waitHandles</em> is greater than the system permits.</p>\n<p>-or- </p>\n<p>The <xref href=\"System.STAThreadAttribute\" data-throw-if-not-resolved=\"false\"></xref> attribute is applied to the thread procedure for the current thread, and <em>waitHandles</em> contains more than one element. </p>\n"
+  - type: System.ApplicationException
+    commentId: T:System.ApplicationException
+    description: "\n<p>\n<em>waitHandles</em> is an array with no elements and the .NET Framework version is 1.0 or 1.1. </p>\n"
+  - type: System.Threading.AbandonedMutexException
+    commentId: T:System.Threading.AbandonedMutexException
+    description: "\n<p>The wait terminated because a thread exited without releasing a mutex. This exception is not thrown on Windows 98 or Windows Millennium Edition.</p>\n"
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: "\n<p>The <em>waitHandles</em> array contains a transparent proxy for a <xref href=\"System.Threading.WaitHandle\" data-throw-if-not-resolved=\"false\"></xref> in another application domain.</p>\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: System.Threading.WaitHandle.WaitAll(System.Threading.WaitHandle())
+  name.vb: WaitAll(WaitHandle())
+  nameWithType: WaitHandle.WaitAll(WaitHandle[])
+  nameWithType.vb: WaitHandle.WaitAll(WaitHandle())
+- uid: System.Threading.WaitHandle.WaitAll(System.Threading.WaitHandle[],System.Int32)
+  commentId: M:System.Threading.WaitHandle.WaitAll(System.Threading.WaitHandle[],System.Int32)
+  id: WaitAll(System.Threading.WaitHandle[],System.Int32)
+  parent: System.Threading.WaitHandle
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.WaitHandle.WaitAll(System.Threading.WaitHandle[], System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Threading/WaitHandle.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: WaitAll
+    path: src/mscorlib/src/System/Threading/WaitHandle.cs
+    startLine: 370
+  assemblies:
+  - System.Runtime
+  namespace: System.Threading
+  summary: "\n<p>Waits for all the elements in the specified array to receive a signal, using an <xref href=\"System.Int32\" data-throw-if-not-resolved=\"false\"></xref> value to specify the time interval.</p>\n"
+  syntax:
+    content: public static bool WaitAll(WaitHandle[] waitHandles, int millisecondsTimeout)
+    content.vb: Public Shared Function WaitAll(waitHandles As WaitHandle(), millisecondsTimeout As Integer) As Boolean
+    parameters:
+    - id: waitHandles
+      type: System.Threading.WaitHandle[]
+      description: "\n<p>A <strong>WaitHandle</strong> array containing the objects for which the current instance will wait. This array cannot contain multiple references to the same object (duplicates). </p>\n"
+    - id: millisecondsTimeout
+      type: System.Int32
+      description: "\n<p>The number of milliseconds to wait, or <xref href=\"System.Threading.Timeout.Infinite\" data-throw-if-not-resolved=\"false\"></xref> (-1) to wait indefinitely. </p>\n"
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> when every element in <em>waitHandles</em> has received a signal; otherwise, <strong>false</strong>.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>The <em>waitHandles</em> parameter is <strong>null</strong>.</p>\n<p>-or- </p>\n<p>One or more of the objects in the <em>waitHandles</em> array is <strong>null</strong>. </p>\n<p>-or-</p>\n<p>\n<em>waitHandles</em> is an array with no elements. </p>\n"
+  - type: System.DuplicateWaitObjectException
+    commentId: T:System.DuplicateWaitObjectException
+    description: "\n<p>In the <see href=\"http://go.microsoft.com/fwlink/?LinkID=247912\">.NET for Windows Store apps</see> or the Portable Class Library, catch the base class exception, <xref href=\"System.ArgumentException\" data-throw-if-not-resolved=\"false\"></xref>, instead.</p>\n<p>The <em>waitHandles</em> array contains elements that are duplicates. </p>\n"
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: "\n<p>The number of objects in <em>waitHandles</em> is greater than the system permits.</p>\n<p>-or- </p>\n<p>The <xref href=\"System.STAThreadAttribute\" data-throw-if-not-resolved=\"false\"></xref> attribute is applied to the thread procedure for the current thread, and <em>waitHandles</em> contains more than one element. </p>\n"
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>millisecondsTimeout</em> is a negative number other than -1, which represents an infinite time-out. </p>\n"
+  - type: System.Threading.AbandonedMutexException
+    commentId: T:System.Threading.AbandonedMutexException
+    description: "\n<p>The wait completed because a thread exited without releasing a mutex. This exception is not thrown on Windows 98 or Windows Millennium Edition.</p>\n"
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: "\n<p>The <em>waitHandles</em> array contains a transparent proxy for a <xref href=\"System.Threading.WaitHandle\" data-throw-if-not-resolved=\"false\"></xref> in another application domain.</p>\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: System.Threading.WaitHandle.WaitAll(System.Threading.WaitHandle(), System.Int32)
+  name.vb: WaitAll(WaitHandle(), Int32)
+  nameWithType: WaitHandle.WaitAll(WaitHandle[], Int32)
+  nameWithType.vb: WaitHandle.WaitAll(WaitHandle(), Int32)
+- uid: System.Threading.WaitHandle.WaitAll(System.Threading.WaitHandle[],System.TimeSpan)
+  commentId: M:System.Threading.WaitHandle.WaitAll(System.Threading.WaitHandle[],System.TimeSpan)
+  id: WaitAll(System.Threading.WaitHandle[],System.TimeSpan)
+  parent: System.Threading.WaitHandle
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.WaitHandle.WaitAll(System.Threading.WaitHandle[], System.TimeSpan)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Threading/WaitHandle.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: WaitAll
+    path: src/mscorlib/src/System/Threading/WaitHandle.cs
+    startLine: 375
+  assemblies:
+  - System.Runtime
+  namespace: System.Threading
+  summary: "\n<p>Waits for all the elements in the specified array to receive a signal, using a <xref href=\"System.TimeSpan\" data-throw-if-not-resolved=\"false\"></xref> value to specify the time interval.</p>\n"
+  syntax:
+    content: public static bool WaitAll(WaitHandle[] waitHandles, TimeSpan timeout)
+    content.vb: Public Shared Function WaitAll(waitHandles As WaitHandle(), timeout As TimeSpan) As Boolean
+    parameters:
+    - id: waitHandles
+      type: System.Threading.WaitHandle[]
+      description: "\n<p>A <strong>WaitHandle</strong> array containing the objects for which the current instance will wait. This array cannot contain multiple references to the same object. </p>\n"
+    - id: timeout
+      type: System.TimeSpan
+      description: "\n<p>A <xref href=\"System.TimeSpan\" data-throw-if-not-resolved=\"false\"></xref> that represents the number of milliseconds to wait, or a <xref href=\"System.TimeSpan\" data-throw-if-not-resolved=\"false\"></xref> that represents -1 milliseconds, to wait indefinitely. </p>\n"
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> when every element in <em>waitHandles</em> has received a signal; otherwise, <strong>false</strong>.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>The <em>waitHandles</em> parameter is <strong>null</strong>. </p>\n<p>-or- </p>\n<p>One or more of the objects in the <em>waitHandles</em> array is <strong>null</strong>. </p>\n<p>-or-</p>\n<p>\n<em>waitHandles</em> is an array with no elements. </p>\n"
+  - type: System.DuplicateWaitObjectException
+    commentId: T:System.DuplicateWaitObjectException
+    description: "\n<p>In the <see href=\"http://go.microsoft.com/fwlink/?LinkID=247912\">.NET for Windows Store apps</see> or the Portable Class Library, catch the base class exception, <xref href=\"System.ArgumentException\" data-throw-if-not-resolved=\"false\"></xref>, instead.</p>\n<p>The <em>waitHandles</em> array contains elements that are duplicates. </p>\n"
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: "\n<p>The number of objects in <em>waitHandles</em> is greater than the system permits.</p>\n<p>-or- </p>\n<p>The <xref href=\"System.STAThreadAttribute\" data-throw-if-not-resolved=\"false\"></xref> attribute is applied to the thread procedure for the current thread, and <em>waitHandles</em> contains more than one element. </p>\n"
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>timeout</em> is a negative number other than -1 milliseconds, which represents an infinite time-out. </p>\n<p>-or-</p>\n<p>\n<em>timeout</em> is greater than <xref href=\"System.Int32.MaxValue\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  - type: System.Threading.AbandonedMutexException
+    commentId: T:System.Threading.AbandonedMutexException
+    description: "\n<p>The wait terminated because a thread exited without releasing a mutex. This exception is not thrown on Windows 98 or Windows Millennium Edition.</p>\n"
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: "\n<p>The <em>waitHandles</em> array contains a transparent proxy for a <xref href=\"System.Threading.WaitHandle\" data-throw-if-not-resolved=\"false\"></xref> in another application domain.</p>\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: System.Threading.WaitHandle.WaitAll(System.Threading.WaitHandle(), System.TimeSpan)
+  name.vb: WaitAll(WaitHandle(), TimeSpan)
+  nameWithType: WaitHandle.WaitAll(WaitHandle[], TimeSpan)
+  nameWithType.vb: WaitHandle.WaitAll(WaitHandle(), TimeSpan)
+- uid: System.Threading.WaitHandle.WaitAny(System.Threading.WaitHandle[])
+  commentId: M:System.Threading.WaitHandle.WaitAny(System.Threading.WaitHandle[])
+  id: WaitAny(System.Threading.WaitHandle[])
+  parent: System.Threading.WaitHandle
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.WaitHandle.WaitAny(System.Threading.WaitHandle[])
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Threading/WaitHandle.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: WaitAny
+    path: src/mscorlib/src/System/Threading/WaitHandle.cs
+    startLine: 475
+  assemblies:
+  - System.Runtime
+  namespace: System.Threading
+  summary: "\n<p>Waits for any of the elements in the specified array to receive a signal.</p>\n"
+  syntax:
+    content: >-
+      [ReliabilityContract(Consistency.WillNotCorruptState, Cer.MayFail)]
+
+      public static int WaitAny(WaitHandle[] waitHandles)
+    content.vb: >-
+      <ReliabilityContract(Consistency.WillNotCorruptState, Cer.MayFail)>
+
+      Public Shared Function WaitAny(waitHandles As WaitHandle()) As Integer
+    parameters:
+    - id: waitHandles
+      type: System.Threading.WaitHandle[]
+      description: "\n<p>A <strong>WaitHandle</strong> array containing the objects for which the current instance will wait. </p>\n"
+    return:
+      type: System.Int32
+      description: "\n<p>The array index of the object that satisfied the wait.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>The <em>waitHandles</em> parameter is <strong>null</strong>.</p>\n<p>-or-</p>\n<p>One or more of the objects in the <em>waitHandles</em> array is <strong>null</strong>. </p>\n"
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: "\n<p>The number of objects in <em>waitHandles</em> is greater than the system permits. </p>\n"
+  - type: System.ApplicationException
+    commentId: T:System.ApplicationException
+    description: "\n<p>\n<em>waitHandles</em> is an array with no elements, and the .NET Framework version is 1.0 or 1.1. </p>\n"
+  - type: System.Threading.AbandonedMutexException
+    commentId: T:System.Threading.AbandonedMutexException
+    description: "\n<p>The wait completed because a thread exited without releasing a mutex. This exception is not thrown on Windows 98 or Windows Millennium Edition.</p>\n"
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>\n<em>waitHandles</em> is an array with no elements, and the .NET Framework version is 2.0 or later. </p>\n"
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: "\n<p>The <em>waitHandles</em> array contains a transparent proxy for a <xref href=\"System.Threading.WaitHandle\" data-throw-if-not-resolved=\"false\"></xref> in another application domain.</p>\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: System.Threading.WaitHandle.WaitAny(System.Threading.WaitHandle())
+  name.vb: WaitAny(WaitHandle())
+  nameWithType: WaitHandle.WaitAny(WaitHandle[])
+  nameWithType.vb: WaitHandle.WaitAny(WaitHandle())
+- uid: System.Threading.WaitHandle.WaitAny(System.Threading.WaitHandle[],System.Int32)
+  commentId: M:System.Threading.WaitHandle.WaitAny(System.Threading.WaitHandle[],System.Int32)
+  id: WaitAny(System.Threading.WaitHandle[],System.Int32)
+  parent: System.Threading.WaitHandle
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.WaitHandle.WaitAny(System.Threading.WaitHandle[], System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Threading/WaitHandle.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: WaitAny
+    path: src/mscorlib/src/System/Threading/WaitHandle.cs
+    startLine: 481
+  assemblies:
+  - System.Runtime
+  namespace: System.Threading
+  summary: "\n<p>Waits for any of the elements in the specified array to receive a signal, using a 32-bit signed integer to specify the time interval.</p>\n"
+  syntax:
+    content: >-
+      [ReliabilityContract(Consistency.WillNotCorruptState, Cer.MayFail)]
+
+      public static int WaitAny(WaitHandle[] waitHandles, int millisecondsTimeout)
+    content.vb: >-
+      <ReliabilityContract(Consistency.WillNotCorruptState, Cer.MayFail)>
+
+      Public Shared Function WaitAny(waitHandles As WaitHandle(), millisecondsTimeout As Integer) As Integer
+    parameters:
+    - id: waitHandles
+      type: System.Threading.WaitHandle[]
+      description: "\n<p>A <strong>WaitHandle</strong> array containing the objects for which the current instance will wait. </p>\n"
+    - id: millisecondsTimeout
+      type: System.Int32
+      description: "\n<p>The number of milliseconds to wait, or <xref href=\"System.Threading.Timeout.Infinite\" data-throw-if-not-resolved=\"false\"></xref> (-1) to wait indefinitely. </p>\n"
+    return:
+      type: System.Int32
+      description: "\n<p>The array index of the object that satisfied the wait, or <xref href=\"System.Threading.WaitHandle.WaitTimeout\" data-throw-if-not-resolved=\"false\"></xref> if no object satisfied the wait and a time interval equivalent to <em>millisecondsTimeout</em> has passed.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>The <em>waitHandles</em> parameter is <strong>null</strong>.</p>\n<p>-or-</p>\n<p>One or more of the objects in the <em>waitHandles</em> array is <strong>null</strong>. </p>\n"
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: "\n<p>The number of objects in <em>waitHandles</em> is greater than the system permits. </p>\n"
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>millisecondsTimeout</em> is a negative number other than -1, which represents an infinite time-out. </p>\n"
+  - type: System.Threading.AbandonedMutexException
+    commentId: T:System.Threading.AbandonedMutexException
+    description: "\n<p>The wait completed because a thread exited without releasing a mutex. This exception is not thrown on Windows 98 or Windows Millennium Edition.</p>\n"
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>\n<em>waitHandles</em> is an array with no elements. </p>\n"
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: "\n<p>The <em>waitHandles</em> array contains a transparent proxy for a <xref href=\"System.Threading.WaitHandle\" data-throw-if-not-resolved=\"false\"></xref> in another application domain.</p>\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: System.Threading.WaitHandle.WaitAny(System.Threading.WaitHandle(), System.Int32)
+  name.vb: WaitAny(WaitHandle(), Int32)
+  nameWithType: WaitHandle.WaitAny(WaitHandle[], Int32)
+  nameWithType.vb: WaitHandle.WaitAny(WaitHandle(), Int32)
+- uid: System.Threading.WaitHandle.WaitAny(System.Threading.WaitHandle[],System.TimeSpan)
+  commentId: M:System.Threading.WaitHandle.WaitAny(System.Threading.WaitHandle[],System.TimeSpan)
+  id: WaitAny(System.Threading.WaitHandle[],System.TimeSpan)
+  parent: System.Threading.WaitHandle
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.WaitHandle.WaitAny(System.Threading.WaitHandle[], System.TimeSpan)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Threading/WaitHandle.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: WaitAny
+    path: src/mscorlib/src/System/Threading/WaitHandle.cs
+    startLine: 465
+  assemblies:
+  - System.Runtime
+  namespace: System.Threading
+  summary: "\n<p>Waits for any of the elements in the specified array to receive a signal, using a <xref href=\"System.TimeSpan\" data-throw-if-not-resolved=\"false\"></xref> to specify the time interval.</p>\n"
+  syntax:
+    content: >-
+      [ReliabilityContract(Consistency.WillNotCorruptState, Cer.MayFail)]
+
+      public static int WaitAny(WaitHandle[] waitHandles, TimeSpan timeout)
+    content.vb: >-
+      <ReliabilityContract(Consistency.WillNotCorruptState, Cer.MayFail)>
+
+      Public Shared Function WaitAny(waitHandles As WaitHandle(), timeout As TimeSpan) As Integer
+    parameters:
+    - id: waitHandles
+      type: System.Threading.WaitHandle[]
+      description: "\n<p>A <strong>WaitHandle</strong> array containing the objects for which the current instance will wait. </p>\n"
+    - id: timeout
+      type: System.TimeSpan
+      description: "\n<p>A <xref href=\"System.TimeSpan\" data-throw-if-not-resolved=\"false\"></xref> that represents the number of milliseconds to wait, or a <xref href=\"System.TimeSpan\" data-throw-if-not-resolved=\"false\"></xref> that represents -1 milliseconds to wait indefinitely. </p>\n"
+    return:
+      type: System.Int32
+      description: "\n<p>The array index of the object that satisfied the wait, or <xref href=\"System.Threading.WaitHandle.WaitTimeout\" data-throw-if-not-resolved=\"false\"></xref> if no object satisfied the wait and a time interval equivalent to <em>timeout</em> has passed.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>The <em>waitHandles</em> parameter is <strong>null</strong>.</p>\n<p>-or-</p>\n<p>One or more of the objects in the <em>waitHandles</em> array is <strong>null</strong>. </p>\n"
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: "\n<p>The number of objects in <em>waitHandles</em> is greater than the system permits. </p>\n"
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>timeout</em> is a negative number other than -1 milliseconds, which represents an infinite time-out. </p>\n<p>-or-</p>\n<p>\n<em>timeout</em> is greater than <xref href=\"System.Int32.MaxValue\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  - type: System.Threading.AbandonedMutexException
+    commentId: T:System.Threading.AbandonedMutexException
+    description: "\n<p>The wait completed because a thread exited without releasing a mutex. This exception is not thrown on Windows 98 or Windows Millennium Edition.</p>\n"
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>\n<em>waitHandles</em> is an array with no elements. </p>\n"
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: "\n<p>The <em>waitHandles</em> array contains a transparent proxy for a <xref href=\"System.Threading.WaitHandle\" data-throw-if-not-resolved=\"false\"></xref> in another application domain.</p>\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: System.Threading.WaitHandle.WaitAny(System.Threading.WaitHandle(), System.TimeSpan)
+  name.vb: WaitAny(WaitHandle(), TimeSpan)
+  nameWithType: WaitHandle.WaitAny(WaitHandle[], TimeSpan)
+  nameWithType.vb: WaitHandle.WaitAny(WaitHandle(), TimeSpan)
+- uid: System.Threading.WaitHandle.WaitOne
+  commentId: M:System.Threading.WaitHandle.WaitOne
+  id: WaitOne
+  parent: System.Threading.WaitHandle
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.WaitHandle.WaitOne()
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Threading/WaitHandle.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: WaitOne
+    path: src/mscorlib/src/System/Threading/WaitHandle.cs
+    startLine: 197
+  assemblies:
+  - System.Runtime
+  namespace: System.Threading
+  summary: "\n<p>Blocks the current thread until the current <xref href=\"System.Threading.WaitHandle\" data-throw-if-not-resolved=\"false\"></xref> receives a signal.</p>\n"
+  syntax:
+    content: public virtual bool WaitOne()
+    content.vb: Public Overridable Function WaitOne As Boolean
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if the current instance receives a signal. If the current instance is never signaled, <xref href=\"System.Threading.WaitHandle.WaitOne(System.Int32,System.Boolean)\" data-throw-if-not-resolved=\"false\"></xref> never returns.</p>\n"
+  exceptions:
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>The current instance has already been disposed. </p>\n"
+  - type: System.Threading.AbandonedMutexException
+    commentId: T:System.Threading.AbandonedMutexException
+    description: "\n<p>The wait completed because a thread exited without releasing a mutex. This exception is not thrown on Windows 98 or Windows Millennium Edition.</p>\n"
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: "\n<p>The current instance is a transparent proxy for a <xref href=\"System.Threading.WaitHandle\" data-throw-if-not-resolved=\"false\"></xref> in another application domain.</p>\n"
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  nameWithType: WaitHandle.WaitOne()
+- uid: System.Threading.WaitHandle.WaitOne(System.Int32)
+  commentId: M:System.Threading.WaitHandle.WaitOne(System.Int32)
+  id: WaitOne(System.Int32)
+  parent: System.Threading.WaitHandle
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.WaitHandle.WaitOne(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Threading/WaitHandle.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: WaitOne
+    path: src/mscorlib/src/System/Threading/WaitHandle.cs
+    startLine: 203
+  assemblies:
+  - System.Runtime
+  namespace: System.Threading
+  summary: "\n<p>Blocks the current thread until the current <xref href=\"System.Threading.WaitHandle\" data-throw-if-not-resolved=\"false\"></xref> receives a signal, using a 32-bit signed integer to specify the time interval in milliseconds.</p>\n"
+  syntax:
+    content: public virtual bool WaitOne(int millisecondsTimeout)
+    content.vb: Public Overridable Function WaitOne(millisecondsTimeout As Integer) As Boolean
+    parameters:
+    - id: millisecondsTimeout
+      type: System.Int32
+      description: "\n<p>The number of milliseconds to wait, or <xref href=\"System.Threading.Timeout.Infinite\" data-throw-if-not-resolved=\"false\"></xref> (-1) to wait indefinitely. </p>\n"
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if the current instance receives a signal; otherwise, <strong>false</strong>.</p>\n"
+  exceptions:
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>The current instance has already been disposed. </p>\n"
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>millisecondsTimeout</em> is a negative number other than -1, which represents an infinite time-out. </p>\n"
+  - type: System.Threading.AbandonedMutexException
+    commentId: T:System.Threading.AbandonedMutexException
+    description: "\n<p>The wait completed because a thread exited without releasing a mutex. This exception is not thrown on Windows 98 or Windows Millennium Edition.</p>\n"
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: "\n<p>The current instance is a transparent proxy for a <xref href=\"System.Threading.WaitHandle\" data-throw-if-not-resolved=\"false\"></xref> in another application domain.</p>\n"
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  nameWithType: WaitHandle.WaitOne(Int32)
+- uid: System.Threading.WaitHandle.WaitOne(System.TimeSpan)
+  commentId: M:System.Threading.WaitHandle.WaitOne(System.TimeSpan)
+  id: WaitOne(System.TimeSpan)
+  parent: System.Threading.WaitHandle
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.WaitHandle.WaitOne(System.TimeSpan)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Threading/WaitHandle.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: WaitOne
+    path: src/mscorlib/src/System/Threading/WaitHandle.cs
+    startLine: 208
+  assemblies:
+  - System.Runtime
+  namespace: System.Threading
+  summary: "\n<p>Blocks the current thread until the current instance receives a signal, using a <xref href=\"System.TimeSpan\" data-throw-if-not-resolved=\"false\"></xref> to specify the time interval.</p>\n"
+  syntax:
+    content: public virtual bool WaitOne(TimeSpan timeout)
+    content.vb: Public Overridable Function WaitOne(timeout As TimeSpan) As Boolean
+    parameters:
+    - id: timeout
+      type: System.TimeSpan
+      description: "\n<p>A <xref href=\"System.TimeSpan\" data-throw-if-not-resolved=\"false\"></xref> that represents the number of milliseconds to wait, or a <xref href=\"System.TimeSpan\" data-throw-if-not-resolved=\"false\"></xref> that represents -1 milliseconds to wait indefinitely. </p>\n"
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if the current instance receives a signal; otherwise, <strong>false</strong>.</p>\n"
+  exceptions:
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>The current instance has already been disposed. </p>\n"
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>timeout</em> is a negative number other than -1 milliseconds, which represents an infinite time-out.</p>\n<p>-or-</p>\n<p>\n<em>timeout</em> is greater than <xref href=\"System.Int32.MaxValue\" data-throw-if-not-resolved=\"false\"></xref>. </p>\n"
+  - type: System.Threading.AbandonedMutexException
+    commentId: T:System.Threading.AbandonedMutexException
+    description: "\n<p>The wait completed because a thread exited without releasing a mutex. This exception is not thrown on Windows 98 or Windows Millennium Edition.</p>\n"
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: "\n<p>The current instance is a transparent proxy for a <xref href=\"System.Threading.WaitHandle\" data-throw-if-not-resolved=\"false\"></xref> in another application domain.</p>\n"
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  nameWithType: WaitHandle.WaitOne(TimeSpan)
+references:
+- uid: System.Threading
+  isExternal: false
+  name: "XXX"
+  fullName: System.Threading
+  nameWithType: System.Threading
+  commentId: N:System.Threading
+- uid: System.Object
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Object
+  nameWithType: Object
+  commentId: T:System.Object
+- uid: System.IDisposable
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.IDisposable
+  nameWithType: IDisposable
+  commentId: T:System.IDisposable
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.ToString()
+  commentId: M:System.Object.ToString
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.Equals(Object)
+  commentId: M:System.Object.Equals(System.Object)
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.Equals(Object, Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.GetHashCode()
+  commentId: M:System.Object.GetHashCode
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.GetType()
+  commentId: M:System.Object.GetType
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.MemberwiseClone()
+  commentId: M:System.Object.MemberwiseClone
+- uid: System
+  isExternal: false
+  name: "XXX"
+  fullName: System
+  nameWithType: System
+  commentId: N:System
+- uid: System.IntPtr
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.IntPtr
+  nameWithType: IntPtr
+  commentId: T:System.IntPtr
+- uid: System.Int32
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Int32
+  nameWithType: Int32
+  commentId: T:System.Int32
+- uid: System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: false
+  name: "XXX"
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: "XXX"
+    fullName: System.IDisposable.Dispose
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: "XXX"
+    fullName: System.IDisposable.Dispose
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: IDisposable.Dispose()
+  commentId: M:System.IDisposable.Dispose
+- uid: System.Boolean
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Boolean
+  nameWithType: Boolean
+  commentId: T:System.Boolean
+- uid: System.Threading.WaitHandle[]
+  name: "XXX"
+  fullName: System.Threading.WaitHandle[]
+  fullname.vb: System.Threading.WaitHandle()
+  name.vb: WaitHandle()
+  spec.csharp:
+  - uid: System.Threading.WaitHandle
+    name: "XXX"
+    fullName: System.Threading.WaitHandle
+  - name: 'XXX'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Threading.WaitHandle
+    name: "XXX"
+    fullName: System.Threading.WaitHandle
+  - name: "XXX"
+    fullName: ()
+  nameWithType: WaitHandle[]
+  nameWithType.vb: WaitHandle()
+- uid: System.TimeSpan
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.TimeSpan
+  nameWithType: TimeSpan
+  commentId: T:System.TimeSpan
+- uid: System.ArgumentNullException
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentNullException
+  nameWithType: ArgumentNullException
+  commentId: T:System.ArgumentNullException
+- uid: System.DuplicateWaitObjectException
+- uid: System.NotSupportedException
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.NotSupportedException
+  nameWithType: NotSupportedException
+  commentId: T:System.NotSupportedException
+- uid: System.ApplicationException
+- uid: System.Threading.AbandonedMutexException
+  isExternal: false
+  name: "XXX"
+  fullName: System.Threading.AbandonedMutexException
+  nameWithType: AbandonedMutexException
+  commentId: T:System.Threading.AbandonedMutexException
+- uid: System.InvalidOperationException
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.InvalidOperationException
+  nameWithType: InvalidOperationException
+  commentId: T:System.InvalidOperationException
+- uid: System.ArgumentOutOfRangeException
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentOutOfRangeException
+  nameWithType: ArgumentOutOfRangeException
+  commentId: T:System.ArgumentOutOfRangeException
+- uid: System.ArgumentException
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentException
+  nameWithType: ArgumentException
+  commentId: T:System.ArgumentException
+- uid: System.ObjectDisposedException
+  isExternal: false
+  name: "XXX"
+  fullName: System.ObjectDisposedException
+  nameWithType: ObjectDisposedException
+  commentId: T:System.ObjectDisposedException

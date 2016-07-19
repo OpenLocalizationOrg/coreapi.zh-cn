@@ -1,0 +1,2048 @@
+items:
+- uid: System.ComponentModel.PropertyDescriptor
+  commentId: T:System.ComponentModel.PropertyDescriptor
+  id: PropertyDescriptor
+  parent: System.ComponentModel
+  children:
+  - System.ComponentModel.PropertyDescriptor.#ctor(System.ComponentModel.MemberDescriptor)
+  - System.ComponentModel.PropertyDescriptor.#ctor(System.ComponentModel.MemberDescriptor,System.Attribute[])
+  - System.ComponentModel.PropertyDescriptor.#ctor(System.String,System.Attribute[])
+  - System.ComponentModel.PropertyDescriptor.AddValueChanged(System.Object,System.EventHandler)
+  - System.ComponentModel.PropertyDescriptor.CanResetValue(System.Object)
+  - System.ComponentModel.PropertyDescriptor.ComponentType
+  - System.ComponentModel.PropertyDescriptor.Converter
+  - System.ComponentModel.PropertyDescriptor.CreateInstance(System.Type)
+  - System.ComponentModel.PropertyDescriptor.Equals(System.Object)
+  - System.ComponentModel.PropertyDescriptor.FillAttributes(System.Collections.IList)
+  - System.ComponentModel.PropertyDescriptor.GetChildProperties
+  - System.ComponentModel.PropertyDescriptor.GetChildProperties(System.Attribute[])
+  - System.ComponentModel.PropertyDescriptor.GetChildProperties(System.Object)
+  - System.ComponentModel.PropertyDescriptor.GetChildProperties(System.Object,System.Attribute[])
+  - System.ComponentModel.PropertyDescriptor.GetEditor(System.Type)
+  - System.ComponentModel.PropertyDescriptor.GetHashCode
+  - System.ComponentModel.PropertyDescriptor.GetInvocationTarget(System.Type,System.Object)
+  - System.ComponentModel.PropertyDescriptor.GetTypeFromName(System.String)
+  - System.ComponentModel.PropertyDescriptor.GetValue(System.Object)
+  - System.ComponentModel.PropertyDescriptor.GetValueChangedHandler(System.Object)
+  - System.ComponentModel.PropertyDescriptor.IsLocalizable
+  - System.ComponentModel.PropertyDescriptor.IsReadOnly
+  - System.ComponentModel.PropertyDescriptor.OnValueChanged(System.Object,System.EventArgs)
+  - System.ComponentModel.PropertyDescriptor.PropertyType
+  - System.ComponentModel.PropertyDescriptor.RemoveValueChanged(System.Object,System.EventHandler)
+  - System.ComponentModel.PropertyDescriptor.ResetValue(System.Object)
+  - System.ComponentModel.PropertyDescriptor.SerializationVisibility
+  - System.ComponentModel.PropertyDescriptor.SetValue(System.Object,System.Object)
+  - System.ComponentModel.PropertyDescriptor.ShouldSerializeValue(System.Object)
+  - System.ComponentModel.PropertyDescriptor.SupportsChangeEvents
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.ComponentModel.PropertyDescriptor
+  type: Class
+  source:
+    remote:
+      path: src/System.ComponentModel.TypeConverter/src/System/ComponentModel/PropertyDescriptor.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: PropertyDescriptor
+    path: src/System.ComponentModel.TypeConverter/src/System/ComponentModel/PropertyDescriptor.cs
+    startLine: 15
+  assemblies:
+  - System.ComponentModel.TypeConverter
+  namespace: System.ComponentModel
+  summary: "\n<p>Provides an abstraction of a property on a class.</p>\n"
+  syntax:
+    content: 'public abstract class PropertyDescriptor : MemberDescriptor'
+    content.vb: >-
+      Public MustInherit Class PropertyDescriptor
+          Inherits MemberDescriptor
+  seealso:
+  - type: System.ComponentModel.MemberDescriptor
+    commentId: T:System.ComponentModel.MemberDescriptor
+  - type: System.Attribute
+    commentId: T:System.Attribute
+  - type: System.ComponentModel.DefaultValueAttribute
+    commentId: T:System.ComponentModel.DefaultValueAttribute
+  inheritance:
+  - System.Object
+  - System.ComponentModel.MemberDescriptor
+  inheritedMembers:
+  - System.ComponentModel.MemberDescriptor.AttributeArray
+  - System.ComponentModel.MemberDescriptor.Attributes
+  - System.ComponentModel.MemberDescriptor.Category
+  - System.ComponentModel.MemberDescriptor.Description
+  - System.ComponentModel.MemberDescriptor.DesignTimeOnly
+  - System.ComponentModel.MemberDescriptor.DisplayName
+  - System.ComponentModel.MemberDescriptor.IsBrowsable
+  - System.ComponentModel.MemberDescriptor.Name
+  - System.ComponentModel.MemberDescriptor.NameHashCode
+  - System.ComponentModel.MemberDescriptor.CreateAttributeCollection
+  - System.ComponentModel.MemberDescriptor.FindMethod(System.Type,System.String,System.Type[],System.Type)
+  - System.ComponentModel.MemberDescriptor.FindMethod(System.Type,System.String,System.Type[],System.Type,System.Boolean)
+  - System.ComponentModel.MemberDescriptor.GetSite(System.Object)
+  - System.Object.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+  nameWithType: PropertyDescriptor
+- uid: System.ComponentModel.PropertyDescriptor.#ctor(System.ComponentModel.MemberDescriptor)
+  commentId: M:System.ComponentModel.PropertyDescriptor.#ctor(System.ComponentModel.MemberDescriptor)
+  id: '#ctor(System.ComponentModel.MemberDescriptor)'
+  parent: System.ComponentModel.PropertyDescriptor
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.ComponentModel.PropertyDescriptor.PropertyDescriptor(System.ComponentModel.MemberDescriptor)
+  type: Constructor
+  source:
+    remote:
+      path: src/System.ComponentModel.TypeConverter/src/System/ComponentModel/PropertyDescriptor.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: .ctor
+    path: src/System.ComponentModel.TypeConverter/src/System/ComponentModel/PropertyDescriptor.cs
+    startLine: 42
+  assemblies:
+  - System.ComponentModel.TypeConverter
+  namespace: System.ComponentModel
+  summary: "\n<p>Initializes a new instance of the <xref href=\"System.ComponentModel.PropertyDescriptor\" data-throw-if-not-resolved=\"false\"></xref> class with the name and attributes in the specified <xref href=\"System.ComponentModel.MemberDescriptor\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  syntax:
+    content: protected PropertyDescriptor(MemberDescriptor descr)
+    content.vb: Protected Sub New(descr As MemberDescriptor)
+    parameters:
+    - id: descr
+      type: System.ComponentModel.MemberDescriptor
+      description: "\n<p>A <xref href=\"System.ComponentModel.MemberDescriptor\" data-throw-if-not-resolved=\"false\"></xref> that contains the name of the property and its attributes. </p>\n"
+  seealso:
+  - type: System.ComponentModel.MemberDescriptor
+    commentId: T:System.ComponentModel.MemberDescriptor
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  nameWithType: PropertyDescriptor.PropertyDescriptor(MemberDescriptor)
+- uid: System.ComponentModel.PropertyDescriptor.#ctor(System.ComponentModel.MemberDescriptor,System.Attribute[])
+  commentId: M:System.ComponentModel.PropertyDescriptor.#ctor(System.ComponentModel.MemberDescriptor,System.Attribute[])
+  id: '#ctor(System.ComponentModel.MemberDescriptor,System.Attribute[])'
+  parent: System.ComponentModel.PropertyDescriptor
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.ComponentModel.PropertyDescriptor.PropertyDescriptor(System.ComponentModel.MemberDescriptor, System.Attribute[])
+  type: Constructor
+  source:
+    remote:
+      path: src/System.ComponentModel.TypeConverter/src/System/ComponentModel/PropertyDescriptor.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: .ctor
+    path: src/System.ComponentModel.TypeConverter/src/System/ComponentModel/PropertyDescriptor.cs
+    startLine: 55
+  assemblies:
+  - System.ComponentModel.TypeConverter
+  namespace: System.ComponentModel
+  summary: "\n<p>Initializes a new instance of the <xref href=\"System.ComponentModel.PropertyDescriptor\" data-throw-if-not-resolved=\"false\"></xref> class with the name in the specified <xref href=\"System.ComponentModel.MemberDescriptor\" data-throw-if-not-resolved=\"false\"></xref> and the attributes in both the <xref href=\"System.ComponentModel.MemberDescriptor\" data-throw-if-not-resolved=\"false\"></xref> and the <xref href=\"System.Attribute\" data-throw-if-not-resolved=\"false\"></xref> array.</p>\n"
+  syntax:
+    content: protected PropertyDescriptor(MemberDescriptor descr, Attribute[] attrs)
+    content.vb: Protected Sub New(descr As MemberDescriptor, attrs As Attribute())
+    parameters:
+    - id: descr
+      type: System.ComponentModel.MemberDescriptor
+      description: "\n<p>A <xref href=\"System.ComponentModel.MemberDescriptor\" data-throw-if-not-resolved=\"false\"></xref> containing the name of the member and its attributes. </p>\n"
+    - id: attrs
+      type: System.Attribute[]
+      description: "\n<p>An <xref href=\"System.Attribute\" data-throw-if-not-resolved=\"false\"></xref> array containing the attributes you want to associate with the property. </p>\n"
+  seealso:
+  - type: System.ComponentModel.MemberDescriptor
+    commentId: T:System.ComponentModel.MemberDescriptor
+  - type: System.Attribute
+    commentId: T:System.Attribute
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  fullName.vb: System.ComponentModel.PropertyDescriptor.PropertyDescriptor(System.ComponentModel.MemberDescriptor, System.Attribute())
+  name.vb: PropertyDescriptor(MemberDescriptor, Attribute())
+  nameWithType: PropertyDescriptor.PropertyDescriptor(MemberDescriptor, Attribute[])
+  nameWithType.vb: PropertyDescriptor.PropertyDescriptor(MemberDescriptor, Attribute())
+- uid: System.ComponentModel.PropertyDescriptor.#ctor(System.String,System.Attribute[])
+  commentId: M:System.ComponentModel.PropertyDescriptor.#ctor(System.String,System.Attribute[])
+  id: '#ctor(System.String,System.Attribute[])'
+  parent: System.ComponentModel.PropertyDescriptor
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.ComponentModel.PropertyDescriptor.PropertyDescriptor(System.String, System.Attribute[])
+  type: Constructor
+  source:
+    remote:
+      path: src/System.ComponentModel.TypeConverter/src/System/ComponentModel/PropertyDescriptor.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: .ctor
+    path: src/System.ComponentModel.TypeConverter/src/System/ComponentModel/PropertyDescriptor.cs
+    startLine: 31
+  assemblies:
+  - System.ComponentModel.TypeConverter
+  namespace: System.ComponentModel
+  summary: "\n<p>Initializes a new instance of the <xref href=\"System.ComponentModel.PropertyDescriptor\" data-throw-if-not-resolved=\"false\"></xref> class with the specified name and attributes.</p>\n"
+  syntax:
+    content: protected PropertyDescriptor(string name, Attribute[] attrs)
+    content.vb: Protected Sub New(name As String, attrs As Attribute())
+    parameters:
+    - id: name
+      type: System.String
+      description: "\n<p>The name of the property. </p>\n"
+    - id: attrs
+      type: System.Attribute[]
+      description: "\n<p>An array of type <xref href=\"System.Attribute\" data-throw-if-not-resolved=\"false\"></xref> that contains the property attributes. </p>\n"
+  seealso:
+  - type: System.Attribute
+    commentId: T:System.Attribute
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  fullName.vb: System.ComponentModel.PropertyDescriptor.PropertyDescriptor(System.String, System.Attribute())
+  name.vb: PropertyDescriptor(String, Attribute())
+  nameWithType: PropertyDescriptor.PropertyDescriptor(String, Attribute[])
+  nameWithType.vb: PropertyDescriptor.PropertyDescriptor(String, Attribute())
+- uid: System.ComponentModel.PropertyDescriptor.ComponentType
+  commentId: P:System.ComponentModel.PropertyDescriptor.ComponentType
+  id: ComponentType
+  parent: System.ComponentModel.PropertyDescriptor
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.ComponentModel.PropertyDescriptor.ComponentType
+  type: Property
+  source:
+    remote:
+      path: src/System.ComponentModel.TypeConverter/src/System/ComponentModel/PropertyDescriptor.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: ComponentType
+    path: src/System.ComponentModel.TypeConverter/src/System/ComponentModel/PropertyDescriptor.cs
+    startLine: 67
+  assemblies:
+  - System.ComponentModel.TypeConverter
+  namespace: System.ComponentModel
+  summary: "\n<p>When overridden in a derived class, gets the type of the component this property is bound to.</p>\n"
+  syntax:
+    content: public abstract Type ComponentType { get; }
+    content.vb: Public MustOverride ReadOnly Property ComponentType As Type
+    parameters: []
+    return:
+      type: System.Type
+      description: "\n<p>A <xref href=\"System.Type\" data-throw-if-not-resolved=\"false\"></xref> that represents the type of component this property is bound to. When the <xref href=\"System.ComponentModel.PropertyDescriptor.GetValue(System.Object)\" data-throw-if-not-resolved=\"false\"></xref> or <xref href=\"System.ComponentModel.PropertyDescriptor.SetValue(System.Object,System.Object)\" data-throw-if-not-resolved=\"false\"></xref> methods are invoked, the object specified might be an instance of this type.</p>\n"
+  modifiers.csharp:
+  - public
+  - abstract
+  - get
+  modifiers.vb:
+  - Public
+  - MustOverride
+  - ReadOnly
+  nameWithType: PropertyDescriptor.ComponentType
+- uid: System.ComponentModel.PropertyDescriptor.Converter
+  commentId: P:System.ComponentModel.PropertyDescriptor.Converter
+  id: Converter
+  parent: System.ComponentModel.PropertyDescriptor
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.ComponentModel.PropertyDescriptor.Converter
+  type: Property
+  source:
+    remote:
+      path: src/System.ComponentModel.TypeConverter/src/System/ComponentModel/PropertyDescriptor.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Converter
+    path: src/System.ComponentModel.TypeConverter/src/System/ComponentModel/PropertyDescriptor.cs
+    startLine: 74
+  assemblies:
+  - System.ComponentModel.TypeConverter
+  namespace: System.ComponentModel
+  summary: "\n<p>Gets the type converter for this property.</p>\n"
+  syntax:
+    content: public virtual TypeConverter Converter { get; }
+    content.vb: Public Overridable ReadOnly Property Converter As TypeConverter
+    parameters: []
+    return:
+      type: System.ComponentModel.TypeConverter
+      description: "\n<p>A <xref href=\"System.ComponentModel.TypeConverter\" data-throw-if-not-resolved=\"false\"></xref> that is used to convert the <xref href=\"System.Type\" data-throw-if-not-resolved=\"false\"></xref> of this property.</p>\n"
+  seealso:
+  - type: System.ComponentModel.TypeConverter
+    commentId: T:System.ComponentModel.TypeConverter
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+  nameWithType: PropertyDescriptor.Converter
+- uid: System.ComponentModel.PropertyDescriptor.IsLocalizable
+  commentId: P:System.ComponentModel.PropertyDescriptor.IsLocalizable
+  id: IsLocalizable
+  parent: System.ComponentModel.PropertyDescriptor
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.ComponentModel.PropertyDescriptor.IsLocalizable
+  type: Property
+  source:
+    remote:
+      path: src/System.ComponentModel.TypeConverter/src/System/ComponentModel/PropertyDescriptor.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: IsLocalizable
+    path: src/System.ComponentModel.TypeConverter/src/System/ComponentModel/PropertyDescriptor.cs
+    startLine: 110
+  assemblies:
+  - System.ComponentModel.TypeConverter
+  namespace: System.ComponentModel
+  summary: "\n<p>Gets a value indicating whether this property should be localized, as specified in the <xref href=\"System.ComponentModel.LocalizableAttribute\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  syntax:
+    content: public virtual bool IsLocalizable { get; }
+    content.vb: Public Overridable ReadOnly Property IsLocalizable As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if the member is marked with the <xref href=\"System.ComponentModel.LocalizableAttribute\" data-throw-if-not-resolved=\"false\"></xref> set to <strong>true</strong>; otherwise, <strong>false</strong>.</p>\n"
+  seealso:
+  - type: System.ComponentModel.LocalizableAttribute
+    commentId: T:System.ComponentModel.LocalizableAttribute
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+  nameWithType: PropertyDescriptor.IsLocalizable
+- uid: System.ComponentModel.PropertyDescriptor.IsReadOnly
+  commentId: P:System.ComponentModel.PropertyDescriptor.IsReadOnly
+  id: IsReadOnly
+  parent: System.ComponentModel.PropertyDescriptor
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.ComponentModel.PropertyDescriptor.IsReadOnly
+  type: Property
+  source:
+    remote:
+      path: src/System.ComponentModel.TypeConverter/src/System/ComponentModel/PropertyDescriptor.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: IsReadOnly
+    path: src/System.ComponentModel.TypeConverter/src/System/ComponentModel/PropertyDescriptor.cs
+    startLine: 125
+  assemblies:
+  - System.ComponentModel.TypeConverter
+  namespace: System.ComponentModel
+  summary: "\n<p>When overridden in a derived class, gets a value indicating whether this property is read-only.</p>\n"
+  syntax:
+    content: public abstract bool IsReadOnly { get; }
+    content.vb: Public MustOverride ReadOnly Property IsReadOnly As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if the property is read-only; otherwise, <strong>false</strong>.</p>\n"
+  seealso:
+  - type: System.ComponentModel.ReadOnlyAttribute
+    commentId: T:System.ComponentModel.ReadOnlyAttribute
+  modifiers.csharp:
+  - public
+  - abstract
+  - get
+  modifiers.vb:
+  - Public
+  - MustOverride
+  - ReadOnly
+  nameWithType: PropertyDescriptor.IsReadOnly
+- uid: System.ComponentModel.PropertyDescriptor.PropertyType
+  commentId: P:System.ComponentModel.PropertyDescriptor.PropertyType
+  id: PropertyType
+  parent: System.ComponentModel.PropertyDescriptor
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.ComponentModel.PropertyDescriptor.PropertyType
+  type: Property
+  source:
+    remote:
+      path: src/System.ComponentModel.TypeConverter/src/System/ComponentModel/PropertyDescriptor.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: PropertyType
+    path: src/System.ComponentModel.TypeConverter/src/System/ComponentModel/PropertyDescriptor.cs
+    startLine: 148
+  assemblies:
+  - System.ComponentModel.TypeConverter
+  namespace: System.ComponentModel
+  summary: "\n<p>When overridden in a derived class, gets the type of the property.</p>\n"
+  syntax:
+    content: public abstract Type PropertyType { get; }
+    content.vb: Public MustOverride ReadOnly Property PropertyType As Type
+    parameters: []
+    return:
+      type: System.Type
+      description: "\n<p>A <xref href=\"System.Type\" data-throw-if-not-resolved=\"false\"></xref> that represents the type of the property.</p>\n"
+  modifiers.csharp:
+  - public
+  - abstract
+  - get
+  modifiers.vb:
+  - Public
+  - MustOverride
+  - ReadOnly
+  nameWithType: PropertyDescriptor.PropertyType
+- uid: System.ComponentModel.PropertyDescriptor.SupportsChangeEvents
+  commentId: P:System.ComponentModel.PropertyDescriptor.SupportsChangeEvents
+  id: SupportsChangeEvents
+  parent: System.ComponentModel.PropertyDescriptor
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.ComponentModel.PropertyDescriptor.SupportsChangeEvents
+  type: Property
+  source:
+    remote:
+      path: src/System.ComponentModel.TypeConverter/src/System/ComponentModel/PropertyDescriptor.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: SupportsChangeEvents
+    path: src/System.ComponentModel.TypeConverter/src/System/ComponentModel/PropertyDescriptor.cs
+    startLine: 527
+  assemblies:
+  - System.ComponentModel.TypeConverter
+  namespace: System.ComponentModel
+  summary: "\n<p>Gets a value indicating whether value change notifications for this property may originate from outside the property descriptor.</p>\n"
+  syntax:
+    content: public virtual bool SupportsChangeEvents { get; }
+    content.vb: Public Overridable ReadOnly Property SupportsChangeEvents As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if value change notifications may originate from outside the property descriptor; otherwise, <strong>false</strong>.</p>\n"
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+  nameWithType: PropertyDescriptor.SupportsChangeEvents
+- uid: System.ComponentModel.PropertyDescriptor.AddValueChanged(System.Object,System.EventHandler)
+  commentId: M:System.ComponentModel.PropertyDescriptor.AddValueChanged(System.Object,System.EventHandler)
+  id: AddValueChanged(System.Object,System.EventHandler)
+  parent: System.ComponentModel.PropertyDescriptor
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.ComponentModel.PropertyDescriptor.AddValueChanged(System.Object, System.EventHandler)
+  type: Method
+  source:
+    remote:
+      path: src/System.ComponentModel.TypeConverter/src/System/ComponentModel/PropertyDescriptor.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: AddValueChanged
+    path: src/System.ComponentModel.TypeConverter/src/System/ComponentModel/PropertyDescriptor.cs
+    startLine: 153
+  assemblies:
+  - System.ComponentModel.TypeConverter
+  namespace: System.ComponentModel
+  summary: "\n<p>Enables other objects to be notified when this property changes.</p>\n"
+  syntax:
+    content: public virtual void AddValueChanged(object component, EventHandler handler)
+    content.vb: Public Overridable Sub AddValueChanged(component As Object, handler As EventHandler)
+    parameters:
+    - id: component
+      type: System.Object
+      description: "\n<p>The component to add the handler for. </p>\n"
+    - id: handler
+      type: System.EventHandler
+      description: "\n<p>The delegate to add as a listener. </p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>component</em> or <em>handler</em> is <strong>null</strong>.</p>\n"
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  nameWithType: PropertyDescriptor.AddValueChanged(Object, EventHandler)
+- uid: System.ComponentModel.PropertyDescriptor.CanResetValue(System.Object)
+  commentId: M:System.ComponentModel.PropertyDescriptor.CanResetValue(System.Object)
+  id: CanResetValue(System.Object)
+  parent: System.ComponentModel.PropertyDescriptor
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.ComponentModel.PropertyDescriptor.CanResetValue(System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/System.ComponentModel.TypeConverter/src/System/ComponentModel/PropertyDescriptor.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: CanResetValue
+    path: src/System.ComponentModel.TypeConverter/src/System/ComponentModel/PropertyDescriptor.cs
+    startLine: 174
+  assemblies:
+  - System.ComponentModel.TypeConverter
+  namespace: System.ComponentModel
+  summary: "\n<p>When overridden in a derived class, returns whether resetting an object changes its value.</p>\n"
+  syntax:
+    content: public abstract bool CanResetValue(object component)
+    content.vb: Public MustOverride Function CanResetValue(component As Object) As Boolean
+    parameters:
+    - id: component
+      type: System.Object
+      description: "\n<p>The component to test for reset capability. </p>\n"
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if resetting the component changes its value; otherwise, <strong>false</strong>.</p>\n"
+  seealso:
+  - type: System.ComponentModel.PropertyDescriptor
+    commentId: T:System.ComponentModel.PropertyDescriptor
+  modifiers.csharp:
+  - public
+  - abstract
+  modifiers.vb:
+  - Public
+  - MustOverride
+  nameWithType: PropertyDescriptor.CanResetValue(Object)
+- uid: System.ComponentModel.PropertyDescriptor.CreateInstance(System.Type)
+  commentId: M:System.ComponentModel.PropertyDescriptor.CreateInstance(System.Type)
+  id: CreateInstance(System.Type)
+  parent: System.ComponentModel.PropertyDescriptor
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.ComponentModel.PropertyDescriptor.CreateInstance(System.Type)
+  type: Method
+  source:
+    remote:
+      path: src/System.ComponentModel.TypeConverter/src/System/ComponentModel/PropertyDescriptor.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: CreateInstance
+    path: src/System.ComponentModel.TypeConverter/src/System/ComponentModel/PropertyDescriptor.cs
+    startLine: 220
+  assemblies:
+  - System.ComponentModel.TypeConverter
+  namespace: System.ComponentModel
+  summary: "\n<p>Creates an instance of the specified type.</p>\n"
+  syntax:
+    content: protected object CreateInstance(Type type)
+    content.vb: Protected Function CreateInstance(type As Type) As Object
+    parameters:
+    - id: type
+      type: System.Type
+      description: "\n<p>A <xref href=\"System.Type\" data-throw-if-not-resolved=\"false\"></xref> that represents the type to create. </p>\n"
+    return:
+      type: System.Object
+      description: "\n<p>A new instance of the type.</p>\n"
+  seealso:
+  - type: System.ComponentModel.TypeConverter
+    commentId: T:System.ComponentModel.TypeConverter
+  - type: System.Drawing.Design.UITypeEditor
+    commentId: T:System.Drawing.Design.UITypeEditor
+  see:
+  - type: System.Security.Permissions.ReflectionPermission
+    commentId: T:System.Security.Permissions.ReflectionPermission
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  nameWithType: PropertyDescriptor.CreateInstance(Type)
+- uid: System.ComponentModel.PropertyDescriptor.Equals(System.Object)
+  commentId: M:System.ComponentModel.PropertyDescriptor.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: System.ComponentModel.PropertyDescriptor
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.ComponentModel.PropertyDescriptor.Equals(System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/System.ComponentModel.TypeConverter/src/System/ComponentModel/PropertyDescriptor.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Equals
+    path: src/System.ComponentModel.TypeConverter/src/System/ComponentModel/PropertyDescriptor.cs
+    startLine: 183
+  assemblies:
+  - System.ComponentModel.TypeConverter
+  namespace: System.ComponentModel
+  summary: "\n<p>Compares this to another object to see if they are equivalent.</p>\n"
+  syntax:
+    content: public override bool Equals(object obj)
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+    parameters:
+    - id: obj
+      type: System.Object
+      description: "\n<p>The object to compare to this <xref href=\"System.ComponentModel.PropertyDescriptor\" data-throw-if-not-resolved=\"false\"></xref>. </p>\n"
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if the values are equivalent; otherwise, <strong>false</strong>.</p>\n"
+  overridden: System.ComponentModel.MemberDescriptor.Equals(System.Object)
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  nameWithType: PropertyDescriptor.Equals(Object)
+- uid: System.ComponentModel.PropertyDescriptor.FillAttributes(System.Collections.IList)
+  commentId: M:System.ComponentModel.PropertyDescriptor.FillAttributes(System.Collections.IList)
+  id: FillAttributes(System.Collections.IList)
+  parent: System.ComponentModel.PropertyDescriptor
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.ComponentModel.PropertyDescriptor.FillAttributes(System.Collections.IList)
+  type: Method
+  source:
+    remote:
+      path: src/System.ComponentModel.TypeConverter/src/System/ComponentModel/PropertyDescriptor.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: FillAttributes
+    path: src/System.ComponentModel.TypeConverter/src/System/ComponentModel/PropertyDescriptor.cs
+    startLine: 237
+  assemblies:
+  - System.ComponentModel.TypeConverter
+  namespace: System.ComponentModel
+  summary: "\n<p>Adds the attributes of the <xref href=\"System.ComponentModel.PropertyDescriptor\" data-throw-if-not-resolved=\"false\"></xref> to the specified list of attributes in the parent class.</p>\n"
+  syntax:
+    content: protected override void FillAttributes(IList attributeList)
+    content.vb: Protected Overrides Sub FillAttributes(attributeList As IList)
+    parameters:
+    - id: attributeList
+      type: System.Collections.IList
+      description: "\n<p>An <xref href=\"System.Collections.IList\" data-throw-if-not-resolved=\"false\"></xref> that lists the attributes in the parent class. Initially, this is empty.</p>\n"
+  overridden: System.ComponentModel.MemberDescriptor.FillAttributes(System.Collections.IList)
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+  nameWithType: PropertyDescriptor.FillAttributes(IList)
+- uid: System.ComponentModel.PropertyDescriptor.GetChildProperties
+  commentId: M:System.ComponentModel.PropertyDescriptor.GetChildProperties
+  id: GetChildProperties
+  parent: System.ComponentModel.PropertyDescriptor
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.ComponentModel.PropertyDescriptor.GetChildProperties()
+  type: Method
+  source:
+    remote:
+      path: src/System.ComponentModel.TypeConverter/src/System/ComponentModel/PropertyDescriptor.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: GetChildProperties
+    path: src/System.ComponentModel.TypeConverter/src/System/ComponentModel/PropertyDescriptor.cs
+    startLine: 253
+  assemblies:
+  - System.ComponentModel.TypeConverter
+  namespace: System.ComponentModel
+  summary: "\n<p>Returns the default <xref href=\"System.ComponentModel.PropertyDescriptorCollection\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  syntax:
+    content: public PropertyDescriptorCollection GetChildProperties()
+    content.vb: Public Function GetChildProperties As PropertyDescriptorCollection
+    return:
+      type: System.ComponentModel.PropertyDescriptorCollection
+      description: "\n<p>A collection of property descriptor.</p>\n"
+  seealso:
+  - type: System.ComponentModel.TypeDescriptor
+    commentId: T:System.ComponentModel.TypeDescriptor
+  - type: System.ComponentModel.EventDescriptor
+    commentId: T:System.ComponentModel.EventDescriptor
+  - type: System.ComponentModel.PropertyDescriptor
+    commentId: T:System.ComponentModel.PropertyDescriptor
+  - type: System.ComponentModel.PropertyDescriptorCollection
+    commentId: T:System.ComponentModel.PropertyDescriptorCollection
+  - type: System.Attribute
+    commentId: T:System.Attribute
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: PropertyDescriptor.GetChildProperties()
+- uid: System.ComponentModel.PropertyDescriptor.GetChildProperties(System.Attribute[])
+  commentId: M:System.ComponentModel.PropertyDescriptor.GetChildProperties(System.Attribute[])
+  id: GetChildProperties(System.Attribute[])
+  parent: System.ComponentModel.PropertyDescriptor
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.ComponentModel.PropertyDescriptor.GetChildProperties(System.Attribute[])
+  type: Method
+  source:
+    remote:
+      path: src/System.ComponentModel.TypeConverter/src/System/ComponentModel/PropertyDescriptor.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: GetChildProperties
+    path: src/System.ComponentModel.TypeConverter/src/System/ComponentModel/PropertyDescriptor.cs
+    startLine: 261
+  assemblies:
+  - System.ComponentModel.TypeConverter
+  namespace: System.ComponentModel
+  summary: "\n<p>Returns a <xref href=\"System.ComponentModel.PropertyDescriptorCollection\" data-throw-if-not-resolved=\"false\"></xref> using a specified array of attributes as a filter.</p>\n"
+  syntax:
+    content: public PropertyDescriptorCollection GetChildProperties(Attribute[] filter)
+    content.vb: Public Function GetChildProperties(filter As Attribute()) As PropertyDescriptorCollection
+    parameters:
+    - id: filter
+      type: System.Attribute[]
+      description: "\n<p>An array of type <xref href=\"System.Attribute\" data-throw-if-not-resolved=\"false\"></xref> to use as a filter. </p>\n"
+    return:
+      type: System.ComponentModel.PropertyDescriptorCollection
+      description: "\n<p>A <xref href=\"System.ComponentModel.PropertyDescriptorCollection\" data-throw-if-not-resolved=\"false\"></xref> with the properties that match the specified attributes.</p>\n"
+  seealso:
+  - type: System.ComponentModel.TypeDescriptor
+    commentId: T:System.ComponentModel.TypeDescriptor
+  - type: System.ComponentModel.EventDescriptor
+    commentId: T:System.ComponentModel.EventDescriptor
+  - type: System.ComponentModel.PropertyDescriptor
+    commentId: T:System.ComponentModel.PropertyDescriptor
+  - type: System.ComponentModel.PropertyDescriptorCollection
+    commentId: T:System.ComponentModel.PropertyDescriptorCollection
+  - type: System.Attribute
+    commentId: T:System.Attribute
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: System.ComponentModel.PropertyDescriptor.GetChildProperties(System.Attribute())
+  name.vb: GetChildProperties(Attribute())
+  nameWithType: PropertyDescriptor.GetChildProperties(Attribute[])
+  nameWithType.vb: PropertyDescriptor.GetChildProperties(Attribute())
+- uid: System.ComponentModel.PropertyDescriptor.GetChildProperties(System.Object)
+  commentId: M:System.ComponentModel.PropertyDescriptor.GetChildProperties(System.Object)
+  id: GetChildProperties(System.Object)
+  parent: System.ComponentModel.PropertyDescriptor
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.ComponentModel.PropertyDescriptor.GetChildProperties(System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/System.ComponentModel.TypeConverter/src/System/ComponentModel/PropertyDescriptor.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: GetChildProperties
+    path: src/System.ComponentModel.TypeConverter/src/System/ComponentModel/PropertyDescriptor.cs
+    startLine: 269
+  assemblies:
+  - System.ComponentModel.TypeConverter
+  namespace: System.ComponentModel
+  summary: "\n<p>Returns a <xref href=\"System.ComponentModel.PropertyDescriptorCollection\" data-throw-if-not-resolved=\"false\"></xref> for a given object.</p>\n"
+  syntax:
+    content: public PropertyDescriptorCollection GetChildProperties(object instance)
+    content.vb: Public Function GetChildProperties(instance As Object) As PropertyDescriptorCollection
+    parameters:
+    - id: instance
+      type: System.Object
+      description: "\n<p>A component to get the properties for. </p>\n"
+    return:
+      type: System.ComponentModel.PropertyDescriptorCollection
+      description: "\n<p>A <xref href=\"System.ComponentModel.PropertyDescriptorCollection\" data-throw-if-not-resolved=\"false\"></xref> with the properties for the specified component.</p>\n"
+  seealso:
+  - type: System.ComponentModel.TypeDescriptor
+    commentId: T:System.ComponentModel.TypeDescriptor
+  - type: System.ComponentModel.EventDescriptor
+    commentId: T:System.ComponentModel.EventDescriptor
+  - type: System.ComponentModel.PropertyDescriptor
+    commentId: T:System.ComponentModel.PropertyDescriptor
+  - type: System.ComponentModel.PropertyDescriptorCollection
+    commentId: T:System.ComponentModel.PropertyDescriptorCollection
+  - type: System.Attribute
+    commentId: T:System.Attribute
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: PropertyDescriptor.GetChildProperties(Object)
+- uid: System.ComponentModel.PropertyDescriptor.GetChildProperties(System.Object,System.Attribute[])
+  commentId: M:System.ComponentModel.PropertyDescriptor.GetChildProperties(System.Object,System.Attribute[])
+  id: GetChildProperties(System.Object,System.Attribute[])
+  parent: System.ComponentModel.PropertyDescriptor
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.ComponentModel.PropertyDescriptor.GetChildProperties(System.Object, System.Attribute[])
+  type: Method
+  source:
+    remote:
+      path: src/System.ComponentModel.TypeConverter/src/System/ComponentModel/PropertyDescriptor.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: GetChildProperties
+    path: src/System.ComponentModel.TypeConverter/src/System/ComponentModel/PropertyDescriptor.cs
+    startLine: 277
+  assemblies:
+  - System.ComponentModel.TypeConverter
+  namespace: System.ComponentModel
+  summary: "\n<p>Returns a <xref href=\"System.ComponentModel.PropertyDescriptorCollection\" data-throw-if-not-resolved=\"false\"></xref> for a given object using a specified array of attributes as a filter.</p>\n"
+  syntax:
+    content: public virtual PropertyDescriptorCollection GetChildProperties(object instance, Attribute[] filter)
+    content.vb: Public Overridable Function GetChildProperties(instance As Object, filter As Attribute()) As PropertyDescriptorCollection
+    parameters:
+    - id: instance
+      type: System.Object
+      description: "\n<p>A component to get the properties for. </p>\n"
+    - id: filter
+      type: System.Attribute[]
+      description: "\n<p>An array of type <xref href=\"System.Attribute\" data-throw-if-not-resolved=\"false\"></xref> to use as a filter. </p>\n"
+    return:
+      type: System.ComponentModel.PropertyDescriptorCollection
+      description: "\n<p>A <xref href=\"System.ComponentModel.PropertyDescriptorCollection\" data-throw-if-not-resolved=\"false\"></xref> with the properties that match the specified attributes for the specified component.</p>\n"
+  seealso:
+  - type: System.ComponentModel.TypeDescriptor
+    commentId: T:System.ComponentModel.TypeDescriptor
+  - type: System.ComponentModel.EventDescriptor
+    commentId: T:System.ComponentModel.EventDescriptor
+  - type: System.ComponentModel.PropertyDescriptor
+    commentId: T:System.ComponentModel.PropertyDescriptor
+  - type: System.ComponentModel.PropertyDescriptorCollection
+    commentId: T:System.ComponentModel.PropertyDescriptorCollection
+  - type: System.Attribute
+    commentId: T:System.Attribute
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  fullName.vb: System.ComponentModel.PropertyDescriptor.GetChildProperties(System.Object, System.Attribute())
+  name.vb: GetChildProperties(Object, Attribute())
+  nameWithType: PropertyDescriptor.GetChildProperties(Object, Attribute[])
+  nameWithType.vb: PropertyDescriptor.GetChildProperties(Object, Attribute())
+- uid: System.ComponentModel.PropertyDescriptor.GetEditor(System.Type)
+  commentId: M:System.ComponentModel.PropertyDescriptor.GetEditor(System.Type)
+  id: GetEditor(System.Type)
+  parent: System.ComponentModel.PropertyDescriptor
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.ComponentModel.PropertyDescriptor.GetEditor(System.Type)
+  type: Method
+  source:
+    remote:
+      path: src/System.ComponentModel.TypeConverter/src/System/ComponentModel/PropertyDescriptor.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: GetEditor
+    path: src/System.ComponentModel.TypeConverter/src/System/ComponentModel/PropertyDescriptor.cs
+    startLine: 295
+  assemblies:
+  - System.ComponentModel.TypeConverter
+  namespace: System.ComponentModel
+  summary: "\n<p>Gets an editor of the specified type.</p>\n"
+  syntax:
+    content: public virtual object GetEditor(Type editorBaseType)
+    content.vb: Public Overridable Function GetEditor(editorBaseType As Type) As Object
+    parameters:
+    - id: editorBaseType
+      type: System.Type
+      description: "\n<p>The base type of editor, which is used to differentiate between multiple editors that a property supports. </p>\n"
+    return:
+      type: System.Object
+      description: "\n<p>An instance of the requested editor type, or <strong>null</strong> if an editor cannot be found.</p>\n"
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  nameWithType: PropertyDescriptor.GetEditor(Type)
+- uid: System.ComponentModel.PropertyDescriptor.GetHashCode
+  commentId: M:System.ComponentModel.PropertyDescriptor.GetHashCode
+  id: GetHashCode
+  parent: System.ComponentModel.PropertyDescriptor
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.ComponentModel.PropertyDescriptor.GetHashCode()
+  type: Method
+  source:
+    remote:
+      path: src/System.ComponentModel.TypeConverter/src/System/ComponentModel/PropertyDescriptor.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: GetHashCode
+    path: src/System.ComponentModel.TypeConverter/src/System/ComponentModel/PropertyDescriptor.cs
+    startLine: 380
+  assemblies:
+  - System.ComponentModel.TypeConverter
+  namespace: System.ComponentModel
+  summary: "\n<p>Returns the hash code for this object.</p>\n"
+  syntax:
+    content: public override int GetHashCode()
+    content.vb: Public Overrides Function GetHashCode As Integer
+    return:
+      type: System.Int32
+      description: "\n<p>The hash code for this object.</p>\n"
+  overridden: System.ComponentModel.MemberDescriptor.GetHashCode
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  nameWithType: PropertyDescriptor.GetHashCode()
+- uid: System.ComponentModel.PropertyDescriptor.GetInvocationTarget(System.Type,System.Object)
+  commentId: M:System.ComponentModel.PropertyDescriptor.GetInvocationTarget(System.Type,System.Object)
+  id: GetInvocationTarget(System.Type,System.Object)
+  parent: System.ComponentModel.PropertyDescriptor
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.ComponentModel.PropertyDescriptor.GetInvocationTarget(System.Type, System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/System.ComponentModel.TypeConverter/src/System/ComponentModel/PropertyDescriptor.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: GetInvocationTarget
+    path: src/System.ComponentModel.TypeConverter/src/System/ComponentModel/PropertyDescriptor.cs
+    startLine: 391
+  assemblies:
+  - System.ComponentModel.TypeConverter
+  namespace: System.ComponentModel
+  summary: "\n<p>This method returns the object that should be used during invocation of members.</p>\n"
+  syntax:
+    content: protected override object GetInvocationTarget(Type type, object instance)
+    content.vb: Protected Overrides Function GetInvocationTarget(type As Type, instance As Object) As Object
+    parameters:
+    - id: type
+      type: System.Type
+      description: "\n<p>The <xref href=\"System.Type\" data-throw-if-not-resolved=\"false\"></xref> of the invocation target.</p>\n"
+    - id: instance
+      type: System.Object
+      description: "\n<p>The potential invocation target.</p>\n"
+    return:
+      type: System.Object
+      description: "\n<p>The <xref href=\"System.Object\" data-throw-if-not-resolved=\"false\"></xref> that should be used during invocation of members.</p>\n"
+  overridden: System.ComponentModel.MemberDescriptor.GetInvocationTarget(System.Type,System.Object)
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+  nameWithType: PropertyDescriptor.GetInvocationTarget(Type, Object)
+- uid: System.ComponentModel.PropertyDescriptor.GetTypeFromName(System.String)
+  commentId: M:System.ComponentModel.PropertyDescriptor.GetTypeFromName(System.String)
+  id: GetTypeFromName(System.String)
+  parent: System.ComponentModel.PropertyDescriptor
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.ComponentModel.PropertyDescriptor.GetTypeFromName(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/System.ComponentModel.TypeConverter/src/System/ComponentModel/PropertyDescriptor.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: GetTypeFromName
+    path: src/System.ComponentModel.TypeConverter/src/System/ComponentModel/PropertyDescriptor.cs
+    startLine: 406
+  assemblies:
+  - System.ComponentModel.TypeConverter
+  namespace: System.ComponentModel
+  summary: "\n<p>Returns a type using its name.</p>\n"
+  syntax:
+    content: protected Type GetTypeFromName(string typeName)
+    content.vb: Protected Function GetTypeFromName(typeName As String) As Type
+    parameters:
+    - id: typeName
+      type: System.String
+      description: "\n<p>The assembly-qualified name of the type to retrieve. </p>\n"
+    return:
+      type: System.Type
+      description: "\n<p>A <xref href=\"System.Type\" data-throw-if-not-resolved=\"false\"></xref> that matches the given type name, or <strong>null</strong> if a match cannot be found.</p>\n"
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  nameWithType: PropertyDescriptor.GetTypeFromName(String)
+- uid: System.ComponentModel.PropertyDescriptor.GetValue(System.Object)
+  commentId: M:System.ComponentModel.PropertyDescriptor.GetValue(System.Object)
+  id: GetValue(System.Object)
+  parent: System.ComponentModel.PropertyDescriptor
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.ComponentModel.PropertyDescriptor.GetValue(System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/System.ComponentModel.TypeConverter/src/System/ComponentModel/PropertyDescriptor.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: GetValue
+    path: src/System.ComponentModel.TypeConverter/src/System/ComponentModel/PropertyDescriptor.cs
+    startLine: 443
+  assemblies:
+  - System.ComponentModel.TypeConverter
+  namespace: System.ComponentModel
+  summary: "\n<p>When overridden in a derived class, gets the current value of the property on a component.</p>\n"
+  syntax:
+    content: public abstract object GetValue(object component)
+    content.vb: Public MustOverride Function GetValue(component As Object) As Object
+    parameters:
+    - id: component
+      type: System.Object
+      description: "\n<p>The component with the property for which to retrieve the value. </p>\n"
+    return:
+      type: System.Object
+      description: "\n<p>The value of a property for a given component.</p>\n"
+  modifiers.csharp:
+  - public
+  - abstract
+  modifiers.vb:
+  - Public
+  - MustOverride
+  nameWithType: PropertyDescriptor.GetValue(Object)
+- uid: System.ComponentModel.PropertyDescriptor.GetValueChangedHandler(System.Object)
+  commentId: M:System.ComponentModel.PropertyDescriptor.GetValueChangedHandler(System.Object)
+  id: GetValueChangedHandler(System.Object)
+  parent: System.ComponentModel.PropertyDescriptor
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.ComponentModel.PropertyDescriptor.GetValueChangedHandler(System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/System.ComponentModel.TypeConverter/src/System/ComponentModel/PropertyDescriptor.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: GetValueChangedHandler
+    path: src/System.ComponentModel.TypeConverter/src/System/ComponentModel/PropertyDescriptor.cs
+    startLine: 486
+  assemblies:
+  - System.ComponentModel.TypeConverter
+  namespace: System.ComponentModel
+  summary: "\n<p>Retrieves the current set of <code>ValueChanged</code> event handlers for a specific component</p>\n"
+  syntax:
+    content: protected EventHandler GetValueChangedHandler(object component)
+    content.vb: Protected Function GetValueChangedHandler(component As Object) As EventHandler
+    parameters:
+    - id: component
+      type: System.Object
+      description: "\n<p>The component for which to retrieve event handlers.</p>\n"
+    return:
+      type: System.EventHandler
+      description: "\n<p>A combined multicast event handler, or <strong>null</strong> if no event handlers are currently assigned to <em>component</em>.</p>\n"
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  nameWithType: PropertyDescriptor.GetValueChangedHandler(Object)
+- uid: System.ComponentModel.PropertyDescriptor.OnValueChanged(System.Object,System.EventArgs)
+  commentId: M:System.ComponentModel.PropertyDescriptor.OnValueChanged(System.Object,System.EventArgs)
+  id: OnValueChanged(System.Object,System.EventArgs)
+  parent: System.ComponentModel.PropertyDescriptor
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.ComponentModel.PropertyDescriptor.OnValueChanged(System.Object, System.EventArgs)
+  type: Method
+  source:
+    remote:
+      path: src/System.ComponentModel.TypeConverter/src/System/ComponentModel/PropertyDescriptor.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: OnValueChanged
+    path: src/System.ComponentModel.TypeConverter/src/System/ComponentModel/PropertyDescriptor.cs
+    startLine: 449
+  assemblies:
+  - System.ComponentModel.TypeConverter
+  namespace: System.ComponentModel
+  summary: "\n<p>Raises the <code>ValueChanged</code> event that you implemented.</p>\n"
+  syntax:
+    content: >-
+      [SuppressMessage("Microsoft.Security", "CA2109:ReviewVisibleEventHandlers")]
+
+      protected virtual void OnValueChanged(object component, EventArgs e)
+    content.vb: >-
+      <SuppressMessage("Microsoft.Security", "CA2109:ReviewVisibleEventHandlers")>
+
+      Protected Overridable Sub OnValueChanged(component As Object, e As EventArgs)
+    parameters:
+    - id: component
+      type: System.Object
+      description: "\n<p>The object that raises the event. </p>\n"
+    - id: e
+      type: System.EventArgs
+      description: "\n<p>An <xref href=\"System.EventArgs\" data-throw-if-not-resolved=\"false\"></xref> that contains the event data. </p>\n"
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+  nameWithType: PropertyDescriptor.OnValueChanged(Object, EventArgs)
+- uid: System.ComponentModel.PropertyDescriptor.RemoveValueChanged(System.Object,System.EventHandler)
+  commentId: M:System.ComponentModel.PropertyDescriptor.RemoveValueChanged(System.Object,System.EventHandler)
+  id: RemoveValueChanged(System.Object,System.EventHandler)
+  parent: System.ComponentModel.PropertyDescriptor
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.ComponentModel.PropertyDescriptor.RemoveValueChanged(System.Object, System.EventHandler)
+  type: Method
+  source:
+    remote:
+      path: src/System.ComponentModel.TypeConverter/src/System/ComponentModel/PropertyDescriptor.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: RemoveValueChanged
+    path: src/System.ComponentModel.TypeConverter/src/System/ComponentModel/PropertyDescriptor.cs
+    startLine: 461
+  assemblies:
+  - System.ComponentModel.TypeConverter
+  namespace: System.ComponentModel
+  summary: "\n<p>Enables other objects to be notified when this property changes.</p>\n"
+  syntax:
+    content: public virtual void RemoveValueChanged(object component, EventHandler handler)
+    content.vb: Public Overridable Sub RemoveValueChanged(component As Object, handler As EventHandler)
+    parameters:
+    - id: component
+      type: System.Object
+      description: "\n<p>The component to remove the handler for. </p>\n"
+    - id: handler
+      type: System.EventHandler
+      description: "\n<p>The delegate to remove as a listener. </p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>component</em> or <em>handler</em> is <strong>null</strong>.</p>\n"
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  nameWithType: PropertyDescriptor.RemoveValueChanged(Object, EventHandler)
+- uid: System.ComponentModel.PropertyDescriptor.ResetValue(System.Object)
+  commentId: M:System.ComponentModel.PropertyDescriptor.ResetValue(System.Object)
+  id: ResetValue(System.Object)
+  parent: System.ComponentModel.PropertyDescriptor
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.ComponentModel.PropertyDescriptor.ResetValue(System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/System.ComponentModel.TypeConverter/src/System/ComponentModel/PropertyDescriptor.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: ResetValue
+    path: src/System.ComponentModel.TypeConverter/src/System/ComponentModel/PropertyDescriptor.cs
+    startLine: 503
+  assemblies:
+  - System.ComponentModel.TypeConverter
+  namespace: System.ComponentModel
+  summary: "\n<p>When overridden in a derived class, resets the value for this property of the component to the default value.</p>\n"
+  syntax:
+    content: public abstract void ResetValue(object component)
+    content.vb: Public MustOverride Sub ResetValue(component As Object)
+    parameters:
+    - id: component
+      type: System.Object
+      description: "\n<p>The component with the property value that is to be reset to the default value. </p>\n"
+  seealso:
+  - type: System.ComponentModel.PropertyDescriptor
+    commentId: T:System.ComponentModel.PropertyDescriptor
+  modifiers.csharp:
+  - public
+  - abstract
+  modifiers.vb:
+  - Public
+  - MustOverride
+  nameWithType: PropertyDescriptor.ResetValue(Object)
+- uid: System.ComponentModel.PropertyDescriptor.SerializationVisibility
+  commentId: P:System.ComponentModel.PropertyDescriptor.SerializationVisibility
+  id: SerializationVisibility
+  parent: System.ComponentModel.PropertyDescriptor
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.ComponentModel.PropertyDescriptor.SerializationVisibility
+  type: Property
+  source:
+    remote:
+      path: src/System.ComponentModel.TypeConverter/src/System/ComponentModel/PropertyDescriptor.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: SerializationVisibility
+    path: src/System.ComponentModel.TypeConverter/src/System/ComponentModel/PropertyDescriptor.cs
+    startLine: 133
+  assemblies:
+  - System.ComponentModel.TypeConverter
+  namespace: System.ComponentModel
+  summary: "\n<p>Gets a value indicating whether this property should be serialized, as specified in the <xref href=\"System.ComponentModel.DesignerSerializationVisibilityAttribute\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  syntax:
+    content: public DesignerSerializationVisibility SerializationVisibility { get; }
+    content.vb: Public ReadOnly Property SerializationVisibility As DesignerSerializationVisibility
+    parameters: []
+    return:
+      type: DesignerSerializationVisibility
+      description: "\n<p>One of the <xref href=\"System.ComponentModel.DesignerSerializationVisibility\" data-throw-if-not-resolved=\"false\"></xref> enumeration values that specifies whether this property should be serialized.</p>\n"
+  seealso:
+  - type: System.ComponentModel.DesignerSerializationVisibilityAttribute
+    commentId: T:System.ComponentModel.DesignerSerializationVisibilityAttribute
+  - type: System.ComponentModel.DesignerSerializationVisibility
+    commentId: T:System.ComponentModel.DesignerSerializationVisibility
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  nameWithType: PropertyDescriptor.SerializationVisibility
+- uid: System.ComponentModel.PropertyDescriptor.SetValue(System.Object,System.Object)
+  commentId: M:System.ComponentModel.PropertyDescriptor.SetValue(System.Object,System.Object)
+  id: SetValue(System.Object,System.Object)
+  parent: System.ComponentModel.PropertyDescriptor
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.ComponentModel.PropertyDescriptor.SetValue(System.Object, System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/System.ComponentModel.TypeConverter/src/System/ComponentModel/PropertyDescriptor.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: SetValue
+    path: src/System.ComponentModel.TypeConverter/src/System/ComponentModel/PropertyDescriptor.cs
+    startLine: 511
+  assemblies:
+  - System.ComponentModel.TypeConverter
+  namespace: System.ComponentModel
+  summary: "\n<p>When overridden in a derived class, sets the value of the component to a different value.</p>\n"
+  syntax:
+    content: public abstract void SetValue(object component, object value)
+    content.vb: Public MustOverride Sub SetValue(component As Object, value As Object)
+    parameters:
+    - id: component
+      type: System.Object
+      description: "\n<p>The component with the property value that is to be set. </p>\n"
+    - id: value
+      type: System.Object
+      description: "\n<p>The new value. </p>\n"
+  seealso:
+  - type: System.ComponentModel.PropertyDescriptor
+    commentId: T:System.ComponentModel.PropertyDescriptor
+  modifiers.csharp:
+  - public
+  - abstract
+  modifiers.vb:
+  - Public
+  - MustOverride
+  nameWithType: PropertyDescriptor.SetValue(Object, Object)
+- uid: System.ComponentModel.PropertyDescriptor.ShouldSerializeValue(System.Object)
+  commentId: M:System.ComponentModel.PropertyDescriptor.ShouldSerializeValue(System.Object)
+  id: ShouldSerializeValue(System.Object)
+  parent: System.ComponentModel.PropertyDescriptor
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.ComponentModel.PropertyDescriptor.ShouldSerializeValue(System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/System.ComponentModel.TypeConverter/src/System/ComponentModel/PropertyDescriptor.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: ShouldSerializeValue
+    path: src/System.ComponentModel.TypeConverter/src/System/ComponentModel/PropertyDescriptor.cs
+    startLine: 519
+  assemblies:
+  - System.ComponentModel.TypeConverter
+  namespace: System.ComponentModel
+  summary: "\n<p>When overridden in a derived class, determines a value indicating whether the value of this property needs to be persisted.</p>\n"
+  syntax:
+    content: public abstract bool ShouldSerializeValue(object component)
+    content.vb: Public MustOverride Function ShouldSerializeValue(component As Object) As Boolean
+    parameters:
+    - id: component
+      type: System.Object
+      description: "\n<p>The component with the property to be examined for persistence. </p>\n"
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if the property should be persisted; otherwise, <strong>false</strong>.</p>\n"
+  seealso:
+  - type: System.ComponentModel.Design.ComponentDesigner
+    commentId: T:System.ComponentModel.Design.ComponentDesigner
+  modifiers.csharp:
+  - public
+  - abstract
+  modifiers.vb:
+  - Public
+  - MustOverride
+  nameWithType: PropertyDescriptor.ShouldSerializeValue(Object)
+references:
+- uid: System.ComponentModel
+  isExternal: false
+  name: "XXX"
+  fullName: System.ComponentModel
+  nameWithType: System.ComponentModel
+  commentId: N:System.ComponentModel
+- uid: System.Object
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Object
+  nameWithType: Object
+  commentId: T:System.Object
+- uid: System.ComponentModel.MemberDescriptor
+  parent: System.ComponentModel
+  isExternal: false
+  name: "XXX"
+  fullName: System.ComponentModel.MemberDescriptor
+  nameWithType: MemberDescriptor
+  commentId: T:System.ComponentModel.MemberDescriptor
+- uid: System.ComponentModel.MemberDescriptor.AttributeArray
+  parent: System.ComponentModel.MemberDescriptor
+  isExternal: false
+  name: "XXX"
+  fullName: System.ComponentModel.MemberDescriptor.AttributeArray
+  nameWithType: MemberDescriptor.AttributeArray
+  commentId: P:System.ComponentModel.MemberDescriptor.AttributeArray
+- uid: System.ComponentModel.MemberDescriptor.Attributes
+  parent: System.ComponentModel.MemberDescriptor
+  isExternal: false
+  name: "XXX"
+  fullName: System.ComponentModel.MemberDescriptor.Attributes
+  nameWithType: MemberDescriptor.Attributes
+  commentId: P:System.ComponentModel.MemberDescriptor.Attributes
+- uid: System.ComponentModel.MemberDescriptor.Category
+  parent: System.ComponentModel.MemberDescriptor
+  isExternal: false
+  name: "XXX"
+  fullName: System.ComponentModel.MemberDescriptor.Category
+  nameWithType: MemberDescriptor.Category
+  commentId: P:System.ComponentModel.MemberDescriptor.Category
+- uid: System.ComponentModel.MemberDescriptor.Description
+  parent: System.ComponentModel.MemberDescriptor
+  isExternal: false
+  name: "XXX"
+  fullName: System.ComponentModel.MemberDescriptor.Description
+  nameWithType: MemberDescriptor.Description
+  commentId: P:System.ComponentModel.MemberDescriptor.Description
+- uid: System.ComponentModel.MemberDescriptor.DesignTimeOnly
+  parent: System.ComponentModel.MemberDescriptor
+  isExternal: false
+  name: "XXX"
+  fullName: System.ComponentModel.MemberDescriptor.DesignTimeOnly
+  nameWithType: MemberDescriptor.DesignTimeOnly
+  commentId: P:System.ComponentModel.MemberDescriptor.DesignTimeOnly
+- uid: System.ComponentModel.MemberDescriptor.DisplayName
+  parent: System.ComponentModel.MemberDescriptor
+  isExternal: false
+  name: "XXX"
+  fullName: System.ComponentModel.MemberDescriptor.DisplayName
+  nameWithType: MemberDescriptor.DisplayName
+  commentId: P:System.ComponentModel.MemberDescriptor.DisplayName
+- uid: System.ComponentModel.MemberDescriptor.IsBrowsable
+  parent: System.ComponentModel.MemberDescriptor
+  isExternal: false
+  name: "XXX"
+  fullName: System.ComponentModel.MemberDescriptor.IsBrowsable
+  nameWithType: MemberDescriptor.IsBrowsable
+  commentId: P:System.ComponentModel.MemberDescriptor.IsBrowsable
+- uid: System.ComponentModel.MemberDescriptor.Name
+  parent: System.ComponentModel.MemberDescriptor
+  isExternal: false
+  name: "XXX"
+  fullName: System.ComponentModel.MemberDescriptor.Name
+  nameWithType: MemberDescriptor.Name
+  commentId: P:System.ComponentModel.MemberDescriptor.Name
+- uid: System.ComponentModel.MemberDescriptor.NameHashCode
+  parent: System.ComponentModel.MemberDescriptor
+  isExternal: false
+  name: "XXX"
+  fullName: System.ComponentModel.MemberDescriptor.NameHashCode
+  nameWithType: MemberDescriptor.NameHashCode
+  commentId: P:System.ComponentModel.MemberDescriptor.NameHashCode
+- uid: System.ComponentModel.MemberDescriptor.CreateAttributeCollection
+  parent: System.ComponentModel.MemberDescriptor
+  isExternal: false
+  name: "XXX"
+  fullName: System.ComponentModel.MemberDescriptor.CreateAttributeCollection()
+  spec.csharp:
+  - uid: System.ComponentModel.MemberDescriptor.CreateAttributeCollection
+    name: "XXX"
+    fullName: System.ComponentModel.MemberDescriptor.CreateAttributeCollection
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.ComponentModel.MemberDescriptor.CreateAttributeCollection
+    name: "XXX"
+    fullName: System.ComponentModel.MemberDescriptor.CreateAttributeCollection
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: MemberDescriptor.CreateAttributeCollection()
+  commentId: M:System.ComponentModel.MemberDescriptor.CreateAttributeCollection
+- uid: System.ComponentModel.MemberDescriptor.FindMethod(System.Type,System.String,System.Type[],System.Type)
+  parent: System.ComponentModel.MemberDescriptor
+  isExternal: true
+  name: "XXX"
+  fullName: System.ComponentModel.MemberDescriptor.FindMethod(System.Type, System.String, System.Type[], System.Type)
+  fullname.vb: System.ComponentModel.MemberDescriptor.FindMethod(System.Type, System.String, System.Type(), System.Type)
+  name.vb: FindMethod(Type, String, Type(), Type)
+  spec.csharp:
+  - uid: System.ComponentModel.MemberDescriptor.FindMethod(System.Type,System.String,System.Type[],System.Type)
+    name: "XXX"
+    fullName: System.ComponentModel.MemberDescriptor.FindMethod
+  - name: "XXX"
+    fullName: (
+  - uid: System.Type
+    name: "XXX"
+    fullName: System.Type
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.String
+    name: "XXX"
+    fullName: System.String
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Type
+    name: "XXX"
+    fullName: System.Type
+    isExternal: true
+  - name: 'XXX'
+    fullName: '[]'
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Type
+    name: "XXX"
+    fullName: System.Type
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.ComponentModel.MemberDescriptor.FindMethod(System.Type,System.String,System.Type[],System.Type)
+    name: "XXX"
+    fullName: System.ComponentModel.MemberDescriptor.FindMethod
+  - name: "XXX"
+    fullName: (
+  - uid: System.Type
+    name: "XXX"
+    fullName: System.Type
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.String
+    name: "XXX"
+    fullName: System.String
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Type
+    name: "XXX"
+    fullName: System.Type
+    isExternal: true
+  - name: "XXX"
+    fullName: ()
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Type
+    name: "XXX"
+    fullName: System.Type
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: MemberDescriptor.FindMethod(Type, String, Type[], Type)
+  nameWithType.vb: MemberDescriptor.FindMethod(Type, String, Type(), Type)
+  commentId: M:System.ComponentModel.MemberDescriptor.FindMethod(System.Type,System.String,System.Type[],System.Type)
+- uid: System.ComponentModel.MemberDescriptor.FindMethod(System.Type,System.String,System.Type[],System.Type,System.Boolean)
+  parent: System.ComponentModel.MemberDescriptor
+  isExternal: true
+  name: "XXX"
+  fullName: System.ComponentModel.MemberDescriptor.FindMethod(System.Type, System.String, System.Type[], System.Type, System.Boolean)
+  fullname.vb: System.ComponentModel.MemberDescriptor.FindMethod(System.Type, System.String, System.Type(), System.Type, System.Boolean)
+  name.vb: FindMethod(Type, String, Type(), Type, Boolean)
+  spec.csharp:
+  - uid: System.ComponentModel.MemberDescriptor.FindMethod(System.Type,System.String,System.Type[],System.Type,System.Boolean)
+    name: "XXX"
+    fullName: System.ComponentModel.MemberDescriptor.FindMethod
+  - name: "XXX"
+    fullName: (
+  - uid: System.Type
+    name: "XXX"
+    fullName: System.Type
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.String
+    name: "XXX"
+    fullName: System.String
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Type
+    name: "XXX"
+    fullName: System.Type
+    isExternal: true
+  - name: 'XXX'
+    fullName: '[]'
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Type
+    name: "XXX"
+    fullName: System.Type
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Boolean
+    name: "XXX"
+    fullName: System.Boolean
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.ComponentModel.MemberDescriptor.FindMethod(System.Type,System.String,System.Type[],System.Type,System.Boolean)
+    name: "XXX"
+    fullName: System.ComponentModel.MemberDescriptor.FindMethod
+  - name: "XXX"
+    fullName: (
+  - uid: System.Type
+    name: "XXX"
+    fullName: System.Type
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.String
+    name: "XXX"
+    fullName: System.String
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Type
+    name: "XXX"
+    fullName: System.Type
+    isExternal: true
+  - name: "XXX"
+    fullName: ()
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Type
+    name: "XXX"
+    fullName: System.Type
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Boolean
+    name: "XXX"
+    fullName: System.Boolean
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: MemberDescriptor.FindMethod(Type, String, Type[], Type, Boolean)
+  nameWithType.vb: MemberDescriptor.FindMethod(Type, String, Type(), Type, Boolean)
+  commentId: M:System.ComponentModel.MemberDescriptor.FindMethod(System.Type,System.String,System.Type[],System.Type,System.Boolean)
+- uid: System.ComponentModel.MemberDescriptor.GetSite(System.Object)
+  parent: System.ComponentModel.MemberDescriptor
+  isExternal: true
+  name: "XXX"
+  fullName: System.ComponentModel.MemberDescriptor.GetSite(System.Object)
+  spec.csharp:
+  - uid: System.ComponentModel.MemberDescriptor.GetSite(System.Object)
+    name: "XXX"
+    fullName: System.ComponentModel.MemberDescriptor.GetSite
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.ComponentModel.MemberDescriptor.GetSite(System.Object)
+    name: "XXX"
+    fullName: System.ComponentModel.MemberDescriptor.GetSite
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: MemberDescriptor.GetSite(Object)
+  commentId: M:System.ComponentModel.MemberDescriptor.GetSite(System.Object)
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.ToString()
+  commentId: M:System.Object.ToString
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.Equals(Object, Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.GetType()
+  commentId: M:System.Object.GetType
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.MemberwiseClone()
+  commentId: M:System.Object.MemberwiseClone
+- uid: System
+  isExternal: false
+  name: "XXX"
+  fullName: System
+  nameWithType: System
+  commentId: N:System
+- uid: System.Attribute[]
+  name: "XXX"
+  fullName: System.Attribute[]
+  fullname.vb: System.Attribute()
+  name.vb: Attribute()
+  spec.csharp:
+  - uid: System.Attribute
+    name: "XXX"
+    fullName: System.Attribute
+    isExternal: true
+  - name: 'XXX'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Attribute
+    name: "XXX"
+    fullName: System.Attribute
+    isExternal: true
+  - name: "XXX"
+    fullName: ()
+  nameWithType: Attribute[]
+  nameWithType.vb: Attribute()
+- uid: System.String
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.String
+  nameWithType: String
+  commentId: T:System.String
+- uid: System.Type
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Type
+  nameWithType: Type
+  commentId: T:System.Type
+- uid: System.ComponentModel.TypeConverter
+  parent: System.ComponentModel
+  isExternal: false
+  name: "XXX"
+  fullName: System.ComponentModel.TypeConverter
+  nameWithType: TypeConverter
+  commentId: T:System.ComponentModel.TypeConverter
+- uid: System.Boolean
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Boolean
+  nameWithType: Boolean
+  commentId: T:System.Boolean
+- uid: System.EventHandler
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.EventHandler
+  nameWithType: EventHandler
+  commentId: T:System.EventHandler
+- uid: System.ComponentModel.MemberDescriptor.Equals(System.Object)
+  parent: System.ComponentModel.MemberDescriptor
+  isExternal: true
+  name: "XXX"
+  fullName: System.ComponentModel.MemberDescriptor.Equals(System.Object)
+  spec.csharp:
+  - uid: System.ComponentModel.MemberDescriptor.Equals(System.Object)
+    name: "XXX"
+    fullName: System.ComponentModel.MemberDescriptor.Equals
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.ComponentModel.MemberDescriptor.Equals(System.Object)
+    name: "XXX"
+    fullName: System.ComponentModel.MemberDescriptor.Equals
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: MemberDescriptor.Equals(Object)
+  commentId: M:System.ComponentModel.MemberDescriptor.Equals(System.Object)
+- uid: System.ComponentModel.MemberDescriptor.FillAttributes(System.Collections.IList)
+  parent: System.ComponentModel.MemberDescriptor
+  isExternal: true
+  name: "XXX"
+  fullName: System.ComponentModel.MemberDescriptor.FillAttributes(System.Collections.IList)
+  spec.csharp:
+  - uid: System.ComponentModel.MemberDescriptor.FillAttributes(System.Collections.IList)
+    name: "XXX"
+    fullName: System.ComponentModel.MemberDescriptor.FillAttributes
+  - name: "XXX"
+    fullName: (
+  - uid: System.Collections.IList
+    name: "XXX"
+    fullName: System.Collections.IList
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.ComponentModel.MemberDescriptor.FillAttributes(System.Collections.IList)
+    name: "XXX"
+    fullName: System.ComponentModel.MemberDescriptor.FillAttributes
+  - name: "XXX"
+    fullName: (
+  - uid: System.Collections.IList
+    name: "XXX"
+    fullName: System.Collections.IList
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: MemberDescriptor.FillAttributes(IList)
+  commentId: M:System.ComponentModel.MemberDescriptor.FillAttributes(System.Collections.IList)
+- uid: System.Collections.IList
+  parent: System.Collections
+  isExternal: false
+  name: "XXX"
+  fullName: System.Collections.IList
+  nameWithType: IList
+  commentId: T:System.Collections.IList
+- uid: System.Collections
+  isExternal: false
+  name: "XXX"
+  fullName: System.Collections
+  nameWithType: System.Collections
+  commentId: N:System.Collections
+- uid: System.ComponentModel.PropertyDescriptorCollection
+  parent: System.ComponentModel
+  isExternal: false
+  name: "XXX"
+  fullName: System.ComponentModel.PropertyDescriptorCollection
+  nameWithType: PropertyDescriptorCollection
+  commentId: T:System.ComponentModel.PropertyDescriptorCollection
+- uid: System.ComponentModel.MemberDescriptor.GetHashCode
+  parent: System.ComponentModel.MemberDescriptor
+  isExternal: false
+  name: "XXX"
+  fullName: System.ComponentModel.MemberDescriptor.GetHashCode()
+  spec.csharp:
+  - uid: System.ComponentModel.MemberDescriptor.GetHashCode
+    name: "XXX"
+    fullName: System.ComponentModel.MemberDescriptor.GetHashCode
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.ComponentModel.MemberDescriptor.GetHashCode
+    name: "XXX"
+    fullName: System.ComponentModel.MemberDescriptor.GetHashCode
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: MemberDescriptor.GetHashCode()
+  commentId: M:System.ComponentModel.MemberDescriptor.GetHashCode
+- uid: System.Int32
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Int32
+  nameWithType: Int32
+  commentId: T:System.Int32
+- uid: System.ComponentModel.MemberDescriptor.GetInvocationTarget(System.Type,System.Object)
+  parent: System.ComponentModel.MemberDescriptor
+  isExternal: true
+  name: "XXX"
+  fullName: System.ComponentModel.MemberDescriptor.GetInvocationTarget(System.Type, System.Object)
+  spec.csharp:
+  - uid: System.ComponentModel.MemberDescriptor.GetInvocationTarget(System.Type,System.Object)
+    name: "XXX"
+    fullName: System.ComponentModel.MemberDescriptor.GetInvocationTarget
+  - name: "XXX"
+    fullName: (
+  - uid: System.Type
+    name: "XXX"
+    fullName: System.Type
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.ComponentModel.MemberDescriptor.GetInvocationTarget(System.Type,System.Object)
+    name: "XXX"
+    fullName: System.ComponentModel.MemberDescriptor.GetInvocationTarget
+  - name: "XXX"
+    fullName: (
+  - uid: System.Type
+    name: "XXX"
+    fullName: System.Type
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: MemberDescriptor.GetInvocationTarget(Type, Object)
+  commentId: M:System.ComponentModel.MemberDescriptor.GetInvocationTarget(System.Type,System.Object)
+- uid: System.EventArgs
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.EventArgs
+  nameWithType: EventArgs
+  commentId: T:System.EventArgs
+- uid: System.ComponentModel.DesignerSerializationVisibility
+  parent: System.ComponentModel
+  isExternal: false
+  name: "XXX"
+  fullName: System.ComponentModel.DesignerSerializationVisibility
+  nameWithType: DesignerSerializationVisibility
+  commentId: T:System.ComponentModel.DesignerSerializationVisibility
+- uid: System.ArgumentNullException
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentNullException
+  nameWithType: ArgumentNullException
+  commentId: T:System.ArgumentNullException

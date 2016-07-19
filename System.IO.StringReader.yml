@@ -1,0 +1,1524 @@
+items:
+- uid: System.IO.StringReader
+  commentId: T:System.IO.StringReader
+  id: StringReader
+  parent: System.IO
+  children:
+  - System.IO.StringReader.#ctor(System.String)
+  - System.IO.StringReader.Dispose(System.Boolean)
+  - System.IO.StringReader.Peek
+  - System.IO.StringReader.Read
+  - System.IO.StringReader.Read(System.Char[],System.Int32,System.Int32)
+  - System.IO.StringReader.ReadAsync(System.Char[],System.Int32,System.Int32)
+  - System.IO.StringReader.ReadBlockAsync(System.Char[],System.Int32,System.Int32)
+  - System.IO.StringReader.ReadLine
+  - System.IO.StringReader.ReadLineAsync
+  - System.IO.StringReader.ReadToEnd
+  - System.IO.StringReader.ReadToEndAsync
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.StringReader
+  type: Class
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/StringReader.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: StringReader
+    path: src/mscorlib/src/System/IO/StringReader.cs
+    startLine: 23
+  assemblies:
+  - System.IO
+  namespace: System.IO
+  summary: "\n<p>Implements a <xref href=\"System.IO.TextReader\" data-throw-if-not-resolved=\"false\"></xref> that reads from a string.</p>\n"
+  syntax:
+    content: >-
+      [Serializable]
+
+      [ComVisible(true)]
+
+      public class StringReader : TextReader, IDisposable
+    content.vb: >-
+      <Serializable>
+
+      <ComVisible(True)>
+
+      Public Class StringReader
+          Inherits TextReader
+          Implements IDisposable
+  seealso:
+  - type: System.IO.TextReader
+    commentId: T:System.IO.TextReader
+  - type: System.IO.StringWriter
+    commentId: T:System.IO.StringWriter
+  inheritance:
+  - System.Object
+  - System.IO.TextReader
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - System.IO.TextReader.Null
+  - System.IO.TextReader.Dispose
+  - System.IO.TextReader.ReadBlock(System.Char[],System.Int32,System.Int32)
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+  nameWithType: StringReader
+- uid: System.IO.StringReader.#ctor(System.String)
+  commentId: M:System.IO.StringReader.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: System.IO.StringReader
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.StringReader.StringReader(System.String)
+  type: Constructor
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/StringReader.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: .ctor
+    path: src/mscorlib/src/System/IO/StringReader.cs
+    startLine: 31
+  assemblies:
+  - System.IO
+  namespace: System.IO
+  summary: "\n<p>Initializes a new instance of the <xref href=\"System.IO.StringReader\" data-throw-if-not-resolved=\"false\"></xref> class that reads from the specified string.</p>\n"
+  syntax:
+    content: public StringReader(string s)
+    content.vb: Public Sub New(s As String)
+    parameters:
+    - id: s
+      type: System.String
+      description: "\n<p>The string to which the <xref href=\"System.IO.StringReader\" data-throw-if-not-resolved=\"false\"></xref> should be initialized. </p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>The <em>s</em> parameter is <strong>null</strong>. </p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: StringReader.StringReader(String)
+- uid: System.IO.StringReader.Dispose(System.Boolean)
+  commentId: M:System.IO.StringReader.Dispose(System.Boolean)
+  id: Dispose(System.Boolean)
+  parent: System.IO.StringReader
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.StringReader.Dispose(System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/StringReader.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Dispose
+    path: src/mscorlib/src/System/IO/StringReader.cs
+    startLine: 45
+  assemblies:
+  - System.IO
+  namespace: System.IO
+  summary: "\n<p>Releases the unmanaged resources used by the <xref href=\"System.IO.StringReader\" data-throw-if-not-resolved=\"false\"></xref> and optionally releases the managed resources.</p>\n"
+  syntax:
+    content: protected override void Dispose(bool disposing)
+    content.vb: Protected Overrides Sub Dispose(disposing As Boolean)
+    parameters:
+    - id: disposing
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> to release both managed and unmanaged resources; <strong>false</strong> to release only unmanaged resources. </p>\n"
+  overridden: System.IO.TextReader.Dispose(System.Boolean)
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+  nameWithType: StringReader.Dispose(Boolean)
+- uid: System.IO.StringReader.Peek
+  commentId: M:System.IO.StringReader.Peek
+  id: Peek
+  parent: System.IO.StringReader
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.StringReader.Peek()
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/StringReader.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Peek
+    path: src/mscorlib/src/System/IO/StringReader.cs
+    startLine: 57
+  assemblies:
+  - System.IO
+  namespace: System.IO
+  summary: "\n<p>Returns the next available character but does not consume it.</p>\n"
+  syntax:
+    content: public override int Peek()
+    content.vb: Public Overrides Function Peek As Integer
+    return:
+      type: System.Int32
+      description: "\n<p>An integer representing the next character to be read, or -1 if no more characters are available or the stream does not support seeking.</p>\n"
+  overridden: System.IO.TextReader.Peek
+  exceptions:
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>The current reader is closed. </p>\n"
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  nameWithType: StringReader.Peek()
+- uid: System.IO.StringReader.Read
+  commentId: M:System.IO.StringReader.Read
+  id: Read
+  parent: System.IO.StringReader
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.StringReader.Read()
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/StringReader.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Read
+    path: src/mscorlib/src/System/IO/StringReader.cs
+    startLine: 68
+  assemblies:
+  - System.IO
+  namespace: System.IO
+  summary: "\n<p>Reads the next character from the input string and advances the character position by one character.</p>\n"
+  syntax:
+    content: public override int Read()
+    content.vb: Public Overrides Function Read As Integer
+    return:
+      type: System.Int32
+      description: "\n<p>The next character from the underlying string, or -1 if no more characters are available.</p>\n"
+  overridden: System.IO.TextReader.Read
+  exceptions:
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>The current reader is closed. </p>\n"
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  nameWithType: StringReader.Read()
+- uid: System.IO.StringReader.Read(System.Char[],System.Int32,System.Int32)
+  commentId: M:System.IO.StringReader.Read(System.Char[],System.Int32,System.Int32)
+  id: Read(System.Char[],System.Int32,System.Int32)
+  parent: System.IO.StringReader
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.StringReader.Read(System.Char[], System.Int32, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/StringReader.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Read
+    path: src/mscorlib/src/System/IO/StringReader.cs
+    startLine: 80
+  assemblies:
+  - System.IO
+  namespace: System.IO
+  summary: "\n<p>Reads a block of characters from the input string and advances the character position by <em>count</em>.</p>\n"
+  syntax:
+    content: public override int Read([In, Out] char[] buffer, int index, int count)
+    content.vb: Public Overrides Function Read(buffer As Char(), index As Integer, count As Integer) As Integer
+    parameters:
+    - id: buffer
+      type: System.Char[]
+      description: "\n<p>When this method returns, contains the specified character array with the values between <em>index</em> and (<em>index</em> + <em>count</em> - 1) replaced by the characters read from the current source. </p>\n"
+      attributes:
+      - type: System.Runtime.InteropServices.InAttribute
+        ctor: System.Runtime.InteropServices.InAttribute.#ctor
+        arguments: []
+      - type: System.Runtime.InteropServices.OutAttribute
+        ctor: System.Runtime.InteropServices.OutAttribute.#ctor
+        arguments: []
+    - id: index
+      type: System.Int32
+      description: "\n<p>The starting index in the buffer. </p>\n"
+    - id: count
+      type: System.Int32
+      description: "\n<p>The number of characters to read. </p>\n"
+    return:
+      type: System.Int32
+      description: "\n<p>The total number of characters read into the buffer. This can be less than the number of characters requested if that many characters are not currently available, or zero if the end of the underlying string has been reached.</p>\n"
+  overridden: System.IO.TextReader.Read(System.Char[],System.Int32,System.Int32)
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>buffer</em> is <strong>null</strong>. </p>\n"
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>The buffer length minus <em>index</em> is less than <em>count</em>. </p>\n"
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>index</em> or <em>count</em> is negative. </p>\n"
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>The current reader is closed. </p>\n"
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  fullName.vb: System.IO.StringReader.Read(System.Char(), System.Int32, System.Int32)
+  name.vb: Read(Char(), Int32, Int32)
+  nameWithType: StringReader.Read(Char[], Int32, Int32)
+  nameWithType.vb: StringReader.Read(Char(), Int32, Int32)
+- uid: System.IO.StringReader.ReadAsync(System.Char[],System.Int32,System.Int32)
+  commentId: M:System.IO.StringReader.ReadAsync(System.Char[],System.Int32,System.Int32)
+  id: ReadAsync(System.Char[],System.Int32,System.Int32)
+  parent: System.IO.StringReader
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.StringReader.ReadAsync(System.Char[], System.Int32, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/StringReader.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: ReadAsync
+    path: src/mscorlib/src/System/IO/StringReader.cs
+    startLine: 171
+  assemblies:
+  - System.IO
+  namespace: System.IO
+  summary: "\n<p>Reads a specified maximum number of characters from the current string asynchronously and writes the data to a buffer, beginning at the specified index. </p>\n"
+  syntax:
+    content: >-
+      [ComVisible(false)]
+
+      public override Task<int> ReadAsync(char[] buffer, int index, int count)
+    content.vb: >-
+      <ComVisible(False)>
+
+      Public Overrides Function ReadAsync(buffer As Char(), index As Integer, count As Integer) As Task(Of Integer)
+    parameters:
+    - id: buffer
+      type: System.Char[]
+      description: "\n<p>When this method returns, contains the specified character array with the values between <em>index</em> and (<em>index</em> + <em>count</em> - 1) replaced by the characters read from the current source.</p>\n"
+    - id: index
+      type: System.Int32
+      description: "\n<p>The position in <em>buffer</em> at which to begin writing.</p>\n"
+    - id: count
+      type: System.Int32
+      description: "\n<p>The maximum number of characters to read. If the end of the string is reached before the specified number of characters is written into the buffer, the method returns.</p>\n"
+    return:
+      type: System.Threading.Tasks.Task{System.Int32}
+      description: "\n<p>A task that represents the asynchronous read operation. The value of the <em>TResult</em> parameter contains the total number of bytes read into the buffer. The result value can be less than the number of bytes requested if the number of bytes currently available is less than the requested number, or it can be 0 (zero) if the end of the string has been reached.</p>\n"
+  overridden: System.IO.TextReader.ReadAsync(System.Char[],System.Int32,System.Int32)
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>buffer</em> is <strong>null</strong>.</p>\n"
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>index</em> or <em>count</em> is negative.</p>\n"
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>The sum of <em>index</em> and <em>count</em> is larger than the buffer length.</p>\n"
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>The string reader has been disposed.</p>\n"
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: "\n<p>The reader is currently in use by a previous read operation. </p>\n"
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  fullName.vb: System.IO.StringReader.ReadAsync(System.Char(), System.Int32, System.Int32)
+  name.vb: ReadAsync(Char(), Int32, Int32)
+  nameWithType: StringReader.ReadAsync(Char[], Int32, Int32)
+  nameWithType.vb: StringReader.ReadAsync(Char(), Int32, Int32)
+- uid: System.IO.StringReader.ReadBlockAsync(System.Char[],System.Int32,System.Int32)
+  commentId: M:System.IO.StringReader.ReadBlockAsync(System.Char[],System.Int32,System.Int32)
+  id: ReadBlockAsync(System.Char[],System.Int32,System.Int32)
+  parent: System.IO.StringReader
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.StringReader.ReadBlockAsync(System.Char[], System.Int32, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/StringReader.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: ReadBlockAsync
+    path: src/mscorlib/src/System/IO/StringReader.cs
+    startLine: 156
+  assemblies:
+  - System.IO
+  namespace: System.IO
+  summary: "\n<p>Reads a specified maximum number of characters from the current string asynchronously and writes the data to a buffer, beginning at the specified index.</p>\n"
+  syntax:
+    content: >-
+      [ComVisible(false)]
+
+      public override Task<int> ReadBlockAsync(char[] buffer, int index, int count)
+    content.vb: >-
+      <ComVisible(False)>
+
+      Public Overrides Function ReadBlockAsync(buffer As Char(), index As Integer, count As Integer) As Task(Of Integer)
+    parameters:
+    - id: buffer
+      type: System.Char[]
+      description: "\n<p>When this method returns, contains the specified character array with the values between <em>index</em> and (<em>index</em> + <em>count</em> - 1) replaced by the characters read from the current source.</p>\n"
+    - id: index
+      type: System.Int32
+      description: "\n<p>The position in <em>buffer</em> at which to begin writing.</p>\n"
+    - id: count
+      type: System.Int32
+      description: "\n<p>The maximum number of characters to read. If the end of the string is reached before the specified number of characters is written into the buffer, the method returns.</p>\n"
+    return:
+      type: System.Threading.Tasks.Task{System.Int32}
+      description: "\n<p>A task that represents the asynchronous read operation. The value of the <em>TResult</em> parameter contains the total number of bytes read into the buffer. The result value can be less than the number of bytes requested if the number of bytes currently available is less than the requested number, or it can be 0 (zero) if the end of the string has been reached.</p>\n"
+  overridden: System.IO.TextReader.ReadBlockAsync(System.Char[],System.Int32,System.Int32)
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>buffer</em> is <strong>null</strong>.</p>\n"
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>index</em> or <em>count</em> is negative.</p>\n"
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>The sum of <em>index</em> and <em>count</em> is larger than the buffer length.</p>\n"
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>The string reader has been disposed.</p>\n"
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: "\n<p>The reader is currently in use by a previous read operation. </p>\n"
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  fullName.vb: System.IO.StringReader.ReadBlockAsync(System.Char(), System.Int32, System.Int32)
+  name.vb: ReadBlockAsync(Char(), Int32, Int32)
+  nameWithType: StringReader.ReadBlockAsync(Char[], Int32, Int32)
+  nameWithType.vb: StringReader.ReadBlockAsync(Char(), Int32, Int32)
+- uid: System.IO.StringReader.ReadLine
+  commentId: M:System.IO.StringReader.ReadLine
+  id: ReadLine
+  parent: System.IO.StringReader
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.StringReader.ReadLine()
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/StringReader.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: ReadLine
+    path: src/mscorlib/src/System/IO/StringReader.cs
+    startLine: 121
+  assemblies:
+  - System.IO
+  namespace: System.IO
+  summary: "\n<p>Reads a line of characters from the current string and returns the data as a string.</p>\n"
+  syntax:
+    content: public override string ReadLine()
+    content.vb: Public Overrides Function ReadLine As String
+    return:
+      type: System.String
+      description: "\n<p>The next line from the current string, or <strong>null</strong> if the end of the string is reached.</p>\n"
+  overridden: System.IO.TextReader.ReadLine
+  exceptions:
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>The current reader is closed. </p>\n"
+  - type: System.OutOfMemoryException
+    commentId: T:System.OutOfMemoryException
+    description: "\n<p>There is insufficient memory to allocate a buffer for the returned string. </p>\n"
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  nameWithType: StringReader.ReadLine()
+- uid: System.IO.StringReader.ReadLineAsync
+  commentId: M:System.IO.StringReader.ReadLineAsync
+  id: ReadLineAsync
+  parent: System.IO.StringReader
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.StringReader.ReadLineAsync()
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/StringReader.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: ReadLineAsync
+    path: src/mscorlib/src/System/IO/StringReader.cs
+    startLine: 144
+  assemblies:
+  - System.IO
+  namespace: System.IO
+  summary: "\n<p>Reads a line of characters asynchronously from the current string and returns the data as a string.</p>\n"
+  syntax:
+    content: >-
+      [ComVisible(false)]
+
+      public override Task<string> ReadLineAsync()
+    content.vb: >-
+      <ComVisible(False)>
+
+      Public Overrides Function ReadLineAsync As Task(Of String)
+    return:
+      type: System.Threading.Tasks.Task{System.String}
+      description: "\n<p>A task that represents the asynchronous read operation. The value of the <em>TResult</em> parameter contains the next line from the string reader, or is <strong>null</strong> if all the characters have been read.</p>\n"
+  overridden: System.IO.TextReader.ReadLineAsync
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>The number of characters in the next line is larger than <xref href=\"System.Int32.MaxValue\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>The string reader has been disposed.</p>\n"
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: "\n<p>The reader is currently in use by a previous read operation. </p>\n"
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  nameWithType: StringReader.ReadLineAsync()
+- uid: System.IO.StringReader.ReadToEnd
+  commentId: M:System.IO.StringReader.ReadToEnd
+  id: ReadToEnd
+  parent: System.IO.StringReader
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.StringReader.ReadToEnd()
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/StringReader.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: ReadToEnd
+    path: src/mscorlib/src/System/IO/StringReader.cs
+    startLine: 102
+  assemblies:
+  - System.IO
+  namespace: System.IO
+  summary: "\n<p>Reads all characters from the current position to the end of the string and returns them as a single string.</p>\n"
+  syntax:
+    content: public override string ReadToEnd()
+    content.vb: Public Overrides Function ReadToEnd As String
+    return:
+      type: System.String
+      description: "\n<p>The content from the current position to the end of the underlying string.</p>\n"
+  overridden: System.IO.TextReader.ReadToEnd
+  exceptions:
+  - type: System.OutOfMemoryException
+    commentId: T:System.OutOfMemoryException
+    description: "\n<p>There is insufficient memory to allocate a buffer for the returned string. </p>\n"
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>The current reader is closed. </p>\n"
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  nameWithType: StringReader.ReadToEnd()
+- uid: System.IO.StringReader.ReadToEndAsync
+  commentId: M:System.IO.StringReader.ReadToEndAsync
+  id: ReadToEndAsync
+  parent: System.IO.StringReader
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.StringReader.ReadToEndAsync()
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/StringReader.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: ReadToEndAsync
+    path: src/mscorlib/src/System/IO/StringReader.cs
+    startLine: 150
+  assemblies:
+  - System.IO
+  namespace: System.IO
+  summary: "\n<p>Reads all characters from the current position to the end of the string asynchronously and returns them as a single string.</p>\n"
+  syntax:
+    content: >-
+      [ComVisible(false)]
+
+      public override Task<string> ReadToEndAsync()
+    content.vb: >-
+      <ComVisible(False)>
+
+      Public Overrides Function ReadToEndAsync As Task(Of String)
+    return:
+      type: System.Threading.Tasks.Task{System.String}
+      description: "\n<p>A task that represents the asynchronous read operation. The value of the <em>TResult</em> parameter contains a string with the characters from the current position to the end of the string. </p>\n"
+  overridden: System.IO.TextReader.ReadToEndAsync
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>The number of characters is larger than <xref href=\"System.Int32.MaxValue\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>The string reader has been disposed.</p>\n"
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: "\n<p>The reader is currently in use by a previous read operation. </p>\n"
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  nameWithType: StringReader.ReadToEndAsync()
+references:
+- uid: System.IO
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO
+  nameWithType: System.IO
+  commentId: N:System.IO
+- uid: System.Object
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Object
+  nameWithType: Object
+  commentId: T:System.Object
+- uid: System.IO.TextReader
+  parent: System.IO
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.TextReader
+  nameWithType: TextReader
+  commentId: T:System.IO.TextReader
+- uid: System.IDisposable
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.IDisposable
+  nameWithType: IDisposable
+  commentId: T:System.IDisposable
+- uid: System.IO.TextReader.Null
+  parent: System.IO.TextReader
+  isExternal: false
+  fullName: System.IO.TextReader.Null
+  nameWithType: TextReader.Null
+  commentId: F:System.IO.TextReader.Null
+- uid: System.IO.TextReader.Dispose
+  parent: System.IO.TextReader
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.TextReader.Dispose()
+  spec.csharp:
+  - uid: System.IO.TextReader.Dispose
+    name: "XXX"
+    fullName: System.IO.TextReader.Dispose
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.IO.TextReader.Dispose
+    name: "XXX"
+    fullName: System.IO.TextReader.Dispose
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: TextReader.Dispose()
+  commentId: M:System.IO.TextReader.Dispose
+- uid: System.IO.TextReader.ReadBlock(System.Char[],System.Int32,System.Int32)
+  parent: System.IO.TextReader
+  isExternal: true
+  name: "XXX"
+  fullName: System.IO.TextReader.ReadBlock(System.Char[], System.Int32, System.Int32)
+  fullname.vb: System.IO.TextReader.ReadBlock(System.Char(), System.Int32, System.Int32)
+  name.vb: ReadBlock(Char(), Int32, Int32)
+  spec.csharp:
+  - uid: System.IO.TextReader.ReadBlock(System.Char[],System.Int32,System.Int32)
+    name: "XXX"
+    fullName: System.IO.TextReader.ReadBlock
+  - name: "XXX"
+    fullName: (
+  - uid: System.Char
+    name: "XXX"
+    fullName: System.Char
+    isExternal: true
+  - name: 'XXX'
+    fullName: '[]'
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.IO.TextReader.ReadBlock(System.Char[],System.Int32,System.Int32)
+    name: "XXX"
+    fullName: System.IO.TextReader.ReadBlock
+  - name: "XXX"
+    fullName: (
+  - uid: System.Char
+    name: "XXX"
+    fullName: System.Char
+    isExternal: true
+  - name: "XXX"
+    fullName: ()
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: TextReader.ReadBlock(Char[], Int32, Int32)
+  nameWithType.vb: TextReader.ReadBlock(Char(), Int32, Int32)
+  commentId: M:System.IO.TextReader.ReadBlock(System.Char[],System.Int32,System.Int32)
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.ToString()
+  commentId: M:System.Object.ToString
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.Equals(Object)
+  commentId: M:System.Object.Equals(System.Object)
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.Equals(Object, Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.GetHashCode()
+  commentId: M:System.Object.GetHashCode
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.GetType()
+  commentId: M:System.Object.GetType
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.MemberwiseClone()
+  commentId: M:System.Object.MemberwiseClone
+- uid: System
+  isExternal: false
+  name: "XXX"
+  fullName: System
+  nameWithType: System
+  commentId: N:System
+- uid: System.String
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.String
+  nameWithType: String
+  commentId: T:System.String
+- uid: System.IO.TextReader.Dispose(System.Boolean)
+  parent: System.IO.TextReader
+  isExternal: true
+  name: "XXX"
+  fullName: System.IO.TextReader.Dispose(System.Boolean)
+  spec.csharp:
+  - uid: System.IO.TextReader.Dispose(System.Boolean)
+    name: "XXX"
+    fullName: System.IO.TextReader.Dispose
+  - name: "XXX"
+    fullName: (
+  - uid: System.Boolean
+    name: "XXX"
+    fullName: System.Boolean
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.IO.TextReader.Dispose(System.Boolean)
+    name: "XXX"
+    fullName: System.IO.TextReader.Dispose
+  - name: "XXX"
+    fullName: (
+  - uid: System.Boolean
+    name: "XXX"
+    fullName: System.Boolean
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: TextReader.Dispose(Boolean)
+  commentId: M:System.IO.TextReader.Dispose(System.Boolean)
+- uid: System.Boolean
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Boolean
+  nameWithType: Boolean
+  commentId: T:System.Boolean
+- uid: System.IO.TextReader.Peek
+  parent: System.IO.TextReader
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.TextReader.Peek()
+  spec.csharp:
+  - uid: System.IO.TextReader.Peek
+    name: "XXX"
+    fullName: System.IO.TextReader.Peek
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.IO.TextReader.Peek
+    name: "XXX"
+    fullName: System.IO.TextReader.Peek
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: TextReader.Peek()
+  commentId: M:System.IO.TextReader.Peek
+- uid: System.Int32
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Int32
+  nameWithType: Int32
+  commentId: T:System.Int32
+- uid: System.IO.TextReader.Read
+  parent: System.IO.TextReader
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.TextReader.Read()
+  spec.csharp:
+  - uid: System.IO.TextReader.Read
+    name: "XXX"
+    fullName: System.IO.TextReader.Read
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.IO.TextReader.Read
+    name: "XXX"
+    fullName: System.IO.TextReader.Read
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: TextReader.Read()
+  commentId: M:System.IO.TextReader.Read
+- uid: System.IO.TextReader.Read(System.Char[],System.Int32,System.Int32)
+  parent: System.IO.TextReader
+  isExternal: true
+  name: "XXX"
+  fullName: System.IO.TextReader.Read(System.Char[], System.Int32, System.Int32)
+  fullname.vb: System.IO.TextReader.Read(System.Char(), System.Int32, System.Int32)
+  name.vb: Read(Char(), Int32, Int32)
+  spec.csharp:
+  - uid: System.IO.TextReader.Read(System.Char[],System.Int32,System.Int32)
+    name: "XXX"
+    fullName: System.IO.TextReader.Read
+  - name: "XXX"
+    fullName: (
+  - uid: System.Char
+    name: "XXX"
+    fullName: System.Char
+    isExternal: true
+  - name: 'XXX'
+    fullName: '[]'
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.IO.TextReader.Read(System.Char[],System.Int32,System.Int32)
+    name: "XXX"
+    fullName: System.IO.TextReader.Read
+  - name: "XXX"
+    fullName: (
+  - uid: System.Char
+    name: "XXX"
+    fullName: System.Char
+    isExternal: true
+  - name: "XXX"
+    fullName: ()
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: TextReader.Read(Char[], Int32, Int32)
+  nameWithType.vb: TextReader.Read(Char(), Int32, Int32)
+  commentId: M:System.IO.TextReader.Read(System.Char[],System.Int32,System.Int32)
+- uid: System.Char[]
+  name: "XXX"
+  fullName: System.Char[]
+  fullname.vb: System.Char()
+  name.vb: Char()
+  spec.csharp:
+  - uid: System.Char
+    name: "XXX"
+    fullName: System.Char
+    isExternal: true
+  - name: 'XXX'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Char
+    name: "XXX"
+    fullName: System.Char
+    isExternal: true
+  - name: "XXX"
+    fullName: ()
+  nameWithType: Char[]
+  nameWithType.vb: Char()
+- uid: System.IO.TextReader.ReadAsync(System.Char[],System.Int32,System.Int32)
+  parent: System.IO.TextReader
+  isExternal: true
+  name: "XXX"
+  fullName: System.IO.TextReader.ReadAsync(System.Char[], System.Int32, System.Int32)
+  fullname.vb: System.IO.TextReader.ReadAsync(System.Char(), System.Int32, System.Int32)
+  name.vb: ReadAsync(Char(), Int32, Int32)
+  spec.csharp:
+  - uid: System.IO.TextReader.ReadAsync(System.Char[],System.Int32,System.Int32)
+    name: "XXX"
+    fullName: System.IO.TextReader.ReadAsync
+  - name: "XXX"
+    fullName: (
+  - uid: System.Char
+    name: "XXX"
+    fullName: System.Char
+    isExternal: true
+  - name: 'XXX'
+    fullName: '[]'
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.IO.TextReader.ReadAsync(System.Char[],System.Int32,System.Int32)
+    name: "XXX"
+    fullName: System.IO.TextReader.ReadAsync
+  - name: "XXX"
+    fullName: (
+  - uid: System.Char
+    name: "XXX"
+    fullName: System.Char
+    isExternal: true
+  - name: "XXX"
+    fullName: ()
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: TextReader.ReadAsync(Char[], Int32, Int32)
+  nameWithType.vb: TextReader.ReadAsync(Char(), Int32, Int32)
+  commentId: M:System.IO.TextReader.ReadAsync(System.Char[],System.Int32,System.Int32)
+- uid: System.Threading.Tasks.Task{System.Int32}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: "XXX"
+  fullName: System.Threading.Tasks.Task<System.Int32>
+  fullname.vb: System.Threading.Tasks.Task(Of System.Int32)
+  name.vb: Task(Of Int32)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: "XXX"
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: "<"
+    fullName: <
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: "XXX"
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: 'XXX '
+    fullName: '(Of '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Task<Int32>
+  nameWithType.vb: Task(Of Int32)
+  commentId: T:System.Threading.Tasks.Task{System.Int32}
+- uid: System.Threading.Tasks.Task`1
+  isExternal: false
+  name: "XXX"
+  fullName: System.Threading.Tasks.Task<TResult>
+  fullname.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: "XXX"
+    fullName: System.Threading.Tasks.Task
+  - name: "<"
+    fullName: <
+  - name: "XXX"
+    fullName: TResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: "XXX"
+    fullName: System.Threading.Tasks.Task
+  - name: 'XXX '
+    fullName: '(Of '
+  - name: "XXX"
+    fullName: TResult
+  - name: "XXX"
+    fullName: )
+  nameWithType: Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  commentId: T:System.Threading.Tasks.Task`1
+- uid: System.Threading.Tasks
+  isExternal: false
+  name: "XXX"
+  fullName: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+- uid: System.IO.TextReader.ReadBlockAsync(System.Char[],System.Int32,System.Int32)
+  parent: System.IO.TextReader
+  isExternal: true
+  name: "XXX"
+  fullName: System.IO.TextReader.ReadBlockAsync(System.Char[], System.Int32, System.Int32)
+  fullname.vb: System.IO.TextReader.ReadBlockAsync(System.Char(), System.Int32, System.Int32)
+  name.vb: ReadBlockAsync(Char(), Int32, Int32)
+  spec.csharp:
+  - uid: System.IO.TextReader.ReadBlockAsync(System.Char[],System.Int32,System.Int32)
+    name: "XXX"
+    fullName: System.IO.TextReader.ReadBlockAsync
+  - name: "XXX"
+    fullName: (
+  - uid: System.Char
+    name: "XXX"
+    fullName: System.Char
+    isExternal: true
+  - name: 'XXX'
+    fullName: '[]'
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.IO.TextReader.ReadBlockAsync(System.Char[],System.Int32,System.Int32)
+    name: "XXX"
+    fullName: System.IO.TextReader.ReadBlockAsync
+  - name: "XXX"
+    fullName: (
+  - uid: System.Char
+    name: "XXX"
+    fullName: System.Char
+    isExternal: true
+  - name: "XXX"
+    fullName: ()
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: TextReader.ReadBlockAsync(Char[], Int32, Int32)
+  nameWithType.vb: TextReader.ReadBlockAsync(Char(), Int32, Int32)
+  commentId: M:System.IO.TextReader.ReadBlockAsync(System.Char[],System.Int32,System.Int32)
+- uid: System.IO.TextReader.ReadLine
+  parent: System.IO.TextReader
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.TextReader.ReadLine()
+  spec.csharp:
+  - uid: System.IO.TextReader.ReadLine
+    name: "XXX"
+    fullName: System.IO.TextReader.ReadLine
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.IO.TextReader.ReadLine
+    name: "XXX"
+    fullName: System.IO.TextReader.ReadLine
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: TextReader.ReadLine()
+  commentId: M:System.IO.TextReader.ReadLine
+- uid: System.IO.TextReader.ReadLineAsync
+  parent: System.IO.TextReader
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.TextReader.ReadLineAsync()
+  spec.csharp:
+  - uid: System.IO.TextReader.ReadLineAsync
+    name: "XXX"
+    fullName: System.IO.TextReader.ReadLineAsync
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.IO.TextReader.ReadLineAsync
+    name: "XXX"
+    fullName: System.IO.TextReader.ReadLineAsync
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: TextReader.ReadLineAsync()
+  commentId: M:System.IO.TextReader.ReadLineAsync
+- uid: System.Threading.Tasks.Task{System.String}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: "XXX"
+  fullName: System.Threading.Tasks.Task<System.String>
+  fullname.vb: System.Threading.Tasks.Task(Of System.String)
+  name.vb: Task(Of String)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: "XXX"
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: "<"
+    fullName: <
+  - uid: System.String
+    name: "XXX"
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: "XXX"
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: 'XXX '
+    fullName: '(Of '
+  - uid: System.String
+    name: "XXX"
+    fullName: System.String
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Task<String>
+  nameWithType.vb: Task(Of String)
+  commentId: T:System.Threading.Tasks.Task{System.String}
+- uid: System.IO.TextReader.ReadToEnd
+  parent: System.IO.TextReader
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.TextReader.ReadToEnd()
+  spec.csharp:
+  - uid: System.IO.TextReader.ReadToEnd
+    name: "XXX"
+    fullName: System.IO.TextReader.ReadToEnd
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.IO.TextReader.ReadToEnd
+    name: "XXX"
+    fullName: System.IO.TextReader.ReadToEnd
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: TextReader.ReadToEnd()
+  commentId: M:System.IO.TextReader.ReadToEnd
+- uid: System.IO.TextReader.ReadToEndAsync
+  parent: System.IO.TextReader
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.TextReader.ReadToEndAsync()
+  spec.csharp:
+  - uid: System.IO.TextReader.ReadToEndAsync
+    name: "XXX"
+    fullName: System.IO.TextReader.ReadToEndAsync
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.IO.TextReader.ReadToEndAsync
+    name: "XXX"
+    fullName: System.IO.TextReader.ReadToEndAsync
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: TextReader.ReadToEndAsync()
+  commentId: M:System.IO.TextReader.ReadToEndAsync
+- uid: System.ArgumentNullException
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentNullException
+  nameWithType: ArgumentNullException
+  commentId: T:System.ArgumentNullException
+- uid: System.ObjectDisposedException
+  isExternal: false
+  name: "XXX"
+  fullName: System.ObjectDisposedException
+  nameWithType: ObjectDisposedException
+  commentId: T:System.ObjectDisposedException
+- uid: System.ArgumentException
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentException
+  nameWithType: ArgumentException
+  commentId: T:System.ArgumentException
+- uid: System.ArgumentOutOfRangeException
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentOutOfRangeException
+  nameWithType: ArgumentOutOfRangeException
+  commentId: T:System.ArgumentOutOfRangeException
+- uid: System.InvalidOperationException
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.InvalidOperationException
+  nameWithType: InvalidOperationException
+  commentId: T:System.InvalidOperationException
+- uid: System.OutOfMemoryException
+  isExternal: false
+  name: "XXX"
+  fullName: System.OutOfMemoryException
+  nameWithType: OutOfMemoryException
+  commentId: T:System.OutOfMemoryException

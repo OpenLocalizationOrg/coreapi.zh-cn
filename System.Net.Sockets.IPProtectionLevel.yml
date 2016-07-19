@@ -1,0 +1,195 @@
+items:
+- uid: System.Net.Sockets.IPProtectionLevel
+  commentId: T:System.Net.Sockets.IPProtectionLevel
+  id: IPProtectionLevel
+  parent: System.Net.Sockets
+  children:
+  - System.Net.Sockets.IPProtectionLevel.EdgeRestricted
+  - System.Net.Sockets.IPProtectionLevel.Restricted
+  - System.Net.Sockets.IPProtectionLevel.Unrestricted
+  - System.Net.Sockets.IPProtectionLevel.Unspecified
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Net.Sockets.IPProtectionLevel
+  type: Enum
+  source:
+    remote:
+      path: src/System.Net.Sockets/ref/System.Net.Sockets.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: IPProtectionLevel
+    path: src/System.Net.Sockets/ref/System.Net.Sockets.cs
+    startLine: 57
+  assemblies:
+  - System.Net.Sockets
+  namespace: System.Net.Sockets
+  summary: "\n<p>A value that enables restriction of an IPv6 socket to a specified scope, such as addresses with the same link local or site local prefix. </p>\n"
+  syntax:
+    content: public enum IPProtectionLevel
+    content.vb: Public Enum IPProtectionLevel
+  seealso:
+  - type: System.Net.Configuration.SocketElement.IPProtectionLevel
+    commentId: P:System.Net.Configuration.SocketElement.IPProtectionLevel
+  - type: System.Net.IPAddress.IsIPv6Teredo
+    commentId: P:System.Net.IPAddress.IsIPv6Teredo
+  - type: System.Net.Sockets.Socket.SetIPProtectionLevel(System.Net.Sockets.IPProtectionLevel)
+    commentId: M:System.Net.Sockets.Socket.SetIPProtectionLevel(System.Net.Sockets.IPProtectionLevel)
+  - type: System.Net.Sockets.TcpListener.AllowNatTraversal(System.Boolean)
+    commentId: M:System.Net.Sockets.TcpListener.AllowNatTraversal(System.Boolean)
+  - type: System.Net.Sockets.UdpClient.AllowNatTraversal(System.Boolean)
+    commentId: M:System.Net.Sockets.UdpClient.AllowNatTraversal(System.Boolean)
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+  nameWithType: IPProtectionLevel
+- uid: System.Net.Sockets.IPProtectionLevel.EdgeRestricted
+  commentId: F:System.Net.Sockets.IPProtectionLevel.EdgeRestricted
+  id: EdgeRestricted
+  parent: System.Net.Sockets.IPProtectionLevel
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Net.Sockets.IPProtectionLevel.EdgeRestricted
+  type: Field
+  source:
+    remote:
+      path: src/System.Net.Sockets/ref/System.Net.Sockets.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: EdgeRestricted
+    path: src/System.Net.Sockets/ref/System.Net.Sockets.cs
+    startLine: 59
+  assemblies:
+  - System.Net.Sockets
+  namespace: System.Net.Sockets
+  summary: "\n<p>The IP protection level is edge restricted. This value would be used by applications designed to operate across the Internet. This setting does not allow Network Address Translation (NAT) traversal using the Windows Teredo implementation. These applications may bypass IPv4 firewalls, so applications must be hardened against Internet attacks directed at the opened port. On Windows Server 2003 and Windows XP, the default value for the IP Protection level on a socket is edge restricted.</p>\n"
+  syntax:
+    content: EdgeRestricted = 20
+    return:
+      type: System.Net.Sockets.IPProtectionLevel
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+  nameWithType: IPProtectionLevel.EdgeRestricted
+- uid: System.Net.Sockets.IPProtectionLevel.Restricted
+  commentId: F:System.Net.Sockets.IPProtectionLevel.Restricted
+  id: Restricted
+  parent: System.Net.Sockets.IPProtectionLevel
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Net.Sockets.IPProtectionLevel.Restricted
+  type: Field
+  source:
+    remote:
+      path: src/System.Net.Sockets/ref/System.Net.Sockets.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Restricted
+    path: src/System.Net.Sockets/ref/System.Net.Sockets.cs
+    startLine: 60
+  assemblies:
+  - System.Net.Sockets
+  namespace: System.Net.Sockets
+  summary: "\n<p>The IP protection level is restricted. This value would be used by intranet applications that do not implement Internet scenarios. These applications are generally not tested or hardened against Internet-style attacks. This setting will limit the received traffic to link-local only. </p>\n"
+  syntax:
+    content: Restricted = 30
+    return:
+      type: System.Net.Sockets.IPProtectionLevel
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+  nameWithType: IPProtectionLevel.Restricted
+- uid: System.Net.Sockets.IPProtectionLevel.Unrestricted
+  commentId: F:System.Net.Sockets.IPProtectionLevel.Unrestricted
+  id: Unrestricted
+  parent: System.Net.Sockets.IPProtectionLevel
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Net.Sockets.IPProtectionLevel.Unrestricted
+  type: Field
+  source:
+    remote:
+      path: src/System.Net.Sockets/ref/System.Net.Sockets.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Unrestricted
+    path: src/System.Net.Sockets/ref/System.Net.Sockets.cs
+    startLine: 61
+  assemblies:
+  - System.Net.Sockets
+  namespace: System.Net.Sockets
+  summary: "\n<p>The IP protection level is unrestricted. This value would be used by applications designed to operate across the Internet, including applications taking advantage of IPv6 NAT traversal capabilities built into Windows (Teredo, for example). These applications may bypass IPv4 firewalls, so applications must be hardened against Internet attacks directed at the opened port. On Windows Server 2008 R2 and Windows Vista, the default value for the IP Protection level on a socket is unrestricted.</p>\n"
+  syntax:
+    content: Unrestricted = 10
+    return:
+      type: System.Net.Sockets.IPProtectionLevel
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+  nameWithType: IPProtectionLevel.Unrestricted
+- uid: System.Net.Sockets.IPProtectionLevel.Unspecified
+  commentId: F:System.Net.Sockets.IPProtectionLevel.Unspecified
+  id: Unspecified
+  parent: System.Net.Sockets.IPProtectionLevel
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Net.Sockets.IPProtectionLevel.Unspecified
+  type: Field
+  source:
+    remote:
+      path: src/System.Net.Sockets/ref/System.Net.Sockets.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Unspecified
+    path: src/System.Net.Sockets/ref/System.Net.Sockets.cs
+    startLine: 62
+  assemblies:
+  - System.Net.Sockets
+  namespace: System.Net.Sockets
+  summary: "\n<p>The IP protection level is unspecified. On Windows 7 and Windows Server 2008 R2, the default value for the IP Protection level on a socket is unspecified.</p>\n"
+  syntax:
+    content: Unspecified = -1
+    return:
+      type: System.Net.Sockets.IPProtectionLevel
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+  nameWithType: IPProtectionLevel.Unspecified
+references:
+- uid: System.Net.Sockets
+  isExternal: false
+  name: "XXX"
+  fullName: System.Net.Sockets
+  commentId: N:System.Net.Sockets
+  nameWithType: System.Net.Sockets
+- uid: System.Net.Sockets.IPProtectionLevel
+  parent: System.Net.Sockets
+  isExternal: false
+  name: "XXX"
+  fullName: System.Net.Sockets.IPProtectionLevel
+  commentId: T:System.Net.Sockets.IPProtectionLevel
+  nameWithType: IPProtectionLevel

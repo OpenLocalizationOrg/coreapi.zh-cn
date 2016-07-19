@@ -1,0 +1,305 @@
+items:
+- uid: System.ComponentModel.ITypeDescriptorContext
+  commentId: T:System.ComponentModel.ITypeDescriptorContext
+  id: ITypeDescriptorContext
+  parent: System.ComponentModel
+  children:
+  - System.ComponentModel.ITypeDescriptorContext.Container
+  - System.ComponentModel.ITypeDescriptorContext.Instance
+  - System.ComponentModel.ITypeDescriptorContext.OnComponentChanged
+  - System.ComponentModel.ITypeDescriptorContext.OnComponentChanging
+  - System.ComponentModel.ITypeDescriptorContext.PropertyDescriptor
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.ComponentModel.ITypeDescriptorContext
+  type: Interface
+  source:
+    remote:
+      path: src/System.ComponentModel.TypeConverter/src/System/ComponentModel/ITypeDescriptorContext.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: ITypeDescriptorContext
+    path: src/System.ComponentModel.TypeConverter/src/System/ComponentModel/ITypeDescriptorContext.cs
+    startLine: 13
+  assemblies:
+  - System.ComponentModel.TypeConverter
+  namespace: System.ComponentModel
+  summary: "\n<p>Provides contextual information about a component, such as its container and property descriptor.</p>\n"
+  syntax:
+    content: 'public interface ITypeDescriptorContext : IServiceProvider'
+    content.vb: >-
+      Public Interface ITypeDescriptorContext
+          Inherits IServiceProvider
+  seealso:
+  - type: System.ComponentModel.TypeDescriptor
+    commentId: T:System.ComponentModel.TypeDescriptor
+  - type: System.ComponentModel.TypeConverter
+    commentId: T:System.ComponentModel.TypeConverter
+  inheritedMembers:
+  - System.IServiceProvider.GetService(System.Type)
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+  nameWithType: ITypeDescriptorContext
+- uid: System.ComponentModel.ITypeDescriptorContext.Container
+  commentId: P:System.ComponentModel.ITypeDescriptorContext.Container
+  id: Container
+  parent: System.ComponentModel.ITypeDescriptorContext
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.ComponentModel.ITypeDescriptorContext.Container
+  type: Property
+  source:
+    remote:
+      path: src/System.ComponentModel.TypeConverter/src/System/ComponentModel/ITypeDescriptorContext.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Container
+    path: src/System.ComponentModel.TypeConverter/src/System/ComponentModel/ITypeDescriptorContext.cs
+    startLine: 18
+  assemblies:
+  - System.ComponentModel.TypeConverter
+  namespace: System.ComponentModel
+  summary: "\n<p>Gets the container representing this <xref href=\"System.ComponentModel.TypeDescriptor\" data-throw-if-not-resolved=\"false\"></xref> request.</p>\n"
+  syntax:
+    content: IContainer Container { get; }
+    content.vb: ReadOnly Property Container As IContainer
+    parameters: []
+    return:
+      type: IContainer
+      description: "\n<p>An <xref href=\"System.ComponentModel.IContainer\" data-throw-if-not-resolved=\"false\"></xref> with the set of objects for this <xref href=\"System.ComponentModel.TypeDescriptor\" data-throw-if-not-resolved=\"false\"></xref>; otherwise, <strong>null</strong> if there is no container or if the <xref href=\"System.ComponentModel.TypeDescriptor\" data-throw-if-not-resolved=\"false\"></xref> does not use outside objects.</p>\n"
+  seealso:
+  - type: System.ComponentModel.IContainer
+    commentId: T:System.ComponentModel.IContainer
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+  nameWithType: ITypeDescriptorContext.Container
+- uid: System.ComponentModel.ITypeDescriptorContext.Instance
+  commentId: P:System.ComponentModel.ITypeDescriptorContext.Instance
+  id: Instance
+  parent: System.ComponentModel.ITypeDescriptorContext
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.ComponentModel.ITypeDescriptorContext.Instance
+  type: Property
+  source:
+    remote:
+      path: src/System.ComponentModel.TypeConverter/src/System/ComponentModel/ITypeDescriptorContext.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Instance
+    path: src/System.ComponentModel.TypeConverter/src/System/ComponentModel/ITypeDescriptorContext.cs
+    startLine: 23
+  assemblies:
+  - System.ComponentModel.TypeConverter
+  namespace: System.ComponentModel
+  summary: "\n<p>Gets the object that is connected with this type descriptor request.</p>\n"
+  syntax:
+    content: object Instance { get; }
+    content.vb: ReadOnly Property Instance As Object
+    parameters: []
+    return:
+      type: System.Object
+      description: "\n<p>The object that invokes the method on the <xref href=\"System.ComponentModel.TypeDescriptor\" data-throw-if-not-resolved=\"false\"></xref>; otherwise, <strong>null</strong> if there is no object responsible for the call.</p>\n"
+  seealso:
+  - type: System.ComponentModel.Component
+    commentId: T:System.ComponentModel.Component
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+  nameWithType: ITypeDescriptorContext.Instance
+- uid: System.ComponentModel.ITypeDescriptorContext.PropertyDescriptor
+  commentId: P:System.ComponentModel.ITypeDescriptorContext.PropertyDescriptor
+  id: PropertyDescriptor
+  parent: System.ComponentModel.ITypeDescriptorContext
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.ComponentModel.ITypeDescriptorContext.PropertyDescriptor
+  type: Property
+  source:
+    remote:
+      path: src/System.ComponentModel.TypeConverter/src/System/ComponentModel/ITypeDescriptorContext.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: PropertyDescriptor
+    path: src/System.ComponentModel.TypeConverter/src/System/ComponentModel/ITypeDescriptorContext.cs
+    startLine: 28
+  assemblies:
+  - System.ComponentModel.TypeConverter
+  namespace: System.ComponentModel
+  summary: "\n<p>Gets the <xref href=\"System.ComponentModel.PropertyDescriptor\" data-throw-if-not-resolved=\"false\"></xref> that is associated with the given context item.</p>\n"
+  syntax:
+    content: PropertyDescriptor PropertyDescriptor { get; }
+    content.vb: ReadOnly Property PropertyDescriptor As PropertyDescriptor
+    parameters: []
+    return:
+      type: System.ComponentModel.PropertyDescriptor
+      description: "\n<p>The <xref href=\"System.ComponentModel.PropertyDescriptor\" data-throw-if-not-resolved=\"false\"></xref> that describes the given context item; otherwise, <strong>null</strong> if there is no <xref href=\"System.ComponentModel.PropertyDescriptor\" data-throw-if-not-resolved=\"false\"></xref> responsible for the call.</p>\n"
+  seealso:
+  - type: System.ComponentModel.PropertyDescriptor
+    commentId: T:System.ComponentModel.PropertyDescriptor
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+  nameWithType: ITypeDescriptorContext.PropertyDescriptor
+- uid: System.ComponentModel.ITypeDescriptorContext.OnComponentChanged
+  commentId: M:System.ComponentModel.ITypeDescriptorContext.OnComponentChanged
+  id: OnComponentChanged
+  parent: System.ComponentModel.ITypeDescriptorContext
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.ComponentModel.ITypeDescriptorContext.OnComponentChanged()
+  type: Method
+  source:
+    remote:
+      path: src/System.ComponentModel.TypeConverter/src/System/ComponentModel/ITypeDescriptorContext.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: OnComponentChanged
+    path: src/System.ComponentModel.TypeConverter/src/System/ComponentModel/ITypeDescriptorContext.cs
+    startLine: 39
+  assemblies:
+  - System.ComponentModel.TypeConverter
+  namespace: System.ComponentModel
+  summary: "\n<p>Raises the <xref href=\"System.ComponentModel.Design.IComponentChangeService.ComponentChanged\" data-throw-if-not-resolved=\"false\"></xref> event.</p>\n"
+  syntax:
+    content: void OnComponentChanged()
+    content.vb: Sub OnComponentChanged
+  seealso:
+  - type: System.ComponentModel.Design.IComponentChangeService.ComponentChanged
+    commentId: E:System.ComponentModel.Design.IComponentChangeService.ComponentChanged
+  - type: System.ComponentModel.ITypeDescriptorContext.OnComponentChanging
+    commentId: M:System.ComponentModel.ITypeDescriptorContext.OnComponentChanging
+  nameWithType: ITypeDescriptorContext.OnComponentChanged()
+- uid: System.ComponentModel.ITypeDescriptorContext.OnComponentChanging
+  commentId: M:System.ComponentModel.ITypeDescriptorContext.OnComponentChanging
+  id: OnComponentChanging
+  parent: System.ComponentModel.ITypeDescriptorContext
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.ComponentModel.ITypeDescriptorContext.OnComponentChanging()
+  type: Method
+  source:
+    remote:
+      path: src/System.ComponentModel.TypeConverter/src/System/ComponentModel/ITypeDescriptorContext.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: OnComponentChanging
+    path: src/System.ComponentModel.TypeConverter/src/System/ComponentModel/ITypeDescriptorContext.cs
+    startLine: 33
+  assemblies:
+  - System.ComponentModel.TypeConverter
+  namespace: System.ComponentModel
+  summary: "\n<p>Raises the <xref href=\"System.ComponentModel.Design.IComponentChangeService.ComponentChanging\" data-throw-if-not-resolved=\"false\"></xref> event.</p>\n"
+  syntax:
+    content: bool OnComponentChanging()
+    content.vb: Function OnComponentChanging As Boolean
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if this object can be changed; otherwise, <strong>false</strong>.</p>\n"
+  seealso:
+  - type: System.ComponentModel.Design.IComponentChangeService.ComponentChanging
+    commentId: E:System.ComponentModel.Design.IComponentChangeService.ComponentChanging
+  - type: System.ComponentModel.ITypeDescriptorContext.OnComponentChanged
+    commentId: M:System.ComponentModel.ITypeDescriptorContext.OnComponentChanged
+  nameWithType: ITypeDescriptorContext.OnComponentChanging()
+references:
+- uid: System.ComponentModel
+  isExternal: false
+  name: "XXX"
+  fullName: System.ComponentModel
+  nameWithType: System.ComponentModel
+  commentId: N:System.ComponentModel
+- uid: System.IServiceProvider.GetService(System.Type)
+  parent: System.IServiceProvider
+  isExternal: true
+  name: "XXX"
+  fullName: System.IServiceProvider.GetService(System.Type)
+  spec.csharp:
+  - uid: System.IServiceProvider.GetService(System.Type)
+    name: "XXX"
+    fullName: System.IServiceProvider.GetService
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Type
+    name: "XXX"
+    fullName: System.Type
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.IServiceProvider.GetService(System.Type)
+    name: "XXX"
+    fullName: System.IServiceProvider.GetService
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Type
+    name: "XXX"
+    fullName: System.Type
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: IServiceProvider.GetService(Type)
+  commentId: M:System.IServiceProvider.GetService(System.Type)
+- uid: System.IServiceProvider
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.IServiceProvider
+  nameWithType: IServiceProvider
+  commentId: T:System.IServiceProvider
+- uid: System
+  isExternal: false
+  name: "XXX"
+  fullName: System
+  nameWithType: System
+  commentId: N:System
+- uid: System.ComponentModel.IContainer
+  parent: System.ComponentModel
+  isExternal: false
+  name: "XXX"
+  fullName: System.ComponentModel.IContainer
+  nameWithType: IContainer
+  commentId: T:System.ComponentModel.IContainer
+- uid: System.Object
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Object
+  nameWithType: Object
+  commentId: T:System.Object
+- uid: System.ComponentModel.PropertyDescriptor
+  parent: System.ComponentModel
+  isExternal: false
+  name: "XXX"
+  fullName: System.ComponentModel.PropertyDescriptor
+  nameWithType: PropertyDescriptor
+  commentId: T:System.ComponentModel.PropertyDescriptor
+- uid: System.Boolean
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Boolean
+  nameWithType: Boolean
+  commentId: T:System.Boolean

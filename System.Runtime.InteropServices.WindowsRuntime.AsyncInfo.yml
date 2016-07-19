@@ -1,0 +1,1242 @@
+items:
+- uid: System.Runtime.InteropServices.WindowsRuntime.AsyncInfo
+  commentId: T:System.Runtime.InteropServices.WindowsRuntime.AsyncInfo
+  id: AsyncInfo
+  parent: System.Runtime.InteropServices.WindowsRuntime
+  children:
+  - System.Runtime.InteropServices.WindowsRuntime.AsyncInfo.Run(System.Func{System.Threading.CancellationToken,System.Threading.Tasks.Task})
+  - System.Runtime.InteropServices.WindowsRuntime.AsyncInfo.Run``1(System.Func{System.Threading.CancellationToken,System.IProgress{``0},System.Threading.Tasks.Task})
+  - System.Runtime.InteropServices.WindowsRuntime.AsyncInfo.Run``1(System.Func{System.Threading.CancellationToken,System.Threading.Tasks.Task{``0}})
+  - System.Runtime.InteropServices.WindowsRuntime.AsyncInfo.Run``2(System.Func{System.Threading.CancellationToken,System.IProgress{``1},System.Threading.Tasks.Task{``0}})
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  nameWithType: AsyncInfo
+  fullName: System.Runtime.InteropServices.WindowsRuntime.AsyncInfo
+  type: Class
+  source:
+    remote:
+      path: src/System.Runtime.WindowsRuntime/ref/System.Runtime.WindowsRuntime.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: AsyncInfo
+    path: src/System.Runtime.WindowsRuntime/ref/System.Runtime.WindowsRuntime.cs
+    startLine: 77
+  assemblies:
+  - System.Runtime.WindowsRuntime
+  namespace: System.Runtime.InteropServices.WindowsRuntime
+  syntax:
+    content: >-
+      [CLSCompliant(false)]
+
+      [SecurityCritical]
+
+      public class AsyncInfo
+    content.vb: >-
+      <CLSCompliant(False)>
+
+      <SecurityCritical>
+
+      Public Class AsyncInfo
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  attributes:
+  - type: System.CLSCompliantAttribute
+    ctor: System.CLSCompliantAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
+  - type: System.Security.SecurityCriticalAttribute
+    ctor: System.Security.SecurityCriticalAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: System.Runtime.InteropServices.WindowsRuntime.AsyncInfo.Run(System.Func{System.Threading.CancellationToken,System.Threading.Tasks.Task})
+  commentId: M:System.Runtime.InteropServices.WindowsRuntime.AsyncInfo.Run(System.Func{System.Threading.CancellationToken,System.Threading.Tasks.Task})
+  id: Run(System.Func{System.Threading.CancellationToken,System.Threading.Tasks.Task})
+  parent: System.Runtime.InteropServices.WindowsRuntime.AsyncInfo
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  nameWithType: AsyncInfo.Run(Func<CancellationToken, Task>)
+  fullName: System.Runtime.InteropServices.WindowsRuntime.AsyncInfo.Run(System.Func<System.Threading.CancellationToken, System.Threading.Tasks.Task>)
+  type: Method
+  source:
+    remote:
+      path: src/System.Runtime.WindowsRuntime/ref/System.Runtime.WindowsRuntime.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Run
+    path: src/System.Runtime.WindowsRuntime/ref/System.Runtime.WindowsRuntime.cs
+    startLine: 81
+  assemblies:
+  - System.Runtime.WindowsRuntime
+  namespace: System.Runtime.InteropServices.WindowsRuntime
+  syntax:
+    content: public static IAsyncAction Run(Func<CancellationToken, Task> taskProvider)
+    content.vb: Public Shared Function Run(taskProvider As Func(Of CancellationToken, Task)) As IAsyncAction
+    parameters:
+    - id: taskProvider
+      type: System.Func{System.Threading.CancellationToken,System.Threading.Tasks.Task}
+    return:
+      type: Windows.Foundation.IAsyncAction
+  nameWithType.vb: AsyncInfo.Run(Func(Of CancellationToken, Task))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: System.Runtime.InteropServices.WindowsRuntime.AsyncInfo.Run(System.Func(Of System.Threading.CancellationToken, System.Threading.Tasks.Task))
+  name.vb: Run(Func(Of CancellationToken, Task))
+- uid: System.Runtime.InteropServices.WindowsRuntime.AsyncInfo.Run``1(System.Func{System.Threading.CancellationToken,System.IProgress{``0},System.Threading.Tasks.Task})
+  commentId: M:System.Runtime.InteropServices.WindowsRuntime.AsyncInfo.Run``1(System.Func{System.Threading.CancellationToken,System.IProgress{``0},System.Threading.Tasks.Task})
+  id: Run``1(System.Func{System.Threading.CancellationToken,System.IProgress{``0},System.Threading.Tasks.Task})
+  parent: System.Runtime.InteropServices.WindowsRuntime.AsyncInfo
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  nameWithType: AsyncInfo.Run<TProgress>(Func<CancellationToken, IProgress<TProgress>, Task>)
+  fullName: System.Runtime.InteropServices.WindowsRuntime.AsyncInfo.Run<TProgress>(System.Func<System.Threading.CancellationToken, System.IProgress<TProgress>, System.Threading.Tasks.Task>)
+  type: Method
+  source:
+    remote:
+      path: src/System.Runtime.WindowsRuntime/ref/System.Runtime.WindowsRuntime.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Run
+    path: src/System.Runtime.WindowsRuntime/ref/System.Runtime.WindowsRuntime.cs
+    startLine: 82
+  assemblies:
+  - System.Runtime.WindowsRuntime
+  namespace: System.Runtime.InteropServices.WindowsRuntime
+  syntax:
+    content: public static IAsyncActionWithProgress<TProgress> Run<TProgress>(Func<CancellationToken, IProgress<TProgress>, Task> taskProvider)
+    content.vb: Public Shared Function Run(Of TProgress)(taskProvider As Func(Of CancellationToken, IProgress(Of TProgress), Task)) As IAsyncActionWithProgress(Of TProgress)
+    parameters:
+    - id: taskProvider
+      type: System.Func{System.Threading.CancellationToken,System.IProgress{{TProgress}},System.Threading.Tasks.Task}
+    typeParameters:
+    - id: TProgress
+    return:
+      type: Windows.Foundation.IAsyncActionWithProgress{{TProgress}}
+  nameWithType.vb: AsyncInfo.Run(Of TProgress)(Func(Of CancellationToken, IProgress(Of TProgress), Task))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: System.Runtime.InteropServices.WindowsRuntime.AsyncInfo.Run(Of TProgress)(System.Func(Of System.Threading.CancellationToken, System.IProgress(Of TProgress), System.Threading.Tasks.Task))
+  name.vb: Run(Of TProgress)(Func(Of CancellationToken, IProgress(Of TProgress), Task))
+- uid: System.Runtime.InteropServices.WindowsRuntime.AsyncInfo.Run``1(System.Func{System.Threading.CancellationToken,System.Threading.Tasks.Task{``0}})
+  commentId: M:System.Runtime.InteropServices.WindowsRuntime.AsyncInfo.Run``1(System.Func{System.Threading.CancellationToken,System.Threading.Tasks.Task{``0}})
+  id: Run``1(System.Func{System.Threading.CancellationToken,System.Threading.Tasks.Task{``0}})
+  parent: System.Runtime.InteropServices.WindowsRuntime.AsyncInfo
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  nameWithType: AsyncInfo.Run<TResult>(Func<CancellationToken, Task<TResult>>)
+  fullName: System.Runtime.InteropServices.WindowsRuntime.AsyncInfo.Run<TResult>(System.Func<System.Threading.CancellationToken, System.Threading.Tasks.Task<TResult>>)
+  type: Method
+  source:
+    remote:
+      path: src/System.Runtime.WindowsRuntime/ref/System.Runtime.WindowsRuntime.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Run
+    path: src/System.Runtime.WindowsRuntime/ref/System.Runtime.WindowsRuntime.cs
+    startLine: 83
+  assemblies:
+  - System.Runtime.WindowsRuntime
+  namespace: System.Runtime.InteropServices.WindowsRuntime
+  syntax:
+    content: public static IAsyncOperation<TResult> Run<TResult>(Func<CancellationToken, Task<TResult>> taskProvider)
+    content.vb: Public Shared Function Run(Of TResult)(taskProvider As Func(Of CancellationToken, Task(Of TResult))) As IAsyncOperation(Of TResult)
+    parameters:
+    - id: taskProvider
+      type: System.Func{System.Threading.CancellationToken,System.Threading.Tasks.Task{{TResult}}}
+    typeParameters:
+    - id: TResult
+    return:
+      type: Windows.Foundation.IAsyncOperation{{TResult}}
+  nameWithType.vb: AsyncInfo.Run(Of TResult)(Func(Of CancellationToken, Task(Of TResult)))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: System.Runtime.InteropServices.WindowsRuntime.AsyncInfo.Run(Of TResult)(System.Func(Of System.Threading.CancellationToken, System.Threading.Tasks.Task(Of TResult)))
+  name.vb: Run(Of TResult)(Func(Of CancellationToken, Task(Of TResult)))
+- uid: System.Runtime.InteropServices.WindowsRuntime.AsyncInfo.Run``2(System.Func{System.Threading.CancellationToken,System.IProgress{``1},System.Threading.Tasks.Task{``0}})
+  commentId: M:System.Runtime.InteropServices.WindowsRuntime.AsyncInfo.Run``2(System.Func{System.Threading.CancellationToken,System.IProgress{``1},System.Threading.Tasks.Task{``0}})
+  id: Run``2(System.Func{System.Threading.CancellationToken,System.IProgress{``1},System.Threading.Tasks.Task{``0}})
+  parent: System.Runtime.InteropServices.WindowsRuntime.AsyncInfo
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  nameWithType: AsyncInfo.Run<TResult, TProgress>(Func<CancellationToken, IProgress<TProgress>, Task<TResult>>)
+  fullName: System.Runtime.InteropServices.WindowsRuntime.AsyncInfo.Run<TResult, TProgress>(System.Func<System.Threading.CancellationToken, System.IProgress<TProgress>, System.Threading.Tasks.Task<TResult>>)
+  type: Method
+  source:
+    remote:
+      path: src/System.Runtime.WindowsRuntime/ref/System.Runtime.WindowsRuntime.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Run
+    path: src/System.Runtime.WindowsRuntime/ref/System.Runtime.WindowsRuntime.cs
+    startLine: 84
+  assemblies:
+  - System.Runtime.WindowsRuntime
+  namespace: System.Runtime.InteropServices.WindowsRuntime
+  syntax:
+    content: public static IAsyncOperationWithProgress<TResult, TProgress> Run<TResult, TProgress>(Func<CancellationToken, IProgress<TProgress>, Task<TResult>> taskProvider)
+    content.vb: Public Shared Function Run(Of TResult, TProgress)(taskProvider As Func(Of CancellationToken, IProgress(Of TProgress), Task(Of TResult))) As IAsyncOperationWithProgress(Of TResult, TProgress)
+    parameters:
+    - id: taskProvider
+      type: System.Func{System.Threading.CancellationToken,System.IProgress{{TProgress}},System.Threading.Tasks.Task{{TResult}}}
+    typeParameters:
+    - id: TResult
+    - id: TProgress
+    return:
+      type: Windows.Foundation.IAsyncOperationWithProgress{{TResult},{TProgress}}
+  nameWithType.vb: AsyncInfo.Run(Of TResult, TProgress)(Func(Of CancellationToken, IProgress(Of TProgress), Task(Of TResult)))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: System.Runtime.InteropServices.WindowsRuntime.AsyncInfo.Run(Of TResult, TProgress)(System.Func(Of System.Threading.CancellationToken, System.IProgress(Of TProgress), System.Threading.Tasks.Task(Of TResult)))
+  name.vb: Run(Of TResult, TProgress)(Func(Of CancellationToken, IProgress(Of TProgress), Task(Of TResult)))
+references:
+- uid: System.Runtime.InteropServices.WindowsRuntime
+  commentId: N:System.Runtime.InteropServices.WindowsRuntime
+  isExternal: false
+  name: "XXX"
+  nameWithType: System.Runtime.InteropServices.WindowsRuntime
+  fullName: System.Runtime.InteropServices.WindowsRuntime
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: false
+  name: "XXX"
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: "XXX"
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    nameWithType: (
+    fullName: (
+  - name: "XXX"
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: "XXX"
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    nameWithType: (
+    fullName: (
+  - name: "XXX"
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    nameWithType: (
+    fullName: (
+  - name: "XXX"
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    nameWithType: (
+    fullName: (
+  - name: "XXX"
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: "XXX"
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    nameWithType: (
+    fullName: (
+  - name: "XXX"
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: "XXX"
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    nameWithType: (
+    fullName: (
+  - name: "XXX"
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    nameWithType: (
+    fullName: (
+  - name: "XXX"
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    nameWithType: (
+    fullName: (
+  - name: "XXX"
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: "XXX"
+  nameWithType: System
+  fullName: System
+- uid: System.Func{System.Threading.CancellationToken,System.Threading.Tasks.Task}
+  commentId: T:System.Func{System.Threading.CancellationToken,System.Threading.Tasks.Task}
+  parent: System
+  definition: System.Func`2
+  name: "XXX"
+  nameWithType: Func<CancellationToken, Task>
+  fullName: System.Func<System.Threading.CancellationToken, System.Threading.Tasks.Task>
+  nameWithType.vb: Func(Of CancellationToken, Task)
+  fullname.vb: System.Func(Of System.Threading.CancellationToken, System.Threading.Tasks.Task)
+  name.vb: Func(Of CancellationToken, Task)
+  spec.csharp:
+  - uid: System.Func`2
+    name: "XXX"
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: "<"
+    nameWithType: <
+    fullName: <
+  - uid: System.Threading.CancellationToken
+    name: "XXX"
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: 'XXX '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.Tasks.Task
+    name: "XXX"
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: "XXX"
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: 'XXX '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Threading.CancellationToken
+    name: "XXX"
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: 'XXX '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.Tasks.Task
+    name: "XXX"
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: "XXX"
+    nameWithType: )
+    fullName: )
+- uid: Windows.Foundation.IAsyncAction
+  isExternal: true
+  name: "XXX"
+  nameWithType: IAsyncAction
+  fullName: Windows.Foundation.IAsyncAction
+- uid: System.Func`2
+  commentId: T:System.Func`2
+  isExternal: false
+  name: "XXX"
+  nameWithType: Func<T, TResult>
+  fullName: System.Func<T, TResult>
+  nameWithType.vb: Func(Of T, TResult)
+  fullname.vb: System.Func(Of T, TResult)
+  name.vb: Func(Of T, TResult)
+  spec.csharp:
+  - uid: System.Func`2
+    name: "XXX"
+    nameWithType: Func
+    fullName: System.Func
+  - name: "<"
+    nameWithType: <
+    fullName: <
+  - name: "XXX"
+    nameWithType: T
+    fullName: T
+  - name: 'XXX '
+    nameWithType: ', '
+    fullName: ', '
+  - name: "XXX"
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: "XXX"
+    nameWithType: Func
+    fullName: System.Func
+  - name: 'XXX '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: "XXX"
+    nameWithType: T
+    fullName: T
+  - name: 'XXX '
+    nameWithType: ', '
+    fullName: ', '
+  - name: "XXX"
+    nameWithType: TResult
+    fullName: TResult
+  - name: "XXX"
+    nameWithType: )
+    fullName: )
+- uid: System.Func{System.Threading.CancellationToken,System.IProgress{{TProgress}},System.Threading.Tasks.Task}
+  commentId: T:System.Func{System.Threading.CancellationToken,System.IProgress{``0},System.Threading.Tasks.Task}
+  parent: System
+  definition: System.Func`3
+  name: "XXX"
+  nameWithType: Func<CancellationToken, IProgress<TProgress>, Task>
+  fullName: System.Func<System.Threading.CancellationToken, System.IProgress<TProgress>, System.Threading.Tasks.Task>
+  nameWithType.vb: Func(Of CancellationToken, IProgress(Of TProgress), Task)
+  fullname.vb: System.Func(Of System.Threading.CancellationToken, System.IProgress(Of TProgress), System.Threading.Tasks.Task)
+  name.vb: Func(Of CancellationToken, IProgress(Of TProgress), Task)
+  spec.csharp:
+  - uid: System.Func`3
+    name: "XXX"
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: "<"
+    nameWithType: <
+    fullName: <
+  - uid: System.Threading.CancellationToken
+    name: "XXX"
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: 'XXX '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.IProgress`1
+    name: "XXX"
+    nameWithType: IProgress
+    fullName: System.IProgress
+    isExternal: true
+  - name: "<"
+    nameWithType: <
+    fullName: <
+  - name: "XXX"
+    nameWithType: TProgress
+    fullName: TProgress
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: 'XXX '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.Tasks.Task
+    name: "XXX"
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`3
+    name: "XXX"
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: 'XXX '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Threading.CancellationToken
+    name: "XXX"
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: 'XXX '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.IProgress`1
+    name: "XXX"
+    nameWithType: IProgress
+    fullName: System.IProgress
+    isExternal: true
+  - name: 'XXX '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: "XXX"
+    nameWithType: TProgress
+    fullName: TProgress
+  - name: "XXX"
+    nameWithType: )
+    fullName: )
+  - name: 'XXX '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.Tasks.Task
+    name: "XXX"
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: "XXX"
+    nameWithType: )
+    fullName: )
+- uid: Windows.Foundation.IAsyncActionWithProgress{{TProgress}}
+  commentId: '!:Windows.Foundation.IAsyncActionWithProgress{``0}'
+  definition: Windows.Foundation.IAsyncActionWithProgress`1
+  name: "XXX"
+  nameWithType: IAsyncActionWithProgress<TProgress>
+  fullName: Windows.Foundation.IAsyncActionWithProgress<TProgress>
+  nameWithType.vb: IAsyncActionWithProgress(Of TProgress)
+  fullname.vb: Windows.Foundation.IAsyncActionWithProgress(Of TProgress)
+  name.vb: IAsyncActionWithProgress(Of TProgress)
+  spec.csharp:
+  - uid: Windows.Foundation.IAsyncActionWithProgress`1
+    name: "XXX"
+    nameWithType: IAsyncActionWithProgress
+    fullName: Windows.Foundation.IAsyncActionWithProgress
+    isExternal: true
+  - name: "<"
+    nameWithType: <
+    fullName: <
+  - name: "XXX"
+    nameWithType: TProgress
+    fullName: TProgress
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Windows.Foundation.IAsyncActionWithProgress`1
+    name: "XXX"
+    nameWithType: IAsyncActionWithProgress
+    fullName: Windows.Foundation.IAsyncActionWithProgress
+    isExternal: true
+  - name: 'XXX '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: "XXX"
+    nameWithType: TProgress
+    fullName: TProgress
+  - name: "XXX"
+    nameWithType: )
+    fullName: )
+- uid: System.Func`3
+  commentId: T:System.Func`3
+  isExternal: false
+  name: "XXX"
+  nameWithType: Func<T1, T2, TResult>
+  fullName: System.Func<T1, T2, TResult>
+  nameWithType.vb: Func(Of T1, T2, TResult)
+  fullname.vb: System.Func(Of T1, T2, TResult)
+  name.vb: Func(Of T1, T2, TResult)
+  spec.csharp:
+  - uid: System.Func`3
+    name: "XXX"
+    nameWithType: Func
+    fullName: System.Func
+  - name: "<"
+    nameWithType: <
+    fullName: <
+  - name: "XXX"
+    nameWithType: T1
+    fullName: T1
+  - name: 'XXX '
+    nameWithType: ', '
+    fullName: ', '
+  - name: "XXX"
+    nameWithType: T2
+    fullName: T2
+  - name: 'XXX '
+    nameWithType: ', '
+    fullName: ', '
+  - name: "XXX"
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`3
+    name: "XXX"
+    nameWithType: Func
+    fullName: System.Func
+  - name: 'XXX '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: "XXX"
+    nameWithType: T1
+    fullName: T1
+  - name: 'XXX '
+    nameWithType: ', '
+    fullName: ', '
+  - name: "XXX"
+    nameWithType: T2
+    fullName: T2
+  - name: 'XXX '
+    nameWithType: ', '
+    fullName: ', '
+  - name: "XXX"
+    nameWithType: TResult
+    fullName: TResult
+  - name: "XXX"
+    nameWithType: )
+    fullName: )
+- uid: Windows.Foundation.IAsyncActionWithProgress`1
+  isExternal: true
+  name: "XXX"
+  nameWithType: IAsyncActionWithProgress<>
+  fullName: Windows.Foundation.IAsyncActionWithProgress<>
+  nameWithType.vb: IAsyncActionWithProgress(Of )
+  fullname.vb: Windows.Foundation.IAsyncActionWithProgress(Of )
+  name.vb: IAsyncActionWithProgress(Of )
+  spec.csharp:
+  - uid: Windows.Foundation.IAsyncActionWithProgress`1
+    name: "XXX"
+    nameWithType: IAsyncActionWithProgress
+    fullName: Windows.Foundation.IAsyncActionWithProgress
+    isExternal: true
+  - name: "<"
+    nameWithType: <
+    fullName: <
+  - name: 
+    nameWithType: 
+    fullName: 
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Windows.Foundation.IAsyncActionWithProgress`1
+    name: "XXX"
+    nameWithType: IAsyncActionWithProgress
+    fullName: Windows.Foundation.IAsyncActionWithProgress
+    isExternal: true
+  - name: 'XXX '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: 
+    nameWithType: 
+    fullName: 
+  - name: "XXX"
+    nameWithType: )
+    fullName: )
+- uid: System.Func{System.Threading.CancellationToken,System.Threading.Tasks.Task{{TResult}}}
+  commentId: T:System.Func{System.Threading.CancellationToken,System.Threading.Tasks.Task{``0}}
+  parent: System
+  definition: System.Func`2
+  name: "XXX"
+  nameWithType: Func<CancellationToken, Task<TResult>>
+  fullName: System.Func<System.Threading.CancellationToken, System.Threading.Tasks.Task<TResult>>
+  nameWithType.vb: Func(Of CancellationToken, Task(Of TResult))
+  fullname.vb: System.Func(Of System.Threading.CancellationToken, System.Threading.Tasks.Task(Of TResult))
+  name.vb: Func(Of CancellationToken, Task(Of TResult))
+  spec.csharp:
+  - uid: System.Func`2
+    name: "XXX"
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: "<"
+    nameWithType: <
+    fullName: <
+  - uid: System.Threading.CancellationToken
+    name: "XXX"
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: 'XXX '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.Tasks.Task`1
+    name: "XXX"
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: "<"
+    nameWithType: <
+    fullName: <
+  - name: "XXX"
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: "XXX"
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: 'XXX '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Threading.CancellationToken
+    name: "XXX"
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: 'XXX '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.Tasks.Task`1
+    name: "XXX"
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: 'XXX '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: "XXX"
+    nameWithType: TResult
+    fullName: TResult
+  - name: "XXX"
+    nameWithType: )
+    fullName: )
+  - name: "XXX"
+    nameWithType: )
+    fullName: )
+- uid: Windows.Foundation.IAsyncOperation{{TResult}}
+  commentId: '!:Windows.Foundation.IAsyncOperation{``0}'
+  definition: Windows.Foundation.IAsyncOperation`1
+  name: "XXX"
+  nameWithType: IAsyncOperation<TResult>
+  fullName: Windows.Foundation.IAsyncOperation<TResult>
+  nameWithType.vb: IAsyncOperation(Of TResult)
+  fullname.vb: Windows.Foundation.IAsyncOperation(Of TResult)
+  name.vb: IAsyncOperation(Of TResult)
+  spec.csharp:
+  - uid: Windows.Foundation.IAsyncOperation`1
+    name: "XXX"
+    nameWithType: IAsyncOperation
+    fullName: Windows.Foundation.IAsyncOperation
+    isExternal: true
+  - name: "<"
+    nameWithType: <
+    fullName: <
+  - name: "XXX"
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Windows.Foundation.IAsyncOperation`1
+    name: "XXX"
+    nameWithType: IAsyncOperation
+    fullName: Windows.Foundation.IAsyncOperation
+    isExternal: true
+  - name: 'XXX '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: "XXX"
+    nameWithType: TResult
+    fullName: TResult
+  - name: "XXX"
+    nameWithType: )
+    fullName: )
+- uid: Windows.Foundation.IAsyncOperation`1
+  isExternal: true
+  name: "XXX"
+  nameWithType: IAsyncOperation<>
+  fullName: Windows.Foundation.IAsyncOperation<>
+  nameWithType.vb: IAsyncOperation(Of )
+  fullname.vb: Windows.Foundation.IAsyncOperation(Of )
+  name.vb: IAsyncOperation(Of )
+  spec.csharp:
+  - uid: Windows.Foundation.IAsyncOperation`1
+    name: "XXX"
+    nameWithType: IAsyncOperation
+    fullName: Windows.Foundation.IAsyncOperation
+    isExternal: true
+  - name: "<"
+    nameWithType: <
+    fullName: <
+  - name: 
+    nameWithType: 
+    fullName: 
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Windows.Foundation.IAsyncOperation`1
+    name: "XXX"
+    nameWithType: IAsyncOperation
+    fullName: Windows.Foundation.IAsyncOperation
+    isExternal: true
+  - name: 'XXX '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: 
+    nameWithType: 
+    fullName: 
+  - name: "XXX"
+    nameWithType: )
+    fullName: )
+- uid: System.Func{System.Threading.CancellationToken,System.IProgress{{TProgress}},System.Threading.Tasks.Task{{TResult}}}
+  commentId: T:System.Func{System.Threading.CancellationToken,System.IProgress{``1},System.Threading.Tasks.Task{``0}}
+  parent: System
+  definition: System.Func`3
+  name: "XXX"
+  nameWithType: Func<CancellationToken, IProgress<TProgress>, Task<TResult>>
+  fullName: System.Func<System.Threading.CancellationToken, System.IProgress<TProgress>, System.Threading.Tasks.Task<TResult>>
+  nameWithType.vb: Func(Of CancellationToken, IProgress(Of TProgress), Task(Of TResult))
+  fullname.vb: System.Func(Of System.Threading.CancellationToken, System.IProgress(Of TProgress), System.Threading.Tasks.Task(Of TResult))
+  name.vb: Func(Of CancellationToken, IProgress(Of TProgress), Task(Of TResult))
+  spec.csharp:
+  - uid: System.Func`3
+    name: "XXX"
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: "<"
+    nameWithType: <
+    fullName: <
+  - uid: System.Threading.CancellationToken
+    name: "XXX"
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: 'XXX '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.IProgress`1
+    name: "XXX"
+    nameWithType: IProgress
+    fullName: System.IProgress
+    isExternal: true
+  - name: "<"
+    nameWithType: <
+    fullName: <
+  - name: "XXX"
+    nameWithType: TProgress
+    fullName: TProgress
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: 'XXX '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.Tasks.Task`1
+    name: "XXX"
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: "<"
+    nameWithType: <
+    fullName: <
+  - name: "XXX"
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`3
+    name: "XXX"
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: 'XXX '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Threading.CancellationToken
+    name: "XXX"
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: 'XXX '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.IProgress`1
+    name: "XXX"
+    nameWithType: IProgress
+    fullName: System.IProgress
+    isExternal: true
+  - name: 'XXX '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: "XXX"
+    nameWithType: TProgress
+    fullName: TProgress
+  - name: "XXX"
+    nameWithType: )
+    fullName: )
+  - name: 'XXX '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.Tasks.Task`1
+    name: "XXX"
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: 'XXX '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: "XXX"
+    nameWithType: TResult
+    fullName: TResult
+  - name: "XXX"
+    nameWithType: )
+    fullName: )
+  - name: "XXX"
+    nameWithType: )
+    fullName: )
+- uid: Windows.Foundation.IAsyncOperationWithProgress{{TResult},{TProgress}}
+  commentId: '!:Windows.Foundation.IAsyncOperationWithProgress{``0,``1}'
+  definition: Windows.Foundation.IAsyncOperationWithProgress`2
+  name: "XXX"
+  nameWithType: IAsyncOperationWithProgress<TResult, TProgress>
+  fullName: Windows.Foundation.IAsyncOperationWithProgress<TResult, TProgress>
+  nameWithType.vb: IAsyncOperationWithProgress(Of TResult, TProgress)
+  fullname.vb: Windows.Foundation.IAsyncOperationWithProgress(Of TResult, TProgress)
+  name.vb: IAsyncOperationWithProgress(Of TResult, TProgress)
+  spec.csharp:
+  - uid: Windows.Foundation.IAsyncOperationWithProgress`2
+    name: "XXX"
+    nameWithType: IAsyncOperationWithProgress
+    fullName: Windows.Foundation.IAsyncOperationWithProgress
+    isExternal: true
+  - name: "<"
+    nameWithType: <
+    fullName: <
+  - name: "XXX"
+    nameWithType: TResult
+    fullName: TResult
+  - name: 'XXX '
+    nameWithType: ', '
+    fullName: ', '
+  - name: "XXX"
+    nameWithType: TProgress
+    fullName: TProgress
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Windows.Foundation.IAsyncOperationWithProgress`2
+    name: "XXX"
+    nameWithType: IAsyncOperationWithProgress
+    fullName: Windows.Foundation.IAsyncOperationWithProgress
+    isExternal: true
+  - name: 'XXX '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: "XXX"
+    nameWithType: TResult
+    fullName: TResult
+  - name: 'XXX '
+    nameWithType: ', '
+    fullName: ', '
+  - name: "XXX"
+    nameWithType: TProgress
+    fullName: TProgress
+  - name: "XXX"
+    nameWithType: )
+    fullName: )
+- uid: Windows.Foundation.IAsyncOperationWithProgress`2
+  isExternal: true
+  name: "XXX"
+  nameWithType: IAsyncOperationWithProgress<, >
+  fullName: Windows.Foundation.IAsyncOperationWithProgress<, >
+  nameWithType.vb: IAsyncOperationWithProgress(Of , )
+  fullname.vb: Windows.Foundation.IAsyncOperationWithProgress(Of , )
+  name.vb: IAsyncOperationWithProgress(Of , )
+  spec.csharp:
+  - uid: Windows.Foundation.IAsyncOperationWithProgress`2
+    name: "XXX"
+    nameWithType: IAsyncOperationWithProgress
+    fullName: Windows.Foundation.IAsyncOperationWithProgress
+    isExternal: true
+  - name: "<"
+    nameWithType: <
+    fullName: <
+  - name: 
+    nameWithType: 
+    fullName: 
+  - name: 'XXX '
+    nameWithType: ', '
+    fullName: ', '
+  - name: 
+    nameWithType: 
+    fullName: 
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Windows.Foundation.IAsyncOperationWithProgress`2
+    name: "XXX"
+    nameWithType: IAsyncOperationWithProgress
+    fullName: Windows.Foundation.IAsyncOperationWithProgress
+    isExternal: true
+  - name: 'XXX '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: 
+    nameWithType: 
+    fullName: 
+  - name: 'XXX '
+    nameWithType: ', '
+    fullName: ', '
+  - name: 
+    nameWithType: 
+    fullName: 
+  - name: "XXX"
+    nameWithType: )
+    fullName: )

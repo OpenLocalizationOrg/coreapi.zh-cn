@@ -1,0 +1,240 @@
+items:
+- uid: System.ComponentModel.IContainer
+  commentId: T:System.ComponentModel.IContainer
+  id: IContainer
+  parent: System.ComponentModel
+  children:
+  - System.ComponentModel.IContainer.Add(System.ComponentModel.IComponent)
+  - System.ComponentModel.IContainer.Add(System.ComponentModel.IComponent,System.String)
+  - System.ComponentModel.IContainer.Components
+  - System.ComponentModel.IContainer.Remove(System.ComponentModel.IComponent)
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.ComponentModel.IContainer
+  type: Interface
+  source:
+    remote:
+      path: src/System.ComponentModel.Primitives/src/System/ComponentModel/IContainer.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: IContainer
+    path: src/System.ComponentModel.Primitives/src/System/ComponentModel/IContainer.cs
+    startLine: 21
+  assemblies:
+  - System.ComponentModel.Primitives
+  namespace: System.ComponentModel
+  summary: "\n<p>Provides functionality for containers. Containers are objects that logically contain zero or more components.</p>\n"
+  syntax:
+    content: 'public interface IContainer : IDisposable'
+    content.vb: >-
+      Public Interface IContainer
+          Inherits IDisposable
+  seealso:
+  - type: System.ComponentModel.Component
+    commentId: T:System.ComponentModel.Component
+  - type: System.ComponentModel.IComponent
+    commentId: T:System.ComponentModel.IComponent
+  - type: System.ComponentModel.Container
+    commentId: T:System.ComponentModel.Container
+  inheritedMembers:
+  - System.IDisposable.Dispose
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+  nameWithType: IContainer
+- uid: System.ComponentModel.IContainer.Components
+  commentId: P:System.ComponentModel.IContainer.Components
+  id: Components
+  parent: System.ComponentModel.IContainer
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.ComponentModel.IContainer.Components
+  type: Property
+  source:
+    remote:
+      path: src/System.ComponentModel.Primitives/src/System/ComponentModel/IContainer.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Components
+    path: src/System.ComponentModel.Primitives/src/System/ComponentModel/IContainer.cs
+    startLine: 41
+  assemblies:
+  - System.ComponentModel.Primitives
+  namespace: System.ComponentModel
+  summary: "\n<p>Gets all the components in the <xref href=\"System.ComponentModel.IContainer\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  syntax:
+    content: ComponentCollection Components { get; }
+    content.vb: ReadOnly Property Components As ComponentCollection
+    parameters: []
+    return:
+      type: System.ComponentModel.ComponentCollection
+      description: "\n<p>A collection of <xref href=\"System.ComponentModel.IComponent\" data-throw-if-not-resolved=\"false\"></xref> objects that represents all the components in the <xref href=\"System.ComponentModel.IContainer\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+  nameWithType: IContainer.Components
+- uid: System.ComponentModel.IContainer.Add(System.ComponentModel.IComponent)
+  commentId: M:System.ComponentModel.IContainer.Add(System.ComponentModel.IComponent)
+  id: Add(System.ComponentModel.IComponent)
+  parent: System.ComponentModel.IContainer
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.ComponentModel.IContainer.Add(System.ComponentModel.IComponent)
+  type: Method
+  source:
+    remote:
+      path: src/System.ComponentModel.Primitives/src/System/ComponentModel/IContainer.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Add
+    path: src/System.ComponentModel.Primitives/src/System/ComponentModel/IContainer.cs
+    startLine: 28
+  assemblies:
+  - System.ComponentModel.Primitives
+  namespace: System.ComponentModel
+  summary: "\n<p>Adds the specified <xref href=\"System.ComponentModel.IComponent\" data-throw-if-not-resolved=\"false\"></xref> to the <xref href=\"System.ComponentModel.IContainer\" data-throw-if-not-resolved=\"false\"></xref> at the end of the list.</p>\n"
+  syntax:
+    content: void Add(IComponent component)
+    content.vb: Sub Add(component As IComponent)
+    parameters:
+    - id: component
+      type: System.ComponentModel.IComponent
+      description: "\n<p>The <xref href=\"System.ComponentModel.IComponent\" data-throw-if-not-resolved=\"false\"></xref> to add. </p>\n"
+  nameWithType: IContainer.Add(IComponent)
+- uid: System.ComponentModel.IContainer.Add(System.ComponentModel.IComponent,System.String)
+  commentId: M:System.ComponentModel.IContainer.Add(System.ComponentModel.IComponent,System.String)
+  id: Add(System.ComponentModel.IComponent,System.String)
+  parent: System.ComponentModel.IContainer
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.ComponentModel.IContainer.Add(System.ComponentModel.IComponent, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/System.ComponentModel.Primitives/src/System/ComponentModel/IContainer.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Add
+    path: src/System.ComponentModel.Primitives/src/System/ComponentModel/IContainer.cs
+    startLine: 35
+  assemblies:
+  - System.ComponentModel.Primitives
+  namespace: System.ComponentModel
+  summary: "\n<p>Adds the specified <xref href=\"System.ComponentModel.IComponent\" data-throw-if-not-resolved=\"false\"></xref> to the <xref href=\"System.ComponentModel.IContainer\" data-throw-if-not-resolved=\"false\"></xref> at the end of the list, and assigns a name to the component.</p>\n"
+  syntax:
+    content: void Add(IComponent component, string name)
+    content.vb: Sub Add(component As IComponent, name As String)
+    parameters:
+    - id: component
+      type: System.ComponentModel.IComponent
+      description: "\n<p>The <xref href=\"System.ComponentModel.IComponent\" data-throw-if-not-resolved=\"false\"></xref> to add. </p>\n"
+    - id: name
+      type: System.String
+      description: "\n<p>The unique, case-insensitive name to assign to the component.</p>\n<p>-or- </p>\n<p>\n<strong>null</strong> that leaves the component unnamed. </p>\n"
+  nameWithType: IContainer.Add(IComponent, String)
+- uid: System.ComponentModel.IContainer.Remove(System.ComponentModel.IComponent)
+  commentId: M:System.ComponentModel.IContainer.Remove(System.ComponentModel.IComponent)
+  id: Remove(System.ComponentModel.IComponent)
+  parent: System.ComponentModel.IContainer
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.ComponentModel.IContainer.Remove(System.ComponentModel.IComponent)
+  type: Method
+  source:
+    remote:
+      path: src/System.ComponentModel.Primitives/src/System/ComponentModel/IContainer.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Remove
+    path: src/System.ComponentModel.Primitives/src/System/ComponentModel/IContainer.cs
+    startLine: 47
+  assemblies:
+  - System.ComponentModel.Primitives
+  namespace: System.ComponentModel
+  summary: "\n<p>Removes a component from the <xref href=\"System.ComponentModel.IContainer\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  syntax:
+    content: void Remove(IComponent component)
+    content.vb: Sub Remove(component As IComponent)
+    parameters:
+    - id: component
+      type: System.ComponentModel.IComponent
+      description: "\n<p>The <xref href=\"System.ComponentModel.IComponent\" data-throw-if-not-resolved=\"false\"></xref> to remove. </p>\n"
+  nameWithType: IContainer.Remove(IComponent)
+references:
+- uid: System.ComponentModel
+  isExternal: false
+  name: "XXX"
+  fullName: System.ComponentModel
+  nameWithType: System.ComponentModel
+  commentId: N:System.ComponentModel
+- uid: System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: false
+  name: "XXX"
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: "XXX"
+    fullName: System.IDisposable.Dispose
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: "XXX"
+    fullName: System.IDisposable.Dispose
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: IDisposable.Dispose()
+  commentId: M:System.IDisposable.Dispose
+- uid: System.IDisposable
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.IDisposable
+  nameWithType: IDisposable
+  commentId: T:System.IDisposable
+- uid: System
+  isExternal: false
+  name: "XXX"
+  fullName: System
+  nameWithType: System
+  commentId: N:System
+- uid: System.ComponentModel.ComponentCollection
+  parent: System.ComponentModel
+  isExternal: false
+  name: "XXX"
+  fullName: System.ComponentModel.ComponentCollection
+  nameWithType: ComponentCollection
+  commentId: T:System.ComponentModel.ComponentCollection
+- uid: System.ComponentModel.IComponent
+  parent: System.ComponentModel
+  isExternal: false
+  name: "XXX"
+  fullName: System.ComponentModel.IComponent
+  nameWithType: IComponent
+  commentId: T:System.ComponentModel.IComponent
+- uid: System.String
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.String
+  nameWithType: String
+  commentId: T:System.String

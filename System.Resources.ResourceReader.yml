@@ -1,0 +1,520 @@
+items:
+- uid: System.Resources.ResourceReader
+  commentId: T:System.Resources.ResourceReader
+  id: ResourceReader
+  parent: System.Resources
+  children:
+  - System.Resources.ResourceReader.#ctor(System.IO.Stream)
+  - System.Resources.ResourceReader.Dispose
+  - System.Resources.ResourceReader.GetEnumerator
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Resources.ResourceReader
+  type: Class
+  source:
+    remote:
+      path: src/mscorlib/src/System/Resources/ResourceReader.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: ResourceReader
+    path: src/mscorlib/src/System/Resources/ResourceReader.cs
+    startLine: 74
+  assemblies:
+  - System.Resources.Reader
+  namespace: System.Resources
+  summary: "\n<p>Enumerates the resources in a binary resources (.resources) file by reading sequential resource name/value pairs.</p>\n<p>\n<strong>Security Note</strong>: Calling methods in this class with untrusted data is a security risk. Call the methods in the class only with trusted data. For more information, see <see href=\"http://curah.microsoft.com/57301/security-some-apis-are-not-necessarily-appropriate-for-untrusted-input\">Untrusted Data Security Risks</see>.</p>\n"
+  syntax:
+    content: >-
+      [ComVisible(true)]
+
+      public sealed class ResourceReader : IResourceReader, IEnumerable, IDisposable
+    content.vb: >-
+      <ComVisible(True)>
+
+      Public NotInheritable Class ResourceReader
+          Implements IResourceReader, IEnumerable, IDisposable
+  inheritance:
+  - System.Object
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+  nameWithType: ResourceReader
+- uid: System.Resources.ResourceReader.#ctor(System.IO.Stream)
+  commentId: M:System.Resources.ResourceReader.#ctor(System.IO.Stream)
+  id: '#ctor(System.IO.Stream)'
+  parent: System.Resources.ResourceReader
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Resources.ResourceReader.ResourceReader(System.IO.Stream)
+  type: Constructor
+  source:
+    remote:
+      path: src/mscorlib/src/System/Resources/ResourceReader.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: .ctor
+    path: src/mscorlib/src/System/Resources/ResourceReader.cs
+    startLine: 174
+  assemblies:
+  - System.Resources.Reader
+  namespace: System.Resources
+  summary: "\n<p>Initializes a new instance of the <xref href=\"System.Resources.ResourceReader\" data-throw-if-not-resolved=\"false\"></xref> class for the specified stream.</p>\n"
+  syntax:
+    content: >-
+      [SecurityCritical]
+
+      public ResourceReader(Stream stream)
+    content.vb: >-
+      <SecurityCritical>
+
+      Public Sub New(stream As Stream)
+    parameters:
+    - id: stream
+      type: System.IO.Stream
+      description: "\n<p>The input stream for reading resources. </p>\n"
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>The <em>stream</em> parameter is not readable. </p>\n"
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>The <em>stream</em> parameter is <strong>null</strong>. </p>\n"
+  - type: System.IO.IOException
+    commentId: T:System.IO.IOException
+    description: "\n<p>An I/O error has occurred while accessing <em>stream</em>. </p>\n"
+  seealso:
+  - type: System.Reflection.Assembly.GetManifestResourceStream(System.String)
+    commentId: M:System.Reflection.Assembly.GetManifestResourceStream(System.String)
+  see:
+  - type: System.Security.Permissions.SecurityPermission
+    commentId: T:System.Security.Permissions.SecurityPermission
+  - type: System.Security.SecurityCriticalAttribute
+    commentId: T:System.Security.SecurityCriticalAttribute
+  attributes:
+  - type: System.Security.SecurityCriticalAttribute
+    ctor: System.Security.SecurityCriticalAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: ResourceReader.ResourceReader(Stream)
+- uid: System.Resources.ResourceReader.Dispose
+  commentId: M:System.Resources.ResourceReader.Dispose
+  id: Dispose
+  parent: System.Resources.ResourceReader
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Resources.ResourceReader.Dispose()
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Resources/ResourceReader.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Dispose
+    path: src/mscorlib/src/System/Resources/ResourceReader.cs
+    startLine: 218
+  assemblies:
+  - System.Resources.Reader
+  namespace: System.Resources
+  summary: "\n<p>Releases all resources used by the current instance of the <xref href=\"System.Resources.ResourceReader\" data-throw-if-not-resolved=\"false\"></xref> class.</p>\n"
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose
+  implements:
+  - System.IDisposable.Dispose
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: ResourceReader.Dispose()
+- uid: System.Resources.ResourceReader.GetEnumerator
+  commentId: M:System.Resources.ResourceReader.GetEnumerator
+  id: GetEnumerator
+  parent: System.Resources.ResourceReader
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Resources.ResourceReader.GetEnumerator()
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Resources/ResourceReader.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: GetEnumerator
+    path: src/mscorlib/src/System/Resources/ResourceReader.cs
+    startLine: 300
+  assemblies:
+  - System.Resources.Reader
+  namespace: System.Resources
+  summary: "\n<p>Returns an enumerator for this <xref href=\"System.Resources.ResourceReader\" data-throw-if-not-resolved=\"false\"></xref> object.</p>\n"
+  syntax:
+    content: public IDictionaryEnumerator GetEnumerator()
+    content.vb: Public Function GetEnumerator As IDictionaryEnumerator
+    return:
+      type: System.Collections.IDictionaryEnumerator
+      description: "\n<p>An enumerator for this <xref href=\"System.Resources.ResourceReader\" data-throw-if-not-resolved=\"false\"></xref> object.</p>\n"
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: "\n<p>The reader has been closed or disposed, and cannot be accessed. </p>\n"
+  seealso:
+  - type: System.Collections.IDictionary
+    commentId: T:System.Collections.IDictionary
+  - type: System.Collections.IDictionaryEnumerator
+    commentId: T:System.Collections.IDictionaryEnumerator
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: ResourceReader.GetEnumerator()
+references:
+- uid: System.Resources
+  isExternal: false
+  name: "XXX"
+  fullName: System.Resources
+  nameWithType: System.Resources
+  commentId: N:System.Resources
+- uid: System.Object
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Object
+  nameWithType: Object
+  commentId: T:System.Object
+- uid: System.IDisposable
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.IDisposable
+  nameWithType: IDisposable
+  commentId: T:System.IDisposable
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.ToString()
+  commentId: M:System.Object.ToString
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.Equals(Object)
+  commentId: M:System.Object.Equals(System.Object)
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.Equals(Object, Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.GetHashCode()
+  commentId: M:System.Object.GetHashCode
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.GetType()
+  commentId: M:System.Object.GetType
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.MemberwiseClone()
+  commentId: M:System.Object.MemberwiseClone
+- uid: System
+  isExternal: false
+  name: "XXX"
+  fullName: System
+  nameWithType: System
+  commentId: N:System
+- uid: System.IO.Stream
+  parent: System.IO
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.Stream
+  nameWithType: Stream
+  commentId: T:System.IO.Stream
+- uid: System.IO
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO
+  nameWithType: System.IO
+  commentId: N:System.IO
+- uid: System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: false
+  name: "XXX"
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: "XXX"
+    fullName: System.IDisposable.Dispose
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: "XXX"
+    fullName: System.IDisposable.Dispose
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: IDisposable.Dispose()
+  commentId: M:System.IDisposable.Dispose
+- uid: System.Collections.IDictionaryEnumerator
+  parent: System.Collections
+  isExternal: false
+  name: "XXX"
+  fullName: System.Collections.IDictionaryEnumerator
+  nameWithType: IDictionaryEnumerator
+  commentId: T:System.Collections.IDictionaryEnumerator
+- uid: System.Collections
+  isExternal: false
+  name: "XXX"
+  fullName: System.Collections
+  nameWithType: System.Collections
+  commentId: N:System.Collections
+- uid: System.ArgumentException
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentException
+  nameWithType: ArgumentException
+  commentId: T:System.ArgumentException
+- uid: System.ArgumentNullException
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentNullException
+  nameWithType: ArgumentNullException
+  commentId: T:System.ArgumentNullException
+- uid: System.IO.IOException
+  parent: System.IO
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.IOException
+  nameWithType: IOException
+  commentId: T:System.IO.IOException
+- uid: System.InvalidOperationException
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.InvalidOperationException
+  nameWithType: InvalidOperationException
+  commentId: T:System.InvalidOperationException

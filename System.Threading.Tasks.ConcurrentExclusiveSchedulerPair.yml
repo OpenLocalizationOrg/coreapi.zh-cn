@@ -1,0 +1,609 @@
+items:
+- uid: System.Threading.Tasks.ConcurrentExclusiveSchedulerPair
+  commentId: T:System.Threading.Tasks.ConcurrentExclusiveSchedulerPair
+  id: ConcurrentExclusiveSchedulerPair
+  parent: System.Threading.Tasks
+  children:
+  - System.Threading.Tasks.ConcurrentExclusiveSchedulerPair.#ctor
+  - System.Threading.Tasks.ConcurrentExclusiveSchedulerPair.#ctor(System.Threading.Tasks.TaskScheduler)
+  - System.Threading.Tasks.ConcurrentExclusiveSchedulerPair.#ctor(System.Threading.Tasks.TaskScheduler,System.Int32)
+  - System.Threading.Tasks.ConcurrentExclusiveSchedulerPair.#ctor(System.Threading.Tasks.TaskScheduler,System.Int32,System.Int32)
+  - System.Threading.Tasks.ConcurrentExclusiveSchedulerPair.Complete
+  - System.Threading.Tasks.ConcurrentExclusiveSchedulerPair.Completion
+  - System.Threading.Tasks.ConcurrentExclusiveSchedulerPair.ConcurrentScheduler
+  - System.Threading.Tasks.ConcurrentExclusiveSchedulerPair.ExclusiveScheduler
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.Tasks.ConcurrentExclusiveSchedulerPair
+  type: Class
+  source:
+    remote:
+      path: src/mscorlib/src/System/Threading/Tasks/ConcurrentExclusiveSchedulerPair.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: ConcurrentExclusiveSchedulerPair
+    path: src/mscorlib/src/System/Threading/Tasks/ConcurrentExclusiveSchedulerPair.cs
+    startLine: 30
+  assemblies:
+  - System.Threading.Tasks
+  namespace: System.Threading.Tasks
+  summary: "\n<p>Provides task schedulers that coordinate to execute tasks while ensuring that concurrent tasks may run concurrently and exclusive tasks never do.</p>\n"
+  syntax:
+    content: >-
+      [HostProtection(Synchronization = true, ExternalThreading = true)]
+
+      [DebuggerDisplay("Concurrent={ConcurrentTaskCountForDebugger}, Exclusive={ExclusiveTaskCountForDebugger}, Mode={ModeForDebugger}")]
+
+      [DebuggerTypeProxy(typeof (ConcurrentExclusiveSchedulerPair.DebugView))]
+
+      public class ConcurrentExclusiveSchedulerPair
+    content.vb: >-
+      <HostProtection(Synchronization:=True, ExternalThreading:=True)>
+
+      <DebuggerDisplay("Concurrent={ConcurrentTaskCountForDebugger}, Exclusive={ExclusiveTaskCountForDebugger}, Mode={ModeForDebugger}")>
+
+      <DebuggerTypeProxy(GetType(ConcurrentExclusiveSchedulerPair.DebugView))>
+
+      Public Class ConcurrentExclusiveSchedulerPair
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+  nameWithType: ConcurrentExclusiveSchedulerPair
+- uid: System.Threading.Tasks.ConcurrentExclusiveSchedulerPair.#ctor
+  commentId: M:System.Threading.Tasks.ConcurrentExclusiveSchedulerPair.#ctor
+  id: '#ctor'
+  parent: System.Threading.Tasks.ConcurrentExclusiveSchedulerPair
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.Tasks.ConcurrentExclusiveSchedulerPair.ConcurrentExclusiveSchedulerPair()
+  type: Constructor
+  source:
+    remote:
+      path: src/mscorlib/src/System/Threading/Tasks/ConcurrentExclusiveSchedulerPair.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: .ctor
+    path: src/mscorlib/src/System/Threading/Tasks/ConcurrentExclusiveSchedulerPair.cs
+    startLine: 75
+  assemblies:
+  - System.Threading.Tasks
+  namespace: System.Threading.Tasks
+  summary: "\n<p>Initializes a new instance of the <xref href=\"System.Threading.Tasks.ConcurrentExclusiveSchedulerPair\" data-throw-if-not-resolved=\"false\"></xref> class.</p>\n"
+  syntax:
+    content: public ConcurrentExclusiveSchedulerPair()
+    content.vb: Public Sub New
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: ConcurrentExclusiveSchedulerPair.ConcurrentExclusiveSchedulerPair()
+- uid: System.Threading.Tasks.ConcurrentExclusiveSchedulerPair.#ctor(System.Threading.Tasks.TaskScheduler)
+  commentId: M:System.Threading.Tasks.ConcurrentExclusiveSchedulerPair.#ctor(System.Threading.Tasks.TaskScheduler)
+  id: '#ctor(System.Threading.Tasks.TaskScheduler)'
+  parent: System.Threading.Tasks.ConcurrentExclusiveSchedulerPair
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.Tasks.ConcurrentExclusiveSchedulerPair.ConcurrentExclusiveSchedulerPair(System.Threading.Tasks.TaskScheduler)
+  type: Constructor
+  source:
+    remote:
+      path: src/mscorlib/src/System/Threading/Tasks/ConcurrentExclusiveSchedulerPair.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: .ctor
+    path: src/mscorlib/src/System/Threading/Tasks/ConcurrentExclusiveSchedulerPair.cs
+    startLine: 82
+  assemblies:
+  - System.Threading.Tasks
+  namespace: System.Threading.Tasks
+  summary: "\n<p>Initializes a new instance of the <xref href=\"System.Threading.Tasks.ConcurrentExclusiveSchedulerPair\" data-throw-if-not-resolved=\"false\"></xref> class that targets the specified scheduler.</p>\n"
+  syntax:
+    content: public ConcurrentExclusiveSchedulerPair(TaskScheduler taskScheduler)
+    content.vb: Public Sub New(taskScheduler As TaskScheduler)
+    parameters:
+    - id: taskScheduler
+      type: System.Threading.Tasks.TaskScheduler
+      description: "\n<p>The target scheduler on which this pair should execute.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: ConcurrentExclusiveSchedulerPair.ConcurrentExclusiveSchedulerPair(TaskScheduler)
+- uid: System.Threading.Tasks.ConcurrentExclusiveSchedulerPair.#ctor(System.Threading.Tasks.TaskScheduler,System.Int32)
+  commentId: M:System.Threading.Tasks.ConcurrentExclusiveSchedulerPair.#ctor(System.Threading.Tasks.TaskScheduler,System.Int32)
+  id: '#ctor(System.Threading.Tasks.TaskScheduler,System.Int32)'
+  parent: System.Threading.Tasks.ConcurrentExclusiveSchedulerPair
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.Tasks.ConcurrentExclusiveSchedulerPair.ConcurrentExclusiveSchedulerPair(System.Threading.Tasks.TaskScheduler, System.Int32)
+  type: Constructor
+  source:
+    remote:
+      path: src/mscorlib/src/System/Threading/Tasks/ConcurrentExclusiveSchedulerPair.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: .ctor
+    path: src/mscorlib/src/System/Threading/Tasks/ConcurrentExclusiveSchedulerPair.cs
+    startLine: 90
+  assemblies:
+  - System.Threading.Tasks
+  namespace: System.Threading.Tasks
+  summary: "\n<p>Initializes a new instance of the <xref href=\"System.Threading.Tasks.ConcurrentExclusiveSchedulerPair\" data-throw-if-not-resolved=\"false\"></xref> class that targets the specified scheduler with a maximum concurrency level.</p>\n"
+  syntax:
+    content: public ConcurrentExclusiveSchedulerPair(TaskScheduler taskScheduler, int maxConcurrencyLevel)
+    content.vb: Public Sub New(taskScheduler As TaskScheduler, maxConcurrencyLevel As Integer)
+    parameters:
+    - id: taskScheduler
+      type: System.Threading.Tasks.TaskScheduler
+      description: "\n<p>The target scheduler on which this pair should execute.</p>\n"
+    - id: maxConcurrencyLevel
+      type: System.Int32
+      description: "\n<p>The maximum number of tasks to run concurrently.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: ConcurrentExclusiveSchedulerPair.ConcurrentExclusiveSchedulerPair(TaskScheduler, Int32)
+- uid: System.Threading.Tasks.ConcurrentExclusiveSchedulerPair.#ctor(System.Threading.Tasks.TaskScheduler,System.Int32,System.Int32)
+  commentId: M:System.Threading.Tasks.ConcurrentExclusiveSchedulerPair.#ctor(System.Threading.Tasks.TaskScheduler,System.Int32,System.Int32)
+  id: '#ctor(System.Threading.Tasks.TaskScheduler,System.Int32,System.Int32)'
+  parent: System.Threading.Tasks.ConcurrentExclusiveSchedulerPair
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.Tasks.ConcurrentExclusiveSchedulerPair.ConcurrentExclusiveSchedulerPair(System.Threading.Tasks.TaskScheduler, System.Int32, System.Int32)
+  type: Constructor
+  source:
+    remote:
+      path: src/mscorlib/src/System/Threading/Tasks/ConcurrentExclusiveSchedulerPair.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: .ctor
+    path: src/mscorlib/src/System/Threading/Tasks/ConcurrentExclusiveSchedulerPair.cs
+    startLine: 100
+  assemblies:
+  - System.Threading.Tasks
+  namespace: System.Threading.Tasks
+  summary: "\n<p>Initializes a new instance of the <xref href=\"System.Threading.Tasks.ConcurrentExclusiveSchedulerPair\" data-throw-if-not-resolved=\"false\"></xref> class that targets the specified scheduler with a maximum concurrency level and a maximum number of scheduled tasks that may be processed as a unit.</p>\n"
+  syntax:
+    content: public ConcurrentExclusiveSchedulerPair(TaskScheduler taskScheduler, int maxConcurrencyLevel, int maxItemsPerTask)
+    content.vb: Public Sub New(taskScheduler As TaskScheduler, maxConcurrencyLevel As Integer, maxItemsPerTask As Integer)
+    parameters:
+    - id: taskScheduler
+      type: System.Threading.Tasks.TaskScheduler
+      description: "\n<p>The target scheduler on which this pair should execute.</p>\n"
+    - id: maxConcurrencyLevel
+      type: System.Int32
+      description: "\n<p>The maximum number of tasks to run concurrently.</p>\n"
+    - id: maxItemsPerTask
+      type: System.Int32
+      description: "\n<p>The maximum number of tasks to process for each underlying scheduled task used by the pair.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: ConcurrentExclusiveSchedulerPair.ConcurrentExclusiveSchedulerPair(TaskScheduler, Int32, Int32)
+- uid: System.Threading.Tasks.ConcurrentExclusiveSchedulerPair.Completion
+  commentId: P:System.Threading.Tasks.ConcurrentExclusiveSchedulerPair.Completion
+  id: Completion
+  parent: System.Threading.Tasks.ConcurrentExclusiveSchedulerPair
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.Tasks.ConcurrentExclusiveSchedulerPair.Completion
+  type: Property
+  source:
+    remote:
+      path: src/mscorlib/src/System/Threading/Tasks/ConcurrentExclusiveSchedulerPair.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Completion
+    path: src/mscorlib/src/System/Threading/Tasks/ConcurrentExclusiveSchedulerPair.cs
+    startLine: 145
+  assemblies:
+  - System.Threading.Tasks
+  namespace: System.Threading.Tasks
+  summary: "\n<p>Gets a <xref href=\"System.Threading.Tasks.Task\" data-throw-if-not-resolved=\"false\"></xref> that will complete when the scheduler has completed processing.</p>\n"
+  syntax:
+    content: public Task Completion { get; }
+    content.vb: Public ReadOnly Property Completion As Task
+    parameters: []
+    return:
+      type: System.Threading.Tasks.Task
+      description: "\n<p>The asynchronous operation that will complete when the scheduler finishes processing.</p>\n"
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  nameWithType: ConcurrentExclusiveSchedulerPair.Completion
+- uid: System.Threading.Tasks.ConcurrentExclusiveSchedulerPair.ConcurrentScheduler
+  commentId: P:System.Threading.Tasks.ConcurrentExclusiveSchedulerPair.ConcurrentScheduler
+  id: ConcurrentScheduler
+  parent: System.Threading.Tasks.ConcurrentExclusiveSchedulerPair
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.Tasks.ConcurrentExclusiveSchedulerPair.ConcurrentScheduler
+  type: Property
+  source:
+    remote:
+      path: src/mscorlib/src/System/Threading/Tasks/ConcurrentExclusiveSchedulerPair.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: ConcurrentScheduler
+    path: src/mscorlib/src/System/Threading/Tasks/ConcurrentExclusiveSchedulerPair.cs
+    startLine: 247
+  assemblies:
+  - System.Threading.Tasks
+  namespace: System.Threading.Tasks
+  summary: "\n<p>Gets a <xref href=\"System.Threading.Tasks.TaskScheduler\" data-throw-if-not-resolved=\"false\"></xref> that can be used to schedule tasks to this pair that may run concurrently with other tasks on this pair.</p>\n"
+  syntax:
+    content: public TaskScheduler ConcurrentScheduler { get; }
+    content.vb: Public ReadOnly Property ConcurrentScheduler As TaskScheduler
+    parameters: []
+    return:
+      type: System.Threading.Tasks.TaskScheduler
+      description: "\n<p>An object that can be used to schedule tasks concurrently.</p>\n"
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  nameWithType: ConcurrentExclusiveSchedulerPair.ConcurrentScheduler
+- uid: System.Threading.Tasks.ConcurrentExclusiveSchedulerPair.ExclusiveScheduler
+  commentId: P:System.Threading.Tasks.ConcurrentExclusiveSchedulerPair.ExclusiveScheduler
+  id: ExclusiveScheduler
+  parent: System.Threading.Tasks.ConcurrentExclusiveSchedulerPair
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.Tasks.ConcurrentExclusiveSchedulerPair.ExclusiveScheduler
+  type: Property
+  source:
+    remote:
+      path: src/mscorlib/src/System/Threading/Tasks/ConcurrentExclusiveSchedulerPair.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: ExclusiveScheduler
+    path: src/mscorlib/src/System/Threading/Tasks/ConcurrentExclusiveSchedulerPair.cs
+    startLine: 252
+  assemblies:
+  - System.Threading.Tasks
+  namespace: System.Threading.Tasks
+  summary: "\n<p>Gets a <xref href=\"System.Threading.Tasks.TaskScheduler\" data-throw-if-not-resolved=\"false\"></xref> that can be used to schedule tasks to this pair that must run exclusively with regards to other tasks on this pair.</p>\n"
+  syntax:
+    content: public TaskScheduler ExclusiveScheduler { get; }
+    content.vb: Public ReadOnly Property ExclusiveScheduler As TaskScheduler
+    parameters: []
+    return:
+      type: System.Threading.Tasks.TaskScheduler
+      description: "\n<p>An object that can be used to schedule tasks that do not run concurrently with other tasks.</p>\n"
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  nameWithType: ConcurrentExclusiveSchedulerPair.ExclusiveScheduler
+- uid: System.Threading.Tasks.ConcurrentExclusiveSchedulerPair.Complete
+  commentId: M:System.Threading.Tasks.ConcurrentExclusiveSchedulerPair.Complete
+  id: Complete
+  parent: System.Threading.Tasks.ConcurrentExclusiveSchedulerPair
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.Tasks.ConcurrentExclusiveSchedulerPair.Complete()
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Threading/Tasks/ConcurrentExclusiveSchedulerPair.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Complete
+    path: src/mscorlib/src/System/Threading/Tasks/ConcurrentExclusiveSchedulerPair.cs
+    startLine: 132
+  assemblies:
+  - System.Threading.Tasks
+  namespace: System.Threading.Tasks
+  summary: "\n<p>Informs the scheduler pair that it should not accept any more tasks.</p>\n"
+  syntax:
+    content: public void Complete()
+    content.vb: Public Sub Complete
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: ConcurrentExclusiveSchedulerPair.Complete()
+references:
+- uid: System.Threading.Tasks
+  isExternal: false
+  name: "XXX"
+  fullName: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+- uid: System.Object
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Object
+  nameWithType: Object
+  commentId: T:System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.ToString()
+  commentId: M:System.Object.ToString
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.Equals(Object)
+  commentId: M:System.Object.Equals(System.Object)
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.Equals(Object, Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.GetHashCode()
+  commentId: M:System.Object.GetHashCode
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.GetType()
+  commentId: M:System.Object.GetType
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.MemberwiseClone()
+  commentId: M:System.Object.MemberwiseClone
+- uid: System
+  isExternal: false
+  name: "XXX"
+  fullName: System
+  nameWithType: System
+  commentId: N:System
+- uid: System.Threading.Tasks.TaskScheduler
+  parent: System.Threading.Tasks
+  isExternal: false
+  name: "XXX"
+  fullName: System.Threading.Tasks.TaskScheduler
+  nameWithType: TaskScheduler
+  commentId: T:System.Threading.Tasks.TaskScheduler
+- uid: System.Int32
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Int32
+  nameWithType: Int32
+  commentId: T:System.Int32
+- uid: System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: false
+  name: "XXX"
+  fullName: System.Threading.Tasks.Task
+  nameWithType: Task
+  commentId: T:System.Threading.Tasks.Task

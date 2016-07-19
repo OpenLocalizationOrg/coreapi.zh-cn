@@ -1,0 +1,2110 @@
+items:
+- uid: System.IO.Stream
+  commentId: T:System.IO.Stream
+  id: Stream
+  parent: System.IO
+  children:
+  - System.IO.Stream.#ctor
+  - System.IO.Stream.CanRead
+  - System.IO.Stream.CanSeek
+  - System.IO.Stream.CanTimeout
+  - System.IO.Stream.CanWrite
+  - System.IO.Stream.CopyTo(System.IO.Stream)
+  - System.IO.Stream.CopyTo(System.IO.Stream,System.Int32)
+  - System.IO.Stream.CopyToAsync(System.IO.Stream)
+  - System.IO.Stream.CopyToAsync(System.IO.Stream,System.Int32)
+  - System.IO.Stream.CopyToAsync(System.IO.Stream,System.Int32,System.Threading.CancellationToken)
+  - System.IO.Stream.Dispose
+  - System.IO.Stream.Dispose(System.Boolean)
+  - System.IO.Stream.Flush
+  - System.IO.Stream.FlushAsync
+  - System.IO.Stream.FlushAsync(System.Threading.CancellationToken)
+  - System.IO.Stream.Length
+  - System.IO.Stream.Null
+  - System.IO.Stream.Position
+  - System.IO.Stream.Read(System.Byte[],System.Int32,System.Int32)
+  - System.IO.Stream.ReadAsync(System.Byte[],System.Int32,System.Int32)
+  - System.IO.Stream.ReadAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)
+  - System.IO.Stream.ReadByte
+  - System.IO.Stream.ReadTimeout
+  - System.IO.Stream.Seek(System.Int64,System.IO.SeekOrigin)
+  - System.IO.Stream.SetLength(System.Int64)
+  - System.IO.Stream.Write(System.Byte[],System.Int32,System.Int32)
+  - System.IO.Stream.WriteAsync(System.Byte[],System.Int32,System.Int32)
+  - System.IO.Stream.WriteAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)
+  - System.IO.Stream.WriteByte(System.Byte)
+  - System.IO.Stream.WriteTimeout
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.Stream
+  type: Class
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/Stream.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Stream
+    path: src/mscorlib/src/System/IO/Stream.cs
+    startLine: 30
+  assemblies:
+  - System.IO
+  namespace: System.IO
+  summary: "\n<p>Provides a generic view of a sequence of bytes. This is an abstract class.</p>\n"
+  syntax:
+    content: >-
+      [Serializable]
+
+      [ComVisible(true)]
+
+      public abstract class Stream : IDisposable
+    content.vb: >-
+      <Serializable>
+
+      <ComVisible(True)>
+
+      Public MustInherit Class Stream
+          Implements IDisposable
+  seealso:
+  - type: System.IO.FileStream
+    commentId: T:System.IO.FileStream
+  - type: System.IO.MemoryStream
+    commentId: T:System.IO.MemoryStream
+  - type: System.IO.BufferedStream
+    commentId: T:System.IO.BufferedStream
+  inheritance:
+  - System.Object
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+  nameWithType: Stream
+- uid: System.IO.Stream.Null
+  commentId: F:System.IO.Stream.Null
+  parent: System.IO.Stream
+  langs:
+  - csharp
+  - vb
+  fullName: System.IO.Stream.Null
+  type: Field
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/Stream.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    path: src/mscorlib/src/System/IO/Stream.cs
+    startLine: 38
+  assemblies:
+  - System.IO
+  namespace: System.IO
+  summary: "\n<p>A <strong>Stream</strong> with no backing store.</p>\n"
+  syntax:
+    content: public static readonly Stream Null
+    content.vb: Public Shared ReadOnly Null As Stream
+    return:
+      type: System.IO.Stream
+  modifiers.csharp:
+  - public
+  - static
+  - readonly
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+  nameWithType: Stream.Null
+- uid: System.IO.Stream.#ctor
+  commentId: M:System.IO.Stream.#ctor
+  id: '#ctor'
+  parent: System.IO.Stream
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.Stream.Stream()
+  type: Constructor
+  source:
+    remote:
+      path: src/System.IO/ref/System.IO.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: .ctor
+    path: src/System.IO/ref/System.IO.cs
+    startLine: 155
+  assemblies:
+  - System.IO
+  namespace: System.IO
+  summary: "\n<p>Initializes a new instance of the <xref href=\"System.IO.Stream\" data-throw-if-not-resolved=\"false\"></xref> class. </p>\n"
+  syntax:
+    content: protected Stream()
+    content.vb: Protected Sub New
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  nameWithType: Stream.Stream()
+- uid: System.IO.Stream.CanRead
+  commentId: P:System.IO.Stream.CanRead
+  id: CanRead
+  parent: System.IO.Stream
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.Stream.CanRead
+  type: Property
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/Stream.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: CanRead
+    path: src/mscorlib/src/System/IO/Stream.cs
+    startLine: 59
+  assemblies:
+  - System.IO
+  namespace: System.IO
+  summary: "\n<p>When overridden in a derived class, gets a value indicating whether the current stream supports reading.</p>\n"
+  syntax:
+    content: public abstract bool CanRead { get; }
+    content.vb: Public MustOverride ReadOnly Property CanRead As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if the stream supports reading; otherwise, <strong>false</strong>.</p>\n"
+  modifiers.csharp:
+  - public
+  - abstract
+  - get
+  modifiers.vb:
+  - Public
+  - MustOverride
+  - ReadOnly
+  nameWithType: Stream.CanRead
+- uid: System.IO.Stream.CanSeek
+  commentId: P:System.IO.Stream.CanSeek
+  id: CanSeek
+  parent: System.IO.Stream
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.Stream.CanSeek
+  type: Property
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/Stream.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: CanSeek
+    path: src/mscorlib/src/System/IO/Stream.cs
+    startLine: 65
+  assemblies:
+  - System.IO
+  namespace: System.IO
+  summary: "\n<p>When overridden in a derived class, gets a value indicating whether the current stream supports seeking.</p>\n"
+  syntax:
+    content: public abstract bool CanSeek { get; }
+    content.vb: Public MustOverride ReadOnly Property CanSeek As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if the stream supports seeking; otherwise, <strong>false</strong>.</p>\n"
+  modifiers.csharp:
+  - public
+  - abstract
+  - get
+  modifiers.vb:
+  - Public
+  - MustOverride
+  - ReadOnly
+  nameWithType: Stream.CanSeek
+- uid: System.IO.Stream.CanTimeout
+  commentId: P:System.IO.Stream.CanTimeout
+  id: CanTimeout
+  parent: System.IO.Stream
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.Stream.CanTimeout
+  type: Property
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/Stream.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: CanTimeout
+    path: src/mscorlib/src/System/IO/Stream.cs
+    startLine: 70
+  assemblies:
+  - System.IO
+  namespace: System.IO
+  summary: "\n<p>Gets a value that determines whether the current stream can time out.</p>\n"
+  syntax:
+    content: >-
+      [ComVisible(false)]
+
+      public virtual bool CanTimeout { get; }
+    content.vb: >-
+      <ComVisible(False)>
+
+      Public Overridable ReadOnly Property CanTimeout As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: "\n<p>A value that determines whether the current stream can time out.</p>\n"
+  seealso:
+  - type: System.IO.Stream.ReadTimeout
+    commentId: P:System.IO.Stream.ReadTimeout
+  - type: System.IO.Stream.WriteTimeout
+    commentId: P:System.IO.Stream.WriteTimeout
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+  nameWithType: Stream.CanTimeout
+- uid: System.IO.Stream.CanWrite
+  commentId: P:System.IO.Stream.CanWrite
+  id: CanWrite
+  parent: System.IO.Stream
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.Stream.CanWrite
+  type: Property
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/Stream.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: CanWrite
+    path: src/mscorlib/src/System/IO/Stream.cs
+    startLine: 78
+  assemblies:
+  - System.IO
+  namespace: System.IO
+  summary: "\n<p>When overridden in a derived class, gets a value indicating whether the current stream supports writing.</p>\n"
+  syntax:
+    content: public abstract bool CanWrite { get; }
+    content.vb: Public MustOverride ReadOnly Property CanWrite As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if the stream supports writing; otherwise, <strong>false</strong>.</p>\n"
+  modifiers.csharp:
+  - public
+  - abstract
+  - get
+  modifiers.vb:
+  - Public
+  - MustOverride
+  - ReadOnly
+  nameWithType: Stream.CanWrite
+- uid: System.IO.Stream.Length
+  commentId: P:System.IO.Stream.Length
+  id: Length
+  parent: System.IO.Stream
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.Stream.Length
+  type: Property
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/Stream.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Length
+    path: src/mscorlib/src/System/IO/Stream.cs
+    startLine: 83
+  assemblies:
+  - System.IO
+  namespace: System.IO
+  summary: "\n<p>When overridden in a derived class, gets the length in bytes of the stream.</p>\n"
+  syntax:
+    content: public abstract long Length { get; }
+    content.vb: Public MustOverride ReadOnly Property Length As Long
+    parameters: []
+    return:
+      type: System.Int64
+      description: "\n<p>A long value representing the length of the stream in bytes.</p>\n"
+  exceptions:
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: "\n<p>A class derived from <strong>Stream</strong> does not support seeking. </p>\n"
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>Methods were called after the stream was closed. </p>\n"
+  modifiers.csharp:
+  - public
+  - abstract
+  - get
+  modifiers.vb:
+  - Public
+  - MustOverride
+  - ReadOnly
+  nameWithType: Stream.Length
+- uid: System.IO.Stream.Position
+  commentId: P:System.IO.Stream.Position
+  id: Position
+  parent: System.IO.Stream
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.Stream.Position
+  type: Property
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/Stream.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Position
+    path: src/mscorlib/src/System/IO/Stream.cs
+    startLine: 87
+  assemblies:
+  - System.IO
+  namespace: System.IO
+  summary: "\n<p>When overridden in a derived class, gets or sets the position within the current stream.</p>\n"
+  syntax:
+    content: public abstract long Position { get; set; }
+    content.vb: Public MustOverride Property Position As Long
+    parameters: []
+    return:
+      type: System.Int64
+      description: "\n<p>The current position within the stream.</p>\n"
+  exceptions:
+  - type: System.IO.IOException
+    commentId: T:System.IO.IOException
+    description: "\n<p>An I/O error occurs. </p>\n"
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: "\n<p>The stream does not support seeking. </p>\n"
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>Methods were called after the stream was closed. </p>\n"
+  modifiers.csharp:
+  - public
+  - abstract
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - MustOverride
+  nameWithType: Stream.Position
+- uid: System.IO.Stream.ReadTimeout
+  commentId: P:System.IO.Stream.ReadTimeout
+  id: ReadTimeout
+  parent: System.IO.Stream
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.Stream.ReadTimeout
+  type: Property
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/Stream.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: ReadTimeout
+    path: src/mscorlib/src/System/IO/Stream.cs
+    startLine: 92
+  assemblies:
+  - System.IO
+  namespace: System.IO
+  summary: "\n<p>Gets or sets a value, in miliseconds, that determines how long the stream will attempt to read before timing out. </p>\n"
+  syntax:
+    content: >-
+      [ComVisible(false)]
+
+      public virtual int ReadTimeout { get; set; }
+    content.vb: >-
+      <ComVisible(False)>
+
+      Public Overridable Property ReadTimeout As Integer
+    parameters: []
+    return:
+      type: System.Int32
+      description: "\n<p>A value, in miliseconds, that determines how long the stream will attempt to read before timing out.</p>\n"
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: "\n<p>The <xref href=\"System.IO.Stream.ReadTimeout\" data-throw-if-not-resolved=\"false\"></xref> method always throws an <xref href=\"System.InvalidOperationException\" data-throw-if-not-resolved=\"false\"></xref>. </p>\n"
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+  nameWithType: Stream.ReadTimeout
+- uid: System.IO.Stream.WriteTimeout
+  commentId: P:System.IO.Stream.WriteTimeout
+  id: WriteTimeout
+  parent: System.IO.Stream
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.Stream.WriteTimeout
+  type: Property
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/Stream.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: WriteTimeout
+    path: src/mscorlib/src/System/IO/Stream.cs
+    startLine: 103
+  assemblies:
+  - System.IO
+  namespace: System.IO
+  summary: "\n<p>Gets or sets a value, in miliseconds, that determines how long the stream will attempt to write before timing out. </p>\n"
+  syntax:
+    content: >-
+      [ComVisible(false)]
+
+      public virtual int WriteTimeout { get; set; }
+    content.vb: >-
+      <ComVisible(False)>
+
+      Public Overridable Property WriteTimeout As Integer
+    parameters: []
+    return:
+      type: System.Int32
+      description: "\n<p>A value, in miliseconds, that determines how long the stream will attempt to write before timing out.</p>\n"
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: "\n<p>The <xref href=\"System.IO.Stream.WriteTimeout\" data-throw-if-not-resolved=\"false\"></xref> method always throws an <xref href=\"System.InvalidOperationException\" data-throw-if-not-resolved=\"false\"></xref>. </p>\n"
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+  nameWithType: Stream.WriteTimeout
+- uid: System.IO.Stream.CopyTo(System.IO.Stream)
+  commentId: M:System.IO.Stream.CopyTo(System.IO.Stream)
+  id: CopyTo(System.IO.Stream)
+  parent: System.IO.Stream
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.Stream.CopyTo(System.IO.Stream)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/Stream.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: CopyTo
+    path: src/mscorlib/src/System/IO/Stream.cs
+    startLine: 155
+  assemblies:
+  - System.IO
+  namespace: System.IO
+  summary: "\n<p>Reads the bytes from the current stream and writes them to another stream.</p>\n"
+  syntax:
+    content: public void CopyTo(Stream destination)
+    content.vb: Public Sub CopyTo(destination As Stream)
+    parameters:
+    - id: destination
+      type: System.IO.Stream
+      description: "\n<p>The stream to which the contents of the current stream will be copied.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>destination</em> is <strong>null</strong>.</p>\n"
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: "\n<p>The current stream does not support reading.</p>\n<p>-or-</p>\n<p>\n<em>destination</em> does not support writing.</p>\n"
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>Either the current stream or <em>destination</em> were closed before the <xref href=\"System.IO.Stream.CopyTo(System.IO.Stream)\" data-throw-if-not-resolved=\"false\"></xref> method was called.</p>\n"
+  - type: System.IO.IOException
+    commentId: T:System.IO.IOException
+    description: "\n<p>An I/O error occurred.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: Stream.CopyTo(Stream)
+- uid: System.IO.Stream.CopyTo(System.IO.Stream,System.Int32)
+  commentId: M:System.IO.Stream.CopyTo(System.IO.Stream,System.Int32)
+  id: CopyTo(System.IO.Stream,System.Int32)
+  parent: System.IO.Stream
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.Stream.CopyTo(System.IO.Stream, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/Stream.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: CopyTo
+    path: src/mscorlib/src/System/IO/Stream.cs
+    startLine: 160
+  assemblies:
+  - System.IO
+  namespace: System.IO
+  summary: "\n<p>Reads the bytes from the current stream and writes them to another stream, using a specified buffer size.</p>\n"
+  syntax:
+    content: public void CopyTo(Stream destination, int bufferSize)
+    content.vb: Public Sub CopyTo(destination As Stream, bufferSize As Integer)
+    parameters:
+    - id: destination
+      type: System.IO.Stream
+      description: "\n<p>The stream to which the contents of the current stream will be copied.</p>\n"
+    - id: bufferSize
+      type: System.Int32
+      description: "\n<p>The size of the buffer. This value must be greater than zero. The default size is 81920.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>destination</em> is <strong>null</strong>.</p>\n"
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>bufferSize</em> is negative or zero.</p>\n"
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: "\n<p>The current stream does not support reading.</p>\n<p>-or-</p>\n<p>\n<em>destination</em> does not support writing.</p>\n"
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>Either the current stream or <em>destination</em> were closed before the <xref href=\"System.IO.Stream.CopyTo(System.IO.Stream)\" data-throw-if-not-resolved=\"false\"></xref> method was called.</p>\n"
+  - type: System.IO.IOException
+    commentId: T:System.IO.IOException
+    description: "\n<p>An I/O error occurred.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: Stream.CopyTo(Stream, Int32)
+- uid: System.IO.Stream.CopyToAsync(System.IO.Stream)
+  commentId: M:System.IO.Stream.CopyToAsync(System.IO.Stream)
+  id: CopyToAsync(System.IO.Stream)
+  parent: System.IO.Stream
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.Stream.CopyToAsync(System.IO.Stream)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/Stream.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: CopyToAsync
+    path: src/mscorlib/src/System/IO/Stream.cs
+    startLine: 114
+  assemblies:
+  - System.IO
+  namespace: System.IO
+  summary: "\n<p>Asynchronously reads the bytes from the current stream and writes them to another stream.</p>\n"
+  syntax:
+    content: >-
+      [HostProtection(ExternalThreading = true)]
+
+      [ComVisible(false)]
+
+      public Task CopyToAsync(Stream destination)
+    content.vb: >-
+      <HostProtection(ExternalThreading:=True)>
+
+      <ComVisible(False)>
+
+      Public Function CopyToAsync(destination As Stream) As Task
+    parameters:
+    - id: destination
+      type: System.IO.Stream
+      description: "\n<p>The stream to which the contents of the current stream will be copied.</p>\n"
+    return:
+      type: System.Threading.Tasks.Task
+      description: "\n<p>A task that represents the asynchronous copy operation.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>destination</em> is <strong>null</strong>.</p>\n"
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>Either the current stream or the destination stream is disposed.</p>\n"
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: "\n<p>The current stream does not support reading, or the destination stream does not support writing.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: Stream.CopyToAsync(Stream)
+- uid: System.IO.Stream.CopyToAsync(System.IO.Stream,System.Int32)
+  commentId: M:System.IO.Stream.CopyToAsync(System.IO.Stream,System.Int32)
+  id: CopyToAsync(System.IO.Stream,System.Int32)
+  parent: System.IO.Stream
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.Stream.CopyToAsync(System.IO.Stream, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/Stream.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: CopyToAsync
+    path: src/mscorlib/src/System/IO/Stream.cs
+    startLine: 121
+  assemblies:
+  - System.IO
+  namespace: System.IO
+  summary: "\n<p>Asynchronously reads the bytes from the current stream and writes them to another stream, using a specified buffer size.</p>\n"
+  syntax:
+    content: >-
+      [HostProtection(ExternalThreading = true)]
+
+      [ComVisible(false)]
+
+      public Task CopyToAsync(Stream destination, int bufferSize)
+    content.vb: >-
+      <HostProtection(ExternalThreading:=True)>
+
+      <ComVisible(False)>
+
+      Public Function CopyToAsync(destination As Stream, bufferSize As Integer) As Task
+    parameters:
+    - id: destination
+      type: System.IO.Stream
+      description: "\n<p>The stream to which the contents of the current stream will be copied.</p>\n"
+    - id: bufferSize
+      type: System.Int32
+      description: "\n<p>The size, in bytes, of the buffer. This value must be greater than zero. The default size is 81920.</p>\n"
+    return:
+      type: System.Threading.Tasks.Task
+      description: "\n<p>A task that represents the asynchronous copy operation.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>destination</em> is <strong>null</strong>.</p>\n"
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>buffersize</em> is negative or zero.</p>\n"
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>Either the current stream or the destination stream is disposed.</p>\n"
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: "\n<p>The current stream does not support reading, or the destination stream does not support writing.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: Stream.CopyToAsync(Stream, Int32)
+- uid: System.IO.Stream.CopyToAsync(System.IO.Stream,System.Int32,System.Threading.CancellationToken)
+  commentId: M:System.IO.Stream.CopyToAsync(System.IO.Stream,System.Int32,System.Threading.CancellationToken)
+  id: CopyToAsync(System.IO.Stream,System.Int32,System.Threading.CancellationToken)
+  parent: System.IO.Stream
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.Stream.CopyToAsync(System.IO.Stream, System.Int32, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/Stream.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: CopyToAsync
+    path: src/mscorlib/src/System/IO/Stream.cs
+    startLine: 128
+  assemblies:
+  - System.IO
+  namespace: System.IO
+  summary: "\n<p>Asynchronously reads the bytes from the current stream and writes them to another stream, using a specified buffer size and cancellation token.</p>\n"
+  syntax:
+    content: >-
+      [HostProtection(ExternalThreading = true)]
+
+      [ComVisible(false)]
+
+      public virtual Task CopyToAsync(Stream destination, int bufferSize, CancellationToken cancellationToken)
+    content.vb: >-
+      <HostProtection(ExternalThreading:=True)>
+
+      <ComVisible(False)>
+
+      Public Overridable Function CopyToAsync(destination As Stream, bufferSize As Integer, cancellationToken As CancellationToken) As Task
+    parameters:
+    - id: destination
+      type: System.IO.Stream
+      description: "\n<p>The stream to which the contents of the current stream will be copied.</p>\n"
+    - id: bufferSize
+      type: System.Int32
+      description: "\n<p>The size, in bytes, of the buffer. This value must be greater than zero. The default size is 81920.</p>\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\n<p>The token to monitor for cancellation requests. The default value is <xref href=\"System.Threading.CancellationToken.None\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    return:
+      type: System.Threading.Tasks.Task
+      description: "\n<p>A task that represents the asynchronous copy operation.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>destination</em> is <strong>null</strong>.</p>\n"
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>buffersize</em> is negative or zero.</p>\n"
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>Either the current stream or the destination stream is disposed.</p>\n"
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: "\n<p>The current stream does not support reading, or the destination stream does not support writing.</p>\n"
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  nameWithType: Stream.CopyToAsync(Stream, Int32, CancellationToken)
+- uid: System.IO.Stream.Dispose
+  commentId: M:System.IO.Stream.Dispose
+  id: Dispose
+  parent: System.IO.Stream
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.Stream.Dispose()
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/Stream.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Dispose
+    path: src/mscorlib/src/System/IO/Stream.cs
+    startLine: 190
+  assemblies:
+  - System.IO
+  namespace: System.IO
+  summary: "\n<p>Releases all resources used by the <xref href=\"System.IO.Stream\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose
+  implements:
+  - System.IDisposable.Dispose
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: Stream.Dispose()
+- uid: System.IO.Stream.Dispose(System.Boolean)
+  commentId: M:System.IO.Stream.Dispose(System.Boolean)
+  id: Dispose(System.Boolean)
+  parent: System.IO.Stream
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.Stream.Dispose(System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/Stream.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Dispose
+    path: src/mscorlib/src/System/IO/Stream.cs
+    startLine: 202
+  assemblies:
+  - System.IO
+  namespace: System.IO
+  summary: "\n<p>Releases the unmanaged resources used by the <xref href=\"System.IO.Stream\" data-throw-if-not-resolved=\"false\"></xref> and optionally releases the managed resources.</p>\n"
+  syntax:
+    content: protected virtual void Dispose(bool disposing)
+    content.vb: Protected Overridable Sub Dispose(disposing As Boolean)
+    parameters:
+    - id: disposing
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> to release both managed and unmanaged resources; <strong>false</strong> to release only unmanaged resources.</p>\n"
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+  nameWithType: Stream.Dispose(Boolean)
+- uid: System.IO.Stream.Flush
+  commentId: M:System.IO.Stream.Flush
+  id: Flush
+  parent: System.IO.Stream
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.Stream.Flush()
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/Stream.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Flush
+    path: src/mscorlib/src/System/IO/Stream.cs
+    startLine: 209
+  assemblies:
+  - System.IO
+  namespace: System.IO
+  summary: "\n<p>When overridden in a derived class, clears all buffers for this stream and causes any buffered data to be written to the underlying device.</p>\n"
+  syntax:
+    content: public abstract void Flush()
+    content.vb: Public MustOverride Sub Flush
+  exceptions:
+  - type: System.IO.IOException
+    commentId: T:System.IO.IOException
+    description: "\n<p>An I/O error occurs. </p>\n"
+  modifiers.csharp:
+  - public
+  - abstract
+  modifiers.vb:
+  - Public
+  - MustOverride
+  nameWithType: Stream.Flush()
+- uid: System.IO.Stream.FlushAsync
+  commentId: M:System.IO.Stream.FlushAsync
+  id: FlushAsync
+  parent: System.IO.Stream
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.Stream.FlushAsync()
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/Stream.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: FlushAsync
+    path: src/mscorlib/src/System/IO/Stream.cs
+    startLine: 211
+  assemblies:
+  - System.IO
+  namespace: System.IO
+  summary: "\n<p>Asynchronously clears all buffers for this stream and causes any buffered data to be written to the underlying device.</p>\n"
+  syntax:
+    content: >-
+      [HostProtection(ExternalThreading = true)]
+
+      [ComVisible(false)]
+
+      public Task FlushAsync()
+    content.vb: >-
+      <HostProtection(ExternalThreading:=True)>
+
+      <ComVisible(False)>
+
+      Public Function FlushAsync As Task
+    return:
+      type: System.Threading.Tasks.Task
+      description: "\n<p>A task that represents the asynchronous flush operation.</p>\n"
+  exceptions:
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>The stream has been disposed.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: Stream.FlushAsync()
+- uid: System.IO.Stream.FlushAsync(System.Threading.CancellationToken)
+  commentId: M:System.IO.Stream.FlushAsync(System.Threading.CancellationToken)
+  id: FlushAsync(System.Threading.CancellationToken)
+  parent: System.IO.Stream
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.Stream.FlushAsync(System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/Stream.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: FlushAsync
+    path: src/mscorlib/src/System/IO/Stream.cs
+    startLine: 218
+  assemblies:
+  - System.IO
+  namespace: System.IO
+  summary: "\n<p>Asynchronously clears all buffers for this stream, causes any buffered data to be written to the underlying device, and monitors cancellation requests.</p>\n"
+  syntax:
+    content: >-
+      [HostProtection(ExternalThreading = true)]
+
+      [ComVisible(false)]
+
+      public virtual Task FlushAsync(CancellationToken cancellationToken)
+    content.vb: >-
+      <HostProtection(ExternalThreading:=True)>
+
+      <ComVisible(False)>
+
+      Public Overridable Function FlushAsync(cancellationToken As CancellationToken) As Task
+    parameters:
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\n<p>The token to monitor for cancellation requests. The default value is <xref href=\"System.Threading.CancellationToken.None\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    return:
+      type: System.Threading.Tasks.Task
+      description: "\n<p>A task that represents the asynchronous flush operation.</p>\n"
+  exceptions:
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>The stream has been disposed.</p>\n"
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  nameWithType: Stream.FlushAsync(CancellationToken)
+- uid: System.IO.Stream.Read(System.Byte[],System.Int32,System.Int32)
+  commentId: M:System.IO.Stream.Read(System.Byte[],System.Int32,System.Int32)
+  id: Read(System.Byte[],System.Int32,System.Int32)
+  parent: System.IO.Stream
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.Stream.Read(System.Byte[], System.Int32, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/Stream.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Read
+    path: src/mscorlib/src/System/IO/Stream.cs
+    startLine: 684
+  assemblies:
+  - System.IO
+  namespace: System.IO
+  summary: "\n<p>When overridden in a derived class, reads a sequence of bytes from the current stream and advances the position within the stream by the number of bytes read.</p>\n"
+  syntax:
+    content: public abstract int Read([In, Out] byte[] buffer, int offset, int count)
+    content.vb: Public MustOverride Function Read(buffer As Byte(), offset As Integer, count As Integer) As Integer
+    parameters:
+    - id: buffer
+      type: System.Byte[]
+      description: "\n<p>An array of bytes. When this method returns, the buffer contains the specified byte array with the values between <em>offset</em> and (<em>offset</em> + <em>count</em> - 1) replaced by the bytes read from the current source. </p>\n"
+      attributes:
+      - type: System.Runtime.InteropServices.InAttribute
+        ctor: System.Runtime.InteropServices.InAttribute.#ctor
+        arguments: []
+      - type: System.Runtime.InteropServices.OutAttribute
+        ctor: System.Runtime.InteropServices.OutAttribute.#ctor
+        arguments: []
+    - id: offset
+      type: System.Int32
+      description: "\n<p>The zero-based byte offset in <em>buffer</em> at which to begin storing the data read from the current stream. </p>\n"
+    - id: count
+      type: System.Int32
+      description: "\n<p>The maximum number of bytes to be read from the current stream. </p>\n"
+    return:
+      type: System.Int32
+      description: "\n<p>The total number of bytes read into the buffer. This can be less than the number of bytes requested if that many bytes are not currently available, or zero (0) if the end of the stream has been reached.</p>\n"
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>The sum of <em>offset</em> and <em>count</em> is larger than the buffer length. </p>\n"
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>buffer</em> is <strong>null</strong>. </p>\n"
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>offset</em> or <em>count</em> is negative. </p>\n"
+  - type: System.IO.IOException
+    commentId: T:System.IO.IOException
+    description: "\n<p>An I/O error occurs. </p>\n"
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: "\n<p>The stream does not support reading. </p>\n"
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>Methods were called after the stream was closed. </p>\n"
+  modifiers.csharp:
+  - public
+  - abstract
+  modifiers.vb:
+  - Public
+  - MustOverride
+  fullName.vb: System.IO.Stream.Read(System.Byte(), System.Int32, System.Int32)
+  name.vb: Read(Byte(), Int32, Int32)
+  nameWithType: Stream.Read(Byte[], Int32, Int32)
+  nameWithType.vb: Stream.Read(Byte(), Int32, Int32)
+- uid: System.IO.Stream.ReadAsync(System.Byte[],System.Int32,System.Int32)
+  commentId: M:System.IO.Stream.ReadAsync(System.Byte[],System.Int32,System.Int32)
+  id: ReadAsync(System.Byte[],System.Int32,System.Int32)
+  parent: System.IO.Stream
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.Stream.ReadAsync(System.Byte[], System.Int32, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/Stream.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: ReadAsync
+    path: src/mscorlib/src/System/IO/Stream.cs
+    startLine: 335
+  assemblies:
+  - System.IO
+  namespace: System.IO
+  summary: "\n<p>Asynchronously reads a sequence of bytes from the current stream and advances the position within the stream by the number of bytes read.</p>\n"
+  syntax:
+    content: >-
+      [HostProtection(ExternalThreading = true)]
+
+      [ComVisible(false)]
+
+      public Task<int> ReadAsync(byte[] buffer, int offset, int count)
+    content.vb: >-
+      <HostProtection(ExternalThreading:=True)>
+
+      <ComVisible(False)>
+
+      Public Function ReadAsync(buffer As Byte(), offset As Integer, count As Integer) As Task(Of Integer)
+    parameters:
+    - id: buffer
+      type: System.Byte[]
+      description: "\n<p>The buffer to write the data into.</p>\n"
+    - id: offset
+      type: System.Int32
+      description: "\n<p>The byte offset in <em>buffer</em> at which to begin writing data from the stream.</p>\n"
+    - id: count
+      type: System.Int32
+      description: "\n<p>The maximum number of bytes to read.</p>\n"
+    return:
+      type: System.Threading.Tasks.Task{System.Int32}
+      description: "\n<p>A task that represents the asynchronous read operation. The value of the <em>TResult</em> parameter contains the total number of bytes read into the buffer. The result value can be less than the number of bytes requested if the number of bytes currently available is less than the requested number, or it can be 0 (zero) if the end of the stream has been reached. </p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>buffer</em> is <strong>null</strong>.</p>\n"
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>offset</em> or <em>count</em> is negative.</p>\n"
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>The sum of <em>offset</em> and <em>count</em> is larger than the buffer length.</p>\n"
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: "\n<p>The stream does not support reading.</p>\n"
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>The stream has been disposed.</p>\n"
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: "\n<p>The stream is currently in use by a previous read operation. </p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: System.IO.Stream.ReadAsync(System.Byte(), System.Int32, System.Int32)
+  name.vb: ReadAsync(Byte(), Int32, Int32)
+  nameWithType: Stream.ReadAsync(Byte[], Int32, Int32)
+  nameWithType.vb: Stream.ReadAsync(Byte(), Int32, Int32)
+- uid: System.IO.Stream.ReadAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)
+  commentId: M:System.IO.Stream.ReadAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)
+  id: ReadAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)
+  parent: System.IO.Stream
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.Stream.ReadAsync(System.Byte[], System.Int32, System.Int32, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/Stream.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: ReadAsync
+    path: src/mscorlib/src/System/IO/Stream.cs
+    startLine: 342
+  assemblies:
+  - System.IO
+  namespace: System.IO
+  summary: "\n<p>Asynchronously reads a sequence of bytes from the current stream, advances the position within the stream by the number of bytes read, and monitors cancellation requests.</p>\n"
+  syntax:
+    content: >-
+      [HostProtection(ExternalThreading = true)]
+
+      [ComVisible(false)]
+
+      public virtual Task<int> ReadAsync(byte[] buffer, int offset, int count, CancellationToken cancellationToken)
+    content.vb: >-
+      <HostProtection(ExternalThreading:=True)>
+
+      <ComVisible(False)>
+
+      Public Overridable Function ReadAsync(buffer As Byte(), offset As Integer, count As Integer, cancellationToken As CancellationToken) As Task(Of Integer)
+    parameters:
+    - id: buffer
+      type: System.Byte[]
+      description: "\n<p>The buffer to write the data into.</p>\n"
+    - id: offset
+      type: System.Int32
+      description: "\n<p>The byte offset in <em>buffer</em> at which to begin writing data from the stream.</p>\n"
+    - id: count
+      type: System.Int32
+      description: "\n<p>The maximum number of bytes to read.</p>\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\n<p>The token to monitor for cancellation requests. The default value is <xref href=\"System.Threading.CancellationToken.None\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    return:
+      type: System.Threading.Tasks.Task{System.Int32}
+      description: "\n<p>A task that represents the asynchronous read operation. The value of the <em>TResult</em> parameter contains the total number of bytes read into the buffer. The result value can be less than the number of bytes requested if the number of bytes currently available is less than the requested number, or it can be 0 (zero) if the end of the stream has been reached. </p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>buffer</em> is <strong>null</strong>.</p>\n"
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>offset</em> or <em>count</em> is negative.</p>\n"
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>The sum of <em>offset</em> and <em>count</em> is larger than the buffer length.</p>\n"
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: "\n<p>The stream does not support reading.</p>\n"
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>The stream has been disposed.</p>\n"
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: "\n<p>The stream is currently in use by a previous read operation. </p>\n"
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  fullName.vb: System.IO.Stream.ReadAsync(System.Byte(), System.Int32, System.Int32, System.Threading.CancellationToken)
+  name.vb: ReadAsync(Byte(), Int32, Int32, CancellationToken)
+  nameWithType: Stream.ReadAsync(Byte[], Int32, Int32, CancellationToken)
+  nameWithType.vb: Stream.ReadAsync(Byte(), Int32, Int32, CancellationToken)
+- uid: System.IO.Stream.ReadByte
+  commentId: M:System.IO.Stream.ReadByte
+  id: ReadByte
+  parent: System.IO.Stream
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.Stream.ReadByte()
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/Stream.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: ReadByte
+    path: src/mscorlib/src/System/IO/Stream.cs
+    startLine: 692
+  assemblies:
+  - System.IO
+  namespace: System.IO
+  summary: "\n<p>Reads a byte from the stream and advances the position within the stream by one byte, or returns -1 if at the end of the stream.</p>\n"
+  syntax:
+    content: public virtual int ReadByte()
+    content.vb: Public Overridable Function ReadByte As Integer
+    return:
+      type: System.Int32
+      description: "\n<p>The unsigned byte cast to an <strong>Int32</strong>, or -1 if at the end of the stream.</p>\n"
+  exceptions:
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: "\n<p>The stream does not support reading. </p>\n"
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>Methods were called after the stream was closed. </p>\n"
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  nameWithType: Stream.ReadByte()
+- uid: System.IO.Stream.Seek(System.Int64,System.IO.SeekOrigin)
+  commentId: M:System.IO.Stream.Seek(System.Int64,System.IO.SeekOrigin)
+  id: Seek(System.Int64,System.IO.SeekOrigin)
+  parent: System.IO.Stream
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.Stream.Seek(System.Int64, System.IO.SeekOrigin)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/Stream.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Seek
+    path: src/mscorlib/src/System/IO/Stream.cs
+    startLine: 680
+  assemblies:
+  - System.IO
+  namespace: System.IO
+  summary: "\n<p>When overridden in a derived class, sets the position within the current stream.</p>\n"
+  syntax:
+    content: public abstract long Seek(long offset, SeekOrigin origin)
+    content.vb: Public MustOverride Function Seek(offset As Long, origin As SeekOrigin) As Long
+    parameters:
+    - id: offset
+      type: System.Int64
+      description: "\n<p>A byte offset relative to the <em>origin</em> parameter. </p>\n"
+    - id: origin
+      type: System.IO.SeekOrigin
+      description: "\n<p>A value of type <xref href=\"System.IO.SeekOrigin\" data-throw-if-not-resolved=\"false\"></xref> indicating the reference point used to obtain the new position. </p>\n"
+    return:
+      type: System.Int64
+      description: "\n<p>The new position within the current stream.</p>\n"
+  exceptions:
+  - type: System.IO.IOException
+    commentId: T:System.IO.IOException
+    description: "\n<p>An I/O error occurs. </p>\n"
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: "\n<p>The stream does not support seeking, such as if the stream is constructed from a pipe or console output. </p>\n"
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>Methods were called after the stream was closed. </p>\n"
+  modifiers.csharp:
+  - public
+  - abstract
+  modifiers.vb:
+  - Public
+  - MustOverride
+  nameWithType: Stream.Seek(Int64, SeekOrigin)
+- uid: System.IO.Stream.SetLength(System.Int64)
+  commentId: M:System.IO.Stream.SetLength(System.Int64)
+  id: SetLength(System.Int64)
+  parent: System.IO.Stream
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.Stream.SetLength(System.Int64)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/Stream.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: SetLength
+    path: src/mscorlib/src/System/IO/Stream.cs
+    startLine: 682
+  assemblies:
+  - System.IO
+  namespace: System.IO
+  summary: "\n<p>When overridden in a derived class, sets the length of the current stream.</p>\n"
+  syntax:
+    content: public abstract void SetLength(long value)
+    content.vb: Public MustOverride Sub SetLength(value As Long)
+    parameters:
+    - id: value
+      type: System.Int64
+      description: "\n<p>The desired length of the current stream in bytes. </p>\n"
+  exceptions:
+  - type: System.IO.IOException
+    commentId: T:System.IO.IOException
+    description: "\n<p>An I/O error occurs. </p>\n"
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: "\n<p>The stream does not support both writing and seeking, such as if the stream is constructed from a pipe or console output. </p>\n"
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>Methods were called after the stream was closed. </p>\n"
+  modifiers.csharp:
+  - public
+  - abstract
+  modifiers.vb:
+  - Public
+  - MustOverride
+  nameWithType: Stream.SetLength(Int64)
+- uid: System.IO.Stream.Write(System.Byte[],System.Int32,System.Int32)
+  commentId: M:System.IO.Stream.Write(System.Byte[],System.Int32,System.Int32)
+  id: Write(System.Byte[],System.Int32,System.Int32)
+  parent: System.IO.Stream
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.Stream.Write(System.Byte[], System.Int32, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/Stream.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Write
+    path: src/mscorlib/src/System/IO/Stream.cs
+    startLine: 704
+  assemblies:
+  - System.IO
+  namespace: System.IO
+  summary: "\n<p>When overridden in a derived class, writes a sequence of bytes to the current stream and advances the current position within this stream by the number of bytes written.</p>\n"
+  syntax:
+    content: public abstract void Write(byte[] buffer, int offset, int count)
+    content.vb: Public MustOverride Sub Write(buffer As Byte(), offset As Integer, count As Integer)
+    parameters:
+    - id: buffer
+      type: System.Byte[]
+      description: "\n<p>An array of bytes. This method copies <em>count</em> bytes from <em>buffer</em> to the current stream. </p>\n"
+    - id: offset
+      type: System.Int32
+      description: "\n<p>The zero-based byte offset in <em>buffer</em> at which to begin copying bytes to the current stream. </p>\n"
+    - id: count
+      type: System.Int32
+      description: "\n<p>The number of bytes to be written to the current stream. </p>\n"
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>The sum of <em>offset</em> and <em>count</em> is greater than the buffer length.</p>\n"
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>buffer</em>  is <strong>null</strong>.</p>\n"
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>offset</em> or <em>count</em> is negative.</p>\n"
+  - type: System.IO.IOException
+    commentId: T:System.IO.IOException
+    description: "\n<p>An I/O error occured, such as the specified file cannot be found.</p>\n"
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: "\n<p>The stream does not support writing.</p>\n"
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>\n<xref href=\"System.IO.Stream.Write(System.Byte[],System.Int32,System.Int32)\" data-throw-if-not-resolved=\"false\"></xref> was called after the stream was closed.</p>\n"
+  modifiers.csharp:
+  - public
+  - abstract
+  modifiers.vb:
+  - Public
+  - MustOverride
+  fullName.vb: System.IO.Stream.Write(System.Byte(), System.Int32, System.Int32)
+  name.vb: Write(Byte(), Int32, Int32)
+  nameWithType: Stream.Write(Byte[], Int32, Int32)
+  nameWithType.vb: Stream.Write(Byte(), Int32, Int32)
+- uid: System.IO.Stream.WriteAsync(System.Byte[],System.Int32,System.Int32)
+  commentId: M:System.IO.Stream.WriteAsync(System.Byte[],System.Int32,System.Int32)
+  id: WriteAsync(System.Byte[],System.Int32,System.Int32)
+  parent: System.IO.Stream
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.Stream.WriteAsync(System.Byte[], System.Int32, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/Stream.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: WriteAsync
+    path: src/mscorlib/src/System/IO/Stream.cs
+    startLine: 636
+  assemblies:
+  - System.IO
+  namespace: System.IO
+  summary: "\n<p>Asynchronously writes a sequence of bytes to the current stream and advances the current position within this stream by the number of bytes written.</p>\n"
+  syntax:
+    content: >-
+      [HostProtection(ExternalThreading = true)]
+
+      [ComVisible(false)]
+
+      public Task WriteAsync(byte[] buffer, int offset, int count)
+    content.vb: >-
+      <HostProtection(ExternalThreading:=True)>
+
+      <ComVisible(False)>
+
+      Public Function WriteAsync(buffer As Byte(), offset As Integer, count As Integer) As Task
+    parameters:
+    - id: buffer
+      type: System.Byte[]
+      description: "\n<p>The buffer to write data from.</p>\n"
+    - id: offset
+      type: System.Int32
+      description: "\n<p>The zero-based byte offset in <em>buffer</em> from which to begin copying bytes to the stream.</p>\n"
+    - id: count
+      type: System.Int32
+      description: "\n<p>The maximum number of bytes to write.</p>\n"
+    return:
+      type: System.Threading.Tasks.Task
+      description: "\n<p>A task that represents the asynchronous write operation.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>buffer</em> is <strong>null</strong>.</p>\n"
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>offset</em> or <em>count</em> is negative.</p>\n"
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>The sum of <em>offset</em> and <em>count</em> is larger than the buffer length.</p>\n"
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: "\n<p>The stream does not support writing.</p>\n"
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>The stream has been disposed.</p>\n"
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: "\n<p>The stream is currently in use by a previous write operation. </p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: System.IO.Stream.WriteAsync(System.Byte(), System.Int32, System.Int32)
+  name.vb: WriteAsync(Byte(), Int32, Int32)
+  nameWithType: Stream.WriteAsync(Byte[], Int32, Int32)
+  nameWithType.vb: Stream.WriteAsync(Byte(), Int32, Int32)
+- uid: System.IO.Stream.WriteAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)
+  commentId: M:System.IO.Stream.WriteAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)
+  id: WriteAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)
+  parent: System.IO.Stream
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.Stream.WriteAsync(System.Byte[], System.Int32, System.Int32, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/Stream.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: WriteAsync
+    path: src/mscorlib/src/System/IO/Stream.cs
+    startLine: 645
+  assemblies:
+  - System.IO
+  namespace: System.IO
+  summary: "\n<p>Asynchronously writes a sequence of bytes to the current stream, advances the current position within this stream by the number of bytes written, and monitors cancellation requests.</p>\n"
+  syntax:
+    content: >-
+      [HostProtection(ExternalThreading = true)]
+
+      [ComVisible(false)]
+
+      public virtual Task WriteAsync(byte[] buffer, int offset, int count, CancellationToken cancellationToken)
+    content.vb: >-
+      <HostProtection(ExternalThreading:=True)>
+
+      <ComVisible(False)>
+
+      Public Overridable Function WriteAsync(buffer As Byte(), offset As Integer, count As Integer, cancellationToken As CancellationToken) As Task
+    parameters:
+    - id: buffer
+      type: System.Byte[]
+      description: "\n<p>The buffer to write data from.</p>\n"
+    - id: offset
+      type: System.Int32
+      description: "\n<p>The zero-based byte offset in <em>buffer</em> from which to begin copying bytes to the stream.</p>\n"
+    - id: count
+      type: System.Int32
+      description: "\n<p>The maximum number of bytes to write.</p>\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\n<p>The token to monitor for cancellation requests. The default value is <xref href=\"System.Threading.CancellationToken.None\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    return:
+      type: System.Threading.Tasks.Task
+      description: "\n<p>A task that represents the asynchronous write operation.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>buffer</em> is <strong>null</strong>.</p>\n"
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>offset</em> or <em>count</em> is negative.</p>\n"
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>The sum of <em>offset</em> and <em>count</em> is larger than the buffer length.</p>\n"
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: "\n<p>The stream does not support writing.</p>\n"
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>The stream has been disposed.</p>\n"
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: "\n<p>The stream is currently in use by a previous write operation. </p>\n"
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  fullName.vb: System.IO.Stream.WriteAsync(System.Byte(), System.Int32, System.Int32, System.Threading.CancellationToken)
+  name.vb: WriteAsync(Byte(), Int32, Int32, CancellationToken)
+  nameWithType: Stream.WriteAsync(Byte[], Int32, Int32, CancellationToken)
+  nameWithType.vb: Stream.WriteAsync(Byte(), Int32, Int32, CancellationToken)
+- uid: System.IO.Stream.WriteByte(System.Byte)
+  commentId: M:System.IO.Stream.WriteByte(System.Byte)
+  id: WriteByte(System.Byte)
+  parent: System.IO.Stream
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.Stream.WriteByte(System.Byte)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/Stream.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: WriteByte
+    path: src/mscorlib/src/System/IO/Stream.cs
+    startLine: 711
+  assemblies:
+  - System.IO
+  namespace: System.IO
+  summary: "\n<p>Writes a byte to the current position in the stream and advances the position within the stream by one byte.</p>\n"
+  syntax:
+    content: public virtual void WriteByte(byte value)
+    content.vb: Public Overridable Sub WriteByte(value As Byte)
+    parameters:
+    - id: value
+      type: System.Byte
+      description: "\n<p>The byte to write to the stream. </p>\n"
+  exceptions:
+  - type: System.IO.IOException
+    commentId: T:System.IO.IOException
+    description: "\n<p>An I/O error occurs. </p>\n"
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: "\n<p>The stream does not support writing, or the stream is already closed. </p>\n"
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>Methods were called after the stream was closed. </p>\n"
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  nameWithType: Stream.WriteByte(Byte)
+references:
+- uid: System.IO
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO
+  nameWithType: System.IO
+  commentId: N:System.IO
+- uid: System.Object
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Object
+  nameWithType: Object
+  commentId: T:System.Object
+- uid: System.IDisposable
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.IDisposable
+  nameWithType: IDisposable
+  commentId: T:System.IDisposable
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.ToString()
+  commentId: M:System.Object.ToString
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.Equals(Object)
+  commentId: M:System.Object.Equals(System.Object)
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.Equals(Object, Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.GetHashCode()
+  commentId: M:System.Object.GetHashCode
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.GetType()
+  commentId: M:System.Object.GetType
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.MemberwiseClone()
+  commentId: M:System.Object.MemberwiseClone
+- uid: System
+  isExternal: false
+  name: "XXX"
+  fullName: System
+  nameWithType: System
+  commentId: N:System
+- uid: System.IO.Stream
+  parent: System.IO
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.Stream
+  nameWithType: Stream
+  commentId: T:System.IO.Stream
+- uid: System.Boolean
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Boolean
+  nameWithType: Boolean
+  commentId: T:System.Boolean
+- uid: System.Int64
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Int64
+  nameWithType: Int64
+  commentId: T:System.Int64
+- uid: System.Int32
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Int32
+  nameWithType: Int32
+  commentId: T:System.Int32
+- uid: System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: false
+  name: "XXX"
+  fullName: System.Threading.Tasks.Task
+  nameWithType: Task
+  commentId: T:System.Threading.Tasks.Task
+- uid: System.Threading.Tasks
+  isExternal: false
+  name: "XXX"
+  fullName: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+- uid: System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: false
+  name: "XXX"
+  fullName: System.Threading.CancellationToken
+  nameWithType: CancellationToken
+  commentId: T:System.Threading.CancellationToken
+- uid: System.Threading
+  isExternal: false
+  name: "XXX"
+  fullName: System.Threading
+  nameWithType: System.Threading
+  commentId: N:System.Threading
+- uid: System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: false
+  name: "XXX"
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: "XXX"
+    fullName: System.IDisposable.Dispose
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: "XXX"
+    fullName: System.IDisposable.Dispose
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: IDisposable.Dispose()
+  commentId: M:System.IDisposable.Dispose
+- uid: System.Byte[]
+  name: "XXX"
+  fullName: System.Byte[]
+  fullname.vb: System.Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: "XXX"
+    fullName: System.Byte
+    isExternal: true
+  - name: 'XXX'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: "XXX"
+    fullName: System.Byte
+    isExternal: true
+  - name: "XXX"
+    fullName: ()
+  nameWithType: Byte[]
+  nameWithType.vb: Byte()
+- uid: System.Threading.Tasks.Task{System.Int32}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: "XXX"
+  fullName: System.Threading.Tasks.Task<System.Int32>
+  fullname.vb: System.Threading.Tasks.Task(Of System.Int32)
+  name.vb: Task(Of Int32)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: "XXX"
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: "<"
+    fullName: <
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: "XXX"
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: 'XXX '
+    fullName: '(Of '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Task<Int32>
+  nameWithType.vb: Task(Of Int32)
+  commentId: T:System.Threading.Tasks.Task{System.Int32}
+- uid: System.Threading.Tasks.Task`1
+  isExternal: false
+  name: "XXX"
+  fullName: System.Threading.Tasks.Task<TResult>
+  fullname.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: "XXX"
+    fullName: System.Threading.Tasks.Task
+  - name: "<"
+    fullName: <
+  - name: "XXX"
+    fullName: TResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: "XXX"
+    fullName: System.Threading.Tasks.Task
+  - name: 'XXX '
+    fullName: '(Of '
+  - name: "XXX"
+    fullName: TResult
+  - name: "XXX"
+    fullName: )
+  nameWithType: Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  commentId: T:System.Threading.Tasks.Task`1
+- uid: System.IO.SeekOrigin
+  parent: System.IO
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.SeekOrigin
+  nameWithType: SeekOrigin
+  commentId: T:System.IO.SeekOrigin
+- uid: System.Byte
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Byte
+  nameWithType: Byte
+  commentId: T:System.Byte
+- uid: System.NotSupportedException
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.NotSupportedException
+  nameWithType: NotSupportedException
+  commentId: T:System.NotSupportedException
+- uid: System.ObjectDisposedException
+  isExternal: false
+  name: "XXX"
+  fullName: System.ObjectDisposedException
+  nameWithType: ObjectDisposedException
+  commentId: T:System.ObjectDisposedException
+- uid: System.IO.IOException
+  parent: System.IO
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.IOException
+  nameWithType: IOException
+  commentId: T:System.IO.IOException
+- uid: System.InvalidOperationException
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.InvalidOperationException
+  nameWithType: InvalidOperationException
+  commentId: T:System.InvalidOperationException
+- uid: System.ArgumentNullException
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentNullException
+  nameWithType: ArgumentNullException
+  commentId: T:System.ArgumentNullException
+- uid: System.ArgumentOutOfRangeException
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentOutOfRangeException
+  nameWithType: ArgumentOutOfRangeException
+  commentId: T:System.ArgumentOutOfRangeException
+- uid: System.ArgumentException
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentException
+  nameWithType: ArgumentException
+  commentId: T:System.ArgumentException

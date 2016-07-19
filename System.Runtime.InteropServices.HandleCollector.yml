@@ -1,0 +1,631 @@
+items:
+- uid: System.Runtime.InteropServices.HandleCollector
+  commentId: T:System.Runtime.InteropServices.HandleCollector
+  id: HandleCollector
+  parent: System.Runtime.InteropServices
+  children:
+  - System.Runtime.InteropServices.HandleCollector.#ctor(System.String,System.Int32)
+  - System.Runtime.InteropServices.HandleCollector.#ctor(System.String,System.Int32,System.Int32)
+  - System.Runtime.InteropServices.HandleCollector.Add
+  - System.Runtime.InteropServices.HandleCollector.Count
+  - System.Runtime.InteropServices.HandleCollector.InitialThreshold
+  - System.Runtime.InteropServices.HandleCollector.MaximumThreshold
+  - System.Runtime.InteropServices.HandleCollector.Name
+  - System.Runtime.InteropServices.HandleCollector.Remove
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Runtime.InteropServices.HandleCollector
+  type: Class
+  source:
+    remote:
+      path: src/System.Runtime.InteropServices/ref/System.Runtime.InteropServices.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: HandleCollector
+    path: src/System.Runtime.InteropServices/ref/System.Runtime.InteropServices.cs
+    startLine: 294
+  assemblies:
+  - System.Runtime.InteropServices
+  namespace: System.Runtime.InteropServices
+  summary: "\n<p>Tracks outstanding handles and forces a garbage collection when the specified threshold is reached.</p>\n"
+  syntax:
+    content: public sealed class HandleCollector
+    content.vb: Public NotInheritable Class HandleCollector
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+  nameWithType: HandleCollector
+- uid: System.Runtime.InteropServices.HandleCollector.#ctor(System.String,System.Int32)
+  commentId: M:System.Runtime.InteropServices.HandleCollector.#ctor(System.String,System.Int32)
+  id: '#ctor(System.String,System.Int32)'
+  parent: System.Runtime.InteropServices.HandleCollector
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Runtime.InteropServices.HandleCollector.HandleCollector(System.String, System.Int32)
+  type: Constructor
+  source:
+    remote:
+      path: src/System.Runtime.InteropServices/ref/System.Runtime.InteropServices.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: .ctor
+    path: src/System.Runtime.InteropServices/ref/System.Runtime.InteropServices.cs
+    startLine: 296
+  assemblies:
+  - System.Runtime.InteropServices
+  namespace: System.Runtime.InteropServices
+  summary: "\n<p>Initializes a new instance of the <xref href=\"System.Runtime.InteropServices.HandleCollector\" data-throw-if-not-resolved=\"false\"></xref> class using a name and a threshold at which to begin handle collection. </p>\n"
+  syntax:
+    content: public HandleCollector(string name, int initialThreshold)
+    content.vb: Public Sub New(name As String, initialThreshold As Integer)
+    parameters:
+    - id: name
+      type: System.String
+      description: "\n<p>A name for the collector. This parameter allows you to name collectors that track handle types separately.</p>\n"
+    - id: initialThreshold
+      type: System.Int32
+      description: "\n<p>A value that specifies the point at which collections should begin.</p>\n"
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>The <em>initialThreshold</em> parameter is less than 0.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: HandleCollector.HandleCollector(String, Int32)
+- uid: System.Runtime.InteropServices.HandleCollector.#ctor(System.String,System.Int32,System.Int32)
+  commentId: M:System.Runtime.InteropServices.HandleCollector.#ctor(System.String,System.Int32,System.Int32)
+  id: '#ctor(System.String,System.Int32,System.Int32)'
+  parent: System.Runtime.InteropServices.HandleCollector
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Runtime.InteropServices.HandleCollector.HandleCollector(System.String, System.Int32, System.Int32)
+  type: Constructor
+  source:
+    remote:
+      path: src/System.Runtime.InteropServices/ref/System.Runtime.InteropServices.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: .ctor
+    path: src/System.Runtime.InteropServices/ref/System.Runtime.InteropServices.cs
+    startLine: 297
+  assemblies:
+  - System.Runtime.InteropServices
+  namespace: System.Runtime.InteropServices
+  summary: "\n<p>Initializes a new instance of the <xref href=\"System.Runtime.InteropServices.HandleCollector\" data-throw-if-not-resolved=\"false\"></xref> class using a name, a threshold at which to begin handle collection, and a threshold at which handle collection must occur. </p>\n"
+  syntax:
+    content: public HandleCollector(string name, int initialThreshold, int maximumThreshold)
+    content.vb: Public Sub New(name As String, initialThreshold As Integer, maximumThreshold As Integer)
+    parameters:
+    - id: name
+      type: System.String
+      description: "\n<p>A name for the collector.  This parameter allows you to name collectors that track handle types separately.</p>\n"
+    - id: initialThreshold
+      type: System.Int32
+      description: "\n<p>A value that specifies the point at which collections should begin.</p>\n"
+    - id: maximumThreshold
+      type: System.Int32
+      description: "\n<p>A value that specifies the point at which collections must occur. This should be set to the maximum number of available handles.</p>\n"
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>The <em>initialThreshold</em> parameter is less than 0.</p>\n<p>-or-</p>\n<p>The <em>maximumThreshold</em> parameter is less than 0.</p>\n"
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>The <em>maximumThreshold</em> parameter is less than the <em>initialThreshold</em> parameter.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: HandleCollector.HandleCollector(String, Int32, Int32)
+- uid: System.Runtime.InteropServices.HandleCollector.Count
+  commentId: P:System.Runtime.InteropServices.HandleCollector.Count
+  id: Count
+  parent: System.Runtime.InteropServices.HandleCollector
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Runtime.InteropServices.HandleCollector.Count
+  type: Property
+  source:
+    remote:
+      path: src/System.Runtime.InteropServices/ref/System.Runtime.InteropServices.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Count
+    path: src/System.Runtime.InteropServices/ref/System.Runtime.InteropServices.cs
+    startLine: 298
+  assemblies:
+  - System.Runtime.InteropServices
+  namespace: System.Runtime.InteropServices
+  summary: "\n<p>Gets the number of handles collected.</p>\n"
+  syntax:
+    content: public int Count { get; }
+    content.vb: Public ReadOnly Property Count As Integer
+    parameters: []
+    return:
+      type: System.Int32
+      description: "\n<p>The number of handles collected.</p>\n"
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  nameWithType: HandleCollector.Count
+- uid: System.Runtime.InteropServices.HandleCollector.InitialThreshold
+  commentId: P:System.Runtime.InteropServices.HandleCollector.InitialThreshold
+  id: InitialThreshold
+  parent: System.Runtime.InteropServices.HandleCollector
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Runtime.InteropServices.HandleCollector.InitialThreshold
+  type: Property
+  source:
+    remote:
+      path: src/System.Runtime.InteropServices/ref/System.Runtime.InteropServices.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: InitialThreshold
+    path: src/System.Runtime.InteropServices/ref/System.Runtime.InteropServices.cs
+    startLine: 299
+  assemblies:
+  - System.Runtime.InteropServices
+  namespace: System.Runtime.InteropServices
+  summary: "\n<p>Gets a value that specifies the point at which collections should begin.</p>\n"
+  syntax:
+    content: public int InitialThreshold { get; }
+    content.vb: Public ReadOnly Property InitialThreshold As Integer
+    parameters: []
+    return:
+      type: System.Int32
+      description: "\n<p>A value that specifies the point at which collections should begin.</p>\n"
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  nameWithType: HandleCollector.InitialThreshold
+- uid: System.Runtime.InteropServices.HandleCollector.MaximumThreshold
+  commentId: P:System.Runtime.InteropServices.HandleCollector.MaximumThreshold
+  id: MaximumThreshold
+  parent: System.Runtime.InteropServices.HandleCollector
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Runtime.InteropServices.HandleCollector.MaximumThreshold
+  type: Property
+  source:
+    remote:
+      path: src/System.Runtime.InteropServices/ref/System.Runtime.InteropServices.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: MaximumThreshold
+    path: src/System.Runtime.InteropServices/ref/System.Runtime.InteropServices.cs
+    startLine: 300
+  assemblies:
+  - System.Runtime.InteropServices
+  namespace: System.Runtime.InteropServices
+  summary: "\n<p>Gets a value that specifies the point at which collections must occur.</p>\n"
+  syntax:
+    content: public int MaximumThreshold { get; }
+    content.vb: Public ReadOnly Property MaximumThreshold As Integer
+    parameters: []
+    return:
+      type: System.Int32
+      description: "\n<p>A value that specifies the point at which collections must occur.</p>\n"
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  nameWithType: HandleCollector.MaximumThreshold
+- uid: System.Runtime.InteropServices.HandleCollector.Name
+  commentId: P:System.Runtime.InteropServices.HandleCollector.Name
+  id: Name
+  parent: System.Runtime.InteropServices.HandleCollector
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Runtime.InteropServices.HandleCollector.Name
+  type: Property
+  source:
+    remote:
+      path: src/System.Runtime.InteropServices/ref/System.Runtime.InteropServices.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Name
+    path: src/System.Runtime.InteropServices/ref/System.Runtime.InteropServices.cs
+    startLine: 301
+  assemblies:
+  - System.Runtime.InteropServices
+  namespace: System.Runtime.InteropServices
+  summary: "\n<p>Gets the name of a <xref href=\"System.Runtime.InteropServices.HandleCollector\" data-throw-if-not-resolved=\"false\"></xref> object.</p>\n"
+  syntax:
+    content: public string Name { get; }
+    content.vb: Public ReadOnly Property Name As String
+    parameters: []
+    return:
+      type: System.String
+      description: "\n<p>This <xref href=\"System.Runtime.InteropServices.HandleCollector.Name\" data-throw-if-not-resolved=\"false\"></xref> property allows you to name collectors that track handle types separately.</p>\n"
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  nameWithType: HandleCollector.Name
+- uid: System.Runtime.InteropServices.HandleCollector.Add
+  commentId: M:System.Runtime.InteropServices.HandleCollector.Add
+  id: Add
+  parent: System.Runtime.InteropServices.HandleCollector
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Runtime.InteropServices.HandleCollector.Add()
+  type: Method
+  source:
+    remote:
+      path: src/System.Runtime.InteropServices/ref/System.Runtime.InteropServices.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Add
+    path: src/System.Runtime.InteropServices/ref/System.Runtime.InteropServices.cs
+    startLine: 302
+  assemblies:
+  - System.Runtime.InteropServices
+  namespace: System.Runtime.InteropServices
+  summary: "\n<p>Increments the current handle count.</p>\n"
+  syntax:
+    content: public void Add()
+    content.vb: Public Sub Add
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: "\n<p>The <xref href=\"System.Runtime.InteropServices.HandleCollector.Count\" data-throw-if-not-resolved=\"false\"></xref> property is less than 0.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: HandleCollector.Add()
+- uid: System.Runtime.InteropServices.HandleCollector.Remove
+  commentId: M:System.Runtime.InteropServices.HandleCollector.Remove
+  id: Remove
+  parent: System.Runtime.InteropServices.HandleCollector
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Runtime.InteropServices.HandleCollector.Remove()
+  type: Method
+  source:
+    remote:
+      path: src/System.Runtime.InteropServices/ref/System.Runtime.InteropServices.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Remove
+    path: src/System.Runtime.InteropServices/ref/System.Runtime.InteropServices.cs
+    startLine: 303
+  assemblies:
+  - System.Runtime.InteropServices
+  namespace: System.Runtime.InteropServices
+  summary: "\n<p>Decrements the current handle count.</p>\n"
+  syntax:
+    content: public void Remove()
+    content.vb: Public Sub Remove
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: "\n<p>The <xref href=\"System.Runtime.InteropServices.HandleCollector.Count\" data-throw-if-not-resolved=\"false\"></xref> property is less than 0.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: HandleCollector.Remove()
+references:
+- uid: System.Runtime.InteropServices
+  isExternal: false
+  name: "XXX"
+  fullName: System.Runtime.InteropServices
+  commentId: N:System.Runtime.InteropServices
+  nameWithType: System.Runtime.InteropServices
+- uid: System.Object
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Object
+  commentId: T:System.Object
+  nameWithType: Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.ToString
+  nameWithType: Object.ToString()
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.Equals(System.Object)
+  nameWithType: Object.Equals(Object)
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  nameWithType: Object.Equals(Object, Object)
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.GetHashCode
+  nameWithType: Object.GetHashCode()
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.GetType
+  nameWithType: Object.GetType()
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.MemberwiseClone
+  nameWithType: Object.MemberwiseClone()
+- uid: System
+  isExternal: false
+  name: "XXX"
+  fullName: System
+  commentId: N:System
+  nameWithType: System
+- uid: System.String
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.String
+  commentId: T:System.String
+  nameWithType: String
+- uid: System.Int32
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Int32
+  commentId: T:System.Int32
+  nameWithType: Int32
+- uid: System.ArgumentOutOfRangeException
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentOutOfRangeException
+  nameWithType: ArgumentOutOfRangeException
+  commentId: T:System.ArgumentOutOfRangeException
+- uid: System.ArgumentException
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentException
+  nameWithType: ArgumentException
+  commentId: T:System.ArgumentException
+- uid: System.InvalidOperationException
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.InvalidOperationException
+  nameWithType: InvalidOperationException
+  commentId: T:System.InvalidOperationException

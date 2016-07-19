@@ -1,0 +1,736 @@
+items:
+- uid: System.Net.DnsEndPoint
+  commentId: T:System.Net.DnsEndPoint
+  id: DnsEndPoint
+  parent: System.Net
+  children:
+  - System.Net.DnsEndPoint.#ctor(System.String,System.Int32)
+  - System.Net.DnsEndPoint.#ctor(System.String,System.Int32,System.Net.Sockets.AddressFamily)
+  - System.Net.DnsEndPoint.AddressFamily
+  - System.Net.DnsEndPoint.Equals(System.Object)
+  - System.Net.DnsEndPoint.GetHashCode
+  - System.Net.DnsEndPoint.Host
+  - System.Net.DnsEndPoint.Port
+  - System.Net.DnsEndPoint.ToString
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Net.DnsEndPoint
+  type: Class
+  source:
+    remote:
+      path: src/System.Net.Primitives/ref/System.Net.Primitives.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: DnsEndPoint
+    path: src/System.Net.Primitives/ref/System.Net.Primitives.cs
+    startLine: 97
+  assemblies:
+  - System.Net.Primitives
+  namespace: System.Net
+  summary: "\n<p>Represents a network endpoint as a host name or a string representation of an IP address and a port number.</p>\n"
+  syntax:
+    content: 'public class DnsEndPoint : EndPoint'
+    content.vb: >-
+      Public Class DnsEndPoint
+          Inherits EndPoint
+  inheritance:
+  - System.Object
+  - System.Net.EndPoint
+  inheritedMembers:
+  - System.Net.EndPoint.Create(System.Net.SocketAddress)
+  - System.Net.EndPoint.Serialize
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+  nameWithType: DnsEndPoint
+- uid: System.Net.DnsEndPoint.#ctor(System.String,System.Int32)
+  commentId: M:System.Net.DnsEndPoint.#ctor(System.String,System.Int32)
+  id: '#ctor(System.String,System.Int32)'
+  parent: System.Net.DnsEndPoint
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Net.DnsEndPoint.DnsEndPoint(System.String, System.Int32)
+  type: Constructor
+  source:
+    remote:
+      path: src/System.Net.Primitives/ref/System.Net.Primitives.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: .ctor
+    path: src/System.Net.Primitives/ref/System.Net.Primitives.cs
+    startLine: 99
+  assemblies:
+  - System.Net.Primitives
+  namespace: System.Net
+  summary: "\n<p>Initializes a new instance of the <xref href=\"System.Net.DnsEndPoint\" data-throw-if-not-resolved=\"false\"></xref> class with the host name or string representation of an IP address and a port number.</p>\n"
+  syntax:
+    content: public DnsEndPoint(string host, int port)
+    content.vb: Public Sub New(host As String, port As Integer)
+    parameters:
+    - id: host
+      type: System.String
+      description: "\n<p>The host name or a string representation of the IP address.</p>\n"
+    - id: port
+      type: System.Int32
+      description: "\n<p>The port number associated with the address, or 0 to specify any available port. <em>port</em> is in host order.</p>\n"
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>The <em>host</em> parameter contains an empty string.</p>\n"
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>The <em>host</em> parameter is a <strong>null</strong>.</p>\n"
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>port</em> is less than <xref href=\"System.Net.IPEndPoint.MinPort\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n<p>-or- </p>\n<p>\n<em>port</em> is greater than <xref href=\"System.Net.IPEndPoint.MaxPort\" data-throw-if-not-resolved=\"false\"></xref>. </p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: DnsEndPoint.DnsEndPoint(String, Int32)
+- uid: System.Net.DnsEndPoint.#ctor(System.String,System.Int32,System.Net.Sockets.AddressFamily)
+  commentId: M:System.Net.DnsEndPoint.#ctor(System.String,System.Int32,System.Net.Sockets.AddressFamily)
+  id: '#ctor(System.String,System.Int32,System.Net.Sockets.AddressFamily)'
+  parent: System.Net.DnsEndPoint
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Net.DnsEndPoint.DnsEndPoint(System.String, System.Int32, System.Net.Sockets.AddressFamily)
+  type: Constructor
+  source:
+    remote:
+      path: src/System.Net.Primitives/ref/System.Net.Primitives.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: .ctor
+    path: src/System.Net.Primitives/ref/System.Net.Primitives.cs
+    startLine: 100
+  assemblies:
+  - System.Net.Primitives
+  namespace: System.Net
+  summary: "\n<p>Initializes a new instance of the <xref href=\"System.Net.DnsEndPoint\" data-throw-if-not-resolved=\"false\"></xref> class with the host name or string representation of an IP address, a port number, and an address family.</p>\n"
+  syntax:
+    content: public DnsEndPoint(string host, int port, AddressFamily addressFamily)
+    content.vb: Public Sub New(host As String, port As Integer, addressFamily As AddressFamily)
+    parameters:
+    - id: host
+      type: System.String
+      description: "\n<p>The host name or a string representation of the IP address.</p>\n"
+    - id: port
+      type: System.Int32
+      description: "\n<p>The port number associated with the address, or 0 to specify any available port. <em>port</em> is in host order.</p>\n"
+    - id: addressFamily
+      type: System.Net.Sockets.AddressFamily
+      description: "\n<p>One of the <xref href=\"System.Net.Sockets.AddressFamily\" data-throw-if-not-resolved=\"false\"></xref> values.</p>\n"
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>The <em>host</em> parameter contains an empty string.</p>\n<p>-or- </p>\n<p>\n<em>addressFamily</em> is <xref href=\"System.Net.Sockets.AddressFamily.Unknown\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>The <em>host</em> parameter is a <strong>null</strong>.</p>\n"
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>port</em> is less than <xref href=\"System.Net.IPEndPoint.MinPort\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n<p>-or- </p>\n<p>\n<em>port</em> is greater than <xref href=\"System.Net.IPEndPoint.MaxPort\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: DnsEndPoint.DnsEndPoint(String, Int32, AddressFamily)
+- uid: System.Net.DnsEndPoint.AddressFamily
+  commentId: P:System.Net.DnsEndPoint.AddressFamily
+  id: AddressFamily
+  parent: System.Net.DnsEndPoint
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Net.DnsEndPoint.AddressFamily
+  type: Property
+  source:
+    remote:
+      path: src/System.Net.Primitives/ref/System.Net.Primitives.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: AddressFamily
+    path: src/System.Net.Primitives/ref/System.Net.Primitives.cs
+    startLine: 101
+  assemblies:
+  - System.Net.Primitives
+  namespace: System.Net
+  summary: "\n<p>Gets the Internet Protocol (IP) address family.</p>\n"
+  syntax:
+    content: public override AddressFamily AddressFamily { get; }
+    content.vb: Public Overrides ReadOnly Property AddressFamily As AddressFamily
+    parameters: []
+    return:
+      type: System.Net.Sockets.AddressFamily
+      description: "\n<p>One of the <xref href=\"System.Net.Sockets.AddressFamily\" data-throw-if-not-resolved=\"false\"></xref> values.</p>\n"
+  overridden: System.Net.EndPoint.AddressFamily
+  modifiers.csharp:
+  - public
+  - override
+  - get
+  modifiers.vb:
+  - Public
+  - Overrides
+  - ReadOnly
+  nameWithType: DnsEndPoint.AddressFamily
+- uid: System.Net.DnsEndPoint.Host
+  commentId: P:System.Net.DnsEndPoint.Host
+  id: Host
+  parent: System.Net.DnsEndPoint
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Net.DnsEndPoint.Host
+  type: Property
+  source:
+    remote:
+      path: src/System.Net.Primitives/ref/System.Net.Primitives.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Host
+    path: src/System.Net.Primitives/ref/System.Net.Primitives.cs
+    startLine: 102
+  assemblies:
+  - System.Net.Primitives
+  namespace: System.Net
+  summary: "\n<p>Gets the host name or string representation of the Internet Protocol (IP) address of the host.</p>\n"
+  syntax:
+    content: public string Host { get; }
+    content.vb: Public ReadOnly Property Host As String
+    parameters: []
+    return:
+      type: System.String
+      description: "\n<p>A host name or string representation of an IP address.</p>\n"
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  nameWithType: DnsEndPoint.Host
+- uid: System.Net.DnsEndPoint.Port
+  commentId: P:System.Net.DnsEndPoint.Port
+  id: Port
+  parent: System.Net.DnsEndPoint
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Net.DnsEndPoint.Port
+  type: Property
+  source:
+    remote:
+      path: src/System.Net.Primitives/ref/System.Net.Primitives.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Port
+    path: src/System.Net.Primitives/ref/System.Net.Primitives.cs
+    startLine: 103
+  assemblies:
+  - System.Net.Primitives
+  namespace: System.Net
+  summary: "\n<p>Gets the port number of the <xref href=\"System.Net.DnsEndPoint\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  syntax:
+    content: public int Port { get; }
+    content.vb: Public ReadOnly Property Port As Integer
+    parameters: []
+    return:
+      type: System.Int32
+      description: "\n<p>An integer value in the range 0 to 0xffff indicating the port number of the <xref href=\"System.Net.DnsEndPoint\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  nameWithType: DnsEndPoint.Port
+- uid: System.Net.DnsEndPoint.Equals(System.Object)
+  commentId: M:System.Net.DnsEndPoint.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: System.Net.DnsEndPoint
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Net.DnsEndPoint.Equals(System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/System.Net.Primitives/ref/System.Net.Primitives.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Equals
+    path: src/System.Net.Primitives/ref/System.Net.Primitives.cs
+    startLine: 104
+  assemblies:
+  - System.Net.Primitives
+  namespace: System.Net
+  summary: "\n<p>Compares two <xref href=\"System.Net.DnsEndPoint\" data-throw-if-not-resolved=\"false\"></xref> objects.</p>\n"
+  syntax:
+    content: public override bool Equals(object comparand)
+    content.vb: Public Overrides Function Equals(comparand As Object) As Boolean
+    parameters:
+    - id: comparand
+      type: System.Object
+      description: "\n<p>A <xref href=\"System.Net.DnsEndPoint\" data-throw-if-not-resolved=\"false\"></xref> instance to compare to the current instance.</p>\n"
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if the two <xref href=\"System.Net.DnsEndPoint\" data-throw-if-not-resolved=\"false\"></xref> instances are equal; otherwise, <strong>false</strong>.</p>\n"
+  overridden: System.Object.Equals(System.Object)
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  nameWithType: DnsEndPoint.Equals(Object)
+- uid: System.Net.DnsEndPoint.GetHashCode
+  commentId: M:System.Net.DnsEndPoint.GetHashCode
+  id: GetHashCode
+  parent: System.Net.DnsEndPoint
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Net.DnsEndPoint.GetHashCode()
+  type: Method
+  source:
+    remote:
+      path: src/System.Net.Primitives/ref/System.Net.Primitives.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: GetHashCode
+    path: src/System.Net.Primitives/ref/System.Net.Primitives.cs
+    startLine: 105
+  assemblies:
+  - System.Net.Primitives
+  namespace: System.Net
+  summary: "\n<p>Returns a hash value for a <xref href=\"System.Net.DnsEndPoint\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  syntax:
+    content: public override int GetHashCode()
+    content.vb: Public Overrides Function GetHashCode As Integer
+    return:
+      type: System.Int32
+      description: "\n<p>An integer hash value for the <xref href=\"System.Net.DnsEndPoint\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  overridden: System.Object.GetHashCode
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  nameWithType: DnsEndPoint.GetHashCode()
+- uid: System.Net.DnsEndPoint.ToString
+  commentId: M:System.Net.DnsEndPoint.ToString
+  id: ToString
+  parent: System.Net.DnsEndPoint
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Net.DnsEndPoint.ToString()
+  type: Method
+  source:
+    remote:
+      path: src/System.Net.Primitives/ref/System.Net.Primitives.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: ToString
+    path: src/System.Net.Primitives/ref/System.Net.Primitives.cs
+    startLine: 106
+  assemblies:
+  - System.Net.Primitives
+  namespace: System.Net
+  summary: "\n<p>Returns the host name or string representation of the IP address and port number of the <xref href=\"System.Net.DnsEndPoint\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  syntax:
+    content: public override string ToString()
+    content.vb: Public Overrides Function ToString As String
+    return:
+      type: System.String
+      description: "\n<p>A string containing the address family, host name or IP address string, and the port number of the specified <xref href=\"System.Net.DnsEndPoint\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  overridden: System.Object.ToString
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  nameWithType: DnsEndPoint.ToString()
+references:
+- uid: System.Net
+  isExternal: false
+  name: "XXX"
+  fullName: System.Net
+  commentId: N:System.Net
+  nameWithType: System.Net
+- uid: System.Object
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Object
+  commentId: T:System.Object
+  nameWithType: Object
+- uid: System.Net.EndPoint
+  parent: System.Net
+  isExternal: false
+  name: "XXX"
+  fullName: System.Net.EndPoint
+  commentId: T:System.Net.EndPoint
+  nameWithType: EndPoint
+- uid: System.Net.EndPoint.Create(System.Net.SocketAddress)
+  parent: System.Net.EndPoint
+  isExternal: false
+  name: "XXX"
+  fullName: System.Net.EndPoint.Create(System.Net.SocketAddress)
+  spec.csharp:
+  - uid: System.Net.EndPoint.Create(System.Net.SocketAddress)
+    name: "XXX"
+    fullName: System.Net.EndPoint.Create
+  - name: "XXX"
+    fullName: (
+  - uid: System.Net.SocketAddress
+    name: "XXX"
+    fullName: System.Net.SocketAddress
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Net.EndPoint.Create(System.Net.SocketAddress)
+    name: "XXX"
+    fullName: System.Net.EndPoint.Create
+  - name: "XXX"
+    fullName: (
+  - uid: System.Net.SocketAddress
+    name: "XXX"
+    fullName: System.Net.SocketAddress
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Net.EndPoint.Create(System.Net.SocketAddress)
+  nameWithType: EndPoint.Create(SocketAddress)
+- uid: System.Net.EndPoint.Serialize
+  parent: System.Net.EndPoint
+  isExternal: false
+  name: "XXX"
+  fullName: System.Net.EndPoint.Serialize()
+  spec.csharp:
+  - uid: System.Net.EndPoint.Serialize
+    name: "XXX"
+    fullName: System.Net.EndPoint.Serialize
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Net.EndPoint.Serialize
+    name: "XXX"
+    fullName: System.Net.EndPoint.Serialize
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Net.EndPoint.Serialize
+  nameWithType: EndPoint.Serialize()
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  nameWithType: Object.Equals(Object, Object)
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.GetType
+  nameWithType: Object.GetType()
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.MemberwiseClone
+  nameWithType: Object.MemberwiseClone()
+- uid: System
+  isExternal: false
+  name: "XXX"
+  fullName: System
+  commentId: N:System
+  nameWithType: System
+- uid: System.String
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.String
+  commentId: T:System.String
+  nameWithType: String
+- uid: System.Int32
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Int32
+  commentId: T:System.Int32
+  nameWithType: Int32
+- uid: System.Net.Sockets.AddressFamily
+  parent: System.Net.Sockets
+  isExternal: false
+  name: "XXX"
+  fullName: System.Net.Sockets.AddressFamily
+  commentId: T:System.Net.Sockets.AddressFamily
+  nameWithType: AddressFamily
+- uid: System.Net.Sockets
+  isExternal: false
+  name: "XXX"
+  fullName: System.Net.Sockets
+  commentId: N:System.Net.Sockets
+  nameWithType: System.Net.Sockets
+- uid: System.Net.EndPoint.AddressFamily
+  parent: System.Net.EndPoint
+  isExternal: false
+  name: "XXX"
+  fullName: System.Net.EndPoint.AddressFamily
+  commentId: P:System.Net.EndPoint.AddressFamily
+  nameWithType: EndPoint.AddressFamily
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.Equals(System.Object)
+  nameWithType: Object.Equals(Object)
+- uid: System.Boolean
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Boolean
+  commentId: T:System.Boolean
+  nameWithType: Boolean
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.GetHashCode
+  nameWithType: Object.GetHashCode()
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.ToString
+  nameWithType: Object.ToString()
+- uid: System.ArgumentException
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentException
+  nameWithType: ArgumentException
+  commentId: T:System.ArgumentException
+- uid: System.ArgumentNullException
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentNullException
+  nameWithType: ArgumentNullException
+  commentId: T:System.ArgumentNullException
+- uid: System.ArgumentOutOfRangeException
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentOutOfRangeException
+  nameWithType: ArgumentOutOfRangeException
+  commentId: T:System.ArgumentOutOfRangeException

@@ -1,0 +1,1984 @@
+items:
+- uid: System.Numerics.Quaternion
+  commentId: T:System.Numerics.Quaternion
+  id: Quaternion
+  parent: System.Numerics
+  children:
+  - System.Numerics.Quaternion.#ctor(System.Numerics.Vector3,System.Single)
+  - System.Numerics.Quaternion.#ctor(System.Single,System.Single,System.Single,System.Single)
+  - System.Numerics.Quaternion.Add(System.Numerics.Quaternion,System.Numerics.Quaternion)
+  - System.Numerics.Quaternion.Concatenate(System.Numerics.Quaternion,System.Numerics.Quaternion)
+  - System.Numerics.Quaternion.Conjugate(System.Numerics.Quaternion)
+  - System.Numerics.Quaternion.CreateFromAxisAngle(System.Numerics.Vector3,System.Single)
+  - System.Numerics.Quaternion.CreateFromRotationMatrix(System.Numerics.Matrix4x4)
+  - System.Numerics.Quaternion.CreateFromYawPitchRoll(System.Single,System.Single,System.Single)
+  - System.Numerics.Quaternion.Divide(System.Numerics.Quaternion,System.Numerics.Quaternion)
+  - System.Numerics.Quaternion.Dot(System.Numerics.Quaternion,System.Numerics.Quaternion)
+  - System.Numerics.Quaternion.Equals(System.Numerics.Quaternion)
+  - System.Numerics.Quaternion.Equals(System.Object)
+  - System.Numerics.Quaternion.GetHashCode
+  - System.Numerics.Quaternion.Identity
+  - System.Numerics.Quaternion.Inverse(System.Numerics.Quaternion)
+  - System.Numerics.Quaternion.IsIdentity
+  - System.Numerics.Quaternion.Length
+  - System.Numerics.Quaternion.LengthSquared
+  - System.Numerics.Quaternion.Lerp(System.Numerics.Quaternion,System.Numerics.Quaternion,System.Single)
+  - System.Numerics.Quaternion.Multiply(System.Numerics.Quaternion,System.Numerics.Quaternion)
+  - System.Numerics.Quaternion.Multiply(System.Numerics.Quaternion,System.Single)
+  - System.Numerics.Quaternion.Negate(System.Numerics.Quaternion)
+  - System.Numerics.Quaternion.Normalize(System.Numerics.Quaternion)
+  - System.Numerics.Quaternion.op_Addition(System.Numerics.Quaternion,System.Numerics.Quaternion)
+  - System.Numerics.Quaternion.op_Division(System.Numerics.Quaternion,System.Numerics.Quaternion)
+  - System.Numerics.Quaternion.op_Equality(System.Numerics.Quaternion,System.Numerics.Quaternion)
+  - System.Numerics.Quaternion.op_Inequality(System.Numerics.Quaternion,System.Numerics.Quaternion)
+  - System.Numerics.Quaternion.op_Multiply(System.Numerics.Quaternion,System.Numerics.Quaternion)
+  - System.Numerics.Quaternion.op_Multiply(System.Numerics.Quaternion,System.Single)
+  - System.Numerics.Quaternion.op_Subtraction(System.Numerics.Quaternion,System.Numerics.Quaternion)
+  - System.Numerics.Quaternion.op_UnaryNegation(System.Numerics.Quaternion)
+  - System.Numerics.Quaternion.Slerp(System.Numerics.Quaternion,System.Numerics.Quaternion,System.Single)
+  - System.Numerics.Quaternion.Subtract(System.Numerics.Quaternion,System.Numerics.Quaternion)
+  - System.Numerics.Quaternion.ToString
+  - System.Numerics.Quaternion.W
+  - System.Numerics.Quaternion.X
+  - System.Numerics.Quaternion.Y
+  - System.Numerics.Quaternion.Z
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Numerics.Quaternion
+  type: Struct
+  source:
+    remote:
+      path: src/System.Numerics.Vectors/ref/System.Numerics.Vectors.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Quaternion
+    path: src/System.Numerics.Vectors/ref/System.Numerics.Vectors.cs
+    startLine: 152
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: "\n<p>Represents a vector that is used to encode three-dimensional physical rotations. </p>\n"
+  syntax:
+    content: >-
+      [StructLayout(LayoutKind.Sequential)]
+
+      public struct Quaternion : IEquatable<Quaternion>
+    content.vb: >-
+      <StructLayout(LayoutKind.Sequential)>
+
+      Public Structure Quaternion
+          Implements IEquatable(Of Quaternion)
+  implements:
+  - System.IEquatable{System.Numerics.Quaternion}
+  inheritedMembers:
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+  attributes:
+  - type: System.Runtime.InteropServices.StructLayoutAttribute
+    ctor: System.Runtime.InteropServices.StructLayoutAttribute.#ctor(System.Runtime.InteropServices.LayoutKind)
+    arguments:
+    - type: System.Runtime.InteropServices.LayoutKind
+      value: 0
+  modifiers.csharp:
+  - public
+  - struct
+  modifiers.vb:
+  - Public
+  - Structure
+  nameWithType: Quaternion
+- uid: System.Numerics.Quaternion.W
+  commentId: F:System.Numerics.Quaternion.W
+  id: W
+  parent: System.Numerics.Quaternion
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Numerics.Quaternion.W
+  type: Field
+  source:
+    remote:
+      path: src/System.Numerics.Vectors/ref/System.Numerics.Vectors.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: W
+    path: src/System.Numerics.Vectors/ref/System.Numerics.Vectors.cs
+    startLine: 155
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: "\n<p> The rotation component of the quaternion. </p>\n"
+  syntax:
+    content: public float W
+    content.vb: Public W As Single
+    return:
+      type: System.Single
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: Quaternion.W
+- uid: System.Numerics.Quaternion.X
+  commentId: F:System.Numerics.Quaternion.X
+  id: X
+  parent: System.Numerics.Quaternion
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Numerics.Quaternion.X
+  type: Field
+  source:
+    remote:
+      path: src/System.Numerics.Vectors/ref/System.Numerics.Vectors.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: X
+    path: src/System.Numerics.Vectors/ref/System.Numerics.Vectors.cs
+    startLine: 156
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: "\n<p>The X value of the vector component of the quaternion. </p>\n"
+  syntax:
+    content: public float X
+    content.vb: Public X As Single
+    return:
+      type: System.Single
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: Quaternion.X
+- uid: System.Numerics.Quaternion.Y
+  commentId: F:System.Numerics.Quaternion.Y
+  id: Y
+  parent: System.Numerics.Quaternion
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Numerics.Quaternion.Y
+  type: Field
+  source:
+    remote:
+      path: src/System.Numerics.Vectors/ref/System.Numerics.Vectors.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Y
+    path: src/System.Numerics.Vectors/ref/System.Numerics.Vectors.cs
+    startLine: 157
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: "\n<p>The Y value of the vector component of the quaternion. </p>\n"
+  syntax:
+    content: public float Y
+    content.vb: Public Y As Single
+    return:
+      type: System.Single
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: Quaternion.Y
+- uid: System.Numerics.Quaternion.Z
+  commentId: F:System.Numerics.Quaternion.Z
+  id: Z
+  parent: System.Numerics.Quaternion
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Numerics.Quaternion.Z
+  type: Field
+  source:
+    remote:
+      path: src/System.Numerics.Vectors/ref/System.Numerics.Vectors.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Z
+    path: src/System.Numerics.Vectors/ref/System.Numerics.Vectors.cs
+    startLine: 158
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: "\n<p>The Z value of the vector component of the quaternion. </p>\n"
+  syntax:
+    content: public float Z
+    content.vb: Public Z As Single
+    return:
+      type: System.Single
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: Quaternion.Z
+- uid: System.Numerics.Quaternion.#ctor(System.Numerics.Vector3,System.Single)
+  commentId: M:System.Numerics.Quaternion.#ctor(System.Numerics.Vector3,System.Single)
+  id: '#ctor(System.Numerics.Vector3,System.Single)'
+  parent: System.Numerics.Quaternion
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Numerics.Quaternion.Quaternion(System.Numerics.Vector3, System.Single)
+  type: Constructor
+  source:
+    remote:
+      path: src/System.Numerics.Vectors/ref/System.Numerics.Vectors.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: .ctor
+    path: src/System.Numerics.Vectors/ref/System.Numerics.Vectors.cs
+    startLine: 159
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: "\n<p>Creates a quaternion from the specified vector and rotation parts. </p>\n"
+  syntax:
+    content: public Quaternion(Vector3 vectorPart, float scalarPart)
+    content.vb: Public Sub New(vectorPart As Vector3, scalarPart As Single)
+    parameters:
+    - id: vectorPart
+      type: System.Numerics.Vector3
+      description: "\n<p>The vector part of the quaternion. </p>\n"
+    - id: scalarPart
+      type: System.Single
+      description: "\n<p>The rotation part of the quaternion. </p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: Quaternion.Quaternion(Vector3, Single)
+- uid: System.Numerics.Quaternion.#ctor(System.Single,System.Single,System.Single,System.Single)
+  commentId: M:System.Numerics.Quaternion.#ctor(System.Single,System.Single,System.Single,System.Single)
+  id: '#ctor(System.Single,System.Single,System.Single,System.Single)'
+  parent: System.Numerics.Quaternion
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Numerics.Quaternion.Quaternion(System.Single, System.Single, System.Single, System.Single)
+  type: Constructor
+  source:
+    remote:
+      path: src/System.Numerics.Vectors/ref/System.Numerics.Vectors.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: .ctor
+    path: src/System.Numerics.Vectors/ref/System.Numerics.Vectors.cs
+    startLine: 160
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: "\n<p>Constructs a quaternion from the specified components.</p>\n"
+  syntax:
+    content: public Quaternion(float x, float y, float z, float w)
+    content.vb: Public Sub New(x As Single, y As Single, z As Single, w As Single)
+    parameters:
+    - id: x
+      type: System.Single
+      description: "\n<p>The value to assign to the X component of the quaternion. </p>\n"
+    - id: y
+      type: System.Single
+      description: "\n<p>The value to assign to the Y component of the quaternion.</p>\n"
+    - id: z
+      type: System.Single
+      description: "\n<p>The value to assign to the Z component of the quaternion.</p>\n"
+    - id: w
+      type: System.Single
+      description: "\n<p>The value to assign to the W component of the quaternion.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: Quaternion.Quaternion(Single, Single, Single, Single)
+- uid: System.Numerics.Quaternion.Identity
+  commentId: P:System.Numerics.Quaternion.Identity
+  id: Identity
+  parent: System.Numerics.Quaternion
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Numerics.Quaternion.Identity
+  type: Property
+  source:
+    remote:
+      path: src/System.Numerics.Vectors/ref/System.Numerics.Vectors.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Identity
+    path: src/System.Numerics.Vectors/ref/System.Numerics.Vectors.cs
+    startLine: 161
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: "\n<p>Gets a quaternion that represents no rotation. </p>\n"
+  syntax:
+    content: public static Quaternion Identity { get; }
+    content.vb: Public Shared ReadOnly Property Identity As Quaternion
+    parameters: []
+    return:
+      type: System.Numerics.Quaternion
+      description: "\n<p>A quaternion whose values are <code>(0, 0, 0, 1)</code>. </p>\n"
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+  nameWithType: Quaternion.Identity
+- uid: System.Numerics.Quaternion.IsIdentity
+  commentId: P:System.Numerics.Quaternion.IsIdentity
+  id: IsIdentity
+  parent: System.Numerics.Quaternion
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Numerics.Quaternion.IsIdentity
+  type: Property
+  source:
+    remote:
+      path: src/System.Numerics.Vectors/ref/System.Numerics.Vectors.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: IsIdentity
+    path: src/System.Numerics.Vectors/ref/System.Numerics.Vectors.cs
+    startLine: 162
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: "\n<p>Gets a value that indicates whether the current instance is the identity quaternion. </p>\n"
+  syntax:
+    content: public bool IsIdentity { get; }
+    content.vb: Public ReadOnly Property IsIdentity As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if the current instance is the identity quaternion; otherwise, <strong>false</strong>.  </p>\n"
+  seealso:
+  - type: System.Numerics.Quaternion.Identity
+    commentId: P:System.Numerics.Quaternion.Identity
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  nameWithType: Quaternion.IsIdentity
+- uid: System.Numerics.Quaternion.Add(System.Numerics.Quaternion,System.Numerics.Quaternion)
+  commentId: M:System.Numerics.Quaternion.Add(System.Numerics.Quaternion,System.Numerics.Quaternion)
+  id: Add(System.Numerics.Quaternion,System.Numerics.Quaternion)
+  parent: System.Numerics.Quaternion
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Numerics.Quaternion.Add(System.Numerics.Quaternion, System.Numerics.Quaternion)
+  type: Method
+  source:
+    remote:
+      path: src/System.Numerics.Vectors/ref/System.Numerics.Vectors.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Add
+    path: src/System.Numerics.Vectors/ref/System.Numerics.Vectors.cs
+    startLine: 163
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: "\n<p>Adds each element in one quaternion with its corresponding element in a second quaternion.</p>\n"
+  syntax:
+    content: public static Quaternion Add(Quaternion value1, Quaternion value2)
+    content.vb: Public Shared Function Add(value1 As Quaternion, value2 As Quaternion) As Quaternion
+    parameters:
+    - id: value1
+      type: System.Numerics.Quaternion
+      description: "\n<p>The first quaternion. </p>\n"
+    - id: value2
+      type: System.Numerics.Quaternion
+      description: "\n<p>The second quaternion. </p>\n"
+    return:
+      type: System.Numerics.Quaternion
+      description: "\n<p>The quaternion that contains the summed values of <em>value1</em> and <em>value2</em>. </p>\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  nameWithType: Quaternion.Add(Quaternion, Quaternion)
+- uid: System.Numerics.Quaternion.Concatenate(System.Numerics.Quaternion,System.Numerics.Quaternion)
+  commentId: M:System.Numerics.Quaternion.Concatenate(System.Numerics.Quaternion,System.Numerics.Quaternion)
+  id: Concatenate(System.Numerics.Quaternion,System.Numerics.Quaternion)
+  parent: System.Numerics.Quaternion
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Numerics.Quaternion.Concatenate(System.Numerics.Quaternion, System.Numerics.Quaternion)
+  type: Method
+  source:
+    remote:
+      path: src/System.Numerics.Vectors/ref/System.Numerics.Vectors.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Concatenate
+    path: src/System.Numerics.Vectors/ref/System.Numerics.Vectors.cs
+    startLine: 164
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: "\n<p>Concatenates two quaternions. </p>\n"
+  syntax:
+    content: public static Quaternion Concatenate(Quaternion value1, Quaternion value2)
+    content.vb: Public Shared Function Concatenate(value1 As Quaternion, value2 As Quaternion) As Quaternion
+    parameters:
+    - id: value1
+      type: System.Numerics.Quaternion
+      description: "\n<p>The first quaternion rotation in the series. </p>\n"
+    - id: value2
+      type: System.Numerics.Quaternion
+      description: "\n<p>The second quaternion rotation in the series. </p>\n"
+    return:
+      type: System.Numerics.Quaternion
+      description: "\n<p>A new quaternion representing the concatenation of the <em>value1</em> rotation followed by the <em>value2</em> rotation. </p>\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  nameWithType: Quaternion.Concatenate(Quaternion, Quaternion)
+- uid: System.Numerics.Quaternion.Conjugate(System.Numerics.Quaternion)
+  commentId: M:System.Numerics.Quaternion.Conjugate(System.Numerics.Quaternion)
+  id: Conjugate(System.Numerics.Quaternion)
+  parent: System.Numerics.Quaternion
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Numerics.Quaternion.Conjugate(System.Numerics.Quaternion)
+  type: Method
+  source:
+    remote:
+      path: src/System.Numerics.Vectors/ref/System.Numerics.Vectors.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Conjugate
+    path: src/System.Numerics.Vectors/ref/System.Numerics.Vectors.cs
+    startLine: 165
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: "\n<p>Returns the conjugate of a specified quaternion. </p>\n"
+  syntax:
+    content: public static Quaternion Conjugate(Quaternion value)
+    content.vb: Public Shared Function Conjugate(value As Quaternion) As Quaternion
+    parameters:
+    - id: value
+      type: System.Numerics.Quaternion
+      description: "\n<p>The quaternion. </p>\n"
+    return:
+      type: System.Numerics.Quaternion
+      description: "\n<p>A new quaternion that is the conjugate of <strong>value</strong>. </p>\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  nameWithType: Quaternion.Conjugate(Quaternion)
+- uid: System.Numerics.Quaternion.CreateFromAxisAngle(System.Numerics.Vector3,System.Single)
+  commentId: M:System.Numerics.Quaternion.CreateFromAxisAngle(System.Numerics.Vector3,System.Single)
+  id: CreateFromAxisAngle(System.Numerics.Vector3,System.Single)
+  parent: System.Numerics.Quaternion
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Numerics.Quaternion.CreateFromAxisAngle(System.Numerics.Vector3, System.Single)
+  type: Method
+  source:
+    remote:
+      path: src/System.Numerics.Vectors/ref/System.Numerics.Vectors.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: CreateFromAxisAngle
+    path: src/System.Numerics.Vectors/ref/System.Numerics.Vectors.cs
+    startLine: 166
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: "\n<p>Creates a quaternion from a vector and an angle to rotate about the vector. </p>\n"
+  syntax:
+    content: public static Quaternion CreateFromAxisAngle(Vector3 axis, float angle)
+    content.vb: Public Shared Function CreateFromAxisAngle(axis As Vector3, angle As Single) As Quaternion
+    parameters:
+    - id: axis
+      type: System.Numerics.Vector3
+      description: "\n<p>The vector to rotate around. </p>\n"
+    - id: angle
+      type: System.Single
+      description: "\n<p>The angle, in radians, to rotate around the vector. </p>\n"
+    return:
+      type: System.Numerics.Quaternion
+      description: "\n<p>The newly created quaternion. </p>\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  nameWithType: Quaternion.CreateFromAxisAngle(Vector3, Single)
+- uid: System.Numerics.Quaternion.CreateFromRotationMatrix(System.Numerics.Matrix4x4)
+  commentId: M:System.Numerics.Quaternion.CreateFromRotationMatrix(System.Numerics.Matrix4x4)
+  id: CreateFromRotationMatrix(System.Numerics.Matrix4x4)
+  parent: System.Numerics.Quaternion
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Numerics.Quaternion.CreateFromRotationMatrix(System.Numerics.Matrix4x4)
+  type: Method
+  source:
+    remote:
+      path: src/System.Numerics.Vectors/ref/System.Numerics.Vectors.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: CreateFromRotationMatrix
+    path: src/System.Numerics.Vectors/ref/System.Numerics.Vectors.cs
+    startLine: 167
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: "\n<p>Creates a quaternion from the specified rotation matrix. </p>\n"
+  syntax:
+    content: public static Quaternion CreateFromRotationMatrix(Matrix4x4 matrix)
+    content.vb: Public Shared Function CreateFromRotationMatrix(matrix As Matrix4x4) As Quaternion
+    parameters:
+    - id: matrix
+      type: System.Numerics.Matrix4x4
+      description: "\n<p>The rotation matrix. </p>\n"
+    return:
+      type: System.Numerics.Quaternion
+      description: "\n<p>The newly created quaternion. </p>\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  nameWithType: Quaternion.CreateFromRotationMatrix(Matrix4x4)
+- uid: System.Numerics.Quaternion.CreateFromYawPitchRoll(System.Single,System.Single,System.Single)
+  commentId: M:System.Numerics.Quaternion.CreateFromYawPitchRoll(System.Single,System.Single,System.Single)
+  id: CreateFromYawPitchRoll(System.Single,System.Single,System.Single)
+  parent: System.Numerics.Quaternion
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Numerics.Quaternion.CreateFromYawPitchRoll(System.Single, System.Single, System.Single)
+  type: Method
+  source:
+    remote:
+      path: src/System.Numerics.Vectors/ref/System.Numerics.Vectors.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: CreateFromYawPitchRoll
+    path: src/System.Numerics.Vectors/ref/System.Numerics.Vectors.cs
+    startLine: 168
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: "\n<p>Creates a new quaternion from the given yaw, pitch, and roll. </p>\n"
+  syntax:
+    content: public static Quaternion CreateFromYawPitchRoll(float yaw, float pitch, float roll)
+    content.vb: Public Shared Function CreateFromYawPitchRoll(yaw As Single, pitch As Single, roll As Single) As Quaternion
+    parameters:
+    - id: yaw
+      type: System.Single
+      description: "\n<p>The yaw angle, in radians, around the Y axis. </p>\n"
+    - id: pitch
+      type: System.Single
+      description: "\n<p>The pitch angle, in radians, around the X axis. </p>\n"
+    - id: roll
+      type: System.Single
+      description: "\n<p>The roll angle, in radians, around the Z axis. </p>\n"
+    return:
+      type: System.Numerics.Quaternion
+      description: "\n<p>The resulting quaternion. </p>\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  nameWithType: Quaternion.CreateFromYawPitchRoll(Single, Single, Single)
+- uid: System.Numerics.Quaternion.Divide(System.Numerics.Quaternion,System.Numerics.Quaternion)
+  commentId: M:System.Numerics.Quaternion.Divide(System.Numerics.Quaternion,System.Numerics.Quaternion)
+  id: Divide(System.Numerics.Quaternion,System.Numerics.Quaternion)
+  parent: System.Numerics.Quaternion
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Numerics.Quaternion.Divide(System.Numerics.Quaternion, System.Numerics.Quaternion)
+  type: Method
+  source:
+    remote:
+      path: src/System.Numerics.Vectors/ref/System.Numerics.Vectors.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Divide
+    path: src/System.Numerics.Vectors/ref/System.Numerics.Vectors.cs
+    startLine: 169
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: "\n<p>Divides one quaternion by a second quaternion. </p>\n"
+  syntax:
+    content: public static Quaternion Divide(Quaternion value1, Quaternion value2)
+    content.vb: Public Shared Function Divide(value1 As Quaternion, value2 As Quaternion) As Quaternion
+    parameters:
+    - id: value1
+      type: System.Numerics.Quaternion
+      description: "\n<p>The dividend. </p>\n"
+    - id: value2
+      type: System.Numerics.Quaternion
+      description: "\n<p>The divisor. </p>\n"
+    return:
+      type: System.Numerics.Quaternion
+      description: "\n<p>The quaternion that results from dividing <em>value1</em> by <em>value2</em>. </p>\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  nameWithType: Quaternion.Divide(Quaternion, Quaternion)
+- uid: System.Numerics.Quaternion.Dot(System.Numerics.Quaternion,System.Numerics.Quaternion)
+  commentId: M:System.Numerics.Quaternion.Dot(System.Numerics.Quaternion,System.Numerics.Quaternion)
+  id: Dot(System.Numerics.Quaternion,System.Numerics.Quaternion)
+  parent: System.Numerics.Quaternion
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Numerics.Quaternion.Dot(System.Numerics.Quaternion, System.Numerics.Quaternion)
+  type: Method
+  source:
+    remote:
+      path: src/System.Numerics.Vectors/ref/System.Numerics.Vectors.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Dot
+    path: src/System.Numerics.Vectors/ref/System.Numerics.Vectors.cs
+    startLine: 170
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: "\n<p>Calculates the dot product of two quaternions. </p>\n"
+  syntax:
+    content: public static float Dot(Quaternion quaternion1, Quaternion quaternion2)
+    content.vb: Public Shared Function Dot(quaternion1 As Quaternion, quaternion2 As Quaternion) As Single
+    parameters:
+    - id: quaternion1
+      type: System.Numerics.Quaternion
+      description: "\n<p>The first quaternion. </p>\n"
+    - id: quaternion2
+      type: System.Numerics.Quaternion
+      description: "\n<p>The second quaternion. </p>\n"
+    return:
+      type: System.Single
+      description: "\n<p>The dot product. </p>\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  nameWithType: Quaternion.Dot(Quaternion, Quaternion)
+- uid: System.Numerics.Quaternion.Equals(System.Numerics.Quaternion)
+  commentId: M:System.Numerics.Quaternion.Equals(System.Numerics.Quaternion)
+  id: Equals(System.Numerics.Quaternion)
+  parent: System.Numerics.Quaternion
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Numerics.Quaternion.Equals(System.Numerics.Quaternion)
+  type: Method
+  source:
+    remote:
+      path: src/System.Numerics.Vectors/ref/System.Numerics.Vectors.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Equals
+    path: src/System.Numerics.Vectors/ref/System.Numerics.Vectors.cs
+    startLine: 171
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: "\n<p>Returns a value that indicates whether this instance and another quaternion are equal. </p>\n"
+  syntax:
+    content: public bool Equals(Quaternion other)
+    content.vb: Public Function Equals(other As Quaternion) As Boolean
+    parameters:
+    - id: other
+      type: System.Numerics.Quaternion
+      description: "\n<p>The other quaternion. </p>\n"
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if the two quaternions are equal; otherwise, <strong>false</strong>.</p>\n"
+  implements:
+  - System.IEquatable{System.Numerics.Quaternion}.Equals(System.Numerics.Quaternion)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: Quaternion.Equals(Quaternion)
+- uid: System.Numerics.Quaternion.Equals(System.Object)
+  commentId: M:System.Numerics.Quaternion.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: System.Numerics.Quaternion
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Numerics.Quaternion.Equals(System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/System.Numerics.Vectors/ref/System.Numerics.Vectors.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Equals
+    path: src/System.Numerics.Vectors/ref/System.Numerics.Vectors.cs
+    startLine: 172
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: "\n<p>Returns a value that indicates whether this instance and a specified object are equal. </p>\n"
+  syntax:
+    content: public override bool Equals(object obj)
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+    parameters:
+    - id: obj
+      type: System.Object
+      description: "\n<p>The object to compare with the current instance. </p>\n"
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if the current instance and <em>obj</em> are equal; otherwise, <strong>false</strong><strong></strong>. If <em>obj</em> is <strong>null</strong>, the method returns <strong>false</strong>. </p>\n"
+  overridden: System.ValueType.Equals(System.Object)
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  nameWithType: Quaternion.Equals(Object)
+- uid: System.Numerics.Quaternion.GetHashCode
+  commentId: M:System.Numerics.Quaternion.GetHashCode
+  id: GetHashCode
+  parent: System.Numerics.Quaternion
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Numerics.Quaternion.GetHashCode()
+  type: Method
+  source:
+    remote:
+      path: src/System.Numerics.Vectors/ref/System.Numerics.Vectors.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: GetHashCode
+    path: src/System.Numerics.Vectors/ref/System.Numerics.Vectors.cs
+    startLine: 173
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: "\n<p>Returns the hash code for this instance. </p>\n"
+  syntax:
+    content: public override int GetHashCode()
+    content.vb: Public Overrides Function GetHashCode As Integer
+    return:
+      type: System.Int32
+      description: "\n<p>The hash code. </p>\n"
+  overridden: System.ValueType.GetHashCode
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  nameWithType: Quaternion.GetHashCode()
+- uid: System.Numerics.Quaternion.Inverse(System.Numerics.Quaternion)
+  commentId: M:System.Numerics.Quaternion.Inverse(System.Numerics.Quaternion)
+  id: Inverse(System.Numerics.Quaternion)
+  parent: System.Numerics.Quaternion
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Numerics.Quaternion.Inverse(System.Numerics.Quaternion)
+  type: Method
+  source:
+    remote:
+      path: src/System.Numerics.Vectors/ref/System.Numerics.Vectors.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Inverse
+    path: src/System.Numerics.Vectors/ref/System.Numerics.Vectors.cs
+    startLine: 174
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: "\n<p>Returns the inverse of a quaternion. </p>\n"
+  syntax:
+    content: public static Quaternion Inverse(Quaternion value)
+    content.vb: Public Shared Function Inverse(value As Quaternion) As Quaternion
+    parameters:
+    - id: value
+      type: System.Numerics.Quaternion
+      description: "\n<p>The quaternion. </p>\n"
+    return:
+      type: System.Numerics.Quaternion
+      description: "\n<p>The inverted quaternion. </p>\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  nameWithType: Quaternion.Inverse(Quaternion)
+- uid: System.Numerics.Quaternion.Length
+  commentId: M:System.Numerics.Quaternion.Length
+  id: Length
+  parent: System.Numerics.Quaternion
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Numerics.Quaternion.Length()
+  type: Method
+  source:
+    remote:
+      path: src/System.Numerics.Vectors/ref/System.Numerics.Vectors.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Length
+    path: src/System.Numerics.Vectors/ref/System.Numerics.Vectors.cs
+    startLine: 175
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: "\n<p>Calculates the length of the quaternion. </p>\n"
+  syntax:
+    content: public float Length()
+    content.vb: Public Function Length As Single
+    return:
+      type: System.Single
+      description: "\n<p>The computed length of the quaternion. </p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: Quaternion.Length()
+- uid: System.Numerics.Quaternion.LengthSquared
+  commentId: M:System.Numerics.Quaternion.LengthSquared
+  id: LengthSquared
+  parent: System.Numerics.Quaternion
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Numerics.Quaternion.LengthSquared()
+  type: Method
+  source:
+    remote:
+      path: src/System.Numerics.Vectors/ref/System.Numerics.Vectors.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: LengthSquared
+    path: src/System.Numerics.Vectors/ref/System.Numerics.Vectors.cs
+    startLine: 176
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: "\n<p>Calculates the squared length of the quaternion. </p>\n"
+  syntax:
+    content: public float LengthSquared()
+    content.vb: Public Function LengthSquared As Single
+    return:
+      type: System.Single
+      description: "\n<p>The length squared of the quaternion. </p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: Quaternion.LengthSquared()
+- uid: System.Numerics.Quaternion.Lerp(System.Numerics.Quaternion,System.Numerics.Quaternion,System.Single)
+  commentId: M:System.Numerics.Quaternion.Lerp(System.Numerics.Quaternion,System.Numerics.Quaternion,System.Single)
+  id: Lerp(System.Numerics.Quaternion,System.Numerics.Quaternion,System.Single)
+  parent: System.Numerics.Quaternion
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Numerics.Quaternion.Lerp(System.Numerics.Quaternion, System.Numerics.Quaternion, System.Single)
+  type: Method
+  source:
+    remote:
+      path: src/System.Numerics.Vectors/ref/System.Numerics.Vectors.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Lerp
+    path: src/System.Numerics.Vectors/ref/System.Numerics.Vectors.cs
+    startLine: 177
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: "\n<p>Performs a linear interpolation between two quaternions based on a value that specifies the weighting of the second quaternion. </p>\n"
+  syntax:
+    content: public static Quaternion Lerp(Quaternion quaternion1, Quaternion quaternion2, float amount)
+    content.vb: Public Shared Function Lerp(quaternion1 As Quaternion, quaternion2 As Quaternion, amount As Single) As Quaternion
+    parameters:
+    - id: quaternion1
+      type: System.Numerics.Quaternion
+      description: "\n<p>The first quaternion. </p>\n"
+    - id: quaternion2
+      type: System.Numerics.Quaternion
+      description: "\n<p>The second quaternion. </p>\n"
+    - id: amount
+      type: System.Single
+      description: "\n<p>The relative weight of <em>quaternion2</em> in the interpolation. </p>\n"
+    return:
+      type: System.Numerics.Quaternion
+      description: "\n<p>The interpolated quaternion. </p>\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  nameWithType: Quaternion.Lerp(Quaternion, Quaternion, Single)
+- uid: System.Numerics.Quaternion.Multiply(System.Numerics.Quaternion,System.Numerics.Quaternion)
+  commentId: M:System.Numerics.Quaternion.Multiply(System.Numerics.Quaternion,System.Numerics.Quaternion)
+  id: Multiply(System.Numerics.Quaternion,System.Numerics.Quaternion)
+  parent: System.Numerics.Quaternion
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Numerics.Quaternion.Multiply(System.Numerics.Quaternion, System.Numerics.Quaternion)
+  type: Method
+  source:
+    remote:
+      path: src/System.Numerics.Vectors/ref/System.Numerics.Vectors.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Multiply
+    path: src/System.Numerics.Vectors/ref/System.Numerics.Vectors.cs
+    startLine: 178
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: "\n<p>Returns the quaternion that results from multiplying two quaternions together. </p>\n"
+  syntax:
+    content: public static Quaternion Multiply(Quaternion value1, Quaternion value2)
+    content.vb: Public Shared Function Multiply(value1 As Quaternion, value2 As Quaternion) As Quaternion
+    parameters:
+    - id: value1
+      type: System.Numerics.Quaternion
+      description: "\n<p>The first quaternion. </p>\n"
+    - id: value2
+      type: System.Numerics.Quaternion
+      description: "\n<p>The second quaternion. </p>\n"
+    return:
+      type: System.Numerics.Quaternion
+      description: "\n<p>The product quaternion. </p>\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  nameWithType: Quaternion.Multiply(Quaternion, Quaternion)
+- uid: System.Numerics.Quaternion.Multiply(System.Numerics.Quaternion,System.Single)
+  commentId: M:System.Numerics.Quaternion.Multiply(System.Numerics.Quaternion,System.Single)
+  id: Multiply(System.Numerics.Quaternion,System.Single)
+  parent: System.Numerics.Quaternion
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Numerics.Quaternion.Multiply(System.Numerics.Quaternion, System.Single)
+  type: Method
+  source:
+    remote:
+      path: src/System.Numerics.Vectors/ref/System.Numerics.Vectors.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Multiply
+    path: src/System.Numerics.Vectors/ref/System.Numerics.Vectors.cs
+    startLine: 179
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: "\n<p>Returns the quaternion that results from scaling all the components of a specified quaternion by a scalar factor. </p>\n"
+  syntax:
+    content: public static Quaternion Multiply(Quaternion value1, float value2)
+    content.vb: Public Shared Function Multiply(value1 As Quaternion, value2 As Single) As Quaternion
+    parameters:
+    - id: value1
+      type: System.Numerics.Quaternion
+      description: "\n<p>The source quaternion. </p>\n"
+    - id: value2
+      type: System.Single
+      description: "\n<p>The scalar value. </p>\n"
+    return:
+      type: System.Numerics.Quaternion
+      description: "\n<p>The scaled quaternion. </p>\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  nameWithType: Quaternion.Multiply(Quaternion, Single)
+- uid: System.Numerics.Quaternion.Negate(System.Numerics.Quaternion)
+  commentId: M:System.Numerics.Quaternion.Negate(System.Numerics.Quaternion)
+  id: Negate(System.Numerics.Quaternion)
+  parent: System.Numerics.Quaternion
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Numerics.Quaternion.Negate(System.Numerics.Quaternion)
+  type: Method
+  source:
+    remote:
+      path: src/System.Numerics.Vectors/ref/System.Numerics.Vectors.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Negate
+    path: src/System.Numerics.Vectors/ref/System.Numerics.Vectors.cs
+    startLine: 180
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: "\n<p>Reverses the sign of each component of the quaternion. </p>\n"
+  syntax:
+    content: public static Quaternion Negate(Quaternion value)
+    content.vb: Public Shared Function Negate(value As Quaternion) As Quaternion
+    parameters:
+    - id: value
+      type: System.Numerics.Quaternion
+      description: "\n<p>The quaternion to negate. </p>\n"
+    return:
+      type: System.Numerics.Quaternion
+      description: "\n<p>The negated quaternion. </p>\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  nameWithType: Quaternion.Negate(Quaternion)
+- uid: System.Numerics.Quaternion.Normalize(System.Numerics.Quaternion)
+  commentId: M:System.Numerics.Quaternion.Normalize(System.Numerics.Quaternion)
+  id: Normalize(System.Numerics.Quaternion)
+  parent: System.Numerics.Quaternion
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Numerics.Quaternion.Normalize(System.Numerics.Quaternion)
+  type: Method
+  source:
+    remote:
+      path: src/System.Numerics.Vectors/ref/System.Numerics.Vectors.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Normalize
+    path: src/System.Numerics.Vectors/ref/System.Numerics.Vectors.cs
+    startLine: 181
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: "\n<p>Divides each component of a specified <xref href=\"System.Numerics.Quaternion\" data-throw-if-not-resolved=\"false\"></xref> by its length. </p>\n"
+  syntax:
+    content: public static Quaternion Normalize(Quaternion value)
+    content.vb: Public Shared Function Normalize(value As Quaternion) As Quaternion
+    parameters:
+    - id: value
+      type: System.Numerics.Quaternion
+      description: "\n<p>The quaternion to normalize. </p>\n"
+    return:
+      type: System.Numerics.Quaternion
+      description: "\n<p>The normalized quaternion. </p>\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  nameWithType: Quaternion.Normalize(Quaternion)
+- uid: System.Numerics.Quaternion.op_Addition(System.Numerics.Quaternion,System.Numerics.Quaternion)
+  commentId: M:System.Numerics.Quaternion.op_Addition(System.Numerics.Quaternion,System.Numerics.Quaternion)
+  id: op_Addition(System.Numerics.Quaternion,System.Numerics.Quaternion)
+  parent: System.Numerics.Quaternion
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Numerics.Quaternion.Addition(System.Numerics.Quaternion, System.Numerics.Quaternion)
+  type: Operator
+  source:
+    remote:
+      path: src/System.Numerics.Vectors/ref/System.Numerics.Vectors.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: op_Addition
+    path: src/System.Numerics.Vectors/ref/System.Numerics.Vectors.cs
+    startLine: 182
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: "\n<p>Adds each element in one quaternion with its corresponding element in a second quaternion. </p>\n"
+  syntax:
+    content: public static Quaternion operator +(Quaternion value1, Quaternion value2)
+    content.vb: Public Shared Operator +(value1 As Quaternion, value2 As Quaternion) As Quaternion
+    parameters:
+    - id: value1
+      type: System.Numerics.Quaternion
+      description: "\n<p>The first quaternion. </p>\n"
+    - id: value2
+      type: System.Numerics.Quaternion
+      description: "\n<p>The second quaternion. </p>\n"
+    return:
+      type: System.Numerics.Quaternion
+      description: "\n<p>The quaternion that contains the summed values of <em>value1</em> and <em>value2</em>. </p>\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  nameWithType: Quaternion.Addition(Quaternion, Quaternion)
+- uid: System.Numerics.Quaternion.op_Division(System.Numerics.Quaternion,System.Numerics.Quaternion)
+  commentId: M:System.Numerics.Quaternion.op_Division(System.Numerics.Quaternion,System.Numerics.Quaternion)
+  id: op_Division(System.Numerics.Quaternion,System.Numerics.Quaternion)
+  parent: System.Numerics.Quaternion
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Numerics.Quaternion.Division(System.Numerics.Quaternion, System.Numerics.Quaternion)
+  type: Operator
+  source:
+    remote:
+      path: src/System.Numerics.Vectors/ref/System.Numerics.Vectors.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: op_Division
+    path: src/System.Numerics.Vectors/ref/System.Numerics.Vectors.cs
+    startLine: 183
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: "\n<p>Divides one quaternion by a second quaternion. </p>\n"
+  syntax:
+    content: public static Quaternion operator /(Quaternion value1, Quaternion value2)
+    content.vb: Public Shared Operator /(value1 As Quaternion, value2 As Quaternion) As Quaternion
+    parameters:
+    - id: value1
+      type: System.Numerics.Quaternion
+      description: "\n<p>The dividend. </p>\n"
+    - id: value2
+      type: System.Numerics.Quaternion
+      description: "\n<p>The divisor. </p>\n"
+    return:
+      type: System.Numerics.Quaternion
+      description: "\n<p>The quaternion that results from dividing <em>value1</em> by <em>value2</em>. </p>\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  nameWithType: Quaternion.Division(Quaternion, Quaternion)
+- uid: System.Numerics.Quaternion.op_Equality(System.Numerics.Quaternion,System.Numerics.Quaternion)
+  commentId: M:System.Numerics.Quaternion.op_Equality(System.Numerics.Quaternion,System.Numerics.Quaternion)
+  id: op_Equality(System.Numerics.Quaternion,System.Numerics.Quaternion)
+  parent: System.Numerics.Quaternion
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Numerics.Quaternion.Equality(System.Numerics.Quaternion, System.Numerics.Quaternion)
+  type: Operator
+  source:
+    remote:
+      path: src/System.Numerics.Vectors/ref/System.Numerics.Vectors.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: op_Equality
+    path: src/System.Numerics.Vectors/ref/System.Numerics.Vectors.cs
+    startLine: 184
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: "\n<p>Returns a value that indicates whether two quaternions are equal. </p>\n"
+  syntax:
+    content: public static bool operator ==(Quaternion value1, Quaternion value2)
+    content.vb: Public Shared Operator =(value1 As Quaternion, value2 As Quaternion) As Boolean
+    parameters:
+    - id: value1
+      type: System.Numerics.Quaternion
+      description: "\n<p>The first quaternion to compare. </p>\n"
+    - id: value2
+      type: System.Numerics.Quaternion
+      description: "\n<p>The second quaternion to compare. </p>\n"
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if the two quaternions are equal; otherwise, <strong>false</strong>.</p>\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  nameWithType: Quaternion.Equality(Quaternion, Quaternion)
+- uid: System.Numerics.Quaternion.op_Inequality(System.Numerics.Quaternion,System.Numerics.Quaternion)
+  commentId: M:System.Numerics.Quaternion.op_Inequality(System.Numerics.Quaternion,System.Numerics.Quaternion)
+  id: op_Inequality(System.Numerics.Quaternion,System.Numerics.Quaternion)
+  parent: System.Numerics.Quaternion
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Numerics.Quaternion.Inequality(System.Numerics.Quaternion, System.Numerics.Quaternion)
+  type: Operator
+  source:
+    remote:
+      path: src/System.Numerics.Vectors/ref/System.Numerics.Vectors.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: op_Inequality
+    path: src/System.Numerics.Vectors/ref/System.Numerics.Vectors.cs
+    startLine: 185
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: "\n<p>Returns a value that indicates whether two quaternions are not equal. </p>\n"
+  syntax:
+    content: public static bool operator !=(Quaternion value1, Quaternion value2)
+    content.vb: Public Shared Operator <>(value1 As Quaternion, value2 As Quaternion) As Boolean
+    parameters:
+    - id: value1
+      type: System.Numerics.Quaternion
+      description: "\n<p>The first quaternion to compare. </p>\n"
+    - id: value2
+      type: System.Numerics.Quaternion
+      description: "\n<p>The second quaternion to compare. </p>\n"
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if <em>value1</em> and <em>value2</em> are not equal; otherwise, <strong>false</strong>. </p>\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  nameWithType: Quaternion.Inequality(Quaternion, Quaternion)
+- uid: System.Numerics.Quaternion.op_Multiply(System.Numerics.Quaternion,System.Numerics.Quaternion)
+  commentId: M:System.Numerics.Quaternion.op_Multiply(System.Numerics.Quaternion,System.Numerics.Quaternion)
+  id: op_Multiply(System.Numerics.Quaternion,System.Numerics.Quaternion)
+  parent: System.Numerics.Quaternion
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Numerics.Quaternion.Multiply(System.Numerics.Quaternion, System.Numerics.Quaternion)
+  type: Operator
+  source:
+    remote:
+      path: src/System.Numerics.Vectors/ref/System.Numerics.Vectors.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: op_Multiply
+    path: src/System.Numerics.Vectors/ref/System.Numerics.Vectors.cs
+    startLine: 186
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: "\n<p>Returns the quaternion that results from multiplying two quaternions together. </p>\n"
+  syntax:
+    content: public static Quaternion operator *(Quaternion value1, Quaternion value2)
+    content.vb: Public Shared Operator *(value1 As Quaternion, value2 As Quaternion) As Quaternion
+    parameters:
+    - id: value1
+      type: System.Numerics.Quaternion
+      description: "\n<p>The first quaternion. </p>\n"
+    - id: value2
+      type: System.Numerics.Quaternion
+      description: "\n<p>The second quaternion. </p>\n"
+    return:
+      type: System.Numerics.Quaternion
+      description: "\n<p>The product quaternion. </p>\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  nameWithType: Quaternion.Multiply(Quaternion, Quaternion)
+- uid: System.Numerics.Quaternion.op_Multiply(System.Numerics.Quaternion,System.Single)
+  commentId: M:System.Numerics.Quaternion.op_Multiply(System.Numerics.Quaternion,System.Single)
+  id: op_Multiply(System.Numerics.Quaternion,System.Single)
+  parent: System.Numerics.Quaternion
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Numerics.Quaternion.Multiply(System.Numerics.Quaternion, System.Single)
+  type: Operator
+  source:
+    remote:
+      path: src/System.Numerics.Vectors/ref/System.Numerics.Vectors.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: op_Multiply
+    path: src/System.Numerics.Vectors/ref/System.Numerics.Vectors.cs
+    startLine: 187
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: "\n<p>Returns the quaternion that results from scaling all the components of a specified quaternion by a scalar factor. </p>\n"
+  syntax:
+    content: public static Quaternion operator *(Quaternion value1, float value2)
+    content.vb: Public Shared Operator *(value1 As Quaternion, value2 As Single) As Quaternion
+    parameters:
+    - id: value1
+      type: System.Numerics.Quaternion
+      description: "\n<p>The source quaternion. </p>\n"
+    - id: value2
+      type: System.Single
+      description: "\n<p>The scalar value. </p>\n"
+    return:
+      type: System.Numerics.Quaternion
+      description: "\n<p>The scaled quaternion. </p>\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  nameWithType: Quaternion.Multiply(Quaternion, Single)
+- uid: System.Numerics.Quaternion.op_Subtraction(System.Numerics.Quaternion,System.Numerics.Quaternion)
+  commentId: M:System.Numerics.Quaternion.op_Subtraction(System.Numerics.Quaternion,System.Numerics.Quaternion)
+  id: op_Subtraction(System.Numerics.Quaternion,System.Numerics.Quaternion)
+  parent: System.Numerics.Quaternion
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Numerics.Quaternion.Subtraction(System.Numerics.Quaternion, System.Numerics.Quaternion)
+  type: Operator
+  source:
+    remote:
+      path: src/System.Numerics.Vectors/ref/System.Numerics.Vectors.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: op_Subtraction
+    path: src/System.Numerics.Vectors/ref/System.Numerics.Vectors.cs
+    startLine: 188
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: "\n<p>Subtracts each element in a second quaternion from its corresponding element in a first quaternion. </p>\n"
+  syntax:
+    content: public static Quaternion operator -(Quaternion value1, Quaternion value2)
+    content.vb: Public Shared Operator -(value1 As Quaternion, value2 As Quaternion) As Quaternion
+    parameters:
+    - id: value1
+      type: System.Numerics.Quaternion
+      description: "\n<p>The first quaternion. </p>\n"
+    - id: value2
+      type: System.Numerics.Quaternion
+      description: "\n<p>The second quaternion. </p>\n"
+    return:
+      type: System.Numerics.Quaternion
+      description: "\n<p>The quaternion containing the values that result from subtracting each element in <em>value2</em> from its corresponding element in <em>value1</em>. </p>\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  nameWithType: Quaternion.Subtraction(Quaternion, Quaternion)
+- uid: System.Numerics.Quaternion.op_UnaryNegation(System.Numerics.Quaternion)
+  commentId: M:System.Numerics.Quaternion.op_UnaryNegation(System.Numerics.Quaternion)
+  id: op_UnaryNegation(System.Numerics.Quaternion)
+  parent: System.Numerics.Quaternion
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Numerics.Quaternion.UnaryNegation(System.Numerics.Quaternion)
+  type: Operator
+  source:
+    remote:
+      path: src/System.Numerics.Vectors/ref/System.Numerics.Vectors.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: op_UnaryNegation
+    path: src/System.Numerics.Vectors/ref/System.Numerics.Vectors.cs
+    startLine: 189
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: "\n<p>Reverses the sign of each component of the quaternion. </p>\n"
+  syntax:
+    content: public static Quaternion operator -(Quaternion value)
+    content.vb: Public Shared Operator -(value As Quaternion) As Quaternion
+    parameters:
+    - id: value
+      type: System.Numerics.Quaternion
+      description: "\n<p>The quaternion to negate. </p>\n"
+    return:
+      type: System.Numerics.Quaternion
+      description: "\n<p>The negated quaternion. </p>\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  nameWithType: Quaternion.UnaryNegation(Quaternion)
+- uid: System.Numerics.Quaternion.Slerp(System.Numerics.Quaternion,System.Numerics.Quaternion,System.Single)
+  commentId: M:System.Numerics.Quaternion.Slerp(System.Numerics.Quaternion,System.Numerics.Quaternion,System.Single)
+  id: Slerp(System.Numerics.Quaternion,System.Numerics.Quaternion,System.Single)
+  parent: System.Numerics.Quaternion
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Numerics.Quaternion.Slerp(System.Numerics.Quaternion, System.Numerics.Quaternion, System.Single)
+  type: Method
+  source:
+    remote:
+      path: src/System.Numerics.Vectors/ref/System.Numerics.Vectors.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Slerp
+    path: src/System.Numerics.Vectors/ref/System.Numerics.Vectors.cs
+    startLine: 190
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: "\n<p>Interpolates between two quaternions, using spherical linear interpolation. </p>\n"
+  syntax:
+    content: public static Quaternion Slerp(Quaternion quaternion1, Quaternion quaternion2, float amount)
+    content.vb: Public Shared Function Slerp(quaternion1 As Quaternion, quaternion2 As Quaternion, amount As Single) As Quaternion
+    parameters:
+    - id: quaternion1
+      type: System.Numerics.Quaternion
+      description: "\n<p>The first quaternion. </p>\n"
+    - id: quaternion2
+      type: System.Numerics.Quaternion
+      description: "\n<p>The second quaternion. </p>\n"
+    - id: amount
+      type: System.Single
+      description: "\n<p>The relative weight of the second quaternion in the interpolation. </p>\n"
+    return:
+      type: System.Numerics.Quaternion
+      description: "\n<p>The interpolated quaternion. </p>\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  nameWithType: Quaternion.Slerp(Quaternion, Quaternion, Single)
+- uid: System.Numerics.Quaternion.Subtract(System.Numerics.Quaternion,System.Numerics.Quaternion)
+  commentId: M:System.Numerics.Quaternion.Subtract(System.Numerics.Quaternion,System.Numerics.Quaternion)
+  id: Subtract(System.Numerics.Quaternion,System.Numerics.Quaternion)
+  parent: System.Numerics.Quaternion
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Numerics.Quaternion.Subtract(System.Numerics.Quaternion, System.Numerics.Quaternion)
+  type: Method
+  source:
+    remote:
+      path: src/System.Numerics.Vectors/ref/System.Numerics.Vectors.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Subtract
+    path: src/System.Numerics.Vectors/ref/System.Numerics.Vectors.cs
+    startLine: 191
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: "\n<p>Subtracts each element in a second quaternion from its corresponding element in a first quaternion. </p>\n"
+  syntax:
+    content: public static Quaternion Subtract(Quaternion value1, Quaternion value2)
+    content.vb: Public Shared Function Subtract(value1 As Quaternion, value2 As Quaternion) As Quaternion
+    parameters:
+    - id: value1
+      type: System.Numerics.Quaternion
+      description: "\n<p>The first quaternion. </p>\n"
+    - id: value2
+      type: System.Numerics.Quaternion
+      description: "\n<p>The second quaternion. </p>\n"
+    return:
+      type: System.Numerics.Quaternion
+      description: "\n<p>The quaternion containing the values that result from subtracting each element in <em>value2</em> from its corresponding element in <em>value1</em>. </p>\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  nameWithType: Quaternion.Subtract(Quaternion, Quaternion)
+- uid: System.Numerics.Quaternion.ToString
+  commentId: M:System.Numerics.Quaternion.ToString
+  id: ToString
+  parent: System.Numerics.Quaternion
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Numerics.Quaternion.ToString()
+  type: Method
+  source:
+    remote:
+      path: src/System.Numerics.Vectors/ref/System.Numerics.Vectors.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: ToString
+    path: src/System.Numerics.Vectors/ref/System.Numerics.Vectors.cs
+    startLine: 192
+  assemblies:
+  - System.Numerics.Vectors
+  namespace: System.Numerics
+  summary: "\n<p>Returns a string that represents this quaternion. </p>\n"
+  syntax:
+    content: public override string ToString()
+    content.vb: Public Overrides Function ToString As String
+    return:
+      type: System.String
+      description: "\n<p>The string representation of this quaternion. </p>\n"
+  overridden: System.ValueType.ToString
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  nameWithType: Quaternion.ToString()
+references:
+- uid: System.Numerics
+  isExternal: false
+  name: "XXX"
+  fullName: System.Numerics
+  commentId: N:System.Numerics
+  nameWithType: System.Numerics
+- uid: System.IEquatable{System.Numerics.Quaternion}
+  parent: System
+  definition: System.IEquatable`1
+  name: "XXX"
+  fullName: System.IEquatable<System.Numerics.Quaternion>
+  fullname.vb: System.IEquatable(Of System.Numerics.Quaternion)
+  name.vb: IEquatable(Of Quaternion)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: "XXX"
+    fullName: System.IEquatable
+    isExternal: true
+  - name: "<"
+    fullName: <
+  - uid: System.Numerics.Quaternion
+    name: "XXX"
+    fullName: System.Numerics.Quaternion
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: "XXX"
+    fullName: System.IEquatable
+    isExternal: true
+  - name: 'XXX '
+    fullName: '(Of '
+  - uid: System.Numerics.Quaternion
+    name: "XXX"
+    fullName: System.Numerics.Quaternion
+  - name: "XXX"
+    fullName: )
+  commentId: T:System.IEquatable{System.Numerics.Quaternion}
+  nameWithType: IEquatable<Quaternion>
+  nameWithType.vb: IEquatable(Of Quaternion)
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  nameWithType: Object.Equals(Object, Object)
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.GetType
+  nameWithType: Object.GetType()
+- uid: System.IEquatable`1
+  isExternal: false
+  name: "XXX"
+  fullName: System.IEquatable<T>
+  fullname.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: "XXX"
+    fullName: System.IEquatable
+  - name: "<"
+    fullName: <
+  - name: "XXX"
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: "XXX"
+    fullName: System.IEquatable
+  - name: 'XXX '
+    fullName: '(Of '
+  - name: "XXX"
+    fullName: T
+  - name: "XXX"
+    fullName: )
+  commentId: T:System.IEquatable`1
+  nameWithType: IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+- uid: System
+  isExternal: false
+  name: "XXX"
+  fullName: System
+  commentId: N:System
+  nameWithType: System
+- uid: System.Object
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Object
+  commentId: T:System.Object
+  nameWithType: Object
+- uid: System.Single
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Single
+  commentId: T:System.Single
+  nameWithType: Single
+- uid: System.Numerics.Vector3
+  parent: System.Numerics
+  isExternal: false
+  name: "XXX"
+  fullName: System.Numerics.Vector3
+  commentId: T:System.Numerics.Vector3
+  nameWithType: Vector3
+- uid: System.Numerics.Quaternion
+  parent: System.Numerics
+  isExternal: false
+  name: "XXX"
+  fullName: System.Numerics.Quaternion
+  commentId: T:System.Numerics.Quaternion
+  nameWithType: Quaternion
+- uid: System.Boolean
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Boolean
+  commentId: T:System.Boolean
+  nameWithType: Boolean
+- uid: System.Numerics.Matrix4x4
+  parent: System.Numerics
+  isExternal: false
+  name: "XXX"
+  fullName: System.Numerics.Matrix4x4
+  commentId: T:System.Numerics.Matrix4x4
+  nameWithType: Matrix4x4
+- uid: System.IEquatable{System.Numerics.Quaternion}.Equals(System.Numerics.Quaternion)
+  parent: System.IEquatable{System.Numerics.Quaternion}
+  definition: System.IEquatable`1.Equals(`0)
+  name: "XXX"
+  fullName: System.IEquatable<System.Numerics.Quaternion>.Equals(System.Numerics.Quaternion)
+  fullname.vb: System.IEquatable(Of System.Numerics.Quaternion).Equals(System.Numerics.Quaternion)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: "XXX"
+    fullName: System.IEquatable<System.Numerics.Quaternion>.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Numerics.Quaternion
+    name: "XXX"
+    fullName: System.Numerics.Quaternion
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: "XXX"
+    fullName: System.IEquatable(Of System.Numerics.Quaternion).Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Numerics.Quaternion
+    name: "XXX"
+    fullName: System.Numerics.Quaternion
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.IEquatable{System.Numerics.Quaternion}.Equals(System.Numerics.Quaternion)
+  nameWithType: IEquatable<Quaternion>.Equals(Quaternion)
+  nameWithType.vb: IEquatable(Of Quaternion).Equals(Quaternion)
+- uid: System.IEquatable`1.Equals(`0)
+  isExternal: false
+  name: "XXX"
+  fullName: System.IEquatable<T>.Equals(T)
+  fullname.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: "XXX"
+    fullName: System.IEquatable<T>.Equals
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: T
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: "XXX"
+    fullName: System.IEquatable(Of T).Equals
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: T
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.IEquatable`1.Equals(`0)
+  nameWithType: IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+- uid: System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  name: "XXX"
+  fullName: System.ValueType.Equals(System.Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: "XXX"
+    fullName: System.ValueType.Equals
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: "XXX"
+    fullName: System.ValueType.Equals
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.ValueType.Equals(System.Object)
+  nameWithType: ValueType.Equals(Object)
+- uid: System.ValueType
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.ValueType
+  commentId: T:System.ValueType
+  nameWithType: ValueType
+- uid: System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: false
+  name: "XXX"
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: "XXX"
+    fullName: System.ValueType.GetHashCode
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: "XXX"
+    fullName: System.ValueType.GetHashCode
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.ValueType.GetHashCode
+  nameWithType: ValueType.GetHashCode()
+- uid: System.Int32
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Int32
+  commentId: T:System.Int32
+  nameWithType: Int32
+- uid: System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: false
+  name: "XXX"
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: "XXX"
+    fullName: System.ValueType.ToString
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: "XXX"
+    fullName: System.ValueType.ToString
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.ValueType.ToString
+  nameWithType: ValueType.ToString()
+- uid: System.String
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.String
+  commentId: T:System.String
+  nameWithType: String

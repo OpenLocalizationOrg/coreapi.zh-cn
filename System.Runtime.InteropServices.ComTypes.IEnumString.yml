@@ -1,0 +1,275 @@
+items:
+- uid: System.Runtime.InteropServices.ComTypes.IEnumString
+  commentId: T:System.Runtime.InteropServices.ComTypes.IEnumString
+  id: IEnumString
+  parent: System.Runtime.InteropServices.ComTypes
+  children:
+  - System.Runtime.InteropServices.ComTypes.IEnumString.Clone(System.Runtime.InteropServices.ComTypes.IEnumString@)
+  - System.Runtime.InteropServices.ComTypes.IEnumString.Next(System.Int32,System.String[],System.IntPtr)
+  - System.Runtime.InteropServices.ComTypes.IEnumString.Reset
+  - System.Runtime.InteropServices.ComTypes.IEnumString.Skip(System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Runtime.InteropServices.ComTypes.IEnumString
+  type: Interface
+  source:
+    remote:
+      path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/IEnumString.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: IEnumString
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/IEnumString.cs
+    startLine: 17
+  assemblies:
+  - System.Runtime.InteropServices
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: "\n<p>Manages the definition of the <strong>IEnumString</strong> interface.</p>\n"
+  syntax:
+    content: >-
+      [Guid("00000101-0000-0000-C000-000000000046")]
+
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [ComImport]
+
+      public interface IEnumString
+    content.vb: >-
+      <Guid("00000101-0000-0000-C000-000000000046")>
+
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <ComImport>
+
+      Public Interface IEnumString
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+  nameWithType: IEnumString
+- uid: System.Runtime.InteropServices.ComTypes.IEnumString.Clone(System.Runtime.InteropServices.ComTypes.IEnumString@)
+  commentId: M:System.Runtime.InteropServices.ComTypes.IEnumString.Clone(System.Runtime.InteropServices.ComTypes.IEnumString@)
+  id: Clone(System.Runtime.InteropServices.ComTypes.IEnumString@)
+  parent: System.Runtime.InteropServices.ComTypes.IEnumString
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Runtime.InteropServices.ComTypes.IEnumString.Clone(out System.Runtime.InteropServices.ComTypes.IEnumString)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/IEnumString.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Clone
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/IEnumString.cs
+    startLine: 27
+  assemblies:
+  - System.Runtime.InteropServices
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: "\n<p>Creates a new enumerator that contains the same enumeration state as the current one.</p>\n"
+  syntax:
+    content: void Clone(out IEnumString ppenum)
+    content.vb: Sub Clone(ByRef ppenum As IEnumString)
+    parameters:
+    - id: ppenum
+      type: System.Runtime.InteropServices.ComTypes.IEnumString
+      description: "\n<p>When this method returns, contains a reference to the newly created enumerator. This parameter is passed uninitialized.</p>\n"
+  fullName.vb: System.Runtime.InteropServices.ComTypes.IEnumString.Clone(ByRef System.Runtime.InteropServices.ComTypes.IEnumString)
+  name.vb: Clone(ByRef IEnumString)
+  nameWithType: IEnumString.Clone(out IEnumString)
+  nameWithType.vb: IEnumString.Clone(ByRef IEnumString)
+- uid: System.Runtime.InteropServices.ComTypes.IEnumString.Next(System.Int32,System.String[],System.IntPtr)
+  commentId: M:System.Runtime.InteropServices.ComTypes.IEnumString.Next(System.Int32,System.String[],System.IntPtr)
+  id: Next(System.Int32,System.String[],System.IntPtr)
+  parent: System.Runtime.InteropServices.ComTypes.IEnumString
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Runtime.InteropServices.ComTypes.IEnumString.Next(System.Int32, System.String[], System.IntPtr)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/IEnumString.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Next
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/IEnumString.cs
+    startLine: 22
+  assemblies:
+  - System.Runtime.InteropServices
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: "\n<p>Retrieves a specified number of items in the enumeration sequence.</p>\n"
+  syntax:
+    content: >-
+      [PreserveSig]
+
+      int Next(int celt, [MarshalAs(UnmanagedType.LPArray, ArraySubType = UnmanagedType.LPWStr, SizeParamIndex = (short)0), Out] string[] rgelt, IntPtr pceltFetched)
+    content.vb: >-
+      <PreserveSig>
+
+      Function Next(celt As Integer, rgelt As String(), pceltFetched As IntPtr) As Integer
+    parameters:
+    - id: celt
+      type: System.Int32
+      description: "\n<p>The number of strings to return in <em>rgelt</em>. </p>\n"
+    - id: rgelt
+      type: System.String[]
+      description: "\n<p>When this method returns, contains a reference to the enumerated strings. This parameter is passed uninitialized.</p>\n"
+      attributes:
+      - type: System.Runtime.InteropServices.MarshalAsAttribute
+        ctor: System.Runtime.InteropServices.MarshalAsAttribute.#ctor(System.Runtime.InteropServices.UnmanagedType)
+        arguments:
+        - type: System.Runtime.InteropServices.UnmanagedType
+          value: 42
+        namedArguments:
+        - name: "XXX"
+          type: System.Runtime.InteropServices.UnmanagedType
+          value: 21
+        - name: "XXX"
+          type: System.Int16
+          value: 0
+      - type: System.Runtime.InteropServices.OutAttribute
+        ctor: System.Runtime.InteropServices.OutAttribute.#ctor
+        arguments: []
+    - id: pceltFetched
+      type: System.IntPtr
+      description: "\n<p>When this method returns, contains a reference to the actual number of strings enumerated in <em>rgelt</em>. </p>\n"
+    return:
+      type: System.Int32
+      description: "\n<p>\n<strong>S_OK</strong> if the <em>pceltFetched</em> parameter equals the <em>celt</em> parameter; otherwise, <strong>S_FALSE</strong>.</p>\n"
+  fullName.vb: System.Runtime.InteropServices.ComTypes.IEnumString.Next(System.Int32, System.String(), System.IntPtr)
+  name.vb: Next(Int32, String(), IntPtr)
+  nameWithType: IEnumString.Next(Int32, String[], IntPtr)
+  nameWithType.vb: IEnumString.Next(Int32, String(), IntPtr)
+- uid: System.Runtime.InteropServices.ComTypes.IEnumString.Reset
+  commentId: M:System.Runtime.InteropServices.ComTypes.IEnumString.Reset
+  id: Reset
+  parent: System.Runtime.InteropServices.ComTypes.IEnumString
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Runtime.InteropServices.ComTypes.IEnumString.Reset()
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/IEnumString.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Reset
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/IEnumString.cs
+    startLine: 26
+  assemblies:
+  - System.Runtime.InteropServices
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: "\n<p>Resets the enumeration sequence to the beginning.</p>\n"
+  syntax:
+    content: void Reset()
+    content.vb: Sub Reset
+  nameWithType: IEnumString.Reset()
+- uid: System.Runtime.InteropServices.ComTypes.IEnumString.Skip(System.Int32)
+  commentId: M:System.Runtime.InteropServices.ComTypes.IEnumString.Skip(System.Int32)
+  id: Skip(System.Int32)
+  parent: System.Runtime.InteropServices.ComTypes.IEnumString
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Runtime.InteropServices.ComTypes.IEnumString.Skip(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/IEnumString.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Skip
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/IEnumString.cs
+    startLine: 24
+  assemblies:
+  - System.Runtime.InteropServices
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: "\n<p>Skips a specified number of items in the enumeration sequence.</p>\n"
+  syntax:
+    content: >-
+      [PreserveSig]
+
+      int Skip(int celt)
+    content.vb: >-
+      <PreserveSig>
+
+      Function Skip(celt As Integer) As Integer
+    parameters:
+    - id: celt
+      type: System.Int32
+      description: "\n<p>The number of elements to skip in the enumeration. </p>\n"
+    return:
+      type: System.Int32
+      description: "\n<p>\n<strong>S_OK</strong> if the number of elements skipped equals the <em>celt</em> parameter; otherwise, <strong>S_FALSE</strong>.</p>\n"
+  nameWithType: IEnumString.Skip(Int32)
+references:
+- uid: System.Runtime.InteropServices.ComTypes
+  isExternal: false
+  name: "XXX"
+  fullName: System.Runtime.InteropServices.ComTypes
+  nameWithType: System.Runtime.InteropServices.ComTypes
+  commentId: N:System.Runtime.InteropServices.ComTypes
+- uid: System.Runtime.InteropServices.ComTypes.IEnumString
+  parent: System.Runtime.InteropServices.ComTypes
+  isExternal: false
+  name: "XXX"
+  fullName: System.Runtime.InteropServices.ComTypes.IEnumString
+  nameWithType: IEnumString
+  commentId: T:System.Runtime.InteropServices.ComTypes.IEnumString
+- uid: System.Int32
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Int32
+  nameWithType: Int32
+  commentId: T:System.Int32
+- uid: System.String[]
+  name: "XXX"
+  fullName: System.String[]
+  fullname.vb: System.String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: "XXX"
+    fullName: System.String
+    isExternal: true
+  - name: 'XXX'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.String
+    name: "XXX"
+    fullName: System.String
+    isExternal: true
+  - name: "XXX"
+    fullName: ()
+  nameWithType: String[]
+  nameWithType.vb: String()
+- uid: System.IntPtr
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.IntPtr
+  nameWithType: IntPtr
+  commentId: T:System.IntPtr
+- uid: System
+  isExternal: false
+  name: "XXX"
+  fullName: System
+  nameWithType: System
+  commentId: N:System

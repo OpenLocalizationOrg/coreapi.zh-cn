@@ -1,0 +1,194 @@
+items:
+- uid: System.Diagnostics.Tracing.EventActivityOptions
+  commentId: T:System.Diagnostics.Tracing.EventActivityOptions
+  id: EventActivityOptions
+  parent: System.Diagnostics.Tracing
+  children:
+  - System.Diagnostics.Tracing.EventActivityOptions.Detachable
+  - System.Diagnostics.Tracing.EventActivityOptions.Disable
+  - System.Diagnostics.Tracing.EventActivityOptions.None
+  - System.Diagnostics.Tracing.EventActivityOptions.Recursive
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Diagnostics.Tracing.EventActivityOptions
+  type: Enum
+  source:
+    remote:
+      path: src/mscorlib/src/System/Diagnostics/Eventing/EventActivityOptions.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: EventActivityOptions
+    path: src/mscorlib/src/System/Diagnostics/Eventing/EventActivityOptions.cs
+    startLine: 15
+  assemblies:
+  - System.Diagnostics.Tracing
+  namespace: System.Diagnostics.Tracing
+  summary: "\n<p>Specifies the tracking of activity start and stop events. </p>\n"
+  syntax:
+    content: >-
+      [Flags]
+
+      public enum EventActivityOptions
+    content.vb: >-
+      <Flags>
+
+      Public Enum EventActivityOptions
+  attributes:
+  - type: System.FlagsAttribute
+    ctor: System.FlagsAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+  nameWithType: EventActivityOptions
+- uid: System.Diagnostics.Tracing.EventActivityOptions.Detachable
+  commentId: F:System.Diagnostics.Tracing.EventActivityOptions.Detachable
+  id: Detachable
+  parent: System.Diagnostics.Tracing.EventActivityOptions
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Diagnostics.Tracing.EventActivityOptions.Detachable
+  type: Field
+  source:
+    remote:
+      path: src/mscorlib/src/System/Diagnostics/Eventing/EventActivityOptions.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Detachable
+    path: src/mscorlib/src/System/Diagnostics/Eventing/EventActivityOptions.cs
+    startLine: 36
+  assemblies:
+  - System.Diagnostics.Tracing
+  namespace: System.Diagnostics.Tracing
+  summary: "\n<p>Allow overlapping activities. By default, activity starts and stops must be property nested. That is, a sequence of Start A, Start B, Stop A, Stop B is not allowed will result in B stopping at the same time as A.</p>\n"
+  syntax:
+    content: Detachable = 8
+    return:
+      type: System.Diagnostics.Tracing.EventActivityOptions
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+  nameWithType: EventActivityOptions.Detachable
+- uid: System.Diagnostics.Tracing.EventActivityOptions.Disable
+  commentId: F:System.Diagnostics.Tracing.EventActivityOptions.Disable
+  id: Disable
+  parent: System.Diagnostics.Tracing.EventActivityOptions
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Diagnostics.Tracing.EventActivityOptions.Disable
+  type: Field
+  source:
+    remote:
+      path: src/mscorlib/src/System/Diagnostics/Eventing/EventActivityOptions.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Disable
+    path: src/mscorlib/src/System/Diagnostics/Eventing/EventActivityOptions.cs
+    startLine: 26
+  assemblies:
+  - System.Diagnostics.Tracing
+  namespace: System.Diagnostics.Tracing
+  summary: "\n<p>Turn off start and stop tracking. </p>\n"
+  syntax:
+    content: Disable = 2
+    return:
+      type: System.Diagnostics.Tracing.EventActivityOptions
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+  nameWithType: EventActivityOptions.Disable
+- uid: System.Diagnostics.Tracing.EventActivityOptions.None
+  commentId: F:System.Diagnostics.Tracing.EventActivityOptions.None
+  id: None
+  parent: System.Diagnostics.Tracing.EventActivityOptions
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Diagnostics.Tracing.EventActivityOptions.None
+  type: Field
+  source:
+    remote:
+      path: src/mscorlib/src/System/Diagnostics/Eventing/EventActivityOptions.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: None
+    path: src/mscorlib/src/System/Diagnostics/Eventing/EventActivityOptions.cs
+    startLine: 21
+  assemblies:
+  - System.Diagnostics.Tracing
+  namespace: System.Diagnostics.Tracing
+  summary: "\n<p>Use the default behavior for start and stop tracking.</p>\n"
+  syntax:
+    content: None = 0
+    return:
+      type: System.Diagnostics.Tracing.EventActivityOptions
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+  nameWithType: EventActivityOptions.None
+- uid: System.Diagnostics.Tracing.EventActivityOptions.Recursive
+  commentId: F:System.Diagnostics.Tracing.EventActivityOptions.Recursive
+  id: Recursive
+  parent: System.Diagnostics.Tracing.EventActivityOptions
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Diagnostics.Tracing.EventActivityOptions.Recursive
+  type: Field
+  source:
+    remote:
+      path: src/mscorlib/src/System/Diagnostics/Eventing/EventActivityOptions.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Recursive
+    path: src/mscorlib/src/System/Diagnostics/Eventing/EventActivityOptions.cs
+    startLine: 31
+  assemblies:
+  - System.Diagnostics.Tracing
+  namespace: System.Diagnostics.Tracing
+  summary: "\n<p>Allow recursive activity starts. By default, an activity cannot be recursive. That is, a sequence of Start A, Start A, Stop A, Stop A is not allowed. Unintentional recursive activities can occur if the app executes and for some the stop is not reached before another start is called. </p>\n"
+  syntax:
+    content: Recursive = 4
+    return:
+      type: System.Diagnostics.Tracing.EventActivityOptions
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+  nameWithType: EventActivityOptions.Recursive
+references:
+- uid: System.Diagnostics.Tracing
+  isExternal: false
+  name: "XXX"
+  fullName: System.Diagnostics.Tracing
+  nameWithType: System.Diagnostics.Tracing
+  commentId: N:System.Diagnostics.Tracing
+- uid: System.Diagnostics.Tracing.EventActivityOptions
+  parent: System.Diagnostics.Tracing
+  isExternal: false
+  name: "XXX"
+  fullName: System.Diagnostics.Tracing.EventActivityOptions
+  nameWithType: EventActivityOptions
+  commentId: T:System.Diagnostics.Tracing.EventActivityOptions

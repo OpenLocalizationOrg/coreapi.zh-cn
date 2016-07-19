@@ -1,0 +1,577 @@
+items:
+- uid: System.Runtime.CompilerServices.ConfiguredTaskAwaitable.ConfiguredTaskAwaiter
+  commentId: T:System.Runtime.CompilerServices.ConfiguredTaskAwaitable.ConfiguredTaskAwaiter
+  id: ConfiguredTaskAwaitable.ConfiguredTaskAwaiter
+  parent: System.Runtime.CompilerServices
+  children:
+  - System.Runtime.CompilerServices.ConfiguredTaskAwaitable.ConfiguredTaskAwaiter.GetResult
+  - System.Runtime.CompilerServices.ConfiguredTaskAwaitable.ConfiguredTaskAwaiter.IsCompleted
+  - System.Runtime.CompilerServices.ConfiguredTaskAwaitable.ConfiguredTaskAwaiter.OnCompleted(System.Action)
+  - System.Runtime.CompilerServices.ConfiguredTaskAwaitable.ConfiguredTaskAwaiter.UnsafeOnCompleted(System.Action)
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Runtime.CompilerServices.ConfiguredTaskAwaitable.ConfiguredTaskAwaiter
+  type: Struct
+  source:
+    remote:
+      path: src/mscorlib/src/System/Runtime/CompilerServices/TaskAwaiter.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: ConfiguredTaskAwaiter
+    path: src/mscorlib/src/System/Runtime/CompilerServices/TaskAwaiter.cs
+    startLine: 379
+  assemblies:
+  - System.Threading.Tasks
+  namespace: System.Runtime.CompilerServices
+  summary: "\n<p>Provides an awaiter for an awaitable (<xref href=\"System.Runtime.CompilerServices.ConfiguredTaskAwaitable\" data-throw-if-not-resolved=\"false\"></xref>) object.</p>\n"
+  syntax:
+    content: >-
+      [HostProtection(Synchronization = true, ExternalThreading = true)]
+
+      public struct ConfiguredTaskAwaiter : ICriticalNotifyCompletion, INotifyCompletion
+    content.vb: >-
+      <HostProtection(Synchronization:=True, ExternalThreading:=True)>
+
+      Public Structure ConfiguredTaskAwaiter
+          Implements ICriticalNotifyCompletion, INotifyCompletion
+  implements:
+  - System.Runtime.CompilerServices.ICriticalNotifyCompletion
+  - System.Runtime.CompilerServices.INotifyCompletion
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+  attributes:
+  - type: System.Runtime.InteropServices.StructLayoutAttribute
+    ctor: System.Runtime.InteropServices.StructLayoutAttribute.#ctor(System.Runtime.InteropServices.LayoutKind)
+    arguments:
+    - type: System.Runtime.InteropServices.LayoutKind
+      value: 0
+  modifiers.csharp:
+  - public
+  - struct
+  modifiers.vb:
+  - Public
+  - Structure
+  nameWithType: ConfiguredTaskAwaitable.ConfiguredTaskAwaiter
+- uid: System.Runtime.CompilerServices.ConfiguredTaskAwaitable.ConfiguredTaskAwaiter.IsCompleted
+  commentId: P:System.Runtime.CompilerServices.ConfiguredTaskAwaitable.ConfiguredTaskAwaiter.IsCompleted
+  id: IsCompleted
+  parent: System.Runtime.CompilerServices.ConfiguredTaskAwaitable.ConfiguredTaskAwaiter
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Runtime.CompilerServices.ConfiguredTaskAwaitable.ConfiguredTaskAwaiter.IsCompleted
+  type: Property
+  source:
+    remote:
+      path: src/mscorlib/src/System/Runtime/CompilerServices/TaskAwaiter.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: IsCompleted
+    path: src/mscorlib/src/System/Runtime/CompilerServices/TaskAwaiter.cs
+    startLine: 403
+  assemblies:
+  - System.Threading.Tasks
+  namespace: System.Runtime.CompilerServices
+  summary: "\n<p>Gets a value that specifies whether the task being awaited is completed.</p>\n"
+  syntax:
+    content: public bool IsCompleted { get; }
+    content.vb: Public ReadOnly Property IsCompleted As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if the task being awaited is completed; otherwise, <strong>false</strong>.</p>\n"
+  exceptions:
+  - type: System.NullReferenceException
+    commentId: T:System.NullReferenceException
+    description: "\n<p>The awaiter was not properly initialized.</p>\n"
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  nameWithType: ConfiguredTaskAwaitable.ConfiguredTaskAwaiter.IsCompleted
+- uid: System.Runtime.CompilerServices.ConfiguredTaskAwaitable.ConfiguredTaskAwaiter.GetResult
+  commentId: M:System.Runtime.CompilerServices.ConfiguredTaskAwaitable.ConfiguredTaskAwaiter.GetResult
+  id: GetResult
+  parent: System.Runtime.CompilerServices.ConfiguredTaskAwaitable.ConfiguredTaskAwaiter
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Runtime.CompilerServices.ConfiguredTaskAwaitable.ConfiguredTaskAwaiter.GetResult()
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Runtime/CompilerServices/TaskAwaiter.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: GetResult
+    path: src/mscorlib/src/System/Runtime/CompilerServices/TaskAwaiter.cs
+    startLine: 435
+  assemblies:
+  - System.Threading.Tasks
+  namespace: System.Runtime.CompilerServices
+  summary: "\n<p>Ends the await on the completed task.</p>\n"
+  syntax:
+    content: public void GetResult()
+    content.vb: Public Sub GetResult
+  exceptions:
+  - type: System.NullReferenceException
+    commentId: T:System.NullReferenceException
+    description: "\n<p>The awaiter was not properly initialized.</p>\n"
+  - type: System.Threading.Tasks.TaskCanceledException
+    commentId: T:System.Threading.Tasks.TaskCanceledException
+    description: "\n<p>The task was canceled.</p>\n"
+  - type: System.Exception
+    commentId: T:System.Exception
+    description: "\n<p>The task completed in a faulted state.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: ConfiguredTaskAwaitable.ConfiguredTaskAwaiter.GetResult()
+- uid: System.Runtime.CompilerServices.ConfiguredTaskAwaitable.ConfiguredTaskAwaiter.OnCompleted(System.Action)
+  commentId: M:System.Runtime.CompilerServices.ConfiguredTaskAwaitable.ConfiguredTaskAwaiter.OnCompleted(System.Action)
+  id: OnCompleted(System.Action)
+  parent: System.Runtime.CompilerServices.ConfiguredTaskAwaitable.ConfiguredTaskAwaiter
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Runtime.CompilerServices.ConfiguredTaskAwaitable.ConfiguredTaskAwaiter.OnCompleted(System.Action)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Runtime/CompilerServices/TaskAwaiter.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: OnCompleted
+    path: src/mscorlib/src/System/Runtime/CompilerServices/TaskAwaiter.cs
+    startLine: 413
+  assemblies:
+  - System.Threading.Tasks
+  namespace: System.Runtime.CompilerServices
+  summary: "\n<p>Schedules the continuation action for the task associated with this awaiter.</p>\n"
+  syntax:
+    content: >-
+      [SecuritySafeCritical]
+
+      public void OnCompleted(Action continuation)
+    content.vb: >-
+      <SecuritySafeCritical>
+
+      Public Sub OnCompleted(continuation As Action)
+    parameters:
+    - id: continuation
+      type: System.Action
+      description: "\n<p>The action to invoke when the await operation completes.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>The <em>continuation</em> argument is <strong>null</strong>.</p>\n"
+  - type: System.NullReferenceException
+    commentId: T:System.NullReferenceException
+    description: "\n<p>The awaiter was not properly initialized.</p>\n"
+  implements:
+  - System.Runtime.CompilerServices.INotifyCompletion.OnCompleted(System.Action)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: ConfiguredTaskAwaitable.ConfiguredTaskAwaiter.OnCompleted(Action)
+- uid: System.Runtime.CompilerServices.ConfiguredTaskAwaitable.ConfiguredTaskAwaiter.UnsafeOnCompleted(System.Action)
+  commentId: M:System.Runtime.CompilerServices.ConfiguredTaskAwaitable.ConfiguredTaskAwaiter.UnsafeOnCompleted(System.Action)
+  id: UnsafeOnCompleted(System.Action)
+  parent: System.Runtime.CompilerServices.ConfiguredTaskAwaitable.ConfiguredTaskAwaiter
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Runtime.CompilerServices.ConfiguredTaskAwaitable.ConfiguredTaskAwaiter.UnsafeOnCompleted(System.Action)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Runtime/CompilerServices/TaskAwaiter.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: UnsafeOnCompleted
+    path: src/mscorlib/src/System/Runtime/CompilerServices/TaskAwaiter.cs
+    startLine: 424
+  assemblies:
+  - System.Threading.Tasks
+  namespace: System.Runtime.CompilerServices
+  summary: "\n<p>Schedules the continuation action for the task associated with this awaiter.</p>\n"
+  syntax:
+    content: >-
+      [SecurityCritical]
+
+      public void UnsafeOnCompleted(Action continuation)
+    content.vb: >-
+      <SecurityCritical>
+
+      Public Sub UnsafeOnCompleted(continuation As Action)
+    parameters:
+    - id: continuation
+      type: System.Action
+      description: "\n<p>The action to invoke when the await operation completes.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>The <em>continuation</em> argument is <strong>null</strong>.</p>\n"
+  - type: System.NullReferenceException
+    commentId: T:System.NullReferenceException
+    description: "\n<p>The awaiter was not properly initialized.</p>\n"
+  implements:
+  - System.Runtime.CompilerServices.ICriticalNotifyCompletion.UnsafeOnCompleted(System.Action)
+  attributes:
+  - type: System.Security.SecurityCriticalAttribute
+    ctor: System.Security.SecurityCriticalAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: ConfiguredTaskAwaitable.ConfiguredTaskAwaiter.UnsafeOnCompleted(Action)
+references:
+- uid: System.Runtime.CompilerServices
+  isExternal: false
+  name: "XXX"
+  fullName: System.Runtime.CompilerServices
+  nameWithType: System.Runtime.CompilerServices
+  commentId: N:System.Runtime.CompilerServices
+- uid: System.Runtime.CompilerServices.ICriticalNotifyCompletion
+  parent: System.Runtime.CompilerServices
+  isExternal: false
+  name: "XXX"
+  fullName: System.Runtime.CompilerServices.ICriticalNotifyCompletion
+  nameWithType: ICriticalNotifyCompletion
+  commentId: T:System.Runtime.CompilerServices.ICriticalNotifyCompletion
+- uid: System.Runtime.CompilerServices.INotifyCompletion
+  parent: System.Runtime.CompilerServices
+  isExternal: false
+  name: "XXX"
+  fullName: System.Runtime.CompilerServices.INotifyCompletion
+  nameWithType: INotifyCompletion
+  commentId: T:System.Runtime.CompilerServices.INotifyCompletion
+- uid: System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  name: "XXX"
+  fullName: System.ValueType.Equals(System.Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: "XXX"
+    fullName: System.ValueType.Equals
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: "XXX"
+    fullName: System.ValueType.Equals
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: ValueType.Equals(Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+- uid: System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: false
+  name: "XXX"
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: "XXX"
+    fullName: System.ValueType.GetHashCode
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: "XXX"
+    fullName: System.ValueType.GetHashCode
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: ValueType.GetHashCode()
+  commentId: M:System.ValueType.GetHashCode
+- uid: System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: false
+  name: "XXX"
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: "XXX"
+    fullName: System.ValueType.ToString
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: "XXX"
+    fullName: System.ValueType.ToString
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: ValueType.ToString()
+  commentId: M:System.ValueType.ToString
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.Equals(Object, Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.GetType()
+  commentId: M:System.Object.GetType
+- uid: System.ValueType
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.ValueType
+  nameWithType: ValueType
+  commentId: T:System.ValueType
+- uid: System.Object
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Object
+  nameWithType: Object
+  commentId: T:System.Object
+- uid: System
+  isExternal: false
+  name: "XXX"
+  fullName: System
+  nameWithType: System
+  commentId: N:System
+- uid: System.Boolean
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Boolean
+  nameWithType: Boolean
+  commentId: T:System.Boolean
+- uid: System.Runtime.CompilerServices.INotifyCompletion.OnCompleted(System.Action)
+  parent: System.Runtime.CompilerServices.INotifyCompletion
+  isExternal: true
+  name: "XXX"
+  fullName: System.Runtime.CompilerServices.INotifyCompletion.OnCompleted(System.Action)
+  spec.csharp:
+  - uid: System.Runtime.CompilerServices.INotifyCompletion.OnCompleted(System.Action)
+    name: "XXX"
+    fullName: System.Runtime.CompilerServices.INotifyCompletion.OnCompleted
+  - name: "XXX"
+    fullName: (
+  - uid: System.Action
+    name: "XXX"
+    fullName: System.Action
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Runtime.CompilerServices.INotifyCompletion.OnCompleted(System.Action)
+    name: "XXX"
+    fullName: System.Runtime.CompilerServices.INotifyCompletion.OnCompleted
+  - name: "XXX"
+    fullName: (
+  - uid: System.Action
+    name: "XXX"
+    fullName: System.Action
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: INotifyCompletion.OnCompleted(Action)
+  commentId: M:System.Runtime.CompilerServices.INotifyCompletion.OnCompleted(System.Action)
+- uid: System.Action
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Action
+  nameWithType: Action
+  commentId: T:System.Action
+- uid: System.Runtime.CompilerServices.ICriticalNotifyCompletion.UnsafeOnCompleted(System.Action)
+  parent: System.Runtime.CompilerServices.ICriticalNotifyCompletion
+  isExternal: true
+  name: "XXX"
+  fullName: System.Runtime.CompilerServices.ICriticalNotifyCompletion.UnsafeOnCompleted(System.Action)
+  spec.csharp:
+  - uid: System.Runtime.CompilerServices.ICriticalNotifyCompletion.UnsafeOnCompleted(System.Action)
+    name: "XXX"
+    fullName: System.Runtime.CompilerServices.ICriticalNotifyCompletion.UnsafeOnCompleted
+  - name: "XXX"
+    fullName: (
+  - uid: System.Action
+    name: "XXX"
+    fullName: System.Action
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Runtime.CompilerServices.ICriticalNotifyCompletion.UnsafeOnCompleted(System.Action)
+    name: "XXX"
+    fullName: System.Runtime.CompilerServices.ICriticalNotifyCompletion.UnsafeOnCompleted
+  - name: "XXX"
+    fullName: (
+  - uid: System.Action
+    name: "XXX"
+    fullName: System.Action
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: ICriticalNotifyCompletion.UnsafeOnCompleted(Action)
+  commentId: M:System.Runtime.CompilerServices.ICriticalNotifyCompletion.UnsafeOnCompleted(System.Action)
+- uid: System.NullReferenceException
+  isExternal: false
+  name: "XXX"
+  fullName: System.NullReferenceException
+  nameWithType: NullReferenceException
+  commentId: T:System.NullReferenceException
+- uid: System.Threading.Tasks.TaskCanceledException
+  isExternal: false
+  name: "XXX"
+  fullName: System.Threading.Tasks.TaskCanceledException
+  nameWithType: TaskCanceledException
+  commentId: T:System.Threading.Tasks.TaskCanceledException
+- uid: System.Exception
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Exception
+  commentId: T:System.Exception
+  nameWithType: Exception
+- uid: System.ArgumentNullException
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentNullException
+  nameWithType: ArgumentNullException
+  commentId: T:System.ArgumentNullException

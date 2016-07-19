@@ -1,0 +1,667 @@
+items:
+- uid: System.Reflection.Emit.EventBuilder
+  commentId: T:System.Reflection.Emit.EventBuilder
+  id: EventBuilder
+  parent: System.Reflection.Emit
+  children:
+  - System.Reflection.Emit.EventBuilder.AddOtherMethod(System.Reflection.Emit.MethodBuilder)
+  - System.Reflection.Emit.EventBuilder.SetAddOnMethod(System.Reflection.Emit.MethodBuilder)
+  - System.Reflection.Emit.EventBuilder.SetCustomAttribute(System.Reflection.ConstructorInfo,System.Byte[])
+  - System.Reflection.Emit.EventBuilder.SetCustomAttribute(System.Reflection.Emit.CustomAttributeBuilder)
+  - System.Reflection.Emit.EventBuilder.SetRaiseMethod(System.Reflection.Emit.MethodBuilder)
+  - System.Reflection.Emit.EventBuilder.SetRemoveOnMethod(System.Reflection.Emit.MethodBuilder)
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Reflection.Emit.EventBuilder
+  type: Class
+  source:
+    remote:
+      path: src/mscorlib/src/System/Reflection/Emit/EventBuilder.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: EventBuilder
+    path: src/mscorlib/src/System/Reflection/Emit/EventBuilder.cs
+    startLine: 26
+  assemblies:
+  - System.Reflection.Emit
+  namespace: System.Reflection.Emit
+  summary: "\n<p>Defines events for a class.</p>\n"
+  syntax:
+    content: >-
+      [HostProtection(MayLeakOnAbort = true)]
+
+      [ClassInterface(ClassInterfaceType.None)]
+
+      [ComDefaultInterface(typeof (_EventBuilder))]
+
+      [ComVisible(true)]
+
+      public sealed class EventBuilder : _EventBuilder
+    content.vb: >-
+      <HostProtection(MayLeakOnAbort:=True)>
+
+      <ClassInterface(ClassInterfaceType.None)>
+
+      <ComDefaultInterface(GetType(_EventBuilder))>
+
+      <ComVisible(True)>
+
+      Public NotInheritable Class EventBuilder
+          Implements _EventBuilder
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+  nameWithType: EventBuilder
+- uid: System.Reflection.Emit.EventBuilder.AddOtherMethod(System.Reflection.Emit.MethodBuilder)
+  commentId: M:System.Reflection.Emit.EventBuilder.AddOtherMethod(System.Reflection.Emit.MethodBuilder)
+  id: AddOtherMethod(System.Reflection.Emit.MethodBuilder)
+  parent: System.Reflection.Emit.EventBuilder
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Reflection.Emit.EventBuilder.AddOtherMethod(System.Reflection.Emit.MethodBuilder)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Reflection/Emit/EventBuilder.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: AddOtherMethod
+    path: src/mscorlib/src/System/Reflection/Emit/EventBuilder.cs
+    startLine: 95
+  assemblies:
+  - System.Reflection.Emit
+  namespace: System.Reflection.Emit
+  summary: "\n<p>Adds one of the \"other\" methods associated with this event. \"Other\" methods are methods other than the \"on\" and \"raise\" methods associated with an event. This function can be called many times to add as many \"other\" methods.</p>\n"
+  syntax:
+    content: >-
+      [SecuritySafeCritical]
+
+      public void AddOtherMethod(MethodBuilder mdBuilder)
+    content.vb: >-
+      <SecuritySafeCritical>
+
+      Public Sub AddOtherMethod(mdBuilder As MethodBuilder)
+    parameters:
+    - id: mdBuilder
+      type: System.Reflection.Emit.MethodBuilder
+      description: "\n<p>A <strong>MethodBuilder</strong> object that represents the other method. </p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>mdBuilder</em> is <strong>null</strong>. </p>\n"
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: "\n<p>\n<xref href=\"System.Reflection.Emit.TypeBuilder.CreateType\" data-throw-if-not-resolved=\"false\"></xref> has been called on the enclosing type. </p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: EventBuilder.AddOtherMethod(MethodBuilder)
+- uid: System.Reflection.Emit.EventBuilder.SetAddOnMethod(System.Reflection.Emit.MethodBuilder)
+  commentId: M:System.Reflection.Emit.EventBuilder.SetAddOnMethod(System.Reflection.Emit.MethodBuilder)
+  id: SetAddOnMethod(System.Reflection.Emit.MethodBuilder)
+  parent: System.Reflection.Emit.EventBuilder
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Reflection.Emit.EventBuilder.SetAddOnMethod(System.Reflection.Emit.MethodBuilder)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Reflection/Emit/EventBuilder.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: SetAddOnMethod
+    path: src/mscorlib/src/System/Reflection/Emit/EventBuilder.cs
+    startLine: 77
+  assemblies:
+  - System.Reflection.Emit
+  namespace: System.Reflection.Emit
+  summary: "\n<p>Sets the method used to subscribe to this event.</p>\n"
+  syntax:
+    content: >-
+      [SecuritySafeCritical]
+
+      public void SetAddOnMethod(MethodBuilder mdBuilder)
+    content.vb: >-
+      <SecuritySafeCritical>
+
+      Public Sub SetAddOnMethod(mdBuilder As MethodBuilder)
+    parameters:
+    - id: mdBuilder
+      type: System.Reflection.Emit.MethodBuilder
+      description: "\n<p>A <strong>MethodBuilder</strong> object that represents the method used to subscribe to this event. </p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>mdBuilder</em> is <strong>null</strong>. </p>\n"
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: "\n<p>\n<xref href=\"System.Reflection.Emit.TypeBuilder.CreateType\" data-throw-if-not-resolved=\"false\"></xref> has been called on the enclosing type. </p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: EventBuilder.SetAddOnMethod(MethodBuilder)
+- uid: System.Reflection.Emit.EventBuilder.SetCustomAttribute(System.Reflection.ConstructorInfo,System.Byte[])
+  commentId: M:System.Reflection.Emit.EventBuilder.SetCustomAttribute(System.Reflection.ConstructorInfo,System.Byte[])
+  id: SetCustomAttribute(System.Reflection.ConstructorInfo,System.Byte[])
+  parent: System.Reflection.Emit.EventBuilder
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Reflection.Emit.EventBuilder.SetCustomAttribute(System.Reflection.ConstructorInfo, System.Byte[])
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Reflection/Emit/EventBuilder.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: SetCustomAttribute
+    path: src/mscorlib/src/System/Reflection/Emit/EventBuilder.cs
+    startLine: 104
+  assemblies:
+  - System.Reflection.Emit
+  namespace: System.Reflection.Emit
+  summary: "\n<p>Set a custom attribute using a specified custom attribute blob.</p>\n"
+  syntax:
+    content: >-
+      [SecurityCritical]
+
+      [ComVisible(true)]
+
+      public void SetCustomAttribute(ConstructorInfo con, byte[] binaryAttribute)
+    content.vb: >-
+      <SecurityCritical>
+
+      <ComVisible(True)>
+
+      Public Sub SetCustomAttribute(con As ConstructorInfo, binaryAttribute As Byte())
+    parameters:
+    - id: con
+      type: System.Reflection.ConstructorInfo
+      description: "\n<p>The constructor for the custom attribute. </p>\n"
+    - id: binaryAttribute
+      type: System.Byte[]
+      description: "\n<p>A byte blob representing the attributes. </p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>con</em> or <em>binaryAttribute</em> is <strong>null</strong>. </p>\n"
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: "\n<p>\n<xref href=\"System.Reflection.Emit.TypeBuilder.CreateType\" data-throw-if-not-resolved=\"false\"></xref> has been called on the enclosing type. </p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: System.Reflection.Emit.EventBuilder.SetCustomAttribute(System.Reflection.ConstructorInfo, System.Byte())
+  name.vb: SetCustomAttribute(ConstructorInfo, Byte())
+  nameWithType: EventBuilder.SetCustomAttribute(ConstructorInfo, Byte[])
+  nameWithType.vb: EventBuilder.SetCustomAttribute(ConstructorInfo, Byte())
+- uid: System.Reflection.Emit.EventBuilder.SetCustomAttribute(System.Reflection.Emit.CustomAttributeBuilder)
+  commentId: M:System.Reflection.Emit.EventBuilder.SetCustomAttribute(System.Reflection.Emit.CustomAttributeBuilder)
+  id: SetCustomAttribute(System.Reflection.Emit.CustomAttributeBuilder)
+  parent: System.Reflection.Emit.EventBuilder
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Reflection.Emit.EventBuilder.SetCustomAttribute(System.Reflection.Emit.CustomAttributeBuilder)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Reflection/Emit/EventBuilder.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: SetCustomAttribute
+    path: src/mscorlib/src/System/Reflection/Emit/EventBuilder.cs
+    startLine: 127
+  assemblies:
+  - System.Reflection.Emit
+  namespace: System.Reflection.Emit
+  summary: "\n<p>Sets a custom attribute using a custom attribute builder.</p>\n"
+  syntax:
+    content: >-
+      [SecuritySafeCritical]
+
+      public void SetCustomAttribute(CustomAttributeBuilder customBuilder)
+    content.vb: >-
+      <SecuritySafeCritical>
+
+      Public Sub SetCustomAttribute(customBuilder As CustomAttributeBuilder)
+    parameters:
+    - id: customBuilder
+      type: System.Reflection.Emit.CustomAttributeBuilder
+      description: "\n<p>An instance of a helper class to describe the custom attribute. </p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>con</em> is <strong>null</strong>. </p>\n"
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: "\n<p>\n<xref href=\"System.Reflection.Emit.TypeBuilder.CreateType\" data-throw-if-not-resolved=\"false\"></xref> has been called on the enclosing type. </p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: EventBuilder.SetCustomAttribute(CustomAttributeBuilder)
+- uid: System.Reflection.Emit.EventBuilder.SetRaiseMethod(System.Reflection.Emit.MethodBuilder)
+  commentId: M:System.Reflection.Emit.EventBuilder.SetRaiseMethod(System.Reflection.Emit.MethodBuilder)
+  id: SetRaiseMethod(System.Reflection.Emit.MethodBuilder)
+  parent: System.Reflection.Emit.EventBuilder
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Reflection.Emit.EventBuilder.SetRaiseMethod(System.Reflection.Emit.MethodBuilder)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Reflection/Emit/EventBuilder.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: SetRaiseMethod
+    path: src/mscorlib/src/System/Reflection/Emit/EventBuilder.cs
+    startLine: 89
+  assemblies:
+  - System.Reflection.Emit
+  namespace: System.Reflection.Emit
+  summary: "\n<p>Sets the method used to raise this event.</p>\n"
+  syntax:
+    content: >-
+      [SecuritySafeCritical]
+
+      public void SetRaiseMethod(MethodBuilder mdBuilder)
+    content.vb: >-
+      <SecuritySafeCritical>
+
+      Public Sub SetRaiseMethod(mdBuilder As MethodBuilder)
+    parameters:
+    - id: mdBuilder
+      type: System.Reflection.Emit.MethodBuilder
+      description: "\n<p>A <strong>MethodBuilder</strong> object that represents the method used to raise this event. </p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>mdBuilder</em> is <strong>null</strong>. </p>\n"
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: "\n<p>\n<xref href=\"System.Reflection.Emit.TypeBuilder.CreateType\" data-throw-if-not-resolved=\"false\"></xref> has been called on the enclosing type. </p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: EventBuilder.SetRaiseMethod(MethodBuilder)
+- uid: System.Reflection.Emit.EventBuilder.SetRemoveOnMethod(System.Reflection.Emit.MethodBuilder)
+  commentId: M:System.Reflection.Emit.EventBuilder.SetRemoveOnMethod(System.Reflection.Emit.MethodBuilder)
+  id: SetRemoveOnMethod(System.Reflection.Emit.MethodBuilder)
+  parent: System.Reflection.Emit.EventBuilder
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Reflection.Emit.EventBuilder.SetRemoveOnMethod(System.Reflection.Emit.MethodBuilder)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Reflection/Emit/EventBuilder.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: SetRemoveOnMethod
+    path: src/mscorlib/src/System/Reflection/Emit/EventBuilder.cs
+    startLine: 83
+  assemblies:
+  - System.Reflection.Emit
+  namespace: System.Reflection.Emit
+  summary: "\n<p>Sets the method used to unsubscribe to this event.</p>\n"
+  syntax:
+    content: >-
+      [SecuritySafeCritical]
+
+      public void SetRemoveOnMethod(MethodBuilder mdBuilder)
+    content.vb: >-
+      <SecuritySafeCritical>
+
+      Public Sub SetRemoveOnMethod(mdBuilder As MethodBuilder)
+    parameters:
+    - id: mdBuilder
+      type: System.Reflection.Emit.MethodBuilder
+      description: "\n<p>A <strong>MethodBuilder</strong> object that represents the method used to unsubscribe to this event. </p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>mdBuilder</em> is <strong>null</strong>. </p>\n"
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: "\n<p>\n<xref href=\"System.Reflection.Emit.TypeBuilder.CreateType\" data-throw-if-not-resolved=\"false\"></xref> has been called on the enclosing type. </p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: EventBuilder.SetRemoveOnMethod(MethodBuilder)
+references:
+- uid: System.Reflection.Emit
+  isExternal: false
+  name: "XXX"
+  fullName: System.Reflection.Emit
+  nameWithType: System.Reflection.Emit
+  commentId: N:System.Reflection.Emit
+- uid: System.Object
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Object
+  nameWithType: Object
+  commentId: T:System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.ToString()
+  commentId: M:System.Object.ToString
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.Equals(Object)
+  commentId: M:System.Object.Equals(System.Object)
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.Equals(Object, Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.GetHashCode()
+  commentId: M:System.Object.GetHashCode
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.GetType()
+  commentId: M:System.Object.GetType
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.MemberwiseClone()
+  commentId: M:System.Object.MemberwiseClone
+- uid: System
+  isExternal: false
+  name: "XXX"
+  fullName: System
+  nameWithType: System
+  commentId: N:System
+- uid: System.Reflection.Emit.MethodBuilder
+  parent: System.Reflection.Emit
+  isExternal: false
+  name: "XXX"
+  fullName: System.Reflection.Emit.MethodBuilder
+  nameWithType: MethodBuilder
+  commentId: T:System.Reflection.Emit.MethodBuilder
+- uid: System.Reflection.ConstructorInfo
+  parent: System.Reflection
+  isExternal: false
+  name: "XXX"
+  fullName: System.Reflection.ConstructorInfo
+  nameWithType: ConstructorInfo
+  commentId: T:System.Reflection.ConstructorInfo
+- uid: System.Byte[]
+  name: "XXX"
+  fullName: System.Byte[]
+  fullname.vb: System.Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: "XXX"
+    fullName: System.Byte
+    isExternal: true
+  - name: 'XXX'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: "XXX"
+    fullName: System.Byte
+    isExternal: true
+  - name: "XXX"
+    fullName: ()
+  nameWithType: Byte[]
+  nameWithType.vb: Byte()
+- uid: System.Reflection
+  isExternal: false
+  name: "XXX"
+  fullName: System.Reflection
+  nameWithType: System.Reflection
+  commentId: N:System.Reflection
+- uid: System.Reflection.Emit.CustomAttributeBuilder
+  parent: System.Reflection.Emit
+  isExternal: false
+  name: "XXX"
+  fullName: System.Reflection.Emit.CustomAttributeBuilder
+  nameWithType: CustomAttributeBuilder
+  commentId: T:System.Reflection.Emit.CustomAttributeBuilder
+- uid: System.ArgumentNullException
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentNullException
+  nameWithType: ArgumentNullException
+  commentId: T:System.ArgumentNullException
+- uid: System.InvalidOperationException
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.InvalidOperationException
+  nameWithType: InvalidOperationException
+  commentId: T:System.InvalidOperationException

@@ -1,0 +1,2387 @@
+items:
+- uid: System.IO.BufferedStream
+  commentId: T:System.IO.BufferedStream
+  id: BufferedStream
+  parent: System.IO
+  children:
+  - System.IO.BufferedStream.#ctor(System.IO.Stream)
+  - System.IO.BufferedStream.#ctor(System.IO.Stream,System.Int32)
+  - System.IO.BufferedStream.CanRead
+  - System.IO.BufferedStream.CanSeek
+  - System.IO.BufferedStream.CanWrite
+  - System.IO.BufferedStream.Dispose(System.Boolean)
+  - System.IO.BufferedStream.Flush
+  - System.IO.BufferedStream.FlushAsync(System.Threading.CancellationToken)
+  - System.IO.BufferedStream.Length
+  - System.IO.BufferedStream.Position
+  - System.IO.BufferedStream.Read(System.Byte[],System.Int32,System.Int32)
+  - System.IO.BufferedStream.ReadAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)
+  - System.IO.BufferedStream.ReadByte
+  - System.IO.BufferedStream.Seek(System.Int64,System.IO.SeekOrigin)
+  - System.IO.BufferedStream.SetLength(System.Int64)
+  - System.IO.BufferedStream.Write(System.Byte[],System.Int32,System.Int32)
+  - System.IO.BufferedStream.WriteAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)
+  - System.IO.BufferedStream.WriteByte(System.Byte)
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.BufferedStream
+  type: Class
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/BufferedStream.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: BufferedStream
+    path: src/mscorlib/src/System/IO/BufferedStream.cs
+    startLine: 58
+  assemblies:
+  - System.IO
+  namespace: System.IO
+  summary: "\n<p>Adds a buffering layer to read and write operations on another stream. This class cannot be inherited.</p>\n"
+  syntax:
+    content: >-
+      [ComVisible(true)]
+
+      public sealed class BufferedStream : Stream, IDisposable
+    content.vb: >-
+      <ComVisible(True)>
+
+      Public NotInheritable Class BufferedStream
+          Inherits Stream
+          Implements IDisposable
+  seealso:
+  - type: System.IO.FileStream
+    commentId: T:System.IO.FileStream
+  - type: System.IO.MemoryStream
+    commentId: T:System.IO.MemoryStream
+  - type: System.IO.Stream
+    commentId: T:System.IO.Stream
+  inheritance:
+  - System.Object
+  - System.IO.Stream
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - System.IO.Stream.Null
+  - System.IO.Stream.CanTimeout
+  - System.IO.Stream.ReadTimeout
+  - System.IO.Stream.WriteTimeout
+  - System.IO.Stream.CopyTo(System.IO.Stream)
+  - System.IO.Stream.CopyTo(System.IO.Stream,System.Int32)
+  - System.IO.Stream.CopyToAsync(System.IO.Stream)
+  - System.IO.Stream.CopyToAsync(System.IO.Stream,System.Int32)
+  - System.IO.Stream.CopyToAsync(System.IO.Stream,System.Int32,System.Threading.CancellationToken)
+  - System.IO.Stream.Dispose
+  - System.IO.Stream.FlushAsync
+  - System.IO.Stream.ReadAsync(System.Byte[],System.Int32,System.Int32)
+  - System.IO.Stream.WriteAsync(System.Byte[],System.Int32,System.Int32)
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+  nameWithType: BufferedStream
+- uid: System.IO.BufferedStream.#ctor(System.IO.Stream)
+  commentId: M:System.IO.BufferedStream.#ctor(System.IO.Stream)
+  id: '#ctor(System.IO.Stream)'
+  parent: System.IO.BufferedStream
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.BufferedStream.BufferedStream(System.IO.Stream)
+  type: Constructor
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/BufferedStream.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: .ctor
+    path: src/mscorlib/src/System/IO/BufferedStream.cs
+    startLine: 87
+  assemblies:
+  - System.IO
+  namespace: System.IO
+  summary: "\n<p>Initializes a new instance of the <xref href=\"System.IO.BufferedStream\" data-throw-if-not-resolved=\"false\"></xref> class with a default buffer size of 4096 bytes.</p>\n"
+  syntax:
+    content: public BufferedStream(Stream stream)
+    content.vb: Public Sub New(stream As Stream)
+    parameters:
+    - id: stream
+      type: System.IO.Stream
+      description: "\n<p>The current stream. </p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>stream</em> is <strong>null</strong>. </p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: BufferedStream.BufferedStream(Stream)
+- uid: System.IO.BufferedStream.#ctor(System.IO.Stream,System.Int32)
+  commentId: M:System.IO.BufferedStream.#ctor(System.IO.Stream,System.Int32)
+  id: '#ctor(System.IO.Stream,System.Int32)'
+  parent: System.IO.BufferedStream
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.BufferedStream.BufferedStream(System.IO.Stream, System.Int32)
+  type: Constructor
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/BufferedStream.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: .ctor
+    path: src/mscorlib/src/System/IO/BufferedStream.cs
+    startLine: 93
+  assemblies:
+  - System.IO
+  namespace: System.IO
+  summary: "\n<p>Initializes a new instance of the <xref href=\"System.IO.BufferedStream\" data-throw-if-not-resolved=\"false\"></xref> class with the specified buffer size.</p>\n"
+  syntax:
+    content: public BufferedStream(Stream stream, int bufferSize)
+    content.vb: Public Sub New(stream As Stream, bufferSize As Integer)
+    parameters:
+    - id: stream
+      type: System.IO.Stream
+      description: "\n<p>The current stream. </p>\n"
+    - id: bufferSize
+      type: System.Int32
+      description: "\n<p>The buffer size in bytes. </p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>stream</em> is <strong>null</strong>. </p>\n"
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>bufferSize</em> is negative. </p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: BufferedStream.BufferedStream(Stream, Int32)
+- uid: System.IO.BufferedStream.CanRead
+  commentId: P:System.IO.BufferedStream.CanRead
+  id: CanRead
+  parent: System.IO.BufferedStream
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.BufferedStream.CanRead
+  type: Property
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/BufferedStream.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: CanRead
+    path: src/mscorlib/src/System/IO/BufferedStream.cs
+    startLine: 203
+  assemblies:
+  - System.IO
+  namespace: System.IO
+  summary: "\n<p>Gets a value indicating whether the current stream supports reading.</p>\n"
+  syntax:
+    content: public override bool CanRead { get; }
+    content.vb: Public Overrides ReadOnly Property CanRead As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if the stream supports reading; <strong>false</strong> if the stream is closed or was opened with write-only access.</p>\n"
+  overridden: System.IO.Stream.CanRead
+  seealso:
+  - type: System.IO.BufferedStream.Read(System.Byte[],System.Int32,System.Int32)
+    commentId: M:System.IO.BufferedStream.Read(System.Byte[],System.Int32,System.Int32)
+  modifiers.csharp:
+  - public
+  - override
+  - get
+  modifiers.vb:
+  - Public
+  - Overrides
+  - ReadOnly
+  nameWithType: BufferedStream.CanRead
+- uid: System.IO.BufferedStream.CanSeek
+  commentId: P:System.IO.BufferedStream.CanSeek
+  id: CanSeek
+  parent: System.IO.BufferedStream
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.BufferedStream.CanSeek
+  type: Property
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/BufferedStream.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: CanSeek
+    path: src/mscorlib/src/System/IO/BufferedStream.cs
+    startLine: 215
+  assemblies:
+  - System.IO
+  namespace: System.IO
+  summary: "\n<p>Gets a value indicating whether the current stream supports seeking.</p>\n"
+  syntax:
+    content: public override bool CanSeek { get; }
+    content.vb: Public Overrides ReadOnly Property CanSeek As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if the stream supports seeking; <strong>false</strong> if the stream is closed or if the stream was constructed from an operating system handle such as a pipe or output to the console.</p>\n"
+  overridden: System.IO.Stream.CanSeek
+  seealso:
+  - type: System.IO.BufferedStream.SetLength(System.Int64)
+    commentId: M:System.IO.BufferedStream.SetLength(System.Int64)
+  - type: System.IO.BufferedStream.Seek(System.Int64,System.IO.SeekOrigin)
+    commentId: M:System.IO.BufferedStream.Seek(System.Int64,System.IO.SeekOrigin)
+  modifiers.csharp:
+  - public
+  - override
+  - get
+  modifiers.vb:
+  - Public
+  - Overrides
+  - ReadOnly
+  nameWithType: BufferedStream.CanSeek
+- uid: System.IO.BufferedStream.CanWrite
+  commentId: P:System.IO.BufferedStream.CanWrite
+  id: CanWrite
+  parent: System.IO.BufferedStream
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.BufferedStream.CanWrite
+  type: Property
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/BufferedStream.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: CanWrite
+    path: src/mscorlib/src/System/IO/BufferedStream.cs
+    startLine: 209
+  assemblies:
+  - System.IO
+  namespace: System.IO
+  summary: "\n<p>Gets a value indicating whether the current stream supports writing.</p>\n"
+  syntax:
+    content: public override bool CanWrite { get; }
+    content.vb: Public Overrides ReadOnly Property CanWrite As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if the stream supports writing; <strong>false</strong> if the stream is closed or was opened with read-only access.</p>\n"
+  overridden: System.IO.Stream.CanWrite
+  seealso:
+  - type: System.IO.BufferedStream.Write(System.Byte[],System.Int32,System.Int32)
+    commentId: M:System.IO.BufferedStream.Write(System.Byte[],System.Int32,System.Int32)
+  modifiers.csharp:
+  - public
+  - override
+  - get
+  modifiers.vb:
+  - Public
+  - Overrides
+  - ReadOnly
+  nameWithType: BufferedStream.CanWrite
+- uid: System.IO.BufferedStream.Length
+  commentId: P:System.IO.BufferedStream.Length
+  id: Length
+  parent: System.IO.BufferedStream
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.BufferedStream.Length
+  type: Property
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/BufferedStream.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Length
+    path: src/mscorlib/src/System/IO/BufferedStream.cs
+    startLine: 221
+  assemblies:
+  - System.IO
+  namespace: System.IO
+  summary: "\n<p>Gets the stream length in bytes.</p>\n"
+  syntax:
+    content: public override long Length { get; }
+    content.vb: Public Overrides ReadOnly Property Length As Long
+    parameters: []
+    return:
+      type: System.Int64
+      description: "\n<p>The stream length in bytes.</p>\n"
+  overridden: System.IO.Stream.Length
+  exceptions:
+  - type: System.IO.IOException
+    commentId: T:System.IO.IOException
+    description: "\n<p>The underlying stream is <strong>null</strong> or closed. </p>\n"
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: "\n<p>The stream does not support seeking. </p>\n"
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>Methods were called after the stream was closed. </p>\n"
+  modifiers.csharp:
+  - public
+  - override
+  - get
+  modifiers.vb:
+  - Public
+  - Overrides
+  - ReadOnly
+  nameWithType: BufferedStream.Length
+- uid: System.IO.BufferedStream.Position
+  commentId: P:System.IO.BufferedStream.Position
+  id: Position
+  parent: System.IO.BufferedStream
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.BufferedStream.Position
+  type: Property
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/BufferedStream.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Position
+    path: src/mscorlib/src/System/IO/BufferedStream.cs
+    startLine: 233
+  assemblies:
+  - System.IO
+  namespace: System.IO
+  summary: "\n<p>Gets the position within the current stream.</p>\n"
+  syntax:
+    content: public override long Position { get; set; }
+    content.vb: Public Overrides Property Position As Long
+    parameters: []
+    return:
+      type: System.Int64
+      description: "\n<p>The position within the current stream.</p>\n"
+  overridden: System.IO.Stream.Position
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>The value passed to <xref href=\"System.IO.BufferedStream.Seek(System.Int64,System.IO.SeekOrigin)\" data-throw-if-not-resolved=\"false\"></xref> is negative. </p>\n"
+  - type: System.IO.IOException
+    commentId: T:System.IO.IOException
+    description: "\n<p>An I/O error occurs, such as the stream being closed. </p>\n"
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: "\n<p>The stream does not support seeking. </p>\n"
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>Methods were called after the stream was closed. </p>\n"
+  seealso:
+  - type: System.IO.BufferedStream.CanSeek
+    commentId: P:System.IO.BufferedStream.CanSeek
+  - type: System.IO.BufferedStream.Seek(System.Int64,System.IO.SeekOrigin)
+    commentId: M:System.IO.BufferedStream.Seek(System.Int64,System.IO.SeekOrigin)
+  modifiers.csharp:
+  - public
+  - override
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overrides
+  nameWithType: BufferedStream.Position
+- uid: System.IO.BufferedStream.Dispose(System.Boolean)
+  commentId: M:System.IO.BufferedStream.Dispose(System.Boolean)
+  id: Dispose(System.Boolean)
+  parent: System.IO.BufferedStream
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.BufferedStream.Dispose(System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/BufferedStream.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Dispose
+    path: src/mscorlib/src/System/IO/BufferedStream.cs
+    startLine: 259
+  assemblies:
+  - System.IO
+  namespace: System.IO
+  syntax:
+    content: protected override void Dispose(bool disposing)
+    content.vb: Protected Overrides Sub Dispose(disposing As Boolean)
+    parameters:
+    - id: disposing
+      type: System.Boolean
+  overridden: System.IO.Stream.Dispose(System.Boolean)
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+  nameWithType: BufferedStream.Dispose(Boolean)
+- uid: System.IO.BufferedStream.Flush
+  commentId: M:System.IO.BufferedStream.Flush
+  id: Flush
+  parent: System.IO.BufferedStream
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.BufferedStream.Flush()
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/BufferedStream.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Flush
+    path: src/mscorlib/src/System/IO/BufferedStream.cs
+    startLine: 280
+  assemblies:
+  - System.IO
+  namespace: System.IO
+  summary: "\n<p>Clears all buffers for this stream and causes any buffered data to be written to the underlying device.</p>\n"
+  syntax:
+    content: public override void Flush()
+    content.vb: Public Overrides Sub Flush
+  overridden: System.IO.Stream.Flush
+  exceptions:
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>The stream has been disposed.</p>\n"
+  - type: System.IO.IOException
+    commentId: T:System.IO.IOException
+    description: "\n<p>The data source or repository is not open. </p>\n"
+  seealso:
+  - type: System.IO.Stream.Close
+    commentId: M:System.IO.Stream.Close
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  nameWithType: BufferedStream.Flush()
+- uid: System.IO.BufferedStream.FlushAsync(System.Threading.CancellationToken)
+  commentId: M:System.IO.BufferedStream.FlushAsync(System.Threading.CancellationToken)
+  id: FlushAsync(System.Threading.CancellationToken)
+  parent: System.IO.BufferedStream
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.BufferedStream.FlushAsync(System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/BufferedStream.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: FlushAsync
+    path: src/mscorlib/src/System/IO/BufferedStream.cs
+    startLine: 320
+  assemblies:
+  - System.IO
+  namespace: System.IO
+  summary: "\n<p>Asynchronously clears all buffers for this stream, causes any buffered data to be written to the underlying device, and monitors cancellation requests.</p>\n"
+  syntax:
+    content: public override Task FlushAsync(CancellationToken cancellationToken)
+    content.vb: Public Overrides Function FlushAsync(cancellationToken As CancellationToken) As Task
+    parameters:
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\n<p>The token to monitor for cancellation requests.</p>\n"
+    return:
+      type: System.Threading.Tasks.Task
+      description: "\n<p>A task that represents the asynchronous flush operation.</p>\n"
+  overridden: System.IO.Stream.FlushAsync(System.Threading.CancellationToken)
+  exceptions:
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>The stream has been disposed.</p>\n"
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  nameWithType: BufferedStream.FlushAsync(CancellationToken)
+- uid: System.IO.BufferedStream.Read(System.Byte[],System.Int32,System.Int32)
+  commentId: M:System.IO.BufferedStream.Read(System.Byte[],System.Int32,System.Int32)
+  id: Read(System.Byte[],System.Int32,System.Int32)
+  parent: System.IO.BufferedStream
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.BufferedStream.Read(System.Byte[], System.Int32, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/BufferedStream.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Read
+    path: src/mscorlib/src/System/IO/BufferedStream.cs
+    startLine: 485
+  assemblies:
+  - System.IO
+  namespace: System.IO
+  summary: "\n<p>Copies bytes from the current buffered stream to an array.</p>\n"
+  syntax:
+    content: public override int Read([In, Out] byte[] array, int offset, int count)
+    content.vb: Public Overrides Function Read(array As Byte(), offset As Integer, count As Integer) As Integer
+    parameters:
+    - id: array
+      type: System.Byte[]
+      description: "\n<p>The buffer to which bytes are to be copied. </p>\n"
+      attributes:
+      - type: System.Runtime.InteropServices.InAttribute
+        ctor: System.Runtime.InteropServices.InAttribute.#ctor
+        arguments: []
+      - type: System.Runtime.InteropServices.OutAttribute
+        ctor: System.Runtime.InteropServices.OutAttribute.#ctor
+        arguments: []
+    - id: offset
+      type: System.Int32
+      description: "\n<p>The byte offset in the buffer at which to begin reading bytes. </p>\n"
+    - id: count
+      type: System.Int32
+      description: "\n<p>The number of bytes to be read. </p>\n"
+    return:
+      type: System.Int32
+      description: "\n<p>The total number of bytes read into <em>array</em>. This can be less than the number of bytes requested if that many bytes are not currently available, or 0 if the end of the stream has been reached before any data can be read.</p>\n"
+  overridden: System.IO.Stream.Read(System.Byte[],System.Int32,System.Int32)
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>Length of <em>array</em> minus <em>offset</em> is less than <em>count</em>. </p>\n"
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>array</em> is <strong>null</strong>. </p>\n"
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>offset</em> or <em>count</em> is negative. </p>\n"
+  - type: System.IO.IOException
+    commentId: T:System.IO.IOException
+    description: "\n<p>The stream is not open or is <strong>null</strong>. </p>\n"
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: "\n<p>The stream does not support reading. </p>\n"
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>Methods were called after the stream was closed. </p>\n"
+  seealso:
+  - type: System.Buffer.BlockCopy(System.Array,System.Int32,System.Array,System.Int32,System.Int32)
+    commentId: M:System.Buffer.BlockCopy(System.Array,System.Int32,System.Array,System.Int32,System.Int32)
+  - type: System.IO.BufferedStream.CanRead
+    commentId: P:System.IO.BufferedStream.CanRead
+  - type: System.IO.BufferedStream.Write(System.Byte[],System.Int32,System.Int32)
+    commentId: M:System.IO.BufferedStream.Write(System.Byte[],System.Int32,System.Int32)
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  fullName.vb: System.IO.BufferedStream.Read(System.Byte(), System.Int32, System.Int32)
+  name.vb: Read(Byte(), Int32, Int32)
+  nameWithType: BufferedStream.Read(Byte[], Int32, Int32)
+  nameWithType.vb: BufferedStream.Read(Byte(), Int32, Int32)
+- uid: System.IO.BufferedStream.ReadAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)
+  commentId: M:System.IO.BufferedStream.ReadAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)
+  id: ReadAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)
+  parent: System.IO.BufferedStream
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.BufferedStream.ReadAsync(System.Byte[], System.Int32, System.Int32, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/BufferedStream.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: ReadAsync
+    path: src/mscorlib/src/System/IO/BufferedStream.cs
+    startLine: 649
+  assemblies:
+  - System.IO
+  namespace: System.IO
+  summary: "\n<p>Asynchronously reads a sequence of bytes from the current stream, advances the position within the stream by the number of bytes read, and monitors cancellation requests.</p>\n"
+  syntax:
+    content: public override Task<int> ReadAsync(byte[] buffer, int offset, int count, CancellationToken cancellationToken)
+    content.vb: Public Overrides Function ReadAsync(buffer As Byte(), offset As Integer, count As Integer, cancellationToken As CancellationToken) As Task(Of Integer)
+    parameters:
+    - id: buffer
+      type: System.Byte[]
+      description: "\n<p>The buffer to write the data into.</p>\n"
+    - id: offset
+      type: System.Int32
+      description: "\n<p>The byte offset in <em>buffer</em> at which to begin writing data from the stream.</p>\n"
+    - id: count
+      type: System.Int32
+      description: "\n<p>The maximum number of bytes to read.</p>\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\n<p>The token to monitor for cancellation requests.</p>\n"
+    return:
+      type: System.Threading.Tasks.Task{System.Int32}
+      description: "\n<p>A task that represents the asynchronous read operation. The value of the <em>TResult</em> parameter contains the total number of bytes read into the buffer. The result value can be less than the number of bytes requested if the number of bytes currently available is less than the requested number, or it can be 0 (zero) if the end of the stream has been reached. </p>\n"
+  overridden: System.IO.Stream.ReadAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>buffer</em> is <strong>null</strong>.</p>\n"
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>offset</em> or <em>count</em> is negative.</p>\n"
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>The sum of <em>offset</em> and <em>count</em> is larger than the buffer length.</p>\n"
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: "\n<p>The stream does not support reading.</p>\n"
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>The stream has been disposed.</p>\n"
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: "\n<p>The stream is currently in use by a previous read operation. </p>\n"
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  fullName.vb: System.IO.BufferedStream.ReadAsync(System.Byte(), System.Int32, System.Int32, System.Threading.CancellationToken)
+  name.vb: ReadAsync(Byte(), Int32, Int32, CancellationToken)
+  nameWithType: BufferedStream.ReadAsync(Byte[], Int32, Int32, CancellationToken)
+  nameWithType.vb: BufferedStream.ReadAsync(Byte(), Int32, Int32, CancellationToken)
+- uid: System.IO.BufferedStream.ReadByte
+  commentId: M:System.IO.BufferedStream.ReadByte
+  id: ReadByte
+  parent: System.IO.BufferedStream
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.BufferedStream.ReadByte()
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/BufferedStream.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: ReadByte
+    path: src/mscorlib/src/System/IO/BufferedStream.cs
+    startLine: 786
+  assemblies:
+  - System.IO
+  namespace: System.IO
+  summary: "\n<p>Reads a byte from the underlying stream and returns the byte cast to an <strong>int</strong>, or returns -1 if reading from the end of the stream.</p>\n"
+  syntax:
+    content: public override int ReadByte()
+    content.vb: Public Overrides Function ReadByte As Integer
+    return:
+      type: System.Int32
+      description: "\n<p>The byte cast to an <strong>int</strong>, or -1 if reading from the end of the stream.</p>\n"
+  overridden: System.IO.Stream.ReadByte
+  exceptions:
+  - type: System.IO.IOException
+    commentId: T:System.IO.IOException
+    description: "\n<p>An I/O error occurs, such as the stream being closed. </p>\n"
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: "\n<p>The stream does not support reading. </p>\n"
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>Methods were called after the stream was closed. </p>\n"
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  nameWithType: BufferedStream.ReadByte()
+- uid: System.IO.BufferedStream.Seek(System.Int64,System.IO.SeekOrigin)
+  commentId: M:System.IO.BufferedStream.Seek(System.Int64,System.IO.SeekOrigin)
+  id: Seek(System.Int64,System.IO.SeekOrigin)
+  parent: System.IO.BufferedStream
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.BufferedStream.Seek(System.Int64, System.IO.SeekOrigin)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/BufferedStream.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Seek
+    path: src/mscorlib/src/System/IO/BufferedStream.cs
+    startLine: 1254
+  assemblies:
+  - System.IO
+  namespace: System.IO
+  summary: "\n<p>Sets the position within the current buffered stream.</p>\n"
+  syntax:
+    content: public override long Seek(long offset, SeekOrigin origin)
+    content.vb: Public Overrides Function Seek(offset As Long, origin As SeekOrigin) As Long
+    parameters:
+    - id: offset
+      type: System.Int64
+      description: "\n<p>A byte offset relative to <em>origin</em>. </p>\n"
+    - id: origin
+      type: System.IO.SeekOrigin
+      description: "\n<p>A value of type <xref href=\"System.IO.SeekOrigin\" data-throw-if-not-resolved=\"false\"></xref> indicating the reference point from which to obtain the new position. </p>\n"
+    return:
+      type: System.Int64
+      description: "\n<p>The new position within the current buffered stream.</p>\n"
+  overridden: System.IO.Stream.Seek(System.Int64,System.IO.SeekOrigin)
+  exceptions:
+  - type: System.IO.IOException
+    commentId: T:System.IO.IOException
+    description: "\n<p>The stream is not open or is <strong>null</strong>. </p>\n"
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: "\n<p>The stream does not support seeking. </p>\n"
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>Methods were called after the stream was closed. </p>\n"
+  seealso:
+  - type: System.IO.SeekOrigin
+    commentId: T:System.IO.SeekOrigin
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  nameWithType: BufferedStream.Seek(Int64, SeekOrigin)
+- uid: System.IO.BufferedStream.SetLength(System.Int64)
+  commentId: M:System.IO.BufferedStream.SetLength(System.Int64)
+  id: SetLength(System.Int64)
+  parent: System.IO.BufferedStream
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.BufferedStream.SetLength(System.Int64)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/BufferedStream.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: SetLength
+    path: src/mscorlib/src/System/IO/BufferedStream.cs
+    startLine: 1304
+  assemblies:
+  - System.IO
+  namespace: System.IO
+  summary: "\n<p>Sets the length of the buffered stream.</p>\n"
+  syntax:
+    content: public override void SetLength(long value)
+    content.vb: Public Overrides Sub SetLength(value As Long)
+    parameters:
+    - id: value
+      type: System.Int64
+      description: "\n<p>An integer indicating the desired length of the current buffered stream in bytes. </p>\n"
+  overridden: System.IO.Stream.SetLength(System.Int64)
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>value</em> is negative. </p>\n"
+  - type: System.IO.IOException
+    commentId: T:System.IO.IOException
+    description: "\n<p>The stream is not open or is <strong>null</strong>. </p>\n"
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: "\n<p>The stream does not support both writing and seeking. </p>\n"
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>Methods were called after the stream was closed. </p>\n"
+  seealso:
+  - type: System.IO.BufferedStream.Seek(System.Int64,System.IO.SeekOrigin)
+    commentId: M:System.IO.BufferedStream.Seek(System.Int64,System.IO.SeekOrigin)
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  nameWithType: BufferedStream.SetLength(Int64)
+- uid: System.IO.BufferedStream.Write(System.Byte[],System.Int32,System.Int32)
+  commentId: M:System.IO.BufferedStream.Write(System.Byte[],System.Int32,System.Int32)
+  id: Write(System.Byte[],System.Int32,System.Int32)
+  parent: System.IO.BufferedStream
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.BufferedStream.Write(System.Byte[], System.Int32, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/BufferedStream.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Write
+    path: src/mscorlib/src/System/IO/BufferedStream.cs
+    startLine: 838
+  assemblies:
+  - System.IO
+  namespace: System.IO
+  summary: "\n<p>Copies bytes to the buffered stream and advances the current position within the buffered stream by the number of bytes written.</p>\n"
+  syntax:
+    content: public override void Write(byte[] array, int offset, int count)
+    content.vb: Public Overrides Sub Write(array As Byte(), offset As Integer, count As Integer)
+    parameters:
+    - id: array
+      type: System.Byte[]
+      description: "\n<p>The byte array from which to copy <em>count</em> bytes to the current buffered stream. </p>\n"
+    - id: offset
+      type: System.Int32
+      description: "\n<p>The offset in the buffer at which to begin copying bytes to the current buffered stream. </p>\n"
+    - id: count
+      type: System.Int32
+      description: "\n<p>The number of bytes to be written to the current buffered stream. </p>\n"
+  overridden: System.IO.Stream.Write(System.Byte[],System.Int32,System.Int32)
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>Length of <em>array</em> minus <em>offset</em> is less than <em>count</em>. </p>\n"
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>array</em> is <strong>null</strong>. </p>\n"
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>offset</em> or <em>count</em> is negative. </p>\n"
+  - type: System.IO.IOException
+    commentId: T:System.IO.IOException
+    description: "\n<p>The stream is closed or <strong>null</strong>. </p>\n"
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: "\n<p>The stream does not support writing. </p>\n"
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>Methods were called after the stream was closed. </p>\n"
+  seealso:
+  - type: System.IO.BufferedStream.CanWrite
+    commentId: P:System.IO.BufferedStream.CanWrite
+  - type: System.IO.BufferedStream.Read(System.Byte[],System.Int32,System.Int32)
+    commentId: M:System.IO.BufferedStream.Read(System.Byte[],System.Int32,System.Int32)
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  fullName.vb: System.IO.BufferedStream.Write(System.Byte(), System.Int32, System.Int32)
+  name.vb: Write(Byte(), Int32, Int32)
+  nameWithType: BufferedStream.Write(Byte[], Int32, Int32)
+  nameWithType.vb: BufferedStream.Write(Byte(), Int32, Int32)
+- uid: System.IO.BufferedStream.WriteAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)
+  commentId: M:System.IO.BufferedStream.WriteAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)
+  id: WriteAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)
+  parent: System.IO.BufferedStream
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.BufferedStream.WriteAsync(System.Byte[], System.Int32, System.Int32, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/BufferedStream.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: WriteAsync
+    path: src/mscorlib/src/System/IO/BufferedStream.cs
+    startLine: 1059
+  assemblies:
+  - System.IO
+  namespace: System.IO
+  summary: "\n<p>Asynchronously writes a sequence of bytes to the current stream, advances the current position within this stream by the number of bytes written, and monitors cancellation requests.</p>\n"
+  syntax:
+    content: public override Task WriteAsync(byte[] buffer, int offset, int count, CancellationToken cancellationToken)
+    content.vb: Public Overrides Function WriteAsync(buffer As Byte(), offset As Integer, count As Integer, cancellationToken As CancellationToken) As Task
+    parameters:
+    - id: buffer
+      type: System.Byte[]
+      description: "\n<p>The buffer to write data from.</p>\n"
+    - id: offset
+      type: System.Int32
+      description: "\n<p>The zero-based byte offset in <em>buffer</em> from which to begin copying bytes to the stream.</p>\n"
+    - id: count
+      type: System.Int32
+      description: "\n<p>The maximum number of bytes to write.</p>\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\n<p>The token to monitor for cancellation requests.</p>\n"
+    return:
+      type: System.Threading.Tasks.Task
+      description: "\n<p>A task that represents the asynchronous write operation.</p>\n"
+  overridden: System.IO.Stream.WriteAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>buffer</em> is <strong>null</strong>.</p>\n"
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>offset</em> or <em>count</em> is negative.</p>\n"
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>The sum of <em>offset</em> and <em>count</em> is larger than the buffer length.</p>\n"
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: "\n<p>The stream does not support writing.</p>\n"
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>The stream has been disposed.</p>\n"
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: "\n<p>The stream is currently in use by a previous write operation. </p>\n"
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  fullName.vb: System.IO.BufferedStream.WriteAsync(System.Byte(), System.Int32, System.Int32, System.Threading.CancellationToken)
+  name.vb: WriteAsync(Byte(), Int32, Int32, CancellationToken)
+  nameWithType: BufferedStream.WriteAsync(Byte[], Int32, Int32, CancellationToken)
+  nameWithType.vb: BufferedStream.WriteAsync(Byte(), Int32, Int32, CancellationToken)
+- uid: System.IO.BufferedStream.WriteByte(System.Byte)
+  commentId: M:System.IO.BufferedStream.WriteByte(System.Byte)
+  id: WriteByte(System.Byte)
+  parent: System.IO.BufferedStream
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.BufferedStream.WriteByte(System.Byte)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/BufferedStream.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: WriteByte
+    path: src/mscorlib/src/System/IO/BufferedStream.cs
+    startLine: 1233
+  assemblies:
+  - System.IO
+  namespace: System.IO
+  summary: "\n<p>Writes a byte to the current position in the buffered stream.</p>\n"
+  syntax:
+    content: public override void WriteByte(byte value)
+    content.vb: Public Overrides Sub WriteByte(value As Byte)
+    parameters:
+    - id: value
+      type: System.Byte
+      description: "\n<p>A byte to write to the stream. </p>\n"
+  overridden: System.IO.Stream.WriteByte(System.Byte)
+  exceptions:
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: "\n<p>The stream does not support writing. </p>\n"
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>value</em> is <strong>null</strong>. </p>\n"
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>Methods were called after the stream was closed. </p>\n"
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  nameWithType: BufferedStream.WriteByte(Byte)
+references:
+- uid: System.IO
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO
+  nameWithType: System.IO
+  commentId: N:System.IO
+- uid: System.Object
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Object
+  nameWithType: Object
+  commentId: T:System.Object
+- uid: System.IO.Stream
+  parent: System.IO
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.Stream
+  nameWithType: Stream
+  commentId: T:System.IO.Stream
+- uid: System.IDisposable
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.IDisposable
+  nameWithType: IDisposable
+  commentId: T:System.IDisposable
+- uid: System.IO.Stream.Null
+  parent: System.IO.Stream
+  isExternal: false
+  fullName: System.IO.Stream.Null
+  nameWithType: Stream.Null
+  commentId: F:System.IO.Stream.Null
+- uid: System.IO.Stream.CanTimeout
+  parent: System.IO.Stream
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.Stream.CanTimeout
+  nameWithType: Stream.CanTimeout
+  commentId: P:System.IO.Stream.CanTimeout
+- uid: System.IO.Stream.ReadTimeout
+  parent: System.IO.Stream
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.Stream.ReadTimeout
+  nameWithType: Stream.ReadTimeout
+  commentId: P:System.IO.Stream.ReadTimeout
+- uid: System.IO.Stream.WriteTimeout
+  parent: System.IO.Stream
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.Stream.WriteTimeout
+  nameWithType: Stream.WriteTimeout
+  commentId: P:System.IO.Stream.WriteTimeout
+- uid: System.IO.Stream.CopyTo(System.IO.Stream)
+  parent: System.IO.Stream
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.Stream.CopyTo(System.IO.Stream)
+  spec.csharp:
+  - uid: System.IO.Stream.CopyTo(System.IO.Stream)
+    name: "XXX"
+    fullName: System.IO.Stream.CopyTo
+  - name: "XXX"
+    fullName: (
+  - uid: System.IO.Stream
+    name: "XXX"
+    fullName: System.IO.Stream
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.IO.Stream.CopyTo(System.IO.Stream)
+    name: "XXX"
+    fullName: System.IO.Stream.CopyTo
+  - name: "XXX"
+    fullName: (
+  - uid: System.IO.Stream
+    name: "XXX"
+    fullName: System.IO.Stream
+  - name: "XXX"
+    fullName: )
+  nameWithType: Stream.CopyTo(Stream)
+  commentId: M:System.IO.Stream.CopyTo(System.IO.Stream)
+- uid: System.IO.Stream.CopyTo(System.IO.Stream,System.Int32)
+  parent: System.IO.Stream
+  isExternal: true
+  name: "XXX"
+  fullName: System.IO.Stream.CopyTo(System.IO.Stream, System.Int32)
+  spec.csharp:
+  - uid: System.IO.Stream.CopyTo(System.IO.Stream,System.Int32)
+    name: "XXX"
+    fullName: System.IO.Stream.CopyTo
+  - name: "XXX"
+    fullName: (
+  - uid: System.IO.Stream
+    name: "XXX"
+    fullName: System.IO.Stream
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.IO.Stream.CopyTo(System.IO.Stream,System.Int32)
+    name: "XXX"
+    fullName: System.IO.Stream.CopyTo
+  - name: "XXX"
+    fullName: (
+  - uid: System.IO.Stream
+    name: "XXX"
+    fullName: System.IO.Stream
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Stream.CopyTo(Stream, Int32)
+  commentId: M:System.IO.Stream.CopyTo(System.IO.Stream,System.Int32)
+- uid: System.IO.Stream.CopyToAsync(System.IO.Stream)
+  parent: System.IO.Stream
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.Stream.CopyToAsync(System.IO.Stream)
+  spec.csharp:
+  - uid: System.IO.Stream.CopyToAsync(System.IO.Stream)
+    name: "XXX"
+    fullName: System.IO.Stream.CopyToAsync
+  - name: "XXX"
+    fullName: (
+  - uid: System.IO.Stream
+    name: "XXX"
+    fullName: System.IO.Stream
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.IO.Stream.CopyToAsync(System.IO.Stream)
+    name: "XXX"
+    fullName: System.IO.Stream.CopyToAsync
+  - name: "XXX"
+    fullName: (
+  - uid: System.IO.Stream
+    name: "XXX"
+    fullName: System.IO.Stream
+  - name: "XXX"
+    fullName: )
+  nameWithType: Stream.CopyToAsync(Stream)
+  commentId: M:System.IO.Stream.CopyToAsync(System.IO.Stream)
+- uid: System.IO.Stream.CopyToAsync(System.IO.Stream,System.Int32)
+  parent: System.IO.Stream
+  isExternal: true
+  name: "XXX"
+  fullName: System.IO.Stream.CopyToAsync(System.IO.Stream, System.Int32)
+  spec.csharp:
+  - uid: System.IO.Stream.CopyToAsync(System.IO.Stream,System.Int32)
+    name: "XXX"
+    fullName: System.IO.Stream.CopyToAsync
+  - name: "XXX"
+    fullName: (
+  - uid: System.IO.Stream
+    name: "XXX"
+    fullName: System.IO.Stream
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.IO.Stream.CopyToAsync(System.IO.Stream,System.Int32)
+    name: "XXX"
+    fullName: System.IO.Stream.CopyToAsync
+  - name: "XXX"
+    fullName: (
+  - uid: System.IO.Stream
+    name: "XXX"
+    fullName: System.IO.Stream
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Stream.CopyToAsync(Stream, Int32)
+  commentId: M:System.IO.Stream.CopyToAsync(System.IO.Stream,System.Int32)
+- uid: System.IO.Stream.CopyToAsync(System.IO.Stream,System.Int32,System.Threading.CancellationToken)
+  parent: System.IO.Stream
+  isExternal: true
+  name: "XXX"
+  fullName: System.IO.Stream.CopyToAsync(System.IO.Stream, System.Int32, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: System.IO.Stream.CopyToAsync(System.IO.Stream,System.Int32,System.Threading.CancellationToken)
+    name: "XXX"
+    fullName: System.IO.Stream.CopyToAsync
+  - name: "XXX"
+    fullName: (
+  - uid: System.IO.Stream
+    name: "XXX"
+    fullName: System.IO.Stream
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: "XXX"
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.IO.Stream.CopyToAsync(System.IO.Stream,System.Int32,System.Threading.CancellationToken)
+    name: "XXX"
+    fullName: System.IO.Stream.CopyToAsync
+  - name: "XXX"
+    fullName: (
+  - uid: System.IO.Stream
+    name: "XXX"
+    fullName: System.IO.Stream
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: "XXX"
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Stream.CopyToAsync(Stream, Int32, CancellationToken)
+  commentId: M:System.IO.Stream.CopyToAsync(System.IO.Stream,System.Int32,System.Threading.CancellationToken)
+- uid: System.IO.Stream.Dispose
+  parent: System.IO.Stream
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.Stream.Dispose()
+  spec.csharp:
+  - uid: System.IO.Stream.Dispose
+    name: "XXX"
+    fullName: System.IO.Stream.Dispose
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.IO.Stream.Dispose
+    name: "XXX"
+    fullName: System.IO.Stream.Dispose
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Stream.Dispose()
+  commentId: M:System.IO.Stream.Dispose
+- uid: System.IO.Stream.FlushAsync
+  parent: System.IO.Stream
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.Stream.FlushAsync()
+  spec.csharp:
+  - uid: System.IO.Stream.FlushAsync
+    name: "XXX"
+    fullName: System.IO.Stream.FlushAsync
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.IO.Stream.FlushAsync
+    name: "XXX"
+    fullName: System.IO.Stream.FlushAsync
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Stream.FlushAsync()
+  commentId: M:System.IO.Stream.FlushAsync
+- uid: System.IO.Stream.ReadAsync(System.Byte[],System.Int32,System.Int32)
+  parent: System.IO.Stream
+  isExternal: true
+  name: "XXX"
+  fullName: System.IO.Stream.ReadAsync(System.Byte[], System.Int32, System.Int32)
+  fullname.vb: System.IO.Stream.ReadAsync(System.Byte(), System.Int32, System.Int32)
+  name.vb: ReadAsync(Byte(), Int32, Int32)
+  spec.csharp:
+  - uid: System.IO.Stream.ReadAsync(System.Byte[],System.Int32,System.Int32)
+    name: "XXX"
+    fullName: System.IO.Stream.ReadAsync
+  - name: "XXX"
+    fullName: (
+  - uid: System.Byte
+    name: "XXX"
+    fullName: System.Byte
+    isExternal: true
+  - name: 'XXX'
+    fullName: '[]'
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.IO.Stream.ReadAsync(System.Byte[],System.Int32,System.Int32)
+    name: "XXX"
+    fullName: System.IO.Stream.ReadAsync
+  - name: "XXX"
+    fullName: (
+  - uid: System.Byte
+    name: "XXX"
+    fullName: System.Byte
+    isExternal: true
+  - name: "XXX"
+    fullName: ()
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Stream.ReadAsync(Byte[], Int32, Int32)
+  nameWithType.vb: Stream.ReadAsync(Byte(), Int32, Int32)
+  commentId: M:System.IO.Stream.ReadAsync(System.Byte[],System.Int32,System.Int32)
+- uid: System.IO.Stream.WriteAsync(System.Byte[],System.Int32,System.Int32)
+  parent: System.IO.Stream
+  isExternal: true
+  name: "XXX"
+  fullName: System.IO.Stream.WriteAsync(System.Byte[], System.Int32, System.Int32)
+  fullname.vb: System.IO.Stream.WriteAsync(System.Byte(), System.Int32, System.Int32)
+  name.vb: WriteAsync(Byte(), Int32, Int32)
+  spec.csharp:
+  - uid: System.IO.Stream.WriteAsync(System.Byte[],System.Int32,System.Int32)
+    name: "XXX"
+    fullName: System.IO.Stream.WriteAsync
+  - name: "XXX"
+    fullName: (
+  - uid: System.Byte
+    name: "XXX"
+    fullName: System.Byte
+    isExternal: true
+  - name: 'XXX'
+    fullName: '[]'
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.IO.Stream.WriteAsync(System.Byte[],System.Int32,System.Int32)
+    name: "XXX"
+    fullName: System.IO.Stream.WriteAsync
+  - name: "XXX"
+    fullName: (
+  - uid: System.Byte
+    name: "XXX"
+    fullName: System.Byte
+    isExternal: true
+  - name: "XXX"
+    fullName: ()
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Stream.WriteAsync(Byte[], Int32, Int32)
+  nameWithType.vb: Stream.WriteAsync(Byte(), Int32, Int32)
+  commentId: M:System.IO.Stream.WriteAsync(System.Byte[],System.Int32,System.Int32)
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.ToString()
+  commentId: M:System.Object.ToString
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.Equals(Object)
+  commentId: M:System.Object.Equals(System.Object)
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.Equals(Object, Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.GetHashCode()
+  commentId: M:System.Object.GetHashCode
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.GetType()
+  commentId: M:System.Object.GetType
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.MemberwiseClone()
+  commentId: M:System.Object.MemberwiseClone
+- uid: System
+  isExternal: false
+  name: "XXX"
+  fullName: System
+  nameWithType: System
+  commentId: N:System
+- uid: System.Int32
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Int32
+  nameWithType: Int32
+  commentId: T:System.Int32
+- uid: System.IO.Stream.CanRead
+  parent: System.IO.Stream
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.Stream.CanRead
+  nameWithType: Stream.CanRead
+  commentId: P:System.IO.Stream.CanRead
+- uid: System.Boolean
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Boolean
+  nameWithType: Boolean
+  commentId: T:System.Boolean
+- uid: System.IO.Stream.CanSeek
+  parent: System.IO.Stream
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.Stream.CanSeek
+  nameWithType: Stream.CanSeek
+  commentId: P:System.IO.Stream.CanSeek
+- uid: System.IO.Stream.CanWrite
+  parent: System.IO.Stream
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.Stream.CanWrite
+  nameWithType: Stream.CanWrite
+  commentId: P:System.IO.Stream.CanWrite
+- uid: System.IO.Stream.Length
+  parent: System.IO.Stream
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.Stream.Length
+  nameWithType: Stream.Length
+  commentId: P:System.IO.Stream.Length
+- uid: System.Int64
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Int64
+  nameWithType: Int64
+  commentId: T:System.Int64
+- uid: System.IO.Stream.Position
+  parent: System.IO.Stream
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.Stream.Position
+  nameWithType: Stream.Position
+  commentId: P:System.IO.Stream.Position
+- uid: System.IO.Stream.Dispose(System.Boolean)
+  parent: System.IO.Stream
+  isExternal: true
+  name: "XXX"
+  fullName: System.IO.Stream.Dispose(System.Boolean)
+  spec.csharp:
+  - uid: System.IO.Stream.Dispose(System.Boolean)
+    name: "XXX"
+    fullName: System.IO.Stream.Dispose
+  - name: "XXX"
+    fullName: (
+  - uid: System.Boolean
+    name: "XXX"
+    fullName: System.Boolean
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.IO.Stream.Dispose(System.Boolean)
+    name: "XXX"
+    fullName: System.IO.Stream.Dispose
+  - name: "XXX"
+    fullName: (
+  - uid: System.Boolean
+    name: "XXX"
+    fullName: System.Boolean
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Stream.Dispose(Boolean)
+  commentId: M:System.IO.Stream.Dispose(System.Boolean)
+- uid: System.IO.Stream.Flush
+  parent: System.IO.Stream
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.Stream.Flush()
+  spec.csharp:
+  - uid: System.IO.Stream.Flush
+    name: "XXX"
+    fullName: System.IO.Stream.Flush
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.IO.Stream.Flush
+    name: "XXX"
+    fullName: System.IO.Stream.Flush
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Stream.Flush()
+  commentId: M:System.IO.Stream.Flush
+- uid: System.IO.Stream.FlushAsync(System.Threading.CancellationToken)
+  parent: System.IO.Stream
+  isExternal: true
+  name: "XXX"
+  fullName: System.IO.Stream.FlushAsync(System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: System.IO.Stream.FlushAsync(System.Threading.CancellationToken)
+    name: "XXX"
+    fullName: System.IO.Stream.FlushAsync
+  - name: "XXX"
+    fullName: (
+  - uid: System.Threading.CancellationToken
+    name: "XXX"
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.IO.Stream.FlushAsync(System.Threading.CancellationToken)
+    name: "XXX"
+    fullName: System.IO.Stream.FlushAsync
+  - name: "XXX"
+    fullName: (
+  - uid: System.Threading.CancellationToken
+    name: "XXX"
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Stream.FlushAsync(CancellationToken)
+  commentId: M:System.IO.Stream.FlushAsync(System.Threading.CancellationToken)
+- uid: System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: false
+  name: "XXX"
+  fullName: System.Threading.CancellationToken
+  nameWithType: CancellationToken
+  commentId: T:System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: false
+  name: "XXX"
+  fullName: System.Threading.Tasks.Task
+  nameWithType: Task
+  commentId: T:System.Threading.Tasks.Task
+- uid: System.Threading
+  isExternal: false
+  name: "XXX"
+  fullName: System.Threading
+  nameWithType: System.Threading
+  commentId: N:System.Threading
+- uid: System.Threading.Tasks
+  isExternal: false
+  name: "XXX"
+  fullName: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+- uid: System.IO.Stream.Read(System.Byte[],System.Int32,System.Int32)
+  parent: System.IO.Stream
+  isExternal: true
+  name: "XXX"
+  fullName: System.IO.Stream.Read(System.Byte[], System.Int32, System.Int32)
+  fullname.vb: System.IO.Stream.Read(System.Byte(), System.Int32, System.Int32)
+  name.vb: Read(Byte(), Int32, Int32)
+  spec.csharp:
+  - uid: System.IO.Stream.Read(System.Byte[],System.Int32,System.Int32)
+    name: "XXX"
+    fullName: System.IO.Stream.Read
+  - name: "XXX"
+    fullName: (
+  - uid: System.Byte
+    name: "XXX"
+    fullName: System.Byte
+    isExternal: true
+  - name: 'XXX'
+    fullName: '[]'
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.IO.Stream.Read(System.Byte[],System.Int32,System.Int32)
+    name: "XXX"
+    fullName: System.IO.Stream.Read
+  - name: "XXX"
+    fullName: (
+  - uid: System.Byte
+    name: "XXX"
+    fullName: System.Byte
+    isExternal: true
+  - name: "XXX"
+    fullName: ()
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Stream.Read(Byte[], Int32, Int32)
+  nameWithType.vb: Stream.Read(Byte(), Int32, Int32)
+  commentId: M:System.IO.Stream.Read(System.Byte[],System.Int32,System.Int32)
+- uid: System.Byte[]
+  name: "XXX"
+  fullName: System.Byte[]
+  fullname.vb: System.Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: "XXX"
+    fullName: System.Byte
+    isExternal: true
+  - name: 'XXX'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: "XXX"
+    fullName: System.Byte
+    isExternal: true
+  - name: "XXX"
+    fullName: ()
+  nameWithType: Byte[]
+  nameWithType.vb: Byte()
+- uid: System.IO.Stream.ReadAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)
+  parent: System.IO.Stream
+  isExternal: true
+  name: "XXX"
+  fullName: System.IO.Stream.ReadAsync(System.Byte[], System.Int32, System.Int32, System.Threading.CancellationToken)
+  fullname.vb: System.IO.Stream.ReadAsync(System.Byte(), System.Int32, System.Int32, System.Threading.CancellationToken)
+  name.vb: ReadAsync(Byte(), Int32, Int32, CancellationToken)
+  spec.csharp:
+  - uid: System.IO.Stream.ReadAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)
+    name: "XXX"
+    fullName: System.IO.Stream.ReadAsync
+  - name: "XXX"
+    fullName: (
+  - uid: System.Byte
+    name: "XXX"
+    fullName: System.Byte
+    isExternal: true
+  - name: 'XXX'
+    fullName: '[]'
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: "XXX"
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.IO.Stream.ReadAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)
+    name: "XXX"
+    fullName: System.IO.Stream.ReadAsync
+  - name: "XXX"
+    fullName: (
+  - uid: System.Byte
+    name: "XXX"
+    fullName: System.Byte
+    isExternal: true
+  - name: "XXX"
+    fullName: ()
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: "XXX"
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Stream.ReadAsync(Byte[], Int32, Int32, CancellationToken)
+  nameWithType.vb: Stream.ReadAsync(Byte(), Int32, Int32, CancellationToken)
+  commentId: M:System.IO.Stream.ReadAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)
+- uid: System.Threading.Tasks.Task{System.Int32}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: "XXX"
+  fullName: System.Threading.Tasks.Task<System.Int32>
+  fullname.vb: System.Threading.Tasks.Task(Of System.Int32)
+  name.vb: Task(Of Int32)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: "XXX"
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: "<"
+    fullName: <
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: "XXX"
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: 'XXX '
+    fullName: '(Of '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Task<Int32>
+  nameWithType.vb: Task(Of Int32)
+  commentId: T:System.Threading.Tasks.Task{System.Int32}
+- uid: System.Threading.Tasks.Task`1
+  isExternal: false
+  name: "XXX"
+  fullName: System.Threading.Tasks.Task<TResult>
+  fullname.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: "XXX"
+    fullName: System.Threading.Tasks.Task
+  - name: "<"
+    fullName: <
+  - name: "XXX"
+    fullName: TResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: "XXX"
+    fullName: System.Threading.Tasks.Task
+  - name: 'XXX '
+    fullName: '(Of '
+  - name: "XXX"
+    fullName: TResult
+  - name: "XXX"
+    fullName: )
+  nameWithType: Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  commentId: T:System.Threading.Tasks.Task`1
+- uid: System.IO.Stream.ReadByte
+  parent: System.IO.Stream
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.Stream.ReadByte()
+  spec.csharp:
+  - uid: System.IO.Stream.ReadByte
+    name: "XXX"
+    fullName: System.IO.Stream.ReadByte
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.IO.Stream.ReadByte
+    name: "XXX"
+    fullName: System.IO.Stream.ReadByte
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Stream.ReadByte()
+  commentId: M:System.IO.Stream.ReadByte
+- uid: System.IO.Stream.Seek(System.Int64,System.IO.SeekOrigin)
+  parent: System.IO.Stream
+  isExternal: true
+  name: "XXX"
+  fullName: System.IO.Stream.Seek(System.Int64, System.IO.SeekOrigin)
+  spec.csharp:
+  - uid: System.IO.Stream.Seek(System.Int64,System.IO.SeekOrigin)
+    name: "XXX"
+    fullName: System.IO.Stream.Seek
+  - name: "XXX"
+    fullName: (
+  - uid: System.Int64
+    name: "XXX"
+    fullName: System.Int64
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.IO.SeekOrigin
+    name: "XXX"
+    fullName: System.IO.SeekOrigin
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.IO.Stream.Seek(System.Int64,System.IO.SeekOrigin)
+    name: "XXX"
+    fullName: System.IO.Stream.Seek
+  - name: "XXX"
+    fullName: (
+  - uid: System.Int64
+    name: "XXX"
+    fullName: System.Int64
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.IO.SeekOrigin
+    name: "XXX"
+    fullName: System.IO.SeekOrigin
+  - name: "XXX"
+    fullName: )
+  nameWithType: Stream.Seek(Int64, SeekOrigin)
+  commentId: M:System.IO.Stream.Seek(System.Int64,System.IO.SeekOrigin)
+- uid: System.IO.SeekOrigin
+  parent: System.IO
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.SeekOrigin
+  nameWithType: SeekOrigin
+  commentId: T:System.IO.SeekOrigin
+- uid: System.IO.Stream.SetLength(System.Int64)
+  parent: System.IO.Stream
+  isExternal: true
+  name: "XXX"
+  fullName: System.IO.Stream.SetLength(System.Int64)
+  spec.csharp:
+  - uid: System.IO.Stream.SetLength(System.Int64)
+    name: "XXX"
+    fullName: System.IO.Stream.SetLength
+  - name: "XXX"
+    fullName: (
+  - uid: System.Int64
+    name: "XXX"
+    fullName: System.Int64
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.IO.Stream.SetLength(System.Int64)
+    name: "XXX"
+    fullName: System.IO.Stream.SetLength
+  - name: "XXX"
+    fullName: (
+  - uid: System.Int64
+    name: "XXX"
+    fullName: System.Int64
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Stream.SetLength(Int64)
+  commentId: M:System.IO.Stream.SetLength(System.Int64)
+- uid: System.IO.Stream.Write(System.Byte[],System.Int32,System.Int32)
+  parent: System.IO.Stream
+  isExternal: true
+  name: "XXX"
+  fullName: System.IO.Stream.Write(System.Byte[], System.Int32, System.Int32)
+  fullname.vb: System.IO.Stream.Write(System.Byte(), System.Int32, System.Int32)
+  name.vb: Write(Byte(), Int32, Int32)
+  spec.csharp:
+  - uid: System.IO.Stream.Write(System.Byte[],System.Int32,System.Int32)
+    name: "XXX"
+    fullName: System.IO.Stream.Write
+  - name: "XXX"
+    fullName: (
+  - uid: System.Byte
+    name: "XXX"
+    fullName: System.Byte
+    isExternal: true
+  - name: 'XXX'
+    fullName: '[]'
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.IO.Stream.Write(System.Byte[],System.Int32,System.Int32)
+    name: "XXX"
+    fullName: System.IO.Stream.Write
+  - name: "XXX"
+    fullName: (
+  - uid: System.Byte
+    name: "XXX"
+    fullName: System.Byte
+    isExternal: true
+  - name: "XXX"
+    fullName: ()
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Stream.Write(Byte[], Int32, Int32)
+  nameWithType.vb: Stream.Write(Byte(), Int32, Int32)
+  commentId: M:System.IO.Stream.Write(System.Byte[],System.Int32,System.Int32)
+- uid: System.IO.Stream.WriteAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)
+  parent: System.IO.Stream
+  isExternal: true
+  name: "XXX"
+  fullName: System.IO.Stream.WriteAsync(System.Byte[], System.Int32, System.Int32, System.Threading.CancellationToken)
+  fullname.vb: System.IO.Stream.WriteAsync(System.Byte(), System.Int32, System.Int32, System.Threading.CancellationToken)
+  name.vb: WriteAsync(Byte(), Int32, Int32, CancellationToken)
+  spec.csharp:
+  - uid: System.IO.Stream.WriteAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)
+    name: "XXX"
+    fullName: System.IO.Stream.WriteAsync
+  - name: "XXX"
+    fullName: (
+  - uid: System.Byte
+    name: "XXX"
+    fullName: System.Byte
+    isExternal: true
+  - name: 'XXX'
+    fullName: '[]'
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: "XXX"
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.IO.Stream.WriteAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)
+    name: "XXX"
+    fullName: System.IO.Stream.WriteAsync
+  - name: "XXX"
+    fullName: (
+  - uid: System.Byte
+    name: "XXX"
+    fullName: System.Byte
+    isExternal: true
+  - name: "XXX"
+    fullName: ()
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: "XXX"
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Stream.WriteAsync(Byte[], Int32, Int32, CancellationToken)
+  nameWithType.vb: Stream.WriteAsync(Byte(), Int32, Int32, CancellationToken)
+  commentId: M:System.IO.Stream.WriteAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)
+- uid: System.IO.Stream.WriteByte(System.Byte)
+  parent: System.IO.Stream
+  isExternal: true
+  name: "XXX"
+  fullName: System.IO.Stream.WriteByte(System.Byte)
+  spec.csharp:
+  - uid: System.IO.Stream.WriteByte(System.Byte)
+    name: "XXX"
+    fullName: System.IO.Stream.WriteByte
+  - name: "XXX"
+    fullName: (
+  - uid: System.Byte
+    name: "XXX"
+    fullName: System.Byte
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.IO.Stream.WriteByte(System.Byte)
+    name: "XXX"
+    fullName: System.IO.Stream.WriteByte
+  - name: "XXX"
+    fullName: (
+  - uid: System.Byte
+    name: "XXX"
+    fullName: System.Byte
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Stream.WriteByte(Byte)
+  commentId: M:System.IO.Stream.WriteByte(System.Byte)
+- uid: System.Byte
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Byte
+  nameWithType: Byte
+  commentId: T:System.Byte
+- uid: System.ArgumentNullException
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentNullException
+  nameWithType: ArgumentNullException
+  commentId: T:System.ArgumentNullException
+- uid: System.ArgumentOutOfRangeException
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentOutOfRangeException
+  nameWithType: ArgumentOutOfRangeException
+  commentId: T:System.ArgumentOutOfRangeException
+- uid: System.IO.IOException
+  parent: System.IO
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.IOException
+  nameWithType: IOException
+  commentId: T:System.IO.IOException
+- uid: System.NotSupportedException
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.NotSupportedException
+  nameWithType: NotSupportedException
+  commentId: T:System.NotSupportedException
+- uid: System.ObjectDisposedException
+  isExternal: false
+  name: "XXX"
+  fullName: System.ObjectDisposedException
+  nameWithType: ObjectDisposedException
+  commentId: T:System.ObjectDisposedException
+- uid: System.ArgumentException
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentException
+  nameWithType: ArgumentException
+  commentId: T:System.ArgumentException
+- uid: System.InvalidOperationException
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.InvalidOperationException
+  nameWithType: InvalidOperationException
+  commentId: T:System.InvalidOperationException

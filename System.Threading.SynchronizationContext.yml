@@ -1,0 +1,620 @@
+items:
+- uid: System.Threading.SynchronizationContext
+  commentId: T:System.Threading.SynchronizationContext
+  id: SynchronizationContext
+  parent: System.Threading
+  children:
+  - System.Threading.SynchronizationContext.#ctor
+  - System.Threading.SynchronizationContext.CreateCopy
+  - System.Threading.SynchronizationContext.Current
+  - System.Threading.SynchronizationContext.OperationCompleted
+  - System.Threading.SynchronizationContext.OperationStarted
+  - System.Threading.SynchronizationContext.Post(System.Threading.SendOrPostCallback,System.Object)
+  - System.Threading.SynchronizationContext.Send(System.Threading.SendOrPostCallback,System.Object)
+  - System.Threading.SynchronizationContext.SetSynchronizationContext(System.Threading.SynchronizationContext)
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.SynchronizationContext
+  type: Class
+  source:
+    remote:
+      path: src/mscorlib/src/System/Threading/SynchronizationContext.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: SynchronizationContext
+    path: src/mscorlib/src/System/Threading/SynchronizationContext.cs
+    startLine: 56
+  assemblies:
+  - System.Threading
+  namespace: System.Threading
+  summary: "\n<p>Provides the basic functionality for propagating a synchronization context in various synchronization models. </p>\n"
+  syntax:
+    content: public class SynchronizationContext
+    content.vb: Public Class SynchronizationContext
+  see:
+  - type: System.Security.Permissions.SecurityAction.InheritanceDemand
+    commentId: F:System.Security.Permissions.SecurityAction.InheritanceDemand
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+  nameWithType: SynchronizationContext
+- uid: System.Threading.SynchronizationContext.#ctor
+  commentId: M:System.Threading.SynchronizationContext.#ctor
+  id: '#ctor'
+  parent: System.Threading.SynchronizationContext
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.SynchronizationContext.SynchronizationContext()
+  type: Constructor
+  source:
+    remote:
+      path: src/mscorlib/src/System/Threading/SynchronizationContext.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: .ctor
+    path: src/mscorlib/src/System/Threading/SynchronizationContext.cs
+    startLine: 62
+  assemblies:
+  - System.Threading
+  namespace: System.Threading
+  summary: "\n<p>Creates a new instance of the <xref href=\"System.Threading.SynchronizationContext\" data-throw-if-not-resolved=\"false\"></xref> class.</p>\n"
+  syntax:
+    content: public SynchronizationContext()
+    content.vb: Public Sub New
+  see:
+  - type: System.Security.Permissions.SecurityAction.InheritanceDemand
+    commentId: F:System.Security.Permissions.SecurityAction.InheritanceDemand
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: SynchronizationContext.SynchronizationContext()
+- uid: System.Threading.SynchronizationContext.Current
+  commentId: P:System.Threading.SynchronizationContext.Current
+  id: Current
+  parent: System.Threading.SynchronizationContext
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.SynchronizationContext.Current
+  type: Property
+  source:
+    remote:
+      path: src/mscorlib/src/System/Threading/SynchronizationContext.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Current
+    path: src/mscorlib/src/System/Threading/SynchronizationContext.cs
+    startLine: 183
+  assemblies:
+  - System.Threading
+  namespace: System.Threading
+  summary: "\n<p>Gets the synchronization context for the current thread.</p>\n"
+  syntax:
+    content: public static SynchronizationContext Current { get; }
+    content.vb: Public Shared ReadOnly Property Current As SynchronizationContext
+    parameters: []
+    return:
+      type: System.Threading.SynchronizationContext
+      description: "\n<p>A <xref href=\"System.Threading.SynchronizationContext\" data-throw-if-not-resolved=\"false\"></xref> object representing the current synchronization context.</p>\n"
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+  nameWithType: SynchronizationContext.Current
+- uid: System.Threading.SynchronizationContext.CreateCopy
+  commentId: M:System.Threading.SynchronizationContext.CreateCopy
+  id: CreateCopy
+  parent: System.Threading.SynchronizationContext
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.SynchronizationContext.CreateCopy()
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Threading/SynchronizationContext.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: CreateCopy
+    path: src/mscorlib/src/System/Threading/SynchronizationContext.cs
+    startLine: 305
+  assemblies:
+  - System.Threading
+  namespace: System.Threading
+  summary: "\n<p>When overridden in a derived class, creates a copy of the synchronization context.  </p>\n"
+  syntax:
+    content: public virtual SynchronizationContext CreateCopy()
+    content.vb: Public Overridable Function CreateCopy As SynchronizationContext
+    return:
+      type: System.Threading.SynchronizationContext
+      description: "\n<p>A new <xref href=\"System.Threading.SynchronizationContext\" data-throw-if-not-resolved=\"false\"></xref> object.</p>\n"
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  nameWithType: SynchronizationContext.CreateCopy()
+- uid: System.Threading.SynchronizationContext.OperationCompleted
+  commentId: M:System.Threading.SynchronizationContext.OperationCompleted
+  id: OperationCompleted
+  parent: System.Threading.SynchronizationContext
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.SynchronizationContext.OperationCompleted()
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Threading/SynchronizationContext.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: OperationCompleted
+    path: src/mscorlib/src/System/Threading/SynchronizationContext.cs
+    startLine: 140
+  assemblies:
+  - System.Threading
+  namespace: System.Threading
+  summary: "\n<p>When overridden in a derived class, responds to the notification that an operation has completed.</p>\n"
+  syntax:
+    content: public virtual void OperationCompleted()
+    content.vb: Public Overridable Sub OperationCompleted
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  nameWithType: SynchronizationContext.OperationCompleted()
+- uid: System.Threading.SynchronizationContext.OperationStarted
+  commentId: M:System.Threading.SynchronizationContext.OperationStarted
+  id: OperationStarted
+  parent: System.Threading.SynchronizationContext
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.SynchronizationContext.OperationStarted()
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Threading/SynchronizationContext.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: OperationStarted
+    path: src/mscorlib/src/System/Threading/SynchronizationContext.cs
+    startLine: 133
+  assemblies:
+  - System.Threading
+  namespace: System.Threading
+  summary: "\n<p>When overridden in a derived class, responds to the notification that an operation has started.</p>\n"
+  syntax:
+    content: public virtual void OperationStarted()
+    content.vb: Public Overridable Sub OperationStarted
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  nameWithType: SynchronizationContext.OperationStarted()
+- uid: System.Threading.SynchronizationContext.Post(System.Threading.SendOrPostCallback,System.Object)
+  commentId: M:System.Threading.SynchronizationContext.Post(System.Threading.SendOrPostCallback,System.Object)
+  id: Post(System.Threading.SendOrPostCallback,System.Object)
+  parent: System.Threading.SynchronizationContext
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.SynchronizationContext.Post(System.Threading.SendOrPostCallback, System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Threading/SynchronizationContext.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Post
+    path: src/mscorlib/src/System/Threading/SynchronizationContext.cs
+    startLine: 124
+  assemblies:
+  - System.Threading
+  namespace: System.Threading
+  summary: "\n<p>When overridden in a derived class, dispatches an asynchronous message to a synchronization context.</p>\n"
+  syntax:
+    content: public virtual void Post(SendOrPostCallback d, object state)
+    content.vb: Public Overridable Sub Post(d As SendOrPostCallback, state As Object)
+    parameters:
+    - id: d
+      type: System.Threading.SendOrPostCallback
+      description: "\n<p>The <xref href=\"System.Threading.SendOrPostCallback\" data-throw-if-not-resolved=\"false\"></xref> delegate to call.</p>\n"
+    - id: state
+      type: System.Object
+      description: "\n<p>The object passed to the delegate.</p>\n"
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  nameWithType: SynchronizationContext.Post(SendOrPostCallback, Object)
+- uid: System.Threading.SynchronizationContext.Send(System.Threading.SendOrPostCallback,System.Object)
+  commentId: M:System.Threading.SynchronizationContext.Send(System.Threading.SendOrPostCallback,System.Object)
+  id: Send(System.Threading.SendOrPostCallback,System.Object)
+  parent: System.Threading.SynchronizationContext
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.SynchronizationContext.Send(System.Threading.SendOrPostCallback, System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Threading/SynchronizationContext.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Send
+    path: src/mscorlib/src/System/Threading/SynchronizationContext.cs
+    startLine: 119
+  assemblies:
+  - System.Threading
+  namespace: System.Threading
+  summary: "\n<p>When overridden in a derived class, dispatches a synchronous message to a synchronization context.</p>\n"
+  syntax:
+    content: public virtual void Send(SendOrPostCallback d, object state)
+    content.vb: Public Overridable Sub Send(d As SendOrPostCallback, state As Object)
+    parameters:
+    - id: d
+      type: System.Threading.SendOrPostCallback
+      description: "\n<p>The <xref href=\"System.Threading.SendOrPostCallback\" data-throw-if-not-resolved=\"false\"></xref> delegate to call.</p>\n"
+    - id: state
+      type: System.Object
+      description: "\n<p>The object passed to the delegate. </p>\n"
+  exceptions:
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: "\n<p>The method was called in a Windows Store app. The implementation of <xref href=\"System.Threading.SynchronizationContext\" data-throw-if-not-resolved=\"false\"></xref> for Windows Store apps does not support the <xref href=\"System.Threading.SynchronizationContext.Send(System.Threading.SendOrPostCallback,System.Object)\" data-throw-if-not-resolved=\"false\"></xref> method. </p>\n"
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  nameWithType: SynchronizationContext.Send(SendOrPostCallback, Object)
+- uid: System.Threading.SynchronizationContext.SetSynchronizationContext(System.Threading.SynchronizationContext)
+  commentId: M:System.Threading.SynchronizationContext.SetSynchronizationContext(System.Threading.SynchronizationContext)
+  id: SetSynchronizationContext(System.Threading.SynchronizationContext)
+  parent: System.Threading.SynchronizationContext
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.SynchronizationContext.SetSynchronizationContext(System.Threading.SynchronizationContext)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Threading/SynchronizationContext.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: SetSynchronizationContext
+    path: src/mscorlib/src/System/Threading/SynchronizationContext.cs
+    startLine: 171
+  assemblies:
+  - System.Threading
+  namespace: System.Threading
+  summary: "\n<p>Sets the current synchronization context.</p>\n"
+  syntax:
+    content: >-
+      [SecurityCritical]
+
+      public static void SetSynchronizationContext(SynchronizationContext syncContext)
+    content.vb: >-
+      <SecurityCritical>
+
+      Public Shared Sub SetSynchronizationContext(syncContext As SynchronizationContext)
+    parameters:
+    - id: syncContext
+      type: System.Threading.SynchronizationContext
+      description: "\n<p>The <xref href=\"System.Threading.SynchronizationContext\" data-throw-if-not-resolved=\"false\"></xref> object to be set.</p>\n"
+  see:
+  - type: System.Security.SecurityCriticalAttribute
+    commentId: T:System.Security.SecurityCriticalAttribute
+  attributes:
+  - type: System.Security.SecurityCriticalAttribute
+    ctor: System.Security.SecurityCriticalAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  nameWithType: SynchronizationContext.SetSynchronizationContext(SynchronizationContext)
+references:
+- uid: System.Threading
+  isExternal: false
+  name: "XXX"
+  fullName: System.Threading
+  nameWithType: System.Threading
+  commentId: N:System.Threading
+- uid: System.Object
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Object
+  nameWithType: Object
+  commentId: T:System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.ToString()
+  commentId: M:System.Object.ToString
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.Equals(Object)
+  commentId: M:System.Object.Equals(System.Object)
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.Equals(Object, Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.GetHashCode()
+  commentId: M:System.Object.GetHashCode
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.GetType()
+  commentId: M:System.Object.GetType
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.MemberwiseClone()
+  commentId: M:System.Object.MemberwiseClone
+- uid: System
+  isExternal: false
+  name: "XXX"
+  fullName: System
+  nameWithType: System
+  commentId: N:System
+- uid: System.Threading.SynchronizationContext
+  parent: System.Threading
+  isExternal: false
+  name: "XXX"
+  fullName: System.Threading.SynchronizationContext
+  nameWithType: SynchronizationContext
+  commentId: T:System.Threading.SynchronizationContext
+- uid: System.Threading.SendOrPostCallback
+  parent: System.Threading
+  isExternal: false
+  name: "XXX"
+  fullName: System.Threading.SendOrPostCallback
+  nameWithType: SendOrPostCallback
+  commentId: T:System.Threading.SendOrPostCallback
+- uid: System.NotSupportedException
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.NotSupportedException
+  nameWithType: NotSupportedException
+  commentId: T:System.NotSupportedException

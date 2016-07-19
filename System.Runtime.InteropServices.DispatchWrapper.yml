@@ -1,0 +1,411 @@
+items:
+- uid: System.Runtime.InteropServices.DispatchWrapper
+  commentId: T:System.Runtime.InteropServices.DispatchWrapper
+  id: DispatchWrapper
+  parent: System.Runtime.InteropServices
+  children:
+  - System.Runtime.InteropServices.DispatchWrapper.#ctor(System.Object)
+  - System.Runtime.InteropServices.DispatchWrapper.WrappedObject
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Runtime.InteropServices.DispatchWrapper
+  type: Class
+  source:
+    remote:
+      path: src/mscorlib/src/System/Runtime/InteropServices/DispatchWrapper.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: DispatchWrapper
+    path: src/mscorlib/src/System/Runtime/InteropServices/DispatchWrapper.cs
+    startLine: 19
+  assemblies:
+  - System.Runtime.InteropServices
+  namespace: System.Runtime.InteropServices
+  summary: "\n<p>Wraps objects the marshaler should marshal as a <strong>VT_DISPATCH</strong>.</p>\n"
+  syntax:
+    content: >-
+      [Serializable]
+
+      [ComVisible(true)]
+
+      public sealed class DispatchWrapper
+    content.vb: >-
+      <Serializable>
+
+      <ComVisible(True)>
+
+      Public NotInheritable Class DispatchWrapper
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: DispatchWrapper and support for marshalling to the VARIANT type may be unavailable in future releases.
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+  nameWithType: DispatchWrapper
+- uid: System.Runtime.InteropServices.DispatchWrapper.#ctor(System.Object)
+  commentId: M:System.Runtime.InteropServices.DispatchWrapper.#ctor(System.Object)
+  id: '#ctor(System.Object)'
+  parent: System.Runtime.InteropServices.DispatchWrapper
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Runtime.InteropServices.DispatchWrapper.DispatchWrapper(System.Object)
+  type: Constructor
+  source:
+    remote:
+      path: src/mscorlib/src/System/Runtime/InteropServices/DispatchWrapper.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: .ctor
+    path: src/mscorlib/src/System/Runtime/InteropServices/DispatchWrapper.cs
+    startLine: 23
+  assemblies:
+  - System.Runtime.InteropServices
+  namespace: System.Runtime.InteropServices
+  summary: "\n<p>Initializes a new instance of the <xref href=\"System.Runtime.InteropServices.DispatchWrapper\" data-throw-if-not-resolved=\"false\"></xref> class with the object being wrapped.</p>\n"
+  syntax:
+    content: >-
+      [SecuritySafeCritical]
+
+      [SecurityPermission(SecurityAction.Demand, Flags = SecurityPermissionFlag.UnmanagedCode)]
+
+      public DispatchWrapper(object obj)
+    content.vb: >-
+      <SecuritySafeCritical>
+
+      <SecurityPermission(SecurityAction.Demand, Flags:=SecurityPermissionFlag.UnmanagedCode)>
+
+      Public Sub New(obj As Object)
+    parameters:
+    - id: obj
+      type: System.Object
+      description: "\n<p>The object to be wrapped and converted to <xref href=\"System.Runtime.InteropServices.VarEnum.VT_DISPATCH\" data-throw-if-not-resolved=\"false\"></xref>. </p>\n"
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>\n<em>obj</em> is not a class or an array.</p>\n<p>-or- </p>\n<p>\n<em>obj</em> does not support <strong>IDispatch</strong>. </p>\n"
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: "\n<p>The <em>obj</em> parameter was marked with a <xref href=\"System.Runtime.InteropServices.ComVisibleAttribute\" data-throw-if-not-resolved=\"false\"></xref>  attribute that was passed a value of <strong>false</strong>.</p>\n<p>-or-</p>\n<p>The <em>obj</em> parameter inherits from a type marked with a <xref href=\"System.Runtime.InteropServices.ComVisibleAttribute\" data-throw-if-not-resolved=\"false\"></xref>  attribute that was passed a value of <strong>false</strong>.</p>\n"
+  see:
+  - type: System.Security.Permissions.SecurityPermission
+    commentId: T:System.Security.Permissions.SecurityPermission
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: DispatchWrapper.DispatchWrapper(Object)
+- uid: System.Runtime.InteropServices.DispatchWrapper.WrappedObject
+  commentId: P:System.Runtime.InteropServices.DispatchWrapper.WrappedObject
+  id: WrappedObject
+  parent: System.Runtime.InteropServices.DispatchWrapper
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Runtime.InteropServices.DispatchWrapper.WrappedObject
+  type: Property
+  source:
+    remote:
+      path: src/mscorlib/src/System/Runtime/InteropServices/DispatchWrapper.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: WrappedObject
+    path: src/mscorlib/src/System/Runtime/InteropServices/DispatchWrapper.cs
+    startLine: 40
+  assemblies:
+  - System.Runtime.InteropServices
+  namespace: System.Runtime.InteropServices
+  summary: "\n<p>Gets the object wrapped by the <xref href=\"System.Runtime.InteropServices.DispatchWrapper\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  syntax:
+    content: public object WrappedObject { get; }
+    content.vb: Public ReadOnly Property WrappedObject As Object
+    parameters: []
+    return:
+      type: System.Object
+      description: "\n<p>The object wrapped by the <xref href=\"System.Runtime.InteropServices.DispatchWrapper\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  nameWithType: DispatchWrapper.WrappedObject
+references:
+- uid: System.Runtime.InteropServices
+  isExternal: false
+  name: "XXX"
+  fullName: System.Runtime.InteropServices
+  nameWithType: System.Runtime.InteropServices
+  commentId: N:System.Runtime.InteropServices
+- uid: System.Object
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Object
+  nameWithType: Object
+  commentId: T:System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.ToString()
+  commentId: M:System.Object.ToString
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.Equals(Object)
+  commentId: M:System.Object.Equals(System.Object)
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.Equals(Object, Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.GetHashCode()
+  commentId: M:System.Object.GetHashCode
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.GetType()
+  commentId: M:System.Object.GetType
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.MemberwiseClone()
+  commentId: M:System.Object.MemberwiseClone
+- uid: System
+  isExternal: false
+  name: "XXX"
+  fullName: System
+  nameWithType: System
+  commentId: N:System
+- uid: System.ArgumentException
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentException
+  nameWithType: ArgumentException
+  commentId: T:System.ArgumentException
+- uid: System.InvalidOperationException
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.InvalidOperationException
+  nameWithType: InvalidOperationException
+  commentId: T:System.InvalidOperationException

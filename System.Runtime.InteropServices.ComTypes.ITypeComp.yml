@@ -1,0 +1,220 @@
+items:
+- uid: System.Runtime.InteropServices.ComTypes.ITypeComp
+  commentId: T:System.Runtime.InteropServices.ComTypes.ITypeComp
+  id: ITypeComp
+  parent: System.Runtime.InteropServices.ComTypes
+  children:
+  - System.Runtime.InteropServices.ComTypes.ITypeComp.Bind(System.String,System.Int32,System.Int16,System.Runtime.InteropServices.ComTypes.ITypeInfo@,System.Runtime.InteropServices.ComTypes.DESCKIND@,System.Runtime.InteropServices.ComTypes.BINDPTR@)
+  - System.Runtime.InteropServices.ComTypes.ITypeComp.BindType(System.String,System.Int32,System.Runtime.InteropServices.ComTypes.ITypeInfo@,System.Runtime.InteropServices.ComTypes.ITypeComp@)
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Runtime.InteropServices.ComTypes.ITypeComp
+  type: Interface
+  source:
+    remote:
+      path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/ITypeComp.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: ITypeComp
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/ITypeComp.cs
+    startLine: 40
+  assemblies:
+  - System.Runtime.InteropServices
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: "\n<p>Provides the managed definition of the <strong>ITypeComp</strong> interface.</p>\n"
+  syntax:
+    content: >-
+      [Guid("00020403-0000-0000-C000-000000000046")]
+
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [ComImport]
+
+      public interface ITypeComp
+    content.vb: >-
+      <Guid("00020403-0000-0000-C000-000000000046")>
+
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <ComImport>
+
+      Public Interface ITypeComp
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+  nameWithType: ITypeComp
+- uid: System.Runtime.InteropServices.ComTypes.ITypeComp.Bind(System.String,System.Int32,System.Int16,System.Runtime.InteropServices.ComTypes.ITypeInfo@,System.Runtime.InteropServices.ComTypes.DESCKIND@,System.Runtime.InteropServices.ComTypes.BINDPTR@)
+  commentId: M:System.Runtime.InteropServices.ComTypes.ITypeComp.Bind(System.String,System.Int32,System.Int16,System.Runtime.InteropServices.ComTypes.ITypeInfo@,System.Runtime.InteropServices.ComTypes.DESCKIND@,System.Runtime.InteropServices.ComTypes.BINDPTR@)
+  id: Bind(System.String,System.Int32,System.Int16,System.Runtime.InteropServices.ComTypes.ITypeInfo@,System.Runtime.InteropServices.ComTypes.DESCKIND@,System.Runtime.InteropServices.ComTypes.BINDPTR@)
+  parent: System.Runtime.InteropServices.ComTypes.ITypeComp
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Runtime.InteropServices.ComTypes.ITypeComp.Bind(System.String, System.Int32, System.Int16, out System.Runtime.InteropServices.ComTypes.ITypeInfo, out System.Runtime.InteropServices.ComTypes.DESCKIND, out System.Runtime.InteropServices.ComTypes.BINDPTR)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/ITypeComp.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Bind
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/ITypeComp.cs
+    startLine: 45
+  assemblies:
+  - System.Runtime.InteropServices
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: "\n<p>Maps a name to a member of a type, or binds global variables and functions contained in a type library.</p>\n"
+  syntax:
+    content: void Bind([MarshalAs(UnmanagedType.LPWStr)] string szName, int lHashVal, short wFlags, out ITypeInfo ppTInfo, out DESCKIND pDescKind, out BINDPTR pBindPtr)
+    content.vb: Sub Bind(szName As String, lHashVal As Integer, wFlags As Short, ByRef ppTInfo As ITypeInfo, ByRef pDescKind As DESCKIND, ByRef pBindPtr As BINDPTR)
+    parameters:
+    - id: szName
+      type: System.String
+      description: "\n<p>The name to bind. </p>\n"
+      attributes:
+      - type: System.Runtime.InteropServices.MarshalAsAttribute
+        ctor: System.Runtime.InteropServices.MarshalAsAttribute.#ctor(System.Runtime.InteropServices.UnmanagedType)
+        arguments:
+        - type: System.Runtime.InteropServices.UnmanagedType
+          value: 21
+    - id: lHashVal
+      type: System.Int32
+      description: "\n<p>A hash value for <em>szName</em> computed by <strong>LHashValOfNameSys</strong>. </p>\n"
+    - id: wFlags
+      type: System.Int16
+      description: "\n<p>A flags word containing one or more of the invoke flags defined in the <strong>INVOKEKIND</strong> enumeration. </p>\n"
+    - id: ppTInfo
+      type: System.Runtime.InteropServices.ComTypes.ITypeInfo
+      description: "\n<p>When this method returns, contains a reference to the type description that contains the item to which it is bound, if a <strong>FUNCDESC</strong> or <strong>VARDESC</strong> was returned. This parameter is passed uninitialized.</p>\n"
+    - id: pDescKind
+      type: System.Runtime.InteropServices.ComTypes.DESCKIND
+      description: "\n<p>When this method returns, contains a reference to a <strong>DESCKIND</strong> enumerator that indicates whether the name bound-to is a <strong>VARDESC</strong>, <strong>FUNCDESC</strong>, or <strong>TYPECOMP</strong>. This parameter is passed uninitialized.</p>\n"
+    - id: pBindPtr
+      type: System.Runtime.InteropServices.ComTypes.BINDPTR
+      description: "\n<p>When this method returns, contains a reference to the bound-to <strong>VARDESC</strong>, <strong>FUNCDESC</strong>, or <strong>ITypeComp</strong> interface. This parameter is passed uninitialized.</p>\n"
+  fullName.vb: System.Runtime.InteropServices.ComTypes.ITypeComp.Bind(System.String, System.Int32, System.Int16, ByRef System.Runtime.InteropServices.ComTypes.ITypeInfo, ByRef System.Runtime.InteropServices.ComTypes.DESCKIND, ByRef System.Runtime.InteropServices.ComTypes.BINDPTR)
+  name.vb: Bind(String, Int32, Int16, ByRef ITypeInfo, ByRef DESCKIND, ByRef BINDPTR)
+  nameWithType: ITypeComp.Bind(String, Int32, Int16, out ITypeInfo, out DESCKIND, out BINDPTR)
+  nameWithType.vb: ITypeComp.Bind(String, Int32, Int16, ByRef ITypeInfo, ByRef DESCKIND, ByRef BINDPTR)
+- uid: System.Runtime.InteropServices.ComTypes.ITypeComp.BindType(System.String,System.Int32,System.Runtime.InteropServices.ComTypes.ITypeInfo@,System.Runtime.InteropServices.ComTypes.ITypeComp@)
+  commentId: M:System.Runtime.InteropServices.ComTypes.ITypeComp.BindType(System.String,System.Int32,System.Runtime.InteropServices.ComTypes.ITypeInfo@,System.Runtime.InteropServices.ComTypes.ITypeComp@)
+  id: BindType(System.String,System.Int32,System.Runtime.InteropServices.ComTypes.ITypeInfo@,System.Runtime.InteropServices.ComTypes.ITypeComp@)
+  parent: System.Runtime.InteropServices.ComTypes.ITypeComp
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Runtime.InteropServices.ComTypes.ITypeComp.BindType(System.String, System.Int32, out System.Runtime.InteropServices.ComTypes.ITypeInfo, out System.Runtime.InteropServices.ComTypes.ITypeComp)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/ITypeComp.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: BindType
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/ITypeComp.cs
+    startLine: 46
+  assemblies:
+  - System.Runtime.InteropServices
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: "\n<p>Binds to the type descriptions contained within a type library.</p>\n"
+  syntax:
+    content: void BindType([MarshalAs(UnmanagedType.LPWStr)] string szName, int lHashVal, out ITypeInfo ppTInfo, out ITypeComp ppTComp)
+    content.vb: Sub BindType(szName As String, lHashVal As Integer, ByRef ppTInfo As ITypeInfo, ByRef ppTComp As ITypeComp)
+    parameters:
+    - id: szName
+      type: System.String
+      description: "\n<p>The name to bind. </p>\n"
+      attributes:
+      - type: System.Runtime.InteropServices.MarshalAsAttribute
+        ctor: System.Runtime.InteropServices.MarshalAsAttribute.#ctor(System.Runtime.InteropServices.UnmanagedType)
+        arguments:
+        - type: System.Runtime.InteropServices.UnmanagedType
+          value: 21
+    - id: lHashVal
+      type: System.Int32
+      description: "\n<p>A hash value for <em>szName</em> determined by <strong>LHashValOfNameSys</strong>. </p>\n"
+    - id: ppTInfo
+      type: System.Runtime.InteropServices.ComTypes.ITypeInfo
+      description: "\n<p>When this method returns, contains a reference to an <strong>ITypeInfo</strong> of the type to which <em>szName</em> was bound. This parameter is passed uninitialized.</p>\n"
+    - id: ppTComp
+      type: System.Runtime.InteropServices.ComTypes.ITypeComp
+      description: "\n<p>When this method returns, contains a reference to an <strong>ITypeComp</strong> variable. This parameter is passed uninitialized.</p>\n"
+  fullName.vb: System.Runtime.InteropServices.ComTypes.ITypeComp.BindType(System.String, System.Int32, ByRef System.Runtime.InteropServices.ComTypes.ITypeInfo, ByRef System.Runtime.InteropServices.ComTypes.ITypeComp)
+  name.vb: BindType(String, Int32, ByRef ITypeInfo, ByRef ITypeComp)
+  nameWithType: ITypeComp.BindType(String, Int32, out ITypeInfo, out ITypeComp)
+  nameWithType.vb: ITypeComp.BindType(String, Int32, ByRef ITypeInfo, ByRef ITypeComp)
+references:
+- uid: System.Runtime.InteropServices.ComTypes
+  isExternal: false
+  name: "XXX"
+  fullName: System.Runtime.InteropServices.ComTypes
+  nameWithType: System.Runtime.InteropServices.ComTypes
+  commentId: N:System.Runtime.InteropServices.ComTypes
+- uid: System.String
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.String
+  nameWithType: String
+  commentId: T:System.String
+- uid: System.Int32
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Int32
+  nameWithType: Int32
+  commentId: T:System.Int32
+- uid: System.Int16
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Int16
+  nameWithType: Int16
+  commentId: T:System.Int16
+- uid: System.Runtime.InteropServices.ComTypes.ITypeInfo
+  parent: System.Runtime.InteropServices.ComTypes
+  isExternal: false
+  name: "XXX"
+  fullName: System.Runtime.InteropServices.ComTypes.ITypeInfo
+  nameWithType: ITypeInfo
+  commentId: T:System.Runtime.InteropServices.ComTypes.ITypeInfo
+- uid: System.Runtime.InteropServices.ComTypes.DESCKIND
+  parent: System.Runtime.InteropServices.ComTypes
+  isExternal: false
+  name: "XXX"
+  fullName: System.Runtime.InteropServices.ComTypes.DESCKIND
+  nameWithType: DESCKIND
+  commentId: T:System.Runtime.InteropServices.ComTypes.DESCKIND
+- uid: System.Runtime.InteropServices.ComTypes.BINDPTR
+  parent: System.Runtime.InteropServices.ComTypes
+  isExternal: false
+  name: "XXX"
+  fullName: System.Runtime.InteropServices.ComTypes.BINDPTR
+  nameWithType: BINDPTR
+  commentId: T:System.Runtime.InteropServices.ComTypes.BINDPTR
+- uid: System
+  isExternal: false
+  name: "XXX"
+  fullName: System
+  nameWithType: System
+  commentId: N:System
+- uid: System.Runtime.InteropServices.ComTypes.ITypeComp
+  parent: System.Runtime.InteropServices.ComTypes
+  isExternal: false
+  name: "XXX"
+  fullName: System.Runtime.InteropServices.ComTypes.ITypeComp
+  nameWithType: ITypeComp
+  commentId: T:System.Runtime.InteropServices.ComTypes.ITypeComp

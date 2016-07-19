@@ -1,0 +1,100 @@
+items:
+- uid: System.IFormatProvider
+  commentId: T:System.IFormatProvider
+  id: IFormatProvider
+  parent: System
+  children:
+  - System.IFormatProvider.GetFormat(System.Type)
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IFormatProvider
+  type: Interface
+  source:
+    remote:
+      path: src/mscorlib/src/System/IFormatProvider.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: IFormatProvider
+    path: src/mscorlib/src/System/IFormatProvider.cs
+    startLine: 16
+  assemblies:
+  - System.Runtime
+  namespace: System
+  summary: "\n<p>Provides a mechanism for retrieving an object to control formatting.</p>\n"
+  syntax:
+    content: >-
+      [ComVisible(true)]
+
+      public interface IFormatProvider
+    content.vb: >-
+      <ComVisible(True)>
+
+      Public Interface IFormatProvider
+  seealso:
+  - type: System.ICustomFormatter
+    commentId: T:System.ICustomFormatter
+  - type: System.IFormattable
+    commentId: T:System.IFormattable
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+  nameWithType: IFormatProvider
+- uid: System.IFormatProvider.GetFormat(System.Type)
+  commentId: M:System.IFormatProvider.GetFormat(System.Type)
+  id: GetFormat(System.Type)
+  parent: System.IFormatProvider
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IFormatProvider.GetFormat(System.Type)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/IFormatProvider.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: GetFormat
+    path: src/mscorlib/src/System/IFormatProvider.cs
+    startLine: 20
+  assemblies:
+  - System.Runtime
+  namespace: System
+  summary: "\n<p>Returns an object that provides formatting services for the specified type.</p>\n"
+  syntax:
+    content: object GetFormat(Type formatType)
+    content.vb: Function GetFormat(formatType As Type) As Object
+    parameters:
+    - id: formatType
+      type: System.Type
+      description: "\n<p>An object that specifies the type of format object to return. </p>\n"
+    return:
+      type: System.Object
+      description: "\n<p>An instance of the object specified by <em>formatType</em>, if the <xref href=\"System.IFormatProvider\" data-throw-if-not-resolved=\"false\"></xref> implementation can supply that type of object; otherwise, <strong>null</strong>.</p>\n"
+  nameWithType: IFormatProvider.GetFormat(Type)
+references:
+- uid: System
+  isExternal: false
+  name: "XXX"
+  fullName: System
+  nameWithType: System
+  commentId: N:System
+- uid: System.Type
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Type
+  nameWithType: Type
+  commentId: T:System.Type
+- uid: System.Object
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Object
+  nameWithType: Object
+  commentId: T:System.Object

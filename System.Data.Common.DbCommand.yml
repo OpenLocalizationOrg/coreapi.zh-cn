@@ -1,0 +1,2316 @@
+items:
+- uid: System.Data.Common.DbCommand
+  commentId: T:System.Data.Common.DbCommand
+  id: DbCommand
+  parent: System.Data.Common
+  children:
+  - System.Data.Common.DbCommand.#ctor
+  - System.Data.Common.DbCommand.Cancel
+  - System.Data.Common.DbCommand.CommandText
+  - System.Data.Common.DbCommand.CommandTimeout
+  - System.Data.Common.DbCommand.CommandType
+  - System.Data.Common.DbCommand.Connection
+  - System.Data.Common.DbCommand.CreateDbParameter
+  - System.Data.Common.DbCommand.CreateParameter
+  - System.Data.Common.DbCommand.DbConnection
+  - System.Data.Common.DbCommand.DbParameterCollection
+  - System.Data.Common.DbCommand.DbTransaction
+  - System.Data.Common.DbCommand.DesignTimeVisible
+  - System.Data.Common.DbCommand.Dispose
+  - System.Data.Common.DbCommand.Dispose(System.Boolean)
+  - System.Data.Common.DbCommand.ExecuteDbDataReader(System.Data.CommandBehavior)
+  - System.Data.Common.DbCommand.ExecuteDbDataReaderAsync(System.Data.CommandBehavior,System.Threading.CancellationToken)
+  - System.Data.Common.DbCommand.ExecuteNonQuery
+  - System.Data.Common.DbCommand.ExecuteNonQueryAsync
+  - System.Data.Common.DbCommand.ExecuteNonQueryAsync(System.Threading.CancellationToken)
+  - System.Data.Common.DbCommand.ExecuteReader
+  - System.Data.Common.DbCommand.ExecuteReader(System.Data.CommandBehavior)
+  - System.Data.Common.DbCommand.ExecuteReaderAsync
+  - System.Data.Common.DbCommand.ExecuteReaderAsync(System.Data.CommandBehavior)
+  - System.Data.Common.DbCommand.ExecuteReaderAsync(System.Data.CommandBehavior,System.Threading.CancellationToken)
+  - System.Data.Common.DbCommand.ExecuteReaderAsync(System.Threading.CancellationToken)
+  - System.Data.Common.DbCommand.ExecuteScalar
+  - System.Data.Common.DbCommand.ExecuteScalarAsync
+  - System.Data.Common.DbCommand.ExecuteScalarAsync(System.Threading.CancellationToken)
+  - System.Data.Common.DbCommand.Parameters
+  - System.Data.Common.DbCommand.Prepare
+  - System.Data.Common.DbCommand.System#Data#IDbCommand#Connection
+  - System.Data.Common.DbCommand.System#Data#IDbCommand#CreateParameter
+  - System.Data.Common.DbCommand.System#Data#IDbCommand#ExecuteReader
+  - System.Data.Common.DbCommand.System#Data#IDbCommand#ExecuteReader(System.Data.CommandBehavior)
+  - System.Data.Common.DbCommand.System#Data#IDbCommand#Parameters
+  - System.Data.Common.DbCommand.System#Data#IDbCommand#Transaction
+  - System.Data.Common.DbCommand.Transaction
+  - System.Data.Common.DbCommand.UpdatedRowSource
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Data.Common.DbCommand
+  type: Class
+  source:
+    remote:
+      path: src/System.Data.Common/src/System/Data/Common/DbCommand.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: DbCommand
+    path: src/System.Data.Common/src/System/Data/Common/DbCommand.cs
+    startLine: 15
+  assemblies:
+  - System.Data.Common
+  namespace: System.Data.Common
+  summary: "\n<p>Represents an SQL statement or stored procedure to execute against a data source. Provides a base class for database-specific classes that represent commands. <xref href=\"System.Data.Common.DbCommand.ExecuteNonQueryAsync\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
+  syntax:
+    content: 'public abstract class DbCommand : IDbCommand, IDisposable'
+    content.vb: >-
+      Public MustInherit Class DbCommand
+          Implements IDbCommand, IDisposable
+  inheritance:
+  - System.Object
+  implements:
+  - System.Data.IDbCommand
+  - System.IDisposable
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+  nameWithType: DbCommand
+- uid: System.Data.Common.DbCommand.#ctor
+  commentId: M:System.Data.Common.DbCommand.#ctor
+  id: '#ctor'
+  parent: System.Data.Common.DbCommand
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Data.Common.DbCommand.DbCommand()
+  type: Constructor
+  source:
+    remote:
+      path: src/System.Data.Common/src/System/Data/Common/DbCommand.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: .ctor
+    path: src/System.Data.Common/src/System/Data/Common/DbCommand.cs
+    startLine: 18
+  assemblies:
+  - System.Data.Common
+  namespace: System.Data.Common
+  summary: "\n<p>Constructs an instance of the <xref href=\"System.Data.Common.DbCommand\" data-throw-if-not-resolved=\"false\"></xref> object.</p>\n"
+  syntax:
+    content: protected DbCommand()
+    content.vb: Protected Sub New
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  nameWithType: DbCommand.DbCommand()
+- uid: System.Data.Common.DbCommand.CommandText
+  commentId: P:System.Data.Common.DbCommand.CommandText
+  id: CommandText
+  parent: System.Data.Common.DbCommand
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Data.Common.DbCommand.CommandText
+  type: Property
+  source:
+    remote:
+      path: src/System.Data.Common/src/System/Data/Common/DbCommand.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: CommandText
+    path: src/System.Data.Common/src/System/Data/Common/DbCommand.cs
+    startLine: 27
+  assemblies:
+  - System.Data.Common
+  namespace: System.Data.Common
+  summary: "\n<p>Gets or sets the text command to run against the data source.</p>\n"
+  syntax:
+    content: public abstract string CommandText { get; set; }
+    content.vb: Public MustOverride Property CommandText As String
+    parameters: []
+    return:
+      type: System.String
+      description: "\n<p>The text command to execute. The default value is an empty string (\"\").</p>\n"
+  implements:
+  - System.Data.IDbCommand.CommandText
+  modifiers.csharp:
+  - public
+  - abstract
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - MustOverride
+  nameWithType: DbCommand.CommandText
+- uid: System.Data.Common.DbCommand.CommandTimeout
+  commentId: P:System.Data.Common.DbCommand.CommandTimeout
+  id: CommandTimeout
+  parent: System.Data.Common.DbCommand
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Data.Common.DbCommand.CommandTimeout
+  type: Property
+  source:
+    remote:
+      path: src/System.Data.Common/src/System/Data/Common/DbCommand.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: CommandTimeout
+    path: src/System.Data.Common/src/System/Data/Common/DbCommand.cs
+    startLine: 33
+  assemblies:
+  - System.Data.Common
+  namespace: System.Data.Common
+  summary: "\n<p>Gets or sets the wait time before terminating the attempt to execute a command and generating an error.</p>\n"
+  syntax:
+    content: public abstract int CommandTimeout { get; set; }
+    content.vb: Public MustOverride Property CommandTimeout As Integer
+    parameters: []
+    return:
+      type: System.Int32
+      description: "\n<p>The time in seconds to wait for the command to execute.</p>\n"
+  implements:
+  - System.Data.IDbCommand.CommandTimeout
+  modifiers.csharp:
+  - public
+  - abstract
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - MustOverride
+  nameWithType: DbCommand.CommandTimeout
+- uid: System.Data.Common.DbCommand.CommandType
+  commentId: P:System.Data.Common.DbCommand.CommandType
+  id: CommandType
+  parent: System.Data.Common.DbCommand
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Data.Common.DbCommand.CommandType
+  type: Property
+  source:
+    remote:
+      path: src/System.Data.Common/src/System/Data/Common/DbCommand.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: CommandType
+    path: src/System.Data.Common/src/System/Data/Common/DbCommand.cs
+    startLine: 39
+  assemblies:
+  - System.Data.Common
+  namespace: System.Data.Common
+  summary: "\n<p>Indicates or specifies how the <xref href=\"System.Data.Common.DbCommand.CommandText\" data-throw-if-not-resolved=\"false\"></xref> property is interpreted.</p>\n"
+  syntax:
+    content: public abstract CommandType CommandType { get; set; }
+    content.vb: Public MustOverride Property CommandType As CommandType
+    parameters: []
+    return:
+      type: System.Data.CommandType
+      description: "\n<p>One of the <xref href=\"System.Data.CommandType\" data-throw-if-not-resolved=\"false\"></xref> values. The default is <strong>Text</strong>.</p>\n"
+  implements:
+  - System.Data.IDbCommand.CommandType
+  modifiers.csharp:
+  - public
+  - abstract
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - MustOverride
+  nameWithType: DbCommand.CommandType
+- uid: System.Data.Common.DbCommand.Connection
+  commentId: P:System.Data.Common.DbCommand.Connection
+  id: Connection
+  parent: System.Data.Common.DbCommand
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Data.Common.DbCommand.Connection
+  type: Property
+  source:
+    remote:
+      path: src/System.Data.Common/src/System/Data/Common/DbCommand.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Connection
+    path: src/System.Data.Common/src/System/Data/Common/DbCommand.cs
+    startLine: 45
+  assemblies:
+  - System.Data.Common
+  namespace: System.Data.Common
+  summary: "\n<p>Gets or sets the <xref href=\"System.Data.Common.DbConnection\" data-throw-if-not-resolved=\"false\"></xref> used by this <xref href=\"System.Data.Common.DbCommand\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  syntax:
+    content: public DbConnection Connection { get; set; }
+    content.vb: Public Property Connection As DbConnection
+    parameters: []
+    return:
+      type: System.Data.Common.DbConnection
+      description: "\n<p>The connection to the data source.</p>\n"
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  nameWithType: DbCommand.Connection
+- uid: System.Data.Common.DbCommand.DbConnection
+  commentId: P:System.Data.Common.DbCommand.DbConnection
+  id: DbConnection
+  parent: System.Data.Common.DbCommand
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Data.Common.DbCommand.DbConnection
+  type: Property
+  source:
+    remote:
+      path: src/System.Data.Common/src/System/Data/Common/DbCommand.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: DbConnection
+    path: src/System.Data.Common/src/System/Data/Common/DbCommand.cs
+    startLine: 58
+  assemblies:
+  - System.Data.Common
+  namespace: System.Data.Common
+  summary: "\n<p>Gets or sets the <xref href=\"System.Data.Common.DbConnection\" data-throw-if-not-resolved=\"false\"></xref> used by this <xref href=\"System.Data.Common.DbCommand\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  syntax:
+    content: protected abstract DbConnection DbConnection { get; set; }
+    content.vb: Protected MustOverride Property DbConnection As DbConnection
+    parameters: []
+    return:
+      type: System.Data.Common.DbConnection
+      description: "\n<p>The connection to the data source.</p>\n"
+  modifiers.csharp:
+  - protected
+  - abstract
+  - get
+  - set
+  modifiers.vb:
+  - Protected
+  - MustOverride
+  nameWithType: DbCommand.DbConnection
+- uid: System.Data.Common.DbCommand.DbParameterCollection
+  commentId: P:System.Data.Common.DbCommand.DbParameterCollection
+  id: DbParameterCollection
+  parent: System.Data.Common.DbCommand
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Data.Common.DbCommand.DbParameterCollection
+  type: Property
+  source:
+    remote:
+      path: src/System.Data.Common/src/System/Data/Common/DbCommand.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: DbParameterCollection
+    path: src/System.Data.Common/src/System/Data/Common/DbCommand.cs
+    startLine: 64
+  assemblies:
+  - System.Data.Common
+  namespace: System.Data.Common
+  summary: "\n<p>Gets the collection of <xref href=\"System.Data.Common.DbParameter\" data-throw-if-not-resolved=\"false\"></xref> objects.</p>\n"
+  syntax:
+    content: protected abstract DbParameterCollection DbParameterCollection { get; }
+    content.vb: Protected MustOverride ReadOnly Property DbParameterCollection As DbParameterCollection
+    parameters: []
+    return:
+      type: System.Data.Common.DbParameterCollection
+      description: "\n<p>The parameters of the SQL statement or stored procedure.</p>\n"
+  modifiers.csharp:
+  - protected
+  - abstract
+  - get
+  modifiers.vb:
+  - Protected
+  - MustOverride
+  - ReadOnly
+  nameWithType: DbCommand.DbParameterCollection
+- uid: System.Data.Common.DbCommand.DbTransaction
+  commentId: P:System.Data.Common.DbCommand.DbTransaction
+  id: DbTransaction
+  parent: System.Data.Common.DbCommand
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Data.Common.DbCommand.DbTransaction
+  type: Property
+  source:
+    remote:
+      path: src/System.Data.Common/src/System/Data/Common/DbCommand.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: DbTransaction
+    path: src/System.Data.Common/src/System/Data/Common/DbCommand.cs
+    startLine: 69
+  assemblies:
+  - System.Data.Common
+  namespace: System.Data.Common
+  summary: "\n<p>Gets or sets the <xref href=\"System.Data.Common.DbCommand.DbTransaction\" data-throw-if-not-resolved=\"false\"></xref> within which this <xref href=\"System.Data.Common.DbCommand\" data-throw-if-not-resolved=\"false\"></xref> object executes.</p>\n"
+  syntax:
+    content: protected abstract DbTransaction DbTransaction { get; set; }
+    content.vb: Protected MustOverride Property DbTransaction As DbTransaction
+    parameters: []
+    return:
+      type: System.Data.Common.DbTransaction
+      description: "\n<p>The transaction within which a Command object of a .NET Framework data provider executes. The default value is a null reference (<strong>Nothing</strong> in Visual Basic).</p>\n"
+  modifiers.csharp:
+  - protected
+  - abstract
+  - get
+  - set
+  modifiers.vb:
+  - Protected
+  - MustOverride
+  nameWithType: DbCommand.DbTransaction
+- uid: System.Data.Common.DbCommand.DesignTimeVisible
+  commentId: P:System.Data.Common.DbCommand.DesignTimeVisible
+  id: DesignTimeVisible
+  parent: System.Data.Common.DbCommand
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Data.Common.DbCommand.DesignTimeVisible
+  type: Property
+  source:
+    remote:
+      path: src/System.Data.Common/src/System/Data/Common/DbCommand.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: DesignTimeVisible
+    path: src/System.Data.Common/src/System/Data/Common/DbCommand.cs
+    startLine: 75
+  assemblies:
+  - System.Data.Common
+  namespace: System.Data.Common
+  summary: "\n<p>Gets or sets a value indicating whether the command object should be visible in a customized interface control.</p>\n"
+  syntax:
+    content: public abstract bool DesignTimeVisible { get; set; }
+    content.vb: Public MustOverride Property DesignTimeVisible As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong>, if the command object should be visible in a control; otherwise <strong>false</strong>. The default is <strong>true</strong>.</p>\n"
+  modifiers.csharp:
+  - public
+  - abstract
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - MustOverride
+  nameWithType: DbCommand.DesignTimeVisible
+- uid: System.Data.Common.DbCommand.Parameters
+  commentId: P:System.Data.Common.DbCommand.Parameters
+  id: Parameters
+  parent: System.Data.Common.DbCommand
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Data.Common.DbCommand.Parameters
+  type: Property
+  source:
+    remote:
+      path: src/System.Data.Common/src/System/Data/Common/DbCommand.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Parameters
+    path: src/System.Data.Common/src/System/Data/Common/DbCommand.cs
+    startLine: 81
+  assemblies:
+  - System.Data.Common
+  namespace: System.Data.Common
+  summary: "\n<p>Gets the collection of <xref href=\"System.Data.Common.DbParameter\" data-throw-if-not-resolved=\"false\"></xref> objects. For more information on parameters, see Configuring Parameters and Parameter Data Types.</p>\n"
+  syntax:
+    content: public DbParameterCollection Parameters { get; }
+    content.vb: Public ReadOnly Property Parameters As DbParameterCollection
+    parameters: []
+    return:
+      type: System.Data.Common.DbParameterCollection
+      description: "\n<p>The parameters of the SQL statement or stored procedure.</p>\n"
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  nameWithType: DbCommand.Parameters
+- uid: System.Data.Common.DbCommand.System#Data#IDbCommand#Connection
+  commentId: P:System.Data.Common.DbCommand.System#Data#IDbCommand#Connection
+  id: System#Data#IDbCommand#Connection
+  isEii: true
+  parent: System.Data.Common.DbCommand
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Data.Common.DbCommand.System.Data.IDbCommand.Connection
+  type: Property
+  source:
+    remote:
+      path: src/System.Data.Common/src/System/Data/Common/DbCommand.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: System.Data.IDbCommand.Connection
+    path: src/System.Data.Common/src/System/Data/Common/DbCommand.cs
+    startLine: 107
+  assemblies:
+  - System.Data.Common
+  namespace: System.Data.Common
+  summary: "\n<p>Gets or sets the <xref href=\"System.Data.IDbConnection\" data-throw-if-not-resolved=\"false\"></xref> used by this instance of the <xref href=\"System.Data.IDbCommand\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  syntax:
+    content: IDbConnection IDbCommand.Connection { get; set; }
+    content.vb: ReadOnly WriteOnly Property System.Data.IDbCommand.Connection As IDbConnection Implements IDbCommand.Connection
+    parameters: []
+    return:
+      type: System.Data.IDbConnection
+      description: "\n<p>The connection to the data source.</p>\n"
+  implements:
+  - System.Data.IDbCommand.Connection
+  modifiers.csharp:
+  - get
+  - set
+  name.vb: System.Data.IDbCommand.Connection
+  nameWithType: DbCommand.IDbCommand.Connection
+  nameWithType.vb: DbCommand.System.Data.IDbCommand.Connection
+- uid: System.Data.Common.DbCommand.System#Data#IDbCommand#Parameters
+  commentId: P:System.Data.Common.DbCommand.System#Data#IDbCommand#Parameters
+  id: System#Data#IDbCommand#Parameters
+  isEii: true
+  parent: System.Data.Common.DbCommand
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Data.Common.DbCommand.System.Data.IDbCommand.Parameters
+  type: Property
+  source:
+    remote:
+      path: src/System.Data.Common/src/System/Data/Common/DbCommand.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: System.Data.IDbCommand.Parameters
+    path: src/System.Data.Common/src/System/Data/Common/DbCommand.cs
+    startLine: 131
+  assemblies:
+  - System.Data.Common
+  namespace: System.Data.Common
+  summary: "\n<p>Gets the <xref href=\"System.Data.IDataParameterCollection\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  syntax:
+    content: IDataParameterCollection IDbCommand.Parameters { get; }
+    content.vb: ReadOnly WriteOnly Property System.Data.IDbCommand.Parameters As IDataParameterCollection Implements IDbCommand.Parameters
+    parameters: []
+    return:
+      type: System.Data.IDataParameterCollection
+      description: "\n<p>The parameters of the SQL statement or stored procedure.</p>\n"
+  implements:
+  - System.Data.IDbCommand.Parameters
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+  name.vb: System.Data.IDbCommand.Parameters
+  nameWithType: DbCommand.IDbCommand.Parameters
+  nameWithType.vb: DbCommand.System.Data.IDbCommand.Parameters
+- uid: System.Data.Common.DbCommand.System#Data#IDbCommand#Transaction
+  commentId: P:System.Data.Common.DbCommand.System#Data#IDbCommand#Transaction
+  id: System#Data#IDbCommand#Transaction
+  isEii: true
+  parent: System.Data.Common.DbCommand
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Data.Common.DbCommand.System.Data.IDbCommand.Transaction
+  type: Property
+  source:
+    remote:
+      path: src/System.Data.Common/src/System/Data/Common/DbCommand.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: System.Data.IDbCommand.Transaction
+    path: src/System.Data.Common/src/System/Data/Common/DbCommand.cs
+    startLine: 119
+  assemblies:
+  - System.Data.Common
+  namespace: System.Data.Common
+  summary: "\n<p>Gets or sets the <xref href=\"System.Data.Common.DbCommand.DbTransaction\" data-throw-if-not-resolved=\"false\"></xref> within which this <xref href=\"System.Data.Common.DbCommand\" data-throw-if-not-resolved=\"false\"></xref> object executes.</p>\n"
+  syntax:
+    content: IDbTransaction IDbCommand.Transaction { get; set; }
+    content.vb: ReadOnly WriteOnly Property System.Data.IDbCommand.Transaction As IDbTransaction Implements IDbCommand.Transaction
+    parameters: []
+    return:
+      type: System.Data.IDbTransaction
+      description: "\n<p>The transaction within which a <strong>Command</strong> object of a .NET Framework data provider executes. The default value is a null reference (<strong>Nothing</strong> in Visual Basic).</p>\n"
+  implements:
+  - System.Data.IDbCommand.Transaction
+  modifiers.csharp:
+  - get
+  - set
+  name.vb: System.Data.IDbCommand.Transaction
+  nameWithType: DbCommand.IDbCommand.Transaction
+  nameWithType.vb: DbCommand.System.Data.IDbCommand.Transaction
+- uid: System.Data.Common.DbCommand.Transaction
+  commentId: P:System.Data.Common.DbCommand.Transaction
+  id: Transaction
+  parent: System.Data.Common.DbCommand
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Data.Common.DbCommand.Transaction
+  type: Property
+  source:
+    remote:
+      path: src/System.Data.Common/src/System/Data/Common/DbCommand.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Transaction
+    path: src/System.Data.Common/src/System/Data/Common/DbCommand.cs
+    startLine: 89
+  assemblies:
+  - System.Data.Common
+  namespace: System.Data.Common
+  summary: "\n<p>Gets or sets the <xref href=\"System.Data.Common.DbTransaction\" data-throw-if-not-resolved=\"false\"></xref> within which this <xref href=\"System.Data.Common.DbCommand\" data-throw-if-not-resolved=\"false\"></xref> object executes.</p>\n"
+  syntax:
+    content: public DbTransaction Transaction { get; set; }
+    content.vb: Public Property Transaction As DbTransaction
+    parameters: []
+    return:
+      type: System.Data.Common.DbTransaction
+      description: "\n<p>The transaction within which a <strong>Command</strong> object of a .NET Framework data provider executes. The default value is a null reference (<strong>Nothing</strong> in Visual Basic).</p>\n"
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  nameWithType: DbCommand.Transaction
+- uid: System.Data.Common.DbCommand.UpdatedRowSource
+  commentId: P:System.Data.Common.DbCommand.UpdatedRowSource
+  id: UpdatedRowSource
+  parent: System.Data.Common.DbCommand
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Data.Common.DbCommand.UpdatedRowSource
+  type: Property
+  source:
+    remote:
+      path: src/System.Data.Common/src/System/Data/Common/DbCommand.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: UpdatedRowSource
+    path: src/System.Data.Common/src/System/Data/Common/DbCommand.cs
+    startLine: 101
+  assemblies:
+  - System.Data.Common
+  namespace: System.Data.Common
+  summary: "\n<p>Gets or sets how command results are applied to the <xref href=\"System.Data.DataRow\" data-throw-if-not-resolved=\"false\"></xref> when used by the Update method of a <xref href=\"System.Data.Common.DbDataAdapter\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  syntax:
+    content: public abstract UpdateRowSource UpdatedRowSource { get; set; }
+    content.vb: Public MustOverride Property UpdatedRowSource As UpdateRowSource
+    parameters: []
+    return:
+      type: System.Data.UpdateRowSource
+      description: "\n<p>One of the <xref href=\"System.Data.UpdateRowSource\" data-throw-if-not-resolved=\"false\"></xref> values. The default is <strong>Both</strong> unless the command is automatically generated. Then the default is <strong>None</strong>.</p>\n"
+  implements:
+  - System.Data.IDbCommand.UpdatedRowSource
+  modifiers.csharp:
+  - public
+  - abstract
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - MustOverride
+  nameWithType: DbCommand.UpdatedRowSource
+- uid: System.Data.Common.DbCommand.Cancel
+  commentId: M:System.Data.Common.DbCommand.Cancel
+  id: Cancel
+  parent: System.Data.Common.DbCommand
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Data.Common.DbCommand.Cancel()
+  type: Method
+  source:
+    remote:
+      path: src/System.Data.Common/src/System/Data/Common/DbCommand.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Cancel
+    path: src/System.Data.Common/src/System/Data/Common/DbCommand.cs
+    startLine: 155
+  assemblies:
+  - System.Data.Common
+  namespace: System.Data.Common
+  summary: "\n<p>Attempts to cancels the execution of a <xref href=\"System.Data.Common.DbCommand\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  syntax:
+    content: public abstract void Cancel()
+    content.vb: Public MustOverride Sub Cancel
+  implements:
+  - System.Data.IDbCommand.Cancel
+  modifiers.csharp:
+  - public
+  - abstract
+  modifiers.vb:
+  - Public
+  - MustOverride
+  nameWithType: DbCommand.Cancel()
+- uid: System.Data.Common.DbCommand.CreateDbParameter
+  commentId: M:System.Data.Common.DbCommand.CreateDbParameter
+  id: CreateDbParameter
+  parent: System.Data.Common.DbCommand
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Data.Common.DbCommand.CreateDbParameter()
+  type: Method
+  source:
+    remote:
+      path: src/System.Data.Common/src/System/Data/Common/DbCommand.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: CreateDbParameter
+    path: src/System.Data.Common/src/System/Data/Common/DbCommand.cs
+    startLine: 163
+  assemblies:
+  - System.Data.Common
+  namespace: System.Data.Common
+  summary: "\n<p>Creates a new instance of a <xref href=\"System.Data.Common.DbParameter\" data-throw-if-not-resolved=\"false\"></xref> object.</p>\n"
+  syntax:
+    content: protected abstract DbParameter CreateDbParameter()
+    content.vb: Protected MustOverride Function CreateDbParameter As DbParameter
+    return:
+      type: System.Data.Common.DbParameter
+      description: "\n<p>A <xref href=\"System.Data.Common.DbParameter\" data-throw-if-not-resolved=\"false\"></xref> object.</p>\n"
+  modifiers.csharp:
+  - protected
+  - abstract
+  modifiers.vb:
+  - Protected
+  - MustOverride
+  nameWithType: DbCommand.CreateDbParameter()
+- uid: System.Data.Common.DbCommand.CreateParameter
+  commentId: M:System.Data.Common.DbCommand.CreateParameter
+  id: CreateParameter
+  parent: System.Data.Common.DbCommand
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Data.Common.DbCommand.CreateParameter()
+  type: Method
+  source:
+    remote:
+      path: src/System.Data.Common/src/System/Data/Common/DbCommand.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: CreateParameter
+    path: src/System.Data.Common/src/System/Data/Common/DbCommand.cs
+    startLine: 157
+  assemblies:
+  - System.Data.Common
+  namespace: System.Data.Common
+  summary: "\n<p>Creates a new instance of a <xref href=\"System.Data.Common.DbParameter\" data-throw-if-not-resolved=\"false\"></xref> object.</p>\n"
+  syntax:
+    content: public DbParameter CreateParameter()
+    content.vb: Public Function CreateParameter As DbParameter
+    return:
+      type: System.Data.Common.DbParameter
+      description: "\n<p>A <xref href=\"System.Data.Common.DbParameter\" data-throw-if-not-resolved=\"false\"></xref> object.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: DbCommand.CreateParameter()
+- uid: System.Data.Common.DbCommand.ExecuteDbDataReader(System.Data.CommandBehavior)
+  commentId: M:System.Data.Common.DbCommand.ExecuteDbDataReader(System.Data.CommandBehavior)
+  id: ExecuteDbDataReader(System.Data.CommandBehavior)
+  parent: System.Data.Common.DbCommand
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Data.Common.DbCommand.ExecuteDbDataReader(System.Data.CommandBehavior)
+  type: Method
+  source:
+    remote:
+      path: src/System.Data.Common/src/System/Data/Common/DbCommand.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: ExecuteDbDataReader
+    path: src/System.Data.Common/src/System/Data/Common/DbCommand.cs
+    startLine: 165
+  assemblies:
+  - System.Data.Common
+  namespace: System.Data.Common
+  summary: "\n<p>Executes the command text against the connection.</p>\n"
+  syntax:
+    content: protected abstract DbDataReader ExecuteDbDataReader(CommandBehavior behavior)
+    content.vb: Protected MustOverride Function ExecuteDbDataReader(behavior As CommandBehavior) As DbDataReader
+    parameters:
+    - id: behavior
+      type: System.Data.CommandBehavior
+      description: "\n<p>An instance of <xref href=\"System.Data.CommandBehavior\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    return:
+      type: System.Data.Common.DbDataReader
+      description: "\n<p>A task representing the operation.</p>\n"
+  exceptions:
+  - type: System.Data.Common.DbException
+    commentId: T:System.Data.Common.DbException
+    description: "\n<p>An error occurred while executing the command text.</p>\n"
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>An invalid <xref href=\"System.Data.CommandBehavior\" data-throw-if-not-resolved=\"false\"></xref> value.</p>\n"
+  modifiers.csharp:
+  - protected
+  - abstract
+  modifiers.vb:
+  - Protected
+  - MustOverride
+  nameWithType: DbCommand.ExecuteDbDataReader(CommandBehavior)
+- uid: System.Data.Common.DbCommand.ExecuteDbDataReaderAsync(System.Data.CommandBehavior,System.Threading.CancellationToken)
+  commentId: M:System.Data.Common.DbCommand.ExecuteDbDataReaderAsync(System.Data.CommandBehavior,System.Threading.CancellationToken)
+  id: ExecuteDbDataReaderAsync(System.Data.CommandBehavior,System.Threading.CancellationToken)
+  parent: System.Data.Common.DbCommand
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Data.Common.DbCommand.ExecuteDbDataReaderAsync(System.Data.CommandBehavior, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/System.Data.Common/src/System/Data/Common/DbCommand.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: ExecuteDbDataReaderAsync
+    path: src/System.Data.Common/src/System/Data/Common/DbCommand.cs
+    startLine: 235
+  assemblies:
+  - System.Data.Common
+  namespace: System.Data.Common
+  summary: "\n<p>Providers should implement this method to provide a non-default implementation for <xref href=\"System.Data.Common.DbCommand.ExecuteReader\" data-throw-if-not-resolved=\"false\"></xref> overloads.</p>\n<p>The default implementation invokes the synchronous <xref href=\"System.Data.Common.DbCommand.ExecuteReader\" data-throw-if-not-resolved=\"false\"></xref> method and returns a completed task, blocking the calling thread. The default implementation will return a cancelled task if passed an already cancelled cancellation token. Exceptions thrown by ExecuteReader will be communicated via the returned Task Exception property.</p>\n<p>This method accepts a cancellation token that can be used to request the operation to be cancelled early. Implementations may ignore this request.</p>\n"
+  syntax:
+    content: protected virtual Task<DbDataReader> ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+    content.vb: Protected Overridable Function ExecuteDbDataReaderAsync(behavior As CommandBehavior, cancellationToken As CancellationToken) As Task(Of DbDataReader)
+    parameters:
+    - id: behavior
+      type: System.Data.CommandBehavior
+      description: "\n<p>Options for statement execution and data retrieval.</p>\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\n<p>The token to monitor for cancellation requests.</p>\n"
+    return:
+      type: System.Threading.Tasks.Task{System.Data.Common.DbDataReader}
+      description: "\n<p>A task representing the asynchronous operation.</p>\n"
+  exceptions:
+  - type: System.Data.Common.DbException
+    commentId: T:System.Data.Common.DbException
+    description: "\n<p>An error occurred while executing the command text.</p>\n"
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>An invalid <xref href=\"System.Data.CommandBehavior\" data-throw-if-not-resolved=\"false\"></xref> value.</p>\n"
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+  nameWithType: DbCommand.ExecuteDbDataReaderAsync(CommandBehavior, CancellationToken)
+- uid: System.Data.Common.DbCommand.ExecuteNonQuery
+  commentId: M:System.Data.Common.DbCommand.ExecuteNonQuery
+  id: ExecuteNonQuery
+  parent: System.Data.Common.DbCommand
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Data.Common.DbCommand.ExecuteNonQuery()
+  type: Method
+  source:
+    remote:
+      path: src/System.Data.Common/src/System/Data/Common/DbCommand.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: ExecuteNonQuery
+    path: src/System.Data.Common/src/System/Data/Common/DbCommand.cs
+    startLine: 167
+  assemblies:
+  - System.Data.Common
+  namespace: System.Data.Common
+  summary: "\n<p>Executes a SQL statement against a connection object.</p>\n"
+  syntax:
+    content: public abstract int ExecuteNonQuery()
+    content.vb: Public MustOverride Function ExecuteNonQuery As Integer
+    return:
+      type: System.Int32
+      description: "\n<p>The number of rows affected.</p>\n"
+  implements:
+  - System.Data.IDbCommand.ExecuteNonQuery
+  modifiers.csharp:
+  - public
+  - abstract
+  modifiers.vb:
+  - Public
+  - MustOverride
+  nameWithType: DbCommand.ExecuteNonQuery()
+- uid: System.Data.Common.DbCommand.ExecuteNonQueryAsync
+  commentId: M:System.Data.Common.DbCommand.ExecuteNonQueryAsync
+  id: ExecuteNonQueryAsync
+  parent: System.Data.Common.DbCommand
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Data.Common.DbCommand.ExecuteNonQueryAsync()
+  type: Method
+  source:
+    remote:
+      path: src/System.Data.Common/src/System/Data/Common/DbCommand.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: ExecuteNonQueryAsync
+    path: src/System.Data.Common/src/System/Data/Common/DbCommand.cs
+    startLine: 181
+  assemblies:
+  - System.Data.Common
+  namespace: System.Data.Common
+  summary: "\n<p>An asynchronous version of <xref href=\"System.Data.Common.DbCommand.ExecuteNonQuery\" data-throw-if-not-resolved=\"false\"></xref>, which executes a SQL statement against a connection object.</p>\n<p>Invokes <xref href=\"System.Data.Common.DbCommand.ExecuteNonQueryAsync(System.Threading.CancellationToken)\" data-throw-if-not-resolved=\"false\"></xref> with CancellationToken.None.</p>\n"
+  syntax:
+    content: public Task<int> ExecuteNonQueryAsync()
+    content.vb: Public Function ExecuteNonQueryAsync As Task(Of Integer)
+    return:
+      type: System.Threading.Tasks.Task{System.Int32}
+      description: "\n<p>A task representing the asynchronous operation.</p>\n"
+  exceptions:
+  - type: System.Data.Common.DbException
+    commentId: T:System.Data.Common.DbException
+    description: "\n<p>An error occurred while executing the command text.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: DbCommand.ExecuteNonQueryAsync()
+- uid: System.Data.Common.DbCommand.ExecuteNonQueryAsync(System.Threading.CancellationToken)
+  commentId: M:System.Data.Common.DbCommand.ExecuteNonQueryAsync(System.Threading.CancellationToken)
+  id: ExecuteNonQueryAsync(System.Threading.CancellationToken)
+  parent: System.Data.Common.DbCommand
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Data.Common.DbCommand.ExecuteNonQueryAsync(System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/System.Data.Common/src/System/Data/Common/DbCommand.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: ExecuteNonQueryAsync
+    path: src/System.Data.Common/src/System/Data/Common/DbCommand.cs
+    startLine: 186
+  assemblies:
+  - System.Data.Common
+  namespace: System.Data.Common
+  summary: "\n<p>This is the asynchronous version of <xref href=\"System.Data.Common.DbCommand.ExecuteNonQuery\" data-throw-if-not-resolved=\"false\"></xref>. Providers should override with an appropriate implementation. The cancellation token may optionally be ignored.</p>\n<p>The default implementation invokes the synchronous <xref href=\"System.Data.Common.DbCommand.ExecuteNonQuery\" data-throw-if-not-resolved=\"false\"></xref> method and returns a completed task, blocking the calling thread. The default implementation will return a cancelled task if passed an already cancelled cancellation token.  Exceptions thrown by <xref href=\"System.Data.Common.DbCommand.ExecuteNonQuery\" data-throw-if-not-resolved=\"false\"></xref> will be communicated via the returned Task Exception property.</p>\n<p>Do not invoke other methods and properties of the <strong>DbCommand</strong> object until the returned Task is complete.</p>\n"
+  syntax:
+    content: public virtual Task<int> ExecuteNonQueryAsync(CancellationToken cancellationToken)
+    content.vb: Public Overridable Function ExecuteNonQueryAsync(cancellationToken As CancellationToken) As Task(Of Integer)
+    parameters:
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\n<p>The token to monitor for cancellation requests.</p>\n"
+    return:
+      type: System.Threading.Tasks.Task{System.Int32}
+      description: "\n<p>A task representing the asynchronous operation.</p>\n"
+  exceptions:
+  - type: System.Data.Common.DbException
+    commentId: T:System.Data.Common.DbException
+    description: "\n<p>An error occurred while executing the command text.</p>\n"
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  nameWithType: DbCommand.ExecuteNonQueryAsync(CancellationToken)
+- uid: System.Data.Common.DbCommand.ExecuteReader
+  commentId: M:System.Data.Common.DbCommand.ExecuteReader
+  id: ExecuteReader
+  parent: System.Data.Common.DbCommand
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Data.Common.DbCommand.ExecuteReader()
+  type: Method
+  source:
+    remote:
+      path: src/System.Data.Common/src/System/Data/Common/DbCommand.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: ExecuteReader
+    path: src/System.Data.Common/src/System/Data/Common/DbCommand.cs
+    startLine: 169
+  assemblies:
+  - System.Data.Common
+  namespace: System.Data.Common
+  summary: "\n<p>Executes the <xref href=\"System.Data.Common.DbCommand.CommandText\" data-throw-if-not-resolved=\"false\"></xref> against the <xref href=\"System.Data.Common.DbCommand.Connection\" data-throw-if-not-resolved=\"false\"></xref>, and returns an <xref href=\"System.Data.Common.DbDataReader\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  syntax:
+    content: public DbDataReader ExecuteReader()
+    content.vb: Public Function ExecuteReader As DbDataReader
+    return:
+      type: System.Data.Common.DbDataReader
+      description: "\n<p>A <xref href=\"System.Data.Common.DbDataReader\" data-throw-if-not-resolved=\"false\"></xref> object.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: DbCommand.ExecuteReader()
+- uid: System.Data.Common.DbCommand.ExecuteReader(System.Data.CommandBehavior)
+  commentId: M:System.Data.Common.DbCommand.ExecuteReader(System.Data.CommandBehavior)
+  id: ExecuteReader(System.Data.CommandBehavior)
+  parent: System.Data.Common.DbCommand
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Data.Common.DbCommand.ExecuteReader(System.Data.CommandBehavior)
+  type: Method
+  source:
+    remote:
+      path: src/System.Data.Common/src/System/Data/Common/DbCommand.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: ExecuteReader
+    path: src/System.Data.Common/src/System/Data/Common/DbCommand.cs
+    startLine: 175
+  assemblies:
+  - System.Data.Common
+  namespace: System.Data.Common
+  summary: "\n<p>Executes the <xref href=\"System.Data.Common.DbCommand.CommandText\" data-throw-if-not-resolved=\"false\"></xref> against the <xref href=\"System.Data.Common.DbCommand.Connection\" data-throw-if-not-resolved=\"false\"></xref>, and returns an <xref href=\"System.Data.Common.DbDataReader\" data-throw-if-not-resolved=\"false\"></xref> using one of the <xref href=\"System.Data.CommandBehavior\" data-throw-if-not-resolved=\"false\"></xref> values. </p>\n"
+  syntax:
+    content: public DbDataReader ExecuteReader(CommandBehavior behavior)
+    content.vb: Public Function ExecuteReader(behavior As CommandBehavior) As DbDataReader
+    parameters:
+    - id: behavior
+      type: System.Data.CommandBehavior
+      description: "\n<p>One of the <xref href=\"System.Data.CommandBehavior\" data-throw-if-not-resolved=\"false\"></xref> values.</p>\n"
+    return:
+      type: System.Data.Common.DbDataReader
+      description: "\n<p>An <xref href=\"System.Data.Common.DbDataReader\" data-throw-if-not-resolved=\"false\"></xref> object.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: DbCommand.ExecuteReader(CommandBehavior)
+- uid: System.Data.Common.DbCommand.ExecuteReaderAsync
+  commentId: M:System.Data.Common.DbCommand.ExecuteReaderAsync
+  id: ExecuteReaderAsync
+  parent: System.Data.Common.DbCommand
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Data.Common.DbCommand.ExecuteReaderAsync()
+  type: Method
+  source:
+    remote:
+      path: src/System.Data.Common/src/System/Data/Common/DbCommand.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: ExecuteReaderAsync
+    path: src/System.Data.Common/src/System/Data/Common/DbCommand.cs
+    startLine: 215
+  assemblies:
+  - System.Data.Common
+  namespace: System.Data.Common
+  summary: "\n<p>An asynchronous version of <xref href=\"System.Data.Common.DbCommand.ExecuteReader\" data-throw-if-not-resolved=\"false\"></xref>, which executes the <xref href=\"System.Data.Common.DbCommand.CommandText\" data-throw-if-not-resolved=\"false\"></xref> against the <xref href=\"System.Data.Common.DbCommand.Connection\" data-throw-if-not-resolved=\"false\"></xref> and returns a <xref href=\"System.Data.Common.DbDataReader\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n<p>Invokes <xref href=\"System.Data.Common.DbCommand.ExecuteDbDataReaderAsync(System.Data.CommandBehavior,System.Threading.CancellationToken)\" data-throw-if-not-resolved=\"false\"></xref> with CancellationToken.None.</p>\n"
+  syntax:
+    content: public Task<DbDataReader> ExecuteReaderAsync()
+    content.vb: Public Function ExecuteReaderAsync As Task(Of DbDataReader)
+    return:
+      type: System.Threading.Tasks.Task{System.Data.Common.DbDataReader}
+      description: "\n<p>A task representing the asynchronous operation.</p>\n"
+  exceptions:
+  - type: System.Data.Common.DbException
+    commentId: T:System.Data.Common.DbException
+    description: "\n<p>An error occurred while executing the command text.</p>\n"
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>An invalid <xref href=\"System.Data.CommandBehavior\" data-throw-if-not-resolved=\"false\"></xref> value.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: DbCommand.ExecuteReaderAsync()
+- uid: System.Data.Common.DbCommand.ExecuteReaderAsync(System.Data.CommandBehavior)
+  commentId: M:System.Data.Common.DbCommand.ExecuteReaderAsync(System.Data.CommandBehavior)
+  id: ExecuteReaderAsync(System.Data.CommandBehavior)
+  parent: System.Data.Common.DbCommand
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Data.Common.DbCommand.ExecuteReaderAsync(System.Data.CommandBehavior)
+  type: Method
+  source:
+    remote:
+      path: src/System.Data.Common/src/System/Data/Common/DbCommand.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: ExecuteReaderAsync
+    path: src/System.Data.Common/src/System/Data/Common/DbCommand.cs
+    startLine: 225
+  assemblies:
+  - System.Data.Common
+  namespace: System.Data.Common
+  summary: "\n<p>An asynchronous version of <xref href=\"System.Data.Common.DbCommand.ExecuteReader\" data-throw-if-not-resolved=\"false\"></xref>, which executes the <xref href=\"System.Data.Common.DbCommand.CommandText\" data-throw-if-not-resolved=\"false\"></xref> against the <xref href=\"System.Data.Common.DbCommand.Connection\" data-throw-if-not-resolved=\"false\"></xref> and returns a <xref href=\"System.Data.Common.DbDataReader\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n<p>Invokes <xref href=\"System.Data.Common.DbCommand.ExecuteDbDataReaderAsync(System.Data.CommandBehavior,System.Threading.CancellationToken)\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  syntax:
+    content: public Task<DbDataReader> ExecuteReaderAsync(CommandBehavior behavior)
+    content.vb: Public Function ExecuteReaderAsync(behavior As CommandBehavior) As Task(Of DbDataReader)
+    parameters:
+    - id: behavior
+      type: System.Data.CommandBehavior
+      description: "\n<p>One of the <xref href=\"System.Data.CommandBehavior\" data-throw-if-not-resolved=\"false\"></xref> values.</p>\n"
+    return:
+      type: System.Threading.Tasks.Task{System.Data.Common.DbDataReader}
+      description: "\n<p>A task representing the asynchronous operation.</p>\n"
+  exceptions:
+  - type: System.Data.Common.DbException
+    commentId: T:System.Data.Common.DbException
+    description: "\n<p>An error occurred while executing the command text.</p>\n"
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>An invalid <xref href=\"System.Data.CommandBehavior\" data-throw-if-not-resolved=\"false\"></xref> value.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: DbCommand.ExecuteReaderAsync(CommandBehavior)
+- uid: System.Data.Common.DbCommand.ExecuteReaderAsync(System.Data.CommandBehavior,System.Threading.CancellationToken)
+  commentId: M:System.Data.Common.DbCommand.ExecuteReaderAsync(System.Data.CommandBehavior,System.Threading.CancellationToken)
+  id: ExecuteReaderAsync(System.Data.CommandBehavior,System.Threading.CancellationToken)
+  parent: System.Data.Common.DbCommand
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Data.Common.DbCommand.ExecuteReaderAsync(System.Data.CommandBehavior, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/System.Data.Common/src/System/Data/Common/DbCommand.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: ExecuteReaderAsync
+    path: src/System.Data.Common/src/System/Data/Common/DbCommand.cs
+    startLine: 230
+  assemblies:
+  - System.Data.Common
+  namespace: System.Data.Common
+  summary: "\n<p>Invokes <xref href=\"System.Data.Common.DbCommand.ExecuteDbDataReaderAsync(System.Data.CommandBehavior,System.Threading.CancellationToken)\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  syntax:
+    content: public Task<DbDataReader> ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+    content.vb: Public Function ExecuteReaderAsync(behavior As CommandBehavior, cancellationToken As CancellationToken) As Task(Of DbDataReader)
+    parameters:
+    - id: behavior
+      type: System.Data.CommandBehavior
+      description: "\n<p>One of the <xref href=\"System.Data.CommandBehavior\" data-throw-if-not-resolved=\"false\"></xref> values.</p>\n"
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\n<p>The token to monitor for cancellation requests.</p>\n"
+    return:
+      type: System.Threading.Tasks.Task{System.Data.Common.DbDataReader}
+      description: "\n<p>A task representing the asynchronous operation.</p>\n"
+  exceptions:
+  - type: System.Data.Common.DbException
+    commentId: T:System.Data.Common.DbException
+    description: "\n<p>An error occurred while executing the command text.</p>\n"
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>An invalid <xref href=\"System.Data.CommandBehavior\" data-throw-if-not-resolved=\"false\"></xref> value.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: DbCommand.ExecuteReaderAsync(CommandBehavior, CancellationToken)
+- uid: System.Data.Common.DbCommand.ExecuteReaderAsync(System.Threading.CancellationToken)
+  commentId: M:System.Data.Common.DbCommand.ExecuteReaderAsync(System.Threading.CancellationToken)
+  id: ExecuteReaderAsync(System.Threading.CancellationToken)
+  parent: System.Data.Common.DbCommand
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Data.Common.DbCommand.ExecuteReaderAsync(System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/System.Data.Common/src/System/Data/Common/DbCommand.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: ExecuteReaderAsync
+    path: src/System.Data.Common/src/System/Data/Common/DbCommand.cs
+    startLine: 220
+  assemblies:
+  - System.Data.Common
+  namespace: System.Data.Common
+  summary: "\n<p>An asynchronous version of <xref href=\"System.Data.Common.DbCommand.ExecuteReader\" data-throw-if-not-resolved=\"false\"></xref>, which executes the <xref href=\"System.Data.Common.DbCommand.CommandText\" data-throw-if-not-resolved=\"false\"></xref> against the <xref href=\"System.Data.Common.DbCommand.Connection\" data-throw-if-not-resolved=\"false\"></xref> and returns a <xref href=\"System.Data.Common.DbDataReader\" data-throw-if-not-resolved=\"false\"></xref>. This method propagates a notification that operations should be canceled.</p>\n<p>Invokes <xref href=\"System.Data.Common.DbCommand.ExecuteDbDataReaderAsync(System.Data.CommandBehavior,System.Threading.CancellationToken)\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  syntax:
+    content: public Task<DbDataReader> ExecuteReaderAsync(CancellationToken cancellationToken)
+    content.vb: Public Function ExecuteReaderAsync(cancellationToken As CancellationToken) As Task(Of DbDataReader)
+    parameters:
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\n<p>The token to monitor for cancellation requests.</p>\n"
+    return:
+      type: System.Threading.Tasks.Task{System.Data.Common.DbDataReader}
+      description: "\n<p>A task representing the asynchronous operation.</p>\n"
+  exceptions:
+  - type: System.Data.Common.DbException
+    commentId: T:System.Data.Common.DbException
+    description: "\n<p>An error occurred while executing the command text.</p>\n"
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>An invalid <xref href=\"System.Data.CommandBehavior\" data-throw-if-not-resolved=\"false\"></xref> value.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: DbCommand.ExecuteReaderAsync(CancellationToken)
+- uid: System.Data.Common.DbCommand.ExecuteScalar
+  commentId: M:System.Data.Common.DbCommand.ExecuteScalar
+  id: ExecuteScalar
+  parent: System.Data.Common.DbCommand
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Data.Common.DbCommand.ExecuteScalar()
+  type: Method
+  source:
+    remote:
+      path: src/System.Data.Common/src/System/Data/Common/DbCommand.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: ExecuteScalar
+    path: src/System.Data.Common/src/System/Data/Common/DbCommand.cs
+    startLine: 298
+  assemblies:
+  - System.Data.Common
+  namespace: System.Data.Common
+  summary: "\n<p>Executes the query and returns the first column of the first row in the result set returned by the query. All other columns and rows are ignored.</p>\n"
+  syntax:
+    content: public abstract object ExecuteScalar()
+    content.vb: Public MustOverride Function ExecuteScalar As Object
+    return:
+      type: System.Object
+      description: "\n<p>The first column of the first row in the result set.</p>\n"
+  implements:
+  - System.Data.IDbCommand.ExecuteScalar
+  modifiers.csharp:
+  - public
+  - abstract
+  modifiers.vb:
+  - Public
+  - MustOverride
+  nameWithType: DbCommand.ExecuteScalar()
+- uid: System.Data.Common.DbCommand.ExecuteScalarAsync
+  commentId: M:System.Data.Common.DbCommand.ExecuteScalarAsync
+  id: ExecuteScalarAsync
+  parent: System.Data.Common.DbCommand
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Data.Common.DbCommand.ExecuteScalarAsync()
+  type: Method
+  source:
+    remote:
+      path: src/System.Data.Common/src/System/Data/Common/DbCommand.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: ExecuteScalarAsync
+    path: src/System.Data.Common/src/System/Data/Common/DbCommand.cs
+    startLine: 264
+  assemblies:
+  - System.Data.Common
+  namespace: System.Data.Common
+  summary: "\n<p>An asynchronous version of <xref href=\"System.Data.Common.DbCommand.ExecuteScalar\" data-throw-if-not-resolved=\"false\"></xref>, which executes the query and returns the first column of the first row in the result set returned by the query. All other columns and rows are ignored.</p>\n<p>Invokes <xref href=\"System.Data.Common.DbCommand.ExecuteScalarAsync(System.Threading.CancellationToken)\" data-throw-if-not-resolved=\"false\"></xref> with CancellationToken.None.</p>\n"
+  syntax:
+    content: public Task<object> ExecuteScalarAsync()
+    content.vb: Public Function ExecuteScalarAsync As Task(Of Object)
+    return:
+      type: System.Threading.Tasks.Task{System.Object}
+      description: "\n<p>A task representing the asynchronous operation.</p>\n"
+  exceptions:
+  - type: System.Data.Common.DbException
+    commentId: T:System.Data.Common.DbException
+    description: "\n<p>An error occurred while executing the command text.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: DbCommand.ExecuteScalarAsync()
+- uid: System.Data.Common.DbCommand.ExecuteScalarAsync(System.Threading.CancellationToken)
+  commentId: M:System.Data.Common.DbCommand.ExecuteScalarAsync(System.Threading.CancellationToken)
+  id: ExecuteScalarAsync(System.Threading.CancellationToken)
+  parent: System.Data.Common.DbCommand
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Data.Common.DbCommand.ExecuteScalarAsync(System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/System.Data.Common/src/System/Data/Common/DbCommand.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: ExecuteScalarAsync
+    path: src/System.Data.Common/src/System/Data/Common/DbCommand.cs
+    startLine: 269
+  assemblies:
+  - System.Data.Common
+  namespace: System.Data.Common
+  summary: "\n<p>This is the asynchronous version of <xref href=\"System.Data.Common.DbCommand.ExecuteScalar\" data-throw-if-not-resolved=\"false\"></xref>. Providers should override with an appropriate implementation. The cancellation token may optionally be ignored.</p>\n<p>The default implementation invokes the synchronous <xref href=\"System.Data.Common.DbCommand.ExecuteScalar\" data-throw-if-not-resolved=\"false\"></xref> method and returns a completed task, blocking the calling thread. The default implementation will return a cancelled task if passed an already cancelled cancellation token. Exceptions thrown by ExecuteScalar will be communicated via the returned Task Exception property.</p>\n<p>Do not invoke other methods and properties of the <strong>DbCommand</strong> object until the returned Task is complete.</p>\n"
+  syntax:
+    content: public virtual Task<object> ExecuteScalarAsync(CancellationToken cancellationToken)
+    content.vb: Public Overridable Function ExecuteScalarAsync(cancellationToken As CancellationToken) As Task(Of Object)
+    parameters:
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: "\n<p>The token to monitor for cancellation requests.</p>\n"
+    return:
+      type: System.Threading.Tasks.Task{System.Object}
+      description: "\n<p>A task representing the asynchronous operation.</p>\n"
+  exceptions:
+  - type: System.Data.Common.DbException
+    commentId: T:System.Data.Common.DbException
+    description: "\n<p>An error occurred while executing the command text.</p>\n"
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  nameWithType: DbCommand.ExecuteScalarAsync(CancellationToken)
+- uid: System.Data.Common.DbCommand.Prepare
+  commentId: M:System.Data.Common.DbCommand.Prepare
+  id: Prepare
+  parent: System.Data.Common.DbCommand
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Data.Common.DbCommand.Prepare()
+  type: Method
+  source:
+    remote:
+      path: src/System.Data.Common/src/System/Data/Common/DbCommand.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Prepare
+    path: src/System.Data.Common/src/System/Data/Common/DbCommand.cs
+    startLine: 300
+  assemblies:
+  - System.Data.Common
+  namespace: System.Data.Common
+  summary: "\n<p>Creates a prepared (or compiled) version of the command on the data source.</p>\n"
+  syntax:
+    content: public abstract void Prepare()
+    content.vb: Public MustOverride Sub Prepare
+  implements:
+  - System.Data.IDbCommand.Prepare
+  modifiers.csharp:
+  - public
+  - abstract
+  modifiers.vb:
+  - Public
+  - MustOverride
+  nameWithType: DbCommand.Prepare()
+- uid: System.Data.Common.DbCommand.System#Data#IDbCommand#CreateParameter
+  commentId: M:System.Data.Common.DbCommand.System#Data#IDbCommand#CreateParameter
+  id: System#Data#IDbCommand#CreateParameter
+  isEii: true
+  parent: System.Data.Common.DbCommand
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Data.Common.DbCommand.System.Data.IDbCommand.CreateParameter()
+  type: Method
+  source:
+    remote:
+      path: src/System.Data.Common/src/System/Data/Common/DbCommand.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: System.Data.IDbCommand.CreateParameter
+    path: src/System.Data.Common/src/System/Data/Common/DbCommand.cs
+    startLine: 311
+  assemblies:
+  - System.Data.Common
+  namespace: System.Data.Common
+  summary: "\n<p>Creates a new instance of an <xref href=\"System.Data.IDbDataParameter\" data-throw-if-not-resolved=\"false\"></xref> object.</p>\n"
+  syntax:
+    content: IDbDataParameter IDbCommand.CreateParameter()
+    content.vb: Function System.Data.IDbCommand.CreateParameter As IDbDataParameter Implements IDbCommand.CreateParameter
+    return:
+      type: System.Data.IDbDataParameter
+      description: "\n<p>An <strong>IDbDataParameter</strong> object.</p>\n"
+  implements:
+  - System.Data.IDbCommand.CreateParameter
+  name.vb: System.Data.IDbCommand.CreateParameter()
+  nameWithType: DbCommand.IDbCommand.CreateParameter()
+  nameWithType.vb: DbCommand.System.Data.IDbCommand.CreateParameter()
+- uid: System.Data.Common.DbCommand.System#Data#IDbCommand#ExecuteReader
+  commentId: M:System.Data.Common.DbCommand.System#Data#IDbCommand#ExecuteReader
+  id: System#Data#IDbCommand#ExecuteReader
+  isEii: true
+  parent: System.Data.Common.DbCommand
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+  type: Method
+  source:
+    remote:
+      path: src/System.Data.Common/src/System/Data/Common/DbCommand.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: System.Data.IDbCommand.ExecuteReader
+    path: src/System.Data.Common/src/System/Data/Common/DbCommand.cs
+    startLine: 316
+  assemblies:
+  - System.Data.Common
+  namespace: System.Data.Common
+  summary: "\n<p>Executes the <xref href=\"System.Data.IDbCommand.CommandText\" data-throw-if-not-resolved=\"false\"></xref> against the <xref href=\"System.Data.IDbCommand.Connection\" data-throw-if-not-resolved=\"false\"></xref> and builds an <xref href=\"System.Data.IDataReader\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  syntax:
+    content: IDataReader IDbCommand.ExecuteReader()
+    content.vb: Function System.Data.IDbCommand.ExecuteReader As IDataReader Implements IDbCommand.ExecuteReader
+    return:
+      type: System.Data.IDataReader
+      description: "\n<p>An <xref href=\"System.Data.IDataReader\" data-throw-if-not-resolved=\"false\"></xref> object.</p>\n"
+  implements:
+  - System.Data.IDbCommand.ExecuteReader
+  name.vb: System.Data.IDbCommand.ExecuteReader()
+  nameWithType: DbCommand.IDbCommand.ExecuteReader()
+  nameWithType.vb: DbCommand.System.Data.IDbCommand.ExecuteReader()
+- uid: System.Data.Common.DbCommand.System#Data#IDbCommand#ExecuteReader(System.Data.CommandBehavior)
+  commentId: M:System.Data.Common.DbCommand.System#Data#IDbCommand#ExecuteReader(System.Data.CommandBehavior)
+  id: System#Data#IDbCommand#ExecuteReader(System.Data.CommandBehavior)
+  isEii: true
+  parent: System.Data.Common.DbCommand
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(System.Data.CommandBehavior)
+  type: Method
+  source:
+    remote:
+      path: src/System.Data.Common/src/System/Data/Common/DbCommand.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: System.Data.IDbCommand.ExecuteReader
+    path: src/System.Data.Common/src/System/Data/Common/DbCommand.cs
+    startLine: 321
+  assemblies:
+  - System.Data.Common
+  namespace: System.Data.Common
+  summary: "\n<p>Executes the <xref href=\"System.Data.IDbCommand.CommandText\" data-throw-if-not-resolved=\"false\"></xref> against the <xref href=\"System.Data.IDbCommand.Connection\" data-throw-if-not-resolved=\"false\"></xref>, and builds an <xref href=\"System.Data.IDataReader\" data-throw-if-not-resolved=\"false\"></xref> using one of the <xref href=\"System.Data.CommandBehavior\" data-throw-if-not-resolved=\"false\"></xref> values.</p>\n"
+  syntax:
+    content: IDataReader IDbCommand.ExecuteReader(CommandBehavior behavior)
+    content.vb: Function System.Data.IDbCommand.ExecuteReader(behavior As CommandBehavior) As IDataReader Implements IDbCommand.ExecuteReader
+    parameters:
+    - id: behavior
+      type: System.Data.CommandBehavior
+      description: "\n<p>One of the <xref href=\"System.Data.CommandBehavior\" data-throw-if-not-resolved=\"false\"></xref> values.</p>\n"
+    return:
+      type: System.Data.IDataReader
+      description: "\n<p>An <xref href=\"System.Data.IDataReader\" data-throw-if-not-resolved=\"false\"></xref> object.</p>\n"
+  implements:
+  - System.Data.IDbCommand.ExecuteReader(System.Data.CommandBehavior)
+  name.vb: System.Data.IDbCommand.ExecuteReader(CommandBehavior)
+  nameWithType: DbCommand.IDbCommand.ExecuteReader(CommandBehavior)
+  nameWithType.vb: DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior)
+- uid: System.Data.Common.DbCommand.Dispose
+  commentId: M:System.Data.Common.DbCommand.Dispose
+  id: Dispose
+  parent: System.Data.Common.DbCommand
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Data.Common.DbCommand.Dispose()
+  type: Method
+  source:
+    remote:
+      path: src/System.Data.Common/src/System/Data/Common/DbCommand.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Dispose
+    path: src/System.Data.Common/src/System/Data/Common/DbCommand.cs
+    startLine: 301
+  assemblies:
+  - System.Data.Common
+  namespace: System.Data.Common
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose
+  implements:
+  - System.IDisposable.Dispose
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: DbCommand.Dispose()
+- uid: System.Data.Common.DbCommand.Dispose(System.Boolean)
+  commentId: M:System.Data.Common.DbCommand.Dispose(System.Boolean)
+  id: Dispose(System.Boolean)
+  parent: System.Data.Common.DbCommand
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Data.Common.DbCommand.Dispose(System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/System.Data.Common/src/System/Data/Common/DbCommand.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Dispose
+    path: src/System.Data.Common/src/System/Data/Common/DbCommand.cs
+    startLine: 307
+  assemblies:
+  - System.Data.Common
+  namespace: System.Data.Common
+  syntax:
+    content: protected virtual void Dispose(bool disposing)
+    content.vb: Protected Overridable Sub Dispose(disposing As Boolean)
+    parameters:
+    - id: disposing
+      type: System.Boolean
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+  nameWithType: DbCommand.Dispose(Boolean)
+references:
+- uid: System.Data.Common
+  isExternal: false
+  name: "XXX"
+  fullName: System.Data.Common
+  nameWithType: System.Data.Common
+  commentId: N:System.Data.Common
+- uid: System.Object
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Object
+  nameWithType: Object
+  commentId: T:System.Object
+- uid: System.Data.IDbCommand
+  parent: System.Data
+  isExternal: false
+  name: "XXX"
+  fullName: System.Data.IDbCommand
+  nameWithType: IDbCommand
+  commentId: T:System.Data.IDbCommand
+- uid: System.IDisposable
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.IDisposable
+  nameWithType: IDisposable
+  commentId: T:System.IDisposable
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.ToString()
+  commentId: M:System.Object.ToString
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.Equals(Object)
+  commentId: M:System.Object.Equals(System.Object)
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.Equals(Object, Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.GetHashCode()
+  commentId: M:System.Object.GetHashCode
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.GetType()
+  commentId: M:System.Object.GetType
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.MemberwiseClone()
+  commentId: M:System.Object.MemberwiseClone
+- uid: System
+  isExternal: false
+  name: "XXX"
+  fullName: System
+  nameWithType: System
+  commentId: N:System
+- uid: System.Data
+  isExternal: false
+  name: "XXX"
+  fullName: System.Data
+  nameWithType: System.Data
+  commentId: N:System.Data
+- uid: System.Data.IDbCommand.CommandText
+  parent: System.Data.IDbCommand
+  isExternal: false
+  name: "XXX"
+  fullName: System.Data.IDbCommand.CommandText
+  nameWithType: IDbCommand.CommandText
+  commentId: P:System.Data.IDbCommand.CommandText
+- uid: System.String
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.String
+  nameWithType: String
+  commentId: T:System.String
+- uid: System.Data.IDbCommand.CommandTimeout
+  parent: System.Data.IDbCommand
+  isExternal: false
+  name: "XXX"
+  fullName: System.Data.IDbCommand.CommandTimeout
+  nameWithType: IDbCommand.CommandTimeout
+  commentId: P:System.Data.IDbCommand.CommandTimeout
+- uid: System.Int32
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Int32
+  nameWithType: Int32
+  commentId: T:System.Int32
+- uid: System.Data.IDbCommand.CommandType
+  parent: System.Data.IDbCommand
+  isExternal: false
+  name: "XXX"
+  fullName: System.Data.IDbCommand.CommandType
+  nameWithType: IDbCommand.CommandType
+  commentId: P:System.Data.IDbCommand.CommandType
+- uid: System.Data.CommandType
+  parent: System.Data
+  isExternal: false
+  name: "XXX"
+  fullName: System.Data.CommandType
+  nameWithType: CommandType
+  commentId: T:System.Data.CommandType
+- uid: System.Data.Common.DbConnection
+  parent: System.Data.Common
+  isExternal: false
+  name: "XXX"
+  fullName: System.Data.Common.DbConnection
+  nameWithType: DbConnection
+  commentId: T:System.Data.Common.DbConnection
+- uid: System.Data.Common.DbParameterCollection
+  parent: System.Data.Common
+  isExternal: false
+  name: "XXX"
+  fullName: System.Data.Common.DbParameterCollection
+  nameWithType: DbParameterCollection
+  commentId: T:System.Data.Common.DbParameterCollection
+- uid: System.Data.Common.DbTransaction
+  parent: System.Data.Common
+  isExternal: false
+  name: "XXX"
+  fullName: System.Data.Common.DbTransaction
+  nameWithType: DbTransaction
+  commentId: T:System.Data.Common.DbTransaction
+- uid: System.Boolean
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Boolean
+  nameWithType: Boolean
+  commentId: T:System.Boolean
+- uid: System.Data.IDbCommand.Connection
+  parent: System.Data.IDbCommand
+  isExternal: false
+  name: "XXX"
+  fullName: System.Data.IDbCommand.Connection
+  nameWithType: IDbCommand.Connection
+  commentId: P:System.Data.IDbCommand.Connection
+- uid: System.Data.IDbConnection
+  parent: System.Data
+  isExternal: false
+  name: "XXX"
+  fullName: System.Data.IDbConnection
+  nameWithType: IDbConnection
+  commentId: T:System.Data.IDbConnection
+- uid: System.Data.IDbCommand.Parameters
+  parent: System.Data.IDbCommand
+  isExternal: false
+  name: "XXX"
+  fullName: System.Data.IDbCommand.Parameters
+  nameWithType: IDbCommand.Parameters
+  commentId: P:System.Data.IDbCommand.Parameters
+- uid: System.Data.IDataParameterCollection
+  parent: System.Data
+  isExternal: false
+  name: "XXX"
+  fullName: System.Data.IDataParameterCollection
+  nameWithType: IDataParameterCollection
+  commentId: T:System.Data.IDataParameterCollection
+- uid: System.Data.IDbCommand.Transaction
+  parent: System.Data.IDbCommand
+  isExternal: false
+  name: "XXX"
+  fullName: System.Data.IDbCommand.Transaction
+  nameWithType: IDbCommand.Transaction
+  commentId: P:System.Data.IDbCommand.Transaction
+- uid: System.Data.IDbTransaction
+  parent: System.Data
+  isExternal: false
+  name: "XXX"
+  fullName: System.Data.IDbTransaction
+  nameWithType: IDbTransaction
+  commentId: T:System.Data.IDbTransaction
+- uid: System.Data.IDbCommand.UpdatedRowSource
+  parent: System.Data.IDbCommand
+  isExternal: false
+  name: "XXX"
+  fullName: System.Data.IDbCommand.UpdatedRowSource
+  nameWithType: IDbCommand.UpdatedRowSource
+  commentId: P:System.Data.IDbCommand.UpdatedRowSource
+- uid: System.Data.UpdateRowSource
+  parent: System.Data
+  isExternal: false
+  name: "XXX"
+  fullName: System.Data.UpdateRowSource
+  nameWithType: UpdateRowSource
+  commentId: T:System.Data.UpdateRowSource
+- uid: System.Data.IDbCommand.Cancel
+  parent: System.Data.IDbCommand
+  isExternal: false
+  name: "XXX"
+  fullName: System.Data.IDbCommand.Cancel()
+  spec.csharp:
+  - uid: System.Data.IDbCommand.Cancel
+    name: "XXX"
+    fullName: System.Data.IDbCommand.Cancel
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Data.IDbCommand.Cancel
+    name: "XXX"
+    fullName: System.Data.IDbCommand.Cancel
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: IDbCommand.Cancel()
+  commentId: M:System.Data.IDbCommand.Cancel
+- uid: System.Data.Common.DbParameter
+  parent: System.Data.Common
+  isExternal: false
+  name: "XXX"
+  fullName: System.Data.Common.DbParameter
+  nameWithType: DbParameter
+  commentId: T:System.Data.Common.DbParameter
+- uid: System.Data.CommandBehavior
+  parent: System.Data
+  isExternal: false
+  name: "XXX"
+  fullName: System.Data.CommandBehavior
+  nameWithType: CommandBehavior
+  commentId: T:System.Data.CommandBehavior
+- uid: System.Data.Common.DbDataReader
+  parent: System.Data.Common
+  isExternal: false
+  name: "XXX"
+  fullName: System.Data.Common.DbDataReader
+  nameWithType: DbDataReader
+  commentId: T:System.Data.Common.DbDataReader
+- uid: System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: false
+  name: "XXX"
+  fullName: System.Threading.CancellationToken
+  nameWithType: CancellationToken
+  commentId: T:System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{System.Data.Common.DbDataReader}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: "XXX"
+  fullName: System.Threading.Tasks.Task<System.Data.Common.DbDataReader>
+  fullname.vb: System.Threading.Tasks.Task(Of System.Data.Common.DbDataReader)
+  name.vb: Task(Of DbDataReader)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: "XXX"
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: "<"
+    fullName: <
+  - uid: System.Data.Common.DbDataReader
+    name: "XXX"
+    fullName: System.Data.Common.DbDataReader
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: "XXX"
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: 'XXX '
+    fullName: '(Of '
+  - uid: System.Data.Common.DbDataReader
+    name: "XXX"
+    fullName: System.Data.Common.DbDataReader
+  - name: "XXX"
+    fullName: )
+  nameWithType: Task<DbDataReader>
+  nameWithType.vb: Task(Of DbDataReader)
+  commentId: T:System.Threading.Tasks.Task{System.Data.Common.DbDataReader}
+- uid: System.Threading
+  isExternal: false
+  name: "XXX"
+  fullName: System.Threading
+  nameWithType: System.Threading
+  commentId: N:System.Threading
+- uid: System.Threading.Tasks.Task`1
+  isExternal: false
+  name: "XXX"
+  fullName: System.Threading.Tasks.Task<TResult>
+  fullname.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: "XXX"
+    fullName: System.Threading.Tasks.Task
+  - name: "<"
+    fullName: <
+  - name: "XXX"
+    fullName: TResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: "XXX"
+    fullName: System.Threading.Tasks.Task
+  - name: 'XXX '
+    fullName: '(Of '
+  - name: "XXX"
+    fullName: TResult
+  - name: "XXX"
+    fullName: )
+  nameWithType: Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  commentId: T:System.Threading.Tasks.Task`1
+- uid: System.Threading.Tasks
+  isExternal: false
+  name: "XXX"
+  fullName: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+- uid: System.Data.IDbCommand.ExecuteNonQuery
+  parent: System.Data.IDbCommand
+  isExternal: false
+  name: "XXX"
+  fullName: System.Data.IDbCommand.ExecuteNonQuery()
+  spec.csharp:
+  - uid: System.Data.IDbCommand.ExecuteNonQuery
+    name: "XXX"
+    fullName: System.Data.IDbCommand.ExecuteNonQuery
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Data.IDbCommand.ExecuteNonQuery
+    name: "XXX"
+    fullName: System.Data.IDbCommand.ExecuteNonQuery
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: IDbCommand.ExecuteNonQuery()
+  commentId: M:System.Data.IDbCommand.ExecuteNonQuery
+- uid: System.Threading.Tasks.Task{System.Int32}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: "XXX"
+  fullName: System.Threading.Tasks.Task<System.Int32>
+  fullname.vb: System.Threading.Tasks.Task(Of System.Int32)
+  name.vb: Task(Of Int32)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: "XXX"
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: "<"
+    fullName: <
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: "XXX"
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: 'XXX '
+    fullName: '(Of '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Task<Int32>
+  nameWithType.vb: Task(Of Int32)
+  commentId: T:System.Threading.Tasks.Task{System.Int32}
+- uid: System.Data.IDbCommand.ExecuteScalar
+  parent: System.Data.IDbCommand
+  isExternal: false
+  name: "XXX"
+  fullName: System.Data.IDbCommand.ExecuteScalar()
+  spec.csharp:
+  - uid: System.Data.IDbCommand.ExecuteScalar
+    name: "XXX"
+    fullName: System.Data.IDbCommand.ExecuteScalar
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Data.IDbCommand.ExecuteScalar
+    name: "XXX"
+    fullName: System.Data.IDbCommand.ExecuteScalar
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: IDbCommand.ExecuteScalar()
+  commentId: M:System.Data.IDbCommand.ExecuteScalar
+- uid: System.Threading.Tasks.Task{System.Object}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: "XXX"
+  fullName: System.Threading.Tasks.Task<System.Object>
+  fullname.vb: System.Threading.Tasks.Task(Of System.Object)
+  name.vb: Task(Of Object)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: "XXX"
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: "<"
+    fullName: <
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: "XXX"
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: 'XXX '
+    fullName: '(Of '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Task<Object>
+  nameWithType.vb: Task(Of Object)
+  commentId: T:System.Threading.Tasks.Task{System.Object}
+- uid: System.Data.IDbCommand.Prepare
+  parent: System.Data.IDbCommand
+  isExternal: false
+  name: "XXX"
+  fullName: System.Data.IDbCommand.Prepare()
+  spec.csharp:
+  - uid: System.Data.IDbCommand.Prepare
+    name: "XXX"
+    fullName: System.Data.IDbCommand.Prepare
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Data.IDbCommand.Prepare
+    name: "XXX"
+    fullName: System.Data.IDbCommand.Prepare
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: IDbCommand.Prepare()
+  commentId: M:System.Data.IDbCommand.Prepare
+- uid: System.Data.IDbCommand.CreateParameter
+  parent: System.Data.IDbCommand
+  isExternal: false
+  name: "XXX"
+  fullName: System.Data.IDbCommand.CreateParameter()
+  spec.csharp:
+  - uid: System.Data.IDbCommand.CreateParameter
+    name: "XXX"
+    fullName: System.Data.IDbCommand.CreateParameter
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Data.IDbCommand.CreateParameter
+    name: "XXX"
+    fullName: System.Data.IDbCommand.CreateParameter
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: IDbCommand.CreateParameter()
+  commentId: M:System.Data.IDbCommand.CreateParameter
+- uid: System.Data.IDbDataParameter
+  parent: System.Data
+  isExternal: false
+  name: "XXX"
+  fullName: System.Data.IDbDataParameter
+  nameWithType: IDbDataParameter
+  commentId: T:System.Data.IDbDataParameter
+- uid: System.Data.IDbCommand.ExecuteReader
+  parent: System.Data.IDbCommand
+  isExternal: false
+  name: "XXX"
+  fullName: System.Data.IDbCommand.ExecuteReader()
+  spec.csharp:
+  - uid: System.Data.IDbCommand.ExecuteReader
+    name: "XXX"
+    fullName: System.Data.IDbCommand.ExecuteReader
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Data.IDbCommand.ExecuteReader
+    name: "XXX"
+    fullName: System.Data.IDbCommand.ExecuteReader
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: IDbCommand.ExecuteReader()
+  commentId: M:System.Data.IDbCommand.ExecuteReader
+- uid: System.Data.IDataReader
+  parent: System.Data
+  isExternal: false
+  name: "XXX"
+  fullName: System.Data.IDataReader
+  nameWithType: IDataReader
+  commentId: T:System.Data.IDataReader
+- uid: System.Data.IDbCommand.ExecuteReader(System.Data.CommandBehavior)
+  parent: System.Data.IDbCommand
+  isExternal: false
+  name: "XXX"
+  fullName: System.Data.IDbCommand.ExecuteReader(System.Data.CommandBehavior)
+  spec.csharp:
+  - uid: System.Data.IDbCommand.ExecuteReader(System.Data.CommandBehavior)
+    name: "XXX"
+    fullName: System.Data.IDbCommand.ExecuteReader
+  - name: "XXX"
+    fullName: (
+  - uid: System.Data.CommandBehavior
+    name: "XXX"
+    fullName: System.Data.CommandBehavior
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Data.IDbCommand.ExecuteReader(System.Data.CommandBehavior)
+    name: "XXX"
+    fullName: System.Data.IDbCommand.ExecuteReader
+  - name: "XXX"
+    fullName: (
+  - uid: System.Data.CommandBehavior
+    name: "XXX"
+    fullName: System.Data.CommandBehavior
+  - name: "XXX"
+    fullName: )
+  nameWithType: IDbCommand.ExecuteReader(CommandBehavior)
+  commentId: M:System.Data.IDbCommand.ExecuteReader(System.Data.CommandBehavior)
+- uid: System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: false
+  name: "XXX"
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: "XXX"
+    fullName: System.IDisposable.Dispose
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: "XXX"
+    fullName: System.IDisposable.Dispose
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: IDisposable.Dispose()
+  commentId: M:System.IDisposable.Dispose
+- uid: System.Data.Common.DbException
+  isExternal: false
+  name: "XXX"
+  fullName: System.Data.Common.DbException
+  nameWithType: DbException
+  commentId: T:System.Data.Common.DbException
+- uid: System.ArgumentException
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentException
+  nameWithType: ArgumentException
+  commentId: T:System.ArgumentException

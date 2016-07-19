@@ -1,0 +1,620 @@
+items:
+- uid: System.Runtime.InteropServices.ArrayWithOffset
+  commentId: T:System.Runtime.InteropServices.ArrayWithOffset
+  id: ArrayWithOffset
+  parent: System.Runtime.InteropServices
+  children:
+  - System.Runtime.InteropServices.ArrayWithOffset.#ctor(System.Object,System.Int32)
+  - System.Runtime.InteropServices.ArrayWithOffset.Equals(System.Object)
+  - System.Runtime.InteropServices.ArrayWithOffset.Equals(System.Runtime.InteropServices.ArrayWithOffset)
+  - System.Runtime.InteropServices.ArrayWithOffset.GetArray
+  - System.Runtime.InteropServices.ArrayWithOffset.GetHashCode
+  - System.Runtime.InteropServices.ArrayWithOffset.GetOffset
+  - System.Runtime.InteropServices.ArrayWithOffset.op_Equality(System.Runtime.InteropServices.ArrayWithOffset,System.Runtime.InteropServices.ArrayWithOffset)
+  - System.Runtime.InteropServices.ArrayWithOffset.op_Inequality(System.Runtime.InteropServices.ArrayWithOffset,System.Runtime.InteropServices.ArrayWithOffset)
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Runtime.InteropServices.ArrayWithOffset
+  type: Struct
+  source:
+    remote:
+      path: src/mscorlib/src/System/Runtime/InteropServices/ArrayWithOffset.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: ArrayWithOffset
+    path: src/mscorlib/src/System/Runtime/InteropServices/ArrayWithOffset.cs
+    startLine: 10
+  assemblies:
+  - System.Runtime.InteropServices
+  namespace: System.Runtime.InteropServices
+  summary: "\n<p>Encapsulates an array and an offset within the specified array.</p>\n"
+  syntax:
+    content: >-
+      [Serializable]
+
+      [ComVisible(true)]
+
+      public struct ArrayWithOffset
+    content.vb: >-
+      <Serializable>
+
+      <ComVisible(True)>
+
+      Public Structure ArrayWithOffset
+  inheritedMembers:
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+  attributes:
+  - type: System.Runtime.InteropServices.StructLayoutAttribute
+    ctor: System.Runtime.InteropServices.StructLayoutAttribute.#ctor(System.Runtime.InteropServices.LayoutKind)
+    arguments:
+    - type: System.Runtime.InteropServices.LayoutKind
+      value: 0
+  modifiers.csharp:
+  - public
+  - struct
+  modifiers.vb:
+  - Public
+  - Structure
+  nameWithType: ArrayWithOffset
+- uid: System.Runtime.InteropServices.ArrayWithOffset.#ctor(System.Object,System.Int32)
+  commentId: M:System.Runtime.InteropServices.ArrayWithOffset.#ctor(System.Object,System.Int32)
+  id: '#ctor(System.Object,System.Int32)'
+  parent: System.Runtime.InteropServices.ArrayWithOffset
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Runtime.InteropServices.ArrayWithOffset.ArrayWithOffset(System.Object, System.Int32)
+  type: Constructor
+  source:
+    remote:
+      path: src/mscorlib/src/System/Runtime/InteropServices/ArrayWithOffset.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: .ctor
+    path: src/mscorlib/src/System/Runtime/InteropServices/ArrayWithOffset.cs
+    startLine: 19
+  assemblies:
+  - System.Runtime.InteropServices
+  namespace: System.Runtime.InteropServices
+  summary: "\n<p>Initializes a new instance of the <xref href=\"System.Runtime.InteropServices.ArrayWithOffset\" data-throw-if-not-resolved=\"false\"></xref> structure.</p>\n"
+  syntax:
+    content: >-
+      [SecuritySafeCritical]
+
+      public ArrayWithOffset(object array, int offset)
+    content.vb: >-
+      <SecuritySafeCritical>
+
+      Public Sub New(array As Object, offset As Integer)
+    parameters:
+    - id: array
+      type: System.Object
+      description: "\n<p>A managed array. </p>\n"
+    - id: offset
+      type: System.Int32
+      description: "\n<p>The offset in bytes, of the element to be passed through platform invoke. </p>\n"
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>The array is larger than 2 gigabytes (GB).</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: ArrayWithOffset.ArrayWithOffset(Object, Int32)
+- uid: System.Runtime.InteropServices.ArrayWithOffset.Equals(System.Object)
+  commentId: M:System.Runtime.InteropServices.ArrayWithOffset.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: System.Runtime.InteropServices.ArrayWithOffset
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Runtime.InteropServices.ArrayWithOffset.Equals(System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Runtime/InteropServices/ArrayWithOffset.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Equals
+    path: src/mscorlib/src/System/Runtime/InteropServices/ArrayWithOffset.cs
+    startLine: 43
+  assemblies:
+  - System.Runtime.InteropServices
+  namespace: System.Runtime.InteropServices
+  summary: "\n<p>Indicates whether the specified object matches the current <xref href=\"System.Runtime.InteropServices.ArrayWithOffset\" data-throw-if-not-resolved=\"false\"></xref> object.</p>\n"
+  syntax:
+    content: public override bool Equals(object obj)
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+    parameters:
+    - id: obj
+      type: System.Object
+      description: "\n<p>Object to compare with this instance. </p>\n"
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if the object matches this <xref href=\"System.Runtime.InteropServices.ArrayWithOffset\" data-throw-if-not-resolved=\"false\"></xref>; otherwise, <strong>false</strong>.</p>\n"
+  overridden: System.ValueType.Equals(System.Object)
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  nameWithType: ArrayWithOffset.Equals(Object)
+- uid: System.Runtime.InteropServices.ArrayWithOffset.Equals(System.Runtime.InteropServices.ArrayWithOffset)
+  commentId: M:System.Runtime.InteropServices.ArrayWithOffset.Equals(System.Runtime.InteropServices.ArrayWithOffset)
+  id: Equals(System.Runtime.InteropServices.ArrayWithOffset)
+  parent: System.Runtime.InteropServices.ArrayWithOffset
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Runtime.InteropServices.ArrayWithOffset.Equals(System.Runtime.InteropServices.ArrayWithOffset)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Runtime/InteropServices/ArrayWithOffset.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Equals
+    path: src/mscorlib/src/System/Runtime/InteropServices/ArrayWithOffset.cs
+    startLine: 51
+  assemblies:
+  - System.Runtime.InteropServices
+  namespace: System.Runtime.InteropServices
+  summary: "\n<p>Indicates whether the specified <xref href=\"System.Runtime.InteropServices.ArrayWithOffset\" data-throw-if-not-resolved=\"false\"></xref> object matches the current instance.</p>\n"
+  syntax:
+    content: public bool Equals(ArrayWithOffset obj)
+    content.vb: Public Function Equals(obj As ArrayWithOffset) As Boolean
+    parameters:
+    - id: obj
+      type: System.Runtime.InteropServices.ArrayWithOffset
+      description: "\n<p>An <xref href=\"System.Runtime.InteropServices.ArrayWithOffset\" data-throw-if-not-resolved=\"false\"></xref> object to compare with this instance.</p>\n"
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if the specified <xref href=\"System.Runtime.InteropServices.ArrayWithOffset\" data-throw-if-not-resolved=\"false\"></xref> object matches the current instance; otherwise, <strong>false</strong>.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: ArrayWithOffset.Equals(ArrayWithOffset)
+- uid: System.Runtime.InteropServices.ArrayWithOffset.GetArray
+  commentId: M:System.Runtime.InteropServices.ArrayWithOffset.GetArray
+  id: GetArray
+  parent: System.Runtime.InteropServices.ArrayWithOffset
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Runtime.InteropServices.ArrayWithOffset.GetArray()
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Runtime/InteropServices/ArrayWithOffset.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: GetArray
+    path: src/mscorlib/src/System/Runtime/InteropServices/ArrayWithOffset.cs
+    startLine: 28
+  assemblies:
+  - System.Runtime.InteropServices
+  namespace: System.Runtime.InteropServices
+  summary: "\n<p>Returns the managed array referenced by this <xref href=\"System.Runtime.InteropServices.ArrayWithOffset\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  syntax:
+    content: public object GetArray()
+    content.vb: Public Function GetArray As Object
+    return:
+      type: System.Object
+      description: "\n<p>The managed array this instance references.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: ArrayWithOffset.GetArray()
+- uid: System.Runtime.InteropServices.ArrayWithOffset.GetHashCode
+  commentId: M:System.Runtime.InteropServices.ArrayWithOffset.GetHashCode
+  id: GetHashCode
+  parent: System.Runtime.InteropServices.ArrayWithOffset
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Runtime.InteropServices.ArrayWithOffset.GetHashCode()
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Runtime/InteropServices/ArrayWithOffset.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: GetHashCode
+    path: src/mscorlib/src/System/Runtime/InteropServices/ArrayWithOffset.cs
+    startLine: 38
+  assemblies:
+  - System.Runtime.InteropServices
+  namespace: System.Runtime.InteropServices
+  summary: "\n<p>Returns a hash code for this value type.</p>\n"
+  syntax:
+    content: public override int GetHashCode()
+    content.vb: Public Overrides Function GetHashCode As Integer
+    return:
+      type: System.Int32
+      description: "\n<p>The hash code for this instance.</p>\n"
+  overridden: System.ValueType.GetHashCode
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  nameWithType: ArrayWithOffset.GetHashCode()
+- uid: System.Runtime.InteropServices.ArrayWithOffset.GetOffset
+  commentId: M:System.Runtime.InteropServices.ArrayWithOffset.GetOffset
+  id: GetOffset
+  parent: System.Runtime.InteropServices.ArrayWithOffset
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Runtime.InteropServices.ArrayWithOffset.GetOffset()
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Runtime/InteropServices/ArrayWithOffset.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: GetOffset
+    path: src/mscorlib/src/System/Runtime/InteropServices/ArrayWithOffset.cs
+    startLine: 33
+  assemblies:
+  - System.Runtime.InteropServices
+  namespace: System.Runtime.InteropServices
+  summary: "\n<p>Returns the offset provided when this <xref href=\"System.Runtime.InteropServices.ArrayWithOffset\" data-throw-if-not-resolved=\"false\"></xref> was constructed.</p>\n"
+  syntax:
+    content: public int GetOffset()
+    content.vb: Public Function GetOffset As Integer
+    return:
+      type: System.Int32
+      description: "\n<p>The offset for this instance.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: ArrayWithOffset.GetOffset()
+- uid: System.Runtime.InteropServices.ArrayWithOffset.op_Equality(System.Runtime.InteropServices.ArrayWithOffset,System.Runtime.InteropServices.ArrayWithOffset)
+  commentId: M:System.Runtime.InteropServices.ArrayWithOffset.op_Equality(System.Runtime.InteropServices.ArrayWithOffset,System.Runtime.InteropServices.ArrayWithOffset)
+  id: op_Equality(System.Runtime.InteropServices.ArrayWithOffset,System.Runtime.InteropServices.ArrayWithOffset)
+  parent: System.Runtime.InteropServices.ArrayWithOffset
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Runtime.InteropServices.ArrayWithOffset.Equality(System.Runtime.InteropServices.ArrayWithOffset, System.Runtime.InteropServices.ArrayWithOffset)
+  type: Operator
+  source:
+    remote:
+      path: src/mscorlib/src/System/Runtime/InteropServices/ArrayWithOffset.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: op_Equality
+    path: src/mscorlib/src/System/Runtime/InteropServices/ArrayWithOffset.cs
+    startLine: 56
+  assemblies:
+  - System.Runtime.InteropServices
+  namespace: System.Runtime.InteropServices
+  summary: "\n<p>Determines whether two specified <xref href=\"System.Runtime.InteropServices.ArrayWithOffset\" data-throw-if-not-resolved=\"false\"></xref> objects have the same value.</p>\n"
+  syntax:
+    content: public static bool operator ==(ArrayWithOffset a, ArrayWithOffset b)
+    content.vb: Public Shared Operator =(a As ArrayWithOffset, b As ArrayWithOffset) As Boolean
+    parameters:
+    - id: a
+      type: System.Runtime.InteropServices.ArrayWithOffset
+      description: "\n<p>An <xref href=\"System.Runtime.InteropServices.ArrayWithOffset\" data-throw-if-not-resolved=\"false\"></xref> object to compare with the <em>b</em> parameter. </p>\n"
+    - id: b
+      type: System.Runtime.InteropServices.ArrayWithOffset
+      description: "\n<p>An <xref href=\"System.Runtime.InteropServices.ArrayWithOffset\" data-throw-if-not-resolved=\"false\"></xref> object to compare with the <em>a</em> parameter.</p>\n"
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if the value of <em>a</em> is the same as the value of <em>b</em>; otherwise, <strong>false</strong>.</p>\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  nameWithType: ArrayWithOffset.Equality(ArrayWithOffset, ArrayWithOffset)
+- uid: System.Runtime.InteropServices.ArrayWithOffset.op_Inequality(System.Runtime.InteropServices.ArrayWithOffset,System.Runtime.InteropServices.ArrayWithOffset)
+  commentId: M:System.Runtime.InteropServices.ArrayWithOffset.op_Inequality(System.Runtime.InteropServices.ArrayWithOffset,System.Runtime.InteropServices.ArrayWithOffset)
+  id: op_Inequality(System.Runtime.InteropServices.ArrayWithOffset,System.Runtime.InteropServices.ArrayWithOffset)
+  parent: System.Runtime.InteropServices.ArrayWithOffset
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Runtime.InteropServices.ArrayWithOffset.Inequality(System.Runtime.InteropServices.ArrayWithOffset, System.Runtime.InteropServices.ArrayWithOffset)
+  type: Operator
+  source:
+    remote:
+      path: src/mscorlib/src/System/Runtime/InteropServices/ArrayWithOffset.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: op_Inequality
+    path: src/mscorlib/src/System/Runtime/InteropServices/ArrayWithOffset.cs
+    startLine: 61
+  assemblies:
+  - System.Runtime.InteropServices
+  namespace: System.Runtime.InteropServices
+  summary: "\n<p>Determines whether two specified <xref href=\"System.Runtime.InteropServices.ArrayWithOffset\" data-throw-if-not-resolved=\"false\"></xref> objects no not have the same value.</p>\n"
+  syntax:
+    content: public static bool operator !=(ArrayWithOffset a, ArrayWithOffset b)
+    content.vb: Public Shared Operator <>(a As ArrayWithOffset, b As ArrayWithOffset) As Boolean
+    parameters:
+    - id: a
+      type: System.Runtime.InteropServices.ArrayWithOffset
+      description: "\n<p>An <xref href=\"System.Runtime.InteropServices.ArrayWithOffset\" data-throw-if-not-resolved=\"false\"></xref> object to compare with the <em>b</em> parameter. </p>\n"
+    - id: b
+      type: System.Runtime.InteropServices.ArrayWithOffset
+      description: "\n<p>An <xref href=\"System.Runtime.InteropServices.ArrayWithOffset\" data-throw-if-not-resolved=\"false\"></xref> object to compare with the <em>a</em> parameter.</p>\n"
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if the value of <em>a</em> is not the same as the value of <em>b</em>; otherwise, <strong>false</strong>.</p>\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  nameWithType: ArrayWithOffset.Inequality(ArrayWithOffset, ArrayWithOffset)
+references:
+- uid: System.Runtime.InteropServices
+  isExternal: false
+  name: "XXX"
+  fullName: System.Runtime.InteropServices
+  nameWithType: System.Runtime.InteropServices
+  commentId: N:System.Runtime.InteropServices
+- uid: System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: false
+  name: "XXX"
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: "XXX"
+    fullName: System.ValueType.ToString
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: "XXX"
+    fullName: System.ValueType.ToString
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: ValueType.ToString()
+  commentId: M:System.ValueType.ToString
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.Equals(Object, Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.GetType()
+  commentId: M:System.Object.GetType
+- uid: System.ValueType
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.ValueType
+  nameWithType: ValueType
+  commentId: T:System.ValueType
+- uid: System.Object
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Object
+  nameWithType: Object
+  commentId: T:System.Object
+- uid: System
+  isExternal: false
+  name: "XXX"
+  fullName: System
+  nameWithType: System
+  commentId: N:System
+- uid: System.Int32
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Int32
+  nameWithType: Int32
+  commentId: T:System.Int32
+- uid: System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  name: "XXX"
+  fullName: System.ValueType.Equals(System.Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: "XXX"
+    fullName: System.ValueType.Equals
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: "XXX"
+    fullName: System.ValueType.Equals
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: ValueType.Equals(Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+- uid: System.Boolean
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Boolean
+  nameWithType: Boolean
+  commentId: T:System.Boolean
+- uid: System.Runtime.InteropServices.ArrayWithOffset
+  parent: System.Runtime.InteropServices
+  isExternal: false
+  name: "XXX"
+  fullName: System.Runtime.InteropServices.ArrayWithOffset
+  nameWithType: ArrayWithOffset
+  commentId: T:System.Runtime.InteropServices.ArrayWithOffset
+- uid: System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: false
+  name: "XXX"
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: "XXX"
+    fullName: System.ValueType.GetHashCode
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: "XXX"
+    fullName: System.ValueType.GetHashCode
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: ValueType.GetHashCode()
+  commentId: M:System.ValueType.GetHashCode
+- uid: System.ArgumentException
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentException
+  nameWithType: ArgumentException
+  commentId: T:System.ArgumentException

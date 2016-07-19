@@ -1,0 +1,2230 @@
+items:
+- uid: System.IO.DirectoryInfo
+  commentId: T:System.IO.DirectoryInfo
+  id: DirectoryInfo
+  parent: System.IO
+  children:
+  - System.IO.DirectoryInfo.#ctor(System.String)
+  - System.IO.DirectoryInfo.Create
+  - System.IO.DirectoryInfo.CreateSubdirectory(System.String)
+  - System.IO.DirectoryInfo.Delete
+  - System.IO.DirectoryInfo.Delete(System.Boolean)
+  - System.IO.DirectoryInfo.EnumerateDirectories
+  - System.IO.DirectoryInfo.EnumerateDirectories(System.String)
+  - System.IO.DirectoryInfo.EnumerateDirectories(System.String,System.IO.SearchOption)
+  - System.IO.DirectoryInfo.EnumerateFiles
+  - System.IO.DirectoryInfo.EnumerateFiles(System.String)
+  - System.IO.DirectoryInfo.EnumerateFiles(System.String,System.IO.SearchOption)
+  - System.IO.DirectoryInfo.EnumerateFileSystemInfos
+  - System.IO.DirectoryInfo.EnumerateFileSystemInfos(System.String)
+  - System.IO.DirectoryInfo.EnumerateFileSystemInfos(System.String,System.IO.SearchOption)
+  - System.IO.DirectoryInfo.Exists
+  - System.IO.DirectoryInfo.GetDirectories
+  - System.IO.DirectoryInfo.GetDirectories(System.String)
+  - System.IO.DirectoryInfo.GetDirectories(System.String,System.IO.SearchOption)
+  - System.IO.DirectoryInfo.GetFiles
+  - System.IO.DirectoryInfo.GetFiles(System.String)
+  - System.IO.DirectoryInfo.GetFiles(System.String,System.IO.SearchOption)
+  - System.IO.DirectoryInfo.GetFileSystemInfos
+  - System.IO.DirectoryInfo.GetFileSystemInfos(System.String)
+  - System.IO.DirectoryInfo.GetFileSystemInfos(System.String,System.IO.SearchOption)
+  - System.IO.DirectoryInfo.MoveTo(System.String)
+  - System.IO.DirectoryInfo.Name
+  - System.IO.DirectoryInfo.Parent
+  - System.IO.DirectoryInfo.Root
+  - System.IO.DirectoryInfo.ToString
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.DirectoryInfo
+  type: Class
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/DirectoryInfo.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: DirectoryInfo
+    path: src/mscorlib/src/System/IO/DirectoryInfo.cs
+    startLine: 34
+  assemblies:
+  - System.IO.FileSystem
+  namespace: System.IO
+  summary: "\n<p>Exposes instance methods for creating, moving, and enumerating through directories and subdirectories. This class cannot be inherited.</p>\n"
+  syntax:
+    content: >-
+      [Serializable]
+
+      [ComVisible(true)]
+
+      public sealed class DirectoryInfo : FileSystemInfo, ISerializable
+    content.vb: >-
+      <Serializable>
+
+      <ComVisible(True)>
+
+      Public NotInheritable Class DirectoryInfo
+          Inherits FileSystemInfo
+          Implements ISerializable
+  seealso:
+  - type: System.IO.File
+    commentId: T:System.IO.File
+  - type: System.IO.FileSystemInfo.Attributes
+    commentId: P:System.IO.FileSystemInfo.Attributes
+  - type: System.IO.FileSystemWatcher
+    commentId: T:System.IO.FileSystemWatcher
+  - type: System.IO.Directory
+    commentId: T:System.IO.Directory
+  - type: System.IO.Path
+    commentId: T:System.IO.Path
+  inheritance:
+  - System.Object
+  - System.IO.FileSystemInfo
+  inheritedMembers:
+  - System.IO.FileSystemInfo.FullPath
+  - System.IO.FileSystemInfo.OriginalPath
+  - System.IO.FileSystemInfo.Attributes
+  - System.IO.FileSystemInfo.CreationTime
+  - System.IO.FileSystemInfo.CreationTimeUtc
+  - System.IO.FileSystemInfo.Extension
+  - System.IO.FileSystemInfo.FullName
+  - System.IO.FileSystemInfo.LastAccessTime
+  - System.IO.FileSystemInfo.LastAccessTimeUtc
+  - System.IO.FileSystemInfo.LastWriteTime
+  - System.IO.FileSystemInfo.LastWriteTimeUtc
+  - System.IO.FileSystemInfo.Refresh
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+  nameWithType: DirectoryInfo
+- uid: System.IO.DirectoryInfo.#ctor(System.String)
+  commentId: M:System.IO.DirectoryInfo.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: System.IO.DirectoryInfo
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.DirectoryInfo.DirectoryInfo(System.String)
+  type: Constructor
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/DirectoryInfo.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: .ctor
+    path: src/mscorlib/src/System/IO/DirectoryInfo.cs
+    startLine: 62
+  assemblies:
+  - System.IO.FileSystem
+  namespace: System.IO
+  summary: "\n<p>Initializes a new instance of the <xref href=\"System.IO.DirectoryInfo\" data-throw-if-not-resolved=\"false\"></xref> class on the specified path.</p>\n"
+  syntax:
+    content: >-
+      [SecuritySafeCritical]
+
+      public DirectoryInfo(string path)
+    content.vb: >-
+      <SecuritySafeCritical>
+
+      Public Sub New(path As String)
+    parameters:
+    - id: path
+      type: System.String
+      description: "\n<p>A string specifying the path on which to create the <strong>DirectoryInfo</strong>. </p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>path</em> is <strong>null</strong>. </p>\n"
+  - type: System.Security.SecurityException
+    commentId: T:System.Security.SecurityException
+    description: "\n<p>The caller does not have the required permission. </p>\n"
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>\n<em>path</em> contains invalid characters such as \", <, >, or |. </p>\n"
+  - type: System.IO.PathTooLongException
+    commentId: T:System.IO.PathTooLongException
+    description: "\n<p>The specified path, file name, or both exceed the system-defined maximum length. For example, on Windows-based platforms, paths must be less than 248 characters, and file names must be less than 260 characters. The specified path, file name, or both are too long.</p>\n"
+  seealso:
+  - type: System.IO.DriveInfo
+    commentId: T:System.IO.DriveInfo
+  see:
+  - type: System.Security.Permissions.FileIOPermission
+    commentId: T:System.Security.Permissions.FileIOPermission
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: DirectoryInfo.DirectoryInfo(String)
+- uid: System.IO.DirectoryInfo.Exists
+  commentId: P:System.IO.DirectoryInfo.Exists
+  id: Exists
+  parent: System.IO.DirectoryInfo
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.DirectoryInfo.Exists
+  type: Property
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/DirectoryInfo.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Exists
+    path: src/mscorlib/src/System/IO/DirectoryInfo.cs
+    startLine: 240
+  assemblies:
+  - System.IO.FileSystem
+  namespace: System.IO
+  summary: "\n<p>Gets a value indicating whether the directory exists.</p>\n"
+  syntax:
+    content: >-
+      public override bool Exists
+
+      {
+          [SecuritySafeCritical]
+          get;
+      }
+    content.vb: Public Overrides ReadOnly Property Exists As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if the directory exists; otherwise, <strong>false</strong>.</p>\n"
+  overridden: System.IO.FileSystemInfo.Exists
+  modifiers.csharp:
+  - public
+  - override
+  - get
+  modifiers.vb:
+  - Public
+  - Overrides
+  - ReadOnly
+  nameWithType: DirectoryInfo.Exists
+- uid: System.IO.DirectoryInfo.Name
+  commentId: P:System.IO.DirectoryInfo.Name
+  id: Name
+  parent: System.IO.DirectoryInfo
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.DirectoryInfo.Name
+  type: Property
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/DirectoryInfo.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Name
+    path: src/mscorlib/src/System/IO/DirectoryInfo.cs
+    startLine: 127
+  assemblies:
+  - System.IO.FileSystem
+  namespace: System.IO
+  summary: "\n<p>Gets the name of this <xref href=\"System.IO.DirectoryInfo\" data-throw-if-not-resolved=\"false\"></xref> instance.</p>\n"
+  syntax:
+    content: public override string Name { get; }
+    content.vb: Public Overrides ReadOnly Property Name As String
+    parameters: []
+    return:
+      type: System.String
+      description: "\n<p>The directory name.</p>\n"
+  overridden: System.IO.FileSystemInfo.Name
+  seealso:
+  - type: System.IO.FileSystemInfo.FullName
+    commentId: P:System.IO.FileSystemInfo.FullName
+  modifiers.csharp:
+  - public
+  - override
+  - get
+  modifiers.vb:
+  - Public
+  - Overrides
+  - ReadOnly
+  nameWithType: DirectoryInfo.Name
+- uid: System.IO.DirectoryInfo.Parent
+  commentId: P:System.IO.DirectoryInfo.Parent
+  id: Parent
+  parent: System.IO.DirectoryInfo
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.DirectoryInfo.Parent
+  type: Property
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/DirectoryInfo.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Parent
+    path: src/mscorlib/src/System/IO/DirectoryInfo.cs
+    startLine: 140
+  assemblies:
+  - System.IO.FileSystem
+  namespace: System.IO
+  summary: "\n<p>Gets the parent directory of a specified subdirectory.</p>\n"
+  syntax:
+    content: >-
+      public DirectoryInfo Parent
+
+      {
+          [SecuritySafeCritical]
+          get;
+      }
+    content.vb: Public ReadOnly Property Parent As DirectoryInfo
+    parameters: []
+    return:
+      type: System.IO.DirectoryInfo
+      description: "\n<p>The parent directory, or <strong>null</strong> if the path is null or if the file path denotes a root (such as \"\\\", \"C:\", or * \"\\\\server\\share\").</p>\n"
+  exceptions:
+  - type: System.Security.SecurityException
+    commentId: T:System.Security.SecurityException
+    description: "\n<p>The caller does not have the required permission. </p>\n"
+  see:
+  - type: System.Security.Permissions.FileIOPermission
+    commentId: T:System.Security.Permissions.FileIOPermission
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  nameWithType: DirectoryInfo.Parent
+- uid: System.IO.DirectoryInfo.Root
+  commentId: P:System.IO.DirectoryInfo.Root
+  id: Root
+  parent: System.IO.DirectoryInfo
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.DirectoryInfo.Root
+  type: Property
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/DirectoryInfo.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Root
+    path: src/mscorlib/src/System/IO/DirectoryInfo.cs
+    startLine: 516
+  assemblies:
+  - System.IO.FileSystem
+  namespace: System.IO
+  summary: "\n<p>Gets the root portion of the directory.</p>\n"
+  syntax:
+    content: >-
+      public DirectoryInfo Root
+
+      {
+          [SecuritySafeCritical]
+          get;
+      }
+    content.vb: Public ReadOnly Property Root As DirectoryInfo
+    parameters: []
+    return:
+      type: System.IO.DirectoryInfo
+      description: "\n<p>An object that represents the root of the directory.</p>\n"
+  exceptions:
+  - type: System.Security.SecurityException
+    commentId: T:System.Security.SecurityException
+    description: "\n<p>The caller does not have the required permission. </p>\n"
+  see:
+  - type: System.Security.Permissions.FileIOPermission
+    commentId: T:System.Security.Permissions.FileIOPermission
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  nameWithType: DirectoryInfo.Root
+- uid: System.IO.DirectoryInfo.Create
+  commentId: M:System.IO.DirectoryInfo.Create
+  id: Create
+  parent: System.IO.DirectoryInfo
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.DirectoryInfo.Create()
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/DirectoryInfo.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Create
+    path: src/mscorlib/src/System/IO/DirectoryInfo.cs
+    startLine: 223
+  assemblies:
+  - System.IO.FileSystem
+  namespace: System.IO
+  summary: "\n<p>Creates a directory.</p>\n"
+  syntax:
+    content: public void Create()
+    content.vb: Public Sub Create
+  exceptions:
+  - type: System.IO.IOException
+    commentId: T:System.IO.IOException
+    description: "\n<p>The directory cannot be created. </p>\n"
+  see:
+  - type: System.Security.Permissions.FileIOPermission
+    commentId: T:System.Security.Permissions.FileIOPermission
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: DirectoryInfo.Create()
+- uid: System.IO.DirectoryInfo.CreateSubdirectory(System.String)
+  commentId: M:System.IO.DirectoryInfo.CreateSubdirectory(System.String)
+  id: CreateSubdirectory(System.String)
+  parent: System.IO.DirectoryInfo
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.DirectoryInfo.CreateSubdirectory(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/DirectoryInfo.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: CreateSubdirectory
+    path: src/mscorlib/src/System/IO/DirectoryInfo.cs
+    startLine: 165
+  assemblies:
+  - System.IO.FileSystem
+  namespace: System.IO
+  summary: "\n<p>Creates a subdirectory or subdirectories on the specified path. The specified path can be relative to this instance of the <xref href=\"System.IO.DirectoryInfo\" data-throw-if-not-resolved=\"false\"></xref> class.</p>\n"
+  syntax:
+    content: >-
+      [SecuritySafeCritical]
+
+      public DirectoryInfo CreateSubdirectory(string path)
+    content.vb: >-
+      <SecuritySafeCritical>
+
+      Public Function CreateSubdirectory(path As String) As DirectoryInfo
+    parameters:
+    - id: path
+      type: System.String
+      description: "\n<p>The specified path. This cannot be a different disk volume or Universal Naming Convention (UNC) name. </p>\n"
+    return:
+      type: System.IO.DirectoryInfo
+      description: "\n<p>The last directory specified in <em>path</em>.</p>\n"
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>\n<em>path</em> does not specify a valid file path or contains invalid <strong>DirectoryInfo</strong> characters. </p>\n"
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>path</em> is <strong>null</strong>. </p>\n"
+  - type: System.IO.DirectoryNotFoundException
+    commentId: T:System.IO.DirectoryNotFoundException
+    description: "\n<p>The specified path is invalid, such as being on an unmapped drive. </p>\n"
+  - type: System.IO.IOException
+    commentId: T:System.IO.IOException
+    description: "\n<p>The subdirectory cannot be created.</p>\n<p>-or- </p>\n<p>A file or directory already has the name specified by <em>path</em>. </p>\n"
+  - type: System.IO.PathTooLongException
+    commentId: T:System.IO.PathTooLongException
+    description: "\n<p>The specified path, file name, or both exceed the system-defined maximum length. For example, on Windows-based platforms, paths must be less than 248 characters, and file names must be less than 260 characters. The specified path, file name, or both are too long.</p>\n"
+  - type: System.Security.SecurityException
+    commentId: T:System.Security.SecurityException
+    description: "\n<p>The caller does not have code access permission to create the directory.</p>\n<p>-or-</p>\n<p>The caller does not have code access permission to read the directory described by the returned <xref href=\"System.IO.DirectoryInfo\" data-throw-if-not-resolved=\"false\"></xref> object.  This can occur when the <em>path</em> parameter describes an existing directory.</p>\n"
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: "\n<p>\n<em>path</em> contains a colon character (:) that is not part of a drive label (\"C:\\\").</p>\n"
+  see:
+  - type: System.Security.Permissions.FileIOPermission
+    commentId: T:System.Security.Permissions.FileIOPermission
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: DirectoryInfo.CreateSubdirectory(String)
+- uid: System.IO.DirectoryInfo.Delete
+  commentId: M:System.IO.DirectoryInfo.Delete
+  id: Delete
+  parent: System.IO.DirectoryInfo
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.DirectoryInfo.Delete()
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/DirectoryInfo.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Delete
+    path: src/mscorlib/src/System/IO/DirectoryInfo.cs
+    startLine: 607
+  assemblies:
+  - System.IO.FileSystem
+  namespace: System.IO
+  summary: "\n<p>Deletes this <xref href=\"System.IO.DirectoryInfo\" data-throw-if-not-resolved=\"false\"></xref> if it is empty.</p>\n"
+  syntax:
+    content: >-
+      [SecuritySafeCritical]
+
+      public override void Delete()
+    content.vb: >-
+      <SecuritySafeCritical>
+
+      Public Overrides Sub Delete
+  overridden: System.IO.FileSystemInfo.Delete
+  exceptions:
+  - type: System.UnauthorizedAccessException
+    commentId: T:System.UnauthorizedAccessException
+    description: "\n<p>The directory contains a read-only file.</p>\n"
+  - type: System.IO.DirectoryNotFoundException
+    commentId: T:System.IO.DirectoryNotFoundException
+    description: "\n<p>The directory described by this <xref href=\"System.IO.DirectoryInfo\" data-throw-if-not-resolved=\"false\"></xref> object does not exist or could not be found.</p>\n"
+  - type: System.IO.IOException
+    commentId: T:System.IO.IOException
+    description: "\n<p>The directory is not empty. </p>\n<p>-or-</p>\n<p>The directory is the application's current working directory.</p>\n<p>-or-</p>\n<p>There is an open handle on the directory, and the operating system is Windows XP or earlier. This open handle can result from enumerating directories. For more information, see How to: Enumerate Directories and Files.</p>\n"
+  - type: System.Security.SecurityException
+    commentId: T:System.Security.SecurityException
+    description: "\n<p>The caller does not have the required permission. </p>\n"
+  see:
+  - type: System.Security.Permissions.FileIOPermission
+    commentId: T:System.Security.Permissions.FileIOPermission
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  nameWithType: DirectoryInfo.Delete()
+- uid: System.IO.DirectoryInfo.Delete(System.Boolean)
+  commentId: M:System.IO.DirectoryInfo.Delete(System.Boolean)
+  id: Delete(System.Boolean)
+  parent: System.IO.DirectoryInfo
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.DirectoryInfo.Delete(System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/DirectoryInfo.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Delete
+    path: src/mscorlib/src/System/IO/DirectoryInfo.cs
+    startLine: 613
+  assemblies:
+  - System.IO.FileSystem
+  namespace: System.IO
+  summary: "\n<p>Deletes this instance of a <xref href=\"System.IO.DirectoryInfo\" data-throw-if-not-resolved=\"false\"></xref>, specifying whether to delete subdirectories and files.</p>\n"
+  syntax:
+    content: >-
+      [SecuritySafeCritical]
+
+      public void Delete(bool recursive)
+    content.vb: >-
+      <SecuritySafeCritical>
+
+      Public Sub Delete(recursive As Boolean)
+    parameters:
+    - id: recursive
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> to delete this directory, its subdirectories, and all files; otherwise, <strong>false</strong>. </p>\n"
+  exceptions:
+  - type: System.UnauthorizedAccessException
+    commentId: T:System.UnauthorizedAccessException
+    description: "\n<p>The directory contains a read-only file.</p>\n"
+  - type: System.IO.DirectoryNotFoundException
+    commentId: T:System.IO.DirectoryNotFoundException
+    description: "\n<p>The directory described by this <xref href=\"System.IO.DirectoryInfo\" data-throw-if-not-resolved=\"false\"></xref> object does not exist or could not be found.</p>\n"
+  - type: System.IO.IOException
+    commentId: T:System.IO.IOException
+    description: "\n<p>The directory is read-only.</p>\n<p>-or- </p>\n<p>The directory contains one or more files or subdirectories and <em>recursive</em> is <strong>false</strong>.</p>\n<p>-or-</p>\n<p>The directory is the application's current working directory. </p>\n<p>-or-</p>\n<p>There is an open handle on the directory or on one of its files, and the operating system is Windows XP or earlier. This open handle can result from enumerating directories and files. For more information, see How to: Enumerate Directories and Files.</p>\n"
+  - type: System.Security.SecurityException
+    commentId: T:System.Security.SecurityException
+    description: "\n<p>The caller does not have the required permission. </p>\n"
+  see:
+  - type: System.Security.Permissions.FileIOPermissionAccess
+    commentId: T:System.Security.Permissions.FileIOPermissionAccess
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: DirectoryInfo.Delete(Boolean)
+- uid: System.IO.DirectoryInfo.EnumerateDirectories
+  commentId: M:System.IO.DirectoryInfo.EnumerateDirectories
+  id: EnumerateDirectories
+  parent: System.IO.DirectoryInfo
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.DirectoryInfo.EnumerateDirectories()
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/DirectoryInfo.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: EnumerateDirectories
+    path: src/mscorlib/src/System/IO/DirectoryInfo.cs
+    startLine: 407
+  assemblies:
+  - System.IO.FileSystem
+  namespace: System.IO
+  summary: "\n<p>Returns an enumerable collection of directory information in the current directory.</p>\n"
+  syntax:
+    content: public IEnumerable<DirectoryInfo> EnumerateDirectories()
+    content.vb: Public Function EnumerateDirectories As IEnumerable(Of DirectoryInfo)
+    return:
+      type: System.Collections.Generic.IEnumerable{System.IO.DirectoryInfo}
+      description: "\n<p>An enumerable collection of directories in the current directory.</p>\n"
+  exceptions:
+  - type: System.IO.DirectoryNotFoundException
+    commentId: T:System.IO.DirectoryNotFoundException
+    description: "\n<p>The path encapsulated in the <xref href=\"System.IO.DirectoryInfo\" data-throw-if-not-resolved=\"false\"></xref> object is invalid (for example, it is on an unmapped drive). </p>\n"
+  - type: System.Security.SecurityException
+    commentId: T:System.Security.SecurityException
+    description: "\n<p>The caller does not have the required permission. </p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: DirectoryInfo.EnumerateDirectories()
+- uid: System.IO.DirectoryInfo.EnumerateDirectories(System.String)
+  commentId: M:System.IO.DirectoryInfo.EnumerateDirectories(System.String)
+  id: EnumerateDirectories(System.String)
+  parent: System.IO.DirectoryInfo
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.DirectoryInfo.EnumerateDirectories(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/DirectoryInfo.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: EnumerateDirectories
+    path: src/mscorlib/src/System/IO/DirectoryInfo.cs
+    startLine: 412
+  assemblies:
+  - System.IO.FileSystem
+  namespace: System.IO
+  summary: "\n<p>Returns an enumerable collection of directory information that matches a specified search pattern.</p>\n"
+  syntax:
+    content: public IEnumerable<DirectoryInfo> EnumerateDirectories(string searchPattern)
+    content.vb: Public Function EnumerateDirectories(searchPattern As String) As IEnumerable(Of DirectoryInfo)
+    parameters:
+    - id: searchPattern
+      type: System.String
+      description: "\n<p>The search string to match against the names of directories.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters (see Remarks), but doesn't support regular expressions. The default pattern is \"*\", which returns all files.</p>\n"
+    return:
+      type: System.Collections.Generic.IEnumerable{System.IO.DirectoryInfo}
+      description: "\n<p>An enumerable collection of directories that matches <em>searchPattern</em>.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>searchPattern</em> is <strong>null</strong>. </p>\n"
+  - type: System.IO.DirectoryNotFoundException
+    commentId: T:System.IO.DirectoryNotFoundException
+    description: "\n<p>The path encapsulated in the <xref href=\"System.IO.DirectoryInfo\" data-throw-if-not-resolved=\"false\"></xref> object is invalid (for example, it is on an unmapped drive). </p>\n"
+  - type: System.Security.SecurityException
+    commentId: T:System.Security.SecurityException
+    description: "\n<p>The caller does not have the required permission. </p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: DirectoryInfo.EnumerateDirectories(String)
+- uid: System.IO.DirectoryInfo.EnumerateDirectories(System.String,System.IO.SearchOption)
+  commentId: M:System.IO.DirectoryInfo.EnumerateDirectories(System.String,System.IO.SearchOption)
+  id: EnumerateDirectories(System.String,System.IO.SearchOption)
+  parent: System.IO.DirectoryInfo
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.DirectoryInfo.EnumerateDirectories(System.String, System.IO.SearchOption)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/DirectoryInfo.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: EnumerateDirectories
+    path: src/mscorlib/src/System/IO/DirectoryInfo.cs
+    startLine: 421
+  assemblies:
+  - System.IO.FileSystem
+  namespace: System.IO
+  summary: "\n<p>Returns an enumerable collection of directory information that matches a specified search pattern and search subdirectory option. </p>\n"
+  syntax:
+    content: public IEnumerable<DirectoryInfo> EnumerateDirectories(string searchPattern, SearchOption searchOption)
+    content.vb: Public Function EnumerateDirectories(searchPattern As String, searchOption As SearchOption) As IEnumerable(Of DirectoryInfo)
+    parameters:
+    - id: searchPattern
+      type: System.String
+      description: "\n<p>The search string to match against the names of directories.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters (see Remarks), but doesn't support regular expressions. The default pattern is \"*\", which returns all files.</p>\n"
+    - id: searchOption
+      type: System.IO.SearchOption
+      description: "\n<p>One of the enumeration values that specifies whether the search operation should include only the current directory or all subdirectories. The default value is <xref href=\"System.IO.SearchOption.TopDirectoryOnly\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    return:
+      type: System.Collections.Generic.IEnumerable{System.IO.DirectoryInfo}
+      description: "\n<p>An enumerable collection of directories that matches <em>searchPattern</em> and <em>searchOption</em>.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>searchPattern</em> is <strong>null</strong>. </p>\n"
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>searchOption</em> is not a valid <xref href=\"System.IO.SearchOption\" data-throw-if-not-resolved=\"false\"></xref> value.</p>\n"
+  - type: System.IO.DirectoryNotFoundException
+    commentId: T:System.IO.DirectoryNotFoundException
+    description: "\n<p>The path encapsulated in the <xref href=\"System.IO.DirectoryInfo\" data-throw-if-not-resolved=\"false\"></xref> object is invalid (for example, it is on an unmapped drive). </p>\n"
+  - type: System.Security.SecurityException
+    commentId: T:System.Security.SecurityException
+    description: "\n<p>The caller does not have the required permission. </p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: DirectoryInfo.EnumerateDirectories(String, SearchOption)
+- uid: System.IO.DirectoryInfo.EnumerateFiles
+  commentId: M:System.IO.DirectoryInfo.EnumerateFiles
+  id: EnumerateFiles
+  parent: System.IO.DirectoryInfo
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.DirectoryInfo.EnumerateFiles()
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/DirectoryInfo.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: EnumerateFiles
+    path: src/mscorlib/src/System/IO/DirectoryInfo.cs
+    startLine: 440
+  assemblies:
+  - System.IO.FileSystem
+  namespace: System.IO
+  summary: "\n<p>Returns an enumerable collection of file information in the current directory.</p>\n"
+  syntax:
+    content: public IEnumerable<FileInfo> EnumerateFiles()
+    content.vb: Public Function EnumerateFiles As IEnumerable(Of FileInfo)
+    return:
+      type: System.Collections.Generic.IEnumerable{System.IO.FileInfo}
+      description: "\n<p>An enumerable collection of the files in the current directory.</p>\n"
+  exceptions:
+  - type: System.IO.DirectoryNotFoundException
+    commentId: T:System.IO.DirectoryNotFoundException
+    description: "\n<p>The path encapsulated in the <xref href=\"System.IO.DirectoryInfo\" data-throw-if-not-resolved=\"false\"></xref> object is invalid (for example, it is on an unmapped drive). </p>\n"
+  - type: System.Security.SecurityException
+    commentId: T:System.Security.SecurityException
+    description: "\n<p>The caller does not have the required permission. </p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: DirectoryInfo.EnumerateFiles()
+- uid: System.IO.DirectoryInfo.EnumerateFiles(System.String)
+  commentId: M:System.IO.DirectoryInfo.EnumerateFiles(System.String)
+  id: EnumerateFiles(System.String)
+  parent: System.IO.DirectoryInfo
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.DirectoryInfo.EnumerateFiles(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/DirectoryInfo.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: EnumerateFiles
+    path: src/mscorlib/src/System/IO/DirectoryInfo.cs
+    startLine: 445
+  assemblies:
+  - System.IO.FileSystem
+  namespace: System.IO
+  summary: "\n<p>Returns an enumerable collection of file information that matches a search pattern.</p>\n"
+  syntax:
+    content: public IEnumerable<FileInfo> EnumerateFiles(string searchPattern)
+    content.vb: Public Function EnumerateFiles(searchPattern As String) As IEnumerable(Of FileInfo)
+    parameters:
+    - id: searchPattern
+      type: System.String
+      description: "\n<p>The search string to match against the names of files.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters (see Remarks), but doesn't support regular expressions. The default pattern is \"*\", which returns all files.</p>\n"
+    return:
+      type: System.Collections.Generic.IEnumerable{System.IO.FileInfo}
+      description: "\n<p>An enumerable collection of files that matches <em>searchPattern</em>.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>searchPattern</em> is <strong>null</strong>. </p>\n"
+  - type: System.IO.DirectoryNotFoundException
+    commentId: T:System.IO.DirectoryNotFoundException
+    description: "\n<p>The path encapsulated in the <xref href=\"System.IO.DirectoryInfo\" data-throw-if-not-resolved=\"false\"></xref> object is invalid, (for example, it is on an unmapped drive). </p>\n"
+  - type: System.Security.SecurityException
+    commentId: T:System.Security.SecurityException
+    description: "\n<p>The caller does not have the required permission. </p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: DirectoryInfo.EnumerateFiles(String)
+- uid: System.IO.DirectoryInfo.EnumerateFiles(System.String,System.IO.SearchOption)
+  commentId: M:System.IO.DirectoryInfo.EnumerateFiles(System.String,System.IO.SearchOption)
+  id: EnumerateFiles(System.String,System.IO.SearchOption)
+  parent: System.IO.DirectoryInfo
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.DirectoryInfo.EnumerateFiles(System.String, System.IO.SearchOption)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/DirectoryInfo.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: EnumerateFiles
+    path: src/mscorlib/src/System/IO/DirectoryInfo.cs
+    startLine: 454
+  assemblies:
+  - System.IO.FileSystem
+  namespace: System.IO
+  summary: "\n<p>Returns an enumerable collection of file information that matches a specified search pattern and search subdirectory option.</p>\n"
+  syntax:
+    content: public IEnumerable<FileInfo> EnumerateFiles(string searchPattern, SearchOption searchOption)
+    content.vb: Public Function EnumerateFiles(searchPattern As String, searchOption As SearchOption) As IEnumerable(Of FileInfo)
+    parameters:
+    - id: searchPattern
+      type: System.String
+      description: "\n<p>The search string to match against the names of files.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters (see Remarks), but doesn't support regular expressions. The default pattern is \"*\", which returns all files.</p>\n"
+    - id: searchOption
+      type: System.IO.SearchOption
+      description: "\n<p>One of the enumeration values that specifies whether the search operation should include only the current directory or all subdirectories. The default value is <xref href=\"System.IO.SearchOption.TopDirectoryOnly\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    return:
+      type: System.Collections.Generic.IEnumerable{System.IO.FileInfo}
+      description: "\n<p>An enumerable collection of files that matches <em>searchPattern</em> and <em>searchOption</em>.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>searchPattern</em> is <strong>null</strong>. </p>\n"
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>searchOption</em> is not a valid <xref href=\"System.IO.SearchOption\" data-throw-if-not-resolved=\"false\"></xref> value.</p>\n"
+  - type: System.IO.DirectoryNotFoundException
+    commentId: T:System.IO.DirectoryNotFoundException
+    description: "\n<p>The path encapsulated in the <xref href=\"System.IO.DirectoryInfo\" data-throw-if-not-resolved=\"false\"></xref> object is invalid (for example, it is on an unmapped drive). </p>\n"
+  - type: System.Security.SecurityException
+    commentId: T:System.Security.SecurityException
+    description: "\n<p>The caller does not have the required permission. </p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: DirectoryInfo.EnumerateFiles(String, SearchOption)
+- uid: System.IO.DirectoryInfo.EnumerateFileSystemInfos
+  commentId: M:System.IO.DirectoryInfo.EnumerateFileSystemInfos
+  id: EnumerateFileSystemInfos
+  parent: System.IO.DirectoryInfo
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.DirectoryInfo.EnumerateFileSystemInfos()
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/DirectoryInfo.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: EnumerateFileSystemInfos
+    path: src/mscorlib/src/System/IO/DirectoryInfo.cs
+    startLine: 473
+  assemblies:
+  - System.IO.FileSystem
+  namespace: System.IO
+  summary: "\n<p>Returns an enumerable collection of file system information in the current directory.</p>\n"
+  syntax:
+    content: public IEnumerable<FileSystemInfo> EnumerateFileSystemInfos()
+    content.vb: Public Function EnumerateFileSystemInfos As IEnumerable(Of FileSystemInfo)
+    return:
+      type: System.Collections.Generic.IEnumerable{System.IO.FileSystemInfo}
+      description: "\n<p>An enumerable collection of file system information in the current directory. </p>\n"
+  exceptions:
+  - type: System.IO.DirectoryNotFoundException
+    commentId: T:System.IO.DirectoryNotFoundException
+    description: "\n<p>The path encapsulated in the <xref href=\"System.IO.DirectoryInfo\" data-throw-if-not-resolved=\"false\"></xref> object is invalid (for example, it is on an unmapped drive). </p>\n"
+  - type: System.Security.SecurityException
+    commentId: T:System.Security.SecurityException
+    description: "\n<p>The caller does not have the required permission. </p>\n"
+  seealso:
+  - type: System.IO.FileSystemWatcher
+    commentId: T:System.IO.FileSystemWatcher
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: DirectoryInfo.EnumerateFileSystemInfos()
+- uid: System.IO.DirectoryInfo.EnumerateFileSystemInfos(System.String)
+  commentId: M:System.IO.DirectoryInfo.EnumerateFileSystemInfos(System.String)
+  id: EnumerateFileSystemInfos(System.String)
+  parent: System.IO.DirectoryInfo
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.DirectoryInfo.EnumerateFileSystemInfos(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/DirectoryInfo.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: EnumerateFileSystemInfos
+    path: src/mscorlib/src/System/IO/DirectoryInfo.cs
+    startLine: 478
+  assemblies:
+  - System.IO.FileSystem
+  namespace: System.IO
+  summary: "\n<p>Returns an enumerable collection of file system information that matches a specified search pattern.</p>\n"
+  syntax:
+    content: public IEnumerable<FileSystemInfo> EnumerateFileSystemInfos(string searchPattern)
+    content.vb: Public Function EnumerateFileSystemInfos(searchPattern As String) As IEnumerable(Of FileSystemInfo)
+    parameters:
+    - id: searchPattern
+      type: System.String
+      description: "\n<p>The search string to match against the names of directories.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters (see Remarks), but doesn't support regular expressions. The default pattern is \"*\", which returns all files.</p>\n"
+    return:
+      type: System.Collections.Generic.IEnumerable{System.IO.FileSystemInfo}
+      description: "\n<p>An enumerable collection of file system information objects that matches <em>searchPattern</em>.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>searchPattern</em> is <strong>null</strong>. </p>\n"
+  - type: System.IO.DirectoryNotFoundException
+    commentId: T:System.IO.DirectoryNotFoundException
+    description: "\n<p>The path encapsulated in the <xref href=\"System.IO.DirectoryInfo\" data-throw-if-not-resolved=\"false\"></xref> object is invalid (for example, it is on an unmapped drive). </p>\n"
+  - type: System.Security.SecurityException
+    commentId: T:System.Security.SecurityException
+    description: "\n<p>The caller does not have the required permission. </p>\n"
+  seealso:
+  - type: System.IO.FileSystemWatcher
+    commentId: T:System.IO.FileSystemWatcher
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: DirectoryInfo.EnumerateFileSystemInfos(String)
+- uid: System.IO.DirectoryInfo.EnumerateFileSystemInfos(System.String,System.IO.SearchOption)
+  commentId: M:System.IO.DirectoryInfo.EnumerateFileSystemInfos(System.String,System.IO.SearchOption)
+  id: EnumerateFileSystemInfos(System.String,System.IO.SearchOption)
+  parent: System.IO.DirectoryInfo
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.DirectoryInfo.EnumerateFileSystemInfos(System.String, System.IO.SearchOption)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/DirectoryInfo.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: EnumerateFileSystemInfos
+    path: src/mscorlib/src/System/IO/DirectoryInfo.cs
+    startLine: 487
+  assemblies:
+  - System.IO.FileSystem
+  namespace: System.IO
+  summary: "\n<p>Returns an enumerable collection of file system information that matches a specified search pattern and search subdirectory option.</p>\n"
+  syntax:
+    content: public IEnumerable<FileSystemInfo> EnumerateFileSystemInfos(string searchPattern, SearchOption searchOption)
+    content.vb: Public Function EnumerateFileSystemInfos(searchPattern As String, searchOption As SearchOption) As IEnumerable(Of FileSystemInfo)
+    parameters:
+    - id: searchPattern
+      type: System.String
+      description: "\n<p>The search string to match against the names of directories.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters (see Remarks), but doesn't support regular expressions. The default pattern is \"*\", which returns all files.</p>\n"
+    - id: searchOption
+      type: System.IO.SearchOption
+      description: "\n<p>One of the enumeration values that specifies whether the search operation should include only the current directory or all subdirectories. The default value is <xref href=\"System.IO.SearchOption.TopDirectoryOnly\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    return:
+      type: System.Collections.Generic.IEnumerable{System.IO.FileSystemInfo}
+      description: "\n<p>An enumerable collection of file system information objects that matches <em>searchPattern</em> and <em>searchOption</em>.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>searchPattern</em> is <strong>null</strong>. </p>\n"
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>searchOption</em> is not a valid <xref href=\"System.IO.SearchOption\" data-throw-if-not-resolved=\"false\"></xref> value.</p>\n"
+  - type: System.IO.DirectoryNotFoundException
+    commentId: T:System.IO.DirectoryNotFoundException
+    description: "\n<p>The path encapsulated in the <xref href=\"System.IO.DirectoryInfo\" data-throw-if-not-resolved=\"false\"></xref> object is invalid (for example, it is on an unmapped drive). </p>\n"
+  - type: System.Security.SecurityException
+    commentId: T:System.Security.SecurityException
+    description: "\n<p>The caller does not have the required permission. </p>\n"
+  seealso:
+  - type: System.IO.FileSystemWatcher
+    commentId: T:System.IO.FileSystemWatcher
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: DirectoryInfo.EnumerateFileSystemInfos(String, SearchOption)
+- uid: System.IO.DirectoryInfo.GetDirectories
+  commentId: M:System.IO.DirectoryInfo.GetDirectories
+  id: GetDirectories
+  parent: System.IO.DirectoryInfo
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.DirectoryInfo.GetDirectories()
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/DirectoryInfo.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: GetDirectories
+    path: src/mscorlib/src/System/IO/DirectoryInfo.cs
+    startLine: 320
+  assemblies:
+  - System.IO.FileSystem
+  namespace: System.IO
+  summary: "\n<p>Returns the subdirectories of the current directory.</p>\n"
+  syntax:
+    content: public DirectoryInfo[] GetDirectories()
+    content.vb: Public Function GetDirectories As DirectoryInfo()
+    return:
+      type: System.IO.DirectoryInfo[]
+      description: "\n<p>An array of <xref href=\"System.IO.DirectoryInfo\" data-throw-if-not-resolved=\"false\"></xref> objects.</p>\n"
+  exceptions:
+  - type: System.IO.DirectoryNotFoundException
+    commentId: T:System.IO.DirectoryNotFoundException
+    description: "\n<p>The path encapsulated in the <xref href=\"System.IO.DirectoryInfo\" data-throw-if-not-resolved=\"false\"></xref> object is invalid, such as being on an unmapped drive. </p>\n"
+  - type: System.Security.SecurityException
+    commentId: T:System.Security.SecurityException
+    description: "\n<p>The caller does not have the required permission. </p>\n"
+  - type: System.UnauthorizedAccessException
+    commentId: T:System.UnauthorizedAccessException
+    description: "\n<p>The caller does not have the required permission. </p>\n"
+  see:
+  - type: System.Security.Permissions.FileIOPermission
+    commentId: T:System.Security.Permissions.FileIOPermission
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: DirectoryInfo.GetDirectories()
+- uid: System.IO.DirectoryInfo.GetDirectories(System.String)
+  commentId: M:System.IO.DirectoryInfo.GetDirectories(System.String)
+  id: GetDirectories(System.String)
+  parent: System.IO.DirectoryInfo
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.DirectoryInfo.GetDirectories(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/DirectoryInfo.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: GetDirectories
+    path: src/mscorlib/src/System/IO/DirectoryInfo.cs
+    startLine: 371
+  assemblies:
+  - System.IO.FileSystem
+  namespace: System.IO
+  summary: "\n<p>Returns an array of directories in the current <xref href=\"System.IO.DirectoryInfo\" data-throw-if-not-resolved=\"false\"></xref> matching the given search criteria.</p>\n"
+  syntax:
+    content: public DirectoryInfo[] GetDirectories(string searchPattern)
+    content.vb: Public Function GetDirectories(searchPattern As String) As DirectoryInfo()
+    parameters:
+    - id: searchPattern
+      type: System.String
+      description: "\n<p>The search string to match against the names of directories.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters (see Remarks), but doesn't support regular expressions. The default pattern is \"*\", which returns all files.</p>\n"
+    return:
+      type: System.IO.DirectoryInfo[]
+      description: "\n<p>An array of type <strong>DirectoryInfo</strong> matching <em>searchPattern</em>.</p>\n"
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>\n<em>searchPattern </em>contains one or more invalid characters defined by the <xref href=\"System.IO.Path.GetInvalidPathChars\" data-throw-if-not-resolved=\"false\"></xref> method. </p>\n"
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>searchPattern</em> is <strong>null</strong>. </p>\n"
+  - type: System.IO.DirectoryNotFoundException
+    commentId: T:System.IO.DirectoryNotFoundException
+    description: "\n<p>The path encapsulated in the <strong>DirectoryInfo</strong> object is invalid (for example, it is on an unmapped drive). </p>\n"
+  - type: System.UnauthorizedAccessException
+    commentId: T:System.UnauthorizedAccessException
+    description: "\n<p>The caller does not have the required permission. </p>\n"
+  see:
+  - type: System.Security.Permissions.FileIOPermission
+    commentId: T:System.Security.Permissions.FileIOPermission
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: DirectoryInfo.GetDirectories(String)
+- uid: System.IO.DirectoryInfo.GetDirectories(System.String,System.IO.SearchOption)
+  commentId: M:System.IO.DirectoryInfo.GetDirectories(System.String,System.IO.SearchOption)
+  id: GetDirectories(System.String,System.IO.SearchOption)
+  parent: System.IO.DirectoryInfo
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.DirectoryInfo.GetDirectories(System.String, System.IO.SearchOption)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/DirectoryInfo.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: GetDirectories
+    path: src/mscorlib/src/System/IO/DirectoryInfo.cs
+    startLine: 383
+  assemblies:
+  - System.IO.FileSystem
+  namespace: System.IO
+  summary: "\n<p>Returns an array of directories in the current <xref href=\"System.IO.DirectoryInfo\" data-throw-if-not-resolved=\"false\"></xref> matching the given search criteria and using a value to determine whether to search subdirectories.</p>\n"
+  syntax:
+    content: public DirectoryInfo[] GetDirectories(string searchPattern, SearchOption searchOption)
+    content.vb: Public Function GetDirectories(searchPattern As String, searchOption As SearchOption) As DirectoryInfo()
+    parameters:
+    - id: searchPattern
+      type: System.String
+      description: "\n<p>The search string to match against the names of directories.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters (see Remarks), but doesn't support regular expressions. The default pattern is \"*\", which returns all files.</p>\n"
+    - id: searchOption
+      type: System.IO.SearchOption
+      description: "\n<p>One of the enumeration values that specifies whether the search operation should include only the current directory or all subdirectories.</p>\n"
+    return:
+      type: System.IO.DirectoryInfo[]
+      description: "\n<p>An array of type <strong>DirectoryInfo</strong> matching <em>searchPattern</em>.</p>\n"
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>\n<em>searchPattern </em>contains one or more invalid characters defined by the <xref href=\"System.IO.Path.GetInvalidPathChars\" data-throw-if-not-resolved=\"false\"></xref> method. </p>\n"
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>searchPattern</em> is <strong>null</strong>. </p>\n"
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>searchOption</em> is not a valid <xref href=\"System.IO.SearchOption\" data-throw-if-not-resolved=\"false\"></xref> value.</p>\n"
+  - type: System.IO.DirectoryNotFoundException
+    commentId: T:System.IO.DirectoryNotFoundException
+    description: "\n<p>The path encapsulated in the <strong>DirectoryInfo</strong> object is invalid (for example, it is on an unmapped drive). </p>\n"
+  - type: System.UnauthorizedAccessException
+    commentId: T:System.UnauthorizedAccessException
+    description: "\n<p>The caller does not have the required permission. </p>\n"
+  see:
+  - type: System.Security.Permissions.FileIOPermission
+    commentId: T:System.Security.Permissions.FileIOPermission
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: DirectoryInfo.GetDirectories(String, SearchOption)
+- uid: System.IO.DirectoryInfo.GetFiles
+  commentId: M:System.IO.DirectoryInfo.GetFiles
+  id: GetFiles
+  parent: System.IO.DirectoryInfo
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.DirectoryInfo.GetFiles()
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/DirectoryInfo.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: GetFiles
+    path: src/mscorlib/src/System/IO/DirectoryInfo.cs
+    startLine: 314
+  assemblies:
+  - System.IO.FileSystem
+  namespace: System.IO
+  summary: "\n<p>Returns a file list from the current directory.</p>\n"
+  syntax:
+    content: public FileInfo[] GetFiles()
+    content.vb: Public Function GetFiles As FileInfo()
+    return:
+      type: System.IO.FileInfo[]
+      description: "\n<p>An array of type <xref href=\"System.IO.FileInfo\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  exceptions:
+  - type: System.IO.DirectoryNotFoundException
+    commentId: T:System.IO.DirectoryNotFoundException
+    description: "\n<p>The path is invalid, such as being on an unmapped drive. </p>\n"
+  see:
+  - type: System.Security.Permissions.FileIOPermission
+    commentId: T:System.Security.Permissions.FileIOPermission
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: DirectoryInfo.GetFiles()
+- uid: System.IO.DirectoryInfo.GetFiles(System.String)
+  commentId: M:System.IO.DirectoryInfo.GetFiles(System.String)
+  id: GetFiles(System.String)
+  parent: System.IO.DirectoryInfo
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.DirectoryInfo.GetFiles(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/DirectoryInfo.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: GetFiles
+    path: src/mscorlib/src/System/IO/DirectoryInfo.cs
+    startLine: 279
+  assemblies:
+  - System.IO.FileSystem
+  namespace: System.IO
+  summary: "\n<p>Returns a file list from the current directory matching the given search pattern.</p>\n"
+  syntax:
+    content: public FileInfo[] GetFiles(string searchPattern)
+    content.vb: Public Function GetFiles(searchPattern As String) As FileInfo()
+    parameters:
+    - id: searchPattern
+      type: System.String
+      description: "\n<p>The search string to match against the names of files.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters (see Remarks), but doesn't support regular expressions. The default pattern is \"*\", which returns all files.</p>\n"
+    return:
+      type: System.IO.FileInfo[]
+      description: "\n<p>An array of type <xref href=\"System.IO.FileInfo\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>\n<em>searchPattern </em>contains one or more invalid characters defined by the <xref href=\"System.IO.Path.GetInvalidPathChars\" data-throw-if-not-resolved=\"false\"></xref> method. </p>\n"
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>searchPattern</em> is <strong>null</strong>. </p>\n"
+  - type: System.IO.DirectoryNotFoundException
+    commentId: T:System.IO.DirectoryNotFoundException
+    description: "\n<p>The path is invalid (for example, it is on an unmapped drive). </p>\n"
+  - type: System.Security.SecurityException
+    commentId: T:System.Security.SecurityException
+    description: "\n<p>The caller does not have the required permission. </p>\n"
+  see:
+  - type: System.Security.Permissions.FileIOPermission
+    commentId: T:System.Security.Permissions.FileIOPermission
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: DirectoryInfo.GetFiles(String)
+- uid: System.IO.DirectoryInfo.GetFiles(System.String,System.IO.SearchOption)
+  commentId: M:System.IO.DirectoryInfo.GetFiles(System.String,System.IO.SearchOption)
+  id: GetFiles(System.String,System.IO.SearchOption)
+  parent: System.IO.DirectoryInfo
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.DirectoryInfo.GetFiles(System.String, System.IO.SearchOption)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/DirectoryInfo.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: GetFiles
+    path: src/mscorlib/src/System/IO/DirectoryInfo.cs
+    startLine: 290
+  assemblies:
+  - System.IO.FileSystem
+  namespace: System.IO
+  summary: "\n<p>Returns a file list from the current directory matching the given search pattern and using a value to determine whether to search subdirectories.</p>\n"
+  syntax:
+    content: public FileInfo[] GetFiles(string searchPattern, SearchOption searchOption)
+    content.vb: Public Function GetFiles(searchPattern As String, searchOption As SearchOption) As FileInfo()
+    parameters:
+    - id: searchPattern
+      type: System.String
+      description: "\n<p>The search string to match against the names of files.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters (see Remarks), but doesn't support regular expressions. The default pattern is \"*\", which returns all files.</p>\n"
+    - id: searchOption
+      type: System.IO.SearchOption
+      description: "\n<p>One of the enumeration values that specifies whether the search operation should include only the current directory or all subdirectories.</p>\n"
+    return:
+      type: System.IO.FileInfo[]
+      description: "\n<p>An array of type <xref href=\"System.IO.FileInfo\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>\n<em>searchPattern </em>contains one or more invalid characters defined by the <xref href=\"System.IO.Path.GetInvalidPathChars\" data-throw-if-not-resolved=\"false\"></xref> method. </p>\n"
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>searchPattern</em> is <strong>null</strong>. </p>\n"
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>searchOption</em> is not a valid <xref href=\"System.IO.SearchOption\" data-throw-if-not-resolved=\"false\"></xref> value.</p>\n"
+  - type: System.IO.DirectoryNotFoundException
+    commentId: T:System.IO.DirectoryNotFoundException
+    description: "\n<p>The path is invalid (for example, it is on an unmapped drive). </p>\n"
+  - type: System.Security.SecurityException
+    commentId: T:System.Security.SecurityException
+    description: "\n<p>The caller does not have the required permission. </p>\n"
+  see:
+  - type: System.Security.Permissions.FileIOPermission
+    commentId: T:System.Security.Permissions.FileIOPermission
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: DirectoryInfo.GetFiles(String, SearchOption)
+- uid: System.IO.DirectoryInfo.GetFileSystemInfos
+  commentId: M:System.IO.DirectoryInfo.GetFileSystemInfos
+  id: GetFileSystemInfos
+  parent: System.IO.DirectoryInfo
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.DirectoryInfo.GetFileSystemInfos()
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/DirectoryInfo.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: GetFileSystemInfos
+    path: src/mscorlib/src/System/IO/DirectoryInfo.cs
+    startLine: 363
+  assemblies:
+  - System.IO.FileSystem
+  namespace: System.IO
+  summary: "\n<p>Returns an array of strongly typed <xref href=\"System.IO.FileSystemInfo\" data-throw-if-not-resolved=\"false\"></xref> entries representing all the files and subdirectories in a directory.</p>\n"
+  syntax:
+    content: public FileSystemInfo[] GetFileSystemInfos()
+    content.vb: Public Function GetFileSystemInfos As FileSystemInfo()
+    return:
+      type: System.IO.FileSystemInfo[]
+      description: "\n<p>An array of strongly typed <xref href=\"System.IO.FileSystemInfo\" data-throw-if-not-resolved=\"false\"></xref> entries.</p>\n"
+  exceptions:
+  - type: System.IO.DirectoryNotFoundException
+    commentId: T:System.IO.DirectoryNotFoundException
+    description: "\n<p>The path is invalid (for example, it is on an unmapped drive). </p>\n"
+  seealso:
+  - type: System.IO.FileSystemInfo
+    commentId: T:System.IO.FileSystemInfo
+  - type: System.IO.FileSystemWatcher
+    commentId: T:System.IO.FileSystemWatcher
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: DirectoryInfo.GetFileSystemInfos()
+- uid: System.IO.DirectoryInfo.GetFileSystemInfos(System.String)
+  commentId: M:System.IO.DirectoryInfo.GetFileSystemInfos(System.String)
+  id: GetFileSystemInfos(System.String)
+  parent: System.IO.DirectoryInfo
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.DirectoryInfo.GetFileSystemInfos(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/DirectoryInfo.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: GetFileSystemInfos
+    path: src/mscorlib/src/System/IO/DirectoryInfo.cs
+    startLine: 327
+  assemblies:
+  - System.IO.FileSystem
+  namespace: System.IO
+  summary: "\n<p>Retrieves an array of strongly typed <xref href=\"System.IO.FileSystemInfo\" data-throw-if-not-resolved=\"false\"></xref> objects representing the files and subdirectories that match the specified search criteria.</p>\n"
+  syntax:
+    content: public FileSystemInfo[] GetFileSystemInfos(string searchPattern)
+    content.vb: Public Function GetFileSystemInfos(searchPattern As String) As FileSystemInfo()
+    parameters:
+    - id: searchPattern
+      type: System.String
+      description: "\n<p>The search string to match against the names of directories and files.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters (see Remarks), but doesn't support regular expressions. The default pattern is \"*\", which returns all files.</p>\n"
+    return:
+      type: System.IO.FileSystemInfo[]
+      description: "\n<p>An array of strongly typed <strong>FileSystemInfo</strong> objects matching the search criteria.</p>\n"
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>\n<em>searchPattern </em>contains one or more invalid characters defined by the <xref href=\"System.IO.Path.GetInvalidPathChars\" data-throw-if-not-resolved=\"false\"></xref> method. </p>\n"
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>searchPattern</em> is <strong>null</strong>. </p>\n"
+  - type: System.IO.DirectoryNotFoundException
+    commentId: T:System.IO.DirectoryNotFoundException
+    description: "\n<p>The specified path is invalid (for example, it is on an unmapped drive). </p>\n"
+  - type: System.Security.SecurityException
+    commentId: T:System.Security.SecurityException
+    description: "\n<p>The caller does not have the required permission. </p>\n"
+  seealso:
+  - type: System.IO.FileSystemInfo
+    commentId: T:System.IO.FileSystemInfo
+  - type: System.IO.FileSystemWatcher
+    commentId: T:System.IO.FileSystemWatcher
+  see:
+  - type: System.Security.Permissions.FileIOPermission
+    commentId: T:System.Security.Permissions.FileIOPermission
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: DirectoryInfo.GetFileSystemInfos(String)
+- uid: System.IO.DirectoryInfo.GetFileSystemInfos(System.String,System.IO.SearchOption)
+  commentId: M:System.IO.DirectoryInfo.GetFileSystemInfos(System.String,System.IO.SearchOption)
+  id: GetFileSystemInfos(System.String,System.IO.SearchOption)
+  parent: System.IO.DirectoryInfo
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.DirectoryInfo.GetFileSystemInfos(System.String, System.IO.SearchOption)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/DirectoryInfo.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: GetFileSystemInfos
+    path: src/mscorlib/src/System/IO/DirectoryInfo.cs
+    startLine: 338
+  assemblies:
+  - System.IO.FileSystem
+  namespace: System.IO
+  summary: "\n<p>Retrieves an array of <xref href=\"System.IO.FileSystemInfo\" data-throw-if-not-resolved=\"false\"></xref> objects that represent the files and subdirectories matching the specified search criteria.</p>\n"
+  syntax:
+    content: public FileSystemInfo[] GetFileSystemInfos(string searchPattern, SearchOption searchOption)
+    content.vb: Public Function GetFileSystemInfos(searchPattern As String, searchOption As SearchOption) As FileSystemInfo()
+    parameters:
+    - id: searchPattern
+      type: System.String
+      description: "\n<p>The search string to match against the names of directories and filesa.  This parameter can contain a combination of valid literal path and wildcard (* and ?) characters (see Remarks), but doesn't support regular expressions. The default pattern is \"*\", which returns all files.</p>\n"
+    - id: searchOption
+      type: System.IO.SearchOption
+      description: "\n<p>One of the enumeration values that specifies whether the search operation should include only the current directory or all subdirectories. The default value is <xref href=\"System.IO.SearchOption.TopDirectoryOnly\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    return:
+      type: System.IO.FileSystemInfo[]
+      description: "\n<p>An array of file system entries that match the search criteria.</p>\n"
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>\n<em>searchPattern </em>contains one or more invalid characters defined by the <xref href=\"System.IO.Path.GetInvalidPathChars\" data-throw-if-not-resolved=\"false\"></xref> method. </p>\n"
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>searchPattern</em> is <strong>null</strong>. </p>\n"
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>searchOption</em> is not a valid <xref href=\"System.IO.SearchOption\" data-throw-if-not-resolved=\"false\"></xref> value.</p>\n"
+  - type: System.IO.DirectoryNotFoundException
+    commentId: T:System.IO.DirectoryNotFoundException
+    description: "\n<p>The specified path is invalid (for example, it is on an unmapped drive). </p>\n"
+  - type: System.Security.SecurityException
+    commentId: T:System.Security.SecurityException
+    description: "\n<p>The caller does not have the required permission. </p>\n"
+  seealso:
+  - type: System.IO.FileSystemWatcher
+    commentId: T:System.IO.FileSystemWatcher
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: DirectoryInfo.GetFileSystemInfos(String, SearchOption)
+- uid: System.IO.DirectoryInfo.MoveTo(System.String)
+  commentId: M:System.IO.DirectoryInfo.MoveTo(System.String)
+  id: MoveTo(System.String)
+  parent: System.IO.DirectoryInfo
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.DirectoryInfo.MoveTo(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/DirectoryInfo.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: MoveTo
+    path: src/mscorlib/src/System/IO/DirectoryInfo.cs
+    startLine: 535
+  assemblies:
+  - System.IO.FileSystem
+  namespace: System.IO
+  summary: "\n<p>Moves a <xref href=\"System.IO.DirectoryInfo\" data-throw-if-not-resolved=\"false\"></xref> instance and its contents to a new path.</p>\n"
+  syntax:
+    content: >-
+      [SecuritySafeCritical]
+
+      public void MoveTo(string destDirName)
+    content.vb: >-
+      <SecuritySafeCritical>
+
+      Public Sub MoveTo(destDirName As String)
+    parameters:
+    - id: destDirName
+      type: System.String
+      description: "\n<p>The name and path to which to move this directory. The destination cannot be another disk volume or a directory with the identical name. It can be an existing directory to which you want to add this directory as a subdirectory. </p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>destDirName</em> is <strong>null</strong>. </p>\n"
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>\n<em>destDirName</em> is an empty string (''\"). </p>\n"
+  - type: System.IO.IOException
+    commentId: T:System.IO.IOException
+    description: "\n<p>An attempt was made to move a directory to a different volume. </p>\n<p>-or-</p>\n<p>\n<em>destDirName</em> already exists.</p>\n<p>-or-</p>\n<p>You are not authorized to access this path.</p>\n<p>-or- </p>\n<p>The directory being moved and the destination directory have the same name.</p>\n"
+  - type: System.Security.SecurityException
+    commentId: T:System.Security.SecurityException
+    description: "\n<p>The caller does not have the required permission. </p>\n"
+  - type: System.IO.DirectoryNotFoundException
+    commentId: T:System.IO.DirectoryNotFoundException
+    description: "\n<p>The destination directory cannot be found.</p>\n"
+  see:
+  - type: System.Security.Permissions.FileIOPermission
+    commentId: T:System.Security.Permissions.FileIOPermission
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: DirectoryInfo.MoveTo(String)
+- uid: System.IO.DirectoryInfo.ToString
+  commentId: M:System.IO.DirectoryInfo.ToString
+  id: ToString
+  parent: System.IO.DirectoryInfo
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.DirectoryInfo.ToString()
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/DirectoryInfo.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: ToString
+    path: src/mscorlib/src/System/IO/DirectoryInfo.cs
+    startLine: 620
+  assemblies:
+  - System.IO.FileSystem
+  namespace: System.IO
+  summary: "\n<p>Returns the original path that was passed by the user.</p>\n"
+  syntax:
+    content: public override string ToString()
+    content.vb: Public Overrides Function ToString As String
+    return:
+      type: System.String
+      description: "\n<p>Returns the original path that was passed by the user.</p>\n"
+  overridden: System.Object.ToString
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  nameWithType: DirectoryInfo.ToString()
+references:
+- uid: System.IO
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO
+  nameWithType: System.IO
+  commentId: N:System.IO
+- uid: System.Object
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Object
+  nameWithType: Object
+  commentId: T:System.Object
+- uid: System.IO.FileSystemInfo
+  parent: System.IO
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.FileSystemInfo
+  nameWithType: FileSystemInfo
+  commentId: T:System.IO.FileSystemInfo
+- uid: System.IO.FileSystemInfo.FullPath
+  parent: System.IO.FileSystemInfo
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.FileSystemInfo.FullPath
+  nameWithType: FileSystemInfo.FullPath
+  commentId: F:System.IO.FileSystemInfo.FullPath
+- uid: System.IO.FileSystemInfo.OriginalPath
+  parent: System.IO.FileSystemInfo
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.FileSystemInfo.OriginalPath
+  nameWithType: FileSystemInfo.OriginalPath
+  commentId: F:System.IO.FileSystemInfo.OriginalPath
+- uid: System.IO.FileSystemInfo.Attributes
+  parent: System.IO.FileSystemInfo
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.FileSystemInfo.Attributes
+  nameWithType: FileSystemInfo.Attributes
+  commentId: P:System.IO.FileSystemInfo.Attributes
+- uid: System.IO.FileSystemInfo.CreationTime
+  parent: System.IO.FileSystemInfo
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.FileSystemInfo.CreationTime
+  nameWithType: FileSystemInfo.CreationTime
+  commentId: P:System.IO.FileSystemInfo.CreationTime
+- uid: System.IO.FileSystemInfo.CreationTimeUtc
+  parent: System.IO.FileSystemInfo
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.FileSystemInfo.CreationTimeUtc
+  nameWithType: FileSystemInfo.CreationTimeUtc
+  commentId: P:System.IO.FileSystemInfo.CreationTimeUtc
+- uid: System.IO.FileSystemInfo.Extension
+  parent: System.IO.FileSystemInfo
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.FileSystemInfo.Extension
+  nameWithType: FileSystemInfo.Extension
+  commentId: P:System.IO.FileSystemInfo.Extension
+- uid: System.IO.FileSystemInfo.FullName
+  parent: System.IO.FileSystemInfo
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.FileSystemInfo.FullName
+  nameWithType: FileSystemInfo.FullName
+  commentId: P:System.IO.FileSystemInfo.FullName
+- uid: System.IO.FileSystemInfo.LastAccessTime
+  parent: System.IO.FileSystemInfo
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.FileSystemInfo.LastAccessTime
+  nameWithType: FileSystemInfo.LastAccessTime
+  commentId: P:System.IO.FileSystemInfo.LastAccessTime
+- uid: System.IO.FileSystemInfo.LastAccessTimeUtc
+  parent: System.IO.FileSystemInfo
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.FileSystemInfo.LastAccessTimeUtc
+  nameWithType: FileSystemInfo.LastAccessTimeUtc
+  commentId: P:System.IO.FileSystemInfo.LastAccessTimeUtc
+- uid: System.IO.FileSystemInfo.LastWriteTime
+  parent: System.IO.FileSystemInfo
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.FileSystemInfo.LastWriteTime
+  nameWithType: FileSystemInfo.LastWriteTime
+  commentId: P:System.IO.FileSystemInfo.LastWriteTime
+- uid: System.IO.FileSystemInfo.LastWriteTimeUtc
+  parent: System.IO.FileSystemInfo
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.FileSystemInfo.LastWriteTimeUtc
+  nameWithType: FileSystemInfo.LastWriteTimeUtc
+  commentId: P:System.IO.FileSystemInfo.LastWriteTimeUtc
+- uid: System.IO.FileSystemInfo.Refresh
+  parent: System.IO.FileSystemInfo
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.FileSystemInfo.Refresh()
+  spec.csharp:
+  - uid: System.IO.FileSystemInfo.Refresh
+    name: "XXX"
+    fullName: System.IO.FileSystemInfo.Refresh
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.IO.FileSystemInfo.Refresh
+    name: "XXX"
+    fullName: System.IO.FileSystemInfo.Refresh
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: FileSystemInfo.Refresh()
+  commentId: M:System.IO.FileSystemInfo.Refresh
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.Equals(Object)
+  commentId: M:System.Object.Equals(System.Object)
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.Equals(Object, Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.GetHashCode()
+  commentId: M:System.Object.GetHashCode
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.GetType()
+  commentId: M:System.Object.GetType
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.MemberwiseClone()
+  commentId: M:System.Object.MemberwiseClone
+- uid: System
+  isExternal: false
+  name: "XXX"
+  fullName: System
+  nameWithType: System
+  commentId: N:System
+- uid: System.String
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.String
+  nameWithType: String
+  commentId: T:System.String
+- uid: System.IO.FileSystemInfo.Exists
+  parent: System.IO.FileSystemInfo
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.FileSystemInfo.Exists
+  nameWithType: FileSystemInfo.Exists
+  commentId: P:System.IO.FileSystemInfo.Exists
+- uid: System.Boolean
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Boolean
+  nameWithType: Boolean
+  commentId: T:System.Boolean
+- uid: System.IO.FileSystemInfo.Name
+  parent: System.IO.FileSystemInfo
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.FileSystemInfo.Name
+  nameWithType: FileSystemInfo.Name
+  commentId: P:System.IO.FileSystemInfo.Name
+- uid: System.IO.DirectoryInfo
+  parent: System.IO
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.DirectoryInfo
+  nameWithType: DirectoryInfo
+  commentId: T:System.IO.DirectoryInfo
+- uid: System.IO.FileSystemInfo.Delete
+  parent: System.IO.FileSystemInfo
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.FileSystemInfo.Delete()
+  spec.csharp:
+  - uid: System.IO.FileSystemInfo.Delete
+    name: "XXX"
+    fullName: System.IO.FileSystemInfo.Delete
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.IO.FileSystemInfo.Delete
+    name: "XXX"
+    fullName: System.IO.FileSystemInfo.Delete
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: FileSystemInfo.Delete()
+  commentId: M:System.IO.FileSystemInfo.Delete
+- uid: System.Collections.Generic.IEnumerable{System.IO.DirectoryInfo}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: "XXX"
+  fullName: System.Collections.Generic.IEnumerable<System.IO.DirectoryInfo>
+  fullname.vb: System.Collections.Generic.IEnumerable(Of System.IO.DirectoryInfo)
+  name.vb: IEnumerable(Of DirectoryInfo)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: "XXX"
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: "<"
+    fullName: <
+  - uid: System.IO.DirectoryInfo
+    name: "XXX"
+    fullName: System.IO.DirectoryInfo
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: "XXX"
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: 'XXX '
+    fullName: '(Of '
+  - uid: System.IO.DirectoryInfo
+    name: "XXX"
+    fullName: System.IO.DirectoryInfo
+  - name: "XXX"
+    fullName: )
+  nameWithType: IEnumerable<DirectoryInfo>
+  nameWithType.vb: IEnumerable(Of DirectoryInfo)
+  commentId: T:System.Collections.Generic.IEnumerable{System.IO.DirectoryInfo}
+- uid: System.Collections.Generic.IEnumerable`1
+  isExternal: false
+  name: "XXX"
+  fullName: System.Collections.Generic.IEnumerable<T>
+  fullname.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: "XXX"
+    fullName: System.Collections.Generic.IEnumerable
+  - name: "<"
+    fullName: <
+  - name: "XXX"
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: "XXX"
+    fullName: System.Collections.Generic.IEnumerable
+  - name: 'XXX '
+    fullName: '(Of '
+  - name: "XXX"
+    fullName: T
+  - name: "XXX"
+    fullName: )
+  nameWithType: IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  commentId: T:System.Collections.Generic.IEnumerable`1
+- uid: System.Collections.Generic
+  isExternal: false
+  name: "XXX"
+  fullName: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+- uid: System.IO.SearchOption
+  parent: System.IO
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.SearchOption
+  nameWithType: SearchOption
+  commentId: T:System.IO.SearchOption
+- uid: System.Collections.Generic.IEnumerable{System.IO.FileInfo}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: "XXX"
+  fullName: System.Collections.Generic.IEnumerable<System.IO.FileInfo>
+  fullname.vb: System.Collections.Generic.IEnumerable(Of System.IO.FileInfo)
+  name.vb: IEnumerable(Of FileInfo)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: "XXX"
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: "<"
+    fullName: <
+  - uid: System.IO.FileInfo
+    name: "XXX"
+    fullName: System.IO.FileInfo
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: "XXX"
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: 'XXX '
+    fullName: '(Of '
+  - uid: System.IO.FileInfo
+    name: "XXX"
+    fullName: System.IO.FileInfo
+  - name: "XXX"
+    fullName: )
+  nameWithType: IEnumerable<FileInfo>
+  nameWithType.vb: IEnumerable(Of FileInfo)
+  commentId: T:System.Collections.Generic.IEnumerable{System.IO.FileInfo}
+- uid: System.Collections.Generic.IEnumerable{System.IO.FileSystemInfo}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: "XXX"
+  fullName: System.Collections.Generic.IEnumerable<System.IO.FileSystemInfo>
+  fullname.vb: System.Collections.Generic.IEnumerable(Of System.IO.FileSystemInfo)
+  name.vb: IEnumerable(Of FileSystemInfo)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: "XXX"
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: "<"
+    fullName: <
+  - uid: System.IO.FileSystemInfo
+    name: "XXX"
+    fullName: System.IO.FileSystemInfo
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: "XXX"
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: 'XXX '
+    fullName: '(Of '
+  - uid: System.IO.FileSystemInfo
+    name: "XXX"
+    fullName: System.IO.FileSystemInfo
+  - name: "XXX"
+    fullName: )
+  nameWithType: IEnumerable<FileSystemInfo>
+  nameWithType.vb: IEnumerable(Of FileSystemInfo)
+  commentId: T:System.Collections.Generic.IEnumerable{System.IO.FileSystemInfo}
+- uid: System.IO.DirectoryInfo[]
+  name: "XXX"
+  fullName: System.IO.DirectoryInfo[]
+  fullname.vb: System.IO.DirectoryInfo()
+  name.vb: DirectoryInfo()
+  spec.csharp:
+  - uid: System.IO.DirectoryInfo
+    name: "XXX"
+    fullName: System.IO.DirectoryInfo
+  - name: 'XXX'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.IO.DirectoryInfo
+    name: "XXX"
+    fullName: System.IO.DirectoryInfo
+  - name: "XXX"
+    fullName: ()
+  nameWithType: DirectoryInfo[]
+  nameWithType.vb: DirectoryInfo()
+- uid: System.IO.FileInfo[]
+  name: "XXX"
+  fullName: System.IO.FileInfo[]
+  fullname.vb: System.IO.FileInfo()
+  name.vb: FileInfo()
+  spec.csharp:
+  - uid: System.IO.FileInfo
+    name: "XXX"
+    fullName: System.IO.FileInfo
+  - name: 'XXX'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.IO.FileInfo
+    name: "XXX"
+    fullName: System.IO.FileInfo
+  - name: "XXX"
+    fullName: ()
+  nameWithType: FileInfo[]
+  nameWithType.vb: FileInfo()
+- uid: System.IO.FileSystemInfo[]
+  name: "XXX"
+  fullName: System.IO.FileSystemInfo[]
+  fullname.vb: System.IO.FileSystemInfo()
+  name.vb: FileSystemInfo()
+  spec.csharp:
+  - uid: System.IO.FileSystemInfo
+    name: "XXX"
+    fullName: System.IO.FileSystemInfo
+  - name: 'XXX'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.IO.FileSystemInfo
+    name: "XXX"
+    fullName: System.IO.FileSystemInfo
+  - name: "XXX"
+    fullName: ()
+  nameWithType: FileSystemInfo[]
+  nameWithType.vb: FileSystemInfo()
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.ToString()
+  commentId: M:System.Object.ToString
+- uid: System.ArgumentNullException
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentNullException
+  nameWithType: ArgumentNullException
+  commentId: T:System.ArgumentNullException
+- uid: System.Security.SecurityException
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.SecurityException
+  nameWithType: SecurityException
+  commentId: T:System.Security.SecurityException
+- uid: System.ArgumentException
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentException
+  nameWithType: ArgumentException
+  commentId: T:System.ArgumentException
+- uid: System.IO.PathTooLongException
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.PathTooLongException
+  nameWithType: PathTooLongException
+  commentId: T:System.IO.PathTooLongException
+- uid: System.IO.IOException
+  parent: System.IO
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.IOException
+  nameWithType: IOException
+  commentId: T:System.IO.IOException
+- uid: System.IO.DirectoryNotFoundException
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.DirectoryNotFoundException
+  nameWithType: DirectoryNotFoundException
+  commentId: T:System.IO.DirectoryNotFoundException
+- uid: System.NotSupportedException
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.NotSupportedException
+  nameWithType: NotSupportedException
+  commentId: T:System.NotSupportedException
+- uid: System.UnauthorizedAccessException
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.UnauthorizedAccessException
+  nameWithType: UnauthorizedAccessException
+  commentId: T:System.UnauthorizedAccessException
+- uid: System.ArgumentOutOfRangeException
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentOutOfRangeException
+  nameWithType: ArgumentOutOfRangeException
+  commentId: T:System.ArgumentOutOfRangeException

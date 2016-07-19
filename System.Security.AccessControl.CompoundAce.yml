@@ -1,0 +1,729 @@
+items:
+- uid: System.Security.AccessControl.CompoundAce
+  commentId: T:System.Security.AccessControl.CompoundAce
+  id: CompoundAce
+  parent: System.Security.AccessControl
+  children:
+  - System.Security.AccessControl.CompoundAce.#ctor(System.Security.AccessControl.AceFlags,System.Int32,System.Security.AccessControl.CompoundAceType,System.Security.Principal.SecurityIdentifier)
+  - System.Security.AccessControl.CompoundAce.BinaryLength
+  - System.Security.AccessControl.CompoundAce.CompoundAceType
+  - System.Security.AccessControl.CompoundAce.GetBinaryForm(System.Byte[],System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.AccessControl.CompoundAce
+  type: Class
+  source:
+    remote:
+      path: src/System.Security.AccessControl/ref/System.Security.AccessControl.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: CompoundAce
+    path: src/System.Security.AccessControl/ref/System.Security.AccessControl.cs
+    startLine: 202
+  assemblies:
+  - System.Security.AccessControl
+  namespace: System.Security.AccessControl
+  summary: "\n<p>Represents a compound Access Control Entry (ACE).</p>\n"
+  syntax:
+    content: 'public sealed class CompoundAce : KnownAce'
+    content.vb: >-
+      Public NotInheritable Class CompoundAce
+          Inherits KnownAce
+  inheritance:
+  - System.Object
+  - System.Security.AccessControl.GenericAce
+  - System.Security.AccessControl.KnownAce
+  inheritedMembers:
+  - System.Security.AccessControl.KnownAce.AccessMask
+  - System.Security.AccessControl.KnownAce.SecurityIdentifier
+  - System.Security.AccessControl.GenericAce.AceFlags
+  - System.Security.AccessControl.GenericAce.AceType
+  - System.Security.AccessControl.GenericAce.AuditFlags
+  - System.Security.AccessControl.GenericAce.InheritanceFlags
+  - System.Security.AccessControl.GenericAce.IsInherited
+  - System.Security.AccessControl.GenericAce.PropagationFlags
+  - System.Security.AccessControl.GenericAce.Copy
+  - System.Security.AccessControl.GenericAce.CreateFromBinaryForm(System.Byte[],System.Int32)
+  - System.Security.AccessControl.GenericAce.Equals(System.Object)
+  - System.Security.AccessControl.GenericAce.GetHashCode
+  - System.Object.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+  nameWithType: CompoundAce
+- uid: System.Security.AccessControl.CompoundAce.#ctor(System.Security.AccessControl.AceFlags,System.Int32,System.Security.AccessControl.CompoundAceType,System.Security.Principal.SecurityIdentifier)
+  commentId: M:System.Security.AccessControl.CompoundAce.#ctor(System.Security.AccessControl.AceFlags,System.Int32,System.Security.AccessControl.CompoundAceType,System.Security.Principal.SecurityIdentifier)
+  id: '#ctor(System.Security.AccessControl.AceFlags,System.Int32,System.Security.AccessControl.CompoundAceType,System.Security.Principal.SecurityIdentifier)'
+  parent: System.Security.AccessControl.CompoundAce
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.AccessControl.CompoundAce.CompoundAce(System.Security.AccessControl.AceFlags, System.Int32, System.Security.AccessControl.CompoundAceType, System.Security.Principal.SecurityIdentifier)
+  type: Constructor
+  source:
+    remote:
+      path: src/System.Security.AccessControl/ref/System.Security.AccessControl.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: .ctor
+    path: src/System.Security.AccessControl/ref/System.Security.AccessControl.cs
+    startLine: 204
+  assemblies:
+  - System.Security.AccessControl
+  namespace: System.Security.AccessControl
+  summary: "\n<p>Initializes a new instance of the <xref href=\"System.Security.AccessControl.CompoundAce\" data-throw-if-not-resolved=\"false\"></xref> class.</p>\n"
+  syntax:
+    content: public CompoundAce(AceFlags flags, int accessMask, CompoundAceType compoundAceType, SecurityIdentifier sid)
+    content.vb: Public Sub New(flags As AceFlags, accessMask As Integer, compoundAceType As CompoundAceType, sid As SecurityIdentifier)
+    parameters:
+    - id: flags
+      type: System.Security.AccessControl.AceFlags
+      description: "\n<p>Contains flags that specify information about the inheritance, inheritance propagation, and auditing conditions for the new Access Control Entry (ACE).</p>\n"
+    - id: accessMask
+      type: System.Int32
+      description: "\n<p>The access mask for the ACE.</p>\n"
+    - id: compoundAceType
+      type: System.Security.AccessControl.CompoundAceType
+      description: "\n<p>A value from the <xref href=\"System.Security.AccessControl.CompoundAceType\" data-throw-if-not-resolved=\"false\"></xref> enumeration.</p>\n"
+    - id: sid
+      type: System.Security.Principal.SecurityIdentifier
+      description: "\n<p>The <xref href=\"System.Security.Principal.SecurityIdentifier\" data-throw-if-not-resolved=\"false\"></xref> associated with the new ACE.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: CompoundAce.CompoundAce(AceFlags, Int32, CompoundAceType, SecurityIdentifier)
+- uid: System.Security.AccessControl.CompoundAce.BinaryLength
+  commentId: P:System.Security.AccessControl.CompoundAce.BinaryLength
+  id: BinaryLength
+  parent: System.Security.AccessControl.CompoundAce
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.AccessControl.CompoundAce.BinaryLength
+  type: Property
+  source:
+    remote:
+      path: src/System.Security.AccessControl/ref/System.Security.AccessControl.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: BinaryLength
+    path: src/System.Security.AccessControl/ref/System.Security.AccessControl.cs
+    startLine: 205
+  assemblies:
+  - System.Security.AccessControl
+  namespace: System.Security.AccessControl
+  summary: "\n<p>Gets the length, in bytes, of the binary representation of the current <xref href=\"System.Security.AccessControl.CompoundAce\" data-throw-if-not-resolved=\"false\"></xref> object. This length should be used before marshaling the ACL into a binary array with the <xref href=\"System.Security.AccessControl.CompoundAce.GetBinaryForm(System.Byte[],System.Int32)\" data-throw-if-not-resolved=\"false\"></xref> method.</p>\n"
+  syntax:
+    content: public override int BinaryLength { get; }
+    content.vb: Public Overrides ReadOnly Property BinaryLength As Integer
+    parameters: []
+    return:
+      type: System.Int32
+      description: "\n<p>The length, in bytes, of the binary representation of the current <xref href=\"System.Security.AccessControl.CompoundAce\" data-throw-if-not-resolved=\"false\"></xref> object.</p>\n"
+  overridden: System.Security.AccessControl.GenericAce.BinaryLength
+  modifiers.csharp:
+  - public
+  - override
+  - get
+  modifiers.vb:
+  - Public
+  - Overrides
+  - ReadOnly
+  nameWithType: CompoundAce.BinaryLength
+- uid: System.Security.AccessControl.CompoundAce.CompoundAceType
+  commentId: P:System.Security.AccessControl.CompoundAce.CompoundAceType
+  id: CompoundAceType
+  parent: System.Security.AccessControl.CompoundAce
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.AccessControl.CompoundAce.CompoundAceType
+  type: Property
+  source:
+    remote:
+      path: src/System.Security.AccessControl/ref/System.Security.AccessControl.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: CompoundAceType
+    path: src/System.Security.AccessControl/ref/System.Security.AccessControl.cs
+    startLine: 206
+  assemblies:
+  - System.Security.AccessControl
+  namespace: System.Security.AccessControl
+  summary: "\n<p>Gets or sets the type of this <xref href=\"System.Security.AccessControl.CompoundAce\" data-throw-if-not-resolved=\"false\"></xref> object.</p>\n"
+  syntax:
+    content: public CompoundAceType CompoundAceType { get; set; }
+    content.vb: Public Property CompoundAceType As CompoundAceType
+    parameters: []
+    return:
+      type: System.Security.AccessControl.CompoundAceType
+      description: "\n<p>The type of this <xref href=\"System.Security.AccessControl.CompoundAce\" data-throw-if-not-resolved=\"false\"></xref> object.</p>\n"
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  nameWithType: CompoundAce.CompoundAceType
+- uid: System.Security.AccessControl.CompoundAce.GetBinaryForm(System.Byte[],System.Int32)
+  commentId: M:System.Security.AccessControl.CompoundAce.GetBinaryForm(System.Byte[],System.Int32)
+  id: GetBinaryForm(System.Byte[],System.Int32)
+  parent: System.Security.AccessControl.CompoundAce
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.AccessControl.CompoundAce.GetBinaryForm(System.Byte[], System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/System.Security.AccessControl/ref/System.Security.AccessControl.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: GetBinaryForm
+    path: src/System.Security.AccessControl/ref/System.Security.AccessControl.cs
+    startLine: 207
+  assemblies:
+  - System.Security.AccessControl
+  namespace: System.Security.AccessControl
+  summary: "\n<p>Marshals the contents of the <xref href=\"System.Security.AccessControl.CompoundAce\" data-throw-if-not-resolved=\"false\"></xref> object into the specified byte array beginning at the specified offset.</p>\n"
+  syntax:
+    content: public override void GetBinaryForm(byte[] binaryForm, int offset)
+    content.vb: Public Overrides Sub GetBinaryForm(binaryForm As Byte(), offset As Integer)
+    parameters:
+    - id: binaryForm
+      type: System.Byte[]
+      description: "\n<p>The byte array into which the contents of the <xref href=\"System.Security.AccessControl.CompoundAce\" data-throw-if-not-resolved=\"false\"></xref> is marshaled.</p>\n"
+    - id: offset
+      type: System.Int32
+      description: "\n<p>The offset at which to start marshaling.</p>\n"
+  overridden: System.Security.AccessControl.GenericAce.GetBinaryForm(System.Byte[],System.Int32)
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>offset</em> is negative or too high to allow the entire <xref href=\"System.Security.AccessControl.CompoundAce\" data-throw-if-not-resolved=\"false\"></xref> to be copied into <em>array</em>.</p>\n"
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  fullName.vb: System.Security.AccessControl.CompoundAce.GetBinaryForm(System.Byte(), System.Int32)
+  name.vb: GetBinaryForm(Byte(), Int32)
+  nameWithType: CompoundAce.GetBinaryForm(Byte[], Int32)
+  nameWithType.vb: CompoundAce.GetBinaryForm(Byte(), Int32)
+references:
+- uid: System.Security.AccessControl
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.AccessControl
+  commentId: N:System.Security.AccessControl
+  nameWithType: System.Security.AccessControl
+- uid: System.Object
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Object
+  commentId: T:System.Object
+  nameWithType: Object
+- uid: System.Security.AccessControl.GenericAce
+  parent: System.Security.AccessControl
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.AccessControl.GenericAce
+  commentId: T:System.Security.AccessControl.GenericAce
+  nameWithType: GenericAce
+- uid: System.Security.AccessControl.KnownAce
+  parent: System.Security.AccessControl
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.AccessControl.KnownAce
+  commentId: T:System.Security.AccessControl.KnownAce
+  nameWithType: KnownAce
+- uid: System.Security.AccessControl.KnownAce.AccessMask
+  parent: System.Security.AccessControl.KnownAce
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.AccessControl.KnownAce.AccessMask
+  commentId: P:System.Security.AccessControl.KnownAce.AccessMask
+  nameWithType: KnownAce.AccessMask
+- uid: System.Security.AccessControl.KnownAce.SecurityIdentifier
+  parent: System.Security.AccessControl.KnownAce
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.AccessControl.KnownAce.SecurityIdentifier
+  commentId: P:System.Security.AccessControl.KnownAce.SecurityIdentifier
+  nameWithType: KnownAce.SecurityIdentifier
+- uid: System.Security.AccessControl.GenericAce.AceFlags
+  parent: System.Security.AccessControl.GenericAce
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.AccessControl.GenericAce.AceFlags
+  commentId: P:System.Security.AccessControl.GenericAce.AceFlags
+  nameWithType: GenericAce.AceFlags
+- uid: System.Security.AccessControl.GenericAce.AceType
+  parent: System.Security.AccessControl.GenericAce
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.AccessControl.GenericAce.AceType
+  commentId: P:System.Security.AccessControl.GenericAce.AceType
+  nameWithType: GenericAce.AceType
+- uid: System.Security.AccessControl.GenericAce.AuditFlags
+  parent: System.Security.AccessControl.GenericAce
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.AccessControl.GenericAce.AuditFlags
+  commentId: P:System.Security.AccessControl.GenericAce.AuditFlags
+  nameWithType: GenericAce.AuditFlags
+- uid: System.Security.AccessControl.GenericAce.InheritanceFlags
+  parent: System.Security.AccessControl.GenericAce
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.AccessControl.GenericAce.InheritanceFlags
+  commentId: P:System.Security.AccessControl.GenericAce.InheritanceFlags
+  nameWithType: GenericAce.InheritanceFlags
+- uid: System.Security.AccessControl.GenericAce.IsInherited
+  parent: System.Security.AccessControl.GenericAce
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.AccessControl.GenericAce.IsInherited
+  commentId: P:System.Security.AccessControl.GenericAce.IsInherited
+  nameWithType: GenericAce.IsInherited
+- uid: System.Security.AccessControl.GenericAce.PropagationFlags
+  parent: System.Security.AccessControl.GenericAce
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.AccessControl.GenericAce.PropagationFlags
+  commentId: P:System.Security.AccessControl.GenericAce.PropagationFlags
+  nameWithType: GenericAce.PropagationFlags
+- uid: System.Security.AccessControl.GenericAce.Copy
+  parent: System.Security.AccessControl.GenericAce
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.AccessControl.GenericAce.Copy()
+  spec.csharp:
+  - uid: System.Security.AccessControl.GenericAce.Copy
+    name: "XXX"
+    fullName: System.Security.AccessControl.GenericAce.Copy
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Security.AccessControl.GenericAce.Copy
+    name: "XXX"
+    fullName: System.Security.AccessControl.GenericAce.Copy
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Security.AccessControl.GenericAce.Copy
+  nameWithType: GenericAce.Copy()
+- uid: System.Security.AccessControl.GenericAce.CreateFromBinaryForm(System.Byte[],System.Int32)
+  parent: System.Security.AccessControl.GenericAce
+  isExternal: true
+  name: "XXX"
+  fullName: System.Security.AccessControl.GenericAce.CreateFromBinaryForm(System.Byte[], System.Int32)
+  fullname.vb: System.Security.AccessControl.GenericAce.CreateFromBinaryForm(System.Byte(), System.Int32)
+  name.vb: CreateFromBinaryForm(Byte(), Int32)
+  spec.csharp:
+  - uid: System.Security.AccessControl.GenericAce.CreateFromBinaryForm(System.Byte[],System.Int32)
+    name: "XXX"
+    fullName: System.Security.AccessControl.GenericAce.CreateFromBinaryForm
+  - name: "XXX"
+    fullName: (
+  - uid: System.Byte
+    name: "XXX"
+    fullName: System.Byte
+    isExternal: true
+  - name: 'XXX'
+    fullName: '[]'
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Security.AccessControl.GenericAce.CreateFromBinaryForm(System.Byte[],System.Int32)
+    name: "XXX"
+    fullName: System.Security.AccessControl.GenericAce.CreateFromBinaryForm
+  - name: "XXX"
+    fullName: (
+  - uid: System.Byte
+    name: "XXX"
+    fullName: System.Byte
+    isExternal: true
+  - name: "XXX"
+    fullName: ()
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Security.AccessControl.GenericAce.CreateFromBinaryForm(System.Byte[],System.Int32)
+  nameWithType: GenericAce.CreateFromBinaryForm(Byte[], Int32)
+  nameWithType.vb: GenericAce.CreateFromBinaryForm(Byte(), Int32)
+- uid: System.Security.AccessControl.GenericAce.Equals(System.Object)
+  parent: System.Security.AccessControl.GenericAce
+  isExternal: true
+  name: "XXX"
+  fullName: System.Security.AccessControl.GenericAce.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Security.AccessControl.GenericAce.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Security.AccessControl.GenericAce.Equals
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Security.AccessControl.GenericAce.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Security.AccessControl.GenericAce.Equals
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Security.AccessControl.GenericAce.Equals(System.Object)
+  nameWithType: GenericAce.Equals(Object)
+- uid: System.Security.AccessControl.GenericAce.GetHashCode
+  parent: System.Security.AccessControl.GenericAce
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.AccessControl.GenericAce.GetHashCode()
+  spec.csharp:
+  - uid: System.Security.AccessControl.GenericAce.GetHashCode
+    name: "XXX"
+    fullName: System.Security.AccessControl.GenericAce.GetHashCode
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Security.AccessControl.GenericAce.GetHashCode
+    name: "XXX"
+    fullName: System.Security.AccessControl.GenericAce.GetHashCode
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Security.AccessControl.GenericAce.GetHashCode
+  nameWithType: GenericAce.GetHashCode()
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.ToString
+  nameWithType: Object.ToString()
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  nameWithType: Object.Equals(Object, Object)
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.GetType
+  nameWithType: Object.GetType()
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.MemberwiseClone
+  nameWithType: Object.MemberwiseClone()
+- uid: System
+  isExternal: false
+  name: "XXX"
+  fullName: System
+  commentId: N:System
+  nameWithType: System
+- uid: System.Security.AccessControl.AceFlags
+  parent: System.Security.AccessControl
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.AccessControl.AceFlags
+  commentId: T:System.Security.AccessControl.AceFlags
+  nameWithType: AceFlags
+- uid: System.Int32
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Int32
+  commentId: T:System.Int32
+  nameWithType: Int32
+- uid: System.Security.AccessControl.CompoundAceType
+  parent: System.Security.AccessControl
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.AccessControl.CompoundAceType
+  commentId: T:System.Security.AccessControl.CompoundAceType
+  nameWithType: CompoundAceType
+- uid: System.Security.Principal.SecurityIdentifier
+  parent: System.Security.Principal
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.Principal.SecurityIdentifier
+  commentId: T:System.Security.Principal.SecurityIdentifier
+  nameWithType: SecurityIdentifier
+- uid: System.Security.Principal
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.Principal
+  commentId: N:System.Security.Principal
+  nameWithType: System.Security.Principal
+- uid: System.Security.AccessControl.GenericAce.BinaryLength
+  parent: System.Security.AccessControl.GenericAce
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.AccessControl.GenericAce.BinaryLength
+  commentId: P:System.Security.AccessControl.GenericAce.BinaryLength
+  nameWithType: GenericAce.BinaryLength
+- uid: System.Security.AccessControl.GenericAce.GetBinaryForm(System.Byte[],System.Int32)
+  parent: System.Security.AccessControl.GenericAce
+  isExternal: true
+  name: "XXX"
+  fullName: System.Security.AccessControl.GenericAce.GetBinaryForm(System.Byte[], System.Int32)
+  fullname.vb: System.Security.AccessControl.GenericAce.GetBinaryForm(System.Byte(), System.Int32)
+  name.vb: GetBinaryForm(Byte(), Int32)
+  spec.csharp:
+  - uid: System.Security.AccessControl.GenericAce.GetBinaryForm(System.Byte[],System.Int32)
+    name: "XXX"
+    fullName: System.Security.AccessControl.GenericAce.GetBinaryForm
+  - name: "XXX"
+    fullName: (
+  - uid: System.Byte
+    name: "XXX"
+    fullName: System.Byte
+    isExternal: true
+  - name: 'XXX'
+    fullName: '[]'
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Security.AccessControl.GenericAce.GetBinaryForm(System.Byte[],System.Int32)
+    name: "XXX"
+    fullName: System.Security.AccessControl.GenericAce.GetBinaryForm
+  - name: "XXX"
+    fullName: (
+  - uid: System.Byte
+    name: "XXX"
+    fullName: System.Byte
+    isExternal: true
+  - name: "XXX"
+    fullName: ()
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Security.AccessControl.GenericAce.GetBinaryForm(System.Byte[],System.Int32)
+  nameWithType: GenericAce.GetBinaryForm(Byte[], Int32)
+  nameWithType.vb: GenericAce.GetBinaryForm(Byte(), Int32)
+- uid: System.Byte[]
+  name: "XXX"
+  fullName: System.Byte[]
+  fullname.vb: System.Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: "XXX"
+    fullName: System.Byte
+    isExternal: true
+  - name: 'XXX'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: "XXX"
+    fullName: System.Byte
+    isExternal: true
+  - name: "XXX"
+    fullName: ()
+  nameWithType: Byte[]
+  nameWithType.vb: Byte()
+- uid: System.ArgumentOutOfRangeException
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentOutOfRangeException
+  nameWithType: ArgumentOutOfRangeException
+  commentId: T:System.ArgumentOutOfRangeException

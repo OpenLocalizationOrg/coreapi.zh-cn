@@ -1,0 +1,1037 @@
+items:
+- uid: System.Diagnostics.CounterSample
+  commentId: T:System.Diagnostics.CounterSample
+  id: CounterSample
+  parent: System.Diagnostics
+  children:
+  - System.Diagnostics.CounterSample.#ctor(System.Int64,System.Int64,System.Int64,System.Int64,System.Int64,System.Int64,System.Diagnostics.PerformanceCounterType)
+  - System.Diagnostics.CounterSample.#ctor(System.Int64,System.Int64,System.Int64,System.Int64,System.Int64,System.Int64,System.Diagnostics.PerformanceCounterType,System.Int64)
+  - System.Diagnostics.CounterSample.BaseValue
+  - System.Diagnostics.CounterSample.Calculate(System.Diagnostics.CounterSample)
+  - System.Diagnostics.CounterSample.Calculate(System.Diagnostics.CounterSample,System.Diagnostics.CounterSample)
+  - System.Diagnostics.CounterSample.CounterFrequency
+  - System.Diagnostics.CounterSample.CounterTimeStamp
+  - System.Diagnostics.CounterSample.CounterType
+  - System.Diagnostics.CounterSample.Empty
+  - System.Diagnostics.CounterSample.Equals(System.Diagnostics.CounterSample)
+  - System.Diagnostics.CounterSample.Equals(System.Object)
+  - System.Diagnostics.CounterSample.GetHashCode
+  - System.Diagnostics.CounterSample.op_Equality(System.Diagnostics.CounterSample,System.Diagnostics.CounterSample)
+  - System.Diagnostics.CounterSample.op_Inequality(System.Diagnostics.CounterSample,System.Diagnostics.CounterSample)
+  - System.Diagnostics.CounterSample.RawValue
+  - System.Diagnostics.CounterSample.SystemFrequency
+  - System.Diagnostics.CounterSample.TimeStamp
+  - System.Diagnostics.CounterSample.TimeStamp100nSec
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Diagnostics.CounterSample
+  type: Struct
+  source:
+    remote:
+      path: src/System.Diagnostics.PerformanceCounter/ref/System.Diagnostics.PerformanceCounter.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: CounterSample
+    path: src/System.Diagnostics.PerformanceCounter/ref/System.Diagnostics.PerformanceCounter.cs
+    startLine: 10
+  assemblies:
+  - System.Diagnostics.PerformanceCounter
+  namespace: System.Diagnostics
+  summary: "\n<p>Defines a structure that holds the raw data for a performance counter.</p>\n"
+  syntax:
+    content: >-
+      [StructLayout(LayoutKind.Sequential)]
+
+      public struct CounterSample
+    content.vb: >-
+      <StructLayout(LayoutKind.Sequential)>
+
+      Public Structure CounterSample
+  inheritedMembers:
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+  attributes:
+  - type: System.Runtime.InteropServices.StructLayoutAttribute
+    ctor: System.Runtime.InteropServices.StructLayoutAttribute.#ctor(System.Runtime.InteropServices.LayoutKind)
+    arguments:
+    - type: System.Runtime.InteropServices.LayoutKind
+      value: 0
+  modifiers.csharp:
+  - public
+  - struct
+  modifiers.vb:
+  - Public
+  - Structure
+  nameWithType: CounterSample
+- uid: System.Diagnostics.CounterSample.Empty
+  commentId: F:System.Diagnostics.CounterSample.Empty
+  id: Empty
+  parent: System.Diagnostics.CounterSample
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Diagnostics.CounterSample.Empty
+  type: Field
+  source:
+    remote:
+      path: src/System.Diagnostics.PerformanceCounter/ref/System.Diagnostics.PerformanceCounter.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Empty
+    path: src/System.Diagnostics.PerformanceCounter/ref/System.Diagnostics.PerformanceCounter.cs
+    startLine: 13
+  assemblies:
+  - System.Diagnostics.PerformanceCounter
+  namespace: System.Diagnostics
+  summary: "\n<p>Defines an empty, uninitialized performance counter sample of type <strong>NumberOfItems32</strong>.</p>\n"
+  syntax:
+    content: public static CounterSample Empty
+    content.vb: Public Shared Empty As CounterSample
+    return:
+      type: System.Diagnostics.CounterSample
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  nameWithType: CounterSample.Empty
+- uid: System.Diagnostics.CounterSample.#ctor(System.Int64,System.Int64,System.Int64,System.Int64,System.Int64,System.Int64,System.Diagnostics.PerformanceCounterType)
+  commentId: M:System.Diagnostics.CounterSample.#ctor(System.Int64,System.Int64,System.Int64,System.Int64,System.Int64,System.Int64,System.Diagnostics.PerformanceCounterType)
+  id: '#ctor(System.Int64,System.Int64,System.Int64,System.Int64,System.Int64,System.Int64,System.Diagnostics.PerformanceCounterType)'
+  parent: System.Diagnostics.CounterSample
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Diagnostics.CounterSample.CounterSample(System.Int64, System.Int64, System.Int64, System.Int64, System.Int64, System.Int64, System.Diagnostics.PerformanceCounterType)
+  type: Constructor
+  source:
+    remote:
+      path: src/System.Diagnostics.PerformanceCounter/ref/System.Diagnostics.PerformanceCounter.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: .ctor
+    path: src/System.Diagnostics.PerformanceCounter/ref/System.Diagnostics.PerformanceCounter.cs
+    startLine: 14
+  assemblies:
+  - System.Diagnostics.PerformanceCounter
+  namespace: System.Diagnostics
+  summary: "\n<p>Initializes a new instance of the <xref href=\"System.Diagnostics.CounterSample\" data-throw-if-not-resolved=\"false\"></xref> structure and sets the <xref href=\"System.Diagnostics.CounterSample.CounterTimeStamp\" data-throw-if-not-resolved=\"false\"></xref> property to 0 (zero).</p>\n"
+  syntax:
+    content: public CounterSample(long rawValue, long baseValue, long counterFrequency, long systemFrequency, long timeStamp, long timeStamp100nSec, PerformanceCounterType counterType)
+    content.vb: Public Sub New(rawValue As Long, baseValue As Long, counterFrequency As Long, systemFrequency As Long, timeStamp As Long, timeStamp100nSec As Long, counterType As PerformanceCounterType)
+    parameters:
+    - id: rawValue
+      type: System.Int64
+      description: "\n<p>The numeric value associated with the performance counter sample. </p>\n"
+    - id: baseValue
+      type: System.Int64
+      description: "\n<p>An optional, base raw value for the counter, to use only if the sample is based on multiple counters. </p>\n"
+    - id: counterFrequency
+      type: System.Int64
+      description: "\n<p>The frequency with which the counter is read. </p>\n"
+    - id: systemFrequency
+      type: System.Int64
+      description: "\n<p>The frequency with which the system reads from the counter. </p>\n"
+    - id: timeStamp
+      type: System.Int64
+      description: "\n<p>The raw time stamp. </p>\n"
+    - id: timeStamp100nSec
+      type: System.Int64
+      description: "\n<p>The raw, high-fidelity time stamp. </p>\n"
+    - id: counterType
+      type: System.Diagnostics.PerformanceCounterType
+      description: "\n<p>A <xref href=\"System.Diagnostics.PerformanceCounterType\" data-throw-if-not-resolved=\"false\"></xref> object that indicates the type of the counter for which this sample is a snapshot. </p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: CounterSample.CounterSample(Int64, Int64, Int64, Int64, Int64, Int64, PerformanceCounterType)
+- uid: System.Diagnostics.CounterSample.#ctor(System.Int64,System.Int64,System.Int64,System.Int64,System.Int64,System.Int64,System.Diagnostics.PerformanceCounterType,System.Int64)
+  commentId: M:System.Diagnostics.CounterSample.#ctor(System.Int64,System.Int64,System.Int64,System.Int64,System.Int64,System.Int64,System.Diagnostics.PerformanceCounterType,System.Int64)
+  id: '#ctor(System.Int64,System.Int64,System.Int64,System.Int64,System.Int64,System.Int64,System.Diagnostics.PerformanceCounterType,System.Int64)'
+  parent: System.Diagnostics.CounterSample
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Diagnostics.CounterSample.CounterSample(System.Int64, System.Int64, System.Int64, System.Int64, System.Int64, System.Int64, System.Diagnostics.PerformanceCounterType, System.Int64)
+  type: Constructor
+  source:
+    remote:
+      path: src/System.Diagnostics.PerformanceCounter/ref/System.Diagnostics.PerformanceCounter.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: .ctor
+    path: src/System.Diagnostics.PerformanceCounter/ref/System.Diagnostics.PerformanceCounter.cs
+    startLine: 15
+  assemblies:
+  - System.Diagnostics.PerformanceCounter
+  namespace: System.Diagnostics
+  summary: "\n<p>Initializes a new instance of the <xref href=\"System.Diagnostics.CounterSample\" data-throw-if-not-resolved=\"false\"></xref> structure and sets the <xref href=\"System.Diagnostics.CounterSample.CounterTimeStamp\" data-throw-if-not-resolved=\"false\"></xref> property to the value that is passed in.</p>\n"
+  syntax:
+    content: public CounterSample(long rawValue, long baseValue, long counterFrequency, long systemFrequency, long timeStamp, long timeStamp100nSec, PerformanceCounterType counterType, long counterTimeStamp)
+    content.vb: Public Sub New(rawValue As Long, baseValue As Long, counterFrequency As Long, systemFrequency As Long, timeStamp As Long, timeStamp100nSec As Long, counterType As PerformanceCounterType, counterTimeStamp As Long)
+    parameters:
+    - id: rawValue
+      type: System.Int64
+      description: "\n<p>The numeric value associated with the performance counter sample. </p>\n"
+    - id: baseValue
+      type: System.Int64
+      description: "\n<p>An optional, base raw value for the counter, to use only if the sample is based on multiple counters. </p>\n"
+    - id: counterFrequency
+      type: System.Int64
+      description: "\n<p>The frequency with which the counter is read. </p>\n"
+    - id: systemFrequency
+      type: System.Int64
+      description: "\n<p>The frequency with which the system reads from the counter. </p>\n"
+    - id: timeStamp
+      type: System.Int64
+      description: "\n<p>The raw time stamp. </p>\n"
+    - id: timeStamp100nSec
+      type: System.Int64
+      description: "\n<p>The raw, high-fidelity time stamp. </p>\n"
+    - id: counterType
+      type: System.Diagnostics.PerformanceCounterType
+      description: "\n<p>A <xref href=\"System.Diagnostics.PerformanceCounterType\" data-throw-if-not-resolved=\"false\"></xref> object that indicates the type of the counter for which this sample is a snapshot. </p>\n"
+    - id: counterTimeStamp
+      type: System.Int64
+      description: "\n<p>The time at which the sample was taken. </p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: CounterSample.CounterSample(Int64, Int64, Int64, Int64, Int64, Int64, PerformanceCounterType, Int64)
+- uid: System.Diagnostics.CounterSample.BaseValue
+  commentId: P:System.Diagnostics.CounterSample.BaseValue
+  id: BaseValue
+  parent: System.Diagnostics.CounterSample
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Diagnostics.CounterSample.BaseValue
+  type: Property
+  source:
+    remote:
+      path: src/System.Diagnostics.PerformanceCounter/ref/System.Diagnostics.PerformanceCounter.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: BaseValue
+    path: src/System.Diagnostics.PerformanceCounter/ref/System.Diagnostics.PerformanceCounter.cs
+    startLine: 16
+  assemblies:
+  - System.Diagnostics.PerformanceCounter
+  namespace: System.Diagnostics
+  summary: "\n<p>Gets an optional, base raw value for the counter.</p>\n"
+  syntax:
+    content: public long BaseValue { get; }
+    content.vb: Public ReadOnly Property BaseValue As Long
+    parameters: []
+    return:
+      type: System.Int64
+      description: "\n<p>The base raw value, which is used only if the sample is based on multiple counters.</p>\n"
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  nameWithType: CounterSample.BaseValue
+- uid: System.Diagnostics.CounterSample.CounterFrequency
+  commentId: P:System.Diagnostics.CounterSample.CounterFrequency
+  id: CounterFrequency
+  parent: System.Diagnostics.CounterSample
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Diagnostics.CounterSample.CounterFrequency
+  type: Property
+  source:
+    remote:
+      path: src/System.Diagnostics.PerformanceCounter/ref/System.Diagnostics.PerformanceCounter.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: CounterFrequency
+    path: src/System.Diagnostics.PerformanceCounter/ref/System.Diagnostics.PerformanceCounter.cs
+    startLine: 17
+  assemblies:
+  - System.Diagnostics.PerformanceCounter
+  namespace: System.Diagnostics
+  summary: "\n<p>Gets the raw counter frequency.</p>\n"
+  syntax:
+    content: public long CounterFrequency { get; }
+    content.vb: Public ReadOnly Property CounterFrequency As Long
+    parameters: []
+    return:
+      type: System.Int64
+      description: "\n<p>The frequency with which the counter is read.</p>\n"
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  nameWithType: CounterSample.CounterFrequency
+- uid: System.Diagnostics.CounterSample.CounterTimeStamp
+  commentId: P:System.Diagnostics.CounterSample.CounterTimeStamp
+  id: CounterTimeStamp
+  parent: System.Diagnostics.CounterSample
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Diagnostics.CounterSample.CounterTimeStamp
+  type: Property
+  source:
+    remote:
+      path: src/System.Diagnostics.PerformanceCounter/ref/System.Diagnostics.PerformanceCounter.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: CounterTimeStamp
+    path: src/System.Diagnostics.PerformanceCounter/ref/System.Diagnostics.PerformanceCounter.cs
+    startLine: 18
+  assemblies:
+  - System.Diagnostics.PerformanceCounter
+  namespace: System.Diagnostics
+  summary: "\n<p>Gets the counter's time stamp.</p>\n"
+  syntax:
+    content: public long CounterTimeStamp { get; }
+    content.vb: Public ReadOnly Property CounterTimeStamp As Long
+    parameters: []
+    return:
+      type: System.Int64
+      description: "\n<p>The time at which the sample was taken.</p>\n"
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  nameWithType: CounterSample.CounterTimeStamp
+- uid: System.Diagnostics.CounterSample.CounterType
+  commentId: P:System.Diagnostics.CounterSample.CounterType
+  id: CounterType
+  parent: System.Diagnostics.CounterSample
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Diagnostics.CounterSample.CounterType
+  type: Property
+  source:
+    remote:
+      path: src/System.Diagnostics.PerformanceCounter/ref/System.Diagnostics.PerformanceCounter.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: CounterType
+    path: src/System.Diagnostics.PerformanceCounter/ref/System.Diagnostics.PerformanceCounter.cs
+    startLine: 19
+  assemblies:
+  - System.Diagnostics.PerformanceCounter
+  namespace: System.Diagnostics
+  summary: "\n<p>Gets the performance counter type.</p>\n"
+  syntax:
+    content: public PerformanceCounterType CounterType { get; }
+    content.vb: Public ReadOnly Property CounterType As PerformanceCounterType
+    parameters: []
+    return:
+      type: System.Diagnostics.PerformanceCounterType
+      description: "\n<p>A <xref href=\"System.Diagnostics.PerformanceCounterType\" data-throw-if-not-resolved=\"false\"></xref> object that indicates the type of the counter for which this sample is a snapshot.</p>\n"
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  nameWithType: CounterSample.CounterType
+- uid: System.Diagnostics.CounterSample.RawValue
+  commentId: P:System.Diagnostics.CounterSample.RawValue
+  id: RawValue
+  parent: System.Diagnostics.CounterSample
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Diagnostics.CounterSample.RawValue
+  type: Property
+  source:
+    remote:
+      path: src/System.Diagnostics.PerformanceCounter/ref/System.Diagnostics.PerformanceCounter.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: RawValue
+    path: src/System.Diagnostics.PerformanceCounter/ref/System.Diagnostics.PerformanceCounter.cs
+    startLine: 20
+  assemblies:
+  - System.Diagnostics.PerformanceCounter
+  namespace: System.Diagnostics
+  summary: "\n<p>Gets the raw value of the counter.</p>\n"
+  syntax:
+    content: public long RawValue { get; }
+    content.vb: Public ReadOnly Property RawValue As Long
+    parameters: []
+    return:
+      type: System.Int64
+      description: "\n<p>The numeric value that is associated with the performance counter sample.</p>\n"
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  nameWithType: CounterSample.RawValue
+- uid: System.Diagnostics.CounterSample.SystemFrequency
+  commentId: P:System.Diagnostics.CounterSample.SystemFrequency
+  id: SystemFrequency
+  parent: System.Diagnostics.CounterSample
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Diagnostics.CounterSample.SystemFrequency
+  type: Property
+  source:
+    remote:
+      path: src/System.Diagnostics.PerformanceCounter/ref/System.Diagnostics.PerformanceCounter.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: SystemFrequency
+    path: src/System.Diagnostics.PerformanceCounter/ref/System.Diagnostics.PerformanceCounter.cs
+    startLine: 21
+  assemblies:
+  - System.Diagnostics.PerformanceCounter
+  namespace: System.Diagnostics
+  summary: "\n<p>Gets the raw system frequency.</p>\n"
+  syntax:
+    content: public long SystemFrequency { get; }
+    content.vb: Public ReadOnly Property SystemFrequency As Long
+    parameters: []
+    return:
+      type: System.Int64
+      description: "\n<p>The frequency with which the system reads from the counter.</p>\n"
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  nameWithType: CounterSample.SystemFrequency
+- uid: System.Diagnostics.CounterSample.TimeStamp
+  commentId: P:System.Diagnostics.CounterSample.TimeStamp
+  id: TimeStamp
+  parent: System.Diagnostics.CounterSample
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Diagnostics.CounterSample.TimeStamp
+  type: Property
+  source:
+    remote:
+      path: src/System.Diagnostics.PerformanceCounter/ref/System.Diagnostics.PerformanceCounter.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: TimeStamp
+    path: src/System.Diagnostics.PerformanceCounter/ref/System.Diagnostics.PerformanceCounter.cs
+    startLine: 22
+  assemblies:
+  - System.Diagnostics.PerformanceCounter
+  namespace: System.Diagnostics
+  summary: "\n<p>Gets the raw time stamp.</p>\n"
+  syntax:
+    content: public long TimeStamp { get; }
+    content.vb: Public ReadOnly Property TimeStamp As Long
+    parameters: []
+    return:
+      type: System.Int64
+      description: "\n<p>The system time stamp.</p>\n"
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  nameWithType: CounterSample.TimeStamp
+- uid: System.Diagnostics.CounterSample.TimeStamp100nSec
+  commentId: P:System.Diagnostics.CounterSample.TimeStamp100nSec
+  id: TimeStamp100nSec
+  parent: System.Diagnostics.CounterSample
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Diagnostics.CounterSample.TimeStamp100nSec
+  type: Property
+  source:
+    remote:
+      path: src/System.Diagnostics.PerformanceCounter/ref/System.Diagnostics.PerformanceCounter.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: TimeStamp100nSec
+    path: src/System.Diagnostics.PerformanceCounter/ref/System.Diagnostics.PerformanceCounter.cs
+    startLine: 23
+  assemblies:
+  - System.Diagnostics.PerformanceCounter
+  namespace: System.Diagnostics
+  summary: "\n<p>Gets the raw, high-fidelity time stamp.</p>\n"
+  syntax:
+    content: public long TimeStamp100nSec { get; }
+    content.vb: Public ReadOnly Property TimeStamp100nSec As Long
+    parameters: []
+    return:
+      type: System.Int64
+      description: "\n<p>The system time stamp, represented within 0.1 millisecond.</p>\n"
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  nameWithType: CounterSample.TimeStamp100nSec
+- uid: System.Diagnostics.CounterSample.Calculate(System.Diagnostics.CounterSample)
+  commentId: M:System.Diagnostics.CounterSample.Calculate(System.Diagnostics.CounterSample)
+  id: Calculate(System.Diagnostics.CounterSample)
+  parent: System.Diagnostics.CounterSample
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Diagnostics.CounterSample.Calculate(System.Diagnostics.CounterSample)
+  type: Method
+  source:
+    remote:
+      path: src/System.Diagnostics.PerformanceCounter/ref/System.Diagnostics.PerformanceCounter.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Calculate
+    path: src/System.Diagnostics.PerformanceCounter/ref/System.Diagnostics.PerformanceCounter.cs
+    startLine: 24
+  assemblies:
+  - System.Diagnostics.PerformanceCounter
+  namespace: System.Diagnostics
+  summary: "\n<p>Calculates the performance data of the counter, using a single sample point. This method is generally used for uncalculated performance counter types.</p>\n"
+  syntax:
+    content: public static float Calculate(CounterSample counterSample)
+    content.vb: Public Shared Function Calculate(counterSample As CounterSample) As Single
+    parameters:
+    - id: counterSample
+      type: System.Diagnostics.CounterSample
+      description: "\n<p>The <xref href=\"System.Diagnostics.CounterSample\" data-throw-if-not-resolved=\"false\"></xref> structure to use as a base point for calculating performance data. </p>\n"
+    return:
+      type: System.Single
+      description: "\n<p>The calculated performance value.</p>\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  nameWithType: CounterSample.Calculate(CounterSample)
+- uid: System.Diagnostics.CounterSample.Calculate(System.Diagnostics.CounterSample,System.Diagnostics.CounterSample)
+  commentId: M:System.Diagnostics.CounterSample.Calculate(System.Diagnostics.CounterSample,System.Diagnostics.CounterSample)
+  id: Calculate(System.Diagnostics.CounterSample,System.Diagnostics.CounterSample)
+  parent: System.Diagnostics.CounterSample
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Diagnostics.CounterSample.Calculate(System.Diagnostics.CounterSample, System.Diagnostics.CounterSample)
+  type: Method
+  source:
+    remote:
+      path: src/System.Diagnostics.PerformanceCounter/ref/System.Diagnostics.PerformanceCounter.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Calculate
+    path: src/System.Diagnostics.PerformanceCounter/ref/System.Diagnostics.PerformanceCounter.cs
+    startLine: 25
+  assemblies:
+  - System.Diagnostics.PerformanceCounter
+  namespace: System.Diagnostics
+  summary: "\n<p>Calculates the performance data of the counter, using two sample points. This method is generally used for calculated performance counter types, such as averages.</p>\n"
+  syntax:
+    content: public static float Calculate(CounterSample counterSample, CounterSample nextCounterSample)
+    content.vb: Public Shared Function Calculate(counterSample As CounterSample, nextCounterSample As CounterSample) As Single
+    parameters:
+    - id: counterSample
+      type: System.Diagnostics.CounterSample
+      description: "\n<p>The <xref href=\"System.Diagnostics.CounterSample\" data-throw-if-not-resolved=\"false\"></xref> structure to use as a base point for calculating performance data. </p>\n"
+    - id: nextCounterSample
+      type: System.Diagnostics.CounterSample
+      description: "\n<p>The <xref href=\"System.Diagnostics.CounterSample\" data-throw-if-not-resolved=\"false\"></xref> structure to use as an ending point for calculating performance data. </p>\n"
+    return:
+      type: System.Single
+      description: "\n<p>The calculated performance value.</p>\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  nameWithType: CounterSample.Calculate(CounterSample, CounterSample)
+- uid: System.Diagnostics.CounterSample.Equals(System.Diagnostics.CounterSample)
+  commentId: M:System.Diagnostics.CounterSample.Equals(System.Diagnostics.CounterSample)
+  id: Equals(System.Diagnostics.CounterSample)
+  parent: System.Diagnostics.CounterSample
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Diagnostics.CounterSample.Equals(System.Diagnostics.CounterSample)
+  type: Method
+  source:
+    remote:
+      path: src/System.Diagnostics.PerformanceCounter/ref/System.Diagnostics.PerformanceCounter.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Equals
+    path: src/System.Diagnostics.PerformanceCounter/ref/System.Diagnostics.PerformanceCounter.cs
+    startLine: 26
+  assemblies:
+  - System.Diagnostics.PerformanceCounter
+  namespace: System.Diagnostics
+  summary: "\n<p>Indicates whether the specified <xref href=\"System.Diagnostics.CounterSample\" data-throw-if-not-resolved=\"false\"></xref> structure is equal to the current <xref href=\"System.Diagnostics.CounterSample\" data-throw-if-not-resolved=\"false\"></xref> structure.</p>\n"
+  syntax:
+    content: public bool Equals(CounterSample sample)
+    content.vb: Public Function Equals(sample As CounterSample) As Boolean
+    parameters:
+    - id: sample
+      type: System.Diagnostics.CounterSample
+      description: "\n<p>The <xref href=\"System.Diagnostics.CounterSample\" data-throw-if-not-resolved=\"false\"></xref> structure to be compared with this instance.</p>\n"
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if <em>sample</em> is equal to the current instance; otherwise, <strong>false</strong>. </p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: CounterSample.Equals(CounterSample)
+- uid: System.Diagnostics.CounterSample.Equals(System.Object)
+  commentId: M:System.Diagnostics.CounterSample.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: System.Diagnostics.CounterSample
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Diagnostics.CounterSample.Equals(System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/System.Diagnostics.PerformanceCounter/ref/System.Diagnostics.PerformanceCounter.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Equals
+    path: src/System.Diagnostics.PerformanceCounter/ref/System.Diagnostics.PerformanceCounter.cs
+    startLine: 27
+  assemblies:
+  - System.Diagnostics.PerformanceCounter
+  namespace: System.Diagnostics
+  summary: "\n<p>Indicates whether the specified structure is a <xref href=\"System.Diagnostics.CounterSample\" data-throw-if-not-resolved=\"false\"></xref> structure and is identical to the current <xref href=\"System.Diagnostics.CounterSample\" data-throw-if-not-resolved=\"false\"></xref> structure.</p>\n"
+  syntax:
+    content: public override bool Equals(object o)
+    content.vb: Public Overrides Function Equals(o As Object) As Boolean
+    parameters:
+    - id: o
+      type: System.Object
+      description: "\n<p>The <xref href=\"System.Diagnostics.CounterSample\" data-throw-if-not-resolved=\"false\"></xref> structure to be compared with the current structure.</p>\n"
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if <em>o</em> is a <xref href=\"System.Diagnostics.CounterSample\" data-throw-if-not-resolved=\"false\"></xref> structure and is identical to the current instance; otherwise, <strong>false</strong>. </p>\n"
+  overridden: System.ValueType.Equals(System.Object)
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  nameWithType: CounterSample.Equals(Object)
+- uid: System.Diagnostics.CounterSample.GetHashCode
+  commentId: M:System.Diagnostics.CounterSample.GetHashCode
+  id: GetHashCode
+  parent: System.Diagnostics.CounterSample
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Diagnostics.CounterSample.GetHashCode()
+  type: Method
+  source:
+    remote:
+      path: src/System.Diagnostics.PerformanceCounter/ref/System.Diagnostics.PerformanceCounter.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: GetHashCode
+    path: src/System.Diagnostics.PerformanceCounter/ref/System.Diagnostics.PerformanceCounter.cs
+    startLine: 28
+  assemblies:
+  - System.Diagnostics.PerformanceCounter
+  namespace: System.Diagnostics
+  summary: "\n<p>Gets a hash code for the current counter sample.</p>\n"
+  syntax:
+    content: public override int GetHashCode()
+    content.vb: Public Overrides Function GetHashCode As Integer
+    return:
+      type: System.Int32
+      description: "\n<p>A hash code for the current counter sample.</p>\n"
+  overridden: System.ValueType.GetHashCode
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  nameWithType: CounterSample.GetHashCode()
+- uid: System.Diagnostics.CounterSample.op_Equality(System.Diagnostics.CounterSample,System.Diagnostics.CounterSample)
+  commentId: M:System.Diagnostics.CounterSample.op_Equality(System.Diagnostics.CounterSample,System.Diagnostics.CounterSample)
+  id: op_Equality(System.Diagnostics.CounterSample,System.Diagnostics.CounterSample)
+  parent: System.Diagnostics.CounterSample
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Diagnostics.CounterSample.Equality(System.Diagnostics.CounterSample, System.Diagnostics.CounterSample)
+  type: Operator
+  source:
+    remote:
+      path: src/System.Diagnostics.PerformanceCounter/ref/System.Diagnostics.PerformanceCounter.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: op_Equality
+    path: src/System.Diagnostics.PerformanceCounter/ref/System.Diagnostics.PerformanceCounter.cs
+    startLine: 29
+  assemblies:
+  - System.Diagnostics.PerformanceCounter
+  namespace: System.Diagnostics
+  summary: "\n<p>Returns a value that indicates whether two <xref href=\"System.Diagnostics.CounterSample\" data-throw-if-not-resolved=\"false\"></xref> structures are equal.</p>\n"
+  syntax:
+    content: public static bool operator ==(CounterSample a, CounterSample b)
+    content.vb: Public Shared Operator =(a As CounterSample, b As CounterSample) As Boolean
+    parameters:
+    - id: a
+      type: System.Diagnostics.CounterSample
+      description: "\n<p>A <xref href=\"System.Diagnostics.CounterSample\" data-throw-if-not-resolved=\"false\"></xref> structure.</p>\n"
+    - id: b
+      type: System.Diagnostics.CounterSample
+      description: "\n<p>Another <xref href=\"System.Diagnostics.CounterSample\" data-throw-if-not-resolved=\"false\"></xref> structure to be compared to the structure specified by the <em>a</em> parameter.</p>\n"
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if <em>a</em> and <em>b</em> are equal; otherwise, <strong>false</strong>.</p>\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  nameWithType: CounterSample.Equality(CounterSample, CounterSample)
+- uid: System.Diagnostics.CounterSample.op_Inequality(System.Diagnostics.CounterSample,System.Diagnostics.CounterSample)
+  commentId: M:System.Diagnostics.CounterSample.op_Inequality(System.Diagnostics.CounterSample,System.Diagnostics.CounterSample)
+  id: op_Inequality(System.Diagnostics.CounterSample,System.Diagnostics.CounterSample)
+  parent: System.Diagnostics.CounterSample
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Diagnostics.CounterSample.Inequality(System.Diagnostics.CounterSample, System.Diagnostics.CounterSample)
+  type: Operator
+  source:
+    remote:
+      path: src/System.Diagnostics.PerformanceCounter/ref/System.Diagnostics.PerformanceCounter.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: op_Inequality
+    path: src/System.Diagnostics.PerformanceCounter/ref/System.Diagnostics.PerformanceCounter.cs
+    startLine: 30
+  assemblies:
+  - System.Diagnostics.PerformanceCounter
+  namespace: System.Diagnostics
+  summary: "\n<p>Returns a value that indicates whether two <xref href=\"System.Diagnostics.CounterSample\" data-throw-if-not-resolved=\"false\"></xref> structures are not equal.</p>\n"
+  syntax:
+    content: public static bool operator !=(CounterSample a, CounterSample b)
+    content.vb: Public Shared Operator <>(a As CounterSample, b As CounterSample) As Boolean
+    parameters:
+    - id: a
+      type: System.Diagnostics.CounterSample
+      description: "\n<p>A <xref href=\"System.Diagnostics.CounterSample\" data-throw-if-not-resolved=\"false\"></xref> structure.</p>\n"
+    - id: b
+      type: System.Diagnostics.CounterSample
+      description: "\n<p>Another <xref href=\"System.Diagnostics.CounterSample\" data-throw-if-not-resolved=\"false\"></xref> structure to be compared to the structure specified by the <em>a</em> parameter.</p>\n"
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if <em>a</em> and <em>b</em> are not equal; otherwise, <strong>false</strong></p>\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  nameWithType: CounterSample.Inequality(CounterSample, CounterSample)
+references:
+- uid: System.Diagnostics
+  isExternal: false
+  name: "XXX"
+  fullName: System.Diagnostics
+  commentId: N:System.Diagnostics
+  nameWithType: System.Diagnostics
+- uid: System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: false
+  name: "XXX"
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: "XXX"
+    fullName: System.ValueType.ToString
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: "XXX"
+    fullName: System.ValueType.ToString
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.ValueType.ToString
+  nameWithType: ValueType.ToString()
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  nameWithType: Object.Equals(Object, Object)
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.GetType
+  nameWithType: Object.GetType()
+- uid: System.ValueType
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.ValueType
+  commentId: T:System.ValueType
+  nameWithType: ValueType
+- uid: System.Object
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Object
+  commentId: T:System.Object
+  nameWithType: Object
+- uid: System
+  isExternal: false
+  name: "XXX"
+  fullName: System
+  commentId: N:System
+  nameWithType: System
+- uid: System.Diagnostics.CounterSample
+  parent: System.Diagnostics
+  isExternal: false
+  name: "XXX"
+  fullName: System.Diagnostics.CounterSample
+  commentId: T:System.Diagnostics.CounterSample
+  nameWithType: CounterSample
+- uid: System.Int64
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Int64
+  commentId: T:System.Int64
+  nameWithType: Int64
+- uid: System.Diagnostics.PerformanceCounterType
+  parent: System.Diagnostics
+  isExternal: false
+  name: "XXX"
+  fullName: System.Diagnostics.PerformanceCounterType
+  commentId: T:System.Diagnostics.PerformanceCounterType
+  nameWithType: PerformanceCounterType
+- uid: System.Single
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Single
+  commentId: T:System.Single
+  nameWithType: Single
+- uid: System.Boolean
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Boolean
+  commentId: T:System.Boolean
+  nameWithType: Boolean
+- uid: System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  name: "XXX"
+  fullName: System.ValueType.Equals(System.Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: "XXX"
+    fullName: System.ValueType.Equals
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: "XXX"
+    fullName: System.ValueType.Equals
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.ValueType.Equals(System.Object)
+  nameWithType: ValueType.Equals(Object)
+- uid: System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: false
+  name: "XXX"
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: "XXX"
+    fullName: System.ValueType.GetHashCode
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: "XXX"
+    fullName: System.ValueType.GetHashCode
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.ValueType.GetHashCode
+  nameWithType: ValueType.GetHashCode()
+- uid: System.Int32
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Int32
+  commentId: T:System.Int32
+  nameWithType: Int32

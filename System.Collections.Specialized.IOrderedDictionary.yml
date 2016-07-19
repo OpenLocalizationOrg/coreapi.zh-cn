@@ -1,0 +1,818 @@
+items:
+- uid: System.Collections.Specialized.IOrderedDictionary
+  commentId: T:System.Collections.Specialized.IOrderedDictionary
+  id: IOrderedDictionary
+  parent: System.Collections.Specialized
+  children:
+  - System.Collections.Specialized.IOrderedDictionary.GetEnumerator
+  - System.Collections.Specialized.IOrderedDictionary.Insert(System.Int32,System.Object,System.Object)
+  - System.Collections.Specialized.IOrderedDictionary.Item(System.Int32)
+  - System.Collections.Specialized.IOrderedDictionary.RemoveAt(System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Collections.Specialized.IOrderedDictionary
+  type: Interface
+  source:
+    remote:
+      path: src/System.Collections.Specialized/src/System/Collections/Specialized/IOrderedDictionary.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: IOrderedDictionary
+    path: src/System.Collections.Specialized/src/System/Collections/Specialized/IOrderedDictionary.cs
+    startLine: 15
+  assemblies:
+  - System.Collections.Specialized
+  namespace: System.Collections.Specialized
+  summary: "\n<p>Represents an indexed collection of key/value pairs.</p>\n"
+  syntax:
+    content: 'public interface IOrderedDictionary : IDictionary, ICollection, IEnumerable'
+    content.vb: >-
+      Public Interface IOrderedDictionary
+          Inherits IDictionary
+  seealso:
+  - type: System.Collections.ICollection
+    commentId: T:System.Collections.ICollection
+  - type: System.Collections.IDictionary
+    commentId: T:System.Collections.IDictionary
+  inheritedMembers:
+  - System.Collections.IDictionary.Contains(System.Object)
+  - System.Collections.IDictionary.Add(System.Object,System.Object)
+  - System.Collections.IDictionary.Clear
+  - System.Collections.IDictionary.Remove(System.Object)
+  - System.Collections.IDictionary.Item(System.Object)
+  - System.Collections.IDictionary.Keys
+  - System.Collections.IDictionary.Values
+  - System.Collections.IDictionary.IsReadOnly
+  - System.Collections.IDictionary.IsFixedSize
+  - System.Collections.ICollection.CopyTo(System.Array,System.Int32)
+  - System.Collections.ICollection.Count
+  - System.Collections.ICollection.SyncRoot
+  - System.Collections.ICollection.IsSynchronized
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+  nameWithType: IOrderedDictionary
+  extensionMethods:
+  - System.Collections.IEnumerable.System.Linq.Queryable.AsQueryable
+  - System.Collections.IEnumerable.System.Linq.ParallelEnumerable.AsParallel
+  - System.Collections.IEnumerable.System.Linq.Enumerable.Cast``1
+  - System.Collections.IEnumerable.System.Linq.Enumerable.OfType``1
+- uid: System.Collections.Specialized.IOrderedDictionary.Item(System.Int32)
+  commentId: P:System.Collections.Specialized.IOrderedDictionary.Item(System.Int32)
+  id: Item(System.Int32)
+  parent: System.Collections.Specialized.IOrderedDictionary
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Collections.Specialized.IOrderedDictionary.Item[System.Int32]
+  type: Property
+  source:
+    remote:
+      path: src/System.Collections.Specialized/src/System/Collections/Specialized/IOrderedDictionary.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: this[]
+    path: src/System.Collections.Specialized/src/System/Collections/Specialized/IOrderedDictionary.cs
+    startLine: 21
+  assemblies:
+  - System.Collections.Specialized
+  namespace: System.Collections.Specialized
+  summary: "\n<p>Gets or sets the element at the specified index.</p>\n"
+  syntax:
+    content: object this[int index] { get; set; }
+    content.vb: Property Item(index As Integer) As Object
+    parameters:
+    - id: index
+      type: System.Int32
+      description: "\n<p>The zero-based index of the element to get or set.</p>\n"
+    return:
+      type: System.Object
+      description: "\n<p>The element at the specified index.</p>\n"
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>index</em> is less than 0.</p>\n<p>-or- </p>\n<p>\n<em>index</em> is equal to or greater than <xref href=\"System.Collections.ICollection.Count\" data-throw-if-not-resolved=\"false\"></xref>. </p>\n"
+  seealso:
+  - type: System.Collections.ICollection.Count
+    commentId: P:System.Collections.ICollection.Count
+  modifiers.csharp:
+  - get
+  - set
+  fullName.vb: System.Collections.Specialized.IOrderedDictionary.Item(System.Int32)
+  name.vb: Item(Int32)
+  nameWithType: IOrderedDictionary.Item[Int32]
+  nameWithType.vb: IOrderedDictionary.Item(Int32)
+- uid: System.Collections.Specialized.IOrderedDictionary.GetEnumerator
+  commentId: M:System.Collections.Specialized.IOrderedDictionary.GetEnumerator
+  id: GetEnumerator
+  parent: System.Collections.Specialized.IOrderedDictionary
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Collections.Specialized.IOrderedDictionary.GetEnumerator()
+  type: Method
+  source:
+    remote:
+      path: src/System.Collections.Specialized/src/System/Collections/Specialized/IOrderedDictionary.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: GetEnumerator
+    path: src/System.Collections.Specialized/src/System/Collections/Specialized/IOrderedDictionary.cs
+    startLine: 24
+  assemblies:
+  - System.Collections.Specialized
+  namespace: System.Collections.Specialized
+  summary: "\n<p>Returns an enumerator that iterates through the <xref href=\"System.Collections.Specialized.IOrderedDictionary\" data-throw-if-not-resolved=\"false\"></xref> collection.</p>\n"
+  syntax:
+    content: IDictionaryEnumerator GetEnumerator()
+    content.vb: Function GetEnumerator As IDictionaryEnumerator
+    return:
+      type: System.Collections.IDictionaryEnumerator
+      description: "\n<p>An <xref href=\"System.Collections.IDictionaryEnumerator\" data-throw-if-not-resolved=\"false\"></xref> for the entire <xref href=\"System.Collections.Specialized.IOrderedDictionary\" data-throw-if-not-resolved=\"false\"></xref> collection.</p>\n"
+  nameWithType: IOrderedDictionary.GetEnumerator()
+- uid: System.Collections.Specialized.IOrderedDictionary.Insert(System.Int32,System.Object,System.Object)
+  commentId: M:System.Collections.Specialized.IOrderedDictionary.Insert(System.Int32,System.Object,System.Object)
+  id: Insert(System.Int32,System.Object,System.Object)
+  parent: System.Collections.Specialized.IOrderedDictionary
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Collections.Specialized.IOrderedDictionary.Insert(System.Int32, System.Object, System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/System.Collections.Specialized/src/System/Collections/Specialized/IOrderedDictionary.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Insert
+    path: src/System.Collections.Specialized/src/System/Collections/Specialized/IOrderedDictionary.cs
+    startLine: 30
+  assemblies:
+  - System.Collections.Specialized
+  namespace: System.Collections.Specialized
+  summary: "\n<p>Inserts a key/value pair into the collection at the specified index.</p>\n"
+  syntax:
+    content: void Insert(int index, object key, object value)
+    content.vb: Sub Insert(index As Integer, key As Object, value As Object)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: "\n<p>The zero-based index at which the key/value pair should be inserted.</p>\n"
+    - id: key
+      type: System.Object
+      description: "\n<p>The object to use as the key of the element to add.</p>\n"
+    - id: value
+      type: System.Object
+      description: "\n<p>The object to use as the value of the element to add.  The value can be <strong>null</strong>.</p>\n"
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>index</em> is less than 0.</p>\n<p>-or-</p>\n<p>\n<em>index</em> is greater than <xref href=\"System.Collections.ICollection.Count\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>key</em> is <strong>null</strong>.</p>\n"
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>An element with the same key already exists in the <xref href=\"System.Collections.Specialized.IOrderedDictionary\" data-throw-if-not-resolved=\"false\"></xref> collection.</p>\n"
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: "\n<p>The <xref href=\"System.Collections.Specialized.IOrderedDictionary\" data-throw-if-not-resolved=\"false\"></xref> collection is read-only.</p>\n<p>-or-</p>\n<p>The <xref href=\"System.Collections.Specialized.IOrderedDictionary\" data-throw-if-not-resolved=\"false\"></xref> collection has a fixed size.</p>\n"
+  nameWithType: IOrderedDictionary.Insert(Int32, Object, Object)
+- uid: System.Collections.Specialized.IOrderedDictionary.RemoveAt(System.Int32)
+  commentId: M:System.Collections.Specialized.IOrderedDictionary.RemoveAt(System.Int32)
+  id: RemoveAt(System.Int32)
+  parent: System.Collections.Specialized.IOrderedDictionary
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Collections.Specialized.IOrderedDictionary.RemoveAt(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/System.Collections.Specialized/src/System/Collections/Specialized/IOrderedDictionary.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: RemoveAt
+    path: src/System.Collections.Specialized/src/System/Collections/Specialized/IOrderedDictionary.cs
+    startLine: 35
+  assemblies:
+  - System.Collections.Specialized
+  namespace: System.Collections.Specialized
+  summary: "\n<p>Removes the element at the specified index.</p>\n"
+  syntax:
+    content: void RemoveAt(int index)
+    content.vb: Sub RemoveAt(index As Integer)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: "\n<p>The zero-based index of the element to remove.</p>\n"
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>index</em> is less than 0.</p>\n<p>-or- </p>\n<p>\n<em>index</em> is equal to or greater than <xref href=\"System.Collections.ICollection.Count\" data-throw-if-not-resolved=\"false\"></xref>. </p>\n"
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: "\n<p>The <xref href=\"System.Collections.Specialized.IOrderedDictionary\" data-throw-if-not-resolved=\"false\"></xref> collection is read-only.</p>\n<p>-or- </p>\n<p>The <xref href=\"System.Collections.Specialized.IOrderedDictionary\" data-throw-if-not-resolved=\"false\"></xref> collection has a fixed size. </p>\n"
+  nameWithType: IOrderedDictionary.RemoveAt(Int32)
+references:
+- uid: System.Collections.Specialized
+  isExternal: false
+  name: "XXX"
+  fullName: System.Collections.Specialized
+  nameWithType: System.Collections.Specialized
+  commentId: N:System.Collections.Specialized
+- uid: System.Collections.IDictionary.Contains(System.Object)
+  parent: System.Collections.IDictionary
+  isExternal: true
+  name: "XXX"
+  fullName: System.Collections.IDictionary.Contains(System.Object)
+  spec.csharp:
+  - uid: System.Collections.IDictionary.Contains(System.Object)
+    name: "XXX"
+    fullName: System.Collections.IDictionary.Contains
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.IDictionary.Contains(System.Object)
+    name: "XXX"
+    fullName: System.Collections.IDictionary.Contains
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: IDictionary.Contains(Object)
+  commentId: M:System.Collections.IDictionary.Contains(System.Object)
+- uid: System.Collections.IDictionary.Add(System.Object,System.Object)
+  parent: System.Collections.IDictionary
+  isExternal: true
+  name: "XXX"
+  fullName: System.Collections.IDictionary.Add(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Collections.IDictionary.Add(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Collections.IDictionary.Add
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.IDictionary.Add(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Collections.IDictionary.Add
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: IDictionary.Add(Object, Object)
+  commentId: M:System.Collections.IDictionary.Add(System.Object,System.Object)
+- uid: System.Collections.IDictionary.Clear
+  parent: System.Collections.IDictionary
+  isExternal: true
+  name: "XXX"
+  fullName: System.Collections.IDictionary.Clear()
+  spec.csharp:
+  - uid: System.Collections.IDictionary.Clear
+    name: "XXX"
+    fullName: System.Collections.IDictionary.Clear
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.IDictionary.Clear
+    name: "XXX"
+    fullName: System.Collections.IDictionary.Clear
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: IDictionary.Clear()
+  commentId: M:System.Collections.IDictionary.Clear
+- uid: System.Collections.IDictionary.Remove(System.Object)
+  parent: System.Collections.IDictionary
+  isExternal: true
+  name: "XXX"
+  fullName: System.Collections.IDictionary.Remove(System.Object)
+  spec.csharp:
+  - uid: System.Collections.IDictionary.Remove(System.Object)
+    name: "XXX"
+    fullName: System.Collections.IDictionary.Remove
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.IDictionary.Remove(System.Object)
+    name: "XXX"
+    fullName: System.Collections.IDictionary.Remove
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: IDictionary.Remove(Object)
+  commentId: M:System.Collections.IDictionary.Remove(System.Object)
+- uid: System.Collections.IDictionary.Item(System.Object)
+  parent: System.Collections.IDictionary
+  isExternal: true
+  name: "XXX"
+  fullName: System.Collections.IDictionary.Item[System.Object]
+  fullname.vb: System.Collections.IDictionary.Item(System.Object)
+  name.vb: Item(Object)
+  spec.csharp:
+  - uid: System.Collections.IDictionary.Item(System.Object)
+    name: "XXX"
+    fullName: System.Collections.IDictionary.Item
+    isExternal: true
+  - name: 'XXX'
+    fullName: '['
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX'
+    fullName: ']'
+  spec.vb:
+  - uid: System.Collections.IDictionary.Item(System.Object)
+    name: "XXX"
+    fullName: System.Collections.IDictionary.Item
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: IDictionary.Item[Object]
+  nameWithType.vb: IDictionary.Item(Object)
+  commentId: P:System.Collections.IDictionary.Item(System.Object)
+- uid: System.Collections.IDictionary.Keys
+  parent: System.Collections.IDictionary
+  isExternal: true
+  name: "XXX"
+  fullName: System.Collections.IDictionary.Keys
+  nameWithType: IDictionary.Keys
+  commentId: P:System.Collections.IDictionary.Keys
+- uid: System.Collections.IDictionary.Values
+  parent: System.Collections.IDictionary
+  isExternal: true
+  name: "XXX"
+  fullName: System.Collections.IDictionary.Values
+  nameWithType: IDictionary.Values
+  commentId: P:System.Collections.IDictionary.Values
+- uid: System.Collections.IDictionary.IsReadOnly
+  parent: System.Collections.IDictionary
+  isExternal: true
+  name: "XXX"
+  fullName: System.Collections.IDictionary.IsReadOnly
+  nameWithType: IDictionary.IsReadOnly
+  commentId: P:System.Collections.IDictionary.IsReadOnly
+- uid: System.Collections.IDictionary.IsFixedSize
+  parent: System.Collections.IDictionary
+  isExternal: true
+  name: "XXX"
+  fullName: System.Collections.IDictionary.IsFixedSize
+  nameWithType: IDictionary.IsFixedSize
+  commentId: P:System.Collections.IDictionary.IsFixedSize
+- uid: System.Collections.ICollection.CopyTo(System.Array,System.Int32)
+  parent: System.Collections.ICollection
+  isExternal: true
+  name: "XXX"
+  fullName: System.Collections.ICollection.CopyTo(System.Array, System.Int32)
+  spec.csharp:
+  - uid: System.Collections.ICollection.CopyTo(System.Array,System.Int32)
+    name: "XXX"
+    fullName: System.Collections.ICollection.CopyTo
+  - name: "XXX"
+    fullName: (
+  - uid: System.Array
+    name: "XXX"
+    fullName: System.Array
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ICollection.CopyTo(System.Array,System.Int32)
+    name: "XXX"
+    fullName: System.Collections.ICollection.CopyTo
+  - name: "XXX"
+    fullName: (
+  - uid: System.Array
+    name: "XXX"
+    fullName: System.Array
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: ICollection.CopyTo(Array, Int32)
+  commentId: M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)
+- uid: System.Collections.ICollection.Count
+  parent: System.Collections.ICollection
+  isExternal: false
+  name: "XXX"
+  fullName: System.Collections.ICollection.Count
+  nameWithType: ICollection.Count
+  commentId: P:System.Collections.ICollection.Count
+- uid: System.Collections.ICollection.SyncRoot
+  parent: System.Collections.ICollection
+  isExternal: false
+  name: "XXX"
+  fullName: System.Collections.ICollection.SyncRoot
+  nameWithType: ICollection.SyncRoot
+  commentId: P:System.Collections.ICollection.SyncRoot
+- uid: System.Collections.ICollection.IsSynchronized
+  parent: System.Collections.ICollection
+  isExternal: false
+  name: "XXX"
+  fullName: System.Collections.ICollection.IsSynchronized
+  nameWithType: ICollection.IsSynchronized
+  commentId: P:System.Collections.ICollection.IsSynchronized
+- uid: System.Collections.IEnumerable.System.Linq.Queryable.AsQueryable
+  parent: System.Linq.Queryable
+  definition: System.Linq.Queryable.AsQueryable(System.Collections.IEnumerable)
+  name: "XXX"
+  fullName: System.Linq.Queryable.AsQueryable()
+  spec.csharp:
+  - uid: System.Linq.Queryable.AsQueryable
+    name: "XXX"
+    fullName: System.Linq.Queryable.AsQueryable
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Linq.Queryable.AsQueryable
+    name: "XXX"
+    fullName: System.Linq.Queryable.AsQueryable
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Queryable.AsQueryable()
+  commentId: M:System.Linq.Queryable.AsQueryable(System.Collections.IEnumerable)
+- uid: System.Collections.IEnumerable.System.Linq.ParallelEnumerable.AsParallel
+  parent: System.Linq.ParallelEnumerable
+  definition: System.Linq.ParallelEnumerable.AsParallel(System.Collections.IEnumerable)
+  name: "XXX"
+  fullName: System.Linq.ParallelEnumerable.AsParallel()
+  spec.csharp:
+  - uid: System.Linq.ParallelEnumerable.AsParallel
+    name: "XXX"
+    fullName: System.Linq.ParallelEnumerable.AsParallel
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Linq.ParallelEnumerable.AsParallel
+    name: "XXX"
+    fullName: System.Linq.ParallelEnumerable.AsParallel
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: ParallelEnumerable.AsParallel()
+  commentId: M:System.Linq.ParallelEnumerable.AsParallel(System.Collections.IEnumerable)
+- uid: System.Collections.IEnumerable.System.Linq.Enumerable.Cast``1
+  parent: System.Linq.Enumerable
+  definition: System.Linq.Enumerable.Cast``1(System.Collections.IEnumerable)
+  name: "XXX"
+  fullName: System.Linq.Enumerable.Cast<TResult>()
+  fullname.vb: System.Linq.Enumerable.Cast(Of TResult)()
+  name.vb: Cast(Of TResult)()
+  spec.csharp:
+  - uid: System.Linq.Enumerable.Cast``1
+    name: "XXX"
+    fullName: System.Linq.Enumerable.Cast<TResult>
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Linq.Enumerable.Cast``1
+    name: "XXX"
+    fullName: System.Linq.Enumerable.Cast(Of TResult)
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Enumerable.Cast<TResult>()
+  nameWithType.vb: Enumerable.Cast(Of TResult)()
+  commentId: M:System.Linq.Enumerable.Cast``1(System.Collections.IEnumerable)
+- uid: System.Collections.IEnumerable.System.Linq.Enumerable.OfType``1
+  parent: System.Linq.Enumerable
+  definition: System.Linq.Enumerable.OfType``1(System.Collections.IEnumerable)
+  name: "XXX"
+  fullName: System.Linq.Enumerable.OfType<TResult>()
+  fullname.vb: System.Linq.Enumerable.OfType(Of TResult)()
+  name.vb: OfType(Of TResult)()
+  spec.csharp:
+  - uid: System.Linq.Enumerable.OfType``1
+    name: "XXX"
+    fullName: System.Linq.Enumerable.OfType<TResult>
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Linq.Enumerable.OfType``1
+    name: "XXX"
+    fullName: System.Linq.Enumerable.OfType(Of TResult)
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Enumerable.OfType<TResult>()
+  nameWithType.vb: Enumerable.OfType(Of TResult)()
+  commentId: M:System.Linq.Enumerable.OfType``1(System.Collections.IEnumerable)
+- uid: System.Collections.IDictionary
+  parent: System.Collections
+  isExternal: false
+  name: "XXX"
+  fullName: System.Collections.IDictionary
+  nameWithType: IDictionary
+  commentId: T:System.Collections.IDictionary
+- uid: System.Collections.ICollection
+  parent: System.Collections
+  isExternal: false
+  name: "XXX"
+  fullName: System.Collections.ICollection
+  nameWithType: ICollection
+  commentId: T:System.Collections.ICollection
+- uid: System.Linq.Queryable.AsQueryable(System.Collections.IEnumerable)
+  isExternal: true
+  name: "XXX"
+  fullName: System.Linq.Queryable.AsQueryable(System.Collections.IEnumerable)
+  spec.csharp:
+  - uid: System.Linq.Queryable.AsQueryable(System.Collections.IEnumerable)
+    name: "XXX"
+    fullName: System.Linq.Queryable.AsQueryable
+  - name: "XXX"
+    fullName: (
+  - uid: System.Collections.IEnumerable
+    name: "XXX"
+    fullName: System.Collections.IEnumerable
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Linq.Queryable.AsQueryable(System.Collections.IEnumerable)
+    name: "XXX"
+    fullName: System.Linq.Queryable.AsQueryable
+  - name: "XXX"
+    fullName: (
+  - uid: System.Collections.IEnumerable
+    name: "XXX"
+    fullName: System.Collections.IEnumerable
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Queryable.AsQueryable(IEnumerable)
+  commentId: M:System.Linq.Queryable.AsQueryable(System.Collections.IEnumerable)
+- uid: System.Linq.Queryable
+  parent: System.Linq
+  isExternal: false
+  name: "XXX"
+  fullName: System.Linq.Queryable
+  nameWithType: Queryable
+  commentId: T:System.Linq.Queryable
+- uid: System.Linq.ParallelEnumerable.AsParallel(System.Collections.IEnumerable)
+  isExternal: true
+  name: "XXX"
+  fullName: System.Linq.ParallelEnumerable.AsParallel(System.Collections.IEnumerable)
+  spec.csharp:
+  - uid: System.Linq.ParallelEnumerable.AsParallel(System.Collections.IEnumerable)
+    name: "XXX"
+    fullName: System.Linq.ParallelEnumerable.AsParallel
+  - name: "XXX"
+    fullName: (
+  - uid: System.Collections.IEnumerable
+    name: "XXX"
+    fullName: System.Collections.IEnumerable
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Linq.ParallelEnumerable.AsParallel(System.Collections.IEnumerable)
+    name: "XXX"
+    fullName: System.Linq.ParallelEnumerable.AsParallel
+  - name: "XXX"
+    fullName: (
+  - uid: System.Collections.IEnumerable
+    name: "XXX"
+    fullName: System.Collections.IEnumerable
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: ParallelEnumerable.AsParallel(IEnumerable)
+  commentId: M:System.Linq.ParallelEnumerable.AsParallel(System.Collections.IEnumerable)
+- uid: System.Linq.ParallelEnumerable
+  parent: System.Linq
+  isExternal: false
+  name: "XXX"
+  fullName: System.Linq.ParallelEnumerable
+  nameWithType: ParallelEnumerable
+  commentId: T:System.Linq.ParallelEnumerable
+- uid: System.Linq.Enumerable.Cast``1(System.Collections.IEnumerable)
+  isExternal: true
+  name: "XXX"
+  fullName: System.Linq.Enumerable.Cast<TResult>(System.Collections.IEnumerable)
+  fullname.vb: System.Linq.Enumerable.Cast(Of TResult)(System.Collections.IEnumerable)
+  name.vb: Cast(Of TResult)(IEnumerable)
+  spec.csharp:
+  - uid: System.Linq.Enumerable.Cast``1(System.Collections.IEnumerable)
+    name: "XXX"
+    fullName: System.Linq.Enumerable.Cast<TResult>
+  - name: "XXX"
+    fullName: (
+  - uid: System.Collections.IEnumerable
+    name: "XXX"
+    fullName: System.Collections.IEnumerable
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Linq.Enumerable.Cast``1(System.Collections.IEnumerable)
+    name: "XXX"
+    fullName: System.Linq.Enumerable.Cast(Of TResult)
+  - name: "XXX"
+    fullName: (
+  - uid: System.Collections.IEnumerable
+    name: "XXX"
+    fullName: System.Collections.IEnumerable
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Enumerable.Cast<TResult>(IEnumerable)
+  nameWithType.vb: Enumerable.Cast(Of TResult)(IEnumerable)
+  commentId: M:System.Linq.Enumerable.Cast``1(System.Collections.IEnumerable)
+- uid: System.Linq.Enumerable
+  parent: System.Linq
+  isExternal: false
+  name: "XXX"
+  fullName: System.Linq.Enumerable
+  nameWithType: Enumerable
+  commentId: T:System.Linq.Enumerable
+- uid: System.Linq.Enumerable.OfType``1(System.Collections.IEnumerable)
+  isExternal: true
+  name: "XXX"
+  fullName: System.Linq.Enumerable.OfType<TResult>(System.Collections.IEnumerable)
+  fullname.vb: System.Linq.Enumerable.OfType(Of TResult)(System.Collections.IEnumerable)
+  name.vb: OfType(Of TResult)(IEnumerable)
+  spec.csharp:
+  - uid: System.Linq.Enumerable.OfType``1(System.Collections.IEnumerable)
+    name: "XXX"
+    fullName: System.Linq.Enumerable.OfType<TResult>
+  - name: "XXX"
+    fullName: (
+  - uid: System.Collections.IEnumerable
+    name: "XXX"
+    fullName: System.Collections.IEnumerable
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Linq.Enumerable.OfType``1(System.Collections.IEnumerable)
+    name: "XXX"
+    fullName: System.Linq.Enumerable.OfType(Of TResult)
+  - name: "XXX"
+    fullName: (
+  - uid: System.Collections.IEnumerable
+    name: "XXX"
+    fullName: System.Collections.IEnumerable
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Enumerable.OfType<TResult>(IEnumerable)
+  nameWithType.vb: Enumerable.OfType(Of TResult)(IEnumerable)
+  commentId: M:System.Linq.Enumerable.OfType``1(System.Collections.IEnumerable)
+- uid: System.Collections
+  isExternal: false
+  name: "XXX"
+  fullName: System.Collections
+  nameWithType: System.Collections
+  commentId: N:System.Collections
+- uid: System.Linq
+  isExternal: false
+  name: "XXX"
+  fullName: System.Linq
+  nameWithType: System.Linq
+  commentId: N:System.Linq
+- uid: System.Int32
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Int32
+  nameWithType: Int32
+  commentId: T:System.Int32
+- uid: System.Object
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Object
+  nameWithType: Object
+  commentId: T:System.Object
+- uid: System
+  isExternal: false
+  name: "XXX"
+  fullName: System
+  nameWithType: System
+  commentId: N:System
+- uid: System.Collections.IDictionaryEnumerator
+  parent: System.Collections
+  isExternal: false
+  name: "XXX"
+  fullName: System.Collections.IDictionaryEnumerator
+  nameWithType: IDictionaryEnumerator
+  commentId: T:System.Collections.IDictionaryEnumerator
+- uid: System.ArgumentOutOfRangeException
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentOutOfRangeException
+  nameWithType: ArgumentOutOfRangeException
+  commentId: T:System.ArgumentOutOfRangeException
+- uid: System.ArgumentNullException
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentNullException
+  nameWithType: ArgumentNullException
+  commentId: T:System.ArgumentNullException
+- uid: System.ArgumentException
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentException
+  nameWithType: ArgumentException
+  commentId: T:System.ArgumentException
+- uid: System.NotSupportedException
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.NotSupportedException
+  nameWithType: NotSupportedException
+  commentId: T:System.NotSupportedException

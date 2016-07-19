@@ -1,0 +1,542 @@
+items:
+- uid: System.Data.Common.DbEnumerator
+  commentId: T:System.Data.Common.DbEnumerator
+  id: DbEnumerator
+  parent: System.Data.Common
+  children:
+  - System.Data.Common.DbEnumerator.#ctor(System.Data.IDataReader,System.Boolean)
+  - System.Data.Common.DbEnumerator.Current
+  - System.Data.Common.DbEnumerator.MoveNext
+  - System.Data.Common.DbEnumerator.Reset
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Data.Common.DbEnumerator
+  type: Class
+  source:
+    remote:
+      path: src/System.Data.Common/src/System/Data/Common/DbEnumerator.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: DbEnumerator
+    path: src/System.Data.Common/src/System/Data/Common/DbEnumerator.cs
+    startLine: 15
+  assemblies:
+  - System.Data.Common
+  namespace: System.Data.Common
+  summary: "\n<p>Exposes the <xref href=\"System.Collections.IEnumerable.GetEnumerator\" data-throw-if-not-resolved=\"false\"></xref> method, which supports a simple iteration over a collection by a .NET Framework data provider.</p>\n"
+  syntax:
+    content: 'public class DbEnumerator : IEnumerator'
+    content.vb: >-
+      Public Class DbEnumerator
+          Implements IEnumerator
+  inheritance:
+  - System.Object
+  implements:
+  - System.Collections.IEnumerator
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+  nameWithType: DbEnumerator
+- uid: System.Data.Common.DbEnumerator.#ctor(System.Data.IDataReader,System.Boolean)
+  commentId: M:System.Data.Common.DbEnumerator.#ctor(System.Data.IDataReader,System.Boolean)
+  id: '#ctor(System.Data.IDataReader,System.Boolean)'
+  parent: System.Data.Common.DbEnumerator
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Data.Common.DbEnumerator.DbEnumerator(System.Data.IDataReader, System.Boolean)
+  type: Constructor
+  source:
+    remote:
+      path: src/System.Data.Common/src/System/Data/Common/DbEnumerator.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: .ctor
+    path: src/System.Data.Common/src/System/Data/Common/DbEnumerator.cs
+    startLine: 24
+  assemblies:
+  - System.Data.Common
+  namespace: System.Data.Common
+  summary: "\n<p>Initializes a new instance of the <xref href=\"System.Data.Common.DbEnumerator\" data-throw-if-not-resolved=\"false\"></xref> class using the specified <strong>DataReader</strong>, and indicates whether to automatically close the <strong>DataReader</strong> after iterating through its data.</p>\n"
+  syntax:
+    content: public DbEnumerator(IDataReader reader, bool closeReader)
+    content.vb: Public Sub New(reader As IDataReader, closeReader As Boolean)
+    parameters:
+    - id: reader
+      type: System.Data.IDataReader
+      description: "\n<p>The <strong>DataReader</strong> through which to iterate. </p>\n"
+    - id: closeReader
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> to automatically close the <strong>DataReader</strong> after iterating through its data; otherwise, <strong>false</strong>. </p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: DbEnumerator.DbEnumerator(IDataReader, Boolean)
+- uid: System.Data.Common.DbEnumerator.Current
+  commentId: P:System.Data.Common.DbEnumerator.Current
+  id: Current
+  parent: System.Data.Common.DbEnumerator
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Data.Common.DbEnumerator.Current
+  type: Property
+  source:
+    remote:
+      path: src/System.Data.Common/src/System/Data/Common/DbEnumerator.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Current
+    path: src/System.Data.Common/src/System/Data/Common/DbEnumerator.cs
+    startLine: 35
+  assemblies:
+  - System.Data.Common
+  namespace: System.Data.Common
+  summary: "\n<p>Gets the current element in the collection.</p>\n"
+  syntax:
+    content: public object Current { get; }
+    content.vb: Public ReadOnly Property Current As Object
+    parameters: []
+    return:
+      type: System.Object
+      description: "\n<p>The current element in the collection.</p>\n"
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: "\n<p>The enumerator is positioned before the first element of the collection or after the last element. </p>\n"
+  implements:
+  - System.Collections.IEnumerator.Current
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  nameWithType: DbEnumerator.Current
+- uid: System.Data.Common.DbEnumerator.MoveNext
+  commentId: M:System.Data.Common.DbEnumerator.MoveNext
+  id: MoveNext
+  parent: System.Data.Common.DbEnumerator
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Data.Common.DbEnumerator.MoveNext()
+  type: Method
+  source:
+    remote:
+      path: src/System.Data.Common/src/System/Data/Common/DbEnumerator.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: MoveNext
+    path: src/System.Data.Common/src/System/Data/Common/DbEnumerator.cs
+    startLine: 43
+  assemblies:
+  - System.Data.Common
+  namespace: System.Data.Common
+  summary: "\n<p>Advances the enumerator to the next element of the collection.</p>\n"
+  syntax:
+    content: public bool MoveNext()
+    content.vb: Public Function MoveNext As Boolean
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if the enumerator was successfully advanced to the next element; <strong>false</strong> if the enumerator has passed the end of the collection.</p>\n"
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: "\n<p>The collection was modified after the enumerator was created. </p>\n"
+  implements:
+  - System.Collections.IEnumerator.MoveNext
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: DbEnumerator.MoveNext()
+- uid: System.Data.Common.DbEnumerator.Reset
+  commentId: M:System.Data.Common.DbEnumerator.Reset
+  id: Reset
+  parent: System.Data.Common.DbEnumerator
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Data.Common.DbEnumerator.Reset()
+  type: Method
+  source:
+    remote:
+      path: src/System.Data.Common/src/System/Data/Common/DbEnumerator.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Reset
+    path: src/System.Data.Common/src/System/Data/Common/DbEnumerator.cs
+    startLine: 68
+  assemblies:
+  - System.Data.Common
+  namespace: System.Data.Common
+  summary: "\n<p>Sets the enumerator to its initial position, which is before the first element in the collection.</p>\n"
+  syntax:
+    content: public void Reset()
+    content.vb: Public Sub Reset
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: "\n<p>The collection was modified after the enumerator was created. </p>\n"
+  implements:
+  - System.Collections.IEnumerator.Reset
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: DbEnumerator.Reset()
+references:
+- uid: System.Data.Common
+  isExternal: false
+  name: "XXX"
+  fullName: System.Data.Common
+  nameWithType: System.Data.Common
+  commentId: N:System.Data.Common
+- uid: System.Object
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Object
+  nameWithType: Object
+  commentId: T:System.Object
+- uid: System.Collections.IEnumerator
+  parent: System.Collections
+  isExternal: false
+  name: "XXX"
+  fullName: System.Collections.IEnumerator
+  nameWithType: IEnumerator
+  commentId: T:System.Collections.IEnumerator
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.ToString()
+  commentId: M:System.Object.ToString
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.Equals(Object)
+  commentId: M:System.Object.Equals(System.Object)
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.Equals(Object, Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.GetHashCode()
+  commentId: M:System.Object.GetHashCode
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.GetType()
+  commentId: M:System.Object.GetType
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.MemberwiseClone()
+  commentId: M:System.Object.MemberwiseClone
+- uid: System
+  isExternal: false
+  name: "XXX"
+  fullName: System
+  nameWithType: System
+  commentId: N:System
+- uid: System.Collections
+  isExternal: false
+  name: "XXX"
+  fullName: System.Collections
+  nameWithType: System.Collections
+  commentId: N:System.Collections
+- uid: System.Data.IDataReader
+  parent: System.Data
+  isExternal: false
+  name: "XXX"
+  fullName: System.Data.IDataReader
+  nameWithType: IDataReader
+  commentId: T:System.Data.IDataReader
+- uid: System.Boolean
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Boolean
+  nameWithType: Boolean
+  commentId: T:System.Boolean
+- uid: System.Data
+  isExternal: false
+  name: "XXX"
+  fullName: System.Data
+  nameWithType: System.Data
+  commentId: N:System.Data
+- uid: System.Collections.IEnumerator.Current
+  parent: System.Collections.IEnumerator
+  isExternal: false
+  name: "XXX"
+  fullName: System.Collections.IEnumerator.Current
+  nameWithType: IEnumerator.Current
+  commentId: P:System.Collections.IEnumerator.Current
+- uid: System.Collections.IEnumerator.MoveNext
+  parent: System.Collections.IEnumerator
+  isExternal: false
+  name: "XXX"
+  fullName: System.Collections.IEnumerator.MoveNext()
+  spec.csharp:
+  - uid: System.Collections.IEnumerator.MoveNext
+    name: "XXX"
+    fullName: System.Collections.IEnumerator.MoveNext
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.IEnumerator.MoveNext
+    name: "XXX"
+    fullName: System.Collections.IEnumerator.MoveNext
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: IEnumerator.MoveNext()
+  commentId: M:System.Collections.IEnumerator.MoveNext
+- uid: System.Collections.IEnumerator.Reset
+  parent: System.Collections.IEnumerator
+  isExternal: false
+  name: "XXX"
+  fullName: System.Collections.IEnumerator.Reset()
+  spec.csharp:
+  - uid: System.Collections.IEnumerator.Reset
+    name: "XXX"
+    fullName: System.Collections.IEnumerator.Reset
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.IEnumerator.Reset
+    name: "XXX"
+    fullName: System.Collections.IEnumerator.Reset
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: IEnumerator.Reset()
+  commentId: M:System.Collections.IEnumerator.Reset
+- uid: System.InvalidOperationException
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.InvalidOperationException
+  nameWithType: InvalidOperationException
+  commentId: T:System.InvalidOperationException

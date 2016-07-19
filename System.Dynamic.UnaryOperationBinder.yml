@@ -1,0 +1,1039 @@
+items:
+- uid: System.Dynamic.UnaryOperationBinder
+  commentId: T:System.Dynamic.UnaryOperationBinder
+  id: UnaryOperationBinder
+  parent: System.Dynamic
+  children:
+  - System.Dynamic.UnaryOperationBinder.#ctor(System.Linq.Expressions.ExpressionType)
+  - System.Dynamic.UnaryOperationBinder.Bind(System.Dynamic.DynamicMetaObject,System.Dynamic.DynamicMetaObject[])
+  - System.Dynamic.UnaryOperationBinder.FallbackUnaryOperation(System.Dynamic.DynamicMetaObject)
+  - System.Dynamic.UnaryOperationBinder.FallbackUnaryOperation(System.Dynamic.DynamicMetaObject,System.Dynamic.DynamicMetaObject)
+  - System.Dynamic.UnaryOperationBinder.Operation
+  - System.Dynamic.UnaryOperationBinder.ReturnType
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Dynamic.UnaryOperationBinder
+  type: Class
+  source:
+    remote:
+      path: src/System.Dynamic.Runtime/src/System/Dynamic/UnaryOperationBinder.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: UnaryOperationBinder
+    path: src/System.Dynamic.Runtime/src/System/Dynamic/UnaryOperationBinder.cs
+    startLine: 12
+  assemblies:
+  - System.Dynamic.Runtime
+  namespace: System.Dynamic
+  summary: "\n<p>Represents the unary dynamic operation at the call site, providing the binding semantic and the details about the operation.</p>\n"
+  syntax:
+    content: 'public abstract class UnaryOperationBinder : DynamicMetaObjectBinder'
+    content.vb: >-
+      Public MustInherit Class UnaryOperationBinder
+          Inherits DynamicMetaObjectBinder
+  inheritance:
+  - System.Object
+  - System.Runtime.CompilerServices.CallSiteBinder
+  - System.Dynamic.DynamicMetaObjectBinder
+  inheritedMembers:
+  - System.Dynamic.DynamicMetaObjectBinder.Bind(System.Object[],System.Collections.ObjectModel.ReadOnlyCollection{System.Linq.Expressions.ParameterExpression},System.Linq.Expressions.LabelTarget)
+  - System.Dynamic.DynamicMetaObjectBinder.Defer(System.Dynamic.DynamicMetaObject,System.Dynamic.DynamicMetaObject[])
+  - System.Dynamic.DynamicMetaObjectBinder.Defer(System.Dynamic.DynamicMetaObject[])
+  - System.Dynamic.DynamicMetaObjectBinder.GetUpdateExpression(System.Type)
+  - System.Runtime.CompilerServices.CallSiteBinder.UpdateLabel
+  - System.Runtime.CompilerServices.CallSiteBinder.BindDelegate``1(System.Runtime.CompilerServices.CallSite{{T}},System.Object[])
+  - System.Runtime.CompilerServices.CallSiteBinder.CacheTarget``1({T})
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+  nameWithType: UnaryOperationBinder
+- uid: System.Dynamic.UnaryOperationBinder.#ctor(System.Linq.Expressions.ExpressionType)
+  commentId: M:System.Dynamic.UnaryOperationBinder.#ctor(System.Linq.Expressions.ExpressionType)
+  id: '#ctor(System.Linq.Expressions.ExpressionType)'
+  parent: System.Dynamic.UnaryOperationBinder
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Dynamic.UnaryOperationBinder.UnaryOperationBinder(System.Linq.Expressions.ExpressionType)
+  type: Constructor
+  source:
+    remote:
+      path: src/System.Dynamic.Runtime/ref/System.Dynamic.Runtime.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: .ctor
+    path: src/System.Dynamic.Runtime/ref/System.Dynamic.Runtime.cs
+    startLine: 222
+  assemblies:
+  - System.Dynamic.Runtime
+  namespace: System.Dynamic
+  summary: "\n<p>Initializes a new instance of the <xref href=\"System.Dynamic.BinaryOperationBinder\" data-throw-if-not-resolved=\"false\"></xref> class.</p>\n"
+  syntax:
+    content: protected UnaryOperationBinder(ExpressionType operation)
+    content.vb: Protected Sub New(operation As ExpressionType)
+    parameters:
+    - id: operation
+      type: System.Linq.Expressions.ExpressionType
+      description: "\n<p>The unary operation kind.</p>\n"
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  nameWithType: UnaryOperationBinder.UnaryOperationBinder(ExpressionType)
+- uid: System.Dynamic.UnaryOperationBinder.Operation
+  commentId: P:System.Dynamic.UnaryOperationBinder.Operation
+  id: Operation
+  parent: System.Dynamic.UnaryOperationBinder
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Dynamic.UnaryOperationBinder.Operation
+  type: Property
+  source:
+    remote:
+      path: src/System.Dynamic.Runtime/src/System/Dynamic/UnaryOperationBinder.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Operation
+    path: src/System.Dynamic.Runtime/src/System/Dynamic/UnaryOperationBinder.cs
+    startLine: 47
+  assemblies:
+  - System.Dynamic.Runtime
+  namespace: System.Dynamic
+  summary: "\n<p>The unary operation kind.</p>\n"
+  syntax:
+    content: public ExpressionType Operation { get; }
+    content.vb: Public ReadOnly Property Operation As ExpressionType
+    parameters: []
+    return:
+      type: ExpressionType
+      description: "\n<p>The object of the <xref href=\"System.Linq.Expressions.ExpressionType\" data-throw-if-not-resolved=\"false\"></xref> that represents the unary operation kind.</p>\n"
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  nameWithType: UnaryOperationBinder.Operation
+- uid: System.Dynamic.UnaryOperationBinder.ReturnType
+  commentId: P:System.Dynamic.UnaryOperationBinder.ReturnType
+  id: ReturnType
+  parent: System.Dynamic.UnaryOperationBinder
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Dynamic.UnaryOperationBinder.ReturnType
+  type: Property
+  source:
+    remote:
+      path: src/System.Dynamic.Runtime/src/System/Dynamic/UnaryOperationBinder.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: ReturnType
+    path: src/System.Dynamic.Runtime/src/System/Dynamic/UnaryOperationBinder.cs
+    startLine: 29
+  assemblies:
+  - System.Dynamic.Runtime
+  namespace: System.Dynamic
+  summary: "\n<p>The result type of the operation.</p>\n"
+  syntax:
+    content: public override sealed Type ReturnType { get; }
+    content.vb: Public NotOverridable Overrides ReadOnly Property ReturnType As Type
+    parameters: []
+    return:
+      type: System.Type
+      description: "\n<p>The <xref href=\"System.Type\" data-throw-if-not-resolved=\"false\"></xref> object representing the result type of the operation.</p>\n"
+  overridden: System.Dynamic.DynamicMetaObjectBinder.ReturnType
+  modifiers.csharp:
+  - public
+  - override
+  - sealed
+  - get
+  modifiers.vb:
+  - Public
+  - Overrides
+  - NotOverridable
+  - ReadOnly
+  nameWithType: UnaryOperationBinder.ReturnType
+- uid: System.Dynamic.UnaryOperationBinder.Bind(System.Dynamic.DynamicMetaObject,System.Dynamic.DynamicMetaObject[])
+  commentId: M:System.Dynamic.UnaryOperationBinder.Bind(System.Dynamic.DynamicMetaObject,System.Dynamic.DynamicMetaObject[])
+  id: Bind(System.Dynamic.DynamicMetaObject,System.Dynamic.DynamicMetaObject[])
+  parent: System.Dynamic.UnaryOperationBinder
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Dynamic.UnaryOperationBinder.Bind(System.Dynamic.DynamicMetaObject, System.Dynamic.DynamicMetaObject[])
+  type: Method
+  source:
+    remote:
+      path: src/System.Dynamic.Runtime/src/System/Dynamic/UnaryOperationBinder.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Bind
+    path: src/System.Dynamic.Runtime/src/System/Dynamic/UnaryOperationBinder.cs
+    startLine: 79
+  assemblies:
+  - System.Dynamic.Runtime
+  namespace: System.Dynamic
+  summary: "\n<p>Performs the binding of the dynamic unary operation.</p>\n"
+  syntax:
+    content: public override sealed DynamicMetaObject Bind(DynamicMetaObject target, DynamicMetaObject[] args)
+    content.vb: Public NotOverridable Overrides Function Bind(target As DynamicMetaObject, args As DynamicMetaObject()) As DynamicMetaObject
+    parameters:
+    - id: target
+      type: System.Dynamic.DynamicMetaObject
+      description: "\n<p>The target of the dynamic operation.</p>\n"
+    - id: args
+      type: System.Dynamic.DynamicMetaObject[]
+      description: "\n<p>An array of arguments of the dynamic operation.</p>\n"
+    return:
+      type: System.Dynamic.DynamicMetaObject
+      description: "\n<p>The <xref href=\"System.Dynamic.DynamicMetaObject\" data-throw-if-not-resolved=\"false\"></xref> representing the result of the binding.</p>\n"
+  overridden: System.Dynamic.DynamicMetaObjectBinder.Bind(System.Dynamic.DynamicMetaObject,System.Dynamic.DynamicMetaObject[])
+  modifiers.csharp:
+  - public
+  - override
+  - sealed
+  modifiers.vb:
+  - Public
+  - Overrides
+  - NotOverridable
+  fullName.vb: System.Dynamic.UnaryOperationBinder.Bind(System.Dynamic.DynamicMetaObject, System.Dynamic.DynamicMetaObject())
+  name.vb: Bind(DynamicMetaObject, DynamicMetaObject())
+  nameWithType: UnaryOperationBinder.Bind(DynamicMetaObject, DynamicMetaObject[])
+  nameWithType.vb: UnaryOperationBinder.Bind(DynamicMetaObject, DynamicMetaObject())
+- uid: System.Dynamic.UnaryOperationBinder.FallbackUnaryOperation(System.Dynamic.DynamicMetaObject)
+  commentId: M:System.Dynamic.UnaryOperationBinder.FallbackUnaryOperation(System.Dynamic.DynamicMetaObject)
+  id: FallbackUnaryOperation(System.Dynamic.DynamicMetaObject)
+  parent: System.Dynamic.UnaryOperationBinder
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Dynamic.UnaryOperationBinder.FallbackUnaryOperation(System.Dynamic.DynamicMetaObject)
+  type: Method
+  source:
+    remote:
+      path: src/System.Dynamic.Runtime/src/System/Dynamic/UnaryOperationBinder.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: FallbackUnaryOperation
+    path: src/System.Dynamic.Runtime/src/System/Dynamic/UnaryOperationBinder.cs
+    startLine: 60
+  assemblies:
+  - System.Dynamic.Runtime
+  namespace: System.Dynamic
+  summary: "\n<p>Performs the binding of the unary dynamic operation if the target dynamic object cannot bind.</p>\n"
+  syntax:
+    content: public DynamicMetaObject FallbackUnaryOperation(DynamicMetaObject target)
+    content.vb: Public Function FallbackUnaryOperation(target As DynamicMetaObject) As DynamicMetaObject
+    parameters:
+    - id: target
+      type: System.Dynamic.DynamicMetaObject
+      description: "\n<p>The target of the dynamic unary operation.</p>\n"
+    return:
+      type: System.Dynamic.DynamicMetaObject
+      description: "\n<p>The <xref href=\"System.Dynamic.DynamicMetaObject\" data-throw-if-not-resolved=\"false\"></xref> representing the result of the binding.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: UnaryOperationBinder.FallbackUnaryOperation(DynamicMetaObject)
+- uid: System.Dynamic.UnaryOperationBinder.FallbackUnaryOperation(System.Dynamic.DynamicMetaObject,System.Dynamic.DynamicMetaObject)
+  commentId: M:System.Dynamic.UnaryOperationBinder.FallbackUnaryOperation(System.Dynamic.DynamicMetaObject,System.Dynamic.DynamicMetaObject)
+  id: FallbackUnaryOperation(System.Dynamic.DynamicMetaObject,System.Dynamic.DynamicMetaObject)
+  parent: System.Dynamic.UnaryOperationBinder
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Dynamic.UnaryOperationBinder.FallbackUnaryOperation(System.Dynamic.DynamicMetaObject, System.Dynamic.DynamicMetaObject)
+  type: Method
+  source:
+    remote:
+      path: src/System.Dynamic.Runtime/src/System/Dynamic/UnaryOperationBinder.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: FallbackUnaryOperation
+    path: src/System.Dynamic.Runtime/src/System/Dynamic/UnaryOperationBinder.cs
+    startLine: 71
+  assemblies:
+  - System.Dynamic.Runtime
+  namespace: System.Dynamic
+  summary: "\n<p>Performs the binding of the unary dynamic operation if the target dynamic object cannot bind.</p>\n"
+  syntax:
+    content: public abstract DynamicMetaObject FallbackUnaryOperation(DynamicMetaObject target, DynamicMetaObject errorSuggestion)
+    content.vb: Public MustOverride Function FallbackUnaryOperation(target As DynamicMetaObject, errorSuggestion As DynamicMetaObject) As DynamicMetaObject
+    parameters:
+    - id: target
+      type: System.Dynamic.DynamicMetaObject
+      description: "\n<p>The target of the dynamic unary operation.</p>\n"
+    - id: errorSuggestion
+      type: System.Dynamic.DynamicMetaObject
+      description: "\n<p>The binding result in case the binding fails, or null.</p>\n"
+    return:
+      type: System.Dynamic.DynamicMetaObject
+      description: "\n<p>The <xref href=\"System.Dynamic.DynamicMetaObject\" data-throw-if-not-resolved=\"false\"></xref> representing the result of the binding.</p>\n"
+  modifiers.csharp:
+  - public
+  - abstract
+  modifiers.vb:
+  - Public
+  - MustOverride
+  nameWithType: UnaryOperationBinder.FallbackUnaryOperation(DynamicMetaObject, DynamicMetaObject)
+references:
+- uid: System.Dynamic
+  isExternal: false
+  name: "XXX"
+  fullName: System.Dynamic
+  nameWithType: System.Dynamic
+  commentId: N:System.Dynamic
+- uid: System.Object
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Object
+  nameWithType: Object
+  commentId: T:System.Object
+- uid: System.Runtime.CompilerServices.CallSiteBinder
+  parent: System.Runtime.CompilerServices
+  isExternal: false
+  name: "XXX"
+  fullName: System.Runtime.CompilerServices.CallSiteBinder
+  nameWithType: CallSiteBinder
+  commentId: T:System.Runtime.CompilerServices.CallSiteBinder
+- uid: System.Dynamic.DynamicMetaObjectBinder
+  parent: System.Dynamic
+  isExternal: false
+  name: "XXX"
+  fullName: System.Dynamic.DynamicMetaObjectBinder
+  nameWithType: DynamicMetaObjectBinder
+  commentId: T:System.Dynamic.DynamicMetaObjectBinder
+- uid: System.Dynamic.DynamicMetaObjectBinder.Bind(System.Object[],System.Collections.ObjectModel.ReadOnlyCollection{System.Linq.Expressions.ParameterExpression},System.Linq.Expressions.LabelTarget)
+  parent: System.Dynamic.DynamicMetaObjectBinder
+  isExternal: true
+  name: "XXX"
+  fullName: System.Dynamic.DynamicMetaObjectBinder.Bind(System.Object[], System.Collections.ObjectModel.ReadOnlyCollection<System.Linq.Expressions.ParameterExpression>, System.Linq.Expressions.LabelTarget)
+  fullname.vb: System.Dynamic.DynamicMetaObjectBinder.Bind(System.Object(), System.Collections.ObjectModel.ReadOnlyCollection(Of System.Linq.Expressions.ParameterExpression), System.Linq.Expressions.LabelTarget)
+  name.vb: Bind(Object(), ReadOnlyCollection(Of ParameterExpression), LabelTarget)
+  spec.csharp:
+  - uid: System.Dynamic.DynamicMetaObjectBinder.Bind(System.Object[],System.Collections.ObjectModel.ReadOnlyCollection{System.Linq.Expressions.ParameterExpression},System.Linq.Expressions.LabelTarget)
+    name: "XXX"
+    fullName: System.Dynamic.DynamicMetaObjectBinder.Bind
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX'
+    fullName: '[]'
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1
+    name: "XXX"
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection
+    isExternal: true
+  - name: "<"
+    fullName: <
+  - uid: System.Linq.Expressions.ParameterExpression
+    name: "XXX"
+    fullName: System.Linq.Expressions.ParameterExpression
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Linq.Expressions.LabelTarget
+    name: "XXX"
+    fullName: System.Linq.Expressions.LabelTarget
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Dynamic.DynamicMetaObjectBinder.Bind(System.Object[],System.Collections.ObjectModel.ReadOnlyCollection{System.Linq.Expressions.ParameterExpression},System.Linq.Expressions.LabelTarget)
+    name: "XXX"
+    fullName: System.Dynamic.DynamicMetaObjectBinder.Bind
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: ()
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1
+    name: "XXX"
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection
+    isExternal: true
+  - name: 'XXX '
+    fullName: '(Of '
+  - uid: System.Linq.Expressions.ParameterExpression
+    name: "XXX"
+    fullName: System.Linq.Expressions.ParameterExpression
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Linq.Expressions.LabelTarget
+    name: "XXX"
+    fullName: System.Linq.Expressions.LabelTarget
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: DynamicMetaObjectBinder.Bind(Object[], ReadOnlyCollection<ParameterExpression>, LabelTarget)
+  nameWithType.vb: DynamicMetaObjectBinder.Bind(Object(), ReadOnlyCollection(Of ParameterExpression), LabelTarget)
+  commentId: M:System.Dynamic.DynamicMetaObjectBinder.Bind(System.Object[],System.Collections.ObjectModel.ReadOnlyCollection{System.Linq.Expressions.ParameterExpression},System.Linq.Expressions.LabelTarget)
+- uid: System.Dynamic.DynamicMetaObjectBinder.Defer(System.Dynamic.DynamicMetaObject,System.Dynamic.DynamicMetaObject[])
+  parent: System.Dynamic.DynamicMetaObjectBinder
+  isExternal: false
+  name: "XXX"
+  fullName: System.Dynamic.DynamicMetaObjectBinder.Defer(System.Dynamic.DynamicMetaObject, System.Dynamic.DynamicMetaObject[])
+  fullname.vb: System.Dynamic.DynamicMetaObjectBinder.Defer(System.Dynamic.DynamicMetaObject, System.Dynamic.DynamicMetaObject())
+  name.vb: Defer(DynamicMetaObject, DynamicMetaObject())
+  spec.csharp:
+  - uid: System.Dynamic.DynamicMetaObjectBinder.Defer(System.Dynamic.DynamicMetaObject,System.Dynamic.DynamicMetaObject[])
+    name: "XXX"
+    fullName: System.Dynamic.DynamicMetaObjectBinder.Defer
+  - name: "XXX"
+    fullName: (
+  - uid: System.Dynamic.DynamicMetaObject
+    name: "XXX"
+    fullName: System.Dynamic.DynamicMetaObject
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Dynamic.DynamicMetaObject
+    name: "XXX"
+    fullName: System.Dynamic.DynamicMetaObject
+  - name: 'XXX'
+    fullName: '[]'
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Dynamic.DynamicMetaObjectBinder.Defer(System.Dynamic.DynamicMetaObject,System.Dynamic.DynamicMetaObject[])
+    name: "XXX"
+    fullName: System.Dynamic.DynamicMetaObjectBinder.Defer
+  - name: "XXX"
+    fullName: (
+  - uid: System.Dynamic.DynamicMetaObject
+    name: "XXX"
+    fullName: System.Dynamic.DynamicMetaObject
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Dynamic.DynamicMetaObject
+    name: "XXX"
+    fullName: System.Dynamic.DynamicMetaObject
+  - name: "XXX"
+    fullName: ()
+  - name: "XXX"
+    fullName: )
+  nameWithType: DynamicMetaObjectBinder.Defer(DynamicMetaObject, DynamicMetaObject[])
+  nameWithType.vb: DynamicMetaObjectBinder.Defer(DynamicMetaObject, DynamicMetaObject())
+  commentId: M:System.Dynamic.DynamicMetaObjectBinder.Defer(System.Dynamic.DynamicMetaObject,System.Dynamic.DynamicMetaObject[])
+- uid: System.Dynamic.DynamicMetaObjectBinder.Defer(System.Dynamic.DynamicMetaObject[])
+  parent: System.Dynamic.DynamicMetaObjectBinder
+  isExternal: false
+  name: "XXX"
+  fullName: System.Dynamic.DynamicMetaObjectBinder.Defer(System.Dynamic.DynamicMetaObject[])
+  fullname.vb: System.Dynamic.DynamicMetaObjectBinder.Defer(System.Dynamic.DynamicMetaObject())
+  name.vb: Defer(DynamicMetaObject())
+  spec.csharp:
+  - uid: System.Dynamic.DynamicMetaObjectBinder.Defer(System.Dynamic.DynamicMetaObject[])
+    name: "XXX"
+    fullName: System.Dynamic.DynamicMetaObjectBinder.Defer
+  - name: "XXX"
+    fullName: (
+  - uid: System.Dynamic.DynamicMetaObject
+    name: "XXX"
+    fullName: System.Dynamic.DynamicMetaObject
+  - name: 'XXX'
+    fullName: '[]'
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Dynamic.DynamicMetaObjectBinder.Defer(System.Dynamic.DynamicMetaObject[])
+    name: "XXX"
+    fullName: System.Dynamic.DynamicMetaObjectBinder.Defer
+  - name: "XXX"
+    fullName: (
+  - uid: System.Dynamic.DynamicMetaObject
+    name: "XXX"
+    fullName: System.Dynamic.DynamicMetaObject
+  - name: "XXX"
+    fullName: ()
+  - name: "XXX"
+    fullName: )
+  nameWithType: DynamicMetaObjectBinder.Defer(DynamicMetaObject[])
+  nameWithType.vb: DynamicMetaObjectBinder.Defer(DynamicMetaObject())
+  commentId: M:System.Dynamic.DynamicMetaObjectBinder.Defer(System.Dynamic.DynamicMetaObject[])
+- uid: System.Dynamic.DynamicMetaObjectBinder.GetUpdateExpression(System.Type)
+  parent: System.Dynamic.DynamicMetaObjectBinder
+  isExternal: true
+  name: "XXX"
+  fullName: System.Dynamic.DynamicMetaObjectBinder.GetUpdateExpression(System.Type)
+  spec.csharp:
+  - uid: System.Dynamic.DynamicMetaObjectBinder.GetUpdateExpression(System.Type)
+    name: "XXX"
+    fullName: System.Dynamic.DynamicMetaObjectBinder.GetUpdateExpression
+  - name: "XXX"
+    fullName: (
+  - uid: System.Type
+    name: "XXX"
+    fullName: System.Type
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Dynamic.DynamicMetaObjectBinder.GetUpdateExpression(System.Type)
+    name: "XXX"
+    fullName: System.Dynamic.DynamicMetaObjectBinder.GetUpdateExpression
+  - name: "XXX"
+    fullName: (
+  - uid: System.Type
+    name: "XXX"
+    fullName: System.Type
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: DynamicMetaObjectBinder.GetUpdateExpression(Type)
+  commentId: M:System.Dynamic.DynamicMetaObjectBinder.GetUpdateExpression(System.Type)
+- uid: System.Runtime.CompilerServices.CallSiteBinder.UpdateLabel
+  parent: System.Runtime.CompilerServices.CallSiteBinder
+  isExternal: false
+  name: "XXX"
+  fullName: System.Runtime.CompilerServices.CallSiteBinder.UpdateLabel
+  nameWithType: CallSiteBinder.UpdateLabel
+  commentId: P:System.Runtime.CompilerServices.CallSiteBinder.UpdateLabel
+- uid: System.Runtime.CompilerServices.CallSiteBinder.BindDelegate``1(System.Runtime.CompilerServices.CallSite{{T}},System.Object[])
+  parent: System.Runtime.CompilerServices.CallSiteBinder
+  definition: System.Runtime.CompilerServices.CallSiteBinder.BindDelegate``1(System.Runtime.CompilerServices.CallSite{``0},System.Object[])
+  name: "XXX"
+  fullName: System.Runtime.CompilerServices.CallSiteBinder.BindDelegate<T>(System.Runtime.CompilerServices.CallSite<T>, System.Object[])
+  fullname.vb: System.Runtime.CompilerServices.CallSiteBinder.BindDelegate(Of T)(System.Runtime.CompilerServices.CallSite(Of T), System.Object())
+  name.vb: BindDelegate(Of T)(CallSite(Of T), Object())
+  spec.csharp:
+  - uid: System.Runtime.CompilerServices.CallSiteBinder.BindDelegate``1(System.Runtime.CompilerServices.CallSite{``0},System.Object[])
+    name: "XXX"
+    fullName: System.Runtime.CompilerServices.CallSiteBinder.BindDelegate<T>
+  - name: "XXX"
+    fullName: (
+  - uid: System.Runtime.CompilerServices.CallSite`1
+    name: "XXX"
+    fullName: System.Runtime.CompilerServices.CallSite
+  - name: "<"
+    fullName: <
+  - name: "XXX"
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX'
+    fullName: '[]'
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Runtime.CompilerServices.CallSiteBinder.BindDelegate``1(System.Runtime.CompilerServices.CallSite{``0},System.Object[])
+    name: "XXX"
+    fullName: System.Runtime.CompilerServices.CallSiteBinder.BindDelegate(Of T)
+  - name: "XXX"
+    fullName: (
+  - uid: System.Runtime.CompilerServices.CallSite`1
+    name: "XXX"
+    fullName: System.Runtime.CompilerServices.CallSite
+  - name: 'XXX '
+    fullName: '(Of '
+  - name: "XXX"
+    fullName: T
+  - name: "XXX"
+    fullName: )
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: ()
+  - name: "XXX"
+    fullName: )
+  nameWithType: CallSiteBinder.BindDelegate<T>(CallSite<T>, Object[])
+  nameWithType.vb: CallSiteBinder.BindDelegate(Of T)(CallSite(Of T), Object())
+  commentId: M:System.Runtime.CompilerServices.CallSiteBinder.BindDelegate``1(System.Runtime.CompilerServices.CallSite{``0},System.Object[])
+- uid: System.Runtime.CompilerServices.CallSiteBinder.CacheTarget``1({T})
+  parent: System.Runtime.CompilerServices.CallSiteBinder
+  definition: System.Runtime.CompilerServices.CallSiteBinder.CacheTarget``1(``0)
+  name: "XXX"
+  fullName: System.Runtime.CompilerServices.CallSiteBinder.CacheTarget<T>(T)
+  fullname.vb: System.Runtime.CompilerServices.CallSiteBinder.CacheTarget(Of T)(T)
+  name.vb: CacheTarget(Of T)(T)
+  spec.csharp:
+  - uid: System.Runtime.CompilerServices.CallSiteBinder.CacheTarget``1(``0)
+    name: "XXX"
+    fullName: System.Runtime.CompilerServices.CallSiteBinder.CacheTarget<T>
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: T
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Runtime.CompilerServices.CallSiteBinder.CacheTarget``1(``0)
+    name: "XXX"
+    fullName: System.Runtime.CompilerServices.CallSiteBinder.CacheTarget(Of T)
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: T
+  - name: "XXX"
+    fullName: )
+  nameWithType: CallSiteBinder.CacheTarget<T>(T)
+  nameWithType.vb: CallSiteBinder.CacheTarget(Of T)(T)
+  commentId: M:System.Runtime.CompilerServices.CallSiteBinder.CacheTarget``1(``0)
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.ToString()
+  commentId: M:System.Object.ToString
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.Equals(Object)
+  commentId: M:System.Object.Equals(System.Object)
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.Equals(Object, Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.GetHashCode()
+  commentId: M:System.Object.GetHashCode
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.GetType()
+  commentId: M:System.Object.GetType
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.MemberwiseClone()
+  commentId: M:System.Object.MemberwiseClone
+- uid: System
+  isExternal: false
+  name: "XXX"
+  fullName: System
+  nameWithType: System
+  commentId: N:System
+- uid: System.Runtime.CompilerServices
+  isExternal: false
+  name: "XXX"
+  fullName: System.Runtime.CompilerServices
+  nameWithType: System.Runtime.CompilerServices
+  commentId: N:System.Runtime.CompilerServices
+- uid: System.Runtime.CompilerServices.CallSiteBinder.BindDelegate``1(System.Runtime.CompilerServices.CallSite{``0},System.Object[])
+  isExternal: true
+  name: "XXX"
+  fullName: System.Runtime.CompilerServices.CallSiteBinder.BindDelegate<T>(System.Runtime.CompilerServices.CallSite<T>, System.Object[])
+  fullname.vb: System.Runtime.CompilerServices.CallSiteBinder.BindDelegate(Of T)(System.Runtime.CompilerServices.CallSite(Of T), System.Object())
+  name.vb: BindDelegate(Of T)(CallSite(Of T), Object())
+  spec.csharp:
+  - uid: System.Runtime.CompilerServices.CallSiteBinder.BindDelegate``1(System.Runtime.CompilerServices.CallSite{``0},System.Object[])
+    name: "XXX"
+    fullName: System.Runtime.CompilerServices.CallSiteBinder.BindDelegate<T>
+  - name: "XXX"
+    fullName: (
+  - uid: System.Runtime.CompilerServices.CallSite`1
+    name: "XXX"
+    fullName: System.Runtime.CompilerServices.CallSite
+  - name: "<"
+    fullName: <
+  - name: "XXX"
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX'
+    fullName: '[]'
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Runtime.CompilerServices.CallSiteBinder.BindDelegate``1(System.Runtime.CompilerServices.CallSite{``0},System.Object[])
+    name: "XXX"
+    fullName: System.Runtime.CompilerServices.CallSiteBinder.BindDelegate(Of T)
+  - name: "XXX"
+    fullName: (
+  - uid: System.Runtime.CompilerServices.CallSite`1
+    name: "XXX"
+    fullName: System.Runtime.CompilerServices.CallSite
+  - name: 'XXX '
+    fullName: '(Of '
+  - name: "XXX"
+    fullName: T
+  - name: "XXX"
+    fullName: )
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: ()
+  - name: "XXX"
+    fullName: )
+  nameWithType: CallSiteBinder.BindDelegate<T>(CallSite<T>, Object[])
+  nameWithType.vb: CallSiteBinder.BindDelegate(Of T)(CallSite(Of T), Object())
+  commentId: M:System.Runtime.CompilerServices.CallSiteBinder.BindDelegate``1(System.Runtime.CompilerServices.CallSite{``0},System.Object[])
+- uid: System.Runtime.CompilerServices.CallSiteBinder.CacheTarget``1(``0)
+  isExternal: false
+  name: "XXX"
+  fullName: System.Runtime.CompilerServices.CallSiteBinder.CacheTarget<T>(T)
+  fullname.vb: System.Runtime.CompilerServices.CallSiteBinder.CacheTarget(Of T)(T)
+  name.vb: CacheTarget(Of T)(T)
+  spec.csharp:
+  - uid: System.Runtime.CompilerServices.CallSiteBinder.CacheTarget``1(``0)
+    name: "XXX"
+    fullName: System.Runtime.CompilerServices.CallSiteBinder.CacheTarget<T>
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: T
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Runtime.CompilerServices.CallSiteBinder.CacheTarget``1(``0)
+    name: "XXX"
+    fullName: System.Runtime.CompilerServices.CallSiteBinder.CacheTarget(Of T)
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: T
+  - name: "XXX"
+    fullName: )
+  nameWithType: CallSiteBinder.CacheTarget<T>(T)
+  nameWithType.vb: CallSiteBinder.CacheTarget(Of T)(T)
+  commentId: M:System.Runtime.CompilerServices.CallSiteBinder.CacheTarget``1(``0)
+- uid: System.Linq.Expressions.ExpressionType
+  parent: System.Linq.Expressions
+  isExternal: false
+  name: "XXX"
+  fullName: System.Linq.Expressions.ExpressionType
+  nameWithType: ExpressionType
+  commentId: T:System.Linq.Expressions.ExpressionType
+- uid: System.Linq.Expressions
+  isExternal: false
+  name: "XXX"
+  fullName: System.Linq.Expressions
+  nameWithType: System.Linq.Expressions
+  commentId: N:System.Linq.Expressions
+- uid: System.Dynamic.DynamicMetaObjectBinder.ReturnType
+  parent: System.Dynamic.DynamicMetaObjectBinder
+  isExternal: false
+  name: "XXX"
+  fullName: System.Dynamic.DynamicMetaObjectBinder.ReturnType
+  nameWithType: DynamicMetaObjectBinder.ReturnType
+  commentId: P:System.Dynamic.DynamicMetaObjectBinder.ReturnType
+- uid: System.Type
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Type
+  nameWithType: Type
+  commentId: T:System.Type
+- uid: System.Dynamic.DynamicMetaObjectBinder.Bind(System.Dynamic.DynamicMetaObject,System.Dynamic.DynamicMetaObject[])
+  parent: System.Dynamic.DynamicMetaObjectBinder
+  isExternal: false
+  name: "XXX"
+  fullName: System.Dynamic.DynamicMetaObjectBinder.Bind(System.Dynamic.DynamicMetaObject, System.Dynamic.DynamicMetaObject[])
+  fullname.vb: System.Dynamic.DynamicMetaObjectBinder.Bind(System.Dynamic.DynamicMetaObject, System.Dynamic.DynamicMetaObject())
+  name.vb: Bind(DynamicMetaObject, DynamicMetaObject())
+  spec.csharp:
+  - uid: System.Dynamic.DynamicMetaObjectBinder.Bind(System.Dynamic.DynamicMetaObject,System.Dynamic.DynamicMetaObject[])
+    name: "XXX"
+    fullName: System.Dynamic.DynamicMetaObjectBinder.Bind
+  - name: "XXX"
+    fullName: (
+  - uid: System.Dynamic.DynamicMetaObject
+    name: "XXX"
+    fullName: System.Dynamic.DynamicMetaObject
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Dynamic.DynamicMetaObject
+    name: "XXX"
+    fullName: System.Dynamic.DynamicMetaObject
+  - name: 'XXX'
+    fullName: '[]'
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Dynamic.DynamicMetaObjectBinder.Bind(System.Dynamic.DynamicMetaObject,System.Dynamic.DynamicMetaObject[])
+    name: "XXX"
+    fullName: System.Dynamic.DynamicMetaObjectBinder.Bind
+  - name: "XXX"
+    fullName: (
+  - uid: System.Dynamic.DynamicMetaObject
+    name: "XXX"
+    fullName: System.Dynamic.DynamicMetaObject
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Dynamic.DynamicMetaObject
+    name: "XXX"
+    fullName: System.Dynamic.DynamicMetaObject
+  - name: "XXX"
+    fullName: ()
+  - name: "XXX"
+    fullName: )
+  nameWithType: DynamicMetaObjectBinder.Bind(DynamicMetaObject, DynamicMetaObject[])
+  nameWithType.vb: DynamicMetaObjectBinder.Bind(DynamicMetaObject, DynamicMetaObject())
+  commentId: M:System.Dynamic.DynamicMetaObjectBinder.Bind(System.Dynamic.DynamicMetaObject,System.Dynamic.DynamicMetaObject[])
+- uid: System.Dynamic.DynamicMetaObject
+  parent: System.Dynamic
+  isExternal: false
+  name: "XXX"
+  fullName: System.Dynamic.DynamicMetaObject
+  nameWithType: DynamicMetaObject
+  commentId: T:System.Dynamic.DynamicMetaObject
+- uid: System.Dynamic.DynamicMetaObject[]
+  name: "XXX"
+  fullName: System.Dynamic.DynamicMetaObject[]
+  fullname.vb: System.Dynamic.DynamicMetaObject()
+  name.vb: DynamicMetaObject()
+  spec.csharp:
+  - uid: System.Dynamic.DynamicMetaObject
+    name: "XXX"
+    fullName: System.Dynamic.DynamicMetaObject
+  - name: 'XXX'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Dynamic.DynamicMetaObject
+    name: "XXX"
+    fullName: System.Dynamic.DynamicMetaObject
+  - name: "XXX"
+    fullName: ()
+  nameWithType: DynamicMetaObject[]
+  nameWithType.vb: DynamicMetaObject()

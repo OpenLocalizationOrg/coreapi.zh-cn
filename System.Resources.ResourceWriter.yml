@@ -1,0 +1,555 @@
+items:
+- uid: System.Resources.ResourceWriter
+  commentId: T:System.Resources.ResourceWriter
+  id: ResourceWriter
+  parent: System.Resources
+  children:
+  - System.Resources.ResourceWriter.#ctor(System.IO.Stream)
+  - System.Resources.ResourceWriter.AddResource(System.String,System.String)
+  - System.Resources.ResourceWriter.Dispose
+  - System.Resources.ResourceWriter.Generate
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Resources.ResourceWriter
+  type: Class
+  source:
+    remote:
+      path: src/System.Resources.Writer/ref/System.Resources.Writer.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: ResourceWriter
+    path: src/System.Resources.Writer/ref/System.Resources.Writer.cs
+    startLine: 10
+  assemblies:
+  - System.Resources.Writer
+  namespace: System.Resources
+  summary: "\n<p>Writes resources in the system-default format to an output file or an output stream. This class cannot be inherited.</p>\n"
+  syntax:
+    content: 'public sealed class ResourceWriter : IDisposable'
+    content.vb: >-
+      Public NotInheritable Class ResourceWriter
+          Implements IDisposable
+  seealso:
+  - type: System.Resources.IResourceWriter
+    commentId: T:System.Resources.IResourceWriter
+  - type: System.IDisposable
+    commentId: T:System.IDisposable
+  inheritance:
+  - System.Object
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+  nameWithType: ResourceWriter
+- uid: System.Resources.ResourceWriter.#ctor(System.IO.Stream)
+  commentId: M:System.Resources.ResourceWriter.#ctor(System.IO.Stream)
+  id: '#ctor(System.IO.Stream)'
+  parent: System.Resources.ResourceWriter
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Resources.ResourceWriter.ResourceWriter(System.IO.Stream)
+  type: Constructor
+  source:
+    remote:
+      path: src/System.Resources.Writer/ref/System.Resources.Writer.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: .ctor
+    path: src/System.Resources.Writer/ref/System.Resources.Writer.cs
+    startLine: 12
+  assemblies:
+  - System.Resources.Writer
+  namespace: System.Resources
+  summary: "\n<p>Initializes a new instance of the <xref href=\"System.Resources.ResourceWriter\" data-throw-if-not-resolved=\"false\"></xref> class that writes the resources to the provided stream.</p>\n"
+  syntax:
+    content: public ResourceWriter(Stream stream)
+    content.vb: Public Sub New(stream As Stream)
+    parameters:
+    - id: stream
+      type: System.IO.Stream
+      description: "\n<p>The output stream. </p>\n"
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>The <em>stream</em> parameter is not writable. </p>\n"
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>The <em>stream</em> parameter is <strong>null</strong>. </p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: ResourceWriter.ResourceWriter(Stream)
+- uid: System.Resources.ResourceWriter.AddResource(System.String,System.String)
+  commentId: M:System.Resources.ResourceWriter.AddResource(System.String,System.String)
+  id: AddResource(System.String,System.String)
+  parent: System.Resources.ResourceWriter
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Resources.ResourceWriter.AddResource(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/System.Resources.Writer/ref/System.Resources.Writer.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: AddResource
+    path: src/System.Resources.Writer/ref/System.Resources.Writer.cs
+    startLine: 13
+  assemblies:
+  - System.Resources.Writer
+  namespace: System.Resources
+  summary: "\n<p>Adds a string resource to the list of resources to be written.</p>\n"
+  syntax:
+    content: public void AddResource(string name, string value)
+    content.vb: Public Sub AddResource(name As String, value As String)
+    parameters:
+    - id: name
+      type: System.String
+      description: "\n<p>The name of the resource. </p>\n"
+    - id: value
+      type: System.String
+      description: "\n<p>The value of the resource. </p>\n"
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>\n<em>name</em> (or a name that varies only by capitalization) has already been added to this ResourceWriter. </p>\n"
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>The <em>name</em> parameter is <strong>null</strong>. </p>\n"
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: "\n<p>This <xref href=\"System.Resources.ResourceWriter\" data-throw-if-not-resolved=\"false\"></xref> has been closed and its hash table is unavailable. </p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: ResourceWriter.AddResource(String, String)
+- uid: System.Resources.ResourceWriter.Dispose
+  commentId: M:System.Resources.ResourceWriter.Dispose
+  id: Dispose
+  parent: System.Resources.ResourceWriter
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Resources.ResourceWriter.Dispose()
+  type: Method
+  source:
+    remote:
+      path: src/System.Resources.Writer/ref/System.Resources.Writer.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Dispose
+    path: src/System.Resources.Writer/ref/System.Resources.Writer.cs
+    startLine: 14
+  assemblies:
+  - System.Resources.Writer
+  namespace: System.Resources
+  summary: "\n<p>Allows users to close the resource file or stream, explicitly releasing resources.</p>\n"
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose
+  exceptions:
+  - type: System.IO.IOException
+    commentId: T:System.IO.IOException
+    description: "\n<p>An I/O error has occurred. </p>\n"
+  - type: System.Runtime.Serialization.SerializationException
+    commentId: T:System.Runtime.Serialization.SerializationException
+    description: "\n<p>An error has occurred during serialization of the object. </p>\n"
+  seealso:
+  - type: System.IDisposable
+    commentId: T:System.IDisposable
+  implements:
+  - System.IDisposable.Dispose
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: ResourceWriter.Dispose()
+- uid: System.Resources.ResourceWriter.Generate
+  commentId: M:System.Resources.ResourceWriter.Generate
+  id: Generate
+  parent: System.Resources.ResourceWriter
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Resources.ResourceWriter.Generate()
+  type: Method
+  source:
+    remote:
+      path: src/System.Resources.Writer/ref/System.Resources.Writer.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Generate
+    path: src/System.Resources.Writer/ref/System.Resources.Writer.cs
+    startLine: 15
+  assemblies:
+  - System.Resources.Writer
+  namespace: System.Resources
+  summary: "\n<p>Saves all resources to the output stream in the system default format.</p>\n"
+  syntax:
+    content: public void Generate()
+    content.vb: Public Sub Generate
+  exceptions:
+  - type: System.IO.IOException
+    commentId: T:System.IO.IOException
+    description: "\n<p>An I/O error occurred. </p>\n"
+  - type: System.Runtime.Serialization.SerializationException
+    commentId: T:System.Runtime.Serialization.SerializationException
+    description: "\n<p>An error occurred during serialization of the object. </p>\n"
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: "\n<p>This <xref href=\"System.Resources.ResourceWriter\" data-throw-if-not-resolved=\"false\"></xref> has been closed and its hash table is unavailable. </p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: ResourceWriter.Generate()
+references:
+- uid: System.Resources
+  isExternal: false
+  name: "XXX"
+  fullName: System.Resources
+  commentId: N:System.Resources
+  nameWithType: System.Resources
+- uid: System.Object
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Object
+  commentId: T:System.Object
+  nameWithType: Object
+- uid: System.IDisposable
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.IDisposable
+  commentId: T:System.IDisposable
+  nameWithType: IDisposable
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.ToString
+  nameWithType: Object.ToString()
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.Equals(System.Object)
+  nameWithType: Object.Equals(Object)
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  nameWithType: Object.Equals(Object, Object)
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.GetHashCode
+  nameWithType: Object.GetHashCode()
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.GetType
+  nameWithType: Object.GetType()
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.MemberwiseClone
+  nameWithType: Object.MemberwiseClone()
+- uid: System
+  isExternal: false
+  name: "XXX"
+  fullName: System
+  commentId: N:System
+  nameWithType: System
+- uid: System.IO.Stream
+  parent: System.IO
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.Stream
+  commentId: T:System.IO.Stream
+  nameWithType: Stream
+- uid: System.IO
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO
+  commentId: N:System.IO
+  nameWithType: System.IO
+- uid: System.String
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.String
+  commentId: T:System.String
+  nameWithType: String
+- uid: System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: false
+  name: "XXX"
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: "XXX"
+    fullName: System.IDisposable.Dispose
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: "XXX"
+    fullName: System.IDisposable.Dispose
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.IDisposable.Dispose
+  nameWithType: IDisposable.Dispose()
+- uid: System.ArgumentException
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentException
+  nameWithType: ArgumentException
+  commentId: T:System.ArgumentException
+- uid: System.ArgumentNullException
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentNullException
+  nameWithType: ArgumentNullException
+  commentId: T:System.ArgumentNullException
+- uid: System.InvalidOperationException
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.InvalidOperationException
+  nameWithType: InvalidOperationException
+  commentId: T:System.InvalidOperationException
+- uid: System.IO.IOException
+  parent: System.IO
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.IOException
+  nameWithType: IOException
+  commentId: T:System.IO.IOException
+- uid: System.Runtime.Serialization.SerializationException
+  isExternal: false
+  name: "XXX"
+  fullName: System.Runtime.Serialization.SerializationException
+  nameWithType: SerializationException
+  commentId: T:System.Runtime.Serialization.SerializationException

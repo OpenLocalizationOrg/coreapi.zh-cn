@@ -1,0 +1,690 @@
+items:
+- uid: System.Xml.XPath.XPathDocument
+  commentId: T:System.Xml.XPath.XPathDocument
+  id: XPathDocument
+  parent: System.Xml.XPath
+  children:
+  - System.Xml.XPath.XPathDocument.#ctor(System.IO.Stream)
+  - System.Xml.XPath.XPathDocument.#ctor(System.IO.TextReader)
+  - System.Xml.XPath.XPathDocument.#ctor(System.String)
+  - System.Xml.XPath.XPathDocument.#ctor(System.String,System.Xml.XmlSpace)
+  - System.Xml.XPath.XPathDocument.#ctor(System.Xml.XmlReader)
+  - System.Xml.XPath.XPathDocument.#ctor(System.Xml.XmlReader,System.Xml.XmlSpace)
+  - System.Xml.XPath.XPathDocument.CreateNavigator
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Xml.XPath.XPathDocument
+  type: Class
+  source:
+    remote:
+      path: src/System.Xml.XPath/ref/System.Xml.XPath.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: XPathDocument
+    path: src/System.Xml.XPath/ref/System.Xml.XPath.cs
+    startLine: 40
+  assemblies:
+  - System.Xml.XPath
+  namespace: System.Xml.XPath
+  summary: "\n<p>Provides a fast, read-only, in-memory representation of an XML document by using the XPath data model.</p>\n"
+  syntax:
+    content: 'public class XPathDocument : IXPathNavigable'
+    content.vb: >-
+      Public Class XPathDocument
+          Implements IXPathNavigable
+  seealso:
+  - type: System.Xml.XPath.XPathNavigator
+    commentId: T:System.Xml.XPath.XPathNavigator
+  inheritance:
+  - System.Object
+  implements:
+  - System.Xml.XPath.IXPathNavigable
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+  nameWithType: XPathDocument
+- uid: System.Xml.XPath.XPathDocument.#ctor(System.IO.Stream)
+  commentId: M:System.Xml.XPath.XPathDocument.#ctor(System.IO.Stream)
+  id: '#ctor(System.IO.Stream)'
+  parent: System.Xml.XPath.XPathDocument
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Xml.XPath.XPathDocument.XPathDocument(System.IO.Stream)
+  type: Constructor
+  source:
+    remote:
+      path: src/System.Xml.XPath/ref/System.Xml.XPath.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: .ctor
+    path: src/System.Xml.XPath/ref/System.Xml.XPath.cs
+    startLine: 42
+  assemblies:
+  - System.Xml.XPath
+  namespace: System.Xml.XPath
+  summary: "\n<p>Initializes a new instance of the <xref href=\"System.Xml.XPath.XPathDocument\" data-throw-if-not-resolved=\"false\"></xref> class from the XML data in the specified <xref href=\"System.IO.Stream\" data-throw-if-not-resolved=\"false\"></xref> object.</p>\n"
+  syntax:
+    content: public XPathDocument(Stream stream)
+    content.vb: Public Sub New(stream As Stream)
+    parameters:
+    - id: stream
+      type: System.IO.Stream
+      description: "\n<p>The <xref href=\"System.IO.Stream\" data-throw-if-not-resolved=\"false\"></xref> object that contains the XML data.</p>\n"
+  exceptions:
+  - type: System.Xml.XmlException
+    commentId: T:System.Xml.XmlException
+    description: "\n<p>An error was encountered in the XML data. The <xref href=\"System.Xml.XPath.XPathDocument\" data-throw-if-not-resolved=\"false\"></xref> remains empty. </p>\n"
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>The <xref href=\"System.IO.Stream\" data-throw-if-not-resolved=\"false\"></xref> object passed as a parameter is <strong>null</strong>.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: XPathDocument.XPathDocument(Stream)
+- uid: System.Xml.XPath.XPathDocument.#ctor(System.IO.TextReader)
+  commentId: M:System.Xml.XPath.XPathDocument.#ctor(System.IO.TextReader)
+  id: '#ctor(System.IO.TextReader)'
+  parent: System.Xml.XPath.XPathDocument
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Xml.XPath.XPathDocument.XPathDocument(System.IO.TextReader)
+  type: Constructor
+  source:
+    remote:
+      path: src/System.Xml.XPath/ref/System.Xml.XPath.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: .ctor
+    path: src/System.Xml.XPath/ref/System.Xml.XPath.cs
+    startLine: 43
+  assemblies:
+  - System.Xml.XPath
+  namespace: System.Xml.XPath
+  summary: "\n<p>Initializes a new instance of the <xref href=\"System.Xml.XPath.XPathDocument\" data-throw-if-not-resolved=\"false\"></xref> class from the XML data that is contained in the specified <xref href=\"System.IO.TextReader\" data-throw-if-not-resolved=\"false\"></xref> object.</p>\n"
+  syntax:
+    content: public XPathDocument(TextReader textReader)
+    content.vb: Public Sub New(textReader As TextReader)
+    parameters:
+    - id: textReader
+      type: System.IO.TextReader
+      description: "\n<p>The <xref href=\"System.IO.TextReader\" data-throw-if-not-resolved=\"false\"></xref> object that contains the XML data.</p>\n"
+  exceptions:
+  - type: System.Xml.XmlException
+    commentId: T:System.Xml.XmlException
+    description: "\n<p>An error was encountered in the XML data. The <xref href=\"System.Xml.XPath.XPathDocument\" data-throw-if-not-resolved=\"false\"></xref> remains empty. </p>\n"
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>The <xref href=\"System.IO.TextReader\" data-throw-if-not-resolved=\"false\"></xref> object passed as a parameter is <strong>null</strong>.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: XPathDocument.XPathDocument(TextReader)
+- uid: System.Xml.XPath.XPathDocument.#ctor(System.String)
+  commentId: M:System.Xml.XPath.XPathDocument.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: System.Xml.XPath.XPathDocument
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Xml.XPath.XPathDocument.XPathDocument(System.String)
+  type: Constructor
+  source:
+    remote:
+      path: src/System.Xml.XPath/ref/System.Xml.XPath.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: .ctor
+    path: src/System.Xml.XPath/ref/System.Xml.XPath.cs
+    startLine: 44
+  assemblies:
+  - System.Xml.XPath
+  namespace: System.Xml.XPath
+  summary: "\n<p>Initializes a new instance of the <xref href=\"System.Xml.XPath.XPathDocument\" data-throw-if-not-resolved=\"false\"></xref> class from the XML data in the specified file.</p>\n"
+  syntax:
+    content: public XPathDocument(string uri)
+    content.vb: Public Sub New(uri As String)
+    parameters:
+    - id: uri
+      type: System.String
+      description: "\n<p>The path of the file that contains the XML data.</p>\n"
+  exceptions:
+  - type: System.Xml.XmlException
+    commentId: T:System.Xml.XmlException
+    description: "\n<p>An error was encountered in the XML data. The <xref href=\"System.Xml.XPath.XPathDocument\" data-throw-if-not-resolved=\"false\"></xref> remains empty. </p>\n"
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>The file path parameter is <strong>null</strong>.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: XPathDocument.XPathDocument(String)
+- uid: System.Xml.XPath.XPathDocument.#ctor(System.String,System.Xml.XmlSpace)
+  commentId: M:System.Xml.XPath.XPathDocument.#ctor(System.String,System.Xml.XmlSpace)
+  id: '#ctor(System.String,System.Xml.XmlSpace)'
+  parent: System.Xml.XPath.XPathDocument
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Xml.XPath.XPathDocument.XPathDocument(System.String, System.Xml.XmlSpace)
+  type: Constructor
+  source:
+    remote:
+      path: src/System.Xml.XPath/ref/System.Xml.XPath.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: .ctor
+    path: src/System.Xml.XPath/ref/System.Xml.XPath.cs
+    startLine: 45
+  assemblies:
+  - System.Xml.XPath
+  namespace: System.Xml.XPath
+  summary: "\n<p>Initializes a new instance of the <xref href=\"System.Xml.XPath.XPathDocument\" data-throw-if-not-resolved=\"false\"></xref> class from the XML data in the file specified with the white space handling specified.</p>\n"
+  syntax:
+    content: public XPathDocument(string uri, XmlSpace space)
+    content.vb: Public Sub New(uri As String, space As XmlSpace)
+    parameters:
+    - id: uri
+      type: System.String
+      description: "\n<p>The path of the file that contains the XML data.</p>\n"
+    - id: space
+      type: System.Xml.XmlSpace
+      description: "\n<p>An <xref href=\"System.Xml.XmlSpace\" data-throw-if-not-resolved=\"false\"></xref> object.</p>\n"
+  exceptions:
+  - type: System.Xml.XmlException
+    commentId: T:System.Xml.XmlException
+    description: "\n<p>An error was encountered in the XML data. The <xref href=\"System.Xml.XPath.XPathDocument\" data-throw-if-not-resolved=\"false\"></xref> remains empty. </p>\n"
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>The file path parameter or <xref href=\"System.Xml.XmlSpace\" data-throw-if-not-resolved=\"false\"></xref> object parameter is <strong>null</strong>.</p>\n"
+  seealso:
+  - type: System.Xml.XmlSpace
+    commentId: T:System.Xml.XmlSpace
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: XPathDocument.XPathDocument(String, XmlSpace)
+- uid: System.Xml.XPath.XPathDocument.#ctor(System.Xml.XmlReader)
+  commentId: M:System.Xml.XPath.XPathDocument.#ctor(System.Xml.XmlReader)
+  id: '#ctor(System.Xml.XmlReader)'
+  parent: System.Xml.XPath.XPathDocument
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Xml.XPath.XPathDocument.XPathDocument(System.Xml.XmlReader)
+  type: Constructor
+  source:
+    remote:
+      path: src/System.Xml.XPath/ref/System.Xml.XPath.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: .ctor
+    path: src/System.Xml.XPath/ref/System.Xml.XPath.cs
+    startLine: 46
+  assemblies:
+  - System.Xml.XPath
+  namespace: System.Xml.XPath
+  summary: "\n<p>Initializes a new instance of the <xref href=\"System.Xml.XPath.XPathDocument\" data-throw-if-not-resolved=\"false\"></xref> class from the XML data that is contained in the specified <xref href=\"System.Xml.XmlReader\" data-throw-if-not-resolved=\"false\"></xref> object.</p>\n"
+  syntax:
+    content: public XPathDocument(XmlReader reader)
+    content.vb: Public Sub New(reader As XmlReader)
+    parameters:
+    - id: reader
+      type: System.Xml.XmlReader
+      description: "\n<p>The <xref href=\"System.Xml.XmlReader\" data-throw-if-not-resolved=\"false\"></xref> object that contains the XML data. </p>\n"
+  exceptions:
+  - type: System.Xml.XmlException
+    commentId: T:System.Xml.XmlException
+    description: "\n<p>An error was encountered in the XML data. The <xref href=\"System.Xml.XPath.XPathDocument\" data-throw-if-not-resolved=\"false\"></xref> remains empty. </p>\n"
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>The <xref href=\"System.Xml.XmlReader\" data-throw-if-not-resolved=\"false\"></xref> object passed as a parameter is <strong>null</strong>.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: XPathDocument.XPathDocument(XmlReader)
+- uid: System.Xml.XPath.XPathDocument.#ctor(System.Xml.XmlReader,System.Xml.XmlSpace)
+  commentId: M:System.Xml.XPath.XPathDocument.#ctor(System.Xml.XmlReader,System.Xml.XmlSpace)
+  id: '#ctor(System.Xml.XmlReader,System.Xml.XmlSpace)'
+  parent: System.Xml.XPath.XPathDocument
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Xml.XPath.XPathDocument.XPathDocument(System.Xml.XmlReader, System.Xml.XmlSpace)
+  type: Constructor
+  source:
+    remote:
+      path: src/System.Xml.XPath/ref/System.Xml.XPath.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: .ctor
+    path: src/System.Xml.XPath/ref/System.Xml.XPath.cs
+    startLine: 47
+  assemblies:
+  - System.Xml.XPath
+  namespace: System.Xml.XPath
+  summary: "\n<p>Initializes a new instance of the <xref href=\"System.Xml.XPath.XPathDocument\" data-throw-if-not-resolved=\"false\"></xref> class from the XML data that is contained in the specified <xref href=\"System.Xml.XmlReader\" data-throw-if-not-resolved=\"false\"></xref> object with the specified white space handling.</p>\n"
+  syntax:
+    content: public XPathDocument(XmlReader reader, XmlSpace space)
+    content.vb: Public Sub New(reader As XmlReader, space As XmlSpace)
+    parameters:
+    - id: reader
+      type: System.Xml.XmlReader
+      description: "\n<p>The <xref href=\"System.Xml.XmlReader\" data-throw-if-not-resolved=\"false\"></xref> object that contains the XML data.</p>\n"
+    - id: space
+      type: System.Xml.XmlSpace
+      description: "\n<p>An <xref href=\"System.Xml.XmlSpace\" data-throw-if-not-resolved=\"false\"></xref> object.</p>\n"
+  exceptions:
+  - type: System.Xml.XmlException
+    commentId: T:System.Xml.XmlException
+    description: "\n<p>An error was encountered in the XML data. The <xref href=\"System.Xml.XPath.XPathDocument\" data-throw-if-not-resolved=\"false\"></xref> remains empty. </p>\n"
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>The <xref href=\"System.Xml.XmlReader\" data-throw-if-not-resolved=\"false\"></xref> object parameter or <xref href=\"System.Xml.XmlSpace\" data-throw-if-not-resolved=\"false\"></xref> object parameter is <strong>null</strong>.</p>\n"
+  seealso:
+  - type: System.Xml.XmlSpace
+    commentId: T:System.Xml.XmlSpace
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: XPathDocument.XPathDocument(XmlReader, XmlSpace)
+- uid: System.Xml.XPath.XPathDocument.CreateNavigator
+  commentId: M:System.Xml.XPath.XPathDocument.CreateNavigator
+  id: CreateNavigator
+  parent: System.Xml.XPath.XPathDocument
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Xml.XPath.XPathDocument.CreateNavigator()
+  type: Method
+  source:
+    remote:
+      path: src/System.Xml.XPath/ref/System.Xml.XPath.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: CreateNavigator
+    path: src/System.Xml.XPath/ref/System.Xml.XPath.cs
+    startLine: 48
+  assemblies:
+  - System.Xml.XPath
+  namespace: System.Xml.XPath
+  summary: "\n<p>Initializes a read-only <xref href=\"System.Xml.XPath.XPathNavigator\" data-throw-if-not-resolved=\"false\"></xref> object for navigating through nodes in this <xref href=\"System.Xml.XPath.XPathDocument\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  syntax:
+    content: public XPathNavigator CreateNavigator()
+    content.vb: Public Function CreateNavigator As XPathNavigator
+    return:
+      type: System.Xml.XPath.XPathNavigator
+      description: "\n<p>A read-only <xref href=\"System.Xml.XPath.XPathNavigator\" data-throw-if-not-resolved=\"false\"></xref> object.</p>\n"
+  implements:
+  - System.Xml.XPath.IXPathNavigable.CreateNavigator
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: XPathDocument.CreateNavigator()
+references:
+- uid: System.Xml.XPath
+  isExternal: false
+  name: "XXX"
+  fullName: System.Xml.XPath
+  commentId: N:System.Xml.XPath
+  nameWithType: System.Xml.XPath
+- uid: System.Object
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Object
+  commentId: T:System.Object
+  nameWithType: Object
+- uid: System.Xml.XPath.IXPathNavigable
+  parent: System.Xml.XPath
+  isExternal: false
+  name: "XXX"
+  fullName: System.Xml.XPath.IXPathNavigable
+  commentId: T:System.Xml.XPath.IXPathNavigable
+  nameWithType: IXPathNavigable
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.ToString
+  nameWithType: Object.ToString()
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.Equals(System.Object)
+  nameWithType: Object.Equals(Object)
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  nameWithType: Object.Equals(Object, Object)
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.GetHashCode
+  nameWithType: Object.GetHashCode()
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.GetType
+  nameWithType: Object.GetType()
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.MemberwiseClone
+  nameWithType: Object.MemberwiseClone()
+- uid: System
+  isExternal: false
+  name: "XXX"
+  fullName: System
+  commentId: N:System
+  nameWithType: System
+- uid: System.IO.Stream
+  parent: System.IO
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.Stream
+  commentId: T:System.IO.Stream
+  nameWithType: Stream
+- uid: System.IO
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO
+  commentId: N:System.IO
+  nameWithType: System.IO
+- uid: System.IO.TextReader
+  parent: System.IO
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.TextReader
+  commentId: T:System.IO.TextReader
+  nameWithType: TextReader
+- uid: System.String
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.String
+  commentId: T:System.String
+  nameWithType: String
+- uid: System.Xml.XmlSpace
+  parent: System.Xml
+  isExternal: false
+  name: "XXX"
+  fullName: System.Xml.XmlSpace
+  commentId: T:System.Xml.XmlSpace
+  nameWithType: XmlSpace
+- uid: System.Xml
+  isExternal: false
+  name: "XXX"
+  fullName: System.Xml
+  commentId: N:System.Xml
+  nameWithType: System.Xml
+- uid: System.Xml.XmlReader
+  parent: System.Xml
+  isExternal: false
+  name: "XXX"
+  fullName: System.Xml.XmlReader
+  commentId: T:System.Xml.XmlReader
+  nameWithType: XmlReader
+- uid: System.Xml.XPath.IXPathNavigable.CreateNavigator
+  parent: System.Xml.XPath.IXPathNavigable
+  isExternal: false
+  name: "XXX"
+  fullName: System.Xml.XPath.IXPathNavigable.CreateNavigator()
+  spec.csharp:
+  - uid: System.Xml.XPath.IXPathNavigable.CreateNavigator
+    name: "XXX"
+    fullName: System.Xml.XPath.IXPathNavigable.CreateNavigator
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Xml.XPath.IXPathNavigable.CreateNavigator
+    name: "XXX"
+    fullName: System.Xml.XPath.IXPathNavigable.CreateNavigator
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Xml.XPath.IXPathNavigable.CreateNavigator
+  nameWithType: IXPathNavigable.CreateNavigator()
+- uid: System.Xml.XPath.XPathNavigator
+  parent: System.Xml.XPath
+  isExternal: false
+  name: "XXX"
+  fullName: System.Xml.XPath.XPathNavigator
+  commentId: T:System.Xml.XPath.XPathNavigator
+  nameWithType: XPathNavigator
+- uid: System.Xml.XmlException
+  isExternal: false
+  name: "XXX"
+  fullName: System.Xml.XmlException
+  commentId: T:System.Xml.XmlException
+  nameWithType: XmlException
+- uid: System.ArgumentNullException
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentNullException
+  nameWithType: ArgumentNullException
+  commentId: T:System.ArgumentNullException

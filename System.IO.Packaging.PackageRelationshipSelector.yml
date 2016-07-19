@@ -1,0 +1,649 @@
+items:
+- uid: System.IO.Packaging.PackageRelationshipSelector
+  commentId: T:System.IO.Packaging.PackageRelationshipSelector
+  id: PackageRelationshipSelector
+  parent: System.IO.Packaging
+  children:
+  - System.IO.Packaging.PackageRelationshipSelector.#ctor(System.Uri,System.IO.Packaging.PackageRelationshipSelectorType,System.String)
+  - System.IO.Packaging.PackageRelationshipSelector.Select(System.IO.Packaging.Package)
+  - System.IO.Packaging.PackageRelationshipSelector.SelectionCriteria
+  - System.IO.Packaging.PackageRelationshipSelector.SelectorType
+  - System.IO.Packaging.PackageRelationshipSelector.SourceUri
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.Packaging.PackageRelationshipSelector
+  type: Class
+  source:
+    remote:
+      path: src/System.IO.Packaging/ref/System.IO.Packaging.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: PackageRelationshipSelector
+    path: src/System.IO.Packaging/ref/System.IO.Packaging.cs
+    startLine: 139
+  assemblies:
+  - System.IO.Packaging
+  namespace: System.IO.Packaging
+  summary: "\n<p>Defines <xref href=\"System.IO.Packaging.PackageRelationship\" data-throw-if-not-resolved=\"false\"></xref> criteria to select part-level or package-level relationships.</p>\n"
+  syntax:
+    content: public sealed class PackageRelationshipSelector
+    content.vb: Public NotInheritable Class PackageRelationshipSelector
+  seealso:
+  - type: System.IO.Packaging.PackageRelationshipSelectorType
+    commentId: T:System.IO.Packaging.PackageRelationshipSelectorType
+  - type: System.IO.Packaging.PackageRelationship
+    commentId: T:System.IO.Packaging.PackageRelationship
+  - type: System.IO.Packaging.PackagePart
+    commentId: T:System.IO.Packaging.PackagePart
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+  nameWithType: PackageRelationshipSelector
+- uid: System.IO.Packaging.PackageRelationshipSelector.#ctor(System.Uri,System.IO.Packaging.PackageRelationshipSelectorType,System.String)
+  commentId: M:System.IO.Packaging.PackageRelationshipSelector.#ctor(System.Uri,System.IO.Packaging.PackageRelationshipSelectorType,System.String)
+  id: '#ctor(System.Uri,System.IO.Packaging.PackageRelationshipSelectorType,System.String)'
+  parent: System.IO.Packaging.PackageRelationshipSelector
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.Packaging.PackageRelationshipSelector.PackageRelationshipSelector(System.Uri, System.IO.Packaging.PackageRelationshipSelectorType, System.String)
+  type: Constructor
+  source:
+    remote:
+      path: src/System.IO.Packaging/ref/System.IO.Packaging.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: .ctor
+    path: src/System.IO.Packaging/ref/System.IO.Packaging.cs
+    startLine: 141
+  assemblies:
+  - System.IO.Packaging
+  namespace: System.IO.Packaging
+  summary: "\n<p>Initializes a new instance of the <xref href=\"System.IO.Packaging.PackageRelationshipSelector\" data-throw-if-not-resolved=\"false\"></xref> class.</p>\n"
+  syntax:
+    content: public PackageRelationshipSelector(Uri sourceUri, PackageRelationshipSelectorType selectorType, string selectionCriteria)
+    content.vb: Public Sub New(sourceUri As Uri, selectorType As PackageRelationshipSelectorType, selectionCriteria As String)
+    parameters:
+    - id: sourceUri
+      type: System.Uri
+      description: "\n<p>The uniform resource identifier (URI) of the <xref href=\"System.IO.Packaging.PackagePart\" data-throw-if-not-resolved=\"false\"></xref> or the <xref href=\"System.IO.Packaging.Package\" data-throw-if-not-resolved=\"false\"></xref> (<em>SourceUri</em>=\"/\") that owns the relationship.</p>\n"
+    - id: selectorType
+      type: System.IO.Packaging.PackageRelationshipSelectorType
+      description: "\n<p>The type of the <em>selectionCriteria</em>, either by relationship <xref href=\"System.IO.Packaging.PackageRelationshipSelectorType.Id\" data-throw-if-not-resolved=\"false\"></xref> or relationship <xref href=\"System.IO.Packaging.PackageRelationshipSelectorType.Type\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    - id: selectionCriteria
+      type: System.String
+      description: "\n<p>The qualification string that is used to select the relationships based on the <em>selectorType</em>.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>sourceUri</em> or <em>selectionCriteria</em> is <strong>null</strong>.</p>\n"
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>The <em>selectorType</em> parameter is not valid.</p>\n"
+  - type: System.Xml.XmlException
+    commentId: T:System.Xml.XmlException
+    description: "\n<p>The <em>selectorType</em> parameter is <xref href=\"System.IO.Packaging.PackageRelationshipSelectorType.Id\" data-throw-if-not-resolved=\"false\"></xref> but <em>selectionCriteria</em> is not a valid XML Schema Definition (XSD) identifier (ID).</p>\n"
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>The <em>selectionCriteria</em> is not valid for the specified <em>selectorType</em>.</p>\n"
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>The <em>sourceUri</em> is not the <xref href=\"System.IO.Packaging.Package\" data-throw-if-not-resolved=\"false\"></xref> root (\"/\") and is also not a valid <xref href=\"System.IO.Packaging.PackagePart\" data-throw-if-not-resolved=\"false\"></xref> URI.</p>\n"
+  seealso:
+  - type: System.IO.Packaging.PackUriHelper.CreatePartUri(System.Uri)
+    commentId: M:System.IO.Packaging.PackUriHelper.CreatePartUri(System.Uri)
+  - type: System.IO.Packaging.PackageRelationshipSelector.SelectionCriteria
+    commentId: P:System.IO.Packaging.PackageRelationshipSelector.SelectionCriteria
+  - type: System.IO.Packaging.PackageRelationshipSelector.SelectorType
+    commentId: P:System.IO.Packaging.PackageRelationshipSelector.SelectorType
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: PackageRelationshipSelector.PackageRelationshipSelector(Uri, PackageRelationshipSelectorType, String)
+- uid: System.IO.Packaging.PackageRelationshipSelector.SelectionCriteria
+  commentId: P:System.IO.Packaging.PackageRelationshipSelector.SelectionCriteria
+  id: SelectionCriteria
+  parent: System.IO.Packaging.PackageRelationshipSelector
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.Packaging.PackageRelationshipSelector.SelectionCriteria
+  type: Property
+  source:
+    remote:
+      path: src/System.IO.Packaging/ref/System.IO.Packaging.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: SelectionCriteria
+    path: src/System.IO.Packaging/ref/System.IO.Packaging.cs
+    startLine: 142
+  assemblies:
+  - System.IO.Packaging
+  namespace: System.IO.Packaging
+  summary: "\n<p>Gets the selection criteria specified to the <xref href=\"System.IO.Packaging.PackageRelationshipSelector.#ctor(System.Uri,System.IO.Packaging.PackageRelationshipSelectorType,System.String)\" data-throw-if-not-resolved=\"false\"></xref> constructor.</p>\n"
+  syntax:
+    content: public string SelectionCriteria { get; }
+    content.vb: Public ReadOnly Property SelectionCriteria As String
+    parameters: []
+    return:
+      type: System.String
+      description: "\n<p>The selection criteria based on the <xref href=\"System.IO.Packaging.PackageRelationshipSelector.SelectorType\" data-throw-if-not-resolved=\"false\"></xref> of <xref href=\"System.IO.Packaging.PackageRelationshipSelectorType.Id\" data-throw-if-not-resolved=\"false\"></xref> or <xref href=\"System.IO.Packaging.PackageRelationshipSelectorType.Type\" data-throw-if-not-resolved=\"false\"></xref> specified to the <xref href=\"System.IO.Packaging.PackageRelationshipSelector.#ctor(System.Uri,System.IO.Packaging.PackageRelationshipSelectorType,System.String)\" data-throw-if-not-resolved=\"false\"></xref> constructor.</p>\n"
+  seealso:
+  - type: System.IO.Packaging.PackageRelationshipSelector.SelectorType
+    commentId: P:System.IO.Packaging.PackageRelationshipSelector.SelectorType
+  - type: System.IO.Packaging.PackageRelationshipSelector.SourceUri
+    commentId: P:System.IO.Packaging.PackageRelationshipSelector.SourceUri
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  nameWithType: PackageRelationshipSelector.SelectionCriteria
+- uid: System.IO.Packaging.PackageRelationshipSelector.SelectorType
+  commentId: P:System.IO.Packaging.PackageRelationshipSelector.SelectorType
+  id: SelectorType
+  parent: System.IO.Packaging.PackageRelationshipSelector
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.Packaging.PackageRelationshipSelector.SelectorType
+  type: Property
+  source:
+    remote:
+      path: src/System.IO.Packaging/ref/System.IO.Packaging.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: SelectorType
+    path: src/System.IO.Packaging/ref/System.IO.Packaging.cs
+    startLine: 143
+  assemblies:
+  - System.IO.Packaging
+  namespace: System.IO.Packaging
+  summary: "\n<p>Gets the <xref href=\"System.IO.Packaging.PackageRelationshipSelectorType\" data-throw-if-not-resolved=\"false\"></xref> specified to the <xref href=\"System.IO.Packaging.PackageRelationshipSelector.#ctor(System.Uri,System.IO.Packaging.PackageRelationshipSelectorType,System.String)\" data-throw-if-not-resolved=\"false\"></xref> constructor.</p>\n"
+  syntax:
+    content: public PackageRelationshipSelectorType SelectorType { get; }
+    content.vb: Public ReadOnly Property SelectorType As PackageRelationshipSelectorType
+    parameters: []
+    return:
+      type: System.IO.Packaging.PackageRelationshipSelectorType
+      description: "\n<p>The selector type of <xref href=\"System.IO.Packaging.PackageRelationshipSelectorType.Id\" data-throw-if-not-resolved=\"false\"></xref> or <xref href=\"System.IO.Packaging.PackageRelationshipSelectorType.Type\" data-throw-if-not-resolved=\"false\"></xref> specified to the <xref href=\"System.IO.Packaging.PackageRelationshipSelector.#ctor(System.Uri,System.IO.Packaging.PackageRelationshipSelectorType,System.String)\" data-throw-if-not-resolved=\"false\"></xref> constructor.</p>\n"
+  seealso:
+  - type: System.IO.Packaging.PackageRelationshipSelector.SelectionCriteria
+    commentId: P:System.IO.Packaging.PackageRelationshipSelector.SelectionCriteria
+  - type: System.IO.Packaging.PackageRelationshipSelector.SourceUri
+    commentId: P:System.IO.Packaging.PackageRelationshipSelector.SourceUri
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  nameWithType: PackageRelationshipSelector.SelectorType
+- uid: System.IO.Packaging.PackageRelationshipSelector.SourceUri
+  commentId: P:System.IO.Packaging.PackageRelationshipSelector.SourceUri
+  id: SourceUri
+  parent: System.IO.Packaging.PackageRelationshipSelector
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.Packaging.PackageRelationshipSelector.SourceUri
+  type: Property
+  source:
+    remote:
+      path: src/System.IO.Packaging/ref/System.IO.Packaging.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: SourceUri
+    path: src/System.IO.Packaging/ref/System.IO.Packaging.cs
+    startLine: 144
+  assemblies:
+  - System.IO.Packaging
+  namespace: System.IO.Packaging
+  summary: "\n<p>Gets the root package URI (\"/\") or part <xref href=\"System.IO.Packaging.PackagePart.Uri\" data-throw-if-not-resolved=\"false\"></xref> specified to the <xref href=\"System.IO.Packaging.PackageRelationshipSelector.#ctor(System.Uri,System.IO.Packaging.PackageRelationshipSelectorType,System.String)\" data-throw-if-not-resolved=\"false\"></xref> constructor as the owner of the relationship.</p>\n"
+  syntax:
+    content: public Uri SourceUri { get; }
+    content.vb: Public ReadOnly Property SourceUri As Uri
+    parameters: []
+    return:
+      type: System.Uri
+      description: "\n<p>The root package URI (\"/\") or part <xref href=\"System.IO.Packaging.PackagePart.Uri\" data-throw-if-not-resolved=\"false\"></xref> specified to the <xref href=\"System.IO.Packaging.PackageRelationshipSelector.#ctor(System.Uri,System.IO.Packaging.PackageRelationshipSelectorType,System.String)\" data-throw-if-not-resolved=\"false\"></xref> constructor as the owner of the relationship.</p>\n"
+  seealso:
+  - type: System.IO.Packaging.PackUriHelper.CreatePartUri(System.Uri)
+    commentId: M:System.IO.Packaging.PackUriHelper.CreatePartUri(System.Uri)
+  - type: System.IO.Packaging.PackageRelationshipSelector.SelectionCriteria
+    commentId: P:System.IO.Packaging.PackageRelationshipSelector.SelectionCriteria
+  - type: System.IO.Packaging.PackageRelationshipSelector.SelectorType
+    commentId: P:System.IO.Packaging.PackageRelationshipSelector.SelectorType
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  nameWithType: PackageRelationshipSelector.SourceUri
+- uid: System.IO.Packaging.PackageRelationshipSelector.Select(System.IO.Packaging.Package)
+  commentId: M:System.IO.Packaging.PackageRelationshipSelector.Select(System.IO.Packaging.Package)
+  id: Select(System.IO.Packaging.Package)
+  parent: System.IO.Packaging.PackageRelationshipSelector
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.Packaging.PackageRelationshipSelector.Select(System.IO.Packaging.Package)
+  type: Method
+  source:
+    remote:
+      path: src/System.IO.Packaging/ref/System.IO.Packaging.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Select
+    path: src/System.IO.Packaging/ref/System.IO.Packaging.cs
+    startLine: 145
+  assemblies:
+  - System.IO.Packaging
+  namespace: System.IO.Packaging
+  summary: "\n<p>Returns a list of <xref href=\"System.IO.Packaging.PackageRelationship\" data-throw-if-not-resolved=\"false\"></xref> objects that match the defined <xref href=\"System.IO.Packaging.PackageRelationshipSelector.SourceUri\" data-throw-if-not-resolved=\"false\"></xref>, <xref href=\"System.IO.Packaging.PackageRelationshipSelector.SelectorType\" data-throw-if-not-resolved=\"false\"></xref>, and <xref href=\"System.IO.Packaging.PackageRelationshipSelector.SelectionCriteria\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  syntax:
+    content: public List<PackageRelationship> Select(Package package)
+    content.vb: Public Function Select(package As Package) As List(Of PackageRelationship)
+    parameters:
+    - id: package
+      type: System.IO.Packaging.Package
+      description: "\n<p>The package from which to select the relationships based on the selection criteria.</p>\n"
+    return:
+      type: System.Collections.Generic.List{System.IO.Packaging.PackageRelationship}
+      description: "\n<p>A list of relationships that match the selection parameters specified to the <xref href=\"System.IO.Packaging.PackageRelationshipSelector.#ctor(System.Uri,System.IO.Packaging.PackageRelationshipSelectorType,System.String)\" data-throw-if-not-resolved=\"false\"></xref> constructor.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: PackageRelationshipSelector.Select(Package)
+references:
+- uid: System.IO.Packaging
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.Packaging
+  commentId: N:System.IO.Packaging
+  nameWithType: System.IO.Packaging
+- uid: System.Object
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Object
+  commentId: T:System.Object
+  nameWithType: Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.ToString
+  nameWithType: Object.ToString()
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.Equals(System.Object)
+  nameWithType: Object.Equals(Object)
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  nameWithType: Object.Equals(Object, Object)
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.GetHashCode
+  nameWithType: Object.GetHashCode()
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.GetType
+  nameWithType: Object.GetType()
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.MemberwiseClone
+  nameWithType: Object.MemberwiseClone()
+- uid: System
+  isExternal: false
+  name: "XXX"
+  fullName: System
+  commentId: N:System
+  nameWithType: System
+- uid: System.Uri
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Uri
+  commentId: T:System.Uri
+  nameWithType: Uri
+- uid: System.IO.Packaging.PackageRelationshipSelectorType
+  parent: System.IO.Packaging
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.Packaging.PackageRelationshipSelectorType
+  commentId: T:System.IO.Packaging.PackageRelationshipSelectorType
+  nameWithType: PackageRelationshipSelectorType
+- uid: System.String
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.String
+  commentId: T:System.String
+  nameWithType: String
+- uid: System.IO.Packaging.Package
+  parent: System.IO.Packaging
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.Packaging.Package
+  commentId: T:System.IO.Packaging.Package
+  nameWithType: Package
+- uid: System.Collections.Generic.List{System.IO.Packaging.PackageRelationship}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: "XXX"
+  fullName: System.Collections.Generic.List<System.IO.Packaging.PackageRelationship>
+  fullname.vb: System.Collections.Generic.List(Of System.IO.Packaging.PackageRelationship)
+  name.vb: List(Of PackageRelationship)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: "XXX"
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: "<"
+    fullName: <
+  - uid: System.IO.Packaging.PackageRelationship
+    name: "XXX"
+    fullName: System.IO.Packaging.PackageRelationship
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: "XXX"
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: 'XXX '
+    fullName: '(Of '
+  - uid: System.IO.Packaging.PackageRelationship
+    name: "XXX"
+    fullName: System.IO.Packaging.PackageRelationship
+  - name: "XXX"
+    fullName: )
+  commentId: T:System.Collections.Generic.List{System.IO.Packaging.PackageRelationship}
+  nameWithType: List<PackageRelationship>
+  nameWithType.vb: List(Of PackageRelationship)
+- uid: System.Collections.Generic.List`1
+  parent: System.Collections.Generic
+  isExternal: false
+  name: "XXX"
+  fullName: System.Collections.Generic.List<T>
+  fullname.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: "XXX"
+    fullName: System.Collections.Generic.List
+  - name: "<"
+    fullName: <
+  - name: "XXX"
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: "XXX"
+    fullName: System.Collections.Generic.List
+  - name: 'XXX '
+    fullName: '(Of '
+  - name: "XXX"
+    fullName: T
+  - name: "XXX"
+    fullName: )
+  commentId: T:System.Collections.Generic.List`1
+  nameWithType: List<T>
+  nameWithType.vb: List(Of T)
+- uid: System.Collections.Generic
+  isExternal: false
+  name: "XXX"
+  fullName: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  nameWithType: System.Collections.Generic
+- uid: System.ArgumentNullException
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentNullException
+  nameWithType: ArgumentNullException
+  commentId: T:System.ArgumentNullException
+- uid: System.ArgumentOutOfRangeException
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentOutOfRangeException
+  nameWithType: ArgumentOutOfRangeException
+  commentId: T:System.ArgumentOutOfRangeException
+- uid: System.Xml.XmlException
+  isExternal: false
+  name: "XXX"
+  fullName: System.Xml.XmlException
+  commentId: T:System.Xml.XmlException
+  nameWithType: XmlException
+- uid: System.ArgumentException
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentException
+  nameWithType: ArgumentException
+  commentId: T:System.ArgumentException

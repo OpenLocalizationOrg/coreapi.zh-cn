@@ -1,0 +1,755 @@
+items:
+- uid: System.Buffer
+  commentId: T:System.Buffer
+  id: Buffer
+  parent: System
+  children:
+  - System.Buffer.BlockCopy(System.Array,System.Int32,System.Array,System.Int32,System.Int32)
+  - System.Buffer.ByteLength(System.Array)
+  - System.Buffer.GetByte(System.Array,System.Int32)
+  - System.Buffer.MemoryCopy(System.Void*,System.Void*,System.Int64,System.Int64)
+  - System.Buffer.MemoryCopy(System.Void*,System.Void*,System.UInt64,System.UInt64)
+  - System.Buffer.SetByte(System.Array,System.Int32,System.Byte)
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Buffer
+  type: Class
+  source:
+    remote:
+      path: src/mscorlib/src/System/Buffer.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Buffer
+    path: src/mscorlib/src/System/Buffer.cs
+    startLine: 17
+  assemblies:
+  - System.Runtime
+  namespace: System
+  summary: "\n<p>Manipulates arrays of primitive types.</p>\n"
+  syntax:
+    content: >-
+      [ComVisible(true)]
+
+      public class Buffer
+    content.vb: >-
+      <ComVisible(True)>
+
+      Public Class Buffer
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+  nameWithType: Buffer
+- uid: System.Buffer.BlockCopy(System.Array,System.Int32,System.Array,System.Int32,System.Int32)
+  commentId: M:System.Buffer.BlockCopy(System.Array,System.Int32,System.Array,System.Int32,System.Int32)
+  id: BlockCopy(System.Array,System.Int32,System.Array,System.Int32,System.Int32)
+  parent: System.Buffer
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Buffer.BlockCopy(System.Array, System.Int32, System.Array, System.Int32, System.Int32)
+  type: Method
+  source:
+    path: System.Private.CoreLib
+    isExternal: true
+  assemblies:
+  - System.Runtime
+  namespace: System
+  summary: "\n<p>Copies a specified number of bytes from a source array starting at a particular offset to a destination array starting at a particular offset.</p>\n"
+  syntax:
+    content: >-
+      [SecuritySafeCritical]
+
+      [MethodImpl(MethodImplOptions.InternalCall)]
+
+      public static void BlockCopy(Array src, int srcOffset, Array dst, int dstOffset, int count)
+    content.vb: >-
+      <SecuritySafeCritical>
+
+      <MethodImpl(MethodImplOptions.InternalCall)>
+
+      Public Shared Sub BlockCopy(src As Array, srcOffset As Integer, dst As Array, dstOffset As Integer, count As Integer)
+    parameters:
+    - id: src
+      type: System.Array
+      description: "\n<p>The source buffer. </p>\n"
+    - id: srcOffset
+      type: System.Int32
+      description: "\n<p>The zero-based byte offset into <em>src</em>. </p>\n"
+    - id: dst
+      type: System.Array
+      description: "\n<p>The destination buffer. </p>\n"
+    - id: dstOffset
+      type: System.Int32
+      description: "\n<p>The zero-based byte offset into <em>dst</em>. </p>\n"
+    - id: count
+      type: System.Int32
+      description: "\n<p>The number of bytes to copy. </p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>src</em> or <em>dst</em> is <strong>null</strong>. </p>\n"
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>\n<em>src</em> or <em>dst</em> is not an array of primitives.</p>\n<p>-or- </p>\n<p>The number of bytes in <em>src</em> is less than <em>srcOffset</em> plus <em>count</em>.</p>\n<p>-or- </p>\n<p>The number of bytes in <em>dst</em> is less than <em>dstOffset</em> plus <em>count</em>. </p>\n"
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>srcOffset</em>, <em>dstOffset</em>, or <em>count</em> is less than 0. </p>\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  nameWithType: Buffer.BlockCopy(Array, Int32, Array, Int32, Int32)
+- uid: System.Buffer.ByteLength(System.Array)
+  commentId: M:System.Buffer.ByteLength(System.Array)
+  id: ByteLength(System.Array)
+  parent: System.Buffer
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Buffer.ByteLength(System.Array)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Buffer.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: ByteLength
+    path: src/mscorlib/src/System/Buffer.cs
+    startLine: 190
+  assemblies:
+  - System.Runtime
+  namespace: System
+  summary: "\n<p>Returns the number of bytes in the specified array.</p>\n"
+  syntax:
+    content: >-
+      [SecuritySafeCritical]
+
+      public static int ByteLength(Array array)
+    content.vb: >-
+      <SecuritySafeCritical>
+
+      Public Shared Function ByteLength(array As Array) As Integer
+    parameters:
+    - id: array
+      type: System.Array
+      description: "\n<p>An array. </p>\n"
+    return:
+      type: System.Int32
+      description: "\n<p>The number of bytes in the array.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>array</em> is <strong>null</strong>. </p>\n"
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>\n<em>array</em> is not a primitive. </p>\n"
+  - type: System.OverflowException
+    commentId: T:System.OverflowException
+    description: "\n<p>\n<em>array</em> is larger than 2 gigabytes (GB).</p>\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  nameWithType: Buffer.ByteLength(Array)
+- uid: System.Buffer.GetByte(System.Array,System.Int32)
+  commentId: M:System.Buffer.GetByte(System.Array,System.Int32)
+  id: GetByte(System.Array,System.Int32)
+  parent: System.Buffer
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Buffer.GetByte(System.Array, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Buffer.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: GetByte
+    path: src/mscorlib/src/System/Buffer.cs
+    startLine: 132
+  assemblies:
+  - System.Runtime
+  namespace: System
+  summary: "\n<p>Retrieves the byte at a specified location in a specified array.</p>\n"
+  syntax:
+    content: >-
+      [SecuritySafeCritical]
+
+      public static byte GetByte(Array array, int index)
+    content.vb: >-
+      <SecuritySafeCritical>
+
+      Public Shared Function GetByte(array As Array, index As Integer) As Byte
+    parameters:
+    - id: array
+      type: System.Array
+      description: "\n<p>An array. </p>\n"
+    - id: index
+      type: System.Int32
+      description: "\n<p>A location in the array. </p>\n"
+    return:
+      type: System.Byte
+      description: "\n<p>Returns the <em>index</em> byte in the array.</p>\n"
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>\n<em>array</em> is not a primitive. </p>\n"
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>array</em> is <strong>null</strong>. </p>\n"
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>index</em> is negative or greater than the length of <em>array</em>. </p>\n"
+  - type: System.OverflowException
+    commentId: T:System.OverflowException
+    description: "\n<p>\n<em>array</em> is larger than 2 gigabytes (GB).</p>\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  nameWithType: Buffer.GetByte(Array, Int32)
+- uid: System.Buffer.MemoryCopy(System.Void*,System.Void*,System.Int64,System.Int64)
+  commentId: M:System.Buffer.MemoryCopy(System.Void*,System.Void*,System.Int64,System.Int64)
+  id: MemoryCopy(System.Void*,System.Void*,System.Int64,System.Int64)
+  parent: System.Buffer
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Buffer.MemoryCopy(System.Void*, System.Void*, System.Int64, System.Int64)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Buffer.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: MemoryCopy
+    path: src/mscorlib/src/System/Buffer.cs
+    startLine: 519
+  assemblies:
+  - System.Runtime
+  namespace: System
+  summary: "\n<p>Copies a number of bytes specified as a long integer value from one address in memory to another. </p>\n<p>This API is not CLS-compliant.</p>\n"
+  syntax:
+    content: >-
+      [SecurityCritical]
+
+      [MethodImpl(MethodImplOptions.AggressiveInlining)]
+
+      [CLSCompliant(false)]
+
+      public static void MemoryCopy(void *source, void *destination, long destinationSizeInBytes, long sourceBytesToCopy)
+    content.vb: >-
+      <SecurityCritical>
+
+      <MethodImpl(MethodImplOptions.AggressiveInlining)>
+
+      <CLSCompliant(False)>
+
+      Public Shared Sub MemoryCopy(source As  *, destination As  *, destinationSizeInBytes As Long, sourceBytesToCopy As Long)
+    parameters:
+    - id: source
+      type: System.Void*
+      description: "\n<p>The address of the bytes to copy. </p>\n"
+    - id: destination
+      type: System.Void*
+      description: "\n<p>The target address. </p>\n"
+    - id: destinationSizeInBytes
+      type: System.Int64
+      description: "\n<p>The number of bytes available in the destination memory block. </p>\n"
+    - id: sourceBytesToCopy
+      type: System.Int64
+      description: "\n<p>The number of bytes to copy.  </p>\n"
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>sourceBytesToCopy</em> is greater than <em>destinationSizeInBytes</em>. </p>\n"
+  attributes:
+  - type: System.CLSCompliantAttribute
+    ctor: System.CLSCompliantAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
+  - type: System.Security.SecurityCriticalAttribute
+    ctor: System.Security.SecurityCriticalAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  nameWithType: Buffer.MemoryCopy(Void*, Void*, Int64, Int64)
+- uid: System.Buffer.MemoryCopy(System.Void*,System.Void*,System.UInt64,System.UInt64)
+  commentId: M:System.Buffer.MemoryCopy(System.Void*,System.Void*,System.UInt64,System.UInt64)
+  id: MemoryCopy(System.Void*,System.Void*,System.UInt64,System.UInt64)
+  parent: System.Buffer
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Buffer.MemoryCopy(System.Void*, System.Void*, System.UInt64, System.UInt64)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Buffer.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: MemoryCopy
+    path: src/mscorlib/src/System/Buffer.cs
+    startLine: 538
+  assemblies:
+  - System.Runtime
+  namespace: System
+  summary: "\n<p>Copies a number of bytes specified as an unsigned long integer value from one address in memory to another. </p>\n<p>This API is not CLS-compliant.</p>\n"
+  syntax:
+    content: >-
+      [SecurityCritical]
+
+      [MethodImpl(MethodImplOptions.AggressiveInlining)]
+
+      [CLSCompliant(false)]
+
+      public static void MemoryCopy(void *source, void *destination, ulong destinationSizeInBytes, ulong sourceBytesToCopy)
+    content.vb: >-
+      <SecurityCritical>
+
+      <MethodImpl(MethodImplOptions.AggressiveInlining)>
+
+      <CLSCompliant(False)>
+
+      Public Shared Sub MemoryCopy(source As  *, destination As  *, destinationSizeInBytes As ULong, sourceBytesToCopy As ULong)
+    parameters:
+    - id: source
+      type: System.Void*
+      description: "\n<p>The address of the bytes to copy. </p>\n"
+    - id: destination
+      type: System.Void*
+      description: "\n<p>The target address. </p>\n"
+    - id: destinationSizeInBytes
+      type: System.UInt64
+      description: "\n<p>The number of bytes available in the destination memory block. </p>\n"
+    - id: sourceBytesToCopy
+      type: System.UInt64
+      description: "\n<p>The number of bytes to copy.   </p>\n"
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>sourceBytesToCopy</em> is greater than <em>destinationSizeInBytes</em>. </p>\n"
+  attributes:
+  - type: System.CLSCompliantAttribute
+    ctor: System.CLSCompliantAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
+  - type: System.Security.SecurityCriticalAttribute
+    ctor: System.Security.SecurityCriticalAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  nameWithType: Buffer.MemoryCopy(Void*, Void*, UInt64, UInt64)
+- uid: System.Buffer.SetByte(System.Array,System.Int32,System.Byte)
+  commentId: M:System.Buffer.SetByte(System.Array,System.Int32,System.Byte)
+  id: SetByte(System.Array,System.Int32,System.Byte)
+  parent: System.Buffer
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Buffer.SetByte(System.Array, System.Int32, System.Byte)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Buffer.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: SetByte
+    path: src/mscorlib/src/System/Buffer.cs
+    startLine: 160
+  assemblies:
+  - System.Runtime
+  namespace: System
+  summary: "\n<p>Assigns a specified value to a byte at a particular location in a specified array.</p>\n"
+  syntax:
+    content: >-
+      [SecuritySafeCritical]
+
+      public static void SetByte(Array array, int index, byte value)
+    content.vb: >-
+      <SecuritySafeCritical>
+
+      Public Shared Sub SetByte(array As Array, index As Integer, value As Byte)
+    parameters:
+    - id: array
+      type: System.Array
+      description: "\n<p>An array. </p>\n"
+    - id: index
+      type: System.Int32
+      description: "\n<p>A location in the array. </p>\n"
+    - id: value
+      type: System.Byte
+      description: "\n<p>A value to assign. </p>\n"
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>\n<em>array</em> is not a primitive. </p>\n"
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>array</em> is <strong>null</strong>. </p>\n"
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>index</em> is negative or greater than the length of <em>array</em>. </p>\n"
+  - type: System.OverflowException
+    commentId: T:System.OverflowException
+    description: "\n<p>\n<em>array</em> is larger than 2 gigabytes (GB).</p>\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  nameWithType: Buffer.SetByte(Array, Int32, Byte)
+references:
+- uid: System
+  isExternal: false
+  name: "XXX"
+  fullName: System
+  nameWithType: System
+  commentId: N:System
+- uid: System.Object
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Object
+  nameWithType: Object
+  commentId: T:System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.ToString()
+  commentId: M:System.Object.ToString
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.Equals(Object)
+  commentId: M:System.Object.Equals(System.Object)
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.Equals(Object, Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.GetHashCode()
+  commentId: M:System.Object.GetHashCode
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.GetType()
+  commentId: M:System.Object.GetType
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.MemberwiseClone()
+  commentId: M:System.Object.MemberwiseClone
+- uid: System.Array
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Array
+  nameWithType: Array
+  commentId: T:System.Array
+- uid: System.Int32
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Int32
+  nameWithType: Int32
+  commentId: T:System.Int32
+- uid: System.Byte
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Byte
+  nameWithType: Byte
+  commentId: T:System.Byte
+- uid: System.Void*
+  name: "XXX"
+  fullName: System.Void*
+  spec.csharp:
+  - uid: System.Void
+    name: "XXX"
+    fullName: System.Void
+    isExternal: true
+  - name: '*'
+    fullName: '*'
+  spec.vb:
+  - uid: System.Void
+    name: "XXX"
+    fullName: System.Void
+    isExternal: true
+  - name: '*'
+    fullName: '*'
+  nameWithType: Void*
+- uid: System.Int64
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Int64
+  nameWithType: Int64
+  commentId: T:System.Int64
+- uid: System.UInt64
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.UInt64
+  nameWithType: UInt64
+  commentId: T:System.UInt64
+- uid: System.ArgumentNullException
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentNullException
+  nameWithType: ArgumentNullException
+  commentId: T:System.ArgumentNullException
+- uid: System.ArgumentException
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentException
+  nameWithType: ArgumentException
+  commentId: T:System.ArgumentException
+- uid: System.ArgumentOutOfRangeException
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentOutOfRangeException
+  nameWithType: ArgumentOutOfRangeException
+  commentId: T:System.ArgumentOutOfRangeException
+- uid: System.OverflowException
+  isExternal: false
+  name: "XXX"
+  fullName: System.OverflowException
+  nameWithType: OverflowException
+  commentId: T:System.OverflowException

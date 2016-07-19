@@ -1,0 +1,414 @@
+items:
+- uid: System.Threading.ThreadState
+  commentId: T:System.Threading.ThreadState
+  id: ThreadState
+  parent: System.Threading
+  children:
+  - System.Threading.ThreadState.Aborted
+  - System.Threading.ThreadState.AbortRequested
+  - System.Threading.ThreadState.Background
+  - System.Threading.ThreadState.Running
+  - System.Threading.ThreadState.Stopped
+  - System.Threading.ThreadState.StopRequested
+  - System.Threading.ThreadState.Suspended
+  - System.Threading.ThreadState.SuspendRequested
+  - System.Threading.ThreadState.Unstarted
+  - System.Threading.ThreadState.WaitSleepJoin
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.ThreadState
+  type: Enum
+  source:
+    remote:
+      path: src/mscorlib/src/System/Threading/ThreadState.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: ThreadState
+    path: src/mscorlib/src/System/Threading/ThreadState.cs
+    startLine: 16
+  assemblies:
+  - System.Threading.Thread
+  namespace: System.Threading
+  summary: "\n<p>Specifies the execution states of a <xref href=\"System.Threading.Thread\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  syntax:
+    content: >-
+      [Serializable]
+
+      [Flags]
+
+      [ComVisible(true)]
+
+      public enum ThreadState
+    content.vb: >-
+      <Serializable>
+
+      <Flags>
+
+      <ComVisible(True)>
+
+      Public Enum ThreadState
+  seealso:
+  - type: System.Threading.Thread
+    commentId: T:System.Threading.Thread
+  attributes:
+  - type: System.FlagsAttribute
+    ctor: System.FlagsAttribute.#ctor
+    arguments: []
+  - type: System.Runtime.InteropServices.ComVisibleAttribute
+    ctor: System.Runtime.InteropServices.ComVisibleAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: true
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+  nameWithType: ThreadState
+- uid: System.Threading.ThreadState.Aborted
+  commentId: F:System.Threading.ThreadState.Aborted
+  id: Aborted
+  parent: System.Threading.ThreadState
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.ThreadState.Aborted
+  type: Field
+  source:
+    remote:
+      path: src/mscorlib/src/System/Threading/ThreadState.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Aborted
+    path: src/mscorlib/src/System/Threading/ThreadState.cs
+    startLine: 33
+  assemblies:
+  - System.Threading.Thread
+  namespace: System.Threading
+  summary: "\n<p>The thread state includes <xref href=\"System.Threading.ThreadState.AbortRequested\" data-throw-if-not-resolved=\"false\"></xref> and the thread is now dead, but its state has not yet changed to <xref href=\"System.Threading.ThreadState.Stopped\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  syntax:
+    content: Aborted = 256
+    return:
+      type: System.Threading.ThreadState
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+  nameWithType: ThreadState.Aborted
+- uid: System.Threading.ThreadState.AbortRequested
+  commentId: F:System.Threading.ThreadState.AbortRequested
+  id: AbortRequested
+  parent: System.Threading.ThreadState
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.ThreadState.AbortRequested
+  type: Field
+  source:
+    remote:
+      path: src/mscorlib/src/System/Threading/ThreadState.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: AbortRequested
+    path: src/mscorlib/src/System/Threading/ThreadState.cs
+    startLine: 32
+  assemblies:
+  - System.Threading.Thread
+  namespace: System.Threading
+  summary: "\n<p>The <xref href=\"System.Threading.Thread.Abort(System.Object)\" data-throw-if-not-resolved=\"false\"></xref> method has been invoked on the thread, but the thread has not yet received the pending <xref href=\"System.Threading.ThreadAbortException\" data-throw-if-not-resolved=\"false\"></xref> that will attempt to terminate it.</p>\n"
+  syntax:
+    content: AbortRequested = 128
+    return:
+      type: System.Threading.ThreadState
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+  nameWithType: ThreadState.AbortRequested
+- uid: System.Threading.ThreadState.Background
+  commentId: F:System.Threading.ThreadState.Background
+  id: Background
+  parent: System.Threading.ThreadState
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.ThreadState.Background
+  type: Field
+  source:
+    remote:
+      path: src/mscorlib/src/System/Threading/ThreadState.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Background
+    path: src/mscorlib/src/System/Threading/ThreadState.cs
+    startLine: 27
+  assemblies:
+  - System.Threading.Thread
+  namespace: System.Threading
+  summary: "\n<p>The thread is being executed as a background thread, as opposed to a foreground thread. This state is controlled by setting the <xref href=\"System.Threading.Thread.IsBackground\" data-throw-if-not-resolved=\"false\"></xref> property.</p>\n"
+  syntax:
+    content: Background = 4
+    return:
+      type: System.Threading.ThreadState
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+  nameWithType: ThreadState.Background
+- uid: System.Threading.ThreadState.Running
+  commentId: F:System.Threading.ThreadState.Running
+  id: Running
+  parent: System.Threading.ThreadState
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.ThreadState.Running
+  type: Field
+  source:
+    remote:
+      path: src/mscorlib/src/System/Threading/ThreadState.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Running
+    path: src/mscorlib/src/System/Threading/ThreadState.cs
+    startLine: 24
+  assemblies:
+  - System.Threading.Thread
+  namespace: System.Threading
+  summary: "\n<p>The thread has been started, it is not blocked, and there is no pending <xref href=\"System.Threading.ThreadAbortException\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  syntax:
+    content: Running = 0
+    return:
+      type: System.Threading.ThreadState
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+  nameWithType: ThreadState.Running
+- uid: System.Threading.ThreadState.Stopped
+  commentId: F:System.Threading.ThreadState.Stopped
+  id: Stopped
+  parent: System.Threading.ThreadState
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.ThreadState.Stopped
+  type: Field
+  source:
+    remote:
+      path: src/mscorlib/src/System/Threading/ThreadState.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Stopped
+    path: src/mscorlib/src/System/Threading/ThreadState.cs
+    startLine: 29
+  assemblies:
+  - System.Threading.Thread
+  namespace: System.Threading
+  summary: "\n<p>The thread has stopped.</p>\n"
+  syntax:
+    content: Stopped = 16
+    return:
+      type: System.Threading.ThreadState
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+  nameWithType: ThreadState.Stopped
+- uid: System.Threading.ThreadState.StopRequested
+  commentId: F:System.Threading.ThreadState.StopRequested
+  id: StopRequested
+  parent: System.Threading.ThreadState
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.ThreadState.StopRequested
+  type: Field
+  source:
+    remote:
+      path: src/mscorlib/src/System/Threading/ThreadState.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: StopRequested
+    path: src/mscorlib/src/System/Threading/ThreadState.cs
+    startLine: 25
+  assemblies:
+  - System.Threading.Thread
+  namespace: System.Threading
+  summary: "\n<p>The thread is being requested to stop. This is for internal use only.</p>\n"
+  syntax:
+    content: StopRequested = 1
+    return:
+      type: System.Threading.ThreadState
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+  nameWithType: ThreadState.StopRequested
+- uid: System.Threading.ThreadState.Suspended
+  commentId: F:System.Threading.ThreadState.Suspended
+  id: Suspended
+  parent: System.Threading.ThreadState
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.ThreadState.Suspended
+  type: Field
+  source:
+    remote:
+      path: src/mscorlib/src/System/Threading/ThreadState.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Suspended
+    path: src/mscorlib/src/System/Threading/ThreadState.cs
+    startLine: 31
+  assemblies:
+  - System.Threading.Thread
+  namespace: System.Threading
+  summary: "\n<p>The thread has been suspended.</p>\n"
+  syntax:
+    content: Suspended = 64
+    return:
+      type: System.Threading.ThreadState
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+  nameWithType: ThreadState.Suspended
+- uid: System.Threading.ThreadState.SuspendRequested
+  commentId: F:System.Threading.ThreadState.SuspendRequested
+  id: SuspendRequested
+  parent: System.Threading.ThreadState
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.ThreadState.SuspendRequested
+  type: Field
+  source:
+    remote:
+      path: src/mscorlib/src/System/Threading/ThreadState.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: SuspendRequested
+    path: src/mscorlib/src/System/Threading/ThreadState.cs
+    startLine: 26
+  assemblies:
+  - System.Threading.Thread
+  namespace: System.Threading
+  summary: "\n<p>The thread is being requested to suspend.</p>\n"
+  syntax:
+    content: SuspendRequested = 2
+    return:
+      type: System.Threading.ThreadState
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+  nameWithType: ThreadState.SuspendRequested
+- uid: System.Threading.ThreadState.Unstarted
+  commentId: F:System.Threading.ThreadState.Unstarted
+  id: Unstarted
+  parent: System.Threading.ThreadState
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.ThreadState.Unstarted
+  type: Field
+  source:
+    remote:
+      path: src/mscorlib/src/System/Threading/ThreadState.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Unstarted
+    path: src/mscorlib/src/System/Threading/ThreadState.cs
+    startLine: 28
+  assemblies:
+  - System.Threading.Thread
+  namespace: System.Threading
+  summary: "\n<p>The <xref href=\"System.Threading.Thread.Start\" data-throw-if-not-resolved=\"false\"></xref> method has not been invoked on the thread.</p>\n"
+  syntax:
+    content: Unstarted = 8
+    return:
+      type: System.Threading.ThreadState
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+  nameWithType: ThreadState.Unstarted
+- uid: System.Threading.ThreadState.WaitSleepJoin
+  commentId: F:System.Threading.ThreadState.WaitSleepJoin
+  id: WaitSleepJoin
+  parent: System.Threading.ThreadState
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.ThreadState.WaitSleepJoin
+  type: Field
+  source:
+    remote:
+      path: src/mscorlib/src/System/Threading/ThreadState.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: WaitSleepJoin
+    path: src/mscorlib/src/System/Threading/ThreadState.cs
+    startLine: 30
+  assemblies:
+  - System.Threading.Thread
+  namespace: System.Threading
+  summary: "\n<p>The thread is blocked. This could be the result of calling <xref href=\"System.Threading.Thread.Sleep(System.Int32)\" data-throw-if-not-resolved=\"false\"></xref> or <xref href=\"System.Threading.Thread.Join\" data-throw-if-not-resolved=\"false\"></xref>, of requesting a lock — for example, by calling <xref href=\"System.Threading.Monitor.Enter(System.Object)\" data-throw-if-not-resolved=\"false\"></xref> or <xref href=\"System.Threading.Monitor.Wait(System.Object,System.Int32,System.Boolean)\" data-throw-if-not-resolved=\"false\"></xref> — or of waiting on a thread synchronization object such as <xref href=\"System.Threading.ManualResetEvent\" data-throw-if-not-resolved=\"false\"></xref>. </p>\n"
+  syntax:
+    content: WaitSleepJoin = 32
+    return:
+      type: System.Threading.ThreadState
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+  nameWithType: ThreadState.WaitSleepJoin
+references:
+- uid: System.Threading
+  isExternal: false
+  name: "XXX"
+  fullName: System.Threading
+  nameWithType: System.Threading
+  commentId: N:System.Threading
+- uid: System.Threading.ThreadState
+  parent: System.Threading
+  isExternal: false
+  name: "XXX"
+  fullName: System.Threading.ThreadState
+  nameWithType: ThreadState
+  commentId: T:System.Threading.ThreadState

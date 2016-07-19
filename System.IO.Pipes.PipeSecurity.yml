@@ -1,0 +1,3002 @@
+items:
+- uid: System.IO.Pipes.PipeSecurity
+  commentId: T:System.IO.Pipes.PipeSecurity
+  id: PipeSecurity
+  parent: System.IO.Pipes
+  children:
+  - System.IO.Pipes.PipeSecurity.#ctor
+  - System.IO.Pipes.PipeSecurity.AccessRightType
+  - System.IO.Pipes.PipeSecurity.AccessRuleFactory(System.Security.Principal.IdentityReference,System.Int32,System.Boolean,System.Security.AccessControl.InheritanceFlags,System.Security.AccessControl.PropagationFlags,System.Security.AccessControl.AccessControlType)
+  - System.IO.Pipes.PipeSecurity.AccessRuleType
+  - System.IO.Pipes.PipeSecurity.AddAccessRule(System.IO.Pipes.PipeAccessRule)
+  - System.IO.Pipes.PipeSecurity.AddAuditRule(System.IO.Pipes.PipeAuditRule)
+  - System.IO.Pipes.PipeSecurity.AuditRuleFactory(System.Security.Principal.IdentityReference,System.Int32,System.Boolean,System.Security.AccessControl.InheritanceFlags,System.Security.AccessControl.PropagationFlags,System.Security.AccessControl.AuditFlags)
+  - System.IO.Pipes.PipeSecurity.AuditRuleType
+  - System.IO.Pipes.PipeSecurity.Persist(System.Runtime.InteropServices.SafeHandle)
+  - System.IO.Pipes.PipeSecurity.Persist(System.String)
+  - System.IO.Pipes.PipeSecurity.RemoveAccessRule(System.IO.Pipes.PipeAccessRule)
+  - System.IO.Pipes.PipeSecurity.RemoveAccessRuleSpecific(System.IO.Pipes.PipeAccessRule)
+  - System.IO.Pipes.PipeSecurity.RemoveAuditRule(System.IO.Pipes.PipeAuditRule)
+  - System.IO.Pipes.PipeSecurity.RemoveAuditRuleAll(System.IO.Pipes.PipeAuditRule)
+  - System.IO.Pipes.PipeSecurity.RemoveAuditRuleSpecific(System.IO.Pipes.PipeAuditRule)
+  - System.IO.Pipes.PipeSecurity.ResetAccessRule(System.IO.Pipes.PipeAccessRule)
+  - System.IO.Pipes.PipeSecurity.SetAccessRule(System.IO.Pipes.PipeAccessRule)
+  - System.IO.Pipes.PipeSecurity.SetAuditRule(System.IO.Pipes.PipeAuditRule)
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.Pipes.PipeSecurity
+  type: Class
+  source:
+    remote:
+      path: src/System.IO.Pipes.AccessControl/ref/System.IO.Pipes.AccessControl.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: PipeSecurity
+    path: src/System.IO.Pipes.AccessControl/ref/System.IO.Pipes.AccessControl.cs
+    startLine: 48
+  assemblies:
+  - System.IO.Pipes.AccessControl
+  namespace: System.IO.Pipes
+  summary: "\n<p>Represents the access control and audit security for a pipe.</p>\n"
+  syntax:
+    content: 'public class PipeSecurity : NativeObjectSecurity'
+    content.vb: >-
+      Public Class PipeSecurity
+          Inherits NativeObjectSecurity
+  inheritance:
+  - System.Object
+  - System.Security.AccessControl.ObjectSecurity
+  - System.Security.AccessControl.CommonObjectSecurity
+  - System.Security.AccessControl.NativeObjectSecurity
+  inheritedMembers:
+  - System.Security.AccessControl.NativeObjectSecurity.Persist(System.String,System.Security.AccessControl.AccessControlSections)
+  - System.Security.AccessControl.NativeObjectSecurity.Persist(System.String,System.Security.AccessControl.AccessControlSections,System.Object)
+  - System.Security.AccessControl.NativeObjectSecurity.Persist(System.Runtime.InteropServices.SafeHandle,System.Security.AccessControl.AccessControlSections)
+  - System.Security.AccessControl.NativeObjectSecurity.Persist(System.Runtime.InteropServices.SafeHandle,System.Security.AccessControl.AccessControlSections,System.Object)
+  - System.Security.AccessControl.CommonObjectSecurity.ModifyAccess(System.Security.AccessControl.AccessControlModification,System.Security.AccessControl.AccessRule,System.Boolean@)
+  - System.Security.AccessControl.CommonObjectSecurity.ModifyAudit(System.Security.AccessControl.AccessControlModification,System.Security.AccessControl.AuditRule,System.Boolean@)
+  - System.Security.AccessControl.CommonObjectSecurity.AddAccessRule(System.Security.AccessControl.AccessRule)
+  - System.Security.AccessControl.CommonObjectSecurity.SetAccessRule(System.Security.AccessControl.AccessRule)
+  - System.Security.AccessControl.CommonObjectSecurity.ResetAccessRule(System.Security.AccessControl.AccessRule)
+  - System.Security.AccessControl.CommonObjectSecurity.RemoveAccessRule(System.Security.AccessControl.AccessRule)
+  - System.Security.AccessControl.CommonObjectSecurity.RemoveAccessRuleAll(System.Security.AccessControl.AccessRule)
+  - System.Security.AccessControl.CommonObjectSecurity.RemoveAccessRuleSpecific(System.Security.AccessControl.AccessRule)
+  - System.Security.AccessControl.CommonObjectSecurity.AddAuditRule(System.Security.AccessControl.AuditRule)
+  - System.Security.AccessControl.CommonObjectSecurity.SetAuditRule(System.Security.AccessControl.AuditRule)
+  - System.Security.AccessControl.CommonObjectSecurity.RemoveAuditRule(System.Security.AccessControl.AuditRule)
+  - System.Security.AccessControl.CommonObjectSecurity.RemoveAuditRuleAll(System.Security.AccessControl.AuditRule)
+  - System.Security.AccessControl.CommonObjectSecurity.RemoveAuditRuleSpecific(System.Security.AccessControl.AuditRule)
+  - System.Security.AccessControl.CommonObjectSecurity.GetAccessRules(System.Boolean,System.Boolean,System.Type)
+  - System.Security.AccessControl.CommonObjectSecurity.GetAuditRules(System.Boolean,System.Boolean,System.Type)
+  - System.Security.AccessControl.ObjectSecurity.ReadLock
+  - System.Security.AccessControl.ObjectSecurity.ReadUnlock
+  - System.Security.AccessControl.ObjectSecurity.WriteLock
+  - System.Security.AccessControl.ObjectSecurity.WriteUnlock
+  - System.Security.AccessControl.ObjectSecurity.Persist(System.Boolean,System.String,System.Security.AccessControl.AccessControlSections)
+  - System.Security.AccessControl.ObjectSecurity.GetOwner(System.Type)
+  - System.Security.AccessControl.ObjectSecurity.SetOwner(System.Security.Principal.IdentityReference)
+  - System.Security.AccessControl.ObjectSecurity.GetGroup(System.Type)
+  - System.Security.AccessControl.ObjectSecurity.SetGroup(System.Security.Principal.IdentityReference)
+  - System.Security.AccessControl.ObjectSecurity.PurgeAccessRules(System.Security.Principal.IdentityReference)
+  - System.Security.AccessControl.ObjectSecurity.PurgeAuditRules(System.Security.Principal.IdentityReference)
+  - System.Security.AccessControl.ObjectSecurity.SetAccessRuleProtection(System.Boolean,System.Boolean)
+  - System.Security.AccessControl.ObjectSecurity.SetAuditRuleProtection(System.Boolean,System.Boolean)
+  - System.Security.AccessControl.ObjectSecurity.IsSddlConversionSupported
+  - System.Security.AccessControl.ObjectSecurity.GetSecurityDescriptorSddlForm(System.Security.AccessControl.AccessControlSections)
+  - System.Security.AccessControl.ObjectSecurity.SetSecurityDescriptorSddlForm(System.String)
+  - System.Security.AccessControl.ObjectSecurity.SetSecurityDescriptorSddlForm(System.String,System.Security.AccessControl.AccessControlSections)
+  - System.Security.AccessControl.ObjectSecurity.GetSecurityDescriptorBinaryForm
+  - System.Security.AccessControl.ObjectSecurity.SetSecurityDescriptorBinaryForm(System.Byte[])
+  - System.Security.AccessControl.ObjectSecurity.SetSecurityDescriptorBinaryForm(System.Byte[],System.Security.AccessControl.AccessControlSections)
+  - System.Security.AccessControl.ObjectSecurity.ModifyAccessRule(System.Security.AccessControl.AccessControlModification,System.Security.AccessControl.AccessRule,System.Boolean@)
+  - System.Security.AccessControl.ObjectSecurity.ModifyAuditRule(System.Security.AccessControl.AccessControlModification,System.Security.AccessControl.AuditRule,System.Boolean@)
+  - System.Security.AccessControl.ObjectSecurity.OwnerModified
+  - System.Security.AccessControl.ObjectSecurity.GroupModified
+  - System.Security.AccessControl.ObjectSecurity.AuditRulesModified
+  - System.Security.AccessControl.ObjectSecurity.AccessRulesModified
+  - System.Security.AccessControl.ObjectSecurity.IsContainer
+  - System.Security.AccessControl.ObjectSecurity.IsDS
+  - System.Security.AccessControl.ObjectSecurity.AreAccessRulesProtected
+  - System.Security.AccessControl.ObjectSecurity.AreAuditRulesProtected
+  - System.Security.AccessControl.ObjectSecurity.AreAccessRulesCanonical
+  - System.Security.AccessControl.ObjectSecurity.AreAuditRulesCanonical
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+  nameWithType: PipeSecurity
+- uid: System.IO.Pipes.PipeSecurity.#ctor
+  commentId: M:System.IO.Pipes.PipeSecurity.#ctor
+  id: '#ctor'
+  parent: System.IO.Pipes.PipeSecurity
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.Pipes.PipeSecurity.PipeSecurity()
+  type: Constructor
+  source:
+    remote:
+      path: src/System.IO.Pipes.AccessControl/ref/System.IO.Pipes.AccessControl.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: .ctor
+    path: src/System.IO.Pipes.AccessControl/ref/System.IO.Pipes.AccessControl.cs
+    startLine: 50
+  assemblies:
+  - System.IO.Pipes.AccessControl
+  namespace: System.IO.Pipes
+  summary: "\n<p>Initializes a new instance of the <xref href=\"System.IO.Pipes.PipeSecurity\" data-throw-if-not-resolved=\"false\"></xref> class.</p>\n"
+  syntax:
+    content: public PipeSecurity()
+    content.vb: Public Sub New
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: PipeSecurity.PipeSecurity()
+- uid: System.IO.Pipes.PipeSecurity.AccessRightType
+  commentId: P:System.IO.Pipes.PipeSecurity.AccessRightType
+  id: AccessRightType
+  parent: System.IO.Pipes.PipeSecurity
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.Pipes.PipeSecurity.AccessRightType
+  type: Property
+  source:
+    remote:
+      path: src/System.IO.Pipes.AccessControl/ref/System.IO.Pipes.AccessControl.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: AccessRightType
+    path: src/System.IO.Pipes.AccessControl/ref/System.IO.Pipes.AccessControl.cs
+    startLine: 51
+  assemblies:
+  - System.IO.Pipes.AccessControl
+  namespace: System.IO.Pipes
+  summary: "\n<p>Gets the <xref href=\"System.Type\" data-throw-if-not-resolved=\"false\"></xref> of the securable object that is associated with the current <xref href=\"System.IO.Pipes.PipeSecurity\" data-throw-if-not-resolved=\"false\"></xref> object.</p>\n"
+  syntax:
+    content: public override Type AccessRightType { get; }
+    content.vb: Public Overrides ReadOnly Property AccessRightType As Type
+    parameters: []
+    return:
+      type: System.Type
+      description: "\n<p>The type of the securable object that is associated with the current <xref href=\"System.IO.Pipes.PipeSecurity\" data-throw-if-not-resolved=\"false\"></xref> object.</p>\n"
+  overridden: System.Security.AccessControl.ObjectSecurity.AccessRightType
+  modifiers.csharp:
+  - public
+  - override
+  - get
+  modifiers.vb:
+  - Public
+  - Overrides
+  - ReadOnly
+  nameWithType: PipeSecurity.AccessRightType
+- uid: System.IO.Pipes.PipeSecurity.AccessRuleType
+  commentId: P:System.IO.Pipes.PipeSecurity.AccessRuleType
+  id: AccessRuleType
+  parent: System.IO.Pipes.PipeSecurity
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.Pipes.PipeSecurity.AccessRuleType
+  type: Property
+  source:
+    remote:
+      path: src/System.IO.Pipes.AccessControl/ref/System.IO.Pipes.AccessControl.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: AccessRuleType
+    path: src/System.IO.Pipes.AccessControl/ref/System.IO.Pipes.AccessControl.cs
+    startLine: 52
+  assemblies:
+  - System.IO.Pipes.AccessControl
+  namespace: System.IO.Pipes
+  summary: "\n<p>Gets the <xref href=\"System.Type\" data-throw-if-not-resolved=\"false\"></xref> of the object that is associated with the access rules of the current <xref href=\"System.IO.Pipes.PipeSecurity\" data-throw-if-not-resolved=\"false\"></xref> object.</p>\n"
+  syntax:
+    content: public override Type AccessRuleType { get; }
+    content.vb: Public Overrides ReadOnly Property AccessRuleType As Type
+    parameters: []
+    return:
+      type: System.Type
+      description: "\n<p>The type of the object that is associated with the access rules of the current <xref href=\"System.IO.Pipes.PipeSecurity\" data-throw-if-not-resolved=\"false\"></xref> object.</p>\n"
+  overridden: System.Security.AccessControl.ObjectSecurity.AccessRuleType
+  modifiers.csharp:
+  - public
+  - override
+  - get
+  modifiers.vb:
+  - Public
+  - Overrides
+  - ReadOnly
+  nameWithType: PipeSecurity.AccessRuleType
+- uid: System.IO.Pipes.PipeSecurity.AuditRuleType
+  commentId: P:System.IO.Pipes.PipeSecurity.AuditRuleType
+  id: AuditRuleType
+  parent: System.IO.Pipes.PipeSecurity
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.Pipes.PipeSecurity.AuditRuleType
+  type: Property
+  source:
+    remote:
+      path: src/System.IO.Pipes.AccessControl/ref/System.IO.Pipes.AccessControl.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: AuditRuleType
+    path: src/System.IO.Pipes.AccessControl/ref/System.IO.Pipes.AccessControl.cs
+    startLine: 53
+  assemblies:
+  - System.IO.Pipes.AccessControl
+  namespace: System.IO.Pipes
+  summary: "\n<p>Gets the <xref href=\"System.Type\" data-throw-if-not-resolved=\"false\"></xref> object associated with the audit rules of the current <xref href=\"System.IO.Pipes.PipeSecurity\" data-throw-if-not-resolved=\"false\"></xref> object.</p>\n"
+  syntax:
+    content: public override Type AuditRuleType { get; }
+    content.vb: Public Overrides ReadOnly Property AuditRuleType As Type
+    parameters: []
+    return:
+      type: System.Type
+      description: "\n<p>The type of the object that is associated with the audit rules of the current <xref href=\"System.IO.Pipes.PipeSecurity\" data-throw-if-not-resolved=\"false\"></xref> object.</p>\n"
+  overridden: System.Security.AccessControl.ObjectSecurity.AuditRuleType
+  modifiers.csharp:
+  - public
+  - override
+  - get
+  modifiers.vb:
+  - Public
+  - Overrides
+  - ReadOnly
+  nameWithType: PipeSecurity.AuditRuleType
+- uid: System.IO.Pipes.PipeSecurity.AccessRuleFactory(System.Security.Principal.IdentityReference,System.Int32,System.Boolean,System.Security.AccessControl.InheritanceFlags,System.Security.AccessControl.PropagationFlags,System.Security.AccessControl.AccessControlType)
+  commentId: M:System.IO.Pipes.PipeSecurity.AccessRuleFactory(System.Security.Principal.IdentityReference,System.Int32,System.Boolean,System.Security.AccessControl.InheritanceFlags,System.Security.AccessControl.PropagationFlags,System.Security.AccessControl.AccessControlType)
+  id: AccessRuleFactory(System.Security.Principal.IdentityReference,System.Int32,System.Boolean,System.Security.AccessControl.InheritanceFlags,System.Security.AccessControl.PropagationFlags,System.Security.AccessControl.AccessControlType)
+  parent: System.IO.Pipes.PipeSecurity
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.Pipes.PipeSecurity.AccessRuleFactory(System.Security.Principal.IdentityReference, System.Int32, System.Boolean, System.Security.AccessControl.InheritanceFlags, System.Security.AccessControl.PropagationFlags, System.Security.AccessControl.AccessControlType)
+  type: Method
+  source:
+    remote:
+      path: src/System.IO.Pipes.AccessControl/ref/System.IO.Pipes.AccessControl.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: AccessRuleFactory
+    path: src/System.IO.Pipes.AccessControl/ref/System.IO.Pipes.AccessControl.cs
+    startLine: 54
+  assemblies:
+  - System.IO.Pipes.AccessControl
+  namespace: System.IO.Pipes
+  summary: "\n<p>Initializes a new instance of the <xref href=\"System.Security.AccessControl.AccessRule\" data-throw-if-not-resolved=\"false\"></xref> class with the specified values.</p>\n"
+  syntax:
+    content: public override AccessRule AccessRuleFactory(IdentityReference identityReference, int accessMask, bool isInherited, InheritanceFlags inheritanceFlags, PropagationFlags propagationFlags, AccessControlType type)
+    content.vb: Public Overrides Function AccessRuleFactory(identityReference As IdentityReference, accessMask As Integer, isInherited As Boolean, inheritanceFlags As InheritanceFlags, propagationFlags As PropagationFlags, type As AccessControlType) As AccessRule
+    parameters:
+    - id: identityReference
+      type: System.Security.Principal.IdentityReference
+      description: "\n<p>The identity that the access rule applies to. It must be an object that can be cast as a <xref href=\"System.Security.Principal.SecurityIdentifier\" data-throw-if-not-resolved=\"false\"></xref> object.</p>\n"
+    - id: accessMask
+      type: System.Int32
+      description: "\n<p>The access mask of this rule. The access mask is a 32-bit collection of anonymous bits, the meaning of which is defined by the individual integrators</p>\n"
+    - id: isInherited
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if this rule is inherited from a parent container; otherwise false.</p>\n"
+    - id: inheritanceFlags
+      type: System.Security.AccessControl.InheritanceFlags
+      description: "\n<p>One of the <xref href=\"System.Security.AccessControl.InheritanceFlags\" data-throw-if-not-resolved=\"false\"></xref> values that specifies the inheritance properties of the access rule.</p>\n"
+    - id: propagationFlags
+      type: System.Security.AccessControl.PropagationFlags
+      description: "\n<p>One of the <xref href=\"System.Security.AccessControl.PropagationFlags\" data-throw-if-not-resolved=\"false\"></xref> values that specifies whether inherited access rules are automatically propagated. The propagation flags are ignored if <em>inheritanceFlags</em> is set to <xref href=\"System.Security.AccessControl.InheritanceFlags.None\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    - id: type
+      type: System.Security.AccessControl.AccessControlType
+      description: "\n<p>Specifies the valid access control type.</p>\n"
+    return:
+      type: System.Security.AccessControl.AccessRule
+      description: "\n<p>The <xref href=\"System.Security.AccessControl.AccessRule\" data-throw-if-not-resolved=\"false\"></xref> object that this method creates.</p>\n"
+  overridden: System.Security.AccessControl.ObjectSecurity.AccessRuleFactory(System.Security.Principal.IdentityReference,System.Int32,System.Boolean,System.Security.AccessControl.InheritanceFlags,System.Security.AccessControl.PropagationFlags,System.Security.AccessControl.AccessControlType)
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>accessMask</em>, <em>inheritanceFlags</em>, <em>propagationFlags</em>, or <em>type</em> specifies an invalid value.</p>\n"
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>identityReference</em> is <strong>null</strong>. </p>\n<p>-or-</p>\n<p>\n<em>accessMask</em> is zero.</p>\n"
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>\n<em>identityReference</em> is neither of type <xref href=\"System.Security.Principal.SecurityIdentifier\" data-throw-if-not-resolved=\"false\"></xref> nor of a type, such as <xref href=\"System.Security.Principal.NTAccount\" data-throw-if-not-resolved=\"false\"></xref>, that can be converted to type <xref href=\"System.Security.Principal.SecurityIdentifier\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  nameWithType: PipeSecurity.AccessRuleFactory(IdentityReference, Int32, Boolean, InheritanceFlags, PropagationFlags, AccessControlType)
+- uid: System.IO.Pipes.PipeSecurity.AddAccessRule(System.IO.Pipes.PipeAccessRule)
+  commentId: M:System.IO.Pipes.PipeSecurity.AddAccessRule(System.IO.Pipes.PipeAccessRule)
+  id: AddAccessRule(System.IO.Pipes.PipeAccessRule)
+  parent: System.IO.Pipes.PipeSecurity
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.Pipes.PipeSecurity.AddAccessRule(System.IO.Pipes.PipeAccessRule)
+  type: Method
+  source:
+    remote:
+      path: src/System.IO.Pipes.AccessControl/ref/System.IO.Pipes.AccessControl.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: AddAccessRule
+    path: src/System.IO.Pipes.AccessControl/ref/System.IO.Pipes.AccessControl.cs
+    startLine: 55
+  assemblies:
+  - System.IO.Pipes.AccessControl
+  namespace: System.IO.Pipes
+  summary: "\n<p>Adds an access rule to the Discretionary Access Control List (DACL) that is associated with the current <xref href=\"System.IO.Pipes.PipeSecurity\" data-throw-if-not-resolved=\"false\"></xref> object.</p>\n"
+  syntax:
+    content: public void AddAccessRule(PipeAccessRule rule)
+    content.vb: Public Sub AddAccessRule(rule As PipeAccessRule)
+    parameters:
+    - id: rule
+      type: System.IO.Pipes.PipeAccessRule
+      description: "\n<p>The access rule to add.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>The <em>rule</em> parameter is <strong>null</strong>.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: PipeSecurity.AddAccessRule(PipeAccessRule)
+- uid: System.IO.Pipes.PipeSecurity.AddAuditRule(System.IO.Pipes.PipeAuditRule)
+  commentId: M:System.IO.Pipes.PipeSecurity.AddAuditRule(System.IO.Pipes.PipeAuditRule)
+  id: AddAuditRule(System.IO.Pipes.PipeAuditRule)
+  parent: System.IO.Pipes.PipeSecurity
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.Pipes.PipeSecurity.AddAuditRule(System.IO.Pipes.PipeAuditRule)
+  type: Method
+  source:
+    remote:
+      path: src/System.IO.Pipes.AccessControl/ref/System.IO.Pipes.AccessControl.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: AddAuditRule
+    path: src/System.IO.Pipes.AccessControl/ref/System.IO.Pipes.AccessControl.cs
+    startLine: 56
+  assemblies:
+  - System.IO.Pipes.AccessControl
+  namespace: System.IO.Pipes
+  summary: "\n<p>Adds an audit rule to the System Access Control List (SACL)that is associated with the current <xref href=\"System.IO.Pipes.PipeSecurity\" data-throw-if-not-resolved=\"false\"></xref> object.</p>\n"
+  syntax:
+    content: public void AddAuditRule(PipeAuditRule rule)
+    content.vb: Public Sub AddAuditRule(rule As PipeAuditRule)
+    parameters:
+    - id: rule
+      type: System.IO.Pipes.PipeAuditRule
+      description: "\n<p>The audit rule to add.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>The <em>rule</em> parameter is <strong>null</strong>.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: PipeSecurity.AddAuditRule(PipeAuditRule)
+- uid: System.IO.Pipes.PipeSecurity.AuditRuleFactory(System.Security.Principal.IdentityReference,System.Int32,System.Boolean,System.Security.AccessControl.InheritanceFlags,System.Security.AccessControl.PropagationFlags,System.Security.AccessControl.AuditFlags)
+  commentId: M:System.IO.Pipes.PipeSecurity.AuditRuleFactory(System.Security.Principal.IdentityReference,System.Int32,System.Boolean,System.Security.AccessControl.InheritanceFlags,System.Security.AccessControl.PropagationFlags,System.Security.AccessControl.AuditFlags)
+  id: AuditRuleFactory(System.Security.Principal.IdentityReference,System.Int32,System.Boolean,System.Security.AccessControl.InheritanceFlags,System.Security.AccessControl.PropagationFlags,System.Security.AccessControl.AuditFlags)
+  parent: System.IO.Pipes.PipeSecurity
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.Pipes.PipeSecurity.AuditRuleFactory(System.Security.Principal.IdentityReference, System.Int32, System.Boolean, System.Security.AccessControl.InheritanceFlags, System.Security.AccessControl.PropagationFlags, System.Security.AccessControl.AuditFlags)
+  type: Method
+  source:
+    remote:
+      path: src/System.IO.Pipes.AccessControl/ref/System.IO.Pipes.AccessControl.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: AuditRuleFactory
+    path: src/System.IO.Pipes.AccessControl/ref/System.IO.Pipes.AccessControl.cs
+    startLine: 57
+  assemblies:
+  - System.IO.Pipes.AccessControl
+  namespace: System.IO.Pipes
+  summary: "\n<p>Initializes a new instance of the <xref href=\"System.Security.AccessControl.AuditRule\" data-throw-if-not-resolved=\"false\"></xref> class with the specified values.</p>\n"
+  syntax:
+    content: public override sealed AuditRule AuditRuleFactory(IdentityReference identityReference, int accessMask, bool isInherited, InheritanceFlags inheritanceFlags, PropagationFlags propagationFlags, AuditFlags flags)
+    content.vb: Public NotOverridable Overrides Function AuditRuleFactory(identityReference As IdentityReference, accessMask As Integer, isInherited As Boolean, inheritanceFlags As InheritanceFlags, propagationFlags As PropagationFlags, flags As AuditFlags) As AuditRule
+    parameters:
+    - id: identityReference
+      type: System.Security.Principal.IdentityReference
+      description: "\n<p>The identity that the access rule applies to. It must be an object that can be cast as a <xref href=\"System.Security.Principal.SecurityIdentifier\" data-throw-if-not-resolved=\"false\"></xref> object.</p>\n"
+    - id: accessMask
+      type: System.Int32
+      description: "\n<p>The access mask of this rule. The access mask is a 32-bit collection of anonymous bits, the meaning of which is defined by the individual integrators</p>\n"
+    - id: isInherited
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if this rule is inherited from a parent container; otherwise, false..</p>\n"
+    - id: inheritanceFlags
+      type: System.Security.AccessControl.InheritanceFlags
+      description: "\n<p>One of the <xref href=\"System.Security.AccessControl.InheritanceFlags\" data-throw-if-not-resolved=\"false\"></xref> values that specifies the inheritance properties of the access rule.</p>\n"
+    - id: propagationFlags
+      type: System.Security.AccessControl.PropagationFlags
+      description: "\n<p>One of the <xref href=\"System.Security.AccessControl.PropagationFlags\" data-throw-if-not-resolved=\"false\"></xref> values that specifies whether inherited access rules are automatically propagated. The propagation flags are ignored if <em>inheritanceFlags</em> is set to <xref href=\"System.Security.AccessControl.InheritanceFlags.None\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    - id: flags
+      type: System.Security.AccessControl.AuditFlags
+      description: "\n<p>One of the <xref href=\"System.Security.AccessControl.AuditFlags\" data-throw-if-not-resolved=\"false\"></xref> values that specifies the valid access control type.</p>\n"
+    return:
+      type: System.Security.AccessControl.AuditRule
+      description: "\n<p>The <xref href=\"System.Security.AccessControl.AuditRule\" data-throw-if-not-resolved=\"false\"></xref> object that this method creates.</p>\n"
+  overridden: System.Security.AccessControl.ObjectSecurity.AuditRuleFactory(System.Security.Principal.IdentityReference,System.Int32,System.Boolean,System.Security.AccessControl.InheritanceFlags,System.Security.AccessControl.PropagationFlags,System.Security.AccessControl.AuditFlags)
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>The <em>accessMask</em>, <em>inheritanceFlags</em>, <em>propagationFlags</em>, or <em>flags</em> properties specify an invalid value.</p>\n"
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>The <em>identityReference</em> property is <strong>null</strong>. </p>\n<p>-or-</p>\n<p>The <em>accessMask</em> property is zero.</p>\n"
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>The <em>identityReference</em> property is neither of type <xref href=\"System.Security.Principal.SecurityIdentifier\" data-throw-if-not-resolved=\"false\"></xref> nor of a type, such as <xref href=\"System.Security.Principal.NTAccount\" data-throw-if-not-resolved=\"false\"></xref>, that can be converted to type <xref href=\"System.Security.Principal.SecurityIdentifier\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  modifiers.csharp:
+  - public
+  - override
+  - sealed
+  modifiers.vb:
+  - Public
+  - Overrides
+  - NotOverridable
+  nameWithType: PipeSecurity.AuditRuleFactory(IdentityReference, Int32, Boolean, InheritanceFlags, PropagationFlags, AuditFlags)
+- uid: System.IO.Pipes.PipeSecurity.Persist(System.Runtime.InteropServices.SafeHandle)
+  commentId: M:System.IO.Pipes.PipeSecurity.Persist(System.Runtime.InteropServices.SafeHandle)
+  id: Persist(System.Runtime.InteropServices.SafeHandle)
+  parent: System.IO.Pipes.PipeSecurity
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.Pipes.PipeSecurity.Persist(System.Runtime.InteropServices.SafeHandle)
+  type: Method
+  source:
+    remote:
+      path: src/System.IO.Pipes.AccessControl/ref/System.IO.Pipes.AccessControl.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Persist
+    path: src/System.IO.Pipes.AccessControl/ref/System.IO.Pipes.AccessControl.cs
+    startLine: 58
+  assemblies:
+  - System.IO.Pipes.AccessControl
+  namespace: System.IO.Pipes
+  summary: "\n<p>Saves the specified sections of the security descriptor that is associated with the current <xref href=\"System.IO.Pipes.PipeSecurity\" data-throw-if-not-resolved=\"false\"></xref> object to permanent storage.</p>\n"
+  syntax:
+    content: >-
+      [SecurityCritical]
+
+      protected void Persist(SafeHandle handle)
+    content.vb: >-
+      <SecurityCritical>
+
+      Protected Sub Persist(handle As SafeHandle)
+    parameters:
+    - id: handle
+      type: System.Runtime.InteropServices.SafeHandle
+      description: "\n<p>The handle of the securable object that the current <xref href=\"System.IO.Pipes.PipeSecurity\" data-throw-if-not-resolved=\"false\"></xref> object is associated with.</p>\n"
+  attributes:
+  - type: System.Security.SecurityCriticalAttribute
+    ctor: System.Security.SecurityCriticalAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  nameWithType: PipeSecurity.Persist(SafeHandle)
+- uid: System.IO.Pipes.PipeSecurity.Persist(System.String)
+  commentId: M:System.IO.Pipes.PipeSecurity.Persist(System.String)
+  id: Persist(System.String)
+  parent: System.IO.Pipes.PipeSecurity
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.Pipes.PipeSecurity.Persist(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/System.IO.Pipes.AccessControl/ref/System.IO.Pipes.AccessControl.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Persist
+    path: src/System.IO.Pipes.AccessControl/ref/System.IO.Pipes.AccessControl.cs
+    startLine: 60
+  assemblies:
+  - System.IO.Pipes.AccessControl
+  namespace: System.IO.Pipes
+  summary: "\n<p>Saves the specified sections of the security descriptor that is associated with the current <xref href=\"System.IO.Pipes.PipeSecurity\" data-throw-if-not-resolved=\"false\"></xref> object to permanent storage.</p>\n"
+  syntax:
+    content: >-
+      [SecurityCritical]
+
+      protected void Persist(string name)
+    content.vb: >-
+      <SecurityCritical>
+
+      Protected Sub Persist(name As String)
+    parameters:
+    - id: name
+      type: System.String
+      description: "\n<p>The name of the securable object that the current <xref href=\"System.IO.Pipes.PipeSecurity\" data-throw-if-not-resolved=\"false\"></xref> object is associated with.</p>\n"
+  attributes:
+  - type: System.Security.SecurityCriticalAttribute
+    ctor: System.Security.SecurityCriticalAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  nameWithType: PipeSecurity.Persist(String)
+- uid: System.IO.Pipes.PipeSecurity.RemoveAccessRule(System.IO.Pipes.PipeAccessRule)
+  commentId: M:System.IO.Pipes.PipeSecurity.RemoveAccessRule(System.IO.Pipes.PipeAccessRule)
+  id: RemoveAccessRule(System.IO.Pipes.PipeAccessRule)
+  parent: System.IO.Pipes.PipeSecurity
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.Pipes.PipeSecurity.RemoveAccessRule(System.IO.Pipes.PipeAccessRule)
+  type: Method
+  source:
+    remote:
+      path: src/System.IO.Pipes.AccessControl/ref/System.IO.Pipes.AccessControl.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: RemoveAccessRule
+    path: src/System.IO.Pipes.AccessControl/ref/System.IO.Pipes.AccessControl.cs
+    startLine: 62
+  assemblies:
+  - System.IO.Pipes.AccessControl
+  namespace: System.IO.Pipes
+  summary: "\n<p>Removes an access rule from the Discretionary Access Control List (DACL) that is associated with the current <xref href=\"System.IO.Pipes.PipeSecurity\" data-throw-if-not-resolved=\"false\"></xref> object.</p>\n"
+  syntax:
+    content: public bool RemoveAccessRule(PipeAccessRule rule)
+    content.vb: Public Function RemoveAccessRule(rule As PipeAccessRule) As Boolean
+    parameters:
+    - id: rule
+      type: System.IO.Pipes.PipeAccessRule
+      description: "\n<p>The access rule to remove.</p>\n"
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if the operation is successful; otherwise, <strong>false</strong>.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>The <em>rule</em> parameter is <strong>null</strong>.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: PipeSecurity.RemoveAccessRule(PipeAccessRule)
+- uid: System.IO.Pipes.PipeSecurity.RemoveAccessRuleSpecific(System.IO.Pipes.PipeAccessRule)
+  commentId: M:System.IO.Pipes.PipeSecurity.RemoveAccessRuleSpecific(System.IO.Pipes.PipeAccessRule)
+  id: RemoveAccessRuleSpecific(System.IO.Pipes.PipeAccessRule)
+  parent: System.IO.Pipes.PipeSecurity
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.Pipes.PipeSecurity.RemoveAccessRuleSpecific(System.IO.Pipes.PipeAccessRule)
+  type: Method
+  source:
+    remote:
+      path: src/System.IO.Pipes.AccessControl/ref/System.IO.Pipes.AccessControl.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: RemoveAccessRuleSpecific
+    path: src/System.IO.Pipes.AccessControl/ref/System.IO.Pipes.AccessControl.cs
+    startLine: 63
+  assemblies:
+  - System.IO.Pipes.AccessControl
+  namespace: System.IO.Pipes
+  summary: "\n<p>Removes the specified access rule from the Discretionary Access Control List (DACL) that is associated with the current <xref href=\"System.IO.Pipes.PipeSecurity\" data-throw-if-not-resolved=\"false\"></xref> object.</p>\n"
+  syntax:
+    content: public void RemoveAccessRuleSpecific(PipeAccessRule rule)
+    content.vb: Public Sub RemoveAccessRuleSpecific(rule As PipeAccessRule)
+    parameters:
+    - id: rule
+      type: System.IO.Pipes.PipeAccessRule
+      description: "\n<p>The access rule to remove.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>The <em>rule</em> parameter is <strong>null</strong>.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: PipeSecurity.RemoveAccessRuleSpecific(PipeAccessRule)
+- uid: System.IO.Pipes.PipeSecurity.RemoveAuditRule(System.IO.Pipes.PipeAuditRule)
+  commentId: M:System.IO.Pipes.PipeSecurity.RemoveAuditRule(System.IO.Pipes.PipeAuditRule)
+  id: RemoveAuditRule(System.IO.Pipes.PipeAuditRule)
+  parent: System.IO.Pipes.PipeSecurity
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.Pipes.PipeSecurity.RemoveAuditRule(System.IO.Pipes.PipeAuditRule)
+  type: Method
+  source:
+    remote:
+      path: src/System.IO.Pipes.AccessControl/ref/System.IO.Pipes.AccessControl.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: RemoveAuditRule
+    path: src/System.IO.Pipes.AccessControl/ref/System.IO.Pipes.AccessControl.cs
+    startLine: 64
+  assemblies:
+  - System.IO.Pipes.AccessControl
+  namespace: System.IO.Pipes
+  summary: "\n<p>Removes an audit rule from the System Access Control List (SACL) that is associated with the current <xref href=\"System.IO.Pipes.PipeSecurity\" data-throw-if-not-resolved=\"false\"></xref> object.</p>\n"
+  syntax:
+    content: public bool RemoveAuditRule(PipeAuditRule rule)
+    content.vb: Public Function RemoveAuditRule(rule As PipeAuditRule) As Boolean
+    parameters:
+    - id: rule
+      type: System.IO.Pipes.PipeAuditRule
+      description: "\n<p>The audit rule to remove.</p>\n"
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if the audit rule was removed; otherwise, <strong>false</strong></p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>The <em>rule</em> parameter is <strong>null</strong>.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: PipeSecurity.RemoveAuditRule(PipeAuditRule)
+- uid: System.IO.Pipes.PipeSecurity.RemoveAuditRuleAll(System.IO.Pipes.PipeAuditRule)
+  commentId: M:System.IO.Pipes.PipeSecurity.RemoveAuditRuleAll(System.IO.Pipes.PipeAuditRule)
+  id: RemoveAuditRuleAll(System.IO.Pipes.PipeAuditRule)
+  parent: System.IO.Pipes.PipeSecurity
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.Pipes.PipeSecurity.RemoveAuditRuleAll(System.IO.Pipes.PipeAuditRule)
+  type: Method
+  source:
+    remote:
+      path: src/System.IO.Pipes.AccessControl/ref/System.IO.Pipes.AccessControl.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: RemoveAuditRuleAll
+    path: src/System.IO.Pipes.AccessControl/ref/System.IO.Pipes.AccessControl.cs
+    startLine: 65
+  assemblies:
+  - System.IO.Pipes.AccessControl
+  namespace: System.IO.Pipes
+  summary: "\n<p>Removes all audit rules that have the same security identifier as the specified audit rule from the System Access Control List (SACL) that is associated with the current <xref href=\"System.IO.Pipes.PipeSecurity\" data-throw-if-not-resolved=\"false\"></xref> object.</p>\n"
+  syntax:
+    content: public void RemoveAuditRuleAll(PipeAuditRule rule)
+    content.vb: Public Sub RemoveAuditRuleAll(rule As PipeAuditRule)
+    parameters:
+    - id: rule
+      type: System.IO.Pipes.PipeAuditRule
+      description: "\n<p>The audit rule to remove.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>The <em>rule</em> parameter is <strong>null</strong>.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: PipeSecurity.RemoveAuditRuleAll(PipeAuditRule)
+- uid: System.IO.Pipes.PipeSecurity.RemoveAuditRuleSpecific(System.IO.Pipes.PipeAuditRule)
+  commentId: M:System.IO.Pipes.PipeSecurity.RemoveAuditRuleSpecific(System.IO.Pipes.PipeAuditRule)
+  id: RemoveAuditRuleSpecific(System.IO.Pipes.PipeAuditRule)
+  parent: System.IO.Pipes.PipeSecurity
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.Pipes.PipeSecurity.RemoveAuditRuleSpecific(System.IO.Pipes.PipeAuditRule)
+  type: Method
+  source:
+    remote:
+      path: src/System.IO.Pipes.AccessControl/ref/System.IO.Pipes.AccessControl.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: RemoveAuditRuleSpecific
+    path: src/System.IO.Pipes.AccessControl/ref/System.IO.Pipes.AccessControl.cs
+    startLine: 66
+  assemblies:
+  - System.IO.Pipes.AccessControl
+  namespace: System.IO.Pipes
+  summary: "\n<p>Removes the specified audit rule from the System Access Control List (SACL) that is associated with the current <xref href=\"System.IO.Pipes.PipeSecurity\" data-throw-if-not-resolved=\"false\"></xref> object.</p>\n"
+  syntax:
+    content: public void RemoveAuditRuleSpecific(PipeAuditRule rule)
+    content.vb: Public Sub RemoveAuditRuleSpecific(rule As PipeAuditRule)
+    parameters:
+    - id: rule
+      type: System.IO.Pipes.PipeAuditRule
+      description: "\n<p>The audit rule to remove.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>The <em>rule</em> parameter is <strong>null</strong>.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: PipeSecurity.RemoveAuditRuleSpecific(PipeAuditRule)
+- uid: System.IO.Pipes.PipeSecurity.ResetAccessRule(System.IO.Pipes.PipeAccessRule)
+  commentId: M:System.IO.Pipes.PipeSecurity.ResetAccessRule(System.IO.Pipes.PipeAccessRule)
+  id: ResetAccessRule(System.IO.Pipes.PipeAccessRule)
+  parent: System.IO.Pipes.PipeSecurity
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.Pipes.PipeSecurity.ResetAccessRule(System.IO.Pipes.PipeAccessRule)
+  type: Method
+  source:
+    remote:
+      path: src/System.IO.Pipes.AccessControl/ref/System.IO.Pipes.AccessControl.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: ResetAccessRule
+    path: src/System.IO.Pipes.AccessControl/ref/System.IO.Pipes.AccessControl.cs
+    startLine: 67
+  assemblies:
+  - System.IO.Pipes.AccessControl
+  namespace: System.IO.Pipes
+  summary: "\n<p>Removes all access rules in the Discretionary Access Control List (DACL) that is associated with the current <xref href=\"System.IO.Pipes.PipeSecurity\" data-throw-if-not-resolved=\"false\"></xref> object and then adds the specified access rule.</p>\n"
+  syntax:
+    content: public void ResetAccessRule(PipeAccessRule rule)
+    content.vb: Public Sub ResetAccessRule(rule As PipeAccessRule)
+    parameters:
+    - id: rule
+      type: System.IO.Pipes.PipeAccessRule
+      description: "\n<p>The access rule to add.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>The <em>rule</em> parameter is <strong>null</strong>.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: PipeSecurity.ResetAccessRule(PipeAccessRule)
+- uid: System.IO.Pipes.PipeSecurity.SetAccessRule(System.IO.Pipes.PipeAccessRule)
+  commentId: M:System.IO.Pipes.PipeSecurity.SetAccessRule(System.IO.Pipes.PipeAccessRule)
+  id: SetAccessRule(System.IO.Pipes.PipeAccessRule)
+  parent: System.IO.Pipes.PipeSecurity
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.Pipes.PipeSecurity.SetAccessRule(System.IO.Pipes.PipeAccessRule)
+  type: Method
+  source:
+    remote:
+      path: src/System.IO.Pipes.AccessControl/ref/System.IO.Pipes.AccessControl.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: SetAccessRule
+    path: src/System.IO.Pipes.AccessControl/ref/System.IO.Pipes.AccessControl.cs
+    startLine: 68
+  assemblies:
+  - System.IO.Pipes.AccessControl
+  namespace: System.IO.Pipes
+  summary: "\n<p>Sets an access rule in the Discretionary Access Control List (DACL) that is associated with the current <xref href=\"System.IO.Pipes.PipeSecurity\" data-throw-if-not-resolved=\"false\"></xref> object.</p>\n"
+  syntax:
+    content: public void SetAccessRule(PipeAccessRule rule)
+    content.vb: Public Sub SetAccessRule(rule As PipeAccessRule)
+    parameters:
+    - id: rule
+      type: System.IO.Pipes.PipeAccessRule
+      description: "\n<p>The rule to set.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>The <em>rule</em> parameter is <strong>null</strong>.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: PipeSecurity.SetAccessRule(PipeAccessRule)
+- uid: System.IO.Pipes.PipeSecurity.SetAuditRule(System.IO.Pipes.PipeAuditRule)
+  commentId: M:System.IO.Pipes.PipeSecurity.SetAuditRule(System.IO.Pipes.PipeAuditRule)
+  id: SetAuditRule(System.IO.Pipes.PipeAuditRule)
+  parent: System.IO.Pipes.PipeSecurity
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.Pipes.PipeSecurity.SetAuditRule(System.IO.Pipes.PipeAuditRule)
+  type: Method
+  source:
+    remote:
+      path: src/System.IO.Pipes.AccessControl/ref/System.IO.Pipes.AccessControl.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: SetAuditRule
+    path: src/System.IO.Pipes.AccessControl/ref/System.IO.Pipes.AccessControl.cs
+    startLine: 69
+  assemblies:
+  - System.IO.Pipes.AccessControl
+  namespace: System.IO.Pipes
+  summary: "\n<p>Sets an audit rule in the System Access Control List (SACL) that is associated with the current <xref href=\"System.IO.Pipes.PipeSecurity\" data-throw-if-not-resolved=\"false\"></xref> object.</p>\n"
+  syntax:
+    content: public void SetAuditRule(PipeAuditRule rule)
+    content.vb: Public Sub SetAuditRule(rule As PipeAuditRule)
+    parameters:
+    - id: rule
+      type: System.IO.Pipes.PipeAuditRule
+      description: "\n<p>The rule to set.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>The <em>rule</em> parameter is <strong>null</strong>.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: PipeSecurity.SetAuditRule(PipeAuditRule)
+references:
+- uid: System.IO.Pipes
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.Pipes
+  commentId: N:System.IO.Pipes
+  nameWithType: System.IO.Pipes
+- uid: System.Object
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Object
+  commentId: T:System.Object
+  nameWithType: Object
+- uid: System.Security.AccessControl.ObjectSecurity
+  parent: System.Security.AccessControl
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.AccessControl.ObjectSecurity
+  commentId: T:System.Security.AccessControl.ObjectSecurity
+  nameWithType: ObjectSecurity
+- uid: System.Security.AccessControl.CommonObjectSecurity
+  parent: System.Security.AccessControl
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.AccessControl.CommonObjectSecurity
+  commentId: T:System.Security.AccessControl.CommonObjectSecurity
+  nameWithType: CommonObjectSecurity
+- uid: System.Security.AccessControl.NativeObjectSecurity
+  parent: System.Security.AccessControl
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.AccessControl.NativeObjectSecurity
+  commentId: T:System.Security.AccessControl.NativeObjectSecurity
+  nameWithType: NativeObjectSecurity
+- uid: System.Security.AccessControl.NativeObjectSecurity.Persist(System.String,System.Security.AccessControl.AccessControlSections)
+  parent: System.Security.AccessControl.NativeObjectSecurity
+  isExternal: true
+  name: "XXX"
+  fullName: System.Security.AccessControl.NativeObjectSecurity.Persist(System.String, System.Security.AccessControl.AccessControlSections)
+  spec.csharp:
+  - uid: System.Security.AccessControl.NativeObjectSecurity.Persist(System.String,System.Security.AccessControl.AccessControlSections)
+    name: "XXX"
+    fullName: System.Security.AccessControl.NativeObjectSecurity.Persist
+  - name: "XXX"
+    fullName: (
+  - uid: System.String
+    name: "XXX"
+    fullName: System.String
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Security.AccessControl.AccessControlSections
+    name: "XXX"
+    fullName: System.Security.AccessControl.AccessControlSections
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Security.AccessControl.NativeObjectSecurity.Persist(System.String,System.Security.AccessControl.AccessControlSections)
+    name: "XXX"
+    fullName: System.Security.AccessControl.NativeObjectSecurity.Persist
+  - name: "XXX"
+    fullName: (
+  - uid: System.String
+    name: "XXX"
+    fullName: System.String
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Security.AccessControl.AccessControlSections
+    name: "XXX"
+    fullName: System.Security.AccessControl.AccessControlSections
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Security.AccessControl.NativeObjectSecurity.Persist(System.String,System.Security.AccessControl.AccessControlSections)
+  nameWithType: NativeObjectSecurity.Persist(String, AccessControlSections)
+- uid: System.Security.AccessControl.NativeObjectSecurity.Persist(System.String,System.Security.AccessControl.AccessControlSections,System.Object)
+  parent: System.Security.AccessControl.NativeObjectSecurity
+  isExternal: true
+  name: "XXX"
+  fullName: System.Security.AccessControl.NativeObjectSecurity.Persist(System.String, System.Security.AccessControl.AccessControlSections, System.Object)
+  spec.csharp:
+  - uid: System.Security.AccessControl.NativeObjectSecurity.Persist(System.String,System.Security.AccessControl.AccessControlSections,System.Object)
+    name: "XXX"
+    fullName: System.Security.AccessControl.NativeObjectSecurity.Persist
+  - name: "XXX"
+    fullName: (
+  - uid: System.String
+    name: "XXX"
+    fullName: System.String
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Security.AccessControl.AccessControlSections
+    name: "XXX"
+    fullName: System.Security.AccessControl.AccessControlSections
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Security.AccessControl.NativeObjectSecurity.Persist(System.String,System.Security.AccessControl.AccessControlSections,System.Object)
+    name: "XXX"
+    fullName: System.Security.AccessControl.NativeObjectSecurity.Persist
+  - name: "XXX"
+    fullName: (
+  - uid: System.String
+    name: "XXX"
+    fullName: System.String
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Security.AccessControl.AccessControlSections
+    name: "XXX"
+    fullName: System.Security.AccessControl.AccessControlSections
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Security.AccessControl.NativeObjectSecurity.Persist(System.String,System.Security.AccessControl.AccessControlSections,System.Object)
+  nameWithType: NativeObjectSecurity.Persist(String, AccessControlSections, Object)
+- uid: System.Security.AccessControl.NativeObjectSecurity.Persist(System.Runtime.InteropServices.SafeHandle,System.Security.AccessControl.AccessControlSections)
+  parent: System.Security.AccessControl.NativeObjectSecurity
+  isExternal: true
+  name: "XXX"
+  fullName: System.Security.AccessControl.NativeObjectSecurity.Persist(System.Runtime.InteropServices.SafeHandle, System.Security.AccessControl.AccessControlSections)
+  spec.csharp:
+  - uid: System.Security.AccessControl.NativeObjectSecurity.Persist(System.Runtime.InteropServices.SafeHandle,System.Security.AccessControl.AccessControlSections)
+    name: "XXX"
+    fullName: System.Security.AccessControl.NativeObjectSecurity.Persist
+  - name: "XXX"
+    fullName: (
+  - uid: System.Runtime.InteropServices.SafeHandle
+    name: "XXX"
+    fullName: System.Runtime.InteropServices.SafeHandle
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Security.AccessControl.AccessControlSections
+    name: "XXX"
+    fullName: System.Security.AccessControl.AccessControlSections
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Security.AccessControl.NativeObjectSecurity.Persist(System.Runtime.InteropServices.SafeHandle,System.Security.AccessControl.AccessControlSections)
+    name: "XXX"
+    fullName: System.Security.AccessControl.NativeObjectSecurity.Persist
+  - name: "XXX"
+    fullName: (
+  - uid: System.Runtime.InteropServices.SafeHandle
+    name: "XXX"
+    fullName: System.Runtime.InteropServices.SafeHandle
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Security.AccessControl.AccessControlSections
+    name: "XXX"
+    fullName: System.Security.AccessControl.AccessControlSections
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Security.AccessControl.NativeObjectSecurity.Persist(System.Runtime.InteropServices.SafeHandle,System.Security.AccessControl.AccessControlSections)
+  nameWithType: NativeObjectSecurity.Persist(SafeHandle, AccessControlSections)
+- uid: System.Security.AccessControl.NativeObjectSecurity.Persist(System.Runtime.InteropServices.SafeHandle,System.Security.AccessControl.AccessControlSections,System.Object)
+  parent: System.Security.AccessControl.NativeObjectSecurity
+  isExternal: true
+  name: "XXX"
+  fullName: System.Security.AccessControl.NativeObjectSecurity.Persist(System.Runtime.InteropServices.SafeHandle, System.Security.AccessControl.AccessControlSections, System.Object)
+  spec.csharp:
+  - uid: System.Security.AccessControl.NativeObjectSecurity.Persist(System.Runtime.InteropServices.SafeHandle,System.Security.AccessControl.AccessControlSections,System.Object)
+    name: "XXX"
+    fullName: System.Security.AccessControl.NativeObjectSecurity.Persist
+  - name: "XXX"
+    fullName: (
+  - uid: System.Runtime.InteropServices.SafeHandle
+    name: "XXX"
+    fullName: System.Runtime.InteropServices.SafeHandle
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Security.AccessControl.AccessControlSections
+    name: "XXX"
+    fullName: System.Security.AccessControl.AccessControlSections
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Security.AccessControl.NativeObjectSecurity.Persist(System.Runtime.InteropServices.SafeHandle,System.Security.AccessControl.AccessControlSections,System.Object)
+    name: "XXX"
+    fullName: System.Security.AccessControl.NativeObjectSecurity.Persist
+  - name: "XXX"
+    fullName: (
+  - uid: System.Runtime.InteropServices.SafeHandle
+    name: "XXX"
+    fullName: System.Runtime.InteropServices.SafeHandle
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Security.AccessControl.AccessControlSections
+    name: "XXX"
+    fullName: System.Security.AccessControl.AccessControlSections
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Security.AccessControl.NativeObjectSecurity.Persist(System.Runtime.InteropServices.SafeHandle,System.Security.AccessControl.AccessControlSections,System.Object)
+  nameWithType: NativeObjectSecurity.Persist(SafeHandle, AccessControlSections, Object)
+- uid: System.Security.AccessControl.CommonObjectSecurity.ModifyAccess(System.Security.AccessControl.AccessControlModification,System.Security.AccessControl.AccessRule,System.Boolean@)
+  parent: System.Security.AccessControl.CommonObjectSecurity
+  isExternal: true
+  name: "XXX"
+  fullName: System.Security.AccessControl.CommonObjectSecurity.ModifyAccess(System.Security.AccessControl.AccessControlModification, System.Security.AccessControl.AccessRule, System.Boolean)
+  spec.csharp:
+  - uid: System.Security.AccessControl.CommonObjectSecurity.ModifyAccess(System.Security.AccessControl.AccessControlModification,System.Security.AccessControl.AccessRule,System.Boolean@)
+    name: "XXX"
+    fullName: System.Security.AccessControl.CommonObjectSecurity.ModifyAccess
+  - name: "XXX"
+    fullName: (
+  - uid: System.Security.AccessControl.AccessControlModification
+    name: "XXX"
+    fullName: System.Security.AccessControl.AccessControlModification
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Security.AccessControl.AccessRule
+    name: "XXX"
+    fullName: System.Security.AccessControl.AccessRule
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Boolean
+    name: "XXX"
+    fullName: System.Boolean
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Security.AccessControl.CommonObjectSecurity.ModifyAccess(System.Security.AccessControl.AccessControlModification,System.Security.AccessControl.AccessRule,System.Boolean@)
+    name: "XXX"
+    fullName: System.Security.AccessControl.CommonObjectSecurity.ModifyAccess
+  - name: "XXX"
+    fullName: (
+  - uid: System.Security.AccessControl.AccessControlModification
+    name: "XXX"
+    fullName: System.Security.AccessControl.AccessControlModification
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Security.AccessControl.AccessRule
+    name: "XXX"
+    fullName: System.Security.AccessControl.AccessRule
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Boolean
+    name: "XXX"
+    fullName: System.Boolean
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Security.AccessControl.CommonObjectSecurity.ModifyAccess(System.Security.AccessControl.AccessControlModification,System.Security.AccessControl.AccessRule,System.Boolean@)
+  nameWithType: CommonObjectSecurity.ModifyAccess(AccessControlModification, AccessRule, Boolean)
+- uid: System.Security.AccessControl.CommonObjectSecurity.ModifyAudit(System.Security.AccessControl.AccessControlModification,System.Security.AccessControl.AuditRule,System.Boolean@)
+  parent: System.Security.AccessControl.CommonObjectSecurity
+  isExternal: true
+  name: "XXX"
+  fullName: System.Security.AccessControl.CommonObjectSecurity.ModifyAudit(System.Security.AccessControl.AccessControlModification, System.Security.AccessControl.AuditRule, System.Boolean)
+  spec.csharp:
+  - uid: System.Security.AccessControl.CommonObjectSecurity.ModifyAudit(System.Security.AccessControl.AccessControlModification,System.Security.AccessControl.AuditRule,System.Boolean@)
+    name: "XXX"
+    fullName: System.Security.AccessControl.CommonObjectSecurity.ModifyAudit
+  - name: "XXX"
+    fullName: (
+  - uid: System.Security.AccessControl.AccessControlModification
+    name: "XXX"
+    fullName: System.Security.AccessControl.AccessControlModification
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Security.AccessControl.AuditRule
+    name: "XXX"
+    fullName: System.Security.AccessControl.AuditRule
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Boolean
+    name: "XXX"
+    fullName: System.Boolean
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Security.AccessControl.CommonObjectSecurity.ModifyAudit(System.Security.AccessControl.AccessControlModification,System.Security.AccessControl.AuditRule,System.Boolean@)
+    name: "XXX"
+    fullName: System.Security.AccessControl.CommonObjectSecurity.ModifyAudit
+  - name: "XXX"
+    fullName: (
+  - uid: System.Security.AccessControl.AccessControlModification
+    name: "XXX"
+    fullName: System.Security.AccessControl.AccessControlModification
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Security.AccessControl.AuditRule
+    name: "XXX"
+    fullName: System.Security.AccessControl.AuditRule
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Boolean
+    name: "XXX"
+    fullName: System.Boolean
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Security.AccessControl.CommonObjectSecurity.ModifyAudit(System.Security.AccessControl.AccessControlModification,System.Security.AccessControl.AuditRule,System.Boolean@)
+  nameWithType: CommonObjectSecurity.ModifyAudit(AccessControlModification, AuditRule, Boolean)
+- uid: System.Security.AccessControl.CommonObjectSecurity.AddAccessRule(System.Security.AccessControl.AccessRule)
+  parent: System.Security.AccessControl.CommonObjectSecurity
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.AccessControl.CommonObjectSecurity.AddAccessRule(System.Security.AccessControl.AccessRule)
+  spec.csharp:
+  - uid: System.Security.AccessControl.CommonObjectSecurity.AddAccessRule(System.Security.AccessControl.AccessRule)
+    name: "XXX"
+    fullName: System.Security.AccessControl.CommonObjectSecurity.AddAccessRule
+  - name: "XXX"
+    fullName: (
+  - uid: System.Security.AccessControl.AccessRule
+    name: "XXX"
+    fullName: System.Security.AccessControl.AccessRule
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Security.AccessControl.CommonObjectSecurity.AddAccessRule(System.Security.AccessControl.AccessRule)
+    name: "XXX"
+    fullName: System.Security.AccessControl.CommonObjectSecurity.AddAccessRule
+  - name: "XXX"
+    fullName: (
+  - uid: System.Security.AccessControl.AccessRule
+    name: "XXX"
+    fullName: System.Security.AccessControl.AccessRule
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Security.AccessControl.CommonObjectSecurity.AddAccessRule(System.Security.AccessControl.AccessRule)
+  nameWithType: CommonObjectSecurity.AddAccessRule(AccessRule)
+- uid: System.Security.AccessControl.CommonObjectSecurity.SetAccessRule(System.Security.AccessControl.AccessRule)
+  parent: System.Security.AccessControl.CommonObjectSecurity
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.AccessControl.CommonObjectSecurity.SetAccessRule(System.Security.AccessControl.AccessRule)
+  spec.csharp:
+  - uid: System.Security.AccessControl.CommonObjectSecurity.SetAccessRule(System.Security.AccessControl.AccessRule)
+    name: "XXX"
+    fullName: System.Security.AccessControl.CommonObjectSecurity.SetAccessRule
+  - name: "XXX"
+    fullName: (
+  - uid: System.Security.AccessControl.AccessRule
+    name: "XXX"
+    fullName: System.Security.AccessControl.AccessRule
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Security.AccessControl.CommonObjectSecurity.SetAccessRule(System.Security.AccessControl.AccessRule)
+    name: "XXX"
+    fullName: System.Security.AccessControl.CommonObjectSecurity.SetAccessRule
+  - name: "XXX"
+    fullName: (
+  - uid: System.Security.AccessControl.AccessRule
+    name: "XXX"
+    fullName: System.Security.AccessControl.AccessRule
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Security.AccessControl.CommonObjectSecurity.SetAccessRule(System.Security.AccessControl.AccessRule)
+  nameWithType: CommonObjectSecurity.SetAccessRule(AccessRule)
+- uid: System.Security.AccessControl.CommonObjectSecurity.ResetAccessRule(System.Security.AccessControl.AccessRule)
+  parent: System.Security.AccessControl.CommonObjectSecurity
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.AccessControl.CommonObjectSecurity.ResetAccessRule(System.Security.AccessControl.AccessRule)
+  spec.csharp:
+  - uid: System.Security.AccessControl.CommonObjectSecurity.ResetAccessRule(System.Security.AccessControl.AccessRule)
+    name: "XXX"
+    fullName: System.Security.AccessControl.CommonObjectSecurity.ResetAccessRule
+  - name: "XXX"
+    fullName: (
+  - uid: System.Security.AccessControl.AccessRule
+    name: "XXX"
+    fullName: System.Security.AccessControl.AccessRule
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Security.AccessControl.CommonObjectSecurity.ResetAccessRule(System.Security.AccessControl.AccessRule)
+    name: "XXX"
+    fullName: System.Security.AccessControl.CommonObjectSecurity.ResetAccessRule
+  - name: "XXX"
+    fullName: (
+  - uid: System.Security.AccessControl.AccessRule
+    name: "XXX"
+    fullName: System.Security.AccessControl.AccessRule
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Security.AccessControl.CommonObjectSecurity.ResetAccessRule(System.Security.AccessControl.AccessRule)
+  nameWithType: CommonObjectSecurity.ResetAccessRule(AccessRule)
+- uid: System.Security.AccessControl.CommonObjectSecurity.RemoveAccessRule(System.Security.AccessControl.AccessRule)
+  parent: System.Security.AccessControl.CommonObjectSecurity
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.AccessControl.CommonObjectSecurity.RemoveAccessRule(System.Security.AccessControl.AccessRule)
+  spec.csharp:
+  - uid: System.Security.AccessControl.CommonObjectSecurity.RemoveAccessRule(System.Security.AccessControl.AccessRule)
+    name: "XXX"
+    fullName: System.Security.AccessControl.CommonObjectSecurity.RemoveAccessRule
+  - name: "XXX"
+    fullName: (
+  - uid: System.Security.AccessControl.AccessRule
+    name: "XXX"
+    fullName: System.Security.AccessControl.AccessRule
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Security.AccessControl.CommonObjectSecurity.RemoveAccessRule(System.Security.AccessControl.AccessRule)
+    name: "XXX"
+    fullName: System.Security.AccessControl.CommonObjectSecurity.RemoveAccessRule
+  - name: "XXX"
+    fullName: (
+  - uid: System.Security.AccessControl.AccessRule
+    name: "XXX"
+    fullName: System.Security.AccessControl.AccessRule
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Security.AccessControl.CommonObjectSecurity.RemoveAccessRule(System.Security.AccessControl.AccessRule)
+  nameWithType: CommonObjectSecurity.RemoveAccessRule(AccessRule)
+- uid: System.Security.AccessControl.CommonObjectSecurity.RemoveAccessRuleAll(System.Security.AccessControl.AccessRule)
+  parent: System.Security.AccessControl.CommonObjectSecurity
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.AccessControl.CommonObjectSecurity.RemoveAccessRuleAll(System.Security.AccessControl.AccessRule)
+  spec.csharp:
+  - uid: System.Security.AccessControl.CommonObjectSecurity.RemoveAccessRuleAll(System.Security.AccessControl.AccessRule)
+    name: "XXX"
+    fullName: System.Security.AccessControl.CommonObjectSecurity.RemoveAccessRuleAll
+  - name: "XXX"
+    fullName: (
+  - uid: System.Security.AccessControl.AccessRule
+    name: "XXX"
+    fullName: System.Security.AccessControl.AccessRule
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Security.AccessControl.CommonObjectSecurity.RemoveAccessRuleAll(System.Security.AccessControl.AccessRule)
+    name: "XXX"
+    fullName: System.Security.AccessControl.CommonObjectSecurity.RemoveAccessRuleAll
+  - name: "XXX"
+    fullName: (
+  - uid: System.Security.AccessControl.AccessRule
+    name: "XXX"
+    fullName: System.Security.AccessControl.AccessRule
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Security.AccessControl.CommonObjectSecurity.RemoveAccessRuleAll(System.Security.AccessControl.AccessRule)
+  nameWithType: CommonObjectSecurity.RemoveAccessRuleAll(AccessRule)
+- uid: System.Security.AccessControl.CommonObjectSecurity.RemoveAccessRuleSpecific(System.Security.AccessControl.AccessRule)
+  parent: System.Security.AccessControl.CommonObjectSecurity
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.AccessControl.CommonObjectSecurity.RemoveAccessRuleSpecific(System.Security.AccessControl.AccessRule)
+  spec.csharp:
+  - uid: System.Security.AccessControl.CommonObjectSecurity.RemoveAccessRuleSpecific(System.Security.AccessControl.AccessRule)
+    name: "XXX"
+    fullName: System.Security.AccessControl.CommonObjectSecurity.RemoveAccessRuleSpecific
+  - name: "XXX"
+    fullName: (
+  - uid: System.Security.AccessControl.AccessRule
+    name: "XXX"
+    fullName: System.Security.AccessControl.AccessRule
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Security.AccessControl.CommonObjectSecurity.RemoveAccessRuleSpecific(System.Security.AccessControl.AccessRule)
+    name: "XXX"
+    fullName: System.Security.AccessControl.CommonObjectSecurity.RemoveAccessRuleSpecific
+  - name: "XXX"
+    fullName: (
+  - uid: System.Security.AccessControl.AccessRule
+    name: "XXX"
+    fullName: System.Security.AccessControl.AccessRule
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Security.AccessControl.CommonObjectSecurity.RemoveAccessRuleSpecific(System.Security.AccessControl.AccessRule)
+  nameWithType: CommonObjectSecurity.RemoveAccessRuleSpecific(AccessRule)
+- uid: System.Security.AccessControl.CommonObjectSecurity.AddAuditRule(System.Security.AccessControl.AuditRule)
+  parent: System.Security.AccessControl.CommonObjectSecurity
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.AccessControl.CommonObjectSecurity.AddAuditRule(System.Security.AccessControl.AuditRule)
+  spec.csharp:
+  - uid: System.Security.AccessControl.CommonObjectSecurity.AddAuditRule(System.Security.AccessControl.AuditRule)
+    name: "XXX"
+    fullName: System.Security.AccessControl.CommonObjectSecurity.AddAuditRule
+  - name: "XXX"
+    fullName: (
+  - uid: System.Security.AccessControl.AuditRule
+    name: "XXX"
+    fullName: System.Security.AccessControl.AuditRule
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Security.AccessControl.CommonObjectSecurity.AddAuditRule(System.Security.AccessControl.AuditRule)
+    name: "XXX"
+    fullName: System.Security.AccessControl.CommonObjectSecurity.AddAuditRule
+  - name: "XXX"
+    fullName: (
+  - uid: System.Security.AccessControl.AuditRule
+    name: "XXX"
+    fullName: System.Security.AccessControl.AuditRule
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Security.AccessControl.CommonObjectSecurity.AddAuditRule(System.Security.AccessControl.AuditRule)
+  nameWithType: CommonObjectSecurity.AddAuditRule(AuditRule)
+- uid: System.Security.AccessControl.CommonObjectSecurity.SetAuditRule(System.Security.AccessControl.AuditRule)
+  parent: System.Security.AccessControl.CommonObjectSecurity
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.AccessControl.CommonObjectSecurity.SetAuditRule(System.Security.AccessControl.AuditRule)
+  spec.csharp:
+  - uid: System.Security.AccessControl.CommonObjectSecurity.SetAuditRule(System.Security.AccessControl.AuditRule)
+    name: "XXX"
+    fullName: System.Security.AccessControl.CommonObjectSecurity.SetAuditRule
+  - name: "XXX"
+    fullName: (
+  - uid: System.Security.AccessControl.AuditRule
+    name: "XXX"
+    fullName: System.Security.AccessControl.AuditRule
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Security.AccessControl.CommonObjectSecurity.SetAuditRule(System.Security.AccessControl.AuditRule)
+    name: "XXX"
+    fullName: System.Security.AccessControl.CommonObjectSecurity.SetAuditRule
+  - name: "XXX"
+    fullName: (
+  - uid: System.Security.AccessControl.AuditRule
+    name: "XXX"
+    fullName: System.Security.AccessControl.AuditRule
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Security.AccessControl.CommonObjectSecurity.SetAuditRule(System.Security.AccessControl.AuditRule)
+  nameWithType: CommonObjectSecurity.SetAuditRule(AuditRule)
+- uid: System.Security.AccessControl.CommonObjectSecurity.RemoveAuditRule(System.Security.AccessControl.AuditRule)
+  parent: System.Security.AccessControl.CommonObjectSecurity
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.AccessControl.CommonObjectSecurity.RemoveAuditRule(System.Security.AccessControl.AuditRule)
+  spec.csharp:
+  - uid: System.Security.AccessControl.CommonObjectSecurity.RemoveAuditRule(System.Security.AccessControl.AuditRule)
+    name: "XXX"
+    fullName: System.Security.AccessControl.CommonObjectSecurity.RemoveAuditRule
+  - name: "XXX"
+    fullName: (
+  - uid: System.Security.AccessControl.AuditRule
+    name: "XXX"
+    fullName: System.Security.AccessControl.AuditRule
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Security.AccessControl.CommonObjectSecurity.RemoveAuditRule(System.Security.AccessControl.AuditRule)
+    name: "XXX"
+    fullName: System.Security.AccessControl.CommonObjectSecurity.RemoveAuditRule
+  - name: "XXX"
+    fullName: (
+  - uid: System.Security.AccessControl.AuditRule
+    name: "XXX"
+    fullName: System.Security.AccessControl.AuditRule
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Security.AccessControl.CommonObjectSecurity.RemoveAuditRule(System.Security.AccessControl.AuditRule)
+  nameWithType: CommonObjectSecurity.RemoveAuditRule(AuditRule)
+- uid: System.Security.AccessControl.CommonObjectSecurity.RemoveAuditRuleAll(System.Security.AccessControl.AuditRule)
+  parent: System.Security.AccessControl.CommonObjectSecurity
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.AccessControl.CommonObjectSecurity.RemoveAuditRuleAll(System.Security.AccessControl.AuditRule)
+  spec.csharp:
+  - uid: System.Security.AccessControl.CommonObjectSecurity.RemoveAuditRuleAll(System.Security.AccessControl.AuditRule)
+    name: "XXX"
+    fullName: System.Security.AccessControl.CommonObjectSecurity.RemoveAuditRuleAll
+  - name: "XXX"
+    fullName: (
+  - uid: System.Security.AccessControl.AuditRule
+    name: "XXX"
+    fullName: System.Security.AccessControl.AuditRule
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Security.AccessControl.CommonObjectSecurity.RemoveAuditRuleAll(System.Security.AccessControl.AuditRule)
+    name: "XXX"
+    fullName: System.Security.AccessControl.CommonObjectSecurity.RemoveAuditRuleAll
+  - name: "XXX"
+    fullName: (
+  - uid: System.Security.AccessControl.AuditRule
+    name: "XXX"
+    fullName: System.Security.AccessControl.AuditRule
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Security.AccessControl.CommonObjectSecurity.RemoveAuditRuleAll(System.Security.AccessControl.AuditRule)
+  nameWithType: CommonObjectSecurity.RemoveAuditRuleAll(AuditRule)
+- uid: System.Security.AccessControl.CommonObjectSecurity.RemoveAuditRuleSpecific(System.Security.AccessControl.AuditRule)
+  parent: System.Security.AccessControl.CommonObjectSecurity
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.AccessControl.CommonObjectSecurity.RemoveAuditRuleSpecific(System.Security.AccessControl.AuditRule)
+  spec.csharp:
+  - uid: System.Security.AccessControl.CommonObjectSecurity.RemoveAuditRuleSpecific(System.Security.AccessControl.AuditRule)
+    name: "XXX"
+    fullName: System.Security.AccessControl.CommonObjectSecurity.RemoveAuditRuleSpecific
+  - name: "XXX"
+    fullName: (
+  - uid: System.Security.AccessControl.AuditRule
+    name: "XXX"
+    fullName: System.Security.AccessControl.AuditRule
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Security.AccessControl.CommonObjectSecurity.RemoveAuditRuleSpecific(System.Security.AccessControl.AuditRule)
+    name: "XXX"
+    fullName: System.Security.AccessControl.CommonObjectSecurity.RemoveAuditRuleSpecific
+  - name: "XXX"
+    fullName: (
+  - uid: System.Security.AccessControl.AuditRule
+    name: "XXX"
+    fullName: System.Security.AccessControl.AuditRule
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Security.AccessControl.CommonObjectSecurity.RemoveAuditRuleSpecific(System.Security.AccessControl.AuditRule)
+  nameWithType: CommonObjectSecurity.RemoveAuditRuleSpecific(AuditRule)
+- uid: System.Security.AccessControl.CommonObjectSecurity.GetAccessRules(System.Boolean,System.Boolean,System.Type)
+  parent: System.Security.AccessControl.CommonObjectSecurity
+  isExternal: true
+  name: "XXX"
+  fullName: System.Security.AccessControl.CommonObjectSecurity.GetAccessRules(System.Boolean, System.Boolean, System.Type)
+  spec.csharp:
+  - uid: System.Security.AccessControl.CommonObjectSecurity.GetAccessRules(System.Boolean,System.Boolean,System.Type)
+    name: "XXX"
+    fullName: System.Security.AccessControl.CommonObjectSecurity.GetAccessRules
+  - name: "XXX"
+    fullName: (
+  - uid: System.Boolean
+    name: "XXX"
+    fullName: System.Boolean
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Boolean
+    name: "XXX"
+    fullName: System.Boolean
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Type
+    name: "XXX"
+    fullName: System.Type
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Security.AccessControl.CommonObjectSecurity.GetAccessRules(System.Boolean,System.Boolean,System.Type)
+    name: "XXX"
+    fullName: System.Security.AccessControl.CommonObjectSecurity.GetAccessRules
+  - name: "XXX"
+    fullName: (
+  - uid: System.Boolean
+    name: "XXX"
+    fullName: System.Boolean
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Boolean
+    name: "XXX"
+    fullName: System.Boolean
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Type
+    name: "XXX"
+    fullName: System.Type
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Security.AccessControl.CommonObjectSecurity.GetAccessRules(System.Boolean,System.Boolean,System.Type)
+  nameWithType: CommonObjectSecurity.GetAccessRules(Boolean, Boolean, Type)
+- uid: System.Security.AccessControl.CommonObjectSecurity.GetAuditRules(System.Boolean,System.Boolean,System.Type)
+  parent: System.Security.AccessControl.CommonObjectSecurity
+  isExternal: true
+  name: "XXX"
+  fullName: System.Security.AccessControl.CommonObjectSecurity.GetAuditRules(System.Boolean, System.Boolean, System.Type)
+  spec.csharp:
+  - uid: System.Security.AccessControl.CommonObjectSecurity.GetAuditRules(System.Boolean,System.Boolean,System.Type)
+    name: "XXX"
+    fullName: System.Security.AccessControl.CommonObjectSecurity.GetAuditRules
+  - name: "XXX"
+    fullName: (
+  - uid: System.Boolean
+    name: "XXX"
+    fullName: System.Boolean
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Boolean
+    name: "XXX"
+    fullName: System.Boolean
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Type
+    name: "XXX"
+    fullName: System.Type
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Security.AccessControl.CommonObjectSecurity.GetAuditRules(System.Boolean,System.Boolean,System.Type)
+    name: "XXX"
+    fullName: System.Security.AccessControl.CommonObjectSecurity.GetAuditRules
+  - name: "XXX"
+    fullName: (
+  - uid: System.Boolean
+    name: "XXX"
+    fullName: System.Boolean
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Boolean
+    name: "XXX"
+    fullName: System.Boolean
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Type
+    name: "XXX"
+    fullName: System.Type
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Security.AccessControl.CommonObjectSecurity.GetAuditRules(System.Boolean,System.Boolean,System.Type)
+  nameWithType: CommonObjectSecurity.GetAuditRules(Boolean, Boolean, Type)
+- uid: System.Security.AccessControl.ObjectSecurity.ReadLock
+  parent: System.Security.AccessControl.ObjectSecurity
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.AccessControl.ObjectSecurity.ReadLock()
+  spec.csharp:
+  - uid: System.Security.AccessControl.ObjectSecurity.ReadLock
+    name: "XXX"
+    fullName: System.Security.AccessControl.ObjectSecurity.ReadLock
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Security.AccessControl.ObjectSecurity.ReadLock
+    name: "XXX"
+    fullName: System.Security.AccessControl.ObjectSecurity.ReadLock
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Security.AccessControl.ObjectSecurity.ReadLock
+  nameWithType: ObjectSecurity.ReadLock()
+- uid: System.Security.AccessControl.ObjectSecurity.ReadUnlock
+  parent: System.Security.AccessControl.ObjectSecurity
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.AccessControl.ObjectSecurity.ReadUnlock()
+  spec.csharp:
+  - uid: System.Security.AccessControl.ObjectSecurity.ReadUnlock
+    name: "XXX"
+    fullName: System.Security.AccessControl.ObjectSecurity.ReadUnlock
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Security.AccessControl.ObjectSecurity.ReadUnlock
+    name: "XXX"
+    fullName: System.Security.AccessControl.ObjectSecurity.ReadUnlock
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Security.AccessControl.ObjectSecurity.ReadUnlock
+  nameWithType: ObjectSecurity.ReadUnlock()
+- uid: System.Security.AccessControl.ObjectSecurity.WriteLock
+  parent: System.Security.AccessControl.ObjectSecurity
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.AccessControl.ObjectSecurity.WriteLock()
+  spec.csharp:
+  - uid: System.Security.AccessControl.ObjectSecurity.WriteLock
+    name: "XXX"
+    fullName: System.Security.AccessControl.ObjectSecurity.WriteLock
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Security.AccessControl.ObjectSecurity.WriteLock
+    name: "XXX"
+    fullName: System.Security.AccessControl.ObjectSecurity.WriteLock
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Security.AccessControl.ObjectSecurity.WriteLock
+  nameWithType: ObjectSecurity.WriteLock()
+- uid: System.Security.AccessControl.ObjectSecurity.WriteUnlock
+  parent: System.Security.AccessControl.ObjectSecurity
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.AccessControl.ObjectSecurity.WriteUnlock()
+  spec.csharp:
+  - uid: System.Security.AccessControl.ObjectSecurity.WriteUnlock
+    name: "XXX"
+    fullName: System.Security.AccessControl.ObjectSecurity.WriteUnlock
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Security.AccessControl.ObjectSecurity.WriteUnlock
+    name: "XXX"
+    fullName: System.Security.AccessControl.ObjectSecurity.WriteUnlock
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Security.AccessControl.ObjectSecurity.WriteUnlock
+  nameWithType: ObjectSecurity.WriteUnlock()
+- uid: System.Security.AccessControl.ObjectSecurity.Persist(System.Boolean,System.String,System.Security.AccessControl.AccessControlSections)
+  parent: System.Security.AccessControl.ObjectSecurity
+  isExternal: true
+  name: "XXX"
+  fullName: System.Security.AccessControl.ObjectSecurity.Persist(System.Boolean, System.String, System.Security.AccessControl.AccessControlSections)
+  spec.csharp:
+  - uid: System.Security.AccessControl.ObjectSecurity.Persist(System.Boolean,System.String,System.Security.AccessControl.AccessControlSections)
+    name: "XXX"
+    fullName: System.Security.AccessControl.ObjectSecurity.Persist
+  - name: "XXX"
+    fullName: (
+  - uid: System.Boolean
+    name: "XXX"
+    fullName: System.Boolean
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.String
+    name: "XXX"
+    fullName: System.String
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Security.AccessControl.AccessControlSections
+    name: "XXX"
+    fullName: System.Security.AccessControl.AccessControlSections
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Security.AccessControl.ObjectSecurity.Persist(System.Boolean,System.String,System.Security.AccessControl.AccessControlSections)
+    name: "XXX"
+    fullName: System.Security.AccessControl.ObjectSecurity.Persist
+  - name: "XXX"
+    fullName: (
+  - uid: System.Boolean
+    name: "XXX"
+    fullName: System.Boolean
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.String
+    name: "XXX"
+    fullName: System.String
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Security.AccessControl.AccessControlSections
+    name: "XXX"
+    fullName: System.Security.AccessControl.AccessControlSections
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Security.AccessControl.ObjectSecurity.Persist(System.Boolean,System.String,System.Security.AccessControl.AccessControlSections)
+  nameWithType: ObjectSecurity.Persist(Boolean, String, AccessControlSections)
+- uid: System.Security.AccessControl.ObjectSecurity.GetOwner(System.Type)
+  parent: System.Security.AccessControl.ObjectSecurity
+  isExternal: true
+  name: "XXX"
+  fullName: System.Security.AccessControl.ObjectSecurity.GetOwner(System.Type)
+  spec.csharp:
+  - uid: System.Security.AccessControl.ObjectSecurity.GetOwner(System.Type)
+    name: "XXX"
+    fullName: System.Security.AccessControl.ObjectSecurity.GetOwner
+  - name: "XXX"
+    fullName: (
+  - uid: System.Type
+    name: "XXX"
+    fullName: System.Type
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Security.AccessControl.ObjectSecurity.GetOwner(System.Type)
+    name: "XXX"
+    fullName: System.Security.AccessControl.ObjectSecurity.GetOwner
+  - name: "XXX"
+    fullName: (
+  - uid: System.Type
+    name: "XXX"
+    fullName: System.Type
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Security.AccessControl.ObjectSecurity.GetOwner(System.Type)
+  nameWithType: ObjectSecurity.GetOwner(Type)
+- uid: System.Security.AccessControl.ObjectSecurity.SetOwner(System.Security.Principal.IdentityReference)
+  parent: System.Security.AccessControl.ObjectSecurity
+  isExternal: true
+  name: "XXX"
+  fullName: System.Security.AccessControl.ObjectSecurity.SetOwner(System.Security.Principal.IdentityReference)
+  spec.csharp:
+  - uid: System.Security.AccessControl.ObjectSecurity.SetOwner(System.Security.Principal.IdentityReference)
+    name: "XXX"
+    fullName: System.Security.AccessControl.ObjectSecurity.SetOwner
+  - name: "XXX"
+    fullName: (
+  - uid: System.Security.Principal.IdentityReference
+    name: "XXX"
+    fullName: System.Security.Principal.IdentityReference
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Security.AccessControl.ObjectSecurity.SetOwner(System.Security.Principal.IdentityReference)
+    name: "XXX"
+    fullName: System.Security.AccessControl.ObjectSecurity.SetOwner
+  - name: "XXX"
+    fullName: (
+  - uid: System.Security.Principal.IdentityReference
+    name: "XXX"
+    fullName: System.Security.Principal.IdentityReference
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Security.AccessControl.ObjectSecurity.SetOwner(System.Security.Principal.IdentityReference)
+  nameWithType: ObjectSecurity.SetOwner(IdentityReference)
+- uid: System.Security.AccessControl.ObjectSecurity.GetGroup(System.Type)
+  parent: System.Security.AccessControl.ObjectSecurity
+  isExternal: true
+  name: "XXX"
+  fullName: System.Security.AccessControl.ObjectSecurity.GetGroup(System.Type)
+  spec.csharp:
+  - uid: System.Security.AccessControl.ObjectSecurity.GetGroup(System.Type)
+    name: "XXX"
+    fullName: System.Security.AccessControl.ObjectSecurity.GetGroup
+  - name: "XXX"
+    fullName: (
+  - uid: System.Type
+    name: "XXX"
+    fullName: System.Type
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Security.AccessControl.ObjectSecurity.GetGroup(System.Type)
+    name: "XXX"
+    fullName: System.Security.AccessControl.ObjectSecurity.GetGroup
+  - name: "XXX"
+    fullName: (
+  - uid: System.Type
+    name: "XXX"
+    fullName: System.Type
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Security.AccessControl.ObjectSecurity.GetGroup(System.Type)
+  nameWithType: ObjectSecurity.GetGroup(Type)
+- uid: System.Security.AccessControl.ObjectSecurity.SetGroup(System.Security.Principal.IdentityReference)
+  parent: System.Security.AccessControl.ObjectSecurity
+  isExternal: true
+  name: "XXX"
+  fullName: System.Security.AccessControl.ObjectSecurity.SetGroup(System.Security.Principal.IdentityReference)
+  spec.csharp:
+  - uid: System.Security.AccessControl.ObjectSecurity.SetGroup(System.Security.Principal.IdentityReference)
+    name: "XXX"
+    fullName: System.Security.AccessControl.ObjectSecurity.SetGroup
+  - name: "XXX"
+    fullName: (
+  - uid: System.Security.Principal.IdentityReference
+    name: "XXX"
+    fullName: System.Security.Principal.IdentityReference
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Security.AccessControl.ObjectSecurity.SetGroup(System.Security.Principal.IdentityReference)
+    name: "XXX"
+    fullName: System.Security.AccessControl.ObjectSecurity.SetGroup
+  - name: "XXX"
+    fullName: (
+  - uid: System.Security.Principal.IdentityReference
+    name: "XXX"
+    fullName: System.Security.Principal.IdentityReference
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Security.AccessControl.ObjectSecurity.SetGroup(System.Security.Principal.IdentityReference)
+  nameWithType: ObjectSecurity.SetGroup(IdentityReference)
+- uid: System.Security.AccessControl.ObjectSecurity.PurgeAccessRules(System.Security.Principal.IdentityReference)
+  parent: System.Security.AccessControl.ObjectSecurity
+  isExternal: true
+  name: "XXX"
+  fullName: System.Security.AccessControl.ObjectSecurity.PurgeAccessRules(System.Security.Principal.IdentityReference)
+  spec.csharp:
+  - uid: System.Security.AccessControl.ObjectSecurity.PurgeAccessRules(System.Security.Principal.IdentityReference)
+    name: "XXX"
+    fullName: System.Security.AccessControl.ObjectSecurity.PurgeAccessRules
+  - name: "XXX"
+    fullName: (
+  - uid: System.Security.Principal.IdentityReference
+    name: "XXX"
+    fullName: System.Security.Principal.IdentityReference
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Security.AccessControl.ObjectSecurity.PurgeAccessRules(System.Security.Principal.IdentityReference)
+    name: "XXX"
+    fullName: System.Security.AccessControl.ObjectSecurity.PurgeAccessRules
+  - name: "XXX"
+    fullName: (
+  - uid: System.Security.Principal.IdentityReference
+    name: "XXX"
+    fullName: System.Security.Principal.IdentityReference
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Security.AccessControl.ObjectSecurity.PurgeAccessRules(System.Security.Principal.IdentityReference)
+  nameWithType: ObjectSecurity.PurgeAccessRules(IdentityReference)
+- uid: System.Security.AccessControl.ObjectSecurity.PurgeAuditRules(System.Security.Principal.IdentityReference)
+  parent: System.Security.AccessControl.ObjectSecurity
+  isExternal: true
+  name: "XXX"
+  fullName: System.Security.AccessControl.ObjectSecurity.PurgeAuditRules(System.Security.Principal.IdentityReference)
+  spec.csharp:
+  - uid: System.Security.AccessControl.ObjectSecurity.PurgeAuditRules(System.Security.Principal.IdentityReference)
+    name: "XXX"
+    fullName: System.Security.AccessControl.ObjectSecurity.PurgeAuditRules
+  - name: "XXX"
+    fullName: (
+  - uid: System.Security.Principal.IdentityReference
+    name: "XXX"
+    fullName: System.Security.Principal.IdentityReference
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Security.AccessControl.ObjectSecurity.PurgeAuditRules(System.Security.Principal.IdentityReference)
+    name: "XXX"
+    fullName: System.Security.AccessControl.ObjectSecurity.PurgeAuditRules
+  - name: "XXX"
+    fullName: (
+  - uid: System.Security.Principal.IdentityReference
+    name: "XXX"
+    fullName: System.Security.Principal.IdentityReference
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Security.AccessControl.ObjectSecurity.PurgeAuditRules(System.Security.Principal.IdentityReference)
+  nameWithType: ObjectSecurity.PurgeAuditRules(IdentityReference)
+- uid: System.Security.AccessControl.ObjectSecurity.SetAccessRuleProtection(System.Boolean,System.Boolean)
+  parent: System.Security.AccessControl.ObjectSecurity
+  isExternal: true
+  name: "XXX"
+  fullName: System.Security.AccessControl.ObjectSecurity.SetAccessRuleProtection(System.Boolean, System.Boolean)
+  spec.csharp:
+  - uid: System.Security.AccessControl.ObjectSecurity.SetAccessRuleProtection(System.Boolean,System.Boolean)
+    name: "XXX"
+    fullName: System.Security.AccessControl.ObjectSecurity.SetAccessRuleProtection
+  - name: "XXX"
+    fullName: (
+  - uid: System.Boolean
+    name: "XXX"
+    fullName: System.Boolean
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Boolean
+    name: "XXX"
+    fullName: System.Boolean
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Security.AccessControl.ObjectSecurity.SetAccessRuleProtection(System.Boolean,System.Boolean)
+    name: "XXX"
+    fullName: System.Security.AccessControl.ObjectSecurity.SetAccessRuleProtection
+  - name: "XXX"
+    fullName: (
+  - uid: System.Boolean
+    name: "XXX"
+    fullName: System.Boolean
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Boolean
+    name: "XXX"
+    fullName: System.Boolean
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Security.AccessControl.ObjectSecurity.SetAccessRuleProtection(System.Boolean,System.Boolean)
+  nameWithType: ObjectSecurity.SetAccessRuleProtection(Boolean, Boolean)
+- uid: System.Security.AccessControl.ObjectSecurity.SetAuditRuleProtection(System.Boolean,System.Boolean)
+  parent: System.Security.AccessControl.ObjectSecurity
+  isExternal: true
+  name: "XXX"
+  fullName: System.Security.AccessControl.ObjectSecurity.SetAuditRuleProtection(System.Boolean, System.Boolean)
+  spec.csharp:
+  - uid: System.Security.AccessControl.ObjectSecurity.SetAuditRuleProtection(System.Boolean,System.Boolean)
+    name: "XXX"
+    fullName: System.Security.AccessControl.ObjectSecurity.SetAuditRuleProtection
+  - name: "XXX"
+    fullName: (
+  - uid: System.Boolean
+    name: "XXX"
+    fullName: System.Boolean
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Boolean
+    name: "XXX"
+    fullName: System.Boolean
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Security.AccessControl.ObjectSecurity.SetAuditRuleProtection(System.Boolean,System.Boolean)
+    name: "XXX"
+    fullName: System.Security.AccessControl.ObjectSecurity.SetAuditRuleProtection
+  - name: "XXX"
+    fullName: (
+  - uid: System.Boolean
+    name: "XXX"
+    fullName: System.Boolean
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Boolean
+    name: "XXX"
+    fullName: System.Boolean
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Security.AccessControl.ObjectSecurity.SetAuditRuleProtection(System.Boolean,System.Boolean)
+  nameWithType: ObjectSecurity.SetAuditRuleProtection(Boolean, Boolean)
+- uid: System.Security.AccessControl.ObjectSecurity.IsSddlConversionSupported
+  parent: System.Security.AccessControl.ObjectSecurity
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.AccessControl.ObjectSecurity.IsSddlConversionSupported()
+  spec.csharp:
+  - uid: System.Security.AccessControl.ObjectSecurity.IsSddlConversionSupported
+    name: "XXX"
+    fullName: System.Security.AccessControl.ObjectSecurity.IsSddlConversionSupported
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Security.AccessControl.ObjectSecurity.IsSddlConversionSupported
+    name: "XXX"
+    fullName: System.Security.AccessControl.ObjectSecurity.IsSddlConversionSupported
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Security.AccessControl.ObjectSecurity.IsSddlConversionSupported
+  nameWithType: ObjectSecurity.IsSddlConversionSupported()
+- uid: System.Security.AccessControl.ObjectSecurity.GetSecurityDescriptorSddlForm(System.Security.AccessControl.AccessControlSections)
+  parent: System.Security.AccessControl.ObjectSecurity
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.AccessControl.ObjectSecurity.GetSecurityDescriptorSddlForm(System.Security.AccessControl.AccessControlSections)
+  spec.csharp:
+  - uid: System.Security.AccessControl.ObjectSecurity.GetSecurityDescriptorSddlForm(System.Security.AccessControl.AccessControlSections)
+    name: "XXX"
+    fullName: System.Security.AccessControl.ObjectSecurity.GetSecurityDescriptorSddlForm
+  - name: "XXX"
+    fullName: (
+  - uid: System.Security.AccessControl.AccessControlSections
+    name: "XXX"
+    fullName: System.Security.AccessControl.AccessControlSections
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Security.AccessControl.ObjectSecurity.GetSecurityDescriptorSddlForm(System.Security.AccessControl.AccessControlSections)
+    name: "XXX"
+    fullName: System.Security.AccessControl.ObjectSecurity.GetSecurityDescriptorSddlForm
+  - name: "XXX"
+    fullName: (
+  - uid: System.Security.AccessControl.AccessControlSections
+    name: "XXX"
+    fullName: System.Security.AccessControl.AccessControlSections
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Security.AccessControl.ObjectSecurity.GetSecurityDescriptorSddlForm(System.Security.AccessControl.AccessControlSections)
+  nameWithType: ObjectSecurity.GetSecurityDescriptorSddlForm(AccessControlSections)
+- uid: System.Security.AccessControl.ObjectSecurity.SetSecurityDescriptorSddlForm(System.String)
+  parent: System.Security.AccessControl.ObjectSecurity
+  isExternal: true
+  name: "XXX"
+  fullName: System.Security.AccessControl.ObjectSecurity.SetSecurityDescriptorSddlForm(System.String)
+  spec.csharp:
+  - uid: System.Security.AccessControl.ObjectSecurity.SetSecurityDescriptorSddlForm(System.String)
+    name: "XXX"
+    fullName: System.Security.AccessControl.ObjectSecurity.SetSecurityDescriptorSddlForm
+  - name: "XXX"
+    fullName: (
+  - uid: System.String
+    name: "XXX"
+    fullName: System.String
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Security.AccessControl.ObjectSecurity.SetSecurityDescriptorSddlForm(System.String)
+    name: "XXX"
+    fullName: System.Security.AccessControl.ObjectSecurity.SetSecurityDescriptorSddlForm
+  - name: "XXX"
+    fullName: (
+  - uid: System.String
+    name: "XXX"
+    fullName: System.String
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Security.AccessControl.ObjectSecurity.SetSecurityDescriptorSddlForm(System.String)
+  nameWithType: ObjectSecurity.SetSecurityDescriptorSddlForm(String)
+- uid: System.Security.AccessControl.ObjectSecurity.SetSecurityDescriptorSddlForm(System.String,System.Security.AccessControl.AccessControlSections)
+  parent: System.Security.AccessControl.ObjectSecurity
+  isExternal: true
+  name: "XXX"
+  fullName: System.Security.AccessControl.ObjectSecurity.SetSecurityDescriptorSddlForm(System.String, System.Security.AccessControl.AccessControlSections)
+  spec.csharp:
+  - uid: System.Security.AccessControl.ObjectSecurity.SetSecurityDescriptorSddlForm(System.String,System.Security.AccessControl.AccessControlSections)
+    name: "XXX"
+    fullName: System.Security.AccessControl.ObjectSecurity.SetSecurityDescriptorSddlForm
+  - name: "XXX"
+    fullName: (
+  - uid: System.String
+    name: "XXX"
+    fullName: System.String
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Security.AccessControl.AccessControlSections
+    name: "XXX"
+    fullName: System.Security.AccessControl.AccessControlSections
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Security.AccessControl.ObjectSecurity.SetSecurityDescriptorSddlForm(System.String,System.Security.AccessControl.AccessControlSections)
+    name: "XXX"
+    fullName: System.Security.AccessControl.ObjectSecurity.SetSecurityDescriptorSddlForm
+  - name: "XXX"
+    fullName: (
+  - uid: System.String
+    name: "XXX"
+    fullName: System.String
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Security.AccessControl.AccessControlSections
+    name: "XXX"
+    fullName: System.Security.AccessControl.AccessControlSections
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Security.AccessControl.ObjectSecurity.SetSecurityDescriptorSddlForm(System.String,System.Security.AccessControl.AccessControlSections)
+  nameWithType: ObjectSecurity.SetSecurityDescriptorSddlForm(String, AccessControlSections)
+- uid: System.Security.AccessControl.ObjectSecurity.GetSecurityDescriptorBinaryForm
+  parent: System.Security.AccessControl.ObjectSecurity
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.AccessControl.ObjectSecurity.GetSecurityDescriptorBinaryForm()
+  spec.csharp:
+  - uid: System.Security.AccessControl.ObjectSecurity.GetSecurityDescriptorBinaryForm
+    name: "XXX"
+    fullName: System.Security.AccessControl.ObjectSecurity.GetSecurityDescriptorBinaryForm
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Security.AccessControl.ObjectSecurity.GetSecurityDescriptorBinaryForm
+    name: "XXX"
+    fullName: System.Security.AccessControl.ObjectSecurity.GetSecurityDescriptorBinaryForm
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Security.AccessControl.ObjectSecurity.GetSecurityDescriptorBinaryForm
+  nameWithType: ObjectSecurity.GetSecurityDescriptorBinaryForm()
+- uid: System.Security.AccessControl.ObjectSecurity.SetSecurityDescriptorBinaryForm(System.Byte[])
+  parent: System.Security.AccessControl.ObjectSecurity
+  isExternal: true
+  name: "XXX"
+  fullName: System.Security.AccessControl.ObjectSecurity.SetSecurityDescriptorBinaryForm(System.Byte[])
+  fullname.vb: System.Security.AccessControl.ObjectSecurity.SetSecurityDescriptorBinaryForm(System.Byte())
+  name.vb: SetSecurityDescriptorBinaryForm(Byte())
+  spec.csharp:
+  - uid: System.Security.AccessControl.ObjectSecurity.SetSecurityDescriptorBinaryForm(System.Byte[])
+    name: "XXX"
+    fullName: System.Security.AccessControl.ObjectSecurity.SetSecurityDescriptorBinaryForm
+  - name: "XXX"
+    fullName: (
+  - uid: System.Byte
+    name: "XXX"
+    fullName: System.Byte
+    isExternal: true
+  - name: 'XXX'
+    fullName: '[]'
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Security.AccessControl.ObjectSecurity.SetSecurityDescriptorBinaryForm(System.Byte[])
+    name: "XXX"
+    fullName: System.Security.AccessControl.ObjectSecurity.SetSecurityDescriptorBinaryForm
+  - name: "XXX"
+    fullName: (
+  - uid: System.Byte
+    name: "XXX"
+    fullName: System.Byte
+    isExternal: true
+  - name: "XXX"
+    fullName: ()
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Security.AccessControl.ObjectSecurity.SetSecurityDescriptorBinaryForm(System.Byte[])
+  nameWithType: ObjectSecurity.SetSecurityDescriptorBinaryForm(Byte[])
+  nameWithType.vb: ObjectSecurity.SetSecurityDescriptorBinaryForm(Byte())
+- uid: System.Security.AccessControl.ObjectSecurity.SetSecurityDescriptorBinaryForm(System.Byte[],System.Security.AccessControl.AccessControlSections)
+  parent: System.Security.AccessControl.ObjectSecurity
+  isExternal: true
+  name: "XXX"
+  fullName: System.Security.AccessControl.ObjectSecurity.SetSecurityDescriptorBinaryForm(System.Byte[], System.Security.AccessControl.AccessControlSections)
+  fullname.vb: System.Security.AccessControl.ObjectSecurity.SetSecurityDescriptorBinaryForm(System.Byte(), System.Security.AccessControl.AccessControlSections)
+  name.vb: SetSecurityDescriptorBinaryForm(Byte(), AccessControlSections)
+  spec.csharp:
+  - uid: System.Security.AccessControl.ObjectSecurity.SetSecurityDescriptorBinaryForm(System.Byte[],System.Security.AccessControl.AccessControlSections)
+    name: "XXX"
+    fullName: System.Security.AccessControl.ObjectSecurity.SetSecurityDescriptorBinaryForm
+  - name: "XXX"
+    fullName: (
+  - uid: System.Byte
+    name: "XXX"
+    fullName: System.Byte
+    isExternal: true
+  - name: 'XXX'
+    fullName: '[]'
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Security.AccessControl.AccessControlSections
+    name: "XXX"
+    fullName: System.Security.AccessControl.AccessControlSections
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Security.AccessControl.ObjectSecurity.SetSecurityDescriptorBinaryForm(System.Byte[],System.Security.AccessControl.AccessControlSections)
+    name: "XXX"
+    fullName: System.Security.AccessControl.ObjectSecurity.SetSecurityDescriptorBinaryForm
+  - name: "XXX"
+    fullName: (
+  - uid: System.Byte
+    name: "XXX"
+    fullName: System.Byte
+    isExternal: true
+  - name: "XXX"
+    fullName: ()
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Security.AccessControl.AccessControlSections
+    name: "XXX"
+    fullName: System.Security.AccessControl.AccessControlSections
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Security.AccessControl.ObjectSecurity.SetSecurityDescriptorBinaryForm(System.Byte[],System.Security.AccessControl.AccessControlSections)
+  nameWithType: ObjectSecurity.SetSecurityDescriptorBinaryForm(Byte[], AccessControlSections)
+  nameWithType.vb: ObjectSecurity.SetSecurityDescriptorBinaryForm(Byte(), AccessControlSections)
+- uid: System.Security.AccessControl.ObjectSecurity.ModifyAccessRule(System.Security.AccessControl.AccessControlModification,System.Security.AccessControl.AccessRule,System.Boolean@)
+  parent: System.Security.AccessControl.ObjectSecurity
+  isExternal: true
+  name: "XXX"
+  fullName: System.Security.AccessControl.ObjectSecurity.ModifyAccessRule(System.Security.AccessControl.AccessControlModification, System.Security.AccessControl.AccessRule, System.Boolean)
+  spec.csharp:
+  - uid: System.Security.AccessControl.ObjectSecurity.ModifyAccessRule(System.Security.AccessControl.AccessControlModification,System.Security.AccessControl.AccessRule,System.Boolean@)
+    name: "XXX"
+    fullName: System.Security.AccessControl.ObjectSecurity.ModifyAccessRule
+  - name: "XXX"
+    fullName: (
+  - uid: System.Security.AccessControl.AccessControlModification
+    name: "XXX"
+    fullName: System.Security.AccessControl.AccessControlModification
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Security.AccessControl.AccessRule
+    name: "XXX"
+    fullName: System.Security.AccessControl.AccessRule
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Boolean
+    name: "XXX"
+    fullName: System.Boolean
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Security.AccessControl.ObjectSecurity.ModifyAccessRule(System.Security.AccessControl.AccessControlModification,System.Security.AccessControl.AccessRule,System.Boolean@)
+    name: "XXX"
+    fullName: System.Security.AccessControl.ObjectSecurity.ModifyAccessRule
+  - name: "XXX"
+    fullName: (
+  - uid: System.Security.AccessControl.AccessControlModification
+    name: "XXX"
+    fullName: System.Security.AccessControl.AccessControlModification
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Security.AccessControl.AccessRule
+    name: "XXX"
+    fullName: System.Security.AccessControl.AccessRule
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Boolean
+    name: "XXX"
+    fullName: System.Boolean
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Security.AccessControl.ObjectSecurity.ModifyAccessRule(System.Security.AccessControl.AccessControlModification,System.Security.AccessControl.AccessRule,System.Boolean@)
+  nameWithType: ObjectSecurity.ModifyAccessRule(AccessControlModification, AccessRule, Boolean)
+- uid: System.Security.AccessControl.ObjectSecurity.ModifyAuditRule(System.Security.AccessControl.AccessControlModification,System.Security.AccessControl.AuditRule,System.Boolean@)
+  parent: System.Security.AccessControl.ObjectSecurity
+  isExternal: true
+  name: "XXX"
+  fullName: System.Security.AccessControl.ObjectSecurity.ModifyAuditRule(System.Security.AccessControl.AccessControlModification, System.Security.AccessControl.AuditRule, System.Boolean)
+  spec.csharp:
+  - uid: System.Security.AccessControl.ObjectSecurity.ModifyAuditRule(System.Security.AccessControl.AccessControlModification,System.Security.AccessControl.AuditRule,System.Boolean@)
+    name: "XXX"
+    fullName: System.Security.AccessControl.ObjectSecurity.ModifyAuditRule
+  - name: "XXX"
+    fullName: (
+  - uid: System.Security.AccessControl.AccessControlModification
+    name: "XXX"
+    fullName: System.Security.AccessControl.AccessControlModification
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Security.AccessControl.AuditRule
+    name: "XXX"
+    fullName: System.Security.AccessControl.AuditRule
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Boolean
+    name: "XXX"
+    fullName: System.Boolean
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Security.AccessControl.ObjectSecurity.ModifyAuditRule(System.Security.AccessControl.AccessControlModification,System.Security.AccessControl.AuditRule,System.Boolean@)
+    name: "XXX"
+    fullName: System.Security.AccessControl.ObjectSecurity.ModifyAuditRule
+  - name: "XXX"
+    fullName: (
+  - uid: System.Security.AccessControl.AccessControlModification
+    name: "XXX"
+    fullName: System.Security.AccessControl.AccessControlModification
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Security.AccessControl.AuditRule
+    name: "XXX"
+    fullName: System.Security.AccessControl.AuditRule
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Boolean
+    name: "XXX"
+    fullName: System.Boolean
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Security.AccessControl.ObjectSecurity.ModifyAuditRule(System.Security.AccessControl.AccessControlModification,System.Security.AccessControl.AuditRule,System.Boolean@)
+  nameWithType: ObjectSecurity.ModifyAuditRule(AccessControlModification, AuditRule, Boolean)
+- uid: System.Security.AccessControl.ObjectSecurity.OwnerModified
+  parent: System.Security.AccessControl.ObjectSecurity
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.AccessControl.ObjectSecurity.OwnerModified
+  commentId: P:System.Security.AccessControl.ObjectSecurity.OwnerModified
+  nameWithType: ObjectSecurity.OwnerModified
+- uid: System.Security.AccessControl.ObjectSecurity.GroupModified
+  parent: System.Security.AccessControl.ObjectSecurity
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.AccessControl.ObjectSecurity.GroupModified
+  commentId: P:System.Security.AccessControl.ObjectSecurity.GroupModified
+  nameWithType: ObjectSecurity.GroupModified
+- uid: System.Security.AccessControl.ObjectSecurity.AuditRulesModified
+  parent: System.Security.AccessControl.ObjectSecurity
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.AccessControl.ObjectSecurity.AuditRulesModified
+  commentId: P:System.Security.AccessControl.ObjectSecurity.AuditRulesModified
+  nameWithType: ObjectSecurity.AuditRulesModified
+- uid: System.Security.AccessControl.ObjectSecurity.AccessRulesModified
+  parent: System.Security.AccessControl.ObjectSecurity
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.AccessControl.ObjectSecurity.AccessRulesModified
+  commentId: P:System.Security.AccessControl.ObjectSecurity.AccessRulesModified
+  nameWithType: ObjectSecurity.AccessRulesModified
+- uid: System.Security.AccessControl.ObjectSecurity.IsContainer
+  parent: System.Security.AccessControl.ObjectSecurity
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.AccessControl.ObjectSecurity.IsContainer
+  commentId: P:System.Security.AccessControl.ObjectSecurity.IsContainer
+  nameWithType: ObjectSecurity.IsContainer
+- uid: System.Security.AccessControl.ObjectSecurity.IsDS
+  parent: System.Security.AccessControl.ObjectSecurity
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.AccessControl.ObjectSecurity.IsDS
+  commentId: P:System.Security.AccessControl.ObjectSecurity.IsDS
+  nameWithType: ObjectSecurity.IsDS
+- uid: System.Security.AccessControl.ObjectSecurity.AreAccessRulesProtected
+  parent: System.Security.AccessControl.ObjectSecurity
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.AccessControl.ObjectSecurity.AreAccessRulesProtected
+  commentId: P:System.Security.AccessControl.ObjectSecurity.AreAccessRulesProtected
+  nameWithType: ObjectSecurity.AreAccessRulesProtected
+- uid: System.Security.AccessControl.ObjectSecurity.AreAuditRulesProtected
+  parent: System.Security.AccessControl.ObjectSecurity
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.AccessControl.ObjectSecurity.AreAuditRulesProtected
+  commentId: P:System.Security.AccessControl.ObjectSecurity.AreAuditRulesProtected
+  nameWithType: ObjectSecurity.AreAuditRulesProtected
+- uid: System.Security.AccessControl.ObjectSecurity.AreAccessRulesCanonical
+  parent: System.Security.AccessControl.ObjectSecurity
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.AccessControl.ObjectSecurity.AreAccessRulesCanonical
+  commentId: P:System.Security.AccessControl.ObjectSecurity.AreAccessRulesCanonical
+  nameWithType: ObjectSecurity.AreAccessRulesCanonical
+- uid: System.Security.AccessControl.ObjectSecurity.AreAuditRulesCanonical
+  parent: System.Security.AccessControl.ObjectSecurity
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.AccessControl.ObjectSecurity.AreAuditRulesCanonical
+  commentId: P:System.Security.AccessControl.ObjectSecurity.AreAuditRulesCanonical
+  nameWithType: ObjectSecurity.AreAuditRulesCanonical
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.ToString
+  nameWithType: Object.ToString()
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.Equals(System.Object)
+  nameWithType: Object.Equals(Object)
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  nameWithType: Object.Equals(Object, Object)
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.GetHashCode
+  nameWithType: Object.GetHashCode()
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.GetType
+  nameWithType: Object.GetType()
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.MemberwiseClone
+  nameWithType: Object.MemberwiseClone()
+- uid: System
+  isExternal: false
+  name: "XXX"
+  fullName: System
+  commentId: N:System
+  nameWithType: System
+- uid: System.Security.AccessControl
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.AccessControl
+  commentId: N:System.Security.AccessControl
+  nameWithType: System.Security.AccessControl
+- uid: System.Security.AccessControl.ObjectSecurity.AccessRightType
+  parent: System.Security.AccessControl.ObjectSecurity
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.AccessControl.ObjectSecurity.AccessRightType
+  commentId: P:System.Security.AccessControl.ObjectSecurity.AccessRightType
+  nameWithType: ObjectSecurity.AccessRightType
+- uid: System.Type
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Type
+  commentId: T:System.Type
+  nameWithType: Type
+- uid: System.Security.AccessControl.ObjectSecurity.AccessRuleType
+  parent: System.Security.AccessControl.ObjectSecurity
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.AccessControl.ObjectSecurity.AccessRuleType
+  commentId: P:System.Security.AccessControl.ObjectSecurity.AccessRuleType
+  nameWithType: ObjectSecurity.AccessRuleType
+- uid: System.Security.AccessControl.ObjectSecurity.AuditRuleType
+  parent: System.Security.AccessControl.ObjectSecurity
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.AccessControl.ObjectSecurity.AuditRuleType
+  commentId: P:System.Security.AccessControl.ObjectSecurity.AuditRuleType
+  nameWithType: ObjectSecurity.AuditRuleType
+- uid: System.Security.AccessControl.ObjectSecurity.AccessRuleFactory(System.Security.Principal.IdentityReference,System.Int32,System.Boolean,System.Security.AccessControl.InheritanceFlags,System.Security.AccessControl.PropagationFlags,System.Security.AccessControl.AccessControlType)
+  parent: System.Security.AccessControl.ObjectSecurity
+  isExternal: true
+  name: "XXX"
+  fullName: System.Security.AccessControl.ObjectSecurity.AccessRuleFactory(System.Security.Principal.IdentityReference, System.Int32, System.Boolean, System.Security.AccessControl.InheritanceFlags, System.Security.AccessControl.PropagationFlags, System.Security.AccessControl.AccessControlType)
+  spec.csharp:
+  - uid: System.Security.AccessControl.ObjectSecurity.AccessRuleFactory(System.Security.Principal.IdentityReference,System.Int32,System.Boolean,System.Security.AccessControl.InheritanceFlags,System.Security.AccessControl.PropagationFlags,System.Security.AccessControl.AccessControlType)
+    name: "XXX"
+    fullName: System.Security.AccessControl.ObjectSecurity.AccessRuleFactory
+  - name: "XXX"
+    fullName: (
+  - uid: System.Security.Principal.IdentityReference
+    name: "XXX"
+    fullName: System.Security.Principal.IdentityReference
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Boolean
+    name: "XXX"
+    fullName: System.Boolean
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Security.AccessControl.InheritanceFlags
+    name: "XXX"
+    fullName: System.Security.AccessControl.InheritanceFlags
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Security.AccessControl.PropagationFlags
+    name: "XXX"
+    fullName: System.Security.AccessControl.PropagationFlags
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Security.AccessControl.AccessControlType
+    name: "XXX"
+    fullName: System.Security.AccessControl.AccessControlType
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Security.AccessControl.ObjectSecurity.AccessRuleFactory(System.Security.Principal.IdentityReference,System.Int32,System.Boolean,System.Security.AccessControl.InheritanceFlags,System.Security.AccessControl.PropagationFlags,System.Security.AccessControl.AccessControlType)
+    name: "XXX"
+    fullName: System.Security.AccessControl.ObjectSecurity.AccessRuleFactory
+  - name: "XXX"
+    fullName: (
+  - uid: System.Security.Principal.IdentityReference
+    name: "XXX"
+    fullName: System.Security.Principal.IdentityReference
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Boolean
+    name: "XXX"
+    fullName: System.Boolean
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Security.AccessControl.InheritanceFlags
+    name: "XXX"
+    fullName: System.Security.AccessControl.InheritanceFlags
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Security.AccessControl.PropagationFlags
+    name: "XXX"
+    fullName: System.Security.AccessControl.PropagationFlags
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Security.AccessControl.AccessControlType
+    name: "XXX"
+    fullName: System.Security.AccessControl.AccessControlType
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Security.AccessControl.ObjectSecurity.AccessRuleFactory(System.Security.Principal.IdentityReference,System.Int32,System.Boolean,System.Security.AccessControl.InheritanceFlags,System.Security.AccessControl.PropagationFlags,System.Security.AccessControl.AccessControlType)
+  nameWithType: ObjectSecurity.AccessRuleFactory(IdentityReference, Int32, Boolean, InheritanceFlags, PropagationFlags, AccessControlType)
+- uid: System.Security.Principal.IdentityReference
+  parent: System.Security.Principal
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.Principal.IdentityReference
+  commentId: T:System.Security.Principal.IdentityReference
+  nameWithType: IdentityReference
+- uid: System.Int32
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Int32
+  commentId: T:System.Int32
+  nameWithType: Int32
+- uid: System.Boolean
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Boolean
+  commentId: T:System.Boolean
+  nameWithType: Boolean
+- uid: System.Security.AccessControl.InheritanceFlags
+  parent: System.Security.AccessControl
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.AccessControl.InheritanceFlags
+  commentId: T:System.Security.AccessControl.InheritanceFlags
+  nameWithType: InheritanceFlags
+- uid: System.Security.AccessControl.PropagationFlags
+  parent: System.Security.AccessControl
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.AccessControl.PropagationFlags
+  commentId: T:System.Security.AccessControl.PropagationFlags
+  nameWithType: PropagationFlags
+- uid: System.Security.AccessControl.AccessControlType
+  parent: System.Security.AccessControl
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.AccessControl.AccessControlType
+  commentId: T:System.Security.AccessControl.AccessControlType
+  nameWithType: AccessControlType
+- uid: System.Security.AccessControl.AccessRule
+  parent: System.Security.AccessControl
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.AccessControl.AccessRule
+  commentId: T:System.Security.AccessControl.AccessRule
+  nameWithType: AccessRule
+- uid: System.Security.Principal
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.Principal
+  commentId: N:System.Security.Principal
+  nameWithType: System.Security.Principal
+- uid: System.IO.Pipes.PipeAccessRule
+  parent: System.IO.Pipes
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.Pipes.PipeAccessRule
+  commentId: T:System.IO.Pipes.PipeAccessRule
+  nameWithType: PipeAccessRule
+- uid: System.IO.Pipes.PipeAuditRule
+  parent: System.IO.Pipes
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.Pipes.PipeAuditRule
+  commentId: T:System.IO.Pipes.PipeAuditRule
+  nameWithType: PipeAuditRule
+- uid: System.Security.AccessControl.ObjectSecurity.AuditRuleFactory(System.Security.Principal.IdentityReference,System.Int32,System.Boolean,System.Security.AccessControl.InheritanceFlags,System.Security.AccessControl.PropagationFlags,System.Security.AccessControl.AuditFlags)
+  parent: System.Security.AccessControl.ObjectSecurity
+  isExternal: true
+  name: "XXX"
+  fullName: System.Security.AccessControl.ObjectSecurity.AuditRuleFactory(System.Security.Principal.IdentityReference, System.Int32, System.Boolean, System.Security.AccessControl.InheritanceFlags, System.Security.AccessControl.PropagationFlags, System.Security.AccessControl.AuditFlags)
+  spec.csharp:
+  - uid: System.Security.AccessControl.ObjectSecurity.AuditRuleFactory(System.Security.Principal.IdentityReference,System.Int32,System.Boolean,System.Security.AccessControl.InheritanceFlags,System.Security.AccessControl.PropagationFlags,System.Security.AccessControl.AuditFlags)
+    name: "XXX"
+    fullName: System.Security.AccessControl.ObjectSecurity.AuditRuleFactory
+  - name: "XXX"
+    fullName: (
+  - uid: System.Security.Principal.IdentityReference
+    name: "XXX"
+    fullName: System.Security.Principal.IdentityReference
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Boolean
+    name: "XXX"
+    fullName: System.Boolean
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Security.AccessControl.InheritanceFlags
+    name: "XXX"
+    fullName: System.Security.AccessControl.InheritanceFlags
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Security.AccessControl.PropagationFlags
+    name: "XXX"
+    fullName: System.Security.AccessControl.PropagationFlags
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Security.AccessControl.AuditFlags
+    name: "XXX"
+    fullName: System.Security.AccessControl.AuditFlags
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Security.AccessControl.ObjectSecurity.AuditRuleFactory(System.Security.Principal.IdentityReference,System.Int32,System.Boolean,System.Security.AccessControl.InheritanceFlags,System.Security.AccessControl.PropagationFlags,System.Security.AccessControl.AuditFlags)
+    name: "XXX"
+    fullName: System.Security.AccessControl.ObjectSecurity.AuditRuleFactory
+  - name: "XXX"
+    fullName: (
+  - uid: System.Security.Principal.IdentityReference
+    name: "XXX"
+    fullName: System.Security.Principal.IdentityReference
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Boolean
+    name: "XXX"
+    fullName: System.Boolean
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Security.AccessControl.InheritanceFlags
+    name: "XXX"
+    fullName: System.Security.AccessControl.InheritanceFlags
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Security.AccessControl.PropagationFlags
+    name: "XXX"
+    fullName: System.Security.AccessControl.PropagationFlags
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Security.AccessControl.AuditFlags
+    name: "XXX"
+    fullName: System.Security.AccessControl.AuditFlags
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Security.AccessControl.ObjectSecurity.AuditRuleFactory(System.Security.Principal.IdentityReference,System.Int32,System.Boolean,System.Security.AccessControl.InheritanceFlags,System.Security.AccessControl.PropagationFlags,System.Security.AccessControl.AuditFlags)
+  nameWithType: ObjectSecurity.AuditRuleFactory(IdentityReference, Int32, Boolean, InheritanceFlags, PropagationFlags, AuditFlags)
+- uid: System.Security.AccessControl.AuditFlags
+  parent: System.Security.AccessControl
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.AccessControl.AuditFlags
+  commentId: T:System.Security.AccessControl.AuditFlags
+  nameWithType: AuditFlags
+- uid: System.Security.AccessControl.AuditRule
+  parent: System.Security.AccessControl
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.AccessControl.AuditRule
+  commentId: T:System.Security.AccessControl.AuditRule
+  nameWithType: AuditRule
+- uid: System.Runtime.InteropServices.SafeHandle
+  parent: System.Runtime.InteropServices
+  isExternal: false
+  name: "XXX"
+  fullName: System.Runtime.InteropServices.SafeHandle
+  commentId: T:System.Runtime.InteropServices.SafeHandle
+  nameWithType: SafeHandle
+- uid: System.Runtime.InteropServices
+  isExternal: false
+  name: "XXX"
+  fullName: System.Runtime.InteropServices
+  commentId: N:System.Runtime.InteropServices
+  nameWithType: System.Runtime.InteropServices
+- uid: System.String
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.String
+  commentId: T:System.String
+  nameWithType: String
+- uid: System.ArgumentOutOfRangeException
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentOutOfRangeException
+  nameWithType: ArgumentOutOfRangeException
+  commentId: T:System.ArgumentOutOfRangeException
+- uid: System.ArgumentNullException
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentNullException
+  nameWithType: ArgumentNullException
+  commentId: T:System.ArgumentNullException
+- uid: System.ArgumentException
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentException
+  nameWithType: ArgumentException
+  commentId: T:System.ArgumentException

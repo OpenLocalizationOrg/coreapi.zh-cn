@@ -1,0 +1,648 @@
+items:
+- uid: System.Threading.Timer
+  commentId: T:System.Threading.Timer
+  id: Timer
+  parent: System.Threading
+  children:
+  - System.Threading.Timer.#ctor(System.Threading.TimerCallback,System.Object,System.Int32,System.Int32)
+  - System.Threading.Timer.#ctor(System.Threading.TimerCallback,System.Object,System.TimeSpan,System.TimeSpan)
+  - System.Threading.Timer.Change(System.Int32,System.Int32)
+  - System.Threading.Timer.Change(System.TimeSpan,System.TimeSpan)
+  - System.Threading.Timer.Dispose
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.Timer
+  type: Class
+  source:
+    remote:
+      path: src/mscorlib/src/System/Threading/Timer.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Timer
+    path: src/mscorlib/src/System/Threading/Timer.cs
+    startLine: 774
+  assemblies:
+  - System.Threading.Timer
+  namespace: System.Threading
+  summary: "\n<p>Provides a mechanism for executing a method on a thread pool thread at specified intervals. This class cannot be inherited.</p>\n"
+  syntax:
+    content: >-
+      [HostProtection(Synchronization = true, ExternalThreading = true)]
+
+      [ComVisible(true)]
+
+      public sealed class Timer : IDisposable
+    content.vb: >-
+      <HostProtection(Synchronization:=True, ExternalThreading:=True)>
+
+      <ComVisible(True)>
+
+      Public NotInheritable Class Timer
+          Implements IDisposable
+  seealso:
+  - type: System.Threading.TimerCallback
+    commentId: T:System.Threading.TimerCallback
+  inheritance:
+  - System.Object
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  attributes:
+  - type: System.Runtime.InteropServices.ComVisibleAttribute
+    ctor: System.Runtime.InteropServices.ComVisibleAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: true
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+  nameWithType: Timer
+- uid: System.Threading.Timer.#ctor(System.Threading.TimerCallback,System.Object,System.Int32,System.Int32)
+  commentId: M:System.Threading.Timer.#ctor(System.Threading.TimerCallback,System.Object,System.Int32,System.Int32)
+  id: '#ctor(System.Threading.TimerCallback,System.Object,System.Int32,System.Int32)'
+  parent: System.Threading.Timer
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.Timer.Timer(System.Threading.TimerCallback, System.Object, System.Int32, System.Int32)
+  type: Constructor
+  source:
+    remote:
+      path: src/mscorlib/src/System/Threading/Timer.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: .ctor
+    path: src/mscorlib/src/System/Threading/Timer.cs
+    startLine: 786
+  assemblies:
+  - System.Threading.Timer
+  namespace: System.Threading
+  summary: "\n<p>Initializes a new instance of the <strong>Timer</strong> class, using a 32-bit signed integer to specify the time interval.</p>\n"
+  syntax:
+    content: >-
+      [SecuritySafeCritical]
+
+      [MethodImpl(MethodImplOptions.NoInlining)]
+
+      public Timer(TimerCallback callback, object state, int dueTime, int period)
+    content.vb: >-
+      <SecuritySafeCritical>
+
+      <MethodImpl(MethodImplOptions.NoInlining)>
+
+      Public Sub New(callback As TimerCallback, state As Object, dueTime As Integer, period As Integer)
+    parameters:
+    - id: callback
+      type: System.Threading.TimerCallback
+      description: "\n<p>A <xref href=\"System.Threading.TimerCallback\" data-throw-if-not-resolved=\"false\"></xref> delegate representing a method to be executed. </p>\n"
+    - id: state
+      type: System.Object
+      description: "\n<p>An object containing information to be used by the callback method, or <strong>null</strong>. </p>\n"
+    - id: dueTime
+      type: System.Int32
+      description: "\n<p>The amount of time to delay before <em>callback</em> is invoked, in milliseconds. Specify <xref href=\"System.Threading.Timeout.Infinite\" data-throw-if-not-resolved=\"false\"></xref> to prevent the timer from starting. Specify zero (0) to start the timer immediately. </p>\n"
+    - id: period
+      type: System.Int32
+      description: "\n<p>The time interval between invocations of <em>callback</em>, in milliseconds. Specify <xref href=\"System.Threading.Timeout.Infinite\" data-throw-if-not-resolved=\"false\"></xref> to disable periodic signaling. </p>\n"
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>The <em>dueTime</em> or <em>period</em> parameter is negative and is not equal to <xref href=\"System.Threading.Timeout.Infinite\" data-throw-if-not-resolved=\"false\"></xref>. </p>\n"
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>The <em>callback</em> parameter is <strong>null</strong>. </p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: Timer.Timer(TimerCallback, Object, Int32, Int32)
+- uid: System.Threading.Timer.#ctor(System.Threading.TimerCallback,System.Object,System.TimeSpan,System.TimeSpan)
+  commentId: M:System.Threading.Timer.#ctor(System.Threading.TimerCallback,System.Object,System.TimeSpan,System.TimeSpan)
+  id: '#ctor(System.Threading.TimerCallback,System.Object,System.TimeSpan,System.TimeSpan)'
+  parent: System.Threading.Timer
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.Timer.Timer(System.Threading.TimerCallback, System.Object, System.TimeSpan, System.TimeSpan)
+  type: Constructor
+  source:
+    remote:
+      path: src/mscorlib/src/System/Threading/Timer.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: .ctor
+    path: src/mscorlib/src/System/Threading/Timer.cs
+    startLine: 803
+  assemblies:
+  - System.Threading.Timer
+  namespace: System.Threading
+  summary: "\n<p>Initializes a new instance of the <strong>Timer</strong> class, using <xref href=\"System.TimeSpan\" data-throw-if-not-resolved=\"false\"></xref> values to measure time intervals.</p>\n"
+  syntax:
+    content: >-
+      [SecuritySafeCritical]
+
+      [MethodImpl(MethodImplOptions.NoInlining)]
+
+      public Timer(TimerCallback callback, object state, TimeSpan dueTime, TimeSpan period)
+    content.vb: >-
+      <SecuritySafeCritical>
+
+      <MethodImpl(MethodImplOptions.NoInlining)>
+
+      Public Sub New(callback As TimerCallback, state As Object, dueTime As TimeSpan, period As TimeSpan)
+    parameters:
+    - id: callback
+      type: System.Threading.TimerCallback
+      description: "\n<p>A delegate representing a method to be executed. </p>\n"
+    - id: state
+      type: System.Object
+      description: "\n<p>An object containing information to be used by the callback method, or <strong>null</strong>. </p>\n"
+    - id: dueTime
+      type: System.TimeSpan
+      description: "\n<p>The amount of time to delay before the <em>callback</em> parameter invokes its methods. Specify negative one (-1) milliseconds to prevent the timer from starting. Specify zero (0) to start the timer immediately. </p>\n"
+    - id: period
+      type: System.TimeSpan
+      description: "\n<p>The time interval between invocations of the methods referenced by <em>callback</em>. Specify negative one (-1) milliseconds to disable periodic signaling. </p>\n"
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>The number of milliseconds in the value of <em>dueTime</em> or <em>period</em> is negative and not equal to <xref href=\"System.Threading.Timeout.Infinite\" data-throw-if-not-resolved=\"false\"></xref>, or is greater than <xref href=\"System.Int32.MaxValue\" data-throw-if-not-resolved=\"false\"></xref>. </p>\n"
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>The <em>callback</em> parameter is <strong>null</strong>. </p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: Timer.Timer(TimerCallback, Object, TimeSpan, TimeSpan)
+- uid: System.Threading.Timer.Change(System.Int32,System.Int32)
+  commentId: M:System.Threading.Timer.Change(System.Int32,System.Int32)
+  id: Change(System.Int32,System.Int32)
+  parent: System.Threading.Timer
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.Timer.Change(System.Int32, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Threading/Timer.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Change
+    path: src/mscorlib/src/System/Threading/Timer.cs
+    startLine: 897
+  assemblies:
+  - System.Threading.Timer
+  namespace: System.Threading
+  summary: "\n<p>Changes the start time and the interval between method invocations for a timer, using 32-bit signed integers to measure time intervals.</p>\n"
+  syntax:
+    content: public bool Change(int dueTime, int period)
+    content.vb: Public Function Change(dueTime As Integer, period As Integer) As Boolean
+    parameters:
+    - id: dueTime
+      type: System.Int32
+      description: "\n<p>The amount of time to delay before the invoking the callback method specified when the <xref href=\"System.Threading.Timer\" data-throw-if-not-resolved=\"false\"></xref> was constructed, in milliseconds. Specify <xref href=\"System.Threading.Timeout.Infinite\" data-throw-if-not-resolved=\"false\"></xref> to prevent the timer from restarting. Specify zero (0) to restart the timer immediately. </p>\n"
+    - id: period
+      type: System.Int32
+      description: "\n<p>The time interval between invocations of the callback method specified when the <xref href=\"System.Threading.Timer\" data-throw-if-not-resolved=\"false\"></xref> was constructed, in milliseconds. Specify <xref href=\"System.Threading.Timeout.Infinite\" data-throw-if-not-resolved=\"false\"></xref> to disable periodic signaling. </p>\n"
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if the timer was successfully updated; otherwise, <strong>false</strong>.</p>\n"
+  exceptions:
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>The <xref href=\"System.Threading.Timer\" data-throw-if-not-resolved=\"false\"></xref> has already been disposed. </p>\n"
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>The <em>dueTime</em> or <em>period</em> parameter is negative and is not equal to <xref href=\"System.Threading.Timeout.Infinite\" data-throw-if-not-resolved=\"false\"></xref>. </p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: Timer.Change(Int32, Int32)
+- uid: System.Threading.Timer.Change(System.TimeSpan,System.TimeSpan)
+  commentId: M:System.Threading.Timer.Change(System.TimeSpan,System.TimeSpan)
+  id: Change(System.TimeSpan,System.TimeSpan)
+  parent: System.Threading.Timer
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.Timer.Change(System.TimeSpan, System.TimeSpan)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Threading/Timer.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Change
+    path: src/mscorlib/src/System/Threading/Timer.cs
+    startLine: 908
+  assemblies:
+  - System.Threading.Timer
+  namespace: System.Threading
+  summary: "\n<p>Changes the start time and the interval between method invocations for a timer, using <xref href=\"System.TimeSpan\" data-throw-if-not-resolved=\"false\"></xref> values to measure time intervals.</p>\n"
+  syntax:
+    content: public bool Change(TimeSpan dueTime, TimeSpan period)
+    content.vb: Public Function Change(dueTime As TimeSpan, period As TimeSpan) As Boolean
+    parameters:
+    - id: dueTime
+      type: System.TimeSpan
+      description: "\n<p>A <xref href=\"System.TimeSpan\" data-throw-if-not-resolved=\"false\"></xref> representing the amount of time to delay before invoking the callback method specified when the <xref href=\"System.Threading.Timer\" data-throw-if-not-resolved=\"false\"></xref> was constructed. Specify negative one (-1) milliseconds to prevent the timer from restarting. Specify zero (0) to restart the timer immediately. </p>\n"
+    - id: period
+      type: System.TimeSpan
+      description: "\n<p>The time interval between invocations of the callback method specified when the <xref href=\"System.Threading.Timer\" data-throw-if-not-resolved=\"false\"></xref> was constructed. Specify negative one (-1) milliseconds to disable periodic signaling. </p>\n"
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if the timer was successfully updated; otherwise, <strong>false</strong>.</p>\n"
+  exceptions:
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>The <xref href=\"System.Threading.Timer\" data-throw-if-not-resolved=\"false\"></xref> has already been disposed. </p>\n"
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>The <em>dueTime</em> or <em>period</em> parameter, in milliseconds, is less than -1. </p>\n"
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: "\n<p>The <em>dueTime</em> or <em>period</em> parameter, in milliseconds, is greater than 4294967294. </p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: Timer.Change(TimeSpan, TimeSpan)
+- uid: System.Threading.Timer.Dispose
+  commentId: M:System.Threading.Timer.Dispose
+  id: Dispose
+  parent: System.Threading.Timer
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.Timer.Dispose()
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Threading/Timer.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Dispose
+    path: src/mscorlib/src/System/Threading/Timer.cs
+    startLine: 943
+  assemblies:
+  - System.Threading.Timer
+  namespace: System.Threading
+  summary: "\n<p>Releases all resources used by the current instance of <xref href=\"System.Threading.Timer\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose
+  implements:
+  - System.IDisposable.Dispose
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: Timer.Dispose()
+references:
+- uid: System.Threading
+  isExternal: false
+  name: "XXX"
+  fullName: System.Threading
+  nameWithType: System.Threading
+  commentId: N:System.Threading
+- uid: System.Object
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Object
+  nameWithType: Object
+  commentId: T:System.Object
+- uid: System.IDisposable
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.IDisposable
+  nameWithType: IDisposable
+  commentId: T:System.IDisposable
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.ToString()
+  commentId: M:System.Object.ToString
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.Equals(Object)
+  commentId: M:System.Object.Equals(System.Object)
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.Equals(Object, Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.GetHashCode()
+  commentId: M:System.Object.GetHashCode
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.GetType()
+  commentId: M:System.Object.GetType
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.MemberwiseClone()
+  commentId: M:System.Object.MemberwiseClone
+- uid: System
+  isExternal: false
+  name: "XXX"
+  fullName: System
+  nameWithType: System
+  commentId: N:System
+- uid: System.Threading.TimerCallback
+  parent: System.Threading
+  isExternal: false
+  name: "XXX"
+  fullName: System.Threading.TimerCallback
+  nameWithType: TimerCallback
+  commentId: T:System.Threading.TimerCallback
+- uid: System.Int32
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Int32
+  nameWithType: Int32
+  commentId: T:System.Int32
+- uid: System.TimeSpan
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.TimeSpan
+  nameWithType: TimeSpan
+  commentId: T:System.TimeSpan
+- uid: System.Boolean
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Boolean
+  nameWithType: Boolean
+  commentId: T:System.Boolean
+- uid: System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: false
+  name: "XXX"
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: "XXX"
+    fullName: System.IDisposable.Dispose
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: "XXX"
+    fullName: System.IDisposable.Dispose
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: IDisposable.Dispose()
+  commentId: M:System.IDisposable.Dispose
+- uid: System.ArgumentOutOfRangeException
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentOutOfRangeException
+  nameWithType: ArgumentOutOfRangeException
+  commentId: T:System.ArgumentOutOfRangeException
+- uid: System.ArgumentNullException
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentNullException
+  nameWithType: ArgumentNullException
+  commentId: T:System.ArgumentNullException
+- uid: System.ObjectDisposedException
+  isExternal: false
+  name: "XXX"
+  fullName: System.ObjectDisposedException
+  nameWithType: ObjectDisposedException
+  commentId: T:System.ObjectDisposedException
+- uid: System.NotSupportedException
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.NotSupportedException
+  nameWithType: NotSupportedException
+  commentId: T:System.NotSupportedException

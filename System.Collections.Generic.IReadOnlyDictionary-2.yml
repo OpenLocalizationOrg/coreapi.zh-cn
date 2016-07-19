@@ -1,0 +1,632 @@
+items:
+- uid: System.Collections.Generic.IReadOnlyDictionary`2
+  commentId: T:System.Collections.Generic.IReadOnlyDictionary`2
+  id: IReadOnlyDictionary`2
+  parent: System.Collections.Generic
+  children:
+  - System.Collections.Generic.IReadOnlyDictionary`2.ContainsKey(`0)
+  - System.Collections.Generic.IReadOnlyDictionary`2.Item(`0)
+  - System.Collections.Generic.IReadOnlyDictionary`2.Keys
+  - System.Collections.Generic.IReadOnlyDictionary`2.TryGetValue(`0,`1@)
+  - System.Collections.Generic.IReadOnlyDictionary`2.Values
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Collections.Generic.IReadOnlyDictionary<TKey, TValue>
+  type: Interface
+  source:
+    remote:
+      path: src/mscorlib/src/System/Collections/Generic/IReadOnlyDictionary.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: IReadOnlyDictionary
+    path: src/mscorlib/src/System/Collections/Generic/IReadOnlyDictionary.cs
+    startLine: 19
+  assemblies:
+  - System.Runtime
+  namespace: System.Collections.Generic
+  summary: "\n<p>Represents a generic read-only collection of key/value pairs.</p>\n"
+  syntax:
+    content: 'public interface IReadOnlyDictionary<TKey, TValue> : IReadOnlyCollection<KeyValuePair<TKey, TValue>>, IEnumerable<KeyValuePair<TKey, TValue>>, IEnumerable'
+    content.vb: >-
+      Public Interface IReadOnlyDictionary(Of TKey, TValue)
+          Inherits IReadOnlyCollection(Of KeyValuePair(Of TKey, TValue))
+    typeParameters:
+    - id: TKey
+      description: "\n<p>The type of keys in the read-only dictionary. </p>\n"
+    - id: TValue
+      description: "\n<p>The type of values in the read-only dictionary. </p>\n"
+  inheritedMembers:
+  - System.Collections.Generic.IReadOnlyCollection{System.Collections.Generic.KeyValuePair{{TKey},{TValue}}}.Count
+  - System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{{TKey},{TValue}}}.GetEnumerator
+  - System.Collections.IEnumerable.GetEnumerator
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+  fullName.vb: System.Collections.Generic.IReadOnlyDictionary(Of TKey, TValue)
+  name.vb: IReadOnlyDictionary(Of TKey, TValue)
+  nameWithType: IReadOnlyDictionary<TKey, TValue>
+  nameWithType.vb: IReadOnlyDictionary(Of TKey, TValue)
+- uid: System.Collections.Generic.IReadOnlyDictionary`2.Item(`0)
+  commentId: P:System.Collections.Generic.IReadOnlyDictionary`2.Item(`0)
+  id: Item(`0)
+  parent: System.Collections.Generic.IReadOnlyDictionary`2
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Collections.Generic.IReadOnlyDictionary<TKey, TValue>.Item[TKey]
+  type: Property
+  source:
+    remote:
+      path: src/mscorlib/src/System/Collections/Generic/IReadOnlyDictionary.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: this[]
+    path: src/mscorlib/src/System/Collections/Generic/IReadOnlyDictionary.cs
+    startLine: 24
+  assemblies:
+  - System.Runtime
+  namespace: System.Collections.Generic
+  summary: "\n<p>Gets the element that has the specified key in the read-only dictionary.</p>\n"
+  syntax:
+    content: TValue this[TKey key] { get; }
+    content.vb: ReadOnly Property Item(key As TKey) As TValue
+    parameters:
+    - id: key
+      type: '{TKey}'
+      description: "\n<p>The key to locate.</p>\n"
+    return:
+      type: '{TValue}'
+      description: "\n<p>The element that has the specified key in the read-only dictionary.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>key</em> is <strong>null</strong>.</p>\n"
+  - type: System.Collections.Generic.KeyNotFoundException
+    commentId: T:System.Collections.Generic.KeyNotFoundException
+    description: "\n<p>The property is retrieved and <em>key</em> is not found. </p>\n"
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+  fullName.vb: System.Collections.Generic.IReadOnlyDictionary(Of TKey, TValue).Item(TKey)
+  name.vb: Item(TKey)
+  nameWithType: IReadOnlyDictionary<TKey, TValue>.Item[TKey]
+  nameWithType.vb: IReadOnlyDictionary(Of TKey, TValue).Item(TKey)
+- uid: System.Collections.Generic.IReadOnlyDictionary`2.Keys
+  commentId: P:System.Collections.Generic.IReadOnlyDictionary`2.Keys
+  id: Keys
+  parent: System.Collections.Generic.IReadOnlyDictionary`2
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Collections.Generic.IReadOnlyDictionary<TKey, TValue>.Keys
+  type: Property
+  source:
+    remote:
+      path: src/mscorlib/src/System/Collections/Generic/IReadOnlyDictionary.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Keys
+    path: src/mscorlib/src/System/Collections/Generic/IReadOnlyDictionary.cs
+    startLine: 25
+  assemblies:
+  - System.Runtime
+  namespace: System.Collections.Generic
+  summary: "\n<p>Gets an enumerable collection that contains the keys in the read-only dictionary. </p>\n"
+  syntax:
+    content: IEnumerable<TKey> Keys { get; }
+    content.vb: ReadOnly Property Keys As IEnumerable(Of TKey)
+    parameters: []
+    return:
+      type: System.Collections.Generic.IEnumerable{{TKey}}
+      description: "\n<p>An enumerable collection that contains the keys in the read-only dictionary.</p>\n"
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+  fullName.vb: System.Collections.Generic.IReadOnlyDictionary(Of TKey, TValue).Keys
+  nameWithType: IReadOnlyDictionary<TKey, TValue>.Keys
+  nameWithType.vb: IReadOnlyDictionary(Of TKey, TValue).Keys
+- uid: System.Collections.Generic.IReadOnlyDictionary`2.Values
+  commentId: P:System.Collections.Generic.IReadOnlyDictionary`2.Values
+  id: Values
+  parent: System.Collections.Generic.IReadOnlyDictionary`2
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Collections.Generic.IReadOnlyDictionary<TKey, TValue>.Values
+  type: Property
+  source:
+    remote:
+      path: src/mscorlib/src/System/Collections/Generic/IReadOnlyDictionary.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Values
+    path: src/mscorlib/src/System/Collections/Generic/IReadOnlyDictionary.cs
+    startLine: 26
+  assemblies:
+  - System.Runtime
+  namespace: System.Collections.Generic
+  summary: "\n<p>Gets an enumerable collection that contains the values in the read-only dictionary.</p>\n"
+  syntax:
+    content: IEnumerable<TValue> Values { get; }
+    content.vb: ReadOnly Property Values As IEnumerable(Of TValue)
+    parameters: []
+    return:
+      type: System.Collections.Generic.IEnumerable{{TValue}}
+      description: "\n<p>An enumerable collection that contains the values in the read-only dictionary.</p>\n"
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+  fullName.vb: System.Collections.Generic.IReadOnlyDictionary(Of TKey, TValue).Values
+  nameWithType: IReadOnlyDictionary<TKey, TValue>.Values
+  nameWithType.vb: IReadOnlyDictionary(Of TKey, TValue).Values
+- uid: System.Collections.Generic.IReadOnlyDictionary`2.ContainsKey(`0)
+  commentId: M:System.Collections.Generic.IReadOnlyDictionary`2.ContainsKey(`0)
+  id: ContainsKey(`0)
+  parent: System.Collections.Generic.IReadOnlyDictionary`2
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Collections.Generic.IReadOnlyDictionary<TKey, TValue>.ContainsKey(TKey)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Collections/Generic/IReadOnlyDictionary.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: ContainsKey
+    path: src/mscorlib/src/System/Collections/Generic/IReadOnlyDictionary.cs
+    startLine: 21
+  assemblies:
+  - System.Runtime
+  namespace: System.Collections.Generic
+  summary: "\n<p>Determines whether the read-only dictionary contains an element that has the specified key.</p>\n"
+  syntax:
+    content: bool ContainsKey(TKey key)
+    content.vb: Function ContainsKey(key As TKey) As Boolean
+    parameters:
+    - id: key
+      type: '{TKey}'
+      description: "\n<p>The key to locate.</p>\n"
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if the read-only dictionary contains an element that has the specified key; otherwise, <strong>false</strong>.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>key</em> is <strong>null</strong>.</p>\n"
+  fullName.vb: System.Collections.Generic.IReadOnlyDictionary(Of TKey, TValue).ContainsKey(TKey)
+  nameWithType: IReadOnlyDictionary<TKey, TValue>.ContainsKey(TKey)
+  nameWithType.vb: IReadOnlyDictionary(Of TKey, TValue).ContainsKey(TKey)
+- uid: System.Collections.Generic.IReadOnlyDictionary`2.TryGetValue(`0,`1@)
+  commentId: M:System.Collections.Generic.IReadOnlyDictionary`2.TryGetValue(`0,`1@)
+  id: TryGetValue(`0,`1@)
+  parent: System.Collections.Generic.IReadOnlyDictionary`2
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Collections.Generic.IReadOnlyDictionary<TKey, TValue>.TryGetValue(TKey, out TValue)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Collections/Generic/IReadOnlyDictionary.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: TryGetValue
+    path: src/mscorlib/src/System/Collections/Generic/IReadOnlyDictionary.cs
+    startLine: 22
+  assemblies:
+  - System.Runtime
+  namespace: System.Collections.Generic
+  summary: "\n<p>Gets the value that is associated with the specified key.</p>\n"
+  syntax:
+    content: bool TryGetValue(TKey key, out TValue value)
+    content.vb: Function TryGetValue(key As TKey, ByRef value As TValue) As Boolean
+    parameters:
+    - id: key
+      type: '{TKey}'
+      description: "\n<p>The key to locate.</p>\n"
+    - id: value
+      type: '{TValue}'
+      description: "\n<p>When this method returns, the value associated with the specified key, if the key is found; otherwise, the default value for the type of the <em>value</em> parameter. This parameter is passed uninitialized.</p>\n"
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if the object that implements the <xref href=\"System.Collections.Generic.IReadOnlyDictionary`2\" data-throw-if-not-resolved=\"false\"></xref> interface contains an element that has the specified key; otherwise, <strong>false</strong>.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>key</em> is <strong>null</strong>.</p>\n"
+  fullName.vb: System.Collections.Generic.IReadOnlyDictionary(Of TKey, TValue).TryGetValue(TKey, ByRef TValue)
+  name.vb: TryGetValue(TKey, ByRef TValue)
+  nameWithType: IReadOnlyDictionary<TKey, TValue>.TryGetValue(TKey, out TValue)
+  nameWithType.vb: IReadOnlyDictionary(Of TKey, TValue).TryGetValue(TKey, ByRef TValue)
+references:
+- uid: System.Collections.Generic
+  isExternal: false
+  name: "XXX"
+  fullName: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+- uid: System.Collections.Generic.IReadOnlyCollection{System.Collections.Generic.KeyValuePair{{TKey},{TValue}}}.Count
+  parent: System.Collections.Generic.IReadOnlyCollection{System.Collections.Generic.KeyValuePair{{TKey},{TValue}}}
+  definition: System.Collections.Generic.IReadOnlyCollection`1.Count
+  name: "XXX"
+  fullName: System.Collections.Generic.IReadOnlyCollection<System.Collections.Generic.KeyValuePair<TKey, TValue>>.Count
+  fullname.vb: System.Collections.Generic.IReadOnlyCollection(Of System.Collections.Generic.KeyValuePair(Of TKey, TValue)).Count
+  nameWithType: IReadOnlyCollection<KeyValuePair<TKey, TValue>>.Count
+  nameWithType.vb: IReadOnlyCollection(Of KeyValuePair(Of TKey, TValue)).Count
+  commentId: P:System.Collections.Generic.IReadOnlyCollection{System.Collections.Generic.KeyValuePair{`0,`1}}.Count
+- uid: System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{{TKey},{TValue}}}.GetEnumerator
+  parent: System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{{TKey},{TValue}}}
+  definition: System.Collections.Generic.IEnumerable`1.GetEnumerator
+  name: "XXX"
+  fullName: System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<TKey, TValue>>.GetEnumerator()
+  fullname.vb: System.Collections.Generic.IEnumerable(Of System.Collections.Generic.KeyValuePair(Of TKey, TValue)).GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+    name: "XXX"
+    fullName: System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<TKey, TValue>>.GetEnumerator
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+    name: "XXX"
+    fullName: System.Collections.Generic.IEnumerable(Of System.Collections.Generic.KeyValuePair(Of TKey, TValue)).GetEnumerator
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: IEnumerable<KeyValuePair<TKey, TValue>>.GetEnumerator()
+  nameWithType.vb: IEnumerable(Of KeyValuePair(Of TKey, TValue)).GetEnumerator()
+  commentId: M:System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{`0,`1}}.GetEnumerator
+- uid: System.Collections.IEnumerable.GetEnumerator
+  parent: System.Collections.IEnumerable
+  isExternal: false
+  name: "XXX"
+  fullName: System.Collections.IEnumerable.GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.IEnumerable.GetEnumerator
+    name: "XXX"
+    fullName: System.Collections.IEnumerable.GetEnumerator
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.IEnumerable.GetEnumerator
+    name: "XXX"
+    fullName: System.Collections.IEnumerable.GetEnumerator
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: IEnumerable.GetEnumerator()
+  commentId: M:System.Collections.IEnumerable.GetEnumerator
+- uid: System.Collections.Generic.IReadOnlyCollection`1.Count
+  isExternal: false
+  name: "XXX"
+  fullName: System.Collections.Generic.IReadOnlyCollection<T>.Count
+  fullname.vb: System.Collections.Generic.IReadOnlyCollection(Of T).Count
+  nameWithType: IReadOnlyCollection<T>.Count
+  nameWithType.vb: IReadOnlyCollection(Of T).Count
+  commentId: P:System.Collections.Generic.IReadOnlyCollection`1.Count
+- uid: System.Collections.Generic.IReadOnlyCollection{System.Collections.Generic.KeyValuePair{{TKey},{TValue}}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyCollection`1
+  name: "XXX"
+  fullName: System.Collections.Generic.IReadOnlyCollection<System.Collections.Generic.KeyValuePair<TKey, TValue>>
+  fullname.vb: System.Collections.Generic.IReadOnlyCollection(Of System.Collections.Generic.KeyValuePair(Of TKey, TValue))
+  name.vb: IReadOnlyCollection(Of KeyValuePair(Of TKey, TValue))
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: "XXX"
+    fullName: System.Collections.Generic.IReadOnlyCollection
+  - name: "<"
+    fullName: <
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: "XXX"
+    fullName: System.Collections.Generic.KeyValuePair
+  - name: "<"
+    fullName: <
+  - name: "XXX"
+    fullName: TKey
+  - name: 'XXX '
+    fullName: ', '
+  - name: "XXX"
+    fullName: TValue
+  - name: '>'
+    fullName: '>'
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: "XXX"
+    fullName: System.Collections.Generic.IReadOnlyCollection
+  - name: 'XXX '
+    fullName: '(Of '
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: "XXX"
+    fullName: System.Collections.Generic.KeyValuePair
+  - name: 'XXX '
+    fullName: '(Of '
+  - name: "XXX"
+    fullName: TKey
+  - name: 'XXX '
+    fullName: ', '
+  - name: "XXX"
+    fullName: TValue
+  - name: "XXX"
+    fullName: )
+  - name: "XXX"
+    fullName: )
+  nameWithType: IReadOnlyCollection<KeyValuePair<TKey, TValue>>
+  nameWithType.vb: IReadOnlyCollection(Of KeyValuePair(Of TKey, TValue))
+  commentId: T:System.Collections.Generic.IReadOnlyCollection{System.Collections.Generic.KeyValuePair{`0,`1}}
+- uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+  isExternal: false
+  name: "XXX"
+  fullName: System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+  fullname.vb: System.Collections.Generic.IEnumerable(Of T).GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+    name: "XXX"
+    fullName: System.Collections.Generic.IEnumerable<T>.GetEnumerator
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+    name: "XXX"
+    fullName: System.Collections.Generic.IEnumerable(Of T).GetEnumerator
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: IEnumerable<T>.GetEnumerator()
+  nameWithType.vb: IEnumerable(Of T).GetEnumerator()
+  commentId: M:System.Collections.Generic.IEnumerable`1.GetEnumerator
+- uid: System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{{TKey},{TValue}}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: "XXX"
+  fullName: System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<TKey, TValue>>
+  fullname.vb: System.Collections.Generic.IEnumerable(Of System.Collections.Generic.KeyValuePair(Of TKey, TValue))
+  name.vb: IEnumerable(Of KeyValuePair(Of TKey, TValue))
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: "XXX"
+    fullName: System.Collections.Generic.IEnumerable
+  - name: "<"
+    fullName: <
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: "XXX"
+    fullName: System.Collections.Generic.KeyValuePair
+  - name: "<"
+    fullName: <
+  - name: "XXX"
+    fullName: TKey
+  - name: 'XXX '
+    fullName: ', '
+  - name: "XXX"
+    fullName: TValue
+  - name: '>'
+    fullName: '>'
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: "XXX"
+    fullName: System.Collections.Generic.IEnumerable
+  - name: 'XXX '
+    fullName: '(Of '
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: "XXX"
+    fullName: System.Collections.Generic.KeyValuePair
+  - name: 'XXX '
+    fullName: '(Of '
+  - name: "XXX"
+    fullName: TKey
+  - name: 'XXX '
+    fullName: ', '
+  - name: "XXX"
+    fullName: TValue
+  - name: "XXX"
+    fullName: )
+  - name: "XXX"
+    fullName: )
+  nameWithType: IEnumerable<KeyValuePair<TKey, TValue>>
+  nameWithType.vb: IEnumerable(Of KeyValuePair(Of TKey, TValue))
+  commentId: T:System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{`0,`1}}
+- uid: System.Collections.IEnumerable
+  parent: System.Collections
+  isExternal: false
+  name: "XXX"
+  fullName: System.Collections.IEnumerable
+  nameWithType: IEnumerable
+  commentId: T:System.Collections.IEnumerable
+- uid: System.Collections.Generic.IReadOnlyCollection`1
+  isExternal: false
+  name: "XXX"
+  fullName: System.Collections.Generic.IReadOnlyCollection<T>
+  fullname.vb: System.Collections.Generic.IReadOnlyCollection(Of T)
+  name.vb: IReadOnlyCollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: "XXX"
+    fullName: System.Collections.Generic.IReadOnlyCollection
+  - name: "<"
+    fullName: <
+  - name: "XXX"
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: "XXX"
+    fullName: System.Collections.Generic.IReadOnlyCollection
+  - name: 'XXX '
+    fullName: '(Of '
+  - name: "XXX"
+    fullName: T
+  - name: "XXX"
+    fullName: )
+  nameWithType: IReadOnlyCollection<T>
+  nameWithType.vb: IReadOnlyCollection(Of T)
+  commentId: T:System.Collections.Generic.IReadOnlyCollection`1
+- uid: System.Collections.Generic.IEnumerable`1
+  isExternal: false
+  name: "XXX"
+  fullName: System.Collections.Generic.IEnumerable<T>
+  fullname.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: "XXX"
+    fullName: System.Collections.Generic.IEnumerable
+  - name: "<"
+    fullName: <
+  - name: "XXX"
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: "XXX"
+    fullName: System.Collections.Generic.IEnumerable
+  - name: 'XXX '
+    fullName: '(Of '
+  - name: "XXX"
+    fullName: T
+  - name: "XXX"
+    fullName: )
+  nameWithType: IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  commentId: T:System.Collections.Generic.IEnumerable`1
+- uid: System.Collections
+  isExternal: false
+  name: "XXX"
+  fullName: System.Collections
+  nameWithType: System.Collections
+  commentId: N:System.Collections
+- uid: '{TKey}'
+  definition: TKey
+  name: "XXX"
+  fullName: TKey
+  nameWithType: TKey
+  commentId: '!:TKey'
+- uid: '{TValue}'
+  definition: TValue
+  name: "XXX"
+  fullName: TValue
+  nameWithType: TValue
+  commentId: '!:TValue'
+- uid: TKey
+  isExternal: false
+  name: "XXX"
+  fullName: TKey
+  nameWithType: TKey
+- uid: TValue
+  isExternal: false
+  name: "XXX"
+  fullName: TValue
+  nameWithType: TValue
+- uid: System.Collections.Generic.IEnumerable{{TKey}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: "XXX"
+  fullName: System.Collections.Generic.IEnumerable<TKey>
+  fullname.vb: System.Collections.Generic.IEnumerable(Of TKey)
+  name.vb: IEnumerable(Of TKey)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: "XXX"
+    fullName: System.Collections.Generic.IEnumerable
+  - name: "<"
+    fullName: <
+  - name: "XXX"
+    fullName: TKey
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: "XXX"
+    fullName: System.Collections.Generic.IEnumerable
+  - name: 'XXX '
+    fullName: '(Of '
+  - name: "XXX"
+    fullName: TKey
+  - name: "XXX"
+    fullName: )
+  nameWithType: IEnumerable<TKey>
+  nameWithType.vb: IEnumerable(Of TKey)
+  commentId: T:System.Collections.Generic.IEnumerable{`0}
+- uid: System.Collections.Generic.IEnumerable{{TValue}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: "XXX"
+  fullName: System.Collections.Generic.IEnumerable<TValue>
+  fullname.vb: System.Collections.Generic.IEnumerable(Of TValue)
+  name.vb: IEnumerable(Of TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: "XXX"
+    fullName: System.Collections.Generic.IEnumerable
+  - name: "<"
+    fullName: <
+  - name: "XXX"
+    fullName: TValue
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: "XXX"
+    fullName: System.Collections.Generic.IEnumerable
+  - name: 'XXX '
+    fullName: '(Of '
+  - name: "XXX"
+    fullName: TValue
+  - name: "XXX"
+    fullName: )
+  nameWithType: IEnumerable<TValue>
+  nameWithType.vb: IEnumerable(Of TValue)
+  commentId: T:System.Collections.Generic.IEnumerable{`1}
+- uid: System.Boolean
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Boolean
+  nameWithType: Boolean
+  commentId: T:System.Boolean
+- uid: System
+  isExternal: false
+  name: "XXX"
+  fullName: System
+  nameWithType: System
+  commentId: N:System
+- uid: System.ArgumentNullException
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentNullException
+  nameWithType: ArgumentNullException
+  commentId: T:System.ArgumentNullException
+- uid: System.Collections.Generic.KeyNotFoundException
+  isExternal: false
+  name: "XXX"
+  fullName: System.Collections.Generic.KeyNotFoundException
+  nameWithType: KeyNotFoundException
+  commentId: T:System.Collections.Generic.KeyNotFoundException

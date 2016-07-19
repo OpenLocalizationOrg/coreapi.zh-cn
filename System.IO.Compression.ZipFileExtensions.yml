@@ -1,0 +1,761 @@
+items:
+- uid: System.IO.Compression.ZipFileExtensions
+  commentId: T:System.IO.Compression.ZipFileExtensions
+  id: ZipFileExtensions
+  parent: System.IO.Compression
+  children:
+  - System.IO.Compression.ZipFileExtensions.CreateEntryFromFile(System.IO.Compression.ZipArchive,System.String,System.String)
+  - System.IO.Compression.ZipFileExtensions.CreateEntryFromFile(System.IO.Compression.ZipArchive,System.String,System.String,System.IO.Compression.CompressionLevel)
+  - System.IO.Compression.ZipFileExtensions.ExtractToDirectory(System.IO.Compression.ZipArchive,System.String)
+  - System.IO.Compression.ZipFileExtensions.ExtractToFile(System.IO.Compression.ZipArchiveEntry,System.String)
+  - System.IO.Compression.ZipFileExtensions.ExtractToFile(System.IO.Compression.ZipArchiveEntry,System.String,System.Boolean)
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.Compression.ZipFileExtensions
+  type: Class
+  source:
+    remote:
+      path: src/System.IO.Compression.ZipFile/ref/System.IO.Compression.ZipFile.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: ZipFileExtensions
+    path: src/System.IO.Compression.ZipFile/ref/System.IO.Compression.ZipFile.cs
+    startLine: 21
+  assemblies:
+  - System.IO.Compression.ZipFile
+  namespace: System.IO.Compression
+  summary: "\n<p>Provides extension methods for the <xref href=\"System.IO.Compression.ZipArchive\" data-throw-if-not-resolved=\"false\"></xref> and <xref href=\"System.IO.Compression.ZipArchiveEntry\" data-throw-if-not-resolved=\"false\"></xref> classes.</p>\n"
+  syntax:
+    content: public class ZipFileExtensions
+    content.vb: Public Class ZipFileExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+  nameWithType: ZipFileExtensions
+- uid: System.IO.Compression.ZipFileExtensions.CreateEntryFromFile(System.IO.Compression.ZipArchive,System.String,System.String)
+  commentId: M:System.IO.Compression.ZipFileExtensions.CreateEntryFromFile(System.IO.Compression.ZipArchive,System.String,System.String)
+  id: CreateEntryFromFile(System.IO.Compression.ZipArchive,System.String,System.String)
+  isExtensionMethod: true
+  parent: System.IO.Compression.ZipFileExtensions
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.Compression.ZipFileExtensions.CreateEntryFromFile(System.IO.Compression.ZipArchive, System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/System.IO.Compression.ZipFile/ref/System.IO.Compression.ZipFile.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: CreateEntryFromFile
+    path: src/System.IO.Compression.ZipFile/ref/System.IO.Compression.ZipFile.cs
+    startLine: 24
+  assemblies:
+  - System.IO.Compression.ZipFile
+  namespace: System.IO.Compression
+  summary: "\n<p>Archives a file by compressing it and adding it to the zip archive.</p>\n"
+  syntax:
+    content: public static ZipArchiveEntry CreateEntryFromFile(this ZipArchive destination, string sourceFileName, string entryName)
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function CreateEntryFromFile(destination As ZipArchive, sourceFileName As String, entryName As String) As ZipArchiveEntry
+    parameters:
+    - id: destination
+      type: System.IO.Compression.ZipArchive
+      description: "\n<p>The zip archive to add the file to.</p>\n"
+    - id: sourceFileName
+      type: System.String
+      description: "\n<p>The path to the file to be archived. You can specify either a relative or an absolute path. A relative path is interpreted as relative to the current working directory.</p>\n"
+    - id: entryName
+      type: System.String
+      description: "\n<p>The name of the entry to create in the zip archive.</p>\n"
+    return:
+      type: System.IO.Compression.ZipArchiveEntry
+      description: "\n<p>A wrapper for the new entry in the zip archive.</p>\n"
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>\n<em>sourceFileName</em> is <xref href=\"System.String.Empty\" data-throw-if-not-resolved=\"false\"></xref>, contains only white space, or contains at least one invalid character.</p>\n<p>-or-</p>\n<p>\n<em>entryName</em> is <xref href=\"System.String.Empty\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>sourceFileName</em> or <em>entryName</em> is <strong>null</strong>.</p>\n"
+  - type: System.IO.PathTooLongException
+    commentId: T:System.IO.PathTooLongException
+    description: "\n<p>In <em>sourceFileName</em>, the specified path, file name, or both exceed the system-defined maximum length. For example, on Windows-based platforms, paths must not exceed 248 characters, and file names must not exceed 260 characters.</p>\n"
+  - type: System.IO.DirectoryNotFoundException
+    commentId: T:System.IO.DirectoryNotFoundException
+    description: "\n<p>\n<em>sourceFileName</em> is invalid (for example, it is on an unmapped drive).</p>\n"
+  - type: System.IO.IOException
+    commentId: T:System.IO.IOException
+    description: "\n<p>The file specified by <em>sourceFileName</em> cannot be opened.</p>\n"
+  - type: System.UnauthorizedAccessException
+    commentId: T:System.UnauthorizedAccessException
+    description: "\n<p>\n<em>sourceFileName</em> specifies a directory.</p>\n<p>-or-</p>\n<p>The caller does not have the required permission to access the file specified by <em>sourceFileName</em>.</p>\n"
+  - type: System.IO.FileNotFoundException
+    commentId: T:System.IO.FileNotFoundException
+    description: "\n<p>The file specified by <em>sourceFileName</em> is not found.</p>\n"
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: "\n<p>The <em>sourceFileName</em> parameter is in an invalid format.</p>\n<p>-or-</p>\n<p>The zip archive does not support writing.</p>\n"
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>The zip archive has been disposed.</p>\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  nameWithType: ZipFileExtensions.CreateEntryFromFile(ZipArchive, String, String)
+- uid: System.IO.Compression.ZipFileExtensions.CreateEntryFromFile(System.IO.Compression.ZipArchive,System.String,System.String,System.IO.Compression.CompressionLevel)
+  commentId: M:System.IO.Compression.ZipFileExtensions.CreateEntryFromFile(System.IO.Compression.ZipArchive,System.String,System.String,System.IO.Compression.CompressionLevel)
+  id: CreateEntryFromFile(System.IO.Compression.ZipArchive,System.String,System.String,System.IO.Compression.CompressionLevel)
+  isExtensionMethod: true
+  parent: System.IO.Compression.ZipFileExtensions
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.Compression.ZipFileExtensions.CreateEntryFromFile(System.IO.Compression.ZipArchive, System.String, System.String, System.IO.Compression.CompressionLevel)
+  type: Method
+  source:
+    remote:
+      path: src/System.IO.Compression.ZipFile/ref/System.IO.Compression.ZipFile.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: CreateEntryFromFile
+    path: src/System.IO.Compression.ZipFile/ref/System.IO.Compression.ZipFile.cs
+    startLine: 25
+  assemblies:
+  - System.IO.Compression.ZipFile
+  namespace: System.IO.Compression
+  summary: "\n<p>Archives a file by compressing it using the specified compression level and adding it to the zip archive.</p>\n"
+  syntax:
+    content: public static ZipArchiveEntry CreateEntryFromFile(this ZipArchive destination, string sourceFileName, string entryName, CompressionLevel compressionLevel)
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function CreateEntryFromFile(destination As ZipArchive, sourceFileName As String, entryName As String, compressionLevel As CompressionLevel) As ZipArchiveEntry
+    parameters:
+    - id: destination
+      type: System.IO.Compression.ZipArchive
+      description: "\n<p>The zip archive to add the file to.</p>\n"
+    - id: sourceFileName
+      type: System.String
+      description: "\n<p>The path to the file to be archived. You can specify either a relative or an absolute path. A relative path is interpreted as relative to the current working directory.</p>\n"
+    - id: entryName
+      type: System.String
+      description: "\n<p>The name of the entry to create in the zip archive.</p>\n"
+    - id: compressionLevel
+      type: System.IO.Compression.CompressionLevel
+      description: "\n<p>One of the enumeration values that indicates whether to emphasize speed or compression effectiveness when creating the entry.</p>\n"
+    return:
+      type: System.IO.Compression.ZipArchiveEntry
+      description: "\n<p>A wrapper for the new entry in the zip archive.</p>\n"
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>\n<em>sourceFileName</em> is <xref href=\"System.String.Empty\" data-throw-if-not-resolved=\"false\"></xref>, contains only white space, or contains at least one invalid character.</p>\n<p>-or-</p>\n<p>\n<em>entryName</em> is <xref href=\"System.String.Empty\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>sourceFileName</em> or <em>entryName</em> is <strong>null</strong>.</p>\n"
+  - type: System.IO.DirectoryNotFoundException
+    commentId: T:System.IO.DirectoryNotFoundException
+    description: "\n<p>\n<em>sourceFileName</em> is invalid (for example, it is on an unmapped drive).</p>\n"
+  - type: System.IO.PathTooLongException
+    commentId: T:System.IO.PathTooLongException
+    description: "\n<p>In <em>sourceFileName</em>, the specified path, file name, or both exceed the system-defined maximum length. For example, on Windows-based platforms, paths must not exceed 248 characters, and file names must not exceed 260 characters.</p>\n"
+  - type: System.IO.IOException
+    commentId: T:System.IO.IOException
+    description: "\n<p>The file specified by <em>sourceFileName</em> cannot be opened.</p>\n"
+  - type: System.UnauthorizedAccessException
+    commentId: T:System.UnauthorizedAccessException
+    description: "\n<p>\n<em>sourceFileName</em> specifies a directory.</p>\n<p>-or-</p>\n<p>The caller does not have the required permission to access the file specified by <em>sourceFileName</em>.</p>\n"
+  - type: System.IO.FileNotFoundException
+    commentId: T:System.IO.FileNotFoundException
+    description: "\n<p>The file specified by <em>sourceFileName</em> is not found.</p>\n"
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: "\n<p>The <em>sourceFileName</em> parameter is in an invalid format.</p>\n<p>-or-</p>\n<p>The zip archive does not support writing.</p>\n"
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>The zip archive has been disposed.</p>\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  nameWithType: ZipFileExtensions.CreateEntryFromFile(ZipArchive, String, String, CompressionLevel)
+- uid: System.IO.Compression.ZipFileExtensions.ExtractToDirectory(System.IO.Compression.ZipArchive,System.String)
+  commentId: M:System.IO.Compression.ZipFileExtensions.ExtractToDirectory(System.IO.Compression.ZipArchive,System.String)
+  id: ExtractToDirectory(System.IO.Compression.ZipArchive,System.String)
+  isExtensionMethod: true
+  parent: System.IO.Compression.ZipFileExtensions
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.Compression.ZipFileExtensions.ExtractToDirectory(System.IO.Compression.ZipArchive, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/System.IO.Compression.ZipFile/ref/System.IO.Compression.ZipFile.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: ExtractToDirectory
+    path: src/System.IO.Compression.ZipFile/ref/System.IO.Compression.ZipFile.cs
+    startLine: 26
+  assemblies:
+  - System.IO.Compression.ZipFile
+  namespace: System.IO.Compression
+  summary: "\n<p>Extracts all the files in the zip archive to a directory on the file system.</p>\n"
+  syntax:
+    content: public static void ExtractToDirectory(this ZipArchive source, string destinationDirectoryName)
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Sub ExtractToDirectory(source As ZipArchive, destinationDirectoryName As String)
+    parameters:
+    - id: source
+      type: System.IO.Compression.ZipArchive
+      description: "\n<p>The zip archive to extract files from.</p>\n"
+    - id: destinationDirectoryName
+      type: System.String
+      description: "\n<p>The path to the directory to place the extracted files in. You can specify either a relative or an absolute path. A relative path is interpreted as relative to the current working directory.</p>\n"
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>\n<em>destinationDirectoryName</em> is <xref href=\"System.String.Empty\" data-throw-if-not-resolved=\"false\"></xref>, contains only white space, or contains at least one invalid character.</p>\n"
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>destinationDirectoryName</em> is <strong>null</strong>.</p>\n"
+  - type: System.IO.PathTooLongException
+    commentId: T:System.IO.PathTooLongException
+    description: "\n<p>The specified path exceeds the system-defined maximum length. For example, on Windows-based platforms, paths must not exceed 248 characters, and file names must not exceed 260 characters.</p>\n"
+  - type: System.IO.DirectoryNotFoundException
+    commentId: T:System.IO.DirectoryNotFoundException
+    description: "\n<p>The specified path is invalid (for example, it is on an unmapped drive).</p>\n"
+  - type: System.IO.IOException
+    commentId: T:System.IO.IOException
+    description: "\n<p>The directory specified by <em>destinationDirectoryName</em> already exists.</p>\n<p>-or-</p>\n<p>The name of an entry in the archive is <xref href=\"System.String.Empty\" data-throw-if-not-resolved=\"false\"></xref>, contains only white space, or contains at least one invalid character.</p>\n<p>-or-</p>\n<p>Extracting an entry from the archive would create a file that is outside the directory specified by <em>destinationDirectoryName</em>. (For example, this might happen if the entry name contains parent directory accessors.) </p>\n<p>-or-</p>\n<p>Two or more entries in the archive have the same name.</p>\n"
+  - type: System.UnauthorizedAccessException
+    commentId: T:System.UnauthorizedAccessException
+    description: "\n<p>The caller does not have the required permission to write to the destination directory.</p>\n"
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: "\n<p>\n<em>destinationDirectoryName</em> contains an invalid format.</p>\n"
+  - type: System.IO.InvalidDataException
+    commentId: T:System.IO.InvalidDataException
+    description: "\n<p>An archive entry cannot be found or is corrupt.</p>\n<p>-or-</p>\n<p>An archive entry was compressed by using a compression method that is not supported.</p>\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  nameWithType: ZipFileExtensions.ExtractToDirectory(ZipArchive, String)
+- uid: System.IO.Compression.ZipFileExtensions.ExtractToFile(System.IO.Compression.ZipArchiveEntry,System.String)
+  commentId: M:System.IO.Compression.ZipFileExtensions.ExtractToFile(System.IO.Compression.ZipArchiveEntry,System.String)
+  id: ExtractToFile(System.IO.Compression.ZipArchiveEntry,System.String)
+  isExtensionMethod: true
+  parent: System.IO.Compression.ZipFileExtensions
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.Compression.ZipFileExtensions.ExtractToFile(System.IO.Compression.ZipArchiveEntry, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/System.IO.Compression.ZipFile/ref/System.IO.Compression.ZipFile.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: ExtractToFile
+    path: src/System.IO.Compression.ZipFile/ref/System.IO.Compression.ZipFile.cs
+    startLine: 27
+  assemblies:
+  - System.IO.Compression.ZipFile
+  namespace: System.IO.Compression
+  summary: "\n<p>Extracts an entry in the zip archive to a file.</p>\n"
+  syntax:
+    content: public static void ExtractToFile(this ZipArchiveEntry source, string destinationFileName)
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Sub ExtractToFile(source As ZipArchiveEntry, destinationFileName As String)
+    parameters:
+    - id: source
+      type: System.IO.Compression.ZipArchiveEntry
+      description: "\n<p>The zip archive entry to extract a file from.</p>\n"
+    - id: destinationFileName
+      type: System.String
+      description: "\n<p>The path of the file to create from the contents of the entry. You can  specify either a relative or an absolute path. A relative path is interpreted as relative to the current working directory.</p>\n"
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>\n<em>destinationFileName</em> is a zero-length string, contains only white space, or contains one or more invalid characters as defined by <xref href=\"System.IO.Path.InvalidPathChars\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n<p>-or-</p>\n<p>\n<em>destinationFileName</em> specifies a directory.</p>\n"
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>destinationFileName</em> is <strong>null</strong>. </p>\n"
+  - type: System.IO.PathTooLongException
+    commentId: T:System.IO.PathTooLongException
+    description: "\n<p>The specified path, file name, or both exceed the system-defined maximum length. For example, on Windows-based platforms, paths must not exceed 248 characters, and file names must not exceed 260 characters. </p>\n"
+  - type: System.IO.DirectoryNotFoundException
+    commentId: T:System.IO.DirectoryNotFoundException
+    description: "\n<p>The specified path is invalid (for example, it is on an unmapped drive). </p>\n"
+  - type: System.IO.IOException
+    commentId: T:System.IO.IOException
+    description: "\n<p>\n<em>destinationFileName</em> already exists.</p>\n<p>-or- </p>\n<p>An I/O error occurred.</p>\n<p>-or-</p>\n<p>The entry is currently open for writing.</p>\n<p>-or-</p>\n<p>The entry has been deleted from the archive.</p>\n"
+  - type: System.UnauthorizedAccessException
+    commentId: T:System.UnauthorizedAccessException
+    description: "\n<p>The caller does not have the required permission to create the new file.</p>\n"
+  - type: System.IO.InvalidDataException
+    commentId: T:System.IO.InvalidDataException
+    description: "\n<p>The entry is missing from the archive, or is corrupt and cannot be read.</p>\n<p>-or-</p>\n<p>The entry has been compressed by using a compression method that is not supported.</p>\n"
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>The zip archive that this entry belongs to has been disposed.</p>\n"
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: "\n<p>\n<em>destinationFileName</em> is in an invalid format. </p>\n<p>-or-</p>\n<p>The zip archive for this entry was opened in <xref href=\"System.IO.Compression.ZipArchiveMode.Create\" data-throw-if-not-resolved=\"false\"></xref> mode, which does not permit the retrieval of entries.</p>\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  nameWithType: ZipFileExtensions.ExtractToFile(ZipArchiveEntry, String)
+- uid: System.IO.Compression.ZipFileExtensions.ExtractToFile(System.IO.Compression.ZipArchiveEntry,System.String,System.Boolean)
+  commentId: M:System.IO.Compression.ZipFileExtensions.ExtractToFile(System.IO.Compression.ZipArchiveEntry,System.String,System.Boolean)
+  id: ExtractToFile(System.IO.Compression.ZipArchiveEntry,System.String,System.Boolean)
+  isExtensionMethod: true
+  parent: System.IO.Compression.ZipFileExtensions
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.Compression.ZipFileExtensions.ExtractToFile(System.IO.Compression.ZipArchiveEntry, System.String, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/System.IO.Compression.ZipFile/ref/System.IO.Compression.ZipFile.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: ExtractToFile
+    path: src/System.IO.Compression.ZipFile/ref/System.IO.Compression.ZipFile.cs
+    startLine: 28
+  assemblies:
+  - System.IO.Compression.ZipFile
+  namespace: System.IO.Compression
+  summary: "\n<p>Extracts an entry in the zip archive to a file, and optionally overwrites an existing file that has the same name.</p>\n"
+  syntax:
+    content: public static void ExtractToFile(this ZipArchiveEntry source, string destinationFileName, bool overwrite)
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Sub ExtractToFile(source As ZipArchiveEntry, destinationFileName As String, overwrite As Boolean)
+    parameters:
+    - id: source
+      type: System.IO.Compression.ZipArchiveEntry
+      description: "\n<p>The zip archive entry to extract a file from.</p>\n"
+    - id: destinationFileName
+      type: System.String
+      description: "\n<p>The path of the file to create from the contents of the entry. You can specify either a relative or an absolute path. A relative path is interpreted as relative to the current working directory.</p>\n"
+    - id: overwrite
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> to overwrite an existing file that has the same name as the destination file; otherwise, <strong>false</strong>.</p>\n"
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>\n<em>destinationFileName</em> is a zero-length string, contains only white space, or contains one or more invalid characters as defined by <xref href=\"System.IO.Path.InvalidPathChars\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n<p>-or-</p>\n<p>\n<em>destinationFileName</em> specifies a directory.</p>\n"
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>destinationFileName</em> is <strong>null</strong>. </p>\n"
+  - type: System.IO.PathTooLongException
+    commentId: T:System.IO.PathTooLongException
+    description: "\n<p>The specified path, file name, or both exceed the system-defined maximum length. For example, on Windows-based platforms, paths must not exceed 248 characters, and file names must not exceed 260 characters. </p>\n"
+  - type: System.IO.DirectoryNotFoundException
+    commentId: T:System.IO.DirectoryNotFoundException
+    description: "\n<p>The specified path is invalid (for example, it is on an unmapped drive). </p>\n"
+  - type: System.IO.IOException
+    commentId: T:System.IO.IOException
+    description: "\n<p>\n<em>destinationFileName</em> already exists and <em>overwrite</em> is <strong>false</strong>.</p>\n<p>-or- </p>\n<p>An I/O error occurred.</p>\n<p>-or-</p>\n<p>The entry is currently open for writing.</p>\n<p>-or-</p>\n<p>The entry has been deleted from the archive.</p>\n"
+  - type: System.UnauthorizedAccessException
+    commentId: T:System.UnauthorizedAccessException
+    description: "\n<p>The caller does not have the required permission to create the new file.</p>\n<p></p>\n"
+  - type: System.IO.InvalidDataException
+    commentId: T:System.IO.InvalidDataException
+    description: "\n<p>The entry is missing from the archive or is corrupt and cannot be read.</p>\n<p>-or-</p>\n<p>The entry has been compressed by using a compression method that is not supported.</p>\n"
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>The zip archive that this entry belongs to has been disposed.</p>\n"
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: "\n<p>\n<em>destinationFileName</em> is in an invalid format. </p>\n<p>-or-</p>\n<p>The zip archive for this entry was opened in <xref href=\"System.IO.Compression.ZipArchiveMode.Create\" data-throw-if-not-resolved=\"false\"></xref> mode, which does not permit the retrieval of entries.</p>\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  nameWithType: ZipFileExtensions.ExtractToFile(ZipArchiveEntry, String, Boolean)
+references:
+- uid: System.IO.Compression
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.Compression
+  commentId: N:System.IO.Compression
+  nameWithType: System.IO.Compression
+- uid: System.Object
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Object
+  commentId: T:System.Object
+  nameWithType: Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.ToString
+  nameWithType: Object.ToString()
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.Equals(System.Object)
+  nameWithType: Object.Equals(Object)
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  nameWithType: Object.Equals(Object, Object)
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.GetHashCode
+  nameWithType: Object.GetHashCode()
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.GetType
+  nameWithType: Object.GetType()
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.MemberwiseClone
+  nameWithType: Object.MemberwiseClone()
+- uid: System
+  isExternal: false
+  name: "XXX"
+  fullName: System
+  commentId: N:System
+  nameWithType: System
+- uid: System.IO.Compression.ZipArchive
+  parent: System.IO.Compression
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.Compression.ZipArchive
+  commentId: T:System.IO.Compression.ZipArchive
+  nameWithType: ZipArchive
+- uid: System.String
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.String
+  commentId: T:System.String
+  nameWithType: String
+- uid: System.IO.Compression.ZipArchiveEntry
+  parent: System.IO.Compression
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.Compression.ZipArchiveEntry
+  commentId: T:System.IO.Compression.ZipArchiveEntry
+  nameWithType: ZipArchiveEntry
+- uid: System.IO.Compression.CompressionLevel
+  parent: System.IO.Compression
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.Compression.CompressionLevel
+  commentId: T:System.IO.Compression.CompressionLevel
+  nameWithType: CompressionLevel
+- uid: System.Boolean
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Boolean
+  commentId: T:System.Boolean
+  nameWithType: Boolean
+- uid: System.ArgumentException
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentException
+  nameWithType: ArgumentException
+  commentId: T:System.ArgumentException
+- uid: System.ArgumentNullException
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentNullException
+  nameWithType: ArgumentNullException
+  commentId: T:System.ArgumentNullException
+- uid: System.IO.PathTooLongException
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.PathTooLongException
+  nameWithType: PathTooLongException
+  commentId: T:System.IO.PathTooLongException
+- uid: System.IO.DirectoryNotFoundException
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.DirectoryNotFoundException
+  nameWithType: DirectoryNotFoundException
+  commentId: T:System.IO.DirectoryNotFoundException
+- uid: System.IO.IOException
+  parent: System.IO
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.IOException
+  nameWithType: IOException
+  commentId: T:System.IO.IOException
+- uid: System.UnauthorizedAccessException
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.UnauthorizedAccessException
+  nameWithType: UnauthorizedAccessException
+  commentId: T:System.UnauthorizedAccessException
+- uid: System.IO.FileNotFoundException
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.FileNotFoundException
+  nameWithType: FileNotFoundException
+  commentId: T:System.IO.FileNotFoundException
+- uid: System.NotSupportedException
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.NotSupportedException
+  nameWithType: NotSupportedException
+  commentId: T:System.NotSupportedException
+- uid: System.ObjectDisposedException
+  isExternal: false
+  name: "XXX"
+  fullName: System.ObjectDisposedException
+  nameWithType: ObjectDisposedException
+  commentId: T:System.ObjectDisposedException
+- uid: System.IO.InvalidDataException
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.InvalidDataException
+  nameWithType: InvalidDataException
+  commentId: T:System.IO.InvalidDataException

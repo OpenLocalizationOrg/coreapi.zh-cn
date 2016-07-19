@@ -1,0 +1,813 @@
+items:
+- uid: System.Globalization.IdnMapping
+  commentId: T:System.Globalization.IdnMapping
+  id: IdnMapping
+  parent: System.Globalization
+  children:
+  - System.Globalization.IdnMapping.#ctor
+  - System.Globalization.IdnMapping.AllowUnassigned
+  - System.Globalization.IdnMapping.Equals(System.Object)
+  - System.Globalization.IdnMapping.GetAscii(System.String)
+  - System.Globalization.IdnMapping.GetAscii(System.String,System.Int32)
+  - System.Globalization.IdnMapping.GetAscii(System.String,System.Int32,System.Int32)
+  - System.Globalization.IdnMapping.GetHashCode
+  - System.Globalization.IdnMapping.GetUnicode(System.String)
+  - System.Globalization.IdnMapping.GetUnicode(System.String,System.Int32)
+  - System.Globalization.IdnMapping.GetUnicode(System.String,System.Int32,System.Int32)
+  - System.Globalization.IdnMapping.UseStd3AsciiRules
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Globalization.IdnMapping
+  type: Class
+  source:
+    remote:
+      path: src/mscorlib/src/System/Globalization/IdnMapping.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: IdnMapping
+    path: src/mscorlib/src/System/Globalization/IdnMapping.cs
+    startLine: 71
+  assemblies:
+  - System.Globalization.Extensions
+  namespace: System.Globalization
+  summary: "\n<p>Supports the use of non-ASCII characters for Internet domain names. This class cannot be inherited.</p>\n"
+  syntax:
+    content: public sealed class IdnMapping
+    content.vb: Public NotInheritable Class IdnMapping
+  seealso:
+  - type: System.String.Normalize
+    commentId: Overload:System.String.Normalize
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+  nameWithType: IdnMapping
+- uid: System.Globalization.IdnMapping.#ctor
+  commentId: M:System.Globalization.IdnMapping.#ctor
+  id: '#ctor'
+  parent: System.Globalization.IdnMapping
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Globalization.IdnMapping.IdnMapping()
+  type: Constructor
+  source:
+    remote:
+      path: src/mscorlib/src/System/Globalization/IdnMapping.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: .ctor
+    path: src/mscorlib/src/System/Globalization/IdnMapping.cs
+    startLine: 89
+  assemblies:
+  - System.Globalization.Extensions
+  namespace: System.Globalization
+  summary: "\n<p>Initializes a new instance of the <xref href=\"System.Globalization.IdnMapping\" data-throw-if-not-resolved=\"false\"></xref> class. </p>\n"
+  syntax:
+    content: public IdnMapping()
+    content.vb: Public Sub New
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: IdnMapping.IdnMapping()
+- uid: System.Globalization.IdnMapping.AllowUnassigned
+  commentId: P:System.Globalization.IdnMapping.AllowUnassigned
+  id: AllowUnassigned
+  parent: System.Globalization.IdnMapping
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Globalization.IdnMapping.AllowUnassigned
+  type: Property
+  source:
+    remote:
+      path: src/mscorlib/src/System/Globalization/IdnMapping.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: AllowUnassigned
+    path: src/mscorlib/src/System/Globalization/IdnMapping.cs
+    startLine: 93
+  assemblies:
+  - System.Globalization.Extensions
+  namespace: System.Globalization
+  summary: "\n<p>Gets or sets a value that indicates whether unassigned Unicode code points are used in operations performed by members of the current <xref href=\"System.Globalization.IdnMapping\" data-throw-if-not-resolved=\"false\"></xref> object.</p>\n"
+  syntax:
+    content: public bool AllowUnassigned { get; set; }
+    content.vb: Public Property AllowUnassigned As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if unassigned code points are used in operations; otherwise, <strong>false</strong>.</p>\n"
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  nameWithType: IdnMapping.AllowUnassigned
+- uid: System.Globalization.IdnMapping.UseStd3AsciiRules
+  commentId: P:System.Globalization.IdnMapping.UseStd3AsciiRules
+  id: UseStd3AsciiRules
+  parent: System.Globalization.IdnMapping
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Globalization.IdnMapping.UseStd3AsciiRules
+  type: Property
+  source:
+    remote:
+      path: src/mscorlib/src/System/Globalization/IdnMapping.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: UseStd3AsciiRules
+    path: src/mscorlib/src/System/Globalization/IdnMapping.cs
+    startLine: 106
+  assemblies:
+  - System.Globalization.Extensions
+  namespace: System.Globalization
+  summary: "\n<p>Gets or sets a value that indicates whether standard or relaxed naming conventions are used in operations performed by members of the current <xref href=\"System.Globalization.IdnMapping\" data-throw-if-not-resolved=\"false\"></xref> object.</p>\n"
+  syntax:
+    content: public bool UseStd3AsciiRules { get; set; }
+    content.vb: Public Property UseStd3AsciiRules As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if standard naming conventions are used in operations; otherwise, <strong>false</strong>.</p>\n"
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  nameWithType: IdnMapping.UseStd3AsciiRules
+- uid: System.Globalization.IdnMapping.Equals(System.Object)
+  commentId: M:System.Globalization.IdnMapping.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: System.Globalization.IdnMapping
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Globalization.IdnMapping.Equals(System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Globalization/IdnMapping.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Equals
+    path: src/mscorlib/src/System/Globalization/IdnMapping.cs
+    startLine: 331
+  assemblies:
+  - System.Globalization.Extensions
+  namespace: System.Globalization
+  summary: "\n<p>Indicates whether a specified object and the current <xref href=\"System.Globalization.IdnMapping\" data-throw-if-not-resolved=\"false\"></xref> object are equal.</p>\n"
+  syntax:
+    content: public override bool Equals(object obj)
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+    parameters:
+    - id: obj
+      type: System.Object
+      description: "\n<p>The object to compare to the current object.</p>\n"
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if the object specified by the <em>obj</em> parameter is derived from <xref href=\"System.Globalization.IdnMapping\" data-throw-if-not-resolved=\"false\"></xref> and its <xref href=\"System.Globalization.IdnMapping.AllowUnassigned\" data-throw-if-not-resolved=\"false\"></xref> and <xref href=\"System.Globalization.IdnMapping.UseStd3AsciiRules\" data-throw-if-not-resolved=\"false\"></xref> properties are equal; otherwise, <strong>false</strong>. </p>\n"
+  overridden: System.Object.Equals(System.Object)
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  nameWithType: IdnMapping.Equals(Object)
+- uid: System.Globalization.IdnMapping.GetAscii(System.String)
+  commentId: M:System.Globalization.IdnMapping.GetAscii(System.String)
+  id: GetAscii(System.String)
+  parent: System.Globalization.IdnMapping
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Globalization.IdnMapping.GetAscii(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Globalization/IdnMapping.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: GetAscii
+    path: src/mscorlib/src/System/Globalization/IdnMapping.cs
+    startLine: 120
+  assemblies:
+  - System.Globalization.Extensions
+  namespace: System.Globalization
+  summary: "\n<p>Encodes a string of domain name labels that consist of Unicode characters to a string of displayable Unicode characters in the US-ASCII character range. The string is formatted according to the IDNA standard.</p>\n"
+  syntax:
+    content: public string GetAscii(string unicode)
+    content.vb: Public Function GetAscii(unicode As String) As String
+    parameters:
+    - id: unicode
+      type: System.String
+      description: "\n<p>The string to convert, which consists of one or more domain name labels delimited with label separators.</p>\n"
+    return:
+      type: System.String
+      description: "\n<p>The equivalent of the string specified by the <em>unicode</em> parameter, consisting of displayable Unicode characters in the US-ASCII character range (U+0020 to U+007E) and formatted according to the IDNA standard.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>unicode</em> is <strong>null</strong>.</p>\n"
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>\n<em>unicode</em> is invalid based on the <xref href=\"System.Globalization.IdnMapping.AllowUnassigned\" data-throw-if-not-resolved=\"false\"></xref> and <xref href=\"System.Globalization.IdnMapping.UseStd3AsciiRules\" data-throw-if-not-resolved=\"false\"></xref> properties, and the IDNA standard.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: IdnMapping.GetAscii(String)
+- uid: System.Globalization.IdnMapping.GetAscii(System.String,System.Int32)
+  commentId: M:System.Globalization.IdnMapping.GetAscii(System.String,System.Int32)
+  id: GetAscii(System.String,System.Int32)
+  parent: System.Globalization.IdnMapping
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Globalization.IdnMapping.GetAscii(System.String, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Globalization/IdnMapping.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: GetAscii
+    path: src/mscorlib/src/System/Globalization/IdnMapping.cs
+    startLine: 125
+  assemblies:
+  - System.Globalization.Extensions
+  namespace: System.Globalization
+  summary: "\n<p>Encodes a substring of domain name labels that include Unicode characters outside the US-ASCII character range. The substring is converted to a string of displayable Unicode characters in the US-ASCII character range and is formatted according to the IDNA standard.  </p>\n"
+  syntax:
+    content: public string GetAscii(string unicode, int index)
+    content.vb: Public Function GetAscii(unicode As String, index As Integer) As String
+    parameters:
+    - id: unicode
+      type: System.String
+      description: "\n<p>The string to convert, which consists of one or more domain name labels delimited with label separators.</p>\n"
+    - id: index
+      type: System.Int32
+      description: "\n<p>A zero-based offset into <em>unicode</em> that specifies the start of the substring to convert. The conversion operation continues to the end of the <em>unicode</em> string.</p>\n"
+    return:
+      type: System.String
+      description: "\n<p>The equivalent of the substring specified by the <em>unicode</em> and <em>index</em> parameters, consisting of displayable Unicode characters in the US-ASCII character range (U+0020 to U+007E) and formatted according to the IDNA standard.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>unicode</em> is <strong>null</strong>.</p>\n"
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>index</em> is less than zero.</p>\n<p>-or-</p>\n<p>\n<em>index</em> is greater than the length of <em>unicode</em>.</p>\n"
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>\n<em>unicode</em> is invalid based on the <xref href=\"System.Globalization.IdnMapping.AllowUnassigned\" data-throw-if-not-resolved=\"false\"></xref> and <xref href=\"System.Globalization.IdnMapping.UseStd3AsciiRules\" data-throw-if-not-resolved=\"false\"></xref> properties, and the IDNA standard.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: IdnMapping.GetAscii(String, Int32)
+- uid: System.Globalization.IdnMapping.GetAscii(System.String,System.Int32,System.Int32)
+  commentId: M:System.Globalization.IdnMapping.GetAscii(System.String,System.Int32,System.Int32)
+  id: GetAscii(System.String,System.Int32,System.Int32)
+  parent: System.Globalization.IdnMapping
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Globalization.IdnMapping.GetAscii(System.String, System.Int32, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Globalization/IdnMapping.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: GetAscii
+    path: src/mscorlib/src/System/Globalization/IdnMapping.cs
+    startLine: 132
+  assemblies:
+  - System.Globalization.Extensions
+  namespace: System.Globalization
+  summary: "\n<p>Encodes the specified number of characters in a  substring of domain name labels that include Unicode characters outside the US-ASCII character range. The substring is converted to a string of displayable Unicode characters in the US-ASCII character range and is formatted according to the IDNA standard. </p>\n"
+  syntax:
+    content: public string GetAscii(string unicode, int index, int count)
+    content.vb: Public Function GetAscii(unicode As String, index As Integer, count As Integer) As String
+    parameters:
+    - id: unicode
+      type: System.String
+      description: "\n<p>The string to convert, which consists of one or more domain name labels delimited with label separators.</p>\n"
+    - id: index
+      type: System.Int32
+      description: "\n<p>A zero-based offset into <em>unicode</em> that specifies the start of the substring.</p>\n"
+    - id: count
+      type: System.Int32
+      description: "\n<p>The number of characters to convert in the substring that starts at the position specified by  <em>index</em> in the <em>unicode</em> string. </p>\n"
+    return:
+      type: System.String
+      description: "\n<p>The equivalent of the substring specified by the <em>unicode</em>, <em>index</em>, and <em>count</em> parameters, consisting of displayable Unicode characters in the US-ASCII character range (U+0020 to U+007E) and formatted according to the IDNA standard.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>unicode</em> is <strong>null</strong>.</p>\n"
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>index</em> or <em>count</em> is less than zero.</p>\n<p>-or-</p>\n<p>\n<em>index</em> is greater than the length of <em>unicode</em>.</p>\n<p>-or-</p>\n<p>\n<em>index</em> is greater than the length of <em>unicode</em> minus <em>count</em>.</p>\n"
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>\n<em>unicode</em> is invalid based on the <xref href=\"System.Globalization.IdnMapping.AllowUnassigned\" data-throw-if-not-resolved=\"false\"></xref> and <xref href=\"System.Globalization.IdnMapping.UseStd3AsciiRules\" data-throw-if-not-resolved=\"false\"></xref> properties, and the IDNA standard.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: IdnMapping.GetAscii(String, Int32, Int32)
+- uid: System.Globalization.IdnMapping.GetHashCode
+  commentId: M:System.Globalization.IdnMapping.GetHashCode
+  id: GetHashCode
+  parent: System.Globalization.IdnMapping
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Globalization.IdnMapping.GetHashCode()
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Globalization/IdnMapping.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: GetHashCode
+    path: src/mscorlib/src/System/Globalization/IdnMapping.cs
+    startLine: 344
+  assemblies:
+  - System.Globalization.Extensions
+  namespace: System.Globalization
+  summary: "\n<p>Returns a hash code for this <xref href=\"System.Globalization.IdnMapping\" data-throw-if-not-resolved=\"false\"></xref> object.</p>\n"
+  syntax:
+    content: public override int GetHashCode()
+    content.vb: Public Overrides Function GetHashCode As Integer
+    return:
+      type: System.Int32
+      description: "\n<p>One of four 32-bit signed constants derived from the properties of an <xref href=\"System.Globalization.IdnMapping\" data-throw-if-not-resolved=\"false\"></xref> object.  The return value has no special meaning and is not suitable for use in a hash code algorithm.</p>\n"
+  overridden: System.Object.GetHashCode
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  nameWithType: IdnMapping.GetHashCode()
+- uid: System.Globalization.IdnMapping.GetUnicode(System.String)
+  commentId: M:System.Globalization.IdnMapping.GetUnicode(System.String)
+  id: GetUnicode(System.String)
+  parent: System.Globalization.IdnMapping
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Globalization.IdnMapping.GetUnicode(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Globalization/IdnMapping.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: GetUnicode
+    path: src/mscorlib/src/System/Globalization/IdnMapping.cs
+    startLine: 243
+  assemblies:
+  - System.Globalization.Extensions
+  namespace: System.Globalization
+  summary: "\n<p>Decodes a string of one or more domain name labels, encoded according to the IDNA standard, to a string of Unicode characters. </p>\n"
+  syntax:
+    content: public string GetUnicode(string ascii)
+    content.vb: Public Function GetUnicode(ascii As String) As String
+    parameters:
+    - id: ascii
+      type: System.String
+      description: "\n<p>The string to decode, which consists of one or more labels in the US-ASCII character range (U+0020 to U+007E) encoded according to the IDNA standard. </p>\n"
+    return:
+      type: System.String
+      description: "\n<p>The Unicode equivalent of the IDNA substring specified by the <em>ascii</em> parameter.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>ascii</em> is <strong>null</strong>.</p>\n"
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>\n<em>ascii</em> is invalid based on the <xref href=\"System.Globalization.IdnMapping.AllowUnassigned\" data-throw-if-not-resolved=\"false\"></xref> and <xref href=\"System.Globalization.IdnMapping.UseStd3AsciiRules\" data-throw-if-not-resolved=\"false\"></xref> properties, and the IDNA standard.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: IdnMapping.GetUnicode(String)
+- uid: System.Globalization.IdnMapping.GetUnicode(System.String,System.Int32)
+  commentId: M:System.Globalization.IdnMapping.GetUnicode(System.String,System.Int32)
+  id: GetUnicode(System.String,System.Int32)
+  parent: System.Globalization.IdnMapping
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Globalization.IdnMapping.GetUnicode(System.String, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Globalization/IdnMapping.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: GetUnicode
+    path: src/mscorlib/src/System/Globalization/IdnMapping.cs
+    startLine: 248
+  assemblies:
+  - System.Globalization.Extensions
+  namespace: System.Globalization
+  summary: "\n<p>Decodes a substring of one or more domain name labels, encoded according to the IDNA standard, to a string of Unicode characters. </p>\n"
+  syntax:
+    content: public string GetUnicode(string ascii, int index)
+    content.vb: Public Function GetUnicode(ascii As String, index As Integer) As String
+    parameters:
+    - id: ascii
+      type: System.String
+      description: "\n<p>The string to decode, which consists of one or more labels in the US-ASCII character range (U+0020 to U+007E) encoded according to the IDNA standard. </p>\n"
+    - id: index
+      type: System.Int32
+      description: "\n<p>A zero-based offset into <em>ascii</em> that specifies the start of the substring to decode. The decoding operation continues to the end of the <em>ascii</em> string.</p>\n"
+    return:
+      type: System.String
+      description: "\n<p>The Unicode equivalent of the IDNA substring specified by the <em>ascii</em> and <em>index</em> parameters.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>ascii</em> is <strong>null</strong>.</p>\n"
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>index</em> is less than zero.</p>\n<p>-or-</p>\n<p>\n<em>index</em> is greater than the length of <em>ascii</em>.</p>\n"
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>\n<em>ascii</em> is invalid based on the <xref href=\"System.Globalization.IdnMapping.AllowUnassigned\" data-throw-if-not-resolved=\"false\"></xref> and <xref href=\"System.Globalization.IdnMapping.UseStd3AsciiRules\" data-throw-if-not-resolved=\"false\"></xref> properties, and the IDNA standard.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: IdnMapping.GetUnicode(String, Int32)
+- uid: System.Globalization.IdnMapping.GetUnicode(System.String,System.Int32,System.Int32)
+  commentId: M:System.Globalization.IdnMapping.GetUnicode(System.String,System.Int32,System.Int32)
+  id: GetUnicode(System.String,System.Int32,System.Int32)
+  parent: System.Globalization.IdnMapping
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Globalization.IdnMapping.GetUnicode(System.String, System.Int32, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Globalization/IdnMapping.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: GetUnicode
+    path: src/mscorlib/src/System/Globalization/IdnMapping.cs
+    startLine: 255
+  assemblies:
+  - System.Globalization.Extensions
+  namespace: System.Globalization
+  summary: "\n<p>Decodes a substring of a specified length that contains one or more domain name labels, encoded according to the IDNA standard, to a string of Unicode characters. </p>\n"
+  syntax:
+    content: public string GetUnicode(string ascii, int index, int count)
+    content.vb: Public Function GetUnicode(ascii As String, index As Integer, count As Integer) As String
+    parameters:
+    - id: ascii
+      type: System.String
+      description: "\n<p>The string to decode, which consists of one or more labels in the US-ASCII character range (U+0020 to U+007E) encoded according to the IDNA standard. </p>\n"
+    - id: index
+      type: System.Int32
+      description: "\n<p>A zero-based offset into <em>ascii</em> that specifies the start of the substring. </p>\n"
+    - id: count
+      type: System.Int32
+      description: "\n<p>The number of characters to convert in the substring that starts at the position specified by <em>index</em> in the <em>ascii</em> string. </p>\n"
+    return:
+      type: System.String
+      description: "\n<p>The Unicode equivalent of the IDNA substring specified by the <em>ascii</em>, <em>index</em>, and <em>count</em> parameters.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>ascii</em> is <strong>null</strong>.</p>\n"
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>index</em> or <em>count</em> is less than zero.</p>\n<p>-or-</p>\n<p>\n<em>index</em> is greater than the length of <em>ascii</em>.</p>\n<p>-or-</p>\n<p>\n<em>index</em> is greater than the length of <em>ascii</em> minus <em>count</em>.</p>\n"
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>\n<em>ascii</em> is invalid based on the <xref href=\"System.Globalization.IdnMapping.AllowUnassigned\" data-throw-if-not-resolved=\"false\"></xref> and <xref href=\"System.Globalization.IdnMapping.UseStd3AsciiRules\" data-throw-if-not-resolved=\"false\"></xref> properties, and the IDNA standard.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: IdnMapping.GetUnicode(String, Int32, Int32)
+references:
+- uid: System.Globalization
+  isExternal: false
+  name: "XXX"
+  fullName: System.Globalization
+  nameWithType: System.Globalization
+  commentId: N:System.Globalization
+- uid: System.Object
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Object
+  nameWithType: Object
+  commentId: T:System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.ToString()
+  commentId: M:System.Object.ToString
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.Equals(Object, Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.GetType()
+  commentId: M:System.Object.GetType
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.MemberwiseClone()
+  commentId: M:System.Object.MemberwiseClone
+- uid: System
+  isExternal: false
+  name: "XXX"
+  fullName: System
+  nameWithType: System
+  commentId: N:System
+- uid: System.Boolean
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Boolean
+  nameWithType: Boolean
+  commentId: T:System.Boolean
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.Equals(Object)
+  commentId: M:System.Object.Equals(System.Object)
+- uid: System.String
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.String
+  nameWithType: String
+  commentId: T:System.String
+- uid: System.Int32
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Int32
+  nameWithType: Int32
+  commentId: T:System.Int32
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.GetHashCode()
+  commentId: M:System.Object.GetHashCode
+- uid: System.ArgumentNullException
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentNullException
+  nameWithType: ArgumentNullException
+  commentId: T:System.ArgumentNullException
+- uid: System.ArgumentException
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentException
+  nameWithType: ArgumentException
+  commentId: T:System.ArgumentException
+- uid: System.ArgumentOutOfRangeException
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentOutOfRangeException
+  nameWithType: ArgumentOutOfRangeException
+  commentId: T:System.ArgumentOutOfRangeException

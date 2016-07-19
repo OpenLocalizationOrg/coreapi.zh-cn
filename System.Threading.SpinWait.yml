@@ -1,0 +1,656 @@
+items:
+- uid: System.Threading.SpinWait
+  commentId: T:System.Threading.SpinWait
+  id: SpinWait
+  parent: System.Threading
+  children:
+  - System.Threading.SpinWait.Count
+  - System.Threading.SpinWait.NextSpinWillYield
+  - System.Threading.SpinWait.Reset
+  - System.Threading.SpinWait.SpinOnce
+  - System.Threading.SpinWait.SpinUntil(System.Func{System.Boolean})
+  - System.Threading.SpinWait.SpinUntil(System.Func{System.Boolean},System.Int32)
+  - System.Threading.SpinWait.SpinUntil(System.Func{System.Boolean},System.TimeSpan)
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.SpinWait
+  type: Struct
+  source:
+    remote:
+      path: src/mscorlib/src/System/Threading/SpinWait.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: SpinWait
+    path: src/mscorlib/src/System/Threading/SpinWait.cs
+    startLine: 71
+  assemblies:
+  - System.Threading
+  namespace: System.Threading
+  summary: "\n<p>Provides support for spin-based waiting.</p>\n"
+  syntax:
+    content: >-
+      [HostProtection(Synchronization = true, ExternalThreading = true)]
+
+      public struct SpinWait
+    content.vb: >-
+      <HostProtection(Synchronization:=True, ExternalThreading:=True)>
+
+      Public Structure SpinWait
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+  attributes:
+  - type: System.Runtime.InteropServices.StructLayoutAttribute
+    ctor: System.Runtime.InteropServices.StructLayoutAttribute.#ctor(System.Runtime.InteropServices.LayoutKind)
+    arguments:
+    - type: System.Runtime.InteropServices.LayoutKind
+      value: 0
+  modifiers.csharp:
+  - public
+  - struct
+  modifiers.vb:
+  - Public
+  - Structure
+  nameWithType: SpinWait
+- uid: System.Threading.SpinWait.Count
+  commentId: P:System.Threading.SpinWait.Count
+  id: Count
+  parent: System.Threading.SpinWait
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.SpinWait.Count
+  type: Property
+  source:
+    remote:
+      path: src/mscorlib/src/System/Threading/SpinWait.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Count
+    path: src/mscorlib/src/System/Threading/SpinWait.cs
+    startLine: 89
+  assemblies:
+  - System.Threading
+  namespace: System.Threading
+  summary: "\n<p>Gets the number of times <xref href=\"System.Threading.SpinWait.SpinOnce\" data-throw-if-not-resolved=\"false\"></xref> has been called on this instance.</p>\n"
+  syntax:
+    content: public int Count { get; }
+    content.vb: Public ReadOnly Property Count As Integer
+    parameters: []
+    return:
+      type: System.Int32
+      description: "\n<p>Returns an integer that represents the number of times <xref href=\"System.Threading.SpinWait.SpinOnce\" data-throw-if-not-resolved=\"false\"></xref> has been called on this instance.</p>\n"
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  nameWithType: SpinWait.Count
+- uid: System.Threading.SpinWait.NextSpinWillYield
+  commentId: P:System.Threading.SpinWait.NextSpinWillYield
+  id: NextSpinWillYield
+  parent: System.Threading.SpinWait
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.SpinWait.NextSpinWillYield
+  type: Property
+  source:
+    remote:
+      path: src/mscorlib/src/System/Threading/SpinWait.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: NextSpinWillYield
+    path: src/mscorlib/src/System/Threading/SpinWait.cs
+    startLine: 104
+  assemblies:
+  - System.Threading
+  namespace: System.Threading
+  summary: "\n<p>Gets whether the next call to <xref href=\"System.Threading.SpinWait.SpinOnce\" data-throw-if-not-resolved=\"false\"></xref> will yield the processor, triggering a forced context switch.</p>\n"
+  syntax:
+    content: public bool NextSpinWillYield { get; }
+    content.vb: Public ReadOnly Property NextSpinWillYield As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: "\n<p>Whether the next call to <xref href=\"System.Threading.SpinWait.SpinOnce\" data-throw-if-not-resolved=\"false\"></xref> will yield the processor, triggering a forced context switch.</p>\n"
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  nameWithType: SpinWait.NextSpinWillYield
+- uid: System.Threading.SpinWait.Reset
+  commentId: M:System.Threading.SpinWait.Reset
+  id: Reset
+  parent: System.Threading.SpinWait
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.SpinWait.Reset()
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Threading/SpinWait.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Reset
+    path: src/mscorlib/src/System/Threading/SpinWait.cs
+    startLine: 181
+  assemblies:
+  - System.Threading
+  namespace: System.Threading
+  summary: "\n<p>Resets the spin counter.</p>\n"
+  syntax:
+    content: public void Reset()
+    content.vb: Public Sub Reset
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: SpinWait.Reset()
+- uid: System.Threading.SpinWait.SpinOnce
+  commentId: M:System.Threading.SpinWait.SpinOnce
+  id: SpinOnce
+  parent: System.Threading.SpinWait
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.SpinWait.SpinOnce()
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Threading/SpinWait.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: SpinOnce
+    path: src/mscorlib/src/System/Threading/SpinWait.cs
+    startLine: 116
+  assemblies:
+  - System.Threading
+  namespace: System.Threading
+  summary: "\n<p>Performs a single spin.</p>\n"
+  syntax:
+    content: public void SpinOnce()
+    content.vb: Public Sub SpinOnce
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: SpinWait.SpinOnce()
+- uid: System.Threading.SpinWait.SpinUntil(System.Func{System.Boolean})
+  commentId: M:System.Threading.SpinWait.SpinUntil(System.Func{System.Boolean})
+  id: SpinUntil(System.Func{System.Boolean})
+  parent: System.Threading.SpinWait
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.SpinWait.SpinUntil(System.Func<System.Boolean>)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Threading/SpinWait.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: SpinUntil
+    path: src/mscorlib/src/System/Threading/SpinWait.cs
+    startLine: 192
+  assemblies:
+  - System.Threading
+  namespace: System.Threading
+  summary: "\n<p>Spins until the specified condition is satisfied.</p>\n"
+  syntax:
+    content: public static void SpinUntil(Func<bool> condition)
+    content.vb: Public Shared Sub SpinUntil(condition As Func(Of Boolean))
+    parameters:
+    - id: condition
+      type: System.Func{System.Boolean}
+      description: "\n<p>A delegate to be executed over and over until it returns true.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>The <em>condition</em> argument is null.</p>\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: System.Threading.SpinWait.SpinUntil(System.Func(Of System.Boolean))
+  name.vb: SpinUntil(Func(Of Boolean))
+  nameWithType: SpinWait.SpinUntil(Func<Boolean>)
+  nameWithType.vb: SpinWait.SpinUntil(Func(Of Boolean))
+- uid: System.Threading.SpinWait.SpinUntil(System.Func{System.Boolean},System.Int32)
+  commentId: M:System.Threading.SpinWait.SpinUntil(System.Func{System.Boolean},System.Int32)
+  id: SpinUntil(System.Func{System.Boolean},System.Int32)
+  parent: System.Threading.SpinWait
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.SpinWait.SpinUntil(System.Func<System.Boolean>, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Threading/SpinWait.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: SpinUntil
+    path: src/mscorlib/src/System/Threading/SpinWait.cs
+    startLine: 239
+  assemblies:
+  - System.Threading
+  namespace: System.Threading
+  summary: "\n<p>Spins until the specified condition is satisfied or until the specified timeout is expired.</p>\n"
+  syntax:
+    content: public static bool SpinUntil(Func<bool> condition, int millisecondsTimeout)
+    content.vb: Public Shared Function SpinUntil(condition As Func(Of Boolean), millisecondsTimeout As Integer) As Boolean
+    parameters:
+    - id: condition
+      type: System.Func{System.Boolean}
+      description: "\n<p>A delegate to be executed over and over until it returns true.</p>\n"
+    - id: millisecondsTimeout
+      type: System.Int32
+      description: "\n<p>The number of milliseconds to wait, or <xref href=\"System.Threading.Timeout.Infinite\" data-throw-if-not-resolved=\"false\"></xref> (-1) to wait indefinitely.</p>\n"
+    return:
+      type: System.Boolean
+      description: "\n<p>True if the condition is satisfied within the timeout; otherwise, false</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>The <em>condition</em> argument is null.</p>\n"
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>millisecondsTimeout</em> is a negative number other than -1, which represents an infinite time-out.</p>\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: System.Threading.SpinWait.SpinUntil(System.Func(Of System.Boolean), System.Int32)
+  name.vb: SpinUntil(Func(Of Boolean), Int32)
+  nameWithType: SpinWait.SpinUntil(Func<Boolean>, Int32)
+  nameWithType.vb: SpinWait.SpinUntil(Func(Of Boolean), Int32)
+- uid: System.Threading.SpinWait.SpinUntil(System.Func{System.Boolean},System.TimeSpan)
+  commentId: M:System.Threading.SpinWait.SpinUntil(System.Func{System.Boolean},System.TimeSpan)
+  id: SpinUntil(System.Func{System.Boolean},System.TimeSpan)
+  parent: System.Threading.SpinWait
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.SpinWait.SpinUntil(System.Func<System.Boolean>, System.TimeSpan)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Threading/SpinWait.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: SpinUntil
+    path: src/mscorlib/src/System/Threading/SpinWait.cs
+    startLine: 215
+  assemblies:
+  - System.Threading
+  namespace: System.Threading
+  summary: "\n<p>Spins until the specified condition is satisfied or until the specified timeout is expired.</p>\n"
+  syntax:
+    content: public static bool SpinUntil(Func<bool> condition, TimeSpan timeout)
+    content.vb: Public Shared Function SpinUntil(condition As Func(Of Boolean), timeout As TimeSpan) As Boolean
+    parameters:
+    - id: condition
+      type: System.Func{System.Boolean}
+      description: "\n<p>A delegate to be executed over and over until it returns true.</p>\n"
+    - id: timeout
+      type: System.TimeSpan
+      description: "\n<p>A <xref href=\"System.TimeSpan\" data-throw-if-not-resolved=\"false\"></xref> that represents the number of milliseconds to wait, or a TimeSpan that represents -1 milliseconds to wait indefinitely.</p>\n"
+    return:
+      type: System.Boolean
+      description: "\n<p>True if the condition is satisfied within the timeout; otherwise, false</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>The <em>condition</em> argument is null.</p>\n"
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>timeout</em> is a negative number other than -1 milliseconds, which represents an infinite time-out -or- timeout is greater than <xref href=\"System.Int32.MaxValue\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: System.Threading.SpinWait.SpinUntil(System.Func(Of System.Boolean), System.TimeSpan)
+  name.vb: SpinUntil(Func(Of Boolean), TimeSpan)
+  nameWithType: SpinWait.SpinUntil(Func<Boolean>, TimeSpan)
+  nameWithType.vb: SpinWait.SpinUntil(Func(Of Boolean), TimeSpan)
+references:
+- uid: System.Threading
+  isExternal: false
+  name: "XXX"
+  fullName: System.Threading
+  nameWithType: System.Threading
+  commentId: N:System.Threading
+- uid: System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  name: "XXX"
+  fullName: System.ValueType.Equals(System.Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: "XXX"
+    fullName: System.ValueType.Equals
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: "XXX"
+    fullName: System.ValueType.Equals
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: ValueType.Equals(Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+- uid: System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: false
+  name: "XXX"
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: "XXX"
+    fullName: System.ValueType.GetHashCode
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: "XXX"
+    fullName: System.ValueType.GetHashCode
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: ValueType.GetHashCode()
+  commentId: M:System.ValueType.GetHashCode
+- uid: System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: false
+  name: "XXX"
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: "XXX"
+    fullName: System.ValueType.ToString
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: "XXX"
+    fullName: System.ValueType.ToString
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: ValueType.ToString()
+  commentId: M:System.ValueType.ToString
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.Equals(Object, Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.GetType()
+  commentId: M:System.Object.GetType
+- uid: System.ValueType
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.ValueType
+  nameWithType: ValueType
+  commentId: T:System.ValueType
+- uid: System.Object
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Object
+  nameWithType: Object
+  commentId: T:System.Object
+- uid: System
+  isExternal: false
+  name: "XXX"
+  fullName: System
+  nameWithType: System
+  commentId: N:System
+- uid: System.Int32
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Int32
+  nameWithType: Int32
+  commentId: T:System.Int32
+- uid: System.Boolean
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Boolean
+  nameWithType: Boolean
+  commentId: T:System.Boolean
+- uid: System.Func{System.Boolean}
+  parent: System
+  definition: System.Func`1
+  name: "XXX"
+  fullName: System.Func<System.Boolean>
+  fullname.vb: System.Func(Of System.Boolean)
+  name.vb: Func(Of Boolean)
+  spec.csharp:
+  - uid: System.Func`1
+    name: "XXX"
+    fullName: System.Func
+    isExternal: true
+  - name: "<"
+    fullName: <
+  - uid: System.Boolean
+    name: "XXX"
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`1
+    name: "XXX"
+    fullName: System.Func
+    isExternal: true
+  - name: 'XXX '
+    fullName: '(Of '
+  - uid: System.Boolean
+    name: "XXX"
+    fullName: System.Boolean
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Func<Boolean>
+  nameWithType.vb: Func(Of Boolean)
+  commentId: T:System.Func{System.Boolean}
+- uid: System.Func`1
+  isExternal: false
+  name: "XXX"
+  fullName: System.Func<TResult>
+  fullname.vb: System.Func(Of TResult)
+  name.vb: Func(Of TResult)
+  spec.csharp:
+  - uid: System.Func`1
+    name: "XXX"
+    fullName: System.Func
+  - name: "<"
+    fullName: <
+  - name: "XXX"
+    fullName: TResult
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`1
+    name: "XXX"
+    fullName: System.Func
+  - name: 'XXX '
+    fullName: '(Of '
+  - name: "XXX"
+    fullName: TResult
+  - name: "XXX"
+    fullName: )
+  nameWithType: Func<TResult>
+  nameWithType.vb: Func(Of TResult)
+  commentId: T:System.Func`1
+- uid: System.TimeSpan
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.TimeSpan
+  nameWithType: TimeSpan
+  commentId: T:System.TimeSpan
+- uid: System.ArgumentNullException
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentNullException
+  nameWithType: ArgumentNullException
+  commentId: T:System.ArgumentNullException
+- uid: System.ArgumentOutOfRangeException
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentOutOfRangeException
+  nameWithType: ArgumentOutOfRangeException
+  commentId: T:System.ArgumentOutOfRangeException

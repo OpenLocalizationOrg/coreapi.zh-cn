@@ -1,0 +1,279 @@
+items:
+- uid: System.IO.FileShare
+  commentId: T:System.IO.FileShare
+  id: FileShare
+  parent: System.IO
+  children:
+  - System.IO.FileShare.Delete
+  - System.IO.FileShare.Inheritable
+  - System.IO.FileShare.None
+  - System.IO.FileShare.Read
+  - System.IO.FileShare.ReadWrite
+  - System.IO.FileShare.Write
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.FileShare
+  type: Enum
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/FileShare.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: FileShare
+    path: src/mscorlib/src/System/IO/FileShare.cs
+    startLine: 28
+  assemblies:
+  - System.IO.FileSystem.Primitives
+  namespace: System.IO
+  summary: "\n<p>Contains constants for controlling the kind of access other <xref href=\"System.IO.FileStream\" data-throw-if-not-resolved=\"false\"></xref> objects can have to the same file.</p>\n"
+  syntax:
+    content: >-
+      [Serializable]
+
+      [Flags]
+
+      [ComVisible(true)]
+
+      public enum FileShare
+    content.vb: >-
+      <Serializable>
+
+      <Flags>
+
+      <ComVisible(True)>
+
+      Public Enum FileShare
+  seealso:
+  - type: System.IO.File.Open(System.String,System.IO.FileMode)
+    commentId: M:System.IO.File.Open(System.String,System.IO.FileMode)
+  - type: System.IO.FileInfo.Open(System.IO.FileMode)
+    commentId: M:System.IO.FileInfo.Open(System.IO.FileMode)
+  - type: System.IO.FileStream
+    commentId: T:System.IO.FileStream
+  - type: System.IO.IsolatedStorage.IsolatedStorageFileStream
+    commentId: T:System.IO.IsolatedStorage.IsolatedStorageFileStream
+  attributes:
+  - type: System.FlagsAttribute
+    ctor: System.FlagsAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+  nameWithType: FileShare
+- uid: System.IO.FileShare.Delete
+  commentId: F:System.IO.FileShare.Delete
+  id: Delete
+  parent: System.IO.FileShare
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.FileShare.Delete
+  type: Field
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/FileShare.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Delete
+    path: src/mscorlib/src/System/IO/FileShare.cs
+    startLine: 53
+  assemblies:
+  - System.IO.FileSystem.Primitives
+  namespace: System.IO
+  summary: "\n<p>Allows subsequent deleting of a file.</p>\n"
+  syntax:
+    content: Delete = 4
+    return:
+      type: System.IO.FileShare
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+  nameWithType: FileShare.Delete
+- uid: System.IO.FileShare.Inheritable
+  commentId: F:System.IO.FileShare.Inheritable
+  id: Inheritable
+  parent: System.IO.FileShare
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.FileShare.Inheritable
+  type: Field
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/FileShare.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Inheritable
+    path: src/mscorlib/src/System/IO/FileShare.cs
+    startLine: 57
+  assemblies:
+  - System.IO.FileSystem.Primitives
+  namespace: System.IO
+  summary: "\n<p>Makes the file handle inheritable by child processes. This is not directly supported by Win32.</p>\n"
+  syntax:
+    content: Inheritable = 16
+    return:
+      type: System.IO.FileShare
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+  nameWithType: FileShare.Inheritable
+- uid: System.IO.FileShare.None
+  commentId: F:System.IO.FileShare.None
+  id: None
+  parent: System.IO.FileShare
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.FileShare.None
+  type: Field
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/FileShare.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: None
+    path: src/mscorlib/src/System/IO/FileShare.cs
+    startLine: 35
+  assemblies:
+  - System.IO.FileSystem.Primitives
+  namespace: System.IO
+  summary: "\n<p>Declines sharing of the current file. Any request to open the file (by this process or another process) will fail until the file is closed.</p>\n"
+  syntax:
+    content: None = 0
+    return:
+      type: System.IO.FileShare
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+  nameWithType: FileShare.None
+- uid: System.IO.FileShare.Read
+  commentId: F:System.IO.FileShare.Read
+  id: Read
+  parent: System.IO.FileShare
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.FileShare.Read
+  type: Field
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/FileShare.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Read
+    path: src/mscorlib/src/System/IO/FileShare.cs
+    startLine: 40
+  assemblies:
+  - System.IO.FileSystem.Primitives
+  namespace: System.IO
+  summary: "\n<p>Allows subsequent opening of the file for reading. If this flag is not specified, any request to open the file for reading (by this process or another process) will fail until the file is closed. However, even if this flag is specified, additional permissions might still be needed to access the file.</p>\n"
+  syntax:
+    content: Read = 1
+    return:
+      type: System.IO.FileShare
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+  nameWithType: FileShare.Read
+- uid: System.IO.FileShare.ReadWrite
+  commentId: F:System.IO.FileShare.ReadWrite
+  id: ReadWrite
+  parent: System.IO.FileShare
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.FileShare.ReadWrite
+  type: Field
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/FileShare.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: ReadWrite
+    path: src/mscorlib/src/System/IO/FileShare.cs
+    startLine: 50
+  assemblies:
+  - System.IO.FileSystem.Primitives
+  namespace: System.IO
+  summary: "\n<p>Allows subsequent opening of the file for reading or writing. If this flag is not specified, any request to open the file for reading or writing (by this process or another process) will fail until the file is closed. However, even if this flag is specified, additional permissions might still be needed to access the file.</p>\n"
+  syntax:
+    content: ReadWrite = 3
+    return:
+      type: System.IO.FileShare
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+  nameWithType: FileShare.ReadWrite
+- uid: System.IO.FileShare.Write
+  commentId: F:System.IO.FileShare.Write
+  id: Write
+  parent: System.IO.FileShare
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.FileShare.Write
+  type: Field
+  source:
+    remote:
+      path: src/mscorlib/src/System/IO/FileShare.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Write
+    path: src/mscorlib/src/System/IO/FileShare.cs
+    startLine: 45
+  assemblies:
+  - System.IO.FileSystem.Primitives
+  namespace: System.IO
+  summary: "\n<p>Allows subsequent opening of the file for writing. If this flag is not specified, any request to open the file for writing (by this process or another process) will fail until the file is closed. However, even if this flag is specified, additional permissions might still be needed to access the file.</p>\n"
+  syntax:
+    content: Write = 2
+    return:
+      type: System.IO.FileShare
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+  nameWithType: FileShare.Write
+references:
+- uid: System.IO
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO
+  nameWithType: System.IO
+  commentId: N:System.IO
+- uid: System.IO.FileShare
+  parent: System.IO
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.FileShare
+  nameWithType: FileShare
+  commentId: T:System.IO.FileShare

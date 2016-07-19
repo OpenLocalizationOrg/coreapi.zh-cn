@@ -1,0 +1,1902 @@
+items:
+- uid: System.Reflection.Module
+  commentId: T:System.Reflection.Module
+  id: Module
+  parent: System.Reflection
+  children:
+  - System.Reflection.Module.Assembly
+  - System.Reflection.Module.CustomAttributes
+  - System.Reflection.Module.Equals(System.Object)
+  - System.Reflection.Module.FilterTypeName
+  - System.Reflection.Module.FilterTypeNameIgnoreCase
+  - System.Reflection.Module.FindTypes(System.Reflection.TypeFilter,System.Object)
+  - System.Reflection.Module.FullyQualifiedName
+  - System.Reflection.Module.GetField(System.String)
+  - System.Reflection.Module.GetField(System.String,System.Reflection.BindingFlags)
+  - System.Reflection.Module.GetFields
+  - System.Reflection.Module.GetFields(System.Reflection.BindingFlags)
+  - System.Reflection.Module.GetHashCode
+  - System.Reflection.Module.GetMethod(System.String)
+  - System.Reflection.Module.GetMethod(System.String,System.Type[])
+  - System.Reflection.Module.GetMethods
+  - System.Reflection.Module.GetMethods(System.Reflection.BindingFlags)
+  - System.Reflection.Module.GetType(System.String)
+  - System.Reflection.Module.GetType(System.String,System.Boolean)
+  - System.Reflection.Module.GetType(System.String,System.Boolean,System.Boolean)
+  - System.Reflection.Module.GetTypes
+  - System.Reflection.Module.ModuleVersionId
+  - System.Reflection.Module.Name
+  - System.Reflection.Module.ScopeName
+  - System.Reflection.Module.System#Reflection#ICustomAttributeProvider#GetCustomAttributes(System.Boolean)
+  - System.Reflection.Module.System#Reflection#ICustomAttributeProvider#GetCustomAttributes(System.Type,System.Boolean)
+  - System.Reflection.Module.System#Reflection#ICustomAttributeProvider#IsDefined(System.Type,System.Boolean)
+  - System.Reflection.Module.ToString
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Reflection.Module
+  type: Class
+  source:
+    remote:
+      path: src/mscorlib/src/System/Reflection/Module.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Module
+    path: src/mscorlib/src/System/Reflection/Module.cs
+    startLine: 57
+  assemblies:
+  - System.Reflection
+  namespace: System.Reflection
+  summary: "\n<p>Performs reflection on a module.</p>\n"
+  syntax:
+    content: >-
+      [Serializable]
+
+      [ClassInterface(ClassInterfaceType.None)]
+
+      [ComDefaultInterface(typeof (_Module))]
+
+      [ComVisible(true)]
+
+      [PermissionSet(SecurityAction.InheritanceDemand, Unrestricted = true)]
+
+      public abstract class Module : _Module, ISerializable, ICustomAttributeProvider
+    content.vb: >-
+      <Serializable>
+
+      <ClassInterface(ClassInterfaceType.None)>
+
+      <ComDefaultInterface(GetType(_Module))>
+
+      <ComVisible(True)>
+
+      <PermissionSet(SecurityAction.InheritanceDemand, Unrestricted:=True)>
+
+      Public MustInherit Class Module
+          Implements _Module, ISerializable, ICustomAttributeProvider
+  see:
+  - type: System.Security.Permissions.SecurityAction.InheritanceDemand
+    commentId: F:System.Security.Permissions.SecurityAction.InheritanceDemand
+  inheritance:
+  - System.Object
+  implements:
+  - System.Reflection.ICustomAttributeProvider
+  inheritedMembers:
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+  nameWithType: Module
+- uid: System.Reflection.Module.Assembly
+  commentId: P:System.Reflection.Module.Assembly
+  id: Assembly
+  parent: System.Reflection.Module
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Reflection.Module.Assembly
+  type: Property
+  source:
+    remote:
+      path: src/mscorlib/src/System/Reflection/Module.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Assembly
+    path: src/mscorlib/src/System/Reflection/Module.cs
+    startLine: 515
+  assemblies:
+  - System.Reflection
+  namespace: System.Reflection
+  summary: "\n<p>Gets the appropriate <xref href=\"System.Reflection.Assembly\" data-throw-if-not-resolved=\"false\"></xref> for this instance of <xref href=\"System.Reflection.Module\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  syntax:
+    content: public virtual Assembly Assembly { get; }
+    content.vb: Public Overridable ReadOnly Property Assembly As Assembly
+    parameters: []
+    return:
+      type: System.Reflection.Assembly
+      description: "\n<p>An <strong>Assembly</strong> object.</p>\n"
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+  nameWithType: Module.Assembly
+- uid: System.Reflection.Module.CustomAttributes
+  commentId: P:System.Reflection.Module.CustomAttributes
+  id: CustomAttributes
+  parent: System.Reflection.Module
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Reflection.Module.CustomAttributes
+  type: Property
+  source:
+    remote:
+      path: src/mscorlib/src/System/Reflection/Module.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: CustomAttributes
+    path: src/mscorlib/src/System/Reflection/Module.cs
+    startLine: 129
+  assemblies:
+  - System.Reflection
+  namespace: System.Reflection
+  summary: "\n<p>Gets a collection that contains this module's custom attributes.</p>\n"
+  syntax:
+    content: public virtual IEnumerable<CustomAttributeData> CustomAttributes { get; }
+    content.vb: Public Overridable ReadOnly Property CustomAttributes As IEnumerable(Of CustomAttributeData)
+    parameters: []
+    return:
+      type: System.Collections.Generic.IEnumerable{System.Reflection.CustomAttributeData}
+      description: "\n<p>A collection that contains this module's custom attributes.</p>\n"
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+  nameWithType: Module.CustomAttributes
+- uid: System.Reflection.Module.FullyQualifiedName
+  commentId: P:System.Reflection.Module.FullyQualifiedName
+  id: FullyQualifiedName
+  parent: System.Reflection.Module
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Reflection.Module.FullyQualifiedName
+  type: Property
+  source:
+    remote:
+      path: src/mscorlib/src/System/Reflection/Module.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: FullyQualifiedName
+    path: src/mscorlib/src/System/Reflection/Module.cs
+    startLine: 301
+  assemblies:
+  - System.Reflection
+  namespace: System.Reflection
+  summary: "\n<p>Gets a string representing the fully qualified name and path to this module.</p>\n"
+  syntax:
+    content: >-
+      public virtual string FullyQualifiedName
+
+      {
+          [SecurityCritical]
+          get;
+      }
+    content.vb: Public Overridable ReadOnly Property FullyQualifiedName As String
+    parameters: []
+    return:
+      type: System.String
+      description: "\n<p>The fully qualified module name.</p>\n"
+  exceptions:
+  - type: System.Security.SecurityException
+    commentId: T:System.Security.SecurityException
+    description: "\n<p>The caller does not have the required permissions. </p>\n"
+  see:
+  - type: System.Security.Permissions.FileIOPermission
+    commentId: T:System.Security.Permissions.FileIOPermission
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+  nameWithType: Module.FullyQualifiedName
+- uid: System.Reflection.Module.Name
+  commentId: P:System.Reflection.Module.Name
+  id: Name
+  parent: System.Reflection.Module
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Reflection.Module.Name
+  type: Property
+  source:
+    remote:
+      path: src/mscorlib/src/System/Reflection/Module.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Name
+    path: src/mscorlib/src/System/Reflection/Module.cs
+    startLine: 500
+  assemblies:
+  - System.Reflection
+  namespace: System.Reflection
+  summary: "\n<p>Gets a <strong>String</strong> representing the name of the module with the path removed.</p>\n"
+  syntax:
+    content: public virtual string Name { get; }
+    content.vb: Public Overridable ReadOnly Property Name As String
+    parameters: []
+    return:
+      type: System.String
+      description: "\n<p>The module name with no path.</p>\n"
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+  nameWithType: Module.Name
+- uid: System.Reflection.Module.Equals(System.Object)
+  commentId: M:System.Reflection.Module.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: System.Reflection.Module
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Reflection.Module.Equals(System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Reflection/Module.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Equals
+    path: src/mscorlib/src/System/Reflection/Module.cs
+    startLine: 107
+  assemblies:
+  - System.Reflection
+  namespace: System.Reflection
+  summary: "\n<p>Determines whether this module and the specified object are equal.</p>\n"
+  syntax:
+    content: public override bool Equals(object o)
+    content.vb: Public Overrides Function Equals(o As Object) As Boolean
+    parameters:
+    - id: o
+      type: System.Object
+      description: "\n<p>The object to compare with this instance. </p>\n"
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if <em>o</em> is equal to this instance; otherwise, <strong>false</strong>.</p>\n"
+  overridden: System.Object.Equals(System.Object)
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  nameWithType: Module.Equals(Object)
+- uid: System.Reflection.Module.GetHashCode
+  commentId: M:System.Reflection.Module.GetHashCode
+  id: GetHashCode
+  parent: System.Reflection.Module
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Reflection.Module.GetHashCode()
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Reflection/Module.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: GetHashCode
+    path: src/mscorlib/src/System/Reflection/Module.cs
+    startLine: 112
+  assemblies:
+  - System.Reflection
+  namespace: System.Reflection
+  summary: "\n<p>Returns the hash code for this instance.</p>\n"
+  syntax:
+    content: public override int GetHashCode()
+    content.vb: Public Overrides Function GetHashCode As Integer
+    return:
+      type: System.Int32
+      description: "\n<p>A 32-bit signed integer hash code.</p>\n"
+  overridden: System.Object.GetHashCode
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  nameWithType: Module.GetHashCode()
+- uid: System.Reflection.Module.GetType(System.String,System.Boolean,System.Boolean)
+  commentId: M:System.Reflection.Module.GetType(System.String,System.Boolean,System.Boolean)
+  id: GetType(System.String,System.Boolean,System.Boolean)
+  parent: System.Reflection.Module
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Reflection.Module.GetType(System.String, System.Boolean, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Reflection/Module.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: GetType
+    path: src/mscorlib/src/System/Reflection/Module.cs
+    startLine: 295
+  assemblies:
+  - System.Reflection
+  namespace: System.Reflection
+  summary: "\n<p>Returns the specified type, specifying whether to make a case-sensitive search of the module and whether to throw an exception if the type cannot be found.</p>\n"
+  syntax:
+    content: >-
+      [ComVisible(true)]
+
+      public virtual Type GetType(string className, bool throwOnError, bool ignoreCase)
+    content.vb: >-
+      <ComVisible(True)>
+
+      Public Overridable Function GetType(className As String, throwOnError As Boolean, ignoreCase As Boolean) As Type
+    parameters:
+    - id: className
+      type: System.String
+      description: "\n<p>The name of the type to locate. The name must be fully qualified with the namespace. </p>\n"
+    - id: throwOnError
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> to throw an exception if the type cannot be found; <strong>false</strong> to return <strong>null</strong>.</p>\n"
+    - id: ignoreCase
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> for case-insensitive search; otherwise, <strong>false</strong>. </p>\n"
+    return:
+      type: System.Type
+      description: "\n<p>A <xref href=\"System.Type\" data-throw-if-not-resolved=\"false\"></xref> object representing the specified type, if the type is declared in this module; otherwise, <strong>null</strong>.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>className</em> is <strong>null</strong>. </p>\n"
+  - type: System.Reflection.TargetInvocationException
+    commentId: T:System.Reflection.TargetInvocationException
+    description: "\n<p>The class initializers are invoked and an exception is thrown. </p>\n"
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>\n<em>className</em> is a zero-length string. </p>\n"
+  - type: System.TypeLoadException
+    commentId: T:System.TypeLoadException
+    description: "\n<p>\n<em>throwOnError</em> is <strong>true</strong>, and the type cannot be found. </p>\n"
+  - type: System.IO.FileNotFoundException
+    commentId: T:System.IO.FileNotFoundException
+    description: "\n<p>\n<em>className</em> requires a dependent assembly that could not be found. </p>\n"
+  - type: System.IO.FileLoadException
+    commentId: T:System.IO.FileLoadException
+    description: "\n<p>\n<em>className</em> requires a dependent assembly that was found but could not be loaded.</p>\n<p>-or-</p>\n<p>The current assembly was loaded into the reflection-only context, and <em>className</em> requires a dependent assembly that was not preloaded. </p>\n"
+  - type: System.BadImageFormatException
+    commentId: T:System.BadImageFormatException
+    description: "\n<p>\n<em>className</em> requires a dependent assembly, but the file is not a valid assembly. </p>\n<p>-or-</p>\n<p>\n<em>className</em> requires a dependent assembly which was compiled for a version of the runtime later than the currently loaded version.</p>\n"
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  nameWithType: Module.GetType(String, Boolean, Boolean)
+- uid: System.Reflection.Module.ToString
+  commentId: M:System.Reflection.Module.ToString
+  id: ToString
+  parent: System.Reflection.Module
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Reflection.Module.ToString()
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Reflection/Module.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: ToString
+    path: src/mscorlib/src/System/Reflection/Module.cs
+    startLine: 123
+  assemblies:
+  - System.Reflection
+  namespace: System.Reflection
+  summary: "\n<p>Returns the name of the module.</p>\n"
+  syntax:
+    content: public override string ToString()
+    content.vb: Public Overrides Function ToString As String
+    return:
+      type: System.String
+      description: "\n<p>A <strong>String</strong> representing the name of this module.</p>\n"
+  overridden: System.Object.ToString
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  nameWithType: Module.ToString()
+- uid: System.Reflection.Module.FilterTypeName
+  commentId: F:System.Reflection.Module.FilterTypeName
+  id: FilterTypeName
+  parent: System.Reflection.Module
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Reflection.Module.FilterTypeName
+  type: Field
+  source:
+    remote:
+      path: src/mscorlib/src/System/Reflection/Module.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: FilterTypeName
+    path: src/mscorlib/src/System/Reflection/Module.cs
+    startLine: 83
+  assemblies:
+  - System.Reflection
+  namespace: System.Reflection
+  summary: "\n<p>A <strong>TypeFilter</strong> object that filters the list of types defined in this module based upon the name. This field is case-sensitive and read-only.</p>\n"
+  syntax:
+    content: public static readonly TypeFilter FilterTypeName
+    content.vb: Public Shared ReadOnly FilterTypeName As TypeFilter
+    return:
+      type: System.Reflection.TypeFilter
+  seealso:
+  - type: System.Reflection.Module.FindTypes(System.Reflection.TypeFilter,System.Object)
+    commentId: M:System.Reflection.Module.FindTypes(System.Reflection.TypeFilter,System.Object)
+  modifiers.csharp:
+  - public
+  - static
+  - readonly
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+  nameWithType: Module.FilterTypeName
+- uid: System.Reflection.Module.FilterTypeNameIgnoreCase
+  commentId: F:System.Reflection.Module.FilterTypeNameIgnoreCase
+  id: FilterTypeNameIgnoreCase
+  parent: System.Reflection.Module
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Reflection.Module.FilterTypeNameIgnoreCase
+  type: Field
+  source:
+    remote:
+      path: src/mscorlib/src/System/Reflection/Module.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: FilterTypeNameIgnoreCase
+    path: src/mscorlib/src/System/Reflection/Module.cs
+    startLine: 84
+  assemblies:
+  - System.Reflection
+  namespace: System.Reflection
+  summary: "\n<p>A <strong>TypeFilter</strong> object that filters the list of types defined in this module based upon the name. This field is case-insensitive and read-only.</p>\n"
+  syntax:
+    content: public static readonly TypeFilter FilterTypeNameIgnoreCase
+    content.vb: Public Shared ReadOnly FilterTypeNameIgnoreCase As TypeFilter
+    return:
+      type: System.Reflection.TypeFilter
+  seealso:
+  - type: System.Reflection.Module.FindTypes(System.Reflection.TypeFilter,System.Object)
+    commentId: M:System.Reflection.Module.FindTypes(System.Reflection.TypeFilter,System.Object)
+  modifiers.csharp:
+  - public
+  - static
+  - readonly
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+  nameWithType: Module.FilterTypeNameIgnoreCase
+- uid: System.Reflection.Module.ModuleVersionId
+  commentId: P:System.Reflection.Module.ModuleVersionId
+  id: ModuleVersionId
+  parent: System.Reflection.Module
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Reflection.Module.ModuleVersionId
+  type: Property
+  source:
+    remote:
+      path: src/mscorlib/src/System/Reflection/Module.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: ModuleVersionId
+    path: src/mscorlib/src/System/Reflection/Module.cs
+    startLine: 339
+  assemblies:
+  - System.Reflection
+  namespace: System.Reflection
+  summary: "\n<p>Gets a universally unique identifier (UUID) that can be used to distinguish between two versions of a module.</p>\n"
+  syntax:
+    content: public virtual Guid ModuleVersionId { get; }
+    content.vb: Public Overridable ReadOnly Property ModuleVersionId As Guid
+    parameters: []
+    return:
+      type: System.Guid
+      description: "\n<p>A <xref href=\"System.Guid\" data-throw-if-not-resolved=\"false\"></xref> that can be used to distinguish between two versions of a module.</p>\n"
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+  nameWithType: Module.ModuleVersionId
+- uid: System.Reflection.Module.ScopeName
+  commentId: P:System.Reflection.Module.ScopeName
+  id: ScopeName
+  parent: System.Reflection.Module
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Reflection.Module.ScopeName
+  type: Property
+  source:
+    remote:
+      path: src/mscorlib/src/System/Reflection/Module.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: ScopeName
+    path: src/mscorlib/src/System/Reflection/Module.cs
+    startLine: 485
+  assemblies:
+  - System.Reflection
+  namespace: System.Reflection
+  summary: "\n<p>Gets a string representing the name of the module.</p>\n"
+  syntax:
+    content: public virtual string ScopeName { get; }
+    content.vb: Public Overridable ReadOnly Property ScopeName As String
+    parameters: []
+    return:
+      type: System.String
+      description: "\n<p>The module name.</p>\n"
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+  nameWithType: Module.ScopeName
+- uid: System.Reflection.Module.FindTypes(System.Reflection.TypeFilter,System.Object)
+  commentId: M:System.Reflection.Module.FindTypes(System.Reflection.TypeFilter,System.Object)
+  id: FindTypes(System.Reflection.TypeFilter,System.Object)
+  parent: System.Reflection.Module
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Reflection.Module.FindTypes(System.Reflection.TypeFilter, System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Reflection/Module.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: FindTypes
+    path: src/mscorlib/src/System/Reflection/Module.cs
+    startLine: 312
+  assemblies:
+  - System.Reflection
+  namespace: System.Reflection
+  summary: "\n<p>Returns an array of classes accepted by the given filter and filter criteria.</p>\n"
+  syntax:
+    content: public virtual Type[] FindTypes(TypeFilter filter, object filterCriteria)
+    content.vb: Public Overridable Function FindTypes(filter As TypeFilter, filterCriteria As Object) As Type()
+    parameters:
+    - id: filter
+      type: System.Reflection.TypeFilter
+      description: "\n<p>The delegate used to filter the classes. </p>\n"
+    - id: filterCriteria
+      type: System.Object
+      description: "\n<p>An Object used to filter the classes. </p>\n"
+    return:
+      type: System.Type[]
+      description: "\n<p>An array of type <strong>Type</strong> containing classes that were accepted by the filter.</p>\n"
+  exceptions:
+  - type: System.Reflection.ReflectionTypeLoadException
+    commentId: T:System.Reflection.ReflectionTypeLoadException
+    description: "\n<p>One or more classes in a module could not be loaded. </p>\n"
+  seealso:
+  - type: System.Reflection.Module.FilterTypeName
+    commentId: F:System.Reflection.Module.FilterTypeName
+  - type: System.Reflection.Module.FilterTypeNameIgnoreCase
+    commentId: F:System.Reflection.Module.FilterTypeNameIgnoreCase
+  - type: System.Reflection.ReflectionTypeLoadException
+    commentId: T:System.Reflection.ReflectionTypeLoadException
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  nameWithType: Module.FindTypes(TypeFilter, Object)
+- uid: System.Reflection.Module.GetField(System.String)
+  commentId: M:System.Reflection.Module.GetField(System.String)
+  id: GetField(System.String)
+  parent: System.Reflection.Module
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Reflection.Module.GetField(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Reflection/Module.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: GetField
+    path: src/mscorlib/src/System/Reflection/Module.cs
+    startLine: 398
+  assemblies:
+  - System.Reflection
+  namespace: System.Reflection
+  summary: "\n<p>Returns a field having the specified name.</p>\n"
+  syntax:
+    content: public FieldInfo GetField(string name)
+    content.vb: Public Function GetField(name As String) As FieldInfo
+    parameters:
+    - id: name
+      type: System.String
+      description: "\n<p>The field name. </p>\n"
+    return:
+      type: System.Reflection.FieldInfo
+      description: "\n<p>A <strong>FieldInfo</strong> object having the specified name, or <strong>null</strong> if the field does not exist.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>The <em>name</em> parameter is <strong>null</strong>. </p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: Module.GetField(String)
+- uid: System.Reflection.Module.GetField(System.String,System.Reflection.BindingFlags)
+  commentId: M:System.Reflection.Module.GetField(System.String,System.Reflection.BindingFlags)
+  id: GetField(System.String,System.Reflection.BindingFlags)
+  parent: System.Reflection.Module
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Reflection.Module.GetField(System.String, System.Reflection.BindingFlags)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Reflection/Module.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: GetField
+    path: src/mscorlib/src/System/Reflection/Module.cs
+    startLine: 403
+  assemblies:
+  - System.Reflection
+  namespace: System.Reflection
+  summary: "\n<p>Returns a field having the specified name and binding attributes.</p>\n"
+  syntax:
+    content: public virtual FieldInfo GetField(string name, BindingFlags bindingAttr)
+    content.vb: Public Overridable Function GetField(name As String, bindingAttr As BindingFlags) As FieldInfo
+    parameters:
+    - id: name
+      type: System.String
+      description: "\n<p>The field name. </p>\n"
+    - id: bindingAttr
+      type: System.Reflection.BindingFlags
+      description: "\n<p>One of the <strong>BindingFlags</strong> bit flags used to control the search. </p>\n"
+    return:
+      type: System.Reflection.FieldInfo
+      description: "\n<p>A <strong>FieldInfo</strong> object having the specified name and binding attributes, or <strong>null</strong> if the field does not exist.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>The <em>name</em> parameter is <strong>null</strong>. </p>\n"
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  nameWithType: Module.GetField(String, BindingFlags)
+- uid: System.Reflection.Module.GetFields
+  commentId: M:System.Reflection.Module.GetFields
+  id: GetFields
+  parent: System.Reflection.Module
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Reflection.Module.GetFields()
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Reflection/Module.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: GetFields
+    path: src/mscorlib/src/System/Reflection/Module.cs
+    startLine: 381
+  assemblies:
+  - System.Reflection
+  namespace: System.Reflection
+  summary: "\n<p>Returns the global fields defined on the module.</p>\n"
+  syntax:
+    content: public FieldInfo[] GetFields()
+    content.vb: Public Function GetFields As FieldInfo()
+    return:
+      type: System.Reflection.FieldInfo[]
+      description: "\n<p>An array of <xref href=\"System.Reflection.FieldInfo\" data-throw-if-not-resolved=\"false\"></xref> objects representing the global fields defined on the module; if there are no global fields, an empty array is returned.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: Module.GetFields()
+- uid: System.Reflection.Module.GetFields(System.Reflection.BindingFlags)
+  commentId: M:System.Reflection.Module.GetFields(System.Reflection.BindingFlags)
+  id: GetFields(System.Reflection.BindingFlags)
+  parent: System.Reflection.Module
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Reflection.Module.GetFields(System.Reflection.BindingFlags)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Reflection/Module.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: GetFields
+    path: src/mscorlib/src/System/Reflection/Module.cs
+    startLine: 386
+  assemblies:
+  - System.Reflection
+  namespace: System.Reflection
+  summary: "\n<p>Returns the global fields defined on the module that match the specified binding flags.</p>\n"
+  syntax:
+    content: public virtual FieldInfo[] GetFields(BindingFlags bindingFlags)
+    content.vb: Public Overridable Function GetFields(bindingFlags As BindingFlags) As FieldInfo()
+    parameters:
+    - id: bindingFlags
+      type: System.Reflection.BindingFlags
+      description: "\n<p>A bitwise combination of <xref href=\"System.Reflection.BindingFlags\" data-throw-if-not-resolved=\"false\"></xref> values that limit the search.</p>\n"
+    return:
+      type: System.Reflection.FieldInfo[]
+      description: "\n<p>An array of type <xref href=\"System.Reflection.FieldInfo\" data-throw-if-not-resolved=\"false\"></xref> representing the global fields defined on the module that match the specified binding flags; if no global fields match the binding flags, an empty array is returned.</p>\n"
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  nameWithType: Module.GetFields(BindingFlags)
+- uid: System.Reflection.Module.GetMethod(System.String)
+  commentId: M:System.Reflection.Module.GetMethod(System.String)
+  id: GetMethod(System.String)
+  parent: System.Reflection.Module
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Reflection.Module.GetMethod(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Reflection/Module.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: GetMethod
+    path: src/mscorlib/src/System/Reflection/Module.cs
+    startLine: 469
+  assemblies:
+  - System.Reflection
+  namespace: System.Reflection
+  summary: "\n<p>Returns a method having the specified name.</p>\n"
+  syntax:
+    content: public MethodInfo GetMethod(string name)
+    content.vb: Public Function GetMethod(name As String) As MethodInfo
+    parameters:
+    - id: name
+      type: System.String
+      description: "\n<p>The method name. </p>\n"
+    return:
+      type: System.Reflection.MethodInfo
+      description: "\n<p>A <strong>MethodInfo</strong> object having the specified name, or <strong>null</strong> if the method does not exist.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>name</em> is <strong>null</strong>. </p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: Module.GetMethod(String)
+- uid: System.Reflection.Module.GetMethod(System.String,System.Type[])
+  commentId: M:System.Reflection.Module.GetMethod(System.String,System.Type[])
+  id: GetMethod(System.String,System.Type[])
+  parent: System.Reflection.Module
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Reflection.Module.GetMethod(System.String, System.Type[])
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Reflection/Module.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: GetMethod
+    path: src/mscorlib/src/System/Reflection/Module.cs
+    startLine: 451
+  assemblies:
+  - System.Reflection
+  namespace: System.Reflection
+  summary: "\n<p>Returns a method having the specified name and parameter types.</p>\n"
+  syntax:
+    content: public MethodInfo GetMethod(string name, Type[] types)
+    content.vb: Public Function GetMethod(name As String, types As Type()) As MethodInfo
+    parameters:
+    - id: name
+      type: System.String
+      description: "\n<p>The method name. </p>\n"
+    - id: types
+      type: System.Type[]
+      description: "\n<p>The parameter types to search for. </p>\n"
+    return:
+      type: System.Reflection.MethodInfo
+      description: "\n<p>A <strong>MethodInfo</strong> object in accordance with the specified criteria, or <strong>null</strong> if the method does not exist.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>name</em> is <strong>null</strong>, <em>types</em> is <strong>null</strong>, or <em>types</em> (i) is <strong>null</strong>. </p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: System.Reflection.Module.GetMethod(System.String, System.Type())
+  name.vb: GetMethod(String, Type())
+  nameWithType: Module.GetMethod(String, Type[])
+  nameWithType.vb: Module.GetMethod(String, Type())
+- uid: System.Reflection.Module.GetMethods
+  commentId: M:System.Reflection.Module.GetMethods
+  id: GetMethods
+  parent: System.Reflection.Module
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Reflection.Module.GetMethods()
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Reflection/Module.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: GetMethods
+    path: src/mscorlib/src/System/Reflection/Module.cs
+    startLine: 415
+  assemblies:
+  - System.Reflection
+  namespace: System.Reflection
+  summary: "\n<p>Returns the global methods defined on the module.</p>\n"
+  syntax:
+    content: public MethodInfo[] GetMethods()
+    content.vb: Public Function GetMethods As MethodInfo()
+    return:
+      type: System.Reflection.MethodInfo[]
+      description: "\n<p>An array of <xref href=\"System.Reflection.MethodInfo\" data-throw-if-not-resolved=\"false\"></xref> objects representing all the global methods defined on the module; if there are no global methods, an empty array is returned.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: Module.GetMethods()
+- uid: System.Reflection.Module.GetMethods(System.Reflection.BindingFlags)
+  commentId: M:System.Reflection.Module.GetMethods(System.Reflection.BindingFlags)
+  id: GetMethods(System.Reflection.BindingFlags)
+  parent: System.Reflection.Module
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Reflection.Module.GetMethods(System.Reflection.BindingFlags)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Reflection/Module.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: GetMethods
+    path: src/mscorlib/src/System/Reflection/Module.cs
+    startLine: 420
+  assemblies:
+  - System.Reflection
+  namespace: System.Reflection
+  summary: "\n<p>Returns the global methods defined on the module that match the specified binding flags.</p>\n"
+  syntax:
+    content: public virtual MethodInfo[] GetMethods(BindingFlags bindingFlags)
+    content.vb: Public Overridable Function GetMethods(bindingFlags As BindingFlags) As MethodInfo()
+    parameters:
+    - id: bindingFlags
+      type: System.Reflection.BindingFlags
+      description: "\n<p>A bitwise combination of <xref href=\"System.Reflection.BindingFlags\" data-throw-if-not-resolved=\"false\"></xref> values that limit the search.</p>\n"
+    return:
+      type: System.Reflection.MethodInfo[]
+      description: "\n<p>An array of type <xref href=\"System.Reflection.MethodInfo\" data-throw-if-not-resolved=\"false\"></xref> representing the global methods defined on the module that match the specified binding flags; if no global methods match the binding flags, an empty array is returned.</p>\n"
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  nameWithType: Module.GetMethods(BindingFlags)
+- uid: System.Reflection.Module.GetType(System.String)
+  commentId: M:System.Reflection.Module.GetType(System.String)
+  id: GetType(System.String)
+  parent: System.Reflection.Module
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Reflection.Module.GetType(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Reflection/Module.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: GetType
+    path: src/mscorlib/src/System/Reflection/Module.cs
+    startLine: 290
+  assemblies:
+  - System.Reflection
+  namespace: System.Reflection
+  summary: "\n<p>Returns the specified type, performing a case-sensitive search.</p>\n"
+  syntax:
+    content: >-
+      [ComVisible(true)]
+
+      public virtual Type GetType(string className)
+    content.vb: >-
+      <ComVisible(True)>
+
+      Public Overridable Function GetType(className As String) As Type
+    parameters:
+    - id: className
+      type: System.String
+      description: "\n<p>The name of the type to locate. The name must be fully qualified with the namespace. </p>\n"
+    return:
+      type: System.Type
+      description: "\n<p>A <strong>Type</strong> object representing the given type, if the type is in this module; otherwise, <strong>null</strong>.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>className</em> is <strong>null</strong>. </p>\n"
+  - type: System.Reflection.TargetInvocationException
+    commentId: T:System.Reflection.TargetInvocationException
+    description: "\n<p>The class initializers are invoked and an exception is thrown. </p>\n"
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>\n<em>className</em> is a zero-length string. </p>\n"
+  - type: System.IO.FileNotFoundException
+    commentId: T:System.IO.FileNotFoundException
+    description: "\n<p>\n<em>className</em> requires a dependent assembly that could not be found. </p>\n"
+  - type: System.IO.FileLoadException
+    commentId: T:System.IO.FileLoadException
+    description: "\n<p>\n<em>className</em> requires a dependent assembly that was found but could not be loaded.</p>\n<p>-or-</p>\n<p>The current assembly was loaded into the reflection-only context, and <em>className</em> requires a dependent assembly that was not preloaded. </p>\n"
+  - type: System.BadImageFormatException
+    commentId: T:System.BadImageFormatException
+    description: "\n<p>\n<em>className</em> requires a dependent assembly, but the file is not a valid assembly. </p>\n<p>-or-</p>\n<p>\n<em>className</em> requires a dependent assembly which was compiled for a version of the runtime later than the currently loaded version.</p>\n"
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  nameWithType: Module.GetType(String)
+- uid: System.Reflection.Module.GetType(System.String,System.Boolean)
+  commentId: M:System.Reflection.Module.GetType(System.String,System.Boolean)
+  id: GetType(System.String,System.Boolean)
+  parent: System.Reflection.Module
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Reflection.Module.GetType(System.String, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Reflection/Module.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: GetType
+    path: src/mscorlib/src/System/Reflection/Module.cs
+    startLine: 284
+  assemblies:
+  - System.Reflection
+  namespace: System.Reflection
+  summary: "\n<p>Returns the specified type, searching the module with the specified case sensitivity.</p>\n"
+  syntax:
+    content: >-
+      [ComVisible(true)]
+
+      public virtual Type GetType(string className, bool ignoreCase)
+    content.vb: >-
+      <ComVisible(True)>
+
+      Public Overridable Function GetType(className As String, ignoreCase As Boolean) As Type
+    parameters:
+    - id: className
+      type: System.String
+      description: "\n<p>The name of the type to locate. The name must be fully qualified with the namespace. </p>\n"
+    - id: ignoreCase
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> for case-insensitive search; otherwise, <strong>false</strong>. </p>\n"
+    return:
+      type: System.Type
+      description: "\n<p>A <strong>Type</strong> object representing the given type, if the type is in this module; otherwise, <strong>null</strong>.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>className</em> is <strong>null</strong>. </p>\n"
+  - type: System.Reflection.TargetInvocationException
+    commentId: T:System.Reflection.TargetInvocationException
+    description: "\n<p>The class initializers are invoked and an exception is thrown. </p>\n"
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>\n<em>className</em> is a zero-length string. </p>\n"
+  - type: System.IO.FileNotFoundException
+    commentId: T:System.IO.FileNotFoundException
+    description: "\n<p>\n<em>className</em> requires a dependent assembly that could not be found. </p>\n"
+  - type: System.IO.FileLoadException
+    commentId: T:System.IO.FileLoadException
+    description: "\n<p>\n<em>className</em> requires a dependent assembly that was found but could not be loaded.</p>\n<p>-or-</p>\n<p>The current assembly was loaded into the reflection-only context, and <em>className</em> requires a dependent assembly that was not preloaded. </p>\n"
+  - type: System.BadImageFormatException
+    commentId: T:System.BadImageFormatException
+    description: "\n<p>\n<em>className</em> requires a dependent assembly, but the file is not a valid assembly. </p>\n<p>-or-</p>\n<p>\n<em>className</em> requires a dependent assembly which was compiled for a version of the runtime later than the currently loaded version.</p>\n"
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  nameWithType: Module.GetType(String, Boolean)
+- uid: System.Reflection.Module.GetTypes
+  commentId: M:System.Reflection.Module.GetTypes
+  id: GetTypes
+  parent: System.Reflection.Module
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Reflection.Module.GetTypes()
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Reflection/Module.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: GetTypes
+    path: src/mscorlib/src/System/Reflection/Module.cs
+    startLine: 334
+  assemblies:
+  - System.Reflection
+  namespace: System.Reflection
+  summary: "\n<p>Returns all the types defined within this module.</p>\n"
+  syntax:
+    content: public virtual Type[] GetTypes()
+    content.vb: Public Overridable Function GetTypes As Type()
+    return:
+      type: System.Type[]
+      description: "\n<p>An array of type <strong>Type</strong> containing types defined within the module that is reflected by this instance.</p>\n"
+  exceptions:
+  - type: System.Reflection.ReflectionTypeLoadException
+    commentId: T:System.Reflection.ReflectionTypeLoadException
+    description: "\n<p>One or more classes in a module could not be loaded. </p>\n"
+  - type: System.Security.SecurityException
+    commentId: T:System.Security.SecurityException
+    description: "\n<p>The caller does not have the required permission. </p>\n"
+  seealso:
+  - type: System.Reflection.ReflectionTypeLoadException
+    commentId: T:System.Reflection.ReflectionTypeLoadException
+  see:
+  - type: System.Security.Permissions.ReflectionPermission
+    commentId: T:System.Security.Permissions.ReflectionPermission
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  nameWithType: Module.GetTypes()
+- uid: System.Reflection.Module.System#Reflection#ICustomAttributeProvider#GetCustomAttributes(System.Boolean)
+  commentId: M:System.Reflection.Module.System#Reflection#ICustomAttributeProvider#GetCustomAttributes(System.Boolean)
+  id: System#Reflection#ICustomAttributeProvider#GetCustomAttributes(System.Boolean)
+  isEii: true
+  parent: System.Reflection.Module
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Reflection.Module.System.Reflection.ICustomAttributeProvider.GetCustomAttributes(System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/System.Reflection/ref/System.Reflection.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: System.Reflection.ICustomAttributeProvider.GetCustomAttributes
+    path: src/System.Reflection/ref/System.Reflection.cs
+    startLine: 326
+  assemblies:
+  - System.Reflection
+  namespace: System.Reflection
+  syntax:
+    content: object[] ICustomAttributeProvider.GetCustomAttributes(bool inherit)
+    content.vb: Function System.Reflection.ICustomAttributeProvider.GetCustomAttributes(inherit As Boolean) As Object() Implements ICustomAttributeProvider.GetCustomAttributes
+    parameters:
+    - id: inherit
+      type: System.Boolean
+    return:
+      type: System.Object[]
+  implements:
+  - System.Reflection.ICustomAttributeProvider.GetCustomAttributes(System.Boolean)
+  name.vb: System.Reflection.ICustomAttributeProvider.GetCustomAttributes(Boolean)
+  nameWithType: Module.ICustomAttributeProvider.GetCustomAttributes(Boolean)
+  nameWithType.vb: Module.System.Reflection.ICustomAttributeProvider.GetCustomAttributes(Boolean)
+- uid: System.Reflection.Module.System#Reflection#ICustomAttributeProvider#GetCustomAttributes(System.Type,System.Boolean)
+  commentId: M:System.Reflection.Module.System#Reflection#ICustomAttributeProvider#GetCustomAttributes(System.Type,System.Boolean)
+  id: System#Reflection#ICustomAttributeProvider#GetCustomAttributes(System.Type,System.Boolean)
+  isEii: true
+  parent: System.Reflection.Module
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Reflection.Module.System.Reflection.ICustomAttributeProvider.GetCustomAttributes(System.Type, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/System.Reflection/ref/System.Reflection.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: System.Reflection.ICustomAttributeProvider.GetCustomAttributes
+    path: src/System.Reflection/ref/System.Reflection.cs
+    startLine: 327
+  assemblies:
+  - System.Reflection
+  namespace: System.Reflection
+  syntax:
+    content: object[] ICustomAttributeProvider.GetCustomAttributes(Type attributeType, bool inherit)
+    content.vb: Function System.Reflection.ICustomAttributeProvider.GetCustomAttributes(attributeType As Type, inherit As Boolean) As Object() Implements ICustomAttributeProvider.GetCustomAttributes
+    parameters:
+    - id: attributeType
+      type: System.Type
+    - id: inherit
+      type: System.Boolean
+    return:
+      type: System.Object[]
+  implements:
+  - System.Reflection.ICustomAttributeProvider.GetCustomAttributes(System.Type,System.Boolean)
+  name.vb: System.Reflection.ICustomAttributeProvider.GetCustomAttributes(Type, Boolean)
+  nameWithType: Module.ICustomAttributeProvider.GetCustomAttributes(Type, Boolean)
+  nameWithType.vb: Module.System.Reflection.ICustomAttributeProvider.GetCustomAttributes(Type, Boolean)
+- uid: System.Reflection.Module.System#Reflection#ICustomAttributeProvider#IsDefined(System.Type,System.Boolean)
+  commentId: M:System.Reflection.Module.System#Reflection#ICustomAttributeProvider#IsDefined(System.Type,System.Boolean)
+  id: System#Reflection#ICustomAttributeProvider#IsDefined(System.Type,System.Boolean)
+  isEii: true
+  parent: System.Reflection.Module
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Reflection.Module.System.Reflection.ICustomAttributeProvider.IsDefined(System.Type, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/System.Reflection/ref/System.Reflection.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: System.Reflection.ICustomAttributeProvider.IsDefined
+    path: src/System.Reflection/ref/System.Reflection.cs
+    startLine: 328
+  assemblies:
+  - System.Reflection
+  namespace: System.Reflection
+  syntax:
+    content: bool ICustomAttributeProvider.IsDefined(Type attributeType, bool inherit)
+    content.vb: Function System.Reflection.ICustomAttributeProvider.IsDefined(attributeType As Type, inherit As Boolean) As Boolean Implements ICustomAttributeProvider.IsDefined
+    parameters:
+    - id: attributeType
+      type: System.Type
+    - id: inherit
+      type: System.Boolean
+    return:
+      type: System.Boolean
+  implements:
+  - System.Reflection.ICustomAttributeProvider.IsDefined(System.Type,System.Boolean)
+  name.vb: System.Reflection.ICustomAttributeProvider.IsDefined(Type, Boolean)
+  nameWithType: Module.ICustomAttributeProvider.IsDefined(Type, Boolean)
+  nameWithType.vb: Module.System.Reflection.ICustomAttributeProvider.IsDefined(Type, Boolean)
+references:
+- uid: System.Reflection
+  isExternal: false
+  name: "XXX"
+  fullName: System.Reflection
+  nameWithType: System.Reflection
+  commentId: N:System.Reflection
+- uid: System.Object
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Object
+  nameWithType: Object
+  commentId: T:System.Object
+- uid: System.Reflection.ICustomAttributeProvider
+  parent: System.Reflection
+  isExternal: false
+  name: "XXX"
+  fullName: System.Reflection.ICustomAttributeProvider
+  nameWithType: ICustomAttributeProvider
+  commentId: T:System.Reflection.ICustomAttributeProvider
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.Equals(Object, Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.GetType()
+  commentId: M:System.Object.GetType
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.MemberwiseClone()
+  commentId: M:System.Object.MemberwiseClone
+- uid: System
+  isExternal: false
+  name: "XXX"
+  fullName: System
+  nameWithType: System
+  commentId: N:System
+- uid: System.Reflection.Assembly
+  parent: System.Reflection
+  isExternal: false
+  name: "XXX"
+  fullName: System.Reflection.Assembly
+  nameWithType: Assembly
+  commentId: T:System.Reflection.Assembly
+- uid: System.Collections.Generic.IEnumerable{System.Reflection.CustomAttributeData}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: "XXX"
+  fullName: System.Collections.Generic.IEnumerable<System.Reflection.CustomAttributeData>
+  fullname.vb: System.Collections.Generic.IEnumerable(Of System.Reflection.CustomAttributeData)
+  name.vb: IEnumerable(Of CustomAttributeData)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: "XXX"
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: "<"
+    fullName: <
+  - uid: System.Reflection.CustomAttributeData
+    name: "XXX"
+    fullName: System.Reflection.CustomAttributeData
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: "XXX"
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: 'XXX '
+    fullName: '(Of '
+  - uid: System.Reflection.CustomAttributeData
+    name: "XXX"
+    fullName: System.Reflection.CustomAttributeData
+  - name: "XXX"
+    fullName: )
+  nameWithType: IEnumerable<CustomAttributeData>
+  nameWithType.vb: IEnumerable(Of CustomAttributeData)
+  commentId: T:System.Collections.Generic.IEnumerable{System.Reflection.CustomAttributeData}
+- uid: System.Collections.Generic.IEnumerable`1
+  isExternal: false
+  name: "XXX"
+  fullName: System.Collections.Generic.IEnumerable<T>
+  fullname.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: "XXX"
+    fullName: System.Collections.Generic.IEnumerable
+  - name: "<"
+    fullName: <
+  - name: "XXX"
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: "XXX"
+    fullName: System.Collections.Generic.IEnumerable
+  - name: 'XXX '
+    fullName: '(Of '
+  - name: "XXX"
+    fullName: T
+  - name: "XXX"
+    fullName: )
+  nameWithType: IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  commentId: T:System.Collections.Generic.IEnumerable`1
+- uid: System.Collections.Generic
+  isExternal: false
+  name: "XXX"
+  fullName: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+- uid: System.String
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.String
+  nameWithType: String
+  commentId: T:System.String
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.Equals(Object)
+  commentId: M:System.Object.Equals(System.Object)
+- uid: System.Boolean
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Boolean
+  nameWithType: Boolean
+  commentId: T:System.Boolean
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.GetHashCode()
+  commentId: M:System.Object.GetHashCode
+- uid: System.Int32
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Int32
+  nameWithType: Int32
+  commentId: T:System.Int32
+- uid: System.Type
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Type
+  nameWithType: Type
+  commentId: T:System.Type
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.ToString()
+  commentId: M:System.Object.ToString
+- uid: System.Reflection.TypeFilter
+  parent: System.Reflection
+  isExternal: false
+  name: "XXX"
+  fullName: System.Reflection.TypeFilter
+  nameWithType: TypeFilter
+  commentId: T:System.Reflection.TypeFilter
+- uid: System.Guid
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Guid
+  nameWithType: Guid
+  commentId: T:System.Guid
+- uid: System.Type[]
+  name: "XXX"
+  fullName: System.Type[]
+  fullname.vb: System.Type()
+  name.vb: Type()
+  spec.csharp:
+  - uid: System.Type
+    name: "XXX"
+    fullName: System.Type
+  - name: 'XXX'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Type
+    name: "XXX"
+    fullName: System.Type
+  - name: "XXX"
+    fullName: ()
+  nameWithType: Type[]
+  nameWithType.vb: Type()
+- uid: System.Reflection.FieldInfo
+  parent: System.Reflection
+  isExternal: false
+  name: "XXX"
+  fullName: System.Reflection.FieldInfo
+  nameWithType: FieldInfo
+  commentId: T:System.Reflection.FieldInfo
+- uid: System.Reflection.BindingFlags
+  parent: System.Reflection
+  isExternal: false
+  name: "XXX"
+  fullName: System.Reflection.BindingFlags
+  nameWithType: BindingFlags
+  commentId: T:System.Reflection.BindingFlags
+- uid: System.Reflection.FieldInfo[]
+  name: "XXX"
+  fullName: System.Reflection.FieldInfo[]
+  fullname.vb: System.Reflection.FieldInfo()
+  name.vb: FieldInfo()
+  spec.csharp:
+  - uid: System.Reflection.FieldInfo
+    name: "XXX"
+    fullName: System.Reflection.FieldInfo
+  - name: 'XXX'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Reflection.FieldInfo
+    name: "XXX"
+    fullName: System.Reflection.FieldInfo
+  - name: "XXX"
+    fullName: ()
+  nameWithType: FieldInfo[]
+  nameWithType.vb: FieldInfo()
+- uid: System.Reflection.MethodInfo
+  parent: System.Reflection
+  isExternal: false
+  name: "XXX"
+  fullName: System.Reflection.MethodInfo
+  nameWithType: MethodInfo
+  commentId: T:System.Reflection.MethodInfo
+- uid: System.Reflection.MethodInfo[]
+  name: "XXX"
+  fullName: System.Reflection.MethodInfo[]
+  fullname.vb: System.Reflection.MethodInfo()
+  name.vb: MethodInfo()
+  spec.csharp:
+  - uid: System.Reflection.MethodInfo
+    name: "XXX"
+    fullName: System.Reflection.MethodInfo
+  - name: 'XXX'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Reflection.MethodInfo
+    name: "XXX"
+    fullName: System.Reflection.MethodInfo
+  - name: "XXX"
+    fullName: ()
+  nameWithType: MethodInfo[]
+  nameWithType.vb: MethodInfo()
+- uid: System.Reflection.ICustomAttributeProvider.GetCustomAttributes(System.Boolean)
+  parent: System.Reflection.ICustomAttributeProvider
+  isExternal: true
+  name: "XXX"
+  fullName: System.Reflection.ICustomAttributeProvider.GetCustomAttributes(System.Boolean)
+  spec.csharp:
+  - uid: System.Reflection.ICustomAttributeProvider.GetCustomAttributes(System.Boolean)
+    name: "XXX"
+    fullName: System.Reflection.ICustomAttributeProvider.GetCustomAttributes
+  - name: "XXX"
+    fullName: (
+  - uid: System.Boolean
+    name: "XXX"
+    fullName: System.Boolean
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Reflection.ICustomAttributeProvider.GetCustomAttributes(System.Boolean)
+    name: "XXX"
+    fullName: System.Reflection.ICustomAttributeProvider.GetCustomAttributes
+  - name: "XXX"
+    fullName: (
+  - uid: System.Boolean
+    name: "XXX"
+    fullName: System.Boolean
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: ICustomAttributeProvider.GetCustomAttributes(Boolean)
+  commentId: M:System.Reflection.ICustomAttributeProvider.GetCustomAttributes(System.Boolean)
+- uid: System.Object[]
+  name: "XXX"
+  fullName: System.Object[]
+  fullname.vb: System.Object()
+  name.vb: Object()
+  spec.csharp:
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: ()
+  nameWithType: Object[]
+  nameWithType.vb: Object()
+- uid: System.Reflection.ICustomAttributeProvider.GetCustomAttributes(System.Type,System.Boolean)
+  parent: System.Reflection.ICustomAttributeProvider
+  isExternal: true
+  name: "XXX"
+  fullName: System.Reflection.ICustomAttributeProvider.GetCustomAttributes(System.Type, System.Boolean)
+  spec.csharp:
+  - uid: System.Reflection.ICustomAttributeProvider.GetCustomAttributes(System.Type,System.Boolean)
+    name: "XXX"
+    fullName: System.Reflection.ICustomAttributeProvider.GetCustomAttributes
+  - name: "XXX"
+    fullName: (
+  - uid: System.Type
+    name: "XXX"
+    fullName: System.Type
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Boolean
+    name: "XXX"
+    fullName: System.Boolean
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Reflection.ICustomAttributeProvider.GetCustomAttributes(System.Type,System.Boolean)
+    name: "XXX"
+    fullName: System.Reflection.ICustomAttributeProvider.GetCustomAttributes
+  - name: "XXX"
+    fullName: (
+  - uid: System.Type
+    name: "XXX"
+    fullName: System.Type
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Boolean
+    name: "XXX"
+    fullName: System.Boolean
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: ICustomAttributeProvider.GetCustomAttributes(Type, Boolean)
+  commentId: M:System.Reflection.ICustomAttributeProvider.GetCustomAttributes(System.Type,System.Boolean)
+- uid: System.Reflection.ICustomAttributeProvider.IsDefined(System.Type,System.Boolean)
+  parent: System.Reflection.ICustomAttributeProvider
+  isExternal: true
+  name: "XXX"
+  fullName: System.Reflection.ICustomAttributeProvider.IsDefined(System.Type, System.Boolean)
+  spec.csharp:
+  - uid: System.Reflection.ICustomAttributeProvider.IsDefined(System.Type,System.Boolean)
+    name: "XXX"
+    fullName: System.Reflection.ICustomAttributeProvider.IsDefined
+  - name: "XXX"
+    fullName: (
+  - uid: System.Type
+    name: "XXX"
+    fullName: System.Type
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Boolean
+    name: "XXX"
+    fullName: System.Boolean
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Reflection.ICustomAttributeProvider.IsDefined(System.Type,System.Boolean)
+    name: "XXX"
+    fullName: System.Reflection.ICustomAttributeProvider.IsDefined
+  - name: "XXX"
+    fullName: (
+  - uid: System.Type
+    name: "XXX"
+    fullName: System.Type
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Boolean
+    name: "XXX"
+    fullName: System.Boolean
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: ICustomAttributeProvider.IsDefined(Type, Boolean)
+  commentId: M:System.Reflection.ICustomAttributeProvider.IsDefined(System.Type,System.Boolean)
+- uid: System.Security.SecurityException
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.SecurityException
+  nameWithType: SecurityException
+  commentId: T:System.Security.SecurityException
+- uid: System.ArgumentNullException
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentNullException
+  nameWithType: ArgumentNullException
+  commentId: T:System.ArgumentNullException
+- uid: System.Reflection.TargetInvocationException
+  isExternal: false
+  name: "XXX"
+  fullName: System.Reflection.TargetInvocationException
+  nameWithType: TargetInvocationException
+  commentId: T:System.Reflection.TargetInvocationException
+- uid: System.ArgumentException
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentException
+  nameWithType: ArgumentException
+  commentId: T:System.ArgumentException
+- uid: System.TypeLoadException
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.TypeLoadException
+  nameWithType: TypeLoadException
+  commentId: T:System.TypeLoadException
+- uid: System.IO.FileNotFoundException
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.FileNotFoundException
+  nameWithType: FileNotFoundException
+  commentId: T:System.IO.FileNotFoundException
+- uid: System.IO.FileLoadException
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.FileLoadException
+  nameWithType: FileLoadException
+  commentId: T:System.IO.FileLoadException
+- uid: System.BadImageFormatException
+  isExternal: false
+  name: "XXX"
+  fullName: System.BadImageFormatException
+  nameWithType: BadImageFormatException
+  commentId: T:System.BadImageFormatException
+- uid: System.Reflection.ReflectionTypeLoadException
+  isExternal: false
+  name: "XXX"
+  fullName: System.Reflection.ReflectionTypeLoadException
+  nameWithType: ReflectionTypeLoadException
+  commentId: T:System.Reflection.ReflectionTypeLoadException

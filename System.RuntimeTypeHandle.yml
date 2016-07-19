@@ -1,0 +1,590 @@
+items:
+- uid: System.RuntimeTypeHandle
+  commentId: T:System.RuntimeTypeHandle
+  id: RuntimeTypeHandle
+  parent: System
+  children:
+  - System.RuntimeTypeHandle.Equals(System.Object)
+  - System.RuntimeTypeHandle.Equals(System.RuntimeTypeHandle)
+  - System.RuntimeTypeHandle.GetHashCode
+  - System.RuntimeTypeHandle.op_Equality(System.Object,System.RuntimeTypeHandle)
+  - System.RuntimeTypeHandle.op_Equality(System.RuntimeTypeHandle,System.Object)
+  - System.RuntimeTypeHandle.op_Inequality(System.Object,System.RuntimeTypeHandle)
+  - System.RuntimeTypeHandle.op_Inequality(System.RuntimeTypeHandle,System.Object)
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.RuntimeTypeHandle
+  type: Struct
+  source:
+    remote:
+      path: src/mscorlib/src/System/RuntimeHandles.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: RuntimeTypeHandle
+    path: src/mscorlib/src/System/RuntimeHandles.cs
+    startLine: 26
+  assemblies:
+  - System.Runtime
+  namespace: System
+  summary: "\n<p>Represents a type using an internal metadata token.</p>\n"
+  syntax:
+    content: >-
+      [Serializable]
+
+      [ComVisible(true)]
+
+      public struct RuntimeTypeHandle : ISerializable
+    content.vb: >-
+      <Serializable>
+
+      <ComVisible(True)>
+
+      Public Structure RuntimeTypeHandle
+          Implements ISerializable
+  inheritedMembers:
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+  attributes:
+  - type: System.Runtime.InteropServices.StructLayoutAttribute
+    ctor: System.Runtime.InteropServices.StructLayoutAttribute.#ctor(System.Runtime.InteropServices.LayoutKind)
+    arguments:
+    - type: System.Runtime.InteropServices.LayoutKind
+      value: 0
+  modifiers.csharp:
+  - public
+  - struct
+  modifiers.vb:
+  - Public
+  - Structure
+  nameWithType: RuntimeTypeHandle
+- uid: System.RuntimeTypeHandle.Equals(System.Object)
+  commentId: M:System.RuntimeTypeHandle.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: System.RuntimeTypeHandle
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.RuntimeTypeHandle.Equals(System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/RuntimeHandles.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Equals
+    path: src/mscorlib/src/System/RuntimeHandles.cs
+    startLine: 111
+  assemblies:
+  - System.Runtime
+  namespace: System
+  summary: "\n<p>Indicates whether the specified object is equal to the current <xref href=\"System.RuntimeTypeHandle\" data-throw-if-not-resolved=\"false\"></xref> structure.</p>\n"
+  syntax:
+    content: >-
+      [ReliabilityContract(Consistency.WillNotCorruptState, Cer.Success)]
+
+      public override bool Equals(object obj)
+    content.vb: >-
+      <ReliabilityContract(Consistency.WillNotCorruptState, Cer.Success)>
+
+      Public Overrides Function Equals(obj As Object) As Boolean
+    parameters:
+    - id: obj
+      type: System.Object
+      description: "\n<p>An object to compare to the current instance.</p>\n"
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if <em>obj</em> is a <xref href=\"System.RuntimeTypeHandle\" data-throw-if-not-resolved=\"false\"></xref> structure and is equal to the value of this instance; otherwise, <strong>false</strong>.</p>\n"
+  overridden: System.ValueType.Equals(System.Object)
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  nameWithType: RuntimeTypeHandle.Equals(Object)
+- uid: System.RuntimeTypeHandle.Equals(System.RuntimeTypeHandle)
+  commentId: M:System.RuntimeTypeHandle.Equals(System.RuntimeTypeHandle)
+  id: Equals(System.RuntimeTypeHandle)
+  parent: System.RuntimeTypeHandle
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.RuntimeTypeHandle.Equals(System.RuntimeTypeHandle)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/RuntimeHandles.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Equals
+    path: src/mscorlib/src/System/RuntimeHandles.cs
+    startLine: 121
+  assemblies:
+  - System.Runtime
+  namespace: System
+  summary: "\n<p>Indicates whether the specified <xref href=\"System.RuntimeTypeHandle\" data-throw-if-not-resolved=\"false\"></xref> structure is equal to the current <xref href=\"System.RuntimeTypeHandle\" data-throw-if-not-resolved=\"false\"></xref> structure.</p>\n"
+  syntax:
+    content: >-
+      [ReliabilityContract(Consistency.WillNotCorruptState, Cer.Success)]
+
+      public bool Equals(RuntimeTypeHandle handle)
+    content.vb: >-
+      <ReliabilityContract(Consistency.WillNotCorruptState, Cer.Success)>
+
+      Public Function Equals(handle As RuntimeTypeHandle) As Boolean
+    parameters:
+    - id: handle
+      type: System.RuntimeTypeHandle
+      description: "\n<p>The <xref href=\"System.RuntimeTypeHandle\" data-throw-if-not-resolved=\"false\"></xref> structure to compare to the current instance.</p>\n"
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if the value of <em>handle</em> is equal to the value of this instance; otherwise, <strong>false</strong>.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: RuntimeTypeHandle.Equals(RuntimeTypeHandle)
+- uid: System.RuntimeTypeHandle.GetHashCode
+  commentId: M:System.RuntimeTypeHandle.GetHashCode
+  id: GetHashCode
+  parent: System.RuntimeTypeHandle
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.RuntimeTypeHandle.GetHashCode()
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/RuntimeHandles.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: GetHashCode
+    path: src/mscorlib/src/System/RuntimeHandles.cs
+    startLine: 106
+  assemblies:
+  - System.Runtime
+  namespace: System
+  summary: "\n<p>Returns the hash code for the current instance.</p>\n"
+  syntax:
+    content: public override int GetHashCode()
+    content.vb: Public Overrides Function GetHashCode As Integer
+    return:
+      type: System.Int32
+      description: "\n<p>A 32-bit signed integer hash code.</p>\n"
+  overridden: System.ValueType.GetHashCode
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  nameWithType: RuntimeTypeHandle.GetHashCode()
+- uid: System.RuntimeTypeHandle.op_Equality(System.Object,System.RuntimeTypeHandle)
+  commentId: M:System.RuntimeTypeHandle.op_Equality(System.Object,System.RuntimeTypeHandle)
+  id: op_Equality(System.Object,System.RuntimeTypeHandle)
+  parent: System.RuntimeTypeHandle
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.RuntimeTypeHandle.Equality(System.Object, System.RuntimeTypeHandle)
+  type: Operator
+  source:
+    remote:
+      path: src/mscorlib/src/System/RuntimeHandles.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: op_Equality
+    path: src/mscorlib/src/System/RuntimeHandles.cs
+    startLine: 88
+  assemblies:
+  - System.Runtime
+  namespace: System
+  summary: "\n<p>Indicates whether an object and a <xref href=\"System.RuntimeTypeHandle\" data-throw-if-not-resolved=\"false\"></xref> structure are equal.</p>\n"
+  syntax:
+    content: public static bool operator ==(object left, RuntimeTypeHandle right)
+    content.vb: Public Shared Operator =(left As Object, right As RuntimeTypeHandle) As Boolean
+    parameters:
+    - id: left
+      type: System.Object
+      description: "\n<p>An object to compare to <em>right</em>.</p>\n"
+    - id: right
+      type: System.RuntimeTypeHandle
+      description: "\n<p>A <xref href=\"System.RuntimeTypeHandle\" data-throw-if-not-resolved=\"false\"></xref> structure to compare to <em>left</em>.</p>\n"
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if <em>left</em> is a <xref href=\"System.RuntimeTypeHandle\" data-throw-if-not-resolved=\"false\"></xref> structure and is equal to <em>right</em>; otherwise, <strong>false</strong>.</p>\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  nameWithType: RuntimeTypeHandle.Equality(Object, RuntimeTypeHandle)
+- uid: System.RuntimeTypeHandle.op_Equality(System.RuntimeTypeHandle,System.Object)
+  commentId: M:System.RuntimeTypeHandle.op_Equality(System.RuntimeTypeHandle,System.Object)
+  id: op_Equality(System.RuntimeTypeHandle,System.Object)
+  parent: System.RuntimeTypeHandle
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.RuntimeTypeHandle.Equality(System.RuntimeTypeHandle, System.Object)
+  type: Operator
+  source:
+    remote:
+      path: src/mscorlib/src/System/RuntimeHandles.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: op_Equality
+    path: src/mscorlib/src/System/RuntimeHandles.cs
+    startLine: 86
+  assemblies:
+  - System.Runtime
+  namespace: System
+  summary: "\n<p>Indicates whether a <xref href=\"System.RuntimeTypeHandle\" data-throw-if-not-resolved=\"false\"></xref> structure is equal to an object.</p>\n"
+  syntax:
+    content: public static bool operator ==(RuntimeTypeHandle left, object right)
+    content.vb: Public Shared Operator =(left As RuntimeTypeHandle, right As Object) As Boolean
+    parameters:
+    - id: left
+      type: System.RuntimeTypeHandle
+      description: "\n<p>A <xref href=\"System.RuntimeTypeHandle\" data-throw-if-not-resolved=\"false\"></xref> structure to compare to <em>right</em>.</p>\n"
+    - id: right
+      type: System.Object
+      description: "\n<p>An object to compare to <em>left</em>.</p>\n"
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if <em>right</em> is a <xref href=\"System.RuntimeTypeHandle\" data-throw-if-not-resolved=\"false\"></xref> and is equal to <em>left</em>; otherwise, <strong>false</strong>.</p>\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  nameWithType: RuntimeTypeHandle.Equality(RuntimeTypeHandle, Object)
+- uid: System.RuntimeTypeHandle.op_Inequality(System.Object,System.RuntimeTypeHandle)
+  commentId: M:System.RuntimeTypeHandle.op_Inequality(System.Object,System.RuntimeTypeHandle)
+  id: op_Inequality(System.Object,System.RuntimeTypeHandle)
+  parent: System.RuntimeTypeHandle
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.RuntimeTypeHandle.Inequality(System.Object, System.RuntimeTypeHandle)
+  type: Operator
+  source:
+    remote:
+      path: src/mscorlib/src/System/RuntimeHandles.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: op_Inequality
+    path: src/mscorlib/src/System/RuntimeHandles.cs
+    startLine: 92
+  assemblies:
+  - System.Runtime
+  namespace: System
+  summary: "\n<p>Indicates whether an object and a <xref href=\"System.RuntimeTypeHandle\" data-throw-if-not-resolved=\"false\"></xref> structure are not equal.</p>\n"
+  syntax:
+    content: public static bool operator !=(object left, RuntimeTypeHandle right)
+    content.vb: Public Shared Operator <>(left As Object, right As RuntimeTypeHandle) As Boolean
+    parameters:
+    - id: left
+      type: System.Object
+      description: "\n<p>An object to compare to <em>right</em>.</p>\n"
+    - id: right
+      type: System.RuntimeTypeHandle
+      description: "\n<p>A <xref href=\"System.RuntimeTypeHandle\" data-throw-if-not-resolved=\"false\"></xref> structure to compare to <em>left</em>.</p>\n"
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if <em>left</em> is a <xref href=\"System.RuntimeTypeHandle\" data-throw-if-not-resolved=\"false\"></xref> and is not equal to <em>right</em>; otherwise, <strong>false</strong>.</p>\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  nameWithType: RuntimeTypeHandle.Inequality(Object, RuntimeTypeHandle)
+- uid: System.RuntimeTypeHandle.op_Inequality(System.RuntimeTypeHandle,System.Object)
+  commentId: M:System.RuntimeTypeHandle.op_Inequality(System.RuntimeTypeHandle,System.Object)
+  id: op_Inequality(System.RuntimeTypeHandle,System.Object)
+  parent: System.RuntimeTypeHandle
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.RuntimeTypeHandle.Inequality(System.RuntimeTypeHandle, System.Object)
+  type: Operator
+  source:
+    remote:
+      path: src/mscorlib/src/System/RuntimeHandles.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: op_Inequality
+    path: src/mscorlib/src/System/RuntimeHandles.cs
+    startLine: 90
+  assemblies:
+  - System.Runtime
+  namespace: System
+  summary: "\n<p>Indicates whether a <xref href=\"System.RuntimeTypeHandle\" data-throw-if-not-resolved=\"false\"></xref> structure is not equal to an object.</p>\n"
+  syntax:
+    content: public static bool operator !=(RuntimeTypeHandle left, object right)
+    content.vb: Public Shared Operator <>(left As RuntimeTypeHandle, right As Object) As Boolean
+    parameters:
+    - id: left
+      type: System.RuntimeTypeHandle
+      description: "\n<p>A <xref href=\"System.RuntimeTypeHandle\" data-throw-if-not-resolved=\"false\"></xref> structure to compare to <em>right</em>.</p>\n"
+    - id: right
+      type: System.Object
+      description: "\n<p>An object to compare to <em>left</em>.</p>\n"
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if <em>right</em> is a <xref href=\"System.RuntimeTypeHandle\" data-throw-if-not-resolved=\"false\"></xref> structure and is not equal to <em>left</em>; otherwise, <strong>false</strong>.</p>\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  nameWithType: RuntimeTypeHandle.Inequality(RuntimeTypeHandle, Object)
+references:
+- uid: System
+  isExternal: false
+  name: "XXX"
+  fullName: System
+  nameWithType: System
+  commentId: N:System
+- uid: System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: false
+  name: "XXX"
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: "XXX"
+    fullName: System.ValueType.ToString
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: "XXX"
+    fullName: System.ValueType.ToString
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: ValueType.ToString()
+  commentId: M:System.ValueType.ToString
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.Equals(Object, Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.GetType()
+  commentId: M:System.Object.GetType
+- uid: System.ValueType
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.ValueType
+  nameWithType: ValueType
+  commentId: T:System.ValueType
+- uid: System.Object
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Object
+  nameWithType: Object
+  commentId: T:System.Object
+- uid: System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  name: "XXX"
+  fullName: System.ValueType.Equals(System.Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: "XXX"
+    fullName: System.ValueType.Equals
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: "XXX"
+    fullName: System.ValueType.Equals
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: ValueType.Equals(Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+- uid: System.Boolean
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Boolean
+  nameWithType: Boolean
+  commentId: T:System.Boolean
+- uid: System.RuntimeTypeHandle
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.RuntimeTypeHandle
+  nameWithType: RuntimeTypeHandle
+  commentId: T:System.RuntimeTypeHandle
+- uid: System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: false
+  name: "XXX"
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: "XXX"
+    fullName: System.ValueType.GetHashCode
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: "XXX"
+    fullName: System.ValueType.GetHashCode
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: ValueType.GetHashCode()
+  commentId: M:System.ValueType.GetHashCode
+- uid: System.Int32
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Int32
+  nameWithType: Int32
+  commentId: T:System.Int32

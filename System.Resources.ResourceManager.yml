@@ -1,0 +1,576 @@
+items:
+- uid: System.Resources.ResourceManager
+  commentId: T:System.Resources.ResourceManager
+  id: ResourceManager
+  parent: System.Resources
+  children:
+  - System.Resources.ResourceManager.#ctor(System.String,System.Reflection.Assembly)
+  - System.Resources.ResourceManager.#ctor(System.Type)
+  - System.Resources.ResourceManager.GetString(System.String)
+  - System.Resources.ResourceManager.GetString(System.String,System.Globalization.CultureInfo)
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Resources.ResourceManager
+  type: Class
+  source:
+    remote:
+      path: src/mscorlib/src/System/Resources/ResourceManager.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: ResourceManager
+    path: src/mscorlib/src/System/Resources/ResourceManager.cs
+    startLine: 157
+  assemblies:
+  - System.Resources.ResourceManager
+  namespace: System.Resources
+  summary: "\n<p>Represents a resource manager that provides convenient access to culture-specific resources at run time.</p>\n<p>\n<strong>Security Note</strong>: Calling methods in this class with untrusted data is a security risk. Call the methods in the class only with trusted data. For more information, see <see href=\"http://curah.microsoft.com/57301/security-some-apis-are-not-necessarily-appropriate-for-untrusted-input\">Untrusted Data Security Risks</see>.</p>\n"
+  syntax:
+    content: >-
+      [Serializable]
+
+      [ComVisible(true)]
+
+      public class ResourceManager
+    content.vb: >-
+      <Serializable>
+
+      <ComVisible(True)>
+
+      Public Class ResourceManager
+  seealso:
+  - type: System.Globalization.CultureInfo
+    commentId: T:System.Globalization.CultureInfo
+  - type: System.Globalization.CultureInfo.CurrentUICulture
+    commentId: P:System.Globalization.CultureInfo.CurrentUICulture
+  - type: System.Resources.SatelliteContractVersionAttribute
+    commentId: T:System.Resources.SatelliteContractVersionAttribute
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+  nameWithType: ResourceManager
+- uid: System.Resources.ResourceManager.#ctor(System.String,System.Reflection.Assembly)
+  commentId: M:System.Resources.ResourceManager.#ctor(System.String,System.Reflection.Assembly)
+  id: '#ctor(System.String,System.Reflection.Assembly)'
+  parent: System.Resources.ResourceManager
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Resources.ResourceManager.ResourceManager(System.String, System.Reflection.Assembly)
+  type: Constructor
+  source:
+    remote:
+      path: src/mscorlib/src/System/Resources/ResourceManager.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: .ctor
+    path: src/mscorlib/src/System/Resources/ResourceManager.cs
+    startLine: 335
+  assemblies:
+  - System.Resources.ResourceManager
+  namespace: System.Resources
+  summary: "\n<p>Initializes a new instance of the <xref href=\"System.Resources.ResourceManager\" data-throw-if-not-resolved=\"false\"></xref> class that looks up resources contained in files with the specified root name in the given assembly.</p>\n"
+  syntax:
+    content: >-
+      [MethodImpl(MethodImplOptions.NoInlining)]
+
+      public ResourceManager(string baseName, Assembly assembly)
+    content.vb: >-
+      <MethodImpl(MethodImplOptions.NoInlining)>
+
+      Public Sub New(baseName As String, assembly As Assembly)
+    parameters:
+    - id: baseName
+      type: System.String
+      description: "\n<p>The root name of the resource file without its extension but including any fully qualified namespace name. For example, the root name for the resource file named MyApplication.MyResource.en-US.resources is MyApplication.MyResource. </p>\n"
+    - id: assembly
+      type: System.Reflection.Assembly
+      description: "\n<p>The main assembly for the resources. </p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>The <em>baseName</em> or <em>assembly</em> parameter is <strong>null</strong>. </p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: ResourceManager.ResourceManager(String, Assembly)
+- uid: System.Resources.ResourceManager.#ctor(System.Type)
+  commentId: M:System.Resources.ResourceManager.#ctor(System.Type)
+  id: '#ctor(System.Type)'
+  parent: System.Resources.ResourceManager
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Resources.ResourceManager.ResourceManager(System.Type)
+  type: Constructor
+  source:
+    remote:
+      path: src/mscorlib/src/System/Resources/ResourceManager.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: .ctor
+    path: src/mscorlib/src/System/Resources/ResourceManager.cs
+    startLine: 402
+  assemblies:
+  - System.Resources.ResourceManager
+  namespace: System.Resources
+  summary: "\n<p>Initializes a new instance of the <xref href=\"System.Resources.ResourceManager\" data-throw-if-not-resolved=\"false\"></xref> class that looks up resources in satellite assemblies based on information from the specified type object.</p>\n"
+  syntax:
+    content: >-
+      [MethodImpl(MethodImplOptions.NoInlining)]
+
+      public ResourceManager(Type resourceSource)
+    content.vb: >-
+      <MethodImpl(MethodImplOptions.NoInlining)>
+
+      Public Sub New(resourceSource As Type)
+    parameters:
+    - id: resourceSource
+      type: System.Type
+      description: "\n<p>A type from which the resource manager derives all information for finding .resources files. </p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>The <em>resourceSource</em> parameter is <strong>null</strong>. </p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: ResourceManager.ResourceManager(Type)
+- uid: System.Resources.ResourceManager.GetString(System.String)
+  commentId: M:System.Resources.ResourceManager.GetString(System.String)
+  id: GetString(System.String)
+  parent: System.Resources.ResourceManager
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Resources.ResourceManager.GetString(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Resources/ResourceManager.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: GetString
+    path: src/mscorlib/src/System/Resources/ResourceManager.cs
+    startLine: 1217
+  assemblies:
+  - System.Resources.ResourceManager
+  namespace: System.Resources
+  summary: "\n<p>Returns the value of the specified string resource.</p>\n"
+  syntax:
+    content: public virtual string GetString(string name)
+    content.vb: Public Overridable Function GetString(name As String) As String
+    parameters:
+    - id: name
+      type: System.String
+      description: "\n<p>The name of the resource to retrieve. </p>\n"
+    return:
+      type: System.String
+      description: "\n<p>The value of the resource localized for the caller's current UI culture, or <strong>null</strong> if <em>name</em> cannot be found in a resource set.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>The <em>name</em> parameter is <strong>null</strong>. </p>\n"
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: "\n<p>The value of the specified resource is not a string. </p>\n"
+  - type: System.Resources.MissingManifestResourceException
+    commentId: T:System.Resources.MissingManifestResourceException
+    description: "\n<p>No usable set of resources has been found, and there are no resources for the default culture. For information about how to handle this exception, see the \"Handling MissingManifestResourceException and MissingSatelliteAssemblyException Exceptions\" section in the <xref href=\"System.Resources.ResourceManager\" data-throw-if-not-resolved=\"false\"></xref> class topic. </p>\n"
+  - type: System.Resources.MissingSatelliteAssemblyException
+    commentId: T:System.Resources.MissingSatelliteAssemblyException
+    description: "\n<p>The default culture's resources reside in a satellite assembly that could not be found. For information about how to handle this exception, see the \"Handling MissingManifestResourceException and MissingSatelliteAssemblyException Exceptions\" section in the <xref href=\"System.Resources.ResourceManager\" data-throw-if-not-resolved=\"false\"></xref> class topic.</p>\n"
+  seealso:
+  - type: System.Globalization.CultureInfo
+    commentId: T:System.Globalization.CultureInfo
+  see:
+  - type: System.Security.Permissions.ReflectionPermission
+    commentId: T:System.Security.Permissions.ReflectionPermission
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: ResourceManager.GetString(String)
+- uid: System.Resources.ResourceManager.GetString(System.String,System.Globalization.CultureInfo)
+  commentId: M:System.Resources.ResourceManager.GetString(System.String,System.Globalization.CultureInfo)
+  id: GetString(System.String,System.Globalization.CultureInfo)
+  parent: System.Resources.ResourceManager
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Resources.ResourceManager.GetString(System.String, System.Globalization.CultureInfo)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Resources/ResourceManager.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: GetString
+    path: src/mscorlib/src/System/Resources/ResourceManager.cs
+    startLine: 1225
+  assemblies:
+  - System.Resources.ResourceManager
+  namespace: System.Resources
+  summary: "\n<p>Returns the value of the string resource localized for the specified culture.</p>\n"
+  syntax:
+    content: public virtual string GetString(string name, CultureInfo culture)
+    content.vb: Public Overridable Function GetString(name As String, culture As CultureInfo) As String
+    parameters:
+    - id: name
+      type: System.String
+      description: "\n<p>The name of the resource to retrieve. </p>\n"
+    - id: culture
+      type: System.Globalization.CultureInfo
+      description: "\n<p>An object that represents the culture for which the resource is localized. </p>\n"
+    return:
+      type: System.String
+      description: "\n<p>The value of the resource localized for the specified culture, or <strong>null</strong> if <em>name</em> cannot be found in a resource set.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>The <em>name</em> parameter is <strong>null</strong>. </p>\n"
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: "\n<p>The value of the specified resource is not a string. </p>\n"
+  - type: System.Resources.MissingManifestResourceException
+    commentId: T:System.Resources.MissingManifestResourceException
+    description: "\n<p>No usable set of resources has been found, and there are no resources for a default culture. For information about how to handle this exception, see the \"Handling MissingManifestResourceException and MissingSatelliteAssemblyException Exceptions\" section in the <xref href=\"System.Resources.ResourceManager\" data-throw-if-not-resolved=\"false\"></xref> class topic. </p>\n"
+  - type: System.Resources.MissingSatelliteAssemblyException
+    commentId: T:System.Resources.MissingSatelliteAssemblyException
+    description: "\n<p>The default culture's resources reside in a satellite assembly that could not be found. For information about how to handle this exception, see the \"Handling MissingManifestResourceException and MissingSatelliteAssemblyException Exceptions\" section in the <xref href=\"System.Resources.ResourceManager\" data-throw-if-not-resolved=\"false\"></xref> class topic.</p>\n"
+  seealso:
+  - type: System.Globalization.CultureInfo
+    commentId: T:System.Globalization.CultureInfo
+  see:
+  - type: System.Security.Permissions.ReflectionPermission
+    commentId: T:System.Security.Permissions.ReflectionPermission
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  nameWithType: ResourceManager.GetString(String, CultureInfo)
+references:
+- uid: System.Resources
+  isExternal: false
+  name: "XXX"
+  fullName: System.Resources
+  nameWithType: System.Resources
+  commentId: N:System.Resources
+- uid: System.Object
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Object
+  nameWithType: Object
+  commentId: T:System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.ToString()
+  commentId: M:System.Object.ToString
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.Equals(Object)
+  commentId: M:System.Object.Equals(System.Object)
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.Equals(Object, Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.GetHashCode()
+  commentId: M:System.Object.GetHashCode
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.GetType()
+  commentId: M:System.Object.GetType
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.MemberwiseClone()
+  commentId: M:System.Object.MemberwiseClone
+- uid: System
+  isExternal: false
+  name: "XXX"
+  fullName: System
+  nameWithType: System
+  commentId: N:System
+- uid: System.String
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.String
+  nameWithType: String
+  commentId: T:System.String
+- uid: System.Reflection.Assembly
+  parent: System.Reflection
+  isExternal: false
+  name: "XXX"
+  fullName: System.Reflection.Assembly
+  nameWithType: Assembly
+  commentId: T:System.Reflection.Assembly
+- uid: System.Reflection
+  isExternal: false
+  name: "XXX"
+  fullName: System.Reflection
+  nameWithType: System.Reflection
+  commentId: N:System.Reflection
+- uid: System.Type
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Type
+  nameWithType: Type
+  commentId: T:System.Type
+- uid: System.Globalization.CultureInfo
+  parent: System.Globalization
+  isExternal: false
+  name: "XXX"
+  fullName: System.Globalization.CultureInfo
+  nameWithType: CultureInfo
+  commentId: T:System.Globalization.CultureInfo
+- uid: System.Globalization
+  isExternal: false
+  name: "XXX"
+  fullName: System.Globalization
+  nameWithType: System.Globalization
+  commentId: N:System.Globalization
+- uid: System.ArgumentNullException
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentNullException
+  nameWithType: ArgumentNullException
+  commentId: T:System.ArgumentNullException
+- uid: System.InvalidOperationException
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.InvalidOperationException
+  nameWithType: InvalidOperationException
+  commentId: T:System.InvalidOperationException
+- uid: System.Resources.MissingManifestResourceException
+  isExternal: false
+  name: "XXX"
+  fullName: System.Resources.MissingManifestResourceException
+  nameWithType: MissingManifestResourceException
+  commentId: T:System.Resources.MissingManifestResourceException
+- uid: System.Resources.MissingSatelliteAssemblyException

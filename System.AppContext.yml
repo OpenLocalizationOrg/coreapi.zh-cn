@@ -1,0 +1,539 @@
+items:
+- uid: System.AppContext
+  commentId: T:System.AppContext
+  id: AppContext
+  parent: System
+  children:
+  - System.AppContext.BaseDirectory
+  - System.AppContext.GetData(System.String)
+  - System.AppContext.SetSwitch(System.String,System.Boolean)
+  - System.AppContext.TargetFrameworkName
+  - System.AppContext.TryGetSwitch(System.String,System.Boolean@)
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.AppContext
+  type: Class
+  source:
+    remote:
+      path: src/mscorlib/src/System/AppContext/AppContext.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: AppContext
+    path: src/mscorlib/src/System/AppContext/AppContext.cs
+    startLine: 9
+  assemblies:
+  - System.AppContext
+  namespace: System
+  summary: "\n<p>Provides members for setting and retrieving data about an application's context. </p>\n"
+  syntax:
+    content: public class AppContext
+    content.vb: Public Class AppContext
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+  nameWithType: AppContext
+- uid: System.AppContext.BaseDirectory
+  commentId: P:System.AppContext.BaseDirectory
+  id: BaseDirectory
+  parent: System.AppContext
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.AppContext.BaseDirectory
+  type: Property
+  source:
+    remote:
+      path: src/mscorlib/src/System/AppContext/AppContext.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: BaseDirectory
+    path: src/mscorlib/src/System/AppContext/AppContext.cs
+    startLine: 21
+  assemblies:
+  - System.AppContext
+  namespace: System
+  summary: "\n<p>Gets the pathname of the base directory that the assembly resolver uses to probe for assemblies. </p>\n"
+  syntax:
+    content: >-
+      public static string BaseDirectory
+
+      {
+          [SecuritySafeCritical]
+          get;
+      }
+    content.vb: Public Shared ReadOnly Property BaseDirectory As String
+    parameters: []
+    return:
+      type: System.String
+      description: "\n<p>the pathname of the base directory that the assembly resolver uses to probe for assemblies. </p>\n"
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+  nameWithType: AppContext.BaseDirectory
+- uid: System.AppContext.SetSwitch(System.String,System.Boolean)
+  commentId: M:System.AppContext.SetSwitch(System.String,System.Boolean)
+  id: SetSwitch(System.String,System.Boolean)
+  parent: System.AppContext
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.AppContext.SetSwitch(System.String, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/AppContext/AppContext.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: SetSwitch
+    path: src/mscorlib/src/System/AppContext/AppContext.cs
+    startLine: 160
+  assemblies:
+  - System.AppContext
+  namespace: System
+  summary: "\n<p>Sets the value of a switch. </p>\n"
+  syntax:
+    content: public static void SetSwitch(string switchName, bool isEnabled)
+    content.vb: Public Shared Sub SetSwitch(switchName As String, isEnabled As Boolean)
+    parameters:
+    - id: switchName
+      type: System.String
+      description: "\n<p>The name of the switch. </p>\n"
+    - id: isEnabled
+      type: System.Boolean
+      description: "\n<p>The value of the switch. </p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>switchName</em> is <strong>null</strong>. </p>\n"
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>\n<em>switchName</em> is <xref href=\"System.String.Empty\" data-throw-if-not-resolved=\"false\"></xref>. </p>\n"
+  seealso:
+  - type: System.AppContext.TryGetSwitch(System.String,System.Boolean@)
+    commentId: M:System.AppContext.TryGetSwitch(System.String,System.Boolean@)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  nameWithType: AppContext.SetSwitch(String, Boolean)
+- uid: System.AppContext.TryGetSwitch(System.String,System.Boolean@)
+  commentId: M:System.AppContext.TryGetSwitch(System.String,System.Boolean@)
+  id: TryGetSwitch(System.String,System.Boolean@)
+  parent: System.AppContext
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.AppContext.TryGetSwitch(System.String, out System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/AppContext/AppContext.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: TryGetSwitch
+    path: src/mscorlib/src/System/AppContext/AppContext.cs
+    startLine: 64
+  assemblies:
+  - System.AppContext
+  namespace: System
+  summary: "\n<p>Tries to get the value of a switch. </p>\n"
+  syntax:
+    content: public static bool TryGetSwitch(string switchName, out bool isEnabled)
+    content.vb: Public Shared Function TryGetSwitch(switchName As String, ByRef isEnabled As Boolean) As Boolean
+    parameters:
+    - id: switchName
+      type: System.String
+      description: "\n<p>The name of the switch. </p>\n"
+    - id: isEnabled
+      type: System.Boolean
+      description: "\n<p>When this method returns, contains the value of <em>switchName</em> if <em>switchName</em> was found, or <strong>false</strong> if <em>switchName</em> was not found. This parameter is passed uninitialized. </p>\n"
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if <em>switchName</em> was set and the <em>isEnabled</em> argument contains the value of the switch; otherwise, <strong>false</strong>. </p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>switchName</em> is <strong>null</strong>. </p>\n"
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>\n<em>switchName</em> is <xref href=\"System.String.Empty\" data-throw-if-not-resolved=\"false\"></xref>. </p>\n"
+  seealso:
+  - type: System.AppContext.SetSwitch(System.String,System.Boolean)
+    commentId: M:System.AppContext.SetSwitch(System.String,System.Boolean)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: System.AppContext.TryGetSwitch(System.String, ByRef System.Boolean)
+  name.vb: TryGetSwitch(String, ByRef Boolean)
+  nameWithType: AppContext.TryGetSwitch(String, out Boolean)
+  nameWithType.vb: AppContext.TryGetSwitch(String, ByRef Boolean)
+- uid: System.AppContext.TargetFrameworkName
+  commentId: P:System.AppContext.TargetFrameworkName
+  id: TargetFrameworkName
+  parent: System.AppContext
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.AppContext.TargetFrameworkName
+  type: Property
+  source:
+    remote:
+      path: src/mscorlib/src/System/AppContext/AppContext.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: TargetFrameworkName
+    path: src/mscorlib/src/System/AppContext/AppContext.cs
+    startLine: 34
+  assemblies:
+  - System.AppContext
+  namespace: System
+  syntax:
+    content: public static string TargetFrameworkName { get; }
+    content.vb: Public Shared ReadOnly Property TargetFrameworkName As String
+    parameters: []
+    return:
+      type: System.String
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+  nameWithType: AppContext.TargetFrameworkName
+- uid: System.AppContext.GetData(System.String)
+  commentId: M:System.AppContext.GetData(System.String)
+  id: GetData(System.String)
+  parent: System.AppContext
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.AppContext.GetData(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/AppContext/AppContext.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: GetData
+    path: src/mscorlib/src/System/AppContext/AppContext.cs
+    startLine: 44
+  assemblies:
+  - System.AppContext
+  namespace: System
+  syntax:
+    content: >-
+      [SecuritySafeCritical]
+
+      public static object GetData(string name)
+    content.vb: >-
+      <SecuritySafeCritical>
+
+      Public Shared Function GetData(name As String) As Object
+    parameters:
+    - id: name
+      type: System.String
+    return:
+      type: System.Object
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  nameWithType: AppContext.GetData(String)
+references:
+- uid: System
+  isExternal: false
+  name: "XXX"
+  fullName: System
+  nameWithType: System
+  commentId: N:System
+- uid: System.Object
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Object
+  nameWithType: Object
+  commentId: T:System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.ToString()
+  commentId: M:System.Object.ToString
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.Equals(Object)
+  commentId: M:System.Object.Equals(System.Object)
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.Equals(Object, Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.GetHashCode()
+  commentId: M:System.Object.GetHashCode
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.GetType()
+  commentId: M:System.Object.GetType
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.MemberwiseClone()
+  commentId: M:System.Object.MemberwiseClone
+- uid: System.String
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.String
+  nameWithType: String
+  commentId: T:System.String
+- uid: System.Boolean
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Boolean
+  nameWithType: Boolean
+  commentId: T:System.Boolean
+- uid: System.ArgumentNullException
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentNullException
+  nameWithType: ArgumentNullException
+  commentId: T:System.ArgumentNullException
+- uid: System.ArgumentException
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentException
+  nameWithType: ArgumentException
+  commentId: T:System.ArgumentException

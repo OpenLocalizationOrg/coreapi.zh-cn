@@ -1,0 +1,1401 @@
+items:
+- uid: System.Threading.ReaderWriterLockSlim
+  commentId: T:System.Threading.ReaderWriterLockSlim
+  id: ReaderWriterLockSlim
+  parent: System.Threading
+  children:
+  - System.Threading.ReaderWriterLockSlim.#ctor
+  - System.Threading.ReaderWriterLockSlim.#ctor(System.Threading.LockRecursionPolicy)
+  - System.Threading.ReaderWriterLockSlim.CurrentReadCount
+  - System.Threading.ReaderWriterLockSlim.Dispose
+  - System.Threading.ReaderWriterLockSlim.EnterReadLock
+  - System.Threading.ReaderWriterLockSlim.EnterUpgradeableReadLock
+  - System.Threading.ReaderWriterLockSlim.EnterWriteLock
+  - System.Threading.ReaderWriterLockSlim.ExitReadLock
+  - System.Threading.ReaderWriterLockSlim.ExitUpgradeableReadLock
+  - System.Threading.ReaderWriterLockSlim.ExitWriteLock
+  - System.Threading.ReaderWriterLockSlim.IsReadLockHeld
+  - System.Threading.ReaderWriterLockSlim.IsUpgradeableReadLockHeld
+  - System.Threading.ReaderWriterLockSlim.IsWriteLockHeld
+  - System.Threading.ReaderWriterLockSlim.RecursionPolicy
+  - System.Threading.ReaderWriterLockSlim.RecursiveReadCount
+  - System.Threading.ReaderWriterLockSlim.RecursiveUpgradeCount
+  - System.Threading.ReaderWriterLockSlim.RecursiveWriteCount
+  - System.Threading.ReaderWriterLockSlim.TryEnterReadLock(System.Int32)
+  - System.Threading.ReaderWriterLockSlim.TryEnterReadLock(System.TimeSpan)
+  - System.Threading.ReaderWriterLockSlim.TryEnterUpgradeableReadLock(System.Int32)
+  - System.Threading.ReaderWriterLockSlim.TryEnterUpgradeableReadLock(System.TimeSpan)
+  - System.Threading.ReaderWriterLockSlim.TryEnterWriteLock(System.Int32)
+  - System.Threading.ReaderWriterLockSlim.TryEnterWriteLock(System.TimeSpan)
+  - System.Threading.ReaderWriterLockSlim.WaitingReadCount
+  - System.Threading.ReaderWriterLockSlim.WaitingUpgradeCount
+  - System.Threading.ReaderWriterLockSlim.WaitingWriteCount
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.ReaderWriterLockSlim
+  type: Class
+  source:
+    remote:
+      path: src/System.Threading/ref/System.Threading.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: ReaderWriterLockSlim
+    path: src/System.Threading/ref/System.Threading.cs
+    startLine: 215
+  assemblies:
+  - System.Threading
+  namespace: System.Threading
+  summary: "\n<p>Represents a lock that is used to manage access to a resource, allowing multiple threads for reading or exclusive access for writing.</p>\n"
+  syntax:
+    content: 'public class ReaderWriterLockSlim : IDisposable'
+    content.vb: >-
+      Public Class ReaderWriterLockSlim
+          Implements IDisposable
+  inheritance:
+  - System.Object
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+  nameWithType: ReaderWriterLockSlim
+- uid: System.Threading.ReaderWriterLockSlim.#ctor
+  commentId: M:System.Threading.ReaderWriterLockSlim.#ctor
+  id: '#ctor'
+  parent: System.Threading.ReaderWriterLockSlim
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.ReaderWriterLockSlim.ReaderWriterLockSlim()
+  type: Constructor
+  source:
+    remote:
+      path: src/System.Threading/ref/System.Threading.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: .ctor
+    path: src/System.Threading/ref/System.Threading.cs
+    startLine: 217
+  assemblies:
+  - System.Threading
+  namespace: System.Threading
+  summary: "\n<p>Initializes a new instance of the <xref href=\"System.Threading.ReaderWriterLockSlim\" data-throw-if-not-resolved=\"false\"></xref> class with default property values.</p>\n"
+  syntax:
+    content: public ReaderWriterLockSlim()
+    content.vb: Public Sub New
+  seealso:
+  - type: System.Threading.LockRecursionPolicy
+    commentId: T:System.Threading.LockRecursionPolicy
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: ReaderWriterLockSlim.ReaderWriterLockSlim()
+- uid: System.Threading.ReaderWriterLockSlim.#ctor(System.Threading.LockRecursionPolicy)
+  commentId: M:System.Threading.ReaderWriterLockSlim.#ctor(System.Threading.LockRecursionPolicy)
+  id: '#ctor(System.Threading.LockRecursionPolicy)'
+  parent: System.Threading.ReaderWriterLockSlim
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.ReaderWriterLockSlim.ReaderWriterLockSlim(System.Threading.LockRecursionPolicy)
+  type: Constructor
+  source:
+    remote:
+      path: src/System.Threading/ref/System.Threading.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: .ctor
+    path: src/System.Threading/ref/System.Threading.cs
+    startLine: 218
+  assemblies:
+  - System.Threading
+  namespace: System.Threading
+  summary: "\n<p>Initializes a new instance of the <xref href=\"System.Threading.ReaderWriterLockSlim\" data-throw-if-not-resolved=\"false\"></xref> class, specifying the lock recursion policy.</p>\n"
+  syntax:
+    content: public ReaderWriterLockSlim(LockRecursionPolicy recursionPolicy)
+    content.vb: Public Sub New(recursionPolicy As LockRecursionPolicy)
+    parameters:
+    - id: recursionPolicy
+      type: System.Threading.LockRecursionPolicy
+      description: "\n<p>One of the enumeration values that specifies the lock recursion policy.</p>\n"
+  seealso:
+  - type: System.Threading.LockRecursionPolicy
+    commentId: T:System.Threading.LockRecursionPolicy
+  - type: System.Threading.ReaderWriterLockSlim.RecursionPolicy
+    commentId: P:System.Threading.ReaderWriterLockSlim.RecursionPolicy
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: ReaderWriterLockSlim.ReaderWriterLockSlim(LockRecursionPolicy)
+- uid: System.Threading.ReaderWriterLockSlim.CurrentReadCount
+  commentId: P:System.Threading.ReaderWriterLockSlim.CurrentReadCount
+  id: CurrentReadCount
+  parent: System.Threading.ReaderWriterLockSlim
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.ReaderWriterLockSlim.CurrentReadCount
+  type: Property
+  source:
+    remote:
+      path: src/System.Threading/ref/System.Threading.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: CurrentReadCount
+    path: src/System.Threading/ref/System.Threading.cs
+    startLine: 219
+  assemblies:
+  - System.Threading
+  namespace: System.Threading
+  summary: "\n<p>Gets the total number of unique threads that have entered the lock in read mode.</p>\n"
+  syntax:
+    content: public int CurrentReadCount { get; }
+    content.vb: Public ReadOnly Property CurrentReadCount As Integer
+    parameters: []
+    return:
+      type: System.Int32
+      description: "\n<p>The number of unique threads that have entered the lock in read mode.</p>\n"
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  nameWithType: ReaderWriterLockSlim.CurrentReadCount
+- uid: System.Threading.ReaderWriterLockSlim.IsReadLockHeld
+  commentId: P:System.Threading.ReaderWriterLockSlim.IsReadLockHeld
+  id: IsReadLockHeld
+  parent: System.Threading.ReaderWriterLockSlim
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.ReaderWriterLockSlim.IsReadLockHeld
+  type: Property
+  source:
+    remote:
+      path: src/System.Threading/ref/System.Threading.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: IsReadLockHeld
+    path: src/System.Threading/ref/System.Threading.cs
+    startLine: 220
+  assemblies:
+  - System.Threading
+  namespace: System.Threading
+  summary: "\n<p>Gets a value that indicates whether the current thread has entered the lock in read mode.</p>\n"
+  syntax:
+    content: public bool IsReadLockHeld { get; }
+    content.vb: Public ReadOnly Property IsReadLockHeld As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if the current thread has entered read mode; otherwise, <strong>false</strong>.</p>\n"
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  nameWithType: ReaderWriterLockSlim.IsReadLockHeld
+- uid: System.Threading.ReaderWriterLockSlim.IsUpgradeableReadLockHeld
+  commentId: P:System.Threading.ReaderWriterLockSlim.IsUpgradeableReadLockHeld
+  id: IsUpgradeableReadLockHeld
+  parent: System.Threading.ReaderWriterLockSlim
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.ReaderWriterLockSlim.IsUpgradeableReadLockHeld
+  type: Property
+  source:
+    remote:
+      path: src/System.Threading/ref/System.Threading.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: IsUpgradeableReadLockHeld
+    path: src/System.Threading/ref/System.Threading.cs
+    startLine: 221
+  assemblies:
+  - System.Threading
+  namespace: System.Threading
+  summary: "\n<p>Gets a value that indicates whether the current thread has entered the lock in upgradeable mode. </p>\n"
+  syntax:
+    content: public bool IsUpgradeableReadLockHeld { get; }
+    content.vb: Public ReadOnly Property IsUpgradeableReadLockHeld As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if the current thread has entered upgradeable mode; otherwise, <strong>false</strong>.</p>\n"
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  nameWithType: ReaderWriterLockSlim.IsUpgradeableReadLockHeld
+- uid: System.Threading.ReaderWriterLockSlim.IsWriteLockHeld
+  commentId: P:System.Threading.ReaderWriterLockSlim.IsWriteLockHeld
+  id: IsWriteLockHeld
+  parent: System.Threading.ReaderWriterLockSlim
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.ReaderWriterLockSlim.IsWriteLockHeld
+  type: Property
+  source:
+    remote:
+      path: src/System.Threading/ref/System.Threading.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: IsWriteLockHeld
+    path: src/System.Threading/ref/System.Threading.cs
+    startLine: 222
+  assemblies:
+  - System.Threading
+  namespace: System.Threading
+  summary: "\n<p>Gets a value that indicates whether the current thread has entered the lock in write mode.</p>\n"
+  syntax:
+    content: public bool IsWriteLockHeld { get; }
+    content.vb: Public ReadOnly Property IsWriteLockHeld As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if the current thread has entered write mode; otherwise, <strong>false</strong>.</p>\n"
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  nameWithType: ReaderWriterLockSlim.IsWriteLockHeld
+- uid: System.Threading.ReaderWriterLockSlim.RecursionPolicy
+  commentId: P:System.Threading.ReaderWriterLockSlim.RecursionPolicy
+  id: RecursionPolicy
+  parent: System.Threading.ReaderWriterLockSlim
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.ReaderWriterLockSlim.RecursionPolicy
+  type: Property
+  source:
+    remote:
+      path: src/System.Threading/ref/System.Threading.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: RecursionPolicy
+    path: src/System.Threading/ref/System.Threading.cs
+    startLine: 223
+  assemblies:
+  - System.Threading
+  namespace: System.Threading
+  summary: "\n<p>Gets a value that indicates the recursion policy for the current <xref href=\"System.Threading.ReaderWriterLockSlim\" data-throw-if-not-resolved=\"false\"></xref> object.</p>\n"
+  syntax:
+    content: public LockRecursionPolicy RecursionPolicy { get; }
+    content.vb: Public ReadOnly Property RecursionPolicy As LockRecursionPolicy
+    parameters: []
+    return:
+      type: System.Threading.LockRecursionPolicy
+      description: "\n<p>One of the enumeration values that specifies the lock recursion policy.</p>\n"
+  seealso:
+  - type: System.Threading.LockRecursionException
+    commentId: T:System.Threading.LockRecursionException
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  nameWithType: ReaderWriterLockSlim.RecursionPolicy
+- uid: System.Threading.ReaderWriterLockSlim.RecursiveReadCount
+  commentId: P:System.Threading.ReaderWriterLockSlim.RecursiveReadCount
+  id: RecursiveReadCount
+  parent: System.Threading.ReaderWriterLockSlim
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.ReaderWriterLockSlim.RecursiveReadCount
+  type: Property
+  source:
+    remote:
+      path: src/System.Threading/ref/System.Threading.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: RecursiveReadCount
+    path: src/System.Threading/ref/System.Threading.cs
+    startLine: 224
+  assemblies:
+  - System.Threading
+  namespace: System.Threading
+  summary: "\n<p>Gets the number of times the current thread has entered the lock in read mode, as an indication of recursion.</p>\n"
+  syntax:
+    content: public int RecursiveReadCount { get; }
+    content.vb: Public ReadOnly Property RecursiveReadCount As Integer
+    parameters: []
+    return:
+      type: System.Int32
+      description: "\n<p>0 (zero) if the current thread has not entered read mode, 1 if the thread has entered read mode but has not entered it recursively, or n if the thread has entered the lock recursively n - 1 times.</p>\n"
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  nameWithType: ReaderWriterLockSlim.RecursiveReadCount
+- uid: System.Threading.ReaderWriterLockSlim.RecursiveUpgradeCount
+  commentId: P:System.Threading.ReaderWriterLockSlim.RecursiveUpgradeCount
+  id: RecursiveUpgradeCount
+  parent: System.Threading.ReaderWriterLockSlim
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.ReaderWriterLockSlim.RecursiveUpgradeCount
+  type: Property
+  source:
+    remote:
+      path: src/System.Threading/ref/System.Threading.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: RecursiveUpgradeCount
+    path: src/System.Threading/ref/System.Threading.cs
+    startLine: 225
+  assemblies:
+  - System.Threading
+  namespace: System.Threading
+  summary: "\n<p>Gets the number of times the current thread has entered the lock in upgradeable mode, as an indication of recursion.</p>\n"
+  syntax:
+    content: public int RecursiveUpgradeCount { get; }
+    content.vb: Public ReadOnly Property RecursiveUpgradeCount As Integer
+    parameters: []
+    return:
+      type: System.Int32
+      description: "\n<p>0 if the current thread has not entered upgradeable mode, 1 if the thread has entered upgradeable mode but has not entered it recursively, or n if the thread has entered upgradeable mode recursively n - 1 times.</p>\n"
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  nameWithType: ReaderWriterLockSlim.RecursiveUpgradeCount
+- uid: System.Threading.ReaderWriterLockSlim.RecursiveWriteCount
+  commentId: P:System.Threading.ReaderWriterLockSlim.RecursiveWriteCount
+  id: RecursiveWriteCount
+  parent: System.Threading.ReaderWriterLockSlim
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.ReaderWriterLockSlim.RecursiveWriteCount
+  type: Property
+  source:
+    remote:
+      path: src/System.Threading/ref/System.Threading.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: RecursiveWriteCount
+    path: src/System.Threading/ref/System.Threading.cs
+    startLine: 226
+  assemblies:
+  - System.Threading
+  namespace: System.Threading
+  summary: "\n<p>Gets the number of times the current thread has entered the lock in write mode, as an indication of recursion.</p>\n"
+  syntax:
+    content: public int RecursiveWriteCount { get; }
+    content.vb: Public ReadOnly Property RecursiveWriteCount As Integer
+    parameters: []
+    return:
+      type: System.Int32
+      description: "\n<p>0 if the current thread has not entered write mode, 1 if the thread has entered write mode but has not entered it recursively, or n if the thread has entered write mode recursively n - 1 times.</p>\n"
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  nameWithType: ReaderWriterLockSlim.RecursiveWriteCount
+- uid: System.Threading.ReaderWriterLockSlim.WaitingReadCount
+  commentId: P:System.Threading.ReaderWriterLockSlim.WaitingReadCount
+  id: WaitingReadCount
+  parent: System.Threading.ReaderWriterLockSlim
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.ReaderWriterLockSlim.WaitingReadCount
+  type: Property
+  source:
+    remote:
+      path: src/System.Threading/ref/System.Threading.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: WaitingReadCount
+    path: src/System.Threading/ref/System.Threading.cs
+    startLine: 227
+  assemblies:
+  - System.Threading
+  namespace: System.Threading
+  summary: "\n<p>Gets the total number of threads that are waiting to enter the lock in read mode.</p>\n"
+  syntax:
+    content: public int WaitingReadCount { get; }
+    content.vb: Public ReadOnly Property WaitingReadCount As Integer
+    parameters: []
+    return:
+      type: System.Int32
+      description: "\n<p>The total number of threads that are waiting to enter read mode.</p>\n"
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  nameWithType: ReaderWriterLockSlim.WaitingReadCount
+- uid: System.Threading.ReaderWriterLockSlim.WaitingUpgradeCount
+  commentId: P:System.Threading.ReaderWriterLockSlim.WaitingUpgradeCount
+  id: WaitingUpgradeCount
+  parent: System.Threading.ReaderWriterLockSlim
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.ReaderWriterLockSlim.WaitingUpgradeCount
+  type: Property
+  source:
+    remote:
+      path: src/System.Threading/ref/System.Threading.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: WaitingUpgradeCount
+    path: src/System.Threading/ref/System.Threading.cs
+    startLine: 228
+  assemblies:
+  - System.Threading
+  namespace: System.Threading
+  summary: "\n<p>Gets the total number of threads that are waiting to enter the lock in upgradeable mode.</p>\n"
+  syntax:
+    content: public int WaitingUpgradeCount { get; }
+    content.vb: Public ReadOnly Property WaitingUpgradeCount As Integer
+    parameters: []
+    return:
+      type: System.Int32
+      description: "\n<p>The total number of threads that are waiting to enter upgradeable mode.</p>\n"
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  nameWithType: ReaderWriterLockSlim.WaitingUpgradeCount
+- uid: System.Threading.ReaderWriterLockSlim.WaitingWriteCount
+  commentId: P:System.Threading.ReaderWriterLockSlim.WaitingWriteCount
+  id: WaitingWriteCount
+  parent: System.Threading.ReaderWriterLockSlim
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.ReaderWriterLockSlim.WaitingWriteCount
+  type: Property
+  source:
+    remote:
+      path: src/System.Threading/ref/System.Threading.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: WaitingWriteCount
+    path: src/System.Threading/ref/System.Threading.cs
+    startLine: 229
+  assemblies:
+  - System.Threading
+  namespace: System.Threading
+  summary: "\n<p>Gets the total number of threads that are waiting to enter the lock in write mode.</p>\n"
+  syntax:
+    content: public int WaitingWriteCount { get; }
+    content.vb: Public ReadOnly Property WaitingWriteCount As Integer
+    parameters: []
+    return:
+      type: System.Int32
+      description: "\n<p>The total number of threads that are waiting to enter write mode.</p>\n"
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  nameWithType: ReaderWriterLockSlim.WaitingWriteCount
+- uid: System.Threading.ReaderWriterLockSlim.Dispose
+  commentId: M:System.Threading.ReaderWriterLockSlim.Dispose
+  id: Dispose
+  parent: System.Threading.ReaderWriterLockSlim
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.ReaderWriterLockSlim.Dispose()
+  type: Method
+  source:
+    remote:
+      path: src/System.Threading/ref/System.Threading.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Dispose
+    path: src/System.Threading/ref/System.Threading.cs
+    startLine: 230
+  assemblies:
+  - System.Threading
+  namespace: System.Threading
+  summary: "\n<p>Releases all resources used by the current instance of the <xref href=\"System.Threading.ReaderWriterLockSlim\" data-throw-if-not-resolved=\"false\"></xref> class.</p>\n"
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose
+  exceptions:
+  - type: System.Threading.SynchronizationLockException
+    commentId: T:System.Threading.SynchronizationLockException
+    description: "\n<p>\n<xref href=\"System.Threading.ReaderWriterLockSlim.WaitingReadCount\" data-throw-if-not-resolved=\"false\"></xref> is greater than zero. </p>\n<p>-or-</p>\n<p>\n<xref href=\"System.Threading.ReaderWriterLockSlim.WaitingUpgradeCount\" data-throw-if-not-resolved=\"false\"></xref> is greater than zero. </p>\n<p>-or-</p>\n<p>\n<xref href=\"System.Threading.ReaderWriterLockSlim.WaitingWriteCount\" data-throw-if-not-resolved=\"false\"></xref> is greater than zero. </p>\n"
+  implements:
+  - System.IDisposable.Dispose
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: ReaderWriterLockSlim.Dispose()
+- uid: System.Threading.ReaderWriterLockSlim.EnterReadLock
+  commentId: M:System.Threading.ReaderWriterLockSlim.EnterReadLock
+  id: EnterReadLock
+  parent: System.Threading.ReaderWriterLockSlim
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.ReaderWriterLockSlim.EnterReadLock()
+  type: Method
+  source:
+    remote:
+      path: src/System.Threading/ref/System.Threading.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: EnterReadLock
+    path: src/System.Threading/ref/System.Threading.cs
+    startLine: 231
+  assemblies:
+  - System.Threading
+  namespace: System.Threading
+  summary: "\n<p>Tries to enter the lock in read mode.</p>\n"
+  syntax:
+    content: public void EnterReadLock()
+    content.vb: Public Sub EnterReadLock
+  exceptions:
+  - type: System.Threading.LockRecursionException
+    commentId: T:System.Threading.LockRecursionException
+    description: "\n<p>The current thread cannot acquire the write lock when it holds the read lock.</p>\n<p>-or-</p>\n<p>The <xref href=\"System.Threading.ReaderWriterLockSlim.RecursionPolicy\" data-throw-if-not-resolved=\"false\"></xref> property is <xref href=\"System.Threading.LockRecursionPolicy.NoRecursion\" data-throw-if-not-resolved=\"false\"></xref>, and the current thread has attempted to acquire the read lock when it already holds the read lock. </p>\n<p>-or-</p>\n<p>The <xref href=\"System.Threading.ReaderWriterLockSlim.RecursionPolicy\" data-throw-if-not-resolved=\"false\"></xref> property is <xref href=\"System.Threading.LockRecursionPolicy.NoRecursion\" data-throw-if-not-resolved=\"false\"></xref>, and the current thread has attempted to acquire the read lock when it already holds the write lock. </p>\n<p>-or-</p>\n<p>The recursion number would exceed the capacity of the counter. This limit is so large that applications should never encounter this exception. </p>\n"
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>The <xref href=\"System.Threading.ReaderWriterLockSlim\" data-throw-if-not-resolved=\"false\"></xref> object has been disposed. </p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: ReaderWriterLockSlim.EnterReadLock()
+- uid: System.Threading.ReaderWriterLockSlim.EnterUpgradeableReadLock
+  commentId: M:System.Threading.ReaderWriterLockSlim.EnterUpgradeableReadLock
+  id: EnterUpgradeableReadLock
+  parent: System.Threading.ReaderWriterLockSlim
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.ReaderWriterLockSlim.EnterUpgradeableReadLock()
+  type: Method
+  source:
+    remote:
+      path: src/System.Threading/ref/System.Threading.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: EnterUpgradeableReadLock
+    path: src/System.Threading/ref/System.Threading.cs
+    startLine: 232
+  assemblies:
+  - System.Threading
+  namespace: System.Threading
+  summary: "\n<p>Tries to enter the lock in upgradeable mode.</p>\n"
+  syntax:
+    content: public void EnterUpgradeableReadLock()
+    content.vb: Public Sub EnterUpgradeableReadLock
+  exceptions:
+  - type: System.Threading.LockRecursionException
+    commentId: T:System.Threading.LockRecursionException
+    description: "\n<p>The <xref href=\"System.Threading.ReaderWriterLockSlim.RecursionPolicy\" data-throw-if-not-resolved=\"false\"></xref> property is <xref href=\"System.Threading.LockRecursionPolicy.NoRecursion\" data-throw-if-not-resolved=\"false\"></xref> and the current thread has already entered the lock in any mode. </p>\n<p>-or-</p>\n<p>The current thread has entered read mode, so trying to enter upgradeable mode would create the possibility of a deadlock. </p>\n<p>-or-</p>\n<p>The recursion number would exceed the capacity of the counter. The limit is so large that applications should never encounter it.</p>\n"
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>The <xref href=\"System.Threading.ReaderWriterLockSlim\" data-throw-if-not-resolved=\"false\"></xref> object has been disposed. </p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: ReaderWriterLockSlim.EnterUpgradeableReadLock()
+- uid: System.Threading.ReaderWriterLockSlim.EnterWriteLock
+  commentId: M:System.Threading.ReaderWriterLockSlim.EnterWriteLock
+  id: EnterWriteLock
+  parent: System.Threading.ReaderWriterLockSlim
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.ReaderWriterLockSlim.EnterWriteLock()
+  type: Method
+  source:
+    remote:
+      path: src/System.Threading/ref/System.Threading.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: EnterWriteLock
+    path: src/System.Threading/ref/System.Threading.cs
+    startLine: 233
+  assemblies:
+  - System.Threading
+  namespace: System.Threading
+  summary: "\n<p>Tries to enter the lock in write mode.</p>\n"
+  syntax:
+    content: public void EnterWriteLock()
+    content.vb: Public Sub EnterWriteLock
+  exceptions:
+  - type: System.Threading.LockRecursionException
+    commentId: T:System.Threading.LockRecursionException
+    description: "\n<p>The <xref href=\"System.Threading.ReaderWriterLockSlim.RecursionPolicy\" data-throw-if-not-resolved=\"false\"></xref> property is <xref href=\"System.Threading.LockRecursionPolicy.NoRecursion\" data-throw-if-not-resolved=\"false\"></xref> and the current thread has already entered the lock in any mode. </p>\n<p>-or-</p>\n<p>The current thread has entered read mode, so trying to enter the lock in write mode would create the possibility of a deadlock. </p>\n<p>-or-</p>\n<p>The recursion number would exceed the capacity of the counter. The limit is so large that applications should never encounter it.</p>\n"
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>The <xref href=\"System.Threading.ReaderWriterLockSlim\" data-throw-if-not-resolved=\"false\"></xref> object has been disposed. </p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: ReaderWriterLockSlim.EnterWriteLock()
+- uid: System.Threading.ReaderWriterLockSlim.ExitReadLock
+  commentId: M:System.Threading.ReaderWriterLockSlim.ExitReadLock
+  id: ExitReadLock
+  parent: System.Threading.ReaderWriterLockSlim
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.ReaderWriterLockSlim.ExitReadLock()
+  type: Method
+  source:
+    remote:
+      path: src/System.Threading/ref/System.Threading.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: ExitReadLock
+    path: src/System.Threading/ref/System.Threading.cs
+    startLine: 234
+  assemblies:
+  - System.Threading
+  namespace: System.Threading
+  summary: "\n<p>Reduces the recursion count for read mode, and exits read mode if the resulting count is 0 (zero).</p>\n"
+  syntax:
+    content: public void ExitReadLock()
+    content.vb: Public Sub ExitReadLock
+  exceptions:
+  - type: System.Threading.SynchronizationLockException
+    commentId: T:System.Threading.SynchronizationLockException
+    description: "\n<p>The current thread has not entered the lock in read mode. </p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: ReaderWriterLockSlim.ExitReadLock()
+- uid: System.Threading.ReaderWriterLockSlim.ExitUpgradeableReadLock
+  commentId: M:System.Threading.ReaderWriterLockSlim.ExitUpgradeableReadLock
+  id: ExitUpgradeableReadLock
+  parent: System.Threading.ReaderWriterLockSlim
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.ReaderWriterLockSlim.ExitUpgradeableReadLock()
+  type: Method
+  source:
+    remote:
+      path: src/System.Threading/ref/System.Threading.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: ExitUpgradeableReadLock
+    path: src/System.Threading/ref/System.Threading.cs
+    startLine: 235
+  assemblies:
+  - System.Threading
+  namespace: System.Threading
+  summary: "\n<p>Reduces the recursion count for upgradeable mode, and exits upgradeable mode if the resulting count is 0 (zero).</p>\n"
+  syntax:
+    content: public void ExitUpgradeableReadLock()
+    content.vb: Public Sub ExitUpgradeableReadLock
+  exceptions:
+  - type: System.Threading.SynchronizationLockException
+    commentId: T:System.Threading.SynchronizationLockException
+    description: "\n<p>The current thread has not entered the lock in upgradeable mode.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: ReaderWriterLockSlim.ExitUpgradeableReadLock()
+- uid: System.Threading.ReaderWriterLockSlim.ExitWriteLock
+  commentId: M:System.Threading.ReaderWriterLockSlim.ExitWriteLock
+  id: ExitWriteLock
+  parent: System.Threading.ReaderWriterLockSlim
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.ReaderWriterLockSlim.ExitWriteLock()
+  type: Method
+  source:
+    remote:
+      path: src/System.Threading/ref/System.Threading.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: ExitWriteLock
+    path: src/System.Threading/ref/System.Threading.cs
+    startLine: 236
+  assemblies:
+  - System.Threading
+  namespace: System.Threading
+  summary: "\n<p>Reduces the recursion count for write mode, and exits write mode if the resulting count is 0 (zero).</p>\n"
+  syntax:
+    content: public void ExitWriteLock()
+    content.vb: Public Sub ExitWriteLock
+  exceptions:
+  - type: System.Threading.SynchronizationLockException
+    commentId: T:System.Threading.SynchronizationLockException
+    description: "\n<p>The current thread has not entered the lock in write mode.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: ReaderWriterLockSlim.ExitWriteLock()
+- uid: System.Threading.ReaderWriterLockSlim.TryEnterReadLock(System.Int32)
+  commentId: M:System.Threading.ReaderWriterLockSlim.TryEnterReadLock(System.Int32)
+  id: TryEnterReadLock(System.Int32)
+  parent: System.Threading.ReaderWriterLockSlim
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.ReaderWriterLockSlim.TryEnterReadLock(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/System.Threading/ref/System.Threading.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: TryEnterReadLock
+    path: src/System.Threading/ref/System.Threading.cs
+    startLine: 237
+  assemblies:
+  - System.Threading
+  namespace: System.Threading
+  summary: "\n<p>Tries to enter the lock in read mode, with an optional integer time-out.</p>\n"
+  syntax:
+    content: public bool TryEnterReadLock(int millisecondsTimeout)
+    content.vb: Public Function TryEnterReadLock(millisecondsTimeout As Integer) As Boolean
+    parameters:
+    - id: millisecondsTimeout
+      type: System.Int32
+      description: "\n<p>The number of milliseconds to wait, or -1 (<xref href=\"System.Threading.Timeout.Infinite\" data-throw-if-not-resolved=\"false\"></xref>) to wait indefinitely.</p>\n"
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if the calling thread entered read mode, otherwise, <strong>false</strong>.</p>\n"
+  exceptions:
+  - type: System.Threading.LockRecursionException
+    commentId: T:System.Threading.LockRecursionException
+    description: "\n<p>The <xref href=\"System.Threading.ReaderWriterLockSlim.RecursionPolicy\" data-throw-if-not-resolved=\"false\"></xref> property is <xref href=\"System.Threading.LockRecursionPolicy.NoRecursion\" data-throw-if-not-resolved=\"false\"></xref> and the current thread has already entered the lock. </p>\n<p>-or-</p>\n<p>The recursion number would exceed the capacity of the counter. The limit is so large that applications should never encounter it.</p>\n"
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>The value of <em>millisecondsTimeout</em> is negative, but it is not equal to <xref href=\"System.Threading.Timeout.Infinite\" data-throw-if-not-resolved=\"false\"></xref> (-1), which is the only negative value allowed.</p>\n"
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>The <xref href=\"System.Threading.ReaderWriterLockSlim\" data-throw-if-not-resolved=\"false\"></xref> object has been disposed. </p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: ReaderWriterLockSlim.TryEnterReadLock(Int32)
+- uid: System.Threading.ReaderWriterLockSlim.TryEnterReadLock(System.TimeSpan)
+  commentId: M:System.Threading.ReaderWriterLockSlim.TryEnterReadLock(System.TimeSpan)
+  id: TryEnterReadLock(System.TimeSpan)
+  parent: System.Threading.ReaderWriterLockSlim
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.ReaderWriterLockSlim.TryEnterReadLock(System.TimeSpan)
+  type: Method
+  source:
+    remote:
+      path: src/System.Threading/ref/System.Threading.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: TryEnterReadLock
+    path: src/System.Threading/ref/System.Threading.cs
+    startLine: 238
+  assemblies:
+  - System.Threading
+  namespace: System.Threading
+  summary: "\n<p>Tries to enter the lock in read mode, with an optional time-out.</p>\n"
+  syntax:
+    content: public bool TryEnterReadLock(TimeSpan timeout)
+    content.vb: Public Function TryEnterReadLock(timeout As TimeSpan) As Boolean
+    parameters:
+    - id: timeout
+      type: System.TimeSpan
+      description: "\n<p>The interval to wait, or -1 milliseconds to wait indefinitely. </p>\n"
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if the calling thread entered read mode, otherwise, <strong>false</strong>.</p>\n"
+  exceptions:
+  - type: System.Threading.LockRecursionException
+    commentId: T:System.Threading.LockRecursionException
+    description: "\n<p>The <xref href=\"System.Threading.ReaderWriterLockSlim.RecursionPolicy\" data-throw-if-not-resolved=\"false\"></xref> property is <xref href=\"System.Threading.LockRecursionPolicy.NoRecursion\" data-throw-if-not-resolved=\"false\"></xref> and the current thread has already entered the lock. </p>\n<p>-or-</p>\n<p>The recursion number would exceed the capacity of the counter. The limit is so large that applications should never encounter it.</p>\n"
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>The value of <em>timeout</em> is negative, but it is not equal to -1 milliseconds, which is the only negative value allowed.</p>\n<p>-or-</p>\n<p>The value of <em>timeout</em> is greater than <xref href=\"System.Int32.MaxValue\" data-throw-if-not-resolved=\"false\"></xref> milliseconds. </p>\n"
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>The <xref href=\"System.Threading.ReaderWriterLockSlim\" data-throw-if-not-resolved=\"false\"></xref> object has been disposed. </p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: ReaderWriterLockSlim.TryEnterReadLock(TimeSpan)
+- uid: System.Threading.ReaderWriterLockSlim.TryEnterUpgradeableReadLock(System.Int32)
+  commentId: M:System.Threading.ReaderWriterLockSlim.TryEnterUpgradeableReadLock(System.Int32)
+  id: TryEnterUpgradeableReadLock(System.Int32)
+  parent: System.Threading.ReaderWriterLockSlim
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.ReaderWriterLockSlim.TryEnterUpgradeableReadLock(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/System.Threading/ref/System.Threading.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: TryEnterUpgradeableReadLock
+    path: src/System.Threading/ref/System.Threading.cs
+    startLine: 239
+  assemblies:
+  - System.Threading
+  namespace: System.Threading
+  summary: "\n<p>Tries to enter the lock in upgradeable mode, with an optional time-out.</p>\n"
+  syntax:
+    content: public bool TryEnterUpgradeableReadLock(int millisecondsTimeout)
+    content.vb: Public Function TryEnterUpgradeableReadLock(millisecondsTimeout As Integer) As Boolean
+    parameters:
+    - id: millisecondsTimeout
+      type: System.Int32
+      description: "\n<p>The number of milliseconds to wait, or -1 (<xref href=\"System.Threading.Timeout.Infinite\" data-throw-if-not-resolved=\"false\"></xref>) to wait indefinitely.</p>\n"
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if the calling thread entered upgradeable mode, otherwise, <strong>false</strong>.</p>\n"
+  exceptions:
+  - type: System.Threading.LockRecursionException
+    commentId: T:System.Threading.LockRecursionException
+    description: "\n<p>The <xref href=\"System.Threading.ReaderWriterLockSlim.RecursionPolicy\" data-throw-if-not-resolved=\"false\"></xref> property is <xref href=\"System.Threading.LockRecursionPolicy.NoRecursion\" data-throw-if-not-resolved=\"false\"></xref> and the current thread has already entered the lock. </p>\n<p>-or-</p>\n<p>The current thread initially entered the lock in read mode, and therefore trying to enter upgradeable mode would create the possibility of a deadlock. </p>\n<p>-or-</p>\n<p>The recursion number would exceed the capacity of the counter. The limit is so large that applications should never encounter it.</p>\n"
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>The value of <em>millisecondsTimeout</em> is negative, but it is not equal to <xref href=\"System.Threading.Timeout.Infinite\" data-throw-if-not-resolved=\"false\"></xref> (-1), which is the only negative value allowed. </p>\n"
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>The <xref href=\"System.Threading.ReaderWriterLockSlim\" data-throw-if-not-resolved=\"false\"></xref> object has been disposed. </p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: ReaderWriterLockSlim.TryEnterUpgradeableReadLock(Int32)
+- uid: System.Threading.ReaderWriterLockSlim.TryEnterUpgradeableReadLock(System.TimeSpan)
+  commentId: M:System.Threading.ReaderWriterLockSlim.TryEnterUpgradeableReadLock(System.TimeSpan)
+  id: TryEnterUpgradeableReadLock(System.TimeSpan)
+  parent: System.Threading.ReaderWriterLockSlim
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.ReaderWriterLockSlim.TryEnterUpgradeableReadLock(System.TimeSpan)
+  type: Method
+  source:
+    remote:
+      path: src/System.Threading/ref/System.Threading.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: TryEnterUpgradeableReadLock
+    path: src/System.Threading/ref/System.Threading.cs
+    startLine: 240
+  assemblies:
+  - System.Threading
+  namespace: System.Threading
+  summary: "\n<p>Tries to enter the lock in upgradeable mode, with an optional time-out.</p>\n"
+  syntax:
+    content: public bool TryEnterUpgradeableReadLock(TimeSpan timeout)
+    content.vb: Public Function TryEnterUpgradeableReadLock(timeout As TimeSpan) As Boolean
+    parameters:
+    - id: timeout
+      type: System.TimeSpan
+      description: "\n<p>The interval to wait, or -1 milliseconds to wait indefinitely.</p>\n"
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if the calling thread entered upgradeable mode, otherwise, <strong>false</strong>.</p>\n"
+  exceptions:
+  - type: System.Threading.LockRecursionException
+    commentId: T:System.Threading.LockRecursionException
+    description: "\n<p>The <xref href=\"System.Threading.ReaderWriterLockSlim.RecursionPolicy\" data-throw-if-not-resolved=\"false\"></xref> property is <xref href=\"System.Threading.LockRecursionPolicy.NoRecursion\" data-throw-if-not-resolved=\"false\"></xref> and the current thread has already entered the lock. </p>\n<p>-or-</p>\n<p>The current thread initially entered the lock in read mode, and therefore trying to enter upgradeable mode would create the possibility of a deadlock. </p>\n<p>-or-</p>\n<p>The recursion number would exceed the capacity of the counter. The limit is so large that applications should never encounter it.</p>\n"
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>The value of <em>timeout</em> is negative, but it is not equal to -1 milliseconds, which is the only negative value allowed.</p>\n<p>-or-</p>\n<p>The value of <em>timeout</em> is greater than <xref href=\"System.Int32.MaxValue\" data-throw-if-not-resolved=\"false\"></xref> milliseconds. </p>\n"
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>The <xref href=\"System.Threading.ReaderWriterLockSlim\" data-throw-if-not-resolved=\"false\"></xref> object has been disposed. </p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: ReaderWriterLockSlim.TryEnterUpgradeableReadLock(TimeSpan)
+- uid: System.Threading.ReaderWriterLockSlim.TryEnterWriteLock(System.Int32)
+  commentId: M:System.Threading.ReaderWriterLockSlim.TryEnterWriteLock(System.Int32)
+  id: TryEnterWriteLock(System.Int32)
+  parent: System.Threading.ReaderWriterLockSlim
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.ReaderWriterLockSlim.TryEnterWriteLock(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/System.Threading/ref/System.Threading.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: TryEnterWriteLock
+    path: src/System.Threading/ref/System.Threading.cs
+    startLine: 241
+  assemblies:
+  - System.Threading
+  namespace: System.Threading
+  summary: "\n<p>Tries to enter the lock in write mode, with an optional time-out.</p>\n"
+  syntax:
+    content: public bool TryEnterWriteLock(int millisecondsTimeout)
+    content.vb: Public Function TryEnterWriteLock(millisecondsTimeout As Integer) As Boolean
+    parameters:
+    - id: millisecondsTimeout
+      type: System.Int32
+      description: "\n<p>The number of milliseconds to wait, or -1 (<xref href=\"System.Threading.Timeout.Infinite\" data-throw-if-not-resolved=\"false\"></xref>) to wait indefinitely.</p>\n"
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if the calling thread entered write mode, otherwise, <strong>false</strong>.</p>\n"
+  exceptions:
+  - type: System.Threading.LockRecursionException
+    commentId: T:System.Threading.LockRecursionException
+    description: "\n<p>The <xref href=\"System.Threading.ReaderWriterLockSlim.RecursionPolicy\" data-throw-if-not-resolved=\"false\"></xref> property is <xref href=\"System.Threading.LockRecursionPolicy.NoRecursion\" data-throw-if-not-resolved=\"false\"></xref> and the current thread has already entered the lock. </p>\n<p>-or-</p>\n<p>The current thread initially entered the lock in read mode, and therefore trying to enter write mode would create the possibility of a deadlock. </p>\n<p>-or-</p>\n<p>The recursion number would exceed the capacity of the counter. The limit is so large that applications should never encounter it.</p>\n"
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>The value of <em>millisecondsTimeout</em> is negative, but it is not equal to <xref href=\"System.Threading.Timeout.Infinite\" data-throw-if-not-resolved=\"false\"></xref> (-1), which is the only negative value allowed. </p>\n"
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>The <xref href=\"System.Threading.ReaderWriterLockSlim\" data-throw-if-not-resolved=\"false\"></xref> object has been disposed. </p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: ReaderWriterLockSlim.TryEnterWriteLock(Int32)
+- uid: System.Threading.ReaderWriterLockSlim.TryEnterWriteLock(System.TimeSpan)
+  commentId: M:System.Threading.ReaderWriterLockSlim.TryEnterWriteLock(System.TimeSpan)
+  id: TryEnterWriteLock(System.TimeSpan)
+  parent: System.Threading.ReaderWriterLockSlim
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Threading.ReaderWriterLockSlim.TryEnterWriteLock(System.TimeSpan)
+  type: Method
+  source:
+    remote:
+      path: src/System.Threading/ref/System.Threading.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: TryEnterWriteLock
+    path: src/System.Threading/ref/System.Threading.cs
+    startLine: 242
+  assemblies:
+  - System.Threading
+  namespace: System.Threading
+  summary: "\n<p>Tries to enter the lock in write mode, with an optional time-out.</p>\n"
+  syntax:
+    content: public bool TryEnterWriteLock(TimeSpan timeout)
+    content.vb: Public Function TryEnterWriteLock(timeout As TimeSpan) As Boolean
+    parameters:
+    - id: timeout
+      type: System.TimeSpan
+      description: "\n<p>The interval to wait, or -1 milliseconds to wait indefinitely.</p>\n"
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if the calling thread entered write mode, otherwise, <strong>false</strong>.</p>\n"
+  exceptions:
+  - type: System.Threading.LockRecursionException
+    commentId: T:System.Threading.LockRecursionException
+    description: "\n<p>The <xref href=\"System.Threading.ReaderWriterLockSlim.RecursionPolicy\" data-throw-if-not-resolved=\"false\"></xref> property is <xref href=\"System.Threading.LockRecursionPolicy.NoRecursion\" data-throw-if-not-resolved=\"false\"></xref> and the current thread has already entered the lock. </p>\n<p>-or-</p>\n<p>The current thread initially entered the lock in read mode, and therefore trying to enter write mode would create the possibility of a deadlock. </p>\n<p>-or-</p>\n<p>The recursion number would exceed the capacity of the counter. The limit is so large that applications should never encounter it.</p>\n"
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>The value of <em>timeout</em> is negative, but it is not equal to -1 milliseconds, which is the only negative value allowed.</p>\n<p>-or-</p>\n<p>The value of <em>timeout</em> is greater than <xref href=\"System.Int32.MaxValue\" data-throw-if-not-resolved=\"false\"></xref> milliseconds. </p>\n"
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>The <xref href=\"System.Threading.ReaderWriterLockSlim\" data-throw-if-not-resolved=\"false\"></xref> object has been disposed. </p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: ReaderWriterLockSlim.TryEnterWriteLock(TimeSpan)
+references:
+- uid: System.Threading
+  isExternal: false
+  name: "XXX"
+  fullName: System.Threading
+  commentId: N:System.Threading
+  nameWithType: System.Threading
+- uid: System.Object
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Object
+  commentId: T:System.Object
+  nameWithType: Object
+- uid: System.IDisposable
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.IDisposable
+  commentId: T:System.IDisposable
+  nameWithType: IDisposable
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.ToString
+  nameWithType: Object.ToString()
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.Equals(System.Object)
+  nameWithType: Object.Equals(Object)
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  nameWithType: Object.Equals(Object, Object)
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.GetHashCode
+  nameWithType: Object.GetHashCode()
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.GetType
+  nameWithType: Object.GetType()
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.MemberwiseClone
+  nameWithType: Object.MemberwiseClone()
+- uid: System
+  isExternal: false
+  name: "XXX"
+  fullName: System
+  commentId: N:System
+  nameWithType: System
+- uid: System.Threading.LockRecursionPolicy
+  parent: System.Threading
+  isExternal: false
+  name: "XXX"
+  fullName: System.Threading.LockRecursionPolicy
+  commentId: T:System.Threading.LockRecursionPolicy
+  nameWithType: LockRecursionPolicy
+- uid: System.Int32
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Int32
+  commentId: T:System.Int32
+  nameWithType: Int32
+- uid: System.Boolean
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Boolean
+  commentId: T:System.Boolean
+  nameWithType: Boolean
+- uid: System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: false
+  name: "XXX"
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: "XXX"
+    fullName: System.IDisposable.Dispose
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: "XXX"
+    fullName: System.IDisposable.Dispose
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.IDisposable.Dispose
+  nameWithType: IDisposable.Dispose()
+- uid: System.TimeSpan
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.TimeSpan
+  commentId: T:System.TimeSpan
+  nameWithType: TimeSpan
+- uid: System.Threading.SynchronizationLockException
+  isExternal: false
+  name: "XXX"
+  fullName: System.Threading.SynchronizationLockException
+  nameWithType: SynchronizationLockException
+  commentId: T:System.Threading.SynchronizationLockException
+- uid: System.Threading.LockRecursionException
+  isExternal: false
+  name: "XXX"
+  fullName: System.Threading.LockRecursionException
+  nameWithType: LockRecursionException
+  commentId: T:System.Threading.LockRecursionException
+- uid: System.ObjectDisposedException
+  isExternal: false
+  name: "XXX"
+  fullName: System.ObjectDisposedException
+  nameWithType: ObjectDisposedException
+  commentId: T:System.ObjectDisposedException
+- uid: System.ArgumentOutOfRangeException
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentOutOfRangeException
+  nameWithType: ArgumentOutOfRangeException
+  commentId: T:System.ArgumentOutOfRangeException

@@ -1,0 +1,150 @@
+items:
+- uid: System.Runtime.CompilerServices.ICriticalNotifyCompletion
+  commentId: T:System.Runtime.CompilerServices.ICriticalNotifyCompletion
+  id: ICriticalNotifyCompletion
+  parent: System.Runtime.CompilerServices
+  children:
+  - System.Runtime.CompilerServices.ICriticalNotifyCompletion.UnsafeOnCompleted(System.Action)
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Runtime.CompilerServices.ICriticalNotifyCompletion
+  type: Interface
+  source:
+    remote:
+      path: src/mscorlib/src/System/Runtime/CompilerServices/INotifyCompletion.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: ICriticalNotifyCompletion
+    path: src/mscorlib/src/System/Runtime/CompilerServices/INotifyCompletion.cs
+    startLine: 30
+  assemblies:
+  - System.Threading.Tasks
+  namespace: System.Runtime.CompilerServices
+  summary: "\n<p>Represents an awaiter that schedules continuations when an await operation completes.</p>\n"
+  syntax:
+    content: 'public interface ICriticalNotifyCompletion : INotifyCompletion'
+    content.vb: >-
+      Public Interface ICriticalNotifyCompletion
+          Inherits INotifyCompletion
+  inheritedMembers:
+  - System.Runtime.CompilerServices.INotifyCompletion.OnCompleted(System.Action)
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+  nameWithType: ICriticalNotifyCompletion
+- uid: System.Runtime.CompilerServices.ICriticalNotifyCompletion.UnsafeOnCompleted(System.Action)
+  commentId: M:System.Runtime.CompilerServices.ICriticalNotifyCompletion.UnsafeOnCompleted(System.Action)
+  id: UnsafeOnCompleted(System.Action)
+  parent: System.Runtime.CompilerServices.ICriticalNotifyCompletion
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Runtime.CompilerServices.ICriticalNotifyCompletion.UnsafeOnCompleted(System.Action)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Runtime/CompilerServices/INotifyCompletion.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: UnsafeOnCompleted
+    path: src/mscorlib/src/System/Runtime/CompilerServices/INotifyCompletion.cs
+    startLine: 36
+  assemblies:
+  - System.Threading.Tasks
+  namespace: System.Runtime.CompilerServices
+  summary: "\n<p>Schedules the continuation action that's invoked when the instance completes.</p>\n"
+  syntax:
+    content: >-
+      [SecurityCritical]
+
+      void UnsafeOnCompleted(Action continuation)
+    content.vb: >-
+      <SecurityCritical>
+
+      Sub UnsafeOnCompleted(continuation As Action)
+    parameters:
+    - id: continuation
+      type: System.Action
+      description: "\n<p>The action to invoke when the operation completes.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>The <em>continuation</em> argument is null (Nothing in Visual Basic).</p>\n"
+  seealso:
+  - type: System.Runtime.CompilerServices.INotifyCompletion
+    commentId: T:System.Runtime.CompilerServices.INotifyCompletion
+  attributes:
+  - type: System.Security.SecurityCriticalAttribute
+    ctor: System.Security.SecurityCriticalAttribute.#ctor
+    arguments: []
+  nameWithType: ICriticalNotifyCompletion.UnsafeOnCompleted(Action)
+references:
+- uid: System.Runtime.CompilerServices
+  isExternal: false
+  name: "XXX"
+  fullName: System.Runtime.CompilerServices
+  nameWithType: System.Runtime.CompilerServices
+  commentId: N:System.Runtime.CompilerServices
+- uid: System.Runtime.CompilerServices.INotifyCompletion.OnCompleted(System.Action)
+  parent: System.Runtime.CompilerServices.INotifyCompletion
+  isExternal: true
+  name: "XXX"
+  fullName: System.Runtime.CompilerServices.INotifyCompletion.OnCompleted(System.Action)
+  spec.csharp:
+  - uid: System.Runtime.CompilerServices.INotifyCompletion.OnCompleted(System.Action)
+    name: "XXX"
+    fullName: System.Runtime.CompilerServices.INotifyCompletion.OnCompleted
+  - name: "XXX"
+    fullName: (
+  - uid: System.Action
+    name: "XXX"
+    fullName: System.Action
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Runtime.CompilerServices.INotifyCompletion.OnCompleted(System.Action)
+    name: "XXX"
+    fullName: System.Runtime.CompilerServices.INotifyCompletion.OnCompleted
+  - name: "XXX"
+    fullName: (
+  - uid: System.Action
+    name: "XXX"
+    fullName: System.Action
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: INotifyCompletion.OnCompleted(Action)
+  commentId: M:System.Runtime.CompilerServices.INotifyCompletion.OnCompleted(System.Action)
+- uid: System.Runtime.CompilerServices.INotifyCompletion
+  parent: System.Runtime.CompilerServices
+  isExternal: false
+  name: "XXX"
+  fullName: System.Runtime.CompilerServices.INotifyCompletion
+  nameWithType: INotifyCompletion
+  commentId: T:System.Runtime.CompilerServices.INotifyCompletion
+- uid: System.Action
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Action
+  nameWithType: Action
+  commentId: T:System.Action
+- uid: System
+  isExternal: false
+  name: "XXX"
+  fullName: System
+  nameWithType: System
+  commentId: N:System
+- uid: System.ArgumentNullException
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentNullException
+  nameWithType: ArgumentNullException
+  commentId: T:System.ArgumentNullException

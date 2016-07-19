@@ -1,0 +1,116 @@
+items:
+- uid: System.Linq.ParallelExecutionMode
+  commentId: T:System.Linq.ParallelExecutionMode
+  id: ParallelExecutionMode
+  parent: System.Linq
+  children:
+  - System.Linq.ParallelExecutionMode.Default
+  - System.Linq.ParallelExecutionMode.ForceParallelism
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Linq.ParallelExecutionMode
+  type: Enum
+  source:
+    remote:
+      path: src/System.Linq.Parallel/ref/System.Linq.Parallel.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: ParallelExecutionMode
+    path: src/System.Linq.Parallel/ref/System.Linq.Parallel.cs
+    startLine: 235
+  assemblies:
+  - System.Linq.Parallel
+  namespace: System.Linq
+  summary: "\n<p>The query execution mode is a hint that specifies how the system should handle performance trade-offs when parallelizing queries.</p>\n"
+  syntax:
+    content: public enum ParallelExecutionMode
+    content.vb: Public Enum ParallelExecutionMode
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+  nameWithType: ParallelExecutionMode
+- uid: System.Linq.ParallelExecutionMode.Default
+  commentId: F:System.Linq.ParallelExecutionMode.Default
+  id: Default
+  parent: System.Linq.ParallelExecutionMode
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Linq.ParallelExecutionMode.Default
+  type: Field
+  source:
+    remote:
+      path: src/System.Linq.Parallel/ref/System.Linq.Parallel.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Default
+    path: src/System.Linq.Parallel/ref/System.Linq.Parallel.cs
+    startLine: 237
+  assemblies:
+  - System.Linq.Parallel
+  namespace: System.Linq
+  summary: "\n<p>This is the default setting. PLINQ will examine the query's structure and will only parallelize the query if will likely result in speedup. If the query structure indicates that speedup is not likely to be obtained, then PLINQ will execute the query as an ordinary LINQ to Objects query.</p>\n"
+  syntax:
+    content: Default = 0
+    return:
+      type: System.Linq.ParallelExecutionMode
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+  nameWithType: ParallelExecutionMode.Default
+- uid: System.Linq.ParallelExecutionMode.ForceParallelism
+  commentId: F:System.Linq.ParallelExecutionMode.ForceParallelism
+  id: ForceParallelism
+  parent: System.Linq.ParallelExecutionMode
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Linq.ParallelExecutionMode.ForceParallelism
+  type: Field
+  source:
+    remote:
+      path: src/System.Linq.Parallel/ref/System.Linq.Parallel.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: ForceParallelism
+    path: src/System.Linq.Parallel/ref/System.Linq.Parallel.cs
+    startLine: 238
+  assemblies:
+  - System.Linq.Parallel
+  namespace: System.Linq
+  summary: "\n<p>Parallelize the entire query, even if that means using high-overhead algorithms. Use this flag in cases where you know that parallel execution of the query will result in speedup, but PLINQ in the Default mode would execute it as sequential.</p>\n"
+  syntax:
+    content: ForceParallelism = 1
+    return:
+      type: System.Linq.ParallelExecutionMode
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+  nameWithType: ParallelExecutionMode.ForceParallelism
+references:
+- uid: System.Linq
+  isExternal: false
+  name: "XXX"
+  fullName: System.Linq
+  commentId: N:System.Linq
+  nameWithType: System.Linq
+- uid: System.Linq.ParallelExecutionMode
+  parent: System.Linq
+  isExternal: false
+  name: "XXX"
+  fullName: System.Linq.ParallelExecutionMode
+  commentId: T:System.Linq.ParallelExecutionMode
+  nameWithType: ParallelExecutionMode

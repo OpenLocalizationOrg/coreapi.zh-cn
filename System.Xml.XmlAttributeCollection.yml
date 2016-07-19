@@ -1,0 +1,1672 @@
+items:
+- uid: System.Xml.XmlAttributeCollection
+  commentId: T:System.Xml.XmlAttributeCollection
+  id: XmlAttributeCollection
+  parent: System.Xml
+  children:
+  - System.Xml.XmlAttributeCollection.Append(System.Xml.XmlAttribute)
+  - System.Xml.XmlAttributeCollection.CopyTo(System.Xml.XmlAttribute[],System.Int32)
+  - System.Xml.XmlAttributeCollection.InsertAfter(System.Xml.XmlAttribute,System.Xml.XmlAttribute)
+  - System.Xml.XmlAttributeCollection.InsertBefore(System.Xml.XmlAttribute,System.Xml.XmlAttribute)
+  - System.Xml.XmlAttributeCollection.ItemOf(System.Int32)
+  - System.Xml.XmlAttributeCollection.ItemOf(System.String)
+  - System.Xml.XmlAttributeCollection.ItemOf(System.String,System.String)
+  - System.Xml.XmlAttributeCollection.Prepend(System.Xml.XmlAttribute)
+  - System.Xml.XmlAttributeCollection.Remove(System.Xml.XmlAttribute)
+  - System.Xml.XmlAttributeCollection.RemoveAll
+  - System.Xml.XmlAttributeCollection.RemoveAt(System.Int32)
+  - System.Xml.XmlAttributeCollection.SetNamedItem(System.Xml.XmlNode)
+  - System.Xml.XmlAttributeCollection.System#Collections#ICollection#CopyTo(System.Array,System.Int32)
+  - System.Xml.XmlAttributeCollection.System#Collections#ICollection#Count
+  - System.Xml.XmlAttributeCollection.System#Collections#ICollection#IsSynchronized
+  - System.Xml.XmlAttributeCollection.System#Collections#ICollection#SyncRoot
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Xml.XmlAttributeCollection
+  type: Class
+  source:
+    remote:
+      path: src/System.Xml.XmlDocument/ref/System.Xml.XmlDocument.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: XmlAttributeCollection
+    path: src/System.Xml.XmlDocument/ref/System.Xml.XmlDocument.cs
+    startLine: 36
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  summary: "\n<p>Represents a collection of attributes that can be accessed by name or index.</p>\n"
+  syntax:
+    content: 'public sealed class XmlAttributeCollection : XmlNamedNodeMap, ICollection, IEnumerable'
+    content.vb: >-
+      Public NotInheritable Class XmlAttributeCollection
+          Inherits XmlNamedNodeMap
+          Implements ICollection, IEnumerable
+  seealso:
+  - type: System.Xml.XmlAttribute
+    commentId: T:System.Xml.XmlAttribute
+  - type: System.Xml.XmlElement
+    commentId: T:System.Xml.XmlElement
+  inheritance:
+  - System.Object
+  - System.Xml.XmlNamedNodeMap
+  implements:
+  - System.Collections.ICollection
+  - System.Collections.IEnumerable
+  inheritedMembers:
+  - System.Xml.XmlNamedNodeMap.Count
+  - System.Xml.XmlNamedNodeMap.GetEnumerator
+  - System.Xml.XmlNamedNodeMap.GetNamedItem(System.String)
+  - System.Xml.XmlNamedNodeMap.GetNamedItem(System.String,System.String)
+  - System.Xml.XmlNamedNodeMap.Item(System.Int32)
+  - System.Xml.XmlNamedNodeMap.RemoveNamedItem(System.String)
+  - System.Xml.XmlNamedNodeMap.RemoveNamedItem(System.String,System.String)
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+  nameWithType: XmlAttributeCollection
+  extensionMethods:
+  - System.Collections.IEnumerable.System.Linq.Queryable.AsQueryable
+  - System.Collections.IEnumerable.System.Linq.ParallelEnumerable.AsParallel
+  - System.Collections.IEnumerable.System.Linq.Enumerable.Cast``1
+  - System.Collections.IEnumerable.System.Linq.Enumerable.OfType``1
+- uid: System.Xml.XmlAttributeCollection.ItemOf(System.Int32)
+  commentId: P:System.Xml.XmlAttributeCollection.ItemOf(System.Int32)
+  id: ItemOf(System.Int32)
+  parent: System.Xml.XmlAttributeCollection
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Xml.XmlAttributeCollection.ItemOf[System.Int32]
+  type: Property
+  source:
+    remote:
+      path: src/System.Xml.XmlDocument/ref/System.Xml.XmlDocument.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: this[]
+    path: src/System.Xml.XmlDocument/ref/System.Xml.XmlDocument.cs
+    startLine: 39
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  summary: "\n<p>Gets the attribute with the specified index.</p>\n"
+  syntax:
+    content: >-
+      [IndexerName("ItemOf")]
+
+      public XmlAttribute this[int i] { get; }
+    content.vb: >-
+      <IndexerName("ItemOf")>
+
+      Public ReadOnly Property ItemOf(i As Integer) As XmlAttribute
+    parameters:
+    - id: i
+      type: System.Int32
+      description: "\n<p>The index of the attribute. </p>\n"
+    return:
+      type: System.Xml.XmlAttribute
+      description: "\n<p>The <xref href=\"System.Xml.XmlAttribute\" data-throw-if-not-resolved=\"false\"></xref> at the specified index.</p>\n"
+  exceptions:
+  - type: System.IndexOutOfRangeException
+    commentId: T:System.IndexOutOfRangeException
+    description: "\n<p>The index being passed in is out of range. </p>\n"
+  seealso:
+  - type: System.Xml.XmlNamedNodeMap.Item(System.Int32)
+    commentId: M:System.Xml.XmlNamedNodeMap.Item(System.Int32)
+  attributes:
+  - type: System.Runtime.CompilerServices.IndexerNameAttribute
+    ctor: System.Runtime.CompilerServices.IndexerNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: ItemOf
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  fullName.vb: System.Xml.XmlAttributeCollection.ItemOf(System.Int32)
+  name.vb: ItemOf(Int32)
+  nameWithType: XmlAttributeCollection.ItemOf[Int32]
+  nameWithType.vb: XmlAttributeCollection.ItemOf(Int32)
+- uid: System.Xml.XmlAttributeCollection.ItemOf(System.String)
+  commentId: P:System.Xml.XmlAttributeCollection.ItemOf(System.String)
+  id: ItemOf(System.String)
+  parent: System.Xml.XmlAttributeCollection
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Xml.XmlAttributeCollection.ItemOf[System.String]
+  type: Property
+  source:
+    remote:
+      path: src/System.Xml.XmlDocument/ref/System.Xml.XmlDocument.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: this[]
+    path: src/System.Xml.XmlDocument/ref/System.Xml.XmlDocument.cs
+    startLine: 41
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  summary: "\n<p>Gets the attribute with the specified name.</p>\n"
+  syntax:
+    content: >-
+      [IndexerName("ItemOf")]
+
+      public XmlAttribute this[string name] { get; }
+    content.vb: >-
+      <IndexerName("ItemOf")>
+
+      Public ReadOnly Property ItemOf(name As String) As XmlAttribute
+    parameters:
+    - id: name
+      type: System.String
+      description: "\n<p>The qualified name of the attribute. </p>\n"
+    return:
+      type: System.Xml.XmlAttribute
+      description: "\n<p>The <xref href=\"System.Xml.XmlAttribute\" data-throw-if-not-resolved=\"false\"></xref> with the specified name. If the attribute does not exist, this property returns <strong>null</strong>.</p>\n"
+  attributes:
+  - type: System.Runtime.CompilerServices.IndexerNameAttribute
+    ctor: System.Runtime.CompilerServices.IndexerNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: ItemOf
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  fullName.vb: System.Xml.XmlAttributeCollection.ItemOf(System.String)
+  name.vb: ItemOf(String)
+  nameWithType: XmlAttributeCollection.ItemOf[String]
+  nameWithType.vb: XmlAttributeCollection.ItemOf(String)
+- uid: System.Xml.XmlAttributeCollection.ItemOf(System.String,System.String)
+  commentId: P:System.Xml.XmlAttributeCollection.ItemOf(System.String,System.String)
+  id: ItemOf(System.String,System.String)
+  parent: System.Xml.XmlAttributeCollection
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Xml.XmlAttributeCollection.ItemOf[System.String, System.String]
+  type: Property
+  source:
+    remote:
+      path: src/System.Xml.XmlDocument/ref/System.Xml.XmlDocument.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: this[]
+    path: src/System.Xml.XmlDocument/ref/System.Xml.XmlDocument.cs
+    startLine: 43
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  summary: "\n<p>Gets the attribute with the specified local name and namespace Uniform Resource Identifier (URI).</p>\n"
+  syntax:
+    content: >-
+      [IndexerName("ItemOf")]
+
+      public XmlAttribute this[string localName, string namespaceURI] { get; }
+    content.vb: >-
+      <IndexerName("ItemOf")>
+
+      Public ReadOnly Property ItemOf(localName As String, namespaceURI As String) As XmlAttribute
+    parameters:
+    - id: localName
+      type: System.String
+      description: "\n<p>The local name of the attribute. </p>\n"
+    - id: namespaceURI
+      type: System.String
+      description: "\n<p>The namespace URI of the attribute. </p>\n"
+    return:
+      type: System.Xml.XmlAttribute
+      description: "\n<p>The <xref href=\"System.Xml.XmlAttribute\" data-throw-if-not-resolved=\"false\"></xref> with the specified local name and namespace URI. If the attribute does not exist, this property returns <strong>null</strong>.</p>\n"
+  attributes:
+  - type: System.Runtime.CompilerServices.IndexerNameAttribute
+    ctor: System.Runtime.CompilerServices.IndexerNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: ItemOf
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  fullName.vb: System.Xml.XmlAttributeCollection.ItemOf(System.String, System.String)
+  name.vb: ItemOf(String, String)
+  nameWithType: XmlAttributeCollection.ItemOf[String, String]
+  nameWithType.vb: XmlAttributeCollection.ItemOf(String, String)
+- uid: System.Xml.XmlAttributeCollection.System#Collections#ICollection#Count
+  commentId: P:System.Xml.XmlAttributeCollection.System#Collections#ICollection#Count
+  id: System#Collections#ICollection#Count
+  isEii: true
+  parent: System.Xml.XmlAttributeCollection
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Xml.XmlAttributeCollection.System.Collections.ICollection.Count
+  type: Property
+  source:
+    remote:
+      path: src/System.Xml.XmlDocument/ref/System.Xml.XmlDocument.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: System.Collections.ICollection.Count
+    path: src/System.Xml.XmlDocument/ref/System.Xml.XmlDocument.cs
+    startLine: 45
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  summary: "\n<p>For a description of this member, see <xref href=\"System.Xml.XmlAttributeCollection.System#Collections#ICollection#Count\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  syntax:
+    content: int ICollection.Count { get; }
+    content.vb: ReadOnly WriteOnly Property System.Collections.ICollection.Count As Integer Implements ICollection.Count
+    parameters: []
+    return:
+      type: System.Int32
+      description: "\n<p>Returns an <strong>int</strong> that contains the count of the attributes.</p>\n"
+  implements:
+  - System.Collections.ICollection.Count
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+  name.vb: System.Collections.ICollection.Count
+  nameWithType: XmlAttributeCollection.ICollection.Count
+  nameWithType.vb: XmlAttributeCollection.System.Collections.ICollection.Count
+- uid: System.Xml.XmlAttributeCollection.System#Collections#ICollection#IsSynchronized
+  commentId: P:System.Xml.XmlAttributeCollection.System#Collections#ICollection#IsSynchronized
+  id: System#Collections#ICollection#IsSynchronized
+  isEii: true
+  parent: System.Xml.XmlAttributeCollection
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Xml.XmlAttributeCollection.System.Collections.ICollection.IsSynchronized
+  type: Property
+  source:
+    remote:
+      path: src/System.Xml.XmlDocument/ref/System.Xml.XmlDocument.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: System.Collections.ICollection.IsSynchronized
+    path: src/System.Xml.XmlDocument/ref/System.Xml.XmlDocument.cs
+    startLine: 46
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  summary: "\n<p>For a description of this member, see <xref href=\"System.Xml.XmlAttributeCollection.System#Collections#ICollection#IsSynchronized\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  syntax:
+    content: bool ICollection.IsSynchronized { get; }
+    content.vb: ReadOnly WriteOnly Property System.Collections.ICollection.IsSynchronized As Boolean Implements ICollection.IsSynchronized
+    parameters: []
+    return:
+      type: System.Boolean
+      description: "\n<p>Returns <strong>true</strong> if the collection is synchronized.</p>\n"
+  implements:
+  - System.Collections.ICollection.IsSynchronized
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+  name.vb: System.Collections.ICollection.IsSynchronized
+  nameWithType: XmlAttributeCollection.ICollection.IsSynchronized
+  nameWithType.vb: XmlAttributeCollection.System.Collections.ICollection.IsSynchronized
+- uid: System.Xml.XmlAttributeCollection.System#Collections#ICollection#SyncRoot
+  commentId: P:System.Xml.XmlAttributeCollection.System#Collections#ICollection#SyncRoot
+  id: System#Collections#ICollection#SyncRoot
+  isEii: true
+  parent: System.Xml.XmlAttributeCollection
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Xml.XmlAttributeCollection.System.Collections.ICollection.SyncRoot
+  type: Property
+  source:
+    remote:
+      path: src/System.Xml.XmlDocument/ref/System.Xml.XmlDocument.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: System.Collections.ICollection.SyncRoot
+    path: src/System.Xml.XmlDocument/ref/System.Xml.XmlDocument.cs
+    startLine: 47
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  summary: "\n<p>For a description of this member, see <xref href=\"System.Xml.XmlAttributeCollection.System#Collections#ICollection#SyncRoot\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  syntax:
+    content: object ICollection.SyncRoot { get; }
+    content.vb: ReadOnly WriteOnly Property System.Collections.ICollection.SyncRoot As Object Implements ICollection.SyncRoot
+    parameters: []
+    return:
+      type: System.Object
+      description: "\n<p>Returns the <xref href=\"System.Object\" data-throw-if-not-resolved=\"false\"></xref> that is the root of the collection.</p>\n"
+  implements:
+  - System.Collections.ICollection.SyncRoot
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+  name.vb: System.Collections.ICollection.SyncRoot
+  nameWithType: XmlAttributeCollection.ICollection.SyncRoot
+  nameWithType.vb: XmlAttributeCollection.System.Collections.ICollection.SyncRoot
+- uid: System.Xml.XmlAttributeCollection.Append(System.Xml.XmlAttribute)
+  commentId: M:System.Xml.XmlAttributeCollection.Append(System.Xml.XmlAttribute)
+  id: Append(System.Xml.XmlAttribute)
+  parent: System.Xml.XmlAttributeCollection
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Xml.XmlAttributeCollection.Append(System.Xml.XmlAttribute)
+  type: Method
+  source:
+    remote:
+      path: src/System.Xml.XmlDocument/ref/System.Xml.XmlDocument.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Append
+    path: src/System.Xml.XmlDocument/ref/System.Xml.XmlDocument.cs
+    startLine: 48
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  summary: "\n<p>Inserts the specified attribute as the last node in the collection.</p>\n"
+  syntax:
+    content: public XmlAttribute Append(XmlAttribute node)
+    content.vb: Public Function Append(node As XmlAttribute) As XmlAttribute
+    parameters:
+    - id: node
+      type: System.Xml.XmlAttribute
+      description: "\n<p>The <xref href=\"System.Xml.XmlAttribute\" data-throw-if-not-resolved=\"false\"></xref> to insert. </p>\n"
+    return:
+      type: System.Xml.XmlAttribute
+      description: "\n<p>The <strong>XmlAttribute</strong> to append to the collection.</p>\n"
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>\n<em>node</em> was created from a document different from the one that created this collection. </p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: XmlAttributeCollection.Append(XmlAttribute)
+- uid: System.Xml.XmlAttributeCollection.CopyTo(System.Xml.XmlAttribute[],System.Int32)
+  commentId: M:System.Xml.XmlAttributeCollection.CopyTo(System.Xml.XmlAttribute[],System.Int32)
+  id: CopyTo(System.Xml.XmlAttribute[],System.Int32)
+  parent: System.Xml.XmlAttributeCollection
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Xml.XmlAttributeCollection.CopyTo(System.Xml.XmlAttribute[], System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/System.Xml.XmlDocument/ref/System.Xml.XmlDocument.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: CopyTo
+    path: src/System.Xml.XmlDocument/ref/System.Xml.XmlDocument.cs
+    startLine: 49
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  summary: "\n<p>Copies all the <xref href=\"System.Xml.XmlAttribute\" data-throw-if-not-resolved=\"false\"></xref> objects from this collection into the given array.</p>\n"
+  syntax:
+    content: public void CopyTo(XmlAttribute[] array, int index)
+    content.vb: Public Sub CopyTo(array As XmlAttribute(), index As Integer)
+    parameters:
+    - id: array
+      type: System.Xml.XmlAttribute[]
+      description: "\n<p>The array that is the destination of the objects copied from this collection. </p>\n"
+    - id: index
+      type: System.Int32
+      description: "\n<p>The index in the array where copying begins. </p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: System.Xml.XmlAttributeCollection.CopyTo(System.Xml.XmlAttribute(), System.Int32)
+  name.vb: CopyTo(XmlAttribute(), Int32)
+  nameWithType: XmlAttributeCollection.CopyTo(XmlAttribute[], Int32)
+  nameWithType.vb: XmlAttributeCollection.CopyTo(XmlAttribute(), Int32)
+- uid: System.Xml.XmlAttributeCollection.InsertAfter(System.Xml.XmlAttribute,System.Xml.XmlAttribute)
+  commentId: M:System.Xml.XmlAttributeCollection.InsertAfter(System.Xml.XmlAttribute,System.Xml.XmlAttribute)
+  id: InsertAfter(System.Xml.XmlAttribute,System.Xml.XmlAttribute)
+  parent: System.Xml.XmlAttributeCollection
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Xml.XmlAttributeCollection.InsertAfter(System.Xml.XmlAttribute, System.Xml.XmlAttribute)
+  type: Method
+  source:
+    remote:
+      path: src/System.Xml.XmlDocument/ref/System.Xml.XmlDocument.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: InsertAfter
+    path: src/System.Xml.XmlDocument/ref/System.Xml.XmlDocument.cs
+    startLine: 50
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  summary: "\n<p>Inserts the specified attribute immediately after the specified reference attribute.</p>\n"
+  syntax:
+    content: public XmlAttribute InsertAfter(XmlAttribute newNode, XmlAttribute refNode)
+    content.vb: Public Function InsertAfter(newNode As XmlAttribute, refNode As XmlAttribute) As XmlAttribute
+    parameters:
+    - id: newNode
+      type: System.Xml.XmlAttribute
+      description: "\n<p>The <xref href=\"System.Xml.XmlAttribute\" data-throw-if-not-resolved=\"false\"></xref> to insert. </p>\n"
+    - id: refNode
+      type: System.Xml.XmlAttribute
+      description: "\n<p>The <xref href=\"System.Xml.XmlAttribute\" data-throw-if-not-resolved=\"false\"></xref> that is the reference attribute. <em>newNode</em> is placed after the <em>refNode</em>. </p>\n"
+    return:
+      type: System.Xml.XmlAttribute
+      description: "\n<p>The <strong>XmlAttribute</strong> to insert into the collection.</p>\n"
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>The <em>newNode</em> was created from a document different from the one that created this collection. Or the <em>refNode</em> is not a member of this collection. </p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: XmlAttributeCollection.InsertAfter(XmlAttribute, XmlAttribute)
+- uid: System.Xml.XmlAttributeCollection.InsertBefore(System.Xml.XmlAttribute,System.Xml.XmlAttribute)
+  commentId: M:System.Xml.XmlAttributeCollection.InsertBefore(System.Xml.XmlAttribute,System.Xml.XmlAttribute)
+  id: InsertBefore(System.Xml.XmlAttribute,System.Xml.XmlAttribute)
+  parent: System.Xml.XmlAttributeCollection
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Xml.XmlAttributeCollection.InsertBefore(System.Xml.XmlAttribute, System.Xml.XmlAttribute)
+  type: Method
+  source:
+    remote:
+      path: src/System.Xml.XmlDocument/ref/System.Xml.XmlDocument.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: InsertBefore
+    path: src/System.Xml.XmlDocument/ref/System.Xml.XmlDocument.cs
+    startLine: 51
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  summary: "\n<p>Inserts the specified attribute immediately before the specified reference attribute.</p>\n"
+  syntax:
+    content: public XmlAttribute InsertBefore(XmlAttribute newNode, XmlAttribute refNode)
+    content.vb: Public Function InsertBefore(newNode As XmlAttribute, refNode As XmlAttribute) As XmlAttribute
+    parameters:
+    - id: newNode
+      type: System.Xml.XmlAttribute
+      description: "\n<p>The <xref href=\"System.Xml.XmlAttribute\" data-throw-if-not-resolved=\"false\"></xref> to insert. </p>\n"
+    - id: refNode
+      type: System.Xml.XmlAttribute
+      description: "\n<p>The <xref href=\"System.Xml.XmlAttribute\" data-throw-if-not-resolved=\"false\"></xref> that is the reference attribute. <em>newNode</em> is placed before the <em>refNode</em>. </p>\n"
+    return:
+      type: System.Xml.XmlAttribute
+      description: "\n<p>The <strong>XmlAttribute</strong> to insert into the collection.</p>\n"
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>The <em>newNode</em> was created from a document different from the one that created this collection. Or the <em>refNode</em> is not a member of this collection. </p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: XmlAttributeCollection.InsertBefore(XmlAttribute, XmlAttribute)
+- uid: System.Xml.XmlAttributeCollection.Prepend(System.Xml.XmlAttribute)
+  commentId: M:System.Xml.XmlAttributeCollection.Prepend(System.Xml.XmlAttribute)
+  id: Prepend(System.Xml.XmlAttribute)
+  parent: System.Xml.XmlAttributeCollection
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Xml.XmlAttributeCollection.Prepend(System.Xml.XmlAttribute)
+  type: Method
+  source:
+    remote:
+      path: src/System.Xml.XmlDocument/ref/System.Xml.XmlDocument.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Prepend
+    path: src/System.Xml.XmlDocument/ref/System.Xml.XmlDocument.cs
+    startLine: 52
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  summary: "\n<p>Inserts the specified attribute as the first node in the collection.</p>\n"
+  syntax:
+    content: public XmlAttribute Prepend(XmlAttribute node)
+    content.vb: Public Function Prepend(node As XmlAttribute) As XmlAttribute
+    parameters:
+    - id: node
+      type: System.Xml.XmlAttribute
+      description: "\n<p>The <xref href=\"System.Xml.XmlAttribute\" data-throw-if-not-resolved=\"false\"></xref> to insert. </p>\n"
+    return:
+      type: System.Xml.XmlAttribute
+      description: "\n<p>The <strong>XmlAttribute</strong> added to the collection.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: XmlAttributeCollection.Prepend(XmlAttribute)
+- uid: System.Xml.XmlAttributeCollection.Remove(System.Xml.XmlAttribute)
+  commentId: M:System.Xml.XmlAttributeCollection.Remove(System.Xml.XmlAttribute)
+  id: Remove(System.Xml.XmlAttribute)
+  parent: System.Xml.XmlAttributeCollection
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Xml.XmlAttributeCollection.Remove(System.Xml.XmlAttribute)
+  type: Method
+  source:
+    remote:
+      path: src/System.Xml.XmlDocument/ref/System.Xml.XmlDocument.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Remove
+    path: src/System.Xml.XmlDocument/ref/System.Xml.XmlDocument.cs
+    startLine: 53
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  summary: "\n<p>Removes the specified attribute from the collection.</p>\n"
+  syntax:
+    content: public XmlAttribute Remove(XmlAttribute node)
+    content.vb: Public Function Remove(node As XmlAttribute) As XmlAttribute
+    parameters:
+    - id: node
+      type: System.Xml.XmlAttribute
+      description: "\n<p>The <xref href=\"System.Xml.XmlAttribute\" data-throw-if-not-resolved=\"false\"></xref> to remove. </p>\n"
+    return:
+      type: System.Xml.XmlAttribute
+      description: "\n<p>The node removed or <strong>null</strong> if it is not found in the collection.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: XmlAttributeCollection.Remove(XmlAttribute)
+- uid: System.Xml.XmlAttributeCollection.RemoveAll
+  commentId: M:System.Xml.XmlAttributeCollection.RemoveAll
+  id: RemoveAll
+  parent: System.Xml.XmlAttributeCollection
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Xml.XmlAttributeCollection.RemoveAll()
+  type: Method
+  source:
+    remote:
+      path: src/System.Xml.XmlDocument/ref/System.Xml.XmlDocument.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: RemoveAll
+    path: src/System.Xml.XmlDocument/ref/System.Xml.XmlDocument.cs
+    startLine: 54
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  summary: "\n<p>Removes all attributes from the collection.</p>\n"
+  syntax:
+    content: public void RemoveAll()
+    content.vb: Public Sub RemoveAll
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: XmlAttributeCollection.RemoveAll()
+- uid: System.Xml.XmlAttributeCollection.RemoveAt(System.Int32)
+  commentId: M:System.Xml.XmlAttributeCollection.RemoveAt(System.Int32)
+  id: RemoveAt(System.Int32)
+  parent: System.Xml.XmlAttributeCollection
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Xml.XmlAttributeCollection.RemoveAt(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/System.Xml.XmlDocument/ref/System.Xml.XmlDocument.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: RemoveAt
+    path: src/System.Xml.XmlDocument/ref/System.Xml.XmlDocument.cs
+    startLine: 55
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  summary: "\n<p>Removes the attribute corresponding to the specified index from the collection.</p>\n"
+  syntax:
+    content: public XmlAttribute RemoveAt(int i)
+    content.vb: Public Function RemoveAt(i As Integer) As XmlAttribute
+    parameters:
+    - id: i
+      type: System.Int32
+      description: "\n<p>The index of the node to remove. The first node has index 0. </p>\n"
+    return:
+      type: System.Xml.XmlAttribute
+      description: "\n<p>Returns <strong>null</strong> if there is no attribute at the specified index.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: XmlAttributeCollection.RemoveAt(Int32)
+- uid: System.Xml.XmlAttributeCollection.SetNamedItem(System.Xml.XmlNode)
+  commentId: M:System.Xml.XmlAttributeCollection.SetNamedItem(System.Xml.XmlNode)
+  id: SetNamedItem(System.Xml.XmlNode)
+  parent: System.Xml.XmlAttributeCollection
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Xml.XmlAttributeCollection.SetNamedItem(System.Xml.XmlNode)
+  type: Method
+  source:
+    remote:
+      path: src/System.Xml.XmlDocument/ref/System.Xml.XmlDocument.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: SetNamedItem
+    path: src/System.Xml.XmlDocument/ref/System.Xml.XmlDocument.cs
+    startLine: 56
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  summary: "\n<p>Adds a <xref href=\"System.Xml.XmlNode\" data-throw-if-not-resolved=\"false\"></xref> using its <xref href=\"System.Xml.XmlNode.Name\" data-throw-if-not-resolved=\"false\"></xref> property </p>\n"
+  syntax:
+    content: public override XmlNode SetNamedItem(XmlNode node)
+    content.vb: Public Overrides Function SetNamedItem(node As XmlNode) As XmlNode
+    parameters:
+    - id: node
+      type: System.Xml.XmlNode
+      description: "\n<p>An attribute node to store in this collection. The node will later be accessible using the name of the node. If a node with that name is already present in the collection, it is replaced by the new one; otherwise, the node is appended to the end of the collection. </p>\n"
+    return:
+      type: System.Xml.XmlNode
+      description: "\n<p>If the <em>node</em> replaces an existing node with the same name, the old node is returned; otherwise, the added node is returned.</p>\n"
+  overridden: System.Xml.XmlNamedNodeMap.SetNamedItem(System.Xml.XmlNode)
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>\n<em>node</em> was created from a different <xref href=\"System.Xml.XmlDocument\" data-throw-if-not-resolved=\"false\"></xref> than the one that created this collection.</p>\n<p>This <strong>XmlAttributeCollection</strong> is read-only. </p>\n"
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: "\n<p>\n<em>node</em> is an <xref href=\"System.Xml.XmlAttribute\" data-throw-if-not-resolved=\"false\"></xref> that is already an attribute of another <xref href=\"System.Xml.XmlElement\" data-throw-if-not-resolved=\"false\"></xref> object. To re-use attributes in other elements, you must clone the <strong>XmlAttribute</strong> objects you want to re-use. </p>\n"
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  nameWithType: XmlAttributeCollection.SetNamedItem(XmlNode)
+- uid: System.Xml.XmlAttributeCollection.System#Collections#ICollection#CopyTo(System.Array,System.Int32)
+  commentId: M:System.Xml.XmlAttributeCollection.System#Collections#ICollection#CopyTo(System.Array,System.Int32)
+  id: System#Collections#ICollection#CopyTo(System.Array,System.Int32)
+  isEii: true
+  parent: System.Xml.XmlAttributeCollection
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Xml.XmlAttributeCollection.System.Collections.ICollection.CopyTo(System.Array, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/System.Xml.XmlDocument/ref/System.Xml.XmlDocument.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: System.Collections.ICollection.CopyTo
+    path: src/System.Xml.XmlDocument/ref/System.Xml.XmlDocument.cs
+    startLine: 57
+  assemblies:
+  - System.Xml.XmlDocument
+  namespace: System.Xml
+  summary: "\n<p>For a description of this member, see <xref href=\"System.Xml.XmlAttributeCollection.CopyTo(System.Xml.XmlAttribute[],System.Int32)\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  syntax:
+    content: void ICollection.CopyTo(Array array, int index)
+    content.vb: Sub System.Collections.ICollection.CopyTo(array As Array, index As Integer) Implements ICollection.CopyTo
+    parameters:
+    - id: array
+      type: System.Array
+      description: "\n<p>The array that is the destination of the objects copied from this collection. </p>\n"
+    - id: index
+      type: System.Int32
+      description: "\n<p>The index in the array where copying begins. </p>\n"
+  implements:
+  - System.Collections.ICollection.CopyTo(System.Array,System.Int32)
+  name.vb: System.Collections.ICollection.CopyTo(Array, Int32)
+  nameWithType: XmlAttributeCollection.ICollection.CopyTo(Array, Int32)
+  nameWithType.vb: XmlAttributeCollection.System.Collections.ICollection.CopyTo(Array, Int32)
+references:
+- uid: System.Xml
+  isExternal: false
+  name: "XXX"
+  fullName: System.Xml
+  commentId: N:System.Xml
+  nameWithType: System.Xml
+- uid: System.Object
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Object
+  commentId: T:System.Object
+  nameWithType: Object
+- uid: System.Xml.XmlNamedNodeMap
+  parent: System.Xml
+  isExternal: false
+  name: "XXX"
+  fullName: System.Xml.XmlNamedNodeMap
+  commentId: T:System.Xml.XmlNamedNodeMap
+  nameWithType: XmlNamedNodeMap
+- uid: System.Collections.ICollection
+  parent: System.Collections
+  isExternal: false
+  name: "XXX"
+  fullName: System.Collections.ICollection
+  commentId: T:System.Collections.ICollection
+  nameWithType: ICollection
+- uid: System.Collections.IEnumerable
+  parent: System.Collections
+  isExternal: false
+  name: "XXX"
+  fullName: System.Collections.IEnumerable
+  commentId: T:System.Collections.IEnumerable
+  nameWithType: IEnumerable
+- uid: System.Xml.XmlNamedNodeMap.Count
+  parent: System.Xml.XmlNamedNodeMap
+  isExternal: false
+  name: "XXX"
+  fullName: System.Xml.XmlNamedNodeMap.Count
+  commentId: P:System.Xml.XmlNamedNodeMap.Count
+  nameWithType: XmlNamedNodeMap.Count
+- uid: System.Xml.XmlNamedNodeMap.GetEnumerator
+  parent: System.Xml.XmlNamedNodeMap
+  isExternal: false
+  name: "XXX"
+  fullName: System.Xml.XmlNamedNodeMap.GetEnumerator()
+  spec.csharp:
+  - uid: System.Xml.XmlNamedNodeMap.GetEnumerator
+    name: "XXX"
+    fullName: System.Xml.XmlNamedNodeMap.GetEnumerator
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Xml.XmlNamedNodeMap.GetEnumerator
+    name: "XXX"
+    fullName: System.Xml.XmlNamedNodeMap.GetEnumerator
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Xml.XmlNamedNodeMap.GetEnumerator
+  nameWithType: XmlNamedNodeMap.GetEnumerator()
+- uid: System.Xml.XmlNamedNodeMap.GetNamedItem(System.String)
+  parent: System.Xml.XmlNamedNodeMap
+  isExternal: true
+  name: "XXX"
+  fullName: System.Xml.XmlNamedNodeMap.GetNamedItem(System.String)
+  spec.csharp:
+  - uid: System.Xml.XmlNamedNodeMap.GetNamedItem(System.String)
+    name: "XXX"
+    fullName: System.Xml.XmlNamedNodeMap.GetNamedItem
+  - name: "XXX"
+    fullName: (
+  - uid: System.String
+    name: "XXX"
+    fullName: System.String
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Xml.XmlNamedNodeMap.GetNamedItem(System.String)
+    name: "XXX"
+    fullName: System.Xml.XmlNamedNodeMap.GetNamedItem
+  - name: "XXX"
+    fullName: (
+  - uid: System.String
+    name: "XXX"
+    fullName: System.String
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Xml.XmlNamedNodeMap.GetNamedItem(System.String)
+  nameWithType: XmlNamedNodeMap.GetNamedItem(String)
+- uid: System.Xml.XmlNamedNodeMap.GetNamedItem(System.String,System.String)
+  parent: System.Xml.XmlNamedNodeMap
+  isExternal: true
+  name: "XXX"
+  fullName: System.Xml.XmlNamedNodeMap.GetNamedItem(System.String, System.String)
+  spec.csharp:
+  - uid: System.Xml.XmlNamedNodeMap.GetNamedItem(System.String,System.String)
+    name: "XXX"
+    fullName: System.Xml.XmlNamedNodeMap.GetNamedItem
+  - name: "XXX"
+    fullName: (
+  - uid: System.String
+    name: "XXX"
+    fullName: System.String
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.String
+    name: "XXX"
+    fullName: System.String
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Xml.XmlNamedNodeMap.GetNamedItem(System.String,System.String)
+    name: "XXX"
+    fullName: System.Xml.XmlNamedNodeMap.GetNamedItem
+  - name: "XXX"
+    fullName: (
+  - uid: System.String
+    name: "XXX"
+    fullName: System.String
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.String
+    name: "XXX"
+    fullName: System.String
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Xml.XmlNamedNodeMap.GetNamedItem(System.String,System.String)
+  nameWithType: XmlNamedNodeMap.GetNamedItem(String, String)
+- uid: System.Xml.XmlNamedNodeMap.Item(System.Int32)
+  parent: System.Xml.XmlNamedNodeMap
+  isExternal: true
+  name: "XXX"
+  fullName: System.Xml.XmlNamedNodeMap.Item(System.Int32)
+  spec.csharp:
+  - uid: System.Xml.XmlNamedNodeMap.Item(System.Int32)
+    name: "XXX"
+    fullName: System.Xml.XmlNamedNodeMap.Item
+  - name: "XXX"
+    fullName: (
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Xml.XmlNamedNodeMap.Item(System.Int32)
+    name: "XXX"
+    fullName: System.Xml.XmlNamedNodeMap.Item
+  - name: "XXX"
+    fullName: (
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Xml.XmlNamedNodeMap.Item(System.Int32)
+  nameWithType: XmlNamedNodeMap.Item(Int32)
+- uid: System.Xml.XmlNamedNodeMap.RemoveNamedItem(System.String)
+  parent: System.Xml.XmlNamedNodeMap
+  isExternal: true
+  name: "XXX"
+  fullName: System.Xml.XmlNamedNodeMap.RemoveNamedItem(System.String)
+  spec.csharp:
+  - uid: System.Xml.XmlNamedNodeMap.RemoveNamedItem(System.String)
+    name: "XXX"
+    fullName: System.Xml.XmlNamedNodeMap.RemoveNamedItem
+  - name: "XXX"
+    fullName: (
+  - uid: System.String
+    name: "XXX"
+    fullName: System.String
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Xml.XmlNamedNodeMap.RemoveNamedItem(System.String)
+    name: "XXX"
+    fullName: System.Xml.XmlNamedNodeMap.RemoveNamedItem
+  - name: "XXX"
+    fullName: (
+  - uid: System.String
+    name: "XXX"
+    fullName: System.String
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Xml.XmlNamedNodeMap.RemoveNamedItem(System.String)
+  nameWithType: XmlNamedNodeMap.RemoveNamedItem(String)
+- uid: System.Xml.XmlNamedNodeMap.RemoveNamedItem(System.String,System.String)
+  parent: System.Xml.XmlNamedNodeMap
+  isExternal: true
+  name: "XXX"
+  fullName: System.Xml.XmlNamedNodeMap.RemoveNamedItem(System.String, System.String)
+  spec.csharp:
+  - uid: System.Xml.XmlNamedNodeMap.RemoveNamedItem(System.String,System.String)
+    name: "XXX"
+    fullName: System.Xml.XmlNamedNodeMap.RemoveNamedItem
+  - name: "XXX"
+    fullName: (
+  - uid: System.String
+    name: "XXX"
+    fullName: System.String
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.String
+    name: "XXX"
+    fullName: System.String
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Xml.XmlNamedNodeMap.RemoveNamedItem(System.String,System.String)
+    name: "XXX"
+    fullName: System.Xml.XmlNamedNodeMap.RemoveNamedItem
+  - name: "XXX"
+    fullName: (
+  - uid: System.String
+    name: "XXX"
+    fullName: System.String
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.String
+    name: "XXX"
+    fullName: System.String
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Xml.XmlNamedNodeMap.RemoveNamedItem(System.String,System.String)
+  nameWithType: XmlNamedNodeMap.RemoveNamedItem(String, String)
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.ToString
+  nameWithType: Object.ToString()
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.Equals(System.Object)
+  nameWithType: Object.Equals(Object)
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  nameWithType: Object.Equals(Object, Object)
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.GetHashCode
+  nameWithType: Object.GetHashCode()
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.GetType
+  nameWithType: Object.GetType()
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.MemberwiseClone
+  nameWithType: Object.MemberwiseClone()
+- uid: System.Collections.IEnumerable.System.Linq.Queryable.AsQueryable
+  parent: System.Linq.Queryable
+  definition: System.Linq.Queryable.AsQueryable(System.Collections.IEnumerable)
+  name: "XXX"
+  fullName: System.Linq.Queryable.AsQueryable()
+  spec.csharp:
+  - uid: System.Linq.Queryable.AsQueryable
+    name: "XXX"
+    fullName: System.Linq.Queryable.AsQueryable
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Linq.Queryable.AsQueryable
+    name: "XXX"
+    fullName: System.Linq.Queryable.AsQueryable
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Linq.Queryable.AsQueryable(System.Collections.IEnumerable)
+  nameWithType: Queryable.AsQueryable()
+- uid: System.Collections.IEnumerable.System.Linq.ParallelEnumerable.AsParallel
+  parent: System.Linq.ParallelEnumerable
+  definition: System.Linq.ParallelEnumerable.AsParallel(System.Collections.IEnumerable)
+  name: "XXX"
+  fullName: System.Linq.ParallelEnumerable.AsParallel()
+  spec.csharp:
+  - uid: System.Linq.ParallelEnumerable.AsParallel
+    name: "XXX"
+    fullName: System.Linq.ParallelEnumerable.AsParallel
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Linq.ParallelEnumerable.AsParallel
+    name: "XXX"
+    fullName: System.Linq.ParallelEnumerable.AsParallel
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Linq.ParallelEnumerable.AsParallel(System.Collections.IEnumerable)
+  nameWithType: ParallelEnumerable.AsParallel()
+- uid: System.Collections.IEnumerable.System.Linq.Enumerable.Cast``1
+  parent: System.Linq.Enumerable
+  definition: System.Linq.Enumerable.Cast``1(System.Collections.IEnumerable)
+  name: "XXX"
+  fullName: System.Linq.Enumerable.Cast<TResult>()
+  fullname.vb: System.Linq.Enumerable.Cast(Of TResult)()
+  name.vb: Cast(Of TResult)()
+  spec.csharp:
+  - uid: System.Linq.Enumerable.Cast``1
+    name: "XXX"
+    fullName: System.Linq.Enumerable.Cast<TResult>
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Linq.Enumerable.Cast``1
+    name: "XXX"
+    fullName: System.Linq.Enumerable.Cast(Of TResult)
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Linq.Enumerable.Cast``1(System.Collections.IEnumerable)
+  nameWithType: Enumerable.Cast<TResult>()
+  nameWithType.vb: Enumerable.Cast(Of TResult)()
+- uid: System.Collections.IEnumerable.System.Linq.Enumerable.OfType``1
+  parent: System.Linq.Enumerable
+  definition: System.Linq.Enumerable.OfType``1(System.Collections.IEnumerable)
+  name: "XXX"
+  fullName: System.Linq.Enumerable.OfType<TResult>()
+  fullname.vb: System.Linq.Enumerable.OfType(Of TResult)()
+  name.vb: OfType(Of TResult)()
+  spec.csharp:
+  - uid: System.Linq.Enumerable.OfType``1
+    name: "XXX"
+    fullName: System.Linq.Enumerable.OfType<TResult>
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Linq.Enumerable.OfType``1
+    name: "XXX"
+    fullName: System.Linq.Enumerable.OfType(Of TResult)
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Linq.Enumerable.OfType``1(System.Collections.IEnumerable)
+  nameWithType: Enumerable.OfType<TResult>()
+  nameWithType.vb: Enumerable.OfType(Of TResult)()
+- uid: System
+  isExternal: false
+  name: "XXX"
+  fullName: System
+  commentId: N:System
+  nameWithType: System
+- uid: System.Collections
+  isExternal: false
+  name: "XXX"
+  fullName: System.Collections
+  commentId: N:System.Collections
+  nameWithType: System.Collections
+- uid: System.Linq.Queryable.AsQueryable(System.Collections.IEnumerable)
+  isExternal: true
+  name: "XXX"
+  fullName: System.Linq.Queryable.AsQueryable(System.Collections.IEnumerable)
+  spec.csharp:
+  - uid: System.Linq.Queryable.AsQueryable(System.Collections.IEnumerable)
+    name: "XXX"
+    fullName: System.Linq.Queryable.AsQueryable
+  - name: "XXX"
+    fullName: (
+  - uid: System.Collections.IEnumerable
+    name: "XXX"
+    fullName: System.Collections.IEnumerable
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Linq.Queryable.AsQueryable(System.Collections.IEnumerable)
+    name: "XXX"
+    fullName: System.Linq.Queryable.AsQueryable
+  - name: "XXX"
+    fullName: (
+  - uid: System.Collections.IEnumerable
+    name: "XXX"
+    fullName: System.Collections.IEnumerable
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Linq.Queryable.AsQueryable(System.Collections.IEnumerable)
+  nameWithType: Queryable.AsQueryable(IEnumerable)
+- uid: System.Linq.Queryable
+  parent: System.Linq
+  isExternal: false
+  name: "XXX"
+  fullName: System.Linq.Queryable
+  commentId: T:System.Linq.Queryable
+  nameWithType: Queryable
+- uid: System.Linq.ParallelEnumerable.AsParallel(System.Collections.IEnumerable)
+  isExternal: true
+  name: "XXX"
+  fullName: System.Linq.ParallelEnumerable.AsParallel(System.Collections.IEnumerable)
+  spec.csharp:
+  - uid: System.Linq.ParallelEnumerable.AsParallel(System.Collections.IEnumerable)
+    name: "XXX"
+    fullName: System.Linq.ParallelEnumerable.AsParallel
+  - name: "XXX"
+    fullName: (
+  - uid: System.Collections.IEnumerable
+    name: "XXX"
+    fullName: System.Collections.IEnumerable
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Linq.ParallelEnumerable.AsParallel(System.Collections.IEnumerable)
+    name: "XXX"
+    fullName: System.Linq.ParallelEnumerable.AsParallel
+  - name: "XXX"
+    fullName: (
+  - uid: System.Collections.IEnumerable
+    name: "XXX"
+    fullName: System.Collections.IEnumerable
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Linq.ParallelEnumerable.AsParallel(System.Collections.IEnumerable)
+  nameWithType: ParallelEnumerable.AsParallel(IEnumerable)
+- uid: System.Linq.ParallelEnumerable
+  parent: System.Linq
+  isExternal: false
+  name: "XXX"
+  fullName: System.Linq.ParallelEnumerable
+  commentId: T:System.Linq.ParallelEnumerable
+  nameWithType: ParallelEnumerable
+- uid: System.Linq.Enumerable.Cast``1(System.Collections.IEnumerable)
+  isExternal: true
+  name: "XXX"
+  fullName: System.Linq.Enumerable.Cast<TResult>(System.Collections.IEnumerable)
+  fullname.vb: System.Linq.Enumerable.Cast(Of TResult)(System.Collections.IEnumerable)
+  name.vb: Cast(Of TResult)(IEnumerable)
+  spec.csharp:
+  - uid: System.Linq.Enumerable.Cast``1(System.Collections.IEnumerable)
+    name: "XXX"
+    fullName: System.Linq.Enumerable.Cast<TResult>
+  - name: "XXX"
+    fullName: (
+  - uid: System.Collections.IEnumerable
+    name: "XXX"
+    fullName: System.Collections.IEnumerable
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Linq.Enumerable.Cast``1(System.Collections.IEnumerable)
+    name: "XXX"
+    fullName: System.Linq.Enumerable.Cast(Of TResult)
+  - name: "XXX"
+    fullName: (
+  - uid: System.Collections.IEnumerable
+    name: "XXX"
+    fullName: System.Collections.IEnumerable
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Linq.Enumerable.Cast``1(System.Collections.IEnumerable)
+  nameWithType: Enumerable.Cast<TResult>(IEnumerable)
+  nameWithType.vb: Enumerable.Cast(Of TResult)(IEnumerable)
+- uid: System.Linq.Enumerable
+  parent: System.Linq
+  isExternal: false
+  name: "XXX"
+  fullName: System.Linq.Enumerable
+  commentId: T:System.Linq.Enumerable
+  nameWithType: Enumerable
+- uid: System.Linq.Enumerable.OfType``1(System.Collections.IEnumerable)
+  isExternal: true
+  name: "XXX"
+  fullName: System.Linq.Enumerable.OfType<TResult>(System.Collections.IEnumerable)
+  fullname.vb: System.Linq.Enumerable.OfType(Of TResult)(System.Collections.IEnumerable)
+  name.vb: OfType(Of TResult)(IEnumerable)
+  spec.csharp:
+  - uid: System.Linq.Enumerable.OfType``1(System.Collections.IEnumerable)
+    name: "XXX"
+    fullName: System.Linq.Enumerable.OfType<TResult>
+  - name: "XXX"
+    fullName: (
+  - uid: System.Collections.IEnumerable
+    name: "XXX"
+    fullName: System.Collections.IEnumerable
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Linq.Enumerable.OfType``1(System.Collections.IEnumerable)
+    name: "XXX"
+    fullName: System.Linq.Enumerable.OfType(Of TResult)
+  - name: "XXX"
+    fullName: (
+  - uid: System.Collections.IEnumerable
+    name: "XXX"
+    fullName: System.Collections.IEnumerable
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Linq.Enumerable.OfType``1(System.Collections.IEnumerable)
+  nameWithType: Enumerable.OfType<TResult>(IEnumerable)
+  nameWithType.vb: Enumerable.OfType(Of TResult)(IEnumerable)
+- uid: System.Linq
+  isExternal: false
+  name: "XXX"
+  fullName: System.Linq
+  commentId: N:System.Linq
+  nameWithType: System.Linq
+- uid: System.Int32
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Int32
+  commentId: T:System.Int32
+  nameWithType: Int32
+- uid: System.Xml.XmlAttribute
+  parent: System.Xml
+  isExternal: false
+  name: "XXX"
+  fullName: System.Xml.XmlAttribute
+  commentId: T:System.Xml.XmlAttribute
+  nameWithType: XmlAttribute
+- uid: System.String
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.String
+  commentId: T:System.String
+  nameWithType: String
+- uid: System.Collections.ICollection.Count
+  parent: System.Collections.ICollection
+  isExternal: false
+  name: "XXX"
+  fullName: System.Collections.ICollection.Count
+  commentId: P:System.Collections.ICollection.Count
+  nameWithType: ICollection.Count
+- uid: System.Collections.ICollection.IsSynchronized
+  parent: System.Collections.ICollection
+  isExternal: false
+  name: "XXX"
+  fullName: System.Collections.ICollection.IsSynchronized
+  commentId: P:System.Collections.ICollection.IsSynchronized
+  nameWithType: ICollection.IsSynchronized
+- uid: System.Boolean
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Boolean
+  commentId: T:System.Boolean
+  nameWithType: Boolean
+- uid: System.Collections.ICollection.SyncRoot
+  parent: System.Collections.ICollection
+  isExternal: false
+  name: "XXX"
+  fullName: System.Collections.ICollection.SyncRoot
+  commentId: P:System.Collections.ICollection.SyncRoot
+  nameWithType: ICollection.SyncRoot
+- uid: System.Xml.XmlAttribute[]
+  name: "XXX"
+  fullName: System.Xml.XmlAttribute[]
+  fullname.vb: System.Xml.XmlAttribute()
+  name.vb: XmlAttribute()
+  spec.csharp:
+  - uid: System.Xml.XmlAttribute
+    name: "XXX"
+    fullName: System.Xml.XmlAttribute
+  - name: 'XXX'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Xml.XmlAttribute
+    name: "XXX"
+    fullName: System.Xml.XmlAttribute
+  - name: "XXX"
+    fullName: ()
+  nameWithType: XmlAttribute[]
+  nameWithType.vb: XmlAttribute()
+- uid: System.Xml.XmlNamedNodeMap.SetNamedItem(System.Xml.XmlNode)
+  parent: System.Xml.XmlNamedNodeMap
+  isExternal: false
+  name: "XXX"
+  fullName: System.Xml.XmlNamedNodeMap.SetNamedItem(System.Xml.XmlNode)
+  spec.csharp:
+  - uid: System.Xml.XmlNamedNodeMap.SetNamedItem(System.Xml.XmlNode)
+    name: "XXX"
+    fullName: System.Xml.XmlNamedNodeMap.SetNamedItem
+  - name: "XXX"
+    fullName: (
+  - uid: System.Xml.XmlNode
+    name: "XXX"
+    fullName: System.Xml.XmlNode
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Xml.XmlNamedNodeMap.SetNamedItem(System.Xml.XmlNode)
+    name: "XXX"
+    fullName: System.Xml.XmlNamedNodeMap.SetNamedItem
+  - name: "XXX"
+    fullName: (
+  - uid: System.Xml.XmlNode
+    name: "XXX"
+    fullName: System.Xml.XmlNode
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Xml.XmlNamedNodeMap.SetNamedItem(System.Xml.XmlNode)
+  nameWithType: XmlNamedNodeMap.SetNamedItem(XmlNode)
+- uid: System.Xml.XmlNode
+  parent: System.Xml
+  isExternal: false
+  name: "XXX"
+  fullName: System.Xml.XmlNode
+  commentId: T:System.Xml.XmlNode
+  nameWithType: XmlNode
+- uid: System.Collections.ICollection.CopyTo(System.Array,System.Int32)
+  parent: System.Collections.ICollection
+  isExternal: true
+  name: "XXX"
+  fullName: System.Collections.ICollection.CopyTo(System.Array, System.Int32)
+  spec.csharp:
+  - uid: System.Collections.ICollection.CopyTo(System.Array,System.Int32)
+    name: "XXX"
+    fullName: System.Collections.ICollection.CopyTo
+  - name: "XXX"
+    fullName: (
+  - uid: System.Array
+    name: "XXX"
+    fullName: System.Array
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ICollection.CopyTo(System.Array,System.Int32)
+    name: "XXX"
+    fullName: System.Collections.ICollection.CopyTo
+  - name: "XXX"
+    fullName: (
+  - uid: System.Array
+    name: "XXX"
+    fullName: System.Array
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)
+  nameWithType: ICollection.CopyTo(Array, Int32)
+- uid: System.Array
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Array
+  commentId: T:System.Array
+  nameWithType: Array
+- uid: System.IndexOutOfRangeException
+  isExternal: false
+  name: "XXX"
+  fullName: System.IndexOutOfRangeException
+  nameWithType: IndexOutOfRangeException
+  commentId: T:System.IndexOutOfRangeException
+- uid: System.ArgumentException
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentException
+  nameWithType: ArgumentException
+  commentId: T:System.ArgumentException
+- uid: System.InvalidOperationException
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.InvalidOperationException
+  nameWithType: InvalidOperationException
+  commentId: T:System.InvalidOperationException

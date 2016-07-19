@@ -1,0 +1,728 @@
+items:
+- uid: System.Progress`1
+  commentId: T:System.Progress`1
+  id: Progress`1
+  parent: System
+  children:
+  - System.Progress`1.#ctor
+  - System.Progress`1.#ctor(System.Action{`0})
+  - System.Progress`1.OnReport(`0)
+  - System.Progress`1.ProgressChanged
+  - System.Progress`1.System#IProgress{T}#Report(`0)
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Progress<T>
+  type: Class
+  source:
+    remote:
+      path: src/mscorlib/src/System/Progress.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Progress
+    path: src/mscorlib/src/System/Progress.cs
+    startLine: 33
+  assemblies:
+  - System.Runtime.Extensions
+  namespace: System
+  summary: "\n<p>Provides an <xref href=\"System.IProgress`1\" data-throw-if-not-resolved=\"false\"></xref> that invokes callbacks for each reported progress value.</p>\n"
+  syntax:
+    content: 'public class Progress<T> : IProgress<T>'
+    content.vb: >-
+      Public Class Progress(Of T)
+          Implements IProgress(Of T)
+    typeParameters:
+    - id: T
+      description: "\n<p>Specifies the type of the progress report value.</p>\n"
+  inheritance:
+  - System.Object
+  implements:
+  - System.IProgress{{T}}
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+  fullName.vb: System.Progress(Of T)
+  name.vb: Progress(Of T)
+  nameWithType: Progress<T>
+  nameWithType.vb: Progress(Of T)
+- uid: System.Progress`1.#ctor
+  commentId: M:System.Progress`1.#ctor
+  id: '#ctor'
+  parent: System.Progress`1
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Progress<T>.Progress()
+  type: Constructor
+  source:
+    remote:
+      path: src/mscorlib/src/System/Progress.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: .ctor
+    path: src/mscorlib/src/System/Progress.cs
+    startLine: 43
+  assemblies:
+  - System.Runtime.Extensions
+  namespace: System
+  summary: "\n<p>Initializes the <xref href=\"System.Progress`1\" data-throw-if-not-resolved=\"false\"></xref> object.</p>\n"
+  syntax:
+    content: public Progress()
+    content.vb: Public Sub New
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: System.Progress(Of T).Progress()
+  nameWithType: Progress<T>.Progress()
+  nameWithType.vb: Progress(Of T).Progress()
+- uid: System.Progress`1.#ctor(System.Action{`0})
+  commentId: M:System.Progress`1.#ctor(System.Action{`0})
+  id: '#ctor(System.Action{`0})'
+  parent: System.Progress`1
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Progress<T>.Progress(System.Action<T>)
+  type: Constructor
+  source:
+    remote:
+      path: src/mscorlib/src/System/Progress.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: .ctor
+    path: src/mscorlib/src/System/Progress.cs
+    startLine: 63
+  assemblies:
+  - System.Runtime.Extensions
+  namespace: System
+  summary: "\n<p>Initializes the <xref href=\"System.Progress`1\" data-throw-if-not-resolved=\"false\"></xref> object with the specified callback.</p>\n"
+  syntax:
+    content: public Progress(Action<T> handler)
+    content.vb: Public Sub New(handler As Action(Of T))
+    parameters:
+    - id: handler
+      type: System.Action{{T}}
+      description: "\n<p>A handler to invoke for each reported progress value. This handler will be invoked in addition to any delegates registered with the <xref href=\"System.Progress`1.ProgressChanged\" data-throw-if-not-resolved=\"false\"></xref> event. Depending on the <xref href=\"System.Threading.SynchronizationContext\" data-throw-if-not-resolved=\"false\"></xref> instance captured by the <xref href=\"System.Progress`1\" data-throw-if-not-resolved=\"false\"></xref> at construction, it is possible that this handler instance could be invoked concurrently with itself.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: System.Progress(Of T).Progress(System.Action(Of T))
+  name.vb: Progress(Action(Of T))
+  nameWithType: Progress<T>.Progress(Action<T>)
+  nameWithType.vb: Progress(Of T).Progress(Action(Of T))
+- uid: System.Progress`1.ProgressChanged
+  commentId: E:System.Progress`1.ProgressChanged
+  id: ProgressChanged
+  parent: System.Progress`1
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Progress<T>.ProgressChanged
+  type: Event
+  source:
+    remote:
+      path: src/mscorlib/src/System/Progress.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: ProgressChanged
+    path: src/mscorlib/src/System/Progress.cs
+    startLine: 74
+  assemblies:
+  - System.Runtime.Extensions
+  namespace: System
+  summary: "\n<p>Raised for each reported progress value.</p>\n"
+  syntax:
+    content: public event EventHandler<T> ProgressChanged
+    content.vb: Public Event ProgressChanged As EventHandler(Of T)
+    return:
+      type: System.EventHandler{{T}}
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: System.Progress(Of T).ProgressChanged
+  nameWithType: Progress<T>.ProgressChanged
+  nameWithType.vb: Progress(Of T).ProgressChanged
+- uid: System.Progress`1.OnReport(`0)
+  commentId: M:System.Progress`1.OnReport(`0)
+  id: OnReport(`0)
+  parent: System.Progress`1
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Progress<T>.OnReport(T)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Progress.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: OnReport
+    path: src/mscorlib/src/System/Progress.cs
+    startLine: 78
+  assemblies:
+  - System.Runtime.Extensions
+  namespace: System
+  summary: "\n<p>Reports a progress change.</p>\n"
+  syntax:
+    content: protected virtual void OnReport(T value)
+    content.vb: Protected Overridable Sub OnReport(value As T)
+    parameters:
+    - id: value
+      type: '{T}'
+      description: "\n<p>The value of the updated progress.</p>\n"
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+  fullName.vb: System.Progress(Of T).OnReport(T)
+  nameWithType: Progress<T>.OnReport(T)
+  nameWithType.vb: Progress(Of T).OnReport(T)
+- uid: System.Progress`1.System#IProgress{T}#Report(`0)
+  commentId: M:System.Progress`1.System#IProgress{T}#Report(`0)
+  id: System#IProgress{T}#Report(`0)
+  isEii: true
+  parent: System.Progress`1
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Progress<T>.System.IProgress<T>.Report(T)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Progress.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: System.IProgress<T>.Report
+    path: src/mscorlib/src/System/Progress.cs
+    startLine: 95
+  assemblies:
+  - System.Runtime.Extensions
+  namespace: System
+  summary: "\n<p>Reports a progress change.</p>\n"
+  syntax:
+    content: void IProgress<T>.Report(T value)
+    content.vb: Sub System.IProgress<T>.Report(value As T) Implements IProgress(Of T).Report
+    parameters:
+    - id: value
+      type: '{T}'
+      description: "\n<p>The value of the updated progress.</p>\n"
+  implements:
+  - System.IProgress{{T}}.Report({T})
+  fullName.vb: System.Progress(Of T).System.IProgress<T>.Report(T)
+  name.vb: System.IProgress<T>.Report(T)
+  nameWithType: Progress<T>.IProgress<T>.Report(T)
+  nameWithType.vb: Progress(Of T).System.IProgress<T>.Report(T)
+references:
+- uid: System
+  isExternal: false
+  name: "XXX"
+  fullName: System
+  nameWithType: System
+  commentId: N:System
+- uid: System.Object
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Object
+  nameWithType: Object
+  commentId: T:System.Object
+- uid: System.IProgress{{T}}
+  parent: System
+  definition: System.IProgress`1
+  name: "XXX"
+  fullName: System.IProgress<T>
+  fullname.vb: System.IProgress(Of T)
+  name.vb: IProgress(Of T)
+  spec.csharp:
+  - uid: System.IProgress`1
+    name: "XXX"
+    fullName: System.IProgress
+    isExternal: true
+  - name: "<"
+    fullName: <
+  - name: "XXX"
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.IProgress`1
+    name: "XXX"
+    fullName: System.IProgress
+    isExternal: true
+  - name: 'XXX '
+    fullName: '(Of '
+  - name: "XXX"
+    fullName: T
+  - name: "XXX"
+    fullName: )
+  nameWithType: IProgress<T>
+  nameWithType.vb: IProgress(Of T)
+  commentId: T:System.IProgress{`0}
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.ToString()
+  commentId: M:System.Object.ToString
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.Equals(Object)
+  commentId: M:System.Object.Equals(System.Object)
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.Equals(Object, Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.GetHashCode()
+  commentId: M:System.Object.GetHashCode
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.GetType()
+  commentId: M:System.Object.GetType
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.MemberwiseClone()
+  commentId: M:System.Object.MemberwiseClone
+- uid: System.IProgress`1
+  isExternal: false
+  name: "XXX"
+  fullName: System.IProgress<T>
+  fullname.vb: System.IProgress(Of T)
+  name.vb: IProgress(Of T)
+  spec.csharp:
+  - uid: System.IProgress`1
+    name: "XXX"
+    fullName: System.IProgress
+  - name: "<"
+    fullName: <
+  - name: "XXX"
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.IProgress`1
+    name: "XXX"
+    fullName: System.IProgress
+  - name: 'XXX '
+    fullName: '(Of '
+  - name: "XXX"
+    fullName: T
+  - name: "XXX"
+    fullName: )
+  nameWithType: IProgress<T>
+  nameWithType.vb: IProgress(Of T)
+  commentId: T:System.IProgress`1
+- uid: System.Action{{T}}
+  parent: System
+  definition: System.Action`1
+  name: "XXX"
+  fullName: System.Action<T>
+  fullname.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: "XXX"
+    fullName: System.Action
+    isExternal: true
+  - name: "<"
+    fullName: <
+  - name: "XXX"
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: "XXX"
+    fullName: System.Action
+    isExternal: true
+  - name: 'XXX '
+    fullName: '(Of '
+  - name: "XXX"
+    fullName: T
+  - name: "XXX"
+    fullName: )
+  nameWithType: Action<T>
+  nameWithType.vb: Action(Of T)
+  commentId: T:System.Action{`0}
+- uid: System.Action`1
+  isExternal: false
+  name: "XXX"
+  fullName: System.Action<T>
+  fullname.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: "XXX"
+    fullName: System.Action
+  - name: "<"
+    fullName: <
+  - name: "XXX"
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: "XXX"
+    fullName: System.Action
+  - name: 'XXX '
+    fullName: '(Of '
+  - name: "XXX"
+    fullName: T
+  - name: "XXX"
+    fullName: )
+  nameWithType: Action<T>
+  nameWithType.vb: Action(Of T)
+  commentId: T:System.Action`1
+- uid: System.EventHandler{{T}}
+  parent: System
+  definition: System.EventHandler`1
+  name: "XXX"
+  fullName: System.EventHandler<T>
+  fullname.vb: System.EventHandler(Of T)
+  name.vb: EventHandler(Of T)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: "XXX"
+    fullName: System.EventHandler
+    isExternal: true
+  - name: "<"
+    fullName: <
+  - name: "XXX"
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: "XXX"
+    fullName: System.EventHandler
+    isExternal: true
+  - name: 'XXX '
+    fullName: '(Of '
+  - name: "XXX"
+    fullName: T
+  - name: "XXX"
+    fullName: )
+  nameWithType: EventHandler<T>
+  nameWithType.vb: EventHandler(Of T)
+  commentId: T:System.EventHandler{`0}
+- uid: System.EventHandler`1
+  isExternal: false
+  name: "XXX"
+  fullName: System.EventHandler<TEventArgs>
+  fullname.vb: System.EventHandler(Of TEventArgs)
+  name.vb: EventHandler(Of TEventArgs)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: "XXX"
+    fullName: System.EventHandler
+  - name: "<"
+    fullName: <
+  - name: "XXX"
+    fullName: TEventArgs
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: "XXX"
+    fullName: System.EventHandler
+  - name: 'XXX '
+    fullName: '(Of '
+  - name: "XXX"
+    fullName: TEventArgs
+  - name: "XXX"
+    fullName: )
+  nameWithType: EventHandler<TEventArgs>
+  nameWithType.vb: EventHandler(Of TEventArgs)
+  commentId: T:System.EventHandler`1
+- uid: '{T}'
+  definition: T
+  name: "XXX"
+  fullName: T
+  nameWithType: T
+  commentId: '!:T'
+- uid: T
+  isExternal: false
+  name: "XXX"
+  fullName: T
+  nameWithType: T
+- uid: System.IProgress{{T}}.Report({T})
+  parent: System.IProgress{{T}}
+  definition: System.IProgress`1.Report(`0)
+  name: "XXX"
+  fullName: System.IProgress<T>.Report(T)
+  fullname.vb: System.IProgress(Of T).Report(T)
+  spec.csharp:
+  - uid: System.IProgress`1.Report(`0)
+    name: "XXX"
+    fullName: System.IProgress<T>.Report
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: T
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.IProgress`1.Report(`0)
+    name: "XXX"
+    fullName: System.IProgress(Of T).Report
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: T
+  - name: "XXX"
+    fullName: )
+  nameWithType: IProgress<T>.Report(T)
+  nameWithType.vb: IProgress(Of T).Report(T)
+  commentId: M:System.IProgress{`0}.Report(`0)
+- uid: System.IProgress`1.Report(`0)
+  isExternal: true
+  name: "XXX"
+  fullName: System.IProgress<T>.Report(T)
+  fullname.vb: System.IProgress(Of T).Report(T)
+  spec.csharp:
+  - uid: System.IProgress`1.Report(`0)
+    name: "XXX"
+    fullName: System.IProgress<T>.Report
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: T
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.IProgress`1.Report(`0)
+    name: "XXX"
+    fullName: System.IProgress(Of T).Report
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: T
+  - name: "XXX"
+    fullName: )
+  nameWithType: IProgress<T>.Report(T)
+  nameWithType.vb: IProgress(Of T).Report(T)
+  commentId: M:System.IProgress`1.Report(`0)

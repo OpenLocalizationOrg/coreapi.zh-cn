@@ -1,0 +1,172 @@
+items:
+- uid: System.Runtime.InteropServices.ClassInterfaceType
+  commentId: T:System.Runtime.InteropServices.ClassInterfaceType
+  id: ClassInterfaceType
+  parent: System.Runtime.InteropServices
+  children:
+  - System.Runtime.InteropServices.ClassInterfaceType.AutoDispatch
+  - System.Runtime.InteropServices.ClassInterfaceType.AutoDual
+  - System.Runtime.InteropServices.ClassInterfaceType.None
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Runtime.InteropServices.ClassInterfaceType
+  type: Enum
+  source:
+    remote:
+      path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: ClassInterfaceType
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 111
+  assemblies:
+  - System.Runtime.InteropServices
+  namespace: System.Runtime.InteropServices
+  summary: "\n<p>Identifies the type of class interface that is generated for a class.</p>\n"
+  syntax:
+    content: >-
+      [Serializable]
+
+      [ComVisible(true)]
+
+      public enum ClassInterfaceType
+    content.vb: >-
+      <Serializable>
+
+      <ComVisible(True)>
+
+      Public Enum ClassInterfaceType
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+  nameWithType: ClassInterfaceType
+- uid: System.Runtime.InteropServices.ClassInterfaceType.AutoDispatch
+  commentId: F:System.Runtime.InteropServices.ClassInterfaceType.AutoDispatch
+  id: AutoDispatch
+  parent: System.Runtime.InteropServices.ClassInterfaceType
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Runtime.InteropServices.ClassInterfaceType.AutoDispatch
+  type: Field
+  source:
+    remote:
+      path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: AutoDispatch
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 116
+  assemblies:
+  - System.Runtime.InteropServices
+  namespace: System.Runtime.InteropServices
+  summary: "\n<p>Indicates that the class only supports late binding for COM clients. A <strong>dispinterface</strong> for the class is automatically exposed to COM clients on request. The type library produced by Tlbexp.exe (Type Library Exporter) does not contain type information for the <strong>dispinterface</strong> in order to prevent clients from caching the DISPIDs of the interface. The <strong>dispinterface</strong> does not exhibit the versioning problems described in <xref href=\"System.Runtime.InteropServices.ClassInterfaceAttribute\" data-throw-if-not-resolved=\"false\"></xref> because clients can only late-bind to the interface.</p>\n"
+  syntax:
+    content: AutoDispatch = 1
+    return:
+      type: System.Runtime.InteropServices.ClassInterfaceType
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Support for IDispatch may be unavailable in future releases.
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+  nameWithType: ClassInterfaceType.AutoDispatch
+- uid: System.Runtime.InteropServices.ClassInterfaceType.AutoDual
+  commentId: F:System.Runtime.InteropServices.ClassInterfaceType.AutoDual
+  id: AutoDual
+  parent: System.Runtime.InteropServices.ClassInterfaceType
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Runtime.InteropServices.ClassInterfaceType.AutoDual
+  type: Field
+  source:
+    remote:
+      path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: AutoDual
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 117
+  assemblies:
+  - System.Runtime.InteropServices
+  namespace: System.Runtime.InteropServices
+  summary: "\n<p>Indicates that a dual class interface is automatically generated for the class and exposed to COM. Type information is produced for the class interface and published in the type library. Using <strong>AutoDual</strong> is strongly discouraged because of the versioning limitations described in <xref href=\"System.Runtime.InteropServices.ClassInterfaceAttribute\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  syntax:
+    content: AutoDual = 2
+    return:
+      type: System.Runtime.InteropServices.ClassInterfaceType
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Support for IDispatch may be unavailable in future releases.
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+  nameWithType: ClassInterfaceType.AutoDual
+- uid: System.Runtime.InteropServices.ClassInterfaceType.None
+  commentId: F:System.Runtime.InteropServices.ClassInterfaceType.None
+  id: None
+  parent: System.Runtime.InteropServices.ClassInterfaceType
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Runtime.InteropServices.ClassInterfaceType.None
+  type: Field
+  source:
+    remote:
+      path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: None
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 115
+  assemblies:
+  - System.Runtime.InteropServices
+  namespace: System.Runtime.InteropServices
+  summary: "\n<p>Indicates that no class interface is generated for the class. If no interfaces are implemented explicitly, the class can only provide late-bound access through the <strong>IDispatch</strong> interface. This is the recommended setting for <xref href=\"System.Runtime.InteropServices.ClassInterfaceAttribute\" data-throw-if-not-resolved=\"false\"></xref>. Using <strong>ClassInterfaceType.None</strong> is the only way to expose functionality through interfaces implemented explicitly by the class.</p>\n"
+  syntax:
+    content: None = 0
+    return:
+      type: System.Runtime.InteropServices.ClassInterfaceType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+  nameWithType: ClassInterfaceType.None
+references:
+- uid: System.Runtime.InteropServices
+  isExternal: false
+  name: "XXX"
+  fullName: System.Runtime.InteropServices
+  nameWithType: System.Runtime.InteropServices
+  commentId: N:System.Runtime.InteropServices
+- uid: System.Runtime.InteropServices.ClassInterfaceType
+  parent: System.Runtime.InteropServices
+  isExternal: false
+  name: "XXX"
+  fullName: System.Runtime.InteropServices.ClassInterfaceType
+  nameWithType: ClassInterfaceType
+  commentId: T:System.Runtime.InteropServices.ClassInterfaceType

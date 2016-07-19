@@ -1,0 +1,813 @@
+items:
+- uid: System.Security.Cryptography.ECDsaCng
+  commentId: T:System.Security.Cryptography.ECDsaCng
+  id: ECDsaCng
+  parent: System.Security.Cryptography
+  children:
+  - System.Security.Cryptography.ECDsaCng.#ctor
+  - System.Security.Cryptography.ECDsaCng.#ctor(System.Int32)
+  - System.Security.Cryptography.ECDsaCng.#ctor(System.Security.Cryptography.CngKey)
+  - System.Security.Cryptography.ECDsaCng.#ctor(System.Security.Cryptography.ECCurve)
+  - System.Security.Cryptography.ECDsaCng.Dispose(System.Boolean)
+  - System.Security.Cryptography.ECDsaCng.ExportExplicitParameters(System.Boolean)
+  - System.Security.Cryptography.ECDsaCng.ExportParameters(System.Boolean)
+  - System.Security.Cryptography.ECDsaCng.GenerateKey(System.Security.Cryptography.ECCurve)
+  - System.Security.Cryptography.ECDsaCng.HashData(System.Byte[],System.Int32,System.Int32,System.Security.Cryptography.HashAlgorithmName)
+  - System.Security.Cryptography.ECDsaCng.HashData(System.IO.Stream,System.Security.Cryptography.HashAlgorithmName)
+  - System.Security.Cryptography.ECDsaCng.ImportParameters(System.Security.Cryptography.ECParameters)
+  - System.Security.Cryptography.ECDsaCng.Key
+  - System.Security.Cryptography.ECDsaCng.KeySize
+  - System.Security.Cryptography.ECDsaCng.LegalKeySizes
+  - System.Security.Cryptography.ECDsaCng.SignHash(System.Byte[])
+  - System.Security.Cryptography.ECDsaCng.VerifyHash(System.Byte[],System.Byte[])
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.Cryptography.ECDsaCng
+  type: Class
+  source:
+    remote:
+      path: src/System.Security.Cryptography.Cng/ref/System.Security.Cryptography.Cng.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: ECDsaCng
+    path: src/System.Security.Cryptography.Cng/ref/System.Security.Cryptography.Cng.cs
+    startLine: 254
+  assemblies:
+  - System.Security.Cryptography.Cng
+  namespace: System.Security.Cryptography
+  summary: "\n<p>Provides a Cryptography Next Generation (CNG) implementation of the Elliptic Curve Digital Signature Algorithm (ECDSA). </p>\n"
+  syntax:
+    content: 'public sealed class ECDsaCng : ECDsa'
+    content.vb: >-
+      Public NotInheritable Class ECDsaCng
+          Inherits ECDsa
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+  nameWithType: ECDsaCng
+- uid: System.Security.Cryptography.ECDsaCng.#ctor
+  commentId: M:System.Security.Cryptography.ECDsaCng.#ctor
+  id: '#ctor'
+  parent: System.Security.Cryptography.ECDsaCng
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.Cryptography.ECDsaCng.ECDsaCng()
+  type: Constructor
+  source:
+    remote:
+      path: src/System.Security.Cryptography.Cng/ref/System.Security.Cryptography.Cng.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: .ctor
+    path: src/System.Security.Cryptography.Cng/ref/System.Security.Cryptography.Cng.cs
+    startLine: 256
+  assemblies:
+  - System.Security.Cryptography.Cng
+  namespace: System.Security.Cryptography
+  summary: "\n<p>Initializes a new instance of the <xref href=\"System.Security.Cryptography.ECDsaCng\" data-throw-if-not-resolved=\"false\"></xref> class with a random key pair.</p>\n"
+  syntax:
+    content: public ECDsaCng()
+    content.vb: Public Sub New
+  exceptions:
+  - type: System.PlatformNotSupportedException
+    commentId: T:System.PlatformNotSupportedException
+    description: "\n<p>Cryptography Next Generation (CNG) classes are not supported on this system.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: ECDsaCng.ECDsaCng()
+- uid: System.Security.Cryptography.ECDsaCng.#ctor(System.Int32)
+  commentId: M:System.Security.Cryptography.ECDsaCng.#ctor(System.Int32)
+  id: '#ctor(System.Int32)'
+  parent: System.Security.Cryptography.ECDsaCng
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.Cryptography.ECDsaCng.ECDsaCng(System.Int32)
+  type: Constructor
+  source:
+    remote:
+      path: src/System.Security.Cryptography.Cng/ref/System.Security.Cryptography.Cng.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: .ctor
+    path: src/System.Security.Cryptography.Cng/ref/System.Security.Cryptography.Cng.cs
+    startLine: 257
+  assemblies:
+  - System.Security.Cryptography.Cng
+  namespace: System.Security.Cryptography
+  summary: "\n<p>Initializes a new instance of the <xref href=\"System.Security.Cryptography.ECDsaCng\" data-throw-if-not-resolved=\"false\"></xref> class with a random key pair, using the specified key size.</p>\n"
+  syntax:
+    content: public ECDsaCng(int keySize)
+    content.vb: Public Sub New(keySize As Integer)
+    parameters:
+    - id: keySize
+      type: System.Int32
+      description: "\n<p>The size of the key. Valid key sizes are 256, 384, and 521 bits.</p>\n"
+  exceptions:
+  - type: System.PlatformNotSupportedException
+    commentId: T:System.PlatformNotSupportedException
+    description: "\n<p>Cryptography Next Generation (CNG) classes are not supported on this system.</p>\n"
+  - type: System.Security.Cryptography.CryptographicException
+    commentId: T:System.Security.Cryptography.CryptographicException
+    description: "\n<p>\n<em>keySize</em> specifies an invalid length. </p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: ECDsaCng.ECDsaCng(Int32)
+- uid: System.Security.Cryptography.ECDsaCng.#ctor(System.Security.Cryptography.CngKey)
+  commentId: M:System.Security.Cryptography.ECDsaCng.#ctor(System.Security.Cryptography.CngKey)
+  id: '#ctor(System.Security.Cryptography.CngKey)'
+  parent: System.Security.Cryptography.ECDsaCng
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.Cryptography.ECDsaCng.ECDsaCng(System.Security.Cryptography.CngKey)
+  type: Constructor
+  source:
+    remote:
+      path: src/System.Security.Cryptography.Cng/ref/System.Security.Cryptography.Cng.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: .ctor
+    path: src/System.Security.Cryptography.Cng/ref/System.Security.Cryptography.Cng.cs
+    startLine: 258
+  assemblies:
+  - System.Security.Cryptography.Cng
+  namespace: System.Security.Cryptography
+  summary: "\n<p>Initializes a new instance of the <xref href=\"System.Security.Cryptography.ECDsaCng\" data-throw-if-not-resolved=\"false\"></xref> class by using the specified <xref href=\"System.Security.Cryptography.CngKey\" data-throw-if-not-resolved=\"false\"></xref> object.</p>\n"
+  syntax:
+    content: public ECDsaCng(CngKey key)
+    content.vb: Public Sub New(key As CngKey)
+    parameters:
+    - id: key
+      type: System.Security.Cryptography.CngKey
+      description: "\n<p>The key that will be used as input to the cryptographic operations performed by the current object.</p>\n"
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>\n<em>key</em> does not specify an Elliptic Curve Digital Signature Algorithm (ECDSA) group.</p>\n"
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>key</em> is <strong>null</strong>.</p>\n"
+  - type: System.PlatformNotSupportedException
+    commentId: T:System.PlatformNotSupportedException
+    description: "\n<p>Cryptography Next Generation (CNG) classes are not supported on this system.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: ECDsaCng.ECDsaCng(CngKey)
+- uid: System.Security.Cryptography.ECDsaCng.#ctor(System.Security.Cryptography.ECCurve)
+  commentId: M:System.Security.Cryptography.ECDsaCng.#ctor(System.Security.Cryptography.ECCurve)
+  id: '#ctor(System.Security.Cryptography.ECCurve)'
+  parent: System.Security.Cryptography.ECDsaCng
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.Cryptography.ECDsaCng.ECDsaCng(System.Security.Cryptography.ECCurve)
+  type: Constructor
+  source:
+    remote:
+      path: src/System.Security.Cryptography.Cng/ref/System.Security.Cryptography.Cng.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: .ctor
+    path: src/System.Security.Cryptography.Cng/ref/System.Security.Cryptography.Cng.cs
+    startLine: 259
+  assemblies:
+  - System.Security.Cryptography.Cng
+  namespace: System.Security.Cryptography
+  syntax:
+    content: public ECDsaCng(ECCurve curve)
+    content.vb: Public Sub New(curve As ECCurve)
+    parameters:
+    - id: curve
+      type: System.Security.Cryptography.ECCurve
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: ECDsaCng.ECDsaCng(ECCurve)
+- uid: System.Security.Cryptography.ECDsaCng.Key
+  commentId: P:System.Security.Cryptography.ECDsaCng.Key
+  id: Key
+  parent: System.Security.Cryptography.ECDsaCng
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.Cryptography.ECDsaCng.Key
+  type: Property
+  source:
+    remote:
+      path: src/System.Security.Cryptography.Cng/ref/System.Security.Cryptography.Cng.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Key
+    path: src/System.Security.Cryptography.Cng/ref/System.Security.Cryptography.Cng.cs
+    startLine: 260
+  assemblies:
+  - System.Security.Cryptography.Cng
+  namespace: System.Security.Cryptography
+  summary: "\n<p>Gets or sets the key to use when signing and verifying data.</p>\n"
+  syntax:
+    content: public CngKey Key { get; }
+    content.vb: Public ReadOnly Property Key As CngKey
+    parameters: []
+    return:
+      type: System.Security.Cryptography.CngKey
+      description: "\n<p>An object that specifies the key.</p>\n"
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  nameWithType: ECDsaCng.Key
+- uid: System.Security.Cryptography.ECDsaCng.KeySize
+  commentId: P:System.Security.Cryptography.ECDsaCng.KeySize
+  id: KeySize
+  parent: System.Security.Cryptography.ECDsaCng
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.Cryptography.ECDsaCng.KeySize
+  type: Property
+  source:
+    remote:
+      path: src/System.Security.Cryptography.Cng/ref/System.Security.Cryptography.Cng.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: KeySize
+    path: src/System.Security.Cryptography.Cng/ref/System.Security.Cryptography.Cng.cs
+    startLine: 261
+  assemblies:
+  - System.Security.Cryptography.Cng
+  namespace: System.Security.Cryptography
+  syntax:
+    content: public override int KeySize { get; set; }
+    content.vb: Public Overrides Property KeySize As Integer
+    parameters: []
+    return:
+      type: System.Int32
+  modifiers.csharp:
+  - public
+  - override
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overrides
+  nameWithType: ECDsaCng.KeySize
+- uid: System.Security.Cryptography.ECDsaCng.LegalKeySizes
+  commentId: P:System.Security.Cryptography.ECDsaCng.LegalKeySizes
+  id: LegalKeySizes
+  parent: System.Security.Cryptography.ECDsaCng
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.Cryptography.ECDsaCng.LegalKeySizes
+  type: Property
+  source:
+    remote:
+      path: src/System.Security.Cryptography.Cng/ref/System.Security.Cryptography.Cng.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: LegalKeySizes
+    path: src/System.Security.Cryptography.Cng/ref/System.Security.Cryptography.Cng.cs
+    startLine: 262
+  assemblies:
+  - System.Security.Cryptography.Cng
+  namespace: System.Security.Cryptography
+  syntax:
+    content: public override KeySizes[] LegalKeySizes { get; }
+    content.vb: Public Overrides ReadOnly Property LegalKeySizes As KeySizes()
+    parameters: []
+    return:
+      type: System.Security.Cryptography.KeySizes[]
+  modifiers.csharp:
+  - public
+  - override
+  - get
+  modifiers.vb:
+  - Public
+  - Overrides
+  - ReadOnly
+  nameWithType: ECDsaCng.LegalKeySizes
+- uid: System.Security.Cryptography.ECDsaCng.Dispose(System.Boolean)
+  commentId: M:System.Security.Cryptography.ECDsaCng.Dispose(System.Boolean)
+  id: Dispose(System.Boolean)
+  parent: System.Security.Cryptography.ECDsaCng
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.Cryptography.ECDsaCng.Dispose(System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/System.Security.Cryptography.Cng/ref/System.Security.Cryptography.Cng.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Dispose
+    path: src/System.Security.Cryptography.Cng/ref/System.Security.Cryptography.Cng.cs
+    startLine: 263
+  assemblies:
+  - System.Security.Cryptography.Cng
+  namespace: System.Security.Cryptography
+  syntax:
+    content: protected override void Dispose(bool disposing)
+    content.vb: Protected Overrides Sub Dispose(disposing As Boolean)
+    parameters:
+    - id: disposing
+      type: System.Boolean
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+  nameWithType: ECDsaCng.Dispose(Boolean)
+- uid: System.Security.Cryptography.ECDsaCng.ExportExplicitParameters(System.Boolean)
+  commentId: M:System.Security.Cryptography.ECDsaCng.ExportExplicitParameters(System.Boolean)
+  id: ExportExplicitParameters(System.Boolean)
+  parent: System.Security.Cryptography.ECDsaCng
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.Cryptography.ECDsaCng.ExportExplicitParameters(System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/System.Security.Cryptography.Cng/ref/System.Security.Cryptography.Cng.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: ExportExplicitParameters
+    path: src/System.Security.Cryptography.Cng/ref/System.Security.Cryptography.Cng.cs
+    startLine: 264
+  assemblies:
+  - System.Security.Cryptography.Cng
+  namespace: System.Security.Cryptography
+  syntax:
+    content: public override ECParameters ExportExplicitParameters(bool includePrivateParameters)
+    content.vb: Public Overrides Function ExportExplicitParameters(includePrivateParameters As Boolean) As ECParameters
+    parameters:
+    - id: includePrivateParameters
+      type: System.Boolean
+    return:
+      type: System.Security.Cryptography.ECParameters
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  nameWithType: ECDsaCng.ExportExplicitParameters(Boolean)
+- uid: System.Security.Cryptography.ECDsaCng.ExportParameters(System.Boolean)
+  commentId: M:System.Security.Cryptography.ECDsaCng.ExportParameters(System.Boolean)
+  id: ExportParameters(System.Boolean)
+  parent: System.Security.Cryptography.ECDsaCng
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.Cryptography.ECDsaCng.ExportParameters(System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/System.Security.Cryptography.Cng/ref/System.Security.Cryptography.Cng.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: ExportParameters
+    path: src/System.Security.Cryptography.Cng/ref/System.Security.Cryptography.Cng.cs
+    startLine: 265
+  assemblies:
+  - System.Security.Cryptography.Cng
+  namespace: System.Security.Cryptography
+  syntax:
+    content: public override ECParameters ExportParameters(bool includePrivateParameters)
+    content.vb: Public Overrides Function ExportParameters(includePrivateParameters As Boolean) As ECParameters
+    parameters:
+    - id: includePrivateParameters
+      type: System.Boolean
+    return:
+      type: System.Security.Cryptography.ECParameters
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  nameWithType: ECDsaCng.ExportParameters(Boolean)
+- uid: System.Security.Cryptography.ECDsaCng.GenerateKey(System.Security.Cryptography.ECCurve)
+  commentId: M:System.Security.Cryptography.ECDsaCng.GenerateKey(System.Security.Cryptography.ECCurve)
+  id: GenerateKey(System.Security.Cryptography.ECCurve)
+  parent: System.Security.Cryptography.ECDsaCng
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.Cryptography.ECDsaCng.GenerateKey(System.Security.Cryptography.ECCurve)
+  type: Method
+  source:
+    remote:
+      path: src/System.Security.Cryptography.Cng/ref/System.Security.Cryptography.Cng.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: GenerateKey
+    path: src/System.Security.Cryptography.Cng/ref/System.Security.Cryptography.Cng.cs
+    startLine: 266
+  assemblies:
+  - System.Security.Cryptography.Cng
+  namespace: System.Security.Cryptography
+  syntax:
+    content: public override void GenerateKey(ECCurve curve)
+    content.vb: Public Overrides Sub GenerateKey(curve As ECCurve)
+    parameters:
+    - id: curve
+      type: System.Security.Cryptography.ECCurve
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  nameWithType: ECDsaCng.GenerateKey(ECCurve)
+- uid: System.Security.Cryptography.ECDsaCng.HashData(System.Byte[],System.Int32,System.Int32,System.Security.Cryptography.HashAlgorithmName)
+  commentId: M:System.Security.Cryptography.ECDsaCng.HashData(System.Byte[],System.Int32,System.Int32,System.Security.Cryptography.HashAlgorithmName)
+  id: HashData(System.Byte[],System.Int32,System.Int32,System.Security.Cryptography.HashAlgorithmName)
+  parent: System.Security.Cryptography.ECDsaCng
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.Cryptography.ECDsaCng.HashData(System.Byte[], System.Int32, System.Int32, System.Security.Cryptography.HashAlgorithmName)
+  type: Method
+  source:
+    remote:
+      path: src/System.Security.Cryptography.Cng/ref/System.Security.Cryptography.Cng.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: HashData
+    path: src/System.Security.Cryptography.Cng/ref/System.Security.Cryptography.Cng.cs
+    startLine: 267
+  assemblies:
+  - System.Security.Cryptography.Cng
+  namespace: System.Security.Cryptography
+  syntax:
+    content: protected override byte[] HashData(byte[] data, int offset, int count, HashAlgorithmName hashAlgorithm)
+    content.vb: Protected Overrides Function HashData(data As Byte(), offset As Integer, count As Integer, hashAlgorithm As HashAlgorithmName) As Byte()
+    parameters:
+    - id: data
+      type: System.Byte[]
+    - id: offset
+      type: System.Int32
+    - id: count
+      type: System.Int32
+    - id: hashAlgorithm
+      type: System.Security.Cryptography.HashAlgorithmName
+    return:
+      type: System.Byte[]
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+  fullName.vb: System.Security.Cryptography.ECDsaCng.HashData(System.Byte(), System.Int32, System.Int32, System.Security.Cryptography.HashAlgorithmName)
+  name.vb: HashData(Byte(), Int32, Int32, HashAlgorithmName)
+  nameWithType: ECDsaCng.HashData(Byte[], Int32, Int32, HashAlgorithmName)
+  nameWithType.vb: ECDsaCng.HashData(Byte(), Int32, Int32, HashAlgorithmName)
+- uid: System.Security.Cryptography.ECDsaCng.HashData(System.IO.Stream,System.Security.Cryptography.HashAlgorithmName)
+  commentId: M:System.Security.Cryptography.ECDsaCng.HashData(System.IO.Stream,System.Security.Cryptography.HashAlgorithmName)
+  id: HashData(System.IO.Stream,System.Security.Cryptography.HashAlgorithmName)
+  parent: System.Security.Cryptography.ECDsaCng
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.Cryptography.ECDsaCng.HashData(System.IO.Stream, System.Security.Cryptography.HashAlgorithmName)
+  type: Method
+  source:
+    remote:
+      path: src/System.Security.Cryptography.Cng/ref/System.Security.Cryptography.Cng.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: HashData
+    path: src/System.Security.Cryptography.Cng/ref/System.Security.Cryptography.Cng.cs
+    startLine: 268
+  assemblies:
+  - System.Security.Cryptography.Cng
+  namespace: System.Security.Cryptography
+  syntax:
+    content: protected override byte[] HashData(Stream data, HashAlgorithmName hashAlgorithm)
+    content.vb: Protected Overrides Function HashData(data As Stream, hashAlgorithm As HashAlgorithmName) As Byte()
+    parameters:
+    - id: data
+      type: System.IO.Stream
+    - id: hashAlgorithm
+      type: System.Security.Cryptography.HashAlgorithmName
+    return:
+      type: System.Byte[]
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+  nameWithType: ECDsaCng.HashData(Stream, HashAlgorithmName)
+- uid: System.Security.Cryptography.ECDsaCng.ImportParameters(System.Security.Cryptography.ECParameters)
+  commentId: M:System.Security.Cryptography.ECDsaCng.ImportParameters(System.Security.Cryptography.ECParameters)
+  id: ImportParameters(System.Security.Cryptography.ECParameters)
+  parent: System.Security.Cryptography.ECDsaCng
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.Cryptography.ECDsaCng.ImportParameters(System.Security.Cryptography.ECParameters)
+  type: Method
+  source:
+    remote:
+      path: src/System.Security.Cryptography.Cng/ref/System.Security.Cryptography.Cng.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: ImportParameters
+    path: src/System.Security.Cryptography.Cng/ref/System.Security.Cryptography.Cng.cs
+    startLine: 269
+  assemblies:
+  - System.Security.Cryptography.Cng
+  namespace: System.Security.Cryptography
+  syntax:
+    content: public override void ImportParameters(ECParameters parameters)
+    content.vb: Public Overrides Sub ImportParameters(parameters As ECParameters)
+    parameters:
+    - id: parameters
+      type: System.Security.Cryptography.ECParameters
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  nameWithType: ECDsaCng.ImportParameters(ECParameters)
+- uid: System.Security.Cryptography.ECDsaCng.SignHash(System.Byte[])
+  commentId: M:System.Security.Cryptography.ECDsaCng.SignHash(System.Byte[])
+  id: SignHash(System.Byte[])
+  parent: System.Security.Cryptography.ECDsaCng
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.Cryptography.ECDsaCng.SignHash(System.Byte[])
+  type: Method
+  source:
+    remote:
+      path: src/System.Security.Cryptography.Cng/ref/System.Security.Cryptography.Cng.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: SignHash
+    path: src/System.Security.Cryptography.Cng/ref/System.Security.Cryptography.Cng.cs
+    startLine: 270
+  assemblies:
+  - System.Security.Cryptography.Cng
+  namespace: System.Security.Cryptography
+  summary: "\n<p>Generates a signature for the specified hash value.</p>\n"
+  syntax:
+    content: public override byte[] SignHash(byte[] hash)
+    content.vb: Public Overrides Function SignHash(hash As Byte()) As Byte()
+    parameters:
+    - id: hash
+      type: System.Byte[]
+      description: "\n<p>The hash value of the data to be signed.</p>\n"
+    return:
+      type: System.Byte[]
+      description: "\n<p>A digital signature for the specified hash value.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>hash</em> is <strong>null</strong>.</p>\n"
+  - type: System.Security.Cryptography.CryptographicException
+    commentId: T:System.Security.Cryptography.CryptographicException
+    description: "\n<p>The key information that is associated with the instance does not have a private key.</p>\n"
+  see:
+  - type: System.Security.Permissions.KeyContainerPermission
+    commentId: T:System.Security.Permissions.KeyContainerPermission
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  fullName.vb: System.Security.Cryptography.ECDsaCng.SignHash(System.Byte())
+  name.vb: SignHash(Byte())
+  nameWithType: ECDsaCng.SignHash(Byte[])
+  nameWithType.vb: ECDsaCng.SignHash(Byte())
+- uid: System.Security.Cryptography.ECDsaCng.VerifyHash(System.Byte[],System.Byte[])
+  commentId: M:System.Security.Cryptography.ECDsaCng.VerifyHash(System.Byte[],System.Byte[])
+  id: VerifyHash(System.Byte[],System.Byte[])
+  parent: System.Security.Cryptography.ECDsaCng
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.Cryptography.ECDsaCng.VerifyHash(System.Byte[], System.Byte[])
+  type: Method
+  source:
+    remote:
+      path: src/System.Security.Cryptography.Cng/ref/System.Security.Cryptography.Cng.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: VerifyHash
+    path: src/System.Security.Cryptography.Cng/ref/System.Security.Cryptography.Cng.cs
+    startLine: 271
+  assemblies:
+  - System.Security.Cryptography.Cng
+  namespace: System.Security.Cryptography
+  summary: "\n<p>Verifies the specified digital signature against a specified hash value.</p>\n"
+  syntax:
+    content: public override bool VerifyHash(byte[] hash, byte[] signature)
+    content.vb: Public Overrides Function VerifyHash(hash As Byte(), signature As Byte()) As Boolean
+    parameters:
+    - id: hash
+      type: System.Byte[]
+      description: "\n<p>The hash value of the data to be verified.</p>\n"
+    - id: signature
+      type: System.Byte[]
+      description: "\n<p>The digital signature of the data to be verified against the hash value.</p>\n"
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if the signature is valid; otherwise, <strong>false</strong>.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>hash</em> or <em>signature</em> is <strong>null</strong>.</p>\n"
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  fullName.vb: System.Security.Cryptography.ECDsaCng.VerifyHash(System.Byte(), System.Byte())
+  name.vb: VerifyHash(Byte(), Byte())
+  nameWithType: ECDsaCng.VerifyHash(Byte[], Byte[])
+  nameWithType.vb: ECDsaCng.VerifyHash(Byte(), Byte())
+references:
+- uid: System.Security.Cryptography
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.Cryptography
+  commentId: N:System.Security.Cryptography
+  nameWithType: System.Security.Cryptography
+- uid: System.Object
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Object
+  commentId: T:System.Object
+  nameWithType: Object
+- uid: System
+  isExternal: false
+  name: "XXX"
+  fullName: System
+  commentId: N:System
+  nameWithType: System
+- uid: System.Int32
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Int32
+  commentId: T:System.Int32
+  nameWithType: Int32
+- uid: System.Security.Cryptography.CngKey
+  parent: System.Security.Cryptography
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.Cryptography.CngKey
+  commentId: T:System.Security.Cryptography.CngKey
+  nameWithType: CngKey
+- uid: System.Security.Cryptography.ECCurve
+  parent: System.Security.Cryptography
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.Cryptography.ECCurve
+  commentId: T:System.Security.Cryptography.ECCurve
+  nameWithType: ECCurve
+- uid: System.Security.Cryptography.KeySizes[]
+  name: "XXX"
+  fullName: System.Security.Cryptography.KeySizes[]
+  fullname.vb: System.Security.Cryptography.KeySizes()
+  name.vb: KeySizes()
+  spec.csharp:
+  - uid: System.Security.Cryptography.KeySizes
+    name: "XXX"
+    fullName: System.Security.Cryptography.KeySizes
+  - name: 'XXX'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Security.Cryptography.KeySizes
+    name: "XXX"
+    fullName: System.Security.Cryptography.KeySizes
+  - name: "XXX"
+    fullName: ()
+  nameWithType: KeySizes[]
+  nameWithType.vb: KeySizes()
+- uid: System.Boolean
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Boolean
+  commentId: T:System.Boolean
+  nameWithType: Boolean
+- uid: System.Security.Cryptography.ECParameters
+  parent: System.Security.Cryptography
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.Cryptography.ECParameters
+  commentId: T:System.Security.Cryptography.ECParameters
+  nameWithType: ECParameters
+- uid: System.Byte[]
+  name: "XXX"
+  fullName: System.Byte[]
+  fullname.vb: System.Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: "XXX"
+    fullName: System.Byte
+    isExternal: true
+  - name: 'XXX'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: "XXX"
+    fullName: System.Byte
+    isExternal: true
+  - name: "XXX"
+    fullName: ()
+  nameWithType: Byte[]
+  nameWithType.vb: Byte()
+- uid: System.Security.Cryptography.HashAlgorithmName
+  parent: System.Security.Cryptography
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.Cryptography.HashAlgorithmName
+  commentId: T:System.Security.Cryptography.HashAlgorithmName
+  nameWithType: HashAlgorithmName
+- uid: System.IO.Stream
+  parent: System.IO
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.Stream
+  commentId: T:System.IO.Stream
+  nameWithType: Stream
+- uid: System.IO
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO
+  commentId: N:System.IO
+  nameWithType: System.IO
+- uid: System.PlatformNotSupportedException
+  isExternal: false
+  name: "XXX"
+  fullName: System.PlatformNotSupportedException
+  nameWithType: PlatformNotSupportedException
+  commentId: T:System.PlatformNotSupportedException
+- uid: System.Security.Cryptography.CryptographicException
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.Cryptography.CryptographicException
+  commentId: T:System.Security.Cryptography.CryptographicException
+  nameWithType: CryptographicException
+- uid: System.ArgumentException
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentException
+  nameWithType: ArgumentException
+  commentId: T:System.ArgumentException
+- uid: System.ArgumentNullException
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentNullException
+  nameWithType: ArgumentNullException
+  commentId: T:System.ArgumentNullException

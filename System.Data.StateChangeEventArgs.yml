@@ -1,0 +1,426 @@
+items:
+- uid: System.Data.StateChangeEventArgs
+  commentId: T:System.Data.StateChangeEventArgs
+  id: StateChangeEventArgs
+  parent: System.Data
+  children:
+  - System.Data.StateChangeEventArgs.#ctor(System.Data.ConnectionState,System.Data.ConnectionState)
+  - System.Data.StateChangeEventArgs.CurrentState
+  - System.Data.StateChangeEventArgs.OriginalState
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Data.StateChangeEventArgs
+  type: Class
+  source:
+    remote:
+      path: src/System.Data.Common/src/System/Data/StateChangeEvent.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: StateChangeEventArgs
+    path: src/System.Data.Common/src/System/Data/StateChangeEvent.cs
+    startLine: 12
+  assemblies:
+  - System.Data.Common
+  namespace: System.Data
+  summary: "\n<p>Provides data for the state change event of a .NET Framework data provider.</p>\n"
+  syntax:
+    content: 'public sealed class StateChangeEventArgs : EventArgs'
+    content.vb: >-
+      Public NotInheritable Class StateChangeEventArgs
+          Inherits EventArgs
+  inheritance:
+  - System.Object
+  - System.EventArgs
+  inheritedMembers:
+  - System.EventArgs.Empty
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+  nameWithType: StateChangeEventArgs
+- uid: System.Data.StateChangeEventArgs.#ctor(System.Data.ConnectionState,System.Data.ConnectionState)
+  commentId: M:System.Data.StateChangeEventArgs.#ctor(System.Data.ConnectionState,System.Data.ConnectionState)
+  id: '#ctor(System.Data.ConnectionState,System.Data.ConnectionState)'
+  parent: System.Data.StateChangeEventArgs
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Data.StateChangeEventArgs.StateChangeEventArgs(System.Data.ConnectionState, System.Data.ConnectionState)
+  type: Constructor
+  source:
+    remote:
+      path: src/System.Data.Common/src/System/Data/StateChangeEvent.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: .ctor
+    path: src/System.Data.Common/src/System/Data/StateChangeEvent.cs
+    startLine: 17
+  assemblies:
+  - System.Data.Common
+  namespace: System.Data
+  summary: "\n<p>Initializes a new instance of the <xref href=\"System.Data.StateChangeEventArgs\" data-throw-if-not-resolved=\"false\"></xref> class, when given the original state and the current state of the object.</p>\n"
+  syntax:
+    content: public StateChangeEventArgs(ConnectionState originalState, ConnectionState currentState)
+    content.vb: Public Sub New(originalState As ConnectionState, currentState As ConnectionState)
+    parameters:
+    - id: originalState
+      type: System.Data.ConnectionState
+      description: "\n<p>One of the <xref href=\"System.Data.ConnectionState\" data-throw-if-not-resolved=\"false\"></xref> values. </p>\n"
+    - id: currentState
+      type: System.Data.ConnectionState
+      description: "\n<p>One of the <xref href=\"System.Data.ConnectionState\" data-throw-if-not-resolved=\"false\"></xref> values. </p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: StateChangeEventArgs.StateChangeEventArgs(ConnectionState, ConnectionState)
+- uid: System.Data.StateChangeEventArgs.CurrentState
+  commentId: P:System.Data.StateChangeEventArgs.CurrentState
+  id: CurrentState
+  parent: System.Data.StateChangeEventArgs
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Data.StateChangeEventArgs.CurrentState
+  type: Property
+  source:
+    remote:
+      path: src/System.Data.Common/src/System/Data/StateChangeEvent.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: CurrentState
+    path: src/System.Data.Common/src/System/Data/StateChangeEvent.cs
+    startLine: 23
+  assemblies:
+  - System.Data.Common
+  namespace: System.Data
+  summary: "\n<p>Gets the new state of the connection. The connection object will be in the new state already when the event is fired.</p>\n"
+  syntax:
+    content: public ConnectionState CurrentState { get; }
+    content.vb: Public ReadOnly Property CurrentState As ConnectionState
+    parameters: []
+    return:
+      type: System.Data.ConnectionState
+      description: "\n<p>One of the <xref href=\"System.Data.ConnectionState\" data-throw-if-not-resolved=\"false\"></xref> values.</p>\n"
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  nameWithType: StateChangeEventArgs.CurrentState
+- uid: System.Data.StateChangeEventArgs.OriginalState
+  commentId: P:System.Data.StateChangeEventArgs.OriginalState
+  id: OriginalState
+  parent: System.Data.StateChangeEventArgs
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Data.StateChangeEventArgs.OriginalState
+  type: Property
+  source:
+    remote:
+      path: src/System.Data.Common/src/System/Data/StateChangeEvent.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: OriginalState
+    path: src/System.Data.Common/src/System/Data/StateChangeEvent.cs
+    startLine: 31
+  assemblies:
+  - System.Data.Common
+  namespace: System.Data
+  summary: "\n<p>Gets the original state of the connection.</p>\n"
+  syntax:
+    content: public ConnectionState OriginalState { get; }
+    content.vb: Public ReadOnly Property OriginalState As ConnectionState
+    parameters: []
+    return:
+      type: System.Data.ConnectionState
+      description: "\n<p>One of the <xref href=\"System.Data.ConnectionState\" data-throw-if-not-resolved=\"false\"></xref> values.</p>\n"
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  nameWithType: StateChangeEventArgs.OriginalState
+references:
+- uid: System.Data
+  isExternal: false
+  name: "XXX"
+  fullName: System.Data
+  nameWithType: System.Data
+  commentId: N:System.Data
+- uid: System.Object
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Object
+  nameWithType: Object
+  commentId: T:System.Object
+- uid: System.EventArgs
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.EventArgs
+  nameWithType: EventArgs
+  commentId: T:System.EventArgs
+- uid: System.EventArgs.Empty
+  parent: System.EventArgs
+  isExternal: true
+  name: "XXX"
+  fullName: System.EventArgs.Empty
+  nameWithType: EventArgs.Empty
+  commentId: F:System.EventArgs.Empty
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.ToString()
+  commentId: M:System.Object.ToString
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.Equals(Object)
+  commentId: M:System.Object.Equals(System.Object)
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.Equals(Object, Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.GetHashCode()
+  commentId: M:System.Object.GetHashCode
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.GetType()
+  commentId: M:System.Object.GetType
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.MemberwiseClone()
+  commentId: M:System.Object.MemberwiseClone
+- uid: System
+  isExternal: false
+  name: "XXX"
+  fullName: System
+  nameWithType: System
+  commentId: N:System
+- uid: System.Data.ConnectionState
+  parent: System.Data
+  isExternal: false
+  name: "XXX"
+  fullName: System.Data.ConnectionState
+  nameWithType: ConnectionState
+  commentId: T:System.Data.ConnectionState

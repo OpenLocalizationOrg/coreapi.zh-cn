@@ -1,0 +1,1515 @@
+items:
+- uid: System.Collections.Queue
+  commentId: T:System.Collections.Queue
+  id: Queue
+  parent: System.Collections
+  children:
+  - System.Collections.Queue.#ctor
+  - System.Collections.Queue.#ctor(System.Collections.ICollection)
+  - System.Collections.Queue.#ctor(System.Int32)
+  - System.Collections.Queue.#ctor(System.Int32,System.Single)
+  - System.Collections.Queue.Clear
+  - System.Collections.Queue.Clone
+  - System.Collections.Queue.Contains(System.Object)
+  - System.Collections.Queue.CopyTo(System.Array,System.Int32)
+  - System.Collections.Queue.Count
+  - System.Collections.Queue.Dequeue
+  - System.Collections.Queue.Enqueue(System.Object)
+  - System.Collections.Queue.GetEnumerator
+  - System.Collections.Queue.IsSynchronized
+  - System.Collections.Queue.Peek
+  - System.Collections.Queue.Synchronized(System.Collections.Queue)
+  - System.Collections.Queue.SyncRoot
+  - System.Collections.Queue.ToArray
+  - System.Collections.Queue.TrimToSize
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Collections.Queue
+  type: Class
+  source:
+    remote:
+      path: src/System.Collections.NonGeneric/src/System/Collections/Queue.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Queue
+    path: src/System.Collections.NonGeneric/src/System/Collections/Queue.cs
+    startLine: 20
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: "\n<p>Represents a first-in, first-out collection of objects.</p>\n"
+  syntax:
+    content: >-
+      [DebuggerTypeProxy(typeof (Queue.QueueDebugView))]
+
+      [DebuggerDisplay("Count = {Count}")]
+
+      public class Queue : ICollection, IEnumerable
+    content.vb: >-
+      <DebuggerTypeProxy(GetType(Queue.QueueDebugView))>
+
+      <DebuggerDisplay("Count = {Count}")>
+
+      Public Class Queue
+          Implements ICollection, IEnumerable
+  seealso:
+  - type: System.Collections.Generic.Queue`1
+    commentId: T:System.Collections.Generic.Queue`1
+  inheritance:
+  - System.Object
+  implements:
+  - System.Collections.ICollection
+  - System.Collections.IEnumerable
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+  nameWithType: Queue
+  extensionMethods:
+  - System.Collections.IEnumerable.System.Linq.Queryable.AsQueryable
+  - System.Collections.IEnumerable.System.Linq.ParallelEnumerable.AsParallel
+  - System.Collections.IEnumerable.System.Linq.Enumerable.Cast``1
+  - System.Collections.IEnumerable.System.Linq.Enumerable.OfType``1
+- uid: System.Collections.Queue.#ctor
+  commentId: M:System.Collections.Queue.#ctor
+  id: '#ctor'
+  parent: System.Collections.Queue
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Collections.Queue.Queue()
+  type: Constructor
+  source:
+    remote:
+      path: src/System.Collections.NonGeneric/src/System/Collections/Queue.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: .ctor
+    path: src/System.Collections.NonGeneric/src/System/Collections/Queue.cs
+    startLine: 37
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: "\n<p>Initializes a new instance of the <xref href=\"System.Collections.Queue\" data-throw-if-not-resolved=\"false\"></xref> class that is empty, has the default initial capacity, and uses the default growth factor.</p>\n"
+  syntax:
+    content: public Queue()
+    content.vb: Public Sub New
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: Queue.Queue()
+- uid: System.Collections.Queue.#ctor(System.Collections.ICollection)
+  commentId: M:System.Collections.Queue.#ctor(System.Collections.ICollection)
+  id: '#ctor(System.Collections.ICollection)'
+  parent: System.Collections.Queue
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Collections.Queue.Queue(System.Collections.ICollection)
+  type: Constructor
+  source:
+    remote:
+      path: src/System.Collections.NonGeneric/src/System/Collections/Queue.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: .ctor
+    path: src/System.Collections.NonGeneric/src/System/Collections/Queue.cs
+    startLine: 71
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: "\n<p>Initializes a new instance of the <xref href=\"System.Collections.Queue\" data-throw-if-not-resolved=\"false\"></xref> class that contains elements copied from the specified collection, has the same initial capacity as the number of elements copied, and uses the default growth factor.</p>\n"
+  syntax:
+    content: public Queue(ICollection col)
+    content.vb: Public Sub New(col As ICollection)
+    parameters:
+    - id: col
+      type: System.Collections.ICollection
+      description: "\n<p>The <xref href=\"System.Collections.ICollection\" data-throw-if-not-resolved=\"false\"></xref> to copy elements from. </p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>col</em> is <strong>null</strong>. </p>\n"
+  seealso:
+  - type: System.Collections.ICollection
+    commentId: T:System.Collections.ICollection
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: Queue.Queue(ICollection)
+- uid: System.Collections.Queue.#ctor(System.Int32)
+  commentId: M:System.Collections.Queue.#ctor(System.Int32)
+  id: '#ctor(System.Int32)'
+  parent: System.Collections.Queue
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Collections.Queue.Queue(System.Int32)
+  type: Constructor
+  source:
+    remote:
+      path: src/System.Collections.NonGeneric/src/System/Collections/Queue.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: .ctor
+    path: src/System.Collections.NonGeneric/src/System/Collections/Queue.cs
+    startLine: 45
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: "\n<p>Initializes a new instance of the <xref href=\"System.Collections.Queue\" data-throw-if-not-resolved=\"false\"></xref> class that is empty, has the specified initial capacity, and uses the default growth factor.</p>\n"
+  syntax:
+    content: public Queue(int capacity)
+    content.vb: Public Sub New(capacity As Integer)
+    parameters:
+    - id: capacity
+      type: System.Int32
+      description: "\n<p>The initial number of elements that the <xref href=\"System.Collections.Queue\" data-throw-if-not-resolved=\"false\"></xref> can contain. </p>\n"
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>capacity</em> is less than zero. </p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: Queue.Queue(Int32)
+- uid: System.Collections.Queue.#ctor(System.Int32,System.Single)
+  commentId: M:System.Collections.Queue.#ctor(System.Int32,System.Single)
+  id: '#ctor(System.Int32,System.Single)'
+  parent: System.Collections.Queue
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Collections.Queue.Queue(System.Int32, System.Single)
+  type: Constructor
+  source:
+    remote:
+      path: src/System.Collections.NonGeneric/src/System/Collections/Queue.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: .ctor
+    path: src/System.Collections.NonGeneric/src/System/Collections/Queue.cs
+    startLine: 53
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: "\n<p>Initializes a new instance of the <xref href=\"System.Collections.Queue\" data-throw-if-not-resolved=\"false\"></xref> class that is empty, has the specified initial capacity, and uses the specified growth factor.</p>\n"
+  syntax:
+    content: public Queue(int capacity, float growFactor)
+    content.vb: Public Sub New(capacity As Integer, growFactor As Single)
+    parameters:
+    - id: capacity
+      type: System.Int32
+      description: "\n<p>The initial number of elements that the <xref href=\"System.Collections.Queue\" data-throw-if-not-resolved=\"false\"></xref> can contain. </p>\n"
+    - id: growFactor
+      type: System.Single
+      description: "\n<p>The factor by which the capacity of the <xref href=\"System.Collections.Queue\" data-throw-if-not-resolved=\"false\"></xref> is expanded. </p>\n"
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>capacity</em> is less than zero.</p>\n<p>-or- </p>\n<p>\n<em>growFactor</em> is less than 1.0 or greater than 10.0. </p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: Queue.Queue(Int32, Single)
+- uid: System.Collections.Queue.Count
+  commentId: P:System.Collections.Queue.Count
+  id: Count
+  parent: System.Collections.Queue
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Collections.Queue.Count
+  type: Property
+  source:
+    remote:
+      path: src/System.Collections.NonGeneric/src/System/Collections/Queue.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Count
+    path: src/System.Collections.NonGeneric/src/System/Collections/Queue.cs
+    startLine: 82
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: "\n<p>Gets the number of elements contained in the <xref href=\"System.Collections.Queue\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  syntax:
+    content: public virtual int Count { get; }
+    content.vb: Public Overridable ReadOnly Property Count As Integer
+    parameters: []
+    return:
+      type: System.Int32
+      description: "\n<p>The number of elements contained in the <xref href=\"System.Collections.Queue\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  implements:
+  - System.Collections.ICollection.Count
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+  nameWithType: Queue.Count
+- uid: System.Collections.Queue.IsSynchronized
+  commentId: P:System.Collections.Queue.IsSynchronized
+  id: IsSynchronized
+  parent: System.Collections.Queue
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Collections.Queue.IsSynchronized
+  type: Property
+  source:
+    remote:
+      path: src/System.Collections.NonGeneric/src/System/Collections/Queue.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: IsSynchronized
+    path: src/System.Collections.NonGeneric/src/System/Collections/Queue.cs
+    startLine: 103
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: "\n<p>Gets a value indicating whether access to the <xref href=\"System.Collections.Queue\" data-throw-if-not-resolved=\"false\"></xref> is synchronized (thread safe).</p>\n"
+  syntax:
+    content: public virtual bool IsSynchronized { get; }
+    content.vb: Public Overridable ReadOnly Property IsSynchronized As Boolean
+    parameters: []
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if access to the <xref href=\"System.Collections.Queue\" data-throw-if-not-resolved=\"false\"></xref> is synchronized (thread safe); otherwise, <strong>false</strong>. The default is <strong>false</strong>.</p>\n"
+  seealso:
+  - type: System.Collections.Queue.SyncRoot
+    commentId: P:System.Collections.Queue.SyncRoot
+  - type: System.Collections.Queue.Synchronized(System.Collections.Queue)
+    commentId: M:System.Collections.Queue.Synchronized(System.Collections.Queue)
+  implements:
+  - System.Collections.ICollection.IsSynchronized
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+  nameWithType: Queue.IsSynchronized
+- uid: System.Collections.Queue.SyncRoot
+  commentId: P:System.Collections.Queue.SyncRoot
+  id: SyncRoot
+  parent: System.Collections.Queue
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Collections.Queue.SyncRoot
+  type: Property
+  source:
+    remote:
+      path: src/System.Collections.NonGeneric/src/System/Collections/Queue.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: SyncRoot
+    path: src/System.Collections.NonGeneric/src/System/Collections/Queue.cs
+    startLine: 108
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: "\n<p>Gets an object that can be used to synchronize access to the <xref href=\"System.Collections.Queue\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  syntax:
+    content: public virtual object SyncRoot { get; }
+    content.vb: Public Overridable ReadOnly Property SyncRoot As Object
+    parameters: []
+    return:
+      type: System.Object
+      description: "\n<p>An object that can be used to synchronize access to the <xref href=\"System.Collections.Queue\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  seealso:
+  - type: System.Collections.Queue.IsSynchronized
+    commentId: P:System.Collections.Queue.IsSynchronized
+  - type: System.Collections.Queue.Synchronized(System.Collections.Queue)
+    commentId: M:System.Collections.Queue.Synchronized(System.Collections.Queue)
+  implements:
+  - System.Collections.ICollection.SyncRoot
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+  nameWithType: Queue.SyncRoot
+- uid: System.Collections.Queue.Clear
+  commentId: M:System.Collections.Queue.Clear
+  id: Clear
+  parent: System.Collections.Queue
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Collections.Queue.Clear()
+  type: Method
+  source:
+    remote:
+      path: src/System.Collections.NonGeneric/src/System/Collections/Queue.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Clear
+    path: src/System.Collections.NonGeneric/src/System/Collections/Queue.cs
+    startLine: 121
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: "\n<p>Removes all objects from the <xref href=\"System.Collections.Queue\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  syntax:
+    content: public virtual void Clear()
+    content.vb: Public Overridable Sub Clear
+  seealso:
+  - type: System.Collections.Queue.TrimToSize
+    commentId: M:System.Collections.Queue.TrimToSize
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  nameWithType: Queue.Clear()
+- uid: System.Collections.Queue.Clone
+  commentId: M:System.Collections.Queue.Clone
+  id: Clone
+  parent: System.Collections.Queue
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Collections.Queue.Clone()
+  type: Method
+  source:
+    remote:
+      path: src/System.Collections.NonGeneric/src/System/Collections/Queue.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Clone
+    path: src/System.Collections.NonGeneric/src/System/Collections/Queue.cs
+    startLine: 87
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: "\n<p>Creates a shallow copy of the <xref href=\"System.Collections.Queue\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  syntax:
+    content: public virtual object Clone()
+    content.vb: Public Overridable Function Clone As Object
+    return:
+      type: System.Object
+      description: "\n<p>A shallow copy of the <xref href=\"System.Collections.Queue\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  nameWithType: Queue.Clone()
+- uid: System.Collections.Queue.Contains(System.Object)
+  commentId: M:System.Collections.Queue.Contains(System.Object)
+  id: Contains(System.Object)
+  parent: System.Collections.Queue
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Collections.Queue.Contains(System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/System.Collections.NonGeneric/src/System/Collections/Queue.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Contains
+    path: src/System.Collections.NonGeneric/src/System/Collections/Queue.cs
+    startLine: 239
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: "\n<p>Determines whether an element is in the <xref href=\"System.Collections.Queue\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  syntax:
+    content: public virtual bool Contains(object obj)
+    content.vb: Public Overridable Function Contains(obj As Object) As Boolean
+    parameters:
+    - id: obj
+      type: System.Object
+      description: "\n<p>The <xref href=\"System.Object\" data-throw-if-not-resolved=\"false\"></xref> to locate in the <xref href=\"System.Collections.Queue\" data-throw-if-not-resolved=\"false\"></xref>. The value can be <strong>null</strong>. </p>\n"
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if <em>obj</em> is found in the <xref href=\"System.Collections.Queue\" data-throw-if-not-resolved=\"false\"></xref>; otherwise, <strong>false</strong>.</p>\n"
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  nameWithType: Queue.Contains(Object)
+- uid: System.Collections.Queue.CopyTo(System.Array,System.Int32)
+  commentId: M:System.Collections.Queue.CopyTo(System.Array,System.Int32)
+  id: CopyTo(System.Array,System.Int32)
+  parent: System.Collections.Queue
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Collections.Queue.CopyTo(System.Array, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/System.Collections.NonGeneric/src/System/Collections/Queue.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: CopyTo
+    path: src/System.Collections.NonGeneric/src/System/Collections/Queue.cs
+    startLine: 144
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: "\n<p>Copies the <xref href=\"System.Collections.Queue\" data-throw-if-not-resolved=\"false\"></xref> elements to an existing one-dimensional <xref href=\"System.Array\" data-throw-if-not-resolved=\"false\"></xref>, starting at the specified array index.</p>\n"
+  syntax:
+    content: public virtual void CopyTo(Array array, int index)
+    content.vb: Public Overridable Sub CopyTo(array As Array, index As Integer)
+    parameters:
+    - id: array
+      type: System.Array
+      description: "\n<p>The one-dimensional <xref href=\"System.Array\" data-throw-if-not-resolved=\"false\"></xref> that is the destination of the elements copied from <xref href=\"System.Collections.Queue\" data-throw-if-not-resolved=\"false\"></xref>. The <xref href=\"System.Array\" data-throw-if-not-resolved=\"false\"></xref> must have zero-based indexing. </p>\n"
+    - id: index
+      type: System.Int32
+      description: "\n<p>The zero-based index in <em>array</em> at which copying begins. </p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>array</em> is <strong>null</strong>. </p>\n"
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>index</em> is less than zero. </p>\n"
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>\n<em>array</em> is multidimensional.</p>\n<p>-or- </p>\n<p>The number of elements in the source <xref href=\"System.Collections.Queue\" data-throw-if-not-resolved=\"false\"></xref> is greater than the available space from <em>index</em> to the end of the destination <em>array</em>. </p>\n"
+  - type: System.ArrayTypeMismatchException
+    commentId: T:System.ArrayTypeMismatchException
+    description: "\n<p>The type of the source <xref href=\"System.Collections.Queue\" data-throw-if-not-resolved=\"false\"></xref> cannot be cast automatically to the type of the destination <em>array</em>. </p>\n"
+  implements:
+  - System.Collections.ICollection.CopyTo(System.Array,System.Int32)
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  nameWithType: Queue.CopyTo(Array, Int32)
+- uid: System.Collections.Queue.Dequeue
+  commentId: M:System.Collections.Queue.Dequeue
+  id: Dequeue
+  parent: System.Collections.Queue
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Collections.Queue.Dequeue()
+  type: Method
+  source:
+    remote:
+      path: src/System.Collections.NonGeneric/src/System/Collections/Queue.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Dequeue
+    path: src/System.Collections.NonGeneric/src/System/Collections/Queue.cs
+    startLine: 197
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: "\n<p>Removes and returns the object at the beginning of the <xref href=\"System.Collections.Queue\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  syntax:
+    content: public virtual object Dequeue()
+    content.vb: Public Overridable Function Dequeue As Object
+    return:
+      type: System.Object
+      description: "\n<p>The object that is removed from the beginning of the <xref href=\"System.Collections.Queue\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: "\n<p>The <xref href=\"System.Collections.Queue\" data-throw-if-not-resolved=\"false\"></xref> is empty. </p>\n"
+  seealso:
+  - type: System.Collections.Queue.Enqueue(System.Object)
+    commentId: M:System.Collections.Queue.Enqueue(System.Object)
+  - type: System.Collections.Queue.Peek
+    commentId: M:System.Collections.Queue.Peek
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  nameWithType: Queue.Dequeue()
+- uid: System.Collections.Queue.Enqueue(System.Object)
+  commentId: M:System.Collections.Queue.Enqueue(System.Object)
+  id: Enqueue(System.Object)
+  parent: System.Collections.Queue
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Collections.Queue.Enqueue(System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/System.Collections.NonGeneric/src/System/Collections/Queue.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Enqueue
+    path: src/System.Collections.NonGeneric/src/System/Collections/Queue.cs
+    startLine: 169
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: "\n<p>Adds an object to the end of the <xref href=\"System.Collections.Queue\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  syntax:
+    content: public virtual void Enqueue(object obj)
+    content.vb: Public Overridable Sub Enqueue(obj As Object)
+    parameters:
+    - id: obj
+      type: System.Object
+      description: "\n<p>The object to add to the <xref href=\"System.Collections.Queue\" data-throw-if-not-resolved=\"false\"></xref>. The value can be <strong>null</strong>. </p>\n"
+  seealso:
+  - type: System.Collections.Queue.Dequeue
+    commentId: M:System.Collections.Queue.Dequeue
+  - type: System.Collections.Queue.Peek
+    commentId: M:System.Collections.Queue.Peek
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  nameWithType: Queue.Enqueue(Object)
+- uid: System.Collections.Queue.GetEnumerator
+  commentId: M:System.Collections.Queue.GetEnumerator
+  id: GetEnumerator
+  parent: System.Collections.Queue
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Collections.Queue.GetEnumerator()
+  type: Method
+  source:
+    remote:
+      path: src/System.Collections.NonGeneric/src/System/Collections/Queue.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: GetEnumerator
+    path: src/System.Collections.NonGeneric/src/System/Collections/Queue.cs
+    startLine: 190
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: "\n<p>Returns an enumerator that iterates through the <xref href=\"System.Collections.Queue\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  syntax:
+    content: public virtual IEnumerator GetEnumerator()
+    content.vb: Public Overridable Function GetEnumerator As IEnumerator
+    return:
+      type: System.Collections.IEnumerator
+      description: "\n<p>An <xref href=\"System.Collections.IEnumerator\" data-throw-if-not-resolved=\"false\"></xref> for the <xref href=\"System.Collections.Queue\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  seealso:
+  - type: System.Collections.IEnumerator
+    commentId: T:System.Collections.IEnumerator
+  implements:
+  - System.Collections.IEnumerable.GetEnumerator
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  nameWithType: Queue.GetEnumerator()
+- uid: System.Collections.Queue.Peek
+  commentId: M:System.Collections.Queue.Peek
+  id: Peek
+  parent: System.Collections.Queue
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Collections.Queue.Peek()
+  type: Method
+  source:
+    remote:
+      path: src/System.Collections.NonGeneric/src/System/Collections/Queue.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Peek
+    path: src/System.Collections.NonGeneric/src/System/Collections/Queue.cs
+    startLine: 214
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: "\n<p>Returns the object at the beginning of the <xref href=\"System.Collections.Queue\" data-throw-if-not-resolved=\"false\"></xref> without removing it.</p>\n"
+  syntax:
+    content: public virtual object Peek()
+    content.vb: Public Overridable Function Peek As Object
+    return:
+      type: System.Object
+      description: "\n<p>The object at the beginning of the <xref href=\"System.Collections.Queue\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: "\n<p>The <xref href=\"System.Collections.Queue\" data-throw-if-not-resolved=\"false\"></xref> is empty. </p>\n"
+  seealso:
+  - type: System.Collections.Queue.Enqueue(System.Object)
+    commentId: M:System.Collections.Queue.Enqueue(System.Object)
+  - type: System.Collections.Queue.Dequeue
+    commentId: M:System.Collections.Queue.Dequeue
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  nameWithType: Queue.Peek()
+- uid: System.Collections.Queue.Synchronized(System.Collections.Queue)
+  commentId: M:System.Collections.Queue.Synchronized(System.Collections.Queue)
+  id: Synchronized(System.Collections.Queue)
+  parent: System.Collections.Queue
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Collections.Queue.Synchronized(System.Collections.Queue)
+  type: Method
+  source:
+    remote:
+      path: src/System.Collections.NonGeneric/src/System/Collections/Queue.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Synchronized
+    path: src/System.Collections.NonGeneric/src/System/Collections/Queue.cs
+    startLine: 227
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: "\n<p>Returns a new <xref href=\"System.Collections.Queue\" data-throw-if-not-resolved=\"false\"></xref> that wraps the original queue, and is thread safe.</p>\n"
+  syntax:
+    content: public static Queue Synchronized(Queue queue)
+    content.vb: Public Shared Function Synchronized(queue As Queue) As Queue
+    parameters:
+    - id: queue
+      type: System.Collections.Queue
+      description: "\n<p>The <xref href=\"System.Collections.Queue\" data-throw-if-not-resolved=\"false\"></xref> to synchronize. </p>\n"
+    return:
+      type: System.Collections.Queue
+      description: "\n<p>A <xref href=\"System.Collections.Queue\" data-throw-if-not-resolved=\"false\"></xref> wrapper that is synchronized (thread safe).</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>queue</em> is <strong>null</strong>. </p>\n"
+  seealso:
+  - type: System.Collections.Queue.IsSynchronized
+    commentId: P:System.Collections.Queue.IsSynchronized
+  - type: System.Collections.Queue.SyncRoot
+    commentId: P:System.Collections.Queue.SyncRoot
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  nameWithType: Queue.Synchronized(Queue)
+- uid: System.Collections.Queue.ToArray
+  commentId: M:System.Collections.Queue.ToArray
+  id: ToArray
+  parent: System.Collections.Queue
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Collections.Queue.ToArray()
+  type: Method
+  source:
+    remote:
+      path: src/System.Collections.NonGeneric/src/System/Collections/Queue.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: ToArray
+    path: src/System.Collections.NonGeneric/src/System/Collections/Queue.cs
+    startLine: 270
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: "\n<p>Copies the <xref href=\"System.Collections.Queue\" data-throw-if-not-resolved=\"false\"></xref> elements to a new array.</p>\n"
+  syntax:
+    content: public virtual object[] ToArray()
+    content.vb: Public Overridable Function ToArray As Object()
+    return:
+      type: System.Object[]
+      description: "\n<p>A new array containing elements copied from the <xref href=\"System.Collections.Queue\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  nameWithType: Queue.ToArray()
+- uid: System.Collections.Queue.TrimToSize
+  commentId: M:System.Collections.Queue.TrimToSize
+  id: TrimToSize
+  parent: System.Collections.Queue
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Collections.Queue.TrimToSize()
+  type: Method
+  source:
+    remote:
+      path: src/System.Collections.NonGeneric/src/System/Collections/Queue.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: TrimToSize
+    path: src/System.Collections.NonGeneric/src/System/Collections/Queue.cs
+    startLine: 314
+  assemblies:
+  - System.Collections.NonGeneric
+  namespace: System.Collections
+  summary: "\n<p>Sets the capacity to the actual number of elements in the <xref href=\"System.Collections.Queue\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  syntax:
+    content: public virtual void TrimToSize()
+    content.vb: Public Overridable Sub TrimToSize
+  exceptions:
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: "\n<p>The <xref href=\"System.Collections.Queue\" data-throw-if-not-resolved=\"false\"></xref> is read-only.</p>\n"
+  seealso:
+  - type: System.Collections.Queue.Clear
+    commentId: M:System.Collections.Queue.Clear
+  - type: System.Collections.Queue.Count
+    commentId: P:System.Collections.Queue.Count
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  nameWithType: Queue.TrimToSize()
+references:
+- uid: System.Collections
+  isExternal: false
+  name: "XXX"
+  fullName: System.Collections
+  nameWithType: System.Collections
+  commentId: N:System.Collections
+- uid: System.Object
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Object
+  nameWithType: Object
+  commentId: T:System.Object
+- uid: System.Collections.ICollection
+  parent: System.Collections
+  isExternal: false
+  name: "XXX"
+  fullName: System.Collections.ICollection
+  nameWithType: ICollection
+  commentId: T:System.Collections.ICollection
+- uid: System.Collections.IEnumerable
+  parent: System.Collections
+  isExternal: false
+  name: "XXX"
+  fullName: System.Collections.IEnumerable
+  nameWithType: IEnumerable
+  commentId: T:System.Collections.IEnumerable
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.ToString()
+  commentId: M:System.Object.ToString
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.Equals(Object)
+  commentId: M:System.Object.Equals(System.Object)
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.Equals(Object, Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.GetHashCode()
+  commentId: M:System.Object.GetHashCode
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.GetType()
+  commentId: M:System.Object.GetType
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.MemberwiseClone()
+  commentId: M:System.Object.MemberwiseClone
+- uid: System.Collections.IEnumerable.System.Linq.Queryable.AsQueryable
+  parent: System.Linq.Queryable
+  definition: System.Linq.Queryable.AsQueryable(System.Collections.IEnumerable)
+  name: "XXX"
+  fullName: System.Linq.Queryable.AsQueryable()
+  spec.csharp:
+  - uid: System.Linq.Queryable.AsQueryable
+    name: "XXX"
+    fullName: System.Linq.Queryable.AsQueryable
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Linq.Queryable.AsQueryable
+    name: "XXX"
+    fullName: System.Linq.Queryable.AsQueryable
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Queryable.AsQueryable()
+  commentId: M:System.Linq.Queryable.AsQueryable(System.Collections.IEnumerable)
+- uid: System.Collections.IEnumerable.System.Linq.ParallelEnumerable.AsParallel
+  parent: System.Linq.ParallelEnumerable
+  definition: System.Linq.ParallelEnumerable.AsParallel(System.Collections.IEnumerable)
+  name: "XXX"
+  fullName: System.Linq.ParallelEnumerable.AsParallel()
+  spec.csharp:
+  - uid: System.Linq.ParallelEnumerable.AsParallel
+    name: "XXX"
+    fullName: System.Linq.ParallelEnumerable.AsParallel
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Linq.ParallelEnumerable.AsParallel
+    name: "XXX"
+    fullName: System.Linq.ParallelEnumerable.AsParallel
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: ParallelEnumerable.AsParallel()
+  commentId: M:System.Linq.ParallelEnumerable.AsParallel(System.Collections.IEnumerable)
+- uid: System.Collections.IEnumerable.System.Linq.Enumerable.Cast``1
+  parent: System.Linq.Enumerable
+  definition: System.Linq.Enumerable.Cast``1(System.Collections.IEnumerable)
+  name: "XXX"
+  fullName: System.Linq.Enumerable.Cast<TResult>()
+  fullname.vb: System.Linq.Enumerable.Cast(Of TResult)()
+  name.vb: Cast(Of TResult)()
+  spec.csharp:
+  - uid: System.Linq.Enumerable.Cast``1
+    name: "XXX"
+    fullName: System.Linq.Enumerable.Cast<TResult>
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Linq.Enumerable.Cast``1
+    name: "XXX"
+    fullName: System.Linq.Enumerable.Cast(Of TResult)
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Enumerable.Cast<TResult>()
+  nameWithType.vb: Enumerable.Cast(Of TResult)()
+  commentId: M:System.Linq.Enumerable.Cast``1(System.Collections.IEnumerable)
+- uid: System.Collections.IEnumerable.System.Linq.Enumerable.OfType``1
+  parent: System.Linq.Enumerable
+  definition: System.Linq.Enumerable.OfType``1(System.Collections.IEnumerable)
+  name: "XXX"
+  fullName: System.Linq.Enumerable.OfType<TResult>()
+  fullname.vb: System.Linq.Enumerable.OfType(Of TResult)()
+  name.vb: OfType(Of TResult)()
+  spec.csharp:
+  - uid: System.Linq.Enumerable.OfType``1
+    name: "XXX"
+    fullName: System.Linq.Enumerable.OfType<TResult>
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Linq.Enumerable.OfType``1
+    name: "XXX"
+    fullName: System.Linq.Enumerable.OfType(Of TResult)
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Enumerable.OfType<TResult>()
+  nameWithType.vb: Enumerable.OfType(Of TResult)()
+  commentId: M:System.Linq.Enumerable.OfType``1(System.Collections.IEnumerable)
+- uid: System
+  isExternal: false
+  name: "XXX"
+  fullName: System
+  nameWithType: System
+  commentId: N:System
+- uid: System.Linq.Queryable.AsQueryable(System.Collections.IEnumerable)
+  isExternal: true
+  name: "XXX"
+  fullName: System.Linq.Queryable.AsQueryable(System.Collections.IEnumerable)
+  spec.csharp:
+  - uid: System.Linq.Queryable.AsQueryable(System.Collections.IEnumerable)
+    name: "XXX"
+    fullName: System.Linq.Queryable.AsQueryable
+  - name: "XXX"
+    fullName: (
+  - uid: System.Collections.IEnumerable
+    name: "XXX"
+    fullName: System.Collections.IEnumerable
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Linq.Queryable.AsQueryable(System.Collections.IEnumerable)
+    name: "XXX"
+    fullName: System.Linq.Queryable.AsQueryable
+  - name: "XXX"
+    fullName: (
+  - uid: System.Collections.IEnumerable
+    name: "XXX"
+    fullName: System.Collections.IEnumerable
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Queryable.AsQueryable(IEnumerable)
+  commentId: M:System.Linq.Queryable.AsQueryable(System.Collections.IEnumerable)
+- uid: System.Linq.Queryable
+  parent: System.Linq
+  isExternal: false
+  name: "XXX"
+  fullName: System.Linq.Queryable
+  nameWithType: Queryable
+  commentId: T:System.Linq.Queryable
+- uid: System.Linq.ParallelEnumerable.AsParallel(System.Collections.IEnumerable)
+  isExternal: true
+  name: "XXX"
+  fullName: System.Linq.ParallelEnumerable.AsParallel(System.Collections.IEnumerable)
+  spec.csharp:
+  - uid: System.Linq.ParallelEnumerable.AsParallel(System.Collections.IEnumerable)
+    name: "XXX"
+    fullName: System.Linq.ParallelEnumerable.AsParallel
+  - name: "XXX"
+    fullName: (
+  - uid: System.Collections.IEnumerable
+    name: "XXX"
+    fullName: System.Collections.IEnumerable
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Linq.ParallelEnumerable.AsParallel(System.Collections.IEnumerable)
+    name: "XXX"
+    fullName: System.Linq.ParallelEnumerable.AsParallel
+  - name: "XXX"
+    fullName: (
+  - uid: System.Collections.IEnumerable
+    name: "XXX"
+    fullName: System.Collections.IEnumerable
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: ParallelEnumerable.AsParallel(IEnumerable)
+  commentId: M:System.Linq.ParallelEnumerable.AsParallel(System.Collections.IEnumerable)
+- uid: System.Linq.ParallelEnumerable
+  parent: System.Linq
+  isExternal: false
+  name: "XXX"
+  fullName: System.Linq.ParallelEnumerable
+  nameWithType: ParallelEnumerable
+  commentId: T:System.Linq.ParallelEnumerable
+- uid: System.Linq.Enumerable.Cast``1(System.Collections.IEnumerable)
+  isExternal: true
+  name: "XXX"
+  fullName: System.Linq.Enumerable.Cast<TResult>(System.Collections.IEnumerable)
+  fullname.vb: System.Linq.Enumerable.Cast(Of TResult)(System.Collections.IEnumerable)
+  name.vb: Cast(Of TResult)(IEnumerable)
+  spec.csharp:
+  - uid: System.Linq.Enumerable.Cast``1(System.Collections.IEnumerable)
+    name: "XXX"
+    fullName: System.Linq.Enumerable.Cast<TResult>
+  - name: "XXX"
+    fullName: (
+  - uid: System.Collections.IEnumerable
+    name: "XXX"
+    fullName: System.Collections.IEnumerable
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Linq.Enumerable.Cast``1(System.Collections.IEnumerable)
+    name: "XXX"
+    fullName: System.Linq.Enumerable.Cast(Of TResult)
+  - name: "XXX"
+    fullName: (
+  - uid: System.Collections.IEnumerable
+    name: "XXX"
+    fullName: System.Collections.IEnumerable
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Enumerable.Cast<TResult>(IEnumerable)
+  nameWithType.vb: Enumerable.Cast(Of TResult)(IEnumerable)
+  commentId: M:System.Linq.Enumerable.Cast``1(System.Collections.IEnumerable)
+- uid: System.Linq.Enumerable
+  parent: System.Linq
+  isExternal: false
+  name: "XXX"
+  fullName: System.Linq.Enumerable
+  nameWithType: Enumerable
+  commentId: T:System.Linq.Enumerable
+- uid: System.Linq.Enumerable.OfType``1(System.Collections.IEnumerable)
+  isExternal: true
+  name: "XXX"
+  fullName: System.Linq.Enumerable.OfType<TResult>(System.Collections.IEnumerable)
+  fullname.vb: System.Linq.Enumerable.OfType(Of TResult)(System.Collections.IEnumerable)
+  name.vb: OfType(Of TResult)(IEnumerable)
+  spec.csharp:
+  - uid: System.Linq.Enumerable.OfType``1(System.Collections.IEnumerable)
+    name: "XXX"
+    fullName: System.Linq.Enumerable.OfType<TResult>
+  - name: "XXX"
+    fullName: (
+  - uid: System.Collections.IEnumerable
+    name: "XXX"
+    fullName: System.Collections.IEnumerable
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Linq.Enumerable.OfType``1(System.Collections.IEnumerable)
+    name: "XXX"
+    fullName: System.Linq.Enumerable.OfType(Of TResult)
+  - name: "XXX"
+    fullName: (
+  - uid: System.Collections.IEnumerable
+    name: "XXX"
+    fullName: System.Collections.IEnumerable
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Enumerable.OfType<TResult>(IEnumerable)
+  nameWithType.vb: Enumerable.OfType(Of TResult)(IEnumerable)
+  commentId: M:System.Linq.Enumerable.OfType``1(System.Collections.IEnumerable)
+- uid: System.Linq
+  isExternal: false
+  name: "XXX"
+  fullName: System.Linq
+  nameWithType: System.Linq
+  commentId: N:System.Linq
+- uid: System.Int32
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Int32
+  nameWithType: Int32
+  commentId: T:System.Int32
+- uid: System.Single
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Single
+  nameWithType: Single
+  commentId: T:System.Single
+- uid: System.Collections.ICollection.Count
+  parent: System.Collections.ICollection
+  isExternal: false
+  name: "XXX"
+  fullName: System.Collections.ICollection.Count
+  nameWithType: ICollection.Count
+  commentId: P:System.Collections.ICollection.Count
+- uid: System.Collections.ICollection.IsSynchronized
+  parent: System.Collections.ICollection
+  isExternal: false
+  name: "XXX"
+  fullName: System.Collections.ICollection.IsSynchronized
+  nameWithType: ICollection.IsSynchronized
+  commentId: P:System.Collections.ICollection.IsSynchronized
+- uid: System.Boolean
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Boolean
+  nameWithType: Boolean
+  commentId: T:System.Boolean
+- uid: System.Collections.ICollection.SyncRoot
+  parent: System.Collections.ICollection
+  isExternal: false
+  name: "XXX"
+  fullName: System.Collections.ICollection.SyncRoot
+  nameWithType: ICollection.SyncRoot
+  commentId: P:System.Collections.ICollection.SyncRoot
+- uid: System.Collections.ICollection.CopyTo(System.Array,System.Int32)
+  parent: System.Collections.ICollection
+  isExternal: true
+  name: "XXX"
+  fullName: System.Collections.ICollection.CopyTo(System.Array, System.Int32)
+  spec.csharp:
+  - uid: System.Collections.ICollection.CopyTo(System.Array,System.Int32)
+    name: "XXX"
+    fullName: System.Collections.ICollection.CopyTo
+  - name: "XXX"
+    fullName: (
+  - uid: System.Array
+    name: "XXX"
+    fullName: System.Array
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ICollection.CopyTo(System.Array,System.Int32)
+    name: "XXX"
+    fullName: System.Collections.ICollection.CopyTo
+  - name: "XXX"
+    fullName: (
+  - uid: System.Array
+    name: "XXX"
+    fullName: System.Array
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: ICollection.CopyTo(Array, Int32)
+  commentId: M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)
+- uid: System.Array
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Array
+  nameWithType: Array
+  commentId: T:System.Array
+- uid: System.Collections.IEnumerable.GetEnumerator
+  parent: System.Collections.IEnumerable
+  isExternal: false
+  name: "XXX"
+  fullName: System.Collections.IEnumerable.GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.IEnumerable.GetEnumerator
+    name: "XXX"
+    fullName: System.Collections.IEnumerable.GetEnumerator
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.IEnumerable.GetEnumerator
+    name: "XXX"
+    fullName: System.Collections.IEnumerable.GetEnumerator
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: IEnumerable.GetEnumerator()
+  commentId: M:System.Collections.IEnumerable.GetEnumerator
+- uid: System.Collections.IEnumerator
+  parent: System.Collections
+  isExternal: false
+  name: "XXX"
+  fullName: System.Collections.IEnumerator
+  nameWithType: IEnumerator
+  commentId: T:System.Collections.IEnumerator
+- uid: System.Collections.Queue
+  parent: System.Collections
+  isExternal: false
+  name: "XXX"
+  fullName: System.Collections.Queue
+  nameWithType: Queue
+  commentId: T:System.Collections.Queue
+- uid: System.Object[]
+  name: "XXX"
+  fullName: System.Object[]
+  fullname.vb: System.Object()
+  name.vb: Object()
+  spec.csharp:
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: ()
+  nameWithType: Object[]
+  nameWithType.vb: Object()
+- uid: System.ArgumentNullException
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentNullException
+  nameWithType: ArgumentNullException
+  commentId: T:System.ArgumentNullException
+- uid: System.ArgumentOutOfRangeException
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentOutOfRangeException
+  nameWithType: ArgumentOutOfRangeException
+  commentId: T:System.ArgumentOutOfRangeException
+- uid: System.ArgumentException
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentException
+  nameWithType: ArgumentException
+  commentId: T:System.ArgumentException
+- uid: System.ArrayTypeMismatchException
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArrayTypeMismatchException
+  nameWithType: ArrayTypeMismatchException
+  commentId: T:System.ArrayTypeMismatchException
+- uid: System.InvalidOperationException
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.InvalidOperationException
+  nameWithType: InvalidOperationException
+  commentId: T:System.InvalidOperationException
+- uid: System.NotSupportedException
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.NotSupportedException
+  nameWithType: NotSupportedException
+  commentId: T:System.NotSupportedException

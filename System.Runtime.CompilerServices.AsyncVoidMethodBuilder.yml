@@ -1,0 +1,636 @@
+items:
+- uid: System.Runtime.CompilerServices.AsyncVoidMethodBuilder
+  commentId: T:System.Runtime.CompilerServices.AsyncVoidMethodBuilder
+  id: AsyncVoidMethodBuilder
+  parent: System.Runtime.CompilerServices
+  children:
+  - System.Runtime.CompilerServices.AsyncVoidMethodBuilder.AwaitOnCompleted``2(``0@,``1@)
+  - System.Runtime.CompilerServices.AsyncVoidMethodBuilder.AwaitUnsafeOnCompleted``2(``0@,``1@)
+  - System.Runtime.CompilerServices.AsyncVoidMethodBuilder.Create
+  - System.Runtime.CompilerServices.AsyncVoidMethodBuilder.SetException(System.Exception)
+  - System.Runtime.CompilerServices.AsyncVoidMethodBuilder.SetResult
+  - System.Runtime.CompilerServices.AsyncVoidMethodBuilder.SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+  - System.Runtime.CompilerServices.AsyncVoidMethodBuilder.Start``1(``0@)
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Runtime.CompilerServices.AsyncVoidMethodBuilder
+  type: Struct
+  source:
+    remote:
+      path: src/mscorlib/src/System/Runtime/CompilerServices/AsyncMethodBuilder.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: AsyncVoidMethodBuilder
+    path: src/mscorlib/src/System/Runtime/CompilerServices/AsyncMethodBuilder.cs
+    startLine: 34
+  assemblies:
+  - System.Threading.Tasks
+  namespace: System.Runtime.CompilerServices
+  summary: "\n<p>Represents a builder for asynchronous methods that do not return a value.</p>\n"
+  syntax:
+    content: >-
+      [HostProtection(Synchronization = true, ExternalThreading = true)]
+
+      public struct AsyncVoidMethodBuilder
+    content.vb: >-
+      <HostProtection(Synchronization:=True, ExternalThreading:=True)>
+
+      Public Structure AsyncVoidMethodBuilder
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+  attributes:
+  - type: System.Runtime.InteropServices.StructLayoutAttribute
+    ctor: System.Runtime.InteropServices.StructLayoutAttribute.#ctor(System.Runtime.InteropServices.LayoutKind)
+    arguments:
+    - type: System.Runtime.InteropServices.LayoutKind
+      value: 0
+  modifiers.csharp:
+  - public
+  - struct
+  modifiers.vb:
+  - Public
+  - Structure
+  nameWithType: AsyncVoidMethodBuilder
+- uid: System.Runtime.CompilerServices.AsyncVoidMethodBuilder.AwaitOnCompleted``2(``0@,``1@)
+  commentId: M:System.Runtime.CompilerServices.AsyncVoidMethodBuilder.AwaitOnCompleted``2(``0@,``1@)
+  id: AwaitOnCompleted``2(``0@,``1@)
+  parent: System.Runtime.CompilerServices.AsyncVoidMethodBuilder
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Runtime.CompilerServices.AsyncVoidMethodBuilder.AwaitOnCompleted<TAwaiter, TStateMachine>(ref TAwaiter, ref TStateMachine)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Runtime/CompilerServices/AsyncMethodBuilder.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: AwaitOnCompleted
+    path: src/mscorlib/src/System/Runtime/CompilerServices/AsyncMethodBuilder.cs
+    startLine: 105
+  assemblies:
+  - System.Threading.Tasks
+  namespace: System.Runtime.CompilerServices
+  summary: "\n<p>Schedules the state machine to proceed to the next action when the specified awaiter completes.</p>\n"
+  syntax:
+    content: 'public void AwaitOnCompleted<TAwaiter, TStateMachine>(ref TAwaiter awaiter, ref TStateMachine stateMachine)where TAwaiter : INotifyCompletion where TStateMachine : IAsyncStateMachine'
+    content.vb: Public Sub AwaitOnCompleted(Of TAwaiter As INotifyCompletion, TStateMachine As IAsyncStateMachine)(ByRef awaiter As TAwaiter, ByRef stateMachine As TStateMachine)
+    parameters:
+    - id: awaiter
+      type: '{TAwaiter}'
+      description: "\n<p>The awaiter.</p>\n"
+    - id: stateMachine
+      type: '{TStateMachine}'
+      description: "\n<p>The state machine.</p>\n"
+    typeParameters:
+    - id: TAwaiter
+      description: "\n<p>The type of the awaiter.</p>\n"
+    - id: TStateMachine
+      description: "\n<p>The type of the state machine.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: System.Runtime.CompilerServices.AsyncVoidMethodBuilder.AwaitOnCompleted(Of TAwaiter, TStateMachine)(ByRef TAwaiter, ByRef TStateMachine)
+  name.vb: AwaitOnCompleted(Of TAwaiter, TStateMachine)(ByRef TAwaiter, ByRef TStateMachine)
+  nameWithType: AsyncVoidMethodBuilder.AwaitOnCompleted<TAwaiter, TStateMachine>(ref TAwaiter, ref TStateMachine)
+  nameWithType.vb: AsyncVoidMethodBuilder.AwaitOnCompleted(Of TAwaiter, TStateMachine)(ByRef TAwaiter, ByRef TStateMachine)
+- uid: System.Runtime.CompilerServices.AsyncVoidMethodBuilder.AwaitUnsafeOnCompleted``2(``0@,``1@)
+  commentId: M:System.Runtime.CompilerServices.AsyncVoidMethodBuilder.AwaitUnsafeOnCompleted``2(``0@,``1@)
+  id: AwaitUnsafeOnCompleted``2(``0@,``1@)
+  parent: System.Runtime.CompilerServices.AsyncVoidMethodBuilder
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Runtime.CompilerServices.AsyncVoidMethodBuilder.AwaitUnsafeOnCompleted<TAwaiter, TStateMachine>(ref TAwaiter, ref TStateMachine)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Runtime/CompilerServices/AsyncMethodBuilder.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: AwaitUnsafeOnCompleted
+    path: src/mscorlib/src/System/Runtime/CompilerServices/AsyncMethodBuilder.cs
+    startLine: 151
+  assemblies:
+  - System.Threading.Tasks
+  namespace: System.Runtime.CompilerServices
+  summary: "\n<p>Schedules the state machine to proceed to the next action when the specified awaiter completes. This method can be called from partially trusted code.</p>\n"
+  syntax:
+    content: >-
+      [SecuritySafeCritical]
+
+      public void AwaitUnsafeOnCompleted<TAwaiter, TStateMachine>(ref TAwaiter awaiter, ref TStateMachine stateMachine)where TAwaiter : ICriticalNotifyCompletion where TStateMachine : IAsyncStateMachine
+    content.vb: >-
+      <SecuritySafeCritical>
+
+      Public Sub AwaitUnsafeOnCompleted(Of TAwaiter As ICriticalNotifyCompletion, TStateMachine As IAsyncStateMachine)(ByRef awaiter As TAwaiter, ByRef stateMachine As TStateMachine)
+    parameters:
+    - id: awaiter
+      type: '{TAwaiter}'
+      description: "\n<p>The awaiter.</p>\n"
+    - id: stateMachine
+      type: '{TStateMachine}'
+      description: "\n<p>The state machine.</p>\n"
+    typeParameters:
+    - id: TAwaiter
+      description: "\n<p>The type of the awaiter.</p>\n"
+    - id: TStateMachine
+      description: "\n<p>The type of the state machine.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: System.Runtime.CompilerServices.AsyncVoidMethodBuilder.AwaitUnsafeOnCompleted(Of TAwaiter, TStateMachine)(ByRef TAwaiter, ByRef TStateMachine)
+  name.vb: AwaitUnsafeOnCompleted(Of TAwaiter, TStateMachine)(ByRef TAwaiter, ByRef TStateMachine)
+  nameWithType: AsyncVoidMethodBuilder.AwaitUnsafeOnCompleted<TAwaiter, TStateMachine>(ref TAwaiter, ref TStateMachine)
+  nameWithType.vb: AsyncVoidMethodBuilder.AwaitUnsafeOnCompleted(Of TAwaiter, TStateMachine)(ByRef TAwaiter, ByRef TStateMachine)
+- uid: System.Runtime.CompilerServices.AsyncVoidMethodBuilder.Create
+  commentId: M:System.Runtime.CompilerServices.AsyncVoidMethodBuilder.Create
+  id: Create
+  parent: System.Runtime.CompilerServices.AsyncVoidMethodBuilder
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Runtime.CompilerServices.AsyncVoidMethodBuilder.Create()
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Runtime/CompilerServices/AsyncMethodBuilder.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Create
+    path: src/mscorlib/src/System/Runtime/CompilerServices/AsyncMethodBuilder.cs
+    startLine: 46
+  assemblies:
+  - System.Threading.Tasks
+  namespace: System.Runtime.CompilerServices
+  summary: "\n<p>Creates an instance of the <xref href=\"System.Runtime.CompilerServices.AsyncVoidMethodBuilder\" data-throw-if-not-resolved=\"false\"></xref> class.</p>\n"
+  syntax:
+    content: public static AsyncVoidMethodBuilder Create()
+    content.vb: Public Shared Function Create As AsyncVoidMethodBuilder
+    return:
+      type: System.Runtime.CompilerServices.AsyncVoidMethodBuilder
+      description: "\n<p>A new instance of the builder.</p>\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  nameWithType: AsyncVoidMethodBuilder.Create()
+- uid: System.Runtime.CompilerServices.AsyncVoidMethodBuilder.SetException(System.Exception)
+  commentId: M:System.Runtime.CompilerServices.AsyncVoidMethodBuilder.SetException(System.Exception)
+  id: SetException(System.Exception)
+  parent: System.Runtime.CompilerServices.AsyncVoidMethodBuilder
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Runtime.CompilerServices.AsyncVoidMethodBuilder.SetException(System.Exception)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Runtime/CompilerServices/AsyncMethodBuilder.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: SetException
+    path: src/mscorlib/src/System/Runtime/CompilerServices/AsyncMethodBuilder.cs
+    startLine: 200
+  assemblies:
+  - System.Threading.Tasks
+  namespace: System.Runtime.CompilerServices
+  summary: "\n<p>Binds an exception to the method builder.</p>\n"
+  syntax:
+    content: public void SetException(Exception exception)
+    content.vb: Public Sub SetException(exception As Exception)
+    parameters:
+    - id: exception
+      type: System.Exception
+      description: "\n<p>The exception to bind.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>exception</em> is <strong>null</strong>.</p>\n"
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: "\n<p>The builder is not initialized.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: AsyncVoidMethodBuilder.SetException(Exception)
+- uid: System.Runtime.CompilerServices.AsyncVoidMethodBuilder.SetResult
+  commentId: M:System.Runtime.CompilerServices.AsyncVoidMethodBuilder.SetResult
+  id: SetResult
+  parent: System.Runtime.CompilerServices.AsyncVoidMethodBuilder
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Runtime.CompilerServices.AsyncVoidMethodBuilder.SetResult()
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Runtime/CompilerServices/AsyncMethodBuilder.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: SetResult
+    path: src/mscorlib/src/System/Runtime/CompilerServices/AsyncMethodBuilder.cs
+    startLine: 185
+  assemblies:
+  - System.Threading.Tasks
+  namespace: System.Runtime.CompilerServices
+  summary: "\n<p>Marks the method builder as successfully completed.</p>\n"
+  syntax:
+    content: public void SetResult()
+    content.vb: Public Sub SetResult
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: "\n<p>The builder is not initialized.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: AsyncVoidMethodBuilder.SetResult()
+- uid: System.Runtime.CompilerServices.AsyncVoidMethodBuilder.SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+  commentId: M:System.Runtime.CompilerServices.AsyncVoidMethodBuilder.SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+  id: SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+  parent: System.Runtime.CompilerServices.AsyncVoidMethodBuilder
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Runtime.CompilerServices.AsyncVoidMethodBuilder.SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Runtime/CompilerServices/AsyncMethodBuilder.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: SetStateMachine
+    path: src/mscorlib/src/System/Runtime/CompilerServices/AsyncMethodBuilder.cs
+    startLine: 93
+  assemblies:
+  - System.Threading.Tasks
+  namespace: System.Runtime.CompilerServices
+  summary: "\n<p>Associates the builder with the specified state machine.</p>\n"
+  syntax:
+    content: public void SetStateMachine(IAsyncStateMachine stateMachine)
+    content.vb: Public Sub SetStateMachine(stateMachine As IAsyncStateMachine)
+    parameters:
+    - id: stateMachine
+      type: System.Runtime.CompilerServices.IAsyncStateMachine
+      description: "\n<p>The state machine instance to associate with the builder.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>stateMachine</em> is <strong>null</strong>.</p>\n"
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: "\n<p>The state machine was previously set.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: AsyncVoidMethodBuilder.SetStateMachine(IAsyncStateMachine)
+- uid: System.Runtime.CompilerServices.AsyncVoidMethodBuilder.Start``1(``0@)
+  commentId: M:System.Runtime.CompilerServices.AsyncVoidMethodBuilder.Start``1(``0@)
+  id: Start``1(``0@)
+  parent: System.Runtime.CompilerServices.AsyncVoidMethodBuilder
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Runtime.CompilerServices.AsyncVoidMethodBuilder.Start<TStateMachine>(ref TStateMachine)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Runtime/CompilerServices/AsyncMethodBuilder.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Start
+    path: src/mscorlib/src/System/Runtime/CompilerServices/AsyncMethodBuilder.cs
+    startLine: 61
+  assemblies:
+  - System.Threading.Tasks
+  namespace: System.Runtime.CompilerServices
+  summary: "\n<p>Begins running the builder with the associated state machine.</p>\n"
+  syntax:
+    content: >-
+      [SecuritySafeCritical]
+
+      [DebuggerStepThrough]
+
+      public void Start<TStateMachine>(ref TStateMachine stateMachine)where TStateMachine : IAsyncStateMachine
+    content.vb: >-
+      <SecuritySafeCritical>
+
+      <DebuggerStepThrough>
+
+      Public Sub Start(Of TStateMachine As IAsyncStateMachine)(ByRef stateMachine As TStateMachine)
+    parameters:
+    - id: stateMachine
+      type: '{TStateMachine}'
+      description: "\n<p>The state machine instance, passed by reference.</p>\n"
+    typeParameters:
+    - id: TStateMachine
+      description: "\n<p>The type of the state machine.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>stateMachine</em> is <strong>null</strong>.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: System.Runtime.CompilerServices.AsyncVoidMethodBuilder.Start(Of TStateMachine)(ByRef TStateMachine)
+  name.vb: Start(Of TStateMachine)(ByRef TStateMachine)
+  nameWithType: AsyncVoidMethodBuilder.Start<TStateMachine>(ref TStateMachine)
+  nameWithType.vb: AsyncVoidMethodBuilder.Start(Of TStateMachine)(ByRef TStateMachine)
+references:
+- uid: System.Runtime.CompilerServices
+  isExternal: false
+  name: "XXX"
+  fullName: System.Runtime.CompilerServices
+  nameWithType: System.Runtime.CompilerServices
+  commentId: N:System.Runtime.CompilerServices
+- uid: System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  name: "XXX"
+  fullName: System.ValueType.Equals(System.Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: "XXX"
+    fullName: System.ValueType.Equals
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: "XXX"
+    fullName: System.ValueType.Equals
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: ValueType.Equals(Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+- uid: System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: false
+  name: "XXX"
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: "XXX"
+    fullName: System.ValueType.GetHashCode
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: "XXX"
+    fullName: System.ValueType.GetHashCode
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: ValueType.GetHashCode()
+  commentId: M:System.ValueType.GetHashCode
+- uid: System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: false
+  name: "XXX"
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: "XXX"
+    fullName: System.ValueType.ToString
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: "XXX"
+    fullName: System.ValueType.ToString
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: ValueType.ToString()
+  commentId: M:System.ValueType.ToString
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.Equals(Object, Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.GetType()
+  commentId: M:System.Object.GetType
+- uid: System.ValueType
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.ValueType
+  nameWithType: ValueType
+  commentId: T:System.ValueType
+- uid: System.Object
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Object
+  nameWithType: Object
+  commentId: T:System.Object
+- uid: System
+  isExternal: false
+  name: "XXX"
+  fullName: System
+  nameWithType: System
+  commentId: N:System
+- uid: '{TAwaiter}'
+  definition: TAwaiter
+  name: "XXX"
+  fullName: TAwaiter
+  nameWithType: TAwaiter
+  commentId: '!:TAwaiter'
+- uid: '{TStateMachine}'
+  definition: TStateMachine
+  name: "XXX"
+  fullName: TStateMachine
+  nameWithType: TStateMachine
+  commentId: '!:TStateMachine'
+- uid: TAwaiter
+  isExternal: false
+  name: "XXX"
+  fullName: TAwaiter
+  nameWithType: TAwaiter
+- uid: TStateMachine
+  isExternal: false
+  name: "XXX"
+  fullName: TStateMachine
+  nameWithType: TStateMachine
+- uid: System.Runtime.CompilerServices.AsyncVoidMethodBuilder
+  parent: System.Runtime.CompilerServices
+  isExternal: false
+  name: "XXX"
+  fullName: System.Runtime.CompilerServices.AsyncVoidMethodBuilder
+  nameWithType: AsyncVoidMethodBuilder
+  commentId: T:System.Runtime.CompilerServices.AsyncVoidMethodBuilder
+- uid: System.Exception
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Exception
+  nameWithType: Exception
+  commentId: T:System.Exception
+- uid: System.Runtime.CompilerServices.IAsyncStateMachine
+  parent: System.Runtime.CompilerServices
+  isExternal: false
+  name: "XXX"
+  fullName: System.Runtime.CompilerServices.IAsyncStateMachine
+  nameWithType: IAsyncStateMachine
+  commentId: T:System.Runtime.CompilerServices.IAsyncStateMachine
+- uid: System.ArgumentNullException
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentNullException
+  nameWithType: ArgumentNullException
+  commentId: T:System.ArgumentNullException
+- uid: System.InvalidOperationException
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.InvalidOperationException
+  nameWithType: InvalidOperationException
+  commentId: T:System.InvalidOperationException

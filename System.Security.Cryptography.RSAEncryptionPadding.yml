@@ -1,0 +1,1017 @@
+items:
+- uid: System.Security.Cryptography.RSAEncryptionPadding
+  commentId: T:System.Security.Cryptography.RSAEncryptionPadding
+  id: RSAEncryptionPadding
+  parent: System.Security.Cryptography
+  children:
+  - System.Security.Cryptography.RSAEncryptionPadding.CreateOaep(System.Security.Cryptography.HashAlgorithmName)
+  - System.Security.Cryptography.RSAEncryptionPadding.Equals(System.Object)
+  - System.Security.Cryptography.RSAEncryptionPadding.Equals(System.Security.Cryptography.RSAEncryptionPadding)
+  - System.Security.Cryptography.RSAEncryptionPadding.GetHashCode
+  - System.Security.Cryptography.RSAEncryptionPadding.Mode
+  - System.Security.Cryptography.RSAEncryptionPadding.OaepHashAlgorithm
+  - System.Security.Cryptography.RSAEncryptionPadding.OaepSHA1
+  - System.Security.Cryptography.RSAEncryptionPadding.OaepSHA256
+  - System.Security.Cryptography.RSAEncryptionPadding.OaepSHA384
+  - System.Security.Cryptography.RSAEncryptionPadding.OaepSHA512
+  - System.Security.Cryptography.RSAEncryptionPadding.op_Equality(System.Security.Cryptography.RSAEncryptionPadding,System.Security.Cryptography.RSAEncryptionPadding)
+  - System.Security.Cryptography.RSAEncryptionPadding.op_Inequality(System.Security.Cryptography.RSAEncryptionPadding,System.Security.Cryptography.RSAEncryptionPadding)
+  - System.Security.Cryptography.RSAEncryptionPadding.Pkcs1
+  - System.Security.Cryptography.RSAEncryptionPadding.ToString
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.Cryptography.RSAEncryptionPadding
+  type: Class
+  source:
+    remote:
+      path: src/System.Security.Cryptography.Algorithms/ref/System.Security.Cryptography.Algorithms.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: RSAEncryptionPadding
+    path: src/System.Security.Cryptography.Algorithms/ref/System.Security.Cryptography.Algorithms.cs
+    startLine: 223
+  assemblies:
+  - System.Security.Cryptography.Algorithms
+  namespace: System.Security.Cryptography
+  summary: "\n<p>Specifies the padding mode and parameters to use with RSA encryption or decryption operations. </p>\n"
+  syntax:
+    content: 'public sealed class RSAEncryptionPadding : IEquatable<RSAEncryptionPadding>'
+    content.vb: >-
+      Public NotInheritable Class RSAEncryptionPadding
+          Implements IEquatable(Of RSAEncryptionPadding)
+  inheritance:
+  - System.Object
+  implements:
+  - System.IEquatable{System.Security.Cryptography.RSAEncryptionPadding}
+  inheritedMembers:
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+  nameWithType: RSAEncryptionPadding
+- uid: System.Security.Cryptography.RSAEncryptionPadding.Mode
+  commentId: P:System.Security.Cryptography.RSAEncryptionPadding.Mode
+  id: Mode
+  parent: System.Security.Cryptography.RSAEncryptionPadding
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.Cryptography.RSAEncryptionPadding.Mode
+  type: Property
+  source:
+    remote:
+      path: src/System.Security.Cryptography.Algorithms/ref/System.Security.Cryptography.Algorithms.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Mode
+    path: src/System.Security.Cryptography.Algorithms/ref/System.Security.Cryptography.Algorithms.cs
+    startLine: 226
+  assemblies:
+  - System.Security.Cryptography.Algorithms
+  namespace: System.Security.Cryptography
+  summary: "\n<p>Gets the padding mode represented by this <xref href=\"System.Security.Cryptography.RSAEncryptionPadding\" data-throw-if-not-resolved=\"false\"></xref> instance. </p>\n"
+  syntax:
+    content: public RSAEncryptionPaddingMode Mode { get; }
+    content.vb: Public ReadOnly Property Mode As RSAEncryptionPaddingMode
+    parameters: []
+    return:
+      type: System.Security.Cryptography.RSAEncryptionPaddingMode
+      description: "\n<p>A padding mode. </p>\n"
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  nameWithType: RSAEncryptionPadding.Mode
+- uid: System.Security.Cryptography.RSAEncryptionPadding.OaepHashAlgorithm
+  commentId: P:System.Security.Cryptography.RSAEncryptionPadding.OaepHashAlgorithm
+  id: OaepHashAlgorithm
+  parent: System.Security.Cryptography.RSAEncryptionPadding
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.Cryptography.RSAEncryptionPadding.OaepHashAlgorithm
+  type: Property
+  source:
+    remote:
+      path: src/System.Security.Cryptography.Algorithms/ref/System.Security.Cryptography.Algorithms.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: OaepHashAlgorithm
+    path: src/System.Security.Cryptography.Algorithms/ref/System.Security.Cryptography.Algorithms.cs
+    startLine: 227
+  assemblies:
+  - System.Security.Cryptography.Algorithms
+  namespace: System.Security.Cryptography
+  summary: "\n<p>Gets the hash algorithm used in conjunction with the <xref href=\"System.Security.Cryptography.RSAEncryptionPaddingMode.Oaep\" data-throw-if-not-resolved=\"false\"></xref> padding mode. If the value of the <xref href=\"System.Security.Cryptography.RSAEncryptionPadding.Mode\" data-throw-if-not-resolved=\"false\"></xref> property is not <xref href=\"System.Security.Cryptography.RSAEncryptionPaddingMode.Oaep\" data-throw-if-not-resolved=\"false\"></xref>, <xref href=\"System.Security.Cryptography.HashAlgorithmName.Name\" data-throw-if-not-resolved=\"false\"></xref> is <strong>null</strong>. </p>\n"
+  syntax:
+    content: public HashAlgorithmName OaepHashAlgorithm { get; }
+    content.vb: Public ReadOnly Property OaepHashAlgorithm As HashAlgorithmName
+    parameters: []
+    return:
+      type: System.Security.Cryptography.HashAlgorithmName
+      description: "\n<p>The hash algorithm. </p>\n"
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  nameWithType: RSAEncryptionPadding.OaepHashAlgorithm
+- uid: System.Security.Cryptography.RSAEncryptionPadding.OaepSHA1
+  commentId: P:System.Security.Cryptography.RSAEncryptionPadding.OaepSHA1
+  id: OaepSHA1
+  parent: System.Security.Cryptography.RSAEncryptionPadding
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.Cryptography.RSAEncryptionPadding.OaepSHA1
+  type: Property
+  source:
+    remote:
+      path: src/System.Security.Cryptography.Algorithms/ref/System.Security.Cryptography.Algorithms.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: OaepSHA1
+    path: src/System.Security.Cryptography.Algorithms/ref/System.Security.Cryptography.Algorithms.cs
+    startLine: 228
+  assemblies:
+  - System.Security.Cryptography.Algorithms
+  namespace: System.Security.Cryptography
+  summary: "\n<p>Gets an object that represents the Optimal Asymmetric Encryption Padding (OAEP) encryption standard with a SHA1 hash algorithm.</p>\n"
+  syntax:
+    content: public static RSAEncryptionPadding OaepSHA1 { get; }
+    content.vb: Public Shared ReadOnly Property OaepSHA1 As RSAEncryptionPadding
+    parameters: []
+    return:
+      type: System.Security.Cryptography.RSAEncryptionPadding
+      description: "\n<p>An object that represents the OAEP encryption standard with a SHA1 hash algorithm.</p>\n"
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+  nameWithType: RSAEncryptionPadding.OaepSHA1
+- uid: System.Security.Cryptography.RSAEncryptionPadding.OaepSHA256
+  commentId: P:System.Security.Cryptography.RSAEncryptionPadding.OaepSHA256
+  id: OaepSHA256
+  parent: System.Security.Cryptography.RSAEncryptionPadding
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.Cryptography.RSAEncryptionPadding.OaepSHA256
+  type: Property
+  source:
+    remote:
+      path: src/System.Security.Cryptography.Algorithms/ref/System.Security.Cryptography.Algorithms.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: OaepSHA256
+    path: src/System.Security.Cryptography.Algorithms/ref/System.Security.Cryptography.Algorithms.cs
+    startLine: 229
+  assemblies:
+  - System.Security.Cryptography.Algorithms
+  namespace: System.Security.Cryptography
+  summary: "\n<p>Gets an object that represents the Optimal Asymmetric Encryption Padding (OAEP) encryption standard with a SHA256 hash algorithm. </p>\n"
+  syntax:
+    content: public static RSAEncryptionPadding OaepSHA256 { get; }
+    content.vb: Public Shared ReadOnly Property OaepSHA256 As RSAEncryptionPadding
+    parameters: []
+    return:
+      type: System.Security.Cryptography.RSAEncryptionPadding
+      description: "\n<p>An object that represents the OAEP encryption standard with a SHA256 hash algorithm. </p>\n"
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+  nameWithType: RSAEncryptionPadding.OaepSHA256
+- uid: System.Security.Cryptography.RSAEncryptionPadding.OaepSHA384
+  commentId: P:System.Security.Cryptography.RSAEncryptionPadding.OaepSHA384
+  id: OaepSHA384
+  parent: System.Security.Cryptography.RSAEncryptionPadding
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.Cryptography.RSAEncryptionPadding.OaepSHA384
+  type: Property
+  source:
+    remote:
+      path: src/System.Security.Cryptography.Algorithms/ref/System.Security.Cryptography.Algorithms.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: OaepSHA384
+    path: src/System.Security.Cryptography.Algorithms/ref/System.Security.Cryptography.Algorithms.cs
+    startLine: 230
+  assemblies:
+  - System.Security.Cryptography.Algorithms
+  namespace: System.Security.Cryptography
+  summary: "\n<p>Gets an object that represents the Optimal Asymmetric Encryption Padding (OAEP) encryption standard with a SHA-384 hash algorithm.</p>\n"
+  syntax:
+    content: public static RSAEncryptionPadding OaepSHA384 { get; }
+    content.vb: Public Shared ReadOnly Property OaepSHA384 As RSAEncryptionPadding
+    parameters: []
+    return:
+      type: System.Security.Cryptography.RSAEncryptionPadding
+      description: "\n<p>An object that represents the OAEP encryption standard with a SHA384 hash algorithm. </p>\n"
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+  nameWithType: RSAEncryptionPadding.OaepSHA384
+- uid: System.Security.Cryptography.RSAEncryptionPadding.OaepSHA512
+  commentId: P:System.Security.Cryptography.RSAEncryptionPadding.OaepSHA512
+  id: OaepSHA512
+  parent: System.Security.Cryptography.RSAEncryptionPadding
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.Cryptography.RSAEncryptionPadding.OaepSHA512
+  type: Property
+  source:
+    remote:
+      path: src/System.Security.Cryptography.Algorithms/ref/System.Security.Cryptography.Algorithms.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: OaepSHA512
+    path: src/System.Security.Cryptography.Algorithms/ref/System.Security.Cryptography.Algorithms.cs
+    startLine: 231
+  assemblies:
+  - System.Security.Cryptography.Algorithms
+  namespace: System.Security.Cryptography
+  summary: "\n<p>Gets an object that represents the Optimal Asymmetric Encryption Padding (OAEP) encryption standard with a SHA512 hash algorithm. </p>\n"
+  syntax:
+    content: public static RSAEncryptionPadding OaepSHA512 { get; }
+    content.vb: Public Shared ReadOnly Property OaepSHA512 As RSAEncryptionPadding
+    parameters: []
+    return:
+      type: System.Security.Cryptography.RSAEncryptionPadding
+      description: "\n<p>An object that represents the OAEP encryption standard with a SHA512 hash algorithm. </p>\n"
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+  nameWithType: RSAEncryptionPadding.OaepSHA512
+- uid: System.Security.Cryptography.RSAEncryptionPadding.Pkcs1
+  commentId: P:System.Security.Cryptography.RSAEncryptionPadding.Pkcs1
+  id: Pkcs1
+  parent: System.Security.Cryptography.RSAEncryptionPadding
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.Cryptography.RSAEncryptionPadding.Pkcs1
+  type: Property
+  source:
+    remote:
+      path: src/System.Security.Cryptography.Algorithms/ref/System.Security.Cryptography.Algorithms.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Pkcs1
+    path: src/System.Security.Cryptography.Algorithms/ref/System.Security.Cryptography.Algorithms.cs
+    startLine: 232
+  assemblies:
+  - System.Security.Cryptography.Algorithms
+  namespace: System.Security.Cryptography
+  summary: "\n<p>Gets an object that represents the PKCS #1 encryption standard. </p>\n"
+  syntax:
+    content: public static RSAEncryptionPadding Pkcs1 { get; }
+    content.vb: Public Shared ReadOnly Property Pkcs1 As RSAEncryptionPadding
+    parameters: []
+    return:
+      type: System.Security.Cryptography.RSAEncryptionPadding
+      description: "\n<p>An object that represents the PKCS #1 encryption standard. </p>\n"
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+  nameWithType: RSAEncryptionPadding.Pkcs1
+- uid: System.Security.Cryptography.RSAEncryptionPadding.CreateOaep(System.Security.Cryptography.HashAlgorithmName)
+  commentId: M:System.Security.Cryptography.RSAEncryptionPadding.CreateOaep(System.Security.Cryptography.HashAlgorithmName)
+  id: CreateOaep(System.Security.Cryptography.HashAlgorithmName)
+  parent: System.Security.Cryptography.RSAEncryptionPadding
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.Cryptography.RSAEncryptionPadding.CreateOaep(System.Security.Cryptography.HashAlgorithmName)
+  type: Method
+  source:
+    remote:
+      path: src/System.Security.Cryptography.Algorithms/ref/System.Security.Cryptography.Algorithms.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: CreateOaep
+    path: src/System.Security.Cryptography.Algorithms/ref/System.Security.Cryptography.Algorithms.cs
+    startLine: 233
+  assemblies:
+  - System.Security.Cryptography.Algorithms
+  namespace: System.Security.Cryptography
+  summary: "\n<p>Creates a new <xref href=\"System.Security.Cryptography.RSAEncryptionPadding\" data-throw-if-not-resolved=\"false\"></xref> instance whose <xref href=\"System.Security.Cryptography.RSAEncryptionPadding.Mode\" data-throw-if-not-resolved=\"false\"></xref> is <xref href=\"System.Security.Cryptography.RSAEncryptionPaddingMode.Oaep\" data-throw-if-not-resolved=\"false\"></xref> with the given hash algorithm. </p>\n"
+  syntax:
+    content: public static RSAEncryptionPadding CreateOaep(HashAlgorithmName hashAlgorithm)
+    content.vb: Public Shared Function CreateOaep(hashAlgorithm As HashAlgorithmName) As RSAEncryptionPadding
+    parameters:
+    - id: hashAlgorithm
+      type: System.Security.Cryptography.HashAlgorithmName
+      description: "\n<p>The hash algorithm. </p>\n"
+    return:
+      type: System.Security.Cryptography.RSAEncryptionPadding
+      description: "\n<p>An object whose mode is <xref href=\"System.Security.Cryptography.RSAEncryptionPadding.Mode\" data-throw-if-not-resolved=\"false\"></xref> is <xref href=\"System.Security.Cryptography.RSAEncryptionPaddingMode.Oaep\" data-throw-if-not-resolved=\"false\"></xref> with the hash algorithm specified by <em>hashAlgorithm</em>. .</p>\n"
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>The <xref href=\"System.Security.Cryptography.HashAlgorithmName.Name\" data-throw-if-not-resolved=\"false\"></xref> property of <em>hashAlgorithm</em> is either <strong>null</strong> or <xref href=\"System.String.Empty\" data-throw-if-not-resolved=\"false\"></xref>. </p>\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  nameWithType: RSAEncryptionPadding.CreateOaep(HashAlgorithmName)
+- uid: System.Security.Cryptography.RSAEncryptionPadding.Equals(System.Object)
+  commentId: M:System.Security.Cryptography.RSAEncryptionPadding.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: System.Security.Cryptography.RSAEncryptionPadding
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.Cryptography.RSAEncryptionPadding.Equals(System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/System.Security.Cryptography.Algorithms/ref/System.Security.Cryptography.Algorithms.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Equals
+    path: src/System.Security.Cryptography.Algorithms/ref/System.Security.Cryptography.Algorithms.cs
+    startLine: 234
+  assemblies:
+  - System.Security.Cryptography.Algorithms
+  namespace: System.Security.Cryptography
+  summary: "\n<p>Determines whether the current instance is equal to the specified object. </p>\n"
+  syntax:
+    content: public override bool Equals(object obj)
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+    parameters:
+    - id: obj
+      type: System.Object
+      description: "\n<p>The object to compare. </p>\n"
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if <em>obj</em> is equal to the current instance; otherwise, <strong>false</strong>. </p>\n"
+  overridden: System.Object.Equals(System.Object)
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  nameWithType: RSAEncryptionPadding.Equals(Object)
+- uid: System.Security.Cryptography.RSAEncryptionPadding.Equals(System.Security.Cryptography.RSAEncryptionPadding)
+  commentId: M:System.Security.Cryptography.RSAEncryptionPadding.Equals(System.Security.Cryptography.RSAEncryptionPadding)
+  id: Equals(System.Security.Cryptography.RSAEncryptionPadding)
+  parent: System.Security.Cryptography.RSAEncryptionPadding
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.Cryptography.RSAEncryptionPadding.Equals(System.Security.Cryptography.RSAEncryptionPadding)
+  type: Method
+  source:
+    remote:
+      path: src/System.Security.Cryptography.Algorithms/ref/System.Security.Cryptography.Algorithms.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Equals
+    path: src/System.Security.Cryptography.Algorithms/ref/System.Security.Cryptography.Algorithms.cs
+    startLine: 235
+  assemblies:
+  - System.Security.Cryptography.Algorithms
+  namespace: System.Security.Cryptography
+  summary: "\n<p>Determines whether the current instance is equal to the specified <xref href=\"System.Security.Cryptography.RSAEncryptionPadding\" data-throw-if-not-resolved=\"false\"></xref> object. </p>\n"
+  syntax:
+    content: public bool Equals(RSAEncryptionPadding other)
+    content.vb: Public Function Equals(other As RSAEncryptionPadding) As Boolean
+    parameters:
+    - id: other
+      type: System.Security.Cryptography.RSAEncryptionPadding
+      description: "\n<p>The object to compare. </p>\n"
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if <em>other</em> is equal to the current instance; otherwise, <strong>false</strong>. </p>\n"
+  implements:
+  - System.IEquatable{System.Security.Cryptography.RSAEncryptionPadding}.Equals(System.Security.Cryptography.RSAEncryptionPadding)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: RSAEncryptionPadding.Equals(RSAEncryptionPadding)
+- uid: System.Security.Cryptography.RSAEncryptionPadding.GetHashCode
+  commentId: M:System.Security.Cryptography.RSAEncryptionPadding.GetHashCode
+  id: GetHashCode
+  parent: System.Security.Cryptography.RSAEncryptionPadding
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.Cryptography.RSAEncryptionPadding.GetHashCode()
+  type: Method
+  source:
+    remote:
+      path: src/System.Security.Cryptography.Algorithms/ref/System.Security.Cryptography.Algorithms.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: GetHashCode
+    path: src/System.Security.Cryptography.Algorithms/ref/System.Security.Cryptography.Algorithms.cs
+    startLine: 236
+  assemblies:
+  - System.Security.Cryptography.Algorithms
+  namespace: System.Security.Cryptography
+  summary: "\n<p>Returns the hash code of this <xref href=\"System.Security.Cryptography.RSAEncryptionPadding\" data-throw-if-not-resolved=\"false\"></xref> object. </p>\n"
+  syntax:
+    content: public override int GetHashCode()
+    content.vb: Public Overrides Function GetHashCode As Integer
+    return:
+      type: System.Int32
+      description: "\n<p>The hash code of this instance. </p>\n"
+  overridden: System.Object.GetHashCode
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  nameWithType: RSAEncryptionPadding.GetHashCode()
+- uid: System.Security.Cryptography.RSAEncryptionPadding.op_Equality(System.Security.Cryptography.RSAEncryptionPadding,System.Security.Cryptography.RSAEncryptionPadding)
+  commentId: M:System.Security.Cryptography.RSAEncryptionPadding.op_Equality(System.Security.Cryptography.RSAEncryptionPadding,System.Security.Cryptography.RSAEncryptionPadding)
+  id: op_Equality(System.Security.Cryptography.RSAEncryptionPadding,System.Security.Cryptography.RSAEncryptionPadding)
+  parent: System.Security.Cryptography.RSAEncryptionPadding
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.Cryptography.RSAEncryptionPadding.Equality(System.Security.Cryptography.RSAEncryptionPadding, System.Security.Cryptography.RSAEncryptionPadding)
+  type: Operator
+  source:
+    remote:
+      path: src/System.Security.Cryptography.Algorithms/ref/System.Security.Cryptography.Algorithms.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: op_Equality
+    path: src/System.Security.Cryptography.Algorithms/ref/System.Security.Cryptography.Algorithms.cs
+    startLine: 237
+  assemblies:
+  - System.Security.Cryptography.Algorithms
+  namespace: System.Security.Cryptography
+  summary: "\n<p>Indicates whether two specified <xref href=\"System.Security.Cryptography.RSAEncryptionPadding\" data-throw-if-not-resolved=\"false\"></xref> objects are equal. </p>\n"
+  syntax:
+    content: public static bool operator ==(RSAEncryptionPadding left, RSAEncryptionPadding right)
+    content.vb: Public Shared Operator =(left As RSAEncryptionPadding, right As RSAEncryptionPadding) As Boolean
+    parameters:
+    - id: left
+      type: System.Security.Cryptography.RSAEncryptionPadding
+      description: "\n<p>The first object to compare. </p>\n"
+    - id: right
+      type: System.Security.Cryptography.RSAEncryptionPadding
+      description: "\n<p>The second object to compare. </p>\n"
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if <strong>left</strong> and <strong>right</strong> are equal; otherwise, <strong>false</strong>. </p>\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  nameWithType: RSAEncryptionPadding.Equality(RSAEncryptionPadding, RSAEncryptionPadding)
+- uid: System.Security.Cryptography.RSAEncryptionPadding.op_Inequality(System.Security.Cryptography.RSAEncryptionPadding,System.Security.Cryptography.RSAEncryptionPadding)
+  commentId: M:System.Security.Cryptography.RSAEncryptionPadding.op_Inequality(System.Security.Cryptography.RSAEncryptionPadding,System.Security.Cryptography.RSAEncryptionPadding)
+  id: op_Inequality(System.Security.Cryptography.RSAEncryptionPadding,System.Security.Cryptography.RSAEncryptionPadding)
+  parent: System.Security.Cryptography.RSAEncryptionPadding
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.Cryptography.RSAEncryptionPadding.Inequality(System.Security.Cryptography.RSAEncryptionPadding, System.Security.Cryptography.RSAEncryptionPadding)
+  type: Operator
+  source:
+    remote:
+      path: src/System.Security.Cryptography.Algorithms/ref/System.Security.Cryptography.Algorithms.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: op_Inequality
+    path: src/System.Security.Cryptography.Algorithms/ref/System.Security.Cryptography.Algorithms.cs
+    startLine: 238
+  assemblies:
+  - System.Security.Cryptography.Algorithms
+  namespace: System.Security.Cryptography
+  summary: "\n<p>Indicates whether two specified <xref href=\"System.Security.Cryptography.RSAEncryptionPadding\" data-throw-if-not-resolved=\"false\"></xref> objects are unequal. </p>\n"
+  syntax:
+    content: public static bool operator !=(RSAEncryptionPadding left, RSAEncryptionPadding right)
+    content.vb: Public Shared Operator <>(left As RSAEncryptionPadding, right As RSAEncryptionPadding) As Boolean
+    parameters:
+    - id: left
+      type: System.Security.Cryptography.RSAEncryptionPadding
+      description: "\n<p>The first object to compare. </p>\n"
+    - id: right
+      type: System.Security.Cryptography.RSAEncryptionPadding
+      description: "\n<p>The second object to compare. </p>\n"
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if <strong>left</strong> and <strong>right</strong> are not equal; otherwise, <strong>false</strong>.</p>\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  nameWithType: RSAEncryptionPadding.Inequality(RSAEncryptionPadding, RSAEncryptionPadding)
+- uid: System.Security.Cryptography.RSAEncryptionPadding.ToString
+  commentId: M:System.Security.Cryptography.RSAEncryptionPadding.ToString
+  id: ToString
+  parent: System.Security.Cryptography.RSAEncryptionPadding
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.Cryptography.RSAEncryptionPadding.ToString()
+  type: Method
+  source:
+    remote:
+      path: src/System.Security.Cryptography.Algorithms/ref/System.Security.Cryptography.Algorithms.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: ToString
+    path: src/System.Security.Cryptography.Algorithms/ref/System.Security.Cryptography.Algorithms.cs
+    startLine: 239
+  assemblies:
+  - System.Security.Cryptography.Algorithms
+  namespace: System.Security.Cryptography
+  summary: "\n<p>Returns the string representation of the current <xref href=\"System.Security.Cryptography.RSAEncryptionPadding\" data-throw-if-not-resolved=\"false\"></xref> instance. </p>\n"
+  syntax:
+    content: public override string ToString()
+    content.vb: Public Overrides Function ToString As String
+    return:
+      type: System.String
+      description: "\n<p>The string representation of the current object. </p>\n"
+  overridden: System.Object.ToString
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  nameWithType: RSAEncryptionPadding.ToString()
+references:
+- uid: System.Security.Cryptography
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.Cryptography
+  commentId: N:System.Security.Cryptography
+  nameWithType: System.Security.Cryptography
+- uid: System.Object
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Object
+  commentId: T:System.Object
+  nameWithType: Object
+- uid: System.IEquatable{System.Security.Cryptography.RSAEncryptionPadding}
+  parent: System
+  definition: System.IEquatable`1
+  name: "XXX"
+  fullName: System.IEquatable<System.Security.Cryptography.RSAEncryptionPadding>
+  fullname.vb: System.IEquatable(Of System.Security.Cryptography.RSAEncryptionPadding)
+  name.vb: IEquatable(Of RSAEncryptionPadding)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: "XXX"
+    fullName: System.IEquatable
+    isExternal: true
+  - name: "<"
+    fullName: <
+  - uid: System.Security.Cryptography.RSAEncryptionPadding
+    name: "XXX"
+    fullName: System.Security.Cryptography.RSAEncryptionPadding
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: "XXX"
+    fullName: System.IEquatable
+    isExternal: true
+  - name: 'XXX '
+    fullName: '(Of '
+  - uid: System.Security.Cryptography.RSAEncryptionPadding
+    name: "XXX"
+    fullName: System.Security.Cryptography.RSAEncryptionPadding
+  - name: "XXX"
+    fullName: )
+  commentId: T:System.IEquatable{System.Security.Cryptography.RSAEncryptionPadding}
+  nameWithType: IEquatable<RSAEncryptionPadding>
+  nameWithType.vb: IEquatable(Of RSAEncryptionPadding)
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  nameWithType: Object.Equals(Object, Object)
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.GetType
+  nameWithType: Object.GetType()
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.MemberwiseClone
+  nameWithType: Object.MemberwiseClone()
+- uid: System
+  isExternal: false
+  name: "XXX"
+  fullName: System
+  commentId: N:System
+  nameWithType: System
+- uid: System.IEquatable`1
+  isExternal: false
+  name: "XXX"
+  fullName: System.IEquatable<T>
+  fullname.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: "XXX"
+    fullName: System.IEquatable
+  - name: "<"
+    fullName: <
+  - name: "XXX"
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: "XXX"
+    fullName: System.IEquatable
+  - name: 'XXX '
+    fullName: '(Of '
+  - name: "XXX"
+    fullName: T
+  - name: "XXX"
+    fullName: )
+  commentId: T:System.IEquatable`1
+  nameWithType: IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+- uid: System.Security.Cryptography.RSAEncryptionPaddingMode
+  parent: System.Security.Cryptography
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.Cryptography.RSAEncryptionPaddingMode
+  commentId: T:System.Security.Cryptography.RSAEncryptionPaddingMode
+  nameWithType: RSAEncryptionPaddingMode
+- uid: System.Security.Cryptography.HashAlgorithmName
+  parent: System.Security.Cryptography
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.Cryptography.HashAlgorithmName
+  commentId: T:System.Security.Cryptography.HashAlgorithmName
+  nameWithType: HashAlgorithmName
+- uid: System.Security.Cryptography.RSAEncryptionPadding
+  parent: System.Security.Cryptography
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.Cryptography.RSAEncryptionPadding
+  commentId: T:System.Security.Cryptography.RSAEncryptionPadding
+  nameWithType: RSAEncryptionPadding
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.Equals(System.Object)
+  nameWithType: Object.Equals(Object)
+- uid: System.Boolean
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Boolean
+  commentId: T:System.Boolean
+  nameWithType: Boolean
+- uid: System.IEquatable{System.Security.Cryptography.RSAEncryptionPadding}.Equals(System.Security.Cryptography.RSAEncryptionPadding)
+  parent: System.IEquatable{System.Security.Cryptography.RSAEncryptionPadding}
+  definition: System.IEquatable`1.Equals(`0)
+  name: "XXX"
+  fullName: System.IEquatable<System.Security.Cryptography.RSAEncryptionPadding>.Equals(System.Security.Cryptography.RSAEncryptionPadding)
+  fullname.vb: System.IEquatable(Of System.Security.Cryptography.RSAEncryptionPadding).Equals(System.Security.Cryptography.RSAEncryptionPadding)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: "XXX"
+    fullName: System.IEquatable<System.Security.Cryptography.RSAEncryptionPadding>.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Security.Cryptography.RSAEncryptionPadding
+    name: "XXX"
+    fullName: System.Security.Cryptography.RSAEncryptionPadding
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: "XXX"
+    fullName: System.IEquatable(Of System.Security.Cryptography.RSAEncryptionPadding).Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Security.Cryptography.RSAEncryptionPadding
+    name: "XXX"
+    fullName: System.Security.Cryptography.RSAEncryptionPadding
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.IEquatable{System.Security.Cryptography.RSAEncryptionPadding}.Equals(System.Security.Cryptography.RSAEncryptionPadding)
+  nameWithType: IEquatable<RSAEncryptionPadding>.Equals(RSAEncryptionPadding)
+  nameWithType.vb: IEquatable(Of RSAEncryptionPadding).Equals(RSAEncryptionPadding)
+- uid: System.IEquatable`1.Equals(`0)
+  isExternal: false
+  name: "XXX"
+  fullName: System.IEquatable<T>.Equals(T)
+  fullname.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: "XXX"
+    fullName: System.IEquatable<T>.Equals
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: T
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: "XXX"
+    fullName: System.IEquatable(Of T).Equals
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: T
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.IEquatable`1.Equals(`0)
+  nameWithType: IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.GetHashCode
+  nameWithType: Object.GetHashCode()
+- uid: System.Int32
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Int32
+  commentId: T:System.Int32
+  nameWithType: Int32
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.ToString
+  nameWithType: Object.ToString()
+- uid: System.String
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.String
+  commentId: T:System.String
+  nameWithType: String
+- uid: System.ArgumentException
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentException
+  nameWithType: ArgumentException
+  commentId: T:System.ArgumentException

@@ -1,0 +1,604 @@
+items:
+- uid: System.Security.AccessControl.ObjectAuditRule
+  commentId: T:System.Security.AccessControl.ObjectAuditRule
+  id: ObjectAuditRule
+  parent: System.Security.AccessControl
+  children:
+  - System.Security.AccessControl.ObjectAuditRule.#ctor(System.Security.Principal.IdentityReference,System.Int32,System.Boolean,System.Security.AccessControl.InheritanceFlags,System.Security.AccessControl.PropagationFlags,System.Guid,System.Guid,System.Security.AccessControl.AuditFlags)
+  - System.Security.AccessControl.ObjectAuditRule.InheritedObjectType
+  - System.Security.AccessControl.ObjectAuditRule.ObjectFlags
+  - System.Security.AccessControl.ObjectAuditRule.ObjectType
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.AccessControl.ObjectAuditRule
+  type: Class
+  source:
+    remote:
+      path: src/System.Security.AccessControl/ref/System.Security.AccessControl.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: ObjectAuditRule
+    path: src/System.Security.AccessControl/ref/System.Security.AccessControl.cs
+    startLine: 361
+  assemblies:
+  - System.Security.AccessControl
+  namespace: System.Security.AccessControl
+  summary: "\n<p>Represents a combination of a user's identity, an access mask, and audit conditions. An <xref href=\"System.Security.AccessControl.ObjectAuditRule\" data-throw-if-not-resolved=\"false\"></xref> object also contains information about the type of object to which the rule applies, the type of child object that can inherit the rule, how the rule is inherited by child objects, and how that inheritance is propagated.</p>\n"
+  syntax:
+    content: 'public abstract class ObjectAuditRule : AuditRule'
+    content.vb: >-
+      Public MustInherit Class ObjectAuditRule
+          Inherits AuditRule
+  inheritance:
+  - System.Object
+  - System.Security.AccessControl.AuthorizationRule
+  - System.Security.AccessControl.AuditRule
+  inheritedMembers:
+  - System.Security.AccessControl.AuditRule.AuditFlags
+  - System.Security.AccessControl.AuthorizationRule.AccessMask
+  - System.Security.AccessControl.AuthorizationRule.IdentityReference
+  - System.Security.AccessControl.AuthorizationRule.InheritanceFlags
+  - System.Security.AccessControl.AuthorizationRule.IsInherited
+  - System.Security.AccessControl.AuthorizationRule.PropagationFlags
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+  nameWithType: ObjectAuditRule
+- uid: System.Security.AccessControl.ObjectAuditRule.#ctor(System.Security.Principal.IdentityReference,System.Int32,System.Boolean,System.Security.AccessControl.InheritanceFlags,System.Security.AccessControl.PropagationFlags,System.Guid,System.Guid,System.Security.AccessControl.AuditFlags)
+  commentId: M:System.Security.AccessControl.ObjectAuditRule.#ctor(System.Security.Principal.IdentityReference,System.Int32,System.Boolean,System.Security.AccessControl.InheritanceFlags,System.Security.AccessControl.PropagationFlags,System.Guid,System.Guid,System.Security.AccessControl.AuditFlags)
+  id: '#ctor(System.Security.Principal.IdentityReference,System.Int32,System.Boolean,System.Security.AccessControl.InheritanceFlags,System.Security.AccessControl.PropagationFlags,System.Guid,System.Guid,System.Security.AccessControl.AuditFlags)'
+  parent: System.Security.AccessControl.ObjectAuditRule
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.AccessControl.ObjectAuditRule.ObjectAuditRule(System.Security.Principal.IdentityReference, System.Int32, System.Boolean, System.Security.AccessControl.InheritanceFlags, System.Security.AccessControl.PropagationFlags, System.Guid, System.Guid, System.Security.AccessControl.AuditFlags)
+  type: Constructor
+  source:
+    remote:
+      path: src/System.Security.AccessControl/ref/System.Security.AccessControl.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: .ctor
+    path: src/System.Security.AccessControl/ref/System.Security.AccessControl.cs
+    startLine: 363
+  assemblies:
+  - System.Security.AccessControl
+  namespace: System.Security.AccessControl
+  summary: "\n<p>Initializes a new instance of the <xref href=\"System.Security.AccessControl.ObjectAuditRule\" data-throw-if-not-resolved=\"false\"></xref> class.</p>\n"
+  syntax:
+    content: protected ObjectAuditRule(IdentityReference identity, int accessMask, bool isInherited, InheritanceFlags inheritanceFlags, PropagationFlags propagationFlags, Guid objectType, Guid inheritedObjectType, AuditFlags auditFlags)
+    content.vb: Protected Sub New(identity As IdentityReference, accessMask As Integer, isInherited As Boolean, inheritanceFlags As InheritanceFlags, propagationFlags As PropagationFlags, objectType As Guid, inheritedObjectType As Guid, auditFlags As AuditFlags)
+    parameters:
+    - id: identity
+      type: System.Security.Principal.IdentityReference
+      description: "\n<p>The identity to which the access rule applies.  It must be an object that can be cast as a <xref href=\"System.Security.Principal.SecurityIdentifier\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    - id: accessMask
+      type: System.Int32
+      description: "\n<p>The access mask of this rule. The access mask is a 32-bit collection of anonymous bits, the meaning of which is defined by the individual integrators.</p>\n"
+    - id: isInherited
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if this rule is inherited from a parent container.</p>\n"
+    - id: inheritanceFlags
+      type: System.Security.AccessControl.InheritanceFlags
+      description: "\n<p>Specifies the inheritance properties of the access rule.</p>\n"
+    - id: propagationFlags
+      type: System.Security.AccessControl.PropagationFlags
+      description: "\n<p>Whether inherited access rules are automatically propagated. The propagation flags are ignored if <em>inheritanceFlags</em> is set to <xref href=\"System.Security.AccessControl.InheritanceFlags.None\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    - id: objectType
+      type: System.Guid
+      description: "\n<p>The type of object to which the rule applies.</p>\n"
+    - id: inheritedObjectType
+      type: System.Guid
+      description: "\n<p>The type of child object that can inherit the rule.</p>\n"
+    - id: auditFlags
+      type: System.Security.AccessControl.AuditFlags
+      description: "\n<p>The audit conditions.</p>\n"
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>The value of the <em>identity</em> parameter cannot be cast as a <xref href=\"System.Security.Principal.SecurityIdentifier\" data-throw-if-not-resolved=\"false\"></xref>, or the <em>type</em> parameter contains an invalid value.</p>\n"
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>The value of the <em>accessMask</em> parameter is 0, or the <em>inheritanceFlags</em> or <em>propagationFlags</em> parameters contain unrecognized flag values.</p>\n"
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  nameWithType: ObjectAuditRule.ObjectAuditRule(IdentityReference, Int32, Boolean, InheritanceFlags, PropagationFlags, Guid, Guid, AuditFlags)
+- uid: System.Security.AccessControl.ObjectAuditRule.InheritedObjectType
+  commentId: P:System.Security.AccessControl.ObjectAuditRule.InheritedObjectType
+  id: InheritedObjectType
+  parent: System.Security.AccessControl.ObjectAuditRule
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.AccessControl.ObjectAuditRule.InheritedObjectType
+  type: Property
+  source:
+    remote:
+      path: src/System.Security.AccessControl/ref/System.Security.AccessControl.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: InheritedObjectType
+    path: src/System.Security.AccessControl/ref/System.Security.AccessControl.cs
+    startLine: 364
+  assemblies:
+  - System.Security.AccessControl
+  namespace: System.Security.AccessControl
+  summary: "\n<p>Gets the type of child object that can inherit the <xref href=\"System.Security.AccessControl.ObjectAuditRule\" data-throw-if-not-resolved=\"false\"></xref> object.</p>\n"
+  syntax:
+    content: public Guid InheritedObjectType { get; }
+    content.vb: Public ReadOnly Property InheritedObjectType As Guid
+    parameters: []
+    return:
+      type: System.Guid
+      description: "\n<p>The type of child object that can inherit the <xref href=\"System.Security.AccessControl.ObjectAuditRule\" data-throw-if-not-resolved=\"false\"></xref> object.</p>\n"
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  nameWithType: ObjectAuditRule.InheritedObjectType
+- uid: System.Security.AccessControl.ObjectAuditRule.ObjectFlags
+  commentId: P:System.Security.AccessControl.ObjectAuditRule.ObjectFlags
+  id: ObjectFlags
+  parent: System.Security.AccessControl.ObjectAuditRule
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.AccessControl.ObjectAuditRule.ObjectFlags
+  type: Property
+  source:
+    remote:
+      path: src/System.Security.AccessControl/ref/System.Security.AccessControl.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: ObjectFlags
+    path: src/System.Security.AccessControl/ref/System.Security.AccessControl.cs
+    startLine: 365
+  assemblies:
+  - System.Security.AccessControl
+  namespace: System.Security.AccessControl
+  summary: "\n<p>\n<xref href=\"System.Security.AccessControl.ObjectAuditRule.ObjectType\" data-throw-if-not-resolved=\"false\"></xref> and <xref href=\"System.Security.AccessControl.ObjectAuditRule.InheritedObjectType\" data-throw-if-not-resolved=\"false\"></xref> properties of the <xref href=\"System.Security.AccessControl.ObjectAuditRule\" data-throw-if-not-resolved=\"false\"></xref> object contain valid values.</p>\n"
+  syntax:
+    content: public ObjectAceFlags ObjectFlags { get; }
+    content.vb: Public ReadOnly Property ObjectFlags As ObjectAceFlags
+    parameters: []
+    return:
+      type: System.Security.AccessControl.ObjectAceFlags
+      description: "\n<p>\n<xref href=\"System.Security.AccessControl.ObjectAceFlags.ObjectAceTypePresent\" data-throw-if-not-resolved=\"false\"></xref> specifies that the <xref href=\"System.Security.AccessControl.ObjectAuditRule.ObjectType\" data-throw-if-not-resolved=\"false\"></xref> property contains a valid value. <xref href=\"System.Security.AccessControl.ObjectAceFlags.InheritedObjectAceTypePresent\" data-throw-if-not-resolved=\"false\"></xref> specifies that the <xref href=\"System.Security.AccessControl.ObjectAuditRule.InheritedObjectType\" data-throw-if-not-resolved=\"false\"></xref> property contains a valid value. These values can be combined with a logical OR.</p>\n"
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  nameWithType: ObjectAuditRule.ObjectFlags
+- uid: System.Security.AccessControl.ObjectAuditRule.ObjectType
+  commentId: P:System.Security.AccessControl.ObjectAuditRule.ObjectType
+  id: ObjectType
+  parent: System.Security.AccessControl.ObjectAuditRule
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Security.AccessControl.ObjectAuditRule.ObjectType
+  type: Property
+  source:
+    remote:
+      path: src/System.Security.AccessControl/ref/System.Security.AccessControl.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: ObjectType
+    path: src/System.Security.AccessControl/ref/System.Security.AccessControl.cs
+    startLine: 366
+  assemblies:
+  - System.Security.AccessControl
+  namespace: System.Security.AccessControl
+  summary: "\n<p>Gets the type of object to which the <xref href=\"System.Security.AccessControl.ObjectAuditRule\" data-throw-if-not-resolved=\"false\"></xref> applies.</p>\n"
+  syntax:
+    content: public Guid ObjectType { get; }
+    content.vb: Public ReadOnly Property ObjectType As Guid
+    parameters: []
+    return:
+      type: System.Guid
+      description: "\n<p>The type of object to which the <xref href=\"System.Security.AccessControl.ObjectAuditRule\" data-throw-if-not-resolved=\"false\"></xref> applies.</p>\n"
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  nameWithType: ObjectAuditRule.ObjectType
+references:
+- uid: System.Security.AccessControl
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.AccessControl
+  commentId: N:System.Security.AccessControl
+  nameWithType: System.Security.AccessControl
+- uid: System.Object
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Object
+  commentId: T:System.Object
+  nameWithType: Object
+- uid: System.Security.AccessControl.AuthorizationRule
+  parent: System.Security.AccessControl
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.AccessControl.AuthorizationRule
+  commentId: T:System.Security.AccessControl.AuthorizationRule
+  nameWithType: AuthorizationRule
+- uid: System.Security.AccessControl.AuditRule
+  parent: System.Security.AccessControl
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.AccessControl.AuditRule
+  commentId: T:System.Security.AccessControl.AuditRule
+  nameWithType: AuditRule
+- uid: System.Security.AccessControl.AuditRule.AuditFlags
+  parent: System.Security.AccessControl.AuditRule
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.AccessControl.AuditRule.AuditFlags
+  commentId: P:System.Security.AccessControl.AuditRule.AuditFlags
+  nameWithType: AuditRule.AuditFlags
+- uid: System.Security.AccessControl.AuthorizationRule.AccessMask
+  parent: System.Security.AccessControl.AuthorizationRule
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.AccessControl.AuthorizationRule.AccessMask
+  commentId: P:System.Security.AccessControl.AuthorizationRule.AccessMask
+  nameWithType: AuthorizationRule.AccessMask
+- uid: System.Security.AccessControl.AuthorizationRule.IdentityReference
+  parent: System.Security.AccessControl.AuthorizationRule
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.AccessControl.AuthorizationRule.IdentityReference
+  commentId: P:System.Security.AccessControl.AuthorizationRule.IdentityReference
+  nameWithType: AuthorizationRule.IdentityReference
+- uid: System.Security.AccessControl.AuthorizationRule.InheritanceFlags
+  parent: System.Security.AccessControl.AuthorizationRule
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.AccessControl.AuthorizationRule.InheritanceFlags
+  commentId: P:System.Security.AccessControl.AuthorizationRule.InheritanceFlags
+  nameWithType: AuthorizationRule.InheritanceFlags
+- uid: System.Security.AccessControl.AuthorizationRule.IsInherited
+  parent: System.Security.AccessControl.AuthorizationRule
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.AccessControl.AuthorizationRule.IsInherited
+  commentId: P:System.Security.AccessControl.AuthorizationRule.IsInherited
+  nameWithType: AuthorizationRule.IsInherited
+- uid: System.Security.AccessControl.AuthorizationRule.PropagationFlags
+  parent: System.Security.AccessControl.AuthorizationRule
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.AccessControl.AuthorizationRule.PropagationFlags
+  commentId: P:System.Security.AccessControl.AuthorizationRule.PropagationFlags
+  nameWithType: AuthorizationRule.PropagationFlags
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.ToString
+  nameWithType: Object.ToString()
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.Equals(System.Object)
+  nameWithType: Object.Equals(Object)
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  nameWithType: Object.Equals(Object, Object)
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.GetHashCode
+  nameWithType: Object.GetHashCode()
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.GetType
+  nameWithType: Object.GetType()
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.MemberwiseClone
+  nameWithType: Object.MemberwiseClone()
+- uid: System
+  isExternal: false
+  name: "XXX"
+  fullName: System
+  commentId: N:System
+  nameWithType: System
+- uid: System.Security.Principal.IdentityReference
+  parent: System.Security.Principal
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.Principal.IdentityReference
+  commentId: T:System.Security.Principal.IdentityReference
+  nameWithType: IdentityReference
+- uid: System.Int32
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Int32
+  commentId: T:System.Int32
+  nameWithType: Int32
+- uid: System.Boolean
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Boolean
+  commentId: T:System.Boolean
+  nameWithType: Boolean
+- uid: System.Security.AccessControl.InheritanceFlags
+  parent: System.Security.AccessControl
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.AccessControl.InheritanceFlags
+  commentId: T:System.Security.AccessControl.InheritanceFlags
+  nameWithType: InheritanceFlags
+- uid: System.Security.AccessControl.PropagationFlags
+  parent: System.Security.AccessControl
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.AccessControl.PropagationFlags
+  commentId: T:System.Security.AccessControl.PropagationFlags
+  nameWithType: PropagationFlags
+- uid: System.Guid
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Guid
+  commentId: T:System.Guid
+  nameWithType: Guid
+- uid: System.Security.AccessControl.AuditFlags
+  parent: System.Security.AccessControl
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.AccessControl.AuditFlags
+  commentId: T:System.Security.AccessControl.AuditFlags
+  nameWithType: AuditFlags
+- uid: System.Security.Principal
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.Principal
+  commentId: N:System.Security.Principal
+  nameWithType: System.Security.Principal
+- uid: System.Security.AccessControl.ObjectAceFlags
+  parent: System.Security.AccessControl
+  isExternal: false
+  name: "XXX"
+  fullName: System.Security.AccessControl.ObjectAceFlags
+  commentId: T:System.Security.AccessControl.ObjectAceFlags
+  nameWithType: ObjectAceFlags
+- uid: System.ArgumentException
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentException
+  nameWithType: ArgumentException
+  commentId: T:System.ArgumentException
+- uid: System.ArgumentOutOfRangeException
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentOutOfRangeException
+  nameWithType: ArgumentOutOfRangeException
+  commentId: T:System.ArgumentOutOfRangeException

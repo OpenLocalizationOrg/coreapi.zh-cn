@@ -1,0 +1,2021 @@
+items:
+- uid: System.Data.Common.DbConnectionStringBuilder
+  commentId: T:System.Data.Common.DbConnectionStringBuilder
+  id: DbConnectionStringBuilder
+  parent: System.Data.Common
+  children:
+  - System.Data.Common.DbConnectionStringBuilder.#ctor
+  - System.Data.Common.DbConnectionStringBuilder.Add(System.String,System.Object)
+  - System.Data.Common.DbConnectionStringBuilder.AppendKeyValuePair(System.Text.StringBuilder,System.String,System.String)
+  - System.Data.Common.DbConnectionStringBuilder.Clear
+  - System.Data.Common.DbConnectionStringBuilder.ConnectionString
+  - System.Data.Common.DbConnectionStringBuilder.ContainsKey(System.String)
+  - System.Data.Common.DbConnectionStringBuilder.Count
+  - System.Data.Common.DbConnectionStringBuilder.EquivalentTo(System.Data.Common.DbConnectionStringBuilder)
+  - System.Data.Common.DbConnectionStringBuilder.Item(System.String)
+  - System.Data.Common.DbConnectionStringBuilder.Keys
+  - System.Data.Common.DbConnectionStringBuilder.Remove(System.String)
+  - System.Data.Common.DbConnectionStringBuilder.ShouldSerialize(System.String)
+  - System.Data.Common.DbConnectionStringBuilder.System#Collections#ICollection#CopyTo(System.Array,System.Int32)
+  - System.Data.Common.DbConnectionStringBuilder.System#Collections#ICollection#IsSynchronized
+  - System.Data.Common.DbConnectionStringBuilder.System#Collections#ICollection#SyncRoot
+  - System.Data.Common.DbConnectionStringBuilder.System#Collections#IDictionary#Add(System.Object,System.Object)
+  - System.Data.Common.DbConnectionStringBuilder.System#Collections#IDictionary#Contains(System.Object)
+  - System.Data.Common.DbConnectionStringBuilder.System#Collections#IDictionary#GetEnumerator
+  - System.Data.Common.DbConnectionStringBuilder.System#Collections#IDictionary#IsFixedSize
+  - System.Data.Common.DbConnectionStringBuilder.System#Collections#IDictionary#IsReadOnly
+  - System.Data.Common.DbConnectionStringBuilder.System#Collections#IDictionary#Item(System.Object)
+  - System.Data.Common.DbConnectionStringBuilder.System#Collections#IDictionary#Remove(System.Object)
+  - System.Data.Common.DbConnectionStringBuilder.System#Collections#IEnumerable#GetEnumerator
+  - System.Data.Common.DbConnectionStringBuilder.ToString
+  - System.Data.Common.DbConnectionStringBuilder.TryGetValue(System.String,System.Object@)
+  - System.Data.Common.DbConnectionStringBuilder.Values
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Data.Common.DbConnectionStringBuilder
+  type: Class
+  source:
+    remote:
+      path: src/System.Data.Common/src/System/Data/Common/DbConnectionStringBuilder.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: DbConnectionStringBuilder
+    path: src/System.Data.Common/src/System/Data/Common/DbConnectionStringBuilder.cs
+    startLine: 21
+  assemblies:
+  - System.Data.Common
+  namespace: System.Data.Common
+  summary: "\n<p>Provides a base class for strongly typed connection string builders.</p>\n"
+  syntax:
+    content: 'public class DbConnectionStringBuilder : IDictionary, ICollection, IEnumerable'
+    content.vb: >-
+      Public Class DbConnectionStringBuilder
+          Implements IDictionary, ICollection, IEnumerable
+  inheritance:
+  - System.Object
+  implements:
+  - System.Collections.IDictionary
+  - System.Collections.ICollection
+  - System.Collections.IEnumerable
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+  nameWithType: DbConnectionStringBuilder
+  extensionMethods:
+  - System.Collections.IEnumerable.System.Linq.Queryable.AsQueryable
+  - System.Collections.IEnumerable.System.Linq.ParallelEnumerable.AsParallel
+  - System.Collections.IEnumerable.System.Linq.Enumerable.Cast``1
+  - System.Collections.IEnumerable.System.Linq.Enumerable.OfType``1
+- uid: System.Data.Common.DbConnectionStringBuilder.#ctor
+  commentId: M:System.Data.Common.DbConnectionStringBuilder.#ctor
+  id: '#ctor'
+  parent: System.Data.Common.DbConnectionStringBuilder
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Data.Common.DbConnectionStringBuilder.DbConnectionStringBuilder()
+  type: Constructor
+  source:
+    remote:
+      path: src/System.Data.Common/src/System/Data/Common/DbConnectionStringBuilder.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: .ctor
+    path: src/System.Data.Common/src/System/Data/Common/DbConnectionStringBuilder.cs
+    startLine: 31
+  assemblies:
+  - System.Data.Common
+  namespace: System.Data.Common
+  summary: "\n<p>Initializes a new instance of the <xref href=\"System.Data.Common.DbConnectionStringBuilder\" data-throw-if-not-resolved=\"false\"></xref> class.</p>\n"
+  syntax:
+    content: public DbConnectionStringBuilder()
+    content.vb: Public Sub New
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: DbConnectionStringBuilder.DbConnectionStringBuilder()
+- uid: System.Data.Common.DbConnectionStringBuilder.ConnectionString
+  commentId: P:System.Data.Common.DbConnectionStringBuilder.ConnectionString
+  id: ConnectionString
+  parent: System.Data.Common.DbConnectionStringBuilder
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Data.Common.DbConnectionStringBuilder.ConnectionString
+  type: Property
+  source:
+    remote:
+      path: src/System.Data.Common/src/System/Data/Common/DbConnectionStringBuilder.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: ConnectionString
+    path: src/System.Data.Common/src/System/Data/Common/DbConnectionStringBuilder.cs
+    startLine: 91
+  assemblies:
+  - System.Data.Common
+  namespace: System.Data.Common
+  summary: "\n<p>Gets or sets the connection string associated with the <xref href=\"System.Data.Common.DbConnectionStringBuilder\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  syntax:
+    content: public string ConnectionString { get; set; }
+    content.vb: Public Property ConnectionString As String
+    parameters: []
+    return:
+      type: System.String
+      description: "\n<p>The current connection string, created from the key/value pairs that are contained within the <xref href=\"System.Data.Common.DbConnectionStringBuilder\" data-throw-if-not-resolved=\"false\"></xref>. The default value is an empty string.</p>\n"
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>An invalid connection string argument has been supplied.</p>\n"
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  nameWithType: DbConnectionStringBuilder.ConnectionString
+- uid: System.Data.Common.DbConnectionStringBuilder.Count
+  commentId: P:System.Data.Common.DbConnectionStringBuilder.Count
+  id: Count
+  parent: System.Data.Common.DbConnectionStringBuilder
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Data.Common.DbConnectionStringBuilder.Count
+  type: Property
+  source:
+    remote:
+      path: src/System.Data.Common/src/System/Data/Common/DbConnectionStringBuilder.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Count
+    path: src/System.Data.Common/src/System/Data/Common/DbConnectionStringBuilder.cs
+    startLine: 142
+  assemblies:
+  - System.Data.Common
+  namespace: System.Data.Common
+  summary: "\n<p>Gets the current number of keys that are contained within the <xref href=\"System.Data.Common.DbConnectionStringBuilder.ConnectionString\" data-throw-if-not-resolved=\"false\"></xref> property.</p>\n"
+  syntax:
+    content: public virtual int Count { get; }
+    content.vb: Public Overridable ReadOnly Property Count As Integer
+    parameters: []
+    return:
+      type: System.Int32
+      description: "\n<p>The number of keys that are contained within the connection string maintained by the <xref href=\"System.Data.Common.DbConnectionStringBuilder\" data-throw-if-not-resolved=\"false\"></xref> instance.</p>\n"
+  implements:
+  - System.Collections.ICollection.Count
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+  nameWithType: DbConnectionStringBuilder.Count
+- uid: System.Data.Common.DbConnectionStringBuilder.Item(System.String)
+  commentId: P:System.Data.Common.DbConnectionStringBuilder.Item(System.String)
+  id: Item(System.String)
+  parent: System.Data.Common.DbConnectionStringBuilder
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Data.Common.DbConnectionStringBuilder.Item[System.String]
+  type: Property
+  source:
+    remote:
+      path: src/System.Data.Common/src/System/Data/Common/DbConnectionStringBuilder.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: this[]
+    path: src/System.Data.Common/src/System/Data/Common/DbConnectionStringBuilder.cs
+    startLine: 65
+  assemblies:
+  - System.Data.Common
+  namespace: System.Data.Common
+  summary: "\n<p>Gets or sets the value associated with the specified key.</p>\n"
+  syntax:
+    content: public virtual object this[string keyword] { get; set; }
+    content.vb: Public Overridable Property Item(keyword As String) As Object
+    parameters:
+    - id: keyword
+      type: System.String
+      description: "\n<p>The key of the item to get or set.</p>\n"
+    return:
+      type: System.Object
+      description: "\n<p>The value associated with the specified key. If the specified key is not found, trying to get it returns a null reference (<strong>Nothing</strong> in Visual Basic), and trying to set it creates a new element using the specified key.</p>\n<p>Passing a null (<strong>Nothing</strong> in Visual Basic) key throws an <xref href=\"System.ArgumentNullException\" data-throw-if-not-resolved=\"false\"></xref>. Assigning a null value removes the key/value pair.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>keyword</em> is a null reference (<strong>Nothing</strong> in Visual Basic).</p>\n"
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: "\n<p>The property is set, and the <xref href=\"System.Data.Common.DbConnectionStringBuilder\" data-throw-if-not-resolved=\"false\"></xref> is read-only. </p>\n<p>-or-</p>\n<p>The property is set, <em>keyword</em> does not exist in the collection, and the <xref href=\"System.Data.Common.DbConnectionStringBuilder\" data-throw-if-not-resolved=\"false\"></xref> has a fixed size.</p>\n"
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+  fullName.vb: System.Data.Common.DbConnectionStringBuilder.Item(System.String)
+  name.vb: Item(String)
+  nameWithType: DbConnectionStringBuilder.Item[String]
+  nameWithType.vb: DbConnectionStringBuilder.Item(String)
+- uid: System.Data.Common.DbConnectionStringBuilder.Keys
+  commentId: P:System.Data.Common.DbConnectionStringBuilder.Keys
+  id: Keys
+  parent: System.Data.Common.DbConnectionStringBuilder
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Data.Common.DbConnectionStringBuilder.Keys
+  type: Property
+  source:
+    remote:
+      path: src/System.Data.Common/src/System/Data/Common/DbConnectionStringBuilder.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Keys
+    path: src/System.Data.Common/src/System/Data/Common/DbConnectionStringBuilder.cs
+    startLine: 161
+  assemblies:
+  - System.Data.Common
+  namespace: System.Data.Common
+  summary: "\n<p>Gets an <xref href=\"System.Collections.ICollection\" data-throw-if-not-resolved=\"false\"></xref> that contains the keys in the <xref href=\"System.Data.Common.DbConnectionStringBuilder\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  syntax:
+    content: public virtual ICollection Keys { get; }
+    content.vb: Public Overridable ReadOnly Property Keys As ICollection
+    parameters: []
+    return:
+      type: System.Collections.ICollection
+      description: "\n<p>An <xref href=\"System.Collections.ICollection\" data-throw-if-not-resolved=\"false\"></xref> that contains the keys in the <xref href=\"System.Data.Common.DbConnectionStringBuilder\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  implements:
+  - System.Collections.IDictionary.Keys
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+  nameWithType: DbConnectionStringBuilder.Keys
+- uid: System.Data.Common.DbConnectionStringBuilder.System#Collections#ICollection#IsSynchronized
+  commentId: P:System.Data.Common.DbConnectionStringBuilder.System#Collections#ICollection#IsSynchronized
+  id: System#Collections#ICollection#IsSynchronized
+  isEii: true
+  parent: System.Data.Common.DbConnectionStringBuilder
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Data.Common.DbConnectionStringBuilder.System.Collections.ICollection.IsSynchronized
+  type: Property
+  source:
+    remote:
+      path: src/System.Data.Common/src/System/Data/Common/DbConnectionStringBuilder.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: System.Collections.ICollection.IsSynchronized
+    path: src/System.Data.Common/src/System/Data/Common/DbConnectionStringBuilder.cs
+    startLine: 156
+  assemblies:
+  - System.Data.Common
+  namespace: System.Data.Common
+  summary: "\n<p>Gets a value indicating whether access to the <xref href=\"System.Collections.ICollection\" data-throw-if-not-resolved=\"false\"></xref> is synchronized (thread safe).</p>\n"
+  syntax:
+    content: bool ICollection.IsSynchronized { get; }
+    content.vb: ReadOnly WriteOnly Property System.Collections.ICollection.IsSynchronized As Boolean Implements ICollection.IsSynchronized
+    parameters: []
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if access to the <xref href=\"System.Collections.ICollection\" data-throw-if-not-resolved=\"false\"></xref> is synchronized (thread safe); otherwise, <strong>false</strong>.</p>\n"
+  implements:
+  - System.Collections.ICollection.IsSynchronized
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+  name.vb: System.Collections.ICollection.IsSynchronized
+  nameWithType: DbConnectionStringBuilder.ICollection.IsSynchronized
+  nameWithType.vb: DbConnectionStringBuilder.System.Collections.ICollection.IsSynchronized
+- uid: System.Data.Common.DbConnectionStringBuilder.System#Collections#ICollection#SyncRoot
+  commentId: P:System.Data.Common.DbConnectionStringBuilder.System#Collections#ICollection#SyncRoot
+  id: System#Collections#ICollection#SyncRoot
+  isEii: true
+  parent: System.Data.Common.DbConnectionStringBuilder
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Data.Common.DbConnectionStringBuilder.System.Collections.ICollection.SyncRoot
+  type: Property
+  source:
+    remote:
+      path: src/System.Data.Common/src/System/Data/Common/DbConnectionStringBuilder.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: System.Collections.ICollection.SyncRoot
+    path: src/System.Data.Common/src/System/Data/Common/DbConnectionStringBuilder.cs
+    startLine: 170
+  assemblies:
+  - System.Data.Common
+  namespace: System.Data.Common
+  summary: "\n<p>Gets an object that can be used to synchronize access to the <xref href=\"System.Collections.ICollection\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  syntax:
+    content: object ICollection.SyncRoot { get; }
+    content.vb: ReadOnly WriteOnly Property System.Collections.ICollection.SyncRoot As Object Implements ICollection.SyncRoot
+    parameters: []
+    return:
+      type: System.Object
+      description: "\n<p>An object that can be used to synchronize access to the <xref href=\"System.Collections.ICollection\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  implements:
+  - System.Collections.ICollection.SyncRoot
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+  name.vb: System.Collections.ICollection.SyncRoot
+  nameWithType: DbConnectionStringBuilder.ICollection.SyncRoot
+  nameWithType.vb: DbConnectionStringBuilder.System.Collections.ICollection.SyncRoot
+- uid: System.Data.Common.DbConnectionStringBuilder.System#Collections#IDictionary#IsReadOnly
+  commentId: P:System.Data.Common.DbConnectionStringBuilder.System#Collections#IDictionary#IsReadOnly
+  id: System#Collections#IDictionary#IsReadOnly
+  isEii: true
+  parent: System.Data.Common.DbConnectionStringBuilder
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Data.Common.DbConnectionStringBuilder.System.Collections.IDictionary.IsReadOnly
+  type: Property
+  source:
+    remote:
+      path: src/System.Data.Common/ref/System.Data.Common.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: System.Collections.IDictionary.IsReadOnly
+    path: src/System.Data.Common/ref/System.Data.Common.cs
+    startLine: 290
+  assemblies:
+  - System.Data.Common
+  namespace: System.Data.Common
+  syntax:
+    content: bool IDictionary.IsReadOnly { get; }
+    content.vb: ReadOnly WriteOnly Property System.Collections.IDictionary.IsReadOnly As Boolean Implements IDictionary.IsReadOnly
+    parameters: []
+    return:
+      type: System.Boolean
+  implements:
+  - System.Collections.IDictionary.IsReadOnly
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+  name.vb: System.Collections.IDictionary.IsReadOnly
+  nameWithType: DbConnectionStringBuilder.IDictionary.IsReadOnly
+  nameWithType.vb: DbConnectionStringBuilder.System.Collections.IDictionary.IsReadOnly
+- uid: System.Data.Common.DbConnectionStringBuilder.System#Collections#IDictionary#Item(System.Object)
+  commentId: P:System.Data.Common.DbConnectionStringBuilder.System#Collections#IDictionary#Item(System.Object)
+  id: System#Collections#IDictionary#Item(System.Object)
+  isEii: true
+  parent: System.Data.Common.DbConnectionStringBuilder
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Data.Common.DbConnectionStringBuilder.System.Collections.IDictionary.Item[System.Object]
+  type: Property
+  source:
+    remote:
+      path: src/System.Data.Common/src/System/Data/Common/DbConnectionStringBuilder.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: System.Collections.IDictionary.this[]
+    path: src/System.Data.Common/src/System/Data/Common/DbConnectionStringBuilder.cs
+    startLine: 58
+  assemblies:
+  - System.Data.Common
+  namespace: System.Data.Common
+  summary: "\n<p>Gets or sets the element with the specified key.</p>\n"
+  syntax:
+    content: object IDictionary.this[object keyword] { get; set; }
+    content.vb: ReadOnly WriteOnly Property System.Collections.IDictionary.Item(keyword As Object) As Object Implements IDictionary.this
+    parameters:
+    - id: keyword
+      type: System.Object
+      description: "\n<p>The key of the element to get or set.</p>\n"
+    return:
+      type: System.Object
+      description: "\n<p>The element with the specified key.</p>\n"
+  implements:
+  - System.Collections.IDictionary.Item(System.Object)
+  modifiers.csharp:
+  - get
+  - set
+  fullName.vb: System.Data.Common.DbConnectionStringBuilder.System.Collections.IDictionary.Item(System.Object)
+  name.vb: System.Collections.IDictionary.Item(Object)
+  nameWithType: DbConnectionStringBuilder.IDictionary.Item[Object]
+  nameWithType.vb: DbConnectionStringBuilder.System.Collections.IDictionary.Item(Object)
+- uid: System.Data.Common.DbConnectionStringBuilder.Values
+  commentId: P:System.Data.Common.DbConnectionStringBuilder.Values
+  id: Values
+  parent: System.Data.Common.DbConnectionStringBuilder
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Data.Common.DbConnectionStringBuilder.Values
+  type: Property
+  source:
+    remote:
+      path: src/System.Data.Common/src/System/Data/Common/DbConnectionStringBuilder.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Values
+    path: src/System.Data.Common/src/System/Data/Common/DbConnectionStringBuilder.cs
+    startLine: 175
+  assemblies:
+  - System.Data.Common
+  namespace: System.Data.Common
+  summary: "\n<p>Gets an <xref href=\"System.Collections.ICollection\" data-throw-if-not-resolved=\"false\"></xref> that contains the values in the <xref href=\"System.Data.Common.DbConnectionStringBuilder\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  syntax:
+    content: public virtual ICollection Values { get; }
+    content.vb: Public Overridable ReadOnly Property Values As ICollection
+    parameters: []
+    return:
+      type: System.Collections.ICollection
+      description: "\n<p>An <xref href=\"System.Collections.ICollection\" data-throw-if-not-resolved=\"false\"></xref> that contains the values in the <xref href=\"System.Data.Common.DbConnectionStringBuilder\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  implements:
+  - System.Collections.IDictionary.Values
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+  nameWithType: DbConnectionStringBuilder.Values
+- uid: System.Data.Common.DbConnectionStringBuilder.Add(System.String,System.Object)
+  commentId: M:System.Data.Common.DbConnectionStringBuilder.Add(System.String,System.Object)
+  id: Add(System.String,System.Object)
+  parent: System.Data.Common.DbConnectionStringBuilder
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Data.Common.DbConnectionStringBuilder.Add(System.String, System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/System.Data.Common/src/System/Data/Common/DbConnectionStringBuilder.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Add
+    path: src/System.Data.Common/src/System/Data/Common/DbConnectionStringBuilder.cs
+    startLine: 196
+  assemblies:
+  - System.Data.Common
+  namespace: System.Data.Common
+  summary: "\n<p>Adds an entry with the specified key and value into the <xref href=\"System.Data.Common.DbConnectionStringBuilder\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  syntax:
+    content: public void Add(string keyword, object value)
+    content.vb: Public Sub Add(keyword As String, value As Object)
+    parameters:
+    - id: keyword
+      type: System.String
+      description: "\n<p>The key to add to the <xref href=\"System.Data.Common.DbConnectionStringBuilder\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    - id: value
+      type: System.Object
+      description: "\n<p>The value for the specified key.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>keyword</em> is a null reference (<strong>Nothing</strong> in Visual Basic).</p>\n"
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: "\n<p>The <xref href=\"System.Data.Common.DbConnectionStringBuilder\" data-throw-if-not-resolved=\"false\"></xref> is read-only. </p>\n<p>-or-</p>\n<p>The <xref href=\"System.Data.Common.DbConnectionStringBuilder\" data-throw-if-not-resolved=\"false\"></xref> has a fixed size.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: DbConnectionStringBuilder.Add(String, Object)
+- uid: System.Data.Common.DbConnectionStringBuilder.AppendKeyValuePair(System.Text.StringBuilder,System.String,System.String)
+  commentId: M:System.Data.Common.DbConnectionStringBuilder.AppendKeyValuePair(System.Text.StringBuilder,System.String,System.String)
+  id: AppendKeyValuePair(System.Text.StringBuilder,System.String,System.String)
+  parent: System.Data.Common.DbConnectionStringBuilder
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Data.Common.DbConnectionStringBuilder.AppendKeyValuePair(System.Text.StringBuilder, System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/System.Data.Common/src/System/Data/Common/DbConnectionStringBuilder.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: AppendKeyValuePair
+    path: src/System.Data.Common/src/System/Data/Common/DbConnectionStringBuilder.cs
+    startLine: 201
+  assemblies:
+  - System.Data.Common
+  namespace: System.Data.Common
+  summary: "\n<p>Provides an efficient and safe way to append a key and value to an existing <xref href=\"System.Text.StringBuilder\" data-throw-if-not-resolved=\"false\"></xref> object.</p>\n"
+  syntax:
+    content: public static void AppendKeyValuePair(StringBuilder builder, string keyword, string value)
+    content.vb: Public Shared Sub AppendKeyValuePair(builder As StringBuilder, keyword As String, value As String)
+    parameters:
+    - id: builder
+      type: System.Text.StringBuilder
+      description: "\n<p>The <xref href=\"System.Text.StringBuilder\" data-throw-if-not-resolved=\"false\"></xref> to which to add the key/value pair.</p>\n"
+    - id: keyword
+      type: System.String
+      description: "\n<p>The key to be added.</p>\n"
+    - id: value
+      type: System.String
+      description: "\n<p>The value for the supplied key.</p>\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  nameWithType: DbConnectionStringBuilder.AppendKeyValuePair(StringBuilder, String, String)
+- uid: System.Data.Common.DbConnectionStringBuilder.Clear
+  commentId: M:System.Data.Common.DbConnectionStringBuilder.Clear
+  id: Clear
+  parent: System.Data.Common.DbConnectionStringBuilder
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Data.Common.DbConnectionStringBuilder.Clear()
+  type: Method
+  source:
+    remote:
+      path: src/System.Data.Common/src/System/Data/Common/DbConnectionStringBuilder.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Clear
+    path: src/System.Data.Common/src/System/Data/Common/DbConnectionStringBuilder.cs
+    startLine: 207
+  assemblies:
+  - System.Data.Common
+  namespace: System.Data.Common
+  summary: "\n<p>Clears the contents of the <xref href=\"System.Data.Common.DbConnectionStringBuilder\" data-throw-if-not-resolved=\"false\"></xref> instance.</p>\n"
+  syntax:
+    content: public virtual void Clear()
+    content.vb: Public Overridable Sub Clear
+  exceptions:
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: "\n<p>The <xref href=\"System.Data.Common.DbConnectionStringBuilder\" data-throw-if-not-resolved=\"false\"></xref> is read-only.</p>\n"
+  implements:
+  - System.Collections.IDictionary.Clear
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  nameWithType: DbConnectionStringBuilder.Clear()
+- uid: System.Data.Common.DbConnectionStringBuilder.ContainsKey(System.String)
+  commentId: M:System.Data.Common.DbConnectionStringBuilder.ContainsKey(System.String)
+  id: ContainsKey(System.String)
+  parent: System.Data.Common.DbConnectionStringBuilder
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Data.Common.DbConnectionStringBuilder.ContainsKey(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/System.Data.Common/src/System/Data/Common/DbConnectionStringBuilder.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: ContainsKey
+    path: src/System.Data.Common/src/System/Data/Common/DbConnectionStringBuilder.cs
+    startLine: 219
+  assemblies:
+  - System.Data.Common
+  namespace: System.Data.Common
+  summary: "\n<p>Determines whether the <xref href=\"System.Data.Common.DbConnectionStringBuilder\" data-throw-if-not-resolved=\"false\"></xref> contains a specific key.</p>\n"
+  syntax:
+    content: public virtual bool ContainsKey(string keyword)
+    content.vb: Public Overridable Function ContainsKey(keyword As String) As Boolean
+    parameters:
+    - id: keyword
+      type: System.String
+      description: "\n<p>The key to locate in the <xref href=\"System.Data.Common.DbConnectionStringBuilder\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if the <xref href=\"System.Data.Common.DbConnectionStringBuilder\" data-throw-if-not-resolved=\"false\"></xref> contains an entry with the specified key; otherwise <strong>false</strong>.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>keyword</em> is a null reference (<strong>Nothing</strong> in Visual Basic).</p>\n"
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  nameWithType: DbConnectionStringBuilder.ContainsKey(String)
+- uid: System.Data.Common.DbConnectionStringBuilder.EquivalentTo(System.Data.Common.DbConnectionStringBuilder)
+  commentId: M:System.Data.Common.DbConnectionStringBuilder.EquivalentTo(System.Data.Common.DbConnectionStringBuilder)
+  id: EquivalentTo(System.Data.Common.DbConnectionStringBuilder)
+  parent: System.Data.Common.DbConnectionStringBuilder
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Data.Common.DbConnectionStringBuilder.EquivalentTo(System.Data.Common.DbConnectionStringBuilder)
+  type: Method
+  source:
+    remote:
+      path: src/System.Data.Common/src/System/Data/Common/DbConnectionStringBuilder.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: EquivalentTo
+    path: src/System.Data.Common/src/System/Data/Common/DbConnectionStringBuilder.cs
+    startLine: 230
+  assemblies:
+  - System.Data.Common
+  namespace: System.Data.Common
+  summary: "\n<p>Compares the connection information in this <xref href=\"System.Data.Common.DbConnectionStringBuilder\" data-throw-if-not-resolved=\"false\"></xref> object with the connection information in the supplied object.</p>\n"
+  syntax:
+    content: public virtual bool EquivalentTo(DbConnectionStringBuilder connectionStringBuilder)
+    content.vb: Public Overridable Function EquivalentTo(connectionStringBuilder As DbConnectionStringBuilder) As Boolean
+    parameters:
+    - id: connectionStringBuilder
+      type: System.Data.Common.DbConnectionStringBuilder
+      description: "\n<p>The <xref href=\"System.Data.Common.DbConnectionStringBuilder\" data-throw-if-not-resolved=\"false\"></xref> to be compared with this <xref href=\"System.Data.Common.DbConnectionStringBuilder\" data-throw-if-not-resolved=\"false\"></xref> object.</p>\n"
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if the connection information in both of the <xref href=\"System.Data.Common.DbConnectionStringBuilder\" data-throw-if-not-resolved=\"false\"></xref> objects causes an equivalent connection string; otherwise <strong>false</strong>.</p>\n"
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  nameWithType: DbConnectionStringBuilder.EquivalentTo(DbConnectionStringBuilder)
+- uid: System.Data.Common.DbConnectionStringBuilder.Remove(System.String)
+  commentId: M:System.Data.Common.DbConnectionStringBuilder.Remove(System.String)
+  id: Remove(System.String)
+  parent: System.Data.Common.DbConnectionStringBuilder
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Data.Common.DbConnectionStringBuilder.Remove(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/System.Data.Common/src/System/Data/Common/DbConnectionStringBuilder.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Remove
+    path: src/System.Data.Common/src/System/Data/Common/DbConnectionStringBuilder.cs
+    startLine: 276
+  assemblies:
+  - System.Data.Common
+  namespace: System.Data.Common
+  summary: "\n<p>Removes the entry with the specified key from the <xref href=\"System.Data.Common.DbConnectionStringBuilder\" data-throw-if-not-resolved=\"false\"></xref> instance.</p>\n"
+  syntax:
+    content: public virtual bool Remove(string keyword)
+    content.vb: Public Overridable Function Remove(keyword As String) As Boolean
+    parameters:
+    - id: keyword
+      type: System.String
+      description: "\n<p>The key of the key/value pair to be removed from the connection string in this <xref href=\"System.Data.Common.DbConnectionStringBuilder\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if the key existed within the connection string and was removed; <strong>false</strong> if the key did not exist.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>keyword</em> is null (<strong>Nothing</strong> in Visual Basic)</p>\n"
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: "\n<p>The <xref href=\"System.Data.Common.DbConnectionStringBuilder\" data-throw-if-not-resolved=\"false\"></xref> is read-only, or the <xref href=\"System.Data.Common.DbConnectionStringBuilder\" data-throw-if-not-resolved=\"false\"></xref> has a fixed size.</p>\n"
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  nameWithType: DbConnectionStringBuilder.Remove(String)
+- uid: System.Data.Common.DbConnectionStringBuilder.ShouldSerialize(System.String)
+  commentId: M:System.Data.Common.DbConnectionStringBuilder.ShouldSerialize(System.String)
+  id: ShouldSerialize(System.String)
+  parent: System.Data.Common.DbConnectionStringBuilder
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Data.Common.DbConnectionStringBuilder.ShouldSerialize(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/System.Data.Common/src/System/Data/Common/DbConnectionStringBuilder.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: ShouldSerialize
+    path: src/System.Data.Common/src/System/Data/Common/DbConnectionStringBuilder.cs
+    startLine: 288
+  assemblies:
+  - System.Data.Common
+  namespace: System.Data.Common
+  summary: "\n<p>Indicates whether the specified key exists in this <xref href=\"System.Data.Common.DbConnectionStringBuilder\" data-throw-if-not-resolved=\"false\"></xref> instance.</p>\n"
+  syntax:
+    content: public virtual bool ShouldSerialize(string keyword)
+    content.vb: Public Overridable Function ShouldSerialize(keyword As String) As Boolean
+    parameters:
+    - id: keyword
+      type: System.String
+      description: "\n<p>The key to locate in the <xref href=\"System.Data.Common.DbConnectionStringBuilder\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if the <xref href=\"System.Data.Common.DbConnectionStringBuilder\" data-throw-if-not-resolved=\"false\"></xref> contains an entry with the specified key; otherwise <strong>false</strong>.</p>\n"
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  nameWithType: DbConnectionStringBuilder.ShouldSerialize(String)
+- uid: System.Data.Common.DbConnectionStringBuilder.System#Collections#ICollection#CopyTo(System.Array,System.Int32)
+  commentId: M:System.Data.Common.DbConnectionStringBuilder.System#Collections#ICollection#CopyTo(System.Array,System.Int32)
+  id: System#Collections#ICollection#CopyTo(System.Array,System.Int32)
+  isEii: true
+  parent: System.Data.Common.DbConnectionStringBuilder
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Data.Common.DbConnectionStringBuilder.System.Collections.ICollection.CopyTo(System.Array, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/System.Data.Common/src/System/Data/Common/DbConnectionStringBuilder.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: System.Collections.ICollection.CopyTo
+    path: src/System.Data.Common/src/System/Data/Common/DbConnectionStringBuilder.cs
+    startLine: 225
+  assemblies:
+  - System.Data.Common
+  namespace: System.Data.Common
+  summary: "\n<p>Copies the elements of the <xref href=\"System.Collections.ICollection\" data-throw-if-not-resolved=\"false\"></xref> to an <xref href=\"System.Array\" data-throw-if-not-resolved=\"false\"></xref>, starting at a particular <xref href=\"System.Array\" data-throw-if-not-resolved=\"false\"></xref> index.</p>\n"
+  syntax:
+    content: void ICollection.CopyTo(Array array, int index)
+    content.vb: Sub System.Collections.ICollection.CopyTo(array As Array, index As Integer) Implements ICollection.CopyTo
+    parameters:
+    - id: array
+      type: System.Array
+      description: "\n<p>The one-dimensional <xref href=\"System.Array\" data-throw-if-not-resolved=\"false\"></xref> that is the destination of the elements copied from <xref href=\"System.Collections.ICollection\" data-throw-if-not-resolved=\"false\"></xref>. The <xref href=\"System.Array\" data-throw-if-not-resolved=\"false\"></xref> must have zero-based indexing.</p>\n"
+    - id: index
+      type: System.Int32
+      description: "\n<p>The zero-based index in <em>array</em> at which copying begins.</p>\n"
+  implements:
+  - System.Collections.ICollection.CopyTo(System.Array,System.Int32)
+  name.vb: System.Collections.ICollection.CopyTo(Array, Int32)
+  nameWithType: DbConnectionStringBuilder.ICollection.CopyTo(Array, Int32)
+  nameWithType.vb: DbConnectionStringBuilder.System.Collections.ICollection.CopyTo(Array, Int32)
+- uid: System.Data.Common.DbConnectionStringBuilder.System#Collections#IDictionary#Add(System.Object,System.Object)
+  commentId: M:System.Data.Common.DbConnectionStringBuilder.System#Collections#IDictionary#Add(System.Object,System.Object)
+  id: System#Collections#IDictionary#Add(System.Object,System.Object)
+  isEii: true
+  parent: System.Data.Common.DbConnectionStringBuilder
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Data.Common.DbConnectionStringBuilder.System.Collections.IDictionary.Add(System.Object, System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/System.Data.Common/src/System/Data/Common/DbConnectionStringBuilder.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: System.Collections.IDictionary.Add
+    path: src/System.Data.Common/src/System/Data/Common/DbConnectionStringBuilder.cs
+    startLine: 192
+  assemblies:
+  - System.Data.Common
+  namespace: System.Data.Common
+  summary: "\n<p>Adds an element with the provided key and value to the <xref href=\"System.Collections.IDictionary\" data-throw-if-not-resolved=\"false\"></xref> object.</p>\n"
+  syntax:
+    content: void IDictionary.Add(object keyword, object value)
+    content.vb: Sub System.Collections.IDictionary.Add(keyword As Object, value As Object) Implements IDictionary.Add
+    parameters:
+    - id: keyword
+      type: System.Object
+      description: "\n<p>The <xref href=\"System.Object\" data-throw-if-not-resolved=\"false\"></xref> to use as the key of the element to add.</p>\n"
+    - id: value
+      type: System.Object
+      description: "\n<p>The <xref href=\"System.Object\" data-throw-if-not-resolved=\"false\"></xref> to use as the value of the element to add.</p>\n"
+  implements:
+  - System.Collections.IDictionary.Add(System.Object,System.Object)
+  name.vb: System.Collections.IDictionary.Add(Object, Object)
+  nameWithType: DbConnectionStringBuilder.IDictionary.Add(Object, Object)
+  nameWithType.vb: DbConnectionStringBuilder.System.Collections.IDictionary.Add(Object, Object)
+- uid: System.Data.Common.DbConnectionStringBuilder.System#Collections#IDictionary#Contains(System.Object)
+  commentId: M:System.Data.Common.DbConnectionStringBuilder.System#Collections#IDictionary#Contains(System.Object)
+  id: System#Collections#IDictionary#Contains(System.Object)
+  isEii: true
+  parent: System.Data.Common.DbConnectionStringBuilder
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Data.Common.DbConnectionStringBuilder.System.Collections.IDictionary.Contains(System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/System.Data.Common/src/System/Data/Common/DbConnectionStringBuilder.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: System.Collections.IDictionary.Contains
+    path: src/System.Data.Common/src/System/Data/Common/DbConnectionStringBuilder.cs
+    startLine: 215
+  assemblies:
+  - System.Data.Common
+  namespace: System.Data.Common
+  summary: "\n<p>Determines whether the <xref href=\"System.Collections.IDictionary\" data-throw-if-not-resolved=\"false\"></xref> object contains an element with the specified key.</p>\n"
+  syntax:
+    content: bool IDictionary.Contains(object keyword)
+    content.vb: Function System.Collections.IDictionary.Contains(keyword As Object) As Boolean Implements IDictionary.Contains
+    parameters:
+    - id: keyword
+      type: System.Object
+      description: "\n<p>The key to locate in the <xref href=\"System.Collections.IDictionary\" data-throw-if-not-resolved=\"false\"></xref> object.</p>\n"
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if the <xref href=\"System.Collections.IDictionary\" data-throw-if-not-resolved=\"false\"></xref> contains an element with the key; otherwise, <strong>false</strong>.</p>\n"
+  implements:
+  - System.Collections.IDictionary.Contains(System.Object)
+  name.vb: System.Collections.IDictionary.Contains(Object)
+  nameWithType: DbConnectionStringBuilder.IDictionary.Contains(Object)
+  nameWithType.vb: DbConnectionStringBuilder.System.Collections.IDictionary.Contains(Object)
+- uid: System.Data.Common.DbConnectionStringBuilder.System#Collections#IDictionary#GetEnumerator
+  commentId: M:System.Data.Common.DbConnectionStringBuilder.System#Collections#IDictionary#GetEnumerator
+  id: System#Collections#IDictionary#GetEnumerator
+  isEii: true
+  parent: System.Data.Common.DbConnectionStringBuilder
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Data.Common.DbConnectionStringBuilder.System.Collections.IDictionary.GetEnumerator()
+  type: Method
+  source:
+    remote:
+      path: src/System.Data.Common/src/System/Data/Common/DbConnectionStringBuilder.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: System.Collections.IDictionary.GetEnumerator
+    path: src/System.Data.Common/src/System/Data/Common/DbConnectionStringBuilder.cs
+    startLine: 254
+  assemblies:
+  - System.Data.Common
+  namespace: System.Data.Common
+  summary: "\n<p>Returns an <xref href=\"System.Collections.IDictionaryEnumerator\" data-throw-if-not-resolved=\"false\"></xref> object for the <xref href=\"System.Collections.IDictionary\" data-throw-if-not-resolved=\"false\"></xref> object.</p>\n"
+  syntax:
+    content: IDictionaryEnumerator IDictionary.GetEnumerator()
+    content.vb: Function System.Collections.IDictionary.GetEnumerator As IDictionaryEnumerator Implements IDictionary.GetEnumerator
+    return:
+      type: System.Collections.IDictionaryEnumerator
+      description: "\n<p>An <xref href=\"System.Collections.IDictionaryEnumerator\" data-throw-if-not-resolved=\"false\"></xref> object for the <xref href=\"System.Collections.IDictionary\" data-throw-if-not-resolved=\"false\"></xref> object.</p>\n"
+  implements:
+  - System.Collections.IDictionary.GetEnumerator
+  name.vb: System.Collections.IDictionary.GetEnumerator()
+  nameWithType: DbConnectionStringBuilder.IDictionary.GetEnumerator()
+  nameWithType.vb: DbConnectionStringBuilder.System.Collections.IDictionary.GetEnumerator()
+- uid: System.Data.Common.DbConnectionStringBuilder.System#Collections#IDictionary#Remove(System.Object)
+  commentId: M:System.Data.Common.DbConnectionStringBuilder.System#Collections#IDictionary#Remove(System.Object)
+  id: System#Collections#IDictionary#Remove(System.Object)
+  isEii: true
+  parent: System.Data.Common.DbConnectionStringBuilder
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Data.Common.DbConnectionStringBuilder.System.Collections.IDictionary.Remove(System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/System.Data.Common/src/System/Data/Common/DbConnectionStringBuilder.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: System.Collections.IDictionary.Remove
+    path: src/System.Data.Common/src/System/Data/Common/DbConnectionStringBuilder.cs
+    startLine: 272
+  assemblies:
+  - System.Data.Common
+  namespace: System.Data.Common
+  summary: "\n<p>Removes the element with the specified key from the <xref href=\"System.Collections.IDictionary\" data-throw-if-not-resolved=\"false\"></xref> object.</p>\n"
+  syntax:
+    content: void IDictionary.Remove(object keyword)
+    content.vb: Sub System.Collections.IDictionary.Remove(keyword As Object) Implements IDictionary.Remove
+    parameters:
+    - id: keyword
+      type: System.Object
+      description: "\n<p>The key of the element to remove.</p>\n"
+  implements:
+  - System.Collections.IDictionary.Remove(System.Object)
+  name.vb: System.Collections.IDictionary.Remove(Object)
+  nameWithType: DbConnectionStringBuilder.IDictionary.Remove(Object)
+  nameWithType.vb: DbConnectionStringBuilder.System.Collections.IDictionary.Remove(Object)
+- uid: System.Data.Common.DbConnectionStringBuilder.System#Collections#IEnumerable#GetEnumerator
+  commentId: M:System.Data.Common.DbConnectionStringBuilder.System#Collections#IEnumerable#GetEnumerator
+  id: System#Collections#IEnumerable#GetEnumerator
+  isEii: true
+  parent: System.Data.Common.DbConnectionStringBuilder
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Data.Common.DbConnectionStringBuilder.System.Collections.IEnumerable.GetEnumerator()
+  type: Method
+  source:
+    remote:
+      path: src/System.Data.Common/src/System/Data/Common/DbConnectionStringBuilder.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: System.Collections.IEnumerable.GetEnumerator
+    path: src/System.Data.Common/src/System/Data/Common/DbConnectionStringBuilder.cs
+    startLine: 250
+  assemblies:
+  - System.Data.Common
+  namespace: System.Data.Common
+  summary: "\n<p>Returns an enumerator that iterates through a collection.</p>\n"
+  syntax:
+    content: IEnumerator IEnumerable.GetEnumerator()
+    content.vb: Function System.Collections.IEnumerable.GetEnumerator As IEnumerator Implements IEnumerable.GetEnumerator
+    return:
+      type: System.Collections.IEnumerator
+      description: "\n<p>An <xref href=\"System.Collections.IEnumerator\" data-throw-if-not-resolved=\"false\"></xref> object that can be used to iterate through the collection.</p>\n"
+  implements:
+  - System.Collections.IEnumerable.GetEnumerator
+  name.vb: System.Collections.IEnumerable.GetEnumerator()
+  nameWithType: DbConnectionStringBuilder.IEnumerable.GetEnumerator()
+  nameWithType.vb: DbConnectionStringBuilder.System.Collections.IEnumerable.GetEnumerator()
+- uid: System.Data.Common.DbConnectionStringBuilder.ToString
+  commentId: M:System.Data.Common.DbConnectionStringBuilder.ToString
+  id: ToString
+  parent: System.Data.Common.DbConnectionStringBuilder
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Data.Common.DbConnectionStringBuilder.ToString()
+  type: Method
+  source:
+    remote:
+      path: src/System.Data.Common/src/System/Data/Common/DbConnectionStringBuilder.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: ToString
+    path: src/System.Data.Common/src/System/Data/Common/DbConnectionStringBuilder.cs
+    startLine: 294
+  assemblies:
+  - System.Data.Common
+  namespace: System.Data.Common
+  summary: "\n<p>Returns the connection string associated with this <xref href=\"System.Data.Common.DbConnectionStringBuilder\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  syntax:
+    content: public override string ToString()
+    content.vb: Public Overrides Function ToString As String
+    return:
+      type: System.String
+      description: "\n<p>The current <xref href=\"System.Data.Common.DbConnectionStringBuilder.ConnectionString\" data-throw-if-not-resolved=\"false\"></xref> property.</p>\n"
+  overridden: System.Object.ToString
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  nameWithType: DbConnectionStringBuilder.ToString()
+- uid: System.Data.Common.DbConnectionStringBuilder.TryGetValue(System.String,System.Object@)
+  commentId: M:System.Data.Common.DbConnectionStringBuilder.TryGetValue(System.String,System.Object@)
+  id: TryGetValue(System.String,System.Object@)
+  parent: System.Data.Common.DbConnectionStringBuilder
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Data.Common.DbConnectionStringBuilder.TryGetValue(System.String, out System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/System.Data.Common/src/System/Data/Common/DbConnectionStringBuilder.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: TryGetValue
+    path: src/System.Data.Common/src/System/Data/Common/DbConnectionStringBuilder.cs
+    startLine: 299
+  assemblies:
+  - System.Data.Common
+  namespace: System.Data.Common
+  summary: "\n<p>Retrieves a value corresponding to the supplied key from this <xref href=\"System.Data.Common.DbConnectionStringBuilder\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  syntax:
+    content: public virtual bool TryGetValue(string keyword, out object value)
+    content.vb: Public Overridable Function TryGetValue(keyword As String, ByRef value As Object) As Boolean
+    parameters:
+    - id: keyword
+      type: System.String
+      description: "\n<p>The key of the item to retrieve.</p>\n"
+    - id: value
+      type: System.Object
+      description: "\n<p>The value corresponding to the <em>key</em>.</p>\n"
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if <em>keyword</em> was found within the connection string, <strong>false</strong> otherwise.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>keyword</em> contains a null value (<strong>Nothing</strong> in Visual Basic).</p>\n"
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  fullName.vb: System.Data.Common.DbConnectionStringBuilder.TryGetValue(System.String, ByRef System.Object)
+  name.vb: TryGetValue(String, ByRef Object)
+  nameWithType: DbConnectionStringBuilder.TryGetValue(String, out Object)
+  nameWithType.vb: DbConnectionStringBuilder.TryGetValue(String, ByRef Object)
+- uid: System.Data.Common.DbConnectionStringBuilder.System#Collections#IDictionary#IsFixedSize
+  commentId: P:System.Data.Common.DbConnectionStringBuilder.System#Collections#IDictionary#IsFixedSize
+  id: System#Collections#IDictionary#IsFixedSize
+  isEii: true
+  parent: System.Data.Common.DbConnectionStringBuilder
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Data.Common.DbConnectionStringBuilder.System.Collections.IDictionary.IsFixedSize
+  type: Property
+  source:
+    remote:
+      path: src/System.Data.Common/ref/System.Data.Common.Manual.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: System.Collections.IDictionary.IsFixedSize
+    path: src/System.Data.Common/ref/System.Data.Common.Manual.cs
+    startLine: 24
+  assemblies:
+  - System.Data.Common
+  namespace: System.Data.Common
+  syntax:
+    content: bool IDictionary.IsFixedSize { get; }
+    content.vb: ReadOnly WriteOnly Property System.Collections.IDictionary.IsFixedSize As Boolean Implements IDictionary.IsFixedSize
+    parameters: []
+    return:
+      type: System.Boolean
+  implements:
+  - System.Collections.IDictionary.IsFixedSize
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+  name.vb: System.Collections.IDictionary.IsFixedSize
+  nameWithType: DbConnectionStringBuilder.IDictionary.IsFixedSize
+  nameWithType.vb: DbConnectionStringBuilder.System.Collections.IDictionary.IsFixedSize
+references:
+- uid: System.Data.Common
+  isExternal: false
+  name: "XXX"
+  fullName: System.Data.Common
+  nameWithType: System.Data.Common
+  commentId: N:System.Data.Common
+- uid: System.Object
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Object
+  nameWithType: Object
+  commentId: T:System.Object
+- uid: System.Collections.IDictionary
+  parent: System.Collections
+  isExternal: false
+  name: "XXX"
+  fullName: System.Collections.IDictionary
+  nameWithType: IDictionary
+  commentId: T:System.Collections.IDictionary
+- uid: System.Collections.ICollection
+  parent: System.Collections
+  isExternal: false
+  name: "XXX"
+  fullName: System.Collections.ICollection
+  nameWithType: ICollection
+  commentId: T:System.Collections.ICollection
+- uid: System.Collections.IEnumerable
+  parent: System.Collections
+  isExternal: false
+  name: "XXX"
+  fullName: System.Collections.IEnumerable
+  nameWithType: IEnumerable
+  commentId: T:System.Collections.IEnumerable
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.Equals(Object)
+  commentId: M:System.Object.Equals(System.Object)
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.Equals(Object, Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.GetHashCode()
+  commentId: M:System.Object.GetHashCode
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.GetType()
+  commentId: M:System.Object.GetType
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.MemberwiseClone()
+  commentId: M:System.Object.MemberwiseClone
+- uid: System.Collections.IEnumerable.System.Linq.Queryable.AsQueryable
+  parent: System.Linq.Queryable
+  definition: System.Linq.Queryable.AsQueryable(System.Collections.IEnumerable)
+  name: "XXX"
+  fullName: System.Linq.Queryable.AsQueryable()
+  spec.csharp:
+  - uid: System.Linq.Queryable.AsQueryable
+    name: "XXX"
+    fullName: System.Linq.Queryable.AsQueryable
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Linq.Queryable.AsQueryable
+    name: "XXX"
+    fullName: System.Linq.Queryable.AsQueryable
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Queryable.AsQueryable()
+  commentId: M:System.Linq.Queryable.AsQueryable(System.Collections.IEnumerable)
+- uid: System.Collections.IEnumerable.System.Linq.ParallelEnumerable.AsParallel
+  parent: System.Linq.ParallelEnumerable
+  definition: System.Linq.ParallelEnumerable.AsParallel(System.Collections.IEnumerable)
+  name: "XXX"
+  fullName: System.Linq.ParallelEnumerable.AsParallel()
+  spec.csharp:
+  - uid: System.Linq.ParallelEnumerable.AsParallel
+    name: "XXX"
+    fullName: System.Linq.ParallelEnumerable.AsParallel
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Linq.ParallelEnumerable.AsParallel
+    name: "XXX"
+    fullName: System.Linq.ParallelEnumerable.AsParallel
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: ParallelEnumerable.AsParallel()
+  commentId: M:System.Linq.ParallelEnumerable.AsParallel(System.Collections.IEnumerable)
+- uid: System.Collections.IEnumerable.System.Linq.Enumerable.Cast``1
+  parent: System.Linq.Enumerable
+  definition: System.Linq.Enumerable.Cast``1(System.Collections.IEnumerable)
+  name: "XXX"
+  fullName: System.Linq.Enumerable.Cast<TResult>()
+  fullname.vb: System.Linq.Enumerable.Cast(Of TResult)()
+  name.vb: Cast(Of TResult)()
+  spec.csharp:
+  - uid: System.Linq.Enumerable.Cast``1
+    name: "XXX"
+    fullName: System.Linq.Enumerable.Cast<TResult>
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Linq.Enumerable.Cast``1
+    name: "XXX"
+    fullName: System.Linq.Enumerable.Cast(Of TResult)
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Enumerable.Cast<TResult>()
+  nameWithType.vb: Enumerable.Cast(Of TResult)()
+  commentId: M:System.Linq.Enumerable.Cast``1(System.Collections.IEnumerable)
+- uid: System.Collections.IEnumerable.System.Linq.Enumerable.OfType``1
+  parent: System.Linq.Enumerable
+  definition: System.Linq.Enumerable.OfType``1(System.Collections.IEnumerable)
+  name: "XXX"
+  fullName: System.Linq.Enumerable.OfType<TResult>()
+  fullname.vb: System.Linq.Enumerable.OfType(Of TResult)()
+  name.vb: OfType(Of TResult)()
+  spec.csharp:
+  - uid: System.Linq.Enumerable.OfType``1
+    name: "XXX"
+    fullName: System.Linq.Enumerable.OfType<TResult>
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Linq.Enumerable.OfType``1
+    name: "XXX"
+    fullName: System.Linq.Enumerable.OfType(Of TResult)
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Enumerable.OfType<TResult>()
+  nameWithType.vb: Enumerable.OfType(Of TResult)()
+  commentId: M:System.Linq.Enumerable.OfType``1(System.Collections.IEnumerable)
+- uid: System
+  isExternal: false
+  name: "XXX"
+  fullName: System
+  nameWithType: System
+  commentId: N:System
+- uid: System.Collections
+  isExternal: false
+  name: "XXX"
+  fullName: System.Collections
+  nameWithType: System.Collections
+  commentId: N:System.Collections
+- uid: System.Linq.Queryable.AsQueryable(System.Collections.IEnumerable)
+  isExternal: true
+  name: "XXX"
+  fullName: System.Linq.Queryable.AsQueryable(System.Collections.IEnumerable)
+  spec.csharp:
+  - uid: System.Linq.Queryable.AsQueryable(System.Collections.IEnumerable)
+    name: "XXX"
+    fullName: System.Linq.Queryable.AsQueryable
+  - name: "XXX"
+    fullName: (
+  - uid: System.Collections.IEnumerable
+    name: "XXX"
+    fullName: System.Collections.IEnumerable
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Linq.Queryable.AsQueryable(System.Collections.IEnumerable)
+    name: "XXX"
+    fullName: System.Linq.Queryable.AsQueryable
+  - name: "XXX"
+    fullName: (
+  - uid: System.Collections.IEnumerable
+    name: "XXX"
+    fullName: System.Collections.IEnumerable
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Queryable.AsQueryable(IEnumerable)
+  commentId: M:System.Linq.Queryable.AsQueryable(System.Collections.IEnumerable)
+- uid: System.Linq.Queryable
+  parent: System.Linq
+  isExternal: false
+  name: "XXX"
+  fullName: System.Linq.Queryable
+  nameWithType: Queryable
+  commentId: T:System.Linq.Queryable
+- uid: System.Linq.ParallelEnumerable.AsParallel(System.Collections.IEnumerable)
+  isExternal: true
+  name: "XXX"
+  fullName: System.Linq.ParallelEnumerable.AsParallel(System.Collections.IEnumerable)
+  spec.csharp:
+  - uid: System.Linq.ParallelEnumerable.AsParallel(System.Collections.IEnumerable)
+    name: "XXX"
+    fullName: System.Linq.ParallelEnumerable.AsParallel
+  - name: "XXX"
+    fullName: (
+  - uid: System.Collections.IEnumerable
+    name: "XXX"
+    fullName: System.Collections.IEnumerable
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Linq.ParallelEnumerable.AsParallel(System.Collections.IEnumerable)
+    name: "XXX"
+    fullName: System.Linq.ParallelEnumerable.AsParallel
+  - name: "XXX"
+    fullName: (
+  - uid: System.Collections.IEnumerable
+    name: "XXX"
+    fullName: System.Collections.IEnumerable
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: ParallelEnumerable.AsParallel(IEnumerable)
+  commentId: M:System.Linq.ParallelEnumerable.AsParallel(System.Collections.IEnumerable)
+- uid: System.Linq.ParallelEnumerable
+  parent: System.Linq
+  isExternal: false
+  name: "XXX"
+  fullName: System.Linq.ParallelEnumerable
+  nameWithType: ParallelEnumerable
+  commentId: T:System.Linq.ParallelEnumerable
+- uid: System.Linq.Enumerable.Cast``1(System.Collections.IEnumerable)
+  isExternal: true
+  name: "XXX"
+  fullName: System.Linq.Enumerable.Cast<TResult>(System.Collections.IEnumerable)
+  fullname.vb: System.Linq.Enumerable.Cast(Of TResult)(System.Collections.IEnumerable)
+  name.vb: Cast(Of TResult)(IEnumerable)
+  spec.csharp:
+  - uid: System.Linq.Enumerable.Cast``1(System.Collections.IEnumerable)
+    name: "XXX"
+    fullName: System.Linq.Enumerable.Cast<TResult>
+  - name: "XXX"
+    fullName: (
+  - uid: System.Collections.IEnumerable
+    name: "XXX"
+    fullName: System.Collections.IEnumerable
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Linq.Enumerable.Cast``1(System.Collections.IEnumerable)
+    name: "XXX"
+    fullName: System.Linq.Enumerable.Cast(Of TResult)
+  - name: "XXX"
+    fullName: (
+  - uid: System.Collections.IEnumerable
+    name: "XXX"
+    fullName: System.Collections.IEnumerable
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Enumerable.Cast<TResult>(IEnumerable)
+  nameWithType.vb: Enumerable.Cast(Of TResult)(IEnumerable)
+  commentId: M:System.Linq.Enumerable.Cast``1(System.Collections.IEnumerable)
+- uid: System.Linq.Enumerable
+  parent: System.Linq
+  isExternal: false
+  name: "XXX"
+  fullName: System.Linq.Enumerable
+  nameWithType: Enumerable
+  commentId: T:System.Linq.Enumerable
+- uid: System.Linq.Enumerable.OfType``1(System.Collections.IEnumerable)
+  isExternal: true
+  name: "XXX"
+  fullName: System.Linq.Enumerable.OfType<TResult>(System.Collections.IEnumerable)
+  fullname.vb: System.Linq.Enumerable.OfType(Of TResult)(System.Collections.IEnumerable)
+  name.vb: OfType(Of TResult)(IEnumerable)
+  spec.csharp:
+  - uid: System.Linq.Enumerable.OfType``1(System.Collections.IEnumerable)
+    name: "XXX"
+    fullName: System.Linq.Enumerable.OfType<TResult>
+  - name: "XXX"
+    fullName: (
+  - uid: System.Collections.IEnumerable
+    name: "XXX"
+    fullName: System.Collections.IEnumerable
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Linq.Enumerable.OfType``1(System.Collections.IEnumerable)
+    name: "XXX"
+    fullName: System.Linq.Enumerable.OfType(Of TResult)
+  - name: "XXX"
+    fullName: (
+  - uid: System.Collections.IEnumerable
+    name: "XXX"
+    fullName: System.Collections.IEnumerable
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Enumerable.OfType<TResult>(IEnumerable)
+  nameWithType.vb: Enumerable.OfType(Of TResult)(IEnumerable)
+  commentId: M:System.Linq.Enumerable.OfType``1(System.Collections.IEnumerable)
+- uid: System.Linq
+  isExternal: false
+  name: "XXX"
+  fullName: System.Linq
+  nameWithType: System.Linq
+  commentId: N:System.Linq
+- uid: System.String
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.String
+  nameWithType: String
+  commentId: T:System.String
+- uid: System.Collections.ICollection.Count
+  parent: System.Collections.ICollection
+  isExternal: false
+  name: "XXX"
+  fullName: System.Collections.ICollection.Count
+  nameWithType: ICollection.Count
+  commentId: P:System.Collections.ICollection.Count
+- uid: System.Int32
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Int32
+  nameWithType: Int32
+  commentId: T:System.Int32
+- uid: System.Collections.IDictionary.Keys
+  parent: System.Collections.IDictionary
+  isExternal: true
+  name: "XXX"
+  fullName: System.Collections.IDictionary.Keys
+  nameWithType: IDictionary.Keys
+  commentId: P:System.Collections.IDictionary.Keys
+- uid: System.Collections.ICollection.IsSynchronized
+  parent: System.Collections.ICollection
+  isExternal: false
+  name: "XXX"
+  fullName: System.Collections.ICollection.IsSynchronized
+  nameWithType: ICollection.IsSynchronized
+  commentId: P:System.Collections.ICollection.IsSynchronized
+- uid: System.Boolean
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Boolean
+  nameWithType: Boolean
+  commentId: T:System.Boolean
+- uid: System.Collections.ICollection.SyncRoot
+  parent: System.Collections.ICollection
+  isExternal: false
+  name: "XXX"
+  fullName: System.Collections.ICollection.SyncRoot
+  nameWithType: ICollection.SyncRoot
+  commentId: P:System.Collections.ICollection.SyncRoot
+- uid: System.Collections.IDictionary.IsReadOnly
+  parent: System.Collections.IDictionary
+  isExternal: true
+  name: "XXX"
+  fullName: System.Collections.IDictionary.IsReadOnly
+  nameWithType: IDictionary.IsReadOnly
+  commentId: P:System.Collections.IDictionary.IsReadOnly
+- uid: System.Collections.IDictionary.Item(System.Object)
+  parent: System.Collections.IDictionary
+  isExternal: true
+  name: "XXX"
+  fullName: System.Collections.IDictionary.Item[System.Object]
+  fullname.vb: System.Collections.IDictionary.Item(System.Object)
+  name.vb: Item(Object)
+  spec.csharp:
+  - uid: System.Collections.IDictionary.Item(System.Object)
+    name: "XXX"
+    fullName: System.Collections.IDictionary.Item
+    isExternal: true
+  - name: 'XXX'
+    fullName: '['
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX'
+    fullName: ']'
+  spec.vb:
+  - uid: System.Collections.IDictionary.Item(System.Object)
+    name: "XXX"
+    fullName: System.Collections.IDictionary.Item
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: IDictionary.Item[Object]
+  nameWithType.vb: IDictionary.Item(Object)
+  commentId: P:System.Collections.IDictionary.Item(System.Object)
+- uid: System.Collections.IDictionary.Values
+  parent: System.Collections.IDictionary
+  isExternal: true
+  name: "XXX"
+  fullName: System.Collections.IDictionary.Values
+  nameWithType: IDictionary.Values
+  commentId: P:System.Collections.IDictionary.Values
+- uid: System.Text.StringBuilder
+  parent: System.Text
+  isExternal: false
+  name: "XXX"
+  fullName: System.Text.StringBuilder
+  nameWithType: StringBuilder
+  commentId: T:System.Text.StringBuilder
+- uid: System.Text
+  isExternal: false
+  name: "XXX"
+  fullName: System.Text
+  nameWithType: System.Text
+  commentId: N:System.Text
+- uid: System.Collections.IDictionary.Clear
+  parent: System.Collections.IDictionary
+  isExternal: true
+  name: "XXX"
+  fullName: System.Collections.IDictionary.Clear()
+  spec.csharp:
+  - uid: System.Collections.IDictionary.Clear
+    name: "XXX"
+    fullName: System.Collections.IDictionary.Clear
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.IDictionary.Clear
+    name: "XXX"
+    fullName: System.Collections.IDictionary.Clear
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: IDictionary.Clear()
+  commentId: M:System.Collections.IDictionary.Clear
+- uid: System.Data.Common.DbConnectionStringBuilder
+  parent: System.Data.Common
+  isExternal: false
+  name: "XXX"
+  fullName: System.Data.Common.DbConnectionStringBuilder
+  nameWithType: DbConnectionStringBuilder
+  commentId: T:System.Data.Common.DbConnectionStringBuilder
+- uid: System.Collections.ICollection.CopyTo(System.Array,System.Int32)
+  parent: System.Collections.ICollection
+  isExternal: true
+  name: "XXX"
+  fullName: System.Collections.ICollection.CopyTo(System.Array, System.Int32)
+  spec.csharp:
+  - uid: System.Collections.ICollection.CopyTo(System.Array,System.Int32)
+    name: "XXX"
+    fullName: System.Collections.ICollection.CopyTo
+  - name: "XXX"
+    fullName: (
+  - uid: System.Array
+    name: "XXX"
+    fullName: System.Array
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.ICollection.CopyTo(System.Array,System.Int32)
+    name: "XXX"
+    fullName: System.Collections.ICollection.CopyTo
+  - name: "XXX"
+    fullName: (
+  - uid: System.Array
+    name: "XXX"
+    fullName: System.Array
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: ICollection.CopyTo(Array, Int32)
+  commentId: M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)
+- uid: System.Array
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Array
+  nameWithType: Array
+  commentId: T:System.Array
+- uid: System.Collections.IDictionary.Add(System.Object,System.Object)
+  parent: System.Collections.IDictionary
+  isExternal: true
+  name: "XXX"
+  fullName: System.Collections.IDictionary.Add(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Collections.IDictionary.Add(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Collections.IDictionary.Add
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.IDictionary.Add(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Collections.IDictionary.Add
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: IDictionary.Add(Object, Object)
+  commentId: M:System.Collections.IDictionary.Add(System.Object,System.Object)
+- uid: System.Collections.IDictionary.Contains(System.Object)
+  parent: System.Collections.IDictionary
+  isExternal: true
+  name: "XXX"
+  fullName: System.Collections.IDictionary.Contains(System.Object)
+  spec.csharp:
+  - uid: System.Collections.IDictionary.Contains(System.Object)
+    name: "XXX"
+    fullName: System.Collections.IDictionary.Contains
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.IDictionary.Contains(System.Object)
+    name: "XXX"
+    fullName: System.Collections.IDictionary.Contains
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: IDictionary.Contains(Object)
+  commentId: M:System.Collections.IDictionary.Contains(System.Object)
+- uid: System.Collections.IDictionary.GetEnumerator
+  parent: System.Collections.IDictionary
+  isExternal: true
+  name: "XXX"
+  fullName: System.Collections.IDictionary.GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.IDictionary.GetEnumerator
+    name: "XXX"
+    fullName: System.Collections.IDictionary.GetEnumerator
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.IDictionary.GetEnumerator
+    name: "XXX"
+    fullName: System.Collections.IDictionary.GetEnumerator
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: IDictionary.GetEnumerator()
+  commentId: M:System.Collections.IDictionary.GetEnumerator
+- uid: System.Collections.IDictionaryEnumerator
+  parent: System.Collections
+  isExternal: false
+  name: "XXX"
+  fullName: System.Collections.IDictionaryEnumerator
+  nameWithType: IDictionaryEnumerator
+  commentId: T:System.Collections.IDictionaryEnumerator
+- uid: System.Collections.IDictionary.Remove(System.Object)
+  parent: System.Collections.IDictionary
+  isExternal: true
+  name: "XXX"
+  fullName: System.Collections.IDictionary.Remove(System.Object)
+  spec.csharp:
+  - uid: System.Collections.IDictionary.Remove(System.Object)
+    name: "XXX"
+    fullName: System.Collections.IDictionary.Remove
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.IDictionary.Remove(System.Object)
+    name: "XXX"
+    fullName: System.Collections.IDictionary.Remove
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: IDictionary.Remove(Object)
+  commentId: M:System.Collections.IDictionary.Remove(System.Object)
+- uid: System.Collections.IEnumerable.GetEnumerator
+  parent: System.Collections.IEnumerable
+  isExternal: false
+  name: "XXX"
+  fullName: System.Collections.IEnumerable.GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.IEnumerable.GetEnumerator
+    name: "XXX"
+    fullName: System.Collections.IEnumerable.GetEnumerator
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.IEnumerable.GetEnumerator
+    name: "XXX"
+    fullName: System.Collections.IEnumerable.GetEnumerator
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: IEnumerable.GetEnumerator()
+  commentId: M:System.Collections.IEnumerable.GetEnumerator
+- uid: System.Collections.IEnumerator
+  parent: System.Collections
+  isExternal: false
+  name: "XXX"
+  fullName: System.Collections.IEnumerator
+  nameWithType: IEnumerator
+  commentId: T:System.Collections.IEnumerator
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.ToString()
+  commentId: M:System.Object.ToString
+- uid: System.Collections.IDictionary.IsFixedSize
+  parent: System.Collections.IDictionary
+  isExternal: true
+  name: "XXX"
+  fullName: System.Collections.IDictionary.IsFixedSize
+  nameWithType: IDictionary.IsFixedSize
+  commentId: P:System.Collections.IDictionary.IsFixedSize
+- uid: System.ArgumentException
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentException
+  nameWithType: ArgumentException
+  commentId: T:System.ArgumentException
+- uid: System.ArgumentNullException
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentNullException
+  nameWithType: ArgumentNullException
+  commentId: T:System.ArgumentNullException
+- uid: System.NotSupportedException
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.NotSupportedException
+  nameWithType: NotSupportedException
+  commentId: T:System.NotSupportedException

@@ -1,0 +1,510 @@
+items:
+- uid: System.Text.EncoderFallback
+  commentId: T:System.Text.EncoderFallback
+  id: EncoderFallback
+  parent: System.Text
+  children:
+  - System.Text.EncoderFallback.#ctor
+  - System.Text.EncoderFallback.CreateFallbackBuffer
+  - System.Text.EncoderFallback.ExceptionFallback
+  - System.Text.EncoderFallback.MaxCharCount
+  - System.Text.EncoderFallback.ReplacementFallback
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Text.EncoderFallback
+  type: Class
+  source:
+    remote:
+      path: src/mscorlib/src/System/Text/EncoderFallback.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: EncoderFallback
+    path: src/mscorlib/src/System/Text/EncoderFallback.cs
+    startLine: 11
+  assemblies:
+  - System.Text.Encoding
+  namespace: System.Text
+  summary: "\n<p>Provides a failure-handling mechanism, called a fallback, for an input character that cannot be converted to an encoded output byte sequence. </p>\n"
+  syntax:
+    content: >-
+      [Serializable]
+
+      public abstract class EncoderFallback
+    content.vb: >-
+      <Serializable>
+
+      Public MustInherit Class EncoderFallback
+  seealso:
+  - type: System.Text.EncoderFallbackBuffer
+    commentId: T:System.Text.EncoderFallbackBuffer
+  - type: System.Text.EncoderReplacementFallback
+    commentId: T:System.Text.EncoderReplacementFallback
+  - type: System.Text.EncoderExceptionFallback
+    commentId: T:System.Text.EncoderExceptionFallback
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+  nameWithType: EncoderFallback
+- uid: System.Text.EncoderFallback.#ctor
+  commentId: M:System.Text.EncoderFallback.#ctor
+  id: '#ctor'
+  parent: System.Text.EncoderFallback
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Text.EncoderFallback.EncoderFallback()
+  type: Constructor
+  source:
+    remote:
+      path: src/System.Text.Encoding/ref/System.Text.Encoding.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: .ctor
+    path: src/System.Text.Encoding/ref/System.Text.Encoding.cs
+    startLine: 86
+  assemblies:
+  - System.Text.Encoding
+  namespace: System.Text
+  summary: "\n<p>Initializes a new instance of the <xref href=\"System.Text.EncoderFallback\" data-throw-if-not-resolved=\"false\"></xref> class.</p>\n"
+  syntax:
+    content: protected EncoderFallback()
+    content.vb: Protected Sub New
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  nameWithType: EncoderFallback.EncoderFallback()
+- uid: System.Text.EncoderFallback.ExceptionFallback
+  commentId: P:System.Text.EncoderFallback.ExceptionFallback
+  id: ExceptionFallback
+  parent: System.Text.EncoderFallback
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Text.EncoderFallback.ExceptionFallback
+  type: Property
+  source:
+    remote:
+      path: src/mscorlib/src/System/Text/EncoderFallback.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: ExceptionFallback
+    path: src/mscorlib/src/System/Text/EncoderFallback.cs
+    startLine: 53
+  assemblies:
+  - System.Text.Encoding
+  namespace: System.Text
+  summary: "\n<p>Gets an object that throws an exception when an input character cannot be encoded.</p>\n"
+  syntax:
+    content: public static EncoderFallback ExceptionFallback { get; }
+    content.vb: Public Shared ReadOnly Property ExceptionFallback As EncoderFallback
+    parameters: []
+    return:
+      type: System.Text.EncoderFallback
+      description: "\n<p>A type derived from the <xref href=\"System.Text.EncoderFallback\" data-throw-if-not-resolved=\"false\"></xref> class. The default value is a <xref href=\"System.Text.EncoderExceptionFallback\" data-throw-if-not-resolved=\"false\"></xref> object.</p>\n"
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+  nameWithType: EncoderFallback.ExceptionFallback
+- uid: System.Text.EncoderFallback.MaxCharCount
+  commentId: P:System.Text.EncoderFallback.MaxCharCount
+  id: MaxCharCount
+  parent: System.Text.EncoderFallback
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Text.EncoderFallback.MaxCharCount
+  type: Property
+  source:
+    remote:
+      path: src/mscorlib/src/System/Text/EncoderFallback.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: MaxCharCount
+    path: src/mscorlib/src/System/Text/EncoderFallback.cs
+    startLine: 76
+  assemblies:
+  - System.Text.Encoding
+  namespace: System.Text
+  summary: "\n<p>When overridden in a derived class, gets the maximum number of characters the current <xref href=\"System.Text.EncoderFallback\" data-throw-if-not-resolved=\"false\"></xref> object can return.</p>\n"
+  syntax:
+    content: public abstract int MaxCharCount { get; }
+    content.vb: Public MustOverride ReadOnly Property MaxCharCount As Integer
+    parameters: []
+    return:
+      type: System.Int32
+      description: "\n<p>The maximum number of characters the current <xref href=\"System.Text.EncoderFallback\" data-throw-if-not-resolved=\"false\"></xref> object can return.</p>\n"
+  modifiers.csharp:
+  - public
+  - abstract
+  - get
+  modifiers.vb:
+  - Public
+  - MustOverride
+  - ReadOnly
+  nameWithType: EncoderFallback.MaxCharCount
+- uid: System.Text.EncoderFallback.ReplacementFallback
+  commentId: P:System.Text.EncoderFallback.ReplacementFallback
+  id: ReplacementFallback
+  parent: System.Text.EncoderFallback
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Text.EncoderFallback.ReplacementFallback
+  type: Property
+  source:
+    remote:
+      path: src/mscorlib/src/System/Text/EncoderFallback.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: ReplacementFallback
+    path: src/mscorlib/src/System/Text/EncoderFallback.cs
+    startLine: 39
+  assemblies:
+  - System.Text.Encoding
+  namespace: System.Text
+  summary: "\n<p>Gets an object that outputs a substitute string in place of an input character that cannot be encoded.</p>\n"
+  syntax:
+    content: public static EncoderFallback ReplacementFallback { get; }
+    content.vb: Public Shared ReadOnly Property ReplacementFallback As EncoderFallback
+    parameters: []
+    return:
+      type: System.Text.EncoderFallback
+      description: "\n<p>A type derived from the <xref href=\"System.Text.EncoderFallback\" data-throw-if-not-resolved=\"false\"></xref> class. The default value is a <xref href=\"System.Text.EncoderReplacementFallback\" data-throw-if-not-resolved=\"false\"></xref> object that replaces unknown input characters with the QUESTION MARK character (\"?\", U+003F).</p>\n"
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+  nameWithType: EncoderFallback.ReplacementFallback
+- uid: System.Text.EncoderFallback.CreateFallbackBuffer
+  commentId: M:System.Text.EncoderFallback.CreateFallbackBuffer
+  id: CreateFallbackBuffer
+  parent: System.Text.EncoderFallback
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Text.EncoderFallback.CreateFallbackBuffer()
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Text/EncoderFallback.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: CreateFallbackBuffer
+    path: src/mscorlib/src/System/Text/EncoderFallback.cs
+    startLine: 72
+  assemblies:
+  - System.Text.Encoding
+  namespace: System.Text
+  summary: "\n<p>When overridden in a derived class, initializes a new instance of the <xref href=\"System.Text.EncoderFallbackBuffer\" data-throw-if-not-resolved=\"false\"></xref> class. </p>\n"
+  syntax:
+    content: public abstract EncoderFallbackBuffer CreateFallbackBuffer()
+    content.vb: Public MustOverride Function CreateFallbackBuffer As EncoderFallbackBuffer
+    return:
+      type: System.Text.EncoderFallbackBuffer
+      description: "\n<p>An object that provides a fallback buffer for an encoder.</p>\n"
+  seealso:
+  - type: System.Text.DecoderFallbackBuffer
+    commentId: T:System.Text.DecoderFallbackBuffer
+  modifiers.csharp:
+  - public
+  - abstract
+  modifiers.vb:
+  - Public
+  - MustOverride
+  nameWithType: EncoderFallback.CreateFallbackBuffer()
+references:
+- uid: System.Text
+  isExternal: false
+  name: "XXX"
+  fullName: System.Text
+  nameWithType: System.Text
+  commentId: N:System.Text
+- uid: System.Object
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Object
+  nameWithType: Object
+  commentId: T:System.Object
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.ToString()
+  commentId: M:System.Object.ToString
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.Equals(Object)
+  commentId: M:System.Object.Equals(System.Object)
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.Equals(Object, Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.GetHashCode()
+  commentId: M:System.Object.GetHashCode
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.GetType()
+  commentId: M:System.Object.GetType
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.MemberwiseClone()
+  commentId: M:System.Object.MemberwiseClone
+- uid: System
+  isExternal: false
+  name: "XXX"
+  fullName: System
+  nameWithType: System
+  commentId: N:System
+- uid: System.Text.EncoderFallback
+  parent: System.Text
+  isExternal: false
+  name: "XXX"
+  fullName: System.Text.EncoderFallback
+  nameWithType: EncoderFallback
+  commentId: T:System.Text.EncoderFallback
+- uid: System.Int32
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Int32
+  nameWithType: Int32
+  commentId: T:System.Int32
+- uid: System.Text.EncoderFallbackBuffer
+  parent: System.Text
+  isExternal: false
+  name: "XXX"
+  fullName: System.Text.EncoderFallbackBuffer
+  nameWithType: EncoderFallbackBuffer
+  commentId: T:System.Text.EncoderFallbackBuffer

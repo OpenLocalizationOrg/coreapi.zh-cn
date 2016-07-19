@@ -1,0 +1,137 @@
+items:
+- uid: System.Runtime.InteropServices.ICustomQueryInterface
+  commentId: T:System.Runtime.InteropServices.ICustomQueryInterface
+  id: ICustomQueryInterface
+  parent: System.Runtime.InteropServices
+  children:
+  - System.Runtime.InteropServices.ICustomQueryInterface.GetInterface(System.Guid@,System.IntPtr@)
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Runtime.InteropServices.ICustomQueryInterface
+  type: Interface
+  source:
+    remote:
+      path: src/mscorlib/src/System/Runtime/InteropServices/ICustomQueryInterface.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: ICustomQueryInterface
+    path: src/mscorlib/src/System/Runtime/InteropServices/ICustomQueryInterface.cs
+    startLine: 32
+  assemblies:
+  - System.Runtime.InteropServices
+  namespace: System.Runtime.InteropServices
+  summary: "\n<p>Enables developers to provide a custom, managed implementation of the <see href=\"http://go.microsoft.com/fwlink/?LinkID=144867\">IUnknown::QueryInterface(REFIID riid, void **ppvObject)</see> method.</p>\n"
+  syntax:
+    content: >-
+      [ComVisible(false)]
+
+      public interface ICustomQueryInterface
+    content.vb: >-
+      <ComVisible(False)>
+
+      Public Interface ICustomQueryInterface
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: ICustomQueryInterface may be unavailable in future releases.
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+  nameWithType: ICustomQueryInterface
+- uid: System.Runtime.InteropServices.ICustomQueryInterface.GetInterface(System.Guid@,System.IntPtr@)
+  commentId: M:System.Runtime.InteropServices.ICustomQueryInterface.GetInterface(System.Guid@,System.IntPtr@)
+  id: GetInterface(System.Guid@,System.IntPtr@)
+  parent: System.Runtime.InteropServices.ICustomQueryInterface
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Runtime.InteropServices.ICustomQueryInterface.GetInterface(ref System.Guid, out System.IntPtr)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Runtime/InteropServices/ICustomQueryInterface.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: GetInterface
+    path: src/mscorlib/src/System/Runtime/InteropServices/ICustomQueryInterface.cs
+    startLine: 35
+  assemblies:
+  - System.Runtime.InteropServices
+  namespace: System.Runtime.InteropServices
+  summary: "\n<p>Returns an interface according to a specified interface ID.</p>\n"
+  syntax:
+    content: >-
+      [SecurityCritical]
+
+      CustomQueryInterfaceResult GetInterface([In] ref Guid iid, out IntPtr ppv)
+    content.vb: >-
+      <SecurityCritical>
+
+      Function GetInterface(ByRef iid As Guid, ByRef ppv As IntPtr) As CustomQueryInterfaceResult
+    parameters:
+    - id: iid
+      type: System.Guid
+      description: "\n<p>The GUID of the requested interface.</p>\n"
+      attributes:
+      - type: System.Runtime.InteropServices.InAttribute
+        ctor: System.Runtime.InteropServices.InAttribute.#ctor
+        arguments: []
+    - id: ppv
+      type: System.IntPtr
+      description: "\n<p>A reference to the requested interface, when this method returns.</p>\n"
+    return:
+      type: System.Runtime.InteropServices.CustomQueryInterfaceResult
+      description: "\n<p>One of the enumeration values that indicates whether a custom implementation of <see href=\"http://go.microsoft.com/fwlink/?LinkID=144867\">IUnknown::QueryInterface</see> was used.</p>\n"
+  see:
+  - type: System.Security.SecurityCriticalAttribute
+    commentId: T:System.Security.SecurityCriticalAttribute
+  attributes:
+  - type: System.Security.SecurityCriticalAttribute
+    ctor: System.Security.SecurityCriticalAttribute.#ctor
+    arguments: []
+  fullName.vb: System.Runtime.InteropServices.ICustomQueryInterface.GetInterface(ByRef System.Guid, ByRef System.IntPtr)
+  name.vb: GetInterface(ByRef Guid, ByRef IntPtr)
+  nameWithType: ICustomQueryInterface.GetInterface(ref Guid, out IntPtr)
+  nameWithType.vb: ICustomQueryInterface.GetInterface(ByRef Guid, ByRef IntPtr)
+references:
+- uid: System.Runtime.InteropServices
+  isExternal: false
+  name: "XXX"
+  fullName: System.Runtime.InteropServices
+  nameWithType: System.Runtime.InteropServices
+  commentId: N:System.Runtime.InteropServices
+- uid: System.Guid
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Guid
+  nameWithType: Guid
+  commentId: T:System.Guid
+- uid: System.IntPtr
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.IntPtr
+  nameWithType: IntPtr
+  commentId: T:System.IntPtr
+- uid: System.Runtime.InteropServices.CustomQueryInterfaceResult
+  parent: System.Runtime.InteropServices
+  isExternal: false
+  name: "XXX"
+  fullName: System.Runtime.InteropServices.CustomQueryInterfaceResult
+  nameWithType: CustomQueryInterfaceResult
+  commentId: T:System.Runtime.InteropServices.CustomQueryInterfaceResult
+- uid: System
+  isExternal: false
+  name: "XXX"
+  fullName: System
+  nameWithType: System
+  commentId: N:System

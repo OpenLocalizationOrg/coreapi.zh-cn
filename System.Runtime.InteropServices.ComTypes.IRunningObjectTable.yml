@@ -1,0 +1,388 @@
+items:
+- uid: System.Runtime.InteropServices.ComTypes.IRunningObjectTable
+  commentId: T:System.Runtime.InteropServices.ComTypes.IRunningObjectTable
+  id: IRunningObjectTable
+  parent: System.Runtime.InteropServices.ComTypes
+  children:
+  - System.Runtime.InteropServices.ComTypes.IRunningObjectTable.EnumRunning(System.Runtime.InteropServices.ComTypes.IEnumMoniker@)
+  - System.Runtime.InteropServices.ComTypes.IRunningObjectTable.GetObject(System.Runtime.InteropServices.ComTypes.IMoniker,System.Object@)
+  - System.Runtime.InteropServices.ComTypes.IRunningObjectTable.GetTimeOfLastChange(System.Runtime.InteropServices.ComTypes.IMoniker,System.Runtime.InteropServices.ComTypes.FILETIME@)
+  - System.Runtime.InteropServices.ComTypes.IRunningObjectTable.IsRunning(System.Runtime.InteropServices.ComTypes.IMoniker)
+  - System.Runtime.InteropServices.ComTypes.IRunningObjectTable.NoteChangeTime(System.Int32,System.Runtime.InteropServices.ComTypes.FILETIME@)
+  - System.Runtime.InteropServices.ComTypes.IRunningObjectTable.Register(System.Int32,System.Object,System.Runtime.InteropServices.ComTypes.IMoniker)
+  - System.Runtime.InteropServices.ComTypes.IRunningObjectTable.Revoke(System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Runtime.InteropServices.ComTypes.IRunningObjectTable
+  type: Interface
+  source:
+    remote:
+      path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/IRunningObjectTable.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: IRunningObjectTable
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/IRunningObjectTable.cs
+    startLine: 17
+  assemblies:
+  - System.Runtime.InteropServices
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: "\n<p>Provides the managed definition of the <strong>IRunningObjectTable</strong> interface.</p>\n"
+  syntax:
+    content: >-
+      [Guid("00000010-0000-0000-C000-000000000046")]
+
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [ComImport]
+
+      public interface IRunningObjectTable
+    content.vb: >-
+      <Guid("00000010-0000-0000-C000-000000000046")>
+
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <ComImport>
+
+      Public Interface IRunningObjectTable
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+  nameWithType: IRunningObjectTable
+- uid: System.Runtime.InteropServices.ComTypes.IRunningObjectTable.EnumRunning(System.Runtime.InteropServices.ComTypes.IEnumMoniker@)
+  commentId: M:System.Runtime.InteropServices.ComTypes.IRunningObjectTable.EnumRunning(System.Runtime.InteropServices.ComTypes.IEnumMoniker@)
+  id: EnumRunning(System.Runtime.InteropServices.ComTypes.IEnumMoniker@)
+  parent: System.Runtime.InteropServices.ComTypes.IRunningObjectTable
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Runtime.InteropServices.ComTypes.IRunningObjectTable.EnumRunning(out System.Runtime.InteropServices.ComTypes.IEnumMoniker)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/IRunningObjectTable.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: EnumRunning
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/IRunningObjectTable.cs
+    startLine: 31
+  assemblies:
+  - System.Runtime.InteropServices
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: "\n<p>Enumerates the objects currently registered as running.</p>\n"
+  syntax:
+    content: void EnumRunning(out IEnumMoniker ppenumMoniker)
+    content.vb: Sub EnumRunning(ByRef ppenumMoniker As IEnumMoniker)
+    parameters:
+    - id: ppenumMoniker
+      type: System.Runtime.InteropServices.ComTypes.IEnumMoniker
+      description: "\n<p>When this method returns, contains the new enumerator for the Running Object Table (ROT). This parameter is passed uninitialized.</p>\n"
+  fullName.vb: System.Runtime.InteropServices.ComTypes.IRunningObjectTable.EnumRunning(ByRef System.Runtime.InteropServices.ComTypes.IEnumMoniker)
+  name.vb: EnumRunning(ByRef IEnumMoniker)
+  nameWithType: IRunningObjectTable.EnumRunning(out IEnumMoniker)
+  nameWithType.vb: IRunningObjectTable.EnumRunning(ByRef IEnumMoniker)
+- uid: System.Runtime.InteropServices.ComTypes.IRunningObjectTable.GetObject(System.Runtime.InteropServices.ComTypes.IMoniker,System.Object@)
+  commentId: M:System.Runtime.InteropServices.ComTypes.IRunningObjectTable.GetObject(System.Runtime.InteropServices.ComTypes.IMoniker,System.Object@)
+  id: GetObject(System.Runtime.InteropServices.ComTypes.IMoniker,System.Object@)
+  parent: System.Runtime.InteropServices.ComTypes.IRunningObjectTable
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Runtime.InteropServices.ComTypes.IRunningObjectTable.GetObject(System.Runtime.InteropServices.ComTypes.IMoniker, out System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/IRunningObjectTable.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: GetObject
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/IRunningObjectTable.cs
+    startLine: 26
+  assemblies:
+  - System.Runtime.InteropServices
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: "\n<p>Returns the registered object if the supplied object name is registered as running.</p>\n"
+  syntax:
+    content: >-
+      [PreserveSig]
+
+      int GetObject(IMoniker pmkObjectName, [MarshalAs(UnmanagedType.Interface)] out object ppunkObject)
+    content.vb: >-
+      <PreserveSig>
+
+      Function GetObject(pmkObjectName As IMoniker, ByRef ppunkObject As Object) As Integer
+    parameters:
+    - id: pmkObjectName
+      type: System.Runtime.InteropServices.ComTypes.IMoniker
+      description: "\n<p>A reference to the moniker to search for in the Running Object Table (ROT). </p>\n"
+    - id: ppunkObject
+      type: System.Object
+      description: "\n<p>When this method returns, contains the requested running object. This parameter is passed uninitialized.</p>\n"
+      attributes:
+      - type: System.Runtime.InteropServices.MarshalAsAttribute
+        ctor: System.Runtime.InteropServices.MarshalAsAttribute.#ctor(System.Runtime.InteropServices.UnmanagedType)
+        arguments:
+        - type: System.Runtime.InteropServices.UnmanagedType
+          value: 28
+    return:
+      type: System.Int32
+      description: "\n<p>An <strong>HRESULT</strong> value that indicates the success or failure of the operation. </p>\n"
+  fullName.vb: System.Runtime.InteropServices.ComTypes.IRunningObjectTable.GetObject(System.Runtime.InteropServices.ComTypes.IMoniker, ByRef System.Object)
+  name.vb: GetObject(IMoniker, ByRef Object)
+  nameWithType: IRunningObjectTable.GetObject(IMoniker, out Object)
+  nameWithType.vb: IRunningObjectTable.GetObject(IMoniker, ByRef Object)
+- uid: System.Runtime.InteropServices.ComTypes.IRunningObjectTable.GetTimeOfLastChange(System.Runtime.InteropServices.ComTypes.IMoniker,System.Runtime.InteropServices.ComTypes.FILETIME@)
+  commentId: M:System.Runtime.InteropServices.ComTypes.IRunningObjectTable.GetTimeOfLastChange(System.Runtime.InteropServices.ComTypes.IMoniker,System.Runtime.InteropServices.ComTypes.FILETIME@)
+  id: GetTimeOfLastChange(System.Runtime.InteropServices.ComTypes.IMoniker,System.Runtime.InteropServices.ComTypes.FILETIME@)
+  parent: System.Runtime.InteropServices.ComTypes.IRunningObjectTable
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Runtime.InteropServices.ComTypes.IRunningObjectTable.GetTimeOfLastChange(System.Runtime.InteropServices.ComTypes.IMoniker, out System.Runtime.InteropServices.ComTypes.FILETIME)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/IRunningObjectTable.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: GetTimeOfLastChange
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/IRunningObjectTable.cs
+    startLine: 29
+  assemblies:
+  - System.Runtime.InteropServices
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: "\n<p>Searches for this moniker in the Running Object Table (ROT) and reports the recorded time of change, if present.</p>\n"
+  syntax:
+    content: >-
+      [PreserveSig]
+
+      int GetTimeOfLastChange(IMoniker pmkObjectName, out FILETIME pfiletime)
+    content.vb: >-
+      <PreserveSig>
+
+      Function GetTimeOfLastChange(pmkObjectName As IMoniker, ByRef pfiletime As FILETIME) As Integer
+    parameters:
+    - id: pmkObjectName
+      type: System.Runtime.InteropServices.ComTypes.IMoniker
+      description: "\n<p>A reference to the moniker to search for in the Running Object Table (ROT). </p>\n"
+    - id: pfiletime
+      type: System.Runtime.InteropServices.ComTypes.FILETIME
+      description: "\n<p>When this object returns, contains the objects last change time. This parameter is passed uninitialized.</p>\n"
+    return:
+      type: System.Int32
+      description: "\n<p>An <strong>HRESULT</strong> value that indicates the success or failure of the operation.</p>\n"
+  fullName.vb: System.Runtime.InteropServices.ComTypes.IRunningObjectTable.GetTimeOfLastChange(System.Runtime.InteropServices.ComTypes.IMoniker, ByRef System.Runtime.InteropServices.ComTypes.FILETIME)
+  name.vb: GetTimeOfLastChange(IMoniker, ByRef FILETIME)
+  nameWithType: IRunningObjectTable.GetTimeOfLastChange(IMoniker, out FILETIME)
+  nameWithType.vb: IRunningObjectTable.GetTimeOfLastChange(IMoniker, ByRef FILETIME)
+- uid: System.Runtime.InteropServices.ComTypes.IRunningObjectTable.IsRunning(System.Runtime.InteropServices.ComTypes.IMoniker)
+  commentId: M:System.Runtime.InteropServices.ComTypes.IRunningObjectTable.IsRunning(System.Runtime.InteropServices.ComTypes.IMoniker)
+  id: IsRunning(System.Runtime.InteropServices.ComTypes.IMoniker)
+  parent: System.Runtime.InteropServices.ComTypes.IRunningObjectTable
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Runtime.InteropServices.ComTypes.IRunningObjectTable.IsRunning(System.Runtime.InteropServices.ComTypes.IMoniker)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/IRunningObjectTable.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: IsRunning
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/IRunningObjectTable.cs
+    startLine: 24
+  assemblies:
+  - System.Runtime.InteropServices
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: "\n<p>Determines whether the specified moniker is currently registered in the Running Object Table (ROT).</p>\n"
+  syntax:
+    content: >-
+      [PreserveSig]
+
+      int IsRunning(IMoniker pmkObjectName)
+    content.vb: >-
+      <PreserveSig>
+
+      Function IsRunning(pmkObjectName As IMoniker) As Integer
+    parameters:
+    - id: pmkObjectName
+      type: System.Runtime.InteropServices.ComTypes.IMoniker
+      description: "\n<p>A reference to the moniker to search for in the Running Object Table (ROT). </p>\n"
+    return:
+      type: System.Int32
+      description: "\n<p>An <strong>HRESULT</strong> value that indicates the success or failure of the operation.</p>\n"
+  nameWithType: IRunningObjectTable.IsRunning(IMoniker)
+- uid: System.Runtime.InteropServices.ComTypes.IRunningObjectTable.NoteChangeTime(System.Int32,System.Runtime.InteropServices.ComTypes.FILETIME@)
+  commentId: M:System.Runtime.InteropServices.ComTypes.IRunningObjectTable.NoteChangeTime(System.Int32,System.Runtime.InteropServices.ComTypes.FILETIME@)
+  id: NoteChangeTime(System.Int32,System.Runtime.InteropServices.ComTypes.FILETIME@)
+  parent: System.Runtime.InteropServices.ComTypes.IRunningObjectTable
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Runtime.InteropServices.ComTypes.IRunningObjectTable.NoteChangeTime(System.Int32, ref System.Runtime.InteropServices.ComTypes.FILETIME)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/IRunningObjectTable.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: NoteChangeTime
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/IRunningObjectTable.cs
+    startLine: 28
+  assemblies:
+  - System.Runtime.InteropServices
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: "\n<p>Notes the time that a particular object changed so <strong>IMoniker::GetTimeOfLastChange</strong> can report an appropriate change time.</p>\n"
+  syntax:
+    content: void NoteChangeTime(int dwRegister, ref FILETIME pfiletime)
+    content.vb: Sub NoteChangeTime(dwRegister As Integer, ByRef pfiletime As FILETIME)
+    parameters:
+    - id: dwRegister
+      type: System.Int32
+      description: "\n<p>The Running Object Table (ROT) entry of the changed object. </p>\n"
+    - id: pfiletime
+      type: System.Runtime.InteropServices.ComTypes.FILETIME
+      description: "\n<p>A reference to the object's last change time. </p>\n"
+  fullName.vb: System.Runtime.InteropServices.ComTypes.IRunningObjectTable.NoteChangeTime(System.Int32, ByRef System.Runtime.InteropServices.ComTypes.FILETIME)
+  name.vb: NoteChangeTime(Int32, ByRef FILETIME)
+  nameWithType: IRunningObjectTable.NoteChangeTime(Int32, ref FILETIME)
+  nameWithType.vb: IRunningObjectTable.NoteChangeTime(Int32, ByRef FILETIME)
+- uid: System.Runtime.InteropServices.ComTypes.IRunningObjectTable.Register(System.Int32,System.Object,System.Runtime.InteropServices.ComTypes.IMoniker)
+  commentId: M:System.Runtime.InteropServices.ComTypes.IRunningObjectTable.Register(System.Int32,System.Object,System.Runtime.InteropServices.ComTypes.IMoniker)
+  id: Register(System.Int32,System.Object,System.Runtime.InteropServices.ComTypes.IMoniker)
+  parent: System.Runtime.InteropServices.ComTypes.IRunningObjectTable
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Runtime.InteropServices.ComTypes.IRunningObjectTable.Register(System.Int32, System.Object, System.Runtime.InteropServices.ComTypes.IMoniker)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/IRunningObjectTable.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Register
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/IRunningObjectTable.cs
+    startLine: 22
+  assemblies:
+  - System.Runtime.InteropServices
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: "\n<p>Registers that the supplied object has entered the running state.</p>\n"
+  syntax:
+    content: int Register(int grfFlags, [MarshalAs(UnmanagedType.Interface)] object punkObject, IMoniker pmkObjectName)
+    content.vb: Function Register(grfFlags As Integer, punkObject As Object, pmkObjectName As IMoniker) As Integer
+    parameters:
+    - id: grfFlags
+      type: System.Int32
+      description: "\n<p>Specifies whether the Running Object Table's (ROT) reference to <em>punkObject</em> is weak or strong, and controls access to the object through its entry in the ROT. </p>\n"
+    - id: punkObject
+      type: System.Object
+      description: "\n<p>A reference to the object being registered as running. </p>\n"
+      attributes:
+      - type: System.Runtime.InteropServices.MarshalAsAttribute
+        ctor: System.Runtime.InteropServices.MarshalAsAttribute.#ctor(System.Runtime.InteropServices.UnmanagedType)
+        arguments:
+        - type: System.Runtime.InteropServices.UnmanagedType
+          value: 28
+    - id: pmkObjectName
+      type: System.Runtime.InteropServices.ComTypes.IMoniker
+      description: "\n<p>A reference to the moniker that identifies <em>punkObject</em>. </p>\n"
+    return:
+      type: System.Int32
+      description: "\n<p>A value that can be used to identify this ROT entry in subsequent calls to <xref href=\"System.Runtime.InteropServices.ComTypes.IRunningObjectTable.Revoke(System.Int32)\" data-throw-if-not-resolved=\"false\"></xref> or <xref href=\"System.Runtime.InteropServices.ComTypes.IRunningObjectTable.NoteChangeTime(System.Int32,System.Runtime.InteropServices.ComTypes.FILETIME@)\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  nameWithType: IRunningObjectTable.Register(Int32, Object, IMoniker)
+- uid: System.Runtime.InteropServices.ComTypes.IRunningObjectTable.Revoke(System.Int32)
+  commentId: M:System.Runtime.InteropServices.ComTypes.IRunningObjectTable.Revoke(System.Int32)
+  id: Revoke(System.Int32)
+  parent: System.Runtime.InteropServices.ComTypes.IRunningObjectTable
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Runtime.InteropServices.ComTypes.IRunningObjectTable.Revoke(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/IRunningObjectTable.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Revoke
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/IRunningObjectTable.cs
+    startLine: 23
+  assemblies:
+  - System.Runtime.InteropServices
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: "\n<p>Unregisters the specified object from the Running Object Table (ROT).</p>\n"
+  syntax:
+    content: void Revoke(int dwRegister)
+    content.vb: Sub Revoke(dwRegister As Integer)
+    parameters:
+    - id: dwRegister
+      type: System.Int32
+      description: "\n<p>The Running Object Table (ROT) entry to revoke. </p>\n"
+  nameWithType: IRunningObjectTable.Revoke(Int32)
+references:
+- uid: System.Runtime.InteropServices.ComTypes
+  isExternal: false
+  name: "XXX"
+  fullName: System.Runtime.InteropServices.ComTypes
+  nameWithType: System.Runtime.InteropServices.ComTypes
+  commentId: N:System.Runtime.InteropServices.ComTypes
+- uid: System.Runtime.InteropServices.ComTypes.IEnumMoniker
+  parent: System.Runtime.InteropServices.ComTypes
+  isExternal: false
+  name: "XXX"
+  fullName: System.Runtime.InteropServices.ComTypes.IEnumMoniker
+  nameWithType: IEnumMoniker
+  commentId: T:System.Runtime.InteropServices.ComTypes.IEnumMoniker
+- uid: System.Runtime.InteropServices.ComTypes.IMoniker
+  parent: System.Runtime.InteropServices.ComTypes
+  isExternal: false
+  name: "XXX"
+  fullName: System.Runtime.InteropServices.ComTypes.IMoniker
+  nameWithType: IMoniker
+  commentId: T:System.Runtime.InteropServices.ComTypes.IMoniker
+- uid: System.Object
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Object
+  nameWithType: Object
+  commentId: T:System.Object
+- uid: System.Int32
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Int32
+  nameWithType: Int32
+  commentId: T:System.Int32
+- uid: System
+  isExternal: false
+  name: "XXX"
+  fullName: System
+  nameWithType: System
+  commentId: N:System
+- uid: System.Runtime.InteropServices.ComTypes.FILETIME
+  parent: System.Runtime.InteropServices.ComTypes
+  isExternal: false
+  name: "XXX"
+  fullName: System.Runtime.InteropServices.ComTypes.FILETIME
+  nameWithType: FILETIME
+  commentId: T:System.Runtime.InteropServices.ComTypes.FILETIME

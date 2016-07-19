@@ -1,0 +1,278 @@
+items:
+- uid: System.Runtime.InteropServices.ComTypes.IConnectionPoint
+  commentId: T:System.Runtime.InteropServices.ComTypes.IConnectionPoint
+  id: IConnectionPoint
+  parent: System.Runtime.InteropServices.ComTypes
+  children:
+  - System.Runtime.InteropServices.ComTypes.IConnectionPoint.Advise(System.Object,System.Int32@)
+  - System.Runtime.InteropServices.ComTypes.IConnectionPoint.EnumConnections(System.Runtime.InteropServices.ComTypes.IEnumConnections@)
+  - System.Runtime.InteropServices.ComTypes.IConnectionPoint.GetConnectionInterface(System.Guid@)
+  - System.Runtime.InteropServices.ComTypes.IConnectionPoint.GetConnectionPointContainer(System.Runtime.InteropServices.ComTypes.IConnectionPointContainer@)
+  - System.Runtime.InteropServices.ComTypes.IConnectionPoint.Unadvise(System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Runtime.InteropServices.ComTypes.IConnectionPoint
+  type: Interface
+  source:
+    remote:
+      path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/IConnectionPoint.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: IConnectionPoint
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/IConnectionPoint.cs
+    startLine: 17
+  assemblies:
+  - System.Runtime.InteropServices
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: "\n<p>Provides the managed definition of the <strong>IConnectionPoint</strong> interface.</p>\n"
+  syntax:
+    content: >-
+      [Guid("B196B286-BAB4-101A-B69C-00AA00341D07")]
+
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [ComImport]
+
+      public interface IConnectionPoint
+    content.vb: >-
+      <Guid("B196B286-BAB4-101A-B69C-00AA00341D07")>
+
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <ComImport>
+
+      Public Interface IConnectionPoint
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+  nameWithType: IConnectionPoint
+- uid: System.Runtime.InteropServices.ComTypes.IConnectionPoint.Advise(System.Object,System.Int32@)
+  commentId: M:System.Runtime.InteropServices.ComTypes.IConnectionPoint.Advise(System.Object,System.Int32@)
+  id: Advise(System.Object,System.Int32@)
+  parent: System.Runtime.InteropServices.ComTypes.IConnectionPoint
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Runtime.InteropServices.ComTypes.IConnectionPoint.Advise(System.Object, out System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/IConnectionPoint.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Advise
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/IConnectionPoint.cs
+    startLine: 24
+  assemblies:
+  - System.Runtime.InteropServices
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: "\n<p>Establishes an advisory connection between the connection point and the caller's sink object.</p>\n"
+  syntax:
+    content: void Advise([MarshalAs(UnmanagedType.Interface)] object pUnkSink, out int pdwCookie)
+    content.vb: Sub Advise(pUnkSink As Object, ByRef pdwCookie As Integer)
+    parameters:
+    - id: pUnkSink
+      type: System.Object
+      description: "\n<p>A reference to the sink to receive calls for the outgoing interface managed by this connection point. </p>\n"
+      attributes:
+      - type: System.Runtime.InteropServices.MarshalAsAttribute
+        ctor: System.Runtime.InteropServices.MarshalAsAttribute.#ctor(System.Runtime.InteropServices.UnmanagedType)
+        arguments:
+        - type: System.Runtime.InteropServices.UnmanagedType
+          value: 28
+    - id: pdwCookie
+      type: System.Int32
+      description: "\n<p>When this method returns, contains the connection cookie. This parameter is passed uninitialized.</p>\n"
+  fullName.vb: System.Runtime.InteropServices.ComTypes.IConnectionPoint.Advise(System.Object, ByRef System.Int32)
+  name.vb: Advise(Object, ByRef Int32)
+  nameWithType: IConnectionPoint.Advise(Object, out Int32)
+  nameWithType.vb: IConnectionPoint.Advise(Object, ByRef Int32)
+- uid: System.Runtime.InteropServices.ComTypes.IConnectionPoint.EnumConnections(System.Runtime.InteropServices.ComTypes.IEnumConnections@)
+  commentId: M:System.Runtime.InteropServices.ComTypes.IConnectionPoint.EnumConnections(System.Runtime.InteropServices.ComTypes.IEnumConnections@)
+  id: EnumConnections(System.Runtime.InteropServices.ComTypes.IEnumConnections@)
+  parent: System.Runtime.InteropServices.ComTypes.IConnectionPoint
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Runtime.InteropServices.ComTypes.IConnectionPoint.EnumConnections(out System.Runtime.InteropServices.ComTypes.IEnumConnections)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/IConnectionPoint.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: EnumConnections
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/IConnectionPoint.cs
+    startLine: 26
+  assemblies:
+  - System.Runtime.InteropServices
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: "\n<p>Creates an enumerator object for iteration through the connections that exist to this connection point.</p>\n"
+  syntax:
+    content: void EnumConnections(out IEnumConnections ppEnum)
+    content.vb: Sub EnumConnections(ByRef ppEnum As IEnumConnections)
+    parameters:
+    - id: ppEnum
+      type: System.Runtime.InteropServices.ComTypes.IEnumConnections
+      description: "\n<p>When this method returns, contains the newly created enumerator. This parameter is passed uninitialized.</p>\n"
+  fullName.vb: System.Runtime.InteropServices.ComTypes.IConnectionPoint.EnumConnections(ByRef System.Runtime.InteropServices.ComTypes.IEnumConnections)
+  name.vb: EnumConnections(ByRef IEnumConnections)
+  nameWithType: IConnectionPoint.EnumConnections(out IEnumConnections)
+  nameWithType.vb: IConnectionPoint.EnumConnections(ByRef IEnumConnections)
+- uid: System.Runtime.InteropServices.ComTypes.IConnectionPoint.GetConnectionInterface(System.Guid@)
+  commentId: M:System.Runtime.InteropServices.ComTypes.IConnectionPoint.GetConnectionInterface(System.Guid@)
+  id: GetConnectionInterface(System.Guid@)
+  parent: System.Runtime.InteropServices.ComTypes.IConnectionPoint
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Runtime.InteropServices.ComTypes.IConnectionPoint.GetConnectionInterface(out System.Guid)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/IConnectionPoint.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: GetConnectionInterface
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/IConnectionPoint.cs
+    startLine: 22
+  assemblies:
+  - System.Runtime.InteropServices
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: "\n<p>Returns the IID of the outgoing interface managed by this connection point.</p>\n"
+  syntax:
+    content: void GetConnectionInterface(out Guid pIID)
+    content.vb: Sub GetConnectionInterface(ByRef pIID As Guid)
+    parameters:
+    - id: pIID
+      type: System.Guid
+      description: "\n<p>When this parameter returns, contains the IID of the outgoing interface managed by this connection point. This parameter is passed uninitialized.</p>\n"
+  fullName.vb: System.Runtime.InteropServices.ComTypes.IConnectionPoint.GetConnectionInterface(ByRef System.Guid)
+  name.vb: GetConnectionInterface(ByRef Guid)
+  nameWithType: IConnectionPoint.GetConnectionInterface(out Guid)
+  nameWithType.vb: IConnectionPoint.GetConnectionInterface(ByRef Guid)
+- uid: System.Runtime.InteropServices.ComTypes.IConnectionPoint.GetConnectionPointContainer(System.Runtime.InteropServices.ComTypes.IConnectionPointContainer@)
+  commentId: M:System.Runtime.InteropServices.ComTypes.IConnectionPoint.GetConnectionPointContainer(System.Runtime.InteropServices.ComTypes.IConnectionPointContainer@)
+  id: GetConnectionPointContainer(System.Runtime.InteropServices.ComTypes.IConnectionPointContainer@)
+  parent: System.Runtime.InteropServices.ComTypes.IConnectionPoint
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Runtime.InteropServices.ComTypes.IConnectionPoint.GetConnectionPointContainer(out System.Runtime.InteropServices.ComTypes.IConnectionPointContainer)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/IConnectionPoint.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: GetConnectionPointContainer
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/IConnectionPoint.cs
+    startLine: 23
+  assemblies:
+  - System.Runtime.InteropServices
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: "\n<p>Retrieves the <strong>IConnectionPointContainer</strong> interface pointer to the connectable object that conceptually owns this connection point.</p>\n"
+  syntax:
+    content: void GetConnectionPointContainer(out IConnectionPointContainer ppCPC)
+    content.vb: Sub GetConnectionPointContainer(ByRef ppCPC As IConnectionPointContainer)
+    parameters:
+    - id: ppCPC
+      type: System.Runtime.InteropServices.ComTypes.IConnectionPointContainer
+      description: "\n<p>When this parameter returns, contains the connectable object's <strong>IConnectionPointContainer</strong> interface. This parameter is passed uninitialized.</p>\n"
+  fullName.vb: System.Runtime.InteropServices.ComTypes.IConnectionPoint.GetConnectionPointContainer(ByRef System.Runtime.InteropServices.ComTypes.IConnectionPointContainer)
+  name.vb: GetConnectionPointContainer(ByRef IConnectionPointContainer)
+  nameWithType: IConnectionPoint.GetConnectionPointContainer(out IConnectionPointContainer)
+  nameWithType.vb: IConnectionPoint.GetConnectionPointContainer(ByRef IConnectionPointContainer)
+- uid: System.Runtime.InteropServices.ComTypes.IConnectionPoint.Unadvise(System.Int32)
+  commentId: M:System.Runtime.InteropServices.ComTypes.IConnectionPoint.Unadvise(System.Int32)
+  id: Unadvise(System.Int32)
+  parent: System.Runtime.InteropServices.ComTypes.IConnectionPoint
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Runtime.InteropServices.ComTypes.IConnectionPoint.Unadvise(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/IConnectionPoint.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Unadvise
+    path: src/mscorlib/src/System/Runtime/InteropServices/ComTypes/IConnectionPoint.cs
+    startLine: 25
+  assemblies:
+  - System.Runtime.InteropServices
+  namespace: System.Runtime.InteropServices.ComTypes
+  summary: "\n<p>Terminates an advisory connection previously established through the <xref href=\"System.Runtime.InteropServices.ComTypes.IConnectionPoint.Advise(System.Object,System.Int32@)\" data-throw-if-not-resolved=\"false\"></xref> method.</p>\n"
+  syntax:
+    content: void Unadvise(int dwCookie)
+    content.vb: Sub Unadvise(dwCookie As Integer)
+    parameters:
+    - id: dwCookie
+      type: System.Int32
+      description: "\n<p>The connection cookie previously returned from the <xref href=\"System.Runtime.InteropServices.ComTypes.IConnectionPoint.Advise(System.Object,System.Int32@)\" data-throw-if-not-resolved=\"false\"></xref> method. </p>\n"
+  nameWithType: IConnectionPoint.Unadvise(Int32)
+references:
+- uid: System.Runtime.InteropServices.ComTypes
+  isExternal: false
+  name: "XXX"
+  fullName: System.Runtime.InteropServices.ComTypes
+  nameWithType: System.Runtime.InteropServices.ComTypes
+  commentId: N:System.Runtime.InteropServices.ComTypes
+- uid: System.Object
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Object
+  nameWithType: Object
+  commentId: T:System.Object
+- uid: System.Int32
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Int32
+  nameWithType: Int32
+  commentId: T:System.Int32
+- uid: System
+  isExternal: false
+  name: "XXX"
+  fullName: System
+  nameWithType: System
+  commentId: N:System
+- uid: System.Runtime.InteropServices.ComTypes.IEnumConnections
+  parent: System.Runtime.InteropServices.ComTypes
+  isExternal: false
+  name: "XXX"
+  fullName: System.Runtime.InteropServices.ComTypes.IEnumConnections
+  nameWithType: IEnumConnections
+  commentId: T:System.Runtime.InteropServices.ComTypes.IEnumConnections
+- uid: System.Guid
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Guid
+  nameWithType: Guid
+  commentId: T:System.Guid
+- uid: System.Runtime.InteropServices.ComTypes.IConnectionPointContainer
+  parent: System.Runtime.InteropServices.ComTypes
+  isExternal: false
+  name: "XXX"
+  fullName: System.Runtime.InteropServices.ComTypes.IConnectionPointContainer
+  nameWithType: IConnectionPointContainer
+  commentId: T:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer

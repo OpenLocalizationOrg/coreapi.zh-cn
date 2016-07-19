@@ -1,0 +1,1012 @@
+items:
+- uid: System.IO.Compression.ZipArchive
+  commentId: T:System.IO.Compression.ZipArchive
+  id: ZipArchive
+  parent: System.IO.Compression
+  children:
+  - System.IO.Compression.ZipArchive.#ctor(System.IO.Stream)
+  - System.IO.Compression.ZipArchive.#ctor(System.IO.Stream,System.IO.Compression.ZipArchiveMode)
+  - System.IO.Compression.ZipArchive.#ctor(System.IO.Stream,System.IO.Compression.ZipArchiveMode,System.Boolean)
+  - System.IO.Compression.ZipArchive.#ctor(System.IO.Stream,System.IO.Compression.ZipArchiveMode,System.Boolean,System.Text.Encoding)
+  - System.IO.Compression.ZipArchive.CreateEntry(System.String)
+  - System.IO.Compression.ZipArchive.CreateEntry(System.String,System.IO.Compression.CompressionLevel)
+  - System.IO.Compression.ZipArchive.Dispose
+  - System.IO.Compression.ZipArchive.Dispose(System.Boolean)
+  - System.IO.Compression.ZipArchive.Entries
+  - System.IO.Compression.ZipArchive.GetEntry(System.String)
+  - System.IO.Compression.ZipArchive.Mode
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.Compression.ZipArchive
+  type: Class
+  source:
+    remote:
+      path: src/System.IO.Compression/ref/System.IO.Compression.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: ZipArchive
+    path: src/System.IO.Compression/ref/System.IO.Compression.cs
+    startLine: 63
+  assemblies:
+  - System.IO.Compression
+  namespace: System.IO.Compression
+  summary: "\n<p>Represents a package of compressed files in the zip archive format.</p>\n"
+  syntax:
+    content: 'public class ZipArchive : IDisposable'
+    content.vb: >-
+      Public Class ZipArchive
+          Implements IDisposable
+  seealso:
+  - type: System.IO.Compression.ZipFile
+    commentId: T:System.IO.Compression.ZipFile
+  inheritance:
+  - System.Object
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+  nameWithType: ZipArchive
+- uid: System.IO.Compression.ZipArchive.#ctor(System.IO.Stream)
+  commentId: M:System.IO.Compression.ZipArchive.#ctor(System.IO.Stream)
+  id: '#ctor(System.IO.Stream)'
+  parent: System.IO.Compression.ZipArchive
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.Compression.ZipArchive.ZipArchive(System.IO.Stream)
+  type: Constructor
+  source:
+    remote:
+      path: src/System.IO.Compression/ref/System.IO.Compression.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: .ctor
+    path: src/System.IO.Compression/ref/System.IO.Compression.cs
+    startLine: 65
+  assemblies:
+  - System.IO.Compression
+  namespace: System.IO.Compression
+  summary: "\n<p>Initializes a new instance of the <xref href=\"System.IO.Compression.ZipArchive\" data-throw-if-not-resolved=\"false\"></xref> class from the specified stream.</p>\n"
+  syntax:
+    content: public ZipArchive(Stream stream)
+    content.vb: Public Sub New(stream As Stream)
+    parameters:
+    - id: stream
+      type: System.IO.Stream
+      description: "\n<p>The stream that contains the archive to be read.</p>\n"
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>The stream is already closed or does not support reading.</p>\n"
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>stream</em> is <strong>null</strong>.</p>\n"
+  - type: System.IO.InvalidDataException
+    commentId: T:System.IO.InvalidDataException
+    description: "\n<p>The contents of the stream are not in the zip archive format.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: ZipArchive.ZipArchive(Stream)
+- uid: System.IO.Compression.ZipArchive.#ctor(System.IO.Stream,System.IO.Compression.ZipArchiveMode)
+  commentId: M:System.IO.Compression.ZipArchive.#ctor(System.IO.Stream,System.IO.Compression.ZipArchiveMode)
+  id: '#ctor(System.IO.Stream,System.IO.Compression.ZipArchiveMode)'
+  parent: System.IO.Compression.ZipArchive
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.Compression.ZipArchive.ZipArchive(System.IO.Stream, System.IO.Compression.ZipArchiveMode)
+  type: Constructor
+  source:
+    remote:
+      path: src/System.IO.Compression/ref/System.IO.Compression.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: .ctor
+    path: src/System.IO.Compression/ref/System.IO.Compression.cs
+    startLine: 66
+  assemblies:
+  - System.IO.Compression
+  namespace: System.IO.Compression
+  summary: "\n<p>Initializes a new instance of the <xref href=\"System.IO.Compression.ZipArchive\" data-throw-if-not-resolved=\"false\"></xref> class from the specified stream and with the specified mode.</p>\n"
+  syntax:
+    content: public ZipArchive(Stream stream, ZipArchiveMode mode)
+    content.vb: Public Sub New(stream As Stream, mode As ZipArchiveMode)
+    parameters:
+    - id: stream
+      type: System.IO.Stream
+      description: "\n<p>The input or output stream.</p>\n"
+    - id: mode
+      type: System.IO.Compression.ZipArchiveMode
+      description: "\n<p>One of the enumeration values that indicates whether the zip archive is used to read, create, or update entries.</p>\n"
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>The stream is already closed, or the capabilities of the stream do not match the mode.</p>\n"
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>stream</em> is <strong>null</strong>.</p>\n"
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>mode</em> is an invalid value.</p>\n"
+  - type: System.IO.InvalidDataException
+    commentId: T:System.IO.InvalidDataException
+    description: "\n<p>The contents of the stream could not be interpreted as a zip archive.</p>\n<p>-or-</p>\n<p>\n<em>mode</em> is <xref href=\"System.IO.Compression.ZipArchiveMode.Update\" data-throw-if-not-resolved=\"false\"></xref> and an entry is missing from the archive or is corrupt and cannot be read.</p>\n<p>-or-</p>\n<p>\n<em>mode</em> is <xref href=\"System.IO.Compression.ZipArchiveMode.Update\" data-throw-if-not-resolved=\"false\"></xref> and an entry is too large to fit into memory.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: ZipArchive.ZipArchive(Stream, ZipArchiveMode)
+- uid: System.IO.Compression.ZipArchive.#ctor(System.IO.Stream,System.IO.Compression.ZipArchiveMode,System.Boolean)
+  commentId: M:System.IO.Compression.ZipArchive.#ctor(System.IO.Stream,System.IO.Compression.ZipArchiveMode,System.Boolean)
+  id: '#ctor(System.IO.Stream,System.IO.Compression.ZipArchiveMode,System.Boolean)'
+  parent: System.IO.Compression.ZipArchive
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.Compression.ZipArchive.ZipArchive(System.IO.Stream, System.IO.Compression.ZipArchiveMode, System.Boolean)
+  type: Constructor
+  source:
+    remote:
+      path: src/System.IO.Compression/ref/System.IO.Compression.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: .ctor
+    path: src/System.IO.Compression/ref/System.IO.Compression.cs
+    startLine: 67
+  assemblies:
+  - System.IO.Compression
+  namespace: System.IO.Compression
+  summary: "\n<p>Initializes a new instance of the <xref href=\"System.IO.Compression.ZipArchive\" data-throw-if-not-resolved=\"false\"></xref> class on the specified stream for the specified mode, and optionally leaves the stream open.</p>\n"
+  syntax:
+    content: public ZipArchive(Stream stream, ZipArchiveMode mode, bool leaveOpen)
+    content.vb: Public Sub New(stream As Stream, mode As ZipArchiveMode, leaveOpen As Boolean)
+    parameters:
+    - id: stream
+      type: System.IO.Stream
+      description: "\n<p>The input or output stream.</p>\n"
+    - id: mode
+      type: System.IO.Compression.ZipArchiveMode
+      description: "\n<p>One of the enumeration values that indicates whether the zip archive is used to read, create, or update entries.</p>\n"
+    - id: leaveOpen
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> to leave the stream open after the <xref href=\"System.IO.Compression.ZipArchive\" data-throw-if-not-resolved=\"false\"></xref> object is disposed; otherwise, <strong>false</strong>.</p>\n"
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>The stream is already closed, or the capabilities of the stream do not match the mode.</p>\n"
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>stream</em> is <strong>null</strong>.</p>\n"
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>mode</em> is an invalid value.</p>\n"
+  - type: System.IO.InvalidDataException
+    commentId: T:System.IO.InvalidDataException
+    description: "\n<p>The contents of the stream could not be interpreted as a zip archive.</p>\n<p>-or-</p>\n<p>\n<em>mode</em> is <xref href=\"System.IO.Compression.ZipArchiveMode.Update\" data-throw-if-not-resolved=\"false\"></xref> and an entry is missing from the archive or is corrupt and cannot be read.</p>\n<p>-or-</p>\n<p>\n<em>mode</em> is <xref href=\"System.IO.Compression.ZipArchiveMode.Update\" data-throw-if-not-resolved=\"false\"></xref> and an entry is too large to fit into memory.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: ZipArchive.ZipArchive(Stream, ZipArchiveMode, Boolean)
+- uid: System.IO.Compression.ZipArchive.#ctor(System.IO.Stream,System.IO.Compression.ZipArchiveMode,System.Boolean,System.Text.Encoding)
+  commentId: M:System.IO.Compression.ZipArchive.#ctor(System.IO.Stream,System.IO.Compression.ZipArchiveMode,System.Boolean,System.Text.Encoding)
+  id: '#ctor(System.IO.Stream,System.IO.Compression.ZipArchiveMode,System.Boolean,System.Text.Encoding)'
+  parent: System.IO.Compression.ZipArchive
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.Compression.ZipArchive.ZipArchive(System.IO.Stream, System.IO.Compression.ZipArchiveMode, System.Boolean, System.Text.Encoding)
+  type: Constructor
+  source:
+    remote:
+      path: src/System.IO.Compression/ref/System.IO.Compression.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: .ctor
+    path: src/System.IO.Compression/ref/System.IO.Compression.cs
+    startLine: 68
+  assemblies:
+  - System.IO.Compression
+  namespace: System.IO.Compression
+  summary: "\n<p>Initializes a new instance of the <xref href=\"System.IO.Compression.ZipArchive\" data-throw-if-not-resolved=\"false\"></xref> class on the specified stream for the specified mode, uses the specified encoding for entry names, and optionally leaves the stream open.</p>\n"
+  syntax:
+    content: public ZipArchive(Stream stream, ZipArchiveMode mode, bool leaveOpen, Encoding entryNameEncoding)
+    content.vb: Public Sub New(stream As Stream, mode As ZipArchiveMode, leaveOpen As Boolean, entryNameEncoding As Encoding)
+    parameters:
+    - id: stream
+      type: System.IO.Stream
+      description: "\n<p>The input or output stream.</p>\n"
+    - id: mode
+      type: System.IO.Compression.ZipArchiveMode
+      description: "\n<p>One of the enumeration values that indicates whether the zip archive is used to read, create, or update entries.</p>\n"
+    - id: leaveOpen
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> to leave the stream open after the <xref href=\"System.IO.Compression.ZipArchive\" data-throw-if-not-resolved=\"false\"></xref> object is disposed; otherwise, <strong>false</strong>.</p>\n"
+    - id: entryNameEncoding
+      type: System.Text.Encoding
+      description: "\n<p>The encoding to use when reading or writing entry names in this archive. Specify a value for this parameter only when an encoding is required for interoperability with zip archive tools and libraries that do not support UTF-8 encoding for entry names.</p>\n"
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>The stream is already closed, or the capabilities of the stream do not match the mode.</p>\n"
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>stream</em> is <strong>null</strong>.</p>\n"
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>mode</em> is an invalid value.</p>\n"
+  - type: System.IO.InvalidDataException
+    commentId: T:System.IO.InvalidDataException
+    description: "\n<p>The contents of the stream could not be interpreted as a zip archive.</p>\n<p>-or-</p>\n<p>\n<em>mode</em> is <xref href=\"System.IO.Compression.ZipArchiveMode.Update\" data-throw-if-not-resolved=\"false\"></xref> and an entry is missing from the archive or is corrupt and cannot be read.</p>\n<p>-or-</p>\n<p>\n<em>mode</em> is <xref href=\"System.IO.Compression.ZipArchiveMode.Update\" data-throw-if-not-resolved=\"false\"></xref> and an entry is too large to fit into memory.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: ZipArchive.ZipArchive(Stream, ZipArchiveMode, Boolean, Encoding)
+- uid: System.IO.Compression.ZipArchive.Entries
+  commentId: P:System.IO.Compression.ZipArchive.Entries
+  id: Entries
+  parent: System.IO.Compression.ZipArchive
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.Compression.ZipArchive.Entries
+  type: Property
+  source:
+    remote:
+      path: src/System.IO.Compression/ref/System.IO.Compression.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Entries
+    path: src/System.IO.Compression/ref/System.IO.Compression.cs
+    startLine: 69
+  assemblies:
+  - System.IO.Compression
+  namespace: System.IO.Compression
+  summary: "\n<p>Gets the collection of entries that are currently in the zip archive.</p>\n"
+  syntax:
+    content: public ReadOnlyCollection<ZipArchiveEntry> Entries { get; }
+    content.vb: Public ReadOnly Property Entries As ReadOnlyCollection(Of ZipArchiveEntry)
+    parameters: []
+    return:
+      type: System.Collections.ObjectModel.ReadOnlyCollection{System.IO.Compression.ZipArchiveEntry}
+      description: "\n<p>The collection of entries that are currently in the zip archive.</p>\n"
+  exceptions:
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: "\n<p>The zip archive does not support reading.</p>\n"
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>The zip archive has been disposed.</p>\n"
+  - type: System.IO.InvalidDataException
+    commentId: T:System.IO.InvalidDataException
+    description: "\n<p>The zip archive is corrupt, and its entries cannot be retrieved.</p>\n"
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  nameWithType: ZipArchive.Entries
+- uid: System.IO.Compression.ZipArchive.Mode
+  commentId: P:System.IO.Compression.ZipArchive.Mode
+  id: Mode
+  parent: System.IO.Compression.ZipArchive
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.Compression.ZipArchive.Mode
+  type: Property
+  source:
+    remote:
+      path: src/System.IO.Compression/ref/System.IO.Compression.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Mode
+    path: src/System.IO.Compression/ref/System.IO.Compression.cs
+    startLine: 70
+  assemblies:
+  - System.IO.Compression
+  namespace: System.IO.Compression
+  summary: "\n<p>Gets a value that describes the type of action the zip archive can perform on entries.</p>\n"
+  syntax:
+    content: public ZipArchiveMode Mode { get; }
+    content.vb: Public ReadOnly Property Mode As ZipArchiveMode
+    parameters: []
+    return:
+      type: System.IO.Compression.ZipArchiveMode
+      description: "\n<p>One of the enumeration values that describes the type of action (read, create, or update) the zip archive can perform on entries.</p>\n"
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  nameWithType: ZipArchive.Mode
+- uid: System.IO.Compression.ZipArchive.CreateEntry(System.String)
+  commentId: M:System.IO.Compression.ZipArchive.CreateEntry(System.String)
+  id: CreateEntry(System.String)
+  parent: System.IO.Compression.ZipArchive
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.Compression.ZipArchive.CreateEntry(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/System.IO.Compression/ref/System.IO.Compression.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: CreateEntry
+    path: src/System.IO.Compression/ref/System.IO.Compression.cs
+    startLine: 71
+  assemblies:
+  - System.IO.Compression
+  namespace: System.IO.Compression
+  summary: "\n<p>Creates an empty entry that has the specified path and entry name in the zip archive.</p>\n"
+  syntax:
+    content: public ZipArchiveEntry CreateEntry(string entryName)
+    content.vb: Public Function CreateEntry(entryName As String) As ZipArchiveEntry
+    parameters:
+    - id: entryName
+      type: System.String
+      description: "\n<p>A path, relative to the root of the archive, that specifies the name of the entry to be created.</p>\n"
+    return:
+      type: System.IO.Compression.ZipArchiveEntry
+      description: "\n<p>An empty entry in the zip archive.</p>\n"
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>\n<em>entryName</em> is <xref href=\"System.String.Empty\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>entryName</em> is <strong>null</strong>.</p>\n"
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: "\n<p>The zip archive does not support writing.</p>\n"
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>The zip archive has been disposed.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: ZipArchive.CreateEntry(String)
+- uid: System.IO.Compression.ZipArchive.CreateEntry(System.String,System.IO.Compression.CompressionLevel)
+  commentId: M:System.IO.Compression.ZipArchive.CreateEntry(System.String,System.IO.Compression.CompressionLevel)
+  id: CreateEntry(System.String,System.IO.Compression.CompressionLevel)
+  parent: System.IO.Compression.ZipArchive
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.Compression.ZipArchive.CreateEntry(System.String, System.IO.Compression.CompressionLevel)
+  type: Method
+  source:
+    remote:
+      path: src/System.IO.Compression/ref/System.IO.Compression.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: CreateEntry
+    path: src/System.IO.Compression/ref/System.IO.Compression.cs
+    startLine: 72
+  assemblies:
+  - System.IO.Compression
+  namespace: System.IO.Compression
+  summary: "\n<p>Creates an empty entry that has the specified entry name and compression level in the zip archive.</p>\n"
+  syntax:
+    content: public ZipArchiveEntry CreateEntry(string entryName, CompressionLevel compressionLevel)
+    content.vb: Public Function CreateEntry(entryName As String, compressionLevel As CompressionLevel) As ZipArchiveEntry
+    parameters:
+    - id: entryName
+      type: System.String
+      description: "\n<p>A path, relative to the root of the archive, that specifies the name of the entry to be created.</p>\n"
+    - id: compressionLevel
+      type: System.IO.Compression.CompressionLevel
+      description: "\n<p>One of the enumeration values that indicates whether to emphasize speed or compression effectiveness when creating the entry.</p>\n"
+    return:
+      type: System.IO.Compression.ZipArchiveEntry
+      description: "\n<p>An empty entry in the zip archive.</p>\n"
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>\n<em>entryName</em> is <xref href=\"System.String.Empty\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>entryName</em> is <strong>null</strong>.</p>\n"
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: "\n<p>The zip archive does not support writing.</p>\n"
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>The zip archive has been disposed.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: ZipArchive.CreateEntry(String, CompressionLevel)
+- uid: System.IO.Compression.ZipArchive.Dispose
+  commentId: M:System.IO.Compression.ZipArchive.Dispose
+  id: Dispose
+  parent: System.IO.Compression.ZipArchive
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.Compression.ZipArchive.Dispose()
+  type: Method
+  source:
+    remote:
+      path: src/System.IO.Compression/ref/System.IO.Compression.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Dispose
+    path: src/System.IO.Compression/ref/System.IO.Compression.cs
+    startLine: 73
+  assemblies:
+  - System.IO.Compression
+  namespace: System.IO.Compression
+  summary: "\n<p>Releases the resources used by the current instance of the <xref href=\"System.IO.Compression.ZipArchive\" data-throw-if-not-resolved=\"false\"></xref> class.</p>\n"
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose
+  implements:
+  - System.IDisposable.Dispose
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: ZipArchive.Dispose()
+- uid: System.IO.Compression.ZipArchive.Dispose(System.Boolean)
+  commentId: M:System.IO.Compression.ZipArchive.Dispose(System.Boolean)
+  id: Dispose(System.Boolean)
+  parent: System.IO.Compression.ZipArchive
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.Compression.ZipArchive.Dispose(System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/System.IO.Compression/ref/System.IO.Compression.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Dispose
+    path: src/System.IO.Compression/ref/System.IO.Compression.cs
+    startLine: 74
+  assemblies:
+  - System.IO.Compression
+  namespace: System.IO.Compression
+  summary: "\n<p>Called by the <xref href=\"System.IO.Compression.ZipArchive.Dispose\" data-throw-if-not-resolved=\"false\"></xref> and <xref href=\"System.Object.Finalize\" data-throw-if-not-resolved=\"false\"></xref> methods to release the unmanaged resources used by the current instance of the <xref href=\"System.IO.Compression.ZipArchive\" data-throw-if-not-resolved=\"false\"></xref> class, and optionally finishes writing the archive and releases the managed resources.</p>\n"
+  syntax:
+    content: protected virtual void Dispose(bool disposing)
+    content.vb: Protected Overridable Sub Dispose(disposing As Boolean)
+    parameters:
+    - id: disposing
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> to finish writing the archive and release unmanaged and managed resources; <strong>false</strong> to release only unmanaged resources.</p>\n"
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+  nameWithType: ZipArchive.Dispose(Boolean)
+- uid: System.IO.Compression.ZipArchive.GetEntry(System.String)
+  commentId: M:System.IO.Compression.ZipArchive.GetEntry(System.String)
+  id: GetEntry(System.String)
+  parent: System.IO.Compression.ZipArchive
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.Compression.ZipArchive.GetEntry(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/System.IO.Compression/ref/System.IO.Compression.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: GetEntry
+    path: src/System.IO.Compression/ref/System.IO.Compression.cs
+    startLine: 75
+  assemblies:
+  - System.IO.Compression
+  namespace: System.IO.Compression
+  summary: "\n<p>Retrieves a wrapper for the specified entry in the zip archive.</p>\n"
+  syntax:
+    content: public ZipArchiveEntry GetEntry(string entryName)
+    content.vb: Public Function GetEntry(entryName As String) As ZipArchiveEntry
+    parameters:
+    - id: entryName
+      type: System.String
+      description: "\n<p>A path, relative to the root of the archive, that identifies the entry to retrieve.</p>\n"
+    return:
+      type: System.IO.Compression.ZipArchiveEntry
+      description: "\n<p>A wrapper for the specified entry in the archive; <strong>null</strong> if the entry does not exist in the archive.</p>\n"
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>\n<em>entryName</em> is <xref href=\"System.String.Empty\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>entryName</em> is <strong>null</strong>.</p>\n"
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: "\n<p>The zip archive does not support reading.</p>\n"
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>The zip archive has been disposed.</p>\n"
+  - type: System.IO.InvalidDataException
+    commentId: T:System.IO.InvalidDataException
+    description: "\n<p>The zip archive is corrupt, and its entries cannot be retrieved.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: ZipArchive.GetEntry(String)
+references:
+- uid: System.IO.Compression
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.Compression
+  commentId: N:System.IO.Compression
+  nameWithType: System.IO.Compression
+- uid: System.Object
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Object
+  commentId: T:System.Object
+  nameWithType: Object
+- uid: System.IDisposable
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.IDisposable
+  commentId: T:System.IDisposable
+  nameWithType: IDisposable
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.ToString
+  nameWithType: Object.ToString()
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.Equals(System.Object)
+  nameWithType: Object.Equals(Object)
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  nameWithType: Object.Equals(Object, Object)
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.GetHashCode
+  nameWithType: Object.GetHashCode()
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.GetType
+  nameWithType: Object.GetType()
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.MemberwiseClone
+  nameWithType: Object.MemberwiseClone()
+- uid: System
+  isExternal: false
+  name: "XXX"
+  fullName: System
+  commentId: N:System
+  nameWithType: System
+- uid: System.IO.Stream
+  parent: System.IO
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.Stream
+  commentId: T:System.IO.Stream
+  nameWithType: Stream
+- uid: System.IO
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO
+  commentId: N:System.IO
+  nameWithType: System.IO
+- uid: System.IO.Compression.ZipArchiveMode
+  parent: System.IO.Compression
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.Compression.ZipArchiveMode
+  commentId: T:System.IO.Compression.ZipArchiveMode
+  nameWithType: ZipArchiveMode
+- uid: System.Boolean
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Boolean
+  commentId: T:System.Boolean
+  nameWithType: Boolean
+- uid: System.Text.Encoding
+  parent: System.Text
+  isExternal: false
+  name: "XXX"
+  fullName: System.Text.Encoding
+  commentId: T:System.Text.Encoding
+  nameWithType: Encoding
+- uid: System.Text
+  isExternal: false
+  name: "XXX"
+  fullName: System.Text
+  commentId: N:System.Text
+  nameWithType: System.Text
+- uid: System.Collections.ObjectModel.ReadOnlyCollection{System.IO.Compression.ZipArchiveEntry}
+  parent: System.Collections.ObjectModel
+  definition: System.Collections.ObjectModel.ReadOnlyCollection`1
+  name: "XXX"
+  fullName: System.Collections.ObjectModel.ReadOnlyCollection<System.IO.Compression.ZipArchiveEntry>
+  fullname.vb: System.Collections.ObjectModel.ReadOnlyCollection(Of System.IO.Compression.ZipArchiveEntry)
+  name.vb: ReadOnlyCollection(Of ZipArchiveEntry)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1
+    name: "XXX"
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection
+    isExternal: true
+  - name: "<"
+    fullName: <
+  - uid: System.IO.Compression.ZipArchiveEntry
+    name: "XXX"
+    fullName: System.IO.Compression.ZipArchiveEntry
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1
+    name: "XXX"
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection
+    isExternal: true
+  - name: 'XXX '
+    fullName: '(Of '
+  - uid: System.IO.Compression.ZipArchiveEntry
+    name: "XXX"
+    fullName: System.IO.Compression.ZipArchiveEntry
+  - name: "XXX"
+    fullName: )
+  commentId: T:System.Collections.ObjectModel.ReadOnlyCollection{System.IO.Compression.ZipArchiveEntry}
+  nameWithType: ReadOnlyCollection<ZipArchiveEntry>
+  nameWithType.vb: ReadOnlyCollection(Of ZipArchiveEntry)
+- uid: System.Collections.ObjectModel.ReadOnlyCollection`1
+  isExternal: false
+  name: "XXX"
+  fullName: System.Collections.ObjectModel.ReadOnlyCollection<T>
+  fullname.vb: System.Collections.ObjectModel.ReadOnlyCollection(Of T)
+  name.vb: ReadOnlyCollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1
+    name: "XXX"
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection
+  - name: "<"
+    fullName: <
+  - name: "XXX"
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1
+    name: "XXX"
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection
+  - name: 'XXX '
+    fullName: '(Of '
+  - name: "XXX"
+    fullName: T
+  - name: "XXX"
+    fullName: )
+  commentId: T:System.Collections.ObjectModel.ReadOnlyCollection`1
+  nameWithType: ReadOnlyCollection<T>
+  nameWithType.vb: ReadOnlyCollection(Of T)
+- uid: System.Collections.ObjectModel
+  isExternal: false
+  name: "XXX"
+  fullName: System.Collections.ObjectModel
+  commentId: N:System.Collections.ObjectModel
+  nameWithType: System.Collections.ObjectModel
+- uid: System.String
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.String
+  commentId: T:System.String
+  nameWithType: String
+- uid: System.IO.Compression.ZipArchiveEntry
+  parent: System.IO.Compression
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.Compression.ZipArchiveEntry
+  commentId: T:System.IO.Compression.ZipArchiveEntry
+  nameWithType: ZipArchiveEntry
+- uid: System.IO.Compression.CompressionLevel
+  parent: System.IO.Compression
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.Compression.CompressionLevel
+  commentId: T:System.IO.Compression.CompressionLevel
+  nameWithType: CompressionLevel
+- uid: System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: false
+  name: "XXX"
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: "XXX"
+    fullName: System.IDisposable.Dispose
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: "XXX"
+    fullName: System.IDisposable.Dispose
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.IDisposable.Dispose
+  nameWithType: IDisposable.Dispose()
+- uid: System.ArgumentException
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentException
+  nameWithType: ArgumentException
+  commentId: T:System.ArgumentException
+- uid: System.ArgumentNullException
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentNullException
+  nameWithType: ArgumentNullException
+  commentId: T:System.ArgumentNullException
+- uid: System.IO.InvalidDataException
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.InvalidDataException
+  nameWithType: InvalidDataException
+  commentId: T:System.IO.InvalidDataException
+- uid: System.ArgumentOutOfRangeException
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentOutOfRangeException
+  nameWithType: ArgumentOutOfRangeException
+  commentId: T:System.ArgumentOutOfRangeException
+- uid: System.NotSupportedException
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.NotSupportedException
+  nameWithType: NotSupportedException
+  commentId: T:System.NotSupportedException
+- uid: System.ObjectDisposedException
+  isExternal: false
+  name: "XXX"
+  fullName: System.ObjectDisposedException
+  nameWithType: ObjectDisposedException
+  commentId: T:System.ObjectDisposedException

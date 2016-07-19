@@ -1,0 +1,2537 @@
+items:
+- uid: System.ArraySegment`1
+  commentId: T:System.ArraySegment`1
+  id: ArraySegment`1
+  parent: System
+  children:
+  - System.ArraySegment`1.#ctor(`0[])
+  - System.ArraySegment`1.#ctor(`0[],System.Int32,System.Int32)
+  - System.ArraySegment`1.Array
+  - System.ArraySegment`1.Count
+  - System.ArraySegment`1.Equals(System.ArraySegment{`0})
+  - System.ArraySegment`1.Equals(System.Object)
+  - System.ArraySegment`1.GetHashCode
+  - System.ArraySegment`1.Offset
+  - System.ArraySegment`1.op_Equality(System.ArraySegment{`0},System.ArraySegment{`0})
+  - System.ArraySegment`1.op_Inequality(System.ArraySegment{`0},System.ArraySegment{`0})
+  - System.ArraySegment`1.System#Collections#Generic#ICollection{T}#Add(`0)
+  - System.ArraySegment`1.System#Collections#Generic#ICollection{T}#Clear
+  - System.ArraySegment`1.System#Collections#Generic#ICollection{T}#Contains(`0)
+  - System.ArraySegment`1.System#Collections#Generic#ICollection{T}#CopyTo(`0[],System.Int32)
+  - System.ArraySegment`1.System#Collections#Generic#ICollection{T}#IsReadOnly
+  - System.ArraySegment`1.System#Collections#Generic#ICollection{T}#Remove(`0)
+  - System.ArraySegment`1.System#Collections#Generic#IEnumerable{T}#GetEnumerator
+  - System.ArraySegment`1.System#Collections#Generic#IList{T}#IndexOf(`0)
+  - System.ArraySegment`1.System#Collections#Generic#IList{T}#Insert(System.Int32,`0)
+  - System.ArraySegment`1.System#Collections#Generic#IList{T}#Item(System.Int32)
+  - System.ArraySegment`1.System#Collections#Generic#IList{T}#RemoveAt(System.Int32)
+  - System.ArraySegment`1.System#Collections#Generic#IReadOnlyList{T}#Item(System.Int32)
+  - System.ArraySegment`1.System#Collections#IEnumerable#GetEnumerator
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.ArraySegment<T>
+  type: Struct
+  source:
+    remote:
+      path: src/mscorlib/src/System/ArraySegment.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: ArraySegment
+    path: src/mscorlib/src/System/ArraySegment.cs
+    startLine: 27
+  assemblies:
+  - System.Runtime
+  namespace: System
+  summary: "\n<p>Delimits a section of a one-dimensional array.</p>\n"
+  syntax:
+    content: >-
+      [Serializable]
+
+      public struct ArraySegment<T> : IList<T>, ICollection<T>, IReadOnlyList<T>, IReadOnlyCollection<T>, IEnumerable<T>, IEnumerable
+    content.vb: >-
+      <Serializable>
+
+      Public Structure ArraySegment(Of T)
+          Implements IList(Of T), ICollection(Of T), IReadOnlyList(Of T), IReadOnlyCollection(Of T), IEnumerable(Of T), IEnumerable
+    typeParameters:
+    - id: T
+      description: "\n<p>The type of the elements in the array segment.</p>\n"
+  seealso:
+  - type: System.Array
+    commentId: T:System.Array
+  implements:
+  - System.Collections.Generic.IList{{T}}
+  - System.Collections.Generic.ICollection{{T}}
+  - System.Collections.Generic.IReadOnlyList{{T}}
+  - System.Collections.Generic.IReadOnlyCollection{{T}}
+  - System.Collections.Generic.IEnumerable{{T}}
+  - System.Collections.IEnumerable
+  inheritedMembers:
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+  attributes:
+  - type: System.Runtime.InteropServices.StructLayoutAttribute
+    ctor: System.Runtime.InteropServices.StructLayoutAttribute.#ctor(System.Runtime.InteropServices.LayoutKind)
+    arguments:
+    - type: System.Runtime.InteropServices.LayoutKind
+      value: 0
+  modifiers.csharp:
+  - public
+  - struct
+  modifiers.vb:
+  - Public
+  - Structure
+  fullName.vb: System.ArraySegment(Of T)
+  name.vb: ArraySegment(Of T)
+  nameWithType: ArraySegment<T>
+  nameWithType.vb: ArraySegment(Of T)
+- uid: System.ArraySegment`1.#ctor(`0[])
+  commentId: M:System.ArraySegment`1.#ctor(`0[])
+  id: '#ctor(`0[])'
+  parent: System.ArraySegment`1
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.ArraySegment<T>.ArraySegment(T[])
+  type: Constructor
+  source:
+    remote:
+      path: src/mscorlib/src/System/ArraySegment.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: .ctor
+    path: src/mscorlib/src/System/ArraySegment.cs
+    startLine: 34
+  assemblies:
+  - System.Runtime
+  namespace: System
+  summary: "\n<p>Initializes a new instance of the <xref href=\"System.ArraySegment`1\" data-throw-if-not-resolved=\"false\"></xref> structure that delimits all the elements in the specified array.</p>\n"
+  syntax:
+    content: public ArraySegment(T[] array)
+    content.vb: Public Sub New(array As T())
+    parameters:
+    - id: array
+      type: '{T}[]'
+      description: "\n<p>The array to wrap.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>array</em> is <strong>null</strong>.</p>\n"
+  seealso:
+  - type: System.Array
+    commentId: T:System.Array
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: System.ArraySegment(Of T).ArraySegment(T())
+  name.vb: ArraySegment(T())
+  nameWithType: ArraySegment<T>.ArraySegment(T[])
+  nameWithType.vb: ArraySegment(Of T).ArraySegment(T())
+- uid: System.ArraySegment`1.#ctor(`0[],System.Int32,System.Int32)
+  commentId: M:System.ArraySegment`1.#ctor(`0[],System.Int32,System.Int32)
+  id: '#ctor(`0[],System.Int32,System.Int32)'
+  parent: System.ArraySegment`1
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.ArraySegment<T>.ArraySegment(T[], System.Int32, System.Int32)
+  type: Constructor
+  source:
+    remote:
+      path: src/mscorlib/src/System/ArraySegment.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: .ctor
+    path: src/mscorlib/src/System/ArraySegment.cs
+    startLine: 45
+  assemblies:
+  - System.Runtime
+  namespace: System
+  summary: "\n<p>Initializes a new instance of the <xref href=\"System.ArraySegment`1\" data-throw-if-not-resolved=\"false\"></xref> structure that delimits the specified range of the elements in the specified array.</p>\n"
+  syntax:
+    content: public ArraySegment(T[] array, int offset, int count)
+    content.vb: Public Sub New(array As T(), offset As Integer, count As Integer)
+    parameters:
+    - id: array
+      type: '{T}[]'
+      description: "\n<p>The array containing the range of elements to delimit.</p>\n"
+    - id: offset
+      type: System.Int32
+      description: "\n<p>The zero-based index of the first element in the range.</p>\n"
+    - id: count
+      type: System.Int32
+      description: "\n<p>The number of elements in the range.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>array</em> is <strong>null</strong>.</p>\n"
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>offset</em> or <em>count</em> is less than 0.</p>\n"
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>\n<em>offset</em> and <em>count</em> do not specify a valid range in <em>array</em>.</p>\n"
+  seealso:
+  - type: System.Array
+    commentId: T:System.Array
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: System.ArraySegment(Of T).ArraySegment(T(), System.Int32, System.Int32)
+  name.vb: ArraySegment(T(), Int32, Int32)
+  nameWithType: ArraySegment<T>.ArraySegment(T[], Int32, Int32)
+  nameWithType.vb: ArraySegment(Of T).ArraySegment(T(), Int32, Int32)
+- uid: System.ArraySegment`1.Array
+  commentId: P:System.ArraySegment`1.Array
+  id: Array
+  parent: System.ArraySegment`1
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.ArraySegment<T>.Array
+  type: Property
+  source:
+    remote:
+      path: src/mscorlib/src/System/ArraySegment.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Array
+    path: src/mscorlib/src/System/ArraySegment.cs
+    startLine: 62
+  assemblies:
+  - System.Runtime
+  namespace: System
+  summary: "\n<p>Gets the original array containing the range of elements that the array segment delimits.</p>\n"
+  syntax:
+    content: public T[] Array { get; }
+    content.vb: Public ReadOnly Property Array As T()
+    parameters: []
+    return:
+      type: '{T}[]'
+      description: "\n<p>The original array that was passed to the constructor, and that contains the range delimited by the <xref href=\"System.ArraySegment`1\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  seealso:
+  - type: System.Array
+    commentId: T:System.Array
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  fullName.vb: System.ArraySegment(Of T).Array
+  nameWithType: ArraySegment<T>.Array
+  nameWithType.vb: ArraySegment(Of T).Array
+- uid: System.ArraySegment`1.Count
+  commentId: P:System.ArraySegment`1.Count
+  id: Count
+  parent: System.ArraySegment`1
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.ArraySegment<T>.Count
+  type: Property
+  source:
+    remote:
+      path: src/mscorlib/src/System/ArraySegment.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Count
+    path: src/mscorlib/src/System/ArraySegment.cs
+    startLine: 93
+  assemblies:
+  - System.Runtime
+  namespace: System
+  summary: "\n<p>Gets the number of elements in the range delimited by the array segment.</p>\n"
+  syntax:
+    content: public int Count { get; }
+    content.vb: Public ReadOnly Property Count As Integer
+    parameters: []
+    return:
+      type: System.Int32
+      description: "\n<p>The number of elements in the range delimited by the <xref href=\"System.ArraySegment`1\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  seealso:
+  - type: System.Array
+    commentId: T:System.Array
+  - type: System.ArraySegment`1.Offset
+    commentId: P:System.ArraySegment`1.Offset
+  implements:
+  - System.Collections.Generic.ICollection{{T}}.Count
+  - System.Collections.Generic.IReadOnlyCollection{{T}}.Count
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  fullName.vb: System.ArraySegment(Of T).Count
+  nameWithType: ArraySegment<T>.Count
+  nameWithType.vb: ArraySegment(Of T).Count
+- uid: System.ArraySegment`1.Offset
+  commentId: P:System.ArraySegment`1.Offset
+  id: Offset
+  parent: System.ArraySegment`1
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.ArraySegment<T>.Offset
+  type: Property
+  source:
+    remote:
+      path: src/mscorlib/src/System/ArraySegment.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Offset
+    path: src/mscorlib/src/System/ArraySegment.cs
+    startLine: 74
+  assemblies:
+  - System.Runtime
+  namespace: System
+  summary: "\n<p>Gets the position of the first element in the range delimited by the array segment, relative to the start of the original array.</p>\n"
+  syntax:
+    content: public int Offset { get; }
+    content.vb: Public ReadOnly Property Offset As Integer
+    parameters: []
+    return:
+      type: System.Int32
+      description: "\n<p>The position of the first element in the range delimited by the <xref href=\"System.ArraySegment`1\" data-throw-if-not-resolved=\"false\"></xref>, relative to the start of the original array.</p>\n"
+  seealso:
+  - type: System.Array
+    commentId: T:System.Array
+  - type: System.ArraySegment`1.Count
+    commentId: P:System.ArraySegment`1.Count
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  fullName.vb: System.ArraySegment(Of T).Offset
+  nameWithType: ArraySegment<T>.Offset
+  nameWithType.vb: ArraySegment(Of T).Offset
+- uid: System.ArraySegment`1.System#Collections#Generic#ICollection{T}#IsReadOnly
+  commentId: P:System.ArraySegment`1.System#Collections#Generic#ICollection{T}#IsReadOnly
+  id: System#Collections#Generic#ICollection{T}#IsReadOnly
+  isEii: true
+  parent: System.ArraySegment`1
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.ArraySegment<T>.System.Collections.Generic.ICollection<T>.IsReadOnly
+  type: Property
+  source:
+    remote:
+      path: src/mscorlib/src/System/ArraySegment.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: System.Collections.Generic.ICollection<T>.IsReadOnly
+    path: src/mscorlib/src/System/ArraySegment.cs
+    startLine: 210
+  assemblies:
+  - System.Runtime
+  namespace: System
+  summary: "\n<p>Gets a value that indicates whether the array segment  is read-only.</p>\n"
+  syntax:
+    content: bool ICollection<T>.IsReadOnly { get; }
+    content.vb: ReadOnly WriteOnly Property System.Collections.Generic.ICollection<T>.IsReadOnly As Boolean Implements ICollection(Of T).IsReadOnly
+    parameters: []
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if the array segment is read-only; otherwise, <strong>false</strong>.</p>\n"
+  implements:
+  - System.Collections.Generic.ICollection{{T}}.IsReadOnly
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+  fullName.vb: System.ArraySegment(Of T).System.Collections.Generic.ICollection<T>.IsReadOnly
+  name.vb: System.Collections.Generic.ICollection<T>.IsReadOnly
+  nameWithType: ArraySegment<T>.ICollection<T>.IsReadOnly
+  nameWithType.vb: ArraySegment(Of T).System.Collections.Generic.ICollection<T>.IsReadOnly
+- uid: System.ArraySegment`1.System#Collections#Generic#IList{T}#Item(System.Int32)
+  commentId: P:System.ArraySegment`1.System#Collections#Generic#IList{T}#Item(System.Int32)
+  id: System#Collections#Generic#IList{T}#Item(System.Int32)
+  isEii: true
+  parent: System.ArraySegment`1
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.ArraySegment<T>.System.Collections.Generic.IList<T>.Item[System.Int32]
+  type: Property
+  source:
+    remote:
+      path: src/mscorlib/src/System/ArraySegment.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: System.Collections.Generic.IList<T>.this[]
+    path: src/mscorlib/src/System/ArraySegment.cs
+    startLine: 143
+  assemblies:
+  - System.Runtime
+  namespace: System
+  summary: "\n<p>Gets or sets the element at the specified index.</p>\n"
+  syntax:
+    content: T IList<T>.this[int index] { get; set; }
+    content.vb: ReadOnly WriteOnly Property System.Collections.Generic.IList<T>.Item(index As Integer) As T Implements IList(Of T).this
+    parameters:
+    - id: index
+      type: System.Int32
+      description: "\n<p>The zero-based index of the element to get or set.</p>\n"
+    return:
+      type: '{T}'
+      description: "\n<p>The element at the specified index.</p>\n"
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>index</em> is not a valid index in the <xref href=\"System.ArraySegment`1\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: "\n<p>The property is set and the array segment is read-only.</p>\n"
+  implements:
+  - System.Collections.Generic.IList{{T}}.Item(System.Int32)
+  modifiers.csharp:
+  - get
+  - set
+  fullName.vb: System.ArraySegment(Of T).System.Collections.Generic.IList<T>.Item(System.Int32)
+  name.vb: System.Collections.Generic.IList<T>.Item(Int32)
+  nameWithType: ArraySegment<T>.IList<T>.Item[Int32]
+  nameWithType.vb: ArraySegment(Of T).System.Collections.Generic.IList<T>.Item(Int32)
+- uid: System.ArraySegment`1.System#Collections#Generic#IReadOnlyList{T}#Item(System.Int32)
+  commentId: P:System.ArraySegment`1.System#Collections#Generic#IReadOnlyList{T}#Item(System.Int32)
+  id: System#Collections#Generic#IReadOnlyList{T}#Item(System.Int32)
+  isEii: true
+  parent: System.ArraySegment`1
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.ArraySegment<T>.System.Collections.Generic.IReadOnlyList<T>.Item[System.Int32]
+  type: Property
+  source:
+    remote:
+      path: src/mscorlib/src/System/ArraySegment.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: System.Collections.Generic.IReadOnlyList<T>.this[]
+    path: src/mscorlib/src/System/ArraySegment.cs
+    startLine: 194
+  assemblies:
+  - System.Runtime
+  namespace: System
+  summary: "\n<p>Gets the element at the specified index of the array segment.</p>\n"
+  syntax:
+    content: T IReadOnlyList<T>.this[int index] { get; }
+    content.vb: ReadOnly WriteOnly Property System.Collections.Generic.IReadOnlyList<T>.Item(index As Integer) As T Implements IReadOnlyList(Of T).this
+    parameters:
+    - id: index
+      type: System.Int32
+      description: "\n<p>The zero-based index of the element to get.</p>\n"
+    return:
+      type: '{T}'
+      description: "\n<p>The element at the specified index.</p>\n"
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>index</em> is not a valid index in the <xref href=\"System.ArraySegment`1\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: "\n<p>The property is set.</p>\n"
+  implements:
+  - System.Collections.Generic.IReadOnlyList{{T}}.Item(System.Int32)
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+  fullName.vb: System.ArraySegment(Of T).System.Collections.Generic.IReadOnlyList<T>.Item(System.Int32)
+  name.vb: System.Collections.Generic.IReadOnlyList<T>.Item(Int32)
+  nameWithType: ArraySegment<T>.IReadOnlyList<T>.Item[Int32]
+  nameWithType.vb: ArraySegment(Of T).System.Collections.Generic.IReadOnlyList<T>.Item(Int32)
+- uid: System.ArraySegment`1.Equals(System.ArraySegment{`0})
+  commentId: M:System.ArraySegment`1.Equals(System.ArraySegment{`0})
+  id: Equals(System.ArraySegment{`0})
+  parent: System.ArraySegment`1
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.ArraySegment<T>.Equals(System.ArraySegment<T>)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/ArraySegment.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Equals
+    path: src/mscorlib/src/System/ArraySegment.cs
+    startLine: 127
+  assemblies:
+  - System.Runtime
+  namespace: System
+  summary: "\n<p>Determines whether the specified <xref href=\"System.ArraySegment`1\" data-throw-if-not-resolved=\"false\"></xref> structure is equal to the current instance.</p>\n"
+  syntax:
+    content: public bool Equals(ArraySegment<T> obj)
+    content.vb: Public Function Equals(obj As ArraySegment(Of T)) As Boolean
+    parameters:
+    - id: obj
+      type: System.ArraySegment`1
+      description: "\n<p>The structure to compare with the current instance.</p>\n"
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if the specified <xref href=\"System.ArraySegment`1\" data-throw-if-not-resolved=\"false\"></xref> structure is equal to the current instance; otherwise, <strong>false</strong>.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: System.ArraySegment(Of T).Equals(System.ArraySegment(Of T))
+  name.vb: Equals(ArraySegment(Of T))
+  nameWithType: ArraySegment<T>.Equals(ArraySegment<T>)
+  nameWithType.vb: ArraySegment(Of T).Equals(ArraySegment(Of T))
+- uid: System.ArraySegment`1.Equals(System.Object)
+  commentId: M:System.ArraySegment`1.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: System.ArraySegment`1
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.ArraySegment<T>.Equals(System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/ArraySegment.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Equals
+    path: src/mscorlib/src/System/ArraySegment.cs
+    startLine: 119
+  assemblies:
+  - System.Runtime
+  namespace: System
+  summary: "\n<p>Determines whether the specified object is equal to the current instance.</p>\n"
+  syntax:
+    content: public override bool Equals(object obj)
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+    parameters:
+    - id: obj
+      type: System.Object
+      description: "\n<p>The object to be compared with the current instance.</p>\n"
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if the specified object is a <xref href=\"System.ArraySegment`1\" data-throw-if-not-resolved=\"false\"></xref> structure and is equal to the current instance; otherwise, <strong>false</strong>.</p>\n"
+  overridden: System.ValueType.Equals(System.Object)
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  fullName.vb: System.ArraySegment(Of T).Equals(System.Object)
+  nameWithType: ArraySegment<T>.Equals(Object)
+  nameWithType.vb: ArraySegment(Of T).Equals(Object)
+- uid: System.ArraySegment`1.GetHashCode
+  commentId: M:System.ArraySegment`1.GetHashCode
+  id: GetHashCode
+  parent: System.ArraySegment`1
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.ArraySegment<T>.GetHashCode()
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/ArraySegment.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: GetHashCode
+    path: src/mscorlib/src/System/ArraySegment.cs
+    startLine: 112
+  assemblies:
+  - System.Runtime
+  namespace: System
+  summary: "\n<p>Returns the hash code for the current instance.</p>\n"
+  syntax:
+    content: public override int GetHashCode()
+    content.vb: Public Overrides Function GetHashCode As Integer
+    return:
+      type: System.Int32
+      description: "\n<p>A 32-bit signed integer hash code.</p>\n"
+  overridden: System.ValueType.GetHashCode
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  fullName.vb: System.ArraySegment(Of T).GetHashCode()
+  nameWithType: ArraySegment<T>.GetHashCode()
+  nameWithType.vb: ArraySegment(Of T).GetHashCode()
+- uid: System.ArraySegment`1.op_Equality(System.ArraySegment{`0},System.ArraySegment{`0})
+  commentId: M:System.ArraySegment`1.op_Equality(System.ArraySegment{`0},System.ArraySegment{`0})
+  id: op_Equality(System.ArraySegment{`0},System.ArraySegment{`0})
+  parent: System.ArraySegment`1
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.ArraySegment<T>.Equality(System.ArraySegment<T>, System.ArraySegment<T>)
+  type: Operator
+  source:
+    remote:
+      path: src/mscorlib/src/System/ArraySegment.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: op_Equality
+    path: src/mscorlib/src/System/ArraySegment.cs
+    startLine: 132
+  assemblies:
+  - System.Runtime
+  namespace: System
+  summary: "\n<p>Indicates whether two <xref href=\"System.ArraySegment`1\" data-throw-if-not-resolved=\"false\"></xref> structures are equal.</p>\n"
+  syntax:
+    content: public static bool operator ==(ArraySegment<T> a, ArraySegment<T> b)
+    content.vb: Public Shared Operator =(a As ArraySegment(Of T), b As ArraySegment(Of T)) As Boolean
+    parameters:
+    - id: a
+      type: System.ArraySegment`1
+      description: "\n<p>The  structure on the left side of the equality operator.</p>\n"
+    - id: b
+      type: System.ArraySegment`1
+      description: "\n<p>The structure on the right side of the equality operator.</p>\n"
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if <em>a</em> is equal to <em>b</em>; otherwise, <strong>false</strong>.</p>\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: System.ArraySegment(Of T).Equality(System.ArraySegment(Of T), System.ArraySegment(Of T))
+  name.vb: Equality(ArraySegment(Of T), ArraySegment(Of T))
+  nameWithType: ArraySegment<T>.Equality(ArraySegment<T>, ArraySegment<T>)
+  nameWithType.vb: ArraySegment(Of T).Equality(ArraySegment(Of T), ArraySegment(Of T))
+- uid: System.ArraySegment`1.op_Inequality(System.ArraySegment{`0},System.ArraySegment{`0})
+  commentId: M:System.ArraySegment`1.op_Inequality(System.ArraySegment{`0},System.ArraySegment{`0})
+  id: op_Inequality(System.ArraySegment{`0},System.ArraySegment{`0})
+  parent: System.ArraySegment`1
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.ArraySegment<T>.Inequality(System.ArraySegment<T>, System.ArraySegment<T>)
+  type: Operator
+  source:
+    remote:
+      path: src/mscorlib/src/System/ArraySegment.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: op_Inequality
+    path: src/mscorlib/src/System/ArraySegment.cs
+    startLine: 137
+  assemblies:
+  - System.Runtime
+  namespace: System
+  summary: "\n<p>Indicates whether two <xref href=\"System.ArraySegment`1\" data-throw-if-not-resolved=\"false\"></xref> structures are unequal.</p>\n"
+  syntax:
+    content: public static bool operator !=(ArraySegment<T> a, ArraySegment<T> b)
+    content.vb: Public Shared Operator <>(a As ArraySegment(Of T), b As ArraySegment(Of T)) As Boolean
+    parameters:
+    - id: a
+      type: System.ArraySegment`1
+      description: "\n<p>The structure on the left side of the inequality operator.</p>\n"
+    - id: b
+      type: System.ArraySegment`1
+      description: "\n<p>The structure on the right side of the inequality operator.</p>\n"
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if <em>a</em> is not equal to <em>b</em>; otherwise, <strong>false</strong>.</p>\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: System.ArraySegment(Of T).Inequality(System.ArraySegment(Of T), System.ArraySegment(Of T))
+  name.vb: Inequality(ArraySegment(Of T), ArraySegment(Of T))
+  nameWithType: ArraySegment<T>.Inequality(ArraySegment<T>, ArraySegment<T>)
+  nameWithType.vb: ArraySegment(Of T).Inequality(ArraySegment(Of T), ArraySegment(Of T))
+- uid: System.ArraySegment`1.System#Collections#Generic#ICollection{T}#Add(`0)
+  commentId: M:System.ArraySegment`1.System#Collections#Generic#ICollection{T}#Add(`0)
+  id: System#Collections#Generic#ICollection{T}#Add(`0)
+  isEii: true
+  parent: System.ArraySegment`1
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.ArraySegment<T>.System.Collections.Generic.ICollection<T>.Add(T)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/ArraySegment.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: System.Collections.Generic.ICollection<T>.Add
+    path: src/mscorlib/src/System/ArraySegment.cs
+    startLine: 220
+  assemblies:
+  - System.Runtime
+  namespace: System
+  summary: "\n<p>Adds an item to the array segment.</p>\n"
+  syntax:
+    content: void ICollection<T>.Add(T item)
+    content.vb: Sub System.Collections.Generic.ICollection<T>.Add(item As T) Implements ICollection(Of T).Add
+    parameters:
+    - id: item
+      type: '{T}'
+      description: "\n<p>The object to add to the array segment.</p>\n"
+  exceptions:
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: "\n<p>The array segment is read-only.</p>\n"
+  implements:
+  - System.Collections.Generic.ICollection{{T}}.Add({T})
+  fullName.vb: System.ArraySegment(Of T).System.Collections.Generic.ICollection<T>.Add(T)
+  name.vb: System.Collections.Generic.ICollection<T>.Add(T)
+  nameWithType: ArraySegment<T>.ICollection<T>.Add(T)
+  nameWithType.vb: ArraySegment(Of T).System.Collections.Generic.ICollection<T>.Add(T)
+- uid: System.ArraySegment`1.System#Collections#Generic#ICollection{T}#Clear
+  commentId: M:System.ArraySegment`1.System#Collections#Generic#ICollection{T}#Clear
+  id: System#Collections#Generic#ICollection{T}#Clear
+  isEii: true
+  parent: System.ArraySegment`1
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.ArraySegment<T>.System.Collections.Generic.ICollection<T>.Clear()
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/ArraySegment.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: System.Collections.Generic.ICollection<T>.Clear
+    path: src/mscorlib/src/System/ArraySegment.cs
+    startLine: 225
+  assemblies:
+  - System.Runtime
+  namespace: System
+  summary: "\n<p>Removes all items from the array segment.</p>\n"
+  syntax:
+    content: void ICollection<T>.Clear()
+    content.vb: Sub System.Collections.Generic.ICollection<T>.Clear Implements ICollection(Of T).Clear
+  exceptions:
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: "\n<p>The array segment is read-only. </p>\n"
+  implements:
+  - System.Collections.Generic.ICollection{{T}}.Clear
+  fullName.vb: System.ArraySegment(Of T).System.Collections.Generic.ICollection<T>.Clear()
+  name.vb: System.Collections.Generic.ICollection<T>.Clear()
+  nameWithType: ArraySegment<T>.ICollection<T>.Clear()
+  nameWithType.vb: ArraySegment(Of T).System.Collections.Generic.ICollection<T>.Clear()
+- uid: System.ArraySegment`1.System#Collections#Generic#ICollection{T}#Contains(`0)
+  commentId: M:System.ArraySegment`1.System#Collections#Generic#ICollection{T}#Contains(`0)
+  id: System#Collections#Generic#ICollection{T}#Contains(`0)
+  isEii: true
+  parent: System.ArraySegment`1
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.ArraySegment<T>.System.Collections.Generic.ICollection<T>.Contains(T)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/ArraySegment.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: System.Collections.Generic.ICollection<T>.Contains
+    path: src/mscorlib/src/System/ArraySegment.cs
+    startLine: 230
+  assemblies:
+  - System.Runtime
+  namespace: System
+  summary: "\n<p>Determines whether the array segment contains a specific value.</p>\n"
+  syntax:
+    content: bool ICollection<T>.Contains(T item)
+    content.vb: Function System.Collections.Generic.ICollection<T>.Contains(item As T) As Boolean Implements ICollection(Of T).Contains
+    parameters:
+    - id: item
+      type: '{T}'
+      description: "\n<p>The object to locate in the array segment.</p>\n"
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if <em>item</em> is found in the array segment; otherwise, <strong>false</strong>.</p>\n"
+  implements:
+  - System.Collections.Generic.ICollection{{T}}.Contains({T})
+  fullName.vb: System.ArraySegment(Of T).System.Collections.Generic.ICollection<T>.Contains(T)
+  name.vb: System.Collections.Generic.ICollection<T>.Contains(T)
+  nameWithType: ArraySegment<T>.ICollection<T>.Contains(T)
+  nameWithType.vb: ArraySegment(Of T).System.Collections.Generic.ICollection<T>.Contains(T)
+- uid: System.ArraySegment`1.System#Collections#Generic#ICollection{T}#CopyTo(`0[],System.Int32)
+  commentId: M:System.ArraySegment`1.System#Collections#Generic#ICollection{T}#CopyTo(`0[],System.Int32)
+  id: System#Collections#Generic#ICollection{T}#CopyTo(`0[],System.Int32)
+  isEii: true
+  parent: System.ArraySegment`1
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.ArraySegment<T>.System.Collections.Generic.ICollection<T>.CopyTo(T[], System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/ArraySegment.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: System.Collections.Generic.ICollection<T>.CopyTo
+    path: src/mscorlib/src/System/ArraySegment.cs
+    startLine: 244
+  assemblies:
+  - System.Runtime
+  namespace: System
+  summary: "\n<p>Copies the elements of the array segment to an array, starting at the specified array index.</p>\n"
+  syntax:
+    content: void ICollection<T>.CopyTo(T[] array, int arrayIndex)
+    content.vb: Sub System.Collections.Generic.ICollection<T>.CopyTo(array As T(), arrayIndex As Integer) Implements ICollection(Of T).CopyTo
+    parameters:
+    - id: array
+      type: '{T}[]'
+      description: "\n<p>The one-dimensional array that is the destination of the elements copied from the array segment. The array must have zero-based indexing.</p>\n"
+    - id: arrayIndex
+      type: System.Int32
+      description: "\n<p>The zero-based index in <em>array</em> at which copying begins.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>array</em> is <strong>null</strong>.</p>\n"
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>arrayIndex</em> is less than 0.</p>\n"
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>\n<em>array</em> is multidimensional.</p>\n<p>-or-</p>\n<p>The number of elements in the source array segment is greater than the available space from <em>arrayIndex</em> to the end of the destination <em>array</em>.</p>\n<p>-or-</p>\n<p>Type <em>T</em> cannot be cast automatically to the type of the destination <em>array</em>.</p>\n"
+  implements:
+  - System.Collections.Generic.ICollection{{T}}.CopyTo({T}[],System.Int32)
+  fullName.vb: System.ArraySegment(Of T).System.Collections.Generic.ICollection<T>.CopyTo(T(), System.Int32)
+  name.vb: System.Collections.Generic.ICollection<T>.CopyTo(T(), Int32)
+  nameWithType: ArraySegment<T>.ICollection<T>.CopyTo(T[], Int32)
+  nameWithType.vb: ArraySegment(Of T).System.Collections.Generic.ICollection<T>.CopyTo(T(), Int32)
+- uid: System.ArraySegment`1.System#Collections#Generic#ICollection{T}#Remove(`0)
+  commentId: M:System.ArraySegment`1.System#Collections#Generic#ICollection{T}#Remove(`0)
+  id: System#Collections#Generic#ICollection{T}#Remove(`0)
+  isEii: true
+  parent: System.ArraySegment`1
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.ArraySegment<T>.System.Collections.Generic.ICollection<T>.Remove(T)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/ArraySegment.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: System.Collections.Generic.ICollection<T>.Remove
+    path: src/mscorlib/src/System/ArraySegment.cs
+    startLine: 253
+  assemblies:
+  - System.Runtime
+  namespace: System
+  summary: "\n<p>Removes the first occurrence of a specific object from the array segment.</p>\n"
+  syntax:
+    content: bool ICollection<T>.Remove(T item)
+    content.vb: Function System.Collections.Generic.ICollection<T>.Remove(item As T) As Boolean Implements ICollection(Of T).Remove
+    parameters:
+    - id: item
+      type: '{T}'
+      description: "\n<p>The object to remove from the array segment.</p>\n"
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if <em>item</em> was successfully removed from the array segment; otherwise, <strong>false</strong>. This method also returns <strong>false</strong> if <em>item</em> is not found in the array segment.</p>\n"
+  exceptions:
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: "\n<p>The array segment is read-only.</p>\n"
+  implements:
+  - System.Collections.Generic.ICollection{{T}}.Remove({T})
+  fullName.vb: System.ArraySegment(Of T).System.Collections.Generic.ICollection<T>.Remove(T)
+  name.vb: System.Collections.Generic.ICollection<T>.Remove(T)
+  nameWithType: ArraySegment<T>.ICollection<T>.Remove(T)
+  nameWithType.vb: ArraySegment(Of T).System.Collections.Generic.ICollection<T>.Remove(T)
+- uid: System.ArraySegment`1.System#Collections#Generic#IEnumerable{T}#GetEnumerator
+  commentId: M:System.ArraySegment`1.System#Collections#Generic#IEnumerable{T}#GetEnumerator
+  id: System#Collections#Generic#IEnumerable{T}#GetEnumerator
+  isEii: true
+  parent: System.ArraySegment`1
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.ArraySegment<T>.System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/ArraySegment.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: System.Collections.Generic.IEnumerable<T>.GetEnumerator
+    path: src/mscorlib/src/System/ArraySegment.cs
+    startLine: 260
+  assemblies:
+  - System.Runtime
+  namespace: System
+  summary: "\n<p>Returns an enumerator that iterates through the array segment.</p>\n"
+  syntax:
+    content: IEnumerator<T> IEnumerable<T>.GetEnumerator()
+    content.vb: Function System.Collections.Generic.IEnumerable<T>.GetEnumerator As IEnumerator(Of T) Implements IEnumerable(Of T).GetEnumerator
+    return:
+      type: System.Collections.Generic.IEnumerator{{T}}
+      description: "\n<p>An enumerator that can be used to iterate through the array segment.</p>\n"
+  implements:
+  - System.Collections.Generic.IEnumerable{{T}}.GetEnumerator
+  fullName.vb: System.ArraySegment(Of T).System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+  name.vb: System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+  nameWithType: ArraySegment<T>.IEnumerable<T>.GetEnumerator()
+  nameWithType.vb: ArraySegment(Of T).System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+- uid: System.ArraySegment`1.System#Collections#Generic#IList{T}#IndexOf(`0)
+  commentId: M:System.ArraySegment`1.System#Collections#Generic#IList{T}#IndexOf(`0)
+  id: System#Collections#Generic#IList{T}#IndexOf(`0)
+  isEii: true
+  parent: System.ArraySegment`1
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.ArraySegment<T>.System.Collections.Generic.IList<T>.IndexOf(T)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/ArraySegment.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: System.Collections.Generic.IList<T>.IndexOf
+    path: src/mscorlib/src/System/ArraySegment.cs
+    startLine: 168
+  assemblies:
+  - System.Runtime
+  namespace: System
+  summary: "\n<p>Determines the index of a specific item in the array segment.</p>\n"
+  syntax:
+    content: int IList<T>.IndexOf(T item)
+    content.vb: Function System.Collections.Generic.IList<T>.IndexOf(item As T) As Integer Implements IList(Of T).IndexOf
+    parameters:
+    - id: item
+      type: '{T}'
+      description: "\n<p>The object to locate in the array segment.</p>\n"
+    return:
+      type: System.Int32
+      description: "\n<p>The index of <em>item</em> if found in the list; otherwise, -1.</p>\n"
+  implements:
+  - System.Collections.Generic.IList{{T}}.IndexOf({T})
+  fullName.vb: System.ArraySegment(Of T).System.Collections.Generic.IList<T>.IndexOf(T)
+  name.vb: System.Collections.Generic.IList<T>.IndexOf(T)
+  nameWithType: ArraySegment<T>.IList<T>.IndexOf(T)
+  nameWithType.vb: ArraySegment(Of T).System.Collections.Generic.IList<T>.IndexOf(T)
+- uid: System.ArraySegment`1.System#Collections#Generic#IList{T}#Insert(System.Int32,`0)
+  commentId: M:System.ArraySegment`1.System#Collections#Generic#IList{T}#Insert(System.Int32,`0)
+  id: System#Collections#Generic#IList{T}#Insert(System.Int32,`0)
+  isEii: true
+  parent: System.ArraySegment`1
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.ArraySegment<T>.System.Collections.Generic.IList<T>.Insert(System.Int32, T)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/ArraySegment.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: System.Collections.Generic.IList<T>.Insert
+    path: src/mscorlib/src/System/ArraySegment.cs
+    startLine: 182
+  assemblies:
+  - System.Runtime
+  namespace: System
+  summary: "\n<p>Inserts an item into the array segment at the specified index.</p>\n"
+  syntax:
+    content: void IList<T>.Insert(int index, T item)
+    content.vb: Sub System.Collections.Generic.IList<T>.Insert(index As Integer, item As T) Implements IList(Of T).Insert
+    parameters:
+    - id: index
+      type: System.Int32
+      description: "\n<p>The zero-based index at which <em>item</em> should be inserted.</p>\n"
+    - id: item
+      type: '{T}'
+      description: "\n<p>The object to insert into the array segment.</p>\n"
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>index</em> is not a valid index in the array segment.</p>\n"
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: "\n<p>The array segment is read-only.</p>\n"
+  implements:
+  - System.Collections.Generic.IList{{T}}.Insert(System.Int32,{T})
+  fullName.vb: System.ArraySegment(Of T).System.Collections.Generic.IList<T>.Insert(System.Int32, T)
+  name.vb: System.Collections.Generic.IList<T>.Insert(Int32, T)
+  nameWithType: ArraySegment<T>.IList<T>.Insert(Int32, T)
+  nameWithType.vb: ArraySegment(Of T).System.Collections.Generic.IList<T>.Insert(Int32, T)
+- uid: System.ArraySegment`1.System#Collections#Generic#IList{T}#RemoveAt(System.Int32)
+  commentId: M:System.ArraySegment`1.System#Collections#Generic#IList{T}#RemoveAt(System.Int32)
+  id: System#Collections#Generic#IList{T}#RemoveAt(System.Int32)
+  isEii: true
+  parent: System.ArraySegment`1
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.ArraySegment<T>.System.Collections.Generic.IList<T>.RemoveAt(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/ArraySegment.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: System.Collections.Generic.IList<T>.RemoveAt
+    path: src/mscorlib/src/System/ArraySegment.cs
+    startLine: 187
+  assemblies:
+  - System.Runtime
+  namespace: System
+  summary: "\n<p>Removes the array segment item at the specified index.</p>\n"
+  syntax:
+    content: void IList<T>.RemoveAt(int index)
+    content.vb: Sub System.Collections.Generic.IList<T>.RemoveAt(index As Integer) Implements IList(Of T).RemoveAt
+    parameters:
+    - id: index
+      type: System.Int32
+      description: "\n<p>The zero-based index of the item to remove.</p>\n"
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>index</em> is not a valid index in the array segment.</p>\n"
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: "\n<p>The array segment is read-only.</p>\n"
+  implements:
+  - System.Collections.Generic.IList{{T}}.RemoveAt(System.Int32)
+  fullName.vb: System.ArraySegment(Of T).System.Collections.Generic.IList<T>.RemoveAt(System.Int32)
+  name.vb: System.Collections.Generic.IList<T>.RemoveAt(Int32)
+  nameWithType: ArraySegment<T>.IList<T>.RemoveAt(Int32)
+  nameWithType.vb: ArraySegment(Of T).System.Collections.Generic.IList<T>.RemoveAt(Int32)
+- uid: System.ArraySegment`1.System#Collections#IEnumerable#GetEnumerator
+  commentId: M:System.ArraySegment`1.System#Collections#IEnumerable#GetEnumerator
+  id: System#Collections#IEnumerable#GetEnumerator
+  isEii: true
+  parent: System.ArraySegment`1
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.ArraySegment<T>.System.Collections.IEnumerable.GetEnumerator()
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/ArraySegment.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: System.Collections.IEnumerable.GetEnumerator
+    path: src/mscorlib/src/System/ArraySegment.cs
+    startLine: 271
+  assemblies:
+  - System.Runtime
+  namespace: System
+  summary: "\n<p>Returns an enumerator that iterates through an array segment.</p>\n"
+  syntax:
+    content: IEnumerator IEnumerable.GetEnumerator()
+    content.vb: Function System.Collections.IEnumerable.GetEnumerator As IEnumerator Implements IEnumerable.GetEnumerator
+    return:
+      type: System.Collections.IEnumerator
+      description: "\n<p>An enumerator that can be used to iterate through the array segment.</p>\n"
+  implements:
+  - System.Collections.IEnumerable.GetEnumerator
+  fullName.vb: System.ArraySegment(Of T).System.Collections.IEnumerable.GetEnumerator()
+  name.vb: System.Collections.IEnumerable.GetEnumerator()
+  nameWithType: ArraySegment<T>.IEnumerable.GetEnumerator()
+  nameWithType.vb: ArraySegment(Of T).System.Collections.IEnumerable.GetEnumerator()
+references:
+- uid: System
+  isExternal: false
+  name: "XXX"
+  fullName: System
+  nameWithType: System
+  commentId: N:System
+- uid: System.Collections.Generic.IList{{T}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IList`1
+  name: "XXX"
+  fullName: System.Collections.Generic.IList<T>
+  fullname.vb: System.Collections.Generic.IList(Of T)
+  name.vb: IList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: "XXX"
+    fullName: System.Collections.Generic.IList
+  - name: "<"
+    fullName: <
+  - name: "XXX"
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: "XXX"
+    fullName: System.Collections.Generic.IList
+  - name: 'XXX '
+    fullName: '(Of '
+  - name: "XXX"
+    fullName: T
+  - name: "XXX"
+    fullName: )
+  nameWithType: IList<T>
+  nameWithType.vb: IList(Of T)
+  commentId: T:System.Collections.Generic.IList{`0}
+- uid: System.Collections.Generic.ICollection{{T}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.ICollection`1
+  name: "XXX"
+  fullName: System.Collections.Generic.ICollection<T>
+  fullname.vb: System.Collections.Generic.ICollection(Of T)
+  name.vb: ICollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: "XXX"
+    fullName: System.Collections.Generic.ICollection
+  - name: "<"
+    fullName: <
+  - name: "XXX"
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: "XXX"
+    fullName: System.Collections.Generic.ICollection
+  - name: 'XXX '
+    fullName: '(Of '
+  - name: "XXX"
+    fullName: T
+  - name: "XXX"
+    fullName: )
+  nameWithType: ICollection<T>
+  nameWithType.vb: ICollection(Of T)
+  commentId: T:System.Collections.Generic.ICollection{`0}
+- uid: System.Collections.Generic.IReadOnlyList{{T}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  name: "XXX"
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  fullname.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  name.vb: IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: "XXX"
+    fullName: System.Collections.Generic.IReadOnlyList
+  - name: "<"
+    fullName: <
+  - name: "XXX"
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: "XXX"
+    fullName: System.Collections.Generic.IReadOnlyList
+  - name: 'XXX '
+    fullName: '(Of '
+  - name: "XXX"
+    fullName: T
+  - name: "XXX"
+    fullName: )
+  nameWithType: IReadOnlyList<T>
+  nameWithType.vb: IReadOnlyList(Of T)
+  commentId: T:System.Collections.Generic.IReadOnlyList{`0}
+- uid: System.Collections.Generic.IReadOnlyCollection{{T}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyCollection`1
+  name: "XXX"
+  fullName: System.Collections.Generic.IReadOnlyCollection<T>
+  fullname.vb: System.Collections.Generic.IReadOnlyCollection(Of T)
+  name.vb: IReadOnlyCollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: "XXX"
+    fullName: System.Collections.Generic.IReadOnlyCollection
+  - name: "<"
+    fullName: <
+  - name: "XXX"
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: "XXX"
+    fullName: System.Collections.Generic.IReadOnlyCollection
+  - name: 'XXX '
+    fullName: '(Of '
+  - name: "XXX"
+    fullName: T
+  - name: "XXX"
+    fullName: )
+  nameWithType: IReadOnlyCollection<T>
+  nameWithType.vb: IReadOnlyCollection(Of T)
+  commentId: T:System.Collections.Generic.IReadOnlyCollection{`0}
+- uid: System.Collections.Generic.IEnumerable{{T}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: "XXX"
+  fullName: System.Collections.Generic.IEnumerable<T>
+  fullname.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: "XXX"
+    fullName: System.Collections.Generic.IEnumerable
+  - name: "<"
+    fullName: <
+  - name: "XXX"
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: "XXX"
+    fullName: System.Collections.Generic.IEnumerable
+  - name: 'XXX '
+    fullName: '(Of '
+  - name: "XXX"
+    fullName: T
+  - name: "XXX"
+    fullName: )
+  nameWithType: IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  commentId: T:System.Collections.Generic.IEnumerable{`0}
+- uid: System.Collections.IEnumerable
+  parent: System.Collections
+  isExternal: false
+  name: "XXX"
+  fullName: System.Collections.IEnumerable
+  nameWithType: IEnumerable
+  commentId: T:System.Collections.IEnumerable
+- uid: System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: false
+  name: "XXX"
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: "XXX"
+    fullName: System.ValueType.ToString
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: "XXX"
+    fullName: System.ValueType.ToString
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: ValueType.ToString()
+  commentId: M:System.ValueType.ToString
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.Equals(Object, Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.GetType()
+  commentId: M:System.Object.GetType
+- uid: System.Collections.Generic.IList`1
+  isExternal: false
+  name: "XXX"
+  fullName: System.Collections.Generic.IList<T>
+  fullname.vb: System.Collections.Generic.IList(Of T)
+  name.vb: IList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: "XXX"
+    fullName: System.Collections.Generic.IList
+  - name: "<"
+    fullName: <
+  - name: "XXX"
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: "XXX"
+    fullName: System.Collections.Generic.IList
+  - name: 'XXX '
+    fullName: '(Of '
+  - name: "XXX"
+    fullName: T
+  - name: "XXX"
+    fullName: )
+  nameWithType: IList<T>
+  nameWithType.vb: IList(Of T)
+  commentId: T:System.Collections.Generic.IList`1
+- uid: System.Collections.Generic
+  isExternal: false
+  name: "XXX"
+  fullName: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+- uid: System.Collections.Generic.ICollection`1
+  isExternal: false
+  name: "XXX"
+  fullName: System.Collections.Generic.ICollection<T>
+  fullname.vb: System.Collections.Generic.ICollection(Of T)
+  name.vb: ICollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: "XXX"
+    fullName: System.Collections.Generic.ICollection
+  - name: "<"
+    fullName: <
+  - name: "XXX"
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: "XXX"
+    fullName: System.Collections.Generic.ICollection
+  - name: 'XXX '
+    fullName: '(Of '
+  - name: "XXX"
+    fullName: T
+  - name: "XXX"
+    fullName: )
+  nameWithType: ICollection<T>
+  nameWithType.vb: ICollection(Of T)
+  commentId: T:System.Collections.Generic.ICollection`1
+- uid: System.Collections.Generic.IReadOnlyList`1
+  isExternal: false
+  name: "XXX"
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  fullname.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  name.vb: IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: "XXX"
+    fullName: System.Collections.Generic.IReadOnlyList
+  - name: "<"
+    fullName: <
+  - name: "XXX"
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: "XXX"
+    fullName: System.Collections.Generic.IReadOnlyList
+  - name: 'XXX '
+    fullName: '(Of '
+  - name: "XXX"
+    fullName: T
+  - name: "XXX"
+    fullName: )
+  nameWithType: IReadOnlyList<T>
+  nameWithType.vb: IReadOnlyList(Of T)
+  commentId: T:System.Collections.Generic.IReadOnlyList`1
+- uid: System.Collections.Generic.IReadOnlyCollection`1
+  isExternal: false
+  name: "XXX"
+  fullName: System.Collections.Generic.IReadOnlyCollection<T>
+  fullname.vb: System.Collections.Generic.IReadOnlyCollection(Of T)
+  name.vb: IReadOnlyCollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: "XXX"
+    fullName: System.Collections.Generic.IReadOnlyCollection
+  - name: "<"
+    fullName: <
+  - name: "XXX"
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: "XXX"
+    fullName: System.Collections.Generic.IReadOnlyCollection
+  - name: 'XXX '
+    fullName: '(Of '
+  - name: "XXX"
+    fullName: T
+  - name: "XXX"
+    fullName: )
+  nameWithType: IReadOnlyCollection<T>
+  nameWithType.vb: IReadOnlyCollection(Of T)
+  commentId: T:System.Collections.Generic.IReadOnlyCollection`1
+- uid: System.Collections.Generic.IEnumerable`1
+  isExternal: false
+  name: "XXX"
+  fullName: System.Collections.Generic.IEnumerable<T>
+  fullname.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: "XXX"
+    fullName: System.Collections.Generic.IEnumerable
+  - name: "<"
+    fullName: <
+  - name: "XXX"
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: "XXX"
+    fullName: System.Collections.Generic.IEnumerable
+  - name: 'XXX '
+    fullName: '(Of '
+  - name: "XXX"
+    fullName: T
+  - name: "XXX"
+    fullName: )
+  nameWithType: IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  commentId: T:System.Collections.Generic.IEnumerable`1
+- uid: System.Collections
+  isExternal: false
+  name: "XXX"
+  fullName: System.Collections
+  nameWithType: System.Collections
+  commentId: N:System.Collections
+- uid: System.ValueType
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.ValueType
+  nameWithType: ValueType
+  commentId: T:System.ValueType
+- uid: System.Object
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Object
+  nameWithType: Object
+  commentId: T:System.Object
+- uid: '{T}[]'
+  name: "XXX"
+  fullName: T[]
+  fullname.vb: T()
+  name.vb: T()
+  spec.csharp:
+  - name: "XXX"
+    fullName: T
+  - name: 'XXX'
+    fullName: '[]'
+  spec.vb:
+  - name: "XXX"
+    fullName: T
+  - name: "XXX"
+    fullName: ()
+  nameWithType: T[]
+  nameWithType.vb: T()
+- uid: System.Int32
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Int32
+  nameWithType: Int32
+  commentId: T:System.Int32
+- uid: System.Collections.Generic.ICollection{{T}}.Count
+  parent: System.Collections.Generic.ICollection{{T}}
+  definition: System.Collections.Generic.ICollection`1.Count
+  name: "XXX"
+  fullName: System.Collections.Generic.ICollection<T>.Count
+  fullname.vb: System.Collections.Generic.ICollection(Of T).Count
+  nameWithType: ICollection<T>.Count
+  nameWithType.vb: ICollection(Of T).Count
+  commentId: P:System.Collections.Generic.ICollection{`0}.Count
+- uid: System.Collections.Generic.IReadOnlyCollection{{T}}.Count
+  parent: System.Collections.Generic.IReadOnlyCollection{{T}}
+  definition: System.Collections.Generic.IReadOnlyCollection`1.Count
+  name: "XXX"
+  fullName: System.Collections.Generic.IReadOnlyCollection<T>.Count
+  fullname.vb: System.Collections.Generic.IReadOnlyCollection(Of T).Count
+  nameWithType: IReadOnlyCollection<T>.Count
+  nameWithType.vb: IReadOnlyCollection(Of T).Count
+  commentId: P:System.Collections.Generic.IReadOnlyCollection{`0}.Count
+- uid: System.Collections.Generic.ICollection`1.Count
+  isExternal: false
+  name: "XXX"
+  fullName: System.Collections.Generic.ICollection<T>.Count
+  fullname.vb: System.Collections.Generic.ICollection(Of T).Count
+  nameWithType: ICollection<T>.Count
+  nameWithType.vb: ICollection(Of T).Count
+  commentId: P:System.Collections.Generic.ICollection`1.Count
+- uid: System.Collections.Generic.IReadOnlyCollection`1.Count
+  isExternal: false
+  name: "XXX"
+  fullName: System.Collections.Generic.IReadOnlyCollection<T>.Count
+  fullname.vb: System.Collections.Generic.IReadOnlyCollection(Of T).Count
+  nameWithType: IReadOnlyCollection<T>.Count
+  nameWithType.vb: IReadOnlyCollection(Of T).Count
+  commentId: P:System.Collections.Generic.IReadOnlyCollection`1.Count
+- uid: System.Collections.Generic.ICollection{{T}}.IsReadOnly
+  parent: System.Collections.Generic.ICollection{{T}}
+  definition: System.Collections.Generic.ICollection`1.IsReadOnly
+  name: "XXX"
+  fullName: System.Collections.Generic.ICollection<T>.IsReadOnly
+  fullname.vb: System.Collections.Generic.ICollection(Of T).IsReadOnly
+  nameWithType: ICollection<T>.IsReadOnly
+  nameWithType.vb: ICollection(Of T).IsReadOnly
+  commentId: P:System.Collections.Generic.ICollection{`0}.IsReadOnly
+- uid: System.Boolean
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Boolean
+  nameWithType: Boolean
+  commentId: T:System.Boolean
+- uid: System.Collections.Generic.ICollection`1.IsReadOnly
+  isExternal: false
+  name: "XXX"
+  fullName: System.Collections.Generic.ICollection<T>.IsReadOnly
+  fullname.vb: System.Collections.Generic.ICollection(Of T).IsReadOnly
+  nameWithType: ICollection<T>.IsReadOnly
+  nameWithType.vb: ICollection(Of T).IsReadOnly
+  commentId: P:System.Collections.Generic.ICollection`1.IsReadOnly
+- uid: System.Collections.Generic.IList{{T}}.Item(System.Int32)
+  parent: System.Collections.Generic.IList{{T}}
+  definition: System.Collections.Generic.IList`1.Item(System.Int32)
+  name: "XXX"
+  fullName: System.Collections.Generic.IList<T>.Item[System.Int32]
+  fullname.vb: System.Collections.Generic.IList(Of T).Item(System.Int32)
+  name.vb: Item(Int32)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1.Item(System.Int32)
+    name: "XXX"
+    fullName: System.Collections.Generic.IList<T>.Item
+  - name: 'XXX'
+    fullName: '['
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: 'XXX'
+    fullName: ']'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1.Item(System.Int32)
+    name: "XXX"
+    fullName: System.Collections.Generic.IList(Of T).Item
+  - name: "XXX"
+    fullName: (
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: IList<T>.Item[Int32]
+  nameWithType.vb: IList(Of T).Item(Int32)
+  commentId: P:System.Collections.Generic.IList{`0}.Item(System.Int32)
+- uid: '{T}'
+  definition: T
+  name: "XXX"
+  fullName: T
+  nameWithType: T
+  commentId: '!:T'
+- uid: System.Collections.Generic.IList`1.Item(System.Int32)
+  isExternal: true
+  name: "XXX"
+  fullName: System.Collections.Generic.IList<T>.Item[System.Int32]
+  fullname.vb: System.Collections.Generic.IList(Of T).Item(System.Int32)
+  name.vb: Item(Int32)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1.Item(System.Int32)
+    name: "XXX"
+    fullName: System.Collections.Generic.IList<T>.Item
+  - name: 'XXX'
+    fullName: '['
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: 'XXX'
+    fullName: ']'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1.Item(System.Int32)
+    name: "XXX"
+    fullName: System.Collections.Generic.IList(Of T).Item
+  - name: "XXX"
+    fullName: (
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: IList<T>.Item[Int32]
+  nameWithType.vb: IList(Of T).Item(Int32)
+  commentId: P:System.Collections.Generic.IList`1.Item(System.Int32)
+- uid: T
+  isExternal: false
+  name: "XXX"
+  fullName: T
+  nameWithType: T
+- uid: System.Collections.Generic.IReadOnlyList{{T}}.Item(System.Int32)
+  parent: System.Collections.Generic.IReadOnlyList{{T}}
+  definition: System.Collections.Generic.IReadOnlyList`1.Item(System.Int32)
+  name: "XXX"
+  fullName: System.Collections.Generic.IReadOnlyList<T>.Item[System.Int32]
+  fullname.vb: System.Collections.Generic.IReadOnlyList(Of T).Item(System.Int32)
+  name.vb: Item(Int32)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1.Item(System.Int32)
+    name: "XXX"
+    fullName: System.Collections.Generic.IReadOnlyList<T>.Item
+  - name: 'XXX'
+    fullName: '['
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: 'XXX'
+    fullName: ']'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1.Item(System.Int32)
+    name: "XXX"
+    fullName: System.Collections.Generic.IReadOnlyList(Of T).Item
+  - name: "XXX"
+    fullName: (
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: IReadOnlyList<T>.Item[Int32]
+  nameWithType.vb: IReadOnlyList(Of T).Item(Int32)
+  commentId: P:System.Collections.Generic.IReadOnlyList{`0}.Item(System.Int32)
+- uid: System.Collections.Generic.IReadOnlyList`1.Item(System.Int32)
+  isExternal: true
+  name: "XXX"
+  fullName: System.Collections.Generic.IReadOnlyList<T>.Item[System.Int32]
+  fullname.vb: System.Collections.Generic.IReadOnlyList(Of T).Item(System.Int32)
+  name.vb: Item(Int32)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1.Item(System.Int32)
+    name: "XXX"
+    fullName: System.Collections.Generic.IReadOnlyList<T>.Item
+  - name: 'XXX'
+    fullName: '['
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: 'XXX'
+    fullName: ']'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1.Item(System.Int32)
+    name: "XXX"
+    fullName: System.Collections.Generic.IReadOnlyList(Of T).Item
+  - name: "XXX"
+    fullName: (
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: IReadOnlyList<T>.Item[Int32]
+  nameWithType.vb: IReadOnlyList(Of T).Item(Int32)
+  commentId: P:System.Collections.Generic.IReadOnlyList`1.Item(System.Int32)
+- uid: System.ArraySegment`1
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArraySegment<T>
+  fullname.vb: System.ArraySegment(Of T)
+  name.vb: ArraySegment(Of T)
+  spec.csharp:
+  - uid: System.ArraySegment`1
+    name: "XXX"
+    fullName: System.ArraySegment
+  - name: "<"
+    fullName: <
+  - name: "XXX"
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.ArraySegment`1
+    name: "XXX"
+    fullName: System.ArraySegment
+  - name: 'XXX '
+    fullName: '(Of '
+  - name: "XXX"
+    fullName: T
+  - name: "XXX"
+    fullName: )
+  nameWithType: ArraySegment<T>
+  nameWithType.vb: ArraySegment(Of T)
+  commentId: T:System.ArraySegment`1
+- uid: System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  name: "XXX"
+  fullName: System.ValueType.Equals(System.Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: "XXX"
+    fullName: System.ValueType.Equals
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: "XXX"
+    fullName: System.ValueType.Equals
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: ValueType.Equals(Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+- uid: System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: false
+  name: "XXX"
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: "XXX"
+    fullName: System.ValueType.GetHashCode
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: "XXX"
+    fullName: System.ValueType.GetHashCode
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: ValueType.GetHashCode()
+  commentId: M:System.ValueType.GetHashCode
+- uid: System.Collections.Generic.ICollection{{T}}.Add({T})
+  parent: System.Collections.Generic.ICollection{{T}}
+  definition: System.Collections.Generic.ICollection`1.Add(`0)
+  name: "XXX"
+  fullName: System.Collections.Generic.ICollection<T>.Add(T)
+  fullname.vb: System.Collections.Generic.ICollection(Of T).Add(T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.Add(`0)
+    name: "XXX"
+    fullName: System.Collections.Generic.ICollection<T>.Add
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: T
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.Add(`0)
+    name: "XXX"
+    fullName: System.Collections.Generic.ICollection(Of T).Add
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: T
+  - name: "XXX"
+    fullName: )
+  nameWithType: ICollection<T>.Add(T)
+  nameWithType.vb: ICollection(Of T).Add(T)
+  commentId: M:System.Collections.Generic.ICollection{`0}.Add(`0)
+- uid: System.Collections.Generic.ICollection`1.Add(`0)
+  isExternal: false
+  name: "XXX"
+  fullName: System.Collections.Generic.ICollection<T>.Add(T)
+  fullname.vb: System.Collections.Generic.ICollection(Of T).Add(T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.Add(`0)
+    name: "XXX"
+    fullName: System.Collections.Generic.ICollection<T>.Add
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: T
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.Add(`0)
+    name: "XXX"
+    fullName: System.Collections.Generic.ICollection(Of T).Add
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: T
+  - name: "XXX"
+    fullName: )
+  nameWithType: ICollection<T>.Add(T)
+  nameWithType.vb: ICollection(Of T).Add(T)
+  commentId: M:System.Collections.Generic.ICollection`1.Add(`0)
+- uid: System.Collections.Generic.ICollection{{T}}.Clear
+  parent: System.Collections.Generic.ICollection{{T}}
+  definition: System.Collections.Generic.ICollection`1.Clear
+  name: "XXX"
+  fullName: System.Collections.Generic.ICollection<T>.Clear()
+  fullname.vb: System.Collections.Generic.ICollection(Of T).Clear()
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.Clear
+    name: "XXX"
+    fullName: System.Collections.Generic.ICollection<T>.Clear
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.Clear
+    name: "XXX"
+    fullName: System.Collections.Generic.ICollection(Of T).Clear
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: ICollection<T>.Clear()
+  nameWithType.vb: ICollection(Of T).Clear()
+  commentId: M:System.Collections.Generic.ICollection{`0}.Clear
+- uid: System.Collections.Generic.ICollection`1.Clear
+  isExternal: false
+  name: "XXX"
+  fullName: System.Collections.Generic.ICollection<T>.Clear()
+  fullname.vb: System.Collections.Generic.ICollection(Of T).Clear()
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.Clear
+    name: "XXX"
+    fullName: System.Collections.Generic.ICollection<T>.Clear
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.Clear
+    name: "XXX"
+    fullName: System.Collections.Generic.ICollection(Of T).Clear
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: ICollection<T>.Clear()
+  nameWithType.vb: ICollection(Of T).Clear()
+  commentId: M:System.Collections.Generic.ICollection`1.Clear
+- uid: System.Collections.Generic.ICollection{{T}}.Contains({T})
+  parent: System.Collections.Generic.ICollection{{T}}
+  definition: System.Collections.Generic.ICollection`1.Contains(`0)
+  name: "XXX"
+  fullName: System.Collections.Generic.ICollection<T>.Contains(T)
+  fullname.vb: System.Collections.Generic.ICollection(Of T).Contains(T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.Contains(`0)
+    name: "XXX"
+    fullName: System.Collections.Generic.ICollection<T>.Contains
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: T
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.Contains(`0)
+    name: "XXX"
+    fullName: System.Collections.Generic.ICollection(Of T).Contains
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: T
+  - name: "XXX"
+    fullName: )
+  nameWithType: ICollection<T>.Contains(T)
+  nameWithType.vb: ICollection(Of T).Contains(T)
+  commentId: M:System.Collections.Generic.ICollection{`0}.Contains(`0)
+- uid: System.Collections.Generic.ICollection`1.Contains(`0)
+  isExternal: false
+  name: "XXX"
+  fullName: System.Collections.Generic.ICollection<T>.Contains(T)
+  fullname.vb: System.Collections.Generic.ICollection(Of T).Contains(T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.Contains(`0)
+    name: "XXX"
+    fullName: System.Collections.Generic.ICollection<T>.Contains
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: T
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.Contains(`0)
+    name: "XXX"
+    fullName: System.Collections.Generic.ICollection(Of T).Contains
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: T
+  - name: "XXX"
+    fullName: )
+  nameWithType: ICollection<T>.Contains(T)
+  nameWithType.vb: ICollection(Of T).Contains(T)
+  commentId: M:System.Collections.Generic.ICollection`1.Contains(`0)
+- uid: System.Collections.Generic.ICollection{{T}}.CopyTo({T}[],System.Int32)
+  parent: System.Collections.Generic.ICollection{{T}}
+  definition: System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
+  name: "XXX"
+  fullName: System.Collections.Generic.ICollection<T>.CopyTo(T[], System.Int32)
+  fullname.vb: System.Collections.Generic.ICollection(Of T).CopyTo(T(), System.Int32)
+  name.vb: CopyTo(T(), Int32)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
+    name: "XXX"
+    fullName: System.Collections.Generic.ICollection<T>.CopyTo
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: T
+  - name: 'XXX'
+    fullName: '[]'
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
+    name: "XXX"
+    fullName: System.Collections.Generic.ICollection(Of T).CopyTo
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: T
+  - name: "XXX"
+    fullName: ()
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: ICollection<T>.CopyTo(T[], Int32)
+  nameWithType.vb: ICollection(Of T).CopyTo(T(), Int32)
+  commentId: M:System.Collections.Generic.ICollection{`0}.CopyTo(`0[],System.Int32)
+- uid: System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
+  isExternal: true
+  name: "XXX"
+  fullName: System.Collections.Generic.ICollection<T>.CopyTo(T[], System.Int32)
+  fullname.vb: System.Collections.Generic.ICollection(Of T).CopyTo(T(), System.Int32)
+  name.vb: CopyTo(T(), Int32)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
+    name: "XXX"
+    fullName: System.Collections.Generic.ICollection<T>.CopyTo
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: T
+  - name: 'XXX'
+    fullName: '[]'
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
+    name: "XXX"
+    fullName: System.Collections.Generic.ICollection(Of T).CopyTo
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: T
+  - name: "XXX"
+    fullName: ()
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: ICollection<T>.CopyTo(T[], Int32)
+  nameWithType.vb: ICollection(Of T).CopyTo(T(), Int32)
+  commentId: M:System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
+- uid: System.Collections.Generic.ICollection{{T}}.Remove({T})
+  parent: System.Collections.Generic.ICollection{{T}}
+  definition: System.Collections.Generic.ICollection`1.Remove(`0)
+  name: "XXX"
+  fullName: System.Collections.Generic.ICollection<T>.Remove(T)
+  fullname.vb: System.Collections.Generic.ICollection(Of T).Remove(T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.Remove(`0)
+    name: "XXX"
+    fullName: System.Collections.Generic.ICollection<T>.Remove
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: T
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.Remove(`0)
+    name: "XXX"
+    fullName: System.Collections.Generic.ICollection(Of T).Remove
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: T
+  - name: "XXX"
+    fullName: )
+  nameWithType: ICollection<T>.Remove(T)
+  nameWithType.vb: ICollection(Of T).Remove(T)
+  commentId: M:System.Collections.Generic.ICollection{`0}.Remove(`0)
+- uid: System.Collections.Generic.ICollection`1.Remove(`0)
+  isExternal: false
+  name: "XXX"
+  fullName: System.Collections.Generic.ICollection<T>.Remove(T)
+  fullname.vb: System.Collections.Generic.ICollection(Of T).Remove(T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.Remove(`0)
+    name: "XXX"
+    fullName: System.Collections.Generic.ICollection<T>.Remove
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: T
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.Remove(`0)
+    name: "XXX"
+    fullName: System.Collections.Generic.ICollection(Of T).Remove
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: T
+  - name: "XXX"
+    fullName: )
+  nameWithType: ICollection<T>.Remove(T)
+  nameWithType.vb: ICollection(Of T).Remove(T)
+  commentId: M:System.Collections.Generic.ICollection`1.Remove(`0)
+- uid: System.Collections.Generic.IEnumerable{{T}}.GetEnumerator
+  parent: System.Collections.Generic.IEnumerable{{T}}
+  definition: System.Collections.Generic.IEnumerable`1.GetEnumerator
+  name: "XXX"
+  fullName: System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+  fullname.vb: System.Collections.Generic.IEnumerable(Of T).GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+    name: "XXX"
+    fullName: System.Collections.Generic.IEnumerable<T>.GetEnumerator
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+    name: "XXX"
+    fullName: System.Collections.Generic.IEnumerable(Of T).GetEnumerator
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: IEnumerable<T>.GetEnumerator()
+  nameWithType.vb: IEnumerable(Of T).GetEnumerator()
+  commentId: M:System.Collections.Generic.IEnumerable{`0}.GetEnumerator
+- uid: System.Collections.Generic.IEnumerator{{T}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerator`1
+  name: "XXX"
+  fullName: System.Collections.Generic.IEnumerator<T>
+  fullname.vb: System.Collections.Generic.IEnumerator(Of T)
+  name.vb: IEnumerator(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: "XXX"
+    fullName: System.Collections.Generic.IEnumerator
+  - name: "<"
+    fullName: <
+  - name: "XXX"
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: "XXX"
+    fullName: System.Collections.Generic.IEnumerator
+  - name: 'XXX '
+    fullName: '(Of '
+  - name: "XXX"
+    fullName: T
+  - name: "XXX"
+    fullName: )
+  nameWithType: IEnumerator<T>
+  nameWithType.vb: IEnumerator(Of T)
+  commentId: T:System.Collections.Generic.IEnumerator{`0}
+- uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+  isExternal: false
+  name: "XXX"
+  fullName: System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+  fullname.vb: System.Collections.Generic.IEnumerable(Of T).GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+    name: "XXX"
+    fullName: System.Collections.Generic.IEnumerable<T>.GetEnumerator
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+    name: "XXX"
+    fullName: System.Collections.Generic.IEnumerable(Of T).GetEnumerator
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: IEnumerable<T>.GetEnumerator()
+  nameWithType.vb: IEnumerable(Of T).GetEnumerator()
+  commentId: M:System.Collections.Generic.IEnumerable`1.GetEnumerator
+- uid: System.Collections.Generic.IEnumerator`1
+  isExternal: false
+  name: "XXX"
+  fullName: System.Collections.Generic.IEnumerator<T>
+  fullname.vb: System.Collections.Generic.IEnumerator(Of T)
+  name.vb: IEnumerator(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: "XXX"
+    fullName: System.Collections.Generic.IEnumerator
+  - name: "<"
+    fullName: <
+  - name: "XXX"
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: "XXX"
+    fullName: System.Collections.Generic.IEnumerator
+  - name: 'XXX '
+    fullName: '(Of '
+  - name: "XXX"
+    fullName: T
+  - name: "XXX"
+    fullName: )
+  nameWithType: IEnumerator<T>
+  nameWithType.vb: IEnumerator(Of T)
+  commentId: T:System.Collections.Generic.IEnumerator`1
+- uid: System.Collections.Generic.IList{{T}}.IndexOf({T})
+  parent: System.Collections.Generic.IList{{T}}
+  definition: System.Collections.Generic.IList`1.IndexOf(`0)
+  name: "XXX"
+  fullName: System.Collections.Generic.IList<T>.IndexOf(T)
+  fullname.vb: System.Collections.Generic.IList(Of T).IndexOf(T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1.IndexOf(`0)
+    name: "XXX"
+    fullName: System.Collections.Generic.IList<T>.IndexOf
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: T
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1.IndexOf(`0)
+    name: "XXX"
+    fullName: System.Collections.Generic.IList(Of T).IndexOf
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: T
+  - name: "XXX"
+    fullName: )
+  nameWithType: IList<T>.IndexOf(T)
+  nameWithType.vb: IList(Of T).IndexOf(T)
+  commentId: M:System.Collections.Generic.IList{`0}.IndexOf(`0)
+- uid: System.Collections.Generic.IList`1.IndexOf(`0)
+  isExternal: false
+  name: "XXX"
+  fullName: System.Collections.Generic.IList<T>.IndexOf(T)
+  fullname.vb: System.Collections.Generic.IList(Of T).IndexOf(T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1.IndexOf(`0)
+    name: "XXX"
+    fullName: System.Collections.Generic.IList<T>.IndexOf
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: T
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1.IndexOf(`0)
+    name: "XXX"
+    fullName: System.Collections.Generic.IList(Of T).IndexOf
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: T
+  - name: "XXX"
+    fullName: )
+  nameWithType: IList<T>.IndexOf(T)
+  nameWithType.vb: IList(Of T).IndexOf(T)
+  commentId: M:System.Collections.Generic.IList`1.IndexOf(`0)
+- uid: System.Collections.Generic.IList{{T}}.Insert(System.Int32,{T})
+  parent: System.Collections.Generic.IList{{T}}
+  definition: System.Collections.Generic.IList`1.Insert(System.Int32,`0)
+  name: "XXX"
+  fullName: System.Collections.Generic.IList<T>.Insert(System.Int32, T)
+  fullname.vb: System.Collections.Generic.IList(Of T).Insert(System.Int32, T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1.Insert(System.Int32,`0)
+    name: "XXX"
+    fullName: System.Collections.Generic.IList<T>.Insert
+  - name: "XXX"
+    fullName: (
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - name: "XXX"
+    fullName: T
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1.Insert(System.Int32,`0)
+    name: "XXX"
+    fullName: System.Collections.Generic.IList(Of T).Insert
+  - name: "XXX"
+    fullName: (
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - name: "XXX"
+    fullName: T
+  - name: "XXX"
+    fullName: )
+  nameWithType: IList<T>.Insert(Int32, T)
+  nameWithType.vb: IList(Of T).Insert(Int32, T)
+  commentId: M:System.Collections.Generic.IList{`0}.Insert(System.Int32,`0)
+- uid: System.Collections.Generic.IList`1.Insert(System.Int32,`0)
+  isExternal: true
+  name: "XXX"
+  fullName: System.Collections.Generic.IList<T>.Insert(System.Int32, T)
+  fullname.vb: System.Collections.Generic.IList(Of T).Insert(System.Int32, T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1.Insert(System.Int32,`0)
+    name: "XXX"
+    fullName: System.Collections.Generic.IList<T>.Insert
+  - name: "XXX"
+    fullName: (
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - name: "XXX"
+    fullName: T
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1.Insert(System.Int32,`0)
+    name: "XXX"
+    fullName: System.Collections.Generic.IList(Of T).Insert
+  - name: "XXX"
+    fullName: (
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - name: "XXX"
+    fullName: T
+  - name: "XXX"
+    fullName: )
+  nameWithType: IList<T>.Insert(Int32, T)
+  nameWithType.vb: IList(Of T).Insert(Int32, T)
+  commentId: M:System.Collections.Generic.IList`1.Insert(System.Int32,`0)
+- uid: System.Collections.Generic.IList{{T}}.RemoveAt(System.Int32)
+  parent: System.Collections.Generic.IList{{T}}
+  definition: System.Collections.Generic.IList`1.RemoveAt(System.Int32)
+  name: "XXX"
+  fullName: System.Collections.Generic.IList<T>.RemoveAt(System.Int32)
+  fullname.vb: System.Collections.Generic.IList(Of T).RemoveAt(System.Int32)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1.RemoveAt(System.Int32)
+    name: "XXX"
+    fullName: System.Collections.Generic.IList<T>.RemoveAt
+  - name: "XXX"
+    fullName: (
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1.RemoveAt(System.Int32)
+    name: "XXX"
+    fullName: System.Collections.Generic.IList(Of T).RemoveAt
+  - name: "XXX"
+    fullName: (
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: IList<T>.RemoveAt(Int32)
+  nameWithType.vb: IList(Of T).RemoveAt(Int32)
+  commentId: M:System.Collections.Generic.IList{`0}.RemoveAt(System.Int32)
+- uid: System.Collections.Generic.IList`1.RemoveAt(System.Int32)
+  isExternal: true
+  name: "XXX"
+  fullName: System.Collections.Generic.IList<T>.RemoveAt(System.Int32)
+  fullname.vb: System.Collections.Generic.IList(Of T).RemoveAt(System.Int32)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1.RemoveAt(System.Int32)
+    name: "XXX"
+    fullName: System.Collections.Generic.IList<T>.RemoveAt
+  - name: "XXX"
+    fullName: (
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1.RemoveAt(System.Int32)
+    name: "XXX"
+    fullName: System.Collections.Generic.IList(Of T).RemoveAt
+  - name: "XXX"
+    fullName: (
+  - uid: System.Int32
+    name: "XXX"
+    fullName: System.Int32
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: IList<T>.RemoveAt(Int32)
+  nameWithType.vb: IList(Of T).RemoveAt(Int32)
+  commentId: M:System.Collections.Generic.IList`1.RemoveAt(System.Int32)
+- uid: System.Collections.IEnumerable.GetEnumerator
+  parent: System.Collections.IEnumerable
+  isExternal: false
+  name: "XXX"
+  fullName: System.Collections.IEnumerable.GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.IEnumerable.GetEnumerator
+    name: "XXX"
+    fullName: System.Collections.IEnumerable.GetEnumerator
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.IEnumerable.GetEnumerator
+    name: "XXX"
+    fullName: System.Collections.IEnumerable.GetEnumerator
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: IEnumerable.GetEnumerator()
+  commentId: M:System.Collections.IEnumerable.GetEnumerator
+- uid: System.Collections.IEnumerator
+  parent: System.Collections
+  isExternal: false
+  name: "XXX"
+  fullName: System.Collections.IEnumerator
+  nameWithType: IEnumerator
+  commentId: T:System.Collections.IEnumerator
+- uid: System.ArgumentNullException
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentNullException
+  nameWithType: ArgumentNullException
+  commentId: T:System.ArgumentNullException
+- uid: System.ArgumentOutOfRangeException
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentOutOfRangeException
+  nameWithType: ArgumentOutOfRangeException
+  commentId: T:System.ArgumentOutOfRangeException
+- uid: System.ArgumentException
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentException
+  nameWithType: ArgumentException
+  commentId: T:System.ArgumentException
+- uid: System.NotSupportedException
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.NotSupportedException
+  nameWithType: NotSupportedException
+  commentId: T:System.NotSupportedException

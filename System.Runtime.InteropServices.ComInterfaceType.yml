@@ -1,0 +1,213 @@
+items:
+- uid: System.Runtime.InteropServices.ComInterfaceType
+  commentId: T:System.Runtime.InteropServices.ComInterfaceType
+  id: ComInterfaceType
+  parent: System.Runtime.InteropServices
+  children:
+  - System.Runtime.InteropServices.ComInterfaceType.InterfaceIsDual
+  - System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIDispatch
+  - System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIInspectable
+  - System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Runtime.InteropServices.ComInterfaceType
+  type: Enum
+  source:
+    remote:
+      path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: ComInterfaceType
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 69
+  assemblies:
+  - System.Runtime.InteropServices
+  namespace: System.Runtime.InteropServices
+  summary: "\n<p>Identifies how to expose an interface to COM.</p>\n"
+  syntax:
+    content: >-
+      [Serializable]
+
+      [ComVisible(true)]
+
+      public enum ComInterfaceType
+    content.vb: >-
+      <Serializable>
+
+      <ComVisible(True)>
+
+      Public Enum ComInterfaceType
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+  nameWithType: ComInterfaceType
+- uid: System.Runtime.InteropServices.ComInterfaceType.InterfaceIsDual
+  commentId: F:System.Runtime.InteropServices.ComInterfaceType.InterfaceIsDual
+  id: InterfaceIsDual
+  parent: System.Runtime.InteropServices.ComInterfaceType
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Runtime.InteropServices.ComInterfaceType.InterfaceIsDual
+  type: Field
+  source:
+    remote:
+      path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: InterfaceIsDual
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 73
+  assemblies:
+  - System.Runtime.InteropServices
+  namespace: System.Runtime.InteropServices
+  summary: "\n<p>Indicates that the interface is exposed to COM as a dual interface, which enables both early and late binding. <xref href=\"System.Runtime.InteropServices.ComInterfaceType.InterfaceIsDual\" data-throw-if-not-resolved=\"false\"></xref> is the default value.</p>\n"
+  syntax:
+    content: InterfaceIsDual = 0
+    return:
+      type: System.Runtime.InteropServices.ComInterfaceType
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Support for IDispatch may be unavailable in future releases.
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+  nameWithType: ComInterfaceType.InterfaceIsDual
+- uid: System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIDispatch
+  commentId: F:System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIDispatch
+  id: InterfaceIsIDispatch
+  parent: System.Runtime.InteropServices.ComInterfaceType
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIDispatch
+  type: Field
+  source:
+    remote:
+      path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: InterfaceIsIDispatch
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 75
+  assemblies:
+  - System.Runtime.InteropServices
+  namespace: System.Runtime.InteropServices
+  summary: "\n<p>Indicates that an interface is exposed to COM as a dispinterface, which enables late binding only.</p>\n"
+  syntax:
+    content: InterfaceIsIDispatch = 2
+    return:
+      type: System.Runtime.InteropServices.ComInterfaceType
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Support for IDispatch may be unavailable in future releases.
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+  nameWithType: ComInterfaceType.InterfaceIsIDispatch
+- uid: System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIInspectable
+  commentId: F:System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIInspectable
+  id: InterfaceIsIInspectable
+  parent: System.Runtime.InteropServices.ComInterfaceType
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIInspectable
+  type: Field
+  source:
+    remote:
+      path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: InterfaceIsIInspectable
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 77
+  assemblies:
+  - System.Runtime.InteropServices
+  namespace: System.Runtime.InteropServices
+  summary: "\n<p>Indicates that an interface is exposed to COM as a Windows Runtime interface. </p>\n"
+  syntax:
+    content: >-
+      [ComVisible(false)]
+
+      InterfaceIsIInspectable = 3
+    content.vb: >-
+      <ComVisible(False)>
+
+      InterfaceIsIInspectable = 3
+    return:
+      type: System.Runtime.InteropServices.ComInterfaceType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+  nameWithType: ComInterfaceType.InterfaceIsIInspectable
+- uid: System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown
+  commentId: F:System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown
+  id: InterfaceIsIUnknown
+  parent: System.Runtime.InteropServices.ComInterfaceType
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown
+  type: Field
+  source:
+    remote:
+      path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: InterfaceIsIUnknown
+    path: src/mscorlib/src/System/Runtime/InteropServices/Attributes.cs
+    startLine: 74
+  assemblies:
+  - System.Runtime.InteropServices
+  namespace: System.Runtime.InteropServices
+  summary: "\n<p>Indicates that an interface is exposed to COM as an interface that is derived from <see href=\"http://go.microsoft.com/fwlink/?LinkId=148003\">IUnknown</see>, which enables only early binding.</p>\n"
+  syntax:
+    content: InterfaceIsIUnknown = 1
+    return:
+      type: System.Runtime.InteropServices.ComInterfaceType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+  nameWithType: ComInterfaceType.InterfaceIsIUnknown
+references:
+- uid: System.Runtime.InteropServices
+  isExternal: false
+  name: "XXX"
+  fullName: System.Runtime.InteropServices
+  nameWithType: System.Runtime.InteropServices
+  commentId: N:System.Runtime.InteropServices
+- uid: System.Runtime.InteropServices.ComInterfaceType
+  parent: System.Runtime.InteropServices
+  isExternal: false
+  name: "XXX"
+  fullName: System.Runtime.InteropServices.ComInterfaceType
+  nameWithType: ComInterfaceType
+  commentId: T:System.Runtime.InteropServices.ComInterfaceType

@@ -1,0 +1,939 @@
+items:
+- uid: System.Collections.Generic.EqualityComparer`1
+  commentId: T:System.Collections.Generic.EqualityComparer`1
+  id: EqualityComparer`1
+  parent: System.Collections.Generic
+  children:
+  - System.Collections.Generic.EqualityComparer`1.#ctor
+  - System.Collections.Generic.EqualityComparer`1.Default
+  - System.Collections.Generic.EqualityComparer`1.Equals(`0,`0)
+  - System.Collections.Generic.EqualityComparer`1.GetHashCode(`0)
+  - System.Collections.Generic.EqualityComparer`1.System#Collections#IEqualityComparer#Equals(System.Object,System.Object)
+  - System.Collections.Generic.EqualityComparer`1.System#Collections#IEqualityComparer#GetHashCode(System.Object)
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Collections.Generic.EqualityComparer<T>
+  type: Class
+  source:
+    remote:
+      path: src/mscorlib/src/System/Collections/Generic/EqualityComparer.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: EqualityComparer
+    path: src/mscorlib/src/System/Collections/Generic/EqualityComparer.cs
+    startLine: 17
+  assemblies:
+  - System.Collections
+  namespace: System.Collections.Generic
+  summary: "\n<p>Provides a base class for implementations of the <xref href=\"System.Collections.Generic.IEqualityComparer`1\" data-throw-if-not-resolved=\"false\"></xref> generic interface.</p>\n"
+  syntax:
+    content: >-
+      [Serializable]
+
+      [TypeDependency("System.Collections.Generic.ObjectEqualityComparer`1")]
+
+      public abstract class EqualityComparer<T> : IEqualityComparer, IEqualityComparer<T>
+    content.vb: >-
+      <Serializable>
+
+      <TypeDependency("System.Collections.Generic.ObjectEqualityComparer`1")>
+
+      Public MustInherit Class EqualityComparer(Of T)
+          Implements IEqualityComparer, IEqualityComparer(Of T)
+    typeParameters:
+    - id: T
+      description: "\n<p>The type of objects to compare.</p>\n"
+  seealso:
+  - type: System.Collections.Generic.IEqualityComparer`1
+    commentId: T:System.Collections.Generic.IEqualityComparer`1
+  - type: System.IEquatable`1
+    commentId: T:System.IEquatable`1
+  inheritance:
+  - System.Object
+  implements:
+  - System.Collections.Generic.IEqualityComparer{{T}}
+  - System.Collections.IEqualityComparer
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+  fullName.vb: System.Collections.Generic.EqualityComparer(Of T)
+  name.vb: EqualityComparer(Of T)
+  nameWithType: EqualityComparer<T>
+  nameWithType.vb: EqualityComparer(Of T)
+- uid: System.Collections.Generic.EqualityComparer`1.#ctor
+  commentId: M:System.Collections.Generic.EqualityComparer`1.#ctor
+  id: '#ctor'
+  parent: System.Collections.Generic.EqualityComparer`1
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Collections.Generic.EqualityComparer<T>.EqualityComparer()
+  type: Constructor
+  source:
+    remote:
+      path: src/System.Collections/ref/System.Collections.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: .ctor
+    path: src/System.Collections/ref/System.Collections.cs
+    startLine: 159
+  assemblies:
+  - System.Collections
+  namespace: System.Collections.Generic
+  summary: "\n<p>Initializes a new instance of the <xref href=\"System.Collections.Generic.EqualityComparer`1\" data-throw-if-not-resolved=\"false\"></xref> class.</p>\n"
+  syntax:
+    content: protected EqualityComparer()
+    content.vb: Protected Sub New
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  fullName.vb: System.Collections.Generic.EqualityComparer(Of T).EqualityComparer()
+  nameWithType: EqualityComparer<T>.EqualityComparer()
+  nameWithType.vb: EqualityComparer(Of T).EqualityComparer()
+- uid: System.Collections.Generic.EqualityComparer`1.Default
+  commentId: P:System.Collections.Generic.EqualityComparer`1.Default
+  id: Default
+  parent: System.Collections.Generic.EqualityComparer`1
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Collections.Generic.EqualityComparer<T>.Default
+  type: Property
+  source:
+    remote:
+      path: src/mscorlib/src/System/Collections/Generic/EqualityComparer.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Default
+    path: src/mscorlib/src/System/Collections/Generic/EqualityComparer.cs
+    startLine: 23
+  assemblies:
+  - System.Collections
+  namespace: System.Collections.Generic
+  summary: "\n<p>Returns a default equality comparer for the type specified by the generic argument.</p>\n"
+  syntax:
+    content: public static EqualityComparer<T> Default { get; }
+    content.vb: Public Shared ReadOnly Property Default As EqualityComparer(Of T)
+    parameters: []
+    return:
+      type: System.Collections.Generic.EqualityComparer`1
+      description: "\n<p>The default instance of the <xref href=\"System.Collections.Generic.EqualityComparer`1\" data-throw-if-not-resolved=\"false\"></xref> class for type <em>T</em>.</p>\n"
+  seealso:
+  - type: System.Collections.Generic.IEqualityComparer`1
+    commentId: T:System.Collections.Generic.IEqualityComparer`1
+  - type: System.IEquatable`1
+    commentId: T:System.IEquatable`1
+  - type: System.Object
+    commentId: T:System.Object
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+  fullName.vb: System.Collections.Generic.EqualityComparer(Of T).Default
+  nameWithType: EqualityComparer<T>.Default
+  nameWithType.vb: EqualityComparer(Of T).Default
+- uid: System.Collections.Generic.EqualityComparer`1.Equals(`0,`0)
+  commentId: M:System.Collections.Generic.EqualityComparer`1.Equals(`0,`0)
+  id: Equals(`0,`0)
+  parent: System.Collections.Generic.EqualityComparer`1
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Collections.Generic.EqualityComparer<T>.Equals(T, T)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Collections/Generic/EqualityComparer.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: Equals
+    path: src/mscorlib/src/System/Collections/Generic/EqualityComparer.cs
+    startLine: 93
+  assemblies:
+  - System.Collections
+  namespace: System.Collections.Generic
+  summary: "\n<p>When overridden in a derived class, determines whether two objects of type <em>T</em> are equal.</p>\n"
+  syntax:
+    content: public abstract bool Equals(T x, T y)
+    content.vb: Public MustOverride Function Equals(x As T, y As T) As Boolean
+    parameters:
+    - id: x
+      type: '{T}'
+      description: "\n<p>The first object to compare.</p>\n"
+    - id: y
+      type: '{T}'
+      description: "\n<p>The second object to compare.</p>\n"
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if the specified objects are equal; otherwise, <strong>false</strong>.</p>\n"
+  implements:
+  - System.Collections.Generic.IEqualityComparer{{T}}.Equals({T},{T})
+  modifiers.csharp:
+  - public
+  - abstract
+  modifiers.vb:
+  - Public
+  - MustOverride
+  fullName.vb: System.Collections.Generic.EqualityComparer(Of T).Equals(T, T)
+  nameWithType: EqualityComparer<T>.Equals(T, T)
+  nameWithType.vb: EqualityComparer(Of T).Equals(T, T)
+- uid: System.Collections.Generic.EqualityComparer`1.GetHashCode(`0)
+  commentId: M:System.Collections.Generic.EqualityComparer`1.GetHashCode(`0)
+  id: GetHashCode(`0)
+  parent: System.Collections.Generic.EqualityComparer`1
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Collections.Generic.EqualityComparer<T>.GetHashCode(T)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Collections/Generic/EqualityComparer.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: GetHashCode
+    path: src/mscorlib/src/System/Collections/Generic/EqualityComparer.cs
+    startLine: 95
+  assemblies:
+  - System.Collections
+  namespace: System.Collections.Generic
+  summary: "\n<p>When overridden in a derived class, serves as a hash function for the specified object for hashing algorithms and data structures, such as a hash table.</p>\n"
+  syntax:
+    content: public abstract int GetHashCode(T obj)
+    content.vb: Public MustOverride Function GetHashCode(obj As T) As Integer
+    parameters:
+    - id: obj
+      type: '{T}'
+      description: "\n<p>The object for which to get a hash code.</p>\n"
+    return:
+      type: System.Int32
+      description: "\n<p>A hash code for the specified object.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>The type of <em>obj</em> is a reference type and <em>obj</em> is <strong>null</strong>.</p>\n"
+  implements:
+  - System.Collections.Generic.IEqualityComparer{{T}}.GetHashCode({T})
+  modifiers.csharp:
+  - public
+  - abstract
+  modifiers.vb:
+  - Public
+  - MustOverride
+  fullName.vb: System.Collections.Generic.EqualityComparer(Of T).GetHashCode(T)
+  nameWithType: EqualityComparer<T>.GetHashCode(T)
+  nameWithType.vb: EqualityComparer(Of T).GetHashCode(T)
+- uid: System.Collections.Generic.EqualityComparer`1.System#Collections#IEqualityComparer#Equals(System.Object,System.Object)
+  commentId: M:System.Collections.Generic.EqualityComparer`1.System#Collections#IEqualityComparer#Equals(System.Object,System.Object)
+  id: System#Collections#IEqualityComparer#Equals(System.Object,System.Object)
+  isEii: true
+  parent: System.Collections.Generic.EqualityComparer`1
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Collections.Generic.EqualityComparer<T>.System.Collections.IEqualityComparer.Equals(System.Object, System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Collections/Generic/EqualityComparer.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: System.Collections.IEqualityComparer.Equals
+    path: src/mscorlib/src/System/Collections/Generic/EqualityComparer.cs
+    startLine: 121
+  assemblies:
+  - System.Collections
+  namespace: System.Collections.Generic
+  summary: "\n<p>Determines whether the specified objects are equal.</p>\n"
+  syntax:
+    content: bool IEqualityComparer.Equals(object x, object y)
+    content.vb: Function System.Collections.IEqualityComparer.Equals(x As Object, y As Object) As Boolean Implements IEqualityComparer.Equals
+    parameters:
+    - id: x
+      type: System.Object
+      description: "\n<p>The first object to compare.</p>\n"
+    - id: y
+      type: System.Object
+      description: "\n<p>The second object to compare.</p>\n"
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if the specified objects are equal; otherwise, <strong>false</strong>.</p>\n"
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>\n<em>x</em> or <em>y</em> is of a type that cannot be cast to type <em>T</em>.</p>\n"
+  implements:
+  - System.Collections.IEqualityComparer.Equals(System.Object,System.Object)
+  fullName.vb: System.Collections.Generic.EqualityComparer(Of T).System.Collections.IEqualityComparer.Equals(System.Object, System.Object)
+  name.vb: System.Collections.IEqualityComparer.Equals(Object, Object)
+  nameWithType: EqualityComparer<T>.IEqualityComparer.Equals(Object, Object)
+  nameWithType.vb: EqualityComparer(Of T).System.Collections.IEqualityComparer.Equals(Object, Object)
+- uid: System.Collections.Generic.EqualityComparer`1.System#Collections#IEqualityComparer#GetHashCode(System.Object)
+  commentId: M:System.Collections.Generic.EqualityComparer`1.System#Collections#IEqualityComparer#GetHashCode(System.Object)
+  id: System#Collections#IEqualityComparer#GetHashCode(System.Object)
+  isEii: true
+  parent: System.Collections.Generic.EqualityComparer`1
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Collections.Generic.EqualityComparer<T>.System.Collections.IEqualityComparer.GetHashCode(System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/mscorlib/src/System/Collections/Generic/EqualityComparer.cs
+      branch: master
+      repo: https://github.com/dotnet/coreclr.git
+    id: System.Collections.IEqualityComparer.GetHashCode
+    path: src/mscorlib/src/System/Collections/Generic/EqualityComparer.cs
+    startLine: 114
+  assemblies:
+  - System.Collections
+  namespace: System.Collections.Generic
+  summary: "\n<p>Returns a hash code for the specified object.</p>\n"
+  syntax:
+    content: int IEqualityComparer.GetHashCode(object obj)
+    content.vb: Function System.Collections.IEqualityComparer.GetHashCode(obj As Object) As Integer Implements IEqualityComparer.GetHashCode
+    parameters:
+    - id: obj
+      type: System.Object
+      description: "\n<p>The <xref href=\"System.Object\" data-throw-if-not-resolved=\"false\"></xref> for which a hash code is to be returned.</p>\n"
+    return:
+      type: System.Int32
+      description: "\n<p>A hash code for the specified object.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>The type of <em>obj</em> is a reference type and <em>obj</em> is <strong>null</strong>.</p>\n<p>-or-</p>\n<p>\n<em>obj</em> is of a type that cannot be cast to type <em>T</em>.</p>\n"
+  implements:
+  - System.Collections.IEqualityComparer.GetHashCode(System.Object)
+  fullName.vb: System.Collections.Generic.EqualityComparer(Of T).System.Collections.IEqualityComparer.GetHashCode(System.Object)
+  name.vb: System.Collections.IEqualityComparer.GetHashCode(Object)
+  nameWithType: EqualityComparer<T>.IEqualityComparer.GetHashCode(Object)
+  nameWithType.vb: EqualityComparer(Of T).System.Collections.IEqualityComparer.GetHashCode(Object)
+references:
+- uid: System.Collections.Generic
+  isExternal: false
+  name: "XXX"
+  fullName: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+- uid: System.Object
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Object
+  nameWithType: Object
+  commentId: T:System.Object
+- uid: System.Collections.Generic.IEqualityComparer{{T}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEqualityComparer`1
+  name: "XXX"
+  fullName: System.Collections.Generic.IEqualityComparer<T>
+  fullname.vb: System.Collections.Generic.IEqualityComparer(Of T)
+  name.vb: IEqualityComparer(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: "XXX"
+    fullName: System.Collections.Generic.IEqualityComparer
+    isExternal: true
+  - name: "<"
+    fullName: <
+  - name: "XXX"
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: "XXX"
+    fullName: System.Collections.Generic.IEqualityComparer
+    isExternal: true
+  - name: 'XXX '
+    fullName: '(Of '
+  - name: "XXX"
+    fullName: T
+  - name: "XXX"
+    fullName: )
+  nameWithType: IEqualityComparer<T>
+  nameWithType.vb: IEqualityComparer(Of T)
+  commentId: T:System.Collections.Generic.IEqualityComparer{`0}
+- uid: System.Collections.IEqualityComparer
+  parent: System.Collections
+  isExternal: false
+  name: "XXX"
+  fullName: System.Collections.IEqualityComparer
+  nameWithType: IEqualityComparer
+  commentId: T:System.Collections.IEqualityComparer
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.ToString()
+  commentId: M:System.Object.ToString
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.Equals(Object)
+  commentId: M:System.Object.Equals(System.Object)
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.Equals(Object, Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.GetHashCode()
+  commentId: M:System.Object.GetHashCode
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.GetType()
+  commentId: M:System.Object.GetType
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.MemberwiseClone()
+  commentId: M:System.Object.MemberwiseClone
+- uid: System
+  isExternal: false
+  name: "XXX"
+  fullName: System
+  nameWithType: System
+  commentId: N:System
+- uid: System.Collections.Generic.IEqualityComparer`1
+  isExternal: false
+  name: "XXX"
+  fullName: System.Collections.Generic.IEqualityComparer<T>
+  fullname.vb: System.Collections.Generic.IEqualityComparer(Of T)
+  name.vb: IEqualityComparer(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: "XXX"
+    fullName: System.Collections.Generic.IEqualityComparer
+  - name: "<"
+    fullName: <
+  - name: "XXX"
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: "XXX"
+    fullName: System.Collections.Generic.IEqualityComparer
+  - name: 'XXX '
+    fullName: '(Of '
+  - name: "XXX"
+    fullName: T
+  - name: "XXX"
+    fullName: )
+  nameWithType: IEqualityComparer<T>
+  nameWithType.vb: IEqualityComparer(Of T)
+  commentId: T:System.Collections.Generic.IEqualityComparer`1
+- uid: System.Collections
+  isExternal: false
+  name: "XXX"
+  fullName: System.Collections
+  nameWithType: System.Collections
+  commentId: N:System.Collections
+- uid: System.Collections.Generic.EqualityComparer`1
+  parent: System.Collections.Generic
+  isExternal: false
+  name: "XXX"
+  fullName: System.Collections.Generic.EqualityComparer<T>
+  fullname.vb: System.Collections.Generic.EqualityComparer(Of T)
+  name.vb: EqualityComparer(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.EqualityComparer`1
+    name: "XXX"
+    fullName: System.Collections.Generic.EqualityComparer
+  - name: "<"
+    fullName: <
+  - name: "XXX"
+    fullName: T
+  - name: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.EqualityComparer`1
+    name: "XXX"
+    fullName: System.Collections.Generic.EqualityComparer
+  - name: 'XXX '
+    fullName: '(Of '
+  - name: "XXX"
+    fullName: T
+  - name: "XXX"
+    fullName: )
+  nameWithType: EqualityComparer<T>
+  nameWithType.vb: EqualityComparer(Of T)
+  commentId: T:System.Collections.Generic.EqualityComparer`1
+- uid: System.Collections.Generic.IEqualityComparer{{T}}.Equals({T},{T})
+  parent: System.Collections.Generic.IEqualityComparer{{T}}
+  definition: System.Collections.Generic.IEqualityComparer`1.Equals(`0,`0)
+  name: "XXX"
+  fullName: System.Collections.Generic.IEqualityComparer<T>.Equals(T, T)
+  fullname.vb: System.Collections.Generic.IEqualityComparer(Of T).Equals(T, T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEqualityComparer`1.Equals(`0,`0)
+    name: "XXX"
+    fullName: System.Collections.Generic.IEqualityComparer<T>.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: T
+  - name: 'XXX '
+    fullName: ', '
+  - name: "XXX"
+    fullName: T
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.IEqualityComparer`1.Equals(`0,`0)
+    name: "XXX"
+    fullName: System.Collections.Generic.IEqualityComparer(Of T).Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: T
+  - name: 'XXX '
+    fullName: ', '
+  - name: "XXX"
+    fullName: T
+  - name: "XXX"
+    fullName: )
+  nameWithType: IEqualityComparer<T>.Equals(T, T)
+  nameWithType.vb: IEqualityComparer(Of T).Equals(T, T)
+  commentId: M:System.Collections.Generic.IEqualityComparer{`0}.Equals(`0,`0)
+- uid: '{T}'
+  definition: T
+  name: "XXX"
+  fullName: T
+  nameWithType: T
+  commentId: '!:T'
+- uid: System.Boolean
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Boolean
+  nameWithType: Boolean
+  commentId: T:System.Boolean
+- uid: System.Collections.Generic.IEqualityComparer`1.Equals(`0,`0)
+  isExternal: true
+  name: "XXX"
+  fullName: System.Collections.Generic.IEqualityComparer<T>.Equals(T, T)
+  fullname.vb: System.Collections.Generic.IEqualityComparer(Of T).Equals(T, T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEqualityComparer`1.Equals(`0,`0)
+    name: "XXX"
+    fullName: System.Collections.Generic.IEqualityComparer<T>.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: T
+  - name: 'XXX '
+    fullName: ', '
+  - name: "XXX"
+    fullName: T
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.IEqualityComparer`1.Equals(`0,`0)
+    name: "XXX"
+    fullName: System.Collections.Generic.IEqualityComparer(Of T).Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: T
+  - name: 'XXX '
+    fullName: ', '
+  - name: "XXX"
+    fullName: T
+  - name: "XXX"
+    fullName: )
+  nameWithType: IEqualityComparer<T>.Equals(T, T)
+  nameWithType.vb: IEqualityComparer(Of T).Equals(T, T)
+  commentId: M:System.Collections.Generic.IEqualityComparer`1.Equals(`0,`0)
+- uid: T
+  isExternal: false
+  name: "XXX"
+  fullName: T
+  nameWithType: T
+- uid: System.Collections.Generic.IEqualityComparer{{T}}.GetHashCode({T})
+  parent: System.Collections.Generic.IEqualityComparer{{T}}
+  definition: System.Collections.Generic.IEqualityComparer`1.GetHashCode(`0)
+  name: "XXX"
+  fullName: System.Collections.Generic.IEqualityComparer<T>.GetHashCode(T)
+  fullname.vb: System.Collections.Generic.IEqualityComparer(Of T).GetHashCode(T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEqualityComparer`1.GetHashCode(`0)
+    name: "XXX"
+    fullName: System.Collections.Generic.IEqualityComparer<T>.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: T
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.IEqualityComparer`1.GetHashCode(`0)
+    name: "XXX"
+    fullName: System.Collections.Generic.IEqualityComparer(Of T).GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: T
+  - name: "XXX"
+    fullName: )
+  nameWithType: IEqualityComparer<T>.GetHashCode(T)
+  nameWithType.vb: IEqualityComparer(Of T).GetHashCode(T)
+  commentId: M:System.Collections.Generic.IEqualityComparer{`0}.GetHashCode(`0)
+- uid: System.Int32
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Int32
+  nameWithType: Int32
+  commentId: T:System.Int32
+- uid: System.Collections.Generic.IEqualityComparer`1.GetHashCode(`0)
+  isExternal: true
+  name: "XXX"
+  fullName: System.Collections.Generic.IEqualityComparer<T>.GetHashCode(T)
+  fullname.vb: System.Collections.Generic.IEqualityComparer(Of T).GetHashCode(T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEqualityComparer`1.GetHashCode(`0)
+    name: "XXX"
+    fullName: System.Collections.Generic.IEqualityComparer<T>.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: T
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.IEqualityComparer`1.GetHashCode(`0)
+    name: "XXX"
+    fullName: System.Collections.Generic.IEqualityComparer(Of T).GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: T
+  - name: "XXX"
+    fullName: )
+  nameWithType: IEqualityComparer<T>.GetHashCode(T)
+  nameWithType.vb: IEqualityComparer(Of T).GetHashCode(T)
+  commentId: M:System.Collections.Generic.IEqualityComparer`1.GetHashCode(`0)
+- uid: System.Collections.IEqualityComparer.Equals(System.Object,System.Object)
+  parent: System.Collections.IEqualityComparer
+  isExternal: true
+  name: "XXX"
+  fullName: System.Collections.IEqualityComparer.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Collections.IEqualityComparer.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Collections.IEqualityComparer.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.IEqualityComparer.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Collections.IEqualityComparer.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: IEqualityComparer.Equals(Object, Object)
+  commentId: M:System.Collections.IEqualityComparer.Equals(System.Object,System.Object)
+- uid: System.Collections.IEqualityComparer.GetHashCode(System.Object)
+  parent: System.Collections.IEqualityComparer
+  isExternal: true
+  name: "XXX"
+  fullName: System.Collections.IEqualityComparer.GetHashCode(System.Object)
+  spec.csharp:
+  - uid: System.Collections.IEqualityComparer.GetHashCode(System.Object)
+    name: "XXX"
+    fullName: System.Collections.IEqualityComparer.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.IEqualityComparer.GetHashCode(System.Object)
+    name: "XXX"
+    fullName: System.Collections.IEqualityComparer.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: IEqualityComparer.GetHashCode(Object)
+  commentId: M:System.Collections.IEqualityComparer.GetHashCode(System.Object)
+- uid: System.ArgumentNullException
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentNullException
+  nameWithType: ArgumentNullException
+  commentId: T:System.ArgumentNullException
+- uid: System.ArgumentException
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentException
+  nameWithType: ArgumentException
+  commentId: T:System.ArgumentException

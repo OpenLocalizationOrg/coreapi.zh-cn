@@ -1,0 +1,2135 @@
+items:
+- uid: System.IO.Packaging.Package
+  commentId: T:System.IO.Packaging.Package
+  id: Package
+  parent: System.IO.Packaging
+  children:
+  - System.IO.Packaging.Package.#ctor(System.IO.FileAccess)
+  - System.IO.Packaging.Package.Close
+  - System.IO.Packaging.Package.CreatePart(System.Uri,System.String)
+  - System.IO.Packaging.Package.CreatePart(System.Uri,System.String,System.IO.Packaging.CompressionOption)
+  - System.IO.Packaging.Package.CreatePartCore(System.Uri,System.String,System.IO.Packaging.CompressionOption)
+  - System.IO.Packaging.Package.CreateRelationship(System.Uri,System.IO.Packaging.TargetMode,System.String)
+  - System.IO.Packaging.Package.CreateRelationship(System.Uri,System.IO.Packaging.TargetMode,System.String,System.String)
+  - System.IO.Packaging.Package.DeletePart(System.Uri)
+  - System.IO.Packaging.Package.DeletePartCore(System.Uri)
+  - System.IO.Packaging.Package.DeleteRelationship(System.String)
+  - System.IO.Packaging.Package.Dispose(System.Boolean)
+  - System.IO.Packaging.Package.FileOpenAccess
+  - System.IO.Packaging.Package.Flush
+  - System.IO.Packaging.Package.FlushCore
+  - System.IO.Packaging.Package.GetPart(System.Uri)
+  - System.IO.Packaging.Package.GetPartCore(System.Uri)
+  - System.IO.Packaging.Package.GetParts
+  - System.IO.Packaging.Package.GetPartsCore
+  - System.IO.Packaging.Package.GetRelationship(System.String)
+  - System.IO.Packaging.Package.GetRelationships
+  - System.IO.Packaging.Package.GetRelationshipsByType(System.String)
+  - System.IO.Packaging.Package.Open(System.IO.Stream)
+  - System.IO.Packaging.Package.Open(System.IO.Stream,System.IO.FileMode)
+  - System.IO.Packaging.Package.Open(System.IO.Stream,System.IO.FileMode,System.IO.FileAccess)
+  - System.IO.Packaging.Package.Open(System.String)
+  - System.IO.Packaging.Package.Open(System.String,System.IO.FileMode)
+  - System.IO.Packaging.Package.Open(System.String,System.IO.FileMode,System.IO.FileAccess)
+  - System.IO.Packaging.Package.Open(System.String,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare)
+  - System.IO.Packaging.Package.PackageProperties
+  - System.IO.Packaging.Package.PartExists(System.Uri)
+  - System.IO.Packaging.Package.RelationshipExists(System.String)
+  - System.IO.Packaging.Package.System#IDisposable#Dispose
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.Packaging.Package
+  type: Class
+  source:
+    remote:
+      path: src/System.IO.Packaging/ref/System.IO.Packaging.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Package
+    path: src/System.IO.Packaging/ref/System.IO.Packaging.cs
+    startLine: 37
+  assemblies:
+  - System.IO.Packaging
+  namespace: System.IO.Packaging
+  summary: "\n<p>Represents a container that can store multiple data objects.</p>\n"
+  syntax:
+    content: 'public abstract class Package : IDisposable'
+    content.vb: >-
+      Public MustInherit Class Package
+          Implements IDisposable
+  seealso:
+  - type: System.IO.Packaging.PackagePart
+    commentId: T:System.IO.Packaging.PackagePart
+  - type: System.Windows.Xps.Packaging.XpsDocument
+    commentId: T:System.Windows.Xps.Packaging.XpsDocument
+  inheritance:
+  - System.Object
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+  nameWithType: Package
+- uid: System.IO.Packaging.Package.#ctor(System.IO.FileAccess)
+  commentId: M:System.IO.Packaging.Package.#ctor(System.IO.FileAccess)
+  id: '#ctor(System.IO.FileAccess)'
+  parent: System.IO.Packaging.Package
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.Packaging.Package.Package(System.IO.FileAccess)
+  type: Constructor
+  source:
+    remote:
+      path: src/System.IO.Packaging/ref/System.IO.Packaging.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: .ctor
+    path: src/System.IO.Packaging/ref/System.IO.Packaging.cs
+    startLine: 39
+  assemblies:
+  - System.IO.Packaging
+  namespace: System.IO.Packaging
+  summary: "\n<p>Initializes a new instance of the <xref href=\"System.IO.Packaging.Package\" data-throw-if-not-resolved=\"false\"></xref> class that uses a given <xref href=\"System.IO.FileAccess\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  syntax:
+    content: protected Package(FileAccess openFileAccess)
+    content.vb: Protected Sub New(openFileAccess As FileAccess)
+    parameters:
+    - id: openFileAccess
+      type: System.IO.FileAccess
+      description: "\n<p>The file IO permissions for the package.</p>\n"
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>The value for <em>openFileAccess</em> is not valid.</p>\n"
+  seealso:
+  - type: System.IO.Packaging.Package.FileOpenAccess
+    commentId: P:System.IO.Packaging.Package.FileOpenAccess
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  nameWithType: Package.Package(FileAccess)
+- uid: System.IO.Packaging.Package.FileOpenAccess
+  commentId: P:System.IO.Packaging.Package.FileOpenAccess
+  id: FileOpenAccess
+  parent: System.IO.Packaging.Package
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.Packaging.Package.FileOpenAccess
+  type: Property
+  source:
+    remote:
+      path: src/System.IO.Packaging/ref/System.IO.Packaging.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: FileOpenAccess
+    path: src/System.IO.Packaging/ref/System.IO.Packaging.cs
+    startLine: 40
+  assemblies:
+  - System.IO.Packaging
+  namespace: System.IO.Packaging
+  summary: "\n<p>Gets the file access setting for the package.</p>\n"
+  syntax:
+    content: public FileAccess FileOpenAccess { get; }
+    content.vb: Public ReadOnly Property FileOpenAccess As FileAccess
+    parameters: []
+    return:
+      type: System.IO.FileAccess
+      description: "\n<p>One of the <xref href=\"System.IO.FileAccess\" data-throw-if-not-resolved=\"false\"></xref> values: <xref href=\"System.IO.FileAccess.Read\" data-throw-if-not-resolved=\"false\"></xref>, <xref href=\"System.IO.FileAccess.Write\" data-throw-if-not-resolved=\"false\"></xref>, or <xref href=\"System.IO.FileAccess.ReadWrite\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  exceptions:
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>The package is not open (<xref href=\"System.IO.Packaging.Package.Dispose(System.Boolean)\" data-throw-if-not-resolved=\"false\"></xref> or <xref href=\"System.IO.Packaging.Package.Close\" data-throw-if-not-resolved=\"false\"></xref> has been called).</p>\n"
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  nameWithType: Package.FileOpenAccess
+- uid: System.IO.Packaging.Package.PackageProperties
+  commentId: P:System.IO.Packaging.Package.PackageProperties
+  id: PackageProperties
+  parent: System.IO.Packaging.Package
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.Packaging.Package.PackageProperties
+  type: Property
+  source:
+    remote:
+      path: src/System.IO.Packaging/ref/System.IO.Packaging.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: PackageProperties
+    path: src/System.IO.Packaging/ref/System.IO.Packaging.cs
+    startLine: 41
+  assemblies:
+  - System.IO.Packaging
+  namespace: System.IO.Packaging
+  summary: "\n<p>Gets the core properties of the package.</p>\n"
+  syntax:
+    content: public PackageProperties PackageProperties { get; }
+    content.vb: Public ReadOnly Property PackageProperties As PackageProperties
+    parameters: []
+    return:
+      type: System.IO.Packaging.PackageProperties
+      description: "\n<p>The core properties of the package.</p>\n"
+  exceptions:
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>The package is not open (<xref href=\"System.IO.Packaging.Package.Dispose(System.Boolean)\" data-throw-if-not-resolved=\"false\"></xref> or <xref href=\"System.IO.Packaging.Package.Close\" data-throw-if-not-resolved=\"false\"></xref> has been called).</p>\n"
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  nameWithType: Package.PackageProperties
+- uid: System.IO.Packaging.Package.Close
+  commentId: M:System.IO.Packaging.Package.Close
+  id: Close
+  parent: System.IO.Packaging.Package
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.Packaging.Package.Close()
+  type: Method
+  source:
+    remote:
+      path: src/System.IO.Packaging/ref/System.IO.Packaging.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Close
+    path: src/System.IO.Packaging/ref/System.IO.Packaging.cs
+    startLine: 42
+  assemblies:
+  - System.IO.Packaging
+  namespace: System.IO.Packaging
+  summary: "\n<p>Saves and closes the package plus all underlying part streams.</p>\n"
+  syntax:
+    content: public void Close()
+    content.vb: Public Sub Close
+  seealso:
+  - type: System.IO.Packaging.PackagePart
+    commentId: T:System.IO.Packaging.PackagePart
+  - type: System.IO.Packaging.PackageRelationship
+    commentId: T:System.IO.Packaging.PackageRelationship
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: Package.Close()
+- uid: System.IO.Packaging.Package.CreatePart(System.Uri,System.String)
+  commentId: M:System.IO.Packaging.Package.CreatePart(System.Uri,System.String)
+  id: CreatePart(System.Uri,System.String)
+  parent: System.IO.Packaging.Package
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.Packaging.Package.CreatePart(System.Uri, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/System.IO.Packaging/ref/System.IO.Packaging.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: CreatePart
+    path: src/System.IO.Packaging/ref/System.IO.Packaging.cs
+    startLine: 43
+  assemblies:
+  - System.IO.Packaging
+  namespace: System.IO.Packaging
+  summary: "\n<p>Creates a new uncompressed part with a given URI and content type.</p>\n"
+  syntax:
+    content: public PackagePart CreatePart(Uri partUri, string contentType)
+    content.vb: Public Function CreatePart(partUri As Uri, contentType As String) As PackagePart
+    parameters:
+    - id: partUri
+      type: System.Uri
+      description: "\n<p>The uniform resource identifier (URI) of the new part.</p>\n"
+    - id: contentType
+      type: System.String
+      description: "\n<p>The content type of the data stream.</p>\n"
+    return:
+      type: System.IO.Packaging.PackagePart
+      description: "\n<p>The new created part.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>partUri</em> or <em>contentType</em> is <strong>null</strong>.</p>\n"
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>\n<em>partUri</em> is not a valid <xref href=\"System.IO.Packaging.PackagePart\" data-throw-if-not-resolved=\"false\"></xref> URI.</p>\n"
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: "\n<p>A part with the specified <em>partUri</em> is already present in the package.</p>\n"
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>The package is not open (<xref href=\"System.IO.Packaging.Package.Dispose(System.Boolean)\" data-throw-if-not-resolved=\"false\"></xref> or <xref href=\"System.IO.Packaging.Package.Close\" data-throw-if-not-resolved=\"false\"></xref> has been called).</p>\n"
+  - type: System.IO.IOException
+    commentId: T:System.IO.IOException
+    description: "\n<p>The package is read-only (a new part cannot be added).</p>\n"
+  seealso:
+  - type: System.IO.Packaging.Package.DeletePart(System.Uri)
+    commentId: M:System.IO.Packaging.Package.DeletePart(System.Uri)
+  - type: System.IO.Packaging.PackUriHelper.CreatePartUri(System.Uri)
+    commentId: M:System.IO.Packaging.PackUriHelper.CreatePartUri(System.Uri)
+  - type: System.IO.Packaging.PackUriHelper.GetPartUri(System.Uri)
+    commentId: M:System.IO.Packaging.PackUriHelper.GetPartUri(System.Uri)
+  - type: System.IO.Packaging.PackUriHelper.ResolvePartUri(System.Uri,System.Uri)
+    commentId: M:System.IO.Packaging.PackUriHelper.ResolvePartUri(System.Uri,System.Uri)
+  - type: System.IO.Packaging.ZipPackagePart
+    commentId: T:System.IO.Packaging.ZipPackagePart
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: Package.CreatePart(Uri, String)
+- uid: System.IO.Packaging.Package.CreatePart(System.Uri,System.String,System.IO.Packaging.CompressionOption)
+  commentId: M:System.IO.Packaging.Package.CreatePart(System.Uri,System.String,System.IO.Packaging.CompressionOption)
+  id: CreatePart(System.Uri,System.String,System.IO.Packaging.CompressionOption)
+  parent: System.IO.Packaging.Package
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.Packaging.Package.CreatePart(System.Uri, System.String, System.IO.Packaging.CompressionOption)
+  type: Method
+  source:
+    remote:
+      path: src/System.IO.Packaging/ref/System.IO.Packaging.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: CreatePart
+    path: src/System.IO.Packaging/ref/System.IO.Packaging.cs
+    startLine: 44
+  assemblies:
+  - System.IO.Packaging
+  namespace: System.IO.Packaging
+  summary: "\n<p>Creates a new part with a given URI, content type, and compression option.</p>\n"
+  syntax:
+    content: public PackagePart CreatePart(Uri partUri, string contentType, CompressionOption compressionOption)
+    content.vb: Public Function CreatePart(partUri As Uri, contentType As String, compressionOption As CompressionOption) As PackagePart
+    parameters:
+    - id: partUri
+      type: System.Uri
+      description: "\n<p>The URI of the new part.</p>\n"
+    - id: contentType
+      type: System.String
+      description: "\n<p>The content type of the data stream.</p>\n"
+    - id: compressionOption
+      type: System.IO.Packaging.CompressionOption
+      description: "\n<p>The compression option for the data stream, <xref href=\"System.IO.Packaging.CompressionOption.NotCompressed\" data-throw-if-not-resolved=\"false\"></xref> or <xref href=\"System.IO.Packaging.CompressionOption.Normal\" data-throw-if-not-resolved=\"false\"></xref> compression.</p>\n"
+    return:
+      type: System.IO.Packaging.PackagePart
+      description: "\n<p>The new created part.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>partUri</em> or <em>contentType</em> is <strong>null</strong>.</p>\n"
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>\n<em>partUri</em> is not a valid <xref href=\"System.IO.Packaging.PackagePart\" data-throw-if-not-resolved=\"false\"></xref> uniform resource identifier (URI).</p>\n"
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: "\n<p>A part with the specified <em>partUri</em> is already present in the package.</p>\n"
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>The <em>compressionOption</em> value is not valid.</p>\n"
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>The package is not open (<xref href=\"System.IO.Packaging.Package.Dispose(System.Boolean)\" data-throw-if-not-resolved=\"false\"></xref> or <xref href=\"System.IO.Packaging.Package.Close\" data-throw-if-not-resolved=\"false\"></xref> has been called).</p>\n"
+  - type: System.IO.IOException
+    commentId: T:System.IO.IOException
+    description: "\n<p>The package is read-only (a new part cannot be added).</p>\n"
+  seealso:
+  - type: System.IO.Packaging.Package.DeletePart(System.Uri)
+    commentId: M:System.IO.Packaging.Package.DeletePart(System.Uri)
+  - type: System.IO.Packaging.PackUriHelper.CreatePartUri(System.Uri)
+    commentId: M:System.IO.Packaging.PackUriHelper.CreatePartUri(System.Uri)
+  - type: System.IO.Packaging.PackUriHelper.GetPartUri(System.Uri)
+    commentId: M:System.IO.Packaging.PackUriHelper.GetPartUri(System.Uri)
+  - type: System.IO.Packaging.PackUriHelper.ResolvePartUri(System.Uri,System.Uri)
+    commentId: M:System.IO.Packaging.PackUriHelper.ResolvePartUri(System.Uri,System.Uri)
+  - type: System.IO.Packaging.ZipPackagePart
+    commentId: T:System.IO.Packaging.ZipPackagePart
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: Package.CreatePart(Uri, String, CompressionOption)
+- uid: System.IO.Packaging.Package.CreatePartCore(System.Uri,System.String,System.IO.Packaging.CompressionOption)
+  commentId: M:System.IO.Packaging.Package.CreatePartCore(System.Uri,System.String,System.IO.Packaging.CompressionOption)
+  id: CreatePartCore(System.Uri,System.String,System.IO.Packaging.CompressionOption)
+  parent: System.IO.Packaging.Package
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.Packaging.Package.CreatePartCore(System.Uri, System.String, System.IO.Packaging.CompressionOption)
+  type: Method
+  source:
+    remote:
+      path: src/System.IO.Packaging/ref/System.IO.Packaging.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: CreatePartCore
+    path: src/System.IO.Packaging/ref/System.IO.Packaging.cs
+    startLine: 45
+  assemblies:
+  - System.IO.Packaging
+  namespace: System.IO.Packaging
+  summary: "\n<p>When overridden in a derived class, creates a new part in the package.</p>\n"
+  syntax:
+    content: protected abstract PackagePart CreatePartCore(Uri partUri, string contentType, CompressionOption compressionOption)
+    content.vb: Protected MustOverride Function CreatePartCore(partUri As Uri, contentType As String, compressionOption As CompressionOption) As PackagePart
+    parameters:
+    - id: partUri
+      type: System.Uri
+      description: "\n<p>The uniform resource identifier (URI) for the part being created.</p>\n"
+    - id: contentType
+      type: System.String
+      description: "\n<p>The content type of the data stream.</p>\n"
+    - id: compressionOption
+      type: System.IO.Packaging.CompressionOption
+      description: "\n<p>The compression option for the data stream.</p>\n"
+    return:
+      type: System.IO.Packaging.PackagePart
+      description: "\n<p>The created part.</p>\n"
+  seealso:
+  - type: System.IO.Packaging.Package.DeletePartCore(System.Uri)
+    commentId: M:System.IO.Packaging.Package.DeletePartCore(System.Uri)
+  modifiers.csharp:
+  - protected
+  - abstract
+  modifiers.vb:
+  - Protected
+  - MustOverride
+  nameWithType: Package.CreatePartCore(Uri, String, CompressionOption)
+- uid: System.IO.Packaging.Package.CreateRelationship(System.Uri,System.IO.Packaging.TargetMode,System.String)
+  commentId: M:System.IO.Packaging.Package.CreateRelationship(System.Uri,System.IO.Packaging.TargetMode,System.String)
+  id: CreateRelationship(System.Uri,System.IO.Packaging.TargetMode,System.String)
+  parent: System.IO.Packaging.Package
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.Packaging.Package.CreateRelationship(System.Uri, System.IO.Packaging.TargetMode, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/System.IO.Packaging/ref/System.IO.Packaging.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: CreateRelationship
+    path: src/System.IO.Packaging/ref/System.IO.Packaging.cs
+    startLine: 46
+  assemblies:
+  - System.IO.Packaging
+  namespace: System.IO.Packaging
+  summary: "\n<p>Creates a package-level relationship to a part with a given URI, target mode, and relationship type. </p>\n"
+  syntax:
+    content: public PackageRelationship CreateRelationship(Uri targetUri, TargetMode targetMode, string relationshipType)
+    content.vb: Public Function CreateRelationship(targetUri As Uri, targetMode As TargetMode, relationshipType As String) As PackageRelationship
+    parameters:
+    - id: targetUri
+      type: System.Uri
+      description: "\n<p>The uniform resource identifier (URI) of the target part.</p>\n"
+    - id: targetMode
+      type: System.IO.Packaging.TargetMode
+      description: "\n<p>Indicates if the target part is <xref href=\"System.IO.Packaging.TargetMode.Internal\" data-throw-if-not-resolved=\"false\"></xref> or <xref href=\"System.IO.Packaging.TargetMode.External\" data-throw-if-not-resolved=\"false\"></xref> to the package.</p>\n"
+    - id: relationshipType
+      type: System.String
+      description: "\n<p>A URI that uniquely defines the role of the relationship.</p>\n"
+    return:
+      type: System.IO.Packaging.PackageRelationship
+      description: "\n<p>The package-level relationship to the specified part.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>targetUri</em> or <em>relationshipType</em> is <strong>null</strong>.</p>\n"
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>The <em>targetUri</em> part is a <xref href=\"System.IO.Packaging.PackageRelationship\" data-throw-if-not-resolved=\"false\"></xref>, or <em>targetMode</em> is <xref href=\"System.IO.Packaging.TargetMode.Internal\" data-throw-if-not-resolved=\"false\"></xref> and <em>targetUri</em> is an absolute URI.</p>\n"
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>The value for <em>targetMode</em> is not valid.</p>\n"
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>The package is not open (<xref href=\"System.IO.Packaging.Package.Dispose(System.Boolean)\" data-throw-if-not-resolved=\"false\"></xref> or <xref href=\"System.IO.Packaging.Package.Close\" data-throw-if-not-resolved=\"false\"></xref> has been called).</p>\n"
+  - type: System.IO.IOException
+    commentId: T:System.IO.IOException
+    description: "\n<p>The package is read-only.</p>\n"
+  seealso:
+  - type: System.IO.Packaging.Package.DeleteRelationship(System.String)
+    commentId: M:System.IO.Packaging.Package.DeleteRelationship(System.String)
+  - type: System.IO.Packaging.Package.GetRelationship(System.String)
+    commentId: M:System.IO.Packaging.Package.GetRelationship(System.String)
+  - type: System.IO.Packaging.Package.GetRelationships
+    commentId: M:System.IO.Packaging.Package.GetRelationships
+  - type: System.IO.Packaging.Package.GetRelationshipsByType(System.String)
+    commentId: M:System.IO.Packaging.Package.GetRelationshipsByType(System.String)
+  - type: System.IO.Packaging.Package.RelationshipExists(System.String)
+    commentId: M:System.IO.Packaging.Package.RelationshipExists(System.String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: Package.CreateRelationship(Uri, TargetMode, String)
+- uid: System.IO.Packaging.Package.CreateRelationship(System.Uri,System.IO.Packaging.TargetMode,System.String,System.String)
+  commentId: M:System.IO.Packaging.Package.CreateRelationship(System.Uri,System.IO.Packaging.TargetMode,System.String,System.String)
+  id: CreateRelationship(System.Uri,System.IO.Packaging.TargetMode,System.String,System.String)
+  parent: System.IO.Packaging.Package
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.Packaging.Package.CreateRelationship(System.Uri, System.IO.Packaging.TargetMode, System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/System.IO.Packaging/ref/System.IO.Packaging.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: CreateRelationship
+    path: src/System.IO.Packaging/ref/System.IO.Packaging.cs
+    startLine: 47
+  assemblies:
+  - System.IO.Packaging
+  namespace: System.IO.Packaging
+  summary: "\n<p>Creates a package-level relationship to a part with a given URI, target mode, relationship type, and identifier (ID).</p>\n"
+  syntax:
+    content: public PackageRelationship CreateRelationship(Uri targetUri, TargetMode targetMode, string relationshipType, string id)
+    content.vb: Public Function CreateRelationship(targetUri As Uri, targetMode As TargetMode, relationshipType As String, id As String) As PackageRelationship
+    parameters:
+    - id: targetUri
+      type: System.Uri
+      description: "\n<p>The uniform resource identifier (URI) of the target part.</p>\n"
+    - id: targetMode
+      type: System.IO.Packaging.TargetMode
+      description: "\n<p>Indicates if the target part is <xref href=\"System.IO.Packaging.TargetMode.Internal\" data-throw-if-not-resolved=\"false\"></xref> or <xref href=\"System.IO.Packaging.TargetMode.External\" data-throw-if-not-resolved=\"false\"></xref> to the package.</p>\n"
+    - id: relationshipType
+      type: System.String
+      description: "\n<p>A URI that uniquely defines the role of the relationship.</p>\n"
+    - id: id
+      type: System.String
+      description: "\n<p>A unique XML identifier.</p>\n"
+    return:
+      type: System.IO.Packaging.PackageRelationship
+      description: "\n<p>The package-level relationship to the specified part.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>targetUri</em> or <em>relationshipType</em> is <strong>null</strong>.</p>\n"
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>The <em>targetUri</em> part is a <xref href=\"System.IO.Packaging.PackageRelationship\" data-throw-if-not-resolved=\"false\"></xref>, or <em>targetMode</em> is <xref href=\"System.IO.Packaging.TargetMode.Internal\" data-throw-if-not-resolved=\"false\"></xref> and <em>targetUri</em> is an absolute URI.</p>\n"
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>The value for <em>targetMode</em> is not valid.</p>\n"
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>The package is not open (<xref href=\"System.IO.Packaging.Package.Dispose(System.Boolean)\" data-throw-if-not-resolved=\"false\"></xref> or <xref href=\"System.IO.Packaging.Package.Close\" data-throw-if-not-resolved=\"false\"></xref> has been called).</p>\n"
+  - type: System.IO.IOException
+    commentId: T:System.IO.IOException
+    description: "\n<p>The package is read-only.</p>\n"
+  - type: System.Xml.XmlException
+    commentId: T:System.Xml.XmlException
+    description: "\n<p>\n<em>id</em> is not a valid XML identifier; or a part with the specified <em>id</em> already occurs in the package.</p>\n"
+  seealso:
+  - type: System.IO.Packaging.Package.CreateRelationship(System.Uri,System.IO.Packaging.TargetMode,System.String)
+    commentId: M:System.IO.Packaging.Package.CreateRelationship(System.Uri,System.IO.Packaging.TargetMode,System.String)
+  - type: System.IO.Packaging.Package.DeleteRelationship(System.String)
+    commentId: M:System.IO.Packaging.Package.DeleteRelationship(System.String)
+  - type: System.IO.Packaging.Package.GetRelationship(System.String)
+    commentId: M:System.IO.Packaging.Package.GetRelationship(System.String)
+  - type: System.IO.Packaging.Package.GetRelationships
+    commentId: M:System.IO.Packaging.Package.GetRelationships
+  - type: System.IO.Packaging.Package.GetRelationshipsByType(System.String)
+    commentId: M:System.IO.Packaging.Package.GetRelationshipsByType(System.String)
+  - type: System.IO.Packaging.Package.RelationshipExists(System.String)
+    commentId: M:System.IO.Packaging.Package.RelationshipExists(System.String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: Package.CreateRelationship(Uri, TargetMode, String, String)
+- uid: System.IO.Packaging.Package.DeletePart(System.Uri)
+  commentId: M:System.IO.Packaging.Package.DeletePart(System.Uri)
+  id: DeletePart(System.Uri)
+  parent: System.IO.Packaging.Package
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.Packaging.Package.DeletePart(System.Uri)
+  type: Method
+  source:
+    remote:
+      path: src/System.IO.Packaging/ref/System.IO.Packaging.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: DeletePart
+    path: src/System.IO.Packaging/ref/System.IO.Packaging.cs
+    startLine: 48
+  assemblies:
+  - System.IO.Packaging
+  namespace: System.IO.Packaging
+  summary: "\n<p>Deletes a part with a given URI from the package.</p>\n"
+  syntax:
+    content: public void DeletePart(Uri partUri)
+    content.vb: Public Sub DeletePart(partUri As Uri)
+    parameters:
+    - id: partUri
+      type: System.Uri
+      description: "\n<p>The URI of the part to delete.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>partUri</em> is <strong>null</strong>.</p>\n"
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>\n<em>partUri</em> is not a valid <xref href=\"System.IO.Packaging.PackagePart\" data-throw-if-not-resolved=\"false\"></xref> URI.</p>\n"
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>The package is not open (<xref href=\"System.IO.Packaging.Package.Dispose(System.Boolean)\" data-throw-if-not-resolved=\"false\"></xref> or <xref href=\"System.IO.Packaging.Package.Close\" data-throw-if-not-resolved=\"false\"></xref> has been called).</p>\n"
+  - type: System.IO.IOException
+    commentId: T:System.IO.IOException
+    description: "\n<p>The package is read-only.</p>\n"
+  seealso:
+  - type: System.IO.Packaging.Package.CreatePart(System.Uri,System.String)
+    commentId: M:System.IO.Packaging.Package.CreatePart(System.Uri,System.String)
+  - type: System.IO.Packaging.PackUriHelper.CreatePartUri(System.Uri)
+    commentId: M:System.IO.Packaging.PackUriHelper.CreatePartUri(System.Uri)
+  - type: System.IO.Packaging.PackUriHelper.GetPartUri(System.Uri)
+    commentId: M:System.IO.Packaging.PackUriHelper.GetPartUri(System.Uri)
+  - type: System.IO.Packaging.PackUriHelper.ResolvePartUri(System.Uri,System.Uri)
+    commentId: M:System.IO.Packaging.PackUriHelper.ResolvePartUri(System.Uri,System.Uri)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: Package.DeletePart(Uri)
+- uid: System.IO.Packaging.Package.DeletePartCore(System.Uri)
+  commentId: M:System.IO.Packaging.Package.DeletePartCore(System.Uri)
+  id: DeletePartCore(System.Uri)
+  parent: System.IO.Packaging.Package
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.Packaging.Package.DeletePartCore(System.Uri)
+  type: Method
+  source:
+    remote:
+      path: src/System.IO.Packaging/ref/System.IO.Packaging.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: DeletePartCore
+    path: src/System.IO.Packaging/ref/System.IO.Packaging.cs
+    startLine: 49
+  assemblies:
+  - System.IO.Packaging
+  namespace: System.IO.Packaging
+  summary: "\n<p>When overridden in a derived class, deletes a part with a given URI. </p>\n"
+  syntax:
+    content: protected abstract void DeletePartCore(Uri partUri)
+    content.vb: Protected MustOverride Sub DeletePartCore(partUri As Uri)
+    parameters:
+    - id: partUri
+      type: System.Uri
+      description: "\n<p>The <xref href=\"System.IO.Packaging.PackagePart.Uri\" data-throw-if-not-resolved=\"false\"></xref> of the <xref href=\"System.IO.Packaging.PackagePart\" data-throw-if-not-resolved=\"false\"></xref> to delete.</p>\n"
+  seealso:
+  - type: System.IO.Packaging.Package.CreatePartCore(System.Uri,System.String,System.IO.Packaging.CompressionOption)
+    commentId: M:System.IO.Packaging.Package.CreatePartCore(System.Uri,System.String,System.IO.Packaging.CompressionOption)
+  modifiers.csharp:
+  - protected
+  - abstract
+  modifiers.vb:
+  - Protected
+  - MustOverride
+  nameWithType: Package.DeletePartCore(Uri)
+- uid: System.IO.Packaging.Package.DeleteRelationship(System.String)
+  commentId: M:System.IO.Packaging.Package.DeleteRelationship(System.String)
+  id: DeleteRelationship(System.String)
+  parent: System.IO.Packaging.Package
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.Packaging.Package.DeleteRelationship(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/System.IO.Packaging/ref/System.IO.Packaging.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: DeleteRelationship
+    path: src/System.IO.Packaging/ref/System.IO.Packaging.cs
+    startLine: 50
+  assemblies:
+  - System.IO.Packaging
+  namespace: System.IO.Packaging
+  summary: "\n<p>Deletes a package-level relationship.</p>\n"
+  syntax:
+    content: public void DeleteRelationship(string id)
+    content.vb: Public Sub DeleteRelationship(id As String)
+    parameters:
+    - id: id
+      type: System.String
+      description: "\n<p>The <xref href=\"System.IO.Packaging.PackageRelationship.Id\" data-throw-if-not-resolved=\"false\"></xref> of the <xref href=\"System.IO.Packaging.PackageRelationship\" data-throw-if-not-resolved=\"false\"></xref> to delete.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>id</em> is <strong>null</strong>.</p>\n"
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>The package is not open (<xref href=\"System.IO.Packaging.Package.Dispose(System.Boolean)\" data-throw-if-not-resolved=\"false\"></xref> or <xref href=\"System.IO.Packaging.Package.Close\" data-throw-if-not-resolved=\"false\"></xref> has been called).</p>\n"
+  - type: System.IO.IOException
+    commentId: T:System.IO.IOException
+    description: "\n<p>The package is read-only.</p>\n"
+  - type: System.Xml.XmlException
+    commentId: T:System.Xml.XmlException
+    description: "\n<p>\n<em>id</em> is not a valid XML identifier.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: Package.DeleteRelationship(String)
+- uid: System.IO.Packaging.Package.Dispose(System.Boolean)
+  commentId: M:System.IO.Packaging.Package.Dispose(System.Boolean)
+  id: Dispose(System.Boolean)
+  parent: System.IO.Packaging.Package
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.Packaging.Package.Dispose(System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/System.IO.Packaging/ref/System.IO.Packaging.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Dispose
+    path: src/System.IO.Packaging/ref/System.IO.Packaging.cs
+    startLine: 51
+  assemblies:
+  - System.IO.Packaging
+  namespace: System.IO.Packaging
+  summary: "\n<p>Flushes and saves the content of all parts and relationships, closes the package, and releases all resources.</p>\n"
+  syntax:
+    content: protected virtual void Dispose(bool disposing)
+    content.vb: Protected Overridable Sub Dispose(disposing As Boolean)
+    parameters:
+    - id: disposing
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> to release both managed and unmanaged resources; <strong>false</strong> to release only unmanaged resources.</p>\n"
+  seealso:
+  - type: System.IO.Packaging.Package.Flush
+    commentId: M:System.IO.Packaging.Package.Flush
+  - type: System.IO.Packaging.PackagePart
+    commentId: T:System.IO.Packaging.PackagePart
+  - type: System.IO.Packaging.PackageRelationship
+    commentId: T:System.IO.Packaging.PackageRelationship
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+  nameWithType: Package.Dispose(Boolean)
+- uid: System.IO.Packaging.Package.Flush
+  commentId: M:System.IO.Packaging.Package.Flush
+  id: Flush
+  parent: System.IO.Packaging.Package
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.Packaging.Package.Flush()
+  type: Method
+  source:
+    remote:
+      path: src/System.IO.Packaging/ref/System.IO.Packaging.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Flush
+    path: src/System.IO.Packaging/ref/System.IO.Packaging.cs
+    startLine: 52
+  assemblies:
+  - System.IO.Packaging
+  namespace: System.IO.Packaging
+  summary: "\n<p>Saves the contents of all parts and relationships that are contained in the package.</p>\n"
+  syntax:
+    content: public void Flush()
+    content.vb: Public Sub Flush
+  exceptions:
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>The package is not open (<xref href=\"System.IO.Packaging.Package.Dispose(System.Boolean)\" data-throw-if-not-resolved=\"false\"></xref> or <xref href=\"System.IO.Packaging.Package.Close\" data-throw-if-not-resolved=\"false\"></xref> has been called).</p>\n"
+  - type: System.IO.IOException
+    commentId: T:System.IO.IOException
+    description: "\n<p>The package is read-only and cannot be modified.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: Package.Flush()
+- uid: System.IO.Packaging.Package.FlushCore
+  commentId: M:System.IO.Packaging.Package.FlushCore
+  id: FlushCore
+  parent: System.IO.Packaging.Package
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.Packaging.Package.FlushCore()
+  type: Method
+  source:
+    remote:
+      path: src/System.IO.Packaging/ref/System.IO.Packaging.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: FlushCore
+    path: src/System.IO.Packaging/ref/System.IO.Packaging.cs
+    startLine: 53
+  assemblies:
+  - System.IO.Packaging
+  namespace: System.IO.Packaging
+  summary: "\n<p>When overridden in a derived class, saves the content of all parts and relationships to the derived class store.</p>\n"
+  syntax:
+    content: protected abstract void FlushCore()
+    content.vb: Protected MustOverride Sub FlushCore
+  modifiers.csharp:
+  - protected
+  - abstract
+  modifiers.vb:
+  - Protected
+  - MustOverride
+  nameWithType: Package.FlushCore()
+- uid: System.IO.Packaging.Package.GetPart(System.Uri)
+  commentId: M:System.IO.Packaging.Package.GetPart(System.Uri)
+  id: GetPart(System.Uri)
+  parent: System.IO.Packaging.Package
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.Packaging.Package.GetPart(System.Uri)
+  type: Method
+  source:
+    remote:
+      path: src/System.IO.Packaging/ref/System.IO.Packaging.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: GetPart
+    path: src/System.IO.Packaging/ref/System.IO.Packaging.cs
+    startLine: 54
+  assemblies:
+  - System.IO.Packaging
+  namespace: System.IO.Packaging
+  summary: "\n<p>Returns the part with a given URI.</p>\n"
+  syntax:
+    content: public PackagePart GetPart(Uri partUri)
+    content.vb: Public Function GetPart(partUri As Uri) As PackagePart
+    parameters:
+    - id: partUri
+      type: System.Uri
+      description: "\n<p>The uniform resource identifier (URI) of the part to return.</p>\n"
+    return:
+      type: System.IO.Packaging.PackagePart
+      description: "\n<p>The part with the specified <em>partUri</em>.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>partUri</em> is <strong>null</strong>.</p>\n"
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>\n<em>partUri</em> is not a valid <xref href=\"System.IO.Packaging.PackagePart\" data-throw-if-not-resolved=\"false\"></xref> uniform resource identifier (URI).</p>\n"
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: "\n<p>A part with the specified <em>partUri</em> is not in the package.</p>\n"
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>The package is not open (<xref href=\"System.IO.Packaging.Package.Dispose(System.Boolean)\" data-throw-if-not-resolved=\"false\"></xref> or <xref href=\"System.IO.Packaging.Package.Close\" data-throw-if-not-resolved=\"false\"></xref> has been called).</p>\n"
+  - type: System.IO.IOException
+    commentId: T:System.IO.IOException
+    description: "\n<p>The package is write-only.</p>\n"
+  seealso:
+  - type: System.IO.Packaging.Package.GetParts
+    commentId: M:System.IO.Packaging.Package.GetParts
+  - type: System.IO.Packaging.Package.PartExists(System.Uri)
+    commentId: M:System.IO.Packaging.Package.PartExists(System.Uri)
+  - type: System.IO.Packaging.PackUriHelper.CreatePartUri(System.Uri)
+    commentId: M:System.IO.Packaging.PackUriHelper.CreatePartUri(System.Uri)
+  - type: System.IO.Packaging.PackUriHelper.GetPartUri(System.Uri)
+    commentId: M:System.IO.Packaging.PackUriHelper.GetPartUri(System.Uri)
+  - type: System.IO.Packaging.PackUriHelper.ResolvePartUri(System.Uri,System.Uri)
+    commentId: M:System.IO.Packaging.PackUriHelper.ResolvePartUri(System.Uri,System.Uri)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: Package.GetPart(Uri)
+- uid: System.IO.Packaging.Package.GetPartCore(System.Uri)
+  commentId: M:System.IO.Packaging.Package.GetPartCore(System.Uri)
+  id: GetPartCore(System.Uri)
+  parent: System.IO.Packaging.Package
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.Packaging.Package.GetPartCore(System.Uri)
+  type: Method
+  source:
+    remote:
+      path: src/System.IO.Packaging/ref/System.IO.Packaging.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: GetPartCore
+    path: src/System.IO.Packaging/ref/System.IO.Packaging.cs
+    startLine: 55
+  assemblies:
+  - System.IO.Packaging
+  namespace: System.IO.Packaging
+  summary: "\n<p>When overridden in a derived class, returns the part addressed by a given URI.</p>\n"
+  syntax:
+    content: protected abstract PackagePart GetPartCore(Uri partUri)
+    content.vb: Protected MustOverride Function GetPartCore(partUri As Uri) As PackagePart
+    parameters:
+    - id: partUri
+      type: System.Uri
+      description: "\n<p>The uniform resource identifier (URI) of the part to retrieve.</p>\n"
+    return:
+      type: System.IO.Packaging.PackagePart
+      description: "\n<p>The requested part; or <strong>null</strong>, if a part with the specified <em>partUri</em> is not in the package.</p>\n"
+  seealso:
+  - type: System.IO.Packaging.Package.GetPartsCore
+    commentId: M:System.IO.Packaging.Package.GetPartsCore
+  modifiers.csharp:
+  - protected
+  - abstract
+  modifiers.vb:
+  - Protected
+  - MustOverride
+  nameWithType: Package.GetPartCore(Uri)
+- uid: System.IO.Packaging.Package.GetParts
+  commentId: M:System.IO.Packaging.Package.GetParts
+  id: GetParts
+  parent: System.IO.Packaging.Package
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.Packaging.Package.GetParts()
+  type: Method
+  source:
+    remote:
+      path: src/System.IO.Packaging/ref/System.IO.Packaging.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: GetParts
+    path: src/System.IO.Packaging/ref/System.IO.Packaging.cs
+    startLine: 56
+  assemblies:
+  - System.IO.Packaging
+  namespace: System.IO.Packaging
+  summary: "\n<p>Returns a collection of all the parts in the package.</p>\n"
+  syntax:
+    content: public PackagePartCollection GetParts()
+    content.vb: Public Function GetParts As PackagePartCollection
+    return:
+      type: System.IO.Packaging.PackagePartCollection
+      description: "\n<p>A collection of all the <xref href=\"System.IO.Packaging.PackagePart\" data-throw-if-not-resolved=\"false\"></xref> elements that are contained in the package.</p>\n"
+  exceptions:
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>The package is not open (<xref href=\"System.IO.Packaging.Package.Dispose(System.Boolean)\" data-throw-if-not-resolved=\"false\"></xref> or <xref href=\"System.IO.Packaging.Package.Close\" data-throw-if-not-resolved=\"false\"></xref> has been called).</p>\n"
+  - type: System.IO.IOException
+    commentId: T:System.IO.IOException
+    description: "\n<p>The package is write-only.</p>\n"
+  seealso:
+  - type: System.IO.Packaging.Package.GetPart(System.Uri)
+    commentId: M:System.IO.Packaging.Package.GetPart(System.Uri)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: Package.GetParts()
+- uid: System.IO.Packaging.Package.GetPartsCore
+  commentId: M:System.IO.Packaging.Package.GetPartsCore
+  id: GetPartsCore
+  parent: System.IO.Packaging.Package
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.Packaging.Package.GetPartsCore()
+  type: Method
+  source:
+    remote:
+      path: src/System.IO.Packaging/ref/System.IO.Packaging.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: GetPartsCore
+    path: src/System.IO.Packaging/ref/System.IO.Packaging.cs
+    startLine: 57
+  assemblies:
+  - System.IO.Packaging
+  namespace: System.IO.Packaging
+  summary: "\n<p>When overridden in a derived class, returns an array of all the parts in the package. </p>\n"
+  syntax:
+    content: protected abstract PackagePart[] GetPartsCore()
+    content.vb: Protected MustOverride Function GetPartsCore As PackagePart()
+    return:
+      type: System.IO.Packaging.PackagePart[]
+      description: "\n<p>An array of all the parts that are contained in the package.</p>\n"
+  seealso:
+  - type: System.IO.Packaging.Package.GetPartCore(System.Uri)
+    commentId: M:System.IO.Packaging.Package.GetPartCore(System.Uri)
+  modifiers.csharp:
+  - protected
+  - abstract
+  modifiers.vb:
+  - Protected
+  - MustOverride
+  nameWithType: Package.GetPartsCore()
+- uid: System.IO.Packaging.Package.GetRelationship(System.String)
+  commentId: M:System.IO.Packaging.Package.GetRelationship(System.String)
+  id: GetRelationship(System.String)
+  parent: System.IO.Packaging.Package
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.Packaging.Package.GetRelationship(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/System.IO.Packaging/ref/System.IO.Packaging.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: GetRelationship
+    path: src/System.IO.Packaging/ref/System.IO.Packaging.cs
+    startLine: 58
+  assemblies:
+  - System.IO.Packaging
+  namespace: System.IO.Packaging
+  summary: "\n<p>Returns the package-level relationship with a given identifier.</p>\n"
+  syntax:
+    content: public PackageRelationship GetRelationship(string id)
+    content.vb: Public Function GetRelationship(id As String) As PackageRelationship
+    parameters:
+    - id: id
+      type: System.String
+      description: "\n<p>The <xref href=\"System.IO.Packaging.PackageRelationship.Id\" data-throw-if-not-resolved=\"false\"></xref> of the relationship to return.</p>\n"
+    return:
+      type: System.IO.Packaging.PackageRelationship
+      description: "\n<p>The package-level relationship with the specified <em>id</em>.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>id</em> is <strong>null</strong>.</p>\n"
+  - type: System.Xml.XmlException
+    commentId: T:System.Xml.XmlException
+    description: "\n<p>\n<em>id</em> is not a valid XML identifier.</p>\n"
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: "\n<p>A relationship with the specified <em>id</em> is not in the package.</p>\n"
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>The package is not open (<xref href=\"System.IO.Packaging.Package.Dispose(System.Boolean)\" data-throw-if-not-resolved=\"false\"></xref> or <xref href=\"System.IO.Packaging.Package.Close\" data-throw-if-not-resolved=\"false\"></xref> has been called).</p>\n"
+  - type: System.IO.IOException
+    commentId: T:System.IO.IOException
+    description: "\n<p>The package is write-only.</p>\n"
+  seealso:
+  - type: System.IO.Packaging.Package.GetRelationships
+    commentId: M:System.IO.Packaging.Package.GetRelationships
+  - type: System.IO.Packaging.Package.GetRelationshipsByType(System.String)
+    commentId: M:System.IO.Packaging.Package.GetRelationshipsByType(System.String)
+  - type: System.IO.Packaging.Package.CreateRelationship(System.Uri,System.IO.Packaging.TargetMode,System.String)
+    commentId: M:System.IO.Packaging.Package.CreateRelationship(System.Uri,System.IO.Packaging.TargetMode,System.String)
+  - type: System.IO.Packaging.Package.DeleteRelationship(System.String)
+    commentId: M:System.IO.Packaging.Package.DeleteRelationship(System.String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: Package.GetRelationship(String)
+- uid: System.IO.Packaging.Package.GetRelationships
+  commentId: M:System.IO.Packaging.Package.GetRelationships
+  id: GetRelationships
+  parent: System.IO.Packaging.Package
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.Packaging.Package.GetRelationships()
+  type: Method
+  source:
+    remote:
+      path: src/System.IO.Packaging/ref/System.IO.Packaging.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: GetRelationships
+    path: src/System.IO.Packaging/ref/System.IO.Packaging.cs
+    startLine: 59
+  assemblies:
+  - System.IO.Packaging
+  namespace: System.IO.Packaging
+  summary: "\n<p>Returns a collection of all the package-level relationships.</p>\n"
+  syntax:
+    content: public PackageRelationshipCollection GetRelationships()
+    content.vb: Public Function GetRelationships As PackageRelationshipCollection
+    return:
+      type: System.IO.Packaging.PackageRelationshipCollection
+      description: "\n<p>A collection of all the package-level relationships that are contained in the package.</p>\n"
+  exceptions:
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>The package is not open (<xref href=\"System.IO.Packaging.Package.Dispose(System.Boolean)\" data-throw-if-not-resolved=\"false\"></xref> or <xref href=\"System.IO.Packaging.Package.Close\" data-throw-if-not-resolved=\"false\"></xref> has been called).</p>\n"
+  - type: System.IO.IOException
+    commentId: T:System.IO.IOException
+    description: "\n<p>The package is write-only.</p>\n"
+  seealso:
+  - type: System.IO.Packaging.Package.GetRelationship(System.String)
+    commentId: M:System.IO.Packaging.Package.GetRelationship(System.String)
+  - type: System.IO.Packaging.Package.GetRelationshipsByType(System.String)
+    commentId: M:System.IO.Packaging.Package.GetRelationshipsByType(System.String)
+  - type: System.IO.Packaging.Package.CreateRelationship(System.Uri,System.IO.Packaging.TargetMode,System.String)
+    commentId: M:System.IO.Packaging.Package.CreateRelationship(System.Uri,System.IO.Packaging.TargetMode,System.String)
+  - type: System.IO.Packaging.Package.DeleteRelationship(System.String)
+    commentId: M:System.IO.Packaging.Package.DeleteRelationship(System.String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: Package.GetRelationships()
+- uid: System.IO.Packaging.Package.GetRelationshipsByType(System.String)
+  commentId: M:System.IO.Packaging.Package.GetRelationshipsByType(System.String)
+  id: GetRelationshipsByType(System.String)
+  parent: System.IO.Packaging.Package
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.Packaging.Package.GetRelationshipsByType(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/System.IO.Packaging/ref/System.IO.Packaging.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: GetRelationshipsByType
+    path: src/System.IO.Packaging/ref/System.IO.Packaging.cs
+    startLine: 60
+  assemblies:
+  - System.IO.Packaging
+  namespace: System.IO.Packaging
+  summary: "\n<p>Returns a collection of all the package-level relationships that match a given <xref href=\"System.IO.Packaging.PackageRelationship.RelationshipType\" data-throw-if-not-resolved=\"false\"></xref>. </p>\n"
+  syntax:
+    content: public PackageRelationshipCollection GetRelationshipsByType(string relationshipType)
+    content.vb: Public Function GetRelationshipsByType(relationshipType As String) As PackageRelationshipCollection
+    parameters:
+    - id: relationshipType
+      type: System.String
+      description: "\n<p>The <xref href=\"System.IO.Packaging.PackageRelationship.RelationshipType\" data-throw-if-not-resolved=\"false\"></xref>  to match and return in the collection.</p>\n"
+    return:
+      type: System.IO.Packaging.PackageRelationshipCollection
+      description: "\n<p>A collection of package-level relationships that match the specified <em>relationshipType</em>.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>relationshipType</em> is <strong>null</strong>.</p>\n"
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>\n<em>relationshipType</em> is an empty string.</p>\n"
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>The package is not open (<xref href=\"System.IO.Packaging.Package.Dispose(System.Boolean)\" data-throw-if-not-resolved=\"false\"></xref> or <xref href=\"System.IO.Packaging.Package.Close\" data-throw-if-not-resolved=\"false\"></xref> has been called).</p>\n"
+  - type: System.IO.IOException
+    commentId: T:System.IO.IOException
+    description: "\n<p>The package is write-only.</p>\n"
+  seealso:
+  - type: System.IO.Packaging.Package.GetRelationship(System.String)
+    commentId: M:System.IO.Packaging.Package.GetRelationship(System.String)
+  - type: System.IO.Packaging.Package.GetRelationships
+    commentId: M:System.IO.Packaging.Package.GetRelationships
+  - type: System.IO.Packaging.Package.CreateRelationship(System.Uri,System.IO.Packaging.TargetMode,System.String)
+    commentId: M:System.IO.Packaging.Package.CreateRelationship(System.Uri,System.IO.Packaging.TargetMode,System.String)
+  - type: System.IO.Packaging.Package.DeleteRelationship(System.String)
+    commentId: M:System.IO.Packaging.Package.DeleteRelationship(System.String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: Package.GetRelationshipsByType(String)
+- uid: System.IO.Packaging.Package.Open(System.IO.Stream)
+  commentId: M:System.IO.Packaging.Package.Open(System.IO.Stream)
+  id: Open(System.IO.Stream)
+  parent: System.IO.Packaging.Package
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.Packaging.Package.Open(System.IO.Stream)
+  type: Method
+  source:
+    remote:
+      path: src/System.IO.Packaging/ref/System.IO.Packaging.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Open
+    path: src/System.IO.Packaging/ref/System.IO.Packaging.cs
+    startLine: 61
+  assemblies:
+  - System.IO.Packaging
+  namespace: System.IO.Packaging
+  summary: "\n<p>Opens a package on a given IO stream.</p>\n"
+  syntax:
+    content: public static Package Open(Stream stream)
+    content.vb: Public Shared Function Open(stream As Stream) As Package
+    parameters:
+    - id: stream
+      type: System.IO.Stream
+      description: "\n<p>The IO stream on which to open the package.</p>\n"
+    return:
+      type: System.IO.Packaging.Package
+      description: "\n<p>The opened package.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>stream</em> is <strong>null</strong>.</p>\n"
+  - type: System.IO.IOException
+    commentId: T:System.IO.IOException
+    description: "\n<p>The package to open requires read or read/write permission and the specified <em>stream</em> is write-only; or, the package to open requires write or read/write permission and the specified <em>stream</em> is read-only.</p>\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  nameWithType: Package.Open(Stream)
+- uid: System.IO.Packaging.Package.Open(System.IO.Stream,System.IO.FileMode)
+  commentId: M:System.IO.Packaging.Package.Open(System.IO.Stream,System.IO.FileMode)
+  id: Open(System.IO.Stream,System.IO.FileMode)
+  parent: System.IO.Packaging.Package
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.Packaging.Package.Open(System.IO.Stream, System.IO.FileMode)
+  type: Method
+  source:
+    remote:
+      path: src/System.IO.Packaging/ref/System.IO.Packaging.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Open
+    path: src/System.IO.Packaging/ref/System.IO.Packaging.cs
+    startLine: 62
+  assemblies:
+  - System.IO.Packaging
+  namespace: System.IO.Packaging
+  summary: "\n<p>Opens a package with a given IO stream and file mode.</p>\n"
+  syntax:
+    content: public static Package Open(Stream stream, FileMode packageMode)
+    content.vb: Public Shared Function Open(stream As Stream, packageMode As FileMode) As Package
+    parameters:
+    - id: stream
+      type: System.IO.Stream
+      description: "\n<p>The IO stream on which to open the package.</p>\n"
+    - id: packageMode
+      type: System.IO.FileMode
+      description: "\n<p>The file mode in which to open the package.</p>\n"
+    return:
+      type: System.IO.Packaging.Package
+      description: "\n<p>The opened package.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>stream</em> is <strong>null</strong>.</p>\n"
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>\n<em>packageMode</em> value is not valid.</p>\n"
+  - type: System.IO.IOException
+    commentId: T:System.IO.IOException
+    description: "\n<p>The package to open requires read or read/write permission and the specified <em>stream</em> is write-only; or, the package to open requires write or read/write permission and the specified <em>stream</em> is read-only.</p>\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  nameWithType: Package.Open(Stream, FileMode)
+- uid: System.IO.Packaging.Package.Open(System.IO.Stream,System.IO.FileMode,System.IO.FileAccess)
+  commentId: M:System.IO.Packaging.Package.Open(System.IO.Stream,System.IO.FileMode,System.IO.FileAccess)
+  id: Open(System.IO.Stream,System.IO.FileMode,System.IO.FileAccess)
+  parent: System.IO.Packaging.Package
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.Packaging.Package.Open(System.IO.Stream, System.IO.FileMode, System.IO.FileAccess)
+  type: Method
+  source:
+    remote:
+      path: src/System.IO.Packaging/ref/System.IO.Packaging.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Open
+    path: src/System.IO.Packaging/ref/System.IO.Packaging.cs
+    startLine: 63
+  assemblies:
+  - System.IO.Packaging
+  namespace: System.IO.Packaging
+  summary: "\n<p>Opens a package with a given IO stream, file mode, and file access setting.</p>\n"
+  syntax:
+    content: public static Package Open(Stream stream, FileMode packageMode, FileAccess packageAccess)
+    content.vb: Public Shared Function Open(stream As Stream, packageMode As FileMode, packageAccess As FileAccess) As Package
+    parameters:
+    - id: stream
+      type: System.IO.Stream
+      description: "\n<p>The IO stream on which to open the package.</p>\n"
+    - id: packageMode
+      type: System.IO.FileMode
+      description: "\n<p>The file mode in which to open the package.</p>\n"
+    - id: packageAccess
+      type: System.IO.FileAccess
+      description: "\n<p>The file access in which to open the package.</p>\n"
+    return:
+      type: System.IO.Packaging.Package
+      description: "\n<p>The opened package.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>stream</em> is <strong>null</strong>.</p>\n"
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>The value for <em>packageMode</em> or <em>packageAccess</em> is not valid.</p>\n"
+  - type: System.IO.IOException
+    commentId: T:System.IO.IOException
+    description: "\n<p>The package to open requires read or read/write permission and the specified <em>stream</em> is write-only; or the package to open requires write or read/write permission and the specified <em>stream</em> is read-only.</p>\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  nameWithType: Package.Open(Stream, FileMode, FileAccess)
+- uid: System.IO.Packaging.Package.Open(System.String)
+  commentId: M:System.IO.Packaging.Package.Open(System.String)
+  id: Open(System.String)
+  parent: System.IO.Packaging.Package
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.Packaging.Package.Open(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/System.IO.Packaging/ref/System.IO.Packaging.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Open
+    path: src/System.IO.Packaging/ref/System.IO.Packaging.cs
+    startLine: 64
+  assemblies:
+  - System.IO.Packaging
+  namespace: System.IO.Packaging
+  summary: "\n<p>Opens a package at a given path and file name.</p>\n"
+  syntax:
+    content: public static Package Open(string path)
+    content.vb: Public Shared Function Open(path As String) As Package
+    parameters:
+    - id: path
+      type: System.String
+      description: "\n<p>The path and file name of the package.</p>\n"
+    return:
+      type: System.IO.Packaging.Package
+      description: "\n<p>The opened package.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>path</em> is <strong>null</strong>.</p>\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  nameWithType: Package.Open(String)
+- uid: System.IO.Packaging.Package.Open(System.String,System.IO.FileMode)
+  commentId: M:System.IO.Packaging.Package.Open(System.String,System.IO.FileMode)
+  id: Open(System.String,System.IO.FileMode)
+  parent: System.IO.Packaging.Package
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.Packaging.Package.Open(System.String, System.IO.FileMode)
+  type: Method
+  source:
+    remote:
+      path: src/System.IO.Packaging/ref/System.IO.Packaging.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Open
+    path: src/System.IO.Packaging/ref/System.IO.Packaging.cs
+    startLine: 65
+  assemblies:
+  - System.IO.Packaging
+  namespace: System.IO.Packaging
+  summary: "\n<p>Opens a package at a given path using a given file mode. </p>\n"
+  syntax:
+    content: public static Package Open(string path, FileMode packageMode)
+    content.vb: Public Shared Function Open(path As String, packageMode As FileMode) As Package
+    parameters:
+    - id: path
+      type: System.String
+      description: "\n<p>The path and file name of the package.</p>\n"
+    - id: packageMode
+      type: System.IO.FileMode
+      description: "\n<p>The file mode in which to open the package.</p>\n"
+    return:
+      type: System.IO.Packaging.Package
+      description: "\n<p>The opened package.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>path</em> is <strong>null</strong>.</p>\n"
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>Value for <em>packageMode</em> is not valid.</p>\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  nameWithType: Package.Open(String, FileMode)
+- uid: System.IO.Packaging.Package.Open(System.String,System.IO.FileMode,System.IO.FileAccess)
+  commentId: M:System.IO.Packaging.Package.Open(System.String,System.IO.FileMode,System.IO.FileAccess)
+  id: Open(System.String,System.IO.FileMode,System.IO.FileAccess)
+  parent: System.IO.Packaging.Package
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.Packaging.Package.Open(System.String, System.IO.FileMode, System.IO.FileAccess)
+  type: Method
+  source:
+    remote:
+      path: src/System.IO.Packaging/ref/System.IO.Packaging.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Open
+    path: src/System.IO.Packaging/ref/System.IO.Packaging.cs
+    startLine: 66
+  assemblies:
+  - System.IO.Packaging
+  namespace: System.IO.Packaging
+  summary: "\n<p>Opens a package at a given path using a given file mode and file access setting.</p>\n"
+  syntax:
+    content: public static Package Open(string path, FileMode packageMode, FileAccess packageAccess)
+    content.vb: Public Shared Function Open(path As String, packageMode As FileMode, packageAccess As FileAccess) As Package
+    parameters:
+    - id: path
+      type: System.String
+      description: "\n<p>The path and file name of the package.</p>\n"
+    - id: packageMode
+      type: System.IO.FileMode
+      description: "\n<p>The file mode in which to open the package.</p>\n"
+    - id: packageAccess
+      type: System.IO.FileAccess
+      description: "\n<p>The file access in which to open the package.</p>\n"
+    return:
+      type: System.IO.Packaging.Package
+      description: "\n<p>The opened package.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>path</em> is <strong>null</strong>.</p>\n"
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>Value for <em>packageMode</em> or <em>packageAccess</em> is not valid.</p>\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  nameWithType: Package.Open(String, FileMode, FileAccess)
+- uid: System.IO.Packaging.Package.Open(System.String,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare)
+  commentId: M:System.IO.Packaging.Package.Open(System.String,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare)
+  id: Open(System.String,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare)
+  parent: System.IO.Packaging.Package
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.Packaging.Package.Open(System.String, System.IO.FileMode, System.IO.FileAccess, System.IO.FileShare)
+  type: Method
+  source:
+    remote:
+      path: src/System.IO.Packaging/ref/System.IO.Packaging.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Open
+    path: src/System.IO.Packaging/ref/System.IO.Packaging.cs
+    startLine: 67
+  assemblies:
+  - System.IO.Packaging
+  namespace: System.IO.Packaging
+  summary: "\n<p>Opens a package at a given path using a given file mode, file access, and file share setting.</p>\n"
+  syntax:
+    content: public static Package Open(string path, FileMode packageMode, FileAccess packageAccess, FileShare packageShare)
+    content.vb: Public Shared Function Open(path As String, packageMode As FileMode, packageAccess As FileAccess, packageShare As FileShare) As Package
+    parameters:
+    - id: path
+      type: System.String
+      description: "\n<p>The path and file name of the package.</p>\n"
+    - id: packageMode
+      type: System.IO.FileMode
+      description: "\n<p>The file mode in which to open the package.</p>\n"
+    - id: packageAccess
+      type: System.IO.FileAccess
+      description: "\n<p>The file access in which to open the package.</p>\n"
+    - id: packageShare
+      type: System.IO.FileShare
+      description: "\n<p>The file sharing mode in which to open the package.</p>\n"
+    return:
+      type: System.IO.Packaging.Package
+      description: "\n<p>The opened package.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>path</em> is <strong>null</strong>.</p>\n"
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: "\n<p>The value for <em>packageMode</em>, <em>packageAccess</em>, or <em>packageShare</em> is not valid.</p>\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  nameWithType: Package.Open(String, FileMode, FileAccess, FileShare)
+- uid: System.IO.Packaging.Package.PartExists(System.Uri)
+  commentId: M:System.IO.Packaging.Package.PartExists(System.Uri)
+  id: PartExists(System.Uri)
+  parent: System.IO.Packaging.Package
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.Packaging.Package.PartExists(System.Uri)
+  type: Method
+  source:
+    remote:
+      path: src/System.IO.Packaging/ref/System.IO.Packaging.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: PartExists
+    path: src/System.IO.Packaging/ref/System.IO.Packaging.cs
+    startLine: 68
+  assemblies:
+  - System.IO.Packaging
+  namespace: System.IO.Packaging
+  summary: "\n<p>Indicates whether a part with a given URI is in the package.</p>\n"
+  syntax:
+    content: public virtual bool PartExists(Uri partUri)
+    content.vb: Public Overridable Function PartExists(partUri As Uri) As Boolean
+    parameters:
+    - id: partUri
+      type: System.Uri
+      description: "\n<p>The <xref href=\"System.Uri\" data-throw-if-not-resolved=\"false\"></xref> of the part to check for.</p>\n"
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if a part with the specified <em>partUri</em> is in the package; otherwise, <strong>false</strong>.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>partUri</em> is <strong>null</strong>.</p>\n"
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>\n<em>partUri</em> is not a valid <xref href=\"System.IO.Packaging.PackagePart\" data-throw-if-not-resolved=\"false\"></xref> uniform resource identifier (URI).</p>\n"
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>The package is not open (<xref href=\"System.IO.Packaging.Package.Dispose(System.Boolean)\" data-throw-if-not-resolved=\"false\"></xref> or <xref href=\"System.IO.Packaging.Package.Close\" data-throw-if-not-resolved=\"false\"></xref> has been called).</p>\n"
+  - type: System.IO.IOException
+    commentId: T:System.IO.IOException
+    description: "\n<p>The package is write-only (information cannot be read).</p>\n"
+  seealso:
+  - type: System.IO.Packaging.PackUriHelper.CreatePartUri(System.Uri)
+    commentId: M:System.IO.Packaging.PackUriHelper.CreatePartUri(System.Uri)
+  - type: System.IO.Packaging.PackUriHelper.GetPartUri(System.Uri)
+    commentId: M:System.IO.Packaging.PackUriHelper.GetPartUri(System.Uri)
+  - type: System.IO.Packaging.PackUriHelper.ResolvePartUri(System.Uri,System.Uri)
+    commentId: M:System.IO.Packaging.PackUriHelper.ResolvePartUri(System.Uri,System.Uri)
+  - type: System.IO.Packaging.PackagePart
+    commentId: T:System.IO.Packaging.PackagePart
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  nameWithType: Package.PartExists(Uri)
+- uid: System.IO.Packaging.Package.RelationshipExists(System.String)
+  commentId: M:System.IO.Packaging.Package.RelationshipExists(System.String)
+  id: RelationshipExists(System.String)
+  parent: System.IO.Packaging.Package
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.Packaging.Package.RelationshipExists(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/System.IO.Packaging/ref/System.IO.Packaging.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: RelationshipExists
+    path: src/System.IO.Packaging/ref/System.IO.Packaging.cs
+    startLine: 69
+  assemblies:
+  - System.IO.Packaging
+  namespace: System.IO.Packaging
+  summary: "\n<p>Indicates whether a package-level relationship with a given ID is contained in the package.</p>\n"
+  syntax:
+    content: public bool RelationshipExists(string id)
+    content.vb: Public Function RelationshipExists(id As String) As Boolean
+    parameters:
+    - id: id
+      type: System.String
+      description: "\n<p>The <xref href=\"System.IO.Packaging.PackageRelationship.Id\" data-throw-if-not-resolved=\"false\"></xref> of the relationship to check for.</p>\n"
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>true</strong> if a package-level relationship with the specified <em>id</em> is in the package; otherwise, <strong>false</strong>.</p>\n"
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<p>\n<em>id</em> is <strong>null</strong>.</p>\n"
+  - type: System.Xml.XmlException
+    commentId: T:System.Xml.XmlException
+    description: "\n<p>\n<em>id</em> is not a valid XML identifier.</p>\n"
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: "\n<p>The package is not open (<xref href=\"System.IO.Packaging.Package.Dispose(System.Boolean)\" data-throw-if-not-resolved=\"false\"></xref> or <xref href=\"System.IO.Packaging.Package.Close\" data-throw-if-not-resolved=\"false\"></xref> has been called).</p>\n"
+  - type: System.IO.IOException
+    commentId: T:System.IO.IOException
+    description: "\n<p>The package is write-only.</p>\n"
+  seealso:
+  - type: System.IO.Packaging.PackageRelationship
+    commentId: T:System.IO.Packaging.PackageRelationship
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: Package.RelationshipExists(String)
+- uid: System.IO.Packaging.Package.System#IDisposable#Dispose
+  commentId: M:System.IO.Packaging.Package.System#IDisposable#Dispose
+  id: System#IDisposable#Dispose
+  isEii: true
+  parent: System.IO.Packaging.Package
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.IO.Packaging.Package.System.IDisposable.Dispose()
+  type: Method
+  source:
+    remote:
+      path: src/System.IO.Packaging/ref/System.IO.Packaging.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: System.IDisposable.Dispose
+    path: src/System.IO.Packaging/ref/System.IO.Packaging.cs
+    startLine: 70
+  assemblies:
+  - System.IO.Packaging
+  namespace: System.IO.Packaging
+  summary: "\n<p>This member supports the Windows Presentation Foundation (WPF) infrastructure and is not intended for application use.  Use the type-safe <xref href=\"System.IO.Packaging.Package.Dispose(System.Boolean)\" data-throw-if-not-resolved=\"false\"></xref> method instead. </p>\n"
+  syntax:
+    content: void IDisposable.Dispose()
+    content.vb: Sub System.IDisposable.Dispose Implements IDisposable.Dispose
+  implements:
+  - System.IDisposable.Dispose
+  name.vb: System.IDisposable.Dispose()
+  nameWithType: Package.IDisposable.Dispose()
+  nameWithType.vb: Package.System.IDisposable.Dispose()
+references:
+- uid: System.IO.Packaging
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.Packaging
+  commentId: N:System.IO.Packaging
+  nameWithType: System.IO.Packaging
+- uid: System.Object
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Object
+  commentId: T:System.Object
+  nameWithType: Object
+- uid: System.IDisposable
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.IDisposable
+  commentId: T:System.IDisposable
+  nameWithType: IDisposable
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.ToString
+  nameWithType: Object.ToString()
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.Equals(System.Object)
+  nameWithType: Object.Equals(Object)
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  nameWithType: Object.Equals(Object, Object)
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.GetHashCode
+  nameWithType: Object.GetHashCode()
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.GetType
+  nameWithType: Object.GetType()
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.Object.MemberwiseClone
+  nameWithType: Object.MemberwiseClone()
+- uid: System
+  isExternal: false
+  name: "XXX"
+  fullName: System
+  commentId: N:System
+  nameWithType: System
+- uid: System.IO.FileAccess
+  parent: System.IO
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.FileAccess
+  commentId: T:System.IO.FileAccess
+  nameWithType: FileAccess
+- uid: System.IO
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO
+  commentId: N:System.IO
+  nameWithType: System.IO
+- uid: System.IO.Packaging.PackageProperties
+  parent: System.IO.Packaging
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.Packaging.PackageProperties
+  commentId: T:System.IO.Packaging.PackageProperties
+  nameWithType: PackageProperties
+- uid: System.Uri
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Uri
+  commentId: T:System.Uri
+  nameWithType: Uri
+- uid: System.String
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.String
+  commentId: T:System.String
+  nameWithType: String
+- uid: System.IO.Packaging.PackagePart
+  parent: System.IO.Packaging
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.Packaging.PackagePart
+  commentId: T:System.IO.Packaging.PackagePart
+  nameWithType: PackagePart
+- uid: System.IO.Packaging.CompressionOption
+  parent: System.IO.Packaging
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.Packaging.CompressionOption
+  commentId: T:System.IO.Packaging.CompressionOption
+  nameWithType: CompressionOption
+- uid: System.IO.Packaging.TargetMode
+  parent: System.IO.Packaging
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.Packaging.TargetMode
+  commentId: T:System.IO.Packaging.TargetMode
+  nameWithType: TargetMode
+- uid: System.IO.Packaging.PackageRelationship
+  parent: System.IO.Packaging
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.Packaging.PackageRelationship
+  commentId: T:System.IO.Packaging.PackageRelationship
+  nameWithType: PackageRelationship
+- uid: System.Boolean
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Boolean
+  commentId: T:System.Boolean
+  nameWithType: Boolean
+- uid: System.IO.Packaging.PackagePartCollection
+  parent: System.IO.Packaging
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.Packaging.PackagePartCollection
+  commentId: T:System.IO.Packaging.PackagePartCollection
+  nameWithType: PackagePartCollection
+- uid: System.IO.Packaging.PackagePart[]
+  name: "XXX"
+  fullName: System.IO.Packaging.PackagePart[]
+  fullname.vb: System.IO.Packaging.PackagePart()
+  name.vb: PackagePart()
+  spec.csharp:
+  - uid: System.IO.Packaging.PackagePart
+    name: "XXX"
+    fullName: System.IO.Packaging.PackagePart
+  - name: 'XXX'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.IO.Packaging.PackagePart
+    name: "XXX"
+    fullName: System.IO.Packaging.PackagePart
+  - name: "XXX"
+    fullName: ()
+  nameWithType: PackagePart[]
+  nameWithType.vb: PackagePart()
+- uid: System.IO.Packaging.PackageRelationshipCollection
+  parent: System.IO.Packaging
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.Packaging.PackageRelationshipCollection
+  commentId: T:System.IO.Packaging.PackageRelationshipCollection
+  nameWithType: PackageRelationshipCollection
+- uid: System.IO.Stream
+  parent: System.IO
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.Stream
+  commentId: T:System.IO.Stream
+  nameWithType: Stream
+- uid: System.IO.Packaging.Package
+  parent: System.IO.Packaging
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.Packaging.Package
+  commentId: T:System.IO.Packaging.Package
+  nameWithType: Package
+- uid: System.IO.FileMode
+  parent: System.IO
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.FileMode
+  commentId: T:System.IO.FileMode
+  nameWithType: FileMode
+- uid: System.IO.FileShare
+  parent: System.IO
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.FileShare
+  commentId: T:System.IO.FileShare
+  nameWithType: FileShare
+- uid: System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: false
+  name: "XXX"
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: "XXX"
+    fullName: System.IDisposable.Dispose
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: "XXX"
+    fullName: System.IDisposable.Dispose
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  commentId: M:System.IDisposable.Dispose
+  nameWithType: IDisposable.Dispose()
+- uid: System.ArgumentOutOfRangeException
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentOutOfRangeException
+  nameWithType: ArgumentOutOfRangeException
+  commentId: T:System.ArgumentOutOfRangeException
+- uid: System.ObjectDisposedException
+  isExternal: false
+  name: "XXX"
+  fullName: System.ObjectDisposedException
+  nameWithType: ObjectDisposedException
+  commentId: T:System.ObjectDisposedException
+- uid: System.ArgumentNullException
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentNullException
+  nameWithType: ArgumentNullException
+  commentId: T:System.ArgumentNullException
+- uid: System.ArgumentException
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentException
+  nameWithType: ArgumentException
+  commentId: T:System.ArgumentException
+- uid: System.InvalidOperationException
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.InvalidOperationException
+  nameWithType: InvalidOperationException
+  commentId: T:System.InvalidOperationException
+- uid: System.IO.IOException
+  parent: System.IO
+  isExternal: false
+  name: "XXX"
+  fullName: System.IO.IOException
+  nameWithType: IOException
+  commentId: T:System.IO.IOException
+- uid: System.Xml.XmlException
+  isExternal: false
+  name: "XXX"
+  fullName: System.Xml.XmlException
+  commentId: T:System.Xml.XmlException
+  nameWithType: XmlException

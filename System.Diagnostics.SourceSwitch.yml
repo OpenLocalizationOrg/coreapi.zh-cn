@@ -1,0 +1,600 @@
+items:
+- uid: System.Diagnostics.SourceSwitch
+  commentId: T:System.Diagnostics.SourceSwitch
+  id: SourceSwitch
+  parent: System.Diagnostics
+  children:
+  - System.Diagnostics.SourceSwitch.#ctor(System.String)
+  - System.Diagnostics.SourceSwitch.#ctor(System.String,System.String)
+  - System.Diagnostics.SourceSwitch.Level
+  - System.Diagnostics.SourceSwitch.OnValueChanged
+  - System.Diagnostics.SourceSwitch.ShouldTrace(System.Diagnostics.TraceEventType)
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Diagnostics.SourceSwitch
+  type: Class
+  source:
+    remote:
+      path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/SourceSwitch.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: SourceSwitch
+    path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/SourceSwitch.cs
+    startLine: 9
+  assemblies:
+  - System.Diagnostics.TraceSource
+  namespace: System.Diagnostics
+  summary: "\n<p>Provides a multilevel switch to control tracing and debug output without recompiling your code.</p>\n"
+  syntax:
+    content: 'public class SourceSwitch : Switch'
+    content.vb: >-
+      Public Class SourceSwitch
+          Inherits Switch
+  inheritance:
+  - System.Object
+  - System.Diagnostics.Switch
+  inheritedMembers:
+  - System.Diagnostics.Switch.Description
+  - System.Diagnostics.Switch.DisplayName
+  - System.Diagnostics.Switch.SwitchSetting
+  - System.Diagnostics.Switch.Value
+  - System.Diagnostics.Switch.OnSwitchSettingChanged
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+  nameWithType: SourceSwitch
+- uid: System.Diagnostics.SourceSwitch.#ctor(System.String)
+  commentId: M:System.Diagnostics.SourceSwitch.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: System.Diagnostics.SourceSwitch
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Diagnostics.SourceSwitch.SourceSwitch(System.String)
+  type: Constructor
+  source:
+    remote:
+      path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/SourceSwitch.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: .ctor
+    path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/SourceSwitch.cs
+    startLine: 11
+  assemblies:
+  - System.Diagnostics.TraceSource
+  namespace: System.Diagnostics
+  summary: "\n<p>Initializes a new instance of the <xref href=\"System.Diagnostics.SourceSwitch\" data-throw-if-not-resolved=\"false\"></xref> class, specifying the name of the source.</p>\n"
+  syntax:
+    content: public SourceSwitch(string name)
+    content.vb: Public Sub New(name As String)
+    parameters:
+    - id: name
+      type: System.String
+      description: "\n<p>The name of the source.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: SourceSwitch.SourceSwitch(String)
+- uid: System.Diagnostics.SourceSwitch.#ctor(System.String,System.String)
+  commentId: M:System.Diagnostics.SourceSwitch.#ctor(System.String,System.String)
+  id: '#ctor(System.String,System.String)'
+  parent: System.Diagnostics.SourceSwitch
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Diagnostics.SourceSwitch.SourceSwitch(System.String, System.String)
+  type: Constructor
+  source:
+    remote:
+      path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/SourceSwitch.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: .ctor
+    path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/SourceSwitch.cs
+    startLine: 13
+  assemblies:
+  - System.Diagnostics.TraceSource
+  namespace: System.Diagnostics
+  summary: "\n<p>Initializes a new instance of the <xref href=\"System.Diagnostics.SourceSwitch\" data-throw-if-not-resolved=\"false\"></xref> class, specifying the display name and the default value for the source switch.</p>\n"
+  syntax:
+    content: public SourceSwitch(string displayName, string defaultSwitchValue)
+    content.vb: Public Sub New(displayName As String, defaultSwitchValue As String)
+    parameters:
+    - id: displayName
+      type: System.String
+      description: "\n<p>The name of the source switch. </p>\n"
+    - id: defaultSwitchValue
+      type: System.String
+      description: "\n<p>The default value for the switch. </p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: SourceSwitch.SourceSwitch(String, String)
+- uid: System.Diagnostics.SourceSwitch.Level
+  commentId: P:System.Diagnostics.SourceSwitch.Level
+  id: Level
+  parent: System.Diagnostics.SourceSwitch
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Diagnostics.SourceSwitch.Level
+  type: Property
+  source:
+    remote:
+      path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/SourceSwitch.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: Level
+    path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/SourceSwitch.cs
+    startLine: 17
+  assemblies:
+  - System.Diagnostics.TraceSource
+  namespace: System.Diagnostics
+  summary: "\n<p>Gets or sets the level of the switch.</p>\n"
+  syntax:
+    content: public SourceLevels Level { get; set; }
+    content.vb: Public Property Level As SourceLevels
+    parameters: []
+    return:
+      type: System.Diagnostics.SourceLevels
+      description: "\n<p>One of the <xref href=\"System.Diagnostics.SourceLevels\" data-throw-if-not-resolved=\"false\"></xref> values that represents the event level of the switch.</p>\n"
+  see:
+  - type: System.Security.Permissions.SecurityPermission
+    commentId: T:System.Security.Permissions.SecurityPermission
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  nameWithType: SourceSwitch.Level
+- uid: System.Diagnostics.SourceSwitch.OnValueChanged
+  commentId: M:System.Diagnostics.SourceSwitch.OnValueChanged
+  id: OnValueChanged
+  parent: System.Diagnostics.SourceSwitch
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Diagnostics.SourceSwitch.OnValueChanged()
+  type: Method
+  source:
+    remote:
+      path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/SourceSwitch.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: OnValueChanged
+    path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/SourceSwitch.cs
+    startLine: 34
+  assemblies:
+  - System.Diagnostics.TraceSource
+  namespace: System.Diagnostics
+  summary: "\n<p>Invoked when the value of the <xref href=\"System.Diagnostics.Switch.Value\" data-throw-if-not-resolved=\"false\"></xref> property changes.</p>\n"
+  syntax:
+    content: protected override void OnValueChanged()
+    content.vb: Protected Overrides Sub OnValueChanged
+  overridden: System.Diagnostics.Switch.OnValueChanged
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: "\n<p>The new value of <xref href=\"System.Diagnostics.Switch.Value\" data-throw-if-not-resolved=\"false\"></xref> is not one of the <xref href=\"System.Diagnostics.SourceLevels\" data-throw-if-not-resolved=\"false\"></xref> values.</p>\n"
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+  nameWithType: SourceSwitch.OnValueChanged()
+- uid: System.Diagnostics.SourceSwitch.ShouldTrace(System.Diagnostics.TraceEventType)
+  commentId: M:System.Diagnostics.SourceSwitch.ShouldTrace(System.Diagnostics.TraceEventType)
+  id: ShouldTrace(System.Diagnostics.TraceEventType)
+  parent: System.Diagnostics.SourceSwitch
+  langs:
+  - csharp
+  - vb
+  name: "XXX"
+  fullName: System.Diagnostics.SourceSwitch.ShouldTrace(System.Diagnostics.TraceEventType)
+  type: Method
+  source:
+    remote:
+      path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/SourceSwitch.cs
+      branch: master
+      repo: https://github.com/dotnet/corefx.git
+    id: ShouldTrace
+    path: src/System.Diagnostics.TraceSource/src/System/Diagnostics/SourceSwitch.cs
+    startLine: 29
+  assemblies:
+  - System.Diagnostics.TraceSource
+  namespace: System.Diagnostics
+  summary: "\n<p>Determines if trace listeners should be called, based on the trace event type.</p>\n"
+  syntax:
+    content: public bool ShouldTrace(TraceEventType eventType)
+    content.vb: Public Function ShouldTrace(eventType As TraceEventType) As Boolean
+    parameters:
+    - id: eventType
+      type: System.Diagnostics.TraceEventType
+      description: "\n<p>One of the <xref href=\"System.Diagnostics.TraceEventType\" data-throw-if-not-resolved=\"false\"></xref> values.</p>\n"
+    return:
+      type: System.Boolean
+      description: "\n<p>\n<strong>True</strong> if the trace listeners should be called; otherwise, <strong>false</strong>.</p>\n"
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  nameWithType: SourceSwitch.ShouldTrace(TraceEventType)
+references:
+- uid: System.Diagnostics
+  isExternal: false
+  name: "XXX"
+  fullName: System.Diagnostics
+  nameWithType: System.Diagnostics
+  commentId: N:System.Diagnostics
+- uid: System.Object
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Object
+  nameWithType: Object
+  commentId: T:System.Object
+- uid: System.Diagnostics.Switch
+  parent: System.Diagnostics
+  isExternal: false
+  name: "XXX"
+  fullName: System.Diagnostics.Switch
+  nameWithType: Switch
+  commentId: T:System.Diagnostics.Switch
+- uid: System.Diagnostics.Switch.Description
+  parent: System.Diagnostics.Switch
+  isExternal: false
+  name: "XXX"
+  fullName: System.Diagnostics.Switch.Description
+  nameWithType: Switch.Description
+  commentId: P:System.Diagnostics.Switch.Description
+- uid: System.Diagnostics.Switch.DisplayName
+  parent: System.Diagnostics.Switch
+  isExternal: false
+  name: "XXX"
+  fullName: System.Diagnostics.Switch.DisplayName
+  nameWithType: Switch.DisplayName
+  commentId: P:System.Diagnostics.Switch.DisplayName
+- uid: System.Diagnostics.Switch.SwitchSetting
+  parent: System.Diagnostics.Switch
+  isExternal: false
+  name: "XXX"
+  fullName: System.Diagnostics.Switch.SwitchSetting
+  nameWithType: Switch.SwitchSetting
+  commentId: P:System.Diagnostics.Switch.SwitchSetting
+- uid: System.Diagnostics.Switch.Value
+  parent: System.Diagnostics.Switch
+  isExternal: false
+  name: "XXX"
+  fullName: System.Diagnostics.Switch.Value
+  nameWithType: Switch.Value
+  commentId: P:System.Diagnostics.Switch.Value
+- uid: System.Diagnostics.Switch.OnSwitchSettingChanged
+  parent: System.Diagnostics.Switch
+  isExternal: false
+  name: "XXX"
+  fullName: System.Diagnostics.Switch.OnSwitchSettingChanged()
+  spec.csharp:
+  - uid: System.Diagnostics.Switch.OnSwitchSettingChanged
+    name: "XXX"
+    fullName: System.Diagnostics.Switch.OnSwitchSettingChanged
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Diagnostics.Switch.OnSwitchSettingChanged
+    name: "XXX"
+    fullName: System.Diagnostics.Switch.OnSwitchSettingChanged
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Switch.OnSwitchSettingChanged()
+  commentId: M:System.Diagnostics.Switch.OnSwitchSettingChanged
+- uid: System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: "XXX"
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.ToString()
+  commentId: M:System.Object.ToString
+- uid: System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.Equals(Object)
+  commentId: M:System.Object.Equals(System.Object)
+- uid: System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.Equals(Object, Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: "XXX"
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: 'XXX '
+    fullName: ', '
+  - uid: System.Object
+    name: "XXX"
+    fullName: System.Object
+    isExternal: true
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: "XXX"
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.GetHashCode()
+  commentId: M:System.Object.GetHashCode
+- uid: System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: "XXX"
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.GetType()
+  commentId: M:System.Object.GetType
+- uid: System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: "XXX"
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: "XXX"
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Object.MemberwiseClone()
+  commentId: M:System.Object.MemberwiseClone
+- uid: System
+  isExternal: false
+  name: "XXX"
+  fullName: System
+  nameWithType: System
+  commentId: N:System
+- uid: System.String
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.String
+  nameWithType: String
+  commentId: T:System.String
+- uid: System.Diagnostics.SourceLevels
+  parent: System.Diagnostics
+  isExternal: false
+  name: "XXX"
+  fullName: System.Diagnostics.SourceLevels
+  nameWithType: SourceLevels
+  commentId: T:System.Diagnostics.SourceLevels
+- uid: System.Diagnostics.Switch.OnValueChanged
+  parent: System.Diagnostics.Switch
+  isExternal: false
+  name: "XXX"
+  fullName: System.Diagnostics.Switch.OnValueChanged()
+  spec.csharp:
+  - uid: System.Diagnostics.Switch.OnValueChanged
+    name: "XXX"
+    fullName: System.Diagnostics.Switch.OnValueChanged
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  spec.vb:
+  - uid: System.Diagnostics.Switch.OnValueChanged
+    name: "XXX"
+    fullName: System.Diagnostics.Switch.OnValueChanged
+  - name: "XXX"
+    fullName: (
+  - name: "XXX"
+    fullName: )
+  nameWithType: Switch.OnValueChanged()
+  commentId: M:System.Diagnostics.Switch.OnValueChanged
+- uid: System.Diagnostics.TraceEventType
+  parent: System.Diagnostics
+  isExternal: false
+  name: "XXX"
+  fullName: System.Diagnostics.TraceEventType
+  nameWithType: TraceEventType
+  commentId: T:System.Diagnostics.TraceEventType
+- uid: System.Boolean
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.Boolean
+  nameWithType: Boolean
+  commentId: T:System.Boolean
+- uid: System.ArgumentException
+  parent: System
+  isExternal: false
+  name: "XXX"
+  fullName: System.ArgumentException
+  nameWithType: ArgumentException
+  commentId: T:System.ArgumentException
