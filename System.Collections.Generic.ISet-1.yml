@@ -18,7 +18,7 @@ items:
   langs:
   - csharp
   - vb
-  name: "XXX"
+  name: ISet<T>
   fullName: System.Collections.Generic.ISet<T>
   type: Interface
   source:
@@ -32,7 +32,7 @@ items:
   assemblies:
   - System.Runtime
   namespace: System.Collections.Generic
-  summary: "\n<p>Provides the base interface for the abstraction of sets.</p>\n"
+  summary: "$x$x$Xxxxxxxx xxx xxxx xxxxxxxxx xxx xxx xxxxxxxxxxx xx xxxx.$$x$$x"
   syntax:
     content: 'public interface ISet<T> : ICollection<T>, IEnumerable<T>, IEnumerable'
     content.vb: >-
@@ -40,7 +40,7 @@ items:
           Inherits ICollection(Of T), IEnumerable(Of T), IEnumerable
     typeParameters:
     - id: T
-      description: "\n<p>The type of elements in the set.</p>\n"
+      description: "$x$x$Xxx xxxx xx xxxxxxxx xx xxx xxx.$$x$$x"
   inheritedMembers:
   - System.Collections.Generic.ICollection{{T}}.Count
   - System.Collections.Generic.ICollection{{T}}.IsReadOnly
@@ -66,7 +66,7 @@ items:
   langs:
   - csharp
   - vb
-  name: "XXX"
+  name: Add(T)
   fullName: System.Collections.Generic.ISet<T>.Add(T)
   type: Method
   source:
@@ -80,17 +80,17 @@ items:
   assemblies:
   - System.Runtime
   namespace: System.Collections.Generic
-  summary: "\n<p>Adds an element to the current set and returns a value to indicate if the element was successfully added. </p>\n"
+  summary: "$x$x$Xxxx xx xxxxxxx xx xxx xxxxxxx xxx xxx xxxxxxx x xxxxx xx xxxxxxxx xx xxx xxxxxxx xxx xxxxxxxxxxxx xxxxx. $$x$$x"
   syntax:
     content: bool Add(T item)
     content.vb: Function Add(item As T) As Boolean
     parameters:
     - id: item
       type: '{T}'
-      description: "\n<p>The element to add to the set.</p>\n"
+      description: "$x$x$Xxx xxxxxxx xx xxx xx xxx xxx.$$x$$x"
     return:
       type: System.Boolean
-      description: "\n<p>\n<strong>true</strong> if the element is added to the set; <strong>false</strong> if the element is already in the set.</p>\n"
+      description: "$x$x$$x$xxxxxx$xxxx$$xxxxxx$ xx xxx xxxxxxx xx xxxxx xx xxx xxx$ $xxxxxx$xxxxx$$xxxxxx$ xx xxx xxxxxxx xx xxxxxxx xx xxx xxx.$$x$$x"
   fullName.vb: System.Collections.Generic.ISet(Of T).Add(T)
   nameWithType: ISet<T>.Add(T)
   nameWithType.vb: ISet(Of T).Add(T)
@@ -101,7 +101,7 @@ items:
   langs:
   - csharp
   - vb
-  name: "XXX"
+  name: ExceptWith(IEnumerable<T>)
   fullName: System.Collections.Generic.ISet<T>.ExceptWith(System.Collections.Generic.IEnumerable<T>)
   type: Method
   source:
@@ -115,18 +115,18 @@ items:
   assemblies:
   - System.Runtime
   namespace: System.Collections.Generic
-  summary: "\n<p>Removes all elements in the specified collection from the current set.</p>\n"
+  summary: "$x$x$Xxxxxxx xxx xxxxxxxx xx xxx xxxxxxxxx xxxxxxxxxx xxxx xxx xxxxxxx xxx.$$x$$x"
   syntax:
     content: void ExceptWith(IEnumerable<T> other)
     content.vb: Sub ExceptWith(other As IEnumerable(Of T))
     parameters:
     - id: other
       type: System.Collections.Generic.IEnumerable{{T}}
-      description: "\n<p>The collection of items to remove from the set.</p>\n"
+      description: "$x$x$Xxx xxxxxxxxxx xx xxxxx xx xxxxxx xxxx xxx xxx.$$x$$x"
   exceptions:
   - type: System.ArgumentNullException
     commentId: T:System.ArgumentNullException
-    description: "\n<p>\n<em>other</em> is <strong>null</strong>.</p>\n"
+    description: "$x$x$$x$xx$xxxxx$$xx$ xx $xxxxxx$xxxx$$xxxxxx$.$$x$$x"
   fullName.vb: System.Collections.Generic.ISet(Of T).ExceptWith(System.Collections.Generic.IEnumerable(Of T))
   name.vb: ExceptWith(IEnumerable(Of T))
   nameWithType: ISet<T>.ExceptWith(IEnumerable<T>)
@@ -138,7 +138,7 @@ items:
   langs:
   - csharp
   - vb
-  name: "XXX"
+  name: IntersectWith(IEnumerable<T>)
   fullName: System.Collections.Generic.ISet<T>.IntersectWith(System.Collections.Generic.IEnumerable<T>)
   type: Method
   source:
@@ -152,18 +152,18 @@ items:
   assemblies:
   - System.Runtime
   namespace: System.Collections.Generic
-  summary: "\n<p>Modifies the current set so that it contains only elements that are also in a specified collection.</p>\n"
+  summary: "$x$x$Xxxxxxxx xxx xxxxxxx xxx xx xxxx xx xxxxxxxx xxxx xxxxxxxx xxxx xxx xxxx xx x xxxxxxxxx xxxxxxxxxx.$$x$$x"
   syntax:
     content: void IntersectWith(IEnumerable<T> other)
     content.vb: Sub IntersectWith(other As IEnumerable(Of T))
     parameters:
     - id: other
       type: System.Collections.Generic.IEnumerable{{T}}
-      description: "\n<p>The collection to compare to the current set.</p>\n"
+      description: "$x$x$Xxx xxxxxxxxxx xx xxxxxxx xx xxx xxxxxxx xxx.$$x$$x"
   exceptions:
   - type: System.ArgumentNullException
     commentId: T:System.ArgumentNullException
-    description: "\n<p>\n<em>other</em> is <strong>null</strong>.</p>\n"
+    description: "$x$x$$x$xx$xxxxx$$xx$ xx $xxxxxx$xxxx$$xxxxxx$.$$x$$x"
   fullName.vb: System.Collections.Generic.ISet(Of T).IntersectWith(System.Collections.Generic.IEnumerable(Of T))
   name.vb: IntersectWith(IEnumerable(Of T))
   nameWithType: ISet<T>.IntersectWith(IEnumerable<T>)
@@ -175,7 +175,7 @@ items:
   langs:
   - csharp
   - vb
-  name: "XXX"
+  name: IsProperSubsetOf(IEnumerable<T>)
   fullName: System.Collections.Generic.ISet<T>.IsProperSubsetOf(System.Collections.Generic.IEnumerable<T>)
   type: Method
   source:
@@ -189,21 +189,21 @@ items:
   assemblies:
   - System.Runtime
   namespace: System.Collections.Generic
-  summary: "\n<p>Determines whether the current set is a proper (strict) subset of a specified collection.</p>\n"
+  summary: "$x$x$Xxxxxxxxxx xxxxxxx xxx xxxxxxx xxx xx x xxxxxx $xxxxxx$ xxxxxx xx x xxxxxxxxx xxxxxxxxxx.$$x$$x"
   syntax:
     content: bool IsProperSubsetOf(IEnumerable<T> other)
     content.vb: Function IsProperSubsetOf(other As IEnumerable(Of T)) As Boolean
     parameters:
     - id: other
       type: System.Collections.Generic.IEnumerable{{T}}
-      description: "\n<p>The collection to compare to the current set.</p>\n"
+      description: "$x$x$Xxx xxxxxxxxxx xx xxxxxxx xx xxx xxxxxxx xxx.$$x$$x"
     return:
       type: System.Boolean
-      description: "\n<p>\n<strong>true</strong> if the current set is a proper subset of <em>other</em>; otherwise, <strong>false</strong>.</p>\n"
+      description: "$x$x$$x$xxxxxx$xxxx$$xxxxxx$ xx xxx xxxxxxx xxx xx x xxxxxx xxxxxx xx $xx$xxxxx$$xx$$ xxxxxxxxx$ $xxxxxx$xxxxx$$xxxxxx$.$$x$$x"
   exceptions:
   - type: System.ArgumentNullException
     commentId: T:System.ArgumentNullException
-    description: "\n<p>\n<em>other</em> is <strong>null</strong>.</p>\n"
+    description: "$x$x$$x$xx$xxxxx$$xx$ xx $xxxxxx$xxxx$$xxxxxx$.$$x$$x"
   fullName.vb: System.Collections.Generic.ISet(Of T).IsProperSubsetOf(System.Collections.Generic.IEnumerable(Of T))
   name.vb: IsProperSubsetOf(IEnumerable(Of T))
   nameWithType: ISet<T>.IsProperSubsetOf(IEnumerable<T>)
@@ -215,7 +215,7 @@ items:
   langs:
   - csharp
   - vb
-  name: "XXX"
+  name: IsProperSupersetOf(IEnumerable<T>)
   fullName: System.Collections.Generic.ISet<T>.IsProperSupersetOf(System.Collections.Generic.IEnumerable<T>)
   type: Method
   source:
@@ -229,21 +229,21 @@ items:
   assemblies:
   - System.Runtime
   namespace: System.Collections.Generic
-  summary: "\n<p>Determines whether the current set is a proper (strict) superset of a specified collection.</p>\n"
+  summary: "$x$x$Xxxxxxxxxx xxxxxxx xxx xxxxxxx xxx xx x xxxxxx $xxxxxx$ xxxxxxxx xx x xxxxxxxxx xxxxxxxxxx.$$x$$x"
   syntax:
     content: bool IsProperSupersetOf(IEnumerable<T> other)
     content.vb: Function IsProperSupersetOf(other As IEnumerable(Of T)) As Boolean
     parameters:
     - id: other
       type: System.Collections.Generic.IEnumerable{{T}}
-      description: "\n<p>The collection to compare to the current set. </p>\n"
+      description: "$x$x$Xxx xxxxxxxxxx xx xxxxxxx xx xxx xxxxxxx xxx. $$x$$x"
     return:
       type: System.Boolean
-      description: "\n<p>\n<strong>true</strong> if the current set is a proper superset of <em>other</em>; otherwise, <strong>false</strong>.</p>\n"
+      description: "$x$x$$x$xxxxxx$xxxx$$xxxxxx$ xx xxx xxxxxxx xxx xx x xxxxxx xxxxxxxx xx $xx$xxxxx$$xx$$ xxxxxxxxx$ $xxxxxx$xxxxx$$xxxxxx$.$$x$$x"
   exceptions:
   - type: System.ArgumentNullException
     commentId: T:System.ArgumentNullException
-    description: "\n<p>\n<em>other</em> is <strong>null</strong>.</p>\n"
+    description: "$x$x$$x$xx$xxxxx$$xx$ xx $xxxxxx$xxxx$$xxxxxx$.$$x$$x"
   fullName.vb: System.Collections.Generic.ISet(Of T).IsProperSupersetOf(System.Collections.Generic.IEnumerable(Of T))
   name.vb: IsProperSupersetOf(IEnumerable(Of T))
   nameWithType: ISet<T>.IsProperSupersetOf(IEnumerable<T>)
@@ -255,7 +255,7 @@ items:
   langs:
   - csharp
   - vb
-  name: "XXX"
+  name: IsSubsetOf(IEnumerable<T>)
   fullName: System.Collections.Generic.ISet<T>.IsSubsetOf(System.Collections.Generic.IEnumerable<T>)
   type: Method
   source:
@@ -269,21 +269,21 @@ items:
   assemblies:
   - System.Runtime
   namespace: System.Collections.Generic
-  summary: "\n<p>Determines whether a set is a subset of a specified collection.</p>\n"
+  summary: "$x$x$Xxxxxxxxxx xxxxxxx x xxx xx x xxxxxx xx x xxxxxxxxx xxxxxxxxxx.$$x$$x"
   syntax:
     content: bool IsSubsetOf(IEnumerable<T> other)
     content.vb: Function IsSubsetOf(other As IEnumerable(Of T)) As Boolean
     parameters:
     - id: other
       type: System.Collections.Generic.IEnumerable{{T}}
-      description: "\n<p>The collection to compare to the current set.</p>\n"
+      description: "$x$x$Xxx xxxxxxxxxx xx xxxxxxx xx xxx xxxxxxx xxx.$$x$$x"
     return:
       type: System.Boolean
-      description: "\n<p>\n<strong>true</strong> if the current set is a subset of <em>other</em>; otherwise, <strong>false</strong>.</p>\n"
+      description: "$x$x$$x$xxxxxx$xxxx$$xxxxxx$ xx xxx xxxxxxx xxx xx x xxxxxx xx $xx$xxxxx$$xx$$ xxxxxxxxx$ $xxxxxx$xxxxx$$xxxxxx$.$$x$$x"
   exceptions:
   - type: System.ArgumentNullException
     commentId: T:System.ArgumentNullException
-    description: "\n<p>\n<em>other</em> is <strong>null</strong>.</p>\n"
+    description: "$x$x$$x$xx$xxxxx$$xx$ xx $xxxxxx$xxxx$$xxxxxx$.$$x$$x"
   fullName.vb: System.Collections.Generic.ISet(Of T).IsSubsetOf(System.Collections.Generic.IEnumerable(Of T))
   name.vb: IsSubsetOf(IEnumerable(Of T))
   nameWithType: ISet<T>.IsSubsetOf(IEnumerable<T>)
@@ -295,7 +295,7 @@ items:
   langs:
   - csharp
   - vb
-  name: "XXX"
+  name: IsSupersetOf(IEnumerable<T>)
   fullName: System.Collections.Generic.ISet<T>.IsSupersetOf(System.Collections.Generic.IEnumerable<T>)
   type: Method
   source:
@@ -309,21 +309,21 @@ items:
   assemblies:
   - System.Runtime
   namespace: System.Collections.Generic
-  summary: "\n<p>Determines whether the current set is a superset of a specified collection.</p>\n"
+  summary: "$x$x$Xxxxxxxxxx xxxxxxx xxx xxxxxxx xxx xx x xxxxxxxx xx x xxxxxxxxx xxxxxxxxxx.$$x$$x"
   syntax:
     content: bool IsSupersetOf(IEnumerable<T> other)
     content.vb: Function IsSupersetOf(other As IEnumerable(Of T)) As Boolean
     parameters:
     - id: other
       type: System.Collections.Generic.IEnumerable{{T}}
-      description: "\n<p>The collection to compare to the current set.</p>\n"
+      description: "$x$x$Xxx xxxxxxxxxx xx xxxxxxx xx xxx xxxxxxx xxx.$$x$$x"
     return:
       type: System.Boolean
-      description: "\n<p>\n<strong>true</strong> if the current set is a superset of <em>other</em>; otherwise, <strong>false</strong>.</p>\n"
+      description: "$x$x$$x$xxxxxx$xxxx$$xxxxxx$ xx xxx xxxxxxx xxx xx x xxxxxxxx xx $xx$xxxxx$$xx$$ xxxxxxxxx$ $xxxxxx$xxxxx$$xxxxxx$.$$x$$x"
   exceptions:
   - type: System.ArgumentNullException
     commentId: T:System.ArgumentNullException
-    description: "\n<p>\n<em>other</em> is <strong>null</strong>.</p>\n"
+    description: "$x$x$$x$xx$xxxxx$$xx$ xx $xxxxxx$xxxx$$xxxxxx$.$$x$$x"
   fullName.vb: System.Collections.Generic.ISet(Of T).IsSupersetOf(System.Collections.Generic.IEnumerable(Of T))
   name.vb: IsSupersetOf(IEnumerable(Of T))
   nameWithType: ISet<T>.IsSupersetOf(IEnumerable<T>)
@@ -335,7 +335,7 @@ items:
   langs:
   - csharp
   - vb
-  name: "XXX"
+  name: Overlaps(IEnumerable<T>)
   fullName: System.Collections.Generic.ISet<T>.Overlaps(System.Collections.Generic.IEnumerable<T>)
   type: Method
   source:
@@ -349,21 +349,21 @@ items:
   assemblies:
   - System.Runtime
   namespace: System.Collections.Generic
-  summary: "\n<p>Determines whether the current set overlaps with the specified collection.</p>\n"
+  summary: "$x$x$Xxxxxxxxxx xxxxxxx xxx xxxxxxx xxx xxxxxxxx xxxx xxx xxxxxxxxx xxxxxxxxxx.$$x$$x"
   syntax:
     content: bool Overlaps(IEnumerable<T> other)
     content.vb: Function Overlaps(other As IEnumerable(Of T)) As Boolean
     parameters:
     - id: other
       type: System.Collections.Generic.IEnumerable{{T}}
-      description: "\n<p>The collection to compare to the current set.</p>\n"
+      description: "$x$x$Xxx xxxxxxxxxx xx xxxxxxx xx xxx xxxxxxx xxx.$$x$$x"
     return:
       type: System.Boolean
-      description: "\n<p>\n<strong>true</strong> if the current set and <em>other</em> share at least one common element; otherwise, <strong>false</strong>.</p>\n"
+      description: "$x$x$$x$xxxxxx$xxxx$$xxxxxx$ xx xxx xxxxxxx xxx xxx $xx$xxxxx$$xx$ xxxxx xx xxxxx xxx xxxxxx xxxxxxx$ xxxxxxxxx$ $xxxxxx$xxxxx$$xxxxxx$.$$x$$x"
   exceptions:
   - type: System.ArgumentNullException
     commentId: T:System.ArgumentNullException
-    description: "\n<p>\n<em>other</em> is <strong>null</strong>.</p>\n"
+    description: "$x$x$$x$xx$xxxxx$$xx$ xx $xxxxxx$xxxx$$xxxxxx$.$$x$$x"
   fullName.vb: System.Collections.Generic.ISet(Of T).Overlaps(System.Collections.Generic.IEnumerable(Of T))
   name.vb: Overlaps(IEnumerable(Of T))
   nameWithType: ISet<T>.Overlaps(IEnumerable<T>)
@@ -375,7 +375,7 @@ items:
   langs:
   - csharp
   - vb
-  name: "XXX"
+  name: SetEquals(IEnumerable<T>)
   fullName: System.Collections.Generic.ISet<T>.SetEquals(System.Collections.Generic.IEnumerable<T>)
   type: Method
   source:
@@ -389,21 +389,21 @@ items:
   assemblies:
   - System.Runtime
   namespace: System.Collections.Generic
-  summary: "\n<p>Determines whether the current set and the specified collection contain the same elements.</p>\n"
+  summary: "$x$x$Xxxxxxxxxx xxxxxxx xxx xxxxxxx xxx xxx xxx xxxxxxxxx xxxxxxxxxx xxxxxxx xxx xxxx xxxxxxxx.$$x$$x"
   syntax:
     content: bool SetEquals(IEnumerable<T> other)
     content.vb: Function SetEquals(other As IEnumerable(Of T)) As Boolean
     parameters:
     - id: other
       type: System.Collections.Generic.IEnumerable{{T}}
-      description: "\n<p>The collection to compare to the current set.</p>\n"
+      description: "$x$x$Xxx xxxxxxxxxx xx xxxxxxx xx xxx xxxxxxx xxx.$$x$$x"
     return:
       type: System.Boolean
-      description: "\n<p>\n<strong>true</strong> if the current set is equal to <em>other</em>; otherwise, false.</p>\n"
+      description: "$x$x$$x$xxxxxx$xxxx$$xxxxxx$ xx xxx xxxxxxx xxx xx xxxxx xx $xx$xxxxx$$xx$$ xxxxxxxxx$ xxxxx.$$x$$x"
   exceptions:
   - type: System.ArgumentNullException
     commentId: T:System.ArgumentNullException
-    description: "\n<p>\n<em>other</em> is <strong>null</strong>.</p>\n"
+    description: "$x$x$$x$xx$xxxxx$$xx$ xx $xxxxxx$xxxx$$xxxxxx$.$$x$$x"
   fullName.vb: System.Collections.Generic.ISet(Of T).SetEquals(System.Collections.Generic.IEnumerable(Of T))
   name.vb: SetEquals(IEnumerable(Of T))
   nameWithType: ISet<T>.SetEquals(IEnumerable<T>)
@@ -415,7 +415,7 @@ items:
   langs:
   - csharp
   - vb
-  name: "XXX"
+  name: SymmetricExceptWith(IEnumerable<T>)
   fullName: System.Collections.Generic.ISet<T>.SymmetricExceptWith(System.Collections.Generic.IEnumerable<T>)
   type: Method
   source:
@@ -429,18 +429,18 @@ items:
   assemblies:
   - System.Runtime
   namespace: System.Collections.Generic
-  summary: "\n<p>Modifies the current set so that it contains only elements that are present either in the current set or in the specified collection, but not both. </p>\n"
+  summary: "$x$x$Xxxxxxxx xxx xxxxxxx xxx xx xxxx xx xxxxxxxx xxxx xxxxxxxx xxxx xxx xxxxxxx xxxxxx xx xxx xxxxxxx xxx xx xx xxx xxxxxxxxx xxxxxxxxxx$ xxx xxx xxxx. $$x$$x"
   syntax:
     content: void SymmetricExceptWith(IEnumerable<T> other)
     content.vb: Sub SymmetricExceptWith(other As IEnumerable(Of T))
     parameters:
     - id: other
       type: System.Collections.Generic.IEnumerable{{T}}
-      description: "\n<p>The collection to compare to the current set.</p>\n"
+      description: "$x$x$Xxx xxxxxxxxxx xx xxxxxxx xx xxx xxxxxxx xxx.$$x$$x"
   exceptions:
   - type: System.ArgumentNullException
     commentId: T:System.ArgumentNullException
-    description: "\n<p>\n<em>other</em> is <strong>null</strong>.</p>\n"
+    description: "$x$x$$x$xx$xxxxx$$xx$ xx $xxxxxx$xxxx$$xxxxxx$.$$x$$x"
   fullName.vb: System.Collections.Generic.ISet(Of T).SymmetricExceptWith(System.Collections.Generic.IEnumerable(Of T))
   name.vb: SymmetricExceptWith(IEnumerable(Of T))
   nameWithType: ISet<T>.SymmetricExceptWith(IEnumerable<T>)
@@ -452,7 +452,7 @@ items:
   langs:
   - csharp
   - vb
-  name: "XXX"
+  name: UnionWith(IEnumerable<T>)
   fullName: System.Collections.Generic.ISet<T>.UnionWith(System.Collections.Generic.IEnumerable<T>)
   type: Method
   source:
@@ -466,18 +466,18 @@ items:
   assemblies:
   - System.Runtime
   namespace: System.Collections.Generic
-  summary: "\n<p>Modifies the current set so that it contains all elements that are present in the current set, in the specified collection, or in both.</p>\n"
+  summary: "$x$x$Xxxxxxxx xxx xxxxxxx xxx xx xxxx xx xxxxxxxx xxx xxxxxxxx xxxx xxx xxxxxxx xx xxx xxxxxxx xxx$ xx xxx xxxxxxxxx xxxxxxxxxx$ xx xx xxxx.$$x$$x"
   syntax:
     content: void UnionWith(IEnumerable<T> other)
     content.vb: Sub UnionWith(other As IEnumerable(Of T))
     parameters:
     - id: other
       type: System.Collections.Generic.IEnumerable{{T}}
-      description: "\n<p>The collection to compare to the current set.</p>\n"
+      description: "$x$x$Xxx xxxxxxxxxx xx xxxxxxx xx xxx xxxxxxx xxx.$$x$$x"
   exceptions:
   - type: System.ArgumentNullException
     commentId: T:System.ArgumentNullException
-    description: "\n<p>\n<em>other</em> is <strong>null</strong>.</p>\n"
+    description: "$x$x$$x$xx$xxxxx$$xx$ xx $xxxxxx$xxxx$$xxxxxx$.$$x$$x"
   fullName.vb: System.Collections.Generic.ISet(Of T).UnionWith(System.Collections.Generic.IEnumerable(Of T))
   name.vb: UnionWith(IEnumerable(Of T))
   nameWithType: ISet<T>.UnionWith(IEnumerable<T>)
@@ -485,14 +485,14 @@ items:
 references:
 - uid: System.Collections.Generic
   isExternal: false
-  name: "XXX"
+  name: System.Collections.Generic
   fullName: System.Collections.Generic
   commentId: N:System.Collections.Generic
   nameWithType: System.Collections.Generic
 - uid: System.Collections.Generic.ICollection{{T}}.Count
   parent: System.Collections.Generic.ICollection{{T}}
   definition: System.Collections.Generic.ICollection`1.Count
-  name: "XXX"
+  name: Count
   fullName: System.Collections.Generic.ICollection<T>.Count
   fullname.vb: System.Collections.Generic.ICollection(Of T).Count
   commentId: P:System.Collections.Generic.ICollection{`0}.Count
@@ -501,7 +501,7 @@ references:
 - uid: System.Collections.Generic.ICollection{{T}}.IsReadOnly
   parent: System.Collections.Generic.ICollection{{T}}
   definition: System.Collections.Generic.ICollection`1.IsReadOnly
-  name: "XXX"
+  name: IsReadOnly
   fullName: System.Collections.Generic.ICollection<T>.IsReadOnly
   fullname.vb: System.Collections.Generic.ICollection(Of T).IsReadOnly
   commentId: P:System.Collections.Generic.ICollection{`0}.IsReadOnly
@@ -510,24 +510,24 @@ references:
 - uid: System.Collections.Generic.ICollection{{T}}.Clear
   parent: System.Collections.Generic.ICollection{{T}}
   definition: System.Collections.Generic.ICollection`1.Clear
-  name: "XXX"
+  name: Clear()
   fullName: System.Collections.Generic.ICollection<T>.Clear()
   fullname.vb: System.Collections.Generic.ICollection(Of T).Clear()
   spec.csharp:
   - uid: System.Collections.Generic.ICollection`1.Clear
-    name: "XXX"
+    name: Clear
     fullName: System.Collections.Generic.ICollection<T>.Clear
-  - name: "XXX"
+  - name: (
     fullName: (
-  - name: "XXX"
+  - name: )
     fullName: )
   spec.vb:
   - uid: System.Collections.Generic.ICollection`1.Clear
-    name: "XXX"
+    name: Clear
     fullName: System.Collections.Generic.ICollection(Of T).Clear
-  - name: "XXX"
+  - name: (
     fullName: (
-  - name: "XXX"
+  - name: )
     fullName: )
   commentId: M:System.Collections.Generic.ICollection{`0}.Clear
   nameWithType: ICollection<T>.Clear()
@@ -535,28 +535,28 @@ references:
 - uid: System.Collections.Generic.ICollection{{T}}.Contains({T})
   parent: System.Collections.Generic.ICollection{{T}}
   definition: System.Collections.Generic.ICollection`1.Contains(`0)
-  name: "XXX"
+  name: Contains(T)
   fullName: System.Collections.Generic.ICollection<T>.Contains(T)
   fullname.vb: System.Collections.Generic.ICollection(Of T).Contains(T)
   spec.csharp:
   - uid: System.Collections.Generic.ICollection`1.Contains(`0)
-    name: "XXX"
+    name: Contains
     fullName: System.Collections.Generic.ICollection<T>.Contains
-  - name: "XXX"
+  - name: (
     fullName: (
-  - name: "XXX"
+  - name: T
     fullName: T
-  - name: "XXX"
+  - name: )
     fullName: )
   spec.vb:
   - uid: System.Collections.Generic.ICollection`1.Contains(`0)
-    name: "XXX"
+    name: Contains
     fullName: System.Collections.Generic.ICollection(Of T).Contains
-  - name: "XXX"
+  - name: (
     fullName: (
-  - name: "XXX"
+  - name: T
     fullName: T
-  - name: "XXX"
+  - name: )
     fullName: )
   commentId: M:System.Collections.Generic.ICollection{`0}.Contains(`0)
   nameWithType: ICollection<T>.Contains(T)
@@ -564,45 +564,45 @@ references:
 - uid: System.Collections.Generic.ICollection{{T}}.CopyTo({T}[],System.Int32)
   parent: System.Collections.Generic.ICollection{{T}}
   definition: System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
-  name: "XXX"
+  name: CopyTo(T[], Int32)
   fullName: System.Collections.Generic.ICollection<T>.CopyTo(T[], System.Int32)
   fullname.vb: System.Collections.Generic.ICollection(Of T).CopyTo(T(), System.Int32)
   name.vb: CopyTo(T(), Int32)
   spec.csharp:
   - uid: System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
-    name: "XXX"
+    name: CopyTo
     fullName: System.Collections.Generic.ICollection<T>.CopyTo
-  - name: "XXX"
+  - name: (
     fullName: (
-  - name: "XXX"
+  - name: T
     fullName: T
-  - name: 'XXX'
+  - name: '[]'
     fullName: '[]'
-  - name: 'XXX '
+  - name: ', '
     fullName: ', '
   - uid: System.Int32
-    name: "XXX"
+    name: Int32
     fullName: System.Int32
     isExternal: true
-  - name: "XXX"
+  - name: )
     fullName: )
   spec.vb:
   - uid: System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
-    name: "XXX"
+    name: CopyTo
     fullName: System.Collections.Generic.ICollection(Of T).CopyTo
-  - name: "XXX"
+  - name: (
     fullName: (
-  - name: "XXX"
+  - name: T
     fullName: T
-  - name: "XXX"
+  - name: ()
     fullName: ()
-  - name: 'XXX '
+  - name: ', '
     fullName: ', '
   - uid: System.Int32
-    name: "XXX"
+    name: Int32
     fullName: System.Int32
     isExternal: true
-  - name: "XXX"
+  - name: )
     fullName: )
   commentId: M:System.Collections.Generic.ICollection{`0}.CopyTo(`0[],System.Int32)
   nameWithType: ICollection<T>.CopyTo(T[], Int32)
@@ -610,28 +610,28 @@ references:
 - uid: System.Collections.Generic.ICollection{{T}}.Remove({T})
   parent: System.Collections.Generic.ICollection{{T}}
   definition: System.Collections.Generic.ICollection`1.Remove(`0)
-  name: "XXX"
+  name: Remove(T)
   fullName: System.Collections.Generic.ICollection<T>.Remove(T)
   fullname.vb: System.Collections.Generic.ICollection(Of T).Remove(T)
   spec.csharp:
   - uid: System.Collections.Generic.ICollection`1.Remove(`0)
-    name: "XXX"
+    name: Remove
     fullName: System.Collections.Generic.ICollection<T>.Remove
-  - name: "XXX"
+  - name: (
     fullName: (
-  - name: "XXX"
+  - name: T
     fullName: T
-  - name: "XXX"
+  - name: )
     fullName: )
   spec.vb:
   - uid: System.Collections.Generic.ICollection`1.Remove(`0)
-    name: "XXX"
+    name: Remove
     fullName: System.Collections.Generic.ICollection(Of T).Remove
-  - name: "XXX"
+  - name: (
     fullName: (
-  - name: "XXX"
+  - name: T
     fullName: T
-  - name: "XXX"
+  - name: )
     fullName: )
   commentId: M:System.Collections.Generic.ICollection{`0}.Remove(`0)
   nameWithType: ICollection<T>.Remove(T)
@@ -639,31 +639,31 @@ references:
 - uid: System.Collections.Generic.IEnumerable{{T}}.GetEnumerator
   parent: System.Collections.Generic.IEnumerable{{T}}
   definition: System.Collections.Generic.IEnumerable`1.GetEnumerator
-  name: "XXX"
+  name: GetEnumerator()
   fullName: System.Collections.Generic.IEnumerable<T>.GetEnumerator()
   fullname.vb: System.Collections.Generic.IEnumerable(Of T).GetEnumerator()
   spec.csharp:
   - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
-    name: "XXX"
+    name: GetEnumerator
     fullName: System.Collections.Generic.IEnumerable<T>.GetEnumerator
-  - name: "XXX"
+  - name: (
     fullName: (
-  - name: "XXX"
+  - name: )
     fullName: )
   spec.vb:
   - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
-    name: "XXX"
+    name: GetEnumerator
     fullName: System.Collections.Generic.IEnumerable(Of T).GetEnumerator
-  - name: "XXX"
+  - name: (
     fullName: (
-  - name: "XXX"
+  - name: )
     fullName: )
   commentId: M:System.Collections.Generic.IEnumerable{`0}.GetEnumerator
   nameWithType: IEnumerable<T>.GetEnumerator()
   nameWithType.vb: IEnumerable(Of T).GetEnumerator()
 - uid: System.Collections.Generic.ICollection`1.Count
   isExternal: false
-  name: "XXX"
+  name: Count
   fullName: System.Collections.Generic.ICollection<T>.Count
   fullname.vb: System.Collections.Generic.ICollection(Of T).Count
   commentId: P:System.Collections.Generic.ICollection`1.Count
@@ -672,36 +672,36 @@ references:
 - uid: System.Collections.Generic.ICollection{{T}}
   parent: System.Collections.Generic
   definition: System.Collections.Generic.ICollection`1
-  name: "XXX"
+  name: ICollection<T>
   fullName: System.Collections.Generic.ICollection<T>
   fullname.vb: System.Collections.Generic.ICollection(Of T)
   name.vb: ICollection(Of T)
   spec.csharp:
   - uid: System.Collections.Generic.ICollection`1
-    name: "XXX"
+    name: ICollection
     fullName: System.Collections.Generic.ICollection
-  - name: "<"
+  - name: <
     fullName: <
-  - name: "XXX"
+  - name: T
     fullName: T
   - name: '>'
     fullName: '>'
   spec.vb:
   - uid: System.Collections.Generic.ICollection`1
-    name: "XXX"
+    name: ICollection
     fullName: System.Collections.Generic.ICollection
-  - name: 'XXX '
+  - name: '(Of '
     fullName: '(Of '
-  - name: "XXX"
+  - name: T
     fullName: T
-  - name: "XXX"
+  - name: )
     fullName: )
   commentId: T:System.Collections.Generic.ICollection{`0}
   nameWithType: ICollection<T>
   nameWithType.vb: ICollection(Of T)
 - uid: System.Collections.Generic.ICollection`1.IsReadOnly
   isExternal: false
-  name: "XXX"
+  name: IsReadOnly
   fullName: System.Collections.Generic.ICollection<T>.IsReadOnly
   fullname.vb: System.Collections.Generic.ICollection(Of T).IsReadOnly
   commentId: P:System.Collections.Generic.ICollection`1.IsReadOnly
@@ -709,149 +709,149 @@ references:
   nameWithType.vb: ICollection(Of T).IsReadOnly
 - uid: System.Collections.Generic.ICollection`1.Clear
   isExternal: false
-  name: "XXX"
+  name: Clear()
   fullName: System.Collections.Generic.ICollection<T>.Clear()
   fullname.vb: System.Collections.Generic.ICollection(Of T).Clear()
   spec.csharp:
   - uid: System.Collections.Generic.ICollection`1.Clear
-    name: "XXX"
+    name: Clear
     fullName: System.Collections.Generic.ICollection<T>.Clear
-  - name: "XXX"
+  - name: (
     fullName: (
-  - name: "XXX"
+  - name: )
     fullName: )
   spec.vb:
   - uid: System.Collections.Generic.ICollection`1.Clear
-    name: "XXX"
+    name: Clear
     fullName: System.Collections.Generic.ICollection(Of T).Clear
-  - name: "XXX"
+  - name: (
     fullName: (
-  - name: "XXX"
+  - name: )
     fullName: )
   commentId: M:System.Collections.Generic.ICollection`1.Clear
   nameWithType: ICollection<T>.Clear()
   nameWithType.vb: ICollection(Of T).Clear()
 - uid: System.Collections.Generic.ICollection`1.Contains(`0)
   isExternal: false
-  name: "XXX"
+  name: Contains(T)
   fullName: System.Collections.Generic.ICollection<T>.Contains(T)
   fullname.vb: System.Collections.Generic.ICollection(Of T).Contains(T)
   spec.csharp:
   - uid: System.Collections.Generic.ICollection`1.Contains(`0)
-    name: "XXX"
+    name: Contains
     fullName: System.Collections.Generic.ICollection<T>.Contains
-  - name: "XXX"
+  - name: (
     fullName: (
-  - name: "XXX"
+  - name: T
     fullName: T
-  - name: "XXX"
+  - name: )
     fullName: )
   spec.vb:
   - uid: System.Collections.Generic.ICollection`1.Contains(`0)
-    name: "XXX"
+    name: Contains
     fullName: System.Collections.Generic.ICollection(Of T).Contains
-  - name: "XXX"
+  - name: (
     fullName: (
-  - name: "XXX"
+  - name: T
     fullName: T
-  - name: "XXX"
+  - name: )
     fullName: )
   commentId: M:System.Collections.Generic.ICollection`1.Contains(`0)
   nameWithType: ICollection<T>.Contains(T)
   nameWithType.vb: ICollection(Of T).Contains(T)
 - uid: System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
   isExternal: true
-  name: "XXX"
+  name: CopyTo(T[], Int32)
   fullName: System.Collections.Generic.ICollection<T>.CopyTo(T[], System.Int32)
   fullname.vb: System.Collections.Generic.ICollection(Of T).CopyTo(T(), System.Int32)
   name.vb: CopyTo(T(), Int32)
   spec.csharp:
   - uid: System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
-    name: "XXX"
+    name: CopyTo
     fullName: System.Collections.Generic.ICollection<T>.CopyTo
-  - name: "XXX"
+  - name: (
     fullName: (
-  - name: "XXX"
+  - name: T
     fullName: T
-  - name: 'XXX'
+  - name: '[]'
     fullName: '[]'
-  - name: 'XXX '
+  - name: ', '
     fullName: ', '
   - uid: System.Int32
-    name: "XXX"
+    name: Int32
     fullName: System.Int32
     isExternal: true
-  - name: "XXX"
+  - name: )
     fullName: )
   spec.vb:
   - uid: System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
-    name: "XXX"
+    name: CopyTo
     fullName: System.Collections.Generic.ICollection(Of T).CopyTo
-  - name: "XXX"
+  - name: (
     fullName: (
-  - name: "XXX"
+  - name: T
     fullName: T
-  - name: "XXX"
+  - name: ()
     fullName: ()
-  - name: 'XXX '
+  - name: ', '
     fullName: ', '
   - uid: System.Int32
-    name: "XXX"
+    name: Int32
     fullName: System.Int32
     isExternal: true
-  - name: "XXX"
+  - name: )
     fullName: )
   commentId: M:System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
   nameWithType: ICollection<T>.CopyTo(T[], Int32)
   nameWithType.vb: ICollection(Of T).CopyTo(T(), Int32)
 - uid: System.Collections.Generic.ICollection`1.Remove(`0)
   isExternal: false
-  name: "XXX"
+  name: Remove(T)
   fullName: System.Collections.Generic.ICollection<T>.Remove(T)
   fullname.vb: System.Collections.Generic.ICollection(Of T).Remove(T)
   spec.csharp:
   - uid: System.Collections.Generic.ICollection`1.Remove(`0)
-    name: "XXX"
+    name: Remove
     fullName: System.Collections.Generic.ICollection<T>.Remove
-  - name: "XXX"
+  - name: (
     fullName: (
-  - name: "XXX"
+  - name: T
     fullName: T
-  - name: "XXX"
+  - name: )
     fullName: )
   spec.vb:
   - uid: System.Collections.Generic.ICollection`1.Remove(`0)
-    name: "XXX"
+    name: Remove
     fullName: System.Collections.Generic.ICollection(Of T).Remove
-  - name: "XXX"
+  - name: (
     fullName: (
-  - name: "XXX"
+  - name: T
     fullName: T
-  - name: "XXX"
+  - name: )
     fullName: )
   commentId: M:System.Collections.Generic.ICollection`1.Remove(`0)
   nameWithType: ICollection<T>.Remove(T)
   nameWithType.vb: ICollection(Of T).Remove(T)
 - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
   isExternal: false
-  name: "XXX"
+  name: GetEnumerator()
   fullName: System.Collections.Generic.IEnumerable<T>.GetEnumerator()
   fullname.vb: System.Collections.Generic.IEnumerable(Of T).GetEnumerator()
   spec.csharp:
   - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
-    name: "XXX"
+    name: GetEnumerator
     fullName: System.Collections.Generic.IEnumerable<T>.GetEnumerator
-  - name: "XXX"
+  - name: (
     fullName: (
-  - name: "XXX"
+  - name: )
     fullName: )
   spec.vb:
   - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
-    name: "XXX"
+    name: GetEnumerator
     fullName: System.Collections.Generic.IEnumerable(Of T).GetEnumerator
-  - name: "XXX"
+  - name: (
     fullName: (
-  - name: "XXX"
+  - name: )
     fullName: )
   commentId: M:System.Collections.Generic.IEnumerable`1.GetEnumerator
   nameWithType: IEnumerable<T>.GetEnumerator()
@@ -859,118 +859,118 @@ references:
 - uid: System.Collections.Generic.IEnumerable{{T}}
   parent: System.Collections.Generic
   definition: System.Collections.Generic.IEnumerable`1
-  name: "XXX"
+  name: IEnumerable<T>
   fullName: System.Collections.Generic.IEnumerable<T>
   fullname.vb: System.Collections.Generic.IEnumerable(Of T)
   name.vb: IEnumerable(Of T)
   spec.csharp:
   - uid: System.Collections.Generic.IEnumerable`1
-    name: "XXX"
+    name: IEnumerable
     fullName: System.Collections.Generic.IEnumerable
-  - name: "<"
+  - name: <
     fullName: <
-  - name: "XXX"
+  - name: T
     fullName: T
   - name: '>'
     fullName: '>'
   spec.vb:
   - uid: System.Collections.Generic.IEnumerable`1
-    name: "XXX"
+    name: IEnumerable
     fullName: System.Collections.Generic.IEnumerable
-  - name: 'XXX '
+  - name: '(Of '
     fullName: '(Of '
-  - name: "XXX"
+  - name: T
     fullName: T
-  - name: "XXX"
+  - name: )
     fullName: )
   commentId: T:System.Collections.Generic.IEnumerable{`0}
   nameWithType: IEnumerable<T>
   nameWithType.vb: IEnumerable(Of T)
 - uid: System.Collections.Generic.ICollection`1
   isExternal: false
-  name: "XXX"
+  name: ICollection<T>
   fullName: System.Collections.Generic.ICollection<T>
   fullname.vb: System.Collections.Generic.ICollection(Of T)
   name.vb: ICollection(Of T)
   spec.csharp:
   - uid: System.Collections.Generic.ICollection`1
-    name: "XXX"
+    name: ICollection
     fullName: System.Collections.Generic.ICollection
-  - name: "<"
+  - name: <
     fullName: <
-  - name: "XXX"
+  - name: T
     fullName: T
   - name: '>'
     fullName: '>'
   spec.vb:
   - uid: System.Collections.Generic.ICollection`1
-    name: "XXX"
+    name: ICollection
     fullName: System.Collections.Generic.ICollection
-  - name: 'XXX '
+  - name: '(Of '
     fullName: '(Of '
-  - name: "XXX"
+  - name: T
     fullName: T
-  - name: "XXX"
+  - name: )
     fullName: )
   commentId: T:System.Collections.Generic.ICollection`1
   nameWithType: ICollection<T>
   nameWithType.vb: ICollection(Of T)
 - uid: System.Collections.Generic.IEnumerable`1
   isExternal: false
-  name: "XXX"
+  name: IEnumerable<T>
   fullName: System.Collections.Generic.IEnumerable<T>
   fullname.vb: System.Collections.Generic.IEnumerable(Of T)
   name.vb: IEnumerable(Of T)
   spec.csharp:
   - uid: System.Collections.Generic.IEnumerable`1
-    name: "XXX"
+    name: IEnumerable
     fullName: System.Collections.Generic.IEnumerable
-  - name: "<"
+  - name: <
     fullName: <
-  - name: "XXX"
+  - name: T
     fullName: T
   - name: '>'
     fullName: '>'
   spec.vb:
   - uid: System.Collections.Generic.IEnumerable`1
-    name: "XXX"
+    name: IEnumerable
     fullName: System.Collections.Generic.IEnumerable
-  - name: 'XXX '
+  - name: '(Of '
     fullName: '(Of '
-  - name: "XXX"
+  - name: T
     fullName: T
-  - name: "XXX"
+  - name: )
     fullName: )
   commentId: T:System.Collections.Generic.IEnumerable`1
   nameWithType: IEnumerable<T>
   nameWithType.vb: IEnumerable(Of T)
 - uid: '{T}'
   definition: T
-  name: "XXX"
+  name: T
   fullName: T
   commentId: '!:T'
   nameWithType: T
 - uid: System.Boolean
   parent: System
   isExternal: false
-  name: "XXX"
+  name: Boolean
   fullName: System.Boolean
   commentId: T:System.Boolean
   nameWithType: Boolean
 - uid: T
   isExternal: false
-  name: "XXX"
+  name: T
   fullName: T
   nameWithType: T
 - uid: System
   isExternal: false
-  name: "XXX"
+  name: System
   fullName: System
   commentId: N:System
   nameWithType: System
 - uid: System.ArgumentNullException
   isExternal: false
-  name: "XXX"
+  name: ArgumentNullException
   fullName: System.ArgumentNullException
   nameWithType: ArgumentNullException
   commentId: T:System.ArgumentNullException

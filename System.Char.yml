@@ -74,7 +74,7 @@ items:
   langs:
   - csharp
   - vb
-  name: "XXX"
+  name: Char
   fullName: System.Char
   type: Struct
   source:
@@ -88,7 +88,7 @@ items:
   assemblies:
   - System.Runtime
   namespace: System
-  summary: "\n<p>Represents a character as a UTF-16 code unit.</p>\n"
+  summary: "$x$x$Xxxxxxxxxx x xxxxxxxxx xx x XXX$00 xxxx xxxx.$$x$$x"
   syntax:
     content: >-
       [ComVisible(true)]
@@ -143,7 +143,7 @@ items:
   langs:
   - csharp
   - vb
-  name: "XXX"
+  name: MaxValue
   fullName: System.Char.MaxValue
   type: Field
   source:
@@ -180,7 +180,7 @@ items:
   langs:
   - csharp
   - vb
-  name: "XXX"
+  name: MinValue
   fullName: System.Char.MinValue
   type: Field
   source:
@@ -217,7 +217,7 @@ items:
   langs:
   - csharp
   - vb
-  name: "XXX"
+  name: CompareTo(Char)
   fullName: System.Char.CompareTo(System.Char)
   type: Method
   source:
@@ -241,7 +241,7 @@ items:
       description: "\n<p>A <xref href=\"System.Char\" data-throw-if-not-resolved=\"false\"></xref> object to compare. </p>\n"
     return:
       type: System.Int32
-      description: "\n<p>A signed number indicating the position of this instance in the sort order in relation to the <em>value</em> parameter.</p>\n<p>Return Value </p>\n<p>Description </p>\n<table><tbody><tr><td>\n<p>Less than zero </p>\n</td><td>\n<p>This instance precedes <em>value</em>. </p>\n</td></tr><tr><td>\n<p>Zero </p>\n</td><td>\n<p>This instance has the same position in the sort order as <em>value</em>. </p>\n</td></tr><tr><td>\n<p>Greater than zero </p>\n</td><td>\n<p>This instance follows <em>value</em>. </p>\n</td></tr></tbody></table>\n"
+      description: "$x$x$X xxxxxx xxxxxx xxxxxxxxxx xxx xxxxxxxx xx xxxx xxxxxxxx xx xxx xxxx xxxxx xx xxxxxxxx xx xxx $xx$xxxxx$$xx$ xxxxxxxxx.$$x$$x$x$Xxxxxx Xxxxx $$x$$x$x$Xxxxxxxxxxx $$x$$x$xxxxx$$xxxxx$$xx$$xx$$x$x$Xxxx xxxx xxxx $$x$$x$$xx$$xx$$x$x$Xxxx xxxxxxxx xxxxxxxx $xx$xxxxx$$xx$. $$x$$x$$xx$$$xx$$xx$$xx$$x$x$Xxxx $$x$$x$$xx$$xx$$x$x$Xxxx xxxxxxxx xxx xxx xxxx xxxxxxxx xx xxx xxxx xxxxx xx $xx$xxxxx$$xx$. $$x$$x$$xx$$$xx$$xx$$xx$$x$x$Xxxxxxx xxxx xxxx $$x$$x$$xx$$xx$$x$x$Xxxx xxxxxxxx xxxxxxx $xx$xxxxx$$xx$. $$x$$x$$xx$$$xx$$$xxxxx$$$xxxxx$$x"
   seealso:
   - type: System.IComparable
     commentId: T:System.IComparable
@@ -261,7 +261,7 @@ items:
   langs:
   - csharp
   - vb
-  name: "XXX"
+  name: ConvertFromUtf32(Int32)
   fullName: System.Char.ConvertFromUtf32(System.Int32)
   type: Method
   source:
@@ -275,21 +275,21 @@ items:
   assemblies:
   - System.Runtime
   namespace: System
-  summary: "\n<p>Converts the specified Unicode code point into a UTF-16 encoded string.</p>\n"
+  summary: "$x$x$Xxxxxxxx xxx xxxxxxxxx Xxxxxxx xxxx xxxxx xxxx x XXX$00 xxxxxxx xxxxxx.$$x$$x"
   syntax:
     content: public static string ConvertFromUtf32(int utf32)
     content.vb: Public Shared Function ConvertFromUtf32(utf32 As Integer) As String
     parameters:
     - id: utf32
       type: System.Int32
-      description: "\n<p>A 21-bit Unicode code point. </p>\n"
+      description: "$x$x$X 00$xxx Xxxxxxx xxxx xxxxx. $$x$$x"
     return:
       type: System.String
       description: "\n<p>A string consisting of one <xref href=\"System.Char\" data-throw-if-not-resolved=\"false\"></xref> object or a surrogate pair of <xref href=\"System.Char\" data-throw-if-not-resolved=\"false\"></xref> objects equivalent to the code point specified by the <em>utf32</em> parameter.</p>\n"
   exceptions:
   - type: System.ArgumentOutOfRangeException
     commentId: T:System.ArgumentOutOfRangeException
-    description: "\n<p>\n<em>utf32</em> is not a valid 21-bit Unicode code point ranging from U+0 through U+10FFFF, excluding the surrogate pair range from U+D800 through U+DFFF. </p>\n"
+    description: "$x$x$$x$xx$xxx00$$xx$ xx xxx x xxxxx 00$xxx Xxxxxxx xxxx xxxxx xxxxxxx xxxx X$0 xxxxxxx X$00XXXX$ xxxxxxxxx xxx xxxxxxxxx xxxx xxxxx xxxx X$X000 xxxxxxx X$XXXX. $$x$$x"
   seealso:
   - type: System.Char.ConvertToUtf32(System.Char,System.Char)
     commentId: M:System.Char.ConvertToUtf32(System.Char,System.Char)
@@ -309,7 +309,7 @@ items:
   langs:
   - csharp
   - vb
-  name: "XXX"
+  name: ConvertToUtf32(Char, Char)
   fullName: System.Char.ConvertToUtf32(System.Char, System.Char)
   type: Method
   source:
@@ -323,24 +323,24 @@ items:
   assemblies:
   - System.Runtime
   namespace: System
-  summary: "\n<p>Converts the value of a UTF-16 encoded surrogate pair into a Unicode code point.</p>\n"
+  summary: "$x$x$Xxxxxxxx xxx xxxxx xx x XXX$00 xxxxxxx xxxxxxxxx xxxx xxxx x Xxxxxxx xxxx xxxxx.$$x$$x"
   syntax:
     content: public static int ConvertToUtf32(char highSurrogate, char lowSurrogate)
     content.vb: Public Shared Function ConvertToUtf32(highSurrogate As Char, lowSurrogate As Char) As Integer
     parameters:
     - id: highSurrogate
       type: System.Char
-      description: "\n<p>A high surrogate code unit (that is, a code unit ranging from U+D800 through U+DBFF). </p>\n"
+      description: "$x$x$X xxxx xxxxxxxxx xxxx xxxx $xxxx xx$ x xxxx xxxx xxxxxxx xxxx X$X000 xxxxxxx X$XXXX$. $$x$$x"
     - id: lowSurrogate
       type: System.Char
-      description: "\n<p>A low surrogate code unit (that is, a code unit ranging from U+DC00 through U+DFFF). </p>\n"
+      description: "$x$x$X xxx xxxxxxxxx xxxx xxxx $xxxx xx$ x xxxx xxxx xxxxxxx xxxx X$XX00 xxxxxxx X$XXXX$. $$x$$x"
     return:
       type: System.Int32
-      description: "\n<p>The 21-bit Unicode code point represented by the <em>highSurrogate</em> and <em>lowSurrogate</em> parameters.</p>\n"
+      description: "$x$x$Xxx 00$xxx Xxxxxxx xxxx xxxxx xxxxxxxxxxx xx xxx $xx$xxxxXxxxxxxxx$$xx$ xxx $xx$xxxXxxxxxxxx$$xx$ xxxxxxxxxx.$$x$$x"
   exceptions:
   - type: System.ArgumentOutOfRangeException
     commentId: T:System.ArgumentOutOfRangeException
-    description: "\n<p>\n<em>highSurrogate</em> is not in the range U+D800 through U+DBFF, or <em>lowSurrogate</em> is not in the range U+DC00 through U+DFFF. </p>\n"
+    description: "$x$x$$x$xx$xxxxXxxxxxxxx$$xx$ xx xxx xx xxx xxxxx X$X000 xxxxxxx X$XXXX$ xx $xx$xxxXxxxxxxxx$$xx$ xx xxx xx xxx xxxxx X$XX00 xxxxxxx X$XXXX. $$x$$x"
   seealso:
   - type: System.Char.ConvertFromUtf32(System.Int32)
     commentId: M:System.Char.ConvertFromUtf32(System.Int32)
@@ -360,7 +360,7 @@ items:
   langs:
   - csharp
   - vb
-  name: "XXX"
+  name: ConvertToUtf32(String, Int32)
   fullName: System.Char.ConvertToUtf32(System.String, System.Int32)
   type: Method
   source:
@@ -374,30 +374,30 @@ items:
   assemblies:
   - System.Runtime
   namespace: System
-  summary: "\n<p>Converts the value of a UTF-16 encoded character or surrogate pair at a specified position in a string into a Unicode code point.</p>\n"
+  summary: "$x$x$Xxxxxxxx xxx xxxxx xx x XXX$00 xxxxxxx xxxxxxxxx xx xxxxxxxxx xxxx xx x xxxxxxxxx xxxxxxxx xx x xxxxxx xxxx x Xxxxxxx xxxx xxxxx.$$x$$x"
   syntax:
     content: public static int ConvertToUtf32(string s, int index)
     content.vb: Public Shared Function ConvertToUtf32(s As String, index As Integer) As Integer
     parameters:
     - id: s
       type: System.String
-      description: "\n<p>A string that contains a character or surrogate pair. </p>\n"
+      description: "$x$x$X xxxxxx xxxx xxxxxxxx x xxxxxxxxx xx xxxxxxxxx xxxx. $$x$$x"
     - id: index
       type: System.Int32
-      description: "\n<p>The index position of the character or surrogate pair in <em>s</em>.</p>\n"
+      description: "$x$x$Xxx xxxxx xxxxxxxx xx xxx xxxxxxxxx xx xxxxxxxxx xxxx xx $xx$x$$xx$.$$x$$x"
     return:
       type: System.Int32
-      description: "\n<p>The 21-bit Unicode code point represented by the character or surrogate pair at the position in the <em>s</em> parameter specified by the <em>index</em> parameter.</p>\n"
+      description: "$x$x$Xxx 00$xxx Xxxxxxx xxxx xxxxx xxxxxxxxxxx xx xxx xxxxxxxxx xx xxxxxxxxx xxxx xx xxx xxxxxxxx xx xxx $xx$x$$xx$ xxxxxxxxx xxxxxxxxx xx xxx $xx$xxxxx$$xx$ xxxxxxxxx.$$x$$x"
   exceptions:
   - type: System.ArgumentNullException
     commentId: T:System.ArgumentNullException
-    description: "\n<p>\n<em>s</em> is <strong>null</strong>. </p>\n"
+    description: "$x$x$$x$xx$x$$xx$ xx $xxxxxx$xxxx$$xxxxxx$. $$x$$x"
   - type: System.ArgumentOutOfRangeException
     commentId: T:System.ArgumentOutOfRangeException
-    description: "\n<p>\n<em>index</em> is not a position within <em>s</em>. </p>\n"
+    description: "$x$x$$x$xx$xxxxx$$xx$ xx xxx x xxxxxxxx xxxxxx $xx$x$$xx$. $$x$$x"
   - type: System.ArgumentException
     commentId: T:System.ArgumentException
-    description: "\n<p>The specified index position contains a surrogate pair, and either the first character in the pair is not a valid high surrogate or the second character in the pair is not a valid low surrogate. </p>\n"
+    description: "$x$x$Xxx xxxxxxxxx xxxxx xxxxxxxx xxxxxxxx x xxxxxxxxx xxxx$ xxx xxxxxx xxx xxxxx xxxxxxxxx xx xxx xxxx xx xxx x xxxxx xxxx xxxxxxxxx xx xxx xxxxxx xxxxxxxxx xx xxx xxxx xx xxx x xxxxx xxx xxxxxxxxx. $$x$$x"
   seealso:
   - type: System.Char.ConvertFromUtf32(System.Int32)
     commentId: M:System.Char.ConvertFromUtf32(System.Int32)
@@ -417,7 +417,7 @@ items:
   langs:
   - csharp
   - vb
-  name: "XXX"
+  name: Equals(Char)
   fullName: System.Char.Equals(System.Char)
   type: Method
   source:
@@ -444,10 +444,10 @@ items:
     parameters:
     - id: obj
       type: System.Char
-      description: "\n<p>An object to compare to this instance. </p>\n"
+      description: "$x$x$Xx xxxxxx xx xxxxxxx xx xxxx xxxxxxxx. $$x$$x"
     return:
       type: System.Boolean
-      description: "\n<p>\n<strong>true</strong> if the <em>obj</em> parameter equals the value of this instance; otherwise, <strong>false</strong>.</p>\n"
+      description: "$x$x$$x$xxxxxx$xxxx$$xxxxxx$ xx xxx $xx$xxx$$xx$ xxxxxxxxx xxxxxx xxx xxxxx xx xxxx xxxxxxxx$ xxxxxxxxx$ $xxxxxx$xxxxx$$xxxxxx$.$$x$$x"
   seealso:
   - type: System.Char.Equals(System.Object)
     commentId: M:System.Char.Equals(System.Object)
@@ -465,7 +465,7 @@ items:
   langs:
   - csharp
   - vb
-  name: "XXX"
+  name: Equals(Object)
   fullName: System.Char.Equals(System.Object)
   type: Method
   source:
@@ -479,14 +479,14 @@ items:
   assemblies:
   - System.Runtime
   namespace: System
-  summary: "\n<p>Returns a value that indicates whether this instance is equal to a specified object.</p>\n"
+  summary: "$x$x$Xxxxxxx x xxxxx xxxx xxxxxxxxx xxxxxxx xxxx xxxxxxxx xx xxxxx xx x xxxxxxxxx xxxxxx.$$x$$x"
   syntax:
     content: public override bool Equals(object obj)
     content.vb: Public Overrides Function Equals(obj As Object) As Boolean
     parameters:
     - id: obj
       type: System.Object
-      description: "\n<p>An object to compare with this instance or <strong>null</strong>. </p>\n"
+      description: "$x$x$Xx xxxxxx xx xxxxxxx xxxx xxxx xxxxxxxx xx $xxxxxx$xxxx$$xxxxxx$. $$x$$x"
     return:
       type: System.Boolean
       description: "\n<p>\n<strong>true</strong> if <em>obj</em> is an instance of <xref href=\"System.Char\" data-throw-if-not-resolved=\"false\"></xref> and equals the value of this instance; otherwise, <strong>false</strong>.</p>\n"
@@ -508,7 +508,7 @@ items:
   langs:
   - csharp
   - vb
-  name: "XXX"
+  name: GetHashCode()
   fullName: System.Char.GetHashCode()
   type: Method
   source:
@@ -522,13 +522,13 @@ items:
   assemblies:
   - System.Runtime
   namespace: System
-  summary: "\n<p>Returns the hash code for this instance.</p>\n"
+  summary: "$x$x$Xxxxxxx xxx xxxx xxxx xxx xxxx xxxxxxxx.$$x$$x"
   syntax:
     content: public override int GetHashCode()
     content.vb: Public Overrides Function GetHashCode As Integer
     return:
       type: System.Int32
-      description: "\n<p>A 32-bit signed integer hash code.</p>\n"
+      description: "$x$x$X 00$xxx xxxxxx xxxxxxx xxxx xxxx.$$x$$x"
   overridden: System.ValueType.GetHashCode
   modifiers.csharp:
   - public
@@ -544,7 +544,7 @@ items:
   langs:
   - csharp
   - vb
-  name: "XXX"
+  name: GetNumericValue(Char)
   fullName: System.Char.GetNumericValue(System.Char)
   type: Method
   source:
@@ -558,17 +558,17 @@ items:
   assemblies:
   - System.Runtime
   namespace: System
-  summary: "\n<p>Converts the specified numeric Unicode character to a double-precision floating point number.</p>\n"
+  summary: "$x$x$Xxxxxxxx xxx xxxxxxxxx xxxxxxx Xxxxxxx xxxxxxxxx xx x xxxxxx$xxxxxxxxx xxxxxxxx xxxxx xxxxxx.$$x$$x"
   syntax:
     content: public static double GetNumericValue(char c)
     content.vb: Public Shared Function GetNumericValue(c As Char) As Double
     parameters:
     - id: c
       type: System.Char
-      description: "\n<p>The Unicode character to convert. </p>\n"
+      description: "$x$x$Xxx Xxxxxxx xxxxxxxxx xx xxxxxxx. $$x$$x"
     return:
       type: System.Double
-      description: "\n<p>The numeric value of <em>c</em> if that character represents a number; otherwise, -1.0.</p>\n"
+      description: "$x$x$Xxx xxxxxxx xxxxx xx $xx$x$$xx$ xx xxxx xxxxxxxxx xxxxxxxxxx x xxxxxx$ xxxxxxxxx$ $0.0.$$x$$x"
   modifiers.csharp:
   - public
   - static
@@ -583,7 +583,7 @@ items:
   langs:
   - csharp
   - vb
-  name: "XXX"
+  name: GetNumericValue(String, Int32)
   fullName: System.Char.GetNumericValue(System.String, System.Int32)
   type: Method
   source:
@@ -597,7 +597,7 @@ items:
   assemblies:
   - System.Runtime
   namespace: System
-  summary: "\n<p>Converts the numeric Unicode character at the specified position in a specified string to a double-precision floating point number.</p>\n"
+  summary: "$x$x$Xxxxxxxx xxx xxxxxxx Xxxxxxx xxxxxxxxx xx xxx xxxxxxxxx xxxxxxxx xx x xxxxxxxxx xxxxxx xx x xxxxxx$xxxxxxxxx xxxxxxxx xxxxx xxxxxx.$$x$$x"
   syntax:
     content: public static double GetNumericValue(string s, int index)
     content.vb: Public Shared Function GetNumericValue(s As String, index As Integer) As Double
@@ -607,17 +607,17 @@ items:
       description: "\n<p>A <xref href=\"System.String\" data-throw-if-not-resolved=\"false\"></xref>. </p>\n"
     - id: index
       type: System.Int32
-      description: "\n<p>The character position in <em>s</em>. </p>\n"
+      description: "$x$x$Xxx xxxxxxxxx xxxxxxxx xx $xx$x$$xx$. $$x$$x"
     return:
       type: System.Double
-      description: "\n<p>The numeric value of the character at position <em>index</em> in <em>s</em> if that character represents a number; otherwise, -1.</p>\n"
+      description: "$x$x$Xxx xxxxxxx xxxxx xx xxx xxxxxxxxx xx xxxxxxxx $xx$xxxxx$$xx$ xx $xx$x$$xx$ xx xxxx xxxxxxxxx xxxxxxxxxx x xxxxxx$ xxxxxxxxx$ $0.$$x$$x"
   exceptions:
   - type: System.ArgumentNullException
     commentId: T:System.ArgumentNullException
-    description: "\n<p>\n<em>s</em> is <strong>null</strong>. </p>\n"
+    description: "$x$x$$x$xx$x$$xx$ xx $xxxxxx$xxxx$$xxxxxx$. $$x$$x"
   - type: System.ArgumentOutOfRangeException
     commentId: T:System.ArgumentOutOfRangeException
-    description: "\n<p>\n<em>index</em> is less than zero or greater than the last position in <em>s</em>. </p>\n"
+    description: "$x$x$$x$xx$xxxxx$$xx$ xx xxxx xxxx xxxx xx xxxxxxx xxxx xxx xxxx xxxxxxxx xx $xx$x$$xx$. $$x$$x"
   modifiers.csharp:
   - public
   - static
@@ -632,7 +632,7 @@ items:
   langs:
   - csharp
   - vb
-  name: "XXX"
+  name: IsControl(Char)
   fullName: System.Char.IsControl(System.Char)
   type: Method
   source:
@@ -646,17 +646,17 @@ items:
   assemblies:
   - System.Runtime
   namespace: System
-  summary: "\n<p>Indicates whether the specified Unicode character is categorized as a control character.</p>\n"
+  summary: "$x$x$Xxxxxxxxx xxxxxxx xxx xxxxxxxxx Xxxxxxx xxxxxxxxx xx xxxxxxxxxxx xx x xxxxxxx xxxxxxxxx.$$x$$x"
   syntax:
     content: public static bool IsControl(char c)
     content.vb: Public Shared Function IsControl(c As Char) As Boolean
     parameters:
     - id: c
       type: System.Char
-      description: "\n<p>The Unicode character to evaluate. </p>\n"
+      description: "$x$x$Xxx Xxxxxxx xxxxxxxxx xx xxxxxxxx. $$x$$x"
     return:
       type: System.Boolean
-      description: "\n<p>\n<strong>true</strong> if <em>c</em> is a control character; otherwise, <strong>false</strong>.</p>\n"
+      description: "$x$x$$x$xxxxxx$xxxx$$xxxxxx$ xx $xx$x$$xx$ xx x xxxxxxx xxxxxxxxx$ xxxxxxxxx$ $xxxxxx$xxxxx$$xxxxxx$.$$x$$x"
   modifiers.csharp:
   - public
   - static
@@ -671,7 +671,7 @@ items:
   langs:
   - csharp
   - vb
-  name: "XXX"
+  name: IsControl(String, Int32)
   fullName: System.Char.IsControl(System.String, System.Int32)
   type: Method
   source:
@@ -685,27 +685,27 @@ items:
   assemblies:
   - System.Runtime
   namespace: System
-  summary: "\n<p>Indicates whether the character at the specified position in a specified string is categorized as a control character.</p>\n"
+  summary: "$x$x$Xxxxxxxxx xxxxxxx xxx xxxxxxxxx xx xxx xxxxxxxxx xxxxxxxx xx x xxxxxxxxx xxxxxx xx xxxxxxxxxxx xx x xxxxxxx xxxxxxxxx.$$x$$x"
   syntax:
     content: public static bool IsControl(string s, int index)
     content.vb: Public Shared Function IsControl(s As String, index As Integer) As Boolean
     parameters:
     - id: s
       type: System.String
-      description: "\n<p>A string. </p>\n"
+      description: "$x$x$X xxxxxx. $$x$$x"
     - id: index
       type: System.Int32
-      description: "\n<p>The position of the character to evaluate in <em>s</em>. </p>\n"
+      description: "$x$x$Xxx xxxxxxxx xx xxx xxxxxxxxx xx xxxxxxxx xx $xx$x$$xx$. $$x$$x"
     return:
       type: System.Boolean
-      description: "\n<p>\n<strong>true</strong> if the character at position <em>index</em> in <em>s</em> is a control character; otherwise, <strong>false</strong>.</p>\n"
+      description: "$x$x$$x$xxxxxx$xxxx$$xxxxxx$ xx xxx xxxxxxxxx xx xxxxxxxx $xx$xxxxx$$xx$ xx $xx$x$$xx$ xx x xxxxxxx xxxxxxxxx$ xxxxxxxxx$ $xxxxxx$xxxxx$$xxxxxx$.$$x$$x"
   exceptions:
   - type: System.ArgumentNullException
     commentId: T:System.ArgumentNullException
-    description: "\n<p>\n<em>s</em> is <strong>null</strong>. </p>\n"
+    description: "$x$x$$x$xx$x$$xx$ xx $xxxxxx$xxxx$$xxxxxx$. $$x$$x"
   - type: System.ArgumentOutOfRangeException
     commentId: T:System.ArgumentOutOfRangeException
-    description: "\n<p>\n<em>index</em> is less than zero or greater than the last position in <em>s</em>. </p>\n"
+    description: "$x$x$$x$xx$xxxxx$$xx$ xx xxxx xxxx xxxx xx xxxxxxx xxxx xxx xxxx xxxxxxxx xx $xx$x$$xx$. $$x$$x"
   modifiers.csharp:
   - public
   - static
@@ -720,7 +720,7 @@ items:
   langs:
   - csharp
   - vb
-  name: "XXX"
+  name: IsDigit(Char)
   fullName: System.Char.IsDigit(System.Char)
   type: Method
   source:
@@ -734,17 +734,17 @@ items:
   assemblies:
   - System.Runtime
   namespace: System
-  summary: "\n<p>Indicates whether the specified Unicode character is categorized as a decimal digit.</p>\n"
+  summary: "$x$x$Xxxxxxxxx xxxxxxx xxx xxxxxxxxx Xxxxxxx xxxxxxxxx xx xxxxxxxxxxx xx x xxxxxxx xxxxx.$$x$$x"
   syntax:
     content: public static bool IsDigit(char c)
     content.vb: Public Shared Function IsDigit(c As Char) As Boolean
     parameters:
     - id: c
       type: System.Char
-      description: "\n<p>The Unicode character to evaluate. </p>\n"
+      description: "$x$x$Xxx Xxxxxxx xxxxxxxxx xx xxxxxxxx. $$x$$x"
     return:
       type: System.Boolean
-      description: "\n<p>\n<strong>true</strong> if <em>c</em> is a decimal digit; otherwise, <strong>false</strong>.</p>\n"
+      description: "$x$x$$x$xxxxxx$xxxx$$xxxxxx$ xx $xx$x$$xx$ xx x xxxxxxx xxxxx$ xxxxxxxxx$ $xxxxxx$xxxxx$$xxxxxx$.$$x$$x"
   seealso:
   - type: System.Boolean
     commentId: T:System.Boolean
@@ -764,7 +764,7 @@ items:
   langs:
   - csharp
   - vb
-  name: "XXX"
+  name: IsDigit(String, Int32)
   fullName: System.Char.IsDigit(System.String, System.Int32)
   type: Method
   source:
@@ -778,27 +778,27 @@ items:
   assemblies:
   - System.Runtime
   namespace: System
-  summary: "\n<p>Indicates whether the character at the specified position in a specified string is categorized as a decimal digit.</p>\n"
+  summary: "$x$x$Xxxxxxxxx xxxxxxx xxx xxxxxxxxx xx xxx xxxxxxxxx xxxxxxxx xx x xxxxxxxxx xxxxxx xx xxxxxxxxxxx xx x xxxxxxx xxxxx.$$x$$x"
   syntax:
     content: public static bool IsDigit(string s, int index)
     content.vb: Public Shared Function IsDigit(s As String, index As Integer) As Boolean
     parameters:
     - id: s
       type: System.String
-      description: "\n<p>A string. </p>\n"
+      description: "$x$x$X xxxxxx. $$x$$x"
     - id: index
       type: System.Int32
-      description: "\n<p>The position of the character to evaluate in <em>s</em>. </p>\n"
+      description: "$x$x$Xxx xxxxxxxx xx xxx xxxxxxxxx xx xxxxxxxx xx $xx$x$$xx$. $$x$$x"
     return:
       type: System.Boolean
-      description: "\n<p>\n<strong>true</strong> if the character at position <em>index</em> in <em>s</em> is a decimal digit; otherwise, <strong>false</strong>.</p>\n"
+      description: "$x$x$$x$xxxxxx$xxxx$$xxxxxx$ xx xxx xxxxxxxxx xx xxxxxxxx $xx$xxxxx$$xx$ xx $xx$x$$xx$ xx x xxxxxxx xxxxx$ xxxxxxxxx$ $xxxxxx$xxxxx$$xxxxxx$.$$x$$x"
   exceptions:
   - type: System.ArgumentNullException
     commentId: T:System.ArgumentNullException
-    description: "\n<p>\n<em>s</em> is <strong>null</strong>. </p>\n"
+    description: "$x$x$$x$xx$x$$xx$ xx $xxxxxx$xxxx$$xxxxxx$. $$x$$x"
   - type: System.ArgumentOutOfRangeException
     commentId: T:System.ArgumentOutOfRangeException
-    description: "\n<p>\n<em>index</em> is less than zero or greater than the last position in <em>s</em>. </p>\n"
+    description: "$x$x$$x$xx$xxxxx$$xx$ xx xxxx xxxx xxxx xx xxxxxxx xxxx xxx xxxx xxxxxxxx xx $xx$x$$xx$. $$x$$x"
   seealso:
   - type: System.Boolean
     commentId: T:System.Boolean
@@ -818,7 +818,7 @@ items:
   langs:
   - csharp
   - vb
-  name: "XXX"
+  name: IsHighSurrogate(Char)
   fullName: System.Char.IsHighSurrogate(System.Char)
   type: Method
   source:
@@ -839,10 +839,10 @@ items:
     parameters:
     - id: c
       type: System.Char
-      description: "\n<p>The Unicode character to evaluate. </p>\n"
+      description: "$x$x$Xxx Xxxxxxx xxxxxxxxx xx xxxxxxxx. $$x$$x"
     return:
       type: System.Boolean
-      description: "\n<p>\n<strong>true</strong> if the numeric value of the <em>c</em> parameter ranges from U+D800 through U+DBFF; otherwise, <strong>false</strong>.</p>\n"
+      description: "$x$x$$x$xxxxxx$xxxx$$xxxxxx$ xx xxx xxxxxxx xxxxx xx xxx $xx$x$$xx$ xxxxxxxxx xxxxxx xxxx X$X000 xxxxxxx X$XXXX$ xxxxxxxxx$ $xxxxxx$xxxxx$$xxxxxx$.$$x$$x"
   modifiers.csharp:
   - public
   - static
@@ -857,7 +857,7 @@ items:
   langs:
   - csharp
   - vb
-  name: "XXX"
+  name: IsHighSurrogate(String, Int32)
   fullName: System.Char.IsHighSurrogate(System.String, System.Int32)
   type: Method
   source:
@@ -878,20 +878,20 @@ items:
     parameters:
     - id: s
       type: System.String
-      description: "\n<p>A string. </p>\n"
+      description: "$x$x$X xxxxxx. $$x$$x"
     - id: index
       type: System.Int32
-      description: "\n<p>The position of the character to evaluate in <em>s</em>. </p>\n"
+      description: "$x$x$Xxx xxxxxxxx xx xxx xxxxxxxxx xx xxxxxxxx xx $xx$x$$xx$. $$x$$x"
     return:
       type: System.Boolean
-      description: "\n<p>\n<strong>true</strong> if the numeric value of the specified character in the <em>s</em> parameter ranges from U+D800 through U+DBFF; otherwise, <strong>false</strong>.</p>\n"
+      description: "$x$x$$x$xxxxxx$xxxx$$xxxxxx$ xx xxx xxxxxxx xxxxx xx xxx xxxxxxxxx xxxxxxxxx xx xxx $xx$x$$xx$ xxxxxxxxx xxxxxx xxxx X$X000 xxxxxxx X$XXXX$ xxxxxxxxx$ $xxxxxx$xxxxx$$xxxxxx$.$$x$$x"
   exceptions:
   - type: System.ArgumentNullException
     commentId: T:System.ArgumentNullException
-    description: "\n<p>\n<em>s</em> is <strong>null</strong>. </p>\n"
+    description: "$x$x$$x$xx$x$$xx$ xx $xxxxxx$xxxx$$xxxxxx$. $$x$$x"
   - type: System.ArgumentOutOfRangeException
     commentId: T:System.ArgumentOutOfRangeException
-    description: "\n<p>\n<em>index</em> is not a position within <em>s</em>. </p>\n"
+    description: "$x$x$$x$xx$xxxxx$$xx$ xx xxx x xxxxxxxx xxxxxx $xx$x$$xx$. $$x$$x"
   modifiers.csharp:
   - public
   - static
@@ -906,7 +906,7 @@ items:
   langs:
   - csharp
   - vb
-  name: "XXX"
+  name: IsLetter(Char)
   fullName: System.Char.IsLetter(System.Char)
   type: Method
   source:
@@ -920,17 +920,17 @@ items:
   assemblies:
   - System.Runtime
   namespace: System
-  summary: "\n<p>Indicates whether the specified Unicode character is categorized as a Unicode letter. </p>\n"
+  summary: "$x$x$Xxxxxxxxx xxxxxxx xxx xxxxxxxxx Xxxxxxx xxxxxxxxx xx xxxxxxxxxxx xx x Xxxxxxx xxxxxx. $$x$$x"
   syntax:
     content: public static bool IsLetter(char c)
     content.vb: Public Shared Function IsLetter(c As Char) As Boolean
     parameters:
     - id: c
       type: System.Char
-      description: "\n<p>The Unicode character to evaluate. </p>\n"
+      description: "$x$x$Xxx Xxxxxxx xxxxxxxxx xx xxxxxxxx. $$x$$x"
     return:
       type: System.Boolean
-      description: "\n<p>\n<strong>true</strong> if <em>c</em> is a letter; otherwise, <strong>false</strong>.</p>\n"
+      description: "$x$x$$x$xxxxxx$xxxx$$xxxxxx$ xx $xx$x$$xx$ xx x xxxxxx$ xxxxxxxxx$ $xxxxxx$xxxxx$$xxxxxx$.$$x$$x"
   seealso:
   - type: System.Boolean
     commentId: T:System.Boolean
@@ -948,7 +948,7 @@ items:
   langs:
   - csharp
   - vb
-  name: "XXX"
+  name: IsLetter(String, Int32)
   fullName: System.Char.IsLetter(System.String, System.Int32)
   type: Method
   source:
@@ -962,27 +962,27 @@ items:
   assemblies:
   - System.Runtime
   namespace: System
-  summary: "\n<p>Indicates whether the character at the specified position in a specified string is categorized as a Unicode letter.</p>\n"
+  summary: "$x$x$Xxxxxxxxx xxxxxxx xxx xxxxxxxxx xx xxx xxxxxxxxx xxxxxxxx xx x xxxxxxxxx xxxxxx xx xxxxxxxxxxx xx x Xxxxxxx xxxxxx.$$x$$x"
   syntax:
     content: public static bool IsLetter(string s, int index)
     content.vb: Public Shared Function IsLetter(s As String, index As Integer) As Boolean
     parameters:
     - id: s
       type: System.String
-      description: "\n<p>A string. </p>\n"
+      description: "$x$x$X xxxxxx. $$x$$x"
     - id: index
       type: System.Int32
-      description: "\n<p>The position of the character to evaluate in <em>s</em>. </p>\n"
+      description: "$x$x$Xxx xxxxxxxx xx xxx xxxxxxxxx xx xxxxxxxx xx $xx$x$$xx$. $$x$$x"
     return:
       type: System.Boolean
-      description: "\n<p>\n<strong>true</strong> if the character at position <em>index</em> in <em>s</em> is a letter; otherwise, <strong>false</strong>.</p>\n"
+      description: "$x$x$$x$xxxxxx$xxxx$$xxxxxx$ xx xxx xxxxxxxxx xx xxxxxxxx $xx$xxxxx$$xx$ xx $xx$x$$xx$ xx x xxxxxx$ xxxxxxxxx$ $xxxxxx$xxxxx$$xxxxxx$.$$x$$x"
   exceptions:
   - type: System.ArgumentNullException
     commentId: T:System.ArgumentNullException
-    description: "\n<p>\n<em>s</em> is <strong>null</strong>. </p>\n"
+    description: "$x$x$$x$xx$x$$xx$ xx $xxxxxx$xxxx$$xxxxxx$. $$x$$x"
   - type: System.ArgumentOutOfRangeException
     commentId: T:System.ArgumentOutOfRangeException
-    description: "\n<p>\n<em>index</em> is less than zero or greater than the last position in <em>s</em>. </p>\n"
+    description: "$x$x$$x$xx$xxxxx$$xx$ xx xxxx xxxx xxxx xx xxxxxxx xxxx xxx xxxx xxxxxxxx xx $xx$x$$xx$. $$x$$x"
   seealso:
   - type: System.Boolean
     commentId: T:System.Boolean
@@ -1000,7 +1000,7 @@ items:
   langs:
   - csharp
   - vb
-  name: "XXX"
+  name: IsLetterOrDigit(Char)
   fullName: System.Char.IsLetterOrDigit(System.Char)
   type: Method
   source:
@@ -1014,17 +1014,17 @@ items:
   assemblies:
   - System.Runtime
   namespace: System
-  summary: "\n<p>Indicates whether the specified Unicode character is categorized as a letter or a decimal digit.</p>\n"
+  summary: "$x$x$Xxxxxxxxx xxxxxxx xxx xxxxxxxxx Xxxxxxx xxxxxxxxx xx xxxxxxxxxxx xx x xxxxxx xx x xxxxxxx xxxxx.$$x$$x"
   syntax:
     content: public static bool IsLetterOrDigit(char c)
     content.vb: Public Shared Function IsLetterOrDigit(c As Char) As Boolean
     parameters:
     - id: c
       type: System.Char
-      description: "\n<p>The Unicode character to evaluate. </p>\n"
+      description: "$x$x$Xxx Xxxxxxx xxxxxxxxx xx xxxxxxxx. $$x$$x"
     return:
       type: System.Boolean
-      description: "\n<p>\n<strong>true</strong> if <em>c</em> is a letter or a decimal digit; otherwise, <strong>false</strong>.</p>\n"
+      description: "$x$x$$x$xxxxxx$xxxx$$xxxxxx$ xx $xx$x$$xx$ xx x xxxxxx xx x xxxxxxx xxxxx$ xxxxxxxxx$ $xxxxxx$xxxxx$$xxxxxx$.$$x$$x"
   seealso:
   - type: System.Boolean
     commentId: T:System.Boolean
@@ -1042,7 +1042,7 @@ items:
   langs:
   - csharp
   - vb
-  name: "XXX"
+  name: IsLetterOrDigit(String, Int32)
   fullName: System.Char.IsLetterOrDigit(System.String, System.Int32)
   type: Method
   source:
@@ -1056,27 +1056,27 @@ items:
   assemblies:
   - System.Runtime
   namespace: System
-  summary: "\n<p>Indicates whether the character at the specified position in a specified string is categorized as a letter or a decimal digit.</p>\n"
+  summary: "$x$x$Xxxxxxxxx xxxxxxx xxx xxxxxxxxx xx xxx xxxxxxxxx xxxxxxxx xx x xxxxxxxxx xxxxxx xx xxxxxxxxxxx xx x xxxxxx xx x xxxxxxx xxxxx.$$x$$x"
   syntax:
     content: public static bool IsLetterOrDigit(string s, int index)
     content.vb: Public Shared Function IsLetterOrDigit(s As String, index As Integer) As Boolean
     parameters:
     - id: s
       type: System.String
-      description: "\n<p>A string. </p>\n"
+      description: "$x$x$X xxxxxx. $$x$$x"
     - id: index
       type: System.Int32
-      description: "\n<p>The position of the character to evaluate in <em>s</em>. </p>\n"
+      description: "$x$x$Xxx xxxxxxxx xx xxx xxxxxxxxx xx xxxxxxxx xx $xx$x$$xx$. $$x$$x"
     return:
       type: System.Boolean
-      description: "\n<p>\n<strong>true</strong> if the character at position <em>index</em> in <em>s</em> is a letter or a decimal digit; otherwise, <strong>false</strong>.</p>\n"
+      description: "$x$x$$x$xxxxxx$xxxx$$xxxxxx$ xx xxx xxxxxxxxx xx xxxxxxxx $xx$xxxxx$$xx$ xx $xx$x$$xx$ xx x xxxxxx xx x xxxxxxx xxxxx$ xxxxxxxxx$ $xxxxxx$xxxxx$$xxxxxx$.$$x$$x"
   exceptions:
   - type: System.ArgumentNullException
     commentId: T:System.ArgumentNullException
-    description: "\n<p>\n<em>s</em> is <strong>null</strong>. </p>\n"
+    description: "$x$x$$x$xx$x$$xx$ xx $xxxxxx$xxxx$$xxxxxx$. $$x$$x"
   - type: System.ArgumentOutOfRangeException
     commentId: T:System.ArgumentOutOfRangeException
-    description: "\n<p>\n<em>index</em> is less than zero or greater than the last position in <em>s</em>. </p>\n"
+    description: "$x$x$$x$xx$xxxxx$$xx$ xx xxxx xxxx xxxx xx xxxxxxx xxxx xxx xxxx xxxxxxxx xx $xx$x$$xx$. $$x$$x"
   seealso:
   - type: System.Boolean
     commentId: T:System.Boolean
@@ -1094,7 +1094,7 @@ items:
   langs:
   - csharp
   - vb
-  name: "XXX"
+  name: IsLower(Char)
   fullName: System.Char.IsLower(System.Char)
   type: Method
   source:
@@ -1108,17 +1108,17 @@ items:
   assemblies:
   - System.Runtime
   namespace: System
-  summary: "\n<p>Indicates whether the specified Unicode character is categorized as a lowercase letter.</p>\n"
+  summary: "$x$x$Xxxxxxxxx xxxxxxx xxx xxxxxxxxx Xxxxxxx xxxxxxxxx xx xxxxxxxxxxx xx x xxxxxxxxx xxxxxx.$$x$$x"
   syntax:
     content: public static bool IsLower(char c)
     content.vb: Public Shared Function IsLower(c As Char) As Boolean
     parameters:
     - id: c
       type: System.Char
-      description: "\n<p>The Unicode character to evaluate. </p>\n"
+      description: "$x$x$Xxx Xxxxxxx xxxxxxxxx xx xxxxxxxx. $$x$$x"
     return:
       type: System.Boolean
-      description: "\n<p>\n<strong>true</strong> if <em>c</em> is a lowercase letter; otherwise, <strong>false</strong>.</p>\n"
+      description: "$x$x$$x$xxxxxx$xxxx$$xxxxxx$ xx $xx$x$$xx$ xx x xxxxxxxxx xxxxxx$ xxxxxxxxx$ $xxxxxx$xxxxx$$xxxxxx$.$$x$$x"
   seealso:
   - type: System.Boolean
     commentId: T:System.Boolean
@@ -1138,7 +1138,7 @@ items:
   langs:
   - csharp
   - vb
-  name: "XXX"
+  name: IsLower(String, Int32)
   fullName: System.Char.IsLower(System.String, System.Int32)
   type: Method
   source:
@@ -1152,27 +1152,27 @@ items:
   assemblies:
   - System.Runtime
   namespace: System
-  summary: "\n<p>Indicates whether the character at the specified position in a specified string is categorized as a lowercase letter.</p>\n"
+  summary: "$x$x$Xxxxxxxxx xxxxxxx xxx xxxxxxxxx xx xxx xxxxxxxxx xxxxxxxx xx x xxxxxxxxx xxxxxx xx xxxxxxxxxxx xx x xxxxxxxxx xxxxxx.$$x$$x"
   syntax:
     content: public static bool IsLower(string s, int index)
     content.vb: Public Shared Function IsLower(s As String, index As Integer) As Boolean
     parameters:
     - id: s
       type: System.String
-      description: "\n<p>A string. </p>\n"
+      description: "$x$x$X xxxxxx. $$x$$x"
     - id: index
       type: System.Int32
-      description: "\n<p>The position of the character to evaluate in <em>s</em>. </p>\n"
+      description: "$x$x$Xxx xxxxxxxx xx xxx xxxxxxxxx xx xxxxxxxx xx $xx$x$$xx$. $$x$$x"
     return:
       type: System.Boolean
-      description: "\n<p>\n<strong>true</strong> if the character at position <em>index</em> in <em>s</em> is a lowercase letter; otherwise, <strong>false</strong>.</p>\n"
+      description: "$x$x$$x$xxxxxx$xxxx$$xxxxxx$ xx xxx xxxxxxxxx xx xxxxxxxx $xx$xxxxx$$xx$ xx $xx$x$$xx$ xx x xxxxxxxxx xxxxxx$ xxxxxxxxx$ $xxxxxx$xxxxx$$xxxxxx$.$$x$$x"
   exceptions:
   - type: System.ArgumentNullException
     commentId: T:System.ArgumentNullException
-    description: "\n<p>\n<em>s</em> is <strong>null</strong>. </p>\n"
+    description: "$x$x$$x$xx$x$$xx$ xx $xxxxxx$xxxx$$xxxxxx$. $$x$$x"
   - type: System.ArgumentOutOfRangeException
     commentId: T:System.ArgumentOutOfRangeException
-    description: "\n<p>\n<em>index</em> is less than zero or greater than the last position in <em>s</em>. </p>\n"
+    description: "$x$x$$x$xx$xxxxx$$xx$ xx xxxx xxxx xxxx xx xxxxxxx xxxx xxx xxxx xxxxxxxx xx $xx$x$$xx$. $$x$$x"
   seealso:
   - type: System.Boolean
     commentId: T:System.Boolean
@@ -1194,7 +1194,7 @@ items:
   langs:
   - csharp
   - vb
-  name: "XXX"
+  name: IsLowSurrogate(Char)
   fullName: System.Char.IsLowSurrogate(System.Char)
   type: Method
   source:
@@ -1215,10 +1215,10 @@ items:
     parameters:
     - id: c
       type: System.Char
-      description: "\n<p>The character to evaluate. </p>\n"
+      description: "$x$x$Xxx xxxxxxxxx xx xxxxxxxx. $$x$$x"
     return:
       type: System.Boolean
-      description: "\n<p>\n<strong>true</strong> if the numeric value of the <em>c</em> parameter ranges from U+DC00 through U+DFFF; otherwise, <strong>false</strong>.</p>\n"
+      description: "$x$x$$x$xxxxxx$xxxx$$xxxxxx$ xx xxx xxxxxxx xxxxx xx xxx $xx$x$$xx$ xxxxxxxxx xxxxxx xxxx X$XX00 xxxxxxx X$XXXX$ xxxxxxxxx$ $xxxxxx$xxxxx$$xxxxxx$.$$x$$x"
   modifiers.csharp:
   - public
   - static
@@ -1233,7 +1233,7 @@ items:
   langs:
   - csharp
   - vb
-  name: "XXX"
+  name: IsLowSurrogate(String, Int32)
   fullName: System.Char.IsLowSurrogate(System.String, System.Int32)
   type: Method
   source:
@@ -1254,20 +1254,20 @@ items:
     parameters:
     - id: s
       type: System.String
-      description: "\n<p>A string. </p>\n"
+      description: "$x$x$X xxxxxx. $$x$$x"
     - id: index
       type: System.Int32
-      description: "\n<p>The position of the character to evaluate in <em>s</em>. </p>\n"
+      description: "$x$x$Xxx xxxxxxxx xx xxx xxxxxxxxx xx xxxxxxxx xx $xx$x$$xx$. $$x$$x"
     return:
       type: System.Boolean
-      description: "\n<p>\n<strong>true</strong> if the numeric value of the specified character in the <em>s</em> parameter ranges from U+DC00 through U+DFFF; otherwise, <strong>false</strong>.</p>\n"
+      description: "$x$x$$x$xxxxxx$xxxx$$xxxxxx$ xx xxx xxxxxxx xxxxx xx xxx xxxxxxxxx xxxxxxxxx xx xxx $xx$x$$xx$ xxxxxxxxx xxxxxx xxxx X$XX00 xxxxxxx X$XXXX$ xxxxxxxxx$ $xxxxxx$xxxxx$$xxxxxx$.$$x$$x"
   exceptions:
   - type: System.ArgumentNullException
     commentId: T:System.ArgumentNullException
-    description: "\n<p>\n<em>s</em> is <strong>null</strong>. </p>\n"
+    description: "$x$x$$x$xx$x$$xx$ xx $xxxxxx$xxxx$$xxxxxx$. $$x$$x"
   - type: System.ArgumentOutOfRangeException
     commentId: T:System.ArgumentOutOfRangeException
-    description: "\n<p>\n<em>index</em> is not a position within <em>s</em>. </p>\n"
+    description: "$x$x$$x$xx$xxxxx$$xx$ xx xxx x xxxxxxxx xxxxxx $xx$x$$xx$. $$x$$x"
   modifiers.csharp:
   - public
   - static
@@ -1282,7 +1282,7 @@ items:
   langs:
   - csharp
   - vb
-  name: "XXX"
+  name: IsNumber(Char)
   fullName: System.Char.IsNumber(System.Char)
   type: Method
   source:
@@ -1296,17 +1296,17 @@ items:
   assemblies:
   - System.Runtime
   namespace: System
-  summary: "\n<p>Indicates whether the specified Unicode character is categorized as a number.</p>\n"
+  summary: "$x$x$Xxxxxxxxx xxxxxxx xxx xxxxxxxxx Xxxxxxx xxxxxxxxx xx xxxxxxxxxxx xx x xxxxxx.$$x$$x"
   syntax:
     content: public static bool IsNumber(char c)
     content.vb: Public Shared Function IsNumber(c As Char) As Boolean
     parameters:
     - id: c
       type: System.Char
-      description: "\n<p>The Unicode character to evaluate. </p>\n"
+      description: "$x$x$Xxx Xxxxxxx xxxxxxxxx xx xxxxxxxx. $$x$$x"
     return:
       type: System.Boolean
-      description: "\n<p>\n<strong>true</strong> if <em>c</em> is a number; otherwise, <strong>false</strong>.</p>\n"
+      description: "$x$x$$x$xxxxxx$xxxx$$xxxxxx$ xx $xx$x$$xx$ xx x xxxxxx$ xxxxxxxxx$ $xxxxxx$xxxxx$$xxxxxx$.$$x$$x"
   seealso:
   - type: System.Boolean
     commentId: T:System.Boolean
@@ -1326,7 +1326,7 @@ items:
   langs:
   - csharp
   - vb
-  name: "XXX"
+  name: IsNumber(String, Int32)
   fullName: System.Char.IsNumber(System.String, System.Int32)
   type: Method
   source:
@@ -1340,27 +1340,27 @@ items:
   assemblies:
   - System.Runtime
   namespace: System
-  summary: "\n<p>Indicates whether the character at the specified position in a specified string is categorized as a number.</p>\n"
+  summary: "$x$x$Xxxxxxxxx xxxxxxx xxx xxxxxxxxx xx xxx xxxxxxxxx xxxxxxxx xx x xxxxxxxxx xxxxxx xx xxxxxxxxxxx xx x xxxxxx.$$x$$x"
   syntax:
     content: public static bool IsNumber(string s, int index)
     content.vb: Public Shared Function IsNumber(s As String, index As Integer) As Boolean
     parameters:
     - id: s
       type: System.String
-      description: "\n<p>A string. </p>\n"
+      description: "$x$x$X xxxxxx. $$x$$x"
     - id: index
       type: System.Int32
-      description: "\n<p>The position of the character to evaluate in <em>s</em>. </p>\n"
+      description: "$x$x$Xxx xxxxxxxx xx xxx xxxxxxxxx xx xxxxxxxx xx $xx$x$$xx$. $$x$$x"
     return:
       type: System.Boolean
-      description: "\n<p>\n<strong>true</strong> if the character at position <em>index</em> in <em>s</em> is a number; otherwise, <strong>false</strong>.</p>\n"
+      description: "$x$x$$x$xxxxxx$xxxx$$xxxxxx$ xx xxx xxxxxxxxx xx xxxxxxxx $xx$xxxxx$$xx$ xx $xx$x$$xx$ xx x xxxxxx$ xxxxxxxxx$ $xxxxxx$xxxxx$$xxxxxx$.$$x$$x"
   exceptions:
   - type: System.ArgumentNullException
     commentId: T:System.ArgumentNullException
-    description: "\n<p>\n<em>s</em> is <strong>null</strong>. </p>\n"
+    description: "$x$x$$x$xx$x$$xx$ xx $xxxxxx$xxxx$$xxxxxx$. $$x$$x"
   - type: System.ArgumentOutOfRangeException
     commentId: T:System.ArgumentOutOfRangeException
-    description: "\n<p>\n<em>index</em> is less than zero or greater than the last position in <em>s</em>. </p>\n"
+    description: "$x$x$$x$xx$xxxxx$$xx$ xx xxxx xxxx xxxx xx xxxxxxx xxxx xxx xxxx xxxxxxxx xx $xx$x$$xx$. $$x$$x"
   seealso:
   - type: System.Boolean
     commentId: T:System.Boolean
@@ -1382,7 +1382,7 @@ items:
   langs:
   - csharp
   - vb
-  name: "XXX"
+  name: IsPunctuation(Char)
   fullName: System.Char.IsPunctuation(System.Char)
   type: Method
   source:
@@ -1396,17 +1396,17 @@ items:
   assemblies:
   - System.Runtime
   namespace: System
-  summary: "\n<p>Indicates whether the specified Unicode character is categorized as a punctuation mark.</p>\n"
+  summary: "$x$x$Xxxxxxxxx xxxxxxx xxx xxxxxxxxx Xxxxxxx xxxxxxxxx xx xxxxxxxxxxx xx x xxxxxxxxxxx xxxx.$$x$$x"
   syntax:
     content: public static bool IsPunctuation(char c)
     content.vb: Public Shared Function IsPunctuation(c As Char) As Boolean
     parameters:
     - id: c
       type: System.Char
-      description: "\n<p>The Unicode character to evaluate. </p>\n"
+      description: "$x$x$Xxx Xxxxxxx xxxxxxxxx xx xxxxxxxx. $$x$$x"
     return:
       type: System.Boolean
-      description: "\n<p>\n<strong>true</strong> if <em>c</em> is a punctuation mark; otherwise, <strong>false</strong>.</p>\n"
+      description: "$x$x$$x$xxxxxx$xxxx$$xxxxxx$ xx $xx$x$$xx$ xx x xxxxxxxxxxx xxxx$ xxxxxxxxx$ $xxxxxx$xxxxx$$xxxxxx$.$$x$$x"
   seealso:
   - type: System.Boolean
     commentId: T:System.Boolean
@@ -1424,7 +1424,7 @@ items:
   langs:
   - csharp
   - vb
-  name: "XXX"
+  name: IsPunctuation(String, Int32)
   fullName: System.Char.IsPunctuation(System.String, System.Int32)
   type: Method
   source:
@@ -1438,27 +1438,27 @@ items:
   assemblies:
   - System.Runtime
   namespace: System
-  summary: "\n<p>Indicates whether the character at the specified position in a specified string is categorized as a punctuation mark.</p>\n"
+  summary: "$x$x$Xxxxxxxxx xxxxxxx xxx xxxxxxxxx xx xxx xxxxxxxxx xxxxxxxx xx x xxxxxxxxx xxxxxx xx xxxxxxxxxxx xx x xxxxxxxxxxx xxxx.$$x$$x"
   syntax:
     content: public static bool IsPunctuation(string s, int index)
     content.vb: Public Shared Function IsPunctuation(s As String, index As Integer) As Boolean
     parameters:
     - id: s
       type: System.String
-      description: "\n<p>A string. </p>\n"
+      description: "$x$x$X xxxxxx. $$x$$x"
     - id: index
       type: System.Int32
-      description: "\n<p>The position of the character to evaluate in <em>s</em>. </p>\n"
+      description: "$x$x$Xxx xxxxxxxx xx xxx xxxxxxxxx xx xxxxxxxx xx $xx$x$$xx$. $$x$$x"
     return:
       type: System.Boolean
-      description: "\n<p>\n<strong>true</strong> if the character at position <em>index</em> in <em>s</em> is a punctuation mark; otherwise, <strong>false</strong>.</p>\n"
+      description: "$x$x$$x$xxxxxx$xxxx$$xxxxxx$ xx xxx xxxxxxxxx xx xxxxxxxx $xx$xxxxx$$xx$ xx $xx$x$$xx$ xx x xxxxxxxxxxx xxxx$ xxxxxxxxx$ $xxxxxx$xxxxx$$xxxxxx$.$$x$$x"
   exceptions:
   - type: System.ArgumentNullException
     commentId: T:System.ArgumentNullException
-    description: "\n<p>\n<em>s</em> is <strong>null</strong>. </p>\n"
+    description: "$x$x$$x$xx$x$$xx$ xx $xxxxxx$xxxx$$xxxxxx$. $$x$$x"
   - type: System.ArgumentOutOfRangeException
     commentId: T:System.ArgumentOutOfRangeException
-    description: "\n<p>\n<em>index</em> is less than zero or greater than the last position in <em>s</em>. </p>\n"
+    description: "$x$x$$x$xx$xxxxx$$xx$ xx xxxx xxxx xxxx xx xxxxxxx xxxx xxx xxxx xxxxxxxx xx $xx$x$$xx$. $$x$$x"
   seealso:
   - type: System.Boolean
     commentId: T:System.Boolean
@@ -1478,7 +1478,7 @@ items:
   langs:
   - csharp
   - vb
-  name: "XXX"
+  name: IsSeparator(Char)
   fullName: System.Char.IsSeparator(System.Char)
   type: Method
   source:
@@ -1492,17 +1492,17 @@ items:
   assemblies:
   - System.Runtime
   namespace: System
-  summary: "\n<p>Indicates whether the specified Unicode character is categorized as a separator character.</p>\n"
+  summary: "$x$x$Xxxxxxxxx xxxxxxx xxx xxxxxxxxx Xxxxxxx xxxxxxxxx xx xxxxxxxxxxx xx x xxxxxxxxx xxxxxxxxx.$$x$$x"
   syntax:
     content: public static bool IsSeparator(char c)
     content.vb: Public Shared Function IsSeparator(c As Char) As Boolean
     parameters:
     - id: c
       type: System.Char
-      description: "\n<p>The Unicode character to evaluate. </p>\n"
+      description: "$x$x$Xxx Xxxxxxx xxxxxxxxx xx xxxxxxxx. $$x$$x"
     return:
       type: System.Boolean
-      description: "\n<p>\n<strong>true</strong> if <em>c</em> is a separator character; otherwise, <strong>false</strong>.</p>\n"
+      description: "$x$x$$x$xxxxxx$xxxx$$xxxxxx$ xx $xx$x$$xx$ xx x xxxxxxxxx xxxxxxxxx$ xxxxxxxxx$ $xxxxxx$xxxxx$$xxxxxx$.$$x$$x"
   seealso:
   - type: System.Globalization.UnicodeCategory
     commentId: T:System.Globalization.UnicodeCategory
@@ -1520,7 +1520,7 @@ items:
   langs:
   - csharp
   - vb
-  name: "XXX"
+  name: IsSeparator(String, Int32)
   fullName: System.Char.IsSeparator(System.String, System.Int32)
   type: Method
   source:
@@ -1534,27 +1534,27 @@ items:
   assemblies:
   - System.Runtime
   namespace: System
-  summary: "\n<p>Indicates whether the character at the specified position in a specified string is categorized as a separator character.</p>\n"
+  summary: "$x$x$Xxxxxxxxx xxxxxxx xxx xxxxxxxxx xx xxx xxxxxxxxx xxxxxxxx xx x xxxxxxxxx xxxxxx xx xxxxxxxxxxx xx x xxxxxxxxx xxxxxxxxx.$$x$$x"
   syntax:
     content: public static bool IsSeparator(string s, int index)
     content.vb: Public Shared Function IsSeparator(s As String, index As Integer) As Boolean
     parameters:
     - id: s
       type: System.String
-      description: "\n<p>A string. </p>\n"
+      description: "$x$x$X xxxxxx. $$x$$x"
     - id: index
       type: System.Int32
-      description: "\n<p>The position of the character to evaluate in <em>s</em>. </p>\n"
+      description: "$x$x$Xxx xxxxxxxx xx xxx xxxxxxxxx xx xxxxxxxx xx $xx$x$$xx$. $$x$$x"
     return:
       type: System.Boolean
-      description: "\n<p>\n<strong>true</strong> if the character at position <em>index</em> in <em>s</em> is a separator character; otherwise, <strong>false</strong>.</p>\n"
+      description: "$x$x$$x$xxxxxx$xxxx$$xxxxxx$ xx xxx xxxxxxxxx xx xxxxxxxx $xx$xxxxx$$xx$ xx $xx$x$$xx$ xx x xxxxxxxxx xxxxxxxxx$ xxxxxxxxx$ $xxxxxx$xxxxx$$xxxxxx$.$$x$$x"
   exceptions:
   - type: System.ArgumentNullException
     commentId: T:System.ArgumentNullException
-    description: "\n<p>\n<em>s</em> is <strong>null</strong>. </p>\n"
+    description: "$x$x$$x$xx$x$$xx$ xx $xxxxxx$xxxx$$xxxxxx$. $$x$$x"
   - type: System.ArgumentOutOfRangeException
     commentId: T:System.ArgumentOutOfRangeException
-    description: "\n<p>\n<em>index</em> is less than zero or greater than the last position in <em>s</em>. </p>\n"
+    description: "$x$x$$x$xx$xxxxx$$xx$ xx xxxx xxxx xxxx xx xxxxxxx xxxx xxx xxxx xxxxxxxx xx $xx$x$$xx$. $$x$$x"
   seealso:
   - type: System.Boolean
     commentId: T:System.Boolean
@@ -1574,7 +1574,7 @@ items:
   langs:
   - csharp
   - vb
-  name: "XXX"
+  name: IsSurrogate(Char)
   fullName: System.Char.IsSurrogate(System.Char)
   type: Method
   source:
@@ -1588,17 +1588,17 @@ items:
   assemblies:
   - System.Runtime
   namespace: System
-  summary: "\n<p>Indicates whether the specified character has a surrogate code unit.</p>\n"
+  summary: "$x$x$Xxxxxxxxx xxxxxxx xxx xxxxxxxxx xxxxxxxxx xxx x xxxxxxxxx xxxx xxxx.$$x$$x"
   syntax:
     content: public static bool IsSurrogate(char c)
     content.vb: Public Shared Function IsSurrogate(c As Char) As Boolean
     parameters:
     - id: c
       type: System.Char
-      description: "\n<p>The Unicode character to evaluate. </p>\n"
+      description: "$x$x$Xxx Xxxxxxx xxxxxxxxx xx xxxxxxxx. $$x$$x"
     return:
       type: System.Boolean
-      description: "\n<p>\n<strong>true</strong> if <em>c</em> is either a high surrogate or a low surrogate; otherwise, <strong>false</strong>.</p>\n"
+      description: "$x$x$$x$xxxxxx$xxxx$$xxxxxx$ xx $xx$x$$xx$ xx xxxxxx x xxxx xxxxxxxxx xx x xxx xxxxxxxxx$ xxxxxxxxx$ $xxxxxx$xxxxx$$xxxxxx$.$$x$$x"
   seealso:
   - type: System.Char.IsHighSurrogate(System.Char)
     commentId: M:System.Char.IsHighSurrogate(System.Char)
@@ -1620,7 +1620,7 @@ items:
   langs:
   - csharp
   - vb
-  name: "XXX"
+  name: IsSurrogate(String, Int32)
   fullName: System.Char.IsSurrogate(System.String, System.Int32)
   type: Method
   source:
@@ -1634,27 +1634,27 @@ items:
   assemblies:
   - System.Runtime
   namespace: System
-  summary: "\n<p>Indicates whether the character at the specified position in a specified string has a surrogate code unit.</p>\n"
+  summary: "$x$x$Xxxxxxxxx xxxxxxx xxx xxxxxxxxx xx xxx xxxxxxxxx xxxxxxxx xx x xxxxxxxxx xxxxxx xxx x xxxxxxxxx xxxx xxxx.$$x$$x"
   syntax:
     content: public static bool IsSurrogate(string s, int index)
     content.vb: Public Shared Function IsSurrogate(s As String, index As Integer) As Boolean
     parameters:
     - id: s
       type: System.String
-      description: "\n<p>A string. </p>\n"
+      description: "$x$x$X xxxxxx. $$x$$x"
     - id: index
       type: System.Int32
-      description: "\n<p>The position of the character to evaluate in <em>s</em>. </p>\n"
+      description: "$x$x$Xxx xxxxxxxx xx xxx xxxxxxxxx xx xxxxxxxx xx $xx$x$$xx$. $$x$$x"
     return:
       type: System.Boolean
-      description: "\n<p>\n<strong>true</strong> if the character at position <em>index</em> in <em>s</em> is a either a high surrogate or a low surrogate; otherwise, <strong>false</strong>.</p>\n"
+      description: "$x$x$$x$xxxxxx$xxxx$$xxxxxx$ xx xxx xxxxxxxxx xx xxxxxxxx $xx$xxxxx$$xx$ xx $xx$x$$xx$ xx x xxxxxx x xxxx xxxxxxxxx xx x xxx xxxxxxxxx$ xxxxxxxxx$ $xxxxxx$xxxxx$$xxxxxx$.$$x$$x"
   exceptions:
   - type: System.ArgumentNullException
     commentId: T:System.ArgumentNullException
-    description: "\n<p>\n<em>s</em> is <strong>null</strong>. </p>\n"
+    description: "$x$x$$x$xx$x$$xx$ xx $xxxxxx$xxxx$$xxxxxx$. $$x$$x"
   - type: System.ArgumentOutOfRangeException
     commentId: T:System.ArgumentOutOfRangeException
-    description: "\n<p>\n<em>index</em> is less than zero or greater than the last position in <em>s</em>. </p>\n"
+    description: "$x$x$$x$xx$xxxxx$$xx$ xx xxxx xxxx xxxx xx xxxxxxx xxxx xxx xxxx xxxxxxxx xx $xx$x$$xx$. $$x$$x"
   seealso:
   - type: System.Char.IsHighSurrogate(System.Char)
     commentId: M:System.Char.IsHighSurrogate(System.Char)
@@ -1676,7 +1676,7 @@ items:
   langs:
   - csharp
   - vb
-  name: "XXX"
+  name: IsSurrogatePair(Char, Char)
   fullName: System.Char.IsSurrogatePair(System.Char, System.Char)
   type: Method
   source:
@@ -1697,13 +1697,13 @@ items:
     parameters:
     - id: highSurrogate
       type: System.Char
-      description: "\n<p>The character to evaluate as the high surrogate of a surrogate pair. </p>\n"
+      description: "$x$x$Xxx xxxxxxxxx xx xxxxxxxx xx xxx xxxx xxxxxxxxx xx x xxxxxxxxx xxxx. $$x$$x"
     - id: lowSurrogate
       type: System.Char
-      description: "\n<p>The character to evaluate as the low surrogate of a surrogate pair. </p>\n"
+      description: "$x$x$Xxx xxxxxxxxx xx xxxxxxxx xx xxx xxx xxxxxxxxx xx x xxxxxxxxx xxxx. $$x$$x"
     return:
       type: System.Boolean
-      description: "\n<p>\n<strong>true</strong> if the numeric value of the <em>highSurrogate</em> parameter ranges from U+D800 through U+DBFF, and the numeric value of the <em>lowSurrogate</em> parameter ranges from U+DC00 through U+DFFF; otherwise, <strong>false</strong>.</p>\n"
+      description: "$x$x$$x$xxxxxx$xxxx$$xxxxxx$ xx xxx xxxxxxx xxxxx xx xxx $xx$xxxxXxxxxxxxx$$xx$ xxxxxxxxx xxxxxx xxxx X$X000 xxxxxxx X$XXXX$ xxx xxx xxxxxxx xxxxx xx xxx $xx$xxxXxxxxxxxx$$xx$ xxxxxxxxx xxxxxx xxxx X$XX00 xxxxxxx X$XXXX$ xxxxxxxxx$ $xxxxxx$xxxxx$$xxxxxx$.$$x$$x"
   seealso:
   - type: System.Char.IsHighSurrogate(System.Char)
     commentId: M:System.Char.IsHighSurrogate(System.Char)
@@ -1723,7 +1723,7 @@ items:
   langs:
   - csharp
   - vb
-  name: "XXX"
+  name: IsSurrogatePair(String, Int32)
   fullName: System.Char.IsSurrogatePair(System.String, System.Int32)
   type: Method
   source:
@@ -1744,20 +1744,20 @@ items:
     parameters:
     - id: s
       type: System.String
-      description: "\n<p>A string. </p>\n"
+      description: "$x$x$X xxxxxx. $$x$$x"
     - id: index
       type: System.Int32
-      description: "\n<p>The starting position of the pair of characters to evaluate within <em>s</em>. </p>\n"
+      description: "$x$x$Xxx xxxxxxxx xxxxxxxx xx xxx xxxx xx xxxxxxxxxx xx xxxxxxxx xxxxxx $xx$x$$xx$. $$x$$x"
     return:
       type: System.Boolean
-      description: "\n<p>\n<strong>true</strong> if the <em>s</em> parameter includes adjacent characters at positions <em>index</em> and <em>index</em> + 1, and the numeric value of the character at position <em>index</em> ranges from U+D800 through U+DBFF, and the numeric value of the character at position <em>index</em>+1 ranges from U+DC00 through U+DFFF; otherwise, <strong>false</strong>.</p>\n"
+      description: "$x$x$$x$xxxxxx$xxxx$$xxxxxx$ xx xxx $xx$x$$xx$ xxxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxxxx xx xxxxxxxxx $xx$xxxxx$$xx$ xxx $xx$xxxxx$$xx$ $ 0$ xxx xxx xxxxxxx xxxxx xx xxx xxxxxxxxx xx xxxxxxxx $xx$xxxxx$$xx$ xxxxxx xxxx X$X000 xxxxxxx X$XXXX$ xxx xxx xxxxxxx xxxxx xx xxx xxxxxxxxx xx xxxxxxxx $xx$xxxxx$$xx$$0 xxxxxx xxxx X$XX00 xxxxxxx X$XXXX$ xxxxxxxxx$ $xxxxxx$xxxxx$$xxxxxx$.$$x$$x"
   exceptions:
   - type: System.ArgumentNullException
     commentId: T:System.ArgumentNullException
-    description: "\n<p>\n<em>s</em> is <strong>null</strong>. </p>\n"
+    description: "$x$x$$x$xx$x$$xx$ xx $xxxxxx$xxxx$$xxxxxx$. $$x$$x"
   - type: System.ArgumentOutOfRangeException
     commentId: T:System.ArgumentOutOfRangeException
-    description: "\n<p>\n<em>index</em> is not a position within <em>s</em>. </p>\n"
+    description: "$x$x$$x$xx$xxxxx$$xx$ xx xxx x xxxxxxxx xxxxxx $xx$x$$xx$. $$x$$x"
   seealso:
   - type: System.Char.IsHighSurrogate(System.Char)
     commentId: M:System.Char.IsHighSurrogate(System.Char)
@@ -1777,7 +1777,7 @@ items:
   langs:
   - csharp
   - vb
-  name: "XXX"
+  name: IsSymbol(Char)
   fullName: System.Char.IsSymbol(System.Char)
   type: Method
   source:
@@ -1791,17 +1791,17 @@ items:
   assemblies:
   - System.Runtime
   namespace: System
-  summary: "\n<p>Indicates whether the specified Unicode character is categorized as a symbol character.</p>\n"
+  summary: "$x$x$Xxxxxxxxx xxxxxxx xxx xxxxxxxxx Xxxxxxx xxxxxxxxx xx xxxxxxxxxxx xx x xxxxxx xxxxxxxxx.$$x$$x"
   syntax:
     content: public static bool IsSymbol(char c)
     content.vb: Public Shared Function IsSymbol(c As Char) As Boolean
     parameters:
     - id: c
       type: System.Char
-      description: "\n<p>The Unicode character to evaluate. </p>\n"
+      description: "$x$x$Xxx Xxxxxxx xxxxxxxxx xx xxxxxxxx. $$x$$x"
     return:
       type: System.Boolean
-      description: "\n<p>\n<strong>true</strong> if <em>c</em> is a symbol character; otherwise, <strong>false</strong>.</p>\n"
+      description: "$x$x$$x$xxxxxx$xxxx$$xxxxxx$ xx $xx$x$$xx$ xx x xxxxxx xxxxxxxxx$ xxxxxxxxx$ $xxxxxx$xxxxx$$xxxxxx$.$$x$$x"
   seealso:
   - type: System.Boolean
     commentId: T:System.Boolean
@@ -1819,7 +1819,7 @@ items:
   langs:
   - csharp
   - vb
-  name: "XXX"
+  name: IsSymbol(String, Int32)
   fullName: System.Char.IsSymbol(System.String, System.Int32)
   type: Method
   source:
@@ -1833,27 +1833,27 @@ items:
   assemblies:
   - System.Runtime
   namespace: System
-  summary: "\n<p>Indicates whether the character at the specified position in a specified string is categorized as a symbol character.</p>\n"
+  summary: "$x$x$Xxxxxxxxx xxxxxxx xxx xxxxxxxxx xx xxx xxxxxxxxx xxxxxxxx xx x xxxxxxxxx xxxxxx xx xxxxxxxxxxx xx x xxxxxx xxxxxxxxx.$$x$$x"
   syntax:
     content: public static bool IsSymbol(string s, int index)
     content.vb: Public Shared Function IsSymbol(s As String, index As Integer) As Boolean
     parameters:
     - id: s
       type: System.String
-      description: "\n<p>A string. </p>\n"
+      description: "$x$x$X xxxxxx. $$x$$x"
     - id: index
       type: System.Int32
-      description: "\n<p>The position of the character to evaluate in <em>s</em>. </p>\n"
+      description: "$x$x$Xxx xxxxxxxx xx xxx xxxxxxxxx xx xxxxxxxx xx $xx$x$$xx$. $$x$$x"
     return:
       type: System.Boolean
-      description: "\n<p>\n<strong>true</strong> if the character at position <em>index</em> in <em>s</em> is a symbol character; otherwise, <strong>false</strong>.</p>\n"
+      description: "$x$x$$x$xxxxxx$xxxx$$xxxxxx$ xx xxx xxxxxxxxx xx xxxxxxxx $xx$xxxxx$$xx$ xx $xx$x$$xx$ xx x xxxxxx xxxxxxxxx$ xxxxxxxxx$ $xxxxxx$xxxxx$$xxxxxx$.$$x$$x"
   exceptions:
   - type: System.ArgumentNullException
     commentId: T:System.ArgumentNullException
-    description: "\n<p>\n<em>s</em> is <strong>null</strong>. </p>\n"
+    description: "$x$x$$x$xx$x$$xx$ xx $xxxxxx$xxxx$$xxxxxx$. $$x$$x"
   - type: System.ArgumentOutOfRangeException
     commentId: T:System.ArgumentOutOfRangeException
-    description: "\n<p>\n<em>index</em> is less than zero or greater than the last position in <em>s</em>. </p>\n"
+    description: "$x$x$$x$xx$xxxxx$$xx$ xx xxxx xxxx xxxx xx xxxxxxx xxxx xxx xxxx xxxxxxxx xx $xx$x$$xx$. $$x$$x"
   seealso:
   - type: System.Boolean
     commentId: T:System.Boolean
@@ -1873,7 +1873,7 @@ items:
   langs:
   - csharp
   - vb
-  name: "XXX"
+  name: IsUpper(Char)
   fullName: System.Char.IsUpper(System.Char)
   type: Method
   source:
@@ -1887,17 +1887,17 @@ items:
   assemblies:
   - System.Runtime
   namespace: System
-  summary: "\n<p>Indicates whether the specified Unicode character is categorized as an uppercase letter.</p>\n"
+  summary: "$x$x$Xxxxxxxxx xxxxxxx xxx xxxxxxxxx Xxxxxxx xxxxxxxxx xx xxxxxxxxxxx xx xx xxxxxxxxx xxxxxx.$$x$$x"
   syntax:
     content: public static bool IsUpper(char c)
     content.vb: Public Shared Function IsUpper(c As Char) As Boolean
     parameters:
     - id: c
       type: System.Char
-      description: "\n<p>The Unicode character to evaluate. </p>\n"
+      description: "$x$x$Xxx Xxxxxxx xxxxxxxxx xx xxxxxxxx. $$x$$x"
     return:
       type: System.Boolean
-      description: "\n<p>\n<strong>true</strong> if <em>c</em> is an uppercase letter; otherwise, <strong>false</strong>.</p>\n"
+      description: "$x$x$$x$xxxxxx$xxxx$$xxxxxx$ xx $xx$x$$xx$ xx xx xxxxxxxxx xxxxxx$ xxxxxxxxx$ $xxxxxx$xxxxx$$xxxxxx$.$$x$$x"
   seealso:
   - type: System.Boolean
     commentId: T:System.Boolean
@@ -1917,7 +1917,7 @@ items:
   langs:
   - csharp
   - vb
-  name: "XXX"
+  name: IsUpper(String, Int32)
   fullName: System.Char.IsUpper(System.String, System.Int32)
   type: Method
   source:
@@ -1931,27 +1931,27 @@ items:
   assemblies:
   - System.Runtime
   namespace: System
-  summary: "\n<p>Indicates whether the character at the specified position in a specified string is categorized as an uppercase letter.</p>\n"
+  summary: "$x$x$Xxxxxxxxx xxxxxxx xxx xxxxxxxxx xx xxx xxxxxxxxx xxxxxxxx xx x xxxxxxxxx xxxxxx xx xxxxxxxxxxx xx xx xxxxxxxxx xxxxxx.$$x$$x"
   syntax:
     content: public static bool IsUpper(string s, int index)
     content.vb: Public Shared Function IsUpper(s As String, index As Integer) As Boolean
     parameters:
     - id: s
       type: System.String
-      description: "\n<p>A string. </p>\n"
+      description: "$x$x$X xxxxxx. $$x$$x"
     - id: index
       type: System.Int32
-      description: "\n<p>The position of the character to evaluate in <em>s</em>. </p>\n"
+      description: "$x$x$Xxx xxxxxxxx xx xxx xxxxxxxxx xx xxxxxxxx xx $xx$x$$xx$. $$x$$x"
     return:
       type: System.Boolean
-      description: "\n<p>\n<strong>true</strong> if the character at position <em>index</em> in <em>s</em> is an uppercase letter; otherwise, <strong>false</strong>.</p>\n"
+      description: "$x$x$$x$xxxxxx$xxxx$$xxxxxx$ xx xxx xxxxxxxxx xx xxxxxxxx $xx$xxxxx$$xx$ xx $xx$x$$xx$ xx xx xxxxxxxxx xxxxxx$ xxxxxxxxx$ $xxxxxx$xxxxx$$xxxxxx$.$$x$$x"
   exceptions:
   - type: System.ArgumentNullException
     commentId: T:System.ArgumentNullException
-    description: "\n<p>\n<em>s</em> is <strong>null</strong>. </p>\n"
+    description: "$x$x$$x$xx$x$$xx$ xx $xxxxxx$xxxx$$xxxxxx$. $$x$$x"
   - type: System.ArgumentOutOfRangeException
     commentId: T:System.ArgumentOutOfRangeException
-    description: "\n<p>\n<em>index</em> is less than zero or greater than the last position in <em>s</em>. </p>\n"
+    description: "$x$x$$x$xx$xxxxx$$xx$ xx xxxx xxxx xxxx xx xxxxxxx xxxx xxx xxxx xxxxxxxx xx $xx$x$$xx$. $$x$$x"
   seealso:
   - type: System.Boolean
     commentId: T:System.Boolean
@@ -1971,7 +1971,7 @@ items:
   langs:
   - csharp
   - vb
-  name: "XXX"
+  name: IsWhiteSpace(Char)
   fullName: System.Char.IsWhiteSpace(System.Char)
   type: Method
   source:
@@ -1985,17 +1985,17 @@ items:
   assemblies:
   - System.Runtime
   namespace: System
-  summary: "\n<p>Indicates whether the specified Unicode character is categorized as white space.</p>\n"
+  summary: "$x$x$Xxxxxxxxx xxxxxxx xxx xxxxxxxxx Xxxxxxx xxxxxxxxx xx xxxxxxxxxxx xx xxxxx xxxxx.$$x$$x"
   syntax:
     content: public static bool IsWhiteSpace(char c)
     content.vb: Public Shared Function IsWhiteSpace(c As Char) As Boolean
     parameters:
     - id: c
       type: System.Char
-      description: "\n<p>The Unicode character to evaluate. </p>\n"
+      description: "$x$x$Xxx Xxxxxxx xxxxxxxxx xx xxxxxxxx. $$x$$x"
     return:
       type: System.Boolean
-      description: "\n<p>\n<strong>true</strong> if <em>c</em> is white space; otherwise, <strong>false</strong>.</p>\n"
+      description: "$x$x$$x$xxxxxx$xxxx$$xxxxxx$ xx $xx$x$$xx$ xx xxxxx xxxxx$ xxxxxxxxx$ $xxxxxx$xxxxx$$xxxxxx$.$$x$$x"
   seealso:
   - type: System.Boolean
     commentId: T:System.Boolean
@@ -2015,7 +2015,7 @@ items:
   langs:
   - csharp
   - vb
-  name: "XXX"
+  name: IsWhiteSpace(String, Int32)
   fullName: System.Char.IsWhiteSpace(System.String, System.Int32)
   type: Method
   source:
@@ -2029,27 +2029,27 @@ items:
   assemblies:
   - System.Runtime
   namespace: System
-  summary: "\n<p>Indicates whether the character at the specified position in a specified string is categorized as white space.</p>\n"
+  summary: "$x$x$Xxxxxxxxx xxxxxxx xxx xxxxxxxxx xx xxx xxxxxxxxx xxxxxxxx xx x xxxxxxxxx xxxxxx xx xxxxxxxxxxx xx xxxxx xxxxx.$$x$$x"
   syntax:
     content: public static bool IsWhiteSpace(string s, int index)
     content.vb: Public Shared Function IsWhiteSpace(s As String, index As Integer) As Boolean
     parameters:
     - id: s
       type: System.String
-      description: "\n<p>A string. </p>\n"
+      description: "$x$x$X xxxxxx. $$x$$x"
     - id: index
       type: System.Int32
-      description: "\n<p>The position of the character to evaluate in <em>s</em>. </p>\n"
+      description: "$x$x$Xxx xxxxxxxx xx xxx xxxxxxxxx xx xxxxxxxx xx $xx$x$$xx$. $$x$$x"
     return:
       type: System.Boolean
-      description: "\n<p>\n<strong>true</strong> if the character at position <em>index</em> in <em>s</em> is white space; otherwise, <strong>false</strong>.</p>\n"
+      description: "$x$x$$x$xxxxxx$xxxx$$xxxxxx$ xx xxx xxxxxxxxx xx xxxxxxxx $xx$xxxxx$$xx$ xx $xx$x$$xx$ xx xxxxx xxxxx$ xxxxxxxxx$ $xxxxxx$xxxxx$$xxxxxx$.$$x$$x"
   exceptions:
   - type: System.ArgumentNullException
     commentId: T:System.ArgumentNullException
-    description: "\n<p>\n<em>s</em> is <strong>null</strong>. </p>\n"
+    description: "$x$x$$x$xx$x$$xx$ xx $xxxxxx$xxxx$$xxxxxx$. $$x$$x"
   - type: System.ArgumentOutOfRangeException
     commentId: T:System.ArgumentOutOfRangeException
-    description: "\n<p>\n<em>index</em> is less than zero or greater than the last position in <em>s</em>. </p>\n"
+    description: "$x$x$$x$xx$xxxxx$$xx$ xx xxxx xxxx xxxx xx xxxxxxx xxxx xxx xxxx xxxxxxxx xx $xx$x$$xx$. $$x$$x"
   seealso:
   - type: System.Boolean
     commentId: T:System.Boolean
@@ -2071,7 +2071,7 @@ items:
   langs:
   - csharp
   - vb
-  name: "XXX"
+  name: Parse(String)
   fullName: System.Char.Parse(System.String)
   type: Method
   source:
@@ -2085,24 +2085,24 @@ items:
   assemblies:
   - System.Runtime
   namespace: System
-  summary: "\n<p>Converts the value of the specified string to its equivalent Unicode character.</p>\n"
+  summary: "$x$x$Xxxxxxxx xxx xxxxx xx xxx xxxxxxxxx xxxxxx xx xxx xxxxxxxxxx Xxxxxxx xxxxxxxxx.$$x$$x"
   syntax:
     content: public static char Parse(string s)
     content.vb: Public Shared Function Parse(s As String) As Char
     parameters:
     - id: s
       type: System.String
-      description: "\n<p>A string that contains a single character, or <strong>null</strong>. </p>\n"
+      description: "$x$x$X xxxxxx xxxx xxxxxxxx x xxxxxx xxxxxxxxx$ xx $xxxxxx$xxxx$$xxxxxx$. $$x$$x"
     return:
       type: System.Char
-      description: "\n<p>A Unicode character equivalent to the sole character in <em>s</em>.</p>\n"
+      description: "$x$x$X Xxxxxxx xxxxxxxxx xxxxxxxxxx xx xxx xxxx xxxxxxxxx xx $xx$x$$xx$.$$x$$x"
   exceptions:
   - type: System.ArgumentNullException
     commentId: T:System.ArgumentNullException
-    description: "\n<p>\n<em>s</em> is <strong>null</strong>. </p>\n"
+    description: "$x$x$$x$xx$x$$xx$ xx $xxxxxx$xxxx$$xxxxxx$. $$x$$x"
   - type: System.FormatException
     commentId: T:System.FormatException
-    description: "\n<p>The length of <em>s</em> is not 1. </p>\n"
+    description: "$x$x$Xxx xxxxxx xx $xx$x$$xx$ xx xxx 0. $$x$$x"
   seealso:
   - type: System.Char.ToString
     commentId: M:System.Char.ToString
@@ -2121,7 +2121,7 @@ items:
   langs:
   - csharp
   - vb
-  name: "XXX"
+  name: IComparable.CompareTo(Object)
   fullName: System.Char.System.IComparable.CompareTo(System.Object)
   type: Method
   source:
@@ -2156,7 +2156,7 @@ items:
   langs:
   - csharp
   - vb
-  name: "XXX"
+  name: IConvertible.GetTypeCode()
   fullName: System.Char.System.IConvertible.GetTypeCode()
   type: Method
   source:
@@ -2188,7 +2188,7 @@ items:
   langs:
   - csharp
   - vb
-  name: "XXX"
+  name: IConvertible.ToBoolean(IFormatProvider)
   fullName: System.Char.System.IConvertible.ToBoolean(System.IFormatProvider)
   type: Method
   source:
@@ -2209,14 +2209,14 @@ items:
     parameters:
     - id: provider
       type: System.IFormatProvider
-      description: "\n<p>This parameter is ignored.</p>\n"
+      description: "$x$x$Xxxx xxxxxxxxx xx xxxxxxx.$$x$$x"
     return:
       type: System.Boolean
-      description: "\n<p>This conversion is not supported. No value is returned.</p>\n"
+      description: "$x$x$Xxxx xxxxxxxxxx xx xxx xxxxxxxxx. Xx xxxxx xx xxxxxxxx.$$x$$x"
   exceptions:
   - type: System.InvalidCastException
     commentId: T:System.InvalidCastException
-    description: "\n<p>This conversion is not supported.</p>\n"
+    description: "$x$x$Xxxx xxxxxxxxxx xx xxx xxxxxxxxx.$$x$$x"
   implements:
   - System.IConvertible.ToBoolean(System.IFormatProvider)
   name.vb: System.IConvertible.ToBoolean(IFormatProvider)
@@ -2230,7 +2230,7 @@ items:
   langs:
   - csharp
   - vb
-  name: "XXX"
+  name: IConvertible.ToByte(IFormatProvider)
   fullName: System.Char.System.IConvertible.ToByte(System.IFormatProvider)
   type: Method
   source:
@@ -2251,7 +2251,7 @@ items:
     parameters:
     - id: provider
       type: System.IFormatProvider
-      description: "\n<p>This parameter is ignored.</p>\n"
+      description: "$x$x$Xxxx xxxxxxxxx xx xxxxxxx.$$x$$x"
     return:
       type: System.Byte
       description: "\n<p>The converted value of the current <xref href=\"System.Char\" data-throw-if-not-resolved=\"false\"></xref> object.</p>\n"
@@ -2268,7 +2268,7 @@ items:
   langs:
   - csharp
   - vb
-  name: "XXX"
+  name: IConvertible.ToChar(IFormatProvider)
   fullName: System.Char.System.IConvertible.ToChar(System.IFormatProvider)
   type: Method
   source:
@@ -2289,7 +2289,7 @@ items:
     parameters:
     - id: provider
       type: System.IFormatProvider
-      description: "\n<p>This parameter is ignored.</p>\n"
+      description: "$x$x$Xxxx xxxxxxxxx xx xxxxxxx.$$x$$x"
     return:
       type: System.Char
       description: "\n<p>The value of the current <xref href=\"System.Char\" data-throw-if-not-resolved=\"false\"></xref> object unchanged.</p>\n"
@@ -2306,7 +2306,7 @@ items:
   langs:
   - csharp
   - vb
-  name: "XXX"
+  name: IConvertible.ToDateTime(IFormatProvider)
   fullName: System.Char.System.IConvertible.ToDateTime(System.IFormatProvider)
   type: Method
   source:
@@ -2327,14 +2327,14 @@ items:
     parameters:
     - id: provider
       type: System.IFormatProvider
-      description: "\n<p>This parameter is ignored.</p>\n"
+      description: "$x$x$Xxxx xxxxxxxxx xx xxxxxxx.$$x$$x"
     return:
       type: System.DateTime
-      description: "\n<p>No value is returned.</p>\n"
+      description: "$x$x$Xx xxxxx xx xxxxxxxx.$$x$$x"
   exceptions:
   - type: System.InvalidCastException
     commentId: T:System.InvalidCastException
-    description: "\n<p>This conversion is not supported.</p>\n"
+    description: "$x$x$Xxxx xxxxxxxxxx xx xxx xxxxxxxxx.$$x$$x"
   implements:
   - System.IConvertible.ToDateTime(System.IFormatProvider)
   name.vb: System.IConvertible.ToDateTime(IFormatProvider)
@@ -2348,7 +2348,7 @@ items:
   langs:
   - csharp
   - vb
-  name: "XXX"
+  name: IConvertible.ToDecimal(IFormatProvider)
   fullName: System.Char.System.IConvertible.ToDecimal(System.IFormatProvider)
   type: Method
   source:
@@ -2369,14 +2369,14 @@ items:
     parameters:
     - id: provider
       type: System.IFormatProvider
-      description: "\n<p>This parameter is ignored.</p>\n"
+      description: "$x$x$Xxxx xxxxxxxxx xx xxxxxxx.$$x$$x"
     return:
       type: System.Decimal
-      description: "\n<p>No value is returned.</p>\n"
+      description: "$x$x$Xx xxxxx xx xxxxxxxx.$$x$$x"
   exceptions:
   - type: System.InvalidCastException
     commentId: T:System.InvalidCastException
-    description: "\n<p>This conversion is not supported.</p>\n"
+    description: "$x$x$Xxxx xxxxxxxxxx xx xxx xxxxxxxxx.$$x$$x"
   implements:
   - System.IConvertible.ToDecimal(System.IFormatProvider)
   name.vb: System.IConvertible.ToDecimal(IFormatProvider)
@@ -2390,7 +2390,7 @@ items:
   langs:
   - csharp
   - vb
-  name: "XXX"
+  name: IConvertible.ToDouble(IFormatProvider)
   fullName: System.Char.System.IConvertible.ToDouble(System.IFormatProvider)
   type: Method
   source:
@@ -2411,14 +2411,14 @@ items:
     parameters:
     - id: provider
       type: System.IFormatProvider
-      description: "\n<p>This parameter is ignored.</p>\n"
+      description: "$x$x$Xxxx xxxxxxxxx xx xxxxxxx.$$x$$x"
     return:
       type: System.Double
-      description: "\n<p>No value is returned.</p>\n"
+      description: "$x$x$Xx xxxxx xx xxxxxxxx.$$x$$x"
   exceptions:
   - type: System.InvalidCastException
     commentId: T:System.InvalidCastException
-    description: "\n<p>This conversion is not supported.</p>\n"
+    description: "$x$x$Xxxx xxxxxxxxxx xx xxx xxxxxxxxx.$$x$$x"
   implements:
   - System.IConvertible.ToDouble(System.IFormatProvider)
   name.vb: System.IConvertible.ToDouble(IFormatProvider)
@@ -2432,7 +2432,7 @@ items:
   langs:
   - csharp
   - vb
-  name: "XXX"
+  name: IConvertible.ToInt16(IFormatProvider)
   fullName: System.Char.System.IConvertible.ToInt16(System.IFormatProvider)
   type: Method
   source:
@@ -2453,7 +2453,7 @@ items:
     parameters:
     - id: provider
       type: System.IFormatProvider
-      description: "\n<p>This parameter is ignored.</p>\n"
+      description: "$x$x$Xxxx xxxxxxxxx xx xxxxxxx.$$x$$x"
     return:
       type: System.Int16
       description: "\n<p>The converted value of the current <xref href=\"System.Char\" data-throw-if-not-resolved=\"false\"></xref> object.</p>\n"
@@ -2470,7 +2470,7 @@ items:
   langs:
   - csharp
   - vb
-  name: "XXX"
+  name: IConvertible.ToInt32(IFormatProvider)
   fullName: System.Char.System.IConvertible.ToInt32(System.IFormatProvider)
   type: Method
   source:
@@ -2491,7 +2491,7 @@ items:
     parameters:
     - id: provider
       type: System.IFormatProvider
-      description: "\n<p>This parameter is ignored.</p>\n"
+      description: "$x$x$Xxxx xxxxxxxxx xx xxxxxxx.$$x$$x"
     return:
       type: System.Int32
       description: "\n<p>The converted value of the current <xref href=\"System.Char\" data-throw-if-not-resolved=\"false\"></xref> object.</p>\n"
@@ -2508,7 +2508,7 @@ items:
   langs:
   - csharp
   - vb
-  name: "XXX"
+  name: IConvertible.ToInt64(IFormatProvider)
   fullName: System.Char.System.IConvertible.ToInt64(System.IFormatProvider)
   type: Method
   source:
@@ -2529,7 +2529,7 @@ items:
     parameters:
     - id: provider
       type: System.IFormatProvider
-      description: "\n<p>This parameter is ignored.</p>\n"
+      description: "$x$x$Xxxx xxxxxxxxx xx xxxxxxx.$$x$$x"
     return:
       type: System.Int64
       description: "\n<p>The converted value of the current <xref href=\"System.Char\" data-throw-if-not-resolved=\"false\"></xref> object.</p>\n"
@@ -2546,7 +2546,7 @@ items:
   langs:
   - csharp
   - vb
-  name: "XXX"
+  name: IConvertible.ToSByte(IFormatProvider)
   fullName: System.Char.System.IConvertible.ToSByte(System.IFormatProvider)
   type: Method
   source:
@@ -2567,7 +2567,7 @@ items:
     parameters:
     - id: provider
       type: System.IFormatProvider
-      description: "\n<p>This parameter is ignored.</p>\n"
+      description: "$x$x$Xxxx xxxxxxxxx xx xxxxxxx.$$x$$x"
     return:
       type: System.SByte
       description: "\n<p>The converted value of the current <xref href=\"System.Char\" data-throw-if-not-resolved=\"false\"></xref> object.</p>\n"
@@ -2584,7 +2584,7 @@ items:
   langs:
   - csharp
   - vb
-  name: "XXX"
+  name: IConvertible.ToSingle(IFormatProvider)
   fullName: System.Char.System.IConvertible.ToSingle(System.IFormatProvider)
   type: Method
   source:
@@ -2605,14 +2605,14 @@ items:
     parameters:
     - id: provider
       type: System.IFormatProvider
-      description: "\n<p>This parameter is ignored.</p>\n"
+      description: "$x$x$Xxxx xxxxxxxxx xx xxxxxxx.$$x$$x"
     return:
       type: System.Single
-      description: "\n<p>No value is returned.</p>\n"
+      description: "$x$x$Xx xxxxx xx xxxxxxxx.$$x$$x"
   exceptions:
   - type: System.InvalidCastException
     commentId: T:System.InvalidCastException
-    description: "\n<p>This conversion is not supported.</p>\n"
+    description: "$x$x$Xxxx xxxxxxxxxx xx xxx xxxxxxxxx.$$x$$x"
   implements:
   - System.IConvertible.ToSingle(System.IFormatProvider)
   name.vb: System.IConvertible.ToSingle(IFormatProvider)
@@ -2626,7 +2626,7 @@ items:
   langs:
   - csharp
   - vb
-  name: "XXX"
+  name: IConvertible.ToString(IFormatProvider)
   fullName: System.Char.System.IConvertible.ToString(System.IFormatProvider)
   type: Method
   source:
@@ -2661,7 +2661,7 @@ items:
   langs:
   - csharp
   - vb
-  name: "XXX"
+  name: IConvertible.ToType(Type, IFormatProvider)
   fullName: System.Char.System.IConvertible.ToType(System.Type, System.IFormatProvider)
   type: Method
   source:
@@ -2688,11 +2688,11 @@ items:
       description: "\n<p>An <xref href=\"System.IFormatProvider\" data-throw-if-not-resolved=\"false\"></xref> object. </p>\n"
     return:
       type: System.Object
-      description: "\n<p>An object of the specified type.</p>\n"
+      description: "$x$x$Xx xxxxxx xx xxx xxxxxxxxx xxxx.$$x$$x"
   exceptions:
   - type: System.ArgumentNullException
     commentId: T:System.ArgumentNullException
-    description: "\n<p>\n<em>type</em> is <strong>null</strong>.</p>\n"
+    description: "$x$x$$x$xx$xxxx$$xx$ xx $xxxxxx$xxxx$$xxxxxx$.$$x$$x"
   - type: System.InvalidCastException
     commentId: T:System.InvalidCastException
     description: "\n<p>The value of the current <xref href=\"System.Char\" data-throw-if-not-resolved=\"false\"></xref> object cannot be converted to the type specified by the <em>type</em> parameter. </p>\n"
@@ -2709,7 +2709,7 @@ items:
   langs:
   - csharp
   - vb
-  name: "XXX"
+  name: IConvertible.ToUInt16(IFormatProvider)
   fullName: System.Char.System.IConvertible.ToUInt16(System.IFormatProvider)
   type: Method
   source:
@@ -2747,7 +2747,7 @@ items:
   langs:
   - csharp
   - vb
-  name: "XXX"
+  name: IConvertible.ToUInt32(IFormatProvider)
   fullName: System.Char.System.IConvertible.ToUInt32(System.IFormatProvider)
   type: Method
   source:
@@ -2785,7 +2785,7 @@ items:
   langs:
   - csharp
   - vb
-  name: "XXX"
+  name: IConvertible.ToUInt64(IFormatProvider)
   fullName: System.Char.System.IConvertible.ToUInt64(System.IFormatProvider)
   type: Method
   source:
@@ -2822,7 +2822,7 @@ items:
   langs:
   - csharp
   - vb
-  name: "XXX"
+  name: ToLower(Char)
   fullName: System.Char.ToLower(System.Char)
   type: Method
   source:
@@ -2836,17 +2836,17 @@ items:
   assemblies:
   - System.Runtime
   namespace: System
-  summary: "\n<p>Converts the value of a Unicode character to its lowercase equivalent.</p>\n"
+  summary: "$x$x$Xxxxxxxx xxx xxxxx xx x Xxxxxxx xxxxxxxxx xx xxx xxxxxxxxx xxxxxxxxxx.$$x$$x"
   syntax:
     content: public static char ToLower(char c)
     content.vb: Public Shared Function ToLower(c As Char) As Char
     parameters:
     - id: c
       type: System.Char
-      description: "\n<p>The Unicode character to convert. </p>\n"
+      description: "$x$x$Xxx Xxxxxxx xxxxxxxxx xx xxxxxxx. $$x$$x"
     return:
       type: System.Char
-      description: "\n<p>The lowercase equivalent of <em>c</em>, or the unchanged value of <em>c</em>, if <em>c</em> is already lowercase or not alphabetic.</p>\n"
+      description: "$x$x$Xxx xxxxxxxxx xxxxxxxxxx xx $xx$x$$xx$$ xx xxx xxxxxxxxx xxxxx xx $xx$x$$xx$$ xx $xx$x$$xx$ xx xxxxxxx xxxxxxxxx xx xxx xxxxxxxxxx.$$x$$x"
   seealso:
   - type: System.String.ToLower
     commentId: M:System.String.ToLower
@@ -2866,7 +2866,7 @@ items:
   langs:
   - csharp
   - vb
-  name: "XXX"
+  name: ToLowerInvariant(Char)
   fullName: System.Char.ToLowerInvariant(System.Char)
   type: Method
   source:
@@ -2880,17 +2880,17 @@ items:
   assemblies:
   - System.Runtime
   namespace: System
-  summary: "\n<p>Converts the value of a Unicode character to its lowercase equivalent using the casing rules of the invariant culture.</p>\n"
+  summary: "$x$x$Xxxxxxxx xxx xxxxx xx x Xxxxxxx xxxxxxxxx xx xxx xxxxxxxxx xxxxxxxxxx xxxxx xxx xxxxxx xxxxx xx xxx xxxxxxxxx xxxxxxx.$$x$$x"
   syntax:
     content: public static char ToLowerInvariant(char c)
     content.vb: Public Shared Function ToLowerInvariant(c As Char) As Char
     parameters:
     - id: c
       type: System.Char
-      description: "\n<p>The Unicode character to convert. </p>\n"
+      description: "$x$x$Xxx Xxxxxxx xxxxxxxxx xx xxxxxxx. $$x$$x"
     return:
       type: System.Char
-      description: "\n<p>The lowercase equivalent of the <em>c</em> parameter, or the unchanged value of <em>c</em>, if <em>c</em> is already lowercase or not alphabetic.</p>\n"
+      description: "$x$x$Xxx xxxxxxxxx xxxxxxxxxx xx xxx $xx$x$$xx$ xxxxxxxxx$ xx xxx xxxxxxxxx xxxxx xx $xx$x$$xx$$ xx $xx$x$$xx$ xx xxxxxxx xxxxxxxxx xx xxx xxxxxxxxxx.$$x$$x"
   seealso:
   - type: System.String.ToLower
     commentId: M:System.String.ToLower
@@ -2912,7 +2912,7 @@ items:
   langs:
   - csharp
   - vb
-  name: "XXX"
+  name: ToString()
   fullName: System.Char.ToString()
   type: Method
   source:
@@ -2926,13 +2926,13 @@ items:
   assemblies:
   - System.Runtime
   namespace: System
-  summary: "\n<p>Converts the value of this instance to its equivalent string representation.</p>\n"
+  summary: "$x$x$Xxxxxxxx xxx xxxxx xx xxxx xxxxxxxx xx xxx xxxxxxxxxx xxxxxx xxxxxxxxxxxxxx.$$x$$x"
   syntax:
     content: public override string ToString()
     content.vb: Public Overrides Function ToString As String
     return:
       type: System.String
-      description: "\n<p>The string representation of the value of this instance.</p>\n"
+      description: "$x$x$Xxx xxxxxx xxxxxxxxxxxxxx xx xxx xxxxx xx xxxx xxxxxxxx.$$x$$x"
   overridden: System.ValueType.ToString
   seealso:
   - type: System.Char.Parse(System.String)
@@ -2953,7 +2953,7 @@ items:
   langs:
   - csharp
   - vb
-  name: "XXX"
+  name: ToString(Char)
   fullName: System.Char.ToString(System.Char)
   type: Method
   source:
@@ -2967,17 +2967,17 @@ items:
   assemblies:
   - System.Runtime
   namespace: System
-  summary: "\n<p>Converts the specified Unicode character to its equivalent string representation.</p>\n"
+  summary: "$x$x$Xxxxxxxx xxx xxxxxxxxx Xxxxxxx xxxxxxxxx xx xxx xxxxxxxxxx xxxxxx xxxxxxxxxxxxxx.$$x$$x"
   syntax:
     content: public static string ToString(char c)
     content.vb: Public Shared Function ToString(c As Char) As String
     parameters:
     - id: c
       type: System.Char
-      description: "\n<p>The Unicode character to convert. </p>\n"
+      description: "$x$x$Xxx Xxxxxxx xxxxxxxxx xx xxxxxxx. $$x$$x"
     return:
       type: System.String
-      description: "\n<p>The string representation of the value of <em>c</em>.</p>\n"
+      description: "$x$x$Xxx xxxxxx xxxxxxxxxxxxxx xx xxx xxxxx xx $xx$x$$xx$.$$x$$x"
   seealso:
   - type: System.Char.Parse(System.String)
     commentId: M:System.Char.Parse(System.String)
@@ -2997,7 +2997,7 @@ items:
   langs:
   - csharp
   - vb
-  name: "XXX"
+  name: ToUpper(Char)
   fullName: System.Char.ToUpper(System.Char)
   type: Method
   source:
@@ -3011,17 +3011,17 @@ items:
   assemblies:
   - System.Runtime
   namespace: System
-  summary: "\n<p>Converts the value of a Unicode character to its uppercase equivalent.</p>\n"
+  summary: "$x$x$Xxxxxxxx xxx xxxxx xx x Xxxxxxx xxxxxxxxx xx xxx xxxxxxxxx xxxxxxxxxx.$$x$$x"
   syntax:
     content: public static char ToUpper(char c)
     content.vb: Public Shared Function ToUpper(c As Char) As Char
     parameters:
     - id: c
       type: System.Char
-      description: "\n<p>The Unicode character to convert. </p>\n"
+      description: "$x$x$Xxx Xxxxxxx xxxxxxxxx xx xxxxxxx. $$x$$x"
     return:
       type: System.Char
-      description: "\n<p>The uppercase equivalent of <em>c</em>, or the unchanged value of <em>c</em> if <em>c</em> is already uppercase, has no uppercase equivalent, or is not alphabetic.</p>\n"
+      description: "$x$x$Xxx xxxxxxxxx xxxxxxxxxx xx $xx$x$$xx$$ xx xxx xxxxxxxxx xxxxx xx $xx$x$$xx$ xx $xx$x$$xx$ xx xxxxxxx xxxxxxxxx$ xxx xx xxxxxxxxx xxxxxxxxxx$ xx xx xxx xxxxxxxxxx.$$x$$x"
   seealso:
   - type: System.String.ToUpper
     commentId: M:System.String.ToUpper
@@ -3041,7 +3041,7 @@ items:
   langs:
   - csharp
   - vb
-  name: "XXX"
+  name: ToUpperInvariant(Char)
   fullName: System.Char.ToUpperInvariant(System.Char)
   type: Method
   source:
@@ -3055,17 +3055,17 @@ items:
   assemblies:
   - System.Runtime
   namespace: System
-  summary: "\n<p>Converts the value of a Unicode character to its uppercase equivalent using the casing rules of the invariant culture.</p>\n"
+  summary: "$x$x$Xxxxxxxx xxx xxxxx xx x Xxxxxxx xxxxxxxxx xx xxx xxxxxxxxx xxxxxxxxxx xxxxx xxx xxxxxx xxxxx xx xxx xxxxxxxxx xxxxxxx.$$x$$x"
   syntax:
     content: public static char ToUpperInvariant(char c)
     content.vb: Public Shared Function ToUpperInvariant(c As Char) As Char
     parameters:
     - id: c
       type: System.Char
-      description: "\n<p>The Unicode character to convert. </p>\n"
+      description: "$x$x$Xxx Xxxxxxx xxxxxxxxx xx xxxxxxx. $$x$$x"
     return:
       type: System.Char
-      description: "\n<p>The uppercase equivalent of the <em>c</em> parameter, or the unchanged value of <em>c</em>, if <em>c</em> is already uppercase or not alphabetic.</p>\n"
+      description: "$x$x$Xxx xxxxxxxxx xxxxxxxxxx xx xxx $xx$x$$xx$ xxxxxxxxx$ xx xxx xxxxxxxxx xxxxx xx $xx$x$$xx$$ xx $xx$x$$xx$ xx xxxxxxx xxxxxxxxx xx xxx xxxxxxxxxx.$$x$$x"
   seealso:
   - type: System.String.ToUpper
     commentId: M:System.String.ToUpper
@@ -3087,7 +3087,7 @@ items:
   langs:
   - csharp
   - vb
-  name: "XXX"
+  name: TryParse(String, out Char)
   fullName: System.Char.TryParse(System.String, out System.Char)
   type: Method
   source:
@@ -3101,20 +3101,20 @@ items:
   assemblies:
   - System.Runtime
   namespace: System
-  summary: "\n<p>Converts the value of the specified string to its equivalent Unicode character. A return code indicates whether the conversion succeeded or failed.</p>\n"
+  summary: "$x$x$Xxxxxxxx xxx xxxxx xx xxx xxxxxxxxx xxxxxx xx xxx xxxxxxxxxx Xxxxxxx xxxxxxxxx. X xxxxxx xxxx xxxxxxxxx xxxxxxx xxx xxxxxxxxxx xxxxxxxxx xx xxxxxx.$$x$$x"
   syntax:
     content: public static bool TryParse(string s, out char result)
     content.vb: Public Shared Function TryParse(s As String, ByRef result As Char) As Boolean
     parameters:
     - id: s
       type: System.String
-      description: "\n<p>A string that contains a single character, or <strong>null</strong>. </p>\n"
+      description: "$x$x$X xxxxxx xxxx xxxxxxxx x xxxxxx xxxxxxxxx$ xx $xxxxxx$xxxx$$xxxxxx$. $$x$$x"
     - id: result
       type: System.Char
-      description: "\n<p>When this method returns, contains a Unicode character equivalent to the sole character in <em>s</em>, if the conversion succeeded, or an undefined value if the conversion failed. The conversion fails if the <em>s</em> parameter is <strong>null</strong> or the length of <em>s</em> is not 1. This parameter is passed uninitialized. </p>\n"
+      description: "$x$x$Xxxx xxxx xxxxxx xxxxxxx$ xxxxxxxx x Xxxxxxx xxxxxxxxx xxxxxxxxxx xx xxx xxxx xxxxxxxxx xx $xx$x$$xx$$ xx xxx xxxxxxxxxx xxxxxxxxx$ xx xx xxxxxxxxx xxxxx xx xxx xxxxxxxxxx xxxxxx. Xxx xxxxxxxxxx xxxxx xx xxx $xx$x$$xx$ xxxxxxxxx xx $xxxxxx$xxxx$$xxxxxx$ xx xxx xxxxxx xx $xx$x$$xx$ xx xxx 0. Xxxx xxxxxxxxx xx xxxxxx xxxxxxxxxxxxx. $$x$$x"
     return:
       type: System.Boolean
-      description: "\n<p>\n<strong>true</strong> if the <em>s</em> parameter was converted successfully; otherwise, <strong>false</strong>.</p>\n"
+      description: "$x$x$$x$xxxxxx$xxxx$$xxxxxx$ xx xxx $xx$x$$xx$ xxxxxxxxx xxx xxxxxxxxx xxxxxxxxxxxx$ xxxxxxxxx$ $xxxxxx$xxxxx$$xxxxxx$.$$x$$x"
   seealso:
   - type: System.Char.Parse(System.String)
     commentId: M:System.Char.Parse(System.String)
@@ -3133,47 +3133,47 @@ items:
 references:
 - uid: System
   isExternal: false
-  name: "XXX"
+  name: System
   fullName: System
   nameWithType: System
   commentId: N:System
 - uid: System.IComparable
   parent: System
   isExternal: false
-  name: "XXX"
+  name: IComparable
   fullName: System.IComparable
   nameWithType: IComparable
   commentId: T:System.IComparable
 - uid: System.IComparable{System.Char}
   parent: System
   definition: System.IComparable`1
-  name: "XXX"
+  name: IComparable<Char>
   fullName: System.IComparable<System.Char>
   fullname.vb: System.IComparable(Of System.Char)
   name.vb: IComparable(Of Char)
   spec.csharp:
   - uid: System.IComparable`1
-    name: "XXX"
+    name: IComparable
     fullName: System.IComparable
-  - name: "<"
+  - name: <
     fullName: <
   - uid: System.Char
-    name: "XXX"
+    name: Char
     fullName: System.Char
     isExternal: true
   - name: '>'
     fullName: '>'
   spec.vb:
   - uid: System.IComparable`1
-    name: "XXX"
+    name: IComparable
     fullName: System.IComparable
-  - name: 'XXX '
+  - name: '(Of '
     fullName: '(Of '
   - uid: System.Char
-    name: "XXX"
+    name: Char
     fullName: System.Char
     isExternal: true
-  - name: "XXX"
+  - name: )
     fullName: )
   nameWithType: IComparable<Char>
   nameWithType.vb: IComparable(Of Char)
@@ -3181,40 +3181,40 @@ references:
 - uid: System.IConvertible
   parent: System
   isExternal: false
-  name: "XXX"
+  name: IConvertible
   fullName: System.IConvertible
   nameWithType: IConvertible
   commentId: T:System.IConvertible
 - uid: System.IEquatable{System.Char}
   parent: System
   definition: System.IEquatable`1
-  name: "XXX"
+  name: IEquatable<Char>
   fullName: System.IEquatable<System.Char>
   fullname.vb: System.IEquatable(Of System.Char)
   name.vb: IEquatable(Of Char)
   spec.csharp:
   - uid: System.IEquatable`1
-    name: "XXX"
+    name: IEquatable
     fullName: System.IEquatable
-  - name: "<"
+  - name: <
     fullName: <
   - uid: System.Char
-    name: "XXX"
+    name: Char
     fullName: System.Char
     isExternal: true
   - name: '>'
     fullName: '>'
   spec.vb:
   - uid: System.IEquatable`1
-    name: "XXX"
+    name: IEquatable
     fullName: System.IEquatable
-  - name: 'XXX '
+  - name: '(Of '
     fullName: '(Of '
   - uid: System.Char
-    name: "XXX"
+    name: Char
     fullName: System.Char
     isExternal: true
-  - name: "XXX"
+  - name: )
     fullName: )
   nameWithType: IEquatable<Char>
   nameWithType.vb: IEquatable(Of Char)
@@ -3222,172 +3222,172 @@ references:
 - uid: System.Object.Equals(System.Object,System.Object)
   parent: System.Object
   isExternal: true
-  name: "XXX"
+  name: Equals(Object, Object)
   fullName: System.Object.Equals(System.Object, System.Object)
   spec.csharp:
   - uid: System.Object.Equals(System.Object,System.Object)
-    name: "XXX"
+    name: Equals
     fullName: System.Object.Equals
     isExternal: true
-  - name: "XXX"
+  - name: (
     fullName: (
   - uid: System.Object
-    name: "XXX"
+    name: Object
     fullName: System.Object
     isExternal: true
-  - name: 'XXX '
+  - name: ', '
     fullName: ', '
   - uid: System.Object
-    name: "XXX"
+    name: Object
     fullName: System.Object
     isExternal: true
-  - name: "XXX"
+  - name: )
     fullName: )
   spec.vb:
   - uid: System.Object.Equals(System.Object,System.Object)
-    name: "XXX"
+    name: Equals
     fullName: System.Object.Equals
     isExternal: true
-  - name: "XXX"
+  - name: (
     fullName: (
   - uid: System.Object
-    name: "XXX"
+    name: Object
     fullName: System.Object
     isExternal: true
-  - name: 'XXX '
+  - name: ', '
     fullName: ', '
   - uid: System.Object
-    name: "XXX"
+    name: Object
     fullName: System.Object
     isExternal: true
-  - name: "XXX"
+  - name: )
     fullName: )
   nameWithType: Object.Equals(Object, Object)
   commentId: M:System.Object.Equals(System.Object,System.Object)
 - uid: System.Object.ReferenceEquals(System.Object,System.Object)
   parent: System.Object
   isExternal: true
-  name: "XXX"
+  name: ReferenceEquals(Object, Object)
   fullName: System.Object.ReferenceEquals(System.Object, System.Object)
   spec.csharp:
   - uid: System.Object.ReferenceEquals(System.Object,System.Object)
-    name: "XXX"
+    name: ReferenceEquals
     fullName: System.Object.ReferenceEquals
     isExternal: true
-  - name: "XXX"
+  - name: (
     fullName: (
   - uid: System.Object
-    name: "XXX"
+    name: Object
     fullName: System.Object
     isExternal: true
-  - name: 'XXX '
+  - name: ', '
     fullName: ', '
   - uid: System.Object
-    name: "XXX"
+    name: Object
     fullName: System.Object
     isExternal: true
-  - name: "XXX"
+  - name: )
     fullName: )
   spec.vb:
   - uid: System.Object.ReferenceEquals(System.Object,System.Object)
-    name: "XXX"
+    name: ReferenceEquals
     fullName: System.Object.ReferenceEquals
     isExternal: true
-  - name: "XXX"
+  - name: (
     fullName: (
   - uid: System.Object
-    name: "XXX"
+    name: Object
     fullName: System.Object
     isExternal: true
-  - name: 'XXX '
+  - name: ', '
     fullName: ', '
   - uid: System.Object
-    name: "XXX"
+    name: Object
     fullName: System.Object
     isExternal: true
-  - name: "XXX"
+  - name: )
     fullName: )
   nameWithType: Object.ReferenceEquals(Object, Object)
   commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
 - uid: System.Object.GetType
   parent: System.Object
   isExternal: true
-  name: "XXX"
+  name: GetType()
   fullName: System.Object.GetType()
   spec.csharp:
   - uid: System.Object.GetType
-    name: "XXX"
+    name: GetType
     fullName: System.Object.GetType
     isExternal: true
-  - name: "XXX"
+  - name: (
     fullName: (
-  - name: "XXX"
+  - name: )
     fullName: )
   spec.vb:
   - uid: System.Object.GetType
-    name: "XXX"
+    name: GetType
     fullName: System.Object.GetType
     isExternal: true
-  - name: "XXX"
+  - name: (
     fullName: (
-  - name: "XXX"
+  - name: )
     fullName: )
   nameWithType: Object.GetType()
   commentId: M:System.Object.GetType
 - uid: System.IComparable`1
   isExternal: false
-  name: "XXX"
+  name: IComparable<T>
   fullName: System.IComparable<T>
   fullname.vb: System.IComparable(Of T)
   name.vb: IComparable(Of T)
   spec.csharp:
   - uid: System.IComparable`1
-    name: "XXX"
+    name: IComparable
     fullName: System.IComparable
-  - name: "<"
+  - name: <
     fullName: <
-  - name: "XXX"
+  - name: T
     fullName: T
   - name: '>'
     fullName: '>'
   spec.vb:
   - uid: System.IComparable`1
-    name: "XXX"
+    name: IComparable
     fullName: System.IComparable
-  - name: 'XXX '
+  - name: '(Of '
     fullName: '(Of '
-  - name: "XXX"
+  - name: T
     fullName: T
-  - name: "XXX"
+  - name: )
     fullName: )
   nameWithType: IComparable<T>
   nameWithType.vb: IComparable(Of T)
   commentId: T:System.IComparable`1
 - uid: System.IEquatable`1
   isExternal: false
-  name: "XXX"
+  name: IEquatable<T>
   fullName: System.IEquatable<T>
   fullname.vb: System.IEquatable(Of T)
   name.vb: IEquatable(Of T)
   spec.csharp:
   - uid: System.IEquatable`1
-    name: "XXX"
+    name: IEquatable
     fullName: System.IEquatable
-  - name: "<"
+  - name: <
     fullName: <
-  - name: "XXX"
+  - name: T
     fullName: T
   - name: '>'
     fullName: '>'
   spec.vb:
   - uid: System.IEquatable`1
-    name: "XXX"
+    name: IEquatable
     fullName: System.IEquatable
-  - name: 'XXX '
+  - name: '(Of '
     fullName: '(Of '
-  - name: "XXX"
+  - name: T
     fullName: T
-  - name: "XXX"
+  - name: )
     fullName: )
   nameWithType: IEquatable<T>
   nameWithType.vb: IEquatable(Of T)
@@ -3395,46 +3395,46 @@ references:
 - uid: System.Object
   parent: System
   isExternal: false
-  name: "XXX"
+  name: Object
   fullName: System.Object
   nameWithType: Object
   commentId: T:System.Object
 - uid: System.Char
   parent: System
   isExternal: false
-  name: "XXX"
+  name: Char
   fullName: System.Char
   nameWithType: Char
   commentId: T:System.Char
 - uid: System.IComparable{System.Char}.CompareTo(System.Char)
   parent: System.IComparable{System.Char}
   definition: System.IComparable`1.CompareTo(`0)
-  name: "XXX"
+  name: CompareTo(Char)
   fullName: System.IComparable<System.Char>.CompareTo(System.Char)
   fullname.vb: System.IComparable(Of System.Char).CompareTo(System.Char)
   spec.csharp:
   - uid: System.IComparable`1.CompareTo(`0)
-    name: "XXX"
+    name: CompareTo
     fullName: System.IComparable<System.Char>.CompareTo
-  - name: "XXX"
+  - name: (
     fullName: (
   - uid: System.Char
-    name: "XXX"
+    name: Char
     fullName: System.Char
     isExternal: true
-  - name: "XXX"
+  - name: )
     fullName: )
   spec.vb:
   - uid: System.IComparable`1.CompareTo(`0)
-    name: "XXX"
+    name: CompareTo
     fullName: System.IComparable(Of System.Char).CompareTo
-  - name: "XXX"
+  - name: (
     fullName: (
   - uid: System.Char
-    name: "XXX"
+    name: Char
     fullName: System.Char
     isExternal: true
-  - name: "XXX"
+  - name: )
     fullName: )
   nameWithType: IComparable<Char>.CompareTo(Char)
   nameWithType.vb: IComparable(Of Char).CompareTo(Char)
@@ -3442,34 +3442,34 @@ references:
 - uid: System.Int32
   parent: System
   isExternal: false
-  name: "XXX"
+  name: Int32
   fullName: System.Int32
   nameWithType: Int32
   commentId: T:System.Int32
 - uid: System.IComparable`1.CompareTo(`0)
   isExternal: false
-  name: "XXX"
+  name: CompareTo(T)
   fullName: System.IComparable<T>.CompareTo(T)
   fullname.vb: System.IComparable(Of T).CompareTo(T)
   spec.csharp:
   - uid: System.IComparable`1.CompareTo(`0)
-    name: "XXX"
+    name: CompareTo
     fullName: System.IComparable<T>.CompareTo
-  - name: "XXX"
+  - name: (
     fullName: (
-  - name: "XXX"
+  - name: T
     fullName: T
-  - name: "XXX"
+  - name: )
     fullName: )
   spec.vb:
   - uid: System.IComparable`1.CompareTo(`0)
-    name: "XXX"
+    name: CompareTo
     fullName: System.IComparable(Of T).CompareTo
-  - name: "XXX"
+  - name: (
     fullName: (
-  - name: "XXX"
+  - name: T
     fullName: T
-  - name: "XXX"
+  - name: )
     fullName: )
   nameWithType: IComparable<T>.CompareTo(T)
   nameWithType.vb: IComparable(Of T).CompareTo(T)
@@ -3477,39 +3477,39 @@ references:
 - uid: System.String
   parent: System
   isExternal: false
-  name: "XXX"
+  name: String
   fullName: System.String
   nameWithType: String
   commentId: T:System.String
 - uid: System.IEquatable{System.Char}.Equals(System.Char)
   parent: System.IEquatable{System.Char}
   definition: System.IEquatable`1.Equals(`0)
-  name: "XXX"
+  name: Equals(Char)
   fullName: System.IEquatable<System.Char>.Equals(System.Char)
   fullname.vb: System.IEquatable(Of System.Char).Equals(System.Char)
   spec.csharp:
   - uid: System.IEquatable`1.Equals(`0)
-    name: "XXX"
+    name: Equals
     fullName: System.IEquatable<System.Char>.Equals
-  - name: "XXX"
+  - name: (
     fullName: (
   - uid: System.Char
-    name: "XXX"
+    name: Char
     fullName: System.Char
     isExternal: true
-  - name: "XXX"
+  - name: )
     fullName: )
   spec.vb:
   - uid: System.IEquatable`1.Equals(`0)
-    name: "XXX"
+    name: Equals
     fullName: System.IEquatable(Of System.Char).Equals
-  - name: "XXX"
+  - name: (
     fullName: (
   - uid: System.Char
-    name: "XXX"
+    name: Char
     fullName: System.Char
     isExternal: true
-  - name: "XXX"
+  - name: )
     fullName: )
   nameWithType: IEquatable<Char>.Equals(Char)
   nameWithType.vb: IEquatable(Of Char).Equals(Char)
@@ -3517,34 +3517,34 @@ references:
 - uid: System.Boolean
   parent: System
   isExternal: false
-  name: "XXX"
+  name: Boolean
   fullName: System.Boolean
   nameWithType: Boolean
   commentId: T:System.Boolean
 - uid: System.IEquatable`1.Equals(`0)
   isExternal: false
-  name: "XXX"
+  name: Equals(T)
   fullName: System.IEquatable<T>.Equals(T)
   fullname.vb: System.IEquatable(Of T).Equals(T)
   spec.csharp:
   - uid: System.IEquatable`1.Equals(`0)
-    name: "XXX"
+    name: Equals
     fullName: System.IEquatable<T>.Equals
-  - name: "XXX"
+  - name: (
     fullName: (
-  - name: "XXX"
+  - name: T
     fullName: T
-  - name: "XXX"
+  - name: )
     fullName: )
   spec.vb:
   - uid: System.IEquatable`1.Equals(`0)
-    name: "XXX"
+    name: Equals
     fullName: System.IEquatable(Of T).Equals
-  - name: "XXX"
+  - name: (
     fullName: (
-  - name: "XXX"
+  - name: T
     fullName: T
-  - name: "XXX"
+  - name: )
     fullName: )
   nameWithType: IEquatable<T>.Equals(T)
   nameWithType.vb: IEquatable(Of T).Equals(T)
@@ -3552,742 +3552,742 @@ references:
 - uid: System.ValueType.Equals(System.Object)
   parent: System.ValueType
   isExternal: true
-  name: "XXX"
+  name: Equals(Object)
   fullName: System.ValueType.Equals(System.Object)
   spec.csharp:
   - uid: System.ValueType.Equals(System.Object)
-    name: "XXX"
+    name: Equals
     fullName: System.ValueType.Equals
-  - name: "XXX"
+  - name: (
     fullName: (
   - uid: System.Object
-    name: "XXX"
+    name: Object
     fullName: System.Object
     isExternal: true
-  - name: "XXX"
+  - name: )
     fullName: )
   spec.vb:
   - uid: System.ValueType.Equals(System.Object)
-    name: "XXX"
+    name: Equals
     fullName: System.ValueType.Equals
-  - name: "XXX"
+  - name: (
     fullName: (
   - uid: System.Object
-    name: "XXX"
+    name: Object
     fullName: System.Object
     isExternal: true
-  - name: "XXX"
+  - name: )
     fullName: )
   nameWithType: ValueType.Equals(Object)
   commentId: M:System.ValueType.Equals(System.Object)
 - uid: System.ValueType
   parent: System
   isExternal: false
-  name: "XXX"
+  name: ValueType
   fullName: System.ValueType
   nameWithType: ValueType
   commentId: T:System.ValueType
 - uid: System.ValueType.GetHashCode
   parent: System.ValueType
   isExternal: false
-  name: "XXX"
+  name: GetHashCode()
   fullName: System.ValueType.GetHashCode()
   spec.csharp:
   - uid: System.ValueType.GetHashCode
-    name: "XXX"
+    name: GetHashCode
     fullName: System.ValueType.GetHashCode
-  - name: "XXX"
+  - name: (
     fullName: (
-  - name: "XXX"
+  - name: )
     fullName: )
   spec.vb:
   - uid: System.ValueType.GetHashCode
-    name: "XXX"
+    name: GetHashCode
     fullName: System.ValueType.GetHashCode
-  - name: "XXX"
+  - name: (
     fullName: (
-  - name: "XXX"
+  - name: )
     fullName: )
   nameWithType: ValueType.GetHashCode()
   commentId: M:System.ValueType.GetHashCode
 - uid: System.Double
   parent: System
   isExternal: false
-  name: "XXX"
+  name: Double
   fullName: System.Double
   nameWithType: Double
   commentId: T:System.Double
 - uid: System.IComparable.CompareTo(System.Object)
   parent: System.IComparable
   isExternal: true
-  name: "XXX"
+  name: CompareTo(Object)
   fullName: System.IComparable.CompareTo(System.Object)
   spec.csharp:
   - uid: System.IComparable.CompareTo(System.Object)
-    name: "XXX"
+    name: CompareTo
     fullName: System.IComparable.CompareTo
-  - name: "XXX"
+  - name: (
     fullName: (
   - uid: System.Object
-    name: "XXX"
+    name: Object
     fullName: System.Object
     isExternal: true
-  - name: "XXX"
+  - name: )
     fullName: )
   spec.vb:
   - uid: System.IComparable.CompareTo(System.Object)
-    name: "XXX"
+    name: CompareTo
     fullName: System.IComparable.CompareTo
-  - name: "XXX"
+  - name: (
     fullName: (
   - uid: System.Object
-    name: "XXX"
+    name: Object
     fullName: System.Object
     isExternal: true
-  - name: "XXX"
+  - name: )
     fullName: )
   nameWithType: IComparable.CompareTo(Object)
   commentId: M:System.IComparable.CompareTo(System.Object)
 - uid: System.IConvertible.GetTypeCode
   parent: System.IConvertible
   isExternal: false
-  name: "XXX"
+  name: GetTypeCode()
   fullName: System.IConvertible.GetTypeCode()
   spec.csharp:
   - uid: System.IConvertible.GetTypeCode
-    name: "XXX"
+    name: GetTypeCode
     fullName: System.IConvertible.GetTypeCode
-  - name: "XXX"
+  - name: (
     fullName: (
-  - name: "XXX"
+  - name: )
     fullName: )
   spec.vb:
   - uid: System.IConvertible.GetTypeCode
-    name: "XXX"
+    name: GetTypeCode
     fullName: System.IConvertible.GetTypeCode
-  - name: "XXX"
+  - name: (
     fullName: (
-  - name: "XXX"
+  - name: )
     fullName: )
   nameWithType: IConvertible.GetTypeCode()
   commentId: M:System.IConvertible.GetTypeCode
 - uid: System.TypeCode
   parent: System
   isExternal: false
-  name: "XXX"
+  name: TypeCode
   fullName: System.TypeCode
   nameWithType: TypeCode
   commentId: T:System.TypeCode
 - uid: System.IConvertible.ToBoolean(System.IFormatProvider)
   parent: System.IConvertible
   isExternal: false
-  name: "XXX"
+  name: ToBoolean(IFormatProvider)
   fullName: System.IConvertible.ToBoolean(System.IFormatProvider)
   spec.csharp:
   - uid: System.IConvertible.ToBoolean(System.IFormatProvider)
-    name: "XXX"
+    name: ToBoolean
     fullName: System.IConvertible.ToBoolean
-  - name: "XXX"
+  - name: (
     fullName: (
   - uid: System.IFormatProvider
-    name: "XXX"
+    name: IFormatProvider
     fullName: System.IFormatProvider
-  - name: "XXX"
+  - name: )
     fullName: )
   spec.vb:
   - uid: System.IConvertible.ToBoolean(System.IFormatProvider)
-    name: "XXX"
+    name: ToBoolean
     fullName: System.IConvertible.ToBoolean
-  - name: "XXX"
+  - name: (
     fullName: (
   - uid: System.IFormatProvider
-    name: "XXX"
+    name: IFormatProvider
     fullName: System.IFormatProvider
-  - name: "XXX"
+  - name: )
     fullName: )
   nameWithType: IConvertible.ToBoolean(IFormatProvider)
   commentId: M:System.IConvertible.ToBoolean(System.IFormatProvider)
 - uid: System.IFormatProvider
   parent: System
   isExternal: false
-  name: "XXX"
+  name: IFormatProvider
   fullName: System.IFormatProvider
   nameWithType: IFormatProvider
   commentId: T:System.IFormatProvider
 - uid: System.IConvertible.ToByte(System.IFormatProvider)
   parent: System.IConvertible
   isExternal: false
-  name: "XXX"
+  name: ToByte(IFormatProvider)
   fullName: System.IConvertible.ToByte(System.IFormatProvider)
   spec.csharp:
   - uid: System.IConvertible.ToByte(System.IFormatProvider)
-    name: "XXX"
+    name: ToByte
     fullName: System.IConvertible.ToByte
-  - name: "XXX"
+  - name: (
     fullName: (
   - uid: System.IFormatProvider
-    name: "XXX"
+    name: IFormatProvider
     fullName: System.IFormatProvider
-  - name: "XXX"
+  - name: )
     fullName: )
   spec.vb:
   - uid: System.IConvertible.ToByte(System.IFormatProvider)
-    name: "XXX"
+    name: ToByte
     fullName: System.IConvertible.ToByte
-  - name: "XXX"
+  - name: (
     fullName: (
   - uid: System.IFormatProvider
-    name: "XXX"
+    name: IFormatProvider
     fullName: System.IFormatProvider
-  - name: "XXX"
+  - name: )
     fullName: )
   nameWithType: IConvertible.ToByte(IFormatProvider)
   commentId: M:System.IConvertible.ToByte(System.IFormatProvider)
 - uid: System.Byte
   parent: System
   isExternal: false
-  name: "XXX"
+  name: Byte
   fullName: System.Byte
   nameWithType: Byte
   commentId: T:System.Byte
 - uid: System.IConvertible.ToChar(System.IFormatProvider)
   parent: System.IConvertible
   isExternal: false
-  name: "XXX"
+  name: ToChar(IFormatProvider)
   fullName: System.IConvertible.ToChar(System.IFormatProvider)
   spec.csharp:
   - uid: System.IConvertible.ToChar(System.IFormatProvider)
-    name: "XXX"
+    name: ToChar
     fullName: System.IConvertible.ToChar
-  - name: "XXX"
+  - name: (
     fullName: (
   - uid: System.IFormatProvider
-    name: "XXX"
+    name: IFormatProvider
     fullName: System.IFormatProvider
-  - name: "XXX"
+  - name: )
     fullName: )
   spec.vb:
   - uid: System.IConvertible.ToChar(System.IFormatProvider)
-    name: "XXX"
+    name: ToChar
     fullName: System.IConvertible.ToChar
-  - name: "XXX"
+  - name: (
     fullName: (
   - uid: System.IFormatProvider
-    name: "XXX"
+    name: IFormatProvider
     fullName: System.IFormatProvider
-  - name: "XXX"
+  - name: )
     fullName: )
   nameWithType: IConvertible.ToChar(IFormatProvider)
   commentId: M:System.IConvertible.ToChar(System.IFormatProvider)
 - uid: System.IConvertible.ToDateTime(System.IFormatProvider)
   parent: System.IConvertible
   isExternal: false
-  name: "XXX"
+  name: ToDateTime(IFormatProvider)
   fullName: System.IConvertible.ToDateTime(System.IFormatProvider)
   spec.csharp:
   - uid: System.IConvertible.ToDateTime(System.IFormatProvider)
-    name: "XXX"
+    name: ToDateTime
     fullName: System.IConvertible.ToDateTime
-  - name: "XXX"
+  - name: (
     fullName: (
   - uid: System.IFormatProvider
-    name: "XXX"
+    name: IFormatProvider
     fullName: System.IFormatProvider
-  - name: "XXX"
+  - name: )
     fullName: )
   spec.vb:
   - uid: System.IConvertible.ToDateTime(System.IFormatProvider)
-    name: "XXX"
+    name: ToDateTime
     fullName: System.IConvertible.ToDateTime
-  - name: "XXX"
+  - name: (
     fullName: (
   - uid: System.IFormatProvider
-    name: "XXX"
+    name: IFormatProvider
     fullName: System.IFormatProvider
-  - name: "XXX"
+  - name: )
     fullName: )
   nameWithType: IConvertible.ToDateTime(IFormatProvider)
   commentId: M:System.IConvertible.ToDateTime(System.IFormatProvider)
 - uid: System.DateTime
   parent: System
   isExternal: false
-  name: "XXX"
+  name: DateTime
   fullName: System.DateTime
   nameWithType: DateTime
   commentId: T:System.DateTime
 - uid: System.IConvertible.ToDecimal(System.IFormatProvider)
   parent: System.IConvertible
   isExternal: false
-  name: "XXX"
+  name: ToDecimal(IFormatProvider)
   fullName: System.IConvertible.ToDecimal(System.IFormatProvider)
   spec.csharp:
   - uid: System.IConvertible.ToDecimal(System.IFormatProvider)
-    name: "XXX"
+    name: ToDecimal
     fullName: System.IConvertible.ToDecimal
-  - name: "XXX"
+  - name: (
     fullName: (
   - uid: System.IFormatProvider
-    name: "XXX"
+    name: IFormatProvider
     fullName: System.IFormatProvider
-  - name: "XXX"
+  - name: )
     fullName: )
   spec.vb:
   - uid: System.IConvertible.ToDecimal(System.IFormatProvider)
-    name: "XXX"
+    name: ToDecimal
     fullName: System.IConvertible.ToDecimal
-  - name: "XXX"
+  - name: (
     fullName: (
   - uid: System.IFormatProvider
-    name: "XXX"
+    name: IFormatProvider
     fullName: System.IFormatProvider
-  - name: "XXX"
+  - name: )
     fullName: )
   nameWithType: IConvertible.ToDecimal(IFormatProvider)
   commentId: M:System.IConvertible.ToDecimal(System.IFormatProvider)
 - uid: System.Decimal
   parent: System
   isExternal: false
-  name: "XXX"
+  name: Decimal
   fullName: System.Decimal
   nameWithType: Decimal
   commentId: T:System.Decimal
 - uid: System.IConvertible.ToDouble(System.IFormatProvider)
   parent: System.IConvertible
   isExternal: false
-  name: "XXX"
+  name: ToDouble(IFormatProvider)
   fullName: System.IConvertible.ToDouble(System.IFormatProvider)
   spec.csharp:
   - uid: System.IConvertible.ToDouble(System.IFormatProvider)
-    name: "XXX"
+    name: ToDouble
     fullName: System.IConvertible.ToDouble
-  - name: "XXX"
+  - name: (
     fullName: (
   - uid: System.IFormatProvider
-    name: "XXX"
+    name: IFormatProvider
     fullName: System.IFormatProvider
-  - name: "XXX"
+  - name: )
     fullName: )
   spec.vb:
   - uid: System.IConvertible.ToDouble(System.IFormatProvider)
-    name: "XXX"
+    name: ToDouble
     fullName: System.IConvertible.ToDouble
-  - name: "XXX"
+  - name: (
     fullName: (
   - uid: System.IFormatProvider
-    name: "XXX"
+    name: IFormatProvider
     fullName: System.IFormatProvider
-  - name: "XXX"
+  - name: )
     fullName: )
   nameWithType: IConvertible.ToDouble(IFormatProvider)
   commentId: M:System.IConvertible.ToDouble(System.IFormatProvider)
 - uid: System.IConvertible.ToInt16(System.IFormatProvider)
   parent: System.IConvertible
   isExternal: false
-  name: "XXX"
+  name: ToInt16(IFormatProvider)
   fullName: System.IConvertible.ToInt16(System.IFormatProvider)
   spec.csharp:
   - uid: System.IConvertible.ToInt16(System.IFormatProvider)
-    name: "XXX"
+    name: ToInt16
     fullName: System.IConvertible.ToInt16
-  - name: "XXX"
+  - name: (
     fullName: (
   - uid: System.IFormatProvider
-    name: "XXX"
+    name: IFormatProvider
     fullName: System.IFormatProvider
-  - name: "XXX"
+  - name: )
     fullName: )
   spec.vb:
   - uid: System.IConvertible.ToInt16(System.IFormatProvider)
-    name: "XXX"
+    name: ToInt16
     fullName: System.IConvertible.ToInt16
-  - name: "XXX"
+  - name: (
     fullName: (
   - uid: System.IFormatProvider
-    name: "XXX"
+    name: IFormatProvider
     fullName: System.IFormatProvider
-  - name: "XXX"
+  - name: )
     fullName: )
   nameWithType: IConvertible.ToInt16(IFormatProvider)
   commentId: M:System.IConvertible.ToInt16(System.IFormatProvider)
 - uid: System.Int16
   parent: System
   isExternal: false
-  name: "XXX"
+  name: Int16
   fullName: System.Int16
   nameWithType: Int16
   commentId: T:System.Int16
 - uid: System.IConvertible.ToInt32(System.IFormatProvider)
   parent: System.IConvertible
   isExternal: false
-  name: "XXX"
+  name: ToInt32(IFormatProvider)
   fullName: System.IConvertible.ToInt32(System.IFormatProvider)
   spec.csharp:
   - uid: System.IConvertible.ToInt32(System.IFormatProvider)
-    name: "XXX"
+    name: ToInt32
     fullName: System.IConvertible.ToInt32
-  - name: "XXX"
+  - name: (
     fullName: (
   - uid: System.IFormatProvider
-    name: "XXX"
+    name: IFormatProvider
     fullName: System.IFormatProvider
-  - name: "XXX"
+  - name: )
     fullName: )
   spec.vb:
   - uid: System.IConvertible.ToInt32(System.IFormatProvider)
-    name: "XXX"
+    name: ToInt32
     fullName: System.IConvertible.ToInt32
-  - name: "XXX"
+  - name: (
     fullName: (
   - uid: System.IFormatProvider
-    name: "XXX"
+    name: IFormatProvider
     fullName: System.IFormatProvider
-  - name: "XXX"
+  - name: )
     fullName: )
   nameWithType: IConvertible.ToInt32(IFormatProvider)
   commentId: M:System.IConvertible.ToInt32(System.IFormatProvider)
 - uid: System.IConvertible.ToInt64(System.IFormatProvider)
   parent: System.IConvertible
   isExternal: false
-  name: "XXX"
+  name: ToInt64(IFormatProvider)
   fullName: System.IConvertible.ToInt64(System.IFormatProvider)
   spec.csharp:
   - uid: System.IConvertible.ToInt64(System.IFormatProvider)
-    name: "XXX"
+    name: ToInt64
     fullName: System.IConvertible.ToInt64
-  - name: "XXX"
+  - name: (
     fullName: (
   - uid: System.IFormatProvider
-    name: "XXX"
+    name: IFormatProvider
     fullName: System.IFormatProvider
-  - name: "XXX"
+  - name: )
     fullName: )
   spec.vb:
   - uid: System.IConvertible.ToInt64(System.IFormatProvider)
-    name: "XXX"
+    name: ToInt64
     fullName: System.IConvertible.ToInt64
-  - name: "XXX"
+  - name: (
     fullName: (
   - uid: System.IFormatProvider
-    name: "XXX"
+    name: IFormatProvider
     fullName: System.IFormatProvider
-  - name: "XXX"
+  - name: )
     fullName: )
   nameWithType: IConvertible.ToInt64(IFormatProvider)
   commentId: M:System.IConvertible.ToInt64(System.IFormatProvider)
 - uid: System.Int64
   parent: System
   isExternal: false
-  name: "XXX"
+  name: Int64
   fullName: System.Int64
   nameWithType: Int64
   commentId: T:System.Int64
 - uid: System.IConvertible.ToSByte(System.IFormatProvider)
   parent: System.IConvertible
   isExternal: false
-  name: "XXX"
+  name: ToSByte(IFormatProvider)
   fullName: System.IConvertible.ToSByte(System.IFormatProvider)
   spec.csharp:
   - uid: System.IConvertible.ToSByte(System.IFormatProvider)
-    name: "XXX"
+    name: ToSByte
     fullName: System.IConvertible.ToSByte
-  - name: "XXX"
+  - name: (
     fullName: (
   - uid: System.IFormatProvider
-    name: "XXX"
+    name: IFormatProvider
     fullName: System.IFormatProvider
-  - name: "XXX"
+  - name: )
     fullName: )
   spec.vb:
   - uid: System.IConvertible.ToSByte(System.IFormatProvider)
-    name: "XXX"
+    name: ToSByte
     fullName: System.IConvertible.ToSByte
-  - name: "XXX"
+  - name: (
     fullName: (
   - uid: System.IFormatProvider
-    name: "XXX"
+    name: IFormatProvider
     fullName: System.IFormatProvider
-  - name: "XXX"
+  - name: )
     fullName: )
   nameWithType: IConvertible.ToSByte(IFormatProvider)
   commentId: M:System.IConvertible.ToSByte(System.IFormatProvider)
 - uid: System.SByte
   parent: System
   isExternal: false
-  name: "XXX"
+  name: SByte
   fullName: System.SByte
   nameWithType: SByte
   commentId: T:System.SByte
 - uid: System.IConvertible.ToSingle(System.IFormatProvider)
   parent: System.IConvertible
   isExternal: false
-  name: "XXX"
+  name: ToSingle(IFormatProvider)
   fullName: System.IConvertible.ToSingle(System.IFormatProvider)
   spec.csharp:
   - uid: System.IConvertible.ToSingle(System.IFormatProvider)
-    name: "XXX"
+    name: ToSingle
     fullName: System.IConvertible.ToSingle
-  - name: "XXX"
+  - name: (
     fullName: (
   - uid: System.IFormatProvider
-    name: "XXX"
+    name: IFormatProvider
     fullName: System.IFormatProvider
-  - name: "XXX"
+  - name: )
     fullName: )
   spec.vb:
   - uid: System.IConvertible.ToSingle(System.IFormatProvider)
-    name: "XXX"
+    name: ToSingle
     fullName: System.IConvertible.ToSingle
-  - name: "XXX"
+  - name: (
     fullName: (
   - uid: System.IFormatProvider
-    name: "XXX"
+    name: IFormatProvider
     fullName: System.IFormatProvider
-  - name: "XXX"
+  - name: )
     fullName: )
   nameWithType: IConvertible.ToSingle(IFormatProvider)
   commentId: M:System.IConvertible.ToSingle(System.IFormatProvider)
 - uid: System.Single
   parent: System
   isExternal: false
-  name: "XXX"
+  name: Single
   fullName: System.Single
   nameWithType: Single
   commentId: T:System.Single
 - uid: System.IConvertible.ToString(System.IFormatProvider)
   parent: System.IConvertible
   isExternal: false
-  name: "XXX"
+  name: ToString(IFormatProvider)
   fullName: System.IConvertible.ToString(System.IFormatProvider)
   spec.csharp:
   - uid: System.IConvertible.ToString(System.IFormatProvider)
-    name: "XXX"
+    name: ToString
     fullName: System.IConvertible.ToString
-  - name: "XXX"
+  - name: (
     fullName: (
   - uid: System.IFormatProvider
-    name: "XXX"
+    name: IFormatProvider
     fullName: System.IFormatProvider
-  - name: "XXX"
+  - name: )
     fullName: )
   spec.vb:
   - uid: System.IConvertible.ToString(System.IFormatProvider)
-    name: "XXX"
+    name: ToString
     fullName: System.IConvertible.ToString
-  - name: "XXX"
+  - name: (
     fullName: (
   - uid: System.IFormatProvider
-    name: "XXX"
+    name: IFormatProvider
     fullName: System.IFormatProvider
-  - name: "XXX"
+  - name: )
     fullName: )
   nameWithType: IConvertible.ToString(IFormatProvider)
   commentId: M:System.IConvertible.ToString(System.IFormatProvider)
 - uid: System.IConvertible.ToType(System.Type,System.IFormatProvider)
   parent: System.IConvertible
   isExternal: false
-  name: "XXX"
+  name: ToType(Type, IFormatProvider)
   fullName: System.IConvertible.ToType(System.Type, System.IFormatProvider)
   spec.csharp:
   - uid: System.IConvertible.ToType(System.Type,System.IFormatProvider)
-    name: "XXX"
+    name: ToType
     fullName: System.IConvertible.ToType
-  - name: "XXX"
+  - name: (
     fullName: (
   - uid: System.Type
-    name: "XXX"
+    name: Type
     fullName: System.Type
-  - name: 'XXX '
+  - name: ', '
     fullName: ', '
   - uid: System.IFormatProvider
-    name: "XXX"
+    name: IFormatProvider
     fullName: System.IFormatProvider
-  - name: "XXX"
+  - name: )
     fullName: )
   spec.vb:
   - uid: System.IConvertible.ToType(System.Type,System.IFormatProvider)
-    name: "XXX"
+    name: ToType
     fullName: System.IConvertible.ToType
-  - name: "XXX"
+  - name: (
     fullName: (
   - uid: System.Type
-    name: "XXX"
+    name: Type
     fullName: System.Type
-  - name: 'XXX '
+  - name: ', '
     fullName: ', '
   - uid: System.IFormatProvider
-    name: "XXX"
+    name: IFormatProvider
     fullName: System.IFormatProvider
-  - name: "XXX"
+  - name: )
     fullName: )
   nameWithType: IConvertible.ToType(Type, IFormatProvider)
   commentId: M:System.IConvertible.ToType(System.Type,System.IFormatProvider)
 - uid: System.Type
   parent: System
   isExternal: false
-  name: "XXX"
+  name: Type
   fullName: System.Type
   nameWithType: Type
   commentId: T:System.Type
 - uid: System.IConvertible.ToUInt16(System.IFormatProvider)
   parent: System.IConvertible
   isExternal: false
-  name: "XXX"
+  name: ToUInt16(IFormatProvider)
   fullName: System.IConvertible.ToUInt16(System.IFormatProvider)
   spec.csharp:
   - uid: System.IConvertible.ToUInt16(System.IFormatProvider)
-    name: "XXX"
+    name: ToUInt16
     fullName: System.IConvertible.ToUInt16
-  - name: "XXX"
+  - name: (
     fullName: (
   - uid: System.IFormatProvider
-    name: "XXX"
+    name: IFormatProvider
     fullName: System.IFormatProvider
-  - name: "XXX"
+  - name: )
     fullName: )
   spec.vb:
   - uid: System.IConvertible.ToUInt16(System.IFormatProvider)
-    name: "XXX"
+    name: ToUInt16
     fullName: System.IConvertible.ToUInt16
-  - name: "XXX"
+  - name: (
     fullName: (
   - uid: System.IFormatProvider
-    name: "XXX"
+    name: IFormatProvider
     fullName: System.IFormatProvider
-  - name: "XXX"
+  - name: )
     fullName: )
   nameWithType: IConvertible.ToUInt16(IFormatProvider)
   commentId: M:System.IConvertible.ToUInt16(System.IFormatProvider)
 - uid: System.UInt16
   parent: System
   isExternal: false
-  name: "XXX"
+  name: UInt16
   fullName: System.UInt16
   nameWithType: UInt16
   commentId: T:System.UInt16
 - uid: System.IConvertible.ToUInt32(System.IFormatProvider)
   parent: System.IConvertible
   isExternal: false
-  name: "XXX"
+  name: ToUInt32(IFormatProvider)
   fullName: System.IConvertible.ToUInt32(System.IFormatProvider)
   spec.csharp:
   - uid: System.IConvertible.ToUInt32(System.IFormatProvider)
-    name: "XXX"
+    name: ToUInt32
     fullName: System.IConvertible.ToUInt32
-  - name: "XXX"
+  - name: (
     fullName: (
   - uid: System.IFormatProvider
-    name: "XXX"
+    name: IFormatProvider
     fullName: System.IFormatProvider
-  - name: "XXX"
+  - name: )
     fullName: )
   spec.vb:
   - uid: System.IConvertible.ToUInt32(System.IFormatProvider)
-    name: "XXX"
+    name: ToUInt32
     fullName: System.IConvertible.ToUInt32
-  - name: "XXX"
+  - name: (
     fullName: (
   - uid: System.IFormatProvider
-    name: "XXX"
+    name: IFormatProvider
     fullName: System.IFormatProvider
-  - name: "XXX"
+  - name: )
     fullName: )
   nameWithType: IConvertible.ToUInt32(IFormatProvider)
   commentId: M:System.IConvertible.ToUInt32(System.IFormatProvider)
 - uid: System.UInt32
   parent: System
   isExternal: false
-  name: "XXX"
+  name: UInt32
   fullName: System.UInt32
   nameWithType: UInt32
   commentId: T:System.UInt32
 - uid: System.IConvertible.ToUInt64(System.IFormatProvider)
   parent: System.IConvertible
   isExternal: false
-  name: "XXX"
+  name: ToUInt64(IFormatProvider)
   fullName: System.IConvertible.ToUInt64(System.IFormatProvider)
   spec.csharp:
   - uid: System.IConvertible.ToUInt64(System.IFormatProvider)
-    name: "XXX"
+    name: ToUInt64
     fullName: System.IConvertible.ToUInt64
-  - name: "XXX"
+  - name: (
     fullName: (
   - uid: System.IFormatProvider
-    name: "XXX"
+    name: IFormatProvider
     fullName: System.IFormatProvider
-  - name: "XXX"
+  - name: )
     fullName: )
   spec.vb:
   - uid: System.IConvertible.ToUInt64(System.IFormatProvider)
-    name: "XXX"
+    name: ToUInt64
     fullName: System.IConvertible.ToUInt64
-  - name: "XXX"
+  - name: (
     fullName: (
   - uid: System.IFormatProvider
-    name: "XXX"
+    name: IFormatProvider
     fullName: System.IFormatProvider
-  - name: "XXX"
+  - name: )
     fullName: )
   nameWithType: IConvertible.ToUInt64(IFormatProvider)
   commentId: M:System.IConvertible.ToUInt64(System.IFormatProvider)
 - uid: System.UInt64
   parent: System
   isExternal: false
-  name: "XXX"
+  name: UInt64
   fullName: System.UInt64
   nameWithType: UInt64
   commentId: T:System.UInt64
 - uid: System.ValueType.ToString
   parent: System.ValueType
   isExternal: false
-  name: "XXX"
+  name: ToString()
   fullName: System.ValueType.ToString()
   spec.csharp:
   - uid: System.ValueType.ToString
-    name: "XXX"
+    name: ToString
     fullName: System.ValueType.ToString
-  - name: "XXX"
+  - name: (
     fullName: (
-  - name: "XXX"
+  - name: )
     fullName: )
   spec.vb:
   - uid: System.ValueType.ToString
-    name: "XXX"
+    name: ToString
     fullName: System.ValueType.ToString
-  - name: "XXX"
+  - name: (
     fullName: (
-  - name: "XXX"
+  - name: )
     fullName: )
   nameWithType: ValueType.ToString()
   commentId: M:System.ValueType.ToString
 - uid: System.ArgumentOutOfRangeException
   isExternal: false
-  name: "XXX"
+  name: ArgumentOutOfRangeException
   fullName: System.ArgumentOutOfRangeException
   nameWithType: ArgumentOutOfRangeException
   commentId: T:System.ArgumentOutOfRangeException
 - uid: System.ArgumentNullException
   isExternal: false
-  name: "XXX"
+  name: ArgumentNullException
   fullName: System.ArgumentNullException
   nameWithType: ArgumentNullException
   commentId: T:System.ArgumentNullException
 - uid: System.ArgumentException
   parent: System
   isExternal: false
-  name: "XXX"
+  name: ArgumentException
   fullName: System.ArgumentException
   nameWithType: ArgumentException
   commentId: T:System.ArgumentException
 - uid: System.FormatException
   parent: System
   isExternal: false
-  name: "XXX"
+  name: FormatException
   fullName: System.FormatException
   nameWithType: FormatException
   commentId: T:System.FormatException
 - uid: System.InvalidCastException
   isExternal: false
-  name: "XXX"
+  name: InvalidCastException
   fullName: System.InvalidCastException
   nameWithType: InvalidCastException
   commentId: T:System.InvalidCastException
